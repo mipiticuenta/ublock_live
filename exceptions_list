@@ -55,9 +55,7 @@
 @@||fred.stlouisfed.org/*.bootstrap.
 @@||fred.stlouisfed.org/graph/api/series/$xhr
 @@||fred.stlouisfed.org^$script,1p
-@@||github.githubassets.com/assets/chunk-frameworks-$script,domain=github.com
-@@||github.githubassets.com/assets/dashboard-$script,domain=github.com
-@@||github.githubassets.com/assets/environment-$script,domain=github.com
+@@||githubassets.com/assets/*$script,domain=github.com
 @@||google.com/*/drive/$1p
 @@||google.com/calendar/$xhr,1p
 @@||google.com/drive/$1p
@@ -72,9 +70,8 @@
 @@||google.com$subdocument,domain=google.com|youtube.com
 @@||googlevideo.com/videoplayback?$xhr,domain=youtube.com
 @@||graph.microsoft.com$1p
-@@||gstatic.com^$script,domain=blogger.com
 @@||gstatic.com^$xhr,domain=google.com
-@@||gstatic.com$script,domain=google.com|youtube.com
+@@||gstatic.com$script,domain=google.com|youtube.com|blogger.com
 @@||i-invdn-com.akamaized.net/js/core-highcharts-1.02.min.js$script,domain=investing.com
 @@||i-invdn-com.akamaized.net/js/currency_explorer_min_v3.js$script,domain=investing.com
 @@||i-invdn-com.akamaized.net/js/file-maker-0.0.11.min.js$script,domain=investing.com
@@ -252,8 +249,6 @@ fred.stlouisfed.org#@#[id*="share-"]
 fred.stlouisfed.org#@#a[href*="/share."]
 fred.stlouisfed.org#@#a[href*="share"]
 github.com#@#:not(body)[id*="email"]
-github.com#@#.overflow-hidden
-github.com#@#.position-absolute
 github.com#@#[data-target]
 google.com#@#.ada
 google.com#@#.adl
