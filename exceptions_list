@@ -104,6 +104,7 @@
 @@||k-msedge.net$xhr,domain=office.com
 @@||larousse.fr/*/jquery-*.js
 @@||licdn.com$xhr,1p
+@@||linkedin.com/litms/api/metadata/user$xhr,1p
 @@||linkedin.com/psettings/*$xhr,1p
 @@||linkedin.com/realtime/connect$xhr,1p
 @@||linkedin.com/voyager/api/dash/$xhr,1p
@@ -198,6 +199,7 @@
 @@oktacdn.com$domain=woodmac.com
 @@verisk.com$domain=woodmac.com
 @@youtube.com/*/browse?$xhr,1p
+accounts.google.com#@#[novalidate]
 amazon.es#@#[class*="banner"]
 amazon.es#@#[class*="widget"]
 amazon.es#@#[data-component-type]
@@ -223,6 +225,7 @@ computerhoy.com#@#[src*="publi"]
 dailymail.co.uk#@#[class*="banner"]
 dell.com#@#[data-testid]
 diarioarea.com#@#[class*="widget"]
+docs.microsoft.com#@#[data-target]
 duckduckgo.com#@#[data-link]
 duckduckgo.com#@#[src*="external"]
 e.foundation#@#.swiper-container
@@ -287,13 +290,17 @@ lifewire.com#@#[data-component]
 lifewire.com#@#[data-t]
 linkedin.com#@#.follow
 linkedin.com#@#.like
+linkedin.com#@#.video-js
+linkedin.com#@#.vjs-poster
 linkedin.com#@#:not(body)[class*="alert"]
+linkedin.com#@#:not(body)[id*="email"]
 linkedin.com#@#[class$="-link"]
 linkedin.com#@#[class*="follow"]
 linkedin.com#@#[class*="share"]
 linkedin.com#@#[class*="share-"]
 linkedin.com#@#[class*="-share"]
 linkedin.com#@#[class*="social"]:not([class*="author"]):not([id*="author"])
+linkedin.com#@#[class*="social"]:not([class*="author"]):not([id*="author"]):not(.has-social)
 linkedin.com#@#[class*="widget"]
 linkedin.com#@#[src*="share"]
 linkedin.com#@#a[href*="linkedin."]
@@ -359,6 +366,7 @@ youtube.com#@##scroller
 youtube.com#@##toolbar
 youtube.com#@##video-container
 youtube.com#@#.badge
+youtube.com#@#:not(body)[class*="-ad-"]
 youtube.com#@#:not(body)[class*="popup"]
 youtube.com#@#:not(body)[class*="subscribe"]
 youtube.com#@#:not(body)[id*="subscribe"]
