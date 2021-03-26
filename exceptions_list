@@ -124,6 +124,8 @@
 @@||live.com^$xhr,1p
 @@||lonelyplanet.*/dotcom-
 @@||mail.google.com$xhr,1p
+@@||mail.protonmail.com^$script,1p
+@@||mail.protonmail.com^$xhr,1p
 @@||media-amazon.com^$script,domain=amazon.es
 @@||mediamarkt.es.akadns.net^$script,domain=mediamarkt.es
 @@||mediamarkt.es/*/ruxitagentjs_$script,1p
@@ -313,6 +315,7 @@ linkedin.com#@#[class*="-share"]
 linkedin.com#@#[class*="social"]:not([class*="author"]):not([id*="author"])
 linkedin.com#@#[class*="social"]:not([class*="author"]):not([id*="author"]):not(.has-social)
 linkedin.com#@#[class*="widget"]
+linkedin.com#@#[novalidate]
 linkedin.com#@#[src*="share"]
 linkedin.com#@#a[href*="linkedin."]
 linkedin.com#@#li[class*="share"]
@@ -328,6 +331,14 @@ mail.google.com#@#.adz
 mail.google.com#@#[translate]
 mail.google.com#@#a[href*="subscribe"]
 mail.google.com#@#a[href^="mailto:"]
+mail.protonmail.com#@#[ng-if]
+mail.protonmail.com#@#[novalidate]
+mail.protonmail.com#@#[role="form"]
+mail.protonmail.com#@#.pull-right
+mail.protonmail.com#@#[translate]
+mail.protonmail.com#@#[ng-class]
+mail.protonmail.com#@#[data-ng-click]
+mail.protonmail.com#@#[ng-click]
 mediamarkt.es#@#[data-href]
 mediamarkt.es#@#[data-toggle]
 mediamarkt.es#@#[onclick*="location."]
@@ -353,6 +364,7 @@ nytimes.com#@#[data-test-id]
 nytimes.com#@#[id^="link"]
 pccomponentes.com#@#.fancybox
 pccomponentes.com#@#.is-active
+protonmail.com#@#.action
 techrepublic.com#@#[data-component]
 telegraph.co.uk#@#[data-test]
 thebarentsobserver.com#@#[src*="publi"]
