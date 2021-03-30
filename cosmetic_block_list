@@ -20859,7 +20859,7 @@
 ##:not(body)[class*="shahe-"]
 ##:not(body)[class*="shahe_"]
 ##:not(body)[class*="shahecontent"]
-##:not(body)[class*="sharing"]
+##[class*="sharing"]:not(body):not("sharing-enabled")
 ##:not(body)[class^="shb-"][class*="-placement"]
 ##:not(body)[class^="s-header-icon-"]
 ##:not(body)[class="show-moblie fixedfortopwrap"]
