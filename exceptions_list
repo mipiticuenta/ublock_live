@@ -1,5 +1,4 @@
 ! filters' exceptions list
-
 @@*^$popup,domain=google.com
 @@||1drv.com^$image,domain=live.com
 @@||abc.es*/js-logger/*$1p
@@ -37,10 +36,10 @@ blogger.com#@#[data-service]
 blogger.com#@#[data-tooltip]
 bloomberg.com#@#[data-theme]
 @@||bls.gov^$xhr,1p
+bls.gov#@#)[class*="banner"]:not(body)
 bls.gov#@#[data-toggle]
-bls.gov#@#)[class*="banner"]:not(body
-bls.gov#@#)[id*="banner"]:not(body
-bls.gov#@#)[id*="banner"]:not(body):not(#bannerandheader
+bls.gov#@#)[id*="banner"]:not(body)
+bls.gov#@#)[id*="banner"]:not(body):not(#bannerandheader)
 @@||blueconic.net$domain=woodmac.com
 @@||b-msedge.net$xhr,domain=office.com
 @@||bstatic.com/*/jquery_
@@ -53,8 +52,8 @@ bls.gov#@#)[id*="banner"]:not(body):not(#bannerandheader
 @@||clients6.google.com/v1/subscriptions$xhr,domain=mail.google.com
 @@||cloudfront.net$domain=woodmac.com
 cnbc.com#@#[data-test]
-commercialobserver.com#@#)[class^="featured"]:not(body
-commercialobserver.com#@#)[class*="partner"]:not(body
+commercialobserver.com#@#)[class^="featured"]:not(body)
+commercialobserver.com#@#)[class*="partner"]:not(body)
 computerhoy.com#@#[src*="publi"]
 @@*.css$css
 @@||custhelp.com^$script,domain=mediamarkt.es
@@ -66,9 +65,9 @@ dailymail.co.uk#@#[class*="banner"]
 dell.com#@#[data-testid]
 diarioarea.com#@#[class*="widget"]
 @@||docs.google.com^$xhr,1p
-docs.google.com#@#html div:has-text(script blocking software)
 docs.google.com#@#[class*="alert"]:not(body)
 docs.google.com#@#[class^="overlay"]:not(body)
+docs.google.com#@#html div:has-text(script blocking software)
 docs.google.com#@#[id*="widget"]:not(body)
 docs.microsoft.com#@#[data-target]
 @@||drive.google.com/viewerng/*$xhr,1p
@@ -90,8 +89,8 @@ engadget.com#@#[data-component]
 es.jbl.com#@#.hidden-xs
 @@||europasur.es/*.joly.*$script,1p
 exceljet.net#@#[class*="promo"]
-expansion.com#@#[data-theme]
 expansion.com#@#[class*="notification"]:not(body)
+expansion.com#@#[data-theme]
 @@||fastly.net$script,domain=amazon.es
 fayerwayer.com#@#[data-author]
 @@||fayerwayer.com/_next/static/chunks/*$script,1p
@@ -116,13 +115,17 @@ fred.stlouisfed.org#@#.hidden-xs
 fred.stlouisfed.org#@#[id*="-share"]
 fred.stlouisfed.org#@#[id*="share-"]
 fred.stlouisfed.org#@#[id*="share"]:not(body)
-@@||githubassets.com/assets/*$script,domain=github.com
+@@||githubassets.com/assets/chunk-$script,domain=github.com
+@@||githubassets.com/assets/diffs-*$script,domain=github.com
+@@||githubassets.com/assets/editor-*$script,domain=github.com
+@@||githubassets.com/assets/environment-*$script,domain=github.com
+@@||githubassets.com/assets/repositories-*$script,domain=github.com
 @@||github.com/*$xhr,1p
+github.com#@#[class^="publi"]:not(body):not([class*="publication"]):not([class*="publish"])
+github.com#@#[class^="pub"]:not(body):not([class*="publication"]):not([class*="publish"])
 github.com#@#[data-target]
 github.com#@#html div:has-text(script blocking software)
 github.com#@#[id*="email"]:not(body)
-github.com#@#[class^="pub"]:not(body):not([class*="publication"]):not([class*="publish"])
-github.com#@#[class^="publi"]:not(body):not([class*="publication"]):not([class*="publish"])
 @@||google.com$popup,1p
 @@||google.com$script,domain=google.com|youtube.com
 @@||google.com$subdocument,domain=google.com|youtube.com
@@ -213,6 +216,7 @@ lifewire.com#@#[data-component]
 lifewire.com#@#[data-t]
 linkedin.com#@#a[href*="linkedin."]
 linkedin.com#@#[class$="-link"]
+linkedin.com#@#[class*="alert"]:not(body)
 linkedin.com#@#[class*="follow"]
 linkedin.com#@#[class*="-share"]
 linkedin.com#@#[class*="share"]
@@ -221,11 +225,10 @@ linkedin.com#@#[class*="social"]:not([class*="author"]):not([id*="author"])
 linkedin.com#@#[class*="social"]:not([class*="author"]):not([id*="author"]):not(.has-social)
 linkedin.com#@#[class*="widget"]
 linkedin.com#@#.follow
+linkedin.com#@#[id*="email"]:not(body)
 linkedin.com#@#li[class*="share"]
 linkedin.com#@#.like
 @@||linkedin.com/litms/api/metadata/user$xhr,1p
-linkedin.com#@#[class*="alert"]:not(body)
-linkedin.com#@#[id*="email"]:not(body)
 linkedin.com#@#[novalidate]
 @@||linkedin.com/psettings/*$xhr,1p
 @@||linkedin.com/realtime/connect$xhr,1p
@@ -247,9 +250,9 @@ linkedin.com#@#.vjs-poster
 @@||linkedin.com/voyager/api/voyagerIdentityDashProfilePhotoFrames$xhr,1p
 @@||linkedin.com/voyager/api/voyagerLaunchpadDashLaunchpadViews$xhr,1p
 @@||live.com^$xhr,1p
+live.com#@#[class*="banner"]:not(body)
 live.com#@#[data-focuszone-id]
 live.com#@#form
-live.com#@#[class*="banner"]:not(body)
 live.com#@#[id*="login"]:not(body)
 live.com#@#[src*="share"]
 login.live.com#@#[data-bind]:not(body)
@@ -287,8 +290,8 @@ meteoblue.com#@#[role="form"]
 microsoft.com#@#a[href*="/go."]
 microsoft.com#@#a[href*="/upgrade"]
 microsoft.com#@#[alt*=" app"]
-microsoft.com#@##headerRegion
 microsoft.com#@#[class*="Alert"]:not(body)
+microsoft.com#@##headerRegion
 @@||microsoftonline.com$1p
 @@||morningstar.*cookie$1p
 mozilla.org#@#a[href*="campaign"]
@@ -367,8 +370,8 @@ thomann.de#@#:not(body)[class^="aff"]
 @@||vimeo.com$xhr,frame,1p
 vimeo.com#@#[data-player]
 vimeo.com#@#[data-reactroot]
-@@||vimeo.com/log_in?*$1p
 vimeo.com#@#[id*="login"]:not(body)
+@@||vimeo.com/log_in?*$1p
 vimeo.com#@#.play
 @@||vocento.com*/js-cookie$1p
 washingtonpost.com#@#[data-qa]
@@ -386,10 +389,10 @@ youtube.com#@#a[href*="youtube."]
 youtube.com#@##background
 youtube.com#@#.badge
 @@||youtube.com/*/browse?$xhr,1p
-youtube.com#@#form
 youtube.com#@#[class*="-ad-"]:not(body)
 youtube.com#@#[class*="popup"]:not(body)
 youtube.com#@#[class*="subscribe"]:not(body)
+youtube.com#@#form
 youtube.com#@#[id*="subscribe"]:not(body)
 @@||youtube.com/ptracking?*$1p
 youtube.com#@##related
