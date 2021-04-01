@@ -1,8 +1,8 @@
 ! filters' exceptions list
 @@*^$popup,domain=google.com
 @@||1drv.com^$image,domain=live.com
-@@||abc.es*/js-logger/*$1p
-@@||accor.com/authentication/*$1p
+@@||abc.es*/js-logger/$1p
+@@||accor.com/authentication/$1p
 @@||accor.com*/user/$1p
 @@||accounts.google.com$1p
 accounts.google.com#@#[novalidate]
@@ -21,13 +21,13 @@ amazon.es#@#[id*="banner"]
 @@||bancosantander.es$1p
 bbc.com#@#[data-component]
 bbc.com#@#[data-testid]
-@@||bbci.co.uk/ws/simorgh-assets/public/static/js/commons-*$script,domain=bbc.com
-@@||bbci.co.uk/ws/simorgh-assets/public/static/js/framework-*$script,domain=bbc.com
-@@||bbci.co.uk/ws/simorgh-assets/public/static/js/main-*$script,domain=bbc.com
-@@||bbci.co.uk/ws/simorgh-assets/public/static/js/mundo-*$script,domain=bbc.com
-@@||bbci.co.uk/ws/simorgh-assets/public/static/js/shared-*$script,domain=bbc.com
-@@||bbci.co.uk/ws/simorgh-assets/public/static/js/StoryPage-*$script,domain=bbc.com
-@@||bbci.co.uk/ws/simorgh-assets/public/static/moment-*$script,domain=bbc.com
+@@||bbci.co.uk/ws/simorgh-assets/public/static/js/commons-$script,domain=bbc.com
+@@||bbci.co.uk/ws/simorgh-assets/public/static/js/framework-$script,domain=bbc.com
+@@||bbci.co.uk/ws/simorgh-assets/public/static/js/main-$script,domain=bbc.com
+@@||bbci.co.uk/ws/simorgh-assets/public/static/js/mundo-$script,domain=bbc.com
+@@||bbci.co.uk/ws/simorgh-assets/public/static/js/shared-$script,domain=bbc.com
+@@||bbci.co.uk/ws/simorgh-assets/public/static/js/StoryPage-$script,domain=bbc.com
+@@||bbci.co.uk/ws/simorgh-assets/public/static/moment-$script,domain=bbc.com
 bizjournals.com#@#[data-ct]
 @@||blogger.com^$script,1p
 @@||blogger.com^$xhr,1p
@@ -59,8 +59,8 @@ computerhoy.com#@#[src*="publi"]
 @@||custhelp.com^$script,domain=mediamarkt.es
 @@||cytric.net$1p
 dailymail.co.uk#@#[class*="banner"]
-@@||data.bls.gov/assets/bootstrap/*$script,1p
-@@||data.bls.gov/javascripts/*$script,1p
+@@||data.bls.gov/assets/bootstrap/$script,1p
+@@||data.bls.gov/javascripts/$script,1p
 @@||dellcdn.com*$domain=dell.com
 dell.com#@#[data-testid]
 diarioarea.com#@#[class*="widget"]
@@ -70,7 +70,7 @@ docs.google.com#@#[class^="overlay"]:not(body)
 docs.google.com#@#html div:has-text(script blocking software)
 docs.google.com#@#[id*="widget"]:not(body)
 docs.microsoft.com#@#[data-target]
-@@||drive.google.com/viewerng/*$xhr,1p
+@@||drive.google.com/viewerng/$xhr,1p
 duckduckgo.com#@#[data-link]
 duckduckgo.com#@#[src*="external"]
 @@||dzcdn.*naboo-ads$1p
@@ -87,13 +87,13 @@ elespanol.com#@#[data-tags]
 elpais.com#@#[src*="publi"]
 engadget.com#@#[data-component]
 es.jbl.com#@#.hidden-xs
-@@||europasur.es/*.joly.*$script,1p
+@@||europasur.es/*.joly.$script,1p
 exceljet.net#@#[class*="promo"]
 expansion.com#@#[class*="notification"]:not(body)
 expansion.com#@#[data-theme]
 @@||fastly.net$script,domain=amazon.es
 fayerwayer.com#@#[data-author]
-@@||fayerwayer.com/_next/static/chunks/*$script,1p
+@@||fayerwayer.com/_next/static/chunks/$script,1p
 @@||forexpros.com$xhr,domain=investing.com
 foxbusiness.com#@#[class^="featured"]
 foxbusiness.com#@#.video-container
@@ -116,6 +116,7 @@ fred.stlouisfed.org#@#[id*="-share"]
 fred.stlouisfed.org#@#[id*="share-"]
 fred.stlouisfed.org#@#[id*="share"]:not(body)
 @@||githubassets.com/assets/chunk-$script,domain=github.com
+@@||githubassets.com/assets/codespaces-$script,domain=github.com
 @@||githubassets.com/assets/diffs-*$script,domain=github.com
 @@||githubassets.com/assets/editor-*$script,domain=github.com
 @@||githubassets.com/assets/environment-*$script,domain=github.com
