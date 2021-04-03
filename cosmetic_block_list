@@ -8197,7 +8197,7 @@
 ##[data-section-id]
 ##[data-service]
 ##[data-settings]
-##([data-shop-id])
+##[data-shop-id]
 ##[data-shz-cmd]
 ##[data-sigil]
 ##[data-slide-in-from]
@@ -8242,7 +8242,6 @@
 ##[data-tracking-zone]
 ##[data-trackname]
 ##[data-trans]
-##.[data-type]
 ##[data-type]
 ##[data-ua]
 ##[data-ua-category]
@@ -12804,7 +12803,7 @@
 ##[id^="adsIfrme"]:not(body)
 ##[id*="ad-slot"]:not(body)
 ##[id*="adslot"]:not(body)
-##[id*="-ads"]:not(body)
+##[id*="-ads"]:not(body):not(#js_movable-ads-post-contents)
 ##[id*="-ads-"]:not(body)
 ##[id*=":ads:"]:not(body)
 ##[id*="_ads"]:not(body)
@@ -23996,7 +23995,7 @@
 ##[src*=".ashemale."]
 ##[src*=".b4f."]
 ##[src*="bagoads."]
-##[sr*c="/baltkom_"]
+##[src*="/baltkom_"]
 ##[src*="/banstat."]
 ##[src^="bb/"]
 ##[src^="/ben/mgnat.html?"]
