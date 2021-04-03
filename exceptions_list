@@ -36,10 +36,10 @@ blogger.com#@#[data-service]
 blogger.com#@#[data-tooltip]
 bloomberg.com#@#[data-theme]
 @@||bls.gov^$xhr,1p
-bls.gov#@#)[class*="banner"]:not(body)
+bls.gov#@#[class*="banner"]:not(body)
 bls.gov#@#[data-toggle]
-bls.gov#@#)[id*="banner"]:not(body)
-bls.gov#@#)[id*="banner"]:not(body):not(#bannerandheader)
+bls.gov#@#[id*="banner"]:not(body)
+bls.gov#@#[id*="banner"]:not(body):not(#bannerandheader)
 @@||blueconic.net$domain=woodmac.com
 @@||b-msedge.net$xhr,domain=office.com
 @@||bstatic.com/*/jquery_
@@ -52,8 +52,8 @@ bls.gov#@#)[id*="banner"]:not(body):not(#bannerandheader)
 @@||clients6.google.com/v1/subscriptions$xhr,domain=mail.google.com
 @@||cloudfront.net$domain=woodmac.com
 cnbc.com#@#[data-test]
-commercialobserver.com#@#)[class^="featured"]:not(body)
-commercialobserver.com#@#)[class*="partner"]:not(body)
+commercialobserver.com#@#[class^="featured"]:not(body)
+commercialobserver.com#@#[class*="partner"]:not(body)
 computerhoy.com#@#[src*="publi"]
 @@*.css$css
 @@||custhelp.com^$script,domain=mediamarkt.es
