@@ -5394,9 +5394,7 @@
 ###call-maillist
 ##.callmebackform
 ###callmeForm
-###callout
 ##.call-out
-##.callout
 ##.calloutAd
 ##.callout-home
 ##.callout-recall
@@ -5864,7 +5862,7 @@
 ##.c_i_container
 ##.ci-container
 ###cicw
-##[cid^="_gpt"]:not(body)
+##[cid]:not(body)
 ###ciHomeLeaderboard
 ###ci-info-box
 ##.cikkajanlo
@@ -6102,7 +6100,7 @@
 ##[class^="ballon-"]:not(body)
 ##[class^="bancol"]:not(body)
 ##[class^="baner_"]:not(body)
-##[class*="banner"]:not(body):not(.UnderlineNav)
+##[class*="banner"]:not(body):not(header):not(.UnderlineNav)
 ##[class*="banniere"]:not(body)
 ##[class^="ban"]:not(body):not(.banded)
 ##[class^="berlangganan-"]:not(body)
@@ -6136,7 +6134,6 @@
 ##[class^="buzz"]
 ##[class="bxm4mm-11 ciBKcm"]:not(body)
 ##[class="bxm4mm-15 BiRlJ"]:not(body)
-##[class*="callout"]
 ##[class*="campaign"]:not(body)
 ##[class^="category-iloveyou"]:not(body)
 ##[class="center small upper graytext"]:not(body)
@@ -6150,6 +6147,7 @@
 ##[class^="Component-placeholderWrapper-"]:not(body)
 ##[class^="Component-rectanglePlaceholderWrapper-"]:not(body)
 ##[class*="consent"]:not(body)
+##[class^="consumer-marketing-"]
 ##[class^="container text-center aaa aaa"]:not(body)
 ##[class*="contentAd_"]:not(body)
 ##[class="content__info content__info--vis info"]:not(body)
@@ -6242,8 +6240,6 @@
 ##[class^="-gpt"]:not(body)
 ##[class^="_gpt"]:not(body)
 ##[class^="gpt"]:not(body)
-##[class^="gpt-"]:not(body)
-##[class^="gpt_"]:not(body)
 ##[class="GrowthUnauthPinImage__imageDim"]:not(body)
 ##[class^="g-single a-"]
 ##[class^="help-tnl-"]
@@ -6361,6 +6357,8 @@
 ##[class*="partner"]:not(body)
 ##[class*="paylas_"]
 ##[class*="Paylas_"]
+! ##[class*="paywall"]:not(body)
+! ##[class*="payWall"]:not(body)
 ##[class="pgevoke-grid-row-full cf"]
 ##[class^="piano"]
 ##[class="piclick-link"]:not(body)
@@ -7046,9 +7044,6 @@
 ###constant-contact-3
 ###consumer_bottom
 ###consumer_bottom_dl
-##.consumer-marketing-unit
-##.consumer-marketing-unit--cm-footer
-##.consumer-marketing-unit--display-rail
 ###consumer_top
 ##.cont
 ##.contact
@@ -8059,7 +8054,6 @@
 ##[data-empty]
 ##[data-endpoint]
 ##[data-event-action]
-##[data-event-click]
 ##[data-event-type]
 ##[data-expires]
 ##[data-ez-name]
@@ -8080,7 +8074,6 @@
 ##[data-gtm-trigger]
 ##[data-h]
 ##[data-haber-id]
-##[data-href]
 ##[data-hveid]
 ##[data-hypernova-key]
 ##[data-i13n-sec]
@@ -8124,7 +8117,6 @@
 ##[data-module-id]
 ##[data-module-zone]
 ##[data-n]
-##[data-name]
 ##[data-native_ad]
 ##[data-newscategory]
 ##[data-nextstory]
@@ -8137,7 +8129,6 @@
 ##[data-op]
 ##[data-open]
 ##[data-opt-tab]
-##[data-original-title]
 ##[data-p13n-asin-metadata]
 ##[data-paid-clicks]
 ##[data-partner]
@@ -8265,7 +8256,6 @@
 ##[data-wf-beacons]
 ##[data-wf-image-beacons]
 ##[data-wf-toggle-class]
-##[data-width]
 ##[data-wpel-link]
 ##[data-wpusb-component]
 ##[data-yvef]
@@ -9500,7 +9490,6 @@
 ##.external-associated-products
 ###external-embed
 ##.external-holder
-##.external-link
 ##.externalLinkBar
 ###externalPlayer
 ##.external_revenue_accueil
@@ -9992,7 +9981,6 @@
 ##.fixBtm
 ###fixdiv
 ##.fixe
-##.fixed
 ###fixedAd
 ##.fixedAd
 ##.fixed-ad300-1
@@ -10041,6 +10029,7 @@
 ##.fixedNavigationBlock
 ##.fixed_newslettor
 ##.fixed-note
+##.fixed:not(header)
 ###fixedpencil
 ##.fixedpencil
 ###fixed-pop
@@ -12803,16 +12792,16 @@
 ##[id^="adsIfrme"]:not(body)
 ##[id*="ad-slot"]:not(body)
 ##[id*="adslot"]:not(body)
-##[id*="-ads"]:not(body):not(#js_movable-ads-post-contents)
-##[id*="-ads-"]:not(body)
 ##[id*=":ads:"]:not(body)
 ##[id*="_ads"]:not(body)
 ##[id*="_ads_"]:not(body)
-##[id*="ads-"]:not(body)
 ##[id*="ads_"]:not(body)
 ##[id^="ads"]:not(body)
 ##[id^="ads-"]:not(body)
 ##[id^="ads_"]:not(body)
+##[id*="-ads"]:not(body):not(#js_movable-ads-post-contents)
+##[id*="-ads-"]:not(body):not(#js_movable-ads-post-contents)
+##[id*="ads-"]:not(body):not(#js_movable-ads-post-contents)
 ##[id*="adspot"]:not(body)
 ##[id^="adsrg-"]:not(body)
 ##[id^="adtrue_"]:not(body)
@@ -12901,6 +12890,7 @@
 ##[id^="compass-fit-"]
 ##[id*="Composite"]:not(body)
 ##[id*="consent"]:not(body)
+##[id^="consumer-marketing-"]
 ##[id^="container-0a11"]:not(body)
 ##[id^="container_A2_"]:not(body)
 ##[id^="container_auto_movable_"]:not(body)
@@ -13007,15 +12997,13 @@
 ##[id*="-gpt-"]:not(body)
 ##[id*="GPT"]:not(body)
 ##[id^="-gpt"]:not(body)
+##[id^="_gpt"]:not(body)
 ##[id^="gpt"]:not(body)
-##[id^="gpt-"]:not(body)
-##[id^="gpt_"]:not(body)
 ##[id^="gsInformerID-"]:not(body)
 ##[id^="gunies-io_"]:not(body)
 ##[id^="hab_"]:not(body)
 ##[id^="ha_dont_try_"]
 ##[id^="haoetv"]
-##[id^="haven-paywall"]:not(body)
 ##[id^="HeaderNotice-"]:not(body)
 ##[id^="heatmapthemead-"]:not(body)
 ##[id^="home-bnner"]:not(body)
@@ -13137,6 +13125,8 @@
 ##[id*="partner"]:not(body)
 ##[id*="paylas_"]
 ##[id*="Paylas_"]
+! ##[id*="paywall"]:not(body)
+! ##[id*="payWall"]:not(body)
 ##[id^="pbad_"]:not(body)
 ##[id^="pcash-block"]
 ###_idpfLP_wrapper
@@ -14015,8 +14005,6 @@
 ###ism_wrap
 ##.ism_wrap
 ##.is-sticky
-###issuem-leaky-paywall-articles-remaining-nag
-###issuem-leaky-paywall-articles-zero-remaining-nag
 ##.is-totop
 ##.is-umbrella
 ###itao-bottom
@@ -18748,18 +18736,6 @@
 ###paysite
 ##.paysite
 ##.paysite-link
-##.payWall
-##.paywallAds
-##.paywall-area
-##.paywall-bar--visible
-###paywall_container
-##.paywall-container-component
-##.paywall-container-component--growler
-##.paywall-container-outer
-###paywall-footer-slider
-##.paywall-inline-tout
-##.paywall-modal
-##.paywall-mount
 ##._pb
 ##.pB0
 ###pb1
@@ -27249,7 +27225,6 @@
 ##.vxp_adContainer
 ##.vz-bottom-bar
 ##.vz-like-us
-##.w-100
 ##.w138
 ##.w2bslikebox
 ###w2b-StoTop
@@ -28180,7 +28155,6 @@
 ##.zoning--300-600
 ##.zoning--726-90
 ##.zoning--sticky
-##.zoom
 ###zoonHeader
 ###zorrobrofy
 ###zox-lead-bot
