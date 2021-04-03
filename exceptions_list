@@ -10,9 +10,6 @@ accounts.google.com#@#[novalidate]
 @@||alphacdn.net$domain=msauth.net
 @@||amazon.com$xhr,script,domain=amazon.es
 @@||amazon.es^$xhr,1p
-amazon.es#@#a[href*="amazon."]
-amazon.es#@#a[href*="offer"]
-amazon.es#@#a[href*="ref="]
 amazon.es#@#[class*="banner"]
 amazon.es#@#[class*="widget"]
 amazon.es#@#[data-component-type]
@@ -101,8 +98,6 @@ foxbusiness.com#@#[class^="featured"]
 foxbusiness.com#@#.video-container
 foxbusiness.com#@#.video-player
 @@||fred.stlouisfed.org^$script,1p
-fred.stlouisfed.org#@#a[href*="/share."]
-fred.stlouisfed.org#@#a[href*="share"]
 @@||fred.stlouisfed.org/*.bootstrap.
 fred.stlouisfed.org#@#.btn-warning
 fred.stlouisfed.org#@#[class*="-share"]
@@ -136,13 +131,9 @@ github.com#@#[id*="email"]:not(body)
 @@||google.com$subdocument,domain=google.com|youtube.com
 google.com#@#.ada
 google.com#@#.adl
-google.com#@#a[href*=".google."]
-google.com#@#a[href*="google.com/"]
-google.com#@#a[href*="share"]
 google.com#@#[aria-live="assertive"]
 google.com#@#.bn
 @@||google.com/calendar/$xhr,1p
-google.com#@#[class*="callout"]
 google.com#@#[data-cb]
 google.com#@#[data-ct]
 google.com#@#[data-href]
@@ -155,7 +146,6 @@ google.com#@#[data-ved]
 @@||google.com/drive/$1p
 google.com#@#form
 @@||google.com/gmail/$xhr,1p
-google.com#@#[href*="share"]
 google.com#@#.lb
 @@||google.com/maps$xhr,1p
 @@||google.com/recaptcha/*$subdocument,domain=youtube.com|google.com
@@ -207,7 +197,6 @@ larousse.fr#@#[class^="cx"]
 @@||larousse.fr/*/jquery-*.js
 lavanguardia.com#@#img[class*="responsive"]
 @@*/lazyload.*
-libreoffice.org#@#a[href*="/donate"]
 libreoffice.org#@#.animated.slide
 libreoffice.org#@#.carousel-inner
 libreoffice.org#@#[data-ride]
@@ -265,8 +254,6 @@ login.live.com#@#[data-bind]:not(body)
 @@||mail.google.com$xhr,1p
 mail.google.com#@#.adn
 mail.google.com#@#.adz
-mail.google.com#@#a[href^="mailto:"]
-mail.google.com#@#a[href*="subscribe"]
 mail.google.com#@#[translate]
 @@||mail.protonmail.com^$script,1p
 @@||mail.protonmail.com^$xhr,1p
@@ -292,8 +279,6 @@ meteoblue.com#@#.bottom_links
 meteoblue.com#@#[data-href]
 @@||meteoblue.com/pub/*$1p
 meteoblue.com#@#[role="form"]
-microsoft.com#@#a[href*="/go."]
-microsoft.com#@#a[href*="/upgrade"]
 microsoft.com#@#[alt*=" app"]
 microsoft.com#@#[class*="Alert"]:not(body)
 microsoft.com#@##headerRegion
