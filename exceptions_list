@@ -11,6 +11,7 @@ accounts.google.com#@#[novalidate]
 @@||amazon.com$xhr,script,domain=amazon.es
 @@||amazon.es^$xhr,1p
 amazon.es#@#[class*="banner"]
+amazon.es#@#[class*="offer"]:not(body)
 amazon.es#@#[class*="widget"]
 amazon.es#@#[data-component-type]
 amazon.es#@#[id*="banner"]
