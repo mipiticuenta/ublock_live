@@ -36,7 +36,6 @@ bloomberg.com#@#[data-theme]
 @@||bls.gov^$xhr,1p
 bls.gov#@#[class*="banner"]:not(body)
 bls.gov#@#[data-toggle]
-bls.gov#@#[id*="banner"]:not(body)
 bls.gov#@#[id*="banner"]:not(body):not(#bannerandheader)
 @@||blueconic.net$domain=woodmac.com
 @@||b-msedge.net$xhr,domain=office.com
@@ -44,6 +43,7 @@ bls.gov#@#[id*="banner"]:not(body):not(#bannerandheader)
 @@||caixabank.es$1p
 @@||carrefour.es/*/log$1p
 @@||cdn.pccomponentes.com/prod/v1/js/article/list/*$script,1p
+@@||cdn-resources.ableton.com^$script,1p
 @@||chronopost.fr^$script,xhr,1p
 @@||client-channel.google.com^$xhr,1p
 @@||clients6.google.com^$xhr,domain=google.com
@@ -57,6 +57,7 @@ computerhoy.com#@#[src*="publi"]
 @@||custhelp.com^$script,domain=mediamarkt.es
 @@||cytric.net$1p
 dailymail.co.uk#@#[class*="banner"]
+dailymail.co.uk#@#:not(body)[class*="banner"]
 @@||data.bls.gov/assets/bootstrap/$script,1p
 @@||data.bls.gov/javascripts/$script,1p
 @@||dellcdn.com*$domain=dell.com
@@ -101,18 +102,18 @@ foxbusiness.com#@#.video-player
 @@||fred.stlouisfed.org^$script,1p
 @@||fred.stlouisfed.org/*.bootstrap.
 fred.stlouisfed.org#@#.btn-warning
+fred.stlouisfed.org#@#[class^="overlay"]:not(body)
 fred.stlouisfed.org#@#[class*="-share"]
 fred.stlouisfed.org#@#[class*="share"]
 fred.stlouisfed.org#@#[class*="share-"]
 fred.stlouisfed.org#@#[class*="widget"]
 fred.stlouisfed.org#@#[data-target]
 fred.stlouisfed.org#@#[data-toggle]
-fred.stlouisfed.org#@#[class^="overlay"]:not(body)
-fred.stlouisfed.org#@#[id^="overlay"]
-fred.stlouisfed.org#@#[id*="-overlay"]
 @@||fred.stlouisfed.org/*-datepicker.
 @@||fred.stlouisfed.org/graph/api/series/$xhr
 fred.stlouisfed.org#@#.hidden-xs
+fred.stlouisfed.org#@#[id*="-overlay"]
+fred.stlouisfed.org#@#[id^="overlay"]
 fred.stlouisfed.org#@#[id*="-share"]
 fred.stlouisfed.org#@#[id*="share-"]
 fred.stlouisfed.org#@#[id*="share"]:not(body)
@@ -127,6 +128,7 @@ fred.stlouisfed.org#@#[id*="share"]:not(body)
 github.com#@#[class^="publi"]:not(body):not([class*="publication"]):not([class*="publish"])
 github.com#@#[class^="pub"]:not(body):not([class*="publication"]):not([class*="publish"])
 github.com#@#[data-target]
+github.com#@#[data-test-selector]
 github.com#@#.float-right
 github.com#@#html div:has-text(script blocking software)
 github.com#@#[id*="email"]:not(body)
@@ -158,6 +160,7 @@ google.com#@#.lb
 google.com#@#[src*="javascript:"]
 google.com#@#[src*="share"]
 @@||google.com/s?tbm=map$xhr,1p
+@@||googlevideo.com/videoplayback?*&sig=
 @@||graph.microsoft.com$1p
 @@||gstatic.com^$script,domain=blogger.com
 @@||gstatic.com$script,domain=google.com|youtube.com|blogger.com
@@ -218,7 +221,6 @@ linkedin.com#@#[class*="follow"]
 linkedin.com#@#[class*="-share"]
 linkedin.com#@#[class*="share"]
 linkedin.com#@#[class*="share-"]
-linkedin.com#@#[class*="social"]:not([class*="author"]):not([id*="author"])
 linkedin.com#@#[class*="social"]:not([class*="author"]):not([id*="author"]):not(.has-social)
 linkedin.com#@#[class*="widget"]
 linkedin.com#@#.follow
@@ -246,6 +248,7 @@ linkedin.com#@#.vjs-poster
 @@||linkedin.com/voyager/api/voyagerIdentityDashProfileFeaturedItemCards$xhr,1p
 @@||linkedin.com/voyager/api/voyagerIdentityDashProfilePhotoFrames$xhr,1p
 @@||linkedin.com/voyager/api/voyagerLaunchpadDashLaunchpadViews$xhr,1p
+linuxaudio.github.io#@#:not(body):not(article)[class*="promo"]:not([class*="not-promoted"])
 @@||live.com^$xhr,1p
 live.com#@#[class*="banner"]:not(body)
 live.com#@#[data-focuszone-id]
@@ -337,6 +340,7 @@ protonmail.com#@#.action
 @@||sndcdn.com^$script,image,domain=soundcloud.com
 @@||sndcdn.com/media/*$xhr,domain=soundcloud.com
 @@||sndcdn.com/playlist/*$xhr,domain=soundcloud.com
+sotograndedigital.com#@#:not(body)[class^="overlay"]
 @@||soundcloud.com/me$xhr,1p
 @@||soundcloud.com/search$xhr,1p
 @@||soundcloud.com/stream/*$xhr,1p
@@ -382,22 +386,30 @@ wsj.com#@#[data-region]
 @@||youtube.com^$script,1p
 youtube.com#@#a[href*="subscribe"]
 youtube.com#@#a[href*="youtube."]
+youtube.com#@#.autoplay
 youtube.com#@##background
 youtube.com#@#.badge
 @@||youtube.com/*/browse?$xhr,1p
 youtube.com#@#[class*="-ad-"]:not(body)
+youtube.com#@#[class^="like"]
 youtube.com#@#[class*="popup"]:not(body)
 youtube.com#@#[class*="subscribe"]:not(body)
 youtube.com#@#form
+youtube.com#@#[id*="-overlay"]
 youtube.com#@#[id*="subscribe"]:not(body)
+youtube.com#@#.like
+youtube.com#@#.player-wrapper
 youtube.com#@##related
 youtube.com#@##scrollable
 youtube.com#@##scroller
 @@||youtube.com/service_ajax?*$1p
+youtube.com#@#[title^="Watch "]
 youtube.com#@##toolbar
 youtube.com#@##video-container
 @@||youtube.com/youtubei/v1/account/*$xhr,1p
 @@||youtube.com/youtubei/v1/guide$xhr,1p
 @@||youtube.com/youtubei/v1/like/*$xhr,1p
+@@||youtube.com/youtubei/v1/next$xhr,1p
+@@||youtube.com/youtubei/v1/player$xhr,1p
 @@||youtube.com/youtubei/v1/search$xhr,1p
 zdnet.com#@#[data-component]
