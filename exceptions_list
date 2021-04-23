@@ -19,6 +19,7 @@ apple.com#@#a[href*="/goto/"]
 apple.com#@#a[href*="/watch/"]
 apple.com#@#a[href*="itunes"]
 @@||aspnetcdn.com$domain=microsoft.com
+@@||azureedge.net/*/bundle.thread-view.*$script,domain=microsoft.com
 @@||bancosantander.es$1p
 bbc.com#@#[data-component]
 bbc.com#@#[data-testid]
@@ -100,8 +101,6 @@ fayerwayer.com#@#[data-author]
 @@||fayerwayer.com/_next/static/chunks/$script,1p
 @@||forexpros.com$xhr,domain=investing.com
 foxbusiness.com#@#[class^="featured"]
-foxbusiness.com#@#.video-container
-foxbusiness.com#@#.video-player
 @@||fred.stlouisfed.org^$script,1p
 @@||fred.stlouisfed.org/*.bootstrap.
 fred.stlouisfed.org#@#.btn-warning
@@ -135,6 +134,7 @@ github.com#@#[data-test-selector]
 github.com#@#.float-right
 github.com#@#html div:has-text(script blocking software)
 github.com#@#[id*="email"]:not(body)
+github.io#@#:not(body):not(article)[class*="promo"]:not([class*="not-promoted"])
 @@||google.com$popup,1p
 @@||google.com$script,domain=google.com|youtube.com
 @@||google.com$subdocument,domain=google.com|youtube.com
@@ -147,6 +147,8 @@ google.com#@#[data-cb]
 google.com#@#[data-ct]
 google.com#@#[data-href]
 google.com#@#[data-hveid]
+google.com#@#[data-item-type]
+google.com#@#[data-label]
 google.com#@#[data-ogsr-up]
 google.com#@#[data-target]
 google.com#@#[data-tooltip]
@@ -163,9 +165,9 @@ google.com#@#.lb
 google.com#@#[src*="javascript:"]
 google.com#@#[src*="share"]
 @@||google.com/s?tbm=map$xhr,1p
+@@||googleusercontent.com^$xhr,domain=photos.google.com
 @@||googlevideo.com/videoplayback?*&alr=yes&sig=$xmlhttprequest,domain=youtube.com
 @@||graph.microsoft.com$1p
-@@||gstatic.com^$script,domain=blogger.com
 @@||gstatic.com$script,domain=google.com|youtube.com|blogger.com
 @@||gstatic.com^$xhr,domain=google.com
 @@||iberia.*cookie$1p
@@ -188,7 +190,6 @@ google.com#@#[src*="share"]
 @@||investing.com^$xhr,1p
 investing.com#@#[id*="widget"]:not(body)
 @@||iogp.org$1p
-ipfire.org#@#a[href="/download"]
 @@||ipfire.org/*/bootstrap.
 @@||ipfire.org/*/jquery-
 jbl.com#@#[alt*=" Ad"]
@@ -236,7 +237,6 @@ linkedin.com#@#[novalidate]
 @@||linkedin.com/realtime/connect$xhr,1p
 linkedin.com#@#[src*="share"]
 linkedin.com#@#ul[class*="social"]
-linkedin.com#@#.video-js
 linkedin.com#@#.vjs-poster
 @@||linkedin.com/voyager/api/dash/$xhr,1p
 @@||linkedin.com/voyager/api/feed/$xhr,1p
@@ -251,7 +251,6 @@ linkedin.com#@#.vjs-poster
 @@||linkedin.com/voyager/api/voyagerIdentityDashProfileFeaturedItemCards$xhr,1p
 @@||linkedin.com/voyager/api/voyagerIdentityDashProfilePhotoFrames$xhr,1p
 @@||linkedin.com/voyager/api/voyagerLaunchpadDashLaunchpadViews$xhr,1p
-linuxaudio.github.io#@#:not(body):not(article)[class*="promo"]:not([class*="not-promoted"])
 @@||live.com^$xhr,1p
 live.com#@#[class*="banner"]:not(body)
 live.com#@#[data-focuszone-id]
@@ -291,10 +290,11 @@ meteoblue.com#@#[role="form"]
 microsoft.com#@#[alt*=" app"]
 microsoft.com#@#[class*="Alert"]:not(body)
 microsoft.com#@##headerRegion
+@@||microsoft.com/*/jquery-$script,1p
+@@||microsoft.com/*/viewthreadmessages?$xhr,1p
 @@||microsoftonline.com$1p
 @@||morningstar.*cookie$1p
 mozilla.org#@#a[href*="campaign"]
-mozilla.org#@#.download
 @@||mozilla.org/media/js/BUNDLES/common.*$script,1p
 @@||mozilla.org/media/js/BUNDLES/home.*$script,1p
 @@||mozilla.org/media/js/BUNDLES/site.*$script,1p
@@ -335,6 +335,7 @@ pccomponentes.com#@#.is-active
 @@||pccomponentes.com/prod/v1/js/common/*.core.js$script,1p
 @@||pccomponentes.com/prod/v1/js/common/list-*$script,1p
 @@||people-pa.clients6.google.com/v2/people/*$xhr,1p
+@@||photos.google.com^$xhr,1p
 @@||play.google.com/log$xhr,1p
 protonmail.com#@#.action
 @@||reuters.com^$script,1p
@@ -391,7 +392,6 @@ youtube.com#@#a[href*="subscribe"]
 youtube.com#@#a[href*="youtube."]
 youtube.com#@#.autoplay
 youtube.com#@##background
-youtube.com#@#.badge
 @@||youtube.com/*/browse?$xhr,1p
 youtube.com#@#[class*="-ad-"]:not(body)
 youtube.com#@#[class^="like"]
@@ -407,8 +407,6 @@ youtube.com#@##scrollable
 youtube.com#@##scroller
 @@||youtube.com/service_ajax?*$1p
 youtube.com#@#[title^="Watch "]
-youtube.com#@##toolbar
-youtube.com#@##video-container
 @@||youtube.com/youtubei/v1/account/*$xhr,1p
 @@||youtube.com/youtubei/v1/guide$xhr,1p
 @@||youtube.com/youtubei/v1/like/*$xhr,1p
