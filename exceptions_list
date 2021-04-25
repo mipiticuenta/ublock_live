@@ -408,6 +408,10 @@ youtube.com#@##scrollable
 youtube.com#@##scroller
 @@||youtube.com/service_ajax?*$1p
 youtube.com#@#[title^="Watch "]
+@@||youtube.com/channel/*$xhr,1p
+@@||youtube.com/results*$xhr,1p
+@@||youtube.com/user/*$xhr,1p
+@@||youtube.com/watch$xhr,1p
 @@||youtube.com/youtubei/v1/account/*$xhr,1p
 @@||youtube.com/youtubei/v1/guide$xhr,1p
 @@||youtube.com/youtubei/v1/like/*$xhr,1p
