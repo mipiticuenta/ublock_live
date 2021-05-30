@@ -1,4 +1,3 @@
-! filters' exceptions list
 @@*^$popup,domain=google.com
 @@||1drv.com^$image,domain=live.com
 @@||abc.es*/js-logger/$1p
@@ -16,8 +15,8 @@ amazon.es#@#[class*="widget"]
 amazon.es#@#[data-component-type]
 amazon.es#@#[id*="banner"]
 apple.com#@#a[href*="/goto/"]
-apple.com#@#a[href*="/watch/"]
 apple.com#@#a[href*="itunes"]
+apple.com#@#a[href*="/watch/"]
 @@||aspnetcdn.com$domain=microsoft.com
 @@||azureedge.net/*/bundle.thread-view.*$script,domain=microsoft.com
 @@||bancosantander.es$1p
@@ -98,6 +97,7 @@ expansion.com#@#[data-theme]
 @@||fastly.net$script,domain=amazon.es
 fayerwayer.com#@#[data-author]
 @@||fayerwayer.com/_next/static/chunks/$script,1p
+! filters' exceptions list
 @@||forexpros.com$xhr,domain=investing.com
 foxbusiness.com#@#[class^="featured"]
 @@||fred.stlouisfed.org^$script,1p
@@ -134,6 +134,7 @@ github.com#@#.float-right
 github.com#@#html div:has-text(script blocking software)
 github.com#@#[id*="email"]:not(body)
 github.io#@#:not(body):not(article)[class*="promo"]:not([class*="not-promoted"])
+@@||google.com^$inline-script,1p
 @@||google.com$popup,1p
 ! @@||google.com$script,domain=google.com|youtube.com
 @@||google.com$subdocument,domain=google.com|youtube.com
@@ -337,8 +338,8 @@ pccomponentes.com#@#.is-active
 @@||photos.google.com^$xhr,1p
 @@||play.google.com/log$xhr,1p
 protonmail.com#@#.action
-reuters.com#@#[data-testid]
 @@||reuters.com^$script,1p
+reuters.com#@#[data-testid]
 @@||sbcharts.investing.com/charts_xml/$xhr,1p
 @@||sharepoint.com$1p,all
 @@||sndcdn.com^$script,image,domain=soundcloud.com
@@ -386,12 +387,14 @@ wired.com#@#[data-testid]
 wsj.com#@#[class*="subscribe"]
 wsj.com#@#[data-region]
 @@*-xplorawizink.*$1p
+@@||youtube.com^$inline-script,1p
 ! @@||youtube.com^$script,1p
 youtube.com#@#a[href*="subscribe"]
 youtube.com#@#a[href*="youtube."]
 youtube.com#@#.autoplay
 youtube.com#@##background
 @@||youtube.com/*/browse?$xhr,1p
+@@||youtube.com/channel/*$xhr,1p
 youtube.com#@#[class*="-ad-"]:not(body)
 youtube.com#@#[class^="like"]
 youtube.com#@#[class*="popup"]:not(body)
@@ -402,12 +405,11 @@ youtube.com#@#[id*="subscribe"]:not(body)
 youtube.com#@#.like
 youtube.com#@#.player-wrapper
 youtube.com#@##related
+@@||youtube.com/results*$xhr,1p
 youtube.com#@##scrollable
 youtube.com#@##scroller
 @@||youtube.com/service_ajax?*$1p
 youtube.com#@#[title^="Watch "]
-@@||youtube.com/channel/*$xhr,1p
-@@||youtube.com/results*$xhr,1p
 @@||youtube.com/user/*$xhr,1p
 @@||youtube.com/watch$xhr,1p
 @@||youtube.com/youtubei/v1/account/*$xhr,1p
