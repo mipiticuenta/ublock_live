@@ -419,3 +419,16 @@ youtube.com#@#[title^="Watch "]
 @@||youtube.com/youtubei/v1/player$xhr,1p
 @@||youtube.com/youtubei/v1/search$xhr,1p
 zdnet.com#@#[data-component]
+@@||google.com/*/batchexecute$xhr,1p
+@@||googlevideo.com/videoplayback?*&ip=*&alr=yes&sig=$xmlhttprequest,domain=youtube.com
+@@||googlevideo.com/*&ip=*$domain=youtube.com
+@@||youtube.com^$inline-script,1p
+@@||youtube.com/*/desktop_polymer.js$script,1p
+@@||youtube.com/*/webcomponents-sd.js$script,1p
+@@||youtube.com/*/base.js$script,1p
+@@||youtube.com/*/endscreen.js$script,1p
+@@||googlevideo.com/videoplayback?$xhr,domain=youtube.com
+! @@||googlevideo.com/videoplayback?*&alr=yes&cpn=$xhr,domain=youtube.com
+! @@||googlevideo.com/videoplayback?*&alr=yes&sig=$xhr,domain=youtube.com
+@@||youtube.com/*/www-searchbox.js$script,1p
+@@||youtube.com/*/captions.js$script,1p
