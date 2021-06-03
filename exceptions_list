@@ -420,18 +420,19 @@ youtube.com#@#[title^="Watch "]
 zdnet.com#@#[data-component]
 @@||google.com/*/batchexecute$xhr,1p
 @@||googlevideo.com/videoplayback?*&ip=*&alr=yes&sig=$xmlhttprequest,domain=youtube.com
-@@||googlevideo.com/*&ip=*$domain=youtube.com
+! @@||googlevideo.com/*&ip=*$domain=youtube.com
 @@||youtube.com^$inline-script,1p
 @@||youtube.com/*/desktop_polymer.js$script,1p
 @@||youtube.com/*/webcomponents-sd.js$script,1p
 @@||youtube.com/*/base.js$script,1p
 @@||youtube.com/*/endscreen.js$script,1p
+@@||youtube.com/*/www-prepopulator.js$script,1p
+@@||youtube.com/*/www-searchbox.js$script,1p
 @@||googlevideo.com/videoplayback?$xhr,domain=youtube.com
 ! @@||googlevideo.com/videoplayback?*&alr=yes&cpn=$xhr,domain=youtube.com
 ! @@||googlevideo.com/videoplayback?*&alr=yes&sig=$xhr,domain=youtube.com
-@@||youtube.com/*/www-searchbox.js$script,1p
-@@||youtube.com/*/captions.js$script,1p
+! @@||youtube.com/*/captions.js$script,1p
 @@||google.com/_/drive_fe/*$script,1p
-@@||apis.google.com/js/api.js$script,domain=google.com
+@@||google.com/js/api.js$script,domain=google.com
 @@||googleusercontent.com^$subdocument,domain=google.com
 @@||client-channel.google.com$script,1p
