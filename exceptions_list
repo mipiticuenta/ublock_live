@@ -1,8 +1,10 @@
+! exceptions list
+!
 @@*^$popup,domain=google.com
 @@||1drv.com^$image,domain=live.com
 @@||abc.es*/js-logger/$1p
 @@||accor.com/authentication/$1p
-@@||accor.com*/user/$1p
+@@||accor.com/*/user/$1p
 @@||accounts.google.com$1p
 accounts.google.com#@#[novalidate]
 @@||akamaiedge.net$script,domain=fred.stlouisfed.org|hp.com
@@ -14,6 +16,7 @@ amazon.es#@#[class*="offer"]:not(body)
 amazon.es#@#[class*="widget"]
 amazon.es#@#[data-component-type]
 amazon.es#@#[id*="banner"]
+@@||apis.google.com^$script,1p
 apple.com#@#a[href*="/goto/"]
 apple.com#@#a[href*="itunes"]
 apple.com#@#a[href*="/watch/"]
@@ -48,6 +51,7 @@ bls.gov#@#[id*="banner"]:not(body):not(#bannerandheader)
 @@||cdn.pccomponentes.com/prod/v1/js/article/list/*$script,1p
 @@||cdn-resources.ableton.com^$script,1p
 @@||chronopost.fr^$script,xhr,1p
+@@||client-channel.google.com$script,1p
 @@||client-channel.google.com^$xhr,1p
 @@||clients6.google.com^$xhr,domain=google.com
 @@||clients6.google.com/v1/subscriptions$xhr,domain=mail.google.com
@@ -140,6 +144,7 @@ github.io#@#:not(body):not(article)[class*="promo"]:not([class*="not-promoted"])
 google.com#@#.ada
 google.com#@#.adl
 google.com#@#[aria-live="assertive"]
+@@||google.com/*/batchexecute$xhr,1p
 google.com#@#.bn
 @@||google.com/calendar/$xhr,1p
 google.com#@#[data-cb]
@@ -154,8 +159,10 @@ google.com#@#[data-tooltip]
 google.com#@#[data-ved]
 @@||google.com/*/drive/$1p
 @@||google.com/drive/$1p
+@@||google.com/_/drive_fe/*$script,1p
 google.com#@#form
 @@||google.com/gmail/$xhr,1p
+@@||google.com/js/api.js$script,1p
 google.com#@#.lb
 @@||google.com/maps$xhr,1p
 @@||google.com/recaptcha/*$subdocument,domain=youtube.com|google.com
@@ -164,8 +171,11 @@ google.com#@#.lb
 google.com#@#[src*="javascript:"]
 google.com#@#[src*="share"]
 @@||google.com/s?tbm=map$xhr,1p
+@@||googleusercontent.com^$subdocument,domain=google.com
 @@||googleusercontent.com^$xhr,domain=photos.google.com
-! @@||googlevideo.com/videoplayback?*&alr=yes&sig=$xmlhttprequest,domain=youtube.com
+@@||googlevideo.com/videoplayback?$xhr,domain=youtube.com
+! @@||googlevideo.com/videoplayback?*&alr=yes&cpn=$xhr,domain=youtube.com
+@@||googlevideo.com/videoplayback?*&alr=yes&sig=$xhr,domain=youtube.com
 @@||graph.microsoft.com$1p
 @@||gstatic.com$script,domain=google.com|youtube.com|blogger.com
 @@||gstatic.com^$xhr,domain=google.com
@@ -258,9 +268,11 @@ live.com#@#[id*="login"]:not(body)
 live.com#@#[src*="share"]
 login.live.com#@#[data-bind]:not(body)
 @@||lonelyplanet.*/dotcom-
+@@||mail.google.com^$script,1p
 @@||mail.google.com$xhr,1p
 mail.google.com#@#.adn
 mail.google.com#@#.adz
+mail.google.com#@#.msg
 mail.google.com#@#[translate]
 @@||mail.protonmail.com^$script,1p
 @@||mail.protonmail.com^$xhr,1p
@@ -392,12 +404,15 @@ youtube.com#@#a[href*="subscribe"]
 youtube.com#@#a[href*="youtube."]
 youtube.com#@#.autoplay
 youtube.com#@##background
+@@||youtube.com/*/base.js$script,1p
 @@||youtube.com/*/browse?$xhr,1p
 @@||youtube.com/channel/*$xhr,1p
 youtube.com#@#[class*="-ad-"]:not(body)
 youtube.com#@#[class^="like"]
 youtube.com#@#[class*="popup"]:not(body)
 youtube.com#@#[class*="subscribe"]:not(body)
+@@||youtube.com/*/desktop_polymer.js$script,1p
+@@||youtube.com/*/endscreen.js$script,1p
 youtube.com#@#form
 youtube.com#@#[id*="-overlay"]
 youtube.com#@#[id*="subscribe"]:not(body)
@@ -411,28 +426,13 @@ youtube.com#@##scroller
 youtube.com#@#[title^="Watch "]
 @@||youtube.com/user/*$xhr,1p
 @@||youtube.com/watch$xhr,1p
+@@||youtube.com/*/webcomponents-sd.js$script,1p
+@@||youtube.com/*/www-prepopulator.js$script,1p
+@@||youtube.com/*/www-searchbox.js$script,1p
 @@||youtube.com/youtubei/v1/account/*$xhr,1p
 @@||youtube.com/youtubei/v1/guide$xhr,1p
 @@||youtube.com/youtubei/v1/like/*$xhr,1p
-! @@||youtube.com/youtubei/v1/next$xhr,1p
+@@||youtube.com/youtubei/v1/next$xhr,1p
 @@||youtube.com/youtubei/v1/player$xhr,1p
 @@||youtube.com/youtubei/v1/search$xhr,1p
 zdnet.com#@#[data-component]
-@@||google.com/*/batchexecute$xhr,1p
-@@||googlevideo.com/videoplayback?*&ip=*&alr=yes&sig=$xmlhttprequest,domain=youtube.com
-! @@||googlevideo.com/*&ip=*$domain=youtube.com
-@@||youtube.com^$inline-script,1p
-@@||youtube.com/*/desktop_polymer.js$script,1p
-@@||youtube.com/*/webcomponents-sd.js$script,1p
-@@||youtube.com/*/base.js$script,1p
-@@||youtube.com/*/endscreen.js$script,1p
-@@||youtube.com/*/www-prepopulator.js$script,1p
-@@||youtube.com/*/www-searchbox.js$script,1p
-@@||googlevideo.com/videoplayback?$xhr,domain=youtube.com
-! @@||googlevideo.com/videoplayback?*&alr=yes&cpn=$xhr,domain=youtube.com
-! @@||googlevideo.com/videoplayback?*&alr=yes&sig=$xhr,domain=youtube.com
-! @@||youtube.com/*/captions.js$script,1p
-@@||google.com/_/drive_fe/*$script,1p
-@@||google.com/js/api.js$script,domain=google.com
-@@||googleusercontent.com^$subdocument,domain=google.com
-@@||client-channel.google.com$script,1p
