@@ -1,6 +1,5 @@
-! exceptions list
+! filters' exceptions list
 !
-@@*^$popup,domain=google.com
 @@||1drv.com^$image,domain=live.com
 @@||abc.es*/js-logger/$1p
 @@||accor.com/authentication/$1p
@@ -52,13 +51,13 @@ bls.gov#@#[id*="banner"]:not(body):not(#bannerandheader)
 @@||cdn-resources.ableton.com^$script,1p
 @@||chronopost.fr^$script,xhr,1p
 @@||client-channel.google.com$script,1p
-@@||client-channel.google.com^$xhr,1p
-@@||clients6.google.com^$xhr,domain=google.com
-@@||clients6.google.com/v1/subscriptions$xhr,domain=mail.google.com
+@@||clients6.google.com^$script,1p
 @@||cloudfront.net$domain=woodmac.com
 commercialobserver.com#@#[class^="featured"]:not(body)
 commercialobserver.com#@#[class*="partner"]:not(body)
 computerhoy.com#@#[src*="publi"]
+@@||consent.google.com$1p
+@@||consent.youtube.com$1p
 @@||custhelp.com^$script,domain=mediamarkt.es
 @@||cytric.net$1p
 dailymail.co.uk#@#[class*="banner"]
@@ -68,13 +67,13 @@ dailymail.co.uk#@#:not(body)[class*="banner"]
 @@||dellcdn.com*$domain=dell.com
 dell.com#@#[data-testid]
 diarioarea.com#@#[class*="widget"]
-@@||docs.google.com^$xhr,1p
+@@||docs.google.com^$1p
 docs.google.com#@#[class*="alert"]:not(body)
 docs.google.com#@#[class^="overlay"]:not(body)
 docs.google.com#@#html div:has-text(script blocking software)
 docs.google.com#@#[id*="widget"]:not(body)
 docs.microsoft.com#@#[data-target]
-@@||drive.google.com/viewerng/$xhr,1p
+@@||drive.google.com$1p
 duckduckgo.com#@#[data-link]
 duckduckgo.com#@#[src*="external"]
 @@||dzcdn.*naboo-ads$1p
@@ -100,7 +99,6 @@ expansion.com#@#[data-theme]
 @@||fastly.net$script,domain=amazon.es
 fayerwayer.com#@#[data-author]
 @@||fayerwayer.com/_next/static/chunks/$script,1p
-! filters' exceptions list
 @@||forexpros.com$xhr,domain=investing.com
 foxbusiness.com#@#[class^="featured"]
 @@||fred.stlouisfed.org^$script,1p
@@ -139,7 +137,6 @@ github.com#@#[id*="email"]:not(body)
 github.io#@#:not(body):not(article)[class*="promo"]:not([class*="not-promoted"])
 @@||google.com^$inline-script,1p
 @@||google.com$popup,1p
-! @@||google.com$script,domain=google.com|youtube.com
 @@||google.com$subdocument,domain=google.com|youtube.com
 google.com#@#.ada
 google.com#@#.adl
@@ -158,8 +155,7 @@ google.com#@#[data-target]
 google.com#@#[data-tooltip]
 google.com#@#[data-ved]
 @@||google.com/*/drive/$1p
-@@||google.com/drive/$1p
-@@||google.com/_/drive_fe/*$script,1p
+@@||google.com/_/drive_fe/*$1p
 google.com#@#form
 @@||google.com/gmail/$xhr,1p
 @@||google.com/js/api.js$script,1p
@@ -172,13 +168,10 @@ google.com#@#[src*="javascript:"]
 google.com#@#[src*="share"]
 @@||google.com/s?tbm=map$xhr,1p
 @@||googleusercontent.com^$subdocument,domain=google.com
-@@||googleusercontent.com^$xhr,domain=photos.google.com
-@@||googlevideo.com/videoplayback?$xhr,domain=youtube.com
-! @@||googlevideo.com/videoplayback?*&alr=yes&cpn=$xhr,domain=youtube.com
+@@||googleusercontent.com^$xhr,domain=google.com
 @@||googlevideo.com/videoplayback?*&alr=yes&sig=$xhr,domain=youtube.com
 @@||graph.microsoft.com$1p
 @@||gstatic.com$script,domain=google.com|youtube.com|blogger.com
-@@||gstatic.com^$xhr,domain=google.com
 @@||iberia.*cookie$1p
 @@||iberia.*platform$1p
 @@||i-invdn-com.akamaized.net/js/core-highcharts-1.02.min.js$script,domain=investing.com
@@ -227,6 +220,7 @@ libreoffice.org#@#.hidden-xs
 @@||licdn.com$xhr,1p
 lifewire.com#@#[data-component]
 lifewire.com#@#[data-t]
+@@||linkedin.com^$inline-script,1p
 linkedin.com#@#a[href*="linkedin."]
 linkedin.com#@#[class$="-link"]
 linkedin.com#@#[class*="alert"]:not(body)
@@ -240,7 +234,6 @@ linkedin.com#@#.follow
 linkedin.com#@#[id*="email"]:not(body)
 linkedin.com#@#li[class*="share"]
 linkedin.com#@#.like
-@@||linkedin.com^$inline-script,1p
 @@||linkedin.com/litms/api/metadata/user$xhr,1p
 linkedin.com#@#[novalidate]
 @@||linkedin.com/psettings/*$xhr,1p
@@ -269,8 +262,7 @@ live.com#@#[id*="login"]:not(body)
 live.com#@#[src*="share"]
 login.live.com#@#[data-bind]:not(body)
 @@||lonelyplanet.*/dotcom-
-@@||mail.google.com^$script,1p
-@@||mail.google.com$xhr,1p
+@@||mail.google.com^$script,xhr,1p
 mail.google.com#@#.adn
 mail.google.com#@#.adz
 mail.google.com#@#.msg
@@ -346,8 +338,7 @@ pccomponentes.com#@#.is-active
 @@||pccomponentes.com/listado/ajax?$xhr
 @@||pccomponentes.com/prod/v1/js/common/*.core.js$script,1p
 @@||pccomponentes.com/prod/v1/js/common/list-*$script,1p
-@@||people-pa.clients6.google.com/v2/people/*$xhr,1p
-@@||photos.google.com^$xhr,1p
+@@||people-pa.clients6.google.com*$xhr,1p
 @@||play.google.com/log$xhr,1p
 protonmail.com#@#.action
 @@||reuters.com^$script,1p
@@ -365,7 +356,6 @@ sotograndedigital.com#@#:not(body)[class^="overlay"]
 @@||soundcloud.com/users/*$xhr,1p
 @@||spotify.*metrics$1p
 @@||spotify.*track$1p
-@@||ssl.gstatic.com/docs/common/cleardot.gif$image,domain=google.com
 startpage.com#@#[class*="post-link"]:not(body)
 @@||static-exp1.licdn.com/*$xhr,domain=linkedin.com
 @@||stlouisfed.org/assets/*.jquery.*.js
