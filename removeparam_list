@@ -1,7 +1,8 @@
 ! removeparam list
 !
-! *$removeparam=key
-!*$removeparam=ei
+!.css?$removeparam
+!*$removeparam=key
+*$removeparam=ei
 !*$removeparam=ip
 *$removeparam=/(dcl|fbcl|gcl|ycl)id/
 *$removeparam=/_utm.*/
@@ -230,10 +231,10 @@
 *$removeparam=zone_id
 *$removeparam=zoneid
 *$removeparam=zx
-*.css?$removeparam
 *.gif?$removeparam
 *.jpeg?$removeparam
 *.jpg?$removeparam
+*/log?$removeparam
 *.png?$removeparam
 *.svg?$removeparam
 *.ttf?$removeparam
