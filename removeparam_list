@@ -14,7 +14,7 @@
 *$removeparam=abl
 *$removeparam=ad
 *$removeparam=/ad_.*/
-*$removeparam=/ad(0-9)/
+*$removeparam=/ad[0-9]/
 *$removeparam=adb
 *$removeparam=adbIsActive
 *$removeparam=adBitrate
@@ -145,8 +145,7 @@
 *$removeparam=mtime
 *$removeparam=noexitctapop
 *$removeparam=nopop
-*$removeparam=offer
-*$removeparam=offer_id
+*$removeparam=/offer.*/
 *$removeparam=offline_allowed
 *$removeparam=pagegroup
 *$removeparam=pageReferrer
@@ -216,7 +215,6 @@
 *$removeparam=usg
 *$removeparam=usqp
 *$removeparam=utm
-*$removeparam=utm_
 *$removeparam=uuid
 *$removeparam=ved
 *$removeparam=videoAdHtmlId
