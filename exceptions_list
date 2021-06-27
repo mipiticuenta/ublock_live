@@ -1,12 +1,12 @@
 ! filters' exceptions list
 !
+@@$removeparam=offline_allowed,domain=mail.google.com
+@@$removeparam=view,domain=mail.google.com
 @@*/jquery$domain=woodmac.com
 @@*/lazyload.*
 @@*/wizinkpublicweb/*$1p
 @@*-xplorawizink.*$1p
 @@/navegacioncontinua.*.js
-@@$removeparam=view,domain=mail.google.com
-@@$removeparam=offline_allowed,domain=mail.google.com
 @@||1drv.com^$image,domain=live.com
 @@||abc.es*/js-logger/$1p
 @@||accor.com/*/user/$1p
@@ -14,8 +14,8 @@
 @@||accounts.google.com$1p
 @@||akamaiedge.net$script,domain=fred.stlouisfed.org|hp.com
 @@||alphacdn.net$domain=msauth.net
-@@||amazon.es^$inline-script,1p
 @@||amazon.com$xhr,script,domain=amazon.es
+@@||amazon.es^$inline-script,1p
 @@||amazon.es^$xhr,1p
 @@||apis.google.com^$script,1p
 @@||aspnetcdn.com$domain=microsoft.com
@@ -39,7 +39,6 @@
 @@||carrefour.es/*/log$1p
 @@||cdn.pccomponentes.com/prod/v1/js/article/list/*$script,1p
 @@||cdn-resources.ableton.com^$script,1p
-@@||chronopost.fr^$script,xhr,1p
 @@||client-channel.google.com$script,1p
 @@||clients6.google.com^$script,1p
 @@||clients6.google.com^$xhr,domain=mail.google.com
@@ -121,11 +120,6 @@
 @@||iogp.org$1p
 @@||ipfire.org/*/bootstrap.
 @@||ipfire.org/*/jquery-
-@@||jbl.com/*/PEXT-LoadPDPFeatures$xhr,1p
-@@||jbl.com/*/Product-FaqInclude$xhr,1p
-@@||jbl.com/*/Sites-masterCatalog_Har)man/*$image,1p
-@@||jbl.com/auriculares/*$xhr,1p
-@@||jbl.com/on/demandware.static/*$script,1p
 @@||jscdn.redblue.de^$script,domain=mediamarkt.es
 @@||juntadeandalucia.es$1p
 @@||k-msedge.net$xhr,domain=office.com
@@ -152,7 +146,6 @@
 @@||linkedin.com/voyager/api/voyagerLaunchpadDashLaunchpadViews$xhr,1p
 @@||linkedin.com^$inline-script,1p
 @@||live.com^$xhr,1p
-@@||lonelyplanet.*/dotcom-
 @@||mail.google.com^$script,xhr,1p
 @@||mail.protonmail.com^$script,1p
 @@||mail.protonmail.com^$xhr,1p
@@ -175,7 +168,6 @@
 @@||msftauth.net$script,domain=sharepoint.com
 @@||mstar.com/*AudienceTarget$1p
 @@||mstar.com/*cookie$1p
-@@||youtube.com/verify_session$xhr,1p
 @@||nasa.gov/api/*$xhr,1p
 @@||nasa.gov/sites/all/themes/*$script,1p
 @@||nationalgeographic.com/*/platform/*$1p
@@ -187,13 +179,13 @@
 @@||oktacdn.com$domain=woodmac.com
 @@||openstreetmap.org^$script,1p
 @@||openstreetmap.org^$xhr,1p
-@@||pccomponentes.com^$inline-script,1p
 @@||pccomponentes.com/*/bootstrap-*.js
 @@||pccomponentes.com/*/jquery-
 @@||pccomponentes.com/js/lazysizes.*$script,1p
 @@||pccomponentes.com/listado/ajax?$xhr
 @@||pccomponentes.com/prod/v1/js/common/*.core.js$script,1p
 @@||pccomponentes.com/prod/v1/js/common/list-*$script,1p
+@@||pccomponentes.com^$inline-script,1p
 @@||people-pa.clients6.google.com*$xhr,1p
 @@||play.google.com/log$image,domain=mail.google.com
 @@||play.google.com/log$xhr,1p
@@ -217,7 +209,6 @@
 @@||support.microsoft.com/socbundles/article$script,1p
 @@||thomann.de/es/search_filter.html$xhr,1p
 @@||thomann.de^$script,1p
-@@||tracking.dpd.de^$domain=tracking.dpd.de
 @@||tuenti.com/*login$1p
 @@||verisk.com$domain=woodmac.com
 @@||vimeo.com$xhr,frame,1p
@@ -242,6 +233,7 @@
 @@||youtube.com/results*$xhr,1p
 @@||youtube.com/service_ajax?*$1p
 @@||youtube.com/user/*$xhr,1p
+@@||youtube.com/verify_session$xhr,1p
 @@||youtube.com/watch$xhr,1p
 @@||youtube.com/youtubei/v1/account/*$xhr,1p
 @@||youtube.com/youtubei/v1/guide$xhr,1p
@@ -280,7 +272,6 @@ docs.google.com#@#[class*="alert"]:not(body)
 docs.google.com#@#[class^="overlay"]:not(body)
 docs.google.com#@#[id*="widget"]:not(body)
 docs.google.com#@#html div:has-text(script blocking software)
-docs.microsoft.com#@#[data-target]
 duckduckgo.com#@#[data-link]
 duckduckgo.com#@#[src*="external"]
 dxomark.com#@#[class^="featured"]:not(body)
@@ -308,7 +299,6 @@ fred.stlouisfed.org#@#[class*="share-"]
 fred.stlouisfed.org#@#[class*="-share"]
 fred.stlouisfed.org#@#[class*="widget"]
 fred.stlouisfed.org#@#[class^="overlay"]:not(body)
-fred.stlouisfed.org#@#[data-target]
 fred.stlouisfed.org#@#[data-toggle]
 fred.stlouisfed.org#@#[id*="-overlay"]
 fred.stlouisfed.org#@#[id*="share-"]
@@ -319,7 +309,6 @@ geogebra.org#@#.plus
 github.com#@#.float-right
 github.com#@#[class^="pub"]:not(body):not([class*="publication"]):not([class*="publish"])
 github.com#@#[class^="publi"]:not(body):not([class*="publication"]):not([class*="publish"])
-github.com#@#[data-target]
 github.com#@#[data-test-selector]
 github.com#@#[id*="email"]:not(body)
 github.com#@#html div:has-text(script blocking software)
@@ -336,7 +325,6 @@ google.com#@#[data-hveid]
 google.com#@#[data-item-type]
 google.com#@#[data-label]
 google.com#@#[data-ogsr-up]
-google.com#@#[data-target]
 google.com#@#[data-tooltip]
 google.com#@#[data-ved]
 google.com#@#[src*="javascript:"]
@@ -354,7 +342,6 @@ libreoffice.org#@#.carousel-inner
 libreoffice.org#@#.fadeIn.animated
 libreoffice.org#@#.hidden-xs
 libreoffice.org#@#[data-ride]
-libreoffice.org#@#[data-target]
 libreoffice.org#@#[data-toggle]
 lifewire.com#@#[data-component]
 lifewire.com#@#[data-t]
