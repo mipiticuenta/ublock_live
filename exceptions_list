@@ -217,10 +217,12 @@
 @@||vimeocdn.com/*user_settings*$1p
 @@||vocento.com*/js-cookie$1p
 @@||wave.sndcdn.com^$xhr,domain=soundcloud.com
+@@||wikipedia.org$removeparam=/.*client.*/,css
 @@||wizink.es/*cookie$1p
 @@||youtube.com/*/base.js$script,1p
 @@||youtube.com/*/browse?$xhr,1p
 @@||youtube.com/*/desktop_polymer.js$script,1p
+@@||youtube.com/*/desktop_polymer_disambiguate_properties.vflset/*$script,1p
 @@||youtube.com/*/endscreen.js$script,1p
 @@||youtube.com/*/get_search_suggestions$xhr,1p
 @@||youtube.com/*/music_polymer_inlined_html.js$script,1p
@@ -442,3 +444,8 @@ youtube.com#@#a[href*="subscribe"]
 youtube.com#@#a[href*="youtube."]
 youtube.com#@#form
 zdnet.com#@#[data-component]
+@@*.webp?$removeparam,domain=youtube.com
+@@*.jpg?$image,domain=youtube.com
+linuxaudio.github.io#@#[class*="promo"]:not(body):not(header):not(article):not([class*="not-promoted"])
+rncbc.org#@#[class*="promo"]:not(body):not(header):not(article):not([class*="not-promoted"])
+ardour.org#@#.sidebar-left
