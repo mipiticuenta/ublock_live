@@ -11,8 +11,7 @@
 *$removeparam=adBlockerActive
 *$removeparam=/(adc|adGap|adg|adgroup|adInstance|adm|adsource|adu|adv|cbz|CheckCookie|dcl|exo_c|fbcl|gcl|iterator|pdv|ps|q|red|session_|s|site|Site|_site|sub_|t|trv|uu|videoAdHtml|videoad|ycl|ym|z)(id|Id)/
 *$removeparam=adclient
-*$removeparam=adcount
-*$removeparam=adCountIntervalHours
+*$removeparam=/adcount.*/
 *$removeparam=adflag
 *$removeparam=AdFormat
 *$removeparam=adhost
@@ -81,7 +80,7 @@
 *$removeparam=expires
 *$removeparam=forceadv
 *$removeparam=funnel_state
-*$removeparam=gdpr_
+*$removeparam=/.*gdpr.*/
 *$removeparam=gerf
 *$removeparam=gIncludeExternalAds
 *$removeparam=googleadword
@@ -154,7 +153,6 @@
 *$removeparam=wkey
 *$removeparam=/.*zone.*/
 *$removeparam=zx
-!.css?$removeparam
 */css$removeparam
 ||elconfidencial.com$removeparam
 ||eleconomista.es$removeparam
