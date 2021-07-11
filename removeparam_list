@@ -65,6 +65,7 @@
 *$removeparam=/.*cookie.*/
 *$removeparam=ct
 *$removeparam=ctier
+*$removeparam=c_uniq_tag,important
 *$removeparam=customSizeAd
 *$removeparam=cwadformat
 *$removeparam=displayads
@@ -177,4 +178,5 @@
 *.webp?$removeparam
 *.webp$removeparam
 *.woff?$removeparam
+*.woff2?$removeparam
 ||ytimg.com$removeparam
