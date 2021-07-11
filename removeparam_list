@@ -153,10 +153,13 @@
 *$removeparam=wkey
 *$removeparam=/.*zone.*/
 *$removeparam=zx
+cnn.com$removeparam
 *.css$removeparam
 */css$removeparam
 ||elconfidencial.com$removeparam
 ||eleconomista.es$removeparam
+elespanol.com$removeparam
+elpais.com$removeparam
 ||europasur.es$removeparam
 ||expansion.com$removeparam
 *.gif?$removeparam
@@ -165,6 +168,7 @@
 *.ico?$removeparam
 *.ico$removeparam
 *.jpeg?$removeparam
+*.jpeg$removeparam
 *.jpg?$removeparam
 *.jpg$removeparam
 */log?$removeparam
