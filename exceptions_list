@@ -225,6 +225,7 @@ larousse.fr#@#[class^="cx"]
 @@||larousse.fr/*/jquery-*.js
 lavanguardia.com#@#img[class*="responsive"]
 @@*/lazyload.*
+@@*.lazyload.min.js$script
 @@||leroymerlin.es^$inline-script,1p
 libreoffice.org#@#.animated.slide
 libreoffice.org#@#.carousel-inner
@@ -375,6 +376,7 @@ sotograndedigital.com#@#:not(body)[class^="overlay"]
 @@||soundcloud.com/users/*$xhr,1p
 @@||spotify.*metrics$1p
 @@||spotify.*track$1p
+@@||sstatic.net/Shared/*.css$stylesheet
 startpage.com#@#[class*="post-link"]:not(body)
 @@||static-exp1.licdn.com/*$xhr,domain=linkedin.com
 @@||stlouisfed.org/assets/*.jquery.*.js
@@ -386,8 +388,8 @@ theguardian.com#@#[data-test-id]
 theregister.com#@#[alt*="feed"]
 thetimes.co.uk#@#[data-view-name]
 @@||thomann.de^$script,1p
-@@||thomann.de/*/search_filter.$xhr,1p
 thomann.de#@#:not(body)[class^="aff"]
+@@||thomann.de/*/search_filter.$xhr,1p
 @@||tuenti.com/*login$1p
 @@||verisk.com$domain=woodmac.com
 @@||vimeocdn.com$domain=vimeo.com
@@ -402,6 +404,7 @@ vimeo.com#@#.play
 washingtonpost.com#@#[data-qa]
 @@||wave.sndcdn.com^$xhr,domain=soundcloud.com
 @@*.webp?$removeparam,domain=youtube.com
+wikihow.com#@#.sticky
 @@||wikipedia.org$removeparam=/.*client.*/,css
 wired.com#@#[data-reactroot]
 wired.com#@#[data-testid]
