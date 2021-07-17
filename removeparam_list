@@ -5,10 +5,8 @@
 *$removeparam=/ad_.*/[i]
 *$removeparam=ad
 *$removeparam=/ad[0-9]/[i]
-*$removeparam=adb
-*$removeparam=adbIsActive
+*$removeparam=/ad(b|bIsActive|BlockerActive)/
 *$removeparam=adBitrate
-*$removeparam=adBlockerActive
 *$removeparam=/(adc|adGap|adg|adgroup|adInstance|adm|adsource|adu|adv|app|cbz|CheckCookie|dcl|exo_c|fbcl|gcl|iterator|pdv|ps|q|red|session_|s|site|Site|_site|sub_|t|trv|uu|videoAdHtml|videoad|ycl|ym|z)(id|Id|ID)/
 *$removeparam=adclient
 *$removeparam=/adcount.*/[i]
@@ -49,7 +47,8 @@
 *$removeparam=/advert.*/[i]
 *$removeparam=advtile
 *$removeparam=/.*aff.*/[i]
-*$removeparam=apiKey
+*$removeparam=/(api|json)Key/
+*$removeparam=/(r|w)key/
 *$removeparam=arabycash_
 *$removeparam=atp
 *$removeparam=ban
@@ -95,7 +94,6 @@
 *$removeparam=idsite
 *$removeparam=iframeDetected=
 !*$removeparam=ip
-*$removeparam=jsonKey
 *$removeparam=jumpstartadformat
 !*$removeparam=key
 *$removeparam=keywords
@@ -123,7 +121,6 @@
 *$removeparam=ref
 *$removeparam=ref_?
 *$removeparam=/.*refer.*/[i]
-*$removeparam=rkey
 *$removeparam=runauction
 *$removeparam=sa
 *$removeparam=showad
@@ -151,7 +148,6 @@
 *$removeparam=view
 *$removeparam=/visit.*/[i]
 *$removeparam=voluumdata
-*$removeparam=wkey
 *$removeparam=/.*zone.*/[i]
 *$removeparam=zx
 cnn.com$removeparam
