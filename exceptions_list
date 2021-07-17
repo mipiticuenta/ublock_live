@@ -16,7 +16,6 @@ accounts.google.com#@#[novalidate]
 @@||amazon.es^$xhr,1p
 amazon.es#@#[class*="banner"]
 amazon.es#@#[class*="offer"]:not(body)
-amazon.es#@#[class*="widget"]
 amazon.es#@#[data-component-type]
 amazon.es#@#[id*="banner"]
 @@||apis.google.com^$script,1p
@@ -72,7 +71,6 @@ dailymail.co.uk#@#:not(body)[class*="banner"]
 @@||data.bls.gov/javascripts/$script,1p
 @@||dellcdn.com*$domain=dell.com
 dell.com#@#[data-testid]
-diarioarea.com#@#[class*="widget"]
 @@||docs.google.com^$1p
 docs.google.com#@#[class*="alert"]:not(body)
 docs.google.com#@#[class^="overlay"]:not(body)
@@ -118,7 +116,6 @@ fred.stlouisfed.org#@#[class^="overlay"]:not(body)
 fred.stlouisfed.org#@#[class*="-share"]
 fred.stlouisfed.org#@#[class*="share"]
 fred.stlouisfed.org#@#[class*="share-"]
-fred.stlouisfed.org#@#[class*="widget"]
 fred.stlouisfed.org#@#[data-toggle]
 @@||fred.stlouisfed.org/*-datepicker.
 @@||fred.stlouisfed.org/graph/api/series/$xhr
@@ -246,7 +243,6 @@ linkedin.com#@#[class*="-share"]
 linkedin.com#@#[class*="share"]
 linkedin.com#@#[class*="share-"]
 linkedin.com#@#[class*="social"]:not([class*="author"]):not([id*="author"]):not(.has-social)
-linkedin.com#@#[class*="widget"]
 linkedin.com#@#.follow
 linkedin.com#@#[id*="email"]:not(body)
 linkedin.com#@#li[class*="share"]
