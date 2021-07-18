@@ -7,7 +7,7 @@
 *$removeparam=/ad[0-9]/[i]
 *$removeparam=/ad(b|bIsActive|BlockerActive)/
 *$removeparam=adBitrate
-*$removeparam=/(adc|adGap|adg|adgroup|adInstance|adm|adsource|adu|adv|app|cbz|CheckCookie|dcl|exo_c|fbcl|gcl|iterator|pdv|ps|q|red|session_|s|site|Site|_site|sub_|t|trv|uu|videoAdHtml|videoad|ycl|ym|z)(id|Id|ID)/
+*$removeparam=/(adc|adGap|adg|adgroup|adInstance|adm|adsource|adu|adv|app|cbz|CheckCookie|dcl|exo_c|fbcl|gcl|iterator|pdv|ps|q|red|session_|s|site|Site|_site|source|sub_|t|trv|uu|videoAdHtml|videoad|ycl|ym|z)(id|Id|ID)/
 *$removeparam=adclient
 *$removeparam=/adcount.*/[i]
 *$removeparam=adflag
@@ -100,6 +100,7 @@
 *$removeparam=largead
 *$removeparam=link_type
 *$removeparam=lptoken
+*$removeparam=market
 *$removeparam=maxAdCountsPerInterval
 *$removeparam=maxads
 *$removeparam=/.*metrics.*/[i]
