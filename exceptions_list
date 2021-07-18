@@ -73,6 +73,7 @@ dailymail.co.uk#@#:not(body)[class*="banner"]
 dell.com#@#[data-testid]
 @@||docs.google.com^$1p
 docs.google.com#@#[class*="alert"]:not(body)
+docs.google.com#@#[class*="promo"]:not(body):not(header):not(article):not([class*="not-promoted"])
 docs.google.com#@#[class^="overlay"]:not(body)
 docs.google.com#@#html div:has-text(script blocking software)
 docs.google.com#@#[id*="widget"]:not(body)
@@ -298,6 +299,7 @@ meteoblue.com#@#[role="form"]
 microsoft.com#@#[alt*=" app"]
 microsoft.com#@#[class*="Alert"]:not(body)
 microsoft.com#@##headerRegion
+@@||microsoft.com$inline-script,1p
 @@||microsoft.com/*/jquery-$script,1p
 @@||microsoft.com/*/viewthreadmessages?$xhr,1p
 @@||microsoftonline.com$1p
