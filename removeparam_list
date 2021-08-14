@@ -10,6 +10,7 @@
 *$removeparam=/(adc|adGap|adg|adgroup|adInstance|adm|adsource|adu|adv|app|cbz|CheckCookie|dcl|exo_c|fbcl|gcl|iterator|pdv|ps|q|red|session_|s|site|Site|_site|source|sub_|t|trv|uu|videoAdHtml|videoad|ycl|ym|z)(id|Id|ID)/
 *$removeparam=adclient
 *$removeparam=/adcount.*/[i]
+*$removeparam=ad_domain
 *$removeparam=adflag
 *$removeparam=AdFormat
 *$removeparam=adhost
@@ -55,6 +56,7 @@
 *$removeparam=ban
 *$removeparam=/.*banner.*/[i]
 *$removeparam=bdst
+*$removeparam=btd
 *$removeparam=callback
 *$removeparam=/.*campaign.*/[i]
 *$removeparam=cbiframe
@@ -110,6 +112,7 @@
 *$removeparam=offline_allowed
 *$removeparam=pagegroup
 *$removeparam=/.*partner.*/[i]
+*$removeparam=phone
 *$removeparam=playadw
 *$removeparam=/.*pop.*/[i]
 *$removeparam=pppi
