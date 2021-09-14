@@ -1,8 +1,8 @@
 ! filters' exceptions list
 !
+@@$removeparam=offline_allowed,domain=mail.google.com
 @@*$removeparam=t,domain=linkedin.com
 @@*$removeparam=v,domain=linkedin.com
-@@$removeparam=offline_allowed,domain=mail.google.com
 @@$removeparam=view,domain=mail.google.com
 @@||1drv.com^$image,domain=live.com
 @@||abc.es*/js-logger/$1p
@@ -75,8 +75,8 @@ dailymail.co.uk#@#:not(body)[class*="banner"]
 dell.com#@#[data-testid]
 @@||docs.google.com^$1p
 docs.google.com#@#[class*="alert"]:not(body)
-docs.google.com#@#[class*="promo"]:not(body):not(header):not(article):not([class*="not-promoted"])
 docs.google.com#@#[class^="overlay"]:not(body)
+docs.google.com#@#[class*="promo"]:not(body):not(header):not(article):not([class*="not-promoted"])
 docs.google.com#@#html div:has-text(script blocking software)
 docs.google.com#@#[id*="widget"]:not(body)
 @@||drive.google.com$1p
@@ -95,7 +95,6 @@ e.foundation#@#.swiper-container
 @@||elconfidencial.com/*/init.js$xhr
 @@||elconfidencial.com/*/mtime/1/$xhr
 @@||elcorteingles.es^$inline-script,1p
-@@||grupoelcorteingles.es/statics/*$script,domain=elcorteingles.es
 @@||eleconomista.es/*.css$css,1p
 eleconomista.es#@#[data-toggle]
 eleconomista.es#@#[onclick*="location.href"]
@@ -192,13 +191,22 @@ google.com#@#[translate]
 @@||googlevideo.com/videoplayback?*&alr=yes&cpn=$xhr,domain=youtube.com
 @@||googlevideo.com/videoplayback?*&alr=yes&sig=$xhr,domain=youtube.com
 @@||graph.microsoft.com$1p
+@@||grupoelcorteingles.es/statics/*$script,domain=elcorteingles.es
 @@||gstatic.com$script,domain=google.com|youtube.com|blogger.com
 hipertextual.com#@#[amp]
 hipertextual.com#@#[class^="featured"]:not(body)
 @@||hp.com^$inline-script,1p
+@@||hp.com/*/shop/html/headermenus/*$script,domain=hp.com
 @@||hp.com/*/shop/js/jquery-1.8.3.min.js$script,domain=hp.com
 @@||hp.com/*/shop/js/webapijs/*$script,domain=hp.com
-@@||hp.com/*/shop/html/headermenus/*$script,domain=hp.com
+@@||iberia.com^$inline-script,1p
+iberia.com#@#[class*="advi"]:not(body)
+iberia.com#@#[class*="-adv"]:not(body):not(.search--adv):not(.search__input--adv):not(.tag-downloads)
+iberia.com#@#[class*="banner"]:not(body):not(header):not(.UnderlineNav):not(.has-description):not(.articlePage)
+iberia.com#@#[data-placement]
+iberia.com#@#[onclick*="location.href"]
+@@||iberia.com/wcs/imagenes/*$image,1p
+@@||iberia.com/wcs_statics/css/*$font,1p
 @@||iberia.*cookie$1p
 @@||iberia.*platform$1p
 @@||i-invdn-com.akamaized.net/js/core-highcharts-1.02.min.js$script,domain=investing.com
@@ -304,10 +312,10 @@ meteoblue.com#@#.bottom_links
 meteoblue.com#@#[data-href]
 @@||meteoblue.com/pub/*$1p
 meteoblue.com#@#[role="form"]
+@@||microsoft.com$inline-script,1p
 microsoft.com#@#[alt*=" app"]
 microsoft.com#@#[class*="Alert"]:not(body)
 microsoft.com#@##headerRegion
-@@||microsoft.com$inline-script,1p
 @@||microsoft.com/*/jquery-$script,1p
 @@||microsoft.com/*/viewthreadmessages?$xhr,1p
 @@||microsoftonline.com$1p
@@ -421,6 +429,7 @@ wired.com#@#[data-testid]
 @@*/wizinkpublicweb/*$1p
 wsj.com#@#[class*="subscribe"]
 wsj.com#@#[data-region]
+@@||www.iberia.com/wcs_statics/$script,1p
 @@*-xplorawizink.*$1p
 @@||youtube.com^$inline-script,1p
 youtube.com#@#a[href*="subscribe"]
