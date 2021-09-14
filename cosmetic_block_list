@@ -13053,14 +13053,14 @@
 ##[id^="p_root_"]
 ##[id^="p_root_"]:not(body)
 ##[id^="pu-"]
-##[id^="pub"]
+##[id^="pub"]:not(#publicUser)
 ##[id^="pubbox-"]
 ##[id*="publicidad"]:not(body)
 ###idpublicitepave
 ##[id*="-publi-"]:not(body)
-##[id^="publi"]:not(body)
+##[id^="publi"]:not(body):not(#publicUser)
 ##[id*="pub-"]:not(body)
-##[id^="pub"]:not(body)
+##[id^="pub"]:not(body):not(#publicUser)
 ##[id^="pu-"]:not(body)
 ##[id^="purch"]:not(body)
 ##[id^="purch_"]:not(body)
