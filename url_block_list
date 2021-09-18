@@ -19021,6 +19021,11 @@ youngtube.video
 /youradhere_
 /youradhere468-
 yourtube.xxx
+youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
+youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
+youtube.com##+js(json-prune, playerResponse.adPlacements)
+youtube.com##+js(json-prune, playerResponse.playerAds) 
+youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
 /youtube_
 /you-tube-1.
 -youtube-128x128.
