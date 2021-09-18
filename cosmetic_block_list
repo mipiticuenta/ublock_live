@@ -6332,8 +6332,8 @@
 ##[class*="-pubadban "]
 ##[class^="publi-"]
 ##[class*="publicidad"]:not(body)
-##[class^="Publi"]:not(body):not(.Public)
 ##[class^="publi"]:not(body):not([class*="publication"]):not([class*="publish"])
+##[class^="Publi"]:not(body):not(.Public)
 ##[class*="_pub_"]:not(body)
 ##[class*="pub-"]:not(body)
 ##[class^="pub"]:not(body):not([class*="publication"]):not([class*="publish"])
@@ -7029,6 +7029,7 @@
 ##.cont_avis_galetes
 ##.contenedorAds
 ##.contenedor_barra_etiquetas
+###contenedorCookie
 ###contenedor_pub_superior
 ##.contenedor_superior_publi
 ##.contener
@@ -13050,7 +13051,6 @@
 ##[id^="p_root_"]
 ##[id^="p_root_"]:not(body)
 ##[id^="pu-"]
-##[id^="pub"]:not(#publicUser)
 ##[id^="pubbox-"]
 ##[id*="publicidad"]:not(body)
 ###idpublicitepave
@@ -13058,6 +13058,7 @@
 ##[id^="publi"]:not(body):not(#publicUser)
 ##[id*="pub-"]:not(body)
 ##[id^="pub"]:not(body):not(#publicUser)
+##[id^="pub"]:not(#publicUser)
 ##[id^="pu-"]:not(body)
 ##[id^="purch"]:not(body)
 ##[id^="purch_"]:not(body)
@@ -15698,6 +15699,7 @@
 ###mast-fixed
 ###masthead1
 ###masthead2
+###masthead-ad
 ###MastheadAd
 ##.mastheadAds
 ##.masthead-item
@@ -18887,6 +18889,7 @@
 ##.playerAd
 ##.player_ad2
 ##.player_additional_controls_wrap
+###player-ads
 ###playerads
 ###playerAdsRight
 ###playeradv
@@ -23943,6 +23946,7 @@
 ##[src*="sogou."]
 ##[src="/spacer.gif"]
 ##[src*=".spankwire."]
+##[src^=".spankwire."]
 ##[src*=".sports.ru/"]
 ##[src*=".sp-prod."]
 ##[src*="/srv-pv/"]
@@ -23965,7 +23969,6 @@
 ##[src*=".watchstitch."]
 ##[src*="/watchteencam."]
 ##[src*=".weminecryptos."]
-##[src^=".spankwire."]
 ##[src*="/xhamsterpremium."]
 ##[src="xx/top.php"]
 ##[src*="yieldmanager"]
@@ -25065,6 +25068,7 @@
 ##.ticker-outer
 ###tickerTape
 ##.ticker-tweet
+###ticker.ytd-masthead
 ##.ticket
 ##.ticket-button
 ###ticketcity
@@ -27791,6 +27795,7 @@
 ##.yt
 ##.yt-box
 ##.yt-channel-container
+##.ytd-compact-promoted-item-renderer
 ###ytd-companion-slot-renderer
 ##.ytd-companion-slot-renderer
 ##.ytd-display-ad-renderer
@@ -27806,12 +27811,14 @@
 ###YTM-PROMOTED-VIDEO-RENDERER
 ##.ytm-survey
 ##.ytmusic-mealbar-promo-renderer
+##.ytp-ad-progress-list
 ##.ytp-cards-teaser
 ##.ytp-ce-element
 ##.ytp-ce-playlist
 ##.ytp-paid-content-overlay
 ##.ytp-pause-overlay
 ##.ytp-title
+##.ytp-title-channel
 ###YtSparklesVisibilityIdentifier
 ##.ytsub-wrapper
 ###yucs
