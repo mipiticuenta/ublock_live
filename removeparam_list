@@ -1,7 +1,7 @@
 ! removeparam list
 !
 *$removeparam=/(ad|adc|adGap|adg|adgroup|adInstance|adm|adsource|adu|adv|app|cbz|CheckCookie|dcl|exo_c|fbcl|gcl|iterator|pdv|ps|q|red|session_|s|site|_site|source|sub_|t|trv|uu|videoAdHtml|videoad|ycl|ym|z)id/[i]
-*$removeparam=/(api|json)key/[i]
+*$removeparam=/(api|json)key/i
 *$removeparam=/(r|w)key/[i]
 *$removeparam=/.*aff.*/[i]
 *$removeparam=/.*annonceur.*/[i]
