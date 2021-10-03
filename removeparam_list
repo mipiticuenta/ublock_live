@@ -1,7 +1,7 @@
 ! removeparam list
 !
-*$removeparam=/[ad|adc|adGap|adg|adgroup|adInstance|adm|adsource|adu|adv|app|cbz|CheckCookie|dcl|exo_c|fbcl|gcl|iterator|pdv|ps|q|red|session_|s|site|_site|source|sub_|t|trv|uu|videoAdHtml|videoad|ycl|ym|z]id/[i]
-*$removeparam=/[api|json]key/[i]
+*$removeparam=/(ad|adc|adGap|adg|adgroup|adInstance|adm|adsource|adu|adv|app|cbz|CheckCookie|dcl|exo_c|fbcl|gcl|iterator|pdv|ps|q|red|session_|s|site|_site|source|sub_|t|trv|uu|videoAdHtml|videoad|ycl|ym|z)id/[i]
+*$removeparam=/(api|json)key/[i]
 *$removeparam=/(r|w)key/[i]
 *$removeparam=/.*aff.*/[i]
 *$removeparam=/.*annonceur.*/[i]
@@ -22,8 +22,8 @@
 *$removeparam=/.*uid.*/[i]
 *$removeparam=/.*utm.*/[i]
 *$removeparam=/.*zone.*/[i]
-*$removeparam=/^[_requestid|reff]=/[i]
-*$removeparam=/^[ppref|ref|pid]=/[i]
+*$removeparam=/^(_requestid|reff)=/[i]
+*$removeparam=/^(ppref|ref|pid)=/[i]
 *$removeparam=/^aabd/[i]
 *$removeparam=/^ad_/[i]
 *$removeparam=/^adcount/[i]
@@ -48,11 +48,11 @@
 *$removeparam=/^subid/[i]
 *$removeparam=/^track/[i]
 *$removeparam=/^visit/[i]
-*$removeparam=/ad[b|bIsActive|BlockerActive]/[i]
+*$removeparam=/ad(b|bIsActive|BlockerActive)/[i]
 *$removeparam=/ad[0-9]/[i]
 *$removeparam=/entries/
-*$removeparam=/[mcorgid|mid|ts]/,domain=nbcdfw.com
-*$removeparam=/[spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=]/[i]
+*$removeparam=/(mcorgid|mid|ts)/,domain=nbcdfw.com
+*$removeparam=/(spm=|scm=|from=|keyori=|sugg=|search=|mp=|c=|^abtest|^abbucket|pos=|themeID=|algArgs=|clickTrackInfo=|acm=|item_id=|version=|up_id=|pvid=)/[i]
 *$removeparam=/Version/[i]
 *$removeparam=_encoding
 *$removeparam=_ga
