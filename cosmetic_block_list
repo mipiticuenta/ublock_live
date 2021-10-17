@@ -12800,7 +12800,7 @@
 ##[id^="fancybox"]:not(body)
 ##[id^="fblike"]:not(body)
 ##[id*="fb-"]:not(body)
-##[id^="featured"]:not(body)
+##[id^="featured"]:not[id^="featured_image"]:not(body)
 ##[id*="feedback"]
 ##[id^="ffbp"]:not(body)
 ##[id*="flipboard"]:not(body)
