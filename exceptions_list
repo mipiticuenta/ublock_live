@@ -10,7 +10,7 @@
 @@||accor.com/*/user/$1p
 @@||accounts.google.com$1p
 accounts.google.com#@#[novalidate]
-@@||accounts.youtube.com^$subdocument,domain=google.com
+@@||accounts.^$subdocument,domain=google.com
 @@||akamaiedge.net$script,domain=fred.stlouisfed.org|hp.com
 @@||alphacdn.net$domain=msauth.net
 @@||amazon.com$xhr,script,domain=amazon.es
@@ -190,8 +190,6 @@ google.com#@#[translate]
 @@||googleusercontent.com^$xhr,domain=google.com
 @@||googlevideo.com$xhr
 @@||googlevideo.com/videogoodput$xhr,domain=youtube.com
-! @@||googlevideo.com/videoplayback?*&alr=yes&cpn=$xhr,domain=youtube.com
-! @@||googlevideo.com/videoplayback?*&alr=yes&sig=$xhr,domain=youtube.com
 @@||graph.microsoft.com$1p
 @@||grupoelcorteingles.es/statics/*$script,domain=elcorteingles.es
 @@||gstatic.com$script,domain=google.com|youtube.com|blogger.com
