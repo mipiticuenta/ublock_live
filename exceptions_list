@@ -1,5 +1,7 @@
 ! filters' exceptions list
 !
+#@#[class^="featured_image"]
+#@#[id^="featured_image"]
 @@$removeparam=offline_allowed,domain=mail.google.com
 @@*$removeparam=t,domain=linkedin.com
 @@*$removeparam=v,domain=linkedin.com
