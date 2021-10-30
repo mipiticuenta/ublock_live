@@ -283,20 +283,14 @@
 *$removeparam=yclid
 *$removeparam=/.*zone.*/[i]
 *$removeparam=zx
-*.gif?$removeparam
-*.ico?$removeparam
+*.gif$removeparam
 *.ico$removeparam
-*.jpeg?$removeparam
 *.jpeg$removeparam
-*.jpg?$removeparam
 *.jpg$removeparam
 */log?$removeparam
-! *.png?$removeparam
 *.png$removeparam
-*.svg?$removeparam
 *.svg$removeparam
-*.ttf?$removeparam
-*.webp?$removeparam
+*.ttf$removeparam
 *.webp$removeparam
-*.woff?$removeparam
-*.woff2?$removeparam
+*.woff$removeparam
+*.woff2$removeparam
