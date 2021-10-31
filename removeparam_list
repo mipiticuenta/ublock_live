@@ -18,8 +18,8 @@
 *$removeparam=adhost
 *$removeparam=/^ad_/[i]
 *$removeparam=adjomo_
-*$removeparam=/^adjust_/[i]
 *$removeparam=adjust_adgroup
+*$removeparam=/^adjust_/[i]
 *$removeparam=adjust_tracker
 *$removeparam=adlist
 *$removeparam=admeld_
@@ -283,10 +283,13 @@
 *$removeparam=yclid
 *$removeparam=/.*zone.*/[i]
 *$removeparam=zx
+*.css$removeparam
+*.font$removeparam
 *.gif$removeparam
 *.ico$removeparam
 *.jpeg$removeparam
 *.jpg$removeparam
+*.js$removeparam
 */log?$removeparam
 *.png$removeparam
 *.svg$removeparam
