@@ -1,7 +1,6 @@
 ! filters' exceptions list
 !
-#@#[class^="featured_image"]
-#@#[id^="featured_image"]
+
 @@$removeparam=offline_allowed,domain=mail.google.com
 @@*$removeparam=t,domain=linkedin.com
 @@*$removeparam=v,domain=linkedin.com
@@ -10,9 +9,9 @@
 @@||abc.es*/js-logger/$1p
 @@||accor.com/authentication/$1p
 @@||accor.com/*/user/$1p
+@@||accounts.^$subdocument,domain=google.com
 @@||accounts.google.com$1p
 accounts.google.com#@#[novalidate]
-@@||accounts.^$subdocument,domain=google.com
 @@||akamaiedge.net$script,domain=fred.stlouisfed.org|hp.com
 @@||alphacdn.net$domain=msauth.net
 @@||amazon.com$xhr,script,domain=amazon.es
@@ -57,6 +56,7 @@ bls.gov#@#[id*="banner"]:not(body):not(#bannerandheader)
 @@||carrefour.es/*/log$1p
 @@||cdn.pccomponentes.com/prod/v1/js/article/list/*$script,1p
 @@||cdn-resources.ableton.com^$script,1p
+#@#[class^="featured_image"]
 @@||client-channel.google.com$script,1p
 @@||clients6.google.com^$script,1p
 @@||clients6.google.com^$xhr,domain=mail.google.com
@@ -211,6 +211,7 @@ iberia.com#@#[onclick*="location.href"]
 @@||iberia.com/wcs_statics/css/*$font,1p
 @@||iberia.*cookie$1p
 @@||iberia.*platform$1p
+#@#[id^="featured_image"]
 @@||i-invdn-com.akamaized.net/js/core-highcharts-1.02.min.js$script,domain=investing.com
 @@||i-invdn-com.akamaized.net/js/currency_explorer_min_v3.js$script,domain=investing.com
 @@||i-invdn-com.akamaized.net/js/file-maker-0.0.11.min.js$script,domain=investing.com
@@ -222,6 +223,22 @@ iberia.com#@#[onclick*="location.href"]
 @@||i-invdn-com.akamaized.net/js/n/search-bar-2.0-1.18.min.js$script,domain=investing.com
 @@||i-invdn-com.akamaized.net/js/n/toolset-1.20.min.js$script,domain=investing.com
 @@||i-invdn-com.akamaized.net/js/n/utils-0.16.min.js$script,domain=investing.com
+@@||ikea.com$inline-script,1p
+ikea.com#@#[class^="pub"]:not(body):not([class*="publication"]):not([class*="publish"])
+@@||ikea.com/*/common.$script,1p
+@@||ikea.com/*/feed.c$script,1p
+ikea.com#@#[id^="pub"]:not(body):not(#publicUser)
+@@||ikea.com/*/insp-feed/$script,1p
+@@||ikea.com/*lazy*$xhr,1p
+@@||ikea.com/*/main.$script,1p
+@@||ikea.com/*/menu-product$xhr,1p
+@@||ikea.com/*/product$script,1p
+@@||ikea.com/*/product$xhr,1p
+@@||ikea.com/*/product-lists/$script,1p
+@@||ikea.com/*/recommendations/*$script,1p
+@@||ikea.com/resources/$script,1p
+@@||ikea.com/*/search/$script,1p
+@@||ikea.com/*/vendors.$script,1p
 @@||images-eu.ssl-images-amazon.com^$script,domain=amazon.es
 @@||images-na.ssl-images-amazon.com^$script,domain=amazon.es
 @@||incapdns.net$domain=woodmac.com
@@ -352,8 +369,8 @@ nytimes.com#@#[id^="link"]
 @@||office.net^$script,domain=live.com
 @@||office.net^$xhr,domain=live.com
 @@||oktacdn.com$domain=woodmac.com
-@@||openstreetmap.org/assets/*^$script,1p
 @@||openstreetmap.org^$xhr,1p
+@@||openstreetmap.org/assets/*^$script,1p
 openstreetmap.org#@#[class^="overlay"]:not(body)
 @@||pccomponentes.com^$inline-script,1p
 @@||pccomponentes.com/*/bootstrap-*.js
@@ -378,6 +395,8 @@ protonmail.com#@#[novalidate]
 protonmail.com#@#.pull-right
 protonmail.com#@#[role="form"]
 protonmail.com#@#[translate]
+@@||rec.ingka.com/*/inspirations/$xhr,domain=ikea.com
+@@||rec.ingka.com/services/$xhr,domain=ikea.com
 @@||reuters.com^$inline-script,1p
 @@||reuters.com^$script,1p
 reuters.com#@#[data-testid]
@@ -385,6 +404,7 @@ rncbc.org#@#[class*="promo"]:not(body):not(header):not(article):not([class*="not
 @@||s03.s3c.es/*.css$css,domain=eleconomista.es
 @@||sbcharts.investing.com/charts_xml/$xhr,1p
 @@||sharepoint.com$1p,all
+@@||sik.search.blue.cdtapps.com/*/search$xhr,domain=ikea.com
 @@||sndcdn.com^$script,image,domain=soundcloud.com
 @@||sndcdn.com/media/*$xhr,domain=soundcloud.com
 @@||sndcdn.com/playlist/*$xhr,domain=soundcloud.com
@@ -464,9 +484,11 @@ youtube.com#@##related
 youtube.com#@##scrollable
 youtube.com#@##scroller
 @@||youtube.com/service_ajax?*$1p
+youtube.com#@#[title^="Like"]
 youtube.com#@#[title^="Watch "]
 @@||youtube.com/user/*$xhr,1p
 @@||youtube.com/verify_session$xhr,1p
+@@||youtube.com/*vflset/*$script,1p
 @@||youtube.com/watch$xhr,1p
 @@||youtube.com/*/webcomponents-sd.js$script,1p
 @@||youtube.com/*/www-prepopulator.js$script,1p
@@ -477,9 +499,7 @@ youtube.com#@#[title^="Watch "]
 @@||youtube.com/youtubei/v1/next$xhr,1p
 @@||youtube.com/youtubei/v1/player$xhr,1p
 @@||youtube.com/youtubei/v1/search$xhr,1p
-@@||youtube.com/*ytmweb.$script,1p
-@@||youtube.com/*vflset/*$script,1p
 youtube.com#@#.ytmusic-menu-popup-renderer
 youtube.com#@#.ytmusic-player-bar
-youtube.com#@#[title^="Like"]
+@@||youtube.com/*ytmweb.$script,1p
 zdnet.com#@#[data-component]
