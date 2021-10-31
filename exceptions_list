@@ -1,10 +1,9 @@
 ! filters' exceptions list
 !
-
-@@$removeparam=offline_allowed,domain=mail.google.com
+@@*.css$removeparam=d,domain=reuters.com
 @@*$removeparam=t,domain=linkedin.com
 @@*$removeparam=v,domain=linkedin.com
-@@$removeparam=view,domain=mail.google.com
+@@*$removeparam=view,domain=mail.google.com
 @@||1drv.com^$image,domain=live.com
 @@||abc.es*/js-logger/$1p
 @@||accor.com/authentication/$1p
