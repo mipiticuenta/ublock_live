@@ -16366,14 +16366,10 @@ _youtube-button.
 /Youtube-Buttons.
 _youtube_channel.
 /Youtube_circle.
-||youtube.com/api/stats
-||youtube.com/api/stats/
+/api/stats/*
 ||youtube.com/[[computeEmptyGif_()]]$image
 ||youtube.com/[[computeThumbnailUrl_(data.thumbnail)]]
-youtube.com##+js(json-prune, 2.playerResponse.adPlacements)
 youtube.com##+js(json-prune, 2.playerResponse.adPlacements playerResponse.adPlacements playerResponse.playerAds adPlacements playerAds)
-youtube.com##+js(json-prune, playerResponse.adPlacements)
-youtube.com##+js(json-prune, playerResponse.playerAds)
 youtube.com##+js(set, ytInitialPlayerResponse.adPlacements, null)
 ||youtube.com/ptracking
 /youtube_connect.
