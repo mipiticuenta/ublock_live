@@ -9,7 +9,6 @@
 @@||accor.com/*/user/$1p
 @@||accounts.^$subdocument,domain=google.com
 @@||accounts.google.com$1p
-accounts.google.com#@#[novalidate]
 @@||akamaiedge.net$script,domain=fred.stlouisfed.org|hp.com
 @@||alphacdn.net$domain=msauth.net
 @@||amazon.com$xhr,script,domain=amazon.es
@@ -107,7 +106,6 @@ exceljet.net#@#[class*="promo"]
 expansion.com#@#[class*="notification"]:not(body)
 expansion.com#@#[data-theme]
 expedia.com#@#[data-testid]
-expedia.com#@#[novalidate]
 @@||fastly.net$script,domain=amazon.es
 fayerwayer.com#@#[data-author]
 @@||fayerwayer.com/_next/static/chunks/$script,1p
@@ -291,7 +289,6 @@ linkedin.com#@#li[class*="share"]
 linkedin.com#@#.like
 @@||linkedin.com/litms/api/metadata/user$xhr,1p
 linkedin.com#@#.msg
-linkedin.com#@#[novalidate]
 @@||linkedin.com/psettings/*$xhr,1p
 @@||linkedin.com/realtime/connect$xhr,1p
 linkedin.com#@#[src*="share"]
@@ -397,7 +394,6 @@ protonmail.com#@#[data-ng-click]
 protonmail.com#@#[ng-class]
 protonmail.com#@#[ng-click]
 protonmail.com#@#[ng-if]
-protonmail.com#@#[novalidate]
 protonmail.com#@#.pull-right
 protonmail.com#@#[role="form"]
 protonmail.com#@#[translate]
