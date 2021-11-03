@@ -318,8 +318,11 @@ live.com#@#form
 live.com#@#[id*="login"]:not(body)
 live.com#@#[src*="share"]
 login.live.com#@#[data-bind]:not(body)
-@@||mail.google.com^$script,xhr,1p
+@@||mail.google.com$removeparam=v
+@@||mail.google.com$script,xhr,1p
 @@||mail.google.com/*/mail-static/*$script,1p
+mail.google.com#@#.vk
+mail.google.com#@#[id="overlay"]
 marketscreener.com#@#[data-io-article-url]
 @@||media-amazon.com^$script,domain=amazon.es
 @@||mediamarkt.es^$xhr,1p
