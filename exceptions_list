@@ -117,6 +117,7 @@ fayerwayer.com#@#[data-author]
 @@||fonts.gstatic.com$font,domain=google.com
 @@||forexpros.com$xhr,domain=investing.com
 foxbusiness.com#@#[class^="featured"]
+@@||fred.stlouisfed.org$inline-script,1p
 @@||fred.stlouisfed.org^$script,1p
 @@||fred.stlouisfed.org/*.bootstrap.
 fred.stlouisfed.org#@#.btn-warning
@@ -320,9 +321,9 @@ live.com#@#[src*="share"]
 login.live.com#@#[data-bind]:not(body)
 @@||mail.google.com$removeparam=v
 @@||mail.google.com$script,xhr,1p
+mail.google.com#@#[id="overlay"]
 @@||mail.google.com/*/mail-static/*$script,1p
 mail.google.com#@#.vk
-mail.google.com#@#[id="overlay"]
 marketscreener.com#@#[data-io-article-url]
 @@||media-amazon.com^$script,domain=amazon.es
 @@||mediamarkt.es^$xhr,1p
@@ -331,7 +332,8 @@ mediamarkt.es#@#[data-href]
 mediamarkt.es#@#[data-toggle]
 mediamarkt.es#@#[onclick*="location."]
 @@||mediamarkt.es/*/ruxitagentjs_$script,1p
-@@||meteoblue.com^$script,1p
+@@||meteoblue.com$inline-script,1p
+@@||meteoblue.com$script,1p
 @@||meteoblue.com$xhr,1p
 meteoblue.com#@#.bottom_links
 meteoblue.com#@#[data-href]
