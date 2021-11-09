@@ -2946,7 +2946,6 @@
 ##.aserve-top
 ###asf
 ##.asgdc
-##.a-share
 ##.asicon-google-plus
 ##.aside
 ###aside_actions_items
@@ -4014,7 +4013,6 @@
 ##.block-rodale-nl
 ##.block-segui-nurse24it
 ###block-service-links-service-links-not-node
-##.block-share
 ##.block-shariff
 ##.blockShopping
 ##.block-showtime
@@ -4987,7 +4985,6 @@
 ##.btn--schmocial
 ###btn-scroll-up
 ##.btn-send-tip
-##.btn-share
 ##.btn--shre
 ###btnSkipTop
 ##.btn--sns
@@ -5774,6 +5771,8 @@
 ##[class$="_pointer"]
 ##[class$="_popular_box"]
 ##[class$="_publi"]:not(body)
+##[class$="share"]:not(body)
+##[class$="Share"]:not(body)
 ##[class$="span4 add"]
 ##[class$="stickyadv"]
 ##[class$="story box"]
@@ -6246,8 +6245,6 @@
 ##[class*="pub-"]:not(body)
 ##[class^="pub"]:not(body):not(html):not([class*="publication"]):not([class*="publish"]):not(.Public)
 ##[class^="Pub"]:not(body):not(html):not([class*="publication"]):not([class*="publish"]):not(.Public)
-##[id^="pub"]:not(body):not(html):not([class*="publication"]):not([class*="publish"]):not(.Public)
-##[id^="Pub"]:not(body):not(html):not([class*="publication"]):not([class*="publish"]):not(.Public)
 ##[class="pull-right cnt_b_1"]:not(body)
 ##[class="pycp4o-0 ehquwE"]:not(body)
 ##[class^="quang-cao-"]:not(body)
@@ -6278,6 +6275,8 @@
 ##[class*="shahecontent"]:not(body)
 ##[class*="shahe-"]:not(body)
 ##[class*="shahe_"]:not(body)
+##[class^="share"]:not(body)
+##[class^="Share"]:not(body)
 ##[class*="sharing"]:not(body):not([class*="sharing-enabled"])
 ##[class^="shb-"][class*="-placement"]:not(body)
 ##[class^="s-header-icon-"]:not(body)
@@ -12199,6 +12198,8 @@
 ##[id$="MessageOverlay"]:not(body)
 ##[id$="PencilAd"]:not(body)
 ##[id$="preloaderOverlay"]:not(body)
+##[id$="share"]:not(body)
+##[id$="Share"]:not(body)
 ##[id$="-textads"]:not(body)
 ##[id$="TopD"]:not(body)
 ##[id$="_tvadbody"]:not(body)
@@ -12694,6 +12695,8 @@
 ##[id*="_pub_"]:not(body)
 ##[id*="_Pub_"]:not(body)
 ##[id*="pub-"]:not(body)
+##[id^="pub"]:not(body):not(html):not([class*="publication"]):not([class*="publish"]):not(.Public)
+##[id^="Pub"]:not(body):not(html):not([class*="publication"]):not([class*="publish"]):not(.Public)
 ##[id^="pub"]:not(body):not(#publicUser)
 ##[id^="pu-"]:not(body)
 ##[id^="purch"]:not(body)
@@ -12732,9 +12735,11 @@
 ##[id^="sebox_"]
 ##[id^="SEJ_300x250_"]:not(body)
 ##[id*="share"]:not(body)
+##[id^="share"]:not(body)
+##[id^="Share"]:not(body)
 ##[id*="sharing"]:not(body)
-##[id^="sideBarAd"]
-##[id^="sidebar-"]:not(body)
+##[id^="sideBar"]:not(body)
+##[id^="sidebar"]:not(body)
 ##[id^="siderail_"]:not(body)
 ##[id^="simplemodal-"]:not(body)
 ##.id-SiteMain
@@ -15297,7 +15302,6 @@
 ###mdl_adb
 ###mdl_ctnr
 ##.md-legal
-##.md-lite-share
 ##.mdl_noPosition
 ##.md-login
 ##.mdl-overlay
@@ -21280,11 +21284,6 @@
 ###shaim_cks
 ##.shar
 ##.sharable
-##.share
-##.share-post
-##.sharethis-wrapper
-##.share-tools-static
-##.share-wraper
 ##.sharfriend
 ##.sharico2
 ##.shariff
@@ -23075,6 +23074,7 @@
 ##[src="float.htm"]
 ##[src*="/form."]
 ##[src*=".freshmail."]
+##[src="/frugal.gif"]
 ##[src*="fwcdn."]
 ##[src*=".gemini.yahoo."]
 ##[src*="/getAd?"]
@@ -23105,11 +23105,7 @@
 ##[src*="/iframe/"]
 ##[src*="/iictguj."]
 ##[src*=".iltalehti."]
-##[src="/reposti.jpg"]
-##[src="spacer.gif"]
-##[src^="/stories/U"]
 ##[src*=".imedia."]
-##[src="/frugal.gif"]
 ##[src*="/img/player.png"]
 ##[src*=".imgur."]
 ##[src*="/inplayer."]
@@ -23177,6 +23173,7 @@
 ##[src*="-reklam"]
 ##[src*="/reklam"]
 ##[src*="/reposti."]
+##[src="/reposti.jpg"]
 ##[src*=".rubiconproject."]
 ##[src*="/rule34."]
 ##[src*="/rule34hentai."]
@@ -23194,6 +23191,7 @@
 ##[src*="/smitionsory."]
 ##[src*="sogou."]
 ##[src="/spacer.gif"]
+##[src="spacer.gif"]
 ##[src*=".spankwire."]
 ##[src^=".spankwire."]
 ##[src*=".sports.ru/"]
@@ -23202,6 +23200,7 @@
 ##[src*=".statically.io/"]
 ##[src="/static/img/download-top.png"]
 ##[src*=".steamplay."]
+##[src^="/stories/U"]
 ##[src*="/stream."]
 ##[src*="syndicat"]
 ##[src*="/teleriumads-"]
