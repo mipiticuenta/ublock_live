@@ -1,6 +1,5 @@
 ! removeparam list
 !
-googleusercontent.com$removeparam
 *$removeparam=/^aabd/[i]
 *$removeparam=abl
 *$removeparam=act
@@ -215,6 +214,7 @@ googleusercontent.com$removeparam
 *$removeparam=/^redir/[i]
 *$removeparam=ref
 *$removeparam=/.*refer.*/[i]
+*$removeparam=referrer
 *$removeparam=/^ref_/[i]
 *$removeparam=refID
 *$removeparam=refRID
