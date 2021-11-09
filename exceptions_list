@@ -86,8 +86,6 @@ dxomark.com#@#[class^="featured"]:not(body)
 @@||dzcdn.*naboo-ads$1p
 @@||ecestaticos.com/static/cache/$script
 economist.com#@#[data-test-id]
-@@||edgetcdn.com$script,domain=elconfidencial.com|europasur.es
-@@||edgetcdn.io^$script,domain=europasur.es
 e.foundation#@#[data-settings]
 e.foundation#@#.swiper-container
 @@||elconfidencial.com/*/init.js$xhr
@@ -101,7 +99,6 @@ elespanol.com#@#[data-tags]
 elpais.com#@#[src*="publi"]
 engadget.com#@#[data-component]
 es.jbl.com#@#.hidden-xs
-@@||europasur.es/*.joly.$script,1p
 exceljet.net#@#[class*="promo"]
 expansion.com#@#[class*="notification"]:not(body)
 expansion.com#@#[data-theme]
@@ -505,3 +502,10 @@ youtube.com#@#.ytmusic-menu-popup-renderer
 youtube.com#@#.ytmusic-player-bar
 @@||youtube.com/*ytmweb.$script,1p
 zdnet.com#@#[data-component]
+@@||edgetcdn.com$script,domain=elconfidencial.com
+
+! quarantine, for removal
+!
+! @@||edgetcdn.com$script,domain=europasur.es
+! @@||edgetcdn.io^$script,domain=europasur.es
+! @@||europasur.es/*.joly.$script,1p
