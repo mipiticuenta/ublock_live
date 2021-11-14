@@ -86,6 +86,7 @@ dxomark.com#@#[class^="featured"]:not(body)
 @@||dzcdn.*naboo-ads$1p
 @@||ecestaticos.com/static/cache/$script
 economist.com#@#[data-test-id]
+@@||edgetcdn.com$script,domain=elconfidencial.com
 e.foundation#@#[data-settings]
 e.foundation#@#.swiper-container
 @@||elconfidencial.com/*/init.js$xhr
@@ -140,6 +141,7 @@ geogebra.org#@#.plus
 @@||githubassets.com/assets/editor-*$script,domain=github.com
 @@||githubassets.com/assets/environment-*$script,domain=github.com
 @@||githubassets.com/assets/repositories-*$script,domain=github.com
+@@||github.com$inline-script,1p
 @@||github.com/*$xhr,1p
 github.com#@#[class^="publi"]:not(body):not([class*="publication"]):not([class*="publish"])
 github.com#@#[class^="pub"]:not(body):not([class*="publication"]):not([class*="publish"])
@@ -502,7 +504,6 @@ youtube.com#@#.ytmusic-menu-popup-renderer
 youtube.com#@#.ytmusic-player-bar
 @@||youtube.com/*ytmweb.$script,1p
 zdnet.com#@#[data-component]
-@@||edgetcdn.com$script,domain=elconfidencial.com
 
 ! quarantine, for removal
 !
