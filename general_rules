@@ -13,10 +13,12 @@
 *$3p,script
 *$3p,frame
 *$all,domain=behind-the-scene
+*##+js(no-floc)
+*##+js(nowebrtc)
+*##+js(no-xhr-if)
+*##+js(no-fetch-if)
+*##+js(aeld)
 !
-! caveats
-!@@*$css
-
 ! syntax summary
 !
 ! id css selector        : ###
