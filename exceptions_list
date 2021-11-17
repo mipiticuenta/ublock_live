@@ -63,7 +63,9 @@ commercialobserver.com#@#[class*="partner"]:not(body)
 computerhoy.com#@#[src*="publi"]
 @@||consent.google.com$1p
 @@||consent.youtube.com$1p
+@@||content.r9cdn.net/res/$script,1p
 @@*.css$removeparam=d,domain=reuters.com
+@@.css$removeparam,domain=kayak.es
 @@||custhelp.com^$script,domain=mediamarkt.es
 @@||cytric.net$1p
 dailymail.co.uk#@#[class*="banner"]
@@ -105,6 +107,7 @@ expansion.com#@#[class*="notification"]:not(body)
 expansion.com#@#[data-theme]
 expedia.com#@#[data-testid]
 @@||fastly.net$script,domain=amazon.es
+@@||fastly.net^$subdocument,1p
 fayerwayer.com#@#[data-author]
 @@||fayerwayer.com/_next/static/chunks/$script,1p
 @@||filterlists.com^$inline-script,1p
@@ -248,9 +251,25 @@ investing.com#@#[id*="widget"]:not(body)
 jbl.com#@#[alt*=" Ad"]
 jbl.com#@#:not(body)[class*="banner"]
 @@*.jpg?$image,domain=youtube.com
+@@.jpg$removeparam,domain=kayak.es
 @@*/jquery$domain=woodmac.com
+@@.js$removeparam,domain=kayak.es
 @@||jscdn.redblue.de^$script,domain=mediamarkt.es
 @@||juntadeandalucia.es$1p
+@@||kayak.^$inline-script,1p
+@@||kayak.es/a/api/flightPricePrediction/predictCalendar?$xhr,1p
+kayak.es#@#.booking
+kayak.es#@#[class*="Subscr"]:not(body)
+@@||kayak.es/f/smarty?$xhr,1p
+kayak.es#@#.handle
+kayak.es#@#[id*="-overlay"]
+kayak.es#@#.js-overlay
+@@||kayak.es/mvm/smartyv2/search$xhr,1p
+@@||kayak.es/res/js/perf.$script,1p
+@@||kayak.es/res/js/stl.$script,1p
+kayak.es#@#[role="form"]
+@@||kayak.es/s/horizon/$xhr,1p
+kayak.es#@#.splash
 @@||k-msedge.net$xhr,domain=office.com
 larousse.fr#@#[class^="cx"]
 @@||larousse.fr/*/jquery-*.js
@@ -280,6 +299,7 @@ linkedin.com#@#[class*="-share"]
 linkedin.com#@#[class*="share"]
 linkedin.com#@#[class*="share-"]
 linkedin.com#@#[class*="social"]:not([class*="author"]):not([id*="author"]):not(.has-social)
+linkedin.com#@#[class*="social"]:not([class*="author"]):not([id*="author"]):not(.has-social):not(article)
 linkedin.com#@#[data-item-type]
 linkedin.com#@#feeds
 linkedin.com#@#.follow
@@ -320,6 +340,7 @@ login.live.com#@#[data-bind]:not(body)
 mail.google.com#@#[id="overlay"]
 @@||mail.google.com/*/mail-static/*$script,1p
 mail.google.com#@#.vk
+@@||mapbox.com/$xhr,1p
 marketscreener.com#@#[data-io-article-url]
 @@||media-amazon.com^$script,domain=amazon.es
 @@||mediamarkt.es^$xhr,1p
@@ -386,6 +407,7 @@ pccomponentes.com#@#.is-active
 @@||play.google.com^$image,domain=mail.google.com
 @@||play.google.com/log$image,domain=mail.google.com
 @@||play.google.com/log$xhr,1p
+@@.png$removeparam,domain=kayak.es
 @@||protonmail.com^$script,1p
 @@||protonmail.com^$xhr,1p
 protonmail.com#@#.action
@@ -507,6 +529,3 @@ zdnet.com#@#[data-component]
 
 ! quarantine, for removal
 !
-! @@||edgetcdn.com$script,domain=europasur.es
-! @@||edgetcdn.io^$script,domain=europasur.es
-! @@||europasur.es/*.joly.$script,1p
