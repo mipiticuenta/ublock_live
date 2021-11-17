@@ -1,5 +1,7 @@
 ! filters' exceptions list
 !
+gmail.google.com#@#+js(no-fetch-if)
+gmail.google.com#@#+js(addEventListener-defuser)
 youtube.com#@#+js(no-fetch-if)
 youtube.com#@#+js(addEventListener-defuser)
 @@*$removeparam=t,domain=linkedin.com
