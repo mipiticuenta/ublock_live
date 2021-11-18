@@ -844,7 +844,6 @@
 ###adFixFooter
 ##.adfixWp
 ##.adflag
-###adFlashDiv
 ##.adflex
 ##.adflexi
 ##.adfliction
@@ -5046,7 +5045,6 @@
 ##.cactus-post-suggestion
 ##.c-ad
 ##.c-adcontainer
-##.CAdFlashPageTop728x90
 ##.CAdGamelist160x600
 ##.CAdOpenSpace336x280
 ##.CAdOpenSpace728x90
@@ -5938,7 +5936,8 @@
 ##[class^="fixSlide-"]
 ##[class^="fkdaop"]:not(body)
 ##[class^="fkplayer"]:not(body)
-##[class^="flash-message"]:not(body)
+##[class*="flash"]:not(body)
+##[class*="Flash"]:not(body)
 ##[class*="flex_wrapper"]
 ##[class*="flipboard"]:not(body)
 ##[class^="float-ck"]:not(body)
@@ -6662,7 +6661,6 @@
 ##.compartir-nota
 ##.compartir-otros
 ##.comp_container_marketplace
-##.comp-flash-notice
 ###comp-j4xa15dr
 ###complainer-box
 ###compliance
@@ -7379,7 +7377,6 @@
 ###ctl00_ContentPlaceHolder1_ctl00_StoryContainer1_ImageHouseAd
 ###ctl00_ContentPlaceHolder1_lblvideos
 ###ctl00_ContentPlaceHolder1_TextAd_Pulse360AdPanel
-###ctl00_ContentPlaceHolder1_toplead_news1_dvFlashAd
 ###ctl00_ContentPlaceHolder1_UpdatePanel2
 ###ctl00__Content__RepeaterReplies_ctl03__AdReply
 ###ctl00_ContentRightColumn_RightColumn_Ad1_BanManAd
@@ -9489,22 +9486,6 @@
 ##.flare-horizontal
 ##.flare-position-bottom
 ##.flare-vertical
-###flash
-##.flash
-###flashad
-##.flashAd
-##.flashadd
-##.flash_big
-##.flash-container
-##.flashes
-##.flash-info
-##.flash-message__wrapper
-###flash_mpu
-###flash-msg
-###flash_pop
-##.flash-rgpd
-###flashsale-overlay
-###flash_transparent
 ##[flashvars]
 ##.FlatAds
 ##.flat_pm_1_out
@@ -10955,7 +10936,6 @@
 ##.gpicon
 ###gpl
 ##.gp-leader
-###gpl-flashes
 ###gplus
 ##.g_plus
 ##.gplus
@@ -11152,7 +11132,6 @@
 ###habillage_a
 ###habillage_b
 ###habillage_cliquable
-###habillage_flash
 ##.habillage-left
 ##.habillageLien
 ###habillage-pub
@@ -12369,6 +12348,8 @@
 ##[id^="featured"]:not(body)
 ##[id*="feedback"]
 ##[id^="ffbp"]:not(body)
+##[id*="flash"]:not(body)
+##[id*="Flash"]:not(body)
 ##[id*="flipboard"]:not(body)
 ##[id^="float-"]
 ##[id^="floatingLayer"]:not(body)
@@ -13640,8 +13621,6 @@
 ###js_evtBnnrLayerFortune
 ##.js_experiment-button
 ##.js_favteam
-##.js-flash_message-container
-##.js-flash-messages-container
 ##.js-flyin
 ##.js-flying
 ###js-footer
@@ -16636,7 +16615,6 @@
 ##.newsfeed__ooredoo
 ##.news-feed-other
 ##.news-feeds
-##.newsflash
 ###newsform
 ##.news-form
 ##.newsform
@@ -19215,8 +19193,6 @@
 ##.pubex
 ###pubexchange_below_content
 ##.pubexchange_module
-###pubFlash
-##.pubFlash
 ###pubFloat
 ###pubflottante
 ##.pubfond
@@ -21571,8 +21547,6 @@
 ##.side_content_pub
 ##.side-dock-wrap
 ###sideExpandAd
-##.side_flash
-##.side_flashes
 ##.side_fls
 ##.side-form-r
 ##.side-header2
@@ -22942,7 +22916,7 @@
 ##[src*="/fc.lc/"]
 ##[src*="/filecrypt.cc/"]
 ##[src="files/se.gif"]
-##[src*="flashx."]
+##[src*="flash"]
 ##[src="float.htm"]
 ##[src*="/form."]
 ##[src*=".freshmail."]
@@ -23457,7 +23431,6 @@
 ###streambox
 ###streambutton
 ##.streamer
-##.stream_flash_overlay
 ##.streamHTUpsell
 ##.stream_item
 ###streamit-unit
