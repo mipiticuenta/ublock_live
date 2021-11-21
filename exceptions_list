@@ -1,5 +1,6 @@
 ! filters' exceptions list
 !
+youtube.com#@#[class*="subscr"]:not(body)
 mail.google.com#@#+js(no-fetch-if)
 mail.google.com#@#+js(addEventListener-defuser)
 youtube.com#@#+js(no-fetch-if)
