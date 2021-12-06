@@ -12311,7 +12311,7 @@
 ##[id*="fb_"]:not(body)
 ##[id*="Fb_"]:not(body)
 ##[id*="FB_"]:not(body)
-##[id^="fb"]:not(body)
+##[id^="fb"]:not(body):not(.Story)
 ##[id^="Fb"]:not(body)
 ##[id^="FB"]:not(body)
 ##[id^="featured"]:not(body)
@@ -12529,7 +12529,7 @@
 ##[id^="pub"]:not(body):not(#publicUser)
 ##[id^="pu-"]:not(body)
 ##[id^="purch"]:not(body)
-##[id^="push"]:not(body)
+##[id^="push"]:not(body):not(pushobj)
 ##[id*="-qoo10-box-"]
 ##[id^="r98."]:not(body)
 ##[id^="rail-Donation-"]
