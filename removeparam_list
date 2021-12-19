@@ -5,8 +5,8 @@
 *$removeparam=/^act/[i]
 *$removeparam=/.*action.*/[i]
 *$removeparam=/^ad[0-9]/[i]
-*$removeparam=/^(ad|adc|adGap|adg|adgroup|adInstance|adm|adsource|adu|adv|app|cbz|dcl|exo_c|fbcl|gcl|iterator|pdv|ps|red|session_|source|sub_|t|trv|uu|videoAdHtml|videoad|ycl|ym|z)id/[i]
-*$removeparam=/^ad(b|bIsActive|BlockerActive)/[i]
+*$removeparam=/^(ad|adc|adGap|adg|adgroup|adInstance|adm|adsource|adu|adv|app|cbz|dcl|exo_c|fbcl|gcl|iterator|pdv|ps|red|session_|source|sub_|t|trv|uu|videoAdHtml|videoad|ycl|ym|z)id/i
+*$removeparam=/^ad(b|bIsActive|BlockerActive)/i
 *$removeparam=/^adBitrate/[i]
 *$removeparam=/^adcount/[i]
 *$removeparam=/^adflag/[i]
@@ -147,7 +147,7 @@
 *$removeparam=/^maxads/[i]
 *$removeparam=/^mbid/[i]
 *$removeparam=/^mc/[i]
-*$removeparam=/^(mcorgid|mid|ts)/i,domain=/^nbcdfw.com/[i]
+*$removeparam=/^(mcorgid|mid|ts)/i,domain=/^nbcdfw.com/i
 *$removeparam=/.*metrics.*/[i]
 *$removeparam=/^mkrid/[i]
 *$removeparam=/^mkt_/[i]
@@ -178,7 +178,7 @@
 *$removeparam=/^playadw/[i]
 *$removeparam=/.*pop.*/[i]
 *$removeparam=/^pppi/[i]
-*$removeparam=/^(ppref|ref|pid)/[i]
+*$removeparam=/^(ppref|ref|pid)/i
 *$removeparam=/^previousQ/[i]
 *$removeparam=/^program/[i]
 *$removeparam=/.*promo.*/[i]
@@ -198,12 +198,12 @@
 *$removeparam=/^refID/[i]
 *$removeparam=/^refRID/[i]
 *$removeparam=/.*regie.*/[i]
-*$removeparam=/^(_requestid|reff)/[i]
+*$removeparam=/(_requestid|reff)/i
 *$removeparam=/.*responsive.*/[i]
 *$removeparam=/^r/[i]
 *$removeparam=/^rsv_/[i]
 *$removeparam=/^runauction/[i]
-*$removeparam=/(r|w)key/[i]
+*$removeparam=/(r|w)key/i
 *$removeparam=/^sa/[i]
 *$removeparam=/^sessionId/[i]
 *$removeparam=/^showad/[i]
@@ -216,7 +216,7 @@
 *$removeparam=/^smc[0-9]/[i]
 *$removeparam=/^smid/[i]
 *$removeparam=/^source-serpid/[i]
-*$removeparam=/^(spm=/^|scm=/^|from=/^|keyori=/^|sugg=/^|mp=/^|c=/^|^abtest|^abbucket|pos=/^|themeID=/^|algArgs=/^|acm=/^|item_id=/^|version=/^|up_id=/^|pvid=/^)/[i]
+*$removeparam=/^(spm=/^|scm=/^|from=/^|keyori=/^|sugg=/^|mp=/^|c=/^|^abtest|^abbucket|pos=/^|themeID=/^|algArgs=/^|acm=/^|item_id=/^|version=/^|up_id=/^|pvid=/^)/i
 *$removeparam=/^sr/[i]
 *$removeparam=/^status/[i]
 *$removeparam=/^stck/[i]
