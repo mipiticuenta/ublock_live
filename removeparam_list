@@ -1,5 +1,9 @@
 ! removeparam list
 !
+!*$removeparam=adsid
+!*$removeparam=psid
+!*$removeparam=sid
+*$removeparam=/.*sid/[i]
 *$removeparam=/^aabd/[i]
 *$removeparam=abl
 *$removeparam=act
