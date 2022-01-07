@@ -1,12 +1,5 @@
 ! filters' exceptions list
 !
-@@/bootstrap.$css,1p
-@@||youtube.com/*/music_polymer_remove_unused_prototype_props_inlined_html.js$script,1p
-youtube.com#@#[class*="subscr"]:not(body)
-mail.google.com#@#+js(no-fetch-if)
-mail.google.com#@#+js(addEventListener-defuser)
-youtube.com#@#+js(no-fetch-if)
-youtube.com#@#+js(addEventListener-defuser)
 @@*$removeparam=t,domain=linkedin.com
 @@*$removeparam=v,domain=linkedin.com
 @@*$removeparam=view,domain=mail.google.com
@@ -54,6 +47,7 @@ bls.gov#@#[data-toggle]
 bls.gov#@#[id*="banner"]:not(body):not(#bannerandheader)
 @@||blueconic.net$domain=woodmac.com
 @@||b-msedge.net$xhr,domain=office.com
+@@/bootstrap.$css,1p
 @@||bstatic.com/*/jquery_
 @@||caixabank.es$1p
 @@||canon.es^$inline-script,1p
@@ -308,6 +302,7 @@ linkedin.com#@#[class*="share"]
 linkedin.com#@#[class*="share-"]
 linkedin.com#@#[class*="social"]:not([class*="author"]):not([id*="author"]):not(.has-social)
 linkedin.com#@#[class*="social"]:not([class*="author"]):not([id*="author"]):not(.has-social):not(article)
+linkedin.com#@#[class*="visit"]
 linkedin.com#@#[data-item-type]
 linkedin.com#@#feeds
 linkedin.com#@#.follow
@@ -346,6 +341,8 @@ login.live.com#@#[data-bind]:not(body)
 @@||mail.google.com$removeparam=v
 @@||mail.google.com$script,xhr,1p
 mail.google.com#@#[id="overlay"]
+mail.google.com#@#+js(addEventListener-defuser)
+mail.google.com#@#+js(no-fetch-if)
 @@||mail.google.com/*/mail-static/*$script,1p
 mail.google.com#@#.vk
 @@||mapbox.com/$xhr,1p
@@ -497,6 +494,7 @@ youtube.com#@#[class*="-ad-"]:not(body)
 youtube.com#@#[class^="like"]
 youtube.com#@#[class*="popup"]:not(body)
 youtube.com#@#[class*="subscribe"]:not(body)
+youtube.com#@#[class*="subscr"]:not(body)
 @@||youtube.com/*/custom-elements-es5-adapter.js$script,1p
 @@||youtube.com/*/desktop_polymer_disambiguate_properties.vflset/*$script,1p
 @@||youtube.com/*/desktop_polymer.js$script,1p
@@ -505,9 +503,12 @@ youtube.com#@#form
 @@||youtube.com/*/get_search_suggestions$xhr,1p
 youtube.com#@#[id*="-overlay"]
 youtube.com#@#[id*="subscribe"]:not(body)
+youtube.com#@#+js(addEventListener-defuser)
+youtube.com#@#+js(no-fetch-if)
 youtube.com#@#.like
 @@||youtube.com/miniplayer.$script,1p
 @@||youtube.com/*/music_polymer_inlined_html.js$script,1p
+@@||youtube.com/*/music_polymer_remove_unused_prototype_props_inlined_html.js$script,1p
 @@||youtube.com/?pbj=1$xhr,1p
 youtube.com#@#.player-wrapper
 youtube.com#@##related
