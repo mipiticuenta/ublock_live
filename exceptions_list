@@ -26,7 +26,6 @@ apple.com#@#a[href*="/watch/"]
 @@||azureedge.net/*.thread-view.*$script,domain=microsoft.com
 @@||bancosantander.es$1p
 bbc.com#@#[data-component]
-bbc.com#@#[data-testid]
 @@||bbci.co.uk/ws/simorgh-assets/public/static/js/commons-$script,domain=bbc.com
 @@||bbci.co.uk/ws/simorgh-assets/public/static/js/framework-$script,domain=bbc.com
 @@||bbci.co.uk/ws/simorgh-assets/public/static/js/main-$script,domain=bbc.com
@@ -74,7 +73,6 @@ dailymail.co.uk#@#:not(body)[class*="banner"]
 @@||data.bls.gov/assets/bootstrap/$script,1p
 @@||data.bls.gov/javascripts/$script,1p
 @@||dellcdn.com*$domain=dell.com
-dell.com#@#[data-testid]
 @@||docs.google.com^$1p
 docs.google.com#@#[class*="alert"]:not(body)
 docs.google.com#@#[class^="overlay"]:not(body)
@@ -106,7 +104,6 @@ es.jbl.com#@#.hidden-xs
 exceljet.net#@#[class*="promo"]
 expansion.com#@#[class*="notification"]:not(body)
 expansion.com#@#[data-theme]
-expedia.com#@#[data-testid]
 @@||fastly.net$script,domain=amazon.es
 @@||fastly.net^$subdocument,1p
 fayerwayer.com#@#[data-author]
@@ -389,8 +386,6 @@ newrepublic.com#@#[data-reactid]
 newrepublic.com#@#[data-reactroot]
 nypost.com#@#[id^="featured"]:not(body)
 nytimes.com#@#[alt*=" ads "]
-nytimes.com#@#[data-test-id]
-nytimes.com#@#[data-testid]
 nytimes.com#@#[id^="link"]
 @@||office365.com^$subdocument,domain=live.com
 @@||office.com$1p,all
@@ -428,7 +423,6 @@ protonmail.com#@#[translate]
 @@||rec.ingka.com/services/$xhr,domain=ikea.com
 @@||reuters.com^$inline-script,1p
 @@||reuters.com^$script,1p
-reuters.com#@#[data-testid]
 rncbc.org#@#[class*="promo"]:not(body):not(header):not(article):not([class*="not-promoted"])
 @@||sbcharts.investing.com/charts_xml/$xhr,1p
 @@||sharepoint.com$1p,all
@@ -475,7 +469,6 @@ washingtonpost.com#@#[data-qa]
 wikihow.com#@#.sticky
 @@||wikipedia.org$removeparam=/.*client.*/,css
 wired.com#@#[data-reactroot]
-wired.com#@#[data-testid]
 @@||wizink.es/*cookie$1p
 @@*/wizinkpublicweb/*$1p
 wsj.com#@#[class*="subscribe"]
