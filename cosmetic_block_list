@@ -1,9 +1,5 @@
 ! Cosmetic block list
 !
-##.popularArticles
-##.js-comment-form
-##.side-bar-sub
-##.side-bar
 ##._10c_
 ##._1aNet
 ##._1e-1
@@ -3934,7 +3930,6 @@
 ##.bloc_pub
 ##.blocPub
 ##.bloc-pub2
-###blocPub300
 ##.blocpubbas
 ###blocPub_CARRE_PUB
 ###blocPublicitaire
@@ -5117,7 +5112,6 @@
 ##.carousel-multi-css-side
 ##.carousel-offer-url-container
 ##.carouselpub
-##.carouselpub300
 ##.carouselpubf
 ##.carousel-related
 ###caroussel_partenaires
@@ -6093,6 +6087,8 @@
 ##[class*="productCompareSimilar "]:not(body)
 ##[class*="Promo"]:not(body)
 ##[class*="promo"]:not(body):not(header):not(article):not([class*="not-promoted"])
+##[class*="pub300"]
+##[class*="Pub300"]
 ##[class*="-pubadban "]
 ##[class*="publicidad"]:not(body)
 ##[class*="_pub_"]:not(body)
@@ -12282,9 +12278,9 @@
 ##[id*="fb_"]:not(body)
 ##[id*="Fb_"]:not(body)
 ##[id*="FB_"]:not(body)
-##[id^="fb"]:not(body):not(.Story)
 ##[id^="Fb"]:not(body)
 ##[id^="FB"]:not(body)
+##[id^="fb"]:not(body):not(.Story)
 !##[id^="featured"]:not(body)
 ##[id*="feedback"]
 ##[id^="ffbp"]:not(body)
@@ -12488,6 +12484,8 @@
 ##[id^="p_root_"]
 ##[id^="p_root_"]:not(body)
 ##[id^="pu-"]
+##[id*="pub300"]
+##[id*="Pub300"]
 ##[id^="pubbox-"]
 ##[id*="publicidad"]:not(body)
 ###idpublicitepave
@@ -13536,6 +13534,7 @@
 ##.js_ck_container
 ##.js-clickTracker-for-addBlocker
 ###js_cnil-bar
+##.js-comment-form
 ##.js_commerce-inset-permalink
 ##.js-common-hook
 ##.js-confirm
@@ -16281,6 +16280,8 @@
 ##[name*="player_iframe"]
 ##[name*="promo"]
 ##[name*="pub-"]
+##[name*="pub300"]
+##[name*="Pub300"]
 ##[name="qualsub"]
 ##[name="Reddit"]
 ##[name*="sharing"]
@@ -18369,6 +18370,7 @@
 ###popSlider
 ###PopSubBox
 ##.popular
+##.popularArticles
 ##.popular-introduction
 ##.popularity
 ##.popular_posts
@@ -18578,7 +18580,6 @@
 ##.ppr_priv_brand_consistent_header
 ###ppslider
 ###pptou-sticky
-##.ppub300
 ###PPX_imBox_Container
 ###prajiturele
 ##.pr-art-betlinks
@@ -18987,25 +18988,6 @@
 ##.pub242x90
 ###pub250
 ###pub3
-###pub300
-##.pub300
-###pub300250
-##.pub300250
-##.pub300250L
-##.pub300250R
-##.pub300_600
-##.pub300a
-##.pub300b
-##.pub300c
-##.pub300_contenu
-###pub300_home
-##.pub300px
-##.pub300sidebar
-##.pub300single
-###pub300x120
-###pub300x250
-##.pub300x250
-##.pub300x250_home
 ##.pub336
 ###pub336bas-criteo
 ###pub336Criteo
@@ -21253,6 +21235,7 @@
 ##.sidearm-adblock
 ###sidearm-adblock-modal
 ##.side-arrow
+##.side-bar
 ###sidebar1head
 ###sidebar1-wrap
 ###sidebar2
@@ -21397,6 +21380,7 @@
 ##.sidebar-sticky--briefing
 ###sideBarsTop
 ###sideBarsTop-sub
+##.side-bar-sub
 ##.sidebar_support
 ###sidebarTextAds
 ###sidebar_text_link_container
@@ -25662,7 +25646,6 @@
 ##.video-preroll
 ##.video-provider
 ##.video-pub
-###VideoPub300x250
 ##.video-r-block
 ###videoright
 ##.video-right
