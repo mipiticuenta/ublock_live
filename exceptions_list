@@ -177,7 +177,9 @@ google.com#@#[data-ved]
 @@||google.com/*/drive_fe/*$1p
 google.com#@#form
 @@||google.com/gmail/$xhr,1p
+google.com#@#+js(addEventListener-defuser)
 google.com#@#.lb
+@@||google.com/maps/$script,1p
 @@||google.com/maps$xhr,1p
 google.com#@#.msg
 @@||google.com/recaptcha/*$subdocument,domain=youtube.com|google.com
@@ -195,6 +197,7 @@ google.com#@#[translate]
 @@||graph.microsoft.com$1p
 @@||grupoelcorteingles.es/statics/*$script,domain=elcorteingles.es
 @@||gstatic.com$script,domain=google.com|youtube.com|blogger.com
+@@||gstatic.com/maps/$xhr,domain=google.com
 hipertextual.com#@#[amp]
 hipertextual.com#@#[class^="featured"]:not(body)
 @@||hp.com^$inline-script,1p
