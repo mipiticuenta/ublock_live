@@ -1,5 +1,8 @@
 ! filters' exceptions list
 !
+@@.js$removeparam,domain=stlouisfed.org
+@@.png$removeparam,domain=stlouisfed.org
+stlouisfed.org#@#+js(addEventListener-defuser)
 @@*$removeparam=t,domain=linkedin.com
 @@*$removeparam=v,domain=linkedin.com
 @@*$removeparam=view,domain=mail.google.com
