@@ -261,7 +261,6 @@
 *$removeparam=/^yclid/[i]
 *$removeparam=/.*zone.*/[i]
 *$removeparam=/^zx/[i]
-css*$removeparam
 font$removeparam
 *.gif$removeparam
 *.ico$removeparam
@@ -274,3 +273,6 @@ font$removeparam
 *.ttf$removeparam
 *.webp$removeparam
 woff*$removeparam
+
+# under troubleshooting
+#css*$removeparam
