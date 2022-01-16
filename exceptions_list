@@ -362,6 +362,8 @@ mediamarkt.es#@#[onclick*="location."]
 meteoblue.com#@#.bottom_links
 meteoblue.com#@#[data-href]
 @@||meteoblue.com/en/weather/*$inline-script,1p
+@@||meteoblue.com/*.jpg$removeparam,1p
+@@||meteoblue.com/*.png$removeparam,1p
 meteoblue.com#@#+js(addEventListener-defuser)
 meteoblue.com#@#+js(no-fetch-if)
 meteoblue.com#@#+js(no-xhr-if)
