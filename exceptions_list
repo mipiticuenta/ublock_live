@@ -1,8 +1,5 @@
 ! filters' exceptions list
 !
-@@.js$removeparam,domain=stlouisfed.org
-@@.png$removeparam,domain=stlouisfed.org
-stlouisfed.org#@#+js(addEventListener-defuser)
 @@*$removeparam=t,domain=linkedin.com
 @@*$removeparam=v,domain=linkedin.com
 @@*$removeparam=view,domain=mail.google.com
@@ -162,7 +159,6 @@ google.com#@#.ada
 google.com#@#.adl
 google.com#@#.adn
 google.com#@#.adz
-google.com#@#+js(no-fetch-if)
 @@||google.com/*/api.js$script,1p
 google.com#@#[aria-live="assertive"]
 @@||google.com/*/batchexecute$xhr,1p
@@ -182,6 +178,7 @@ google.com#@#[data-ved]
 google.com#@#form
 @@||google.com/gmail/$xhr,1p
 google.com#@#+js(addEventListener-defuser)
+google.com#@#+js(no-fetch-if)
 google.com#@#.lb
 @@||google.com/maps/$script,1p
 @@||google.com/maps$xhr,1p
@@ -260,6 +257,7 @@ jbl.com#@#:not(body)[class*="banner"]
 @@.jpg$removeparam,domain=kayak.es
 @@*/jquery$domain=woodmac.com
 @@.js$removeparam,domain=kayak.es
+@@.js$removeparam,domain=stlouisfed.org
 @@||jscdn.redblue.de^$script,domain=mediamarkt.es
 @@||juntadeandalucia.es$1p
 @@||kayak.^$inline-script,1p
@@ -364,6 +362,9 @@ mediamarkt.es#@#[onclick*="location."]
 meteoblue.com#@#.bottom_links
 meteoblue.com#@#[data-href]
 @@||meteoblue.com/en/weather/*$inline-script,1p
+meteoblue.com#@#+js(addEventListener-defuser)
+meteoblue.com#@#+js(no-fetch-if)
+meteoblue.com#@#+js(no-xhr-if)
 @@||meteoblue.com/pub/*$1p
 meteoblue.com#@#[role="form"]
 @@||microsoft.com$inline-script,1p
@@ -416,6 +417,7 @@ pccomponentes.com#@#.is-active
 @@||play.google.com/log$image,domain=mail.google.com
 @@||play.google.com/log$xhr,1p
 @@.png$removeparam,domain=kayak.es
+@@.png$removeparam,domain=stlouisfed.org
 @@||protonmail.com^$script,1p
 @@||protonmail.com^$xhr,1p
 protonmail.com#@#.action
@@ -449,6 +451,7 @@ sotograndedigital.com#@#:not(body)[class^="overlay"]
 startpage.com#@#[class*="post-link"]:not(body)
 @@||static-exp1.licdn.com/*$xhr,domain=linkedin.com
 @@||stlouisfed.org/assets/*.jquery.*.js
+stlouisfed.org#@#+js(addEventListener-defuser)
 @@||support.microsoft.com/socbundles/article$script,1p
 techrepublic.com#@#[data-component]
 thebarentsobserver.com#@#[src*="publi"]
