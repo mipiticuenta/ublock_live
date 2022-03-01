@@ -1,0 +1,375 @@
+{
+  "policy": {
+    "DEFAULT": {
+      "capabilities": [
+        "frame",
+        "noscript",
+        "media",
+        "fetch"
+      ],
+      "temp": false
+    },
+    "TRUSTED": {
+      "capabilities": [
+        "script",
+        "object",
+        "media",
+        "frame",
+        "font",
+        "webgl",
+        "fetch",
+        "noscript"
+      ],
+      "temp": false
+    },
+    "UNTRUSTED": {
+      "capabilities": [
+        "noscript"
+      ],
+      "temp": false
+    },
+    "sites": {
+      "trusted": [
+        "§:addons.mozilla.org",
+        "§:afx.ms",
+        "§:ajax.aspnetcdn.com",
+        "§:gfx.ms",
+        "§:googlevideo.com",
+        "§:hotmail.com",
+        "§:live.com",
+        "§:live.net",
+        "§:maps.googleapis.com",
+        "§:mozilla.net",
+        "§:netflix.com",
+        "§:nflxext.com",
+        "§:nflximg.com",
+        "§:nflxvideo.net",
+        "§:noscript.net",
+        "§:outlook.com",
+        "§:ytimg.com",
+        "§:github.com",
+        "§:githubassets.com",
+        "§:linkedin.com",
+        "§:licdn.com",
+        "§:ikea.com",
+        "§:elconfidencial.com",
+        "§:fw.local",
+        "§:antena3.com",
+        "§:renfe.com",
+        "§:openstreetmap.org",
+        "§:scilab.org",
+        "§:meteoblue.com",
+        "§:stlouisfed.org",
+        "§:microsoft.com"
+      ],
+      "untrusted": [
+        "chartbeat.com",
+        "googletagmanager.com",
+        "https://www.googletagmanager.com",
+        "https://static.chartbeat.com",
+        "citiservi.es",
+        "dmcdn.net",
+        "https://api.dmcdn.net",
+        "google-analytics.com",
+        "https://ssl.google-analytics.com",
+        "googlesyndication.com",
+        "https://pagead2.googlesyndication.com",
+        "highcharts.com",
+        "https://code.highcharts.com",
+        "https://ctx.citiservi.es",
+        "https://dmp.citiservi.es",
+        "https://cdnjs.cloudflare.com",
+        "doubleclick.net",
+        "https://5214106.fls.doubleclick.net",
+        "permutive.com",
+        "https://cdn.permutive.com",
+        "tiqcdn.com",
+        "https://tags.tiqcdn.com",
+        "bootstrapcdn.com",
+        "https://stats.wp.com",
+        "addevweb.com",
+        "https://static.addevweb.com",
+        "cedexis.com",
+        "https://radar.cedexis.com",
+        "marfeelcache.com",
+        "https://bc.marfeelcache.com",
+        "https://cdn.cookielaw.org",
+        "cookielaw.org",
+        "marketo.com",
+        "https://app-ab02.marketo.com",
+        "https://cdn.bootcss.com",
+        "bootcss.com",
+        "thisiswaldo.com",
+        "https://cdn.thisiswaldo.com",
+        "clearbit.com",
+        "https://ga.clearbit.com",
+        "indexww.com",
+        "https://js-sec.indexww.com",
+        "https://js.monitor.azure.com",
+        "addtoany.com",
+        "https://static.addtoany.com",
+        "mediavine.com",
+        "https://scripts.mediavine.com",
+        "jquery.com",
+        "https://code.jquery.com",
+        "https://img1.wsimg.com",
+        "wsimg.com",
+        "secureservercdn.net",
+        "https://secureservercdn.net",
+        "cloudflareinsights.com",
+        "https://static.cloudflareinsights.com",
+        "https://geolocation.onetrust.com",
+        "onetrust.com",
+        "https://d1yu67rmchodpo.cloudfront.net",
+        "d1yu67rmchodpo.cloudfront.net",
+        "https://btloader.com",
+        "btloader.com",
+        "ampproject.org",
+        "https://cdn.ampproject.org",
+        "ntv.io",
+        "https://s.ntv.io",
+        "sentry-cdn.com",
+        "https://js.sentry-cdn.com",
+        "ck.page",
+        "https://learninglegendario.ck.page",
+        "unpkg.com",
+        "https://unpkg.com",
+        "osano.com",
+        "https://cmp.osano.com",
+        "sharethis.com",
+        "https://platform-api.sharethis.com",
+        "webflow.com",
+        "https://uploads-ssl.webflow.com",
+        "crossref.org",
+        "addthis.com",
+        "https://s7.addthis.com",
+        "https://crossmark-cdn.crossref.org",
+        "https://crossmark.crossref.org",
+        "figshare.com",
+        "https://widgets.figshare.com",
+        "netpoint-media.de",
+        "https://cdn.netpoint-media.de",
+        "openpublishing.com",
+        "https://cdn.openpublishing.com",
+        "https://ad461fce980a44a087703a630ff4c20b.js.ubembed.com",
+        "ubembed.com",
+        "adobedtm.com",
+        "https://assets.adobedtm.com",
+        "hs-scripts.com",
+        "https://js.hs-scripts.com",
+        "appcues.com",
+        "https://fast.appcues.com",
+        "cookiebot.com",
+        "https://consent.cookiebot.com",
+        "glencoesoftware.com",
+        "https://static-movie-usa.glencoesoftware.com",
+        "gigya.com",
+        "https://cdns.gigya.com",
+        "flipboard.com",
+        "https://cdn.flipboard.com",
+        "https://www.europasur.es",
+        "europasur.es",
+        "http://betterexplained.com",
+        "betterexplained.com",
+        "rdrr.io",
+        "https://rdrr.io",
+        "rdocumentation.org",
+        "https://www.rdocumentation.org",
+        "https://s3.pstatp.com",
+        "pstatp.com",
+        "larksuitecdn.com",
+        "https://sf16-va.larksuitecdn.com",
+        "byteoversea.com",
+        "https://s16.byteoversea.com",
+        "themoneytizer.com",
+        "https://ads.themoneytizer.com",
+        "fontawesome.com",
+        "https://kit.fontawesome.com",
+        "jivosite.com",
+        "https://code.jivosite.com",
+        "amazon-adsystem.com",
+        "https://c.amazon-adsystem.com",
+        "pubmatic.com",
+        "https://ads.pubmatic.com",
+        "s-onetag.com",
+        "https://get.s-onetag.com",
+        "googletagservices.com",
+        "https://www.googletagservices.com",
+        "emailjs.com",
+        "https://cdn.emailjs.com",
+        "recaptcha.net",
+        "https://www.recaptcha.net",
+        "ajax.googleapis.com",
+        "https://ajax.googleapis.com",
+        "https://use.typekit.net",
+        "typekit.net",
+        "https://static1.squarespace.com",
+        "https://assets.squarespace.com",
+        "squarespace.com",
+        "https://app.trustlock.co",
+        "trustlock.co",
+        "snigelweb.com",
+        "https://cdn.snigelweb.com"
+      ],
+      "custom": {
+        "§:google.com": {
+          "capabilities": [
+            "noscript"
+          ],
+          "contextual": {
+            "§:google.com": {
+              "capabilities": [
+                "frame",
+                "noscript",
+                "media",
+                "fetch",
+                "script",
+                "object",
+                "font",
+                "webgl"
+              ],
+              "temp": false
+            },
+            "§:youtube.com": {
+              "capabilities": [
+                "noscript",
+                "script",
+                "object",
+                "media",
+                "frame",
+                "font",
+                "webgl",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://consent.google.com": {
+          "capabilities": [
+            "noscript"
+          ],
+          "contextual": {
+            "§:google.com": {
+              "capabilities": [
+                "noscript",
+                "script",
+                "object",
+                "media",
+                "frame",
+                "font",
+                "webgl",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:gstatic.com": {
+          "capabilities": [
+            "noscript"
+          ],
+          "contextual": {
+            "§:google.com": {
+              "capabilities": [
+                "noscript",
+                "script",
+                "object",
+                "media",
+                "frame",
+                "webgl",
+                "fetch",
+                "font"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:youtube.com": {
+          "capabilities": [
+            "noscript"
+          ],
+          "contextual": {
+            "§:youtube.com": {
+              "capabilities": [
+                "noscript",
+                "script",
+                "object",
+                "media",
+                "font",
+                "frame",
+                "webgl",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "https://www.youtube.com": {
+          "capabilities": [
+            "noscript"
+          ],
+          "contextual": {
+            "§:youtube.com": {
+              "capabilities": [
+                "noscript",
+                "script",
+                "object",
+                "media",
+                "font",
+                "frame",
+                "webgl",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "duckduckgo.com": {
+          "capabilities": [
+            "noscript"
+          ],
+          "contextual": {
+            "§:duckduckgo.com": {
+              "capabilities": [
+                "noscript",
+                "media",
+                "frame",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        }
+      }
+    },
+    "enforced": true,
+    "autoAllowTop": false
+  },
+  "local": {
+    "debug": false,
+    "showCtxMenuItem": true,
+    "showCountBadge": true,
+    "showFullAddresses": true,
+    "amnesticUpdates": false,
+    "storage": "local",
+    "uuid": "099ff787-de30-4aee-9163-8193b7c6527c"
+  },
+  "sync": {
+    "global": false,
+    "xss": true,
+    "cascadeRestrictions": false,
+    "overrideTorBrowserPolicy": false,
+    "clearclick": true,
+    "storage": "sync"
+  },
+  "xssUserChoices": {
+    "https://www.youtube.com>https://accounts.google.com": "allow"
+  }
+}
