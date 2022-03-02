@@ -3,9 +3,9 @@
     "DEFAULT": {
       "capabilities": [
         "frame",
+        "fetch",
         "noscript",
-        "media",
-        "fetch"
+        "media"
       ],
       "temp": false
     },
@@ -30,142 +30,149 @@
     },
     "sites": {
       "trusted": [
+        "§:mozilla.org",
+        "§:mozilla.net",
+        "§:noscript.net",
+        "localhost"
       ],
       "untrusted": [
-        "chartbeat.com",
-        "googletagmanager.com",
-        "citiservi.es",
-        "dmcdn.net",
-        "google-analytics.com",
-        "googlesyndication.com",
-        "highcharts.com",
-        "cloudflare.com",
-        "doubleclick.net",
-        "permutive.com",
-        "tiqcdn.com",
-        "bootstrapcdn.com",
-        "stats.wp.com",
         "addevweb.com",
-        "cedexis.com",
-        "marfeelcache.com",
-        "cookielaw.org",
-        "marketo.com",
-        "bootcss.com",
-        "thisiswaldo.com",
-        "clearbit.com",
-        "indexww.com",
-        "monitor.azure.com",
-        "addtoany.com",
-        "mediavine.com",
-        "jquery.com",
-        "wsimg.com",
-        "secureservercdn.net",
-        "cloudflareinsights.com",
-        "geolocation.onetrust.com",
-        "onetrust.com",
-        "cloudfront.net",
-        "btloader.com",
-        "ampproject.org",
-        "ntv.io",
-        "sentry-cdn.com",
-        "https://js.sentry-cdn.com",
-        "ck.page",
-        "https://learninglegendario.ck.page",
-        "unpkg.com",
-        "https://unpkg.com",
-        "osano.com",
-        "https://cmp.osano.com",
-        "sharethis.com",
-        "https://platform-api.sharethis.com",
-        "webflow.com",
-        "https://uploads-ssl.webflow.com",
-        "crossref.org",
         "addthis.com",
-        "https://s7.addthis.com",
-        "https://crossmark-cdn.crossref.org",
-        "https://crossmark.crossref.org",
-        "figshare.com",
-        "https://widgets.figshare.com",
-        "netpoint-media.de",
-        "https://cdn.netpoint-media.de",
-        "openpublishing.com",
-        "https://cdn.openpublishing.com",
-        "https://ad461fce980a44a087703a630ff4c20b.js.ubembed.com",
-        "ubembed.com",
+        "addtoany.com",
+        "adnami.io",
         "adobedtm.com",
-        "https://assets.adobedtm.com",
-        "hs-scripts.com",
-        "https://js.hs-scripts.com",
-        "appcues.com",
-        "https://fast.appcues.com",
-        "cookiebot.com",
-        "https://consent.cookiebot.com",
-        "glencoesoftware.com",
-        "https://static-movie-usa.glencoesoftware.com",
-        "gigya.com",
-        "https://cdns.gigya.com",
-        "flipboard.com",
-        "https://cdn.flipboard.com",
-        "https://www.europasur.es",
-        "europasur.es",
-        "http://betterexplained.com",
-        "betterexplained.com",
-        "rdrr.io",
-        "https://rdrr.io",
-        "rdocumentation.org",
-        "https://www.rdocumentation.org",
-        "https://s3.pstatp.com",
-        "pstatp.com",
-        "larksuitecdn.com",
-        "https://sf16-va.larksuitecdn.com",
-        "byteoversea.com",
-        "https://s16.byteoversea.com",
-        "themoneytizer.com",
-        "https://ads.themoneytizer.com",
-        "fontawesome.com",
-        "https://kit.fontawesome.com",
-        "jivosite.com",
-        "https://code.jivosite.com",
-        "amazon-adsystem.com",
-        "https://c.amazon-adsystem.com",
-        "pubmatic.com",
-        "https://ads.pubmatic.com",
-        "s-onetag.com",
-        "https://get.s-onetag.com",
-        "googletagservices.com",
-        "https://www.googletagservices.com",
-        "emailjs.com",
-        "https://cdn.emailjs.com",
-        "recaptcha.net",
-        "https://www.recaptcha.net",
         "ajax.googleapis.com",
-        "https://ajax.googleapis.com",
-        "https://use.typekit.net",
-        "typekit.net",
-        "https://static1.squarespace.com",
-        "https://assets.squarespace.com",
-        "squarespace.com",
-        "https://app.trustlock.co",
-        "trustlock.co",
+        "amazon-adsystem.com",
+        "ampproject.org",
+        "appcues.com",
+        "betterexplained.com",
+        "bootcss.com",
+        "bootstrapcdn.com",
+        "btloader.com",
+        "byteoversea.com",
+        "cedexis.com",
+        "chartbeat.com",
+        "citiservi.es",
+        "ck.page",
+        "clearbit.com",
+        "cloudflare.com",
+        "cloudflareinsights.com",
+        "cloudfront.net",
+        "cookiebot.com",
+        "cookielaw.org",
+        "criteo.net",
+        "crossref.org",
+        "dmcdn.net",
+        "doubleclick.net",
+        "emailjs.com",
+        "europasur.es",
+        "facebook.net",
+        "figshare.com",
+        "flipboard.com",
+        "fmm.io",
+        "fontawesome.com",
+        "geolocation.onetrust.com",
+        "gigya.com",
+        "glencoesoftware.com",
+        "glintark.com",
+        "googleadservices.com",
+        "google-analytics.com",
+        "googleapis.com",
+        "googleoptimize.com",
+        "googlesyndication.com",
+        "googletagmanager.com",
+        "googletagservices.com",
+        "grapeshot.co.uk",
+        "highcharts.com",
+        "hs-scripts.com",
+        "indexww.com",
+        "jivosite.com",
+        "jquery.com",
+        "jsdelivr.net",
+        "jwplayer.com",
+        "larksuitecdn.com",
+        "marfeelcache.com",
+        "marketo.com",
+        "mediavine.com",
+        "monitor.azure.com",
+        "mrf.io",
+        "netpoint-media.de",
+        "ntv.io",
+        "onetrust.com",
+        "openpublishing.com",
+        "osano.com",
+        "outbrain.com",
+        "permutive.com",
+        "privacymanager.io",
+        "pstatp.com",
+        "pubmatic.com",
+        "rdocumentation.org",
+        "rdrr.io",
+        "recaptcha.net",
+        "scorecardresearch.com",
+        "secureservercdn.net",
+        "sentry-cdn.com",
+        "sharethis.com",
         "snigelweb.com",
-        "https://cdn.snigelweb.com"
+        "s-onetag.com",
+        "squarespace.com",
+        "sstatic.net",
+        "stackoverflow.com",
+        "statcounter.com",
+        "stats.wp.com",
+        "themoneytizer.com",
+        "thisiswaldo.com",
+        "tinypass.com",
+        "tiqcdn.com",
+        "trustlock.co",
+        "twitter.com",
+        "typekit.net",
+        "ubembed.com",
+        "unpkg.com",
+        "vocstatic.com",
+        "webcontentassessor.com",
+        "webflow.com",
+        "weblogssl.com",
+        "wonderpush.com",
+        "wsimg.com"
       ],
       "custom": {
-        "§:google.com": {
+        "§:meteoblue.com": {
+          "capabilities": [
+            "noscript"
+          ],
+          "contextual": {
+            "§:meteoblue.com": {
+              "capabilities": [
+                "script",
+                "object",
+                "media",
+                "frame",
+                "font",
+                "webgl",
+                "fetch",
+                "noscript"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "google.com": {
           "capabilities": [
             "noscript"
           ],
           "contextual": {
             "§:google.com": {
               "capabilities": [
-                "frame",
-                "noscript",
-                "media",
-                "fetch",
                 "script",
                 "object",
+                "media",
+                "frame",
+                "webgl",
                 "font",
-                "webgl"
+                "fetch",
+                "noscript"
               ],
               "temp": false
             },
@@ -185,12 +192,46 @@
           },
           "temp": false
         },
-        "https://consent.google.com": {
+        "gstatic.com": {
           "capabilities": [
             "noscript"
           ],
           "contextual": {
             "§:google.com": {
+              "capabilities": [
+                "script",
+                "object",
+                "media",
+                "frame",
+                "font",
+                "webgl",
+                "fetch",
+                "noscript"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "duckduckgo.com": {
+          "capabilities": [],
+          "contextual": {
+            "§:duckduckgo.com": {
+              "capabilities": [
+                "noscript",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:licdn.com": {
+          "capabilities": [
+            "noscript"
+          ],
+          "contextual": {
+            "§:linkedin.com": {
               "capabilities": [
                 "noscript",
                 "script",
@@ -206,21 +247,63 @@
           },
           "temp": false
         },
-        "§:gstatic.com": {
+        "§:linkedin.com": {
           "capabilities": [
             "noscript"
           ],
           "contextual": {
-            "§:google.com": {
+            "§:linkedin.com": {
               "capabilities": [
                 "noscript",
                 "script",
                 "object",
                 "media",
                 "frame",
+                "font",
                 "webgl",
-                "fetch",
-                "font"
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:github.com": {
+          "capabilities": [
+            "noscript"
+          ],
+          "contextual": {
+            "§:github.com": {
+              "capabilities": [
+                "noscript",
+                "script",
+                "object",
+                "media",
+                "frame",
+                "font",
+                "webgl",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "githubassets.com": {
+          "capabilities": [
+            "noscript"
+          ],
+          "contextual": {
+            "§:github.com": {
+              "capabilities": [
+                "noscript",
+                "script",
+                "object",
+                "media",
+                "frame",
+                "font",
+                "webgl",
+                "fetch"
               ],
               "temp": false
             }
@@ -238,8 +321,8 @@
                 "script",
                 "object",
                 "media",
-                "font",
                 "frame",
+                "font",
                 "webgl",
                 "fetch"
               ],
@@ -248,28 +331,28 @@
           },
           "temp": false
         },
-        "https://www.youtube.com": {
+        "§:googlevideo.com": {
           "capabilities": [
             "noscript"
           ],
           "contextual": {
             "§:youtube.com": {
               "capabilities": [
+                "frame",
+                "fetch",
                 "noscript",
+                "media",
                 "script",
                 "object",
-                "media",
                 "font",
-                "frame",
-                "webgl",
-                "fetch"
+                "webgl"
               ],
               "temp": false
             }
           },
           "temp": false
         },
-        "duckduckgo.com": {
+        "https://lite.duckduckgo.com": {
           "capabilities": [
             "noscript"
           ],
@@ -277,8 +360,30 @@
             "§:duckduckgo.com": {
               "capabilities": [
                 "noscript",
+                "frame",
+                "media",
+                "object",
+                "webgl",
+                "fetch"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:startpage.com": {
+          "capabilities": [
+            "noscript"
+          ],
+          "contextual": {
+            "§:startpage.com": {
+              "capabilities": [
+                "noscript",
+                "object",
                 "media",
                 "frame",
+                "font",
+                "webgl",
                 "fetch"
               ],
               "temp": false
@@ -296,9 +401,9 @@
     "showCtxMenuItem": true,
     "showCountBadge": true,
     "showFullAddresses": true,
-    "amnesticUpdates": false,
+    "amnesticUpdates": true,
     "storage": "local",
-    "uuid": "099ff787-de30-4aee-9163-8193b7c6527c"
+    "uuid": "0cb3293e-1273-4e2b-9a06-f374a3d4232f"
   },
   "sync": {
     "global": false,
