@@ -23,16 +23,11 @@
       "temp": false
     },
     "UNTRUSTED": {
-      "capabilities": [
-        "noscript"
-      ],
+      "capabilities": [],
       "temp": false
     },
     "sites": {
       "trusted": [
-        "§:mozilla.org",
-        "§:mozilla.net",
-        "§:noscript.net",
         "localhost"
       ],
       "untrusted": [
@@ -131,9 +126,30 @@
         "vocstatic.com",
         "webcontentassessor.com",
         "webflow.com",
-        "weblogssl.com",
         "wonderpush.com",
-        "wsimg.com"
+        "wsimg.com",
+        "https://sourcepointcmp.bloomberg.com",
+        "stocktwits.com",
+        "qq.com",
+        "jwplatform.com",
+        "pmc.com",
+        "blogherads.com",
+        "tru.am",
+        "wsod.com",
+        "mlnk.co",
+        "polyfill.io",
+        "seedtag.com",
+        "brightcove.net",
+        "leadforensics.com",
+        "trustarc.com",
+        "ampush.io",
+        "https://bat.bing.com",
+        "sentry.io",
+        "adswizz.com",
+        "openx.net",
+        "crwdcntrl.net",
+        "truex.com",
+        "stackadapt.com"
       ],
       "custom": {
         "§:meteoblue.com": {
@@ -185,6 +201,12 @@
                 "font",
                 "webgl",
                 "fetch"
+              ],
+              "temp": false
+            },
+            "§:eleconomista.es": {
+              "capabilities": [
+                "noscript"
               ],
               "temp": false
             }
@@ -267,48 +289,6 @@
           },
           "temp": false
         },
-        "§:github.com": {
-          "capabilities": [
-            "noscript"
-          ],
-          "contextual": {
-            "§:github.com": {
-              "capabilities": [
-                "noscript",
-                "script",
-                "object",
-                "media",
-                "frame",
-                "font",
-                "webgl",
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
-        "githubassets.com": {
-          "capabilities": [
-            "noscript"
-          ],
-          "contextual": {
-            "§:github.com": {
-              "capabilities": [
-                "noscript",
-                "script",
-                "object",
-                "media",
-                "frame",
-                "font",
-                "webgl",
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        },
         "§:youtube.com": {
           "capabilities": [
             "noscript"
@@ -362,7 +342,6 @@
                 "frame",
                 "media",
                 "object",
-                "webgl",
                 "fetch"
               ],
               "temp": false
@@ -382,8 +361,110 @@
                 "media",
                 "frame",
                 "font",
-                "webgl",
-                "fetch"
+                "fetch",
+                "script",
+                "webgl"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:github.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "media"
+          ],
+          "contextual": {
+            "§:github.com": {
+              "capabilities": [
+                "frame",
+                "fetch",
+                "noscript",
+                "media",
+                "script",
+                "object",
+                "font",
+                "webgl"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "githubassets.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "media",
+            "script",
+            "object",
+            "font",
+            "webgl"
+          ],
+          "temp": false
+        },
+        "§:endesa.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "media"
+          ],
+          "contextual": {
+            "§:endesa.com": {
+              "capabilities": [
+                "frame",
+                "fetch",
+                "noscript",
+                "media",
+                "script",
+                "object"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:tunein.com": {
+          "capabilities": [
+            "frame",
+            "fetch",
+            "noscript",
+            "media"
+          ],
+          "contextual": {
+            "§:tunein.com": {
+              "capabilities": [
+                "frame",
+                "fetch",
+                "noscript",
+                "media",
+                "script",
+                "object",
+                "font"
+              ],
+              "temp": false
+            }
+          },
+          "temp": false
+        },
+        "§:radiotime.com": {
+          "capabilities": [
+            "noscript"
+          ],
+          "contextual": {
+            "§:tunein.com": {
+              "capabilities": [
+                "frame",
+                "fetch",
+                "noscript",
+                "media",
+                "script",
+                "object"
               ],
               "temp": false
             }
