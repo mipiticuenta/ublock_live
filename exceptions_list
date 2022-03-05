@@ -1,8 +1,5 @@
 ! filters' exceptions list
 !
-@@||startpage.com^$inline-script,1p
-@@||github.githubassets.com^$script,domain=github.com
-@@||githubassets.com$css
 @@*$removeparam=t,domain=linkedin.com
 @@*$removeparam=v,domain=linkedin.com
 @@*$removeparam=view,domain=mail.google.com
@@ -28,7 +25,6 @@ apple.com#@#a[href*="/watch/"]
 @@||aspnetcdn.com$domain=microsoft.com
 @@||azureedge.net/*.thread-view.*$script,domain=microsoft.com
 @@||bancosantander.es$1p
-bbc.com#@#[data-component]
 @@||bbci.co.uk/ws/simorgh-assets/public/static/js/commons-$script,domain=bbc.com
 @@||bbci.co.uk/ws/simorgh-assets/public/static/js/framework-$script,domain=bbc.com
 @@||bbci.co.uk/ws/simorgh-assets/public/static/js/main-$script,domain=bbc.com
@@ -75,6 +71,12 @@ dailymail.co.uk#@#[class*="banner"]
 dailymail.co.uk#@#:not(body)[class*="banner"]
 @@||data.bls.gov/assets/bootstrap/$script,1p
 @@||data.bls.gov/javascripts/$script,1p
+@@||decathlon.es/client/app/*$script,1p
+@@||decathlon.es/es/*$inline-script,1p
+@@||decathlon.es/es/ajax/*$xhr,1p
+decathlon.es#@#+js(addEventListener-defuser)
+decathlon.es#@#.sticky-header
+decathlon.es#@#.tool
 @@||dellcdn.com*$domain=dell.com
 @@||docs.google.com^$1p
 docs.google.com#@#[class*="alert"]:not(body)
@@ -102,7 +104,6 @@ eleconomista.es#@#[onclick*="location.href"]
 elespanol.com#@#[alt*="ad "]
 elespanol.com#@#[data-tags]
 elpais.com#@#[src*="publi"]
-engadget.com#@#[data-component]
 es.jbl.com#@#.hidden-xs
 exceljet.net#@#[class*="promo"]
 expansion.com#@#[class*="notification"]:not(body)
@@ -139,6 +140,7 @@ fred.stlouisfed.org#@#[id*="share"]:not(body)
 @@||geogebra.org^$inline-script,1p
 @@||geogebra.org^$script,1p
 geogebra.org#@#.plus
+@@||githubassets.com$css
 @@||githubassets.com/assets/chunk-$script,domain=github.com
 @@||githubassets.com/assets/codespaces-$script,domain=github.com
 @@||githubassets.com/assets/dashboard-*$script,domain=github.com
@@ -154,6 +156,7 @@ github.com#@#[data-test-selector]
 github.com#@#.float-right
 github.com#@#html div:has-text(script blocking software)
 github.com#@#[id*="email"]:not(body)
+@@||github.githubassets.com^$script,domain=github.com
 github.io#@#:not(body):not(article)[class*="promo"]:not([class*="not-promoted"])
 @@||google.com^$inline-script,1p
 @@||google.com$popup,1p
@@ -295,7 +298,6 @@ libreoffice.org#@#.fadeIn.animated
 libreoffice.org#@#.hidden-xs
 @@||licdn.com$script,domain=linkedin.com
 @@||licdn.com$xhr,1p
-lifewire.com#@#[data-component]
 lifewire.com#@#[data-t]
 @@||linkedin.com^$inline-script,1p
 linkedin.com#@#a[href*="linkedin."]
@@ -366,10 +368,10 @@ meteoblue.com#@#.bottom_links
 meteoblue.com#@#[data-href]
 @@||meteoblue.com/en/weather/*$inline-script,1p
 @@||meteoblue.com/*.jpg$removeparam,1p
-@@||meteoblue.com/*.png$removeparam,1p
 meteoblue.com#@#+js(addEventListener-defuser)
 meteoblue.com#@#+js(no-fetch-if)
 meteoblue.com#@#+js(no-xhr-if)
+@@||meteoblue.com/*.png$removeparam,1p
 @@||meteoblue.com/pub/*$1p
 meteoblue.com#@#[role="form"]
 @@||microsoft.com$inline-script,1p
@@ -453,14 +455,13 @@ sotograndedigital.com#@#:not(body)[class^="overlay"]
 @@||spotify.*metrics$1p
 @@||spotify.*track$1p
 @@||sstatic.net/Shared/*.css$stylesheet
+@@||startpage.com^$inline-script,1p
 startpage.com#@#[class*="post-link"]:not(body)
 @@||static-exp1.licdn.com/*$xhr,domain=linkedin.com
 @@||stlouisfed.org/assets/*.jquery.*.js
 stlouisfed.org#@#+js(addEventListener-defuser)
 @@||support.microsoft.com/socbundles/article$script,1p
-techrepublic.com#@#[data-component]
 thebarentsobserver.com#@#[src*="publi"]
-theguardian.com#@#[data-component]
 theguardian.com#@#[data-test-id]
 theregister.com#@#[alt*="feed"]
 thetimes.co.uk#@#[data-view-name]
@@ -541,8 +542,3 @@ youtube.com#@#[title^="Watch "]
 youtube.com#@#.ytmusic-menu-popup-renderer
 youtube.com#@#.ytmusic-player-bar
 @@||youtube.com/*ytmweb.$script,1p
-zdnet.com#@#[data-component]
-
-! quarantine, for removal
-!
-! @@||s03.s3c.es/*.css$css,domain=eleconomista.es
