@@ -1,489 +1,494 @@
 {
-  "policy": {
-    "DEFAULT": {
-      "capabilities": [],
-      "temp": false
-    },
-    "TRUSTED": {
-      "capabilities": [
-        "script"
-      ],
-      "temp": false
-    },
-    "UNTRUSTED": {
-      "capabilities": [],
-      "temp": false
-    },
-    "sites": {
-      "trusted": [
-        "localhost"
-      ],
-      "untrusted": [
-        "aax-eu.amazon.es",
-        "abtasty.com",
-        "addevweb.com",
-        "addthis.com",
-        "addtoany.com",
-        "adnami.io",
-        "adobedtm.com",
-        "adswizz.com",
-        "ajax.googleapis.com",
-        "amazon-adsystem.com",
-        "amplitude.com",
-        "ampproject.org",
-        "ampush.io",
-        "appcues.com",
-        "app.link",
-        "arcsubscriptions.elpais.com",
-        "bat.bing.com",
-        "betterexplained.com",
-        "blogherads.com",
-        "bootcss.com",
-        "bootstrapcdn.com",
-        "brightcove.com",
-        "brightcove.net",
-        "btloader.com",
-        "byteoversea.com",
-        "ccb-dev.com",
-        "cedexis.com",
-        "chartbeat.com",
-        "citiservi.es",
-        "ck.page",
-        "clearbit.com",
-        "cloudflare.com",
-        "cloudflareinsights.com",
-        "cloudfront.net",
-        ".cn",
-        "consensu.org",
-        "cookiebot.com",
-        "cookielaw.org",
-        "criteo.net",
-        "crossref.org",
-        "crwdcntrl.net",
-        "dmcdn.net",
-        "doubleclick.net",
-        "emailjs.com",
-        "ensighten.com",
-        "etracker.com",
-        "ezodn.com",
-        "figshare.com",
-        "firebaseio.com",
-        "flipboard.com",
-        "fontawesome.com",
-        "geotrust.com",
-        "gigya.com",
-        "glencoesoftware.com",
-        "go-mpulse.net",
-        "google-analytics.com",
-        "googlesyndication.com",
-        "googletagmanager.com",
-        "googletagservices.com",
-        "goqubit.com",
-        "highcharts.com",
-        "hs-scripts.com",
-        "iadvize.com",
-        "inbenta.com",
-        "indexww.com",
-        "jivosite.com",
-        "jquery.com",
-        "jsdelivr.net",
-        "jwplatform.com",
-        "jwplayer.com",
-        "jwpsrv.com",
-        "larksuitecdn.com",
-        "leadforensics.com",
-        "magisto.com",
-        "mailchimp.com",
-        "marfeelcache.com",
-        "marketo.com",
-        "mediavine.com",
-        "mlnk.co",
-        "monetate.net",
-        "monitor.azure.com",
-        "mrf.io",
-        "netpoint-media.de",
-        "newrelic.com",
-        "ntv.io",
-        "onesignal.com",
-        "onetrust.com",
-        "openpublishing.com",
-        "openx.net",
-        "osano.com",
-        "outbrain.com",
-        "permutive.com",
-        "pmc.com",
-        "polyfill.ikea.net",
-        "polyfill.io",
-        "privacymanager.io",
-        "pstatp.com",
-        "pubmatic.com",
-        "pubwise.io",
-        "qq.com",
-        "rdocumentation.org",
-        "rdrr.io",
-        "readspeaker.com",
-        "recaptcha.net",
-        ".ru",
-        "scorecardresearch.com",
-        "secureservercdn.net",
-        "seedtag.com",
-        "sendpulse.com",
-        "sentry-cdn.com",
-        "sentry.io",
-        "sharethis.com",
-        "snigelweb.com",
-        "s-onetag.com",
-        "sourcepointcmp.bloomberg.com",
-        "squarespace.com",
-        "sstatic.net",
-        "stackadapt.com",
-        "stackoverflow.com",
-        "statcounter.com",
-        "stats.wp.com",
-        "stocktwits.com",
-        "techlab-cdn.com",
-        "themoneytizer.com",
-        "thisiswaldo.com",
-        "tinypass.com",
-        "tiqcdn.com",
-        "tru.am",
-        "truex.com",
-        "trustarc.com",
-        "trustlock.co",
-        "twitter.com",
-        "typekit.net",
-        "ubembed.com",
-        "uniconsent.com",
-        "unpkg.com",
-        "vocstatic.com",
-        "webcontentassessor.com",
-        "webflow.com",
-        "wonderpush.com",
-        "wsimg.com",
-        "wsod.com",
-        "www-growth.scdn.co",
-        "europasur.es",
-        "sunmedia.tv",
-        "uecdn.es",
-        "expansion.com",
-        "unidadeditorial.es",
-        "optimizely.com",
-        "accor.com",
-        "amazon.es",
-        "collinsdictionary.com",
-        "deezer.com",
-        "dpreview.com",
-        "duckduckgo.com",
-        "dzcdn.net",
-        "ecestaticos.com",
-        "elconfidencial.com",
-        "endesa.com",
-        "here.com",
-        "iberia.com",
-        "ikea.com",
-        "larousse.fr",
-        "nh-hotels.net",
-        "nh-hotels.com",
-        "openstreetmap.org",
-        "radiotime.com",
-        "tunein.com",
-        "vimeo.com",
-        "vimeocdn.com",
-        "vueling.com",
-        "moatads.com",
-        "newscgp.com",
-        "barrons.com",
-        "https://accounts.wsj.com",
-        "zqtk.net",
-        "https://registry.api.cnn.io",
-        "facebook.net",
-        "https://subshop.gasworld.com",
-        "gatorleads.co.uk",
-        "vols7feed.com",
-        "permutive.app",
-        "wemass.com",
-        "facebook.com",
-        "sp-prod.net",
-        "https://ads.thetimes.co.uk",
-        "https://feeds.thetimes.co.uk",
-        "pushengage.com",
-        "aspnetcdn.com",
-        "bibblio.org",
-        "richaudience.com",
-        "sibboventures.com",
-        "teads.tv",
-        "ipify.org",
-        "disqus.com",
-        "privacy-center.org",
-        "millionphone.net",
-        "fouanalytics.com",
-        "adsrvr.org",
-        "uri.sh",
-        "brandmetrics.com",
-        "mediavoice.com",
-        "media.net",
-        "pingdom.net",
-        "sail-horizon.com",
-        "cookiepro.com",
-        "googleoptimize.com",
-        "https://shop.investors.com",
-        "queryly.com",
-        "https://research.investors.com",
-        "https://services.investors.com",
-        "cxpublic.com",
-        "paht.tech",
-        "arcpublishing.com",
-        "cxense.com",
-        "instagram.com",
-        "https://metrics.muycomputer.com"
-      ],
-      "custom": {
-        "google.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:google.com": {
-              "capabilities": [
-                "script",
-                "frame",
-                "webgl",
-                "noscript",
-                "fetch",
-                "object",
-                "font",
-                "media"
-              ],
-              "temp": false
-            },
-            "§:youtube.com": {
-              "capabilities": [
-                "script",
-                "object",
-                "media",
-                "frame",
-                "font",
-                "webgl",
-                "fetch",
-                "noscript"
-              ],
-              "temp": false
-            }
+  "DEFAULT": {
+    "capabilities": [],
+    "temp": false
+  },
+  "TRUSTED": {
+    "capabilities": [
+      "script"
+    ],
+    "temp": false
+  },
+  "UNTRUSTED": {
+    "capabilities": [],
+    "temp": false
+  },
+  "sites": {
+    "trusted": [
+      "localhost"
+    ],
+    "untrusted": [
+      "aax-eu.amazon.es",
+      "abtasty.com",
+      "addevweb.com",
+      "addthis.com",
+      "addtoany.com",
+      "adnami.io",
+      "adobedtm.com",
+      "adswizz.com",
+      "ajax.googleapis.com",
+      "amazon-adsystem.com",
+      "amplitude.com",
+      "ampproject.org",
+      "ampush.io",
+      "appcues.com",
+      "app.link",
+      "arcsubscriptions.elpais.com",
+      "bat.bing.com",
+      "betterexplained.com",
+      "blogherads.com",
+      "bootcss.com",
+      "bootstrapcdn.com",
+      "brightcove.com",
+      "brightcove.net",
+      "btloader.com",
+      "byteoversea.com",
+      "ccb-dev.com",
+      "cedexis.com",
+      "chartbeat.com",
+      "citiservi.es",
+      "ck.page",
+      "clearbit.com",
+      "cloudflare.com",
+      "cloudflareinsights.com",
+      "cloudfront.net",
+      ".cn",
+      "consensu.org",
+      "cookiebot.com",
+      "cookielaw.org",
+      "criteo.net",
+      "crossref.org",
+      "crwdcntrl.net",
+      "dmcdn.net",
+      "doubleclick.net",
+      "emailjs.com",
+      "ensighten.com",
+      "etracker.com",
+      "ezodn.com",
+      "figshare.com",
+      "firebaseio.com",
+      "flipboard.com",
+      "fontawesome.com",
+      "geotrust.com",
+      "gigya.com",
+      "glencoesoftware.com",
+      "go-mpulse.net",
+      "google-analytics.com",
+      "googlesyndication.com",
+      "googletagmanager.com",
+      "googletagservices.com",
+      "goqubit.com",
+      "highcharts.com",
+      "hs-scripts.com",
+      "iadvize.com",
+      "inbenta.com",
+      "indexww.com",
+      "jivosite.com",
+      "jquery.com",
+      "jsdelivr.net",
+      "jwplatform.com",
+      "jwplayer.com",
+      "jwpsrv.com",
+      "larksuitecdn.com",
+      "leadforensics.com",
+      "magisto.com",
+      "mailchimp.com",
+      "marfeelcache.com",
+      "marketo.com",
+      "mediavine.com",
+      "mlnk.co",
+      "monetate.net",
+      "monitor.azure.com",
+      "mrf.io",
+      "netpoint-media.de",
+      "newrelic.com",
+      "ntv.io",
+      "onesignal.com",
+      "onetrust.com",
+      "openpublishing.com",
+      "openx.net",
+      "osano.com",
+      "outbrain.com",
+      "permutive.com",
+      "pmc.com",
+      "polyfill.ikea.net",
+      "polyfill.io",
+      "privacymanager.io",
+      "pstatp.com",
+      "pubmatic.com",
+      "pubwise.io",
+      "qq.com",
+      "rdocumentation.org",
+      "rdrr.io",
+      "readspeaker.com",
+      "recaptcha.net",
+      ".ru",
+      "scorecardresearch.com",
+      "secureservercdn.net",
+      "seedtag.com",
+      "sendpulse.com",
+      "sentry-cdn.com",
+      "sentry.io",
+      "sharethis.com",
+      "snigelweb.com",
+      "s-onetag.com",
+      "sourcepointcmp.bloomberg.com",
+      "squarespace.com",
+      "sstatic.net",
+      "stackadapt.com",
+      "stackoverflow.com",
+      "statcounter.com",
+      "stats.wp.com",
+      "stocktwits.com",
+      "techlab-cdn.com",
+      "themoneytizer.com",
+      "thisiswaldo.com",
+      "tinypass.com",
+      "tiqcdn.com",
+      "tru.am",
+      "truex.com",
+      "trustarc.com",
+      "trustlock.co",
+      "twitter.com",
+      "typekit.net",
+      "ubembed.com",
+      "uniconsent.com",
+      "unpkg.com",
+      "vocstatic.com",
+      "webcontentassessor.com",
+      "webflow.com",
+      "wonderpush.com",
+      "wsimg.com",
+      "wsod.com",
+      "www-growth.scdn.co",
+      "europasur.es",
+      "sunmedia.tv",
+      "uecdn.es",
+      "expansion.com",
+      "unidadeditorial.es",
+      "optimizely.com",
+      "accor.com",
+      "amazon.es",
+      "collinsdictionary.com",
+      "deezer.com",
+      "dpreview.com",
+      "duckduckgo.com",
+      "dzcdn.net",
+      "ecestaticos.com",
+      "elconfidencial.com",
+      "endesa.com",
+      "here.com",
+      "iberia.com",
+      "ikea.com",
+      "larousse.fr",
+      "nh-hotels.net",
+      "nh-hotels.com",
+      "openstreetmap.org",
+      "radiotime.com",
+      "tunein.com",
+      "vimeo.com",
+      "vimeocdn.com",
+      "vueling.com",
+      "moatads.com",
+      "newscgp.com",
+      "barrons.com",
+      "accounts.wsj.com",
+      "zqtk.net",
+      "registry.api.cnn.io",
+      "facebook.net",
+      "subshop.gasworld.com",
+      "gatorleads.co.uk",
+      "vols7feed.com",
+      "permutive.app",
+      "wemass.com",
+      "facebook.com",
+      "sp-prod.net",
+      "ads.thetimes.co.uk",
+      "eeds.thetimes.co.uk",
+      "pushengage.com",
+      "aspnetcdn.com",
+      "bibblio.org",
+      "richaudience.com",
+      "sibboventures.com",
+      "teads.tv",
+      "ipify.org",
+      "disqus.com",
+      "privacy-center.org",
+      "millionphone.net",
+      "fouanalytics.com",
+      "adsrvr.org",
+      "uri.sh",
+      "brandmetrics.com",
+      "mediavoice.com",
+      "media.net",
+      "pingdom.net",
+      "sail-horizon.com",
+      "cookiepro.com",
+      "googleoptimize.com",
+      "shop.investors.com",
+      "queryly.com",
+      "research.investors.com",
+      "services.investors.com",
+      "cxpublic.com",
+      "paht.tech",
+      "arcpublishing.com",
+      "cxense.com",
+      "instagram.com",
+      "metrics.muycomputer.com",
+      "adlightning.com",
+      "cityspark.com",
+      "districtm.ca",
+      "spreedly.com",
+      "townnews.com",
+      "sibbo.net",
+      "mgid.com",
+      "rocketcdn.me",
+      "parsely.com",
+      "trackjs.com",
+      "addoor.net",
+      "adform.net",
+      "refinery89.com",
+      "lrcontent.com",
+      "imrworldwide.com",
+      "sascdn.com",
+      "unblockia.com",
+      "exmarketplace.com",
+      "jetpack.wordpress.com"
+    ],
+    "custom": {
+      "google.com": {
+        "capabilities": [],
+        "contextual": {
+          "§:google.com": {
+            "capabilities": [
+              "script",
+              "frame",
+              "webgl",
+              "noscript",
+              "fetch",
+              "object",
+              "font",
+              "media"
+            ],
+            "temp": false
           },
-          "temp": false
+          "§:youtube.com": {
+            "capabilities": [
+              "script",
+              "object",
+              "media",
+              "frame",
+              "font",
+              "webgl",
+              "fetch",
+              "noscript"
+            ],
+            "temp": false
+          }
         },
-        "github.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:github.com": {
-              "capabilities": [
-                "script",
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
+        "temp": false
+      },
+      "github.com": {
+        "capabilities": [],
+        "contextual": {
+          "§:github.com": {
+            "capabilities": [
+              "script",
+              "fetch"
+            ],
+            "temp": false
+          }
         },
-        "githubassets.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:github.com": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
+        "temp": false
+      },
+      "githubassets.com": {
+        "capabilities": [],
+        "contextual": {
+          "§:github.com": {
+            "capabilities": [
+              "script"
+            ],
+            "temp": false
+          }
         },
-        "youtube.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:youtube.com": {
-              "capabilities": [
-                "script",
-                "webgl",
-                "fetch",
-                "media",
-                "font",
-                "frame",
-                "object",
-                "noscript"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
+        "temp": false
+      },
+      "youtube.com": {
+        "capabilities": [],
+        "contextual": {
+          "§:youtube.com": {
+            "capabilities": [
+              "script",
+              "webgl",
+              "fetch",
+              "media",
+              "font",
+              "frame",
+              "object",
+              "noscript"
+            ],
+            "temp": false
+          }
         },
-        "googlevideo.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:youtube.com": {
-              "capabilities": [
-                "fetch",
-                "media"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
+        "temp": false
+      },
+      "googlevideo.com": {
+        "capabilities": [],
+        "contextual": {
+          "§:youtube.com": {
+            "capabilities": [
+              "fetch",
+              "media"
+            ],
+            "temp": false
+          }
         },
-        "ytimg.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:youtube.com": {
-              "capabilities": [
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
+        "temp": false
+      },
+      "ytimg.com": {
+        "capabilities": [],
+        "contextual": {
+          "§:youtube.com": {
+            "capabilities": [
+              "fetch"
+            ],
+            "temp": false
+          }
         },
-        "gstatic.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:google.com": {
-              "capabilities": [
-                "fetch",
-                "script",
-                "font",
-                "frame",
-                "media",
-                "object",
-                "webgl",
-                "noscript"
-              ],
-              "temp": false
-            },
-            "§:youtube.com": {
-              "capabilities": [
-                "script",
-                "font",
-                "media",
-                "object",
-                "frame",
-                "webgl",
-                "fetch",
-                "noscript"
-              ],
-              "temp": false
-            }
+        "temp": false
+      },
+      "gstatic.com": {
+        "capabilities": [],
+        "contextual": {
+          "§:google.com": {
+            "capabilities": [
+              "fetch",
+              "script",
+              "font",
+              "frame",
+              "media",
+              "object",
+              "webgl",
+              "noscript",
+              "unchecked_css"
+            ],
+            "temp": false
           },
-          "temp": false
+          "§:youtube.com": {
+            "capabilities": [
+              "script",
+              "font",
+              "media",
+              "object",
+              "frame",
+              "webgl",
+              "fetch",
+              "noscript"
+            ],
+            "temp": false
+          }
         },
-        "meteoblue.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:meteoblue.com": {
-              "capabilities": [
-                "script",
-                "font",
-                "webgl",
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
+        "temp": false
+      },
+      "meteoblue.com": {
+        "capabilities": [],
+        "contextual": {
+          "§:meteoblue.com": {
+            "capabilities": [
+              "script",
+              "font",
+              "webgl",
+              "fetch"
+            ],
+            "temp": false
+          }
         },
-        "linkedin.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:linkedin.com": {
-              "capabilities": [
-                "script",
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
+        "temp": false
+      },
+      "linkedin.com": {
+        "capabilities": [],
+        "contextual": {
+          "§:linkedin.com": {
+            "capabilities": [
+              "script",
+              "fetch"
+            ],
+            "temp": false
+          }
         },
-        "licdn.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:linkedin.com": {
-              "capabilities": [
-                "script",
-                "media",
-                "fetch"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
+        "temp": false
+      },
+      "licdn.com": {
+        "capabilities": [],
+        "contextual": {
+          "§:linkedin.com": {
+            "capabilities": [
+              "script",
+              "media",
+              "fetch"
+            ],
+            "temp": false
+          }
         },
-        "startpage.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:startpage.com": {
-              "capabilities": [
-                "script"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
+        "temp": false
+      },
+      "startpage.com": {
+        "capabilities": [],
+        "contextual": {
+          "§:startpage.com": {
+            "capabilities": [
+              "script"
+            ],
+            "temp": false
+          }
         },
-        "§:idealista.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:idealista.com": {
-              "capabilities": [
-                "script",
-                "font",
-                "fetch",
-                "object",
-                "media",
-                "frame",
-                "noscript",
-                "webgl"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
+        "temp": false
+      },
+      "§:idealista.com": {
+        "capabilities": [],
+        "contextual": {
+          "§:idealista.com": {
+            "capabilities": [
+              "script",
+              "font",
+              "fetch",
+              "object",
+              "media",
+              "frame",
+              "noscript",
+              "webgl"
+            ],
+            "temp": false
+          }
         },
-        "googleapis.com": {
-          "capabilities": [],
-          "contextual": {
-            "§:idealista.com": {
-              "capabilities": [
-                "script",
-                "fetch",
-                "object",
-                "media",
-                "frame",
-                "font",
-                "webgl",
-                "noscript"
-              ],
-              "temp": false
-            }
-          },
-          "temp": false
-        }
+        "temp": false
+      },
+      "googleapis.com": {
+        "capabilities": [],
+        "contextual": {
+          "§:idealista.com": {
+            "capabilities": [
+              "script",
+              "fetch",
+              "object",
+              "media",
+              "frame",
+              "font",
+              "webgl",
+              "noscript"
+            ],
+            "temp": false
+          }
+        },
+        "temp": false
+      },
+      "weblogssl.com": {
+        "capabilities": [],
+        "temp": false
       }
     },
-    "enforced": true,
-    "autoAllowTop": false
+    "temp": []
   },
-  "local": {
-    "debug": true,
-    "showCtxMenuItem": true,
-    "showCountBadge": true,
-    "showFullAddresses": true,
-    "amnesticUpdates": true,
-    "storage": "local",
-    "highContrast": false
-  },
-  "sync": {
-    "global": false,
-    "xss": true,
-    "cascadeRestrictions": false,
-    "overrideTorBrowserPolicy": false,
-    "clearclick": true,
-    "storage": "sync"
-  },
-  "xssUserChoices": {}
+  "enforced": true,
+  "autoAllowTop": false
 }
