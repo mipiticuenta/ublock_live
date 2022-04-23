@@ -7,19 +7,6 @@
 !
 ! Cosmetic block list
 !
-##.revUnit
-##.js-consent-banner
-##.float-social
-##.o-cookie-message__inner
-##.o-share
-##.snippet-promotion
-##.ad
-##.subscription
-##.leaderboard-wrapper
-##.ad-box
-###overlay
-##.js-article-social-share
-##.js-consent-banner
 ##._10c_
 ##._1aNet
 ##._1e-1
@@ -502,6 +489,7 @@
 ##.adbottomright
 ###adBoven
 ###AdBox
+##.ad-box
 ##.adboxcontentsum
 ###adBrandDev
 ###adBrandingStation
@@ -5864,9 +5852,9 @@
 ##[class^="_fa7"]
 ##[class*="facebook"]:not(body)
 ##[class*="Facebook"]:not(body)
-##[class^="fb"]:not(body):not(.fbody)
 ##[class^="Fb"]:not(body)
 ##[class^="FB"]:not(body)
+##[class^="fb"]:not(body):not(.fbody)
 ##[class="FCLink"]:not(body)
 !##[class^="featured"]:not(body)
 ##[class*="feedback"]
@@ -9533,6 +9521,7 @@
 ###floatright
 ##.float-right
 ##.float-shop
+##.float-social
 ###float-top
 ##.float-top
 ##.float_totop
@@ -13470,6 +13459,7 @@
 ##.js-applet
 ##.js-article-preview
 ##.js-article-sidebar-content
+##.js-article-social-share
 ##.js-art-post-body
 ##.js-aside-slot-container
 ###js-back-to-top
@@ -13498,6 +13488,7 @@
 ##.js_commerce-inset-permalink
 ##.js-common-hook
 ##.js-confirm
+##.js-consent-banner
 ##.js-coockie
 ##.js-cta_prompt
 ###js-data-protection-note
@@ -17028,6 +17019,7 @@
 ###ocio-nav
 ##.ocio-nav
 ##.o-columns
+##.o-cookie-message__inner
 ##.octopus
 ##.ocw
 ###ocw_conteneur
@@ -17366,6 +17358,7 @@
 ###os_dmp_embed_300x250
 ##.osd-sms-wrapper
 ##.o-section__adform
+##.o-share
 ##.OSOasAdModule
 ##.osr-overlay
 ##.osw-privacy
@@ -19853,6 +19846,7 @@
 ##.revolvermaps
 ##.revolvyad_inner
 ##.rev_square_side_door
+##.revUnit
 ##.revUnit--placeholder
 ###rewardsden-bar-wrapper
 ###rezo
@@ -21968,6 +21962,7 @@
 ##.sniperModeEngaged
 ###sniply-bar
 ###snipped
+##.snippet-promotion
 ##.snippet-publisher
 ##.snlikebt
 ##.snlinks
@@ -23345,6 +23340,7 @@
 ##.subsbar
 ##.subs-block
 ###subscModule
+##.subscription
 ##.subs-form
 ###subSidebar
 ###SubsInrightBar
