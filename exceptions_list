@@ -163,11 +163,13 @@ google.com#@#.ada
 google.com#@#.adl
 google.com#@#.adn
 google.com#@#.adz
+@@||google.com/alerts/*$script,1p
 @@||google.com/*/api.js$script,1p
 google.com#@#[aria-live="assertive"]
 @@||google.com/*/batchexecute$xhr,1p
 google.com#@#.bn
 @@||google.com/calendar/$xhr,1p
+google.com#@#[class*="alert"]:not(body)
 google.com#@#[data-cb]
 google.com#@#[data-ct]
 google.com#@#[data-href]
@@ -181,6 +183,7 @@ google.com#@#[data-ved]
 @@||google.com/*/drive_fe/*$1p
 google.com#@#form
 @@||google.com/gmail/$xhr,1p
+google.com#@#[id*="alert"]:not(body)
 google.com#@#+js(addEventListener-defuser)
 google.com#@#+js(no-fetch-if)
 google.com#@#.lb
