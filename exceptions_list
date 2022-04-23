@@ -1,6 +1,5 @@
 ! filters' exceptions list
 !
-@@||live.com*$inline-script,1p
 @@*$removeparam=t,domain=linkedin.com
 @@*$removeparam=v,domain=linkedin.com
 @@*$removeparam=view,domain=mail.google.com
@@ -115,7 +114,6 @@ fayerwayer.com#@#[data-author]
 @@||filterlists.com^$inline-script,1p
 @@||filterlists.com/api/*$xhr,1p
 @@||filterlists.com/static/js/*$script,1p
-@@||fonts.gstatic.com$font,domain=google.com
 @@||forexpros.com$xhr,domain=investing.com
 foxbusiness.com#@#[class^="featured"]
 @@||fred.stlouisfed.org$inline-script,1p
@@ -338,6 +336,7 @@ linkedin.com#@#.vjs-poster
 @@||linkedin.com/voyager/api/voyagerIdentityDashProfilePhotoFrames$xhr,1p
 @@||linkedin.com/voyager/api/voyagerLaunchpadDashLaunchpadViews$xhr,1p
 linuxaudio.github.io#@#[class*="promo"]:not(body):not(header):not(article):not([class*="not-promoted"])
+@@||live.com*$inline-script,1p
 @@||live.com^$xhr,1p
 live.com#@#[class*="banner"]:not(body)
 live.com#@#[data-focuszone-id]
@@ -460,6 +459,7 @@ startpage.com#@#[class*="post-link"]:not(body)
 @@||stlouisfed.org/assets/*.jquery.*.js
 stlouisfed.org#@#+js(addEventListener-defuser)
 @@||support.microsoft.com/socbundles/article$script,1p
+@@||teams.events.data.microsoft.com
 thebarentsobserver.com#@#[src*="publi"]
 theregister.com#@#[alt*="feed"]
 thetimes.co.uk#@#[data-view-name]
