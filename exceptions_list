@@ -1,7 +1,5 @@
 ! filters' exceptions list
 !
-#@#[class^="featured_image"]
-#@#[id^="featured_image"]
 @@*$removeparam=t,domain=linkedin.com
 @@*$removeparam=v,domain=linkedin.com
 @@*$removeparam=view,domain=mail.google.com
@@ -74,7 +72,6 @@
 @@||data.bls.gov/assets/bootstrap/$script,1p
 @@||data.bls.gov/javascripts/$script,1p
 @@||decathlon.es/client/app/*$script,1p
-@@||decathlon.es/client/app/client.$script,1p
 @@||decathlon.es/es/*$inline-script,1p
 @@||decathlon.es/es/ajax/*$xhr,1p
 @@||decathlon.es/render/*$script,1p
@@ -82,7 +79,6 @@
 @@||dnielectronico.es$script,1p
 @@||docs.google.com^$1p
 @@||drive.google.com$1p
-@@||drive.google.com^$xhr,1p
 @@||dxomark.com^$inline-script,1p
 @@||dzcdn.*naboo-ads$1p
 @@||ecestaticos.com/static/cache/$script
@@ -105,8 +101,6 @@
 @@||fred.stlouisfed.org/series/DCOILBRENTEU$inline-script,1p
 @@||fred.stlouisfed.org^$script,1p
 @@||gear4music.es^$inline-script,1p
-@@||geogebra.org^$inline-script,1p
-@@||geogebra.org^$script,1p
 @@||github.com$inline-script,1p
 @@||github.com/*$xhr,1p
 @@||github.githubassets.com^$script,domain=github.com
@@ -137,8 +131,7 @@
 @@||google.com^$inline-script,1p
 @@||googleusercontent.com^$subdocument,domain=google.com
 @@||googleusercontent.com^$xhr,domain=google.com
-@@||googlevideo.com$xhr
-@@||googlevideo.com/videogoodput$xhr,domain=youtube.com
+@@||googlevideo.com$xhr,domain=youtube.com
 @@||graph.microsoft.com$1p
 @@||grupoelcorteingles.es/statics/*$script,domain=elcorteingles.es
 @@||gstatic.com$script,domain=google.com|youtube.com|blogger.com
