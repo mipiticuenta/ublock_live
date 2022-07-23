@@ -74,8 +74,10 @@
 @@||data.bls.gov/assets/bootstrap/$script,1p
 @@||data.bls.gov/javascripts/$script,1p
 @@||decathlon.es/client/app/*$script,1p
+@@||decathlon.es/client/app/client.$script,1p
 @@||decathlon.es/es/*$inline-script,1p
 @@||decathlon.es/es/ajax/*$xhr,1p
+@@||decathlon.es/render/*$script,1p
 @@||dellcdn.com*$domain=dell.com
 @@||dnielectronico.es$script,1p
 @@||docs.google.com^$1p
@@ -358,6 +360,7 @@ bls.gov#@#[id*="banner"]:not(body):not(#bannerandheader)
 commercialobserver.com#@#[class*="partner"]:not(body)
 commercialobserver.com#@#[class^="featured"]:not(body)
 computerhoy.com#@#[src*="publi"]
+css*$removeparam
 dailymail.co.uk#@#:not(body)[class*="banner"]
 dailymail.co.uk#@#[class*="banner"]
 decathlon.es#@#+js(addEventListener-defuser)
@@ -412,6 +415,7 @@ google.com#@#.adz
 google.com#@#.bn
 google.com#@#.lb
 google.com#@#.msg
+google.com#@#[aria-label*="promo"]
 google.com#@#[aria-live="assertive"]
 google.com#@#[class*="alert"]:not(body)
 google.com#@#[data-cb]
