@@ -1,22 +1,8 @@
 ! filters' exceptions list
 
-#@##example
-#@##intro
-#@#.btn-info
-#@#.intro
 #@#.mask
-#@#.preheader
 #@#.sticky
-#@#.well
 #@#[data-adid]
-#@#[data-controller]
-#@#[data-item-type]
-#@#[data-pb-name]
-#@#[data-qa]
-#@#[data-reactid]
-#@#[data-tags]
-#@#[id^="fb"]:not(body):not(.Story)
-#@#[id^="push"]:not(body):not(pushobj)
 @@*$removeparam=t,domain=linkedin.com
 @@*$removeparam=v,domain=linkedin.com
 @@*$removeparam=view,domain=google.com
