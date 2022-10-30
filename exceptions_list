@@ -1,5 +1,9 @@
 ! filters' exceptions list
 !
+@@||icloud.com^$inline-script,domain=icloud.com
+@@||icloud.com$all,domain=icloud.com
+@@||appleid.cdn-apple.com,domain=icloud.com
+@@||dms.licdn.com/playlist/*$xhr,domain=linkedin.com
 @@*$removeparam=t,domain=linkedin.com
 @@*$removeparam=v,domain=linkedin.com
 @@*$removeparam=view,domain=mail.google.com
