@@ -206,6 +206,8 @@
 @@||kayak.es/s/horizon/$xhr,1p
 @@||larousse.fr/*/jquery-*.js
 @@||leroymerlin.es^$inline-script,1p
+@@||leroymerlin.es$script,1p
+@@||leroymerlin.es$xhr,1p
 @@||licdn.com$script,domain=linkedin.com
 @@||licdn.com$xhr,1p
 @@||linkedin.com/ambry/*$xhr,1p
@@ -467,6 +469,7 @@ kayak.es#@#[role="form"]
 larousse.fr#@#[class^="cx"]
 lavanguardia.com#@#img[class*="responsive"]
 lemonde.fr#@#.teaser
+leroymerlin.es#@#+js(addEventListener-defuser)
 libreoffice.org#@#.animated.slide
 libreoffice.org#@#.carousel-inner
 libreoffice.org#@#.fadeIn.animated
