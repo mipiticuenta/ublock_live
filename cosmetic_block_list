@@ -5,99 +5,6 @@
 ! id css selector        : ###
 ! syntax summary
 !
-
-#@#.ad-banner
-#@#.ad-inserter
-#@#.ad-placeholder
-#@#.ad-placement
-#@#.adbadge
-#@#.adBanner
-#@#.ads_1
-#@#.adsBox
-#@#.BannerAd
-#@#.display_ad
-#@#.div-gpt-ad
-#@#.sponsor-ad
-#@#.SponsorAds
-#@#[class^="div-gpt-ad"]
-#@#[id^="div-gpt-ad"]
-#@##ad_190x90
-#@##ad_300
-#@##ad_728
-#@##ad_area
-#@##ad_big
-#@##ad_box
-#@##ad_channel
-#@##ad_footer
-#@##ad_slot
-#@##ad_space
-#@##ad-banner
-#@##ad-container
-#@##ad-container-1
-#@##ad-container-2
-#@##ad-footer
-#@##ad-frame
-#@##ad-header
-#@##ad-img
-#@##ad-inner
-#@##ad-label
-#@##ad-lb
-#@##ad-left
-#@##ad-zone-1
-#@##Ad300x145
-#@##Ad300x250
-#@##Ad728x90
-#@##adAd
-#@##AdArea
-#@##adbanner
-#@##adBanner
-#@##adBannerWrap
-#@##adblock
-#@##AdBox160
-#@##AdContainer
-#@##AdDiv
-#@##adframe:not(frameset)
-#@##AdFrame1
-#@##AdFrame2
-#@##AdFrame4
-#@##adheader
-#@##AdImage
-#@##AdLayer1
-#@##AdLayer2
-#@##ads-1
-#@##ads-banner
-#@##ads-footer
-#@##ads-sticky
-#@##adslot
-#@##adspace
-#@##adsquare
-#@##adTeaser
-#@##banner_ad
-#@##banner-advert-container
-#@##banner468
-#@##banner728x90
-#@##bannerad
-#@##DivAd
-#@##DivAd1
-#@##DivAd2
-#@##DivAd3
-#@##DivAdA
-#@##DivAdB
-#@##DivAdC
-#@##DivTopAd
-#@##glinkswrapper
-#@##google_ad
-#@##iqadtile5
-#@##leftframeAD
-#@##outbrain-paid
-#@##sponsored_link
-#@##tobsideAd
-#@#a[href^="https://badoinkvr.com/"]
-#@#a[href^="https://laptop-updates.brave.com/download/"]
-#@#a[href^="https://www.sheetmusicplus.com/?aff_id="]
-#@#a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="]
-#@#div[class^="div-gpt-ad"]
-#@#div[id^="div-gpt-"]
 ##.___ad-modal
 ##.___eucookiePopup
 ##.___Root__messageContainer___17aoV
@@ -11139,6 +11046,7 @@
 ##.c-container
 ##.c-content
 ##.c-control--adchoice
+##.c-cookie
 ##.c-cookie__banner
 ##.c-cookie__container
 ##.c-cookie__message--middle
@@ -11181,11 +11089,13 @@
 ##.c-cookieBanner--overlay
 ##.c-cookiebar
 ##.c-cookieBar
+##.c-cookieconsent
 ##.c-cookieContainer
 ##.c-CookieDisclaimer
 ##.c-cookiehint
 ##.c-cookiePolicy-box
 ##.c-cookiepopup
+##.c-cookies
 ##.c-cookies__alert
 ##.c-cookies__bar
 ##.c-cookies__container
@@ -13267,6 +13177,7 @@
 ##.cookeHint
 ##.cooki_baner_wrp
 ##.cooki-container
+##.cookie
 ##.cookie > .box
 ##.cookie > .rgpd
 ##.cookie__accept
@@ -13300,6 +13211,7 @@
 ##.cookie__panel
 ##.cookie__policy
 ##.cookie__policy-notice
+##.cookie__privacy
 ##.cookie__prompt
 ##.cookie__reveal
 ##.cookie__show
@@ -13591,6 +13503,7 @@
 ##.cookie-agreement
 ##.cookie-agreement-container
 ##.cookie-agreement-wrapper
+##.cookie-alert
 ##.cookie-alert--top
 ##.cookie-alert-1
 ##.cookie-alert-2
@@ -13624,6 +13537,7 @@
 ##.cookie-ban
 ##.cookie-band
 ##.cookie-baner
+##.cookie-banner
 ##.cookie-Banner
 ##.cookie-banner__bottom
 ##.cookie-banner__bottom-panel
@@ -13674,6 +13588,7 @@
 ##.cookie-banner-wrapper
 ##.cookie-banner.navbar-fixed-bottom
 ##.cookie-banner.toast
+##.cookie-bar
 ##.Cookie-bar
 ##.cookie-bar__inner
 ##.cookie-bar__wrapper
@@ -13746,6 +13661,7 @@
 ##.cookie-confirmation
 ##.cookie-confirmation__box
 ##.cookie-consen
+##.cookie-consent
 ##.Cookie-Consent
 ##.cookie-consent__bar
 ##.cookie-consent__bar-container
@@ -13760,6 +13676,7 @@
 ##.cookie-consent--normal
 ##.cookie-consent--show
 ##.Cookie-Consent--show
+##.cookie-consent--visible
 ##.cookie-consent--wrapper
 ##.cookie-consent-acknowledgement-conatiner
 ##.cookie-consent-advanced
@@ -14043,6 +13960,7 @@
 ##.cookie-mes
 ##.cookie-mesaj
 ##.cookie-mess
+##.cookie-message
 ##.cookie-message__bar
 ##.cookie-message__container
 ##.cookie-message__wrap
@@ -14266,6 +14184,7 @@
 ##.cookie-popin
 ##.cookie-popover
 ##.cookie-popover--active
+##.cookie-popup
 ##.cookie-popUp
 ##.cookie-popup__content
 ##.cookie-popup__heading
@@ -78342,18 +78261,6 @@
 ##rtk-cookies-notice
 ##s72-cookie-consent
 ##sd-cookies-widget
-##section > .cookie
-##section.c-cookie
-##section.c-cookieconsent
-##section.c-cookies
-##section.cookie__privacy
-##section.cookie-alert
-##section.cookie-banner
-##section.cookie-bar
-##section.cookie-consent
-##section.cookie-consent--visible
-##section.cookie-message
-##section.cookie-popup
 ##section[class*="_CookieNotice"]
 ##section[data-component="Com3Cookie"]
 ##section[data-test-id="cookie-notice"]
@@ -78465,51 +78372,80 @@
 #<wiki-spam-sites>
 #<Windows10>
 #<yahoo-ad-sites>
-#216.34.181.45   s        # slashdot.org
-#74.125.127.105	g        # google.com
-#aax-eu.amazon-adsystem.com 	# may interfere with Amazon ad preferences
-#ad.ca.doubleclick.net	#intereferes with video on globeandmail.com
-#ad.doubleclick.net   # This may interefere with www.sears.com
-#adfarm.mediaplex.com		# may interfere with ebay
-#ads.imeem.com		# Seems to interfere with the functioning of imeem.com
-#ads.msn.com			#This may cause problems with zone.msn.com
-#ak.imgfarm.com		# may cause problems with iwon.com
-#appleglobal.112.2o7.net	#breaks apple.com
-#applestoreus.112.2o7.net	#breaks apple.com
-#auto.search.msn.com  # Microsoft uses this server to redirect
-#ci-mpsnare.iovation.com	# See http://www.codingthewheel.com/archives/online-gambling-privacy-iesnare
+#216.34.181.45
+#74.125.127.105
+#aax-eu.amazon-adsystem.com
+#ad
+#ad.ca.doubleclick.net
+#ad.doubleclick.net
+#adfarm.mediaplex.com
+#ads.imeem.com
+#ads.msn.com
+#adTopLarge
+#advert-tracker
+#ak.imgfarm.com
+#appleglobal.112.2o7.net
+#applestoreus.112.2o7.net
+#auto.search.msn.com
+#bio_ep_bg
+#chatWrap
+#ci-mpsnare.iovation.com
 #click.linksynergy.com
+#coloma
+#custom_html-5
 #div[align="center"]:not(:has(.btn))
-#ebay.doubleclick.net		# may interfere with ebay
-#fe80::1%lo0	localhost
-#global.msads.net		#This may cause problems with zone.msn.com
-#google-analytics.com			# breaks some sites
+#ebay.doubleclick.net
+#ex_pu_iframe
+#fe80::1%lo0
+#footer-sec1
+#footer-sec3
+#global-alert-queue
+#global.msads.net
+#google-analytics.com
+#HTML1
+#HTML3
+#HTML5
 #HTML9
-#lads.myspace.com		# blocks myspace media/video players
-#ll.a.hulu.com	# Uncomment to block Hulu.
-#metrics.ticketmaster.com	# interferes with logging in to ticketmaster.com
-#nl.sitestat.com	# may interfere with duo.nl
-#pro.hit.gemius.pl	# May interfere with some video sites
-#pubads.g.doubleclick.net	#interferes with video on cwtv.com
-#refer.ccbill.com		#affiliate program, to add it back, remove the #
-#rmads.msn.com			#This may cause problems with zone.msn.com
-#s.amazon-adsystem.com	# may interfere with Amazon ad preferences
-#s0.2mdn.net		# This may interfere with some streaming
+#lads.myspace.com
+#layerName_postroll
+#ll.a.hulu.com
+#mega2
+#metrics.ticketmaster.com
+#newsletter-popup-overlay
+#nl.sitestat.com
+#overlay
+#overlay-modal
+#page
+#pro.hit.gemius.pl
+#pubads.g.doubleclick.net
+#rbm_block_active
+#recBanner
+#refer.ccbill.com
+#rmads.msn.com
+#s.amazon-adsystem.com
+#s0.2mdn.net
 #secure-au.imrworldwide.com
 #services.krxd.net
-#sitefinder-idn.verisign.com	# of trying to hijack mistyped
-#sitefinder.verisign.com	# Verisign has joined the game
+#simplemodal-overlay
+#site-navigation
+#sitefinder-idn.verisign.com
+#sitefinder.verisign.com
 #ssl.google-analytics.com
-#stat.livejournal.com		# There are reports that this may mess
+#stat.livejournal.com
 #stats.channel4.com
-#stats.surfaid.ihost.com	# This has been known cause
-#t2.hulu.com		# Uncomment to block Hulu.
-#track.hulu.com	# Uncomment to block Hulu.
-#transfer.go.com		#may interfere with Disney websites
-#us.i1.yimg.com	#Uncomment this to block yahoo images
+#stats.surfaid.ihost.com
+#t2.hulu.com
+#tab-ad
+#track.hulu.com
+#transfer.go.com
+#undermenu-block
+#us.i1.yimg.com
+#videoplayer.blue
 #webstat.channel4.com
-#www.apmebf.com		#qksrv
-#www.google-analytics.com		# breaks some sites
+#wpsafe-generate
+#wpsafelinkhuman
+#www.apmebf.com
+#www.google-analytics.com
 #www.google-analytics.l.google.com
-#www.googletagservices.com		#interferes with techrepublic
-#www.tkqlhce.com		#qksrv
+#www.googletagservices.com
+#www.tkqlhce.com
