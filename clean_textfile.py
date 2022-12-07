@@ -34,5 +34,5 @@ for line in list1_in:
             output.write(line)
             output.write('\n')
 output.close()
-print('lines written: ' + str(len(list1_out)))
+# print('lines written: ' + str(len(list1_out)))
 # <deduplicate list, remove empty lines and save to a file with the same name>
