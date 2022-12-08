@@ -57,6 +57,7 @@
 &displayads=
 &event
 &expires
+&fingerprint=
 &gdpr_
 &hitType=
 &impression
@@ -401,6 +402,7 @@
 -async/*
 -auto-ads-
 -banner
+-banner-
 -banner-768.
 -banner-ad-
 -banner-ad.
@@ -1259,6 +1261,7 @@
 .composeTrack.
 .connext-modal-backdrop
 .consent-cookie.
+.consentdrawer.
 .content_tracking.
 .cookie
 .cookie-
@@ -1725,6 +1728,7 @@
 .speedcurve.
 .speednetwork1.
 .sponsor
+.sponsor.
 .sponsorads.
 .sponsored-post
 .spot-title
@@ -2724,7 +2728,6 @@
 /SSOCore/update?
 /SWMAdPlayer.
 /ScoailMedia_
-/cookies.
 /SellathonCounterService.
 /ServeAd?
 /Server/AD/*
@@ -4042,7 +4045,9 @@
 /adcycle/*
 /add-mymsn2.
 /add-to-any-
+/add-to-any-subscribe/*$image
 /add-to-any/*
+/add-to-any/*$~stylesheet
 /add728.
 /addEvent
 /addEvent?
@@ -4955,6 +4960,7 @@
 /adsandbox.
 /adsandtps/*
 /adsanity
+/adsanity-
 /adsanity.
 /adsarticlescript.
 /adsatlas_
@@ -7481,7 +7487,6 @@
 /cdnperf-rum.
 /cdp728.
 /cds-webanalytics.
-.ad.
 /cdx-radar/*
 /cedexis.
 /cedexis/*
@@ -7490,7 +7495,6 @@
 /center-
 /center.
 /centerads.
-/ad_
 /ceoads/*
 /certifica-js14.
 /certifica.
@@ -7514,6 +7518,7 @@
 /chartbeat_
 /chartbeatanalytics/*
 /chartbeatftr.
+/chatur.
 /chaturbatebest.
 /chcounter/*
 /check
@@ -7613,6 +7618,7 @@
 /clickdimensions-
 /clickheat
 /clickheat.
+/clickjs
 /clicklog.
 /clicklog/*
 /clicklog4pc.
@@ -8196,6 +8202,7 @@
 /cookiebadge.
 /cookiebadge_
 /cookiebanner.
+/cookiebar
 /cookiebar-
 /cookiebar.
 /cookiebar.jquery.
@@ -8554,6 +8561,7 @@
 /custads/*
 /custom-analytics.
 /custom-fan-gate-plugin/*
+/custom-metrics
 /custom-share.
 /custom-tracking.
 /custom11x5ad.
@@ -9167,21 +9175,17 @@
 /empty_ad_
 /emstrack.
 /emtj_tracker.
-/share/*
 /ena_cookies_
 /end.
-/ping?
 /ent_counter?
 /enter.
 /entry_stats?
 /envoy.
-.consentdrawer.
 /epespad.
 /epf_v1_95.
 /epixels.
 /eplanningv4.
 /epomads2.
--banner-
 /eprivacy-cookie.
 /eprivacy.
 /eprivacy/*
@@ -10270,10 +10274,7 @@
 /get-ad/*
 /get-advert-
 /get-inline-ad
-&fingerprint=
 /get-tracking-data
-/ad?
-?affid=
 /getAdAjax/*
 /getAdBlockModal?
 /getAdCode&
@@ -11577,9 +11578,6 @@
 /inner-ads-
 /inner-ads/*
 /innerads.
-.measure.
-.sponsor.
-.webpush.
 /inpost-ad
 /inread.
 /inread_
@@ -11589,7 +11587,6 @@
 /insertA.d.
 /insertAd.
 /insert_impressions.
-/plausible.
 /insertads.
 /inserthit.
 /insideAD.
@@ -11606,7 +11603,6 @@
 /instafeed.min.
 /instart.
 /instreamad/*
-?pixel=
 /intelliad.
 /intellitext.
 /intellitracker.
@@ -11619,7 +11615,6 @@
 /intermediate-ad-
 /internAds.
 /internal-ad-
-/page_view?
 /internalAds/*
 /internet-cloud-download
 /internet_ad_
@@ -11665,7 +11660,6 @@
 /iporganictrack.
 /ipornia.
 /iprom-ad/*
-iperceptions.com
 /iptracer.
 /iptvantiad.
 /iptvpub.
@@ -13622,6 +13616,7 @@ iperceptions.com
 /page_counter.
 /page_monitor_log?
 /page_view.
+/page_view?
 /pageaction/trackEvent
 /pagead.
 /pagead/*
@@ -13660,7 +13655,6 @@ iperceptions.com
 /pageview.
 /pageview.ashx
 /pageview/*
-/pixel?
 /pageview?
 /pageviewgeodevice/*
 /pageviews-counter-
@@ -13855,6 +13849,7 @@ iperceptions.com
 /ping/?url=
 /ping/pageload?
 /ping/show?
+/ping?
 /ping?h=
 /ping?referrer=
 /ping?rid=
@@ -13999,12 +13994,6 @@ iperceptions.com
 /pltk/pltk.
 /pluck-tracking.
 /plugin_cookie/*
-/NKS-subscription/*
-/StickySocialBar/*
-/add-to-any-subscribe/*$image
-/add-to-any/*$~stylesheet
-/adsanity-
-/advanced-browser-check/*
 /plus-badge.
 /plus/ad_
 /plus728.
@@ -14397,6 +14386,7 @@ iperceptions.com
 /pu/license.
 /pu/script.
 /pu2redirector.
+/pu_
 /pu_ljsm2.
 /pub
 /pub-
@@ -15337,31 +15327,6 @@ iperceptions.com
 /script_log.
 /scriptinject.
 /scriptpop.
-kissmetrics.com
-/AdService_
-/ad/*
-/ad_
-/afc/*
-/analitics.
-/analytics-
-/analytics.
-/analytics/*
-/analytics_
-/chatur.
-/clickjs
-/contador.
-/cookiebar
-/ga.
-/hbx.
-/log.
-/onesignal.
-/pu_
-/statistics/*
-/stats/*
-/sweet/*
-/tracking.
-/xiti/*
-/zanox-
 /scroll-analytics-
 /scroll-to-top.
 /scroll-to-top/*
@@ -17012,6 +16977,7 @@ kissmetrics.com
 /sw-vodlocker.
 /swa_t.
 /swatag.
+/sweet/*
 /sweetalert2.
 /swfaddress.
 /swg/*
@@ -17992,8 +17958,6 @@ kissmetrics.com
 /ux_analytics/*
 /ux_analytics_
 /uxm_tracking.
-/analytics.
-/custom-metrics
 /v53nse.
 /vTracker_
 /va-stat.
@@ -18920,6 +18884,7 @@ kissmetrics.com
 /zaius.
 /zakladki.
 /zalando-ad-
+/zanox-
 /zanox.
 /zanox/banner/*
 /zanox_ad/*
@@ -19172,28 +19137,22 @@ kissmetrics.com
 9xmovies.
 9xupload.
 =120x600
-=120x600
 =160x160
 =160x600
 =160x600&
-=160x600
 =300x250
 =300x250/*
-=300x250
 =300x250_
 =300x300
-=336x280
 =336x280
 =468x60
 =468x60&
 =468x60/*
-=468x60
 =468x60_
 =468x80_
 =480x60
 =728x90
 =728x90/*
-=728x90
 =AdRam.
 =Ads
 =DisplayAd&
@@ -19458,6 +19417,7 @@ kissmetrics.com
 ?advtile=
 ?advurl=
 ?aff
+?affid=
 ?affil_
 ?banner
 ?banner.id=
@@ -19509,6 +19469,7 @@ kissmetrics.com
 ?pageviews=$third-party
 ?phpAds_
 ?pixel
+?pixel=
 ?poolid=
 ?popunder_
 ?proxy=*?pool=
@@ -24624,6 +24585,7 @@ io1.wf
 ioam.
 iowaconference.com
 ipatriot.com
+iperceptions.com
 iphone-caviar.
 ipify.
 ipinfo.
@@ -24944,6 +24906,7 @@ kissasians.org
 kisscartoon.
 kisscartoon.info
 kissmanga.
+kissmetrics.com
 kisspng.com
 kisstvshow.
 kiwiexploits.com
