@@ -1,11 +1,10 @@
 #!/bin/bash
 
-# <commit operations>
+# <commit operations for all local changes>
 
 git fetch
 git add --all
 git commit -am "update"
 git push origin main
 
-# <commit operations>
-
+# <commit operations for all local changes>
