@@ -35,8 +35,12 @@ print('lines read file2 : ' + str(len(open(file2_in, encoding='Latin1').readline
 
 # <open file3_out file and write header>
 file3_out = open(file3_out_name, 'w', encoding='Latin1')
-file3_out.write('! L1 domains block list')
-file3_out.write('\n')
+file3_out.write('! Title: Unified block list\n')
+file3_out.write('! Description: personal filters for uBlock\n')
+file3_out.write('! Expires: 1 day\n')
+file3_out.write('! Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/unified_block_list\n')
+file3_out.write('!\n')
+
 # <open file3_out file and write header>
 
 # <write extracted L1.root elements>
