@@ -9,9 +9,15 @@
 
 import re       # Regular expression operations
 
+# <settings>
+file3_out_name = "ipfire_domains_block_list"
+# <settings>
+
 print('\n')
+print('=========================================================================')
 print('Extract L1.root domains from source text file and .root library text file')
 print('=========================================================================')
+print('\n')
 
 # <get filename containing text lists, convert into list, sort and dedup>
 file1_in = input('Please filename for source text file1: ')
@@ -28,8 +34,8 @@ print('lines read file2 : ' + str(len(open(file2_in, encoding='Latin1').readline
 # <get filename containing text lists, convert into list, sort and dedup>
 
 # <open file3_out file and write header>
-file3_out = open('file3_out', 'w', encoding='Latin1')
-file3_out.write('! L1 domains extracted:')
+file3_out = open(file3_out_name, 'w', encoding='Latin1')
+file3_out.write('! L1 domains block list')
 file3_out.write('\n')
 # <open file3_out file and write header>
 
