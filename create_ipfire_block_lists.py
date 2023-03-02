@@ -70,7 +70,7 @@ for line in list1_in:
     string_r = re.search(r'\.[a-z|A-Z]+\.[a-z|A-Z]+$', line)
     if string_r:
         string_r = string_r.group()
-        string_L1_r = re.search(r'^[a-z|A-Z|0-9|\-|_]+\.[a-z|A-Z]+\.[a-z|A-Z]+$', line)   # L1.root(.@.@)
+        string_L1_r = re.search(r'^[a-z|A-Z|0-9][a-z|A-Z|0-9|\-|_|\.]+\.[a-z|A-Z]+\.[a-z|A-Z]+$', line)   # L1.root(.@.@)
         if string_r in list2_in and string_L1_r:
             list3_out.add(line)            
     # <.root = .@.@ case>
@@ -80,7 +80,7 @@ for line in list1_in:
         string_r = re.search(r'\.[a-z|A-Z]+$', line)
         if string_r:
             string_r = string_r.group()
-            string_L1_r = re.search(r'^[a-z|A-Z|0-9|\-|_]+\.[a-z|A-Z]+$', line)   # L1.root(.@)
+            string_L1_r = re.search(r'^[a-z|A-Z|0-9][a-z|A-Z|0-9|\-|_|\.]+\.[a-z|A-Z]+$', line)   # L1.root(.@)
             if string_r in list2_in and string_L1_r:
                 list3_out.add(line)
     # <.root = .@ case>        
