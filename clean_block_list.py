@@ -3,15 +3,16 @@ import progressbar as pb    # Progress bar
 
 # <settings>
 
-    file3_out_name = "dictionary"
+file3_out_name = "clean_block_list"
 
 # <settings>
 
 print('###############################################################################')
 print('#')
-print('# Create a dictionary from textfile')
+print('# Clean block_list textfile')
 print('#')
-print('# output: text file, sorted, with duplicates')
+print('# input: 2 textfiles')
+print('# output: 'L1.root' text file, sorted, deduplicated, without empty lines')
 print('#')
 print('###############################################################################')
 
@@ -19,16 +20,25 @@ print('')
 
 # <get filename containing text lists, convert into list, sort and dedup>
 
-    file1_in = input('Please filename for source text file1: ')
-    list1_in = set(line.strip() for line in open(file1_in, encoding='Latin1'))
-    list1_in = sorted(list1_in)
-    print(len(list1_in), 'lines read')
+file1_in = input('Please filename for source text file1: ')
+list1_in = set(line.strip() for line in open(file1_in, encoding='Latin1'))
+list1_in = sorted(list1_in)
+print(len(list1_in), 'lines read')
+
+# <get filename containing text lists, convert into list, sort and dedup>
+
+# <get filename containing text lists, convert into list, sort and dedup>
+
+    # file2_in = input('Please filename for .root library text file2: ')
+    # list2_in = set(line.strip() for line in open(file2_in, encoding='Latin1'))
+    # list2_in = sorted(list2_in)
+    # print('lines read file2 : ' + str(len(open(file2_in, encoding='Latin1').readlines())))
 
 # <get filename containing text lists, convert into list, sort and dedup>
 
 # <open file3_out file and write header>
 
-    file3_out = open(file3_out_name, 'w', encoding='Latin1')
+file3_out = open(file3_out_name, 'w', encoding='Latin1')
     # file3_out.write('! Clean block_list')
     # file3_out.write('\n')
 
@@ -62,33 +72,40 @@ print('')
 
 # <remove items send to output>
 
-    list1_in_temp = [i for i in list1_in if i not in list3_out]
-    list1_in = list1_in_temp
+list1_in_temp = [i for i in list1_in if i not in list3_out]
+list1_in = list1_in_temp
 
 # <remove items send to output>
 
 # <find and write redundant L2+.domain elements>
 
-    print('3rd pass: clean redundant L2+.domain elements')
-    progress = pb.ProgressBar(maxval = len(list1_in)).start()
-    progvar = 0
+print('3rd pass: clean redundant L2+.domain elements')
+progress = pb.ProgressBar(maxval = len(list1_in)).start()
+progvar = 0
 
-    for line in list1_in:
-        string = re.split(" #\!\-_\.,", line)
-        print(string)
+for line in list1_in:
+    string_r = re.search(r'[a-z|A-Z|0-9|\-|_]+\.[a-z|A-Z]+$', line)  # L1.root
+    if string_r:
+        string_r = string_r.group()
+        if string_r in list1_in and string_r != line:
+            list3_out.add('! ' + line)      # line is redundant; write as a comment
+        else:
+            list3_out.add(line)
+    else:
         list3_out.add(line)
-        progress.update(progvar + 1)
-        progvar += 1
-    print('')
+    progress.update(progvar + 1)
+    progvar += 1
+print('')
 
-    print('done!')
-    print('')
+print('done!')
+print('')
 
-    file3_out.writelines(line + '\n' for line in list3_out)
-    file3_out.close()
+list3_out = sorted(list3_out)
+file3_out.writelines(line + '\n' for line in list3_out)
+file3_out.close()
 
-    print(len(list3_out), 'lines written')
-    print('Find results in textfile <' + file3_out_name + '>')
-    print('\n')
+print(len(list3_out), 'lines written')
+print('Find results in textfile <' + file3_out_name + '>')
+print('\n')
 
 # <find and write redundant L2+.domain elements>
