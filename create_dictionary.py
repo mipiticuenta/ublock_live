@@ -43,9 +43,8 @@ progress = pb.ProgressBar(maxval = len(list1_in)).start()
 progvar = 0
 
 for line in list1_in:
-    string = re.split(" #\!\-_\.,", line)
-    print(string)
-    list3_out.add(line)
+    line = re.split(r"[^a-z,^A-Z,^0-9]+", line)
+    for word in line: list3_out.add(word)
     progress.update(progvar + 1)
     progvar += 1
 print('')
