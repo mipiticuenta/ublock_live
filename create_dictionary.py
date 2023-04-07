@@ -1,4 +1,6 @@
 import re                   # Regular expression operations
+import pandas as pd
+import numpy as np
 import progressbar as pb    # Progress bar
 
 # <settings>
@@ -43,7 +45,7 @@ progress = pb.ProgressBar(maxval = len(list1_in)).start()
 progvar = 0
 
 for line in list1_in:
-    line = re.split(r"[^a-z,^A-Z,^0-9]+", line)
+    line = re.split(r"[^a-z,^A-Z]+", line)
     for word in line: list3_out.add(word)
     progress.update(progvar + 1)
     progvar += 1
@@ -52,11 +54,14 @@ print('')
 print('done!')
 print('')
 
-file3_out.writelines(line + '\n' for line in list3_out)
+list3_out = (pd.value_counts(list3_out))
+list3_out.to_csv(file3_out_name)
+
+#file3_out.writelines(line + '\n' for line in list3_out)
 file3_out.close()
 
-print(len(list3_out), 'lines written')
-print('Find results in textfile <' + file3_out_name + '>')
-print('\n')
+#print(len(list3_out), 'lines written')
+#print('Find results in textfile <' + file3_out_name + '>')
+#print('\n')
 
 # <create dictionary>
