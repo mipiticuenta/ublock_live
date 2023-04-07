@@ -3,16 +3,15 @@ import progressbar as pb    # Progress bar
 
 # <settings>
 
-    file3_out_name = "clean_block_list"
+    file3_out_name = "dictionary"
 
 # <settings>
 
 print('###############################################################################')
 print('#')
-print('# Clean block_list textfile')
+print('# Create a dictionary from textfile')
 print('#')
-print('# input: 2 textfiles')
-print('# output: 'L1.root' text file, sorted, deduplicated, without empty lines')
+print('# output: text file, sorted, with duplicates')
 print('#')
 print('###############################################################################')
 
@@ -24,15 +23,6 @@ print('')
     list1_in = set(line.strip() for line in open(file1_in, encoding='Latin1'))
     list1_in = sorted(list1_in)
     print(len(list1_in), 'lines read')
-
-# <get filename containing text lists, convert into list, sort and dedup>
-
-# <get filename containing text lists, convert into list, sort and dedup>
-
-    # file2_in = input('Please filename for .root library text file2: ')
-    # list2_in = set(line.strip() for line in open(file2_in, encoding='Latin1'))
-    # list2_in = sorted(list2_in)
-    # print('lines read file2 : ' + str(len(open(file2_in, encoding='Latin1').readlines())))
 
 # <get filename containing text lists, convert into list, sort and dedup>
 
@@ -84,15 +74,9 @@ print('')
     progvar = 0
 
     for line in list1_in:
-        string_r = re.search(r'[a-z|A-Z|0-9|\-|_]+\.[a-z|A-Z]+$', line)  # L1.root
-        if string_r:
-            string_r = string_r.group()
-            if string_r in list1_in and string_r != line:
-                list3_out.add('! ' + line)      # line is redundant; write as a comment
-            else:
-                list3_out.add(line)
-        else:
-            list3_out.add(line)
+        string = re.split(" #\!\-_\.,", line)
+        print(string)
+        list3_out.add(line)
         progress.update(progvar + 1)
         progvar += 1
     print('')
@@ -100,7 +84,6 @@ print('')
     print('done!')
     print('')
 
-    list3_out = sorted(list3_out)
     file3_out.writelines(line + '\n' for line in list3_out)
     file3_out.close()
 
