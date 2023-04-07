@@ -36,8 +36,6 @@ file3_out = open(file3_out_name, 'w', encoding='Latin1')
 
 # <open file3_out file and write header>
 
-#list3_out = set()
-
 list3_out = []
 
 # <create dictionary>
@@ -61,11 +59,10 @@ list3_out_pd.columns = ['word']
 list3_out_pd = pd.crosstab(index=list3_out_pd['word'], columns='freq')
 list3_out_pd.to_csv(file3_out_name)
 
-#file3_out.writelines(line + '\n' for line in list3_out)
 file3_out.close()
 
-#print(len(list3_out), 'lines written')
-#print('Find results in textfile <' + file3_out_name + '>')
-#print('\n')
+print(len(list3_out_pd), 'lines written')
+print('Find results in textfile <' + file3_out_name + '>')
+print('\n')
 
 # <create dictionary>
