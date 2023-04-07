@@ -36,7 +36,9 @@ file3_out = open(file3_out_name, 'w', encoding='Latin1')
 
 # <open file3_out file and write header>
 
-list3_out = set()
+#list3_out = set()
+
+list3_out = []
 
 # <create dictionary>
 
@@ -46,7 +48,7 @@ progvar = 0
 
 for line in list1_in:
     line = re.split(r"[^a-z,^A-Z]+", line)
-    for word in line: list3_out.add(word)
+    for word in line: list3_out.append(word)
     progress.update(progvar + 1)
     progvar += 1
 print('')
