@@ -54,8 +54,9 @@ print('')
 print('done!')
 print('')
 
-list3_out = (pd.value_counts(list3_out))
-list3_out.to_csv(file3_out_name)
+list3_out_pd = pd.DataFrame(list1_in)
+list3_out_pd (pd.value_counts(list3_out))
+list3_out_pd.to_csv(file3_out_name)
 
 #file3_out.writelines(line + '\n' for line in list3_out)
 file3_out.close()
