@@ -96,6 +96,8 @@ for line in list1_in:
     progress.update(progvar + 1)
     progvar += 1
 
+print('\n')
+
 list3_out = sorted(list3_out)
 file3_out.writelines(line + '\n' for line in list3_out)
 file3_out.close()
