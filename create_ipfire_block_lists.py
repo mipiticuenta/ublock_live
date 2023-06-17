@@ -61,8 +61,8 @@ file4_out.write('\n')
 print('Listing L1.root found; please wait')
 
 list3_out = set()
-progress = pb.ProgressBar(maxval = len(list1_in)).start()
-progvar = 0
+pbar = pb.ProgressBar(maxval = len(list1_in)).start()
+progress = 0
 
 for line in list1_in:
 
@@ -91,9 +91,10 @@ for line in list1_in:
                 if string_r in list2_in and string_L1_r: list3_out.add(line)    # <do not apply matching .root in file #2/>
             # </ .root = .@ case>
 
-    progvar += 1
-    progress.update(progvar)
+    progress += 1
+    pbar.update(progress)
 
+pbar.finish()
 print('\n')
 
 list3_out = sorted(list3_out)
@@ -108,8 +109,8 @@ print('lines written    : ' + str(len(open(file3_out_name, encoding='Latin1').re
 print('Listing urls found; please wait')
 
 list4_out = set()
-progress = pb.ProgressBar(maxval = len(list1_in)).start()
-progvar = 0
+pbar = pb.ProgressBar(maxval = len(list1_in)).start()
+progress = 0
 
 for line in list1_in:
 
@@ -118,13 +119,14 @@ for line in list1_in:
         if line[0] != '!' and line[0] != '|':    # <dismiss commented lines/>
 
             if line[-10:] == '$important': line = line[0:-10]    # <remove ''$important'' tag at the end (if present)/>
-            if line[0:2] == '||': line = line[2:]    # <remove ''$important'' tag at the end (if present)/>
+            if line[0:2] == '||': line = line[2:]    # <remove ''||'' modifier at the beggining (if present)/>
             if string_r := re.search(r'^[a-z|A-Z|\.|\-|_|\/]+$', line): string_r = string_r.group()
             if string_r and string_r not in list3_out: list4_out.add(line)
 
-    progvar += 1
-    progress.update(progvar)
-    
+    progress += 1
+    pbar.update(progress)
+
+pbar.finish()
 print('\n')
 
 list4_out = sorted(list4_out)
