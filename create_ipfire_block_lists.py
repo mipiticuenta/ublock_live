@@ -117,9 +117,10 @@ for line in list1_in:
 
     if len(line) > 0:
 
-        if line[0] != '!':    # <dismiss commented lines/>
+        if line[0] != '!' and line[0] != '|':    # <dismiss commented lines/>
 
             if line[-10:] == '$important': line = line[0:-10]    # <remove ''$important'' tag at the end (if present)/>
+            if line[0:2] == '||': line = line[2:]    # <remove ''$important'' tag at the end (if present)/>
             if string_r := re.search(r'^[a-z|A-Z|\.|\-|_|\/]+$', line): string_r = string_r.group()
             if string_r and string_r not in list3_out: list4_out.add(line)
 
