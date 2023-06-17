@@ -42,20 +42,18 @@ print('\n')
 
 # <open file3_out file and write header>
 file3_out = open(file3_out_name, 'w', encoding='Latin1')
-file3_out.write('! Title: Unified block list\n')
-file3_out.write('! Description: personal filters for ipfire (domains)\n')
-file3_out.write('! Expires: 1 day\n')
-file3_out.write('! Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/unified_block_list\n')
-file3_out.write('!\n')
+file3_out.write('# Title: Unified block list\n')
+file3_out.write('# Description: personal filters for ipfire (domains)\n')
+file3_out.write('# Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/unified_block_list\n')
+file3_out.write('\n')
 # <\open file3_out file and write header>
 
 # <open file4_out file and write header>
 file4_out = open(file4_out_name, 'w', encoding='Latin1')
-file4_out.write('! Title: Unified block list\n')
-file4_out.write('! Description: personal filters for ipfire (urls)\n')
-file4_out.write('! Expires: 1 day\n')
-file4_out.write('! Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/unified_block_list\n')
-file4_out.write('!\n')
+file4_out.write('# Title: Unified block list\n')
+file4_out.write('# Description: personal filters for ipfire (urls)\n')
+file4_out.write('# Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/unified_block_list\n')
+file4_out.write('\n')
 # <\open file4_out file and write header>
 
 # <write extracted L1.root domain type filters>
@@ -93,8 +91,8 @@ for line in list1_in:
                 if string_r in list2_in and string_L1_r: list3_out.add(line)    # <do not apply matching .root in file #2/>
             # </ .root = .@ case>
 
-    progress.update(progvar + 1)
     progvar += 1
+    progress.update(progvar)
 
 print('\n')
 
@@ -124,9 +122,9 @@ for line in list1_in:
             if string_r := re.search(r'^[a-z|A-Z|\.|\-|_|\/]+$', line): string_r = string_r.group()
             if string_r and string_r not in list3_out: list4_out.add(line)
 
-    progress.update(progvar + 1)
     progvar += 1
-
+    progress.update(progvar)
+    
 print('\n')
 
 list4_out = sorted(list4_out)
