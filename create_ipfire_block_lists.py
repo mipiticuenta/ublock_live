@@ -84,7 +84,7 @@ for line in list1_in:
                 string_L1_r = ''
                 if string_L1_r := re.search(r'^[a-z|A-Z|0-9][a-z|A-Z|0-9|\-|_|\.]+\.[a-z|A-Z]+$', line): string_L1_r = string_L1_r.group()   # L1.root(.@.@)
                 # if string_r in list2_in and string_L1_r: list3_out.add(line)    # <forces matching .root in file #2/>
-                if string_r in list2_in and string_L1_r: list3_out.add(line)    # <do not apply matching .root in file #2/>
+                if string_r and string_L1_r: list3_out.add(line)    # <do not apply matching .root in file #2/>
             # </ .root = .@ case>
 
     progress += 1
