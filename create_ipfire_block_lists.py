@@ -3,11 +3,11 @@ print('#########################################################################
 print('#')
 print('# Extract L1.root domains and url filters from source text file')
 print('#')
-print('# input: 1 textfile containing ublock origin filters')
+print('# input: a text file containing ublock_origin filters')
 print('#')
 print('# outputs are text files, sorted, deduplicated, without empty lines:')
-print('#    <ipfire_domains_block_list>')
-print('#    <ipfire_urls_block_list>')
+print('# 1  <ipfire_domains_block_list>')
+print('# 2  <ipfire_urls_block_list>')
 print('#')
 print('##########################################################################################')
 print('\n')
@@ -54,7 +54,7 @@ file4_out.write('\n')
 
 # <write extracted L1.root domain type filters>
 
-print('Listing L1.root found; please wait')
+print('Listing L1.root filters, please wait')
 
 list3_out = set()
 pbar = pb.ProgressBar(maxval = len(list1_in)).start()
@@ -103,7 +103,7 @@ print('lines written    : ' + str(len(open(file3_out_name, encoding='Latin1').re
 
 # <write extracted url type filters>
 
-print('Listing urls found; please wait')
+print('Listing urls filters, please wait')
 
 list4_out = set()
 pbar = pb.ProgressBar(maxval = len(list1_in)).start()
