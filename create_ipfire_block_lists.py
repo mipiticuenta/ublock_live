@@ -1,28 +1,24 @@
-##########################################################################################
-#
-# Extract L1.root domains from source text file and '.root' library text file
-#
-# input: 2 textfiles
-# output: 'ipfire_domains_block_list'
-# output: 'ipfire_urls_block_list'
-#
-# outputs are text files, sorted, deduplicated, without empty lines
-#
-##########################################################################################
+print('\n')
+print('##########################################################################################')
+print('#')
+print('# Extract L1.root domains and url filters from source text file')
+print('#')
+print('# input: 1 textfile containing ublock origin filters')
+print('# output: <ipfire_domains_block_list>'')
+print('# output: <ipfire_urls_block_list>')
+print('#')
+print('# outputs are text files, sorted, deduplicated, without empty lines')
+print('#')
+print('##########################################################################################')
+print('\n')
 
+# <setup/>
 import re                   # Regular expression operations
 import progressbar as pb    # Progress bar
 
-# <settings>
 file3_out_name = 'ipfire_domains_block_list'
 file4_out_name = 'ipfire_urls_block_list'
-# <\settings>
-
-print('\n')
-print('==================================================================================')
-print('Extract L1.root domains and urls from source text file and .root library text file')
-print('==================================================================================')
-print('\n')
+# <setup/>
 
 # <get filename containing text lists, convert into list, sort and dedup>
 file1_in = input('Please filename for source text file1: ')
@@ -32,13 +28,13 @@ print('lines read file1 : ' + str(len(open(file1_in, encoding='Latin1').readline
 print('\n')
 # <\get filename containing text lists, convert into list, sort and dedup>
 
-# <get filename containing text lists, convert into list, sort and dedup>
-file2_in = input('Please filename for .root library text file2: ')
-list2_in = set(line.strip() for line in open(file2_in, encoding='Latin1'))
-list2_in = sorted(list2_in)
-print('lines read file2 : ' + str(len(open(file2_in, encoding='Latin1').readlines())))
-print('\n')
-# <\get filename containing text lists, convert into list, sort and dedup>
+## <get filename containing text lists, convert into list, sort and dedup>
+#file2_in = input('Please filename for .root library text file2: ')
+#list2_in = set(line.strip() for line in open(file2_in, encoding='Latin1'))
+#list2_in = sorted(list2_in)
+#print('lines read file2 : ' + str(len(open(file2_in, encoding='Latin1').readlines())))
+#print('\n')
+## <\get filename containing text lists, convert into list, sort and dedup>
 
 # <open file3_out file and write header>
 file3_out = open(file3_out_name, 'w', encoding='Latin1')
