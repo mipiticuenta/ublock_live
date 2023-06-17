@@ -118,6 +118,7 @@ for line in list1_in:
 
         if line[0] != '!' and line[0] != '|':    # <dismiss commented lines/>
 
+            string_r = ''
             if line[-10:] == '$important': line = line[0:-10]    # <remove ''$important'' tag at the end (if present)/>
             if line[0:2] == '||': line = line[2:]    # <remove ''||'' modifier at the beggining (if present)/>
             if string_r := re.search(r'^[a-z|A-Z|\.|\-|_|\/]+$', line): string_r = string_r.group()
