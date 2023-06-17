@@ -62,6 +62,7 @@ progress = 0
 
 for line in list1_in:
 
+    line = line.strip()
     if len(line) > 0:
 
         if line[0] != '!':    # <dismiss commented lines/>
@@ -110,6 +111,7 @@ progress = 0
 
 for line in list1_in:
 
+    line = line.strip()
     if len(line) > 0:
 
         if line[0] != '!' and line[0] != '|':    # <dismiss commented lines/>
