@@ -41,9 +41,10 @@ print(str(len(open(file1_in, encoding='Latin1').readlines())) + 'lines read from
 
 # <open file3_out file and write header>
 file3_out = open(file3_out_name, 'w', encoding='Latin1')
-file3_out.write('# Title: domain block list\n')
-file3_out.write('# Description: personal domain filters for ipfire and ublock_origin\n')
-file3_out.write('# Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_domain_block_list\n')
+file3_out.write('! Title: domain block list\n')
+file3_out.write('! Description: personal domain filters for ipfire and ublock_origin\n')
+file3_out.write('! Expires: 1 day\n')
+file3_out.write('! Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_domain_block_list\n')
 file3_out.write('\n')
 # <\open file3_out file and write header>
 
@@ -98,9 +99,10 @@ print(str(len(open(file3_out_name, encoding='Latin1').readlines())) + ' lines wr
 
 # <open file4_out file and write header>
 file4_out = open(file4_out_name, 'w', encoding='Latin1')
-file4_out.write('# Title: url block list\n')
-file4_out.write('# Description: personal url filters for ipfire and ublock_origin\n')
-file4_out.write('# Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_url_block_list\n')
+file4_out.write('! Title: url block list\n')
+file4_out.write('! Description: personal url filters for ipfire and ublock_origin\n')
+file4_out.write('! Expires: 1 day\n')
+file4_out.write('! Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_url_block_list\n')
 file4_out.write('\n')
 # <\open file4_out file and write header>
 
