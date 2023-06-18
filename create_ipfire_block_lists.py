@@ -26,7 +26,7 @@ file5_out_name = 'ublock_list_except_domains'
 file1_in = input('Please filename for source text file : ')
 list1_in = set(line.strip() for line in open(file1_in, encoding='Latin1'))
 list1_in = sorted(list1_in)
-print('lines read from ' + file1_in ' : ' + str(len(open(file1_in, encoding='Latin1').readlines())))
+print('lines read from ' + file1_in + ' : ' + str(len(open(file1_in, encoding='Latin1').readlines())))
 print('\n')
 # <\get filename containing text lists, convert into list, sort and dedup>
 
@@ -91,7 +91,7 @@ print('\n')
 list3_out = sorted(list3_out)
 file3_out.writelines(line + '\n' for line in list3_out)
 file3_out.close()
-print('lines written to ' + file3_out_name + ': ' + str(len(open(file3_out_name, encoding='Latin1').readlines())) + '\n')
+print(str(len(open(file3_out_name, encoding='Latin1').readlines())) + ' lines written to ' + file3_out_name + '\n')
 
 # </write extracted L1.root domain type filters>
 
@@ -133,7 +133,7 @@ print('\n')
 list4_out = sorted(list4_out)
 file4_out.writelines(line + '\n' for line in list4_out)
 file4_out.close()
-print('lines written to ' + file4_out_name + ' : ' + str(len(open(file4_out_name, encoding='Latin1').readlines())) + '\n')
+print(str(len(open(file4_out_name, encoding='Latin1').readlines())) + ' lines written to ' + file4_out_name + '\n')
 
 # </write extracted url type filters>
 
@@ -170,6 +170,6 @@ print('\n')
 list5_out = sorted(list5_out)
 file5_out.writelines(line + '\n' for line in list5_out)
 file5_out.close()
-print('lines written to ' file5_out_name + ' : ' + str(len(open(file5_out_name, encoding='Latin1').readlines())) + '\n')
+print(str(len(open(file5_out_name, encoding='Latin1').readlines())) + ' lines written to ' + file5_out_name + '\n')
 
 # </write extracted filters except domains>
