@@ -113,7 +113,6 @@
 ! fsegfy.lepoint.fr
 ! fsm.lapresse.ca
 ! games.on.net
-! gaming.uefa.com
 ! gardinotec.ind.br
 ! gdyn.nba.com
 ! gedex.ind.br
@@ -566,9 +565,12 @@
 ###AdHouseRectangle
 ###AdIbl
 ###AdImage
+###AdImage:not([style^="position: absolute; left: -5000px"])
 ###AdIndexTower
 ###AdLayer1
+###AdLayer1:not([style^="position: absolute; left: -5000px"])
 ###AdLayer2
+###AdLayer2:not([style^="position: absolute; left: -5000px"])
 ###AdLocationMarketPage
 ###AdMediumRectangle1300x250
 ###AdMediumRectangle2300x250
@@ -1740,7 +1742,6 @@
 ###adfooter_728x90
 ###adfooter_hidden
 ###adframe:not(frameset)
-###adframe:not(frameset):not([style^="position: absolute; left: -5000px"])
 ###adframetop
 ###adfreeDeskSpace
 ###adfreead

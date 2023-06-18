@@ -26,8 +26,7 @@ file5_out_name = 'ublock_list_except_domains'
 file1_in = input('Please filename for source text file : ')
 list1_in = set(line.strip() for line in open(file1_in, encoding='Latin1'))
 list1_in = sorted(list1_in)
-print('lines read from ' + file1_in + ' : ' + str(len(open(file1_in, encoding='Latin1').readlines())))
-print('\n')
+print(str(len(open(file1_in, encoding='Latin1').readlines())) + 'lines read from ' + file1_in + '\n')
 # <\get filename containing text lists, convert into list, sort and dedup>
 
 ## <get filename containing text lists, convert into list, sort and dedup>
