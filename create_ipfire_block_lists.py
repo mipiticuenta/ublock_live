@@ -141,7 +141,7 @@ print('lines written to ' + file4_out_name + ' : ' + str(len(open(file4_out_name
 
 # <open file5_out file and write header>
 file5_out = open(file5_out_name, 'w', encoding='Latin1')
-file5_out.write('! Title: block list except domains\n')
+file5_out.write('! Title: ublock list except domains\n')
 file5_out.write('! Description: personal filters for ublock_origin (excepting domains)\n')
 file5_out.write('! Expires: 1 day\n')
 file5_out.write('! Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ublock_list_except_domains\n')
