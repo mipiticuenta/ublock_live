@@ -1,3 +1,12 @@
+# <setup/>
+import re                   # Regular expression operations
+import progressbar as pb    # Progress bar
+
+file3_out_name = 'ipfire_domain_block_list'
+file4_out_name = 'ipfire_url_block_list'
+file5_out_name = 'ublock_list_except_domains'
+# <setup/>
+
 print('\n')
 print('####################################################################')
 print('#')
@@ -12,15 +21,6 @@ print('# 3  <ublock_list_except_domains>')
 print('#')
 print('####################################################################')
 print('\n')
-
-# <setup/>
-import re                   # Regular expression operations
-import progressbar as pb    # Progress bar
-
-file3_out_name = 'ipfire_domain_block_list'
-file4_out_name = 'ipfire_url_block_list'
-file5_out_name = 'ublock_list_except_domains'
-# <setup/>
 
 # <get filename containing text lists, convert into list, sort and dedup>
 file1_in = input('Please filename for source text file : ')
