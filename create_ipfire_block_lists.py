@@ -1,5 +1,5 @@
 print('\n')
-print('##########################################################################################')
+print('####################################################################')
 print('#')
 print('# Extract L1.root domains and url filters from source text file')
 print('#')
@@ -10,7 +10,7 @@ print('# 1  <ipfire_domains_block_list>')
 print('# 2  <ipfire_urls_block_list>')
 print('# 3  <ublock_list_except_domains>')
 print('#')
-print('##########################################################################################')
+print('####################################################################')
 print('\n')
 
 # <setup/>
