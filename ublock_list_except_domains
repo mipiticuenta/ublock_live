@@ -2,8 +2,10 @@
 ! Description: personal filters for ublock_origin (excepting domains)
 ! Expires: 1 day
 ! Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ublock_list_except_domains
+! 
 !
 ! ##[id^="count"]:not(body):not(html)
+! *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(D|d)eep(L|l)ink/")
 ! *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(S|s)ubmit/")
 ! *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(V|v)isit/")
 ! *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(\-|_)(S|s)hare(\s|$)/")
@@ -234,7 +236,6 @@
 ! mit.dws.com
 ! mit.dws.de
 ! mit.postbank.de
-! mixomniture.rbs.com
 ! mmedia.20m.es
 ! mms.al.com
 ! mms.nj.com
@@ -288,7 +289,6 @@
 ! oimg.nbcsports.com
 ! oipc.bc.ca
 ! okukab.go.id
-! omniture.rbs.com
 ! omtrkpix.rd.com
 ! one.lg.ua
 ! online.citi.com
@@ -313,7 +313,6 @@
 ! pn-majalengka.go.id
 ! politics.dailynews.us.com
 ! polizei.bayern.de
-! polyfill.ikea.net
 ! powersearch.us.com
 ! prd-collector-anon.ex.co
 ! prd-collector-platform.ex.co
@@ -580,7 +579,6 @@
 ###AdPanel
 ###AdPanelBigBox
 ###AdPanelLogo
-###AdPopUp
 ###AdRectangle
 ###AdServer
 ###AdShopSearch
@@ -692,7 +690,6 @@
 ###BrowseRelated
 ###ButtonAd
 ###CAAS-MESSAGE-PANEL
-###CCM_popup
 ###CCPANotice
 ###CCPA_opt_out
 ###CC_Bar
@@ -714,7 +711,6 @@
 ###CancelYurtdisi
 ###CerezUyari
 ###CerezUyarisi
-###ClickPop_LayerPop_Container
 ###ClickStory_ViewAD1
 ###ClickStory_ViewRightAD2
 ###CmAdView2
@@ -743,8 +739,6 @@
 ###CoockieAlert
 ###CoockiesPage
 ###CornerAd
-###CoverPop-content
-###CoverPop-cover
 ###DARTad300x250
 ###DAY_Slot_Weather_Top_1000x120
 ###DAadrp
@@ -921,7 +915,6 @@
 ###KisiselVerilerinKorunmasi
 ###LGPD
 ###LargeRectangleAd
-###LayerPop_185
 ###LeftAd
 ###LeftAd1
 ###LeftAd12
@@ -1031,7 +1024,6 @@
 ###PopOnlineAd
 ###PopOnlineMediaAd
 ###PopSubBox
-###PopupSignupForm_0
 ###PreRollAd
 ###Proceed
 ###ProtectionViePrivee
@@ -1188,7 +1180,6 @@
 ###UpsellBubble
 ###Ustad_MJ
 ###VKGroupInvite
-###VKPopupWrapper
 ###ViperBar_main
 ###WB-floating-notice
 ###WGbeshrkgj
@@ -1225,7 +1216,6 @@
 ###Zergnet
 ###\5f __tdspushdiv
 ###\5f _ic-notice
-###\5f iph_cp_popup
 ###_DIV_COOK
 ###_EAPM
 ###_EAPM.TC
@@ -1258,7 +1248,6 @@
 ###_close_cf
 ###_coockies
 ###_cook
-###_ctl0_pop_up_cnil
 ###_evh-button
 ###_evh-ric
 ###_f
@@ -1268,13 +1257,11 @@
 ###_gotop_outer
 ###_idpfLP_wrapper
 ###_iframe_content
-###_iph_cp_popup
 ###_landing_safe
 ###_lfsp
 ###_mlabd
 ###_most_commented
 ###_pcwgtlhs
-###_popIn_recommend
 ###_prcy_info_bar
 ###_prerollAd_1
 ###_psaihm_main_div
@@ -1503,8 +1490,6 @@
 ###adPanelAjaxUpdate
 ###adParent
 ###adPopBOTtOM
-###adPopover
-###adPopup
 ###adPosOne
 ###adPosition0
 ###adPosition14
@@ -2338,7 +2323,6 @@
 ###alteAusgabenCovers
 ###alternativeNewsSource
 ###am-ngg-ss-unit-label
-###am_pop-up
 ###amazon
 ###amazon-skin
 ###amazon-skin-links
@@ -2465,7 +2449,6 @@
 ###article-im-prompt
 ###article-left-right
 ###article-nav
-###article-popover
 ###article-recommendation
 ###article-slidein
 ###article-toolbar
@@ -2593,7 +2576,6 @@
 ###azcanywhere
 ###b-adw
 ###b-info-wrapper
-###b-pop_up__ajax_horo_na_zavtra
 ###b2cPlaceHolder
 ###b2t
 ###b300ib
@@ -2714,7 +2696,6 @@
 ###bbc-st-toolbar-1
 ###bbox
 ###bbox-fd
-###bbstar-popin
 ###bc-badges
 ###bcbtflb
 ###bck-t-tp
@@ -3567,7 +3548,6 @@
 ###classifiedsads
 ###claw
 ###clcback
-###cliSettingsPopup
 ###click_me
 ###clickablelink
 ###clickbanklink
@@ -3575,7 +3555,6 @@
 ###clickbgright
 ###clickfakeplayer
 ###clickforad
-###clickskeks-popup-outer-holder
 ###clientAds
 ###clk_btn
 ###clkad
@@ -3729,7 +3708,6 @@
 ###condividi-footer
 ###condividi_news
 ###condivisioni
-###conduitAdPopupWrapper
 ###confirm
 ###confirm.jqmConfirm
 ###confirmaPush_Cont
@@ -3881,7 +3859,6 @@
 ###coockiealert
 ###coockiechoice
 ###coockiehinweis
-###coockiepopup
 ###coockies
 ###coockies3wmDiv
 ###coockies_box
@@ -3916,7 +3893,6 @@
 ###coollist
 ###cooooookies
 ###cop
-###cornerPopIn
 ###corner_box
 ###cornerad
 ###corona-stage
@@ -3999,7 +3975,6 @@
 ###ctl00_BottomAd
 ###ctl00_BottomAd2_AdArea
 ###ctl00_BottomAdPanel
-###ctl00_CiasteczkaPolityka_RNCockie_popup
 ###ctl00_ContentMain_BanManAd468_BanManAd
 ###ctl00_ContentPlaceHolder1_AdRotator3
 ###ctl00_ContentPlaceHolder1_BigBoxArea2
@@ -4154,7 +4129,6 @@
 ###data-protection
 ###data-protection-regulation
 ###data-protection__layer
-###data-store-permission-popup
 ###dataPolicies
 ###data_protection
 ###data_protection_comment
@@ -4164,8 +4138,6 @@
 ###datenschutz-layer
 ###datenschutz_hinweis
 ###datenschutz_info
-###datenschutz_popup
-###datenschutz_popup_background
 ###datenschutzcontainer
 ###datenschutzcoockie
 ###datenschutzfenster
@@ -4520,7 +4492,6 @@
 ###ebrief-footer
 ###ebsponAxDS
 ###ec-modal
-###ec-popup-modal[style="display:block"]
 ###ecapShell
 ###ecl-notice
 ###ecomas-scch-ex
@@ -4529,10 +4500,8 @@
 ###edShow
 ###editionNav
 ###editorial
-###editorial-popin
 ###editorial2
 ###editorialPuff
-###editorial_popout
 ###editorial_sky
 ###edrone--push--alert--box
 ###eea-confirmation-outer
@@ -4544,7 +4513,6 @@
 ###elbp-footerbar-main
 ###element226
 ###elementDiv
-###element_to_pop_up
 ###elgoogybsda
 ###eltexto
 ###elytics
@@ -4559,22 +4527,18 @@
 ###email-opt-in
 ###email-opt-in-bottom
 ###email-pop:not(body):not(html)
-###email-popup-back
-###email-popup:not(body):not(html)
 ###email-rotator-wrapper
 ###email-sign-up:not(body):not(html)
 ###email-signup-bar:not(body):not(html)
 ###email-signup-sidebar
 ###email-slide-up
 ###email-widget-wrapper
-###emailAcqPopupContainer
 ###emailAcquisitionModal
 ###emailAlerts
 ###emailSignUp
 ###emailSignUpV4
 ###emailUpdates
 ###emailWidgetFormWrapper
-###email_sub_popover
 ###email_to_a_friend_button
 ###emailalerts
 ###emanset
@@ -4635,7 +4599,6 @@
 ###euCompliance
 ###euLaw-alert
 ###euNotice
-###euPopup
 ###eu_compliance
 ###eu_notice_content
 ###euc_box
@@ -4647,7 +4610,6 @@
 ###eula-div
 ###eulaw
 ###eulaw-bar
-###eupopup
 ###eureg
 ###eurociastko
 ###evenement
@@ -4655,7 +4617,6 @@
 ###evo-root
 ###ewcm2_container
 ###ex-ligatus
-###ex_pop_iframe
 ###ex_pu_iframe
 ###exads
 ###exampleModal
@@ -4736,7 +4697,6 @@
 ###fans-of-site-module
 ###fansback
 ###farright
-###fascia-ue-popup
 ###fast-cmp-settings
 ###fastRegBottom
 ###fastdw
@@ -4751,8 +4711,6 @@
 ###fbLikebox
 ###fbOnscroll
 ###fbPanel
-###fbPopUp
-###fbPopupBG
 ###fbSlider
 ###fbSubLoading
 ###fbbox
@@ -5178,8 +5136,6 @@
 ###fusion-email-signup-modal
 ###fusion-recirc-timeout
 ###fusionad
-###fvm-popin-wrapper
-###fwin_popad_7ree
 ###g-adblock2
 ###g300x250
 ###gAddTop
@@ -5432,7 +5388,6 @@
 ###gp-page-wrapper
 ###gp-pro-upsell
 ###gp_game_list_badge
-###gp_pop_up
 ###gpdr
 ###gpdr:not(body):not(html)
 ###gpl
@@ -5640,7 +5595,6 @@
 ###hear-ye-bg
 ###hearst
 ###hearthhead-mini-feature
-###heateor_ss_browser_popup_bg
 ###heimdallPlayer
 ###helloDollywarning
 ###hello_iframe
@@ -5877,14 +5831,10 @@
 ###ilgisistemi
 ###im-block_wrapper
 ###im-layer
-###im-pop-under
 ###im9ad
 ###imCel_Klass
 ###imCel_Vkontakte
-###imPopup
 ###im_box
-###im_popupDiv
-###im_popupFixed
 ###imageGalleryAd
 ###imageGalleryAdHeadLine
 ###imagePubPave
@@ -6130,7 +6080,6 @@
 ###jFrame-email-signup
 ###jGoTop
 ###jGrowl
-###jPopUp
 ###j_all
 ###ja-rightcol
 ###ja-topbar
@@ -6158,7 +6107,6 @@
 ###jjj
 ###jm-back-top
 ###jm_sl_navigation
-###jms-popup-slider
 ###jobCardDiv
 ###jobSearch
 ###jobat_content
@@ -6277,7 +6225,6 @@
 ###kinoafishaslider
 ###kip-anchored
 ###kiri
-###kizi-popover-dialog
 ###kki_div
 ###klaro
 ###klaro .cook-modal
@@ -6291,7 +6238,6 @@
 ###koekieBar
 ###koekiemelding
 ###koekiemonster
-###koekjePopup
 ###kolac
 ###kolacici-div
 ###komunikat_ciasteczka
@@ -6321,7 +6267,6 @@
 ###kvkk
 ###kvkk-bar
 ###kvkkFooter
-###kvkk_popup
 ###kvkk_r
 ###kvkksozlesme
 ###kvr300600
@@ -6496,9 +6441,7 @@
 ###lgpd-bar
 ###lgpd-confirmation
 ###lgpd-message
-###lgpd-popup
 ###lgpd-wrapper
-###lgpdPopup
 ###lgpd_dialog
 ###lgpd_optall
 ###lh-push-app
@@ -6531,7 +6474,6 @@
 ###likeThisPostProminent
 ###like_buttons
 ###like_gplus
-###like_popup
 ###like_searchblog_widget
 ###like_wrap
 ###likebox
@@ -6614,7 +6556,6 @@
 ###lt-label
 ###lucky
 ###lw-top
-###lwp-popover-container
 ###lycok
 ###lyris-small
 ###lytic_askbox
@@ -6634,13 +6575,10 @@
 ###mad-footer-container
 ###madBlockModal
 ###mag
-###magazine-popout
 ###magazine_rightRail_A
 ###magazines
 ###magic
 ###magnify_widget_playlist_item_companion
-###mailchimp-top-bar
-###mailing-list-popup
 ###mailing-list-signup
 ###mailingListSignup
 ###main-ad160x600
@@ -6912,7 +6850,6 @@
 ###mit-bottombar
 ###mjo-article-left_rectangle_mid
 ###mjs-undervideo
-###mktng_popin
 ###mktz_container
 ###mktz_outer
 ###mm-ccpa-notice
@@ -7065,7 +7002,6 @@
 ###moviePlayer
 ###movieads
 ###movingArrow
-###mp-popupwrapper1
 ###mp3button
 ###mph-rightad
 ###mplayer-embed
@@ -7284,7 +7220,6 @@
 ###news-ltr
 ###newsBoxLeft
 ###newsCarousel
-###newsPopup
 ###newsSignFoot
 ###newsStrip
 ###news_bottom_mid
@@ -7297,7 +7232,6 @@
 ###newsfeed
 ###newsflashSignup
 ###newsform
-###newslpopup
 ###newsltBox
 ###newsmax-signup-block
 ###newsmax1
@@ -7305,7 +7239,6 @@
 ###newsmessage
 ###newsnowlogo
 ###newspaperads
-###newspopup_popup
 ###newsstands
 ###newswhip-widget
 ###newuser-activity-config
@@ -7347,14 +7280,12 @@
 ###nlRegistration
 ###nlSignUpMorning
 ###nlSliderSignup
-###nl_popin
 ###nl_signup_rr
 ###nletter
 ###nletter1
 ###nletter2
 ###nlgate
 ###nllayer-container
-###nlpopupmask
 ###nls_form_widget-2
 ###nmBreakingNewsCont
 ###nmSignUpContainer
@@ -7392,7 +7323,6 @@
 ###noticeAd_pc_wrap
 ###noticeModal
 ###noticePanel
-###noticePopup
 ###noticeWindow
 ###notice_bar
 ###notice_cnil
@@ -7490,7 +7420,6 @@
 ###okookie-box
 ###olark-wrapper
 ###olay
-###ols-email-popup
 ###olussierfsp_likebox-3
 ###oly
 ###om-hemsuldhlt-lightbox
@@ -7510,7 +7439,6 @@
 ###onTop3
 ###oneSignalBell
 ###onesignal-bell-container
-###onesignal-popover-container
 ###onload
 ###onload-main
 ###onpageads
@@ -7720,7 +7648,6 @@
 ###pdfe_cmp
 ###pdiv
 ###pdp-ysm
-###pdpa-popup
 ###pdvideo_fluid_html_on_pause
 ###peekaboo
 ###pencere
@@ -7794,7 +7721,6 @@
 ###player-data
 ###player-midrollAd
 ###player-option-fake
-###player-pop-layer
 ###player-preview-container
 ###player12
 ###playerAd
@@ -7878,54 +7804,19 @@
 ###polityka_okno
 ###politykaprywatnosci
 ###poolMenu
-###pop
-###pop-capsul
-###pop-last-user-glob
-###pop-up
-###pop1
 ###popDiv
 ###popID-Like
-###popInModule-sigma
 ###popModal2
 ###popSlider
-###pop_art
-###pop_asdf
-###pop_rgpd
-###pop_up
-###pop_wholes
-###pop_wholes_bg
-###popad
 ###popapIsBlockedAd
 ###popback
 ###popcc12
 ###popcook
 ###popdup
 ###popek
-###popin-cnil
-###popin-welcome
-###popinVichy2016
-###popit
 ###popmake-4055
 ###popmechanic-snippet
-###popout
-###popoutContainer
-###popoutbox
-###popover
-###popoverAd
 ###poprgpd
-###popup-announcements
-###popup-ccpa
-###popup-container-aviso
-###popup-coockie
-###popup-mask-rdo
-###popupAd
-###popupBottomAd
-###popupCNIL-container
-###popupFbLikeBox
-###popup_cnil
-###popup_domination_lightbox_wrapper
-###popupad-fixed
-###popuprgpd
 ###popwin
 ###popwrapper
 ###porno_accept
@@ -8027,7 +7918,6 @@
 ###previewthumbnailx250
 ###previous-story
 ###prevpost
-###pricacy_popup
 ###priceGrabberAd
 ###pricechecklist
 ###priceguide
@@ -8088,7 +7978,6 @@
 ###ps3_fs1_yrail
 ###ps3_fs2_yrail
 ###ps3_fs3_yrail
-###psmpopup
 ###psyma_layer
 ###pt-everything
 ###pt_dark_over
@@ -8246,7 +8135,6 @@
 ###pushdownAd
 ###pushdownAdFragment
 ###pushengage_confirm
-###pushinstruments_popup
 ###pushmodal
 ###pushpushgo-container
 ###pushwoosh-pop
@@ -8255,7 +8143,6 @@
 ###pvadscontainer
 ###pxhead
 ###q-search-powered
-###qa-popout-container
 ###qaSideAd
 ###qab_container
 ###qadserve_728x90_StayOn_div
@@ -8331,7 +8218,6 @@
 ###readthisnext
 ###realEstateAds
 ###reallike_div
-###realpop_optincontent
 ###rearad
 ###rebonds
 ###rec
@@ -8455,10 +8341,8 @@
 ###rgpd-modal
 ###rgpd-msg.alert
 ###rgpd-notice
-###rgpd-popin
 ###rgpd-wrapper
 ###rgpd.rgpd
-###rgpd.smart-popin
 ###rgpd:not(body):not(html)
 ###rgpdAlert
 ###rgpdModal
@@ -8472,13 +8356,11 @@
 ###rgpd_main
 ###rgpd_main_content
 ###rgpd_obj
-###rgpd_popin
 ###rgpd_pp
 ###rgpd_tray
 ###rgpdbar
 ###rgpdbox
 ###rgpdmsg
-###rgpdpopup
 ###rgs-details
 ###rgs-main-context-bar
 ###rhapsodyAd
@@ -8506,7 +8388,6 @@
 ###right-rail-cutout
 ###right-sideburn
 ###right-skyscraper
-###right-slidead-popup
 ###right-space
 ###right-spon
 ###right-wide-skyscraper
@@ -8561,7 +8442,6 @@
 ###right_global_adspace
 ###right_link
 ###right_out
-###right_popout
 ###right_pub
 ###right_rail-zergnet
 ###right_rek
@@ -8637,7 +8517,6 @@
 ###rodo-modal-all
 ###rodo-modal.rodo-modal[role="dialog"]
 ###rodo-pop
-###rodo-popup-container
 ###rodoAlert
 ###rodoBox
 ###rodoInfoForm
@@ -8649,7 +8528,6 @@
 ###rodo_env
 ###rodo_info
 ###rodo_modal
-###rodo_popup
 ###rodo_wiadomosc
 ###rodoinfo
 ###rodonew
@@ -8792,7 +8670,6 @@
 ###scl
 ###sclBkt
 ###sclTb
-###scmp-popin
 ###scoreAD
 ###scp-fp-activityflyout
 ###scp_mobile
@@ -9117,7 +8994,6 @@
 ###sign_in-bg
 ###signature_chinoise
 ###signup-box-rr
-###signup-popup
 ###signupToggle
 ###signup_right_sidebar
 ###siguenos
@@ -9260,7 +9136,6 @@
 ###slide_top
 ###slide_up2
 ###slidead
-###slidead-popup
 ###slidebox
 ###slidebox_container
 ###slideboxad
@@ -9284,7 +9159,6 @@
 ###slideup
 ###sliding
 ###sliding-panel-trigger-1
-###sliding-popup.sliding-popup-top
 ###slimheader
 ###slingMe
 ###slm-connect
@@ -9324,7 +9198,6 @@
 ###smedia
 ###smfc-modal-body
 ###smfoot
-###smi-webpush-popover-container
 ###smowtion300250
 ###smx
 ###smx2
@@ -9368,7 +9241,6 @@
 ###soc_main
 ###soc_net
 ###soc_page_box
-###soc_popup
 ###soc_right
 ###soc_tw
 ###socailBarComponentDiv_page
@@ -9534,7 +9406,6 @@
 ###st-email-signup
 ###stDigg
 ###stFB
-###st_popup.stElement
 ###st_topads
 ###stackcommerce-header
 ###stage-header
@@ -9568,7 +9439,6 @@
 ###sthoverbuttons
 ###stick-footer-panel
 ###stickInArticle
-###sticker-video-popin
 ###sticky-add-side-block
 ###sticky-anchor
 ###sticky-anchor-right
@@ -9631,7 +9501,6 @@
 ###storyFeednext
 ###storyFeedprev
 ###storyMore
-###storyNextPopUp
 ###story_bottom_ddb_0
 ###story_related
 ###story_tools
@@ -9814,9 +9683,7 @@
 ###tbo_headerads
 ###tbt_system_note
 ###tc-footer-btt-wrapper
-###tc_cnil_popup
 ###tc_footer-back__top
-###tc_rgpd_popup
 ###tcn_notice
 ###tcomad_728x90_0
 ###tcwAd
@@ -9893,7 +9760,6 @@
 ###thelistBottomAd
 ###theotherads
 ###theshop_link
-###thim-related-post-popup
 ###thin_border
 ###third-box
 ###third-party--viewport-takeover
@@ -10312,11 +10178,9 @@
 ###uc-cbf-facing-buttons-menu
 ###ucfooterad
 ###uclaInfo
-###ucsCollapsePopover
 ###ucsToolbar
 ###udtDark
 ###uec_wrap
-###uglipop_content_fixed
 ###ui
 ###uix_jumpToFixed
 ###ultimate
@@ -10508,7 +10372,6 @@
 ###visual_composer_addon-28
 ###vitrineFabricants
 ###vk
-###vk-popup
 ###vk-side-widget-container
 ###vk_community_messages
 ###vk_donate
@@ -10531,7 +10394,6 @@
 ###vk_right
 ###vkontakte
 ###vkontakte_soc_button
-###vkpopup
 ###vlay
 ###vlog-module-0-0
 ###vlt-article-body
@@ -10613,7 +10475,6 @@
 ###web-push-prompt
 ###web-push-sub
 ###web-snackbar-container
-###webPushPopup
 ###webTwoPointOh
 ###web_300_100_coupons_container
 ###web_push
@@ -10632,7 +10493,6 @@
 ###weeklybar2
 ###welcome
 ###welcome-box
-###welcome-popup-box
 ###welcome-slide-box
 ###welcomeAdsContainer
 ###welcomeContainer
@@ -10705,7 +10565,6 @@
 ###wpbfsb
 ###wpca-bar
 ###wpca-box
-###wpca-popup-modal
 ###wpcom_below_post
 ###wpd-bubble-wrapper
 ###wpl-likebox
@@ -10725,7 +10584,6 @@
 ###wrapper-ad970
 ###wrapper-header-small-up
 ###wrapper-ofie
-###wrapper-pop_sky
 ###wrapper-pub
 ###wrapperAdsTopLeft
 ###wrapperAdsTopRight
@@ -10753,7 +10611,6 @@
 ###xColAds
 ###x_home_1
 ###xadtop
-###xckPopup
 ###xcm-bar
 ###xdv-preroll
 ###xel1
@@ -11056,7 +10913,6 @@
 ##.ContentBottomAd
 ##.ContentTextAd
 ##.ContentTopAd
-##.CoverPop-open
 ##.CtaMessage__loadUnder___3S4ya
 ##.Current
 ##.D1fz0e
@@ -11187,7 +11043,6 @@
 ##.Kolaciky
 ##.L1ad
 ##.LGPD
-##.LGPD-popup-wrapper
 ##.LSERefer
 ##.LSSI
 ##.LargeRightAd
@@ -11336,7 +11191,6 @@
 ##.RelatedReadings-adItem
 ##.Rgpd-component
 ##.Rgpd-notice
-##.RgpdPopup
 ##.Right300x250AD
 ##.RightAd
 ##.RightAd1
@@ -11593,7 +11447,6 @@
 ##._ning_cont
 ##._pb
 ##._pb728x90
-##._popIn_recommend
 ##._soc
 ##._theForm
 ##._unit
@@ -11659,7 +11512,6 @@
 ##.aa_buttons
 ##.aa_desktop
 ##.aa_intcont_300x250
-##.aa_popup_wrap
 ##.aa_soc_sidebar
 ##.aabl-container
 ##.aablock
@@ -11693,7 +11545,6 @@
 ##.abContainer
 ##.abMegaAd
 ##.abMessage
-##.abPopup
 ##.abTouch
 ##.ab_mp
 ##.ab_zergnet
@@ -12138,7 +11989,6 @@
 ##.adWord
 ##.adWords-bg
 ##.ada
-##.adace-adi-popup-wrapper
 ##.adace-after-content
 ##.adace-slideup-slot-wrap
 ##.adace-slot
@@ -12188,7 +12038,6 @@
 ##.adblock-header
 ##.adblock-header1
 ##.adblock-main
-##.adblock-popup
 ##.adblock-top
 ##.adblock-top-left
 ##.adblock-whitelist-messaging__article-wrapper
@@ -12507,7 +12356,6 @@
 ##.adops
 ##.adp
 ##.adp-AdPrefix
-##.adp-popup
 ##.adpacks
 ##.adpacks_content
 ##.adpad300
@@ -12520,7 +12368,6 @@
 ##.adpic
 ##.adplate-background
 ##.adpod
-##.adpopup
 ##.adpos-19
 ##.adpos-20
 ##.adpos-25
@@ -13243,7 +13090,6 @@
 ##.apiAds
 ##.apiButtonAd
 ##.apk_right_two
-##.apn-popover-container
 ##.apnl
 ##.apnmndd-single
 ##.app
@@ -13732,7 +13578,6 @@
 ##.background-box
 ##.background-click
 ##.background-cover
-##.background-email-popup
 ##.background-na-commercial
 ##.backgroundAd
 ##.backgroundImg
@@ -14095,7 +13940,6 @@
 ##.block-inline
 ##.block-inner-adds
 ##.block-kv-maillist
-##.block-mailchimp-signup
 ##.block-maniad
 ##.block-marketo-multi-form-block
 ##.block-mmg-oas
@@ -14847,7 +14691,6 @@
 ##.campagnePUBcoldroite
 ##.cams
 ##.candy
-##.capaPopup
 ##.captation-email-bottom
 ##.captchaAd
 ##.captify-iframe
@@ -14955,7 +14798,6 @@
 ##.ccbar_pos_bottom
 ##.ccbarbody
 ##.ccc
-##.ccc-popup
 ##.ccc-widget
 ##.cccodes
 ##.ccdiv
@@ -14972,7 +14814,6 @@
 ##.ccpa-container
 ##.ccpa-modal
 ##.ccpa-notice-wrapper
-##.ccpa-popup
 ##.ccpa-slideup
 ##.ccpa-slideup--row
 ##.ccpa_container_class
@@ -15040,7 +14881,6 @@
 ##.cerez-uyari
 ##.cerez-uyarisi
 ##.cerezDiv
-##.cerezPopupUyari
 ##.cerezbilgi
 ##.cerezbilgisi
 ##.cerezsorgula
@@ -15292,8 +15132,6 @@
 ##.cnwrap
 ##.co-container
 ##.co_teaser_2col
-##.cockie-popup
-##.cockie-popup-wrap
 ##.code-anouns
 ##.codeg
 ##.codemain
@@ -15570,7 +15408,6 @@
 ##.cooces__wrap
 ##.cooike_alert_box
 ##.cook-accept
-##.cook-popup
 ##.cook-window
 ##.cookLink
 ##.cook_msg
@@ -15579,11 +15416,9 @@
 ##.cookacceptor
 ##.cookbx
 ##.cookcontainer
-##.cooke-popup
 ##.cookeEnabler
 ##.cookeHint
 ##.cookmsg
-##.cookpopup
 ##.cooksiediv
 ##.cookskom
 ##.cookue
@@ -15625,16 +15460,12 @@
 ##.cp-adsInited
 ##.cp-alert-message
 ##.cp-box-alert
-##.cp-box-alert-popup
 ##.cp-curtain-container
 ##.cp-dialog
 ##.cp-get-this-deal
 ##.cp-info-bar-container
 ##.cp-info-bar-wrapper
 ##.cp-module-info_bar
-##.cp-popup
-##.cp-popup-container:not(body):not(html)
-##.cp-slider-popup
 ##.cp-smalladv
 ##.cp-wrap
 ##.cp-wrapper
@@ -15736,7 +15567,6 @@
 ##.ctas
 ##.ctbtextshr
 ##.ctct-form
-##.ctct-popup-form
 ##.ctn-tgm-bottom-holder
 ##.ctn-workaround-div
 ##.ctnAdSkyscraper
@@ -16091,7 +15921,6 @@
 ##.dm_ta300x300_html
 ##.dm_ta960x--_html
 ##.dmcenterb
-##.dmgpush-popover-container
 ##.dmp_Player
 ##.dmr--show
 ##.dms-puff
@@ -16163,7 +15992,6 @@
 ##.downurls
 ##.dpa-300
 ##.dpa-728
-##.dpdpa--popup
 ##.dpsp-network-btn
 ##.dpsp-networks-btns-sidebar
 ##.dressUp
@@ -16187,8 +16015,6 @@
 ##.dsgvo-container
 ##.dsgvo-footer
 ##.dsgvo-modal
-##.dsgvo-widget__popup
-##.dsgvo-widget__popup-bg
 ##.dsgvo-wrapper
 ##.dsgvoApproval
 ##.dsgvoLayer
@@ -16264,7 +16090,6 @@
 ##.eaca97t0
 ##.eaca97t1v
 ##.eads
-##.eapp-popup-content-main
 ##.earAdv
 ##.easyAdsBox
 ##.easyAdsSinglePosition
@@ -16334,7 +16159,6 @@
 ##.email-cta
 ##.email-onboard-fullbleed
 ##.email-onboard-inline
-##.email-popup:not(body):not(html)
 ##.email-sign-up-box
 ##.email-signpost:not(body):not(html)
 ##.email-signup-box:not(body):not(html)
@@ -16467,9 +16291,6 @@
 ##.eu_coookie_toolbar
 ##.eudsgvo
 ##.eulawbox
-##.eupopup-background
-##.eupopup-container
-##.eupopup-container-bottomright
 ##.eut-back-top
 ##.evaste-container
 ##.evasteseloste
@@ -16632,8 +16453,6 @@
 ##.fblke
 ##.fblockad
 ##.fbplugin_1
-##.fbpopup
-##.fbpopup-container
 ##.fbsira
 ##.fbslideout
 ##.fbtop
@@ -17334,7 +17153,6 @@
 ##.gc-foundation
 ##.gc_message_bar_bottom
 ##.gcacheb
-##.gcap-layout-popup
 ##.gcap-shown
 ##.gcsOptin__container
 ##.gcyberh
@@ -17344,7 +17162,6 @@
 ##.gdn-wrap
 ##.gdn-wrap-desktop
 ##.gdn-wrap-mobile
-##.gdrp-popup-content
 ##.gdrp-show
 ##.gdrp-wrap
 ##.ge_book
@@ -17397,7 +17214,6 @@
 ##.gift-modal
 ##.gift-post
 ##.giftd-ribbon_aligner
-##.gifts-pop-up
 ##.gig-button-container--reddit
 ##.gig-reaction-bar-container
 ##.gigya-background-layer
@@ -17668,7 +17484,6 @@
 ##.gray_bg
 ##.gray_bgBottom
 ##.grdp-container
-##.grdp-popup
 ##.great_andhra_main_add_rotator
 ##.great_andhra_main_add_rotator1
 ##.greatwp-featured-posts-area
@@ -17711,12 +17526,10 @@
 ##.gsm-header-zone
 ##.gsst_scroll-btn
 ##.gsvl
-##.gt-popup
 ##.gtFace
 ##.gtSmartphone-only
 ##.gt_adlabel
 ##.gtadlb
-##.gtec-popup-datenschutz
 ##.gtm-pub
 ##.gtm_footer_googleplus
 ##.gttt
@@ -18473,7 +18286,6 @@
 ##.install-now
 ##.install-toolbar
 ##.installApp
-##.installAppPopup-top
 ##.install_app
 ##.instory-firewire-container
 ##.instoryAdBlock
@@ -18517,7 +18329,6 @@
 ##.invideoBlock
 ##.inview-bottom-left
 ##.invite-block
-##.invite-popin
 ##.inviteBox
 ##.ione-widget-jobs
 ##.ione-widget-youtube_playlist
@@ -18631,7 +18442,6 @@
 ##.jj_sl_youtube
 ##.jm-app
 ##.jnPJre
-##.jnews_popup_post_container
 ##.jnote
 ##.job-block
 ##.job-search-module
@@ -18675,7 +18485,6 @@
 ##.jquery-adi
 ##.jquery-modal
 ##.js--lgpd-container
-##.js-GlobalPopin
 ##.js-a-container
 ##.js-ab-regular
 ##.js-accept-terms-holder
@@ -18711,7 +18520,6 @@
 ##.js-coockie
 ##.js-cook
 ##.js-cta_prompt
-##.js-data-protection-popup
 ##.js-detected-block
 ##.js-discussion-side-panel
 ##.js-download_button_additional_links
@@ -18769,7 +18577,6 @@
 ##.js-swimingBlock-stoper
 ##.js-tools-dialog
 ##.js-top-btn
-##.js-tracking-popup
 ##.js-tradenow-btn
 ##.js-underplayerAd
 ##.js-whitelist-notice
@@ -18897,7 +18704,6 @@
 ##.kpc_rhs_wdgt
 ##.kplngisd
 ##.kr_cr
-##.kraken-popup
 ##.krayo-slider
 ##.kristi-tooltip
 ##.ksAds
@@ -19210,7 +19016,6 @@
 ##.list_sns
 ##.listad
 ##.listbox--native
-##.listbuilder-popup-embedded
 ##.listcontacts
 ##.listepartenairecomplete
 ##.listing-link
@@ -19235,7 +19040,6 @@
 ##.lj-like-item
 ##.ljad
 ##.lk-tw
-##.lkPopover
 ##.lksociaux
 ##.ll_center
 ##.lmm_external_footer
@@ -19332,7 +19136,6 @@
 ##.m-client-call
 ##.m-entry__controls
 ##.m-feature__intro
-##.m-form-minnpost-form-processor-mailchimp
 ##.m-generic-cta--email-signup
 ##.m-global-header__g-plus
 ##.m-global-header__youtube
@@ -19398,8 +19201,6 @@
 ##.mailing-list-signup
 ##.mailingList--sidebar
 ##.mailing_j
-##.mailmunch-popover
-##.mailmunch-popover-content
 ##.mailmunch-scrollbox
 ##.mailpoet_form
 ##.mailto
@@ -20243,7 +20044,6 @@
 ##.newLetterSectionBox
 ##.newPageAd
 ##.newPex_forumads
-##.newUserPop1
 ##.new_aside_block
 ##.new_connection
 ##.new_domain_link
@@ -20312,7 +20112,6 @@
 ##.newsltter-iframe-new
 ##.newsmail
 ##.newsmail-signup
-##.newspack-inline-popup
 ##.newssidebar
 ##.newssignup
 ##.newsstackedAds
@@ -20340,7 +20139,6 @@
 ##.next_article
 ##.next_article_button
 ##.next_control
-##.next_news_item_pop_out
 ##.next_page
 ##.next_stories_div
 ##.next_story_show
@@ -20400,11 +20198,9 @@
 ##.nn-join-us__col
 ##.no-adb
 ##.no-hash
-##.no-popunder
 ##.no-scroll
 ##.no-top-margin
 ##.noAdForLead
-##.noPopunder
 ##.no_ampr
 ##.no_block
 ##.no_design
@@ -20439,7 +20235,6 @@
 ##.nonteaser-comment-bar
 ##.nord-message-wrap
 ##.nord-message__wrap
-##.nordvpn-popup
 ##.normalAds
 ##.normalCoupProjo
 ##.normalad
@@ -20511,7 +20306,6 @@
 ##.nslr-subscb
 ##.ntf-container
 ##.ntfc-bar
-##.ntfc_popup
 ##.ntnlad
 ##.ntv
 ##.ntv-code-container
@@ -20550,7 +20344,6 @@
 ##.o-dsgvo-wrapper
 ##.o-email-only-signup
 ##.o-ftr
-##.o-pop-box-retention
 ##.o-section__adform
 ##.o-zergnet
 ##.o__pub
@@ -20641,8 +20434,6 @@
 ##.oma_pal
 ##.omaha-background
 ##.omniWidget-article-signup-large
-##.omnitureAdImpression
-##.omniture_email
 ##.on-player-wrap
 ##.on-screen-messages
 ##.on-top
@@ -20960,10 +20751,10 @@
 ##.payla
 ##.paysite
 ##.paysite-link
+##.paywall__section-container
 ##.pb-container
 ##.pb-f-article-mco-around-the-web
 ##.pb-f-article-specdaily-side
-##.pb-f-global-mailchimp-signup
 ##.pb-f-marketing-container-placeholder
 ##.pb-sidebar-article
 ##.pb-video-click
@@ -20992,7 +20783,6 @@
 ##.pdpads_desktop
 ##.pds
 ##.pea_cook_bottomright
-##.pea_cook_more_info_popover
 ##.pea_cook_wrapper
 ##.penci-go-to-top-floating
 ##.penci-gprd-law
@@ -21220,55 +21010,16 @@
 ##.ponsorlink
 ##.pookie
 ##.poops
-##.pop-cnil
-##.pop-fade
-##.pop-layer
-##.pop-out-eplayer-container
-##.pop-out-wrapper
-##.pop-recent
-##.pop-removable
-##.pop-up
-##.pop-up-a
-##.pop-up-wrap
-##.pop-wrap
 ##.popBottomchip
-##.popOverForADSInPlayer
-##.pop_Content
-##.pop_dialog
-##.pop_parent
-##.pop_under_visible
-##.pop_up
-##.pop_up_body1
-##.pop_up_through
-##.pop_up_wrap
-##.popadtext
 ##.popcorn_wrapper
-##.poper
-##.poper_show
-##.popin
-##.popin-cnil
-##.popinNl
-##.popitcontent
 ##.poplayer
 ##.popmake
 ##.popnav
-##.popover
-##.popover#last_buy_pop
-##.popover-bg
-##.popover_spygasm
 ##.popular
 ##.popular-introduction
 ##.popularArticles
 ##.popular_posts
 ##.popularity
-##.popup
-##.popup-alert-notice
-##.popup-politica
-##.popup-rodo
-##.popupAd
-##.popupAdOuter
-##.popup_policies
-##.popupcoockie
 ##.pordee-shops
 ##.porn_sites_list
 ##.porndudelink
@@ -21387,7 +21138,6 @@
 ##.ppr_priv_brand_consistent_header
 ##.ppreloaded_lightbox
 ##.pprem
-##.ppsPopupShell
 ##.pr-art-betlinks
 ##.pr-container
 ##.pr-widget
@@ -21634,7 +21384,6 @@
 ##.push-notice
 ##.push-offer
 ##.push-partenaire
-##.push-popup
 ##.push-service-pub
 ##.push-up
 ##.push-wrap
@@ -21655,7 +21404,6 @@
 ##.pushdown-message
 ##.pushdownAd
 ##.pushinstruments
-##.pushly_popover
 ##.pushmenu_modal
 ##.pushowl-optin
 ##.pussytrbox
@@ -21824,7 +21572,6 @@
 ##.readermodeAd
 ##.readersrail
 ##.readingList
-##.readmore-pop-up
 ##.real-media300x250
 ##.realsex
 ##.reason_on_x
@@ -22080,8 +21827,6 @@
 ##.rgpd-modal
 ##.rgpd-navbar
 ##.rgpd-notice
-##.rgpd-popin
-##.rgpd-popup
 ##.rgpd-wrapper
 ##.rgpdBan
 ##.rgpd_backdrop
@@ -22213,7 +21958,6 @@
 ##.rklm-sayfaustu
 ##.rklm_main
 ##.rlx-back-top
-##.rlx-popin
 ##.rmaxAD
 ##.rmedia
 ##.rmsads
@@ -22235,12 +21979,9 @@
 ##.rodo-modal
 ##.rodo-not-small-modal
 ##.rodo-notice
-##.rodo-popup
-##.rodo-popup_popup
 ##.rodo-wrapper
 ##.rodo-wrapper-1
 ##.rodoAlert
-##.rodoPopup
 ##.rodo__accept
 ##.rodo__container
 ##.rodo_info
@@ -22309,7 +22050,6 @@
 ##.rty
 ##.rty-article-page-content
 ##.rty-new-donation
-##.rty-pop-up
 ##.rubimg
 ##.rubric-brand
 ##.rubrique_marque_fleuve
@@ -22457,7 +22197,6 @@
 ##.scl-shr-btns
 ##.scl-wdgt
 ##.scls
-##.scmp-popin
 ##.scndtop
 ##.scoopads
 ##.score-bet
@@ -22832,7 +22571,6 @@
 ##.sidebar-form
 ##.sidebar-gplus
 ##.sidebar-kutu
-##.sidebar-mailchimp
 ##.sidebar-newsticker-wrapper
 ##.sidebar-optin
 ##.sidebar-outline
@@ -23193,8 +22931,6 @@
 ##.snoop-cc
 ##.snp-bld-showme
 ##.snp-builder
-##.snp-pop-127840-wrap
-##.snp-pop-22834
 ##.snp-wrap
 ##.sns
 ##.sns--large
@@ -23494,7 +23230,6 @@
 ##.sphyerf-image
 ##.spi_area
 ##.spion_single_pub
-##.spklw-post-attr[data-type="ad"]
 ##.spl-article-bottom
 ##.spl_shd_plus
 ##.spl_unshd
@@ -23925,7 +23660,6 @@
 ##.surfinbird__like_button
 ##.surround
 ##.surveyad
-##.surveymonkey-popup
 ##.suti
 ##.sutiwarning
 ##.svd
@@ -24192,7 +23926,6 @@
 ##.tinText
 ##.tiny_thumbs
 ##.tinyclasslink
-##.tip-email-popup
 ##.tip_container
 ##.tipsheet-module-container
 ##.tiscali-dx
@@ -24750,7 +24483,6 @@
 ##.unibluelink
 ##.unicorn-wrap
 ##.unionAd
-##.unipop__container
 ##.unisterAdsStart
 ##.unitLast
 ##.universalboxADVBOX01
@@ -25162,8 +24894,6 @@
 ##.wcb-coupon-box
 ##.wccf-products
 ##.wcfAdLocation
-##.wcpopupmodal-open
-##.wcpopupmodal-wrapper-open
 ##.wcs-fadeout-full
 ##.wcs-google
 ##.wcs-youtube
@@ -25280,8 +25010,6 @@
 ##.widget_advwidget
 ##.widget_adwidget
 ##.widget_al2fb
-##.widget_bb_mailchimp_custom_signup_widget
-##.widget_better_mailchimp
 ##.widget_bloggeek_feeds_widget
 ##.widget_bs-likebox
 ##.widget_catchbox_adwidget
@@ -25304,7 +25032,6 @@
 ##.widget_ligatus
 ##.widget_likeBox
 ##.widget_likebox
-##.widget_mailchimpsf_widget
 ##.widget_mailerlite_widget
 ##.widget_mailpoet_form
 ##.widget_mailster_signup
@@ -25313,7 +25040,6 @@
 ##.widget_mybloglog
 ##.widget_mymail_signup
 ##.widget_nls_form_widget
-##.widget_ns_mailchimp
 ##.widget_ok_mailinglistmultiple_widget
 ##.widget_ok_zergnet_widget
 ##.widget_openxwpwidget
@@ -25323,7 +25049,6 @@
 ##.widget_sailthru_scout_understory_widget
 ##.widget_sailthru_signup_widget
 ##.widget_sdac_feedburner_widget
-##.widget_shk-mailchimp
 ##.widget_sidebar_adrotate_tedo_single_widget
 ##.widget_sidebarad_300x250
 ##.widget_sidebarad_300x600
@@ -25331,7 +25056,6 @@
 ##.widget_sign-up-form-widget
 ##.widget_signupwidget
 ##.widget_singlead
-##.widget_smnl-mailchimp
 ##.widget_themoneytizer_widget
 ##.widget_vb_google_plus
 ##.widget_wysija
@@ -25374,7 +25098,6 @@
 ##.woahbar
 ##.woback
 ##.wonderplugin-box-container
-##.wordpress-fire-push-popup
 ##.workcandy
 ##.wp-article-recommender
 ##.wp-block-kadence-column2
@@ -25383,7 +25106,6 @@
 ##.wp-float-bar
 ##.wp-flybox_tab
 ##.wp-image-1573
-##.wp-nwletter-popup
 ##.wp-pl-redirect
 ##.wp-statistics-opt-out
 ##.wp125ad
@@ -25484,7 +25206,6 @@
 ##.wzifdceusx
 ##.x-300x250
 ##.x-content-dock-on
-##.x-lgpd-popup
 ##.x-message
 ##.x-tmblr
 ##.xZ2Xk
@@ -25562,8 +25283,6 @@
 ##.yatAdInsuranceFooter
 ##.yatysm-y
 ##.yb-floorad
-##.yel-email-popup
-##.yel-popup-main-wrapper
 ##.yellow-die
 ##.yellow_block
 ##.yelp-add
@@ -25574,7 +25293,6 @@
 ##.yg-mbad-row
 ##.yieldads-160x600
 ##.yieldads-728x90
-##.yikes-mailchimp-container
 ##.yildiz-pageskin-link
 ##.yitems
 ##.yjnSnsBtn
@@ -25673,7 +25391,6 @@
 ##.zergnetpower
 ##.zergpowered
 ##.zeusAd__container
-##.zgody-popup
 ##.ziffad-wrapper
 ##.zig-lists-attentieregels
 ##.zippo
@@ -25719,7 +25436,6 @@
 ##[action*="benchmarkemail"]
 ##[action*="livejournal."]
 ##[action*="mailverify"]
-##[action*="popad"]
 ##[action*="ziphost"]
 ##[action^="163.172.219.174/"]
 ##[ad-channel]
@@ -25767,7 +25483,6 @@
 ##[appdownload]
 ##[aria-describedby="myaabpfun12dialog"]
 ##[aria-describedby="offerMembership"]
-##[aria-describedby="popinInfoCNIL"]
 ##[aria-describedby^="adblock"]
 ##[aria-label$=" Ads"]
 ##[aria-label*="AdBlock"]
@@ -25776,7 +25491,6 @@
 ##[aria-label="Email"]
 ##[aria-label="Support the Canary"]
 ##[aria-label="property by domain"]
-##[aria-label^="Ads"]
 ##[aria-labelledby$=".afp"]
 ##[asset-size]
 ##[autoplay]
@@ -25810,8 +25524,6 @@
 ##[class*="Announce"]:not(body):not(html)
 ##[class*="AppSelectorModal"]
 ##[class*="BlastBar__Bar-"]
-##[class*="GDP"]:not(body):not(html)
-##[class*="Gdp"]:not(body):not(html)
 ##[class*="GetTheApp"]:not(body):not(html)
 ##[class*="GoogleAd"]:not(body):not(html)
 ##[class*="Googlead"]:not(body):not(html)
@@ -25830,7 +25542,6 @@
 ##[class*="_Pub_"]:not(body):not(html)
 ##[class*="_ab aa-"]
 ##[class*="_adWatch"]:not(body):not(html)
-##[class*="_adds_"]:not(body):not(html)
 ##[class*="_adgroup_"]:not(body):not(html)
 ##[class*="_partenaire_"]:not(body):not(html)
 ##[class*="_pub_"]:not(body):not(html)
@@ -25858,7 +25569,6 @@
 ##[class*="footerAds"]:not(body):not(html)
 ##[class*="free-account"]:not(body):not(html)
 ##[class*="g-plusone"]
-##[class*="gdp"]:not(body):not(html)
 ##[class*="generatedlink"]:not(body):not(html)
 ##[class*="get-enlace"]:not(body):not(html)
 ##[class*="googlead"]:not(body):not(html)
@@ -25869,7 +25579,6 @@
 ##[class*="js-track-"]
 ##[class*="ligatus"]:not(body):not(html)
 ##[class*="linkastro"]:not(body):not(html)
-##[class*="mailchimp"]:not(body):not(html)
 ##[class*="mailform"]:not(body):not(html)
 ##[class*="mailing"]:not(body):not(html)
 ##[class*="mailmunch"]:not(body):not(html)
@@ -25885,8 +25594,6 @@
 ##[class*="pico"]
 ##[class*="pin_it_button"]
 ##[class*="placement__lazy"]
-##[class*="pop-"]:not(body):not(html)
-##[class*="popup"]:not(body):not(html)
 ##[class*="proadszone"]:not(body):not(html)
 ##[class*="productCompareSimilar "]:not(body):not(html)
 ##[class*="pub300"]
@@ -25897,7 +25604,6 @@
 ##[class*="shahecontent"]:not(body):not(html)
 ##[class*="smartadserver"]:not(body):not(html)
 ##[class*="smartadtags"]:not(body):not(html)
-##[class*="snp-pop-"]
 ##[class*="spnsr-"]:not(body):not(html)
 ##[class*="spnsrd-"]:not(body):not(html)
 ##[class*="stickyadv"]
@@ -26290,8 +25996,6 @@
 ##[data-plugin]
 ##[data-pnp-mi-id]
 ##[data-popmake]
-##[data-popover]
-##[data-popup]
 ##[data-portal-id]
 ##[data-positions]
 ##[data-post-nav-item]
@@ -26332,14 +26036,12 @@
 ##[data-teaser-type]
 ##[data-template-some-article]
 ##[data-template-type="nativead"]
-##[data-test*="gdp"]
 ##[data-test-component]
 ##[data-test-giftwrap]
 ##[data-thumbindexes]
 ##[data-tip]
 ##[data-tkid]
 ##[data-tloom-lb]
-##[data-token*="gdp"]
 ##[data-topic_id]
 ##[data-tracking-event]:not(body):not(html)
 ##[data-tracking-level-label]
@@ -26391,8 +26093,6 @@
 ##[id*=":ads:"]:not(body):not(html)
 ##[id*="AdFrame"]:not(body):not(html)
 ##[id*="Coockie"]:not(body):not(html)
-##[id*="GDP"]:not(body):not(html)
-##[id*="Gdp"]:not(body):not(html)
 ##[id*="GoogleAd"]:not(body):not(html)
 ##[id*="Googlead"]:not(body):not(html)
 ##[id*="Ligatus"]:not(body):not(html)
@@ -26427,14 +26127,12 @@
 ##[id*="detailad"]:not(body):not(html)
 ##[id*="frme"]:not(body):not(html)
 ##[id*="fukuishimbun_sp-"]:not(body):not(html)
-##[id*="gdp"]:not(body):not(html)
 ##[id*="geo"]:not(body):not(html)
 ##[id*="googlead"]:not(body):not(html)
 ##[id*="googleplus"]:not(body):not(html)
 ##[id*="joinNow"]:not(body):not(html)
 ##[id*="leader-top-"]:not(body):not(html)
 ##[id*="ligatus"]:not(body):not(html)
-##[id*="mailchimp"]:not(body):not(html)
 ##[id*="mailform"]:not(body):not(html)
 ##[id*="mailing"]:not(body):not(html)
 ##[id*="mailmunch"]:not(body):not(html)
@@ -26442,7 +26140,6 @@
 ##[id*="overlay"]:not(body):not(html)
 ##[id*="paylas"]
 ##[id*="pnlAd"]:not(body):not(html)
-##[id*="popup"]:not(body):not(html)
 ##[id*="prebid"]:not(body):not(html)
 ##[id*="pub-"]:not(body):not(html)
 ##[id*="pub3"]
@@ -26507,8 +26204,6 @@
 ##[id^="YFBMSN"]:not(body):not(html)
 ##[id^="_CMP_"]:not(body):not(html)
 ##[id^="___plus_"]:not(body):not(html)
-##[id^="_popIn_"]
-##[id^="_popIn_recommend"]:not(body):not(html)
 ##[id^="aabb"]:not(body):not(html)
 ##[id^="abAdArea"]:not(body):not(html)
 ##[id^="abAdArea-"]:not(body):not(html)
@@ -26674,7 +26369,6 @@
 ##[id^="merch_html_"]
 ##[id^="mfad"]:not(body):not(html)
 ##[id^="minor_list_"]:not(body):not(html)
-##[id^="ml-webforms-popup-"]
 ##[id^="mobitree"]:not(body):not(html)
 ##[id^="modal-adbmon-"]:not(body):not(html)
 ##[id^="money-"]:not(body):not(html)
@@ -26703,8 +26397,6 @@
 ##[id^="player-side-"]:not(body):not(html)
 ##[id^="player_adv"]
 ##[id^="player_event"]:not(body):not(html)
-##[id^="pop-"]:not(body):not(html)
-##[id^="popin_"]
 ##[id^="portal_ad"]:not(body):not(html)
 ##[id^="previewBox"]:not(body):not(html)
 ##[id^="pro_menu"]:not(body):not(html)
@@ -26791,8 +26483,6 @@
 ##[jsdisplay]
 ##[mode="contrafactue"]
 ##[name*="/adunblock"]
-##[name*="GDP"]:not(body):not(html)
-##[name*="Gdp"]:not(body):not(html)
 ##[name*="Overlay"]:not(body):not(html)
 ##[name*="Pub300"]
 ##[name*="advice"]
@@ -26800,7 +26490,6 @@
 ##[name*="compare_save"]
 ##[name*="domain_dream_homes"]
 ##[name*="domain_olg_rhs"]
-##[name*="gdp"]:not(body):not(html)
 ##[name*="googleSearchAds"]
 ##[name*="googleplus"]
 ##[name*="marfeel"]
@@ -26847,7 +26536,6 @@
 ##[onclick*=".trafficfabrik."]
 ##[onclick*=".updateAnalyticsEvents"]
 ##[onclick*="/aclk?"]
-##[onclick*="/ads"]
 ##[onclick*="/adserver"]
 ##[onclick*="/adultfriendfinder."]
 ##[onclick*="/blog-this."]
@@ -26858,11 +26546,9 @@
 ##[onclick*="/mobilarena."]
 ##[onclick*="/regiedeep."]
 ##[onclick*="/resultspage/"]
-##[onclick*="Adv"]
 ##[onclick*="FriendlyDuck."]
 ##[onclick*="Paylas"]
 ##[onclick*="Reklam"]
-##[onclick*="ad_config"]
 ##[onclick*="adstats"]
 ##[onclick*="adstract."]
 ##[onclick*="bp1.com"]
@@ -26898,7 +26584,6 @@
 ##[onclick^="CustomWLAdServer."]
 ##[onclick^="FAB"]
 ##[onclick^="Mixedor.mixedOpen"]
-##[onclick^="ad_choice"]
 ##[onclick^="apms_sns"]
 ##[onclick^="captureOutboundLink"]
 ##[onclick^="ga('send', 'event', 'outbound', 'click',"]
@@ -26949,13 +26634,11 @@
 ##[title*="Post to "]
 ##[title*="Torrent"]
 ##[title*="View videos "]
-##[title*="ad spot"]
 ##[title*="adzuna"]
 ##[title*="bookmark"]
 ##[title*="fb:"]
 ##[title*="stumble"]
 ##[title="Add us on Google+"]
-##[title="Ads"]
 ##[title="BigSidebar1"]
 ##[title="Bookmark using any bookmark manager!"]
 ##[title="Conéctate"]
@@ -26990,7 +26673,6 @@
 ##[title="VKontakte"]
 ##[title="Watch Our Videos on YouTube"]
 ##[title="Yahoo! Buzz"]
-##[title="ads"]
 ##[title="qq"]
 ##[title="v9bet"]
 ##[title^="Adtrue"]
@@ -27012,7 +26694,6 @@
 ##[title^="Suivez-nous"]
 ##[title^="Watch "]
 ##[tittle*="billboard"]
-##[tittle*="gdp"]
 ##[tittle*="googleplus"]
 ##[tittle*="pub-"]
 ##[tittle*="quads"]:not(body):not(html)
@@ -27086,24 +26767,17 @@
 ##div.ccpa-message
 ##div.ccpa-notice
 ##div.cnil
-##div.cnil-popup
 ##div.coockiesdiv
-##div.eupopup
-##div.lgpd-popup
-##div[aria-label="Ads"]
 ##div[class*="displayAdRight"]
 ##div[class^="AdCard_"]
 ##div[class^="AdEmbeded__AddWrapper"]
 ##div[class^="AdItem-"]
-##div[class^="Ad__"]
 ##div[class^="AdhesionAd_"]
 ##div[class^="Directory__footerAds"]
 ##div[class^="Display_displayAd"]
 ##div[class^="NewsletterForm_"]
-##div[class^="NewsletterPopup_"]
 ##div[class^="NewsletterSignup-"]
 ##div[class^="PreAd_"]
-##div[class^="ad_"]
 ##div[class^="adpubs-"]
 ##div[class^="adsbutt_wrapper_"]
 ##div[class^="awpcp-random-ads"]
@@ -27112,13 +26786,11 @@
 ##div[class^="index_adBeforeContent_"]
 ##div[class^="index_displayAd_"]
 ##div[class^="kiwiad-desktop"]
-##div[class^="kiwiad-popup"]
 ##div[class^="largeRectangleAd_"]
 ##div[class^="lifeOnwerAd"]
 ##div[class^="mpp-container-position"]
 ##div[class^="newsletter-signup-container_"]
 ##div[class^="pane-google-admanager-"]
-##div[class^="popupally-pro"]
 ##div[class^="proadszone-"]
 ##div[class^="rightrail-newsletter-"]
 ##div[class^="teaser_six_smi-"]
@@ -27133,7 +26805,6 @@
 ##div[data-test-id="AdDisplayWrapper"]
 ##div[id$="-top-message-bar"]
 ##div[id^="-adtech-"]
-##div[id^="ad_"]
 ##div[id^="adfox_"]
 ##div[id^="adngin-"]
 ##div[id^="adrotate_"]
@@ -27197,7 +26868,6 @@
 ##rgpd
 ##sibbo-cmp-layout
 ##span[title="Condividi"]
-##span[title^="Ads by "]
 ##topadblock
 ##tp-yt-paper-dialog
 ##w-div
@@ -27475,7 +27145,6 @@
 (^|\.)own(eriq|local|page)\..
 (^|\.)pagead2?(\-|\.|_).
 (^|\.)pannellum\..
-(^|\.)parsely\..
 (^|\.)pathful\..
 (^|\.)paypalobjects\..
 (^|\.)pendo\..
@@ -27487,7 +27156,6 @@
 (^|\.)platform\..
 (^|\.)polarbyte\..
 (^|\.)poll(daddy|ing)\..
-(^|\.)polyfill\..
 (^|\.)pornpicslab\..
 (^|\.)postrelease\..
 (^|\.)primechoice\..
@@ -27621,7 +27289,6 @@
 (^|\.|\-)(|px\-)transparent(|cdn)(\-|\.|_|\?).
 (^|\.|\-)(|web)wise(|pops)(|\?|\-\.\_).
 (^|\.|\-)add(evweb|oor|this|thiscdn|toany)(|\?|\-\.\_).
-(^|\.|\-)algolia(|net|searchlite)(|\?|\-\.\_).
 (^|\.|\-)amp(\-geo|\-position\-observer-\-user|ush)(|\?|\-\.\_).
 (^|\.|\-)amplitude(|event)(|\?|\-\.\_).
 (^|\.|\-)collectors?[0-9]*(|\?|\-\.\_).
@@ -27648,7 +27315,6 @@
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(C|c)(OOKI|ooki)/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(C|c)ampaign/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(C|c)onsent/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(D|d)eep(L|l)ink/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(D|d)ianomi/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(D|d)idomi/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(D|d)ismiss/")
@@ -27656,19 +27322,23 @@
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(E|e)z((oic|mob)|(Ads|ads))/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(F|f)((book|BOOK)|(aceb|ACEB)(ook|OOK))/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(F|f)ollow/"):matches-attr(/.+/="(^(nofollow))/")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(G|g)(DP|dp)/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(I|i)nject/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(I|i)nstagram/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(I|i)ntersti/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(L|l)eader(B|b)oard/"):matches-attr(/.+/="/(^((H|h)eader))/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(MPU|mpu)(^lse)/")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(M|m)ail(C|c)himp/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(N|n)ews(L|l)et/"):not(#fbody)
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(N|n)otif/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(O|o)(UT|ut)(B|r)(RAIN|ain)/")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(O|o)mniture/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(O|o)ptanon/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(O|o)utbrain/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(P|p)(olicy|rivacy)/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(P|p)artner/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(P|p)ixel/")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(P|p)op(Ad|ad|er|In|in|It|it|Out|out|Over|over|Under|under|Up|up|[0-9]|-|_)/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(P|p)romo(^(to))/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(P|p)ubli(^c)/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(P|p)ublici/")
@@ -28088,7 +27758,6 @@
 -nav-social
 -news-ad-
 -newsletter_signup
--omniture
 -onward-journeys.$important
 -optimization-metrics.
 -optimost-
@@ -28668,7 +28337,6 @@
 .divascookies-
 .dkshare.
 .dktotalshare.
-.dmcdn.
 .dnps.
 .dns-vip.
 .docservices.
@@ -28885,7 +28553,6 @@
 .lun.ua/*
 .m-barati.
 .magnificPopup.open
-.mailchimp.
 .mailing.
 .manhua123.
 .marketing.
@@ -28943,7 +28610,6 @@
 .oastagging.
 .ob-dynamic-rec-link
 .offsetHeight
-.omniture
 .onion
 .online.
 .online^
@@ -28981,7 +28647,6 @@
 .pluckCount.
 .png$script
 .png$xhr
-.polyfill.
 .popBannerTeaser
 .popcash.
 .popdhtml.
@@ -29532,7 +29197,6 @@
 /FoxAnalyticsExtension.
 /FoxBlueKaiPlugIn.
 /FoxComScore.
-/FoxOmnitureMonitor.
 /GAFOAWrapper.
 /GAInit.
 /GARecord
@@ -29634,7 +29298,6 @@
 /MonsterAd-
 /MyShowroom/*
 /NBCUComScore.
-/NBCUOmnitureTracking.
 /NB_bl.
 /NB_fl.
 /NKS-subscription/*
@@ -29651,9 +29314,6 @@
 /NielsenTracking.
 /NitroCookies.
 /OmniUserObjAndHelper.
-/OmnitureAkamai.
-/OmnitureAnalytics.
-/OmnitureTracking_
 /OneCollector/*$important
 /OneSignalSDK-
 /OneSignalSDK.
@@ -29943,7 +29603,6 @@
 /[\/\-_\.]ajax(\-activity|\-measurement|_nc)([\/\-_\.]|$)/
 /[\/\-_\.]akam([\/\-_\.]|$)/
 /[\/\-_\.]akismet([\/\-_\.]|$)/
-/[\/\-_\.]algolia(|net|searchlite)([\/\-_\.]|$)/
 /[\/\-_\.]amp(\-geo|\-position\-observer-\-user)([\/\-_\.]|$)/
 /[\/\-_\.]anltcs([\/\-_\.]|$)/
 /[\/\-_\.]audience(|target)([\/\-_\.]|$)/
@@ -29995,7 +29654,6 @@
 /[\/\-_\.]newrelic([\/\-_\.]|$)/
 /[\/\-_\.]nicequest([\/\-_\.]|$)/
 /[\/\-_\.]ntv([\/\-_\.]|$)/
-/[\/\-_\.]omniture([\/\-_\.]|$)/
 /[\/\-_\.]omtrdc([\/\-_\.]|$)/
 /[\/\-_\.]pagead2?([\/\-_\.]|$)/
 /[\/\-_\.]perimeterx([\/\-_\.]|$)/
@@ -32335,7 +31993,6 @@
 /alerte_tracking.
 /alexa.
 /algeriemarket.
-/algoliasearchLite.
 /alipromo.
 /all-click/*
 /all-for-adsense/*
@@ -32482,7 +32139,6 @@
 /appGoogleAnalytics-
 /appSocialShare/*
 /append-link-on-copy/*
-/appendOmnitureTracking.
 /appier-track-
 /appinsightor.
 /appnexus.
@@ -32515,7 +32171,6 @@
 /article-shares.
 /article-social/*
 /article-tracking.
-/articleOmnitureTracking.
 /articleSponsor
 /articleSponsorDeriv_
 /article_counter
@@ -33719,7 +33374,6 @@
 /custom-share.
 /custom-tracking.
 /custom11x5ad.
-/customOmnitureData.
 /customSocialBar/*
 /custom_affiliate/*
 /customad.
@@ -34515,7 +34169,6 @@
 /fender_analytics.
 /feoCookies.
 /feoCookiesGtmEvents.
-/fetch-polyfill.$important
 /fetchJsAd.
 /ffadp/*
 /ffadult/*
@@ -34692,7 +34345,6 @@
 /forum-
 /forumPixLog.
 /foursquare_64.
-/foxomniture.
 /fp.
 /fp/*
 /fpTracker/*
@@ -34872,12 +34524,10 @@
 /gamads/*
 /gamead/*
 /gameadsync.
-/gamepageomniture.
 /gamersad.
 /ganalytics.
 /ganalytics/*
 /gannett-atoms-library.
-/gannettomniture.
 /gapagetracker.
 /gapro-1.
 /gapro-1h.
@@ -35083,6 +34733,7 @@
 /googima.
 /google-32x
 /google-ad-
+/google-ads.$important
 /google-adsense
 /google-adverts
 /google-adwords
@@ -35337,6 +34988,7 @@
 /houseads/*
 /houzz-button.
 /hover-intent.$important
+/hoverIntent.$important
 /hoverad.
 /hpanalytics_
 /hpmetrics.
@@ -36061,7 +35713,6 @@
 /loadcookieconsent.
 /loadcounter.
 /loader-counter.
-/loadingpageomniture.
 /localAd/*
 /localAdData/*
 /local_p.
@@ -36119,7 +35770,6 @@
 /logjs
 /logjs.
 /logoads.
-/logomnitureevent.
 /logoutad.
 /logpopup/*
 /logprogress.
@@ -36174,8 +35824,6 @@
 /mail-tracking/*
 /mail_tracking
 /mail_tracking-cg
-/mailchimp-iframe/*
-/mailchimp/*
 /mailorama120600.
 /mailstatstrk/*
 /main_sns_
@@ -36807,13 +36455,6 @@
 /omnipagetrack.
 /omnitrack.
 /omnitracking.
-/omniture
-/omniture-app-measurement.
-/omniture-scode-prod.
-/omniture-visitorapi.
-/omniture/*
-/omnitureAMP.
-/omniture_tracking.
 /omniunih.
 /omniunih_
 /oms_analytics_
@@ -37017,8 +36658,6 @@
 /parking_caf_
 /parrainage468X60.
 /parseForAds.
-/parsely-events.
-/parsely.
 /partenaires.
 /partenaires/*
 /particles-sel.
@@ -37263,8 +36902,6 @@
 /policyaccept.
 /polls-
 /polyad.
-/polyfill$important
-/polyfills/*important
 /pomegranate.
 /pooads.
 /popad
@@ -37371,6 +37008,7 @@
 /ppms.
 /ppndr.
 /ppu.
+/pragmatic-my-pei.$important
 /prebid$important
 /preloader/*
 /premierebtnad/*
@@ -39127,6 +38765,7 @@
 /superads-
 /superads_
 /supercookie.
+/superfish.$important
 /supernorthroomad.
 /supersonicads-
 /superstats.
@@ -47162,7 +46801,6 @@ _nnads/*
 _ntpagetag.
 _oas.
 _omnireport.
-_omniture
 _onesignal_
 _onlinead_
 _openx.
@@ -47604,8 +47242,7 @@ alexa-sitestats.
 alexametrics.
 alexsports.
 algocashmaster.
-algolia.
-algolianet.
+algolia$important
 algorithmia.
 aliancapes.
 alishop*.
@@ -49156,7 +48793,7 @@ mail.google.com#@#.vk
 mail.google.com#@#:not(main):not(html):not(body):matches-attr(/.+/="/(^|\s)(A|a)(D|d)(s|v|vert)?(0-9)?(\s|$)/")
 mail.google.com#@#:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(\-|_|\s)(A|a)(D|d)(S|s|V|v|)($)/")
 mail.google.com#@#[id="overlay"]
-mailchimp.
+mailchimp
 mailing.
 mailmunch.
 mainadv.
@@ -49491,8 +49128,7 @@ olyhdliveextra-a.
 omappapi.
 omgtorrent.
 omnitagjs.
-omniture.
-omnituretrack.
+omniture$important
 omtrdc.
 omtrkpix.
 onclicktop.
@@ -49578,7 +49214,7 @@ pannellum.
 pantheon.
 pardot.
 parkdomainreal*.
-parsely.
+parsely$important
 partner-ts.
 partner.
 partnerad.
@@ -49672,7 +49308,7 @@ poki.
 polarbyte.
 polldaddy.
 polling.
-polyfill.
+polyfill$important
 pop-parad.
 pop-under.
 pop3
