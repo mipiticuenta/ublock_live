@@ -3471,12 +3471,6 @@
 ###crawler
 ###crec
 ###crengindiv
-###criteo-container
-###criteoAd
-###criteoDiv
-###criteoDiv1
-###criteoDiv2
-###criteoDiv3
 ###crm_article_box
 ###crm_bubble
 ###cross-dialog
@@ -7528,8 +7522,6 @@
 ###pub2
 ###pub250
 ###pub3
-###pub336Criteo
-###pub336bas-criteo
 ###pub468x15
 ###pub468x60
 ###pub468x60_centree
@@ -8198,7 +8190,6 @@
 ###scribol-block
 ###scrims-io_300x250
 ###script-fallback-pub336
-###script-fallback-pub336bas-criteo
 ###scrl-top
 ###scroll-activated-footer
 ###scroll-box
@@ -12961,7 +12952,6 @@
 ##.avert
 ##.avert--sidebar
 ##.avert-text
-##.avert__criteo
 ##.avert__wrapper
 ##.avertissement
 ##.avertissement-download
@@ -14859,7 +14849,6 @@
 ##.content_adsq
 ##.content_advt
 ##.content_appstore
-##.content_kelkoo_link
 ##.content_recommendation
 ##.content_slots_for_results_container
 ##.content_source
@@ -14994,9 +14983,6 @@
 ##.creativeWrapper
 ##.creditcardAD
 ##.criAdv
-##.criteo-ban
-##.criteo-div
-##.criteoad
 ##.critical-dialog
 ##.crm-post-module
 ##.crm-top
@@ -19846,7 +19832,6 @@
 ##.offerbox
 ##.offers
 ##.offers-wrap
-##.offersKelkoo
 ##.officialAccount
 ##.offre
 ##.offresStage
@@ -25666,7 +25651,6 @@
 ##[id^="container_native_"]:not(body):not(html)
 ##[id^="contentad"]:not(body):not(html)
 ##[id^="count"]:not(body):not(html):not([id^="count"])
-##[id^="criteoDivPave"]:not(body):not(html)
 ##[id^="crown"]
 ##[id^="crt-"]:not(body):not(html)
 ##[id^="crt-adblock"]:not(body):not(html)
@@ -26367,7 +26351,6 @@
 (^|\.)cquotient\..
 (^|\.)crazyegg\..
 (^|\.)creative-serving\..
-(^|\.)criteo\..
 (^|\.)custhelp\..
 (^|\.)czilladx\..
 (^|\.)dailymotion\..
@@ -26645,7 +26628,6 @@
 (^|\.|\-)(|fig|hs\-)analytics?(|a|event)(|handler)(|s)(|\?|\-\.\_).
 (^|\.|\-)(|i|iw)adserver?[0-9]*(|\?|\-\.\_).
 (^|\.|\-)(|new)difoosion(|\?|\-\.\_).
-(^|\.|\-)(|print)banners?[0-9]*(|\?|\-\.\_).
 (^|\.|\-)(|px\-)transparent(|cdn)(\-|\.|_|\?).
 (^|\.|\-)(|web)wise(|pops)(|\?|\-\.\_).
 (^|\.|\-)add(evweb|oor|this|thiscdn|toany)(|\?|\-\.\_).
@@ -26676,6 +26658,7 @@
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(C|c)ense/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(C|c)harbeat/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(C|c)onsent/")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(C|c)riteo/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(D|d)ianomi/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(D|d)idomi/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(D|d)ismiss/")
@@ -26688,6 +26671,7 @@
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(I|i)nject/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(I|i)nstagram/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(I|i)ntersti/")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(K|k)elkoo/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(L|l)eader(B|b)oard/"):matches-attr(/.+/="/(^((H|h)eader))/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(MPU|mpu)(^lse)/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(M|m)ail(C|c)himp/")
@@ -26891,7 +26875,6 @@
 -coin-hive
 -collector.
 -comments.$important
--comscore
 -consent$important
 -consent-
 -consent.
@@ -26900,7 +26883,6 @@
 -copy-paste-blocker/*
 -coremetrics-
 -counter/*
--criteo.
 -datacollection.
 -datacollectorjs/*
 -defaultVendors.$important
@@ -26955,7 +26937,6 @@
 -instagram-
 -iscrizione-
 -job-widget.
--kelkoo/*
 -left-social.
 -link-fb.
 -link-social.
@@ -28127,7 +28108,6 @@
 /ForumViewTopicContentAD.
 /FoxAnalyticsExtension.
 /FoxBlueKaiPlugIn.
-/FoxComScore.
 /GAFOAWrapper.
 /GAInit.
 /GARecord
@@ -28206,7 +28186,6 @@
 /MixBerryAdsProduction/*
 /MonsterAd-
 /MyShowroom/*
-/NBCUComScore.
 /NB_bl.
 /NB_fl.
 /NKS-subscription/*
@@ -28423,7 +28402,6 @@
 /[\/\-_\.](|core|g|google|publisher|seed|u)tag(|commander|delivery|manager|s|services)([\/\-_\.]|$)/
 /[\/\-_\.](|dynamic)yield(|love)([\/\-_\.]|$)/
 /[\/\-_\.](|log|managega|record\-|viewer)impress(|ions)([\/\-_.\?]|$)/
-/[\/\-_\.](|print)banners?[0-9]*([\/\-_\.]|$)/
 /[\/\-_\.](|pulse|qualresearch)survey([\/\-_\.]|$)/
 /[\/\-_\.](|selection\-)share(complete|news|r|this|through)([\/\-_\.]|$)/
 /[\/\-_\.](|zd)consents?([\/\-_.\?]|$)/
@@ -28448,7 +28426,6 @@
 /[\/\-_\.]collect(|consent|or)([\/\-_.\?]|$)/
 /[\/\-_\.]connectif([\/\-_\.]|$)/
 /[\/\-_\.]crazyegg([\/\-_\.]|$)/
-/[\/\-_\.]criteo([\/\-_\.]|$)/
 /[\/\-_\.]csp([\/\-_\.]|$)/
 /[\/\-_\.]demdex([\/\-_\.]|$)/
 /[\/\-_\.]donate([\/\-_\.]|[0-9]*|$)/
@@ -30772,8 +30749,6 @@
 /bglog.
 /bh_counter.
 /bhcb/lock.
-/bicomscore.
-/bicomscore_
 /bidbarrel-
 /biddr-
 /bidiq.
@@ -31329,14 +31304,13 @@
 /count
 /count.
 /count/*
-/count1.
-/countClick.
-/countHits.
+/countClick
+/countHits
 /count_
-/countbk.
-/counter?$important
-/countinj.
-/countpixel.
+/countbk
+/counter$important
+/countinj
+/countpix
 /country.
 /countstat
 /countubn.
@@ -31351,7 +31325,7 @@
 /cpm1
 /cpm7
 /cpmcampaigns/*
-/cpmclick.
+/cpmclick
 /cpmrect.
 /cpmstar.
 /cpop.
@@ -31363,10 +31337,8 @@
 /crakmedia.
 /crakrevenue/*
 /crazyad.
-/criteo$important
-/criteoRTA.
 /crlt.
-/cross_pixels.
+/cross_pixel
 /crossdomainad
 /crossoverad-
 /crossposted.
@@ -32976,12 +32948,7 @@
 /kaiseki/*
 /kaizentrack/*
 /kaksvpopup.
-/kaltura$important
-/kalturaevent
-/kalturaue$important
-/kameleoon-iframe.
-/kameleoon.
-/kameleoon/*
+/kameleoon
 /kampyle.
 /kantarmedia.
 /keen-track
@@ -32989,10 +32956,6 @@
 /keenio.
 /kejobscounter.
 /keksikysely.
-/kelkoo/*
-/kelkooSponsor
-/kelkooSponsoredLinks.
-/kelkoo_
 /kenshoo.
 /keyade.
 /keypress.
@@ -35746,7 +35709,6 @@
 /td-pageviews.
 /tdlads/*
 /teads-
-/teal-comscore-
 /teal-gcianalytics-
 /technomedia.
 /technorati_16.
@@ -42416,7 +42378,6 @@
 =browse
 =clkads
 =com_ads
-=comscore
 =confection_send_data
 =counter
 =countstats
@@ -42952,7 +42913,6 @@ _AdvertsImgs
 _BTN_LinkedIn_
 _ChatAd_
 _Clicktale
-_ComScore.
 _CoreMetrics/*
 _Crstatistics.
 _FLYAD.
@@ -44154,6 +44114,7 @@ crichd.
 cricplay2.
 cricstream.
 crictime.
+criteo$important
 crohasit.
 crosspixel.
 crowdskout.
@@ -44993,6 +44954,7 @@ jwplayer.
 k.dk
 kalo.
 kalooga.
+kaltura$important
 kampyle.
 kannadamasti.
 karconsulting.us^
@@ -45019,6 +44981,7 @@ kbnetworkz.
 keep-ads
 keeplinks.
 keepvid.
+kelkoo$important
 keralahd.
 keywee.
 khatrimaza.
@@ -46477,7 +46440,6 @@ ucdownload.
 ucdownloader.
 ucmini.
 ucozads^
-uecomscore$important
 ueuodgnrhb.
 ufcstream.
 ugcbrainient-a.
