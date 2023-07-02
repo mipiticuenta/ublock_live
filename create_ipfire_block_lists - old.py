@@ -1,8 +1,7 @@
 """ Extract domain and url filters from source text file """
 
-# <setup>
+# <setup/>
 
-import os                   # Miscellaneous operating system interfaces
 import re                   # Regular expression operations
 import progressbar as pb    # Progress bar
 
@@ -14,111 +13,41 @@ file5_out_name = 'ublock_list_except_domains'
 
 print(
     '\n'
-    + '#############################################################################\n'
+    + '####################################################################\n'
     + '# \n'
     + '# Extract domain and url filters from source text file\n'
     + '#\n'
     + '# input: a text file containing ublock_origin filters\n'
     + '# \n'
     + '# outputs are text files, sorted, deduplicated, without empty lines:\n'
-    + '# 1  input file renamed adding old\n'
-    + '# 2  input file written to lower case except cosmetic filters (containing ##)\n'
-    + '# 3  <ipfire_domains_block_list>\n'
-    + '# 4  <ipfire_urls_block_list>\n'
-    + '# 5  <ublock_list_except_domains>\n'
+    + '# 1  <ipfire_domains_block_list>\n'
+    + '# 2  <ipfire_urls_block_list>\n'
+    + '# 3  <ublock_list_except_domains>\n'
     + '# \n'
-    + '#############################################################################\n'
+    + '####################################################################\n'
     + '\n'
 )
 
 # <get filename containing text lists, convert into list, sort and dedup>
 
-file1_in_name = input('Please enter filename for source text file : ')
-list1_in = set(line.strip() for line in open(file1_in_name, encoding='UTF-8'))
+file1_in = input('Please filename for source text file : ')
+list1_in = set(line.strip() for line in open(file1_in, encoding='Latin1'))
 list1_in = sorted(list1_in)
 
 print(
-    str(len(open(file1_in_name, encoding='UTF-8').readlines()))
-    + ' lines read from '
-    + file1_in_name
+    str(len(open(file1_in, encoding='Latin1').readlines()))
+    + 'lines read from '
+    + file1_in
     + '\n'
 )
 
 # <\get filename containing text lists, convert into list, sort and dedup>
 
-# <save a backup renamed *_old; overwrite if exists>
-
-filelist = os.listdir('.')
-
-if file1_in_name + '_old' in filelist :
-    os.remove(file1_in_name + '_old')
-
-os.rename(file1_in_name, file1_in_name + '_old')
-
-print(
-    'backup saved: '
-    + file1_in_name
-    + '_old'
-    + '\n'
-)
-
-# </save a backup renamed *_old; overwrite if exists>
-
-# <save input file written to lower case except cosmetic filters (containing ##)>
-
-file1_out_name = file1_in_name
-file1_out = open(file1_out_name, 'w', encoding='UTF-8')
-
-print('Building updated input file, please wait')
-
-list1_out = set()
-pbar = pb.ProgressBar(maxval = len(list1_in)).start()
-progress = 0
-
-#alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
-
-for line in list1_in:
-
-    line = line.strip()
-    if len(line) > 0:
-        string_r = ''
-        if string_r := re.search(r'#', line):
-            list1_out.add(line)
-        else :
-            list1_out.add(line.lower())
-#            lowercase_letters = ''
-#            for char in line:
-#                if char not in alphabet or alphabet.index(char)<=25:
-#                    lowercase_letters += char
-#                else:
-#                    lowercase_letters += alphabet[alphabet.index(char)-26]
-#            list1_out.add(lowercase_letters)
-
-    progress += 1
-    pbar.update(progress)
-
-pbar.finish()
-print('\n')
-
-list1_out = sorted(list1_out)
-
-file1_out.writelines(line + '\n' for line in list1_out)
-file1_out.close()
-
-print(
-    str(len(open(file1_out_name, encoding='UTF-8').readlines()))
-    + ' lines written to '
-    + file1_out_name +
-    '\n'
-)
-
-# </save input file written to lower case except cosmetic filters (containing ##)>
-
 ## <get filename containing text lists, convert into list, sort and dedup>
 #file2_in = input('Please filename for .root library text file2: ')
-#list2_in = set(line.strip() for line in open(file2_in, encoding='UTF-8'))
+#list2_in = set(line.strip() for line in open(file2_in, encoding='Latin1'))
 #list2_in = sorted(list2_in)
-#print('lines read file2 : ' + str(len(open(file2_in, encoding='UTF-8').readlines())))
+#print('lines read file2 : ' + str(len(open(file2_in, encoding='Latin1').readlines())))
 #print('\n')
 ## <\get filename containing text lists, convert into list, sort and dedup>
 
@@ -126,7 +55,7 @@ print(
 
 # <open file3_out file and write header>
 
-file3_out = open(file3_out_name, 'w', encoding='UTF-8')
+file3_out = open(file3_out_name, 'w', encoding='Latin1')
 
 file3_out.write(
       '! Title: domain block list\n'
@@ -190,7 +119,7 @@ file3_out.writelines(line + '\n' for line in list3_out)
 file3_out.close()
 
 print(
-    str(len(open(file3_out_name, encoding='UTF-8').readlines()))
+    str(len(open(file3_out_name, encoding='Latin1').readlines()))
     + ' lines written to '
     + file3_out_name +
     '\n'
@@ -202,7 +131,7 @@ print(
 
 # <open file4_out file and write header>
 
-file4_out = open(file4_out_name, 'w', encoding='UTF-8')
+file4_out = open(file4_out_name, 'w', encoding='Latin1')
 
 file4_out.write(
       '! Title: url block list\n'
@@ -248,7 +177,7 @@ file4_out.writelines(line + '\n' for line in list4_out)
 file4_out.close()
 
 print(
-    str(len(open(file4_out_name, encoding='UTF-8').readlines()))
+    str(len(open(file4_out_name, encoding='Latin1').readlines()))
     + ' lines written to '
     + file4_out_name
     + '\n'
@@ -260,7 +189,7 @@ print(
 
 # <open file5_out file and write header>
 
-file5_out = open(file5_out_name, 'w', encoding='UTF-8')
+file5_out = open(file5_out_name, 'w', encoding='Latin1')
 
 file5_out.write(
       '! Title: ublock list except domains\n'
@@ -297,7 +226,7 @@ file5_out.writelines(line + '\n' for line in list5_out)
 file5_out.close()
 
 print(
-    str(len(open(file5_out_name, encoding='UTF-8').readlines()))
+    str(len(open(file5_out_name, encoding='Latin1').readlines()))
     + ' lines written to '
     + file5_out_name
     + '\n'
