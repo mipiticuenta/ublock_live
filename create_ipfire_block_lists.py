@@ -75,8 +75,6 @@ list1_out = set()
 pbar = pb.ProgressBar(maxval = len(list1_in)).start()
 progress = 0
 
-#alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
-
 for line in list1_in:
 
     line = line.strip()
@@ -85,14 +83,7 @@ for line in list1_in:
         if string_r := re.search(r'#', line):
             list1_out.add(line)
         else :
-            list1_out.add(line.lower())
-#            lowercase_letters = ''
-#            for char in line:
-#                if char not in alphabet or alphabet.index(char)<=25:
-#                    lowercase_letters += char
-#                else:
-#                    lowercase_letters += alphabet[alphabet.index(char)-26]
-#            list1_out.add(lowercase_letters)
+            list1_out.add(line.lower())    # <transform to lower case/>
 
     progress += 1
     pbar.update(progress)
