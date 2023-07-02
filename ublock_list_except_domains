@@ -24823,7 +24823,6 @@
 ##.zzz-ddnotice
 ##ADS-RIGHT
 ##A[onclick="SEAT_ANALYTICS.trackTriggerEvent('scrollingarrow');"]
-##GANNETT-ATOMS-COMPONENT-NEWSLETTER-CTA
 ##PS
 ##[Anzeige]
 ##[action*=".nl02."]
@@ -25089,7 +25088,6 @@
 ##[class^="Fb"]:not(body):not(html)
 ##[class^="KioskEconomy__Container"]
 ##[class^="MFPApp-"]
-##[class^="NewsletterCard__container__"]
 ##[class^="Piano"]
 ##[class^="Supporter"]:not(body):not(html)
 ##[class^="VideoQueue__adWatchingRight"]
@@ -25231,7 +25229,6 @@
 ##[class^="spu-"]:not(body):not(html)
 ##[class^="stickyContentBottom_"]:not(body):not(html)
 ##[class^="stopblock"]:not(body):not(html)
-##[class^="styles__NewsletterSub"]
 ##[class^="sub_jeu_"]:not(body):not(html)
 ##[class^="swal2"]:not(body):not(html)
 ##[class^="teaser_six_smi-"]:not(body):not(html)
@@ -25291,7 +25288,6 @@
 ##[data-behat-search-results-lg]
 ##[data-bem]
 ##[data-bid]
-##[data-block-type="block:newsletter"]
 ##[data-bn-left]
 ##[data-board]
 ##[data-box-name]
@@ -25363,10 +25359,8 @@
 ##[data-mobile-title]
 ##[data-modal-el]
 ##[data-model_name]
-##[data-module="newsletter-signup"]
 ##[data-mpu1]
 ##[data-native_ad]
-##[data-nc="nc-newsletter"]
 ##[data-newscategory]
 ##[data-nextstory]
 ##[data-notice]
@@ -25415,7 +25409,6 @@
 ##[data-st-area]
 ##[data-sticky-ads]
 ##[data-t]
-##[data-target="#newsletter-modal"]
 ##[data-target="coockie"]
 ##[data-teaser-type]
 ##[data-template-some-article]
@@ -26090,7 +26083,6 @@
 ##a[title="Bookmark on Yahoo!"]
 ##a[title="Condividi su Google+"]
 ##a[title="Condividi"]
-##a[title="Daily Email Newsletter"]
 ##a[title="Naar boven scrollen"]
 ##a[title="Partilhar por email"]
 ##a[title="Pin It"]
@@ -26139,8 +26131,6 @@
 ##div[class^="AdhesionAd_"]
 ##div[class^="Directory__footerAds"]
 ##div[class^="Display_displayAd"]
-##div[class^="NewsletterForm_"]
-##div[class^="NewsletterSignup-"]
 ##div[class^="PreAd_"]
 ##div[class^="adpubs-"]
 ##div[class^="adsbutt_wrapper_"]
@@ -26153,17 +26143,13 @@
 ##div[class^="largeRectangleAd_"]
 ##div[class^="lifeOnwerAd"]
 ##div[class^="mpp-container-position"]
-##div[class^="newsletter-signup-container_"]
 ##div[class^="pane-google-admanager-"]
 ##div[class^="proadszone-"]
-##div[class^="rightrail-newsletter-"]
 ##div[class^="teaser_six_smi-"]
 ##div[data-components="pdr-ws1lib-header"]
 ##div[data-contentexchange-widget]
 ##div[data-google-query-id]
 ##div[data-insertion]
-##div[data-newsletter-1]
-##div[data-newsletter-2]
 ##div[data-role="sidebarAd"]
 ##div[data-spotim-slot]
 ##div[data-test-id="AdDisplayWrapper"]
@@ -26179,7 +26165,6 @@
 ##div[id^="advt-"]
 ##div[id^="crt-"]
 ##div[id^="digg-"]
-##div[id^="feature-newsletter"]
 ##div[id^="js-Stay-Connected-"]
 ##div[id^="lazyad-"]
 ##div[id^="mediametrics-"]
@@ -26188,7 +26173,6 @@
 ##div[id^="rc-widget-"]
 ##div[id^="smi2adblock_"]
 ##div[id^="smi_teaser_"]
-##div[id^="wrapper_newsletter_"]
 ##div[id^="zergnet-widget"]
 ##div[jsdata*="CarouselPLA-"]
 ##div[ng-click^="animateToTop"]
@@ -26199,7 +26183,6 @@
 ##form[action="feedburner.google.com/fb/a/mailverify"]
 ##foxfield-xmas
 ##hello-world
-##hl-newsletter-cta
 ##iframe[src*="googlesyndication"]
 ##iframe[src*="yieldmanager"]
 ##iframe[src^="fb.com"]
@@ -26224,7 +26207,6 @@
 ##img[title="View videos on YouTube"]
 ##img[title^="Connect with us"]
 ##img[title^="Find us"]
-##journey-inline-newsletter
 ##ocaso-global-modal
 ##plugs
 ##pubdetaillg2
@@ -26338,7 +26320,6 @@
 (^|\.)coinzillatag\..
 (^|\.)comitium\..
 (^|\.)commander1\..
-(^|\.)concert\..
 (^|\.)conichi\..
 (^|\.)connectif\..
 (^|\.)consensu(|\?|\-\.\_).
@@ -26675,7 +26656,7 @@
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(L|l)eader(B|b)oard/"):matches-attr(/.+/="/(^((H|h)eader))/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(MPU|mpu)(^lse)/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(M|m)ail(C|c)himp/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(N|n)ews(L|l)et/"):not(#fbody)
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(NEWS|News|news).?(LET|Let|let)/"):not(#fbody)
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(N|n)otif/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(O|o)(UT|ut)(B|r)(RAIN|ain)/")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(O|o)mniture/")
@@ -26751,11 +26732,9 @@
 *ImpressionEvents*$important
 -2011ad_
 -7ads.
--ClickTale
 -ContentAd-
 -NewAd.
 -NewStockAd-
--Newsletter-
 -PagePeelPro/*
 -ShareButton
 -Sponsored
@@ -26900,7 +26879,6 @@
 -facebook1
 -facebook2
 -facebookhover
--fb-notification
 -fb-pixel
 -fb-share
 -fbpopup
@@ -26910,7 +26888,6 @@
 -foot-twitter
 -footer-fb
 -footer-igram
--footer-newsletter
 -footer-social
 -footer-tw
 -footer_social
@@ -26964,8 +26941,8 @@
 -moreads/*
 -moresocial-
 -nav-social
--newsletter
--newsletter/*
+-notification
+-notify
 -onward-journeys.$important
 -optimost-
 -outsidersads-
@@ -26992,8 +26969,6 @@
 -pub/*
 -publicidad.
 -pubmatic
--push-notification
--push-notification-
 -push-worker-
 -pwa$important
 -px-$important
@@ -27046,7 +27021,6 @@
 -sponsor
 -sponsor/*
 -sprite-social-
--square-newsletter.
 -stats-
 -stats/*
 -sticky-social/*
@@ -27655,7 +27629,6 @@
 .n.2.1.l60.
 .nativeads.
 .needgayporn.
-.newsletter
 .nexusconsultoriacontabil.
 .noblepoker.
 .nopreroll_
@@ -27986,8 +27959,6 @@
 /AdformVideo_
 /Adlocal/*
 /AdobeCustomVideoMeasurement.
-/Ads
-/Ads-
 /AdsAjaxRefresh.
 /AdsAsync.
 /AdsLoad.
@@ -28001,7 +27972,7 @@
 /AdsenseBlockView.
 /Adsplex-
 /Adv150.
-/Adv468.
+/Adv4
 /Adv7
 /AdvWindow/*
 /AdvertAssets/*
@@ -28024,7 +27995,6 @@
 /AttractiveAdsCube.
 /AttractiveAds_
 /AudienceTarget*$important
-/BKG_Newsletter_
 /BKVTrack.
 /BackgroundAd40.
 /BehaviourCaptureHandler.
@@ -28075,10 +28045,8 @@
 /DynamicAnalytics
 /EDigitalSurvey_
 /EMERPEventCollector.
-/ENewsletter_
 /EWTRACK_
 /Econda2.
-/Editorialnewsletterthumbnails/*
 /EfficientFrontier.
 /ElxtrConsent/*
 /EmailOpenTrackLog.
@@ -28178,7 +28146,6 @@
 /MPUAdHelper.
 /MailButton_48.
 /MarketingResourceImages/*
-/Masthead-Newsletter-
 /Maxymiser/*
 /MixBerryAdsProduction/*
 /MonsterAd-
@@ -28191,7 +28158,6 @@
 /NNAnalyticsWPSites.
 /NativeAdManager.
 /NetworkTrack
-/NewsletterSubscription.
 /Nielsen53.
 /NielsenAnalytics.
 /NielsenData/*
@@ -28735,7 +28701,6 @@
 /adblock-message
 /adblock-message.
 /adblock-notice
-/adblock-notify
 /adblock-relief
 /adblock-relief.
 /adblock-relief/*
@@ -28751,7 +28716,6 @@
 /adblock_detector.
 /adblock_logger.
 /adblock_logging.
-/adblock_notify
 /adblockbait.
 /adblockcheck
 /adblockdetect
@@ -29498,6 +29462,7 @@
 /adrun.
 /adrunner.
 /adruptive.
+/ads
 /ads-
 /ads.
 /ads/*
@@ -29996,21 +29961,6 @@
 /aduxads/*
 /adv
 /adv-
-/adv-1.
-/adv-2.
-/adv-definitions-
-/adv-div-
-/adv-dmp/*
-/adv-expand/*
-/adv-ext-
-/adv-f.
-/adv-header.
-/adv-mobile.
-/adv-placeholder.
-/adv-scroll-
-/adv-scroll.
-/adv-socialbar-
-/adv-top-bottom.
 /adv.
 /adv/*
 /adv0
@@ -30036,36 +29986,6 @@
 /advFrameCollapse.
 /advPop.
 /adv_
-/adv_2.
-/adv_250x300.
-/adv_468.
-/adv_468_
-/adv_90x728.
-/adv_90x728_
-/adv_background/*
-/adv_box_
-/adv_burt_
-/adv_display.
-/adv_flash.
-/adv_frame/*
-/adv_gigya.
-/adv_head.
-/adv_horiz.
-/adv_hp.
-/adv_image/*
-/adv_left_
-/adv_library3.
-/adv_link.
-/adv_manager_
-/adv_out.
-/adv_player_
-/adv_rcs/*
-/adv_script_
-/adv_server.
-/adv_teasers.
-/adv_top.
-/adv_vert.
-/adv_vertical.
 /advadserve/*
 /advagg_font.
 /advalue/*
@@ -30245,8 +30165,6 @@
 /advisormedi/*
 /adviv/*
 /advlink
-/advlink.
-/advlink300.
 /advloader.
 /advnt.
 /advobj.
@@ -30550,7 +30468,6 @@
 /articleSponsor
 /article_counter
 /article_hit
-/article_newsletter.
 /articlempuadvert/*
 /artimediatargetads.
 /as3overstreamplatformadapter.
@@ -30773,7 +30690,6 @@
 /blockadvertising/*
 /blockblock.
 /blocker/*
-/blocknewsletter/*
 /blockpubcarree.
 /blockpubcarree2.
 /blogad.
@@ -31100,7 +31016,6 @@
 /clickstats.
 /clickstream
 /clicktag
-/clicktale
 /clicktrack$important
 /clicktrends
 /clickunder.
@@ -31452,7 +31367,6 @@
 /devicepx-jetpack.
 /devtools-detector.
 /df/250x250.
-/dfm-notifications/*
 /dfp-
 /dfp.
 /dfp/*
@@ -31651,7 +31565,6 @@
 /edb.
 /edcc.
 /edgemesh.
-/edjnewsletter.
 /edmonds.
 /edmonton.
 /edugram_chat.
@@ -31725,7 +31638,6 @@
 /eros.
 /esb-privacy.
 /eshopoffer.
-/esnewsletterad.
 /espace-pub-
 /essential/social-
 /estadisticas.
@@ -31880,7 +31792,6 @@
 /figanalytics.
 /figanalytics/*
 /figconsent-*.
-/fignewsletter*.
 /figp.
 /filejoker.
 /fillerAds/*
@@ -32278,7 +32189,6 @@
 /getmdhlayer.
 /getmdhlink.
 /getmyad/*
-/getnewsletter.
 /getnortonsealimaget.
 /getrcmd.
 /getsad.
@@ -32768,7 +32678,6 @@
 /inread.
 /inread_
 /insales_counter.
-/inscription-newsletter-
 /insertA.d.
 /insertAd
 /insert_impressions.
@@ -32898,7 +32807,6 @@
 /jsecoin.
 /jslogger
 /jslogger.
-/jsnewsletter.
 /jsnlog.
 /jsonad/*
 /jsonlogger
@@ -32970,7 +32878,6 @@
 /landing/*
 /landingadvertisements/*
 /largeSocialIcons.
-/last_newsletter
 /layad.
 /layer-advert-
 /layer.
@@ -33296,7 +33203,6 @@
 /miniadbar/*
 /miniads/*
 /miniadvert.
-/minify/ads-
 /mining.
 /minneapolis.
 /minpagead/*
@@ -33332,7 +33238,6 @@
 /mobile-share-
 /mobile-sharing/*
 /mobile-welcome-overlay/*
-/mobile_newsletter_
 /mobilead
 /mobilead.
 /mobilead_
@@ -33366,7 +33271,6 @@
 /mormont.
 /motherless.
 /mousetrap/*
-/mp-web-notification.
 /mpads/*
 /mpbads.
 /mpbads2.
@@ -33410,7 +33314,6 @@
 /mtsocialgroup_
 /mttag/*
 /mtvi_reporting.
-/multi-desktop-notification.
 /multiad/*
 /mv_Visit2.
 /mwTag.
@@ -33440,7 +33343,6 @@
 /mystats2.
 /myvids/*
 /n*adserv.
-/n/adv_
 /n2ad_
 /n4403ad.
 /nLoggerJB_
@@ -33525,7 +33427,6 @@
 /neustar.
 /neverblock-
 /neverblock/*
-/new-newsletter2.
 /new-relic.
 /new.cnt.
 /new/pu.
@@ -33566,43 +33467,6 @@
 /newshare/*
 /newsharecounts.
 /newslette-bgt.
-/newsletter+promo+
-/newsletter-app.
-/newsletter-bkg.
-/newsletter-box-
-/newsletter-campaign-manager/*
-/newsletter-desktop.
-/newsletter-email.
-/newsletter-forms.
-/newsletter-header.
-/newsletter-hover/*
-/newsletter-inline.
-/newsletter-logo-
-/newsletter-mail.
-/newsletter-mapping/*
-/newsletter-min.
-/newsletter-mobile.
-/newsletter-new.
-/newsletter-pack-
-/newsletter-pack.
-/newsletter-pattern.
-/newsletter-portlet/*
-/newsletter-promo-
-/newsletter-promo/*
-/newsletter-signup-
-/newsletter-signup.
-/newsletter-subscribe-
-/newsletter-subscription-
-/newsletterBundle.
-/newsletterads/*
-/newsletterbg4.
-/newsletterbutton.
-/newslettericon2.
-/newsletteroverlay/*
-/newsletterpopup.
-/newsletterpopup/*
-/newslettersignup.
-/newsletterwidget/*
 /newsmaxadcontrol.
 /newsstat/*
 /newstat/*
@@ -33655,9 +33519,8 @@
 /noticead/*
 /noticia_entidades_triarias_consultar.
 /notification$important
-/notify.
-/notifyad.
-/notifyme.
+/notify
+/notifyad
 /novaonads.
 /npawAdAdapter.
 /npop.
@@ -33707,7 +33570,6 @@
 /oewa_pixel_
 /oiopub-direct/*
 /okads_
-/old/ads-
 /olx/*
 /olyhdliveextraads-
 /omega?ad_
@@ -34009,7 +33871,6 @@
 /plusone.
 /plzcrawlme.
 /pm/ad-
-/pmd-newsletter/*
 /pmd_gdfp-
 /pmspxl.
 /pnr.
@@ -34044,8 +33905,6 @@
 /popdhtml_
 /popeachclick/*
 /popin/*
-/popinNewsletter.
-/popinNewsletter/*
 /popinfacebook.
 /poplivejasmine.
 /popounder4.
@@ -34180,7 +34039,6 @@
 /promoboxes
 /promobuttonad.
 /promoimage.
-/promonewsletter
 /promos/*
 /promotool
 /propadbl
@@ -34286,11 +34144,6 @@
 /pup
 /pup.
 /purch-
-/push-notification-
-/push-notification.
-/push-notification/*
-/push-notifications.
-/push-notifications/*
 /push-pro-site-settings/*
 /push-sw.
 /push-worker-
@@ -34298,14 +34151,7 @@
 /push.
 /push/*
 /pushJs/*
-/pushNotificationSdkNew.
-/pushNotifications.
 /push_app.
-/push_newsletter_
-/push_notification.
-/push_notification/*
-/push_notification_
-/push_notifications.
 /push_subscription.
 /push_token_
 /pushdown.
@@ -34316,15 +34162,14 @@
 /pushmessageworker.
 /pushnews.
 /pushnote-
-/pushnotification.
-/pushnotifications/*
+/pushnotification
 /pushpro-lib.
 /pushpushgo/*
 /pushsubscribe.
 /pushtoast-
 /pushv2.
 /pushwoosh-
-/pushwooshNotification/*
+/pushwooshNotification
 /pushy-ver.
 /pustrck.
 /putl.
@@ -34467,7 +34312,6 @@
 /refstats.
 /reftrack
 /reg-ui-client-
-/reg_newsletter.
 /reg_stat
 /reg_stat.
 /regie.
@@ -34974,8 +34818,6 @@
 /sisterads.
 /site-advert
 /site-catalyst.
-/site-notification-desk.
-/site-privacy-notification/*
 /site-track
 /siteClarity/*
 /site_catalyst.
@@ -35068,7 +34910,6 @@
 /smicons/fb_
 /smicons/pin-
 /smicons/tw-
-/smio-push-notification
 /smitionsory.
 /smpop-stable.
 /sn_facebook_
@@ -35387,7 +35228,6 @@
 /sparechange.
 /specialads/*
 /specialfeatureads/*
-/sph_newsletter/*
 /spi.
 /spiderad/*
 /spike.
@@ -35466,7 +35306,6 @@
 /st_digg_
 /st_facebook_
 /st_twitter_
-/standalone/ads-
 /stat-adobe-
 /stat-dfp.
 /stat-dfp/*
@@ -35687,7 +35526,6 @@
 /tcf-cmp-resources/*
 /tcf2.
 /tcf2_stub.js$important
-/td-newsletter/*
 /td-pageviews.
 /tdlads/*
 /teads-
@@ -35779,7 +35617,6 @@
 /tns_gallup/*
 /tnsmetrix/*
 /toaster-checker.
-/toaster-newsletter.
 /toastr.
 /toggleAds.
 /toigoogleads.
@@ -36315,7 +36152,6 @@
 /vstat.
 /vstats/*
 /vstrack.
-/vt-newsletter2.
 /vtextads.
 /vto_plus/*
 /vtrack
@@ -36355,7 +36191,6 @@
 /wcount.
 /wcp-consent.$important
 /wdbloogablock.
-/wdt_notifyjson.
 /weather-sponsor/*
 /web-ad_
 /web-clients/*
@@ -36389,10 +36224,8 @@
 /webadvert/*
 /webadvert3/*
 /webadverts/*
-/webalert-notification
 /webanalytics3.
 /webanalyticsssl.
-/webapp/ads-
 /webbug/*
 /webbug_c.
 /webcam_
@@ -36605,7 +36438,6 @@
 /wwwads.
 /wwwcount.
 /wxhawkeye.
-/wysija-newsletters/*
 /wysistat.
 /wz_logging.
 /x5advcorner.
@@ -42395,7 +42227,6 @@
 =log_promo
 =marketing
 =metrics
-=newsletterregistration
 =oas_pop
 =oas_tag.
 =offer
@@ -42894,7 +42725,6 @@ _Advert0
 _AdvertsImgs
 _BTN_LinkedIn_
 _ChatAd_
-_Clicktale
 _CoreMetrics/*
 _Crstatistics.
 _FLYAD.
@@ -42905,7 +42735,6 @@ _GCM.
 _GoogleCMP.
 _Gplus_
 _Linked_Logo.
-_Logo_Newsletter.
 _NielsenNetRatings.
 _OpinionLab
 _Page-Under_
@@ -43187,7 +43016,6 @@ _follow_me-b.
 _followus_
 _footer_fb.
 _footer_gplus.
-_footer_newsletter.
 _footer_share_
 _footer_socials.
 _footer_twitter.
@@ -43280,13 +43108,10 @@ _my_yahoo.
 _nb_sys.
 _nedstat.
 _newrelic
-_newsletter
-_newsletter.
-_newsletter_
-_newsletters-
-_newsletters.
 _nielsen.
 _nnads/*
+_notification
+_notify
 _ntpagetag.
 _oas.
 _omnireport.
@@ -44006,7 +43831,7 @@ clickiocdn.
 clicknupload.
 clicks.
 clickserv.
-clicktale.
+clicktale
 clicrbs.
 climatedesk.
 cliquemidia.
@@ -45443,6 +45268,7 @@ newrelic.
 newrepublic.com#@#[data-reactid]
 news-whistleout.
 newsharecounts.
+newsletter
 newslogbook.
 newsmemory.
 newsportal*.
@@ -45467,7 +45293,7 @@ norton.
 notebookchat.
 notebookcheck.
 notification_state
-notifyfox.
+notifyfox
 nouvelobs.
 novablogitalia.
 novelasesp.
@@ -45697,7 +45523,6 @@ pop-under.
 pop3
 pop_target
 popcornstream.
-popinNewsletter.
 popit.
 popmarker.
 poptraf.
