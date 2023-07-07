@@ -8,13 +8,13 @@
 !  homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/unified_block_list
 !  title: unified block list
 ! #============================================================================================
-! *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(D|d)eep[Ll]ink/")F
-! *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(V|v)isit/")
-! *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(\-|_|\s)(A|a)(D|d)(S|s|V|v|)(\-|_|\s)/")
-! *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(\-|_|\s)[Ss]hare(\-|_|\s)/")
-! *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(^|\s)[Ll]ink[-_]/")
-! *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[-_][Ss]hare(\s|$)/")
-! *##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Ss]ubmit/")
+! *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/(D|d)eep[Ll]ink/")F
+! *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/(V|v)isit/")
+! *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/(\-|_|\s)(A|a)(D|d)(S|s|V|v|)(\-|_|\s)/")
+! *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/(\-|_|\s)[Ss]hare(\-|_|\s)/")
+! *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/(^|\s)[Ll]ink[-_]/")
+! *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/[-_][Ss]hare(\s|$)/")
+! *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/[Ss]ubmit/")
 ! *##[id^="count"]:not(body):not(html)
 ! *$image,redirect-rule=1x1.gif
 ! *$popup,1p ! impedes open new tab with ctrl+click
@@ -25053,99 +25053,91 @@
 *##.zx1p
 *##.zxc-msg
 *##.zzz-ddnotice
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/.+[^([Rr]e)][Ss]pons/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/OUTBRAIN/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Aa][Dd][Bb]ox")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Aa][Dd][Cc]Contain/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Aa][Dd][Hh]old/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Aa][Dd][Pp]lace/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Aa][Dd][Ss][Ll][Oo][Tt]/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Aa][Dd][Ss]ense/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Aa][Dd][Ss]pot/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Aa][Dd][Tt]est/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Aa][Dd][Tt]itle/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Aa][Dd][Uu]nit/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Aa][Dd][Ww]rap/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Aa][Dd][Zz]one/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Aa][Dd]d[Tt]his/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Aa][Dd]s[Ll]inicom/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Aa]dd[Tt]o[Aa]ny/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Aa]kismet/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Aa]nuncio/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Bb]uy[Ss]ell[Aa]d/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Cc]ampaign/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Cc]asino/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Cc]ense/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Cc]harbeat/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Cc]onsent/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Cc]oockie/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Cc]ooki/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Cc]riteo/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Dd][Ff][Pp]/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Dd]ianomi/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Dd]idomi/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Dd]ismiss/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Dd]ouble[Cc]lick/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Ee]vidon/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Ee]z((oic|mob)|(Ads|ads))/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Ff]((book|BOOK)|(aceb|ACEB)(ook|OOK))/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Ff]ollow/"):matches-attr(/.+/="(^(nofollow))/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Gg][Dd][Pp]/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Gg]oogle.?[Pp]us/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Ii]nject/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Ii]nstagram/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Ii]ntersti/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Kk]elkoo/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Ll]eader[Bb]oard/"):matches-attr(/.+/="/(^([Hh]eader))/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Mm][Pp][Uu][^(lse)]/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Mm]ail[Cc]himp/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Nn][Ee][Ww][Ss].?[Ll][Ee][Tt]/"):not(#fbody)
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Nn]otif/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Oo]mniture/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Oo]ne[Ss]ignal/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Oo]ptanon/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Oo]ut[Bb]rain]/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Oo]utbrain/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Pp]artner/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Pp]ixel/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Pp]olicy/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Pp]op(Ad|ad|er|In|in|It|it|Out|out|Over|over|Under|under|Up|up|[0-9]|-|_)/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Pp]opular/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Pp]rivacy/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Pp]romo(^(to))/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Pp]ubli[^c]/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Pp]ublici/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Rr](oba|OBA)(P|a)(ag|AG)/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Rr][Gg][Pp][Dd]/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Rr]eklam/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Ss]hare.?[Bb]ar/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Ss]hare[Tt]his/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Ss]hare[Tt]o/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Ss]haring/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Ss]kin[Rr]evenue/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Ss]ocial[-_][Bb]ar/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Ss]ocial[-_][Ll]ink/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Ss]ocial[-_][Ss]har/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Ss]u(b)?scr/"):not(.pageFrame)
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Tt][Ww]([Ii]|EE|ee)[Tt]/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Tt]aboola/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Tt]ealeaf/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Tt]ealium/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Tt]elegram/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Tt]op[Mm]ost/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Tt]rack/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Tt]rade[Dd]oubler/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Ww]hats[Aa]pp/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Yy]andex/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/^[Aa][Dd][sv]?(vert)?[0-9]*/"):not(.adn):not(.head)
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/^[Aa][Ff][Ff]/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/^[Bb]ann/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/^[Cc]hat[Gg][Pp][Tt]/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/^[Ff][Bb]/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/^[Ss]hare/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/^[Ss]ocial/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/adsbygoogle/")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/revUnit/")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/Tealeaf/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/[^(Re)]spons/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/^ad(s?v?(vert)?[0-9]?|[-_\s])/i"):not(.adn):not(.head)
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/^aff/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/^chatgpt/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/^fb/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/adbox/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/adcontain/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/addthis/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/addtoany/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/adhold/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/adplace/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/adsbygoogle/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/adsense/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/adslinicom/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/adslot/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/adspot/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/adtest/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/adtitle/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/adunit/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/adwrap/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/adzone/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/akismet/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/anuncio/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/bann/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/buysellad/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/campaign/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/casino/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/charbeati/")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/consent/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/coocki/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/cooki/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/criteo/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/csense/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/dfp/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/dianomi/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/didomi/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/dismiss/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/doubleclick/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/evidon/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/ez(oic|mob|ads)/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/f(book|acebook)/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/follow/"):matches-attr("/.+/"="[^(nofollow)]/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/gdp/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/google.?plus/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/inject/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/instagram/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/intersti/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/kelkoo/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/leaderboard/i"):matches-attr("/.+/"="/[^(header)]/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/mailchimp/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/mpu[^(lse)]/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/news.?let/i"):not(#fbody)
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/notif/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/omniture/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/onesignal/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/optanon/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/outbrain/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/partner/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/pixel/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/policy/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/pop(ad|er|in|it|out|over|under|up|[0-9]|[-_])/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/popular/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/privacy/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/promo[^(to)]/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/publi[^c]/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/publici/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/reklam/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/revunit/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/rgpd/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/robapag/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/share/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/sharing/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/skinrevenue/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/social/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/sub?scr/i"):not(.pageFrame)
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/taboola/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/tealium/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/telegram/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/topmost/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/track/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/tradedoubler/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/tw(i|ee)t/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/whatsapp/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/yandex/i")
 *##ADS-RIGHT
 *##A[onclick="SEAT_ANALYTICS.trackTriggerEvent('scrollingarrow');"]
 *##PS
@@ -25156,13 +25148,7 @@
 *##[action*="mailverify"]
 *##[action*="ziphost"]
 *##[action^="163.172.219.174/"]
-*##[ad-channel]
-*##[ad-id]
-*##[ad-position]
-*##[ad]
-*##[ad_name]
 *##[adonis-marker]
-*##[ads-blocked]
 *##[ahref]
 *##[air-module]
 *##[ajaxify]
@@ -42227,7 +42213,7 @@ babytorrent.
 backalleypics.
 backbeatmedia.
 backmarket.es#@#+js(addEventListener-defuser)
-backmarket.es#@#:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Pp]ixel/")
+backmarket.es#@#:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/[Pp]ixel/")
 badge
 bagoads.
 baidu$important
@@ -42241,8 +42227,8 @@ baventures.
 bazaarvoice.
 bbb.
 bbc.com#@#+js(addEventListener-defuser)
-bbc.com#@#:not(main):not(html):not(body):matches-attr(/.+/="/[Pp]romo/")
-bbc.com#@#:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Pp]romo/")
+bbc.com#@#:not(main):not(html):not(body):matches-attr("/.+/"="/[Pp]romo/")
+bbc.com#@#:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/[Pp]romo/")
 bbc.com#@#[class*="overlay"]:not(body):not(html):not(div)
 bbthat.
 bc.geocities.
@@ -42925,7 +42911,7 @@ fred.stlouisfed.org#@#[class*="overlay"]:not(body):not(html):not(div)
 free-discordnitro.
 free-discordnitro.$all
 free-telechargement.
-freecodecamp.org#@#:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(^|\s)(A|a)[Dd](\-|_|\s)/")
+freecodecamp.org#@#:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/(^|\s)(A|a)[Dd](\-|_|\s)/")
 freecourselab.
 freecoursesonline.
 freedesktop.org#@#+js(addEventListener-defuser)
@@ -43641,9 +43627,9 @@ magesypro.
 magnify360-cdn.
 mail.google.com#@#+js(addEventListener-defuser)
 mail.google.com#@#.vk
-mail.google.com#@#:not(main):not(html):not(body):matches-attr(/.+/="/(^|\s)(A|a)[Dd](s|v|vert)?(0-9)?(\s|$)/")
-mail.google.com#@#:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(\-|_|\s)(A|a)[Dd](S|s|V|v|)($)/")
-mail.google.com#@#:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(\-|_|\s)(A|a)[Dd](S|s|V|v|)[0-9]*($)/")
+mail.google.com#@#:not(main):not(html):not(body):matches-attr("/.+/"="/(^|\s)(A|a)[Dd](s|v|vert)?(0-9)?(\s|$)/")
+mail.google.com#@#:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/(\-|_|\s)(A|a)[Dd](S|s|V|v|)($)/")
+mail.google.com#@#:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/(\-|_|\s)(A|a)[Dd](S|s|V|v|)[0-9]*($)/")
 mail.google.com#@#[id="overlay"]
 mailchimp
 mailing.
@@ -45553,8 +45539,8 @@ youtube.com#@#.autoplay
 youtube.com#@#.player-wrapper
 youtube.com#@#.ytmusic-menu-popup-renderer
 youtube.com#@#.ytmusic-player-bar
-youtube.com#@#:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/(^|\s)[Bb]ann/")
-youtube.com#@#:not(main):not(html):not(body):not(article):not(header):matches-attr(/.+/="/[Dd]ismiss/")
+youtube.com#@#:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/(^|\s)[Bb]ann/")
+youtube.com#@#:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/[Dd]ismiss/")
 youtube.com#@#[class*="popup"]:not(body):not(html)
 youtube.com#@#[title^="Watch "]
 youtube.com#@#form
