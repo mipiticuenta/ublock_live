@@ -8,7 +8,7 @@
 !  homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/unified_block_list
 !  title: unified block list
 ! #============================================================================================
-! *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/(^|\s)[Ll]ink[-_]/")
+! *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/(^|\s)link[-_]/i")
 ! *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/deeplink/i")
 ! *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/visit/i")
 ! *##[id^="count"]:not(body):not(html)
@@ -102,6 +102,9 @@
 !-loganalyzer
 !-logger
 !-logging
+!-pop-under
+!-popup
+!-popup$important
 !.ad-
 !.ad.
 !.ad/*
@@ -116,7 +119,7 @@
 !.adblockdetect
 !.adblocked
 !.adblocker
-!.adblockerdetection
+!.adblockerdetect
 !.adblockerpopup
 !.adblockmonitor
 !.adbmon
@@ -184,6 +187,8 @@
 !.log
 !.logger
 !.logrequest
+!.popup_
+!.popupvideoad.
 !/ad
 !/ad-
 !/ad.
@@ -1086,6 +1091,20 @@
 !/logwebhit
 !/logwriter
 !/no-adblock
+!/popounder
+!/popun.
+!/popundr
+!/popup
+!/popupad
+!/popupally
+!/popupbuild
+!/popupclick
+!/popupdfp
+!/popuplog
+!/popuplp
+!/popups
+!/popupunder
+!/popupyous
 !/wp-adblock
 !=ad
 !=ad_
@@ -1252,6 +1271,7 @@
 !_logger
 !_logging
 !_no_adblock
+!_popup
 !anti-adblock
 !block-adblocker
 !detect-adblock
@@ -1637,7 +1657,6 @@
 (^|\.|\-)amplitude(|event)(|\?|\-\.\_).
 (^|\.|\-)collectors?[0-9]*(|\?|\-\.\_).
 (^|\.|\-)cx(|ense)(|\?|\-\.\_).
-(^|\.|\-)evidon(|v[0-9]*)(|\?|\-\.\_).
 (^|\.|\-)google(ads|adservices?|\-analyticator|\-analytics?|commerce|syndication|tagmanager|tagservices)(|\?|\-\.\_).
 (^|\.|\-)google\.*/cse/.
 (^|\.|\-)heads\-fa\.scdn(|\?|\-\.\_).
@@ -24499,7 +24518,6 @@
 *##.trueads
 *##.truste_cm_outerdiv:not(body):not(html)
 *##.trustpilot-widget
-*##.trustproject_container
 *##.trytopnav
 *##.ts-actionbar-wrapper
 *##.ts-articlesidebar_wrapper
@@ -25597,7 +25615,7 @@
 *##.ztkady
 *##.zx1p
 *##.zxc-msg
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/(right|left|main|top|oas|ad|box|sticky|deal|line).?.?rail(ad)?/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/(left|main|top|oas|ad|box|sticky|deal|line).?.?rail(ad)?/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/[-_\.\s]dfp[-_\.\s]/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/[^(Re)]spons/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/[^(omni)]track/i")
@@ -25635,6 +25653,7 @@
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/cooki/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/criteo/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/csense/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/detect/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/dianomi/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/didomi/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/digg/i")
@@ -25680,7 +25699,7 @@
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/revunit/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/rgpd/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/roba.?pag/i")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/share/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/shar[er]/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/sharing/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/skin.?revenue/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/social/i")
@@ -25691,6 +25710,7 @@
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/telegram/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/top.?most/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/tradedoubler/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/trustproject/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/tw(i|ee)t/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/whatsapp/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/yandex/i")
@@ -27127,15 +27147,11 @@
 -pixel
 -plugins-wppas-
 -policy
--pop-under
 -popexit
--popup
--popup$important
 -powerstat
 -printhousead-
 -promo
 -promo$important
--promo*$important
 -propads
 -proxy-client$important
 -pub-
@@ -27155,6 +27171,7 @@
 -regiepub
 -rightrailad
 -rodo.
+-rotator
 -scrollads
 -service-bar$important
 -share-bar
@@ -27175,6 +27192,7 @@
 -sharer
 -shares.
 -sharewidget
+-sharing
 -sharing-popin
 -soc-sprites
 -social
@@ -27709,9 +27727,6 @@
 .png$xhr,important
 .popcash.
 .popdhtml.
-.popup_
-.popup_im.
-.popupvideoad.
 .pornhat.
 .pornhub.
 .poweredbyliquidfire.
@@ -27951,9 +27966,10 @@
 /?sid
 /?track
 /?utm
-/[-_/&=\.\?]ad[^adefijortu]b?s?v?x?[0-9]?[â]/
-/[-_/&=\.\?]aff[0-9]?/
-/[-_/&=\.\?]log[0-9]?[^o][^i]/
+/[-_/&=\.\?]adb?s?v?x?[0-9]?[^adefijortu]/$important
+/[-_/&=\.\?]aff[0-9]?/$important
+/[-_/&=\.\?]log[0-9]?[^oi]/$important
+/[-_/&=\.\?]pop.?u[up]/$important
 /[\/\-_.~](bbt|check|get|i)stat(counter|s|tracker)([\/\-_.~\?]|$)/
 /[\/\-_.~](|anti)adb(lock|_detector)([\/\-_.~]|$)/
 /[\/\-_.~](|anti|automat|ay|buysell|dcm|elastic|i|moat|securepub|show)ads(|bar|bygoogle|experiment|id|hider)([\/\-_.~]|$)/
@@ -27966,7 +27982,6 @@
 /[\/\-_\.](|alexa|brand|cro|s|secure|clientside)metrics?([\/\-_.\?]|$)/
 /[\/\-_\.](|anti|double|exo|fast|get|smart|web|x)click(|aine|hole|iocdn|jack|performance|s|s?24|tale|tracker|y)([\/\-_\.]|$)/
 /[\/\-_\.](|clckn)ads[0-9]*([\/\-_\.]|$)/
-/[\/\-_\.](|commonrelyon)evidon(|v[0-9]*)([\/\-_\.]|$)/
 /[\/\-_\.](|core|g|google|publisher|seed|u)tag(|commander|delivery|manager|s|services)([\/\-_\.]|$)/
 /[\/\-_\.](|dynamic)yield(|love)([\/\-_\.]|$)/
 /[\/\-_\.](|log|managega|record\-|viewer)impress(|ions)([\/\-_.\?]|$)/
@@ -29284,7 +29299,6 @@
 /commercial_top.
 /common_quiz.
 /commonad.
-/commonrelyonevidonnews.
 /companionadfunc.
 /compban.
 /conad.
@@ -29297,17 +29311,14 @@
 /configuration-stat.
 /configuration/*
 /connect
-/connect-facebook-
-/connect-facebook.
-/connect-google-
-/connect-google.
-/connect-instagram.
-/connect-twitter-
-/connect-twitter.
-/connect_counter.
-/connect_icon2.
+/connect-facebook
+/connect-google
+/connect-instagram
+/connect-twitter
+/connect_counter
+/connect_icon
 /connect_with_us.
-/connectfb.
+/connectfb
 /connectics.
 /consent$important
 /console-blocker/*
@@ -29317,14 +29328,8 @@
 /containertag.
 /contaxe_
 /content-protector-pack/*
-/content-targeting-
-/content-targeting-staging.
+/content-targeting
 /contentad
-/contentad.
-/contentad/*
-/contentad_
-/contentadvert1.
-/contentadxxl.
 /contentanalytics/*
 /contentiq.
 /contentmobilead.
@@ -29825,7 +29830,6 @@
 /eventtrack$important
 /evergage-
 /evergage.
-/evidon$important
 /evt.
 /evtrack-
 /ewtrack.
@@ -29960,25 +29964,21 @@
 /final.
 /finalizestats.
 /fingerprint
-/firebase$important
-/firebase.
 /firestats/*
 /fixed/*
 /fixspecialadhome.
-/fkounter/*
-/fkounter5/*
+/fkounter
 /flare.
 /flare/*
 /flash-
 /flash-stats
 /flashad
-/flashpeelads/*
-/flashtag.
+/flashpeelads
+/flashtag
 /flatad.
-/flcounter/*
-/fleshlight.
-/fleshlightcash_
-/flextag/*
+/flcounter
+/fleshlight
+/flextag
 /fliionosadcapture-
 /flirt4free.
 /flo.
@@ -30705,8 +30705,6 @@
 /ignition-one.
 /iictguj.
 /ilabspush.
-/im-popup/*
-/im-rotator
 /imaads.
 /imads.
 /image-watermark/*
@@ -31921,7 +31919,6 @@
 /popeachclick
 /popin
 /poplivejasmine
-/popounder
 /popout
 /popover
 /popox.
@@ -31929,19 +31926,6 @@
 /poprotator
 /pops
 /popu.
-/popun.
-/popundr
-/popup
-/popupad
-/popupally
-/popupbuild
-/popupclick
-/popupdfp
-/popuplog
-/popuplp/*
-/popups
-/popupunder
-/popupyous.
 /popv2
 /porpoiseant/*
 /post-shares.
@@ -32633,17 +32617,13 @@
 /sharett.
 /sharetw.
 /sharetw_
-/sharetwitter.
-/sharewidgetbackgrounds.
-/shariff-sharing/*
+/sharetwitter
+/sharewidget
 /shariff.
+/sharing
 /sharing-
-/sharing-buttons.
-/sharing/*
-/sharing_
-/sharingbar/*
-/sharrre.
-/sharrre_
+/sharingbar
+/sharr
 /shawmediahomes.
 /shc_code.
 /sherlock.
@@ -33064,7 +33044,6 @@
 /streamads
 /streamatepop.
 /streambeam
-/streamsense
 /strossle-widget-
 /studioads
 /stumble_button
@@ -40370,7 +40349,6 @@ _pixel
 _policy
 _pop.
 _popdhtml
-_popup
 _pornofolies
 _pp_dhtml.
 _preroll
@@ -40958,6 +40936,7 @@ catve.
 cb01.
 cbbp1.
 ccmbg.
+ccpa$important
 cdn-static.egybest.
 cdnjquery.
 cdx-radar
@@ -40993,6 +40972,7 @@ cityads.
 claimdoge.
 clampschoolholic.
 classic.comunio.
+clavis$important
 clck.
 clckads.
 clckcloud.
@@ -41391,6 +41371,7 @@ event_stats
 eventlogger
 everesttech.
 evergage.
+evidon$important
 evileaks.
 exchange-it.
 execute-api.
@@ -41473,6 +41454,7 @@ find_box
 findav.
 findporn.
 fingerprint2
+firebase$important
 firmware277.
 firstone.
 firstonetv.
@@ -43541,6 +43523,7 @@ streamoupload.
 streamp1ay.
 streamplay.
 streamsb.
+streamsense$important
 streamsport.
 streamta.
 streamtape.
@@ -44092,6 +44075,7 @@ wpsandwatch.
 wpscdn.cnuploadad_adapter
 wpsocial
 wrap
+wrappermessagingwithoutdetection$important
 wsimg.
 wsj.com#@#[data-region]
 wsod.
