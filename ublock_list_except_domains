@@ -702,6 +702,7 @@
 !/ad7
 !/ad8
 !/ad9
+!/ad[^adefijot]b?s?v?x?[0-9]?[-_/=~&\?\.]/
 !/ad_
 !/adanalytics
 !/adb.
@@ -1651,6 +1652,7 @@
 !/nielsenanalytics.
 !/nnanalytics
 !/no-adblock
+!/omega?ad_
 !/oxanalytics.
 !/pagelog
 !/panalytics
@@ -1692,8 +1694,10 @@
 !/tracklog
 !/trackshopanalytics.
 !/unbxdanalytics.
+!/utils~ads~
 !/utils~analytics.
 !/vanillaanalytics/*
+!/vendors~ads.
 !/visitlog
 !/wanalytics-
 !/wanalytics/*
@@ -1736,6 +1740,7 @@
 !=pm_ads
 !=redirect_adv
 !=show_ads
+!?ad_
 !_ablockdetect
 !_ad
 !_ad&
@@ -1868,6 +1873,12 @@
 !_logging
 !_no_adblock
 !_popup
+!ad_
+!ad_blocker
+!ad_blocker_detector
+!ad_link
+!ad_medium2&
+!ad_permission
 !analytics.
 !anti-adblock
 !block-adblocker
@@ -25316,6 +25327,7 @@
 *##.zxc-msg
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/(left|main|top|oas|ad|box|sticky|deal|line).?.?rail(ad)?/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/[-_\.\s]dfp[-_\.\s]/i")
+*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/[-_\.\s]mpu[-_\.\s]/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/[^(Re)]spons/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/[^(omni)]track/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/^ad(s?v?(vert)?[0-9]?[^adefijortu]|[-_\s])/i"):not(.adn):not(.head)
@@ -25380,7 +25392,6 @@
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/mailchimp/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/marfeel/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/modal/i")
-*##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/mpu[^(lse)]/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/news.?let/i"):not(#fbody)
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/notice/i")
 *##:not(main):not(html):not(body):not(article):not(header):matches-attr("/.+/"="/notif/i")
@@ -27612,6 +27623,7 @@
 /[-_/=~&\?\.](|dynamic)yield(|love)[-_/=~&\?\.]/
 /[-_/=~&\?\.]adb?s?v?x?[0-9]?[^adefijmortu]/$important
 /[-_/=~&\?\.]adobetm[-_/=~&\?\.]/
+/[-_/=~&\?\.]ads?v?x?[0-9]?[-_/=~&\?\.]/
 /[-_/=~&\?\.]aff[0-9]?/$important
 /[-_/=~&\?\.]ajax(\-activity|\-measurement|_nc)[-_/=~&\?\.]/
 /[-_/=~&\?\.]akam[-_/=~&\?\.]/
@@ -31022,7 +31034,6 @@
 /okads_
 /olx/*
 /olyhdliveextraads-
-/omega?ad_
 /omgpixel.
 /omn_global_
 /omni_
@@ -32994,7 +33005,6 @@
 /ut-z3
 /ut-z3.
 /utag.$important
-/utils~ads~
 /utrack.
 /uts-no-vea.
 /uts-vec.
@@ -33026,7 +33036,6 @@
 /vecapture.
 /velocity-
 /vendemologserver-
-/vendors~ads.
 /vericaladtitle.
 /verso/*
 /vert728ad.
@@ -39104,7 +39113,6 @@
 =webad2
 =webadslinks
 =widgetimpression
-?ad_
 ?atomid=
 @@*$removeparam,domain=accounts.google.com|mail.google.com|linkedin.com|microsoft.com|api.investing.com|streaming.forexpros.com
 @@*-xplorawizink.*$1p
@@ -39799,13 +39807,6 @@ ad-pub.
 ad.
 ad13.
 ad4msan.
-ad[^adefijot]b?s?v?x?[0-9]?[-_/=~&\?\.]/
-ad_
-ad_blocker
-ad_blocker_detector
-ad_link
-ad_medium2&
-ad_permission
 adbasket.
 adbeat.
 adbert-web-lbs-*.
