@@ -5060,7 +5060,6 @@
 &event
 &expires
 &impression
-&promo
 &pub
 &redir
 &token
@@ -5300,7 +5299,6 @@
 (^|\.)prisasd\..
 (^|\.)privacy-center\..
 (^|\.)privy\..
-(^|\.)promo-bc\..
 (^|\.)ps7894\..
 (^|\.)ptawe\..
 (^|\.)purch\..
@@ -25417,7 +25415,7 @@
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/buzz/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/campaign/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/casino/i")
-*##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/charbeati/")
+*##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/chartbeati/")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/conn?[eé]ct/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/consent/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/cooc?ki/i")
@@ -26792,8 +26790,6 @@
 -popexit
 -powerstat
 -printhousead-
--promo
--promo$important
 -propads
 -proxy-client$important
 -pub-
@@ -27094,7 +27090,6 @@
 .fancybox-wrap
 .farlex.
 .fasadobygg.
-.fashion-promotions.
 .fast2img.
 .fastcomet.
 .fasti2mages.
@@ -27337,7 +27332,6 @@
 .privacy-center.
 .privacydatanotice.
 .productads.
-.promorewards.
 .propan.
 .propellerads.
 .propix.
@@ -27354,7 +27348,6 @@
 .react.
 .refreshads.
 .registerbeforeleaveevent
-.reklam*.
 .relcom.
 .rempko.
 .resultonline.
@@ -27613,6 +27606,7 @@
 /[-_/=~&\?\.]piwik[-_/=~&\?\.]/
 /[-_/=~&\?\.]pop.?u[np]/$important
 /[-_/=~&\?\.]privacy\-center[-_/=~&\?\.]/
+/[-_/=~&\?\.]promo/$important
 /[-_/=~&\?\.]pub(|360|ads|api|matic|mine|licidad)(|js)[-_/=~&\?\.]/
 /[-_/=~&\?\.]purch[-_/=~&\?\.]/
 /[-_/=~&\?\.]quant(|x|serve)[-_/=~&\?\.]/
@@ -27628,6 +27622,7 @@
 /[-_/=~&\?\.]user(\-behavior|_context|\-geo|\-id|\.min|zoom)(|\.js)([\/\-_.\?]|$)/
 /[-_/=~&\?\.]utm/$important
 /[-_/=~&\?\.]vot(e|ing)[-_/=~&\?\.]/
+/[-_/=~&\\?\\.]reklam/$important
 /[^abs]log[0-9]?s?(ge)?(ging)?-_=&\?/\.]/$important
 /_lead_custom.
 /a-detector/*
@@ -28031,7 +28026,6 @@
 /akqa.
 /alcsrnetwork.
 /alexa.
-/alipromo.
 /all_
 /alllinksclicktrack
 /alog.
@@ -28197,7 +28191,6 @@
 /authedmine.
 /authedminer.
 /autoffers/*$important
-/autopromo.
 /autopromotion.
 /autotrack$important
 /av/push-
@@ -29442,7 +29435,6 @@
 /footerfacebookicon.
 /footerpartneroffers.
 /footerpixel.
-/footerpromo.$important
 /footertextads.
 /footertwittericon.
 /forads.
@@ -30232,7 +30224,6 @@
 /jscheck.
 /jscounter.
 /jsecoin.
-/jsextpromo.
 /jslogger
 /jsnlog.
 /jsonad/*
@@ -30734,7 +30725,6 @@
 /newimplugs.
 /newprivacypolicy.
 /newprivacypolicytest.
-/newpromo.
 /newrightcolad.
 /newrss.
 /news_ltr.
@@ -31218,20 +31208,7 @@
 /projectpoi.
 /projectwonderful_
 /prometeo-widgets.
-/promo-
-/promo.
-/promo/*
-/promo2
-/promo3
-/promo_
-/promoad
-/promoboxes
-/promobuttonad.
-/promoimage.
-/promoredirect
-/promos/*
-/promosad
-/promotool
+/promo[-_/=~&\?\.]/$important
 /propadbl
 /propads
 /propeller_
@@ -31497,6 +31474,7 @@
 /registerwebpagevisit
 /rekban.
 /rekla
+/reklam[-_/=~&\\?\\.]/$important
 /relatedads.
 /relativeadsscript.
 /reloadads.
@@ -32282,7 +32260,6 @@
 /tc-under.
 /tc_loader.
 /tc_prixtel_
-/tc_promo_functions.
 /tc_pu.
 /tc_targeting.
 /tc_throttle.
@@ -32314,16 +32291,7 @@
 /testingad.
 /text_publi_
 /text_publi_01.
-/textad.
-/textad/*
-/textad1.
-/textad_
-/textadrotate.
-/textads-
-/textads.
-/textads/*
-/textads_
-/textadspromo_
+/textad
 /textlink.
 /thcn_code.
 /thcn_code_
@@ -38791,7 +38759,6 @@
 =pencilad
 =popads
 =poplink
-=promotools
 =pu
 =pub
 =reportmetrics
@@ -39394,7 +39361,6 @@ _pornofolies
 _pp_dhtml.
 _preroll
 _privacy
-_promo
 _prx/*
 _pub.
 _pub/*
@@ -39413,7 +39379,6 @@ _quantcast
 _rebid
 _redirect
 _regie
-_reklam
 _rightad
 _s-code
 _s_code
@@ -41819,8 +41784,6 @@ prod-skybet.
 profiling.
 project-free-tv.
 projectfreetv.
-promo-bc.
-promo.
 promorewards.
 promos.
 promotions.
@@ -41925,7 +41888,6 @@ redtube.
 reflesjjes.
 registerhit
 registry.api.cnn.
-reklam
 remarketing
 remarketstats.
 remaxhd.
