@@ -40,7 +40,7 @@ list1_in = set(line.strip() for line in open(file1_in_name, encoding='UTF-8'))  
 
 for line in list1_in:
     if len(line) == 0:
-        list1_in.discard(line)    # <remove empty elements from list1_in/>
+        list1_in.remove(line)    # <remove empty elements from list1_in/>
 
 list1_in = sorted(list1_in)
 
@@ -110,13 +110,13 @@ print(
 
 # </save input file written to lower case except cosmetic filters (containing ##)>
 
-# <dismiss commented lines>
+# <dismiss commented lines from list1_in>
 
 for line in list1_in:
-    if line[0] != '!':
-        list1_in.discard(line)    # <remove commented elements from list1_in/>
+    if line[0] == '!':
+        list1_in.remove(line)    # <remove commented elements from list1_in/>
 
-# </dismiss commented lines>
+# </dismiss commented lines from list1_in>
 
 # <write extracted L1.root domain type filters>
 
@@ -152,9 +152,8 @@ for line in list1_in:
     string_L1_r = ''
     if string_L1_r := re.search(r'^[a-z|A-Z|0-9][a-z|A-Z|0-9|\-|_|\.]+\.[a-z|A-Z]+\.[a-z|A-Z]+$', line):
         string_L1_r = string_L1_r.group()   # L1.root(.@.@)
-    # if string_r in list2_in and string_L1_r: list3_out.add(line)    # <forces matching .root in file #2/>
     if string_r and string_L1_r:
-        list3_out.add(line)    # <do not apply matching .root in file #2/>
+        list3_out.add(line)
     # </ .root = .@.@ case>
 
     # <.root = .@ case>
@@ -165,9 +164,8 @@ for line in list1_in:
         string_L1_r = ''
         if string_L1_r := re.search(r'^[a-z|A-Z|0-9][a-z|A-Z|0-9|\-|_|\.]+\.[a-z|A-Z]+$', line):
             string_L1_r = string_L1_r.group()   # L1.root(.@.@)
-        # if string_r in list2_in and string_L1_r: list3_out.add(line)    # <forces matching .root in file #2/>
         if string_r and string_L1_r:
-            list3_out.add(line)    # <do not apply matching .root in file #2/>
+            list3_out.add(line)
     # </ .root = .@ case>
 
     progress += 1
@@ -211,7 +209,7 @@ list4_out = set()
 pbar = pb.ProgressBar(maxval = len(list1_in)).start()
 progress = 0
 
-for line in list1_in:
+for line in (set(list1_in) - set(list3_out)):
 
     string_r = ''
     if line[-10:] == '$important':
@@ -219,8 +217,6 @@ for line in list1_in:
     if line[0:2] == '||':
         line = line[2:]    # <remove ''||'' modifier at the beggining (if present)/>
     if string_r := re.search(r'^[a-z|A-Z|\.|\-|_|\/]+$', line):
-        string_r = string_r.group()
-    if string_r and string_r not in list3_out:
         list4_out.add(line)
 
     progress += 1
@@ -312,24 +308,12 @@ file7_out.write(
 
 print('Listing all filters except domain type, please wait')
 
-list7_out = set()
-pbar = pb.ProgressBar(maxval = len(list1_in)).start()
-progress = 0
-
-for line in list1_in:
-
-    if line not in list3_out:
-        list7_out.add(line)
-
-    progress += 1
-    pbar.update(progress)
-
-pbar.finish()
-print('\n')
-
+list7_out = set(list1_in) - set(list3_out)
 list7_out = sorted(list7_out)
 file7_out.writelines(line + '\n' for line in list7_out)
 file7_out.close()
+
+print('\n')
 
 print(
     str(len(open(file7_out_name, encoding='UTF-8').readlines()))
