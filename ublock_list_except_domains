@@ -63,7 +63,6 @@
 *###AdBar
 *###AdBar1
 *###AdBigBox
-*###AdBillboard
 *###AdBottomLeader
 *###AdBottomRight
 *###AdButtons
@@ -169,7 +168,6 @@
 *###BandeauCNIL
 *###BelowFoldAds
 *###BetaBarCtr
-*###BillBoardAdd
 *###BlocPartenaires
 *###BmkFB
 *###BmkStumble
@@ -664,7 +662,6 @@
 *###adBadges
 *###adBar
 *###adBelt
-*###adBillboard
 *###adBladeDeskArt
 *###adBody01
 *###adBody02
@@ -1735,7 +1732,6 @@
 *###bigpicture-webpush-widget
 *###bigright
 *###bigsidead
-*###billboard-atf
 *###bim-mortgage-container
 *###bing
 *###bing-module
@@ -8782,7 +8778,6 @@
 *##.adBigBoxFirst
 *##.adBigBoxSecond
 *##.adBigBoxThird
-*##.adBillboard
 *##.adBkgd
 *##.adBl
 *##.adBlocTop
@@ -10437,7 +10432,6 @@
 *##.biglink
 *##.bigwrap-univers
 *##.bildirim_ekrani_esn
-*##.billboard300x250
 *##.billborad_snigel
 *##.bims
 *##.bing
@@ -19986,6 +19980,7 @@
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/anuncio/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/bann/i"):not(:matches-attr("/.+/"="/logo/i"))
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/beacon/i")
+*##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/billboard/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/buysell/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/buzz/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/campaign/i")
@@ -20148,7 +20143,6 @@
 *##[class*="app_download"]:not(body):not(html)
 *##[class*="arcAds"]
 *##[class*="b-redline"]:not(body):not(html)
-*##[class*="billboard"]:not(body):not(html)
 *##[class*="bn-container"]:not(body):not(html)
 *##[class*="displayAd"]:not(body):not(html)
 *##[class*="fixedads"]:not(body):not(html)
@@ -20619,7 +20613,6 @@
 *##[id*="adkon"]:not(body):not(html)
 *##[id*="adsIfrme"]:not(body):not(html)
 *##[id*="affspot"]:not(body):not(html)
-*##[id*="billboard"]:not(body):not(html)
 *##[id*="cdm-zone"]:not(body):not(html)
 *##[id*="commentform"]:not(body):not(html)
 *##[id*="counter"]:not(body):not(html)
@@ -20943,7 +20936,6 @@
 *##[mode="contrafactue"]
 *##[name*="/adunblock"]
 *##[name*="advice"]
-*##[name*="billboard"]
 *##[name*="compare_save"]
 *##[name*="domain_dream_homes"]
 *##[name*="domain_olg_rhs"]
@@ -21113,7 +21105,6 @@
 *##[title^="Stumble This Post"]
 *##[title^="Suivez-nous"]
 *##[title^="Watch "]
-*##[tittle*="billboard"]
 *##[tittle*="quads"]:not(body):not(html)
 *##[tittle*="smartadserver"]
 *##[type="engageya"]
@@ -26194,14 +26185,10 @@
 /searchignite.
 /searchmetric.
 /searchwidgettraker.
-/secondads.
-/secondads_
 /secretmedia-sdk-
 /section-rss-
 /secure-copy-content-protection/*
 /secure-stats.
-/secureads.
-/securepubads.
 /securetrack
 /seed.
 /segment/*
@@ -26215,7 +26202,6 @@
 /sendlogs
 /sendpulse/*
 /sendsay_push_
-/sendspace-pop.
 /sendtofriend.
 /sensor.modern.ncl.
 /sensorcollect
@@ -26233,9 +26219,7 @@
 /servead
 /servedby
 /serveit/*
-/servepop.
 /serverxtrem_connector/*
-/servewebads/*
 /service.?worker/$important
 /session-hit.
 /session-track
@@ -36453,11 +36437,14 @@ sdmoviespoint.
 searchanise.
 searchnode.
 seatguru.
+secondads
 secondstreetapp.
 secretmedia.
 section.
+secureads$important
 secureads.
 securemetrics.
+securepubads$important
 securepubads.
 secureservercdn.
 securitymetrics.
@@ -36488,6 +36475,7 @@ serve.
 servebom.
 serveboom.
 servedby.
+servewebads$important
 service-authentification-inc.
 service-bar$important
 service-redirection-ppl.

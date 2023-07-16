@@ -83,7 +83,7 @@ for line in list1_in:
     if len(line) > 0:                      # <remove empty lines/>
         string_r = ''
         if string_r := re.search(r'#', line):
-            list1_out.add(line)            # <cosmetics filters are case sensitive/>
+            list1_out.add(line)            # <cosmetics filters are case-sensitive/>
         else :
             list1_out.add(line.lower())    # <transform to lower case/>
 
