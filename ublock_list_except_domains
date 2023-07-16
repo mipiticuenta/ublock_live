@@ -17510,7 +17510,6 @@
 *##.sideadsbox
 *##.sideadtable
 *##.sideaff-container
-*##.sidebox
 *##.sideboxrek
 *##.sidebsa
 *##.sidekick
@@ -20627,7 +20626,6 @@
 *##[id*="detailad"]:not(body):not(html)
 *##[id*="frme"]:not(body):not(html)
 *##[id*="fukuishimbun_sp-"]:not(body):not(html)
-*##[id*="geo"]:not(body):not(html)
 *##[id*="leader-top-"]:not(body):not(html)
 *##[id*="mailform"]:not(body):not(html)
 *##[id*="mailing"]:not(body):not(html)
@@ -21108,7 +21106,6 @@
 *##[title^="Compartir "]
 *##[title^="Fan us "]
 *##[title^="Partager "]
-*##[title^="Partager ce commentaire sur"]
 *##[title^="Pin "]
 *##[title^="Recommend "]
 *##[title^="Return to "]
@@ -21151,7 +21148,7 @@
 *##a[title="Watch our videos on Youtube"]
 *##a[title="torna su"]
 *##a[title="الى الاعلى"]
-*##a[title^="Partager cet article"]
+*##a[title^="Partager"]
 *##am-display
 *##amp-fx-flying-carpet
 *##amp-web-push-widget
@@ -21216,7 +21213,7 @@
 *##div[id^="zergnet-widget"]
 *##div[jsdata*="CarouselPLA-"]
 *##div[ng-click^="animateToTop"]
-*##div[title="Partager sur Messenger"]
+*##div[title="Partager"]
 *##div[title="Save to Pocket"]
 *##div[title="Vai in cima"]
 *##div[title="إلى الأعلى"]
@@ -21271,7 +21268,6 @@
 -adtrack
 -adunits$important
 -affiliate$important
--apstag
 -async/*
 -banniere
 -box-twitter
@@ -21743,7 +21739,6 @@
 .intab.
 .intad.
 .intad/*
-.intags.
 .internads.
 .intro
 .inyourpocket.
@@ -22110,14 +22105,13 @@
 /[-_/=~&^\?\.](|blue)lithium[-_/=~&^\?\.]/
 /[-_/=~&^\?\.](|clckn)ads?[0-9]*[-_/=~&^\?\.]/
 /[-_/=~&^\?\.](|coin|got)traffic(factory|junky|shop)[-_/=~&^\?\.]/
-/[-_/=~&^\?\.](|core|fq|g|google|one|publisher|seed|u)tag(|commander|manager|services)[-_/=~&^\?\.]/
+/[-_/=~&^\?\.](|core|fq|g|google|one|math|publisher|rm|seed|u).?tag.?(|commander|manager|services)[-_/=~&^\?\.]/
 /[-_/=~&^\?\.](|cq)count(|ers?|serv)[0-9]*[-_/=~&^\?\.]/
 /[-_/=~&^\?\.](|de)collect(|or)[-_/=~&^\?\.]/
 /[-_/=~&^\?\.](|dynamic)yield(|love)[-_/=~&^\?\.]/
 /[-_/=~&^\?\.](|high)web(media|orama|trekk)[-_/=~&^\?\.]/
 /[-_/=~&^\?\.](|in)clk(|site)[-_/=~&^\?\.]/
 /[-_/=~&^\?\.](|i|iw)adserver?[0-9]*[-_/=~&^\?\.]/
-/[-_/=~&^\?\.](|new)difoosion[-_/=~&^\?\.]/
 /[-_/=~&^\?\.](|px\-)transparent(|cdn)[-_/=~&^\?\.]/
 /[-_/=~&^\?\.](|t)idio[-_/=~&^\?\.]/
 /[-_/=~&^\?\.](|web)wise(|pops)[-_/=~&^\?\.]/
@@ -22153,7 +22147,6 @@
 /[-_/=~&^\?\.]ayhhg[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]backbeatmedia[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]bat\.bing[-_/=~&^\?\.]/
-/[-_/=~&^\?\.]bazaarvoice[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]bbcdotcom[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]bbthat[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]beacons?[0-9]*[-_/=~&^\?\.]/$important
@@ -22288,7 +22281,6 @@
 /[-_/=~&^\?\.]lqm[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]m2[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]marketing(cloudapis|sites)[-_/=~&^\?\.]/
-/[-_/=~&^\?\.]mathtag[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]max(mind|ymiser)[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]mediego[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]meter[-_/=~&^\?\.]/
@@ -22359,7 +22351,6 @@
 /[-_/=~&^\?\.]res-x[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]research\.stlouisfed[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]rlcdn[-_/=~&^\?\.]/
-/[-_/=~&^\?\.]rmtag[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]rokuq[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]rpxnow[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]rtyznd[-_/=~&^\?\.]/
@@ -22400,9 +22391,8 @@
 /[-_/=~&^\?\.]suggestqueries[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]summerhamster[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]sumo[-_/=~&^\?\.]/
-/[-_/=~&^\?\.]sunmedia[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]t\.co[-_/=~&^\?\.]/
-/[-_/=~&^\?\.]tag/$important
+/[-_/=~&^\?\.]tags?[0-9]*/$important
 /[-_/=~&^\?\.]tailtarget[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]tap(ad|lytics)[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]target(ing|spot)[-_/=~&^\?\.]/
@@ -22414,7 +22404,6 @@
 /[-_/=~&^\?\.]the(logic|pluginz)[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]thumbor[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]tinypass[-_/=~&^\?\.]/
-/[-_/=~&^\?\.]tiqcdn[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]tle(|cdn)[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]toplist[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]tritondigital[-_/=~&^\?\.]/
@@ -22736,7 +22725,6 @@
 /adtable
 /adtabs
 /adtadd
-/adtag
 /adtaily
 /adtaobao
 /adtargeting
@@ -23232,7 +23220,6 @@
 /breakad_
 /briefmenow.
 /brightedge.
-/brighttag
 /brinpopup
 /britetrack
 /brokenad.
@@ -23432,11 +23419,10 @@
 /clicks.
 /clicks/*
 /clickscript.
-/clicksor.
-/clickstats.
+/clicksor
+/clickstats
 /clickstream
-/clicktag
-/clicktail.
+/clicktail
 /clicktrack$important
 /clicktrends
 /clickunder.
@@ -23826,8 +23812,7 @@
 /dspads.
 /dstctsevent.
 /dsv_video_bar.
-/dtagent6
-/dtagent_
+/dtagent
 /dtcheck.
 /dtiadvert
 /dtim300x250.
@@ -24236,9 +24221,7 @@
 /gascript
 /gastatistics
 /gastats.
-/gatag
 /gatc.
-/gate.amnesty-international.
 /gatewayads
 /gatrack
 /gaypornium.
@@ -24296,11 +24279,9 @@
 /getsplashscreenads
 /gettextad.
 /gettotalhits.
-/getuserdatageoip*
 /getvdopiaads.
 /getvideoad.
 /getviewbeans.
-/getvisitinformation$important
 /getwebsitead/*
 /gexternalad.
 /gfx/*
@@ -24450,7 +24431,6 @@
 /gsnads-
 /gstoolbar2/*
 /gt6skyadtop.
-/gtag$important
 /gtm-$important
 /gtm.$important
 /gtm/*$important
@@ -24827,8 +24807,6 @@
 /jsparselinks
 /jsplayerads
 /jsstat.
-/jstag^
-/jstags.
 /jstatphp.
 /jstats
 /jstats.
@@ -24853,7 +24831,6 @@
 /kantarmedia.
 /kastatswriter/*
 /keen-track
-/keen.
 /keenio.
 /kejobscounter.
 /keksikysely.
@@ -25206,7 +25183,6 @@
 /multiad/*
 /mv_visit2.
 /mweb.
-/mwtag
 /myadcash
 /myadproxy
 /myads.
@@ -25384,12 +25360,8 @@
 /nrelate-flyout/*
 /nrelate-related-content/*
 /nstat/*
-/ntpagetag
 /ntrack.
 /nugg.
-/nuggad.
-/nuggad/*
-/null.
 /numericanalyticsframework.
 /nzmeads/*
 /o2ad.
@@ -25569,7 +25541,6 @@
 /partners.
 /partners/*
 /partnersadbutler/*
-/partnertag
 /partnerzyapi.
 /patrocinios/*
 /pauseadextension.
@@ -26215,8 +26186,6 @@
 /sdc3.
 /sdc_include_
 /sdc_reporting_
-/sdctag1.
-/sdctag2.
 /sdctrack
 /sdxp1/*
 /search/tsc
@@ -26240,7 +26209,6 @@
 /segmentiotrack
 /sellathoncounterservice.
 /seller_shop.
-/semantictagservice.
 /semsocial
 /semtrack
 /send_kakaotalk.
@@ -26268,8 +26236,7 @@
 /servepop.
 /serverxtrem_connector/*
 /servewebads/*
-/service-worker
-/serviceworker
+/service.?worker/$important
 /session-hit.
 /session-track
 /sessioncam
@@ -26344,29 +26311,12 @@
 /sherlock.
 /shinystat.
 /shinystat_
-/shopify-
-/shopify_
-/shoptags
 /shortest-miner-
 /shortmediads/*
 /show-join-email.
 /show_flash.
 /show_i.
 /show_std.
-/showad/*
-/showad300-
-/showad300.
-/showad_
-/showadcode.
-/showadcode2.
-/showadcontent.
-/showadjs.
-/showads.
-/showads/*
-/showads^
-/showads_
-/showadv2.
-/showadvert.
 /showban.
 /showcasead/*
 /showcounter.
@@ -26723,7 +26673,6 @@
 /svy/*
 /sw-
 /swa_t.
-/swatag
 /sweet/*
 /sweetalert
 /swfaddress.
@@ -26759,7 +26708,7 @@
 /tablytics
 /tacoda
 /taevents-
-/tag[-_/=~&^\?\.]/$important
+/tags?[0-9]*[-_/=~&^\?\.]/$important
 /tailtarget
 /takeovers/*
 /talkads/*
@@ -26823,7 +26772,6 @@
 /thirdpartyads
 /thirdpartyframe
 /thirdpartypix
-/thirdpartytag
 /thirdpartytrack
 /thixel.
 /thrive-leads/*
@@ -27002,7 +26950,6 @@
 /trkr
 /trpic.
 /truehits
-/truetag
 /trustarchelper.
 /tsc.
 /tscp/*$important
@@ -27321,7 +27268,6 @@
 /w300h250/*
 /w468h60/*
 /w728h90/*
-/wa?ctag
 /wa_code.
 /wa_iframecmp.
 /wa_lib.
@@ -27387,7 +27333,6 @@
 /webplayer.
 /webpush
 /webstat
-/webtag
 /webtrack
 /webtraffic
 /webtraxs
@@ -33736,7 +33681,6 @@ _adobjects
 _adreaper
 _adright
 _adrow-
-_adtag
 _adtech
 _adtext
 _adtitle
@@ -34242,6 +34186,7 @@ banniere$important
 basvformu*.
 batmanstream.
 baventures.
+bazaarvoice$important
 bazaarvoice.
 bbb.
 bbc.com#@#+js(addEventListener-defuser)
@@ -34927,7 +34872,6 @@ flash-stats
 flashad
 flashpeelads
 flashplayer.
-flashtag
 flashvars.
 flashx.
 flatad.
@@ -34935,7 +34879,6 @@ flbuttons
 flcounter
 fleshlight
 fleshlight$important
-flextag
 fliionosadcapture
 flipflapflo.
 flirt4free
@@ -35113,6 +35056,8 @@ getsocial$important
 getsponslinks
 getstartpageads
 gettyimages.
+getuserdatageoip$important
+getvisitinformation$important
 gfsrv.
 giantsavings-a.
 gift-discord.
@@ -36032,6 +35977,7 @@ ntv.
 ntvcld-a.
 nucleo.
 nudevista.
+nuggad$important
 nuggad.
 nunuyy.
 nupciasmagazine.
@@ -36524,6 +36470,7 @@ seirsanduk.
 sekindo.
 sellpoint.
 semantictag$important
+semantictagservice.
 semi168.
 send-to-messenger
 sendtonews.
@@ -36586,6 +36533,7 @@ shield.sitelock.
 shink.
 shinkme.
 shopee.
+shopify
 shopping_box
 shoprunner.
 shortearn.
@@ -36593,6 +36541,7 @@ shorten.
 shortlinkto.
 shorttey.
 shortzzy.
+showad
 shqbsdjatunl.
 shrink.
 shrtfly.
@@ -36929,6 +36878,7 @@ tinylink.
 tinypass.
 tiozao.
 tipico.
+tiqcdn$important
 tiqcdn.
 tirexo.
 tkor.
