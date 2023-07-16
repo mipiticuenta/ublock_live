@@ -36,7 +36,12 @@ print(
 # <get filename containing text lists, convert into list, sort and dedup>
 
 file1_in_name = input('Please enter filename for source text file : ')
-list1_in = set(line.strip() for line in open(file1_in_name, encoding='UTF-8'))
+list1_in = set(line.strip() for line in open(file1_in_name, encoding='UTF-8'))    # <leading and trailing spaces removed with .strip()/>
+
+for line in list1_in:
+    if len(line) == 0:
+        list1_in.discard(line)    # <remove empty elements from list1_in/>
+
 list1_in = sorted(list1_in)
 
 print(
@@ -79,13 +84,11 @@ progress = 0
 
 for line in list1_in:
 
-    line = line.strip()                    # <remove leading and trailing spaces/>
-    if len(line) > 0:                      # <remove empty lines/>
-        string_r = ''
-        if string_r := re.search(r'#', line):
-            list1_out.add(line)            # <cosmetics filters are case-sensitive/>
-        else :
-            list1_out.add(line.lower())    # <transform to lower case/>
+    string_r = ''
+    if string_r := re.search(r'#', line):
+        list1_out.add(line)            # <cosmetics filters are case-sensitive/>
+    else :
+        list1_out.add(line.lower())    # <transform to lower case/>
 
     progress += 1
     pbar.update(progress)
@@ -107,13 +110,13 @@ print(
 
 # </save input file written to lower case except cosmetic filters (containing ##)>
 
-## <get filename containing text lists, convert into list, sort and dedup>
-#file2_in = input('Please filename for .root library text file2: ')
-#list2_in = set(line.strip() for line in open(file2_in, encoding='UTF-8'))
-#list2_in = sorted(list2_in)
-#print('lines read file2 : ' + str(len(open(file2_in, encoding='UTF-8').readlines())))
-#print('\n')
-## <\get filename containing text lists, convert into list, sort and dedup>
+# <dismiss commented lines>
+
+for line in list1_in:
+    if line[0] != '!':
+        list1_in.discard(line)    # <remove commented elements from list1_in/>
+
+# </dismiss commented lines>
 
 # <write extracted L1.root domain type filters>
 
@@ -139,38 +142,33 @@ progress = 0
 
 for line in list1_in:
 
-    line = line.strip()
-    if len(line) > 0:
+    if line[-10:] == '$important':
+        line = line[0:-10]    # <remove ''$important'' tag at the end (if present)/>
 
-        if line[0] != '!':    # <dismiss commented lines/>
+    # <.root = .@.@ case>
+    string_r = ''
+    if string_r := re.search(r'\.[a-z|A-Z]+\.[a-z|A-Z]+$', line):
+        string_r = string_r.group()
+    string_L1_r = ''
+    if string_L1_r := re.search(r'^[a-z|A-Z|0-9][a-z|A-Z|0-9|\-|_|\.]+\.[a-z|A-Z]+\.[a-z|A-Z]+$', line):
+        string_L1_r = string_L1_r.group()   # L1.root(.@.@)
+    # if string_r in list2_in and string_L1_r: list3_out.add(line)    # <forces matching .root in file #2/>
+    if string_r and string_L1_r:
+        list3_out.add(line)    # <do not apply matching .root in file #2/>
+    # </ .root = .@.@ case>
 
-            if line[-10:] == '$important':
-                line = line[0:-10]    # <remove ''$important'' tag at the end (if present)/>
-
-            # <.root = .@.@ case>
-            string_r = ''
-            if string_r := re.search(r'\.[a-z|A-Z]+\.[a-z|A-Z]+$', line):
-                string_r = string_r.group()
-            string_L1_r = ''
-            if string_L1_r := re.search(r'^[a-z|A-Z|0-9][a-z|A-Z|0-9|\-|_|\.]+\.[a-z|A-Z]+\.[a-z|A-Z]+$', line):
-                string_L1_r = string_L1_r.group()   # L1.root(.@.@)
-            # if string_r in list2_in and string_L1_r: list3_out.add(line)    # <forces matching .root in file #2/>
-            if string_r and string_L1_r:
-                list3_out.add(line)    # <do not apply matching .root in file #2/>
-            # </ .root = .@.@ case>
-
-            # <.root = .@ case>
-            else:
-                string_r = ''
-                if string_r := re.search(r'\.[a-z|A-Z]+$', line):
-                    string_r = string_r.group()
-                string_L1_r = ''
-                if string_L1_r := re.search(r'^[a-z|A-Z|0-9][a-z|A-Z|0-9|\-|_|\.]+\.[a-z|A-Z]+$', line):
-                    string_L1_r = string_L1_r.group()   # L1.root(.@.@)
-                # if string_r in list2_in and string_L1_r: list3_out.add(line)    # <forces matching .root in file #2/>
-                if string_r and string_L1_r:
-                    list3_out.add(line)    # <do not apply matching .root in file #2/>
-            # </ .root = .@ case>
+    # <.root = .@ case>
+    else:
+        string_r = ''
+        if string_r := re.search(r'\.[a-z|A-Z]+$', line):
+            string_r = string_r.group()
+        string_L1_r = ''
+        if string_L1_r := re.search(r'^[a-z|A-Z|0-9][a-z|A-Z|0-9|\-|_|\.]+\.[a-z|A-Z]+$', line):
+            string_L1_r = string_L1_r.group()   # L1.root(.@.@)
+        # if string_r in list2_in and string_L1_r: list3_out.add(line)    # <forces matching .root in file #2/>
+        if string_r and string_L1_r:
+            list3_out.add(line)    # <do not apply matching .root in file #2/>
+    # </ .root = .@ case>
 
     progress += 1
     pbar.update(progress)
@@ -215,20 +213,15 @@ progress = 0
 
 for line in list1_in:
 
-    line = line.strip()
-    if len(line) > 0:
-
-        if line[0] != '!' and line[0] != '|':    # <dismiss commented lines/>
-
-            string_r = ''
-            if line[-10:] == '$important':
-                line = line[0:-10]    # <remove ''$important'' tag at the end (if present)/>
-            if line[0:2] == '||':
-                line = line[2:]    # <remove ''||'' modifier at the beggining (if present)/>
-            if string_r := re.search(r'^[a-z|A-Z|\.|\-|_|\/]+$', line):
-                string_r = string_r.group()
-            if string_r and string_r not in list3_out:
-                list4_out.add(line)
+    string_r = ''
+    if line[-10:] == '$important':
+        line = line[0:-10]    # <remove ''$important'' tag at the end (if present)/>
+    if line[0:2] == '||':
+        line = line[2:]    # <remove ''||'' modifier at the beggining (if present)/>
+    if string_r := re.search(r'^[a-z|A-Z|\.|\-|_|\/]+$', line):
+        string_r = string_r.group()
+    if string_r and string_r not in list3_out:
+        list4_out.add(line)
 
     progress += 1
     pbar.update(progress)
@@ -273,19 +266,14 @@ progress = 0
 
 for line in list1_in:
 
-    line = line.strip()
-    if len(line) > 0:
-
-        if line[0] != '!' and line[0] != '|':    # <dismiss commented lines/>
-
-            string_r = ''
-            if line[-10:] == '$important':
-                line = line[0:-10]    # <remove ''$important'' tag at the end (if present)/>
-            if line[0:2] == '||':
-                line = line[2:]    # <remove ''||'' modifier at the beggining (if present)/>
-            if string_r := re.search(r'^/.*/$', line):
-                string_r = string_r.group()[1:-1]
-                list5_out.add(string_r)
+    string_r = ''
+    if line[-10:] == '$important':
+        line = line[0:-10]    # <remove ''$important'' tag at the end (if present)/>
+    if line[0:2] == '||':
+        line = line[2:]    # <remove ''||'' modifier at the beggining (if present)/>
+    if string_r := re.search(r'^/.*/$', line):
+        string_r = string_r.group()[1:-1]
+        list5_out.add(string_r)
 
     progress += 1
     pbar.update(progress)
@@ -330,13 +318,8 @@ progress = 0
 
 for line in list1_in:
 
-    line = line.strip()
-    if len(line) > 0:
-
-        if line[0] != '!':    # <dismiss commented lines/>
-
-            if line not in list3_out:
-                list7_out.add(line)
+    if line not in list3_out:
+        list7_out.add(line)
 
     progress += 1
     pbar.update(progress)

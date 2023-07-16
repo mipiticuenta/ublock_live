@@ -13804,7 +13804,6 @@
 *##.hrads
 *##.hs-app
 *##.hs-block-ui
-*##.hs-cta-wrapper
 *##.hs-push
 *##.hs-sosyal
 *##.hsDownload
@@ -20004,6 +20003,7 @@
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/gdpr/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/google.?plus/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/googlead/i")
+*##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/hs.?cta/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/inject/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/instagram/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/intersti/i")
@@ -22005,6 +22005,7 @@
 .yfgttqf.
 .yxad.
 .zxy.me
+//gtm[-_=~/\?\.]/$important
 //thrive-leads/*
 //vto_plus/*
 /1170x120px-
@@ -22230,7 +22231,7 @@
 /[-_/=~&^\?\.]hellobar[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]highcharts[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]hot(jar|keys|log)[-_/=~&^\?\.]/
-/[-_/=~&^\?\.]hs(cta|forms|\-scripts)[-_/=~&^\?\.]/
+/[-_/=~&^\?\.]hs.?(cta|forms|\-scripts)[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]htlbid[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]idalgo-hosting[-_/=~&^\?\.]/
 /[-_/=~&^\?\.]idealo[-_/=~&^\?\.]/
@@ -24422,10 +24423,7 @@
 /gsnads-
 /gstoolbar2/*
 /gt6skyadtop.
-/gtm-$important
-/gtm.$important
-/gtm/*$important
-/gtm_$important
+/gtm[-_=~/\?\.]/$important
 /gtmprod.
 /gtmtrack
 /gtrack.
@@ -34374,7 +34372,7 @@ cliquemidia.
 cliver.
 clk.
 cloudads-a.
-cloudflareinsights.
+cloudflareinsights$important
 cloudfront-labs.
 cloudfunctions.
 cloudvideotv.
@@ -35227,8 +35225,8 @@ hoverintent.$important
 hpaudiobooks.
 hqq.
 hs-scripts.
-hscta.
-hsforms.
+hscta$important
+hsforms$important
 htlbid.
 htmlads.
 http.anno.
@@ -35656,6 +35654,7 @@ mail.google.com#@#:matches-attr("/.+/"="/(\-|_|\s)(A|a)[Dd](S|s|V|v|)[0-9]*($)/"
 mail.google.com#@#:not(main):not(html):not(body):matches-attr("/.+/"="/(^|\s)(A|a)[Dd](s|v|vert)?(0-9)?(\s|$)/")
 mail.google.com#@#[id="overlay"]
 mailchimp$important
+mailerlite$important
 mailing.
 mailloginad$important
 mailmunch$important

@@ -3,6 +3,7 @@
 ! Expires: 1 day
 ! Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list
 ! 
+/gtm[-_=~/\?\.]
 [-_/=~&^\?\.]((browser|self|v10)\.events|settings\-win|vortex|vortex\-win)\.data\.microsoft[-_/=~&^\?\.]
 [-_/=~&^\?\.](.|access|ana|fb|s)?pixel
 [-_/=~&^\?\.](360|dynamic\-?)yield(|\-atx|love|managed|manager|media|mo|optimizer|partners)[-_/=~&^\?\.]
@@ -166,7 +167,7 @@
 [-_/=~&^\?\.]hellobar[-_/=~&^\?\.]
 [-_/=~&^\?\.]highcharts[-_/=~&^\?\.]
 [-_/=~&^\?\.]hot(jar|keys|log)[-_/=~&^\?\.]
-[-_/=~&^\?\.]hs(cta|forms|\-scripts)[-_/=~&^\?\.]
+[-_/=~&^\?\.]hs.?(cta|forms|\-scripts)[-_/=~&^\?\.]
 [-_/=~&^\?\.]htlbid[-_/=~&^\?\.]
 [-_/=~&^\?\.]idalgo-hosting[-_/=~&^\?\.]
 [-_/=~&^\?\.]idealo[-_/=~&^\?\.]
@@ -377,6 +378,7 @@ consent[-_/=~&^\?\.]
 dfp[-_/=&\.\?]
 faceboo?k
 geo.?location
+gtm[-_=~/\?\.]
 ping[-_/=~&^\?\.]
 pixel(.|contabilizacion|counter)?[-_/=~&^\?\.]
 pop.?u[np].*[-_/=~&^\?\.]
