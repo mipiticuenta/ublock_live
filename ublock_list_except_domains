@@ -23904,7 +23904,6 @@
 -publicidad
 -pubmatic
 -push-worker
--pwa$important
 -px-$important
 -quantcast
 -redes-gplus
@@ -24626,6 +24625,7 @@
 /?revid
 /?sid
 /?track
+/[-_/=~&\\?\\.]pwa/$important
 /[-_/=~&\\?\\.]reklam/$important[-_/=~&^\?\.]
 /[-_/=~&^\?\.]((browser|self|v10)\.events|settings\-win|vortex|vortex\-win)\.data\.microsoft[-_/=~&^\?\.]/
 /[-_/=~&^\?\.](.|access|ana|fb|s)?pixel/$important
@@ -28398,8 +28398,7 @@
 /pvmax.
 /pvnoju.
 /pvserver/*
-/pwa/*$important
-/pwafeeds/*$important
+/pwa[-_/=~&\\?\\.]/$important
 /px-
 /px.
 /px/*
