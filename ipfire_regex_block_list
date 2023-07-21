@@ -4,6 +4,7 @@
 ! Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list
 ! 
 /gtm[-_=~/\?\.]
+[-_/=~&\\?\\.]adsystem
 [-_/=~&\\?\\.]pwa
 [-_/=~&^\?\.]((browser|self|v10)\.events|settings\-win|vortex|vortex\-win)\.data\.microsoft[-_/=~&^\?\.]
 [-_/=~&^\?\.](.|access|ana|fb|s)?pixel
@@ -369,6 +370,7 @@
 [-_/=~&^\?\.]ztat[-_/=~&^\?\.]
 [^abs]log[0-9]?s?(ge)?(ging)?-_=&\?/\.]
 adse?rve?r?[0-9]*[-_=~/\?\.]
+adsystem[-_/=~&\\?\\.]
 aff[0-9]*[-_/=~&^\?\.]
 anal[yi]t[iy]cs[-_&\?/\.]
 beacon[-_/=~&^\?\.]
