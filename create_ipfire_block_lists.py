@@ -38,11 +38,11 @@ print(
 file1_in_name = input('Please enter filename for source text file : ')
 list1_in = set(line.strip() for line in open(file1_in_name, encoding='UTF-8'))    # <leading and trailing spaces removed with .strip()/>
 
+list1_in = sorted(list1_in)
+
 for line in list1_in:
     if len(line) == 0:
         list1_in.remove(line)    # <remove empty elements from list1_in/>
-
-list1_in = sorted(list1_in)
 
 print(
     str(len(open(file1_in_name, encoding='UTF-8').readlines()))
