@@ -3,9 +3,11 @@
 ! Expires: 1 day
 ! Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list
 ! 
-[-_/=~&\\?\\.]adsystem
-[-_/=~&\\?\\.]pwa
-[-_/=~&\\?\\.]reklam
+[^a-z0-9](|automat|dcm|elastic|op|power|show)ad(|360|case|eventtracker|form|frame|ikteev|incube|lightning|mantx|medo|metricspro|mtracker|ncdnend|net|nxs|ocean|ops|patrof|playerrotate|pone|safeprotected|script|sense|serv|servex|services?|smart|spaces?|speed|srvr?|sys|system|tech|techus|tng|true24|x|yen|unit|vertising|videosm|wise|ziff)[^a-z]
+[^a-z0-9]ad[^adefijmortu][^a]
+[^a-z0-9]adsystem
+[^a-z0-9]pwa
+[^a-z0-9]reklam
 [^a-z]((browser|self|v10)\.events|settings\-win|vortex|vortex\-win)\.data\.microsoft[^a-z]
 [^a-z](360|dynamic\-?)yield(|\-atx|love|managed|manager|media|mo|optimizer|partners)[^a-z]
 [^a-z](acc|push)engage[^a-z]
@@ -27,10 +29,8 @@
 [^a-z](|aax|automat|ay|boosting|buysell|dcm|elastic|i|insur|kyo|moat|pub|securepub|show|supersonic|unity)ads(|1|bar|bygoogle|experiment|keeper|id|wizz)[^a-z]
 [^a-z](|alexa|brand|clientside|clickono|core|cro|f|kiss|o|peta|s|secure)metrics?[0-9]*[^a-z]
 [^a-z](|anti|double|exo|fast|get|smart|web|x)click(|aine|hole|iocdn|jack|performance|s|s?24|tale|tracker|y)[^a-z]
-[^a-z](|automat|dcm|elastic|op|power|show)ad(|360|case|eventtracker|form|frame|ikteev|incube|lightning|mantx|medo|metricspro|mtracker|ncdnend|net|nxs|ocean|ops|patrof|playerrotate|pone|safeprotected|script|sense|serv|servex|services?|smart|spaces?|speed|srvr?|sys|system|tech|techus|tng|true24|x|yen|unit|vertising|videosm|wise|ziff)[^a-z]
 [^a-z](|auto|c|e|eula|event|infinity\-|p|px|reg|sex|speedily)track(|ers?|ing|js|n\?)(|vtm)[^a-z]
 [^a-z](|banner|brand|choice|edigital|fluid|giftcard|national|politicalopinion|top)surveys?(|gizmobeacon|monkey|panel|pass|\-)[^a-z]
-[^a-z](|bil)syndication[^a-z]
 [^a-z](|blue)lithium[^a-z]
 [^a-z](|clckn)ads?[0-9]*[^a-z]
 [^a-z](|coin|got)traffic(factory|junky|shop)[^a-z]
@@ -49,7 +49,6 @@
 [^a-z]365dm[^a-z]
 [^a-z]acales[^a-z]
 [^a-z]acpm[^a-z]
-[^a-z]ad[^adefijmortu][^a]
 [^a-z]adb?s?v?x?[0-9]?[^a-z]
 [^a-z]add(evweb|oor|this|thiscdn|toany)[^a-z]
 [^a-z]adstudio\-assets[^a-z]
