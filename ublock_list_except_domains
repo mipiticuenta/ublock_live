@@ -16459,7 +16459,6 @@
 *##.rn-gvpnoh
 *##.rn-search-form
 *##.rnsc_sns
-*##.roba-container
 *##.roblox-skyscraper
 *##.robots-nocontent
 *##.rodo
@@ -19265,6 +19264,7 @@
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/[-_\s^]mpu[-_\s$]/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/[^(re)]spons/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/^ad(?!d)(?!dress)(?!ress)s?x?[0-9]?/i")
+*##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/^roba/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/ad.?box/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/ad.?hold/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/ad.?place/i")
@@ -19348,7 +19348,6 @@
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/rekl/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/revunit/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/rgpd/i")
-*##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/roba.?pag/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/skin.?revenue/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/social/i")
 *##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/sub?scr/i"):not(.pageFrame)
@@ -21488,7 +21487,6 @@
 /[^a-z0-9]reasonsecurity[^a-z]/
 /[^a-z0-9]remotead[^a-z]/
 /[^a-z0-9]res-x[^a-z]/
-/[^a-z0-9]research\.stlouisfed[^a-z]/
 /[^a-z0-9]rlcdn[^a-z]/
 /[^a-z0-9]rokuq[^a-z]/
 /[^a-z0-9]rpxnow[^a-z]/
@@ -32093,11 +32091,10 @@
 @@||filterlists.com^$inline-script,1p
 @@||forexpros.com$xhr,domain=investing.com
 @@||fred.stlouisfed.org$inline-script,1p
-@@||fred.stlouisfed.org/$inline-script,1p
+@@||fred.stlouisfed.org$script,1p
 @@||fred.stlouisfed.org/*-datepicker.
 @@||fred.stlouisfed.org/*.bootstrap.
 @@||fred.stlouisfed.org/graph/api/$xhr
-@@||fred.stlouisfed.org^$script,1p
 @@||freedesktop.org^$inline-script,1p
 @@||github.com$inline-script,1p
 @@||github.com/*$xhr,1p
@@ -32882,7 +32879,6 @@ bbb.
 bbc.com#@#+js(addEventListener-defuser)
 bbc.com#@#:matches-attr("/.+/"="/[Pp]romo/")
 bbc.com#@#:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/promo[^(to)]/i")
-bbc.com#@#[class*="overlay"]:not(body):not(html):not(div)
 bbthat.
 bc.geocities.
 bcvc.
@@ -33640,7 +33636,7 @@ fpb1.chinacar.
 framead
 francais-mahel.
 france-midi.
-fred.stlouisfed.org#@#[class*="overlay"]:not(body):not(html):not(div)
+fred.stlouisfed.org#@#:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/(?<!no.)shar[eir]/i")
 free-discordnitro.
 free-discordnitro.$all
 free-telechargement.
@@ -33802,7 +33798,6 @@ google.com#@#.adz
 google.com#@#.bn
 google.com#@#.lb
 google.com#@#:not(html):not(main):not(body):not(article):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/conn?[eé]ct/i")
-google.com#@#[class^="overlay"]:not(body):not(html)
 google.com#@#[data-cb]
 google.com#@#[data-hveid]
 google.com#@#[data-label]
@@ -33818,7 +33813,6 @@ googleadapis.
 googleads$important
 googleadservices.
 googleplus$important
-googletagservices$important
 googlevideo.com/*&ctier=$important
 goqubit.
 gostats.
@@ -34354,7 +34348,6 @@ mail.google.com#@#.vk
 mail.google.com#@#:matches-attr("/.+/"="/(\-|_|\s)(A|a)[Dd](S|s|V|v|)($)/")
 mail.google.com#@#:matches-attr("/.+/"="/(\-|_|\s)(A|a)[Dd](S|s|V|v|)[0-9]*($)/")
 mail.google.com#@#:not(main):not(html):not(body):matches-attr("/.+/"="/(^|\s)(A|a)[Dd](s|v|vert)?(0-9)?(\s|$)/")
-mail.google.com#@#[id="overlay"]
 mailchimp$important
 mailerlite$important
 mailing.
@@ -34390,7 +34383,6 @@ martechsecresponse.
 mashsharer$important
 massariuscdn.
 mastertagcallback$important
-masthead$important
 matchbin-assets.
 mavanimes.
 maven.
@@ -34727,7 +34719,6 @@ openload.
 openloadmovies.
 opensharecount.
 openstreetmap.org#@#+js(addEventListener-defuser)
-openstreetmap.org#@#[class^="overlay"]:not(body):not(html)
 openx.
 opinionbar.
 opinionlab$important
@@ -34892,7 +34883,7 @@ popads$important
 popcornstream.
 popit.
 popmarker.
-popper$important
+popper
 poptraf.
 popunder$important
 popupclick$important
@@ -35400,8 +35391,6 @@ stickyfill$important
 stickymanager$important
 stlouisfed.org#@#+js(addEventListener-defuser)
 stlouisfed.org#@#.btn-warning
-stlouisfed.org#@#[class^="overlay"]:not(body):not(html)
-stlouisfed.org#@#[id^="overlay"]
 stocknessmonster.
 stockomendation.
 stormyachiever.
