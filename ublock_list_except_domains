@@ -31960,6 +31960,7 @@
 @@akamaiedge.net^$script,domain=icloud.com
 @@bbc.co.uk^$script,domain=bbc.com
 @@cloudfront.net^$script,domain=backmarket.es
+@@fred.stlouisfed.org$removeparam
 @@google.com/async/translate?$removeparam
 @@google.com/async/translate?$xhr,1p
 @@googlevideo.com$removeparam
@@ -31968,7 +31969,6 @@
 @@music.youtube.com$removeparam
 @@podcasts.google.com$removeparam
 @@sodexows.mo2o.com
-@@stlouisfed.org$removeparam
 @@teams.events.data.microsoft.com
 @@tracking-protection.cdn.mozilla.net
 @@translate.google.com^$removeparam
@@ -31986,7 +31986,7 @@
 @@||aiche.org^$inline-script,1p
 @@||aiche.org^$script,1p
 @@||ajax.googleapis.com$script,domain=morningstar.es
-@@||akamaiedge.net$script,domain=fred.stlouisfed.org|hp.com
+@@||akamaiedge.net$script,domain=hp.com
 @@||akamaiedge.net^$subdocument,domain=iberia.com
 @@||alphacdn.net$domain=msauth.net
 @@||alternate.es^$inline-script,1p
@@ -32092,9 +32092,7 @@
 @@||forexpros.com$xhr,domain=investing.com
 @@||fred.stlouisfed.org$inline-script,1p
 @@||fred.stlouisfed.org$script,1p
-@@||fred.stlouisfed.org/*-datepicker.
-@@||fred.stlouisfed.org/*.bootstrap.
-@@||fred.stlouisfed.org/graph/api/$xhr
+@@||fred.stlouisfed.org$xhr
 @@||freedesktop.org^$inline-script,1p
 @@||github.com$inline-script,1p
 @@||github.com/*$xhr,1p
