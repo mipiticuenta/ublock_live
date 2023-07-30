@@ -20217,8 +20217,6 @@
 -linkedin-rnd
 -linkedin-s
 -livestats
--metrics.
--metrics/*
 -metrix.$important
 -mgte.$important
 -miner
@@ -20315,7 +20313,6 @@
 .airbornehydrography
 .airsonett
 .ajax
-.alexametrics
 .alfacomercial
 .alibabatradegroup
 .alio.
@@ -20629,7 +20626,6 @@
 .kissasian.
 .kisscartoon.
 .kissinsights.
-.kissmetrics.
 .kisstvshow.
 .kjbbc.
 .klick.
@@ -20847,7 +20843,6 @@
 .web-vitals-reporting.
 .webcam
 .webmersion.
-.webmetrics.
 .weborama.
 .webpush.
 .webstats.
@@ -20944,9 +20939,7 @@
 /[^a-z0-9](|0|123|3d|addfree|adservice|bbt|bel|check|dynamicsite|e|free|fuse|get|go|gold|hi|hit|hot|i|index|ladot|master|mi|mm|mp|my|myseo|n|ned|next|nextgen|o|one|pn|profi|ps|qs|rbi|remarket|right|shiny|site|s|smart|super|top|visi|web|wide)stats?(|[0-9]|4all|4u|camp|count|counter|s|session|sie|tracker|trax)[^a-z]/
 /[^a-z0-9](|24|ab1|bid|ceo|clhc|clickso|e|eml|kitara|reklam|remo|rq|sq2|uleads|voluum)trk(|[0-9]*|fl|jmp|reward)[^a-z]/
 /[^a-z0-9](|aax|automat|ay|boosting|buysell|clckn|dcm|elastic|i|insur|kyo|moat|pub|securepub|show|supersonic|unity)ads?(|1|bar|bygoogle|experiment|keeper|id|wizz)[^a-z]/
-/[^a-z0-9](|alexa|brand|clientside|clickono|core|cro|f|kiss|o|peta|s|secure)metrics?[0-9]*[^a-z]/
 /[^a-z0-9](|anti|double|exo|fast|get|smart|web|x)click(|aine|hole|iocdn|jack|performance|s|s?24|tale|tracker|y)[^a-z]/
-/[^a-z0-9](|automat|dcm|elastic|op|power|show)ad(|360|case|eventtracker|form|frame|ikteev|incube|lightning|mantx|medo|metricspro|mtracker|ncdnend|net|nxs|ocean|ops|patrof|playerrotate|pone|safeprotected|script|sense|serv|servex|services?|smart|spaces?|speed|srvr?|sys|system|tech|techus|tng|true24|x|yen|unit|vertising|videosm|wise|ziff)[^a-z]/
 /[^a-z0-9](|auto|c|e|eula|event|infinity\-|p|px|reg|sex|speedily)track(|ers?|ing|js|n\?)(|vtm)[^a-z]/
 /[^a-z0-9](|banner|brand|choice|edigital|fluid|giftcard|national|politicalopinion|top)surveys?(|gizmobeacon|monkey|panel|pass|\-)[^a-z]/
 /[^a-z0-9](|blue)lithium[^a-z]/
@@ -21121,6 +21114,7 @@
 /[^a-z0-9]max(mind|ymiser)[^a-z]/
 /[^a-z0-9]mediego[^a-z]/
 /[^a-z0-9]meter[^a-z]/
+/[^a-z0-9]metrics/$important
 /[^a-z0-9]miui[^a-z]/
 /[^a-z0-9]mkt51[^a-z]/
 /[^a-z0-9]mn1nm[^a-z]/
@@ -21650,7 +21644,6 @@
 /amp/*
 /amp4ads-
 /amplitude-
-/ampmetrics.
 /amptrack.
 /amzn_omakase.
 /an-temp/*
@@ -21964,7 +21957,6 @@
 /boomlogger
 /boomr.
 /boost_stats.
-/bootstrap/metrics.
 /boq-one-google/*
 /botd.
 /bottom-twitter
@@ -22033,7 +22025,6 @@
 /btstryad
 /bucketads
 /buffer.
-/buffermetrics
 /bug/pic.
 /bugcounter
 /builder.
@@ -22147,7 +22138,6 @@
 /clic.
 /clicevent
 /client-event
-/client-metrics
 /client-timing
 /client.
 /client_204?
@@ -22324,7 +22314,6 @@
 /curlad.
 /custads/*
 /custom-fan-gate-plugin/*
-/custom-metrics
 /custom-share.
 /customad.
 /customadmode.
@@ -22453,7 +22442,6 @@
 /dmcads_
 /dmedicina_marca.
 /dmpcollector.
-/dmpmetrics.
 /dmtrack
 /dnatrack
 /dni_reporting.
@@ -22466,7 +22454,6 @@
 /domrenderer.$important
 /dooplay/*
 /dot.
-/dotmetrics.
 /dotomi.
 /dotomi_
 /doublepimp2.
@@ -23036,7 +23023,6 @@
 /hbxvariables.
 /hdadvertisment-
 /hdzog/*
-/head.
 /head486x
 /head_twitter.
 /header/twitter-
@@ -23087,7 +23073,6 @@
 /housead
 /houzz-button.
 /hoverad.
-/hpmetrics.
 /hrtrack
 /hs.go-to.
 /hserver/*
@@ -23252,7 +23237,6 @@
 /insighttrk/*
 /insightxe.
 /insite/*
-/insitemetrics/*
 /instafeed.
 /instagram.
 /instanttrack
@@ -23487,7 +23471,6 @@
 /livestats
 /livezilla
 /ljcounter
-/llbmetrics.
 /llntrack.
 /lnk-tw.
 /loadad.
@@ -23515,7 +23498,6 @@
 /lp_fkplay/*
 /lrshare_
 /lserver/*
-/lunametrics-
 /lycostrack.
 /lytics/*
 /lz_loader.
@@ -23585,12 +23567,7 @@
 /metrica.
 /metrica/*
 /metricool.
-/metrics
-/metrics-
-/metrics.
-/metrics/*
-/metricsiscs.
-/metricspar_
+/metrics[^a-z]/$important
 /metrik
 /metrimatics/*
 /metriweb
@@ -24044,7 +24021,6 @@
 /partner.
 /partner/*
 /partnerad
-/partnermetrics
 /partners.
 /partners/*
 /partnersadbutler/*
@@ -24094,10 +24070,8 @@
 /perf-vitals_
 /perfads.
 /perflog/*
-/perfmetrics.
 /perfops-cc.
 /performance.$important
-/performance/metrics
 /performance_timing/*
 /performancetimer.
 /performancingads/*
@@ -24205,7 +24179,6 @@
 /premierebtnad
 /premiumad
 /presslabs.
-/prime-email-metrics/*
 /printad
 /printarest
 /privacy[^a-z]/
@@ -24573,7 +24546,6 @@
 /sc_rss.
 /scanscout
 /scaradcontrol.
-/scmetrics.
 /scoailmedia_
 /scocial-
 /script-rodo.
@@ -24824,7 +24796,6 @@
 /smartserve
 /smeadvert
 /smeadvertisement
-/smetrics.
 /smi24-
 /smicons/*
 /smitionsory
@@ -24875,7 +24846,6 @@
 /solarcode.
 /somaadscaleskyscraperscript.
 /someads.
-/sometrics/*
 /somni.
 /sophus.
 /sophus/*
@@ -24918,7 +24888,6 @@
 /spotxchangeplugin.
 /spotxchangevpaid.
 /spreddit7_
-/springmetrics.
 /sprite-share
 /spriteiconshare.
 /sptrack
@@ -25143,7 +25112,6 @@
 /tmblur.
 /tmobilead.
 /tmpstats.
-/tms/metrics.
 /tmv11.
 /tn-paywall/*
 /tnc.
@@ -31470,13 +31438,11 @@
 =linkpub
 =loadadstatus
 =marketing
-=metrics
 =offer
 =pageview
 =partnerad
 =pencilad
 =pu
-=reportmetrics
 =retargeting
 =revshare
 =rightads
@@ -32016,7 +31982,6 @@ _linkedin-
 _linkedin_3
 _longad_
 _mainad.
-_metrics/*
 _mixpanel_
 _mongo_stats/*
 _my_yahoo.
@@ -32128,7 +32093,6 @@ adblockerdetect$important
 adblockers-ns.
 adblockstreamtape.
 adbroker.
-adbsmetrics.
 adbull.
 adca.
 adcarem.
@@ -32172,7 +32136,6 @@ admarketplace.
 admarvel.
 admdownload.
 admedo.
-admetricspro.
 admitad.
 admitad_
 admob.
@@ -32278,7 +32241,6 @@ akwam.
 akwams.
 al-arabiya-2-i3dadi.
 alexa-sitestats.
-alexametrics.
 alexsports.
 algocashmaster.
 algolia$important
@@ -32495,7 +32457,6 @@ bounceexchange$important
 bounceexchange.
 brainly.
 braintreegateway.
-brandmetrics.
 brandreachsys.
 brbushare.
 brealtime.
@@ -32667,7 +32628,6 @@ coockie$important
 cookie$important
 coolboy112233.
 coolmoviez.
-coremetrics$important
 correarealtygroup.cl.
 coubsecure-s.
 couchtuner.
@@ -32779,7 +32739,6 @@ desivideos.
 detector_active
 detectview$important
 detnmz.
-device-metrics-*.
 devisprox-media.
 dewhatsapp.
 dewimg.
@@ -32985,7 +32944,6 @@ evidon$important
 evileaks.
 evtrack
 ewtrack
-exactmetrics
 exchange-it.
 execute-api.
 exelat$important
@@ -33849,7 +33807,6 @@ lp4.
 lqm.
 ltassrv.
 ltmcdn.
-lunametrics.
 m.me
 m4ufree.
 m4uhd.
@@ -33916,7 +33873,6 @@ mb-richtexteditor.
 mcclatchy-wires.
 mcclatchy.
 mcdmetric.
-mcdmetrics.
 measure.
 mediabong.
 mediacontext.
@@ -33960,8 +33916,6 @@ meter-svc.
 meter.
 metric.
 metric_collect
-metrics.
-metricstagging$important
 metrika.
 metro-trending
 mexa.
@@ -34601,7 +34555,6 @@ s.id
 s.lu
 s.to
 s2dfree.
-sadbmetrics.
 safetxt.
 sail-horizon.
 salefile.
@@ -34621,7 +34574,6 @@ sbplay3.
 sbvideo.
 scanfact.
 scanscout.
-scmetrics.
 scorecardresearch$important
 scorecardresearch.
 scores.
@@ -34640,9 +34592,7 @@ secretmedia.
 section.
 secureads$important
 secureads.
-securemetrics.
 secureservercdn.
-securitymetrics.
 securitytool.
 securitytool.disablef12
 seedtag$important
@@ -34762,7 +34712,6 @@ smarticon.geotrust.
 smarttag$important
 smblock.
 smetric.
-smetrics.
 smilewanted.
 smutindia.
 snalytics.
@@ -34952,7 +34901,6 @@ superfish$important
 supersonicads-
 superstats.
 supplyframe.
-supportmetrics.
 survey.
 surveycode
 surveymonkey.
