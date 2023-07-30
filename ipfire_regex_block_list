@@ -3,6 +3,7 @@
 ! Expires: 1 day
 ! Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list
 ! 
+(fls|unagi|aan)[a-z0-9]+amazon
 [^a-z0-9]((browser|self|v10)\.events|settings\-win|vortex|vortex\-win)\.data\.microsoft[^a-z]
 [^a-z0-9](360|dynamic\-?)yield(|\-atx|love|managed|manager|media|mo|optimizer|partners)[^a-z]
 [^a-z0-9](acc|push)engage[^a-z]
@@ -17,7 +18,6 @@
 [^a-z0-9](d2bnxibecyz4h5|d3rt1990lpmkn)cloudfront(|-labs)[^a-z]
 [^a-z0-9](fast|tns-)counter[^a-z]
 [^a-z0-9](feed|reports)\.tunein[^a-z]
-[^a-z0-9](fls\-..|unagi\-..|aan)\.amazon[^a-z]
 [^a-z0-9](p|quicksilver|u|video\-fa)\.scdn[^a-z]
 [^a-z0-9](|0|123|3d|addfree|adservice|bbt|bel|check|dynamicsite|e|free|fuse|get|go|gold|hi|hit|hot|i|index|ladot|master|mi|mm|mp|my|myseo|n|ned|next|nextgen|o|one|pn|profi|ps|qs|rbi|remarket|right|shiny|site|s|smart|super|top|visi|web|wide)stats?(|[0-9]|4all|4u|camp|count|counter|s|session|sie|tracker|trax)[^a-z]
 [^a-z0-9](|24|ab1|bid|ceo|clhc|clickso|e|eml|kitara|reklam|remo|rq|sq2|uleads|voluum)trk(|[0-9]*|fl|jmp|reward)[^a-z]
