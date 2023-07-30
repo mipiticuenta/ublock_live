@@ -20302,8 +20302,6 @@
 -mymsn2
 -newad.
 -newstockad-
--notification
--notify
 -optimost-
 -outsidersads
 -page-peel/*
@@ -21216,6 +21214,7 @@
 /[^a-z0-9]needle[^a-z]/
 /[^a-z0-9]nicequest[^a-z]/
 /[^a-z0-9]noddus[^a-z]/
+/[^a-z0-9]notif/$important
 /[^a-z0-9]nsimg[^a-z]/
 /[^a-z0-9]ntv[^a-z]/
 /[^a-z0-9]nuggad[^a-z]/
@@ -23964,9 +23963,8 @@
 /notice_service.
 /noticead
 /noticia_entidades_triarias_consultar.
-/notification$important
-/notify
-/notifyad
+/notif(?!iy)(?!d)[^a-z]/$important
+/notifications?[^a-z]/$important
 /novaonads.
 /npawadadapter.
 /npssurvey.
@@ -24371,13 +24369,11 @@
 /pushmessageworker.
 /pushnews.
 /pushnote-
-/pushnotification
 /pushpro-lib.
 /pushpushgo/*
 /pushtoast-
 /pushv2.
 /pushwoosh-
-/pushwooshnotification
 /pushy-ver.
 /pustrck.
 /putl.
@@ -25746,7 +25742,6 @@
 /webmonitor
 /webmr.
 /webnotf.
-/webnotification.
 /weborama
 /webplayer.
 /webpush
@@ -25802,7 +25797,6 @@
 /wp-counter
 /wp-followme
 /wp-greet-box/*
-/wp-notification
 /wp-plus-one
 /wp-powerstat
 /wp-rum/*
@@ -32129,8 +32123,6 @@ _nb_sys.
 _nedstat.
 _nielsen.
 _nnads/*
-_notification
-_notify
 _oas.
 _openx.
 _openx/*
@@ -34273,7 +34265,6 @@ nonsensediamond.
 norton.
 notebookchat.
 notebookcheck.
-notification_state
 notifyfox$important
 nouvelobs.
 novablogitalia.
