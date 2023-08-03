@@ -3,6 +3,7 @@
 ! Expires: 1 day
 ! Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list
 ! 
+(?<![a-z])px
 (fls|unagi|aan)[a-z0-9]+amazon
 [^a-z0-9]((browser|self|v10)\.events|settings\-win|vortex|vortex\-win)\.data\.microsoft[^a-z]
 [^a-z0-9](360|dynamic\-?)yield(|\-atx|love|managed|manager|media|mo|optimizer|partners)[^a-z]
@@ -263,19 +264,14 @@
 [^a-z0-9]remotead[^a-z]
 [^a-z0-9]res-x[^a-z]
 [^a-z0-9]rlcdn[^a-z]
-[^a-z0-9]rokuq[^a-z]
-[^a-z0-9]rpxnow[^a-z]
-[^a-z0-9]rtyznd[^a-z]
 [^a-z0-9]sastts[^a-z]
 [^a-z0-9]scores\.infobae[^a-z]
-[^a-z0-9]scrooge[^a-z]
 [^a-z0-9]search(anise|node)[^a-z]
 [^a-z0-9]securemoney[^a-z]
 [^a-z0-9]segment(|\-data)[^a-z]
 [^a-z0-9]sietepm\.app[^a-z]
 [^a-z0-9]siftscience[^a-z]
 [^a-z0-9]sitelock[^a-z]
-[^a-z0-9]skeettoo?ls[^a-z]
 [^a-z0-9]slgnt[^a-z]
 [^a-z0-9]smart(4ads|ads|adserver|cj|screen|serve|tag)[^a-z]
 [^a-z0-9]smilewanted[^a-z]
@@ -356,6 +352,7 @@ pre.?roll
 privacy[^a-z]
 promo[^a-z0-9]
 pwa[-_/=~&\\?\\.]
+px(?![a-z])
 reklam[-_/=~&\\?\\.]
 service.?worker
 socials?[0-9]?[^a-z]

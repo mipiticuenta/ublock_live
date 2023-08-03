@@ -1484,7 +1484,6 @@
 *###backgrounddiv
 *###backgroundform
 *###badge_facbeook
-*###badge_reddit
 *###badges_v2_2
 *###bakmagecme
 *###balaMainContainer
@@ -10937,7 +10936,6 @@
 *##.cokies
 *##.cokkie-lyr
 *##.col-nl
-*##.col-reddit
 *##.col-rek
 *##.col-spot
 *##.col300_4free
@@ -12557,7 +12555,6 @@
 *##.gift-launch
 *##.gift-post
 *##.giftd-ribbon_aligner
-*##.gig-button-container--reddit
 *##.gig-reaction-bar-container
 *##.gigya-background-layer
 *##.gigya-sv
@@ -15961,7 +15958,6 @@
 *##.red-youtube
 *##.redads_cont
 *##.redbar
-*##.reddit_button
 *##.redes-sociais
 *##.redes_pie
 *##.redesign-cta
@@ -16536,7 +16532,6 @@
 *##.shariff-button
 *##.sharify-btn-gplus
 *##.sharify-btn-pocket
-*##.sharify-btn-reddit
 *##.sharify-container
 *##.shars__visible
 *##.shd_button
@@ -16605,7 +16600,6 @@
 *##.si-adRgt
 *##.si-button-gplus
 *##.si-button-pocket
-*##.si-button-reddit
 *##.sib_signup_form
 *##.sibbo-layout
 *##.sibling
@@ -17344,7 +17338,6 @@
 *##.stProAd
 *##.st_block
 *##.st_plusone_hcount
-*##.st_reddit_custom
 *##.st_stumbleupon_custom
 *##.st_tumblr_large
 *##.stack-embed
@@ -18250,7 +18243,6 @@
 *##.us_fan_count_button
 *##.us_floating
 *##.us_posts_top
-*##.us_reddit
 *##.us_youtube_fan_count
 *##.uscc-util-triggered-sliding-panel
 *##.useful-slider
@@ -19217,7 +19209,6 @@
 *##[class="GLink"]:not(body):not(html)
 *##[class="GrowthUnauthPinImage__imageDim"]:not(body):not(html)
 *##[class="Plate Plate--noPadding Teaser u-mbl"]
-*##[class="Reddit"]:not(body):not(html)
 *##[class="TWLink"]:not(body):not(html)
 *##[class="TYLink"]:not(body):not(html)
 *##[class="Tumblr"]:not(body):not(html)
@@ -19650,7 +19641,6 @@
 *##[id="3Mm-Nat"]
 *##[id="4c1dba77d15"]:not(body):not(html)
 *##[id="728x90_tennistemple"]:not(body):not(html)
-*##[id="Reddit"]:not(body):not(html)
 *##[id="Tumblr"]:not(body):not(html)
 *##[id="adbd"]:not(body):not(html)
 *##[id="live_tv"]
@@ -19946,7 +19936,6 @@
 *##[name*="spot_id_"]
 *##[name*="stumble"]
 *##[name*=googlefcPresent]
-*##[name="Reddit"]
 *##[name="Tumblr"]
 *##[name="dn-frame-1"]
 *##[name="js_ad"]
@@ -20002,7 +19991,6 @@
 *##[title="Post to Stumble-upon"]
 *##[title="Ratecard"]
 *##[title="Recommend this page"]
-*##[title="Reddit"]
 *##[title="Save On Delicious"]
 *##[title="Scorri in cima"]
 *##[title="Scroll "]
@@ -20225,7 +20213,6 @@
 -propads
 -proxy-client$important
 -push-worker
--px-$important
 -quantcast
 -redes-gplus
 -redes-pinteres
@@ -20849,10 +20836,10 @@
 .yfgttqf.
 .yxad.
 .zxy.me
+/(?<![a-z])px/$important
 /(fls|unagi|aan)[a-z0-9]+amazon/$important
 //thrive-leads/*
 //vto_plus/*
-/1170x120px-
 /120ad.
 /120ads/*
 /125ads/*
@@ -20865,11 +20852,8 @@
 /16x16-newsvine.
 /16x16/google_plus.
 /16x16/twitter.
-/18x18-reddit.
 /1afr.
 /1clkn/*
-/1px.
-/1pxtransparent.
 /1x1
 /24adscript.
 /2market_bidshow
@@ -20891,7 +20875,6 @@
 /468ad.
 /468by60two.
 /468p60_
-/468px.
 /468toro.
 /468x60b.
 /468x60fr.
@@ -21167,19 +21150,14 @@
 /[^a-z0-9]remotead[^a-z]/
 /[^a-z0-9]res-x[^a-z]/
 /[^a-z0-9]rlcdn[^a-z]/
-/[^a-z0-9]rokuq[^a-z]/
-/[^a-z0-9]rpxnow[^a-z]/
-/[^a-z0-9]rtyznd[^a-z]/
 /[^a-z0-9]sastts[^a-z]/
 /[^a-z0-9]scores\.infobae[^a-z]/
-/[^a-z0-9]scrooge[^a-z]/
 /[^a-z0-9]search(anise|node)[^a-z]/
 /[^a-z0-9]securemoney[^a-z]/
 /[^a-z0-9]segment(|\-data)[^a-z]/
 /[^a-z0-9]sietepm\.app[^a-z]/
 /[^a-z0-9]siftscience[^a-z]/
 /[^a-z0-9]sitelock[^a-z]/
-/[^a-z0-9]skeettoo?ls[^a-z]/
 /[^a-z0-9]slgnt[^a-z]/
 /[^a-z0-9]smart(4ads|ads|adserver|cj|screen|serve|tag)[^a-z]/
 /[^a-z0-9]smilewanted[^a-z]/
@@ -22275,7 +22253,7 @@
 /crlt.
 /crossdomainad
 /crossoverad-
-/crossposted.
+/crossposted.()
 /crowdbooster
 /crypta.
 /crypto-loot/*
@@ -23078,7 +23056,6 @@
 /ic_delicious
 /ic_dig
 /ic_pagetop
-/ic_reddit
 /ic_share
 /ic_stumbleupon
 /ic_technorati.
@@ -24227,20 +24204,7 @@
 /pvnoju.
 /pvserver/*
 /pwa[-_/=~&\\?\\.]/$important
-/px-
-/px.
-/px/*
-/px_
-/pxa.
-/pxf.
-/pxgif/*
-/pxl.
-/pxlctl.
-/pxls/*
-/pxlspamanalyst-
-/pxrc
-/pxtrack
-/pxtrk.
+/px(?![a-z])/$important
 /qandaads/*
 /qct_stat.
 /qlitics.
@@ -24849,7 +24813,6 @@
 /spotx_
 /spotxchangeplugin.
 /spotxchangevpaid.
-/spreddit7_
 /sprite-share
 /spriteiconshare.
 /sptrack
@@ -25267,10 +25230,8 @@
 /twiticon.
 /twittbutton.
 /twitter-1-
-/twitter-16px
 /twitter-16x
 /twitter-32.
-/twitter-32px
 /twitter-32x
 /twitter-64.
 /twitter-85.
@@ -25298,7 +25259,6 @@
 /twitter3.
 /twitter300.
 /twitter32.
-/twitter32px.
 /twitter3gif.
 /twitter40x
 /twitter42x
@@ -25855,9 +25815,6 @@
 0gomovies.
 0jkro0unul.
 0l23movies.
-0px.
-0px_
-0pxl_
 1.0.132.173
 1.1.160.72
 1.10.146.175
@@ -31856,7 +31813,6 @@
 @@||youtube.com^$inline-script,1p
 \-mgte\.googlevideo\.
 _125ad
-_1px
 _250ad
 _adagency
 _adaptvad
@@ -31963,7 +31919,6 @@ _prx/*
 _publ1c1te
 _publog_
 _push_sw.
-_pxl.
 _quantcast
 _rebid
 _redirect
@@ -34408,9 +34363,6 @@ putlocker9.
 putlockers.
 putrr*.
 pvclouds.
-px-*.
-px.
-pxlctl.
 pxlgnpgecom-a.
 q*-publick.
 q.gs
@@ -34491,6 +34443,7 @@ ro?ex.com
 robapagina$important
 rojadirectatv.
 rojadirectatvhd.
+rokuq$important
 rotaban.
 rotator.
 rotatorad$important
@@ -34499,11 +34452,13 @@ rowan-blanchard.
 royaljapan02.
 rołex.com
 rp5.
+rpxnow$important
 rpxnow.
 rrf.fat1domain1
 rrss.
 rtbimp-loadbalancer-*.
 rtpdn*.com
+rtyznd$important
 rubiconproject$important
 rugbystreams.
 runescape.
@@ -34536,6 +34491,7 @@ scorecardresearch.
 scores.
 scroll--disabled
 scrollads$important
+scrooge$important
 sdc.
 sdctag$important
 sdcwebtrends.
@@ -34650,6 +34606,7 @@ sitesunblocked.
 situsberita2terbaru.
 siweb.
 sk-ip.
+skeettoo$important
 skeettools.
 skimresources.
 skinad$important
