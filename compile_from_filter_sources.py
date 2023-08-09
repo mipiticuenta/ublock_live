@@ -128,7 +128,7 @@ print(
 
 # <remove redundant domains from list>
 
-print('2nd pass: deduplicating domains, stage 1; ', end = '')
+print('2nd pass: listing elemental domains (.@ and .@.@) from ', end = '')
 
 list2_out = set(list2_out) - set(list3_in)
 list3_in  = sorted(list3_in, key = lambda x: len(x))    # <sort by increasing length for faster size reduction/>
@@ -140,7 +140,6 @@ list3rr_in = set()
 list3rr_in = [line for line in list3_in if re.search(r'^[a-z0-9][-_a-z0-9]+\.[a-z]+(\$important)?$', line)]
 
 print(
-    'obtaining elemental deduplicated domains (.@ and .@.@) from ',
     '{:,}'.format(len(list3r_in)),
     'domains',
     '\n'
@@ -184,6 +183,15 @@ print(
     '\n'
     )
 
+print(
+    '\n',
+    '{:,}'.format(len(list2_out) + len(list3_in)),
+    'lines remaining after 2nd pass',
+    '\n'
+    )
+
+print('3rd pass: deduplicating using elemental deduplicated domains')
+
 i = 1
 j = 0
 temp  = set(list3_in) - set(list3r_in)
@@ -217,12 +225,12 @@ print()
 
 print(
     '\n',
-    '{:,}'.format(len(list2_out) + len(temp) - len(list3_in)),
-    'lines remaining after 2nd pass',
+    '{:,}'.format(len(list2_out) + len(list3_in)),
+    'lines remaining after 3rd pass',
     '\n'
     )
 
-print('3rd pass: deduplicating domains, stage 2')
+print('4th pass: deduplicating domains using all domains')
 
 i = 1
 j = 0
@@ -260,7 +268,7 @@ list2_out = sorted(set(list2_out) | set(list3_in))
 print(
     '\n',
     '{:,}'.format(len(list2_out)),
-    'lines remaining after 2nd pass',
+    'lines remaining after 4th pass',
     '\n'
     )
 
