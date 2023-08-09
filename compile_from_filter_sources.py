@@ -29,9 +29,13 @@ print(
 
 # <get filter url sources from file, dedup and sort>
 
-list1_out = set(line.strip() for line in open(file1_in_name, encoding='UTF-8') if line != '')
-list1_out = [line for line in list1_out if line[0] != '!']    # <discard commented lines (leading !)/>
+list1_out = set()
+list1_out = [line for line in open(file1_in_name, encoding='UTF-8') if line != '']    # <populate from sources/>
+list1_out = [line                     for line in list1_out if line[0] != '!']        # <discard commented lines (leading !)/>
+list1_out = [re.sub('\!.*', '', line) for line in list1_out]                          # <remove trailing comments'/>
+list1_out = [line.strip()             for line in list1_out if line != '']            # <remove leading/trailing spaces and discard empty lines/>
 list1_out = sorted(list1_out)
+
 print(
     '{:,}'.format(len(list1_out)),
     'sources listed',
@@ -132,9 +136,51 @@ list3_in  = sorted(list3_in, key = lambda x: len(x))    # <sort by increasing le
 list3r_in = set()
 list3r_in = [line for line in list3_in if re.search(r'^[a-z0-9][-_a-z0-9]+\.[a-z]+\.[a-z]+(\$important)?$', line) or re.search(r'^[a-z0-9][-_a-z0-9]+\.[a-z]+(\$important)?$', line)]
 
+list3rr_in = set()
+list3rr_in = [line for line in list3_in if re.search(r'^[a-z0-9][-_a-z0-9]+\.[a-z]+(\$important)?$', line)]
+
+print(
+    'obtaining elemental deduplicated domains (.@ and .@.@) from ',
+    '{:,}'.format(len(list3r_in)),
+    'domains',
+    '\n'
+    )
+
+i = 1
+j = 0
+temp  = set(list3r_in) - set(list3rr_in)
+temp  = sorted(temp, key = lambda x: -len(x))    # <sort by decreasing length for faster size reduction/>
+n     = len(temp)
+start = time.time()
+
+while i < n :
+    line = temp[i]
+    if any(substring in line for substring in list3rr_in) :
+        list3r_in.remove(line)    # <reduce size of list3r_in for next iteration/>
+        list3_in.remove(line)    # <reduce size of list3_in for next iteration/>
+        j += 1
+    i += 1
+    stop = time.time()
+    print(
+        "{:6.2f}".format(i / n * 100),
+        '% completed,',
+        j,
+        'domains deduplicated (',
+        '{:.1f}'.format(j / i * 100),
+        '%) , lap (h) = ',
+        '{:.2f}'.format((stop - start) / 3600),
+        ', remaining dedup (h) =',
+        '{:.2f}'.format((stop - start) / (3600 * i) * (n - i)),
+        ', estimated total dur (h) =',
+        '{:.2f}'.format((stop - start) / 3600 + (stop - start) / (3600 * i) * (n - i)),
+        end = '\r'
+        )
+
+print()
+
 print(
     '{:,}'.format(len(list3r_in)),
-    'elemental domains (.@ and .@.@) listed',
+    'elemental deduplicated domains (.@ and .@.@) listed',
     '\n'
     )
 
