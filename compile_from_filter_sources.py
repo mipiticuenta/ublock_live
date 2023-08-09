@@ -46,7 +46,7 @@ print(
 
 # <dump sources to list>
 
-list2_in = set()
+list2_out = set()
 i        = 1    # <counter for uncommented sources/>
 
 for line in list1_out :
@@ -61,11 +61,11 @@ for line in list1_out :
     i += 1
     response = requests.get(line, proxies=proxy_servers)
     if (response.status_code) :
-        list2_in.update(response.text.split('\n'))
+        list2_out.update(response.text.split('\n'))
 
 print(
     '\n',
-    '{:,}'.format(len(list2_in)),
+    '{:,}'.format(len(list2_out)),
     'lines gathered from sources',
     '\n'
     )
@@ -77,11 +77,6 @@ del(list1_out)    # <clean up; make sure list1_in is not used anymore hereafter/
 # <process filter list>
 
 print('1st pass: removing unnecessary spaces, lines, comments; applying lower case except for case-sensitive filters')
-
-
-list2_out = sorted(list2_in)
-
-del(list2_in)    # <clean up; make sure list2_in is not used anymore hereafter/>
 
 list2_out = [re.sub(' +', ' ', line).strip()                      for line in list2_out]    # <dedup spaces and remove leading/trailing spaces/>
 list2_out = [re.sub('^\:\:1 ', '', line)                          for line in list2_out]    # <remove leading '::1 '/>
@@ -187,7 +182,6 @@ print(
     '\n',
     '{:,}'.format(len(list2_out) + len(list3_in)),
     'lines remaining after 2nd pass',
-    '\n',
     '\n',
     )
 
