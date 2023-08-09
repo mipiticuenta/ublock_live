@@ -141,7 +141,7 @@ list3rr_in = [line for line in list3_in if re.search(r'^[a-z0-9][-_a-z0-9]+\.[a-
 
 print(
     '{:,}'.format(len(list3r_in)),
-    'domains',
+    'items',
     '\n'
     )
 
@@ -187,9 +187,12 @@ print(
     '\n',
     '{:,}'.format(len(list2_out) + len(list3_in)),
     'lines remaining after 2nd pass',
+    '\n',
+    '\n',
     )
 
 print('3rd pass: deduplicating using only elemental deduplicated domains')
+print()
 
 i = 1
 j = 0
@@ -230,6 +233,7 @@ print(
     )
 
 print('4th pass: deduplicating domains using all domains')
+print()
 
 i = 1
 j = 0
