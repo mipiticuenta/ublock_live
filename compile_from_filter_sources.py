@@ -178,19 +178,18 @@ while i < n :
 print()
 
 print(
+    '\n',
     '{:,}'.format(len(list3r_in)),
     'elemental deduplicated domains (.@ and .@.@) listed',
-    '\n'
     )
 
 print(
     '\n',
     '{:,}'.format(len(list2_out) + len(list3_in)),
     'lines remaining after 2nd pass',
-    '\n'
     )
 
-print('3rd pass: deduplicating using elemental deduplicated domains')
+print('3rd pass: deduplicating using only elemental deduplicated domains')
 
 i = 1
 j = 0
@@ -234,7 +233,7 @@ print('4th pass: deduplicating domains using all domains')
 
 i = 1
 j = 0
-temp  = list3_in - set(list3r_in)
+temp  = set(list3_in) - set(list3r_in)
 temp  = sorted(temp, key = lambda x: -len(x))    # <sort by decreasing length for faster size reduction/>
 n     = len(temp)
 start = time.time()
