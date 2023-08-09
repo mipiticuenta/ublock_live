@@ -33,7 +33,7 @@ list1_out = set(line.strip() for line in open(file1_in_name, encoding='UTF-8') i
 list1_out = [line for line in list1_out if line[0] != '!']    # <discard commented lines (leading !)/>
 list1_out = sorted(list1_out)
 print(
-    len(list1_out),
+    '{:,}'.format(len(list1_out)),
     'sources listed',
     '\n'
     )
@@ -61,7 +61,7 @@ for line in list1_out :
 
 print(
     '\n',
-    len(list2_in),
+    '{:,}'.format(len(list2_in)),
     'lines gathered from sources',
     '\n'
     )
@@ -72,52 +72,50 @@ del(list1_out)    # <clean up; make sure list1_in is not used anymore hereafter/
 
 # <process filter list>
 
-print('1st pass: removing unnecessary spaces, lines, comments; setting lower case except case-sensitive filters')
+print('1st pass: removing unnecessary spaces, lines, comments; applying lower case except for case-sensitive filters')
 
 
 list2_out = sorted(list2_in)
 
 del(list2_in)    # <clean up; make sure list2_in is not used anymore hereafter/>
 
-list2_out = [line.strip()                                         for line in list2_out]    # <remove leading and trailing spaces/>
-list2_out = [re.sub(' +', ' ', line)                              for line in list2_out]    # <dedup spaces/>
+list2_out = [re.sub(' +', ' ', line).strip()                      for line in list2_out]    # <dedup spaces and remove leading/trailing spaces/>
 list2_out = [re.sub('^\:\:1 ', '', line)                          for line in list2_out]    # <remove leading '::1 '/>
 list2_out = [re.sub('^....\:\:[0-9].*', '', line)                 for line in list2_out]    # <remove '____::_'/>
-list2_out = [re.sub('^127\.0\.0\.1 ', '', line)                   for line in list2_out]    # <remove leading '127.0.0.1 '/>
-list2_out = [re.sub('^0\.0\.0\.0 ', '', line)                     for line in list2_out]    # <remove leading '0.0.0.0 '/>
+list2_out = [re.sub('^127\.0\.0\.1 ', '', line).strip()           for line in list2_out]    # <remove leading '127.0.0.1 '/>
+list2_out = [re.sub('^0\.0\.0\.0 ', '', line).strip()             for line in list2_out]    # <remove leading '0.0.0.0 '/>
 list2_out = [re.sub('^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$', '', line) for line in list2_out]    # <remove IP addresses'/>
 list2_out = [re.sub('^!.*', '', line)                             for line in list2_out]    # <remove uBO style comments'/>
 list2_out = [re.sub('#.*', '', line).strip()                      for line in list2_out]    # <remove not uBO style trailing comments'/>
 list2_out = [re.sub('^#(?!#).*', '', line)                        for line in list2_out]    # <remove not uBO style trailing comments'/>
 list2_out = [re.sub('^localhost.*', '', line)                     for line in list2_out]    # <remove leading and trailing spaces/>
-list2_out = [re.sub('^www\.', '', line)                           for line in list2_out]    # <remove leading www./>
-list2_out = [re.sub('\$all$', '', line)                           for line in list2_out]    # <remove trailing $all/>
-list2_out = [re.sub('\$third-party$', '', line)                   for line in list2_out]    # <remove trailing $third-party/>
-list2_out = [re.sub('\^$', '', line)                              for line in list2_out]    # <remove trailing ^/>
-list2_out = [re.sub('^\|\|', '', line)                            for line in list2_out]    # <remove leading ||/>
-list2_out = [line for line in list2_out if len(line) > 1]                                   # <discard empty elements/>
+list2_out = [re.sub('^www\.', '', line).strip()                   for line in list2_out]    # <remove leading www./>
+list2_out = [re.sub('\$all$', '', line).strip()                   for line in list2_out]    # <remove trailing $all/>
+list2_out = [re.sub('\$third-party$', '', line).strip()           for line in list2_out]    # <remove trailing $third-party/>
+list2_out = [re.sub('\^$', '', line).strip()                      for line in list2_out]    # <remove trailing ^/>
+list2_out = [re.sub('^\|\|', '', line).strip()                    for line in list2_out]    # <remove leading ||/>
+list2_out = [line for line in list2_out if len(line) > 1]                                   # <discard elements with len <= 1/>
 
 # <keep case only for cosmetic filer; lower case for the remaining/>
 list2_out = [line for line in list2_out if re.search(r'#', line)] + [line.lower() for line in list2_out if not(re.search(r'#', line))]
 
 print(
     '\n',
-    len(list2_out),
+    '{:,}'.format(len(list2_out)),
     'lines remaining after 1st pass',
     '\n'
     )
 
 # <extract domains from list>
 
-print('Listing domain filters:', end = '')
+print('Listing domain filters: ', end = '')
 
 list3_in = set()
 list3_in = [line for line in list2_out if re.search(r'^[a-z0-9[-_\.a-z0-9]+\.[a-z]+\.[a-z]+(\$important)?$', line) or re.search(r'^[a-z0-9][-_\.a-z0-9]+\.[a-z]+(\$important)?$', line)]
 list3_in = [re.sub('\$important$', '', line) for line in list3_in]
 
 print(
-    '\n',
-    len(list3_in),
+    '{:,}'.format(len(list3_in)),
     'domains listed',
     '\n'
     )
@@ -126,21 +124,70 @@ print(
 
 # <remove redundant domains from list>
 
-print('2nd pass: deduplicating domains')
+print('2nd pass: deduplicating domains, stage 1; ', end = '')
 
 list2_out = set(list2_out) - set(list3_in)
 list3_in  = sorted(list3_in, key = lambda x: len(x))    # <sort by increasing length for faster size reduction/>
 
+list3r_in = set()
+list3r_in = [line for line in list3_in if re.search(r'^[a-z0-9][-_a-z0-9]+\.[a-z]+\.[a-z]+(\$important)?$', line) or re.search(r'^[a-z0-9][-_a-z0-9]+\.[a-z]+(\$important)?$', line)]
+
+print(
+    '{:,}'.format(len(list3r_in)),
+    'elemental domains (.@ and .@.@) listed',
+    '\n'
+    )
+
 i = 1
 j = 0
-temp  = list3_in
+temp  = set(list3_in) - set(list3r_in)
 temp  = sorted(temp, key = lambda x: -len(x))    # <sort by decreasing length for faster size reduction/>
 n     = len(temp)
 start = time.time()
 
 while i < n :
     line = temp[i]
-    if any(substring in line for substring in list3_in if len(line) > len(substring)) :
+    if any(substring in line for substring in list3r_in) :
+        list3_in.remove(line)    # <reduce size of list3_in for next iteration/>
+        j += 1
+    i += 1
+    stop = time.time()
+    print(
+        "{:6.2f}".format(i / n * 100),
+        '% completed,',
+        j,
+        'domains deduplicated (',
+        '{:.1f}'.format(j / i * 100),
+        '%) , lap (h) = ',
+        '{:.2f}'.format((stop - start) / 3600),
+        ', remaining dedup (h) =',
+        '{:.2f}'.format((stop - start) / (3600 * i) * (n - i)),
+        ', estimated total dur (h) =',
+        '{:.2f}'.format((stop - start) / 3600 + (stop - start) / (3600 * i) * (n - i)),
+        end = '\r'
+        )
+
+print()
+
+print(
+    '\n',
+    '{:,}'.format(len(list2_out) + len(temp) - len(list3_in)),
+    'lines remaining after 2nd pass',
+    '\n'
+    )
+
+print('3rd pass: deduplicating domains, stage 2')
+
+i = 1
+j = 0
+temp  = list3_in - set(list3r_in)
+temp  = sorted(temp, key = lambda x: -len(x))    # <sort by decreasing length for faster size reduction/>
+n     = len(temp)
+start = time.time()
+
+while i < n :
+    line = temp[i]
+    if any(substring in line for substring in list3_in) :
         list3_in.remove(line)    # <reduce size of list3_in for next iteration/>
         j += 1
     i += 1
@@ -166,7 +213,7 @@ list2_out = sorted(set(list2_out) | set(list3_in))
 
 print(
     '\n',
-    len(list2_out),
+    '{:,}'.format(len(list2_out)),
     'lines remaining after 2nd pass',
     '\n'
     )
