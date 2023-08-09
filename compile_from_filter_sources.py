@@ -78,26 +78,26 @@ del(list1_out)    # <clean up; make sure list1_in is not used anymore hereafter/
 
 print('1st pass: removing unnecessary spaces, lines, comments; applying lower case except for case-sensitive filters')
 
-list2_out = [re.sub(r' +', ' ', line).strip()                      for line in list2_out]    # <dedup spaces and remove leading/trailing spaces/>
-list2_out = [re.sub(r'#.*', '', line).strip()                      for line in list2_out]    # <remove not uBO style trailing comments'/>
-list2_out = [re.sub(r'\A#(?!#).*', '', line)                        for line in list2_out]    # <remove not uBO style trailing comments'/>
+list2_out = [re.sub(r' +', ' ', line).strip()                       for line in list2_out]    # <dedup spaces and remove leading/trailing spaces/>
+list2_out = [re.sub(r'!.*', '', line).strip()                       for line in list2_out]    # <remove uBO style trailing comments'/>
+list2_out = [re.sub(r'#.*', '', line).strip()                       for line in list2_out]    # <remove not uBO style trailing comments'/>
+list2_out = [re.sub(r'^#(?!#).*', '', line)                         for line in list2_out]    # <remove not uBO style trailing comments'/>
 
 # <keep case only for cosmetic filer; lower case for the remaining/>
 list2_out = [line for line in list2_out if re.search(r'#', line)] + [line.lower() for line in list2_out if not(re.search(r'#', line))]
 
-list2_out = [re.sub(r'\A\:\:1 ', '', line)                          for line in list2_out]    # <remove leading '::1 '/>
-list2_out = [re.sub(r'\A....\:\:[0-9].*', '', line)                 for line in list2_out]    # <remove '____::_'/>
-list2_out = [re.sub(r'\A127\.0\.0\.1 ', '', line).strip()           for line in list2_out]    # <remove leading '127.0.0.1 '/>
-list2_out = [re.sub(r'\A0\.0\.0\.0 ', '', line).strip()             for line in list2_out]    # <remove leading '0.0.0.0 '/>
-list2_out = [re.sub(r'\A[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+\Z', '', line) for line in list2_out]    # <remove IP addresses'/>
-list2_out = [re.sub(r'\A!.*', '', line)                             for line in list2_out]    # <remove uBO style comments'/>
-list2_out = [re.sub(r'\Alocalhost.*', '', line)                     for line in list2_out]    # <remove leading and trailing spaces/>
-list2_out = [re.sub(r'www[0-9]*\.', '', line).strip()              for line in list2_out]    # <remove leading www./>
-list2_out = [re.sub(r'\$all\Z', '', line).strip()                   for line in list2_out]    # <remove trailing $all/>
-list2_out = [re.sub(r'\$third-party\Z', '', line).strip()           for line in list2_out]    # <remove trailing $third-party/>
-list2_out = [re.sub(r'\^\Z', '', line).strip()                      for line in list2_out]    # <remove trailing ^/>
-list2_out = [re.sub(r'\A\|\|', '', line).strip()                    for line in list2_out]    # <remove leading ||/>
-list2_out = [line for line in list2_out if len(line) > 1]                                   # <discard elements with len <= 1/>
+list2_out = [re.sub(r'....\:\:[0-9].*', '', line)                   for line in list2_out]    # <remove '____::_'/>
+list2_out = [re.sub(r'[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+.*', '', line)  for line in list2_out]    # <remove IP addresses'/>
+list2_out = [re.sub(r'www\.', '', line).strip()                     for line in list2_out]    # <remove www./>
+list2_out = [re.sub(r'\$all$', '', line).strip()                    for line in list2_out]    # <remove trailing $all/>
+list2_out = [re.sub(r'\$third-party$', '', line).strip()            for line in list2_out]    # <remove trailing $third-party/>
+list2_out = [re.sub(r'\^$', '', line).strip()                       for line in list2_out]    # <remove trailing ^/>
+list2_out = [re.sub(r'\|\|', '', line).strip()                      for line in list2_out]    # <remove ||/>
+list2_out = [re.sub(r'0\.0\.0\.0 ', '', line).strip()               for line in list2_out]    # <remove leading '0.0.0.0 '/>
+list2_out = [re.sub(r'127\.0\.0\.1 ', '', line).strip()             for line in list2_out]    # <remove leading '127.0.0.1 '/>
+list2_out = [re.sub(r'\:\:1 ', '', line).strip()                    for line in list2_out]    # <remove leading '::1 '/>
+list2_out = [line for line in list2_out if len(line) > 1]                                     # <discard items with len <= 1/>
+list2_out = [line for line in list2_out if line[0:8] != 'localhost']                          # <remove items leaded by localhost />
 
 print(
     '\n',
