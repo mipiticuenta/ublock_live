@@ -154,7 +154,7 @@ print('--------------------------------------------------------')
 list2 = set(list2) - set(list3)
 
 i_max = math.ceil(math.log(len(list3) / 1e4) / math.log(2))
-for i in range(i_max, 0, -1) :
+for i in range(i_max, -1, -1) :
     n = round(len(list3) / (2**i))
     print(
         'recursive size reduccion',
