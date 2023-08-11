@@ -1,5 +1,11 @@
 ''' Compile block list from url sources '''
 
+# <product backlog>
+
+# improve treatment of domains$important filter
+
+# </product backlog>
+
 import os                   # Miscellaneous operating system interfaces
 import re                   # Regular expression operations
 import requests             # Get files using url
@@ -40,8 +46,8 @@ list1 = sorted(list1)
 
 # <dump sources to list>
 
-list2 = set()
-i        = 1    # <counter for uncommented sources/>
+list2 = set()    # <populating list2 as set type ensures no items' duplication/>
+i     = 1    # <counter for uncommented sources/>
 
 for line in list1 :
     print(
@@ -135,7 +141,7 @@ print(
 print('Listing domain filters: ', end = '')
 
 list3 = [line for line in list2 if re.search(r'^[a-z0-9[-_\.a-z0-9]+\.[a-z]+\.[a-z]+(\$important)?$', line) or re.search(r'^[a-z0-9][-_\.a-z0-9]+\.[a-z]+(\$important)?$', line)]
-list3 = [re.sub('r\$important$', '', line) for line in list3]
+list3 = [re.sub('r\$important$', '', line) for line in list3]    # <remove trailing $important; to be improved in next sprint/>
 
 print(
     '{:,}'.format(len(list3)),
@@ -152,9 +158,20 @@ print('--------------------------------------------------------')
 
 list2 = set(list2) - set(list3)    # <only domains part are processed in this section/>
 
+list3r = [line for line in list3 if re.search(r'^[a-z0-9][-_a-z0-9]+\.[a-z]+$', line)]    # <*.@ domains are elemental items/>
+
+print(
+    '{:,}'.format(len(list3r)),
+    'elemental *.@ domains found; removed from recursive doamin downsizing'
+    )
+
+list3 = set(list3) - set(list3r)    # <elemental domains removed for faster size reduction, and added to final result/>
+list3 = sorted(list3, key = lambda x: -len(x))    # <sort by decreasing length for faster size reduction/>
+
 i_max = round(math.log(len(list3) / 5e4) / math.log(2))
 for i in range(i_max, -1, -1) :
-    n = round(len(list3) / (2**i))
+    list3_filter = list(set(list3) | set(list3r))
+    n = round(len(list3_filter) / (2**i))
     print(
         'recursive domain downsizing',
         '{:2.0f}'.format(i_max + 1 - i),
@@ -165,15 +182,15 @@ for i in range(i_max, -1, -1) :
         'domains kept'
         )
     # <filter() + map() option>
-    list3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3[:n]))) == 0) else '', tqdm.tqdm(list3)))
+    list3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3_filter[:n]))) == 0) else '', tqdm.tqdm(list3)))
     list3 = [line for line in list3 if len(line) > 0]
     # </filter() + map() option>
     
     # <filter() + list comprehension option>
-    #list3 = [line for line in list3 if len(list(filter(lambda substring: substring in line and len(line) > len(substring), tqdm.tqdm()list3[:n])))) == 0]
+    #list3 = [line for line in list3 if len(list(filter(lambda substring: ('.' + substring) in line, tqdm.tqdm(list3_filter[:n])))) == 0]
     # </filter() + list comprehension option>
 
-list2 = sorted(set(list2) | set(list3))    # <rebuild full list with shrinked domains part/>
+list2 = sorted(set(list2) | set(list3r) | set(list3))    # <rebuild full list with elemetal domains and shrinked domains part/>
 
 print(
     '\n',
