@@ -168,7 +168,7 @@ print(
 list3 = set(list3) - set(list3r)    # <elemental domains removed for faster size reduction, and added to final result/>
 list3 = sorted(list3, key = lambda x: -len(x))    # <sort by decreasing length for faster size reduction/>
 
-i_max = round(math.log(len(list3) / 5e4) / math.log(2))
+i_max = round(math.log((len(list3) + len(list3r)) / 5e4) / math.log(2))
 for i in range(i_max, -1, -1) :
     list3_filter = list(set(list3) | set(list3r))
     n = round(len(list3_filter) / (2**i))
