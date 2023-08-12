@@ -14,6 +14,7 @@ import math                 # Math functions
 
 file1_in_name  = 'filter_sources'
 file2_out_name = 'compiled_block_list'
+file3r3_out_name = '3words_domain_list'
 proxy_servers  = {'https': 'http://fw:8080'}
 
 # <settings>
@@ -78,49 +79,49 @@ print('Removing unnecessary spaces, lines, comments, etc; applying lower case ex
 print('--------------------------------------------------------------------------------------------------------')
 
 print(' 1/16 : dedup spaces and remove leading/trailing spaces')
-list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
-list2 = [re.sub(r' +', ' ', line).strip()                      for line in list2]    # <dedup spaces and remove leading/trailing spaces/>
+list2 = [re.sub(r' +', ' ', line).strip() for line in list2]                         # <dedup spaces and remove leading/trailing spaces/>
 
 print(' 2/16 : remove uBO style trailing comments')
+list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
 list2 = [line for line in list2 if line[0] != '!']                                   # <remove uBO style comments'/>
 
 print(' 3/16 : remove not uBO style trailing comments')
-list2 = [line for line in list2 if line[0] != '#']                                   # <remove not uBO style trailing comments'/>
-list2 = [re.sub(r' #(?!#+).*', '', line)                       for line in list2]    # <remove not uBO style trailing comments'/>
+list2 = [line for line in list2 if line[0] != '#']                                   # <remove not uBO style trailing comments/>
+list2 = [re.sub(r' #(?!#+).*', '', line) for line in list2]                          # <remove not uBO style trailing comments/>
 
 print(' 4/16 : keep case only for cosmetic filter; apply lower case for the remaining')
-# <keep case only for cosmetic filer; lower case for the remaining/>
-list2 = [line for line in list2 if re.search(r'#', line)] + [line.lower() for line in list2 if not(re.search(r'#', line))]
+list2 = [line for line in list2 if re.search(r'#', line)] + 
+        [line.lower() for line in list2 if not(re.search(r'#', line))]               # <lower case for all except cosmetics/>
 
 print(' 5/16 : remove items leaded by ****::*')
-list2 = [re.sub(r'....\:\:[0-9].*', '', line)                  for line in list2]    # <remove items leaded by '____::_'/>
+list2 = [re.sub(r'....\:\:[0-9].*', '', line) for line in list2]                     # <remove IP6 addresses/>
 
 print(' 6/16 : remove IP addresses')
-list2 = [re.sub(r'[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+.*', '', line) for line in list2]    # <remove IP addresses'/>
+list2 = [re.sub(r'[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+.*', '', line) for line in list2]    # <remove IP4 addresses/>
 
 print(' 7/16 : remove www.')
-list2 = [re.sub(r'www\.', '', line).strip()                    for line in list2]    # <remove www./>
+list2 = [re.sub(r'www\.', '', line).strip() for line in list2]                       # <remove www./>
 
 print(' 8/16 : remove trailing $all')
-list2 = [re.sub(r'\$all$', '', line).strip()                   for line in list2]    # <remove trailing $all/>
+list2 = [re.sub(r'\$all$', '', line).strip() for line in list2]                      # <remove trailing $all/>
 
 print(' 9/16 : remove trailing $third-party')
-list2 = [re.sub(r'\$third-party$', '', line).strip()           for line in list2]    # <remove trailing $third-party/>
+list2 = [re.sub(r'\$third-party$', '', line).strip() for line in list2]              # <remove trailing $third-party/>
 
 print('10/16 : remove trailing ^')
-list2 = [re.sub(r'\^$', '', line).strip()                      for line in list2]    # <remove trailing ^/>
+list2 = [re.sub(r'\^$', '', line).strip() for line in list2]                         # <remove trailing ^/>
 
 print('11/16 : remove ||')
-list2 = [re.sub(r'\|\|', '', line).strip()                     for line in list2]    # <remove ||/>
+list2 = [re.sub(r'\|\|', '', line).strip() for line in list2]                        # <remove ||/>
 
 print('12/16 : remove leading 0.0.0.0 ')
-list2 = [re.sub(r'0\.0\.0\.0 ', '', line).strip()              for line in list2]    # <remove leading '0.0.0.0 '/>
+list2 = [re.sub(r'0\.0\.0\.0 ', '', line).strip() for line in list2]                 # <remove leading '0.0.0.0 (dns style filter)'/>
 
 print('13/16 : remove leading 127.0.0.1 ')
-list2 = [re.sub(r'127\.0\.0\.1 ', '', line).strip()            for line in list2]    # <remove leading '127.0.0.1 '/>
+list2 = [re.sub(r'127\.0\.0\.1 ', '', line).strip() for line in list2]               # <remove leading '127.0.0.1 (dns style filter)'/>
 
 print('14/16 : remove leading ::1 ')
-list2 = [re.sub(r'\:\:1 ', '', line).strip()                   for line in list2]    # <remove leading '::1 '/>
+list2 = [re.sub(r'\:\:1 ', '', line).strip() for line in list2]                      # <remove leading '::1 (dns style filter)'/>
 
 print('15/16 : remove items with length < 2')
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
@@ -179,6 +180,17 @@ print(
 list3r3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3r))) == 0) else '', tqdm.tqdm(list3r3)))
 list3r3 = [line for line in list3r3 if len(line) > 0]    # <cleanup empty lines/>
 list3r  = sorted(set(list3r) | set(list3r3))             # <compile deduplicated domains up to present stage/>
+
+# <write output>
+
+file3r3_out = open(file3r3_out_name, 'w')
+file3r3_out.writelines(line + '\n' for line in list3r3)
+file3r3_out.close()
+
+print('Results saved to textfile <' + file2_out_name + '>')
+print()
+
+# </write output>
 
 i_max = round(math.log((len(list3) + len(list3r)) / 1e5) / math.log(2))
 for i in range(i_max, -1, -1) :
