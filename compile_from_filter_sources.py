@@ -91,7 +91,7 @@ list2 = [re.sub(r' #(?!#+).*', '', line) for line in list2]                     
 
 print(' 4/16 : keep case only for cosmetic filter; apply lower case for the remaining')
 list2 = (
-        [line for line in list2 if re.search(r'#', line)] + 
+        [line         for line in list2 if     re.search(r'#', line) ] + 
         [line.lower() for line in list2 if not(re.search(r'#', line))]               # <lower case for all except cosmetics/>
         )
 print(' 5/16 : remove items leaded by ****::*')
@@ -171,9 +171,9 @@ list3  = sorted(list3, key = lambda x: -len(x))    # <sort by decreasing length 
 
 print(
     'recursive domain downsizing',
-    '{:2.0f}'.format(0),
+    '{:2.0f}'.format(1),
     '/',
-    '0',
+    'n',
     ';',
     '{:,}'.format(len(list3) + len(list3r3)),
     'domains kept'
@@ -188,8 +188,10 @@ file3r3_out = open(file3r3_out_name, 'w')
 file3r3_out.writelines(line + '\n' for line in list3r3)
 file3r3_out.close()
 
-print('Results saved to textfile <' + file2_out_name + '>')
-print()
+print(
+    'Results saved to textfile <' + file2_out_name + '>',
+    '\n'
+)
 
 # </write output>
 
@@ -199,9 +201,9 @@ for i in range(i_max, -1, -1) :
     n = round(len(list3_filter) / (2**i))
     print(
         'recursive domain downsizing',
-        '{:2.0f}'.format(i_max + 1 - i),
+        '{:2.0f}'.format(i_max + 1 - i + 1),
         '/',
-        i_max + 1,
+        i_max + 1 + 1,
         ';',
         '{:,}'.format(len(list3)),
         'domains kept'
@@ -237,11 +239,10 @@ if file2_out_name + '_old' in filelist :
     os.rename(file2_out_name, file2_out_name + '_old')
 
 print(
-    'backup saved: '
-    + file2_out_name
-    + '_old'
-    + '\n'
-)
+    'Backup saved:',
+    file2_out_name + '_old',
+    '\n'
+    )
 
 # </save a backup renamed *_old; overwrite if exists>
 
@@ -251,8 +252,10 @@ file2_out = open(file2_out_name, 'w')
 file2_out.writelines(line + '\n' for line in list2)
 file2_out.close()
 
-print('Results saved to textfile <' + file2_out_name + '>')
-print()
+print(
+    'Results saved to textfile <' + file2_out_name + '>',
+    '\n'
+    )
 
 # </write output>
 
