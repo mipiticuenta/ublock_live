@@ -12,24 +12,22 @@ import math                 # Math functions
 
 # <settings>
 
-file1_in_name  = 'filter_sources'
-file2_out_name = 'compiled_block_list'
+file1_in_name    = 'filter_sources'
+file2_out_name   = 'compiled_block_list'
 file3r3_out_name = '3words_domain_list'
-proxy_servers  = {'https': 'http://fw:8080'}
+proxy_servers    = {'https': 'http://fw:8080'}
 
-# <settings>
+# </settings>
 
 print(
-    '\n',
-    '###################################################################################', '\n',
-    '#', '\n',
-    '# Compile a single deduplicated block list from url sources', '\n',
-    '#', '\n',
-    '# input : <filter_sources> textfile', '\n',
-    '# output: <compiled_block_list> textfile, sorted, deduplicated, without empty lines', '\n',
-    '#', '\n',
-    '###################################################################################', '\n',
-    '\n'
+                                                                      '\n',
+    '# ============================================================', '\n',
+    '# Compile a single deduplicated block list from url sources',    '\n',
+    '# ============================================================', '\n',
+    '# input : <filter_sources> textfile',                            '\n',
+    '# output: <compiled_block_list> textfile, sorted, deduplicated', '\n',
+    '# ============================================================', '\n',
+                                                                      '\n'
     )
 
 # <get filter url sources from file, dedup and sort>
@@ -38,15 +36,14 @@ list1 = [line.strip() for line in open(file1_in_name, encoding='UTF-8')]    # <p
 list1 = [line.strip()               for line in list1 if line != '']        # <remove leading/trailing spaces and discard empty lines/>
 list1 = [line                       for line in list1 if line[0] != '!']    # <discard commented lines (leading !)/>
 list1 = [re.sub(r'\ !.*', '', line) for line in list1]                      # <remove trailing comments'/>
-
 list1 = sorted(list1)
 
 # </get filter url sources from file, dedup and sort>
 
 # <dump sources to list>
 
-list2 = set()    # <populating list2 as set type ensures no items' duplication/>
-i     = 1    # <counter for uncommented sources/>
+list2 = set()    # <populating list2 as set type ensures no duplication/>
+i     = 1        # <counter for uncommented sources/>
 
 for line in list1 :
     print(
@@ -69,7 +66,7 @@ print(
     '\n'
     )
 
-del(list1)    # <clean up; make sure list1_in is not used anymore hereafter/>
+del(list1)    # <clean up; make sure list1 is not used anymore hereafter/>
 
 # </dump sources to list>
 
@@ -162,25 +159,25 @@ list3r = [line for line in list3 if re.search(r'^[a-z0-9][-_a-z0-9]+\.[a-z]+$', 
 
 print(
     '{:,}'.format(len(list3r)),
-    'elemental @.@ domains found; removed from recursive domain downsizing'
+    'elemental @.@ domains found; excluded from recursive domain downsizing'
     )
 
 list3r3 = [line for line in list3 if re.search(r'^[a-z0-9][-_a-z0-9]+\.[a-z0-9][-_a-z0-9]+\.[a-z]+$', line)]    # <@.@.@ domains items/>
-list3  = set(list3) - set(list3r) - set(list3r3)    # <elemental domains removed for faster size reduction, and added to final result/>
-list3  = sorted(list3, key = lambda x: -len(x))    # <sort by decreasing length for faster size reduction/>
+list3   = set(list3) - set(list3r) - set(list3r3)    # <elemental domains removed for faster size reduction, and added to final result/>
+list3   = sorted(list3, key = lambda x: -len(x))    # <sort by decreasing length for faster size reduction/>
 
 print(
     'recursive domain downsizing',
     '{:2.0f}'.format(1),
     '/',
-    'n',
+    '?',
     ';',
     '{:,}'.format(len(list3) + len(list3r3)),
     'domains kept'
     )
 list3r3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3r))) == 0) else '', tqdm.tqdm(list3r3)))
 list3r3 = [line for line in list3r3 if len(line) > 0]    # <cleanup empty lines/>
-list3r  = sorted(set(list3r) | set(list3r3))             # <compile deduplicated domains up to present stage/>
+list3r  = sorted(set(list3r) | set(list3r3))             # <compile deduplicated domains up to current stage/>
 
 # <write output>
 
@@ -189,9 +186,10 @@ file3r3_out.writelines(line + '\n' for line in list3r3)
 file3r3_out.close()
 
 print(
-    'Results saved to textfile <' + file2_out_name + '>',
-    '\n'
-)
+    'deduplicated 3 words domains (@.@.@) saved to textfile <' + file3r3_out_name + '>',
+    )
+
+del(list3r3)    # <clean up; make sure list3r3 is not used anymore hereafter/>
 
 # </write output>
 
