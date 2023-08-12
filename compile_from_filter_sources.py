@@ -90,9 +90,10 @@ list2 = [line for line in list2 if line[0] != '#']                              
 list2 = [re.sub(r' #(?!#+).*', '', line) for line in list2]                          # <remove not uBO style trailing comments/>
 
 print(' 4/16 : keep case only for cosmetic filter; apply lower case for the remaining')
-list2 = [line for line in list2 if re.search(r'#', line)] + 
+list2 = (
+        [line for line in list2 if re.search(r'#', line)] + 
         [line.lower() for line in list2 if not(re.search(r'#', line))]               # <lower case for all except cosmetics/>
-
+        )
 print(' 5/16 : remove items leaded by ****::*')
 list2 = [re.sub(r'....\:\:[0-9].*', '', line) for line in list2]                     # <remove IP6 addresses/>
 
