@@ -187,7 +187,7 @@ file3r3_out.writelines(line + '\n' for line in list3r3)
 file3r3_out.close()
 
 print(
-    'deduplicated 3 words domains (@.@.@) saved to textfile <' + file3r3_out_name + '>',
+    'deduplicated 3 words domains (@.@.@) sorted by @.@ saved to textfile <' + file3r3_out_name + '>',
     )
 
 del(list3r3)    # <clean up; make sure list3r3 is not used anymore hereafter/>
