@@ -25,6 +25,7 @@ print(
     '# Compile a single deduplicated block list from url sources',    '\n',
     '# ============================================================', '\n',
     '# input : <filter_sources> textfile',                            '\n',
+    '# output: <3words_domain_list> textfile, A-Z by @.@',            '\n',
     '# output: <compiled_block_list> textfile, sorted, deduplicated', '\n',
     '# ============================================================', '\n',
                                                                       '\n'
@@ -143,7 +144,7 @@ list3 = [re.sub('r\$important$', '', line) for line in list3]    # <remove trail
 
 print(
     '{:,}'.format(len(list3)),
-    'listed',
+    'found',
     '\n'
     )
 
@@ -164,7 +165,7 @@ print(
 
 list3r3 = [line for line in list3 if re.search(r'^[a-z0-9][-_a-z0-9]+\.[a-z0-9][-_a-z0-9]+\.[a-z]+$', line)]    # <@.@.@ domains items/>
 list3   = set(list3) - set(list3r) - set(list3r3)    # <elemental domains removed for faster size reduction, and added to final result/>
-list3   = sorted(list3, key = lambda x: -len(x))    # <sort by decreasing length for faster size reduction/>
+list3   = sorted(list3, key = lambda x: -len(x))     # <sort by decreasing length for faster size reduction/>
 
 print(
     'recursive domain downsizing',
