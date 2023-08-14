@@ -76,66 +76,69 @@ del(list1)    # <clean up; make sure list1 is not used anymore hereafter/>
 print('Removing unnecessary spaces, lines, comments, etc; applying lower case except for case-sensitive filters')
 print('--------------------------------------------------------------------------------------------------------')
 
-print(' 1/18 : dedup spaces and remove leading/trailing spaces')
+print(' 1/19 : dedup spaces and remove leading/trailing spaces')
 list2 = [re.sub(r' +', ' ', line).strip() for line in list2]                         # <dedup spaces and remove leading/trailing spaces/>
 
-print(' 2/18 : remove uBO style trailing comments')
+print(' 2/19 : remove uBO style trailing comments')
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
 list2 = [line for line in list2 if line[0] != '!']                                   # <remove uBO style comments'/>
 
-print(' 3/18 : remove not uBO style trailing comments')
+print(' 3/19 : remove not uBO style trailing comments')
 list2 = [line for line in list2 if line[0] != '#']                                   # <remove not uBO style trailing comments/>
 list2 = [re.sub(r' #(?!#+).*', '', line) for line in list2]                          # <remove not uBO style trailing comments/>
 
-print(' 4/18 : keep case only for cosmetic filter; apply lower case for the remaining')
+print(' 4/19 : keep case only for cosmetic filter; apply lower case for the remaining')
 list2 = (
         [line         for line in list2 if     re.search(r'#', line) ] + 
         [line.lower() for line in list2 if not(re.search(r'#', line))]               # <lower case for all except cosmetics/>
         )
-print(' 5/18 : remove items leaded by ****::*')
+print(' 5/19 : remove items leaded by ****::*')
 list2 = [re.sub(r'....\:\:[0-9].*', '', line) for line in list2]                     # <remove IP6 addresses/>
 
-print(' 6/18 : remove IP addresses (complete or uncomplete)')
+print(' 6/19 : remove IP addresses (complete or uncomplete)')
 list2 = [re.sub(r'[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+.*', '', line) for line in list2]    # <remove IP4 addresses/>
 list2 = [re.sub(r'^[0-9]+\.[0-9]+\.[0-9]+\.$', '', line) for line in list2]          # <remove IP4 addresses/>
 list2 = [re.sub(r'^[0-9]+\.[0-9]+\..$', '', line) for line in list2]                 # <remove IP4 addresses/>
 
-print(' 7/18 : remove www.')
+print(' 7/19 : remove www.')
 list2 = [re.sub(r'www\.', '', line).strip() for line in list2]                       # <remove www./>
 
-print(' 8/18 : remove trailing $all')
+print(' 8/19 : remove trailing $all')
 list2 = [re.sub(r'\$all$', '', line).strip() for line in list2]                      # <remove trailing $all/>
 
-print(' 9/18 : remove trailing $third-party and $3p')
+print(' 9/19 : remove trailing $third-party and $3p')
 list2 = [re.sub(r'\$third-party$', '', line).strip() for line in list2]              # <remove trailing $third-party/>
 list2 = [re.sub(r'\$3p$', '', line).strip() for line in list2]                       # <remove trailing $3p/>
 
-print('10/18 : remove trailing ^')
+print('10/19 : remove trailing ^')
 list2 = [re.sub(r'\^$', '', line).strip() for line in list2]                         # <remove trailing ^/>
 
-print('11/18 : remove ||')
+print('11/19 : remove ||')
 list2 = [re.sub(r'\|\|', '', line).strip() for line in list2]                        # <remove ||/>
 
-print('12/18 : remove leading 0.0.0.0 ')
+print('12/19 : remove leading 0.0.0.0 ')
 list2 = [re.sub(r'0\.0\.0\.0 ', '', line).strip() for line in list2]                 # <remove leading '0.0.0.0 (dns style filter)'/>
 
-print('13/18 : remove leading 127.0.0.1 ')
+print('13/19 : remove leading 127.0.0.1 ')
 list2 = [re.sub(r'127\.0\.0\.1 ', '', line).strip() for line in list2]               # <remove leading '127.0.0.1 (dns style filter)'/>
 
-print('14/18 : remove leading ::1 ')
+print('14/19 : remove leading ::1 ')
 list2 = [re.sub(r'\:\:1 ', '', line).strip() for line in list2]                      # <remove leading '::1 (dns style filter)'/>
 
-print('15/18 : remove items with $badfilter')
+print('15/19 : remove items with $badfilter')
 list2 = [line for line in list2 if not(re.search(r'[,\$]badfilter', line))]          # <remove items with $badfilter/>
 
-print('16/18 : ensure $csp=all')
+print('16/19 : ensure $csp=all')
 list2 = [re.sub(r'.*\$csp=.*', '*$csp=all', line) for line in list2]                 # <ensure *$csp=all'/>
 
-print('17/18 : remove items with length < 2')
+print('17/19 : remove items with length < 2')
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
 
-print('18/18 : remove items leaded by localhost')
+print('18/19 : remove items leaded by localhost')
 list2 = [line for line in list2 if line[0:8] != 'localhost']                         # <remove items leaded by localhost />
+
+print('19/19 : generalize cosmetic filters (*##)')
+list2 = [re.sub(r'^.*(?=##)', '*', line) for line in list2]                          # <generalize cosmetic filters (*##)'/>
 
 print(
     '\n',
