@@ -28,7 +28,6 @@ print(
     '# output: <3words_domain_list> textfile, A-Z by @.@',            '\n',
     '# output: <compiled_block_list> textfile, sorted, deduplicated', '\n',
     '# ============================================================', '\n',
-                                                                      '\n'
     )
 
 # <get filter url sources from file, dedup and sort>
