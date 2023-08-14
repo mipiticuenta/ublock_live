@@ -95,8 +95,10 @@ list2 = (
 print(' 5/18 : remove items leaded by ****::*')
 list2 = [re.sub(r'....\:\:[0-9].*', '', line) for line in list2]                     # <remove IP6 addresses/>
 
-print(' 6/18 : remove IP addresses')
+print(' 6/18 : remove IP addresses (complete or uncomplete)')
 list2 = [re.sub(r'[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+.*', '', line) for line in list2]    # <remove IP4 addresses/>
+list2 = [re.sub(r'^[0-9]+\.[0-9]+\.[0-9]+\.$', '', line) for line in list2]          # <remove IP4 addresses/>
+list2 = [re.sub(r'^[0-9]+\.[0-9]+\..$', '', line) for line in list2]                 # <remove IP4 addresses/>
 
 print(' 7/18 : remove www.')
 list2 = [re.sub(r'www\.', '', line).strip() for line in list2]                       # <remove www./>

@@ -3,8 +3,19 @@
 ! Expires: 1 day
 ! Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list
 ! 
+
 (?<![a-z])px
 (fls|unagi|aan)[a-z0-9]+amazon
+(https?:\/\/)104\.154\..{100,}
+(https?:\/\/)104\.197\..{100,}
+(https?:\/\/)104\.198\..{100,}
+(https?:\/\/)130\.211\..{100,}
+(https?:\/\/)142\.91\.159\..{100,}
+(https?:\/\/)213\.32\.115\..{100,}
+(https?:\/\/)216\.21\..{100,}
+(https?:\/\/)217\.182\.11\..{100,}
+(https?:\/\/)51\.195\.31\..{100,}
+://f\.nordiskemedier\.dk/2[a-z0-9]{12,}\.(jpg|png|jpeg)
 [^a-z0-9]((browser|self|v10)\.events|settings\-win|vortex|vortex\-win)\.data\.microsoft[^a-z]
 [^a-z0-9](acc|push)engage[^a-z]
 [^a-z0-9](adblockana|analogana|crash|fitana|gameana|matherana|siteimproveana|tap|wowana)lytics[^a-z]
@@ -328,10 +339,16 @@
 [^a-z0-9]ztat[^a-z]
 [^a-z]gpt
 [^abs]log[0-9]?s?(ge)?(ging)?-_=&\?/\.]
+^(https?://)?[a-z]{10,12}\.easy\.co($|/.*$)
+^https?:\/\/.*(com|net|top|xyz)\/(bundle|warning|style|bootstrap|brand|reset|jquery-ui|styles|error|logo|index|favicon|star|header)\.(png|css)\?[a-za-z0-9]{30,}.*
+^https?:\/\/.*\/easylist\/[0-9]{5}
 adse?rve?r?[0-9]*[-_=~/\?\.]
 adsystem[-_/=~&\\?\\.]
 affl?s?[0-9]*[^a-z]
+afiliasi/*/banners
 anal[yi]t[iy]cs[-_&\?/\.]
+anuncy/*/ads
+banners.*/go/page
 beacon[^a-z]
 cli?ck[^a-z]
 cmp[^a-z]
@@ -343,6 +360,8 @@ experiment.*flag
 faceboo?k
 fb[^a-z0-9]
 geo.?location
+https\:\/\/nieuwsfiets\.nu\/wp-content\/uploads\/.*\/.*(?:banner-(?!mis|tip).*|\.gif)
+images/*_ads
 metrics[^a-z]
 notif(?!iy)(?!d)[^a-z]
 notifications?[^a-z]
@@ -357,6 +376,7 @@ reklam[-_/=~&\\?\\.]
 service.?worker
 socials?[0-9]?[^a-z]
 srv-pv
+static/*/ads
 subscri.*[^a-z0-9]
 tags?[0-9]*[^a-z]
 ue(.?comments?|.?data|.?login|.?nydus|.?piano|.?userpanel|.?utils)
