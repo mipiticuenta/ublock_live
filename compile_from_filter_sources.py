@@ -126,7 +126,7 @@ list2 = [re.sub(r'\:\:1 ', '', line).strip() for line in list2]                 
 print('15/18 : remove items with $badfilter')
 list2 = [line for line in list2 if not(re.search(r'[,\$]badfilter', line))]          # <remove items with $badfilter/>
 
-print('16/18 : remove items with $badfilter')
+print('16/18 : ensure $csp=all')
 list2 = [re.sub(r'.*\$csp=.*', '*$csp=all', line) for line in list2]                 # <ensure *$csp=all'/>
 
 print('17/18 : remove items with length < 2')
