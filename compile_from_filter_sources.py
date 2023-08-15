@@ -140,11 +140,11 @@ list2 = [re.sub(r'.*\$csp=.*', '*$csp=all', line) for line in list2]            
 print('18/21 : remove denyallow, popup, popunder, xhr, script, frame filters and add domains')
 
 list2s = (
-    [line for line in list2 if re.sub(r'^\*\$.*denyallow.*domain=', '', line)]       # <remove denyallow filters and add domains'/>
-    [line for line in list2 if re.sub(r'^\*\$.*popup.*domain=', '', line)]           # <remove popup filters and add domains'/>
-    [line for line in list2 if re.sub(r'^\*\$.*popuuder.*domain=', '', line)]        # <remove popunder filters and add domains'/>
-    [line for line in list2 if re.sub(r'^\*\$.*xhr.*domain=', '', line)]             # <remove xhr filters and add domains'/>
-    [line for line in list2 if re.sub(r'^\*\$.*script.*domain=', '', line)]          # <remove script filters and add domains'/>
+    [line for line in list2 if re.sub(r'^\*\$.*denyallow.*domain=', '', line)] +     # <remove denyallow filters and add domains'/>
+    [line for line in list2 if re.sub(r'^\*\$.*popup.*domain=', '', line)] +         # <remove popup filters and add domains'/>
+    [line for line in list2 if re.sub(r'^\*\$.*popuuder.*domain=', '', line)] +      # <remove popunder filters and add domains'/>
+    [line for line in list2 if re.sub(r'^\*\$.*xhr.*domain=', '', line)] +           # <remove xhr filters and add domains'/>
+    [line for line in list2 if re.sub(r'^\*\$.*script.*domain=', '', line)] +        # <remove script filters and add domains'/>
     [line for line in list2 if re.sub(r'^\*\$.*frame.*domain=', '', line)]           # <remove frame filters and add domains'/>
     )
 
