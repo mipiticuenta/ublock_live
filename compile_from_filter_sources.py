@@ -137,8 +137,13 @@ list2 = [line for line in list2 if not(re.search(r'[,\$]badfilter', line))]     
 print('17/21 : ensure $csp=all')
 list2 = [re.sub(r'.*\$csp=.*', '*$csp=all', line) for line in list2]                 # <ensure *$csp=all'/>
 
-print('18/21 : remove denyallow filters')
-list2 = [re.sub(r'.*denyallow=.*', '', line) for line in list2]                      # <remove denyallow filters'/>
+print('18/21 : remove denyallow, popup, popunder, xhr, script, frame filters and add domains')
+list2 = [re.sub(r'^\*\$.*denyallow.*domain=.*', '', item).split('|')[0] for line in list2 for item in line]         # <remove denyallow filters and add domains'/>
+list2 = [re.sub(r'^\*\$.*popup.*domain=.*', '', item).split('|')[0] for line in list2 for item in line]             # <remove popup filters and add domains'/>
+list2 = [re.sub(r'^\*\$.*popuuder.*domain=.*', '', item).split('|')[0] for line in list2 for item in line]          # <remove popunder filters and add domains'/>
+list2 = [re.sub(r'^\*\$.*xhr.*domain=.*', '', item).split('|')[0] for line in list2 for item in line]               # <remove xhr filters and add domains'/>
+list2 = [re.sub(r'^\*\$.*script.*domain=.*', '', item).split('|')[0] for line in list2 for item in line]            # <remove script filters and add domains'/>
+list2 = [re.sub(r'^\*\$.*frame.*domain=.*', '', item).split('|')[0] for line in list2 for item in line]            # <remove frame filters and add domains'/>
 
 print('19/21 : remove items with length < 2')
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
