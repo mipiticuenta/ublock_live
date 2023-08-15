@@ -111,24 +111,25 @@ print(' 9/20 : remove trailing $third-party and $3p')
 list2 = [re.sub(r'\$third-party$', '', line).strip() for line in list2]              # <remove trailing $third-party/>
 list2 = [re.sub(r'\$3p$', '', line).strip() for line in list2]                       # <remove trailing $3p/>
 
-print('10/20 : remove trailing ^')
+print('10/20 : remove trailing $popup')
+list2 = [re.sub(r'(?<=.)\$popup$', '', line).strip() for line in list2]              # <remove trailing $popup/>
+
+print('11/20 : remove trailing ^')
 list2 = [re.sub(r'\^$', '', line).strip() for line in list2]                         # <remove trailing ^/>
 
-print('11/20 : remove ||')
+print('12/20 : remove ||')
 list2 = [re.sub(r'\|\|', '', line).strip() for line in list2]                        # <remove ||/>
 
-print('12/20 : remove leading :// and :port')
+print('13/20 : remove leading ::1 (dns style filter), :// and :port')
+list2 = [re.sub(r'\:\:1 ', '', line).strip() for line in list2]                       # <remove leading '::1 (dns style filter)'/>
 list2 = [re.sub(r'^\://', '', line).strip() for line in list2]                        # <remove leading :///>
 list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                   # <remove leading :port/>
 
-print('13/20 : remove leading 0.0.0.0 ')
+print('14/20 : remove leading 0.0.0.0 ')
 list2 = [re.sub(r'0\.0\.0\.0 ', '', line).strip() for line in list2]                 # <remove leading '0.0.0.0 (dns style filter)'/>
 
-print('14/20 : remove leading 127.0.0.1 ')
+print('15/20 : remove leading 127.0.0.1 ')
 list2 = [re.sub(r'127\.0\.0\.1 ', '', line).strip() for line in list2]               # <remove leading '127.0.0.1 (dns style filter)'/>
-
-print('15/20 : remove leading ::1 ')
-list2 = [re.sub(r'\:\:1 ', '', line).strip() for line in list2]                      # <remove leading '::1 (dns style filter)'/>
 
 print('16/20 : remove items with $badfilter')
 list2 = [line for line in list2 if not(re.search(r'[,\$]badfilter', line))]          # <remove items with $badfilter/>
