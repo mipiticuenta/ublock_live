@@ -148,7 +148,7 @@ list2s = (
     [line for line in list2 if re.sub(r'^\*\$.*frame.*domain=', '', line)]           # <remove frame filters and add domains'/>
     )
 
-list2 = list2 - list2s
+list2 = set(list2) - set(list2s)
 
 list2s = [line.split('|') for line in list2s]                                        # <flatten list2'/>
 list2s = [item[0] for line in list2s for item in line]                               # <flatten list2'/>
