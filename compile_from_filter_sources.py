@@ -139,16 +139,21 @@ list2 = [re.sub(r'.*\$csp=.*', '*$csp=all', line) for line in list2]            
 
 print('18/21 : remove denyallow, popup, popunder, xhr, script, frame filters and add domains')
 
-list2 = [re.sub(r'^\*\$.*denyallow.*domain=', '', line) for line in list2]           # <remove denyallow filters and add domains'/>
-list2 = [re.sub(r'^\*\$.*popup.*domain=', '', line) for line in list2]               # <remove popup filters and add domains'/>
-list2 = [re.sub(r'^\*\$.*popuuder.*domain=', '', line) for line in list2]            # <remove popunder filters and add domains'/>
-list2 = [re.sub(r'^\*\$.*xhr.*domain=', '', line) for line in list2]                 # <remove xhr filters and add domains'/>
-list2 = [re.sub(r'^\*\$.*script.*domain=', '', line) for line in list2]              # <remove script filters and add domains'/>
-list2 = [re.sub(r'^\*\$.*frame.*domain=', '', line) for line in list2]               # <remove frame filters and add domains'/>
-list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
+list2s = (
+    [line for line in list2 if re.sub(r'^\*\$.*denyallow.*domain=', '', line)]       # <remove denyallow filters and add domains'/>
+    [line for line in list2 if re.sub(r'^\*\$.*popup.*domain=', '', line)]           # <remove popup filters and add domains'/>
+    [line for line in list2 if re.sub(r'^\*\$.*popuuder.*domain=', '', line)]        # <remove popunder filters and add domains'/>
+    [line for line in list2 if re.sub(r'^\*\$.*xhr.*domain=', '', line)]             # <remove xhr filters and add domains'/>
+    [line for line in list2 if re.sub(r'^\*\$.*script.*domain=', '', line)]          # <remove script filters and add domains'/>
+    [line for line in list2 if re.sub(r'^\*\$.*frame.*domain=', '', line)]           # <remove frame filters and add domains'/>
+    )
 
-list2 = [line.split('|') for line in list2]                                          # <flatten list2'/>
-list2 = [item[0] for line in list2 for item in line if len(line) > 0]                # <flatten list2'/>
+list2 = list2 - list2s
+
+list2s = [line.split('|') for line in list2s]                                        # <flatten list2'/>
+list2s = [item[0] for line in list2s for item in line]                               # <flatten list2'/>
+
+list2 = sorted[set(list2) | set(list2s)]
 
 print('19/21 : remove items with length < 2')
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
