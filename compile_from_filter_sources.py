@@ -138,11 +138,22 @@ print('17/21 : ensure $csp=all')
 list2 = [re.sub(r'.*\$csp=.*', '*$csp=all', line) for line in list2]                 # <ensure *$csp=all'/>
 
 print('18/21 : remove denyallow, popup, popunder, xhr, script, frame filters and add domains')
+
 list2 = [re.sub(r'^\*\$.*denyallow.*domain=', '', line) for line in list2]           # <remove denyallow filters and add domains'/>
+list2 = [item.split('|')[0] for line in list2 for item in line]                      # <flatten list2'/>
+
 list2 = [re.sub(r'^\*\$.*popup.*domain=', '', line) for line in list2]               # <remove popup filters and add domains'/>
+list2 = [item.split('|')[0] for line in list2 for item in line]                      # <flatten list2'/>
+
 list2 = [re.sub(r'^\*\$.*popuuder.*domain=', '', line) for line in list2]            # <remove popunder filters and add domains'/>
+list2 = [item.split('|')[0] for line in list2 for item in line]                      # <flatten list2'/>
+
 list2 = [re.sub(r'^\*\$.*xhr.*domain=', '', line) for line in list2]                 # <remove xhr filters and add domains'/>
+list2 = [item.split('|')[0] for line in list2 for item in line]                      # <flatten list2'/>
+
 list2 = [re.sub(r'^\*\$.*script.*domain=', '', line) for line in list2]              # <remove script filters and add domains'/>
+list2 = [item.split('|')[0] for line in list2 for item in line]                      # <flatten list2'/>
+
 list2 = [re.sub(r'^\*\$.*frame.*domain=', '', line) for line in list2]               # <remove frame filters and add domains'/>
 list2 = [item.split('|')[0] for line in list2 for item in line]                      # <flatten list2'/>
 
