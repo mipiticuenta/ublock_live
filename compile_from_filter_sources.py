@@ -146,7 +146,7 @@ list2 = [re.sub(r'^\*\$.*xhr.*domain=', '', line) for line in list2]            
 list2 = [re.sub(r'^\*\$.*script.*domain=', '', line) for line in list2]              # <remove script filters and add domains'/>
 list2 = [re.sub(r'^\*\$.*frame.*domain=', '', line) for line in list2]               # <remove frame filters and add domains'/>
 
-list2 = [item.split('|') for line in list2]                                          # <flatten list2'/>
+list2 = [line.split('|') for line in list2]                                          # <flatten list2'/>
 list2 = [item[0] for line in list2 for item in line]                                 # <flatten list2'/>
 
 print('19/21 : remove items with length < 2')
