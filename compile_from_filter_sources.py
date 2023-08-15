@@ -285,7 +285,7 @@ list2 = sorted(set(list2) | set(list3r) | set(list3))    # <rebuild full list wi
 print(
     '\n',
     '{:,}'.format(len(list2)),
-    'lines remaining after 4th pass',
+    'lines remaining after compilation',
     '\n'
     )
 
