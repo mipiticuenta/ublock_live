@@ -154,7 +154,7 @@ list2s = [re.sub(r'.*domain=', '', line).strip() for line in list2s]
 list2s = [line.split('|') for line in list2s]                                        # <flatten list2'/>
 list2s = [item[0] for line in list2s for item in line]                               # <flatten list2'/>
 
-list2 = sorted[set(list2) | set(list2s)]
+list2 = sorted(set(list2) | set(list2s))
 
 print('19/21 : remove items with length < 2')
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
