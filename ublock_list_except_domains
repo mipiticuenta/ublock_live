@@ -2899,9 +2899,6 @@
 /(https?:\/\/)217\.182\.11\..{100,}/
 /(https?:\/\/)51\.195\.31\..{100,}/
 /(https?:\/\/)\w{30,}\.me\/\w{30,}\./$script,third-party
-/*-*-*.$script,third-party
-/*-*-*.html$subdocument,third-party
-/*-*-*.js
 /*-mainos-$image,domain=futisfani.com|kiekkofani.com|omalahio.fi|penkkiurheilu.com|uutisankka.com
 /*.*pix.xyz^$script
 /*.json|$third-party,xmlhttprequest,domain=fenglish.site|ling-online.com|mp4upload.com
@@ -3738,6 +3735,7 @@
 /^(?![a-za-z0-9\-]+\:\/+([^\/\:\.]+\.)*(google|gstatic|googleapis|jquery|youtube|youtubekids|youtube-nocookie|ytimg|facebook|fbsbx|twitter|twimg|instagram|cdninstagram|pinterest|pinimg|tumblr|giphy|vimeo|vimeocdn|dailymotion|flickr|staticflickr|soundcloud|sndcdn|scribd|scribdassets|tiktok|tiktokcdn|ttwstatic|muscdn|ibytedtos|sharethis|addthis|addthisedge|addthiscdn|reddit|redditmedia|redditstatic|redditgifts|linkedin|licdn|fontawesome|image-maps|cloudflare|bootstrapcdn|unpkg|cdnjs|stackpathdns|stackpathcdn|maxcdn|maxcdn-edge|netdna-ssl|netdna-cdn|kxcdn|ssl-cdn|muicss|tinymce|createjs|github|githubusercontent|aspnetcdn|azure|amazonaws|awswaf|elasticbeanstalk|rackcdn|netlify|jwplayer|jwpcdn|jwpltx|jwpsrv|jwplatform|brightcove|brightcovecdn|flowplayer|foliovision|streamable|kaltura|streamtheworld|mixcloud|bandcamp|bcbits|spotify|omnystudio|omnycontent|iheart|spreaker|podbean|buzzsprout|simplecast|podtail|apple|nobexpartners|vocaroo|embedly|iframely|snapwidget|thinglink|infogram|highcharts|airtable|printfriendly|algolianet|gravatar|svgur|svgshare|imgur|imgflip|gifer|gfycat|tenor|disqus|disquscdn|disqusservice|oneall|oneallcdn|tapatalk|tapatalk-cdn|mapbox|maptiler|mapquest|arcgis|arcgisonline|esri|here|ted|tedcdn|kickstarter|riddle|strawpoll|9gag|9cache|unsplash|freepik|imageshack|tinypic|photobox|photobucket|imgbox|imagebam|gifyu|makeagif|reactiongifs|gifbin|gif-finder|pastebin|rawgit|rawgithub|knockoutjs|gridstackjs|ravenjs|liveleak|metacafe|mcstatic|ign|ignimgs|365scores|buzzfeed|digg|stumbleupon|mix|getpocket|blogspot|wordpress|wp|videopress|wptavern|livejournal|withgoogle|googlegroups|googleusercontent|googlevideo|ggpht|noembed|appspot|firebaseio|firebaseapp|libring|hcaptcha|paypal|paypalobjects|amazon|media-amazon|media-imdb|ebay|microsoft|live|bing|msn|yahoo|yimg|yahooapis|duckduckgo|yandex|webflow|rtlcss|dropbox|dropboxusercontent|dropboxstatic|dropbox-dns|timeanddate|momentjs|weather|accuweather|theweathernetwork|windy|sat24|rainviewer|uvlens|statcounter|adobe|onesignal|livefyre|pushwoosh|tinypass|addtoany|addthisevent|addevent|addtocalendar|sumo|sumome|chatango|bitly|tinyurl|ipcamlive|steamstatic|playstation|discord|discordapp|mixer|odysee|rumble|bitchute|parler|gab|slideplayer|kym-cdn|gyazo|icons8|iconfinder|iconarchive|iconscout|flaticon|kindpng|pngitem|prntscr|deviantart|firefoxusercontent|box|feedly|feedburner|phpbb|vk|userapi|whatsapp|vroptimal-3dx-assets|bbc|cnn|go|nytimes|nyt|today|gofundme|fifa|uefa|nba|turner|xkcd|mtvnservices|cc|tmz|bugsnag|zoro|hebcal|fontsproject|kayma|kayma-dashboards|kayma-insights|kampyle|vicomi|openweb|cincopa|avplayer|vidnt|peer5|h-cdn|bynetcdn|cdnwiz|best-tv|viewbix|streamrail|smv-cdn|cloudvideoplatform|dxmcdn|dxmdp|waze|hunchbots|jeeng|cloudinary|sphereup|poloriz|applicaster|cloudwm|cloudwm-waf|negishim|accessibe|accessibeapp|acsbap|vollotech|mk-sense|allyable|shortaudition|spaceil|clear-map|segmanta|opinionstage|playbuzz|apester|qmerce|outbrain|taboola|taboolasyndication|googleoptimize|google-analytics|googletagservices|googletagmanager|googleadservices|googlesyndication|cloudflareinsights|chartbeat|scorecardresearch|serving-sys|exposebox|dynamicyield|coralogix|browsiprod|ip-api|petametrics|cooladata|hotjar|pusher|carto|fortvision|fortcdn|getsentry|trackjs|gamezhero|nick|nickjr|teennick|travelriskmap|sinclairstoryline|fresnobee|nbcchicago|magazina-il|raxcdn|pagewiz|pas-rahav|aniview|adnxs|sekindo)\.com\.?([\/\:]|$))^[a-za-z0-9\-]+\:\/+[^\/\:]+\.com\.?([\/\:]|$)/$third-party,domain=6days.walla.co.il|animals.walla.co.il|astrology.walla.co.il|b.walla.co.il|buzzit.walla.co.il|calendar.walla.co.il|cars.walla.co.il|celebs.walla.co.il|e.walla.co.il|elections.walla.co.il|euro.walla.co.il|fashion.walla.co.il|finance.walla.co.il|food.walla.co.il|forums.walla.co.il|fun.walla.co.il|healthy.walla.co.il|home.walla.co.il|judaism.walla.co.il|kids.walla.co.il|mag.walla.co.il|maps.walla.co.il|milon.walla.co.il|movies.walla.co.il|mundial.walla.co.il|nadlan.walla.co.il|news.walla.co.il|nick.walla.co.il|olympics.walla.co.il|search.walla.co.il|sports.walla.co.il|tags.walla.co.il|tech.walla.co.il|translate.walla.co.il|travel.walla.co.il|tv-guide.walla.co.il|tv.walla.co.il|usaelections.walla.co.il|viva.walla.co.il|vod.walla.co.il|weather.walla.co.il|walla.co.il
 /^(?![a-za-z0-9\-]+\:\/+([^\/\:]+\.(il|com|net|org|gov|mil|edu|int|(ac|gov|nhs)\.uk|(google)|(google)\.(com?\.)?[a-za-z]{2,3})|[0-9\.]+|([^\/\:\.]+\.)*(omny\.fm|anchor\.fm|simplecast\.fm|castbox\.fm|github\.io|socket\.io|codepen\.io|polyfill\.io|embed\.ly|iframe\.ly|infogr\.am|t\.me|flourish\.studio|flourish\.rocks|uri\.sh|po\.st|plyr\.io|piano\.io|periscope\.tv|pscp\.tv|vine\.co|popkey\.co|tenor\.co|redd\.it|ibb\.co|vgy\.me|postimg\.cc|imageshack\.us|prnt\.sc|imagesup\.co|weserv\.nl|telesco\.pe|powr\.io|pippa\.io|last\.fm|scdn\.co|tg\.dev|adobe\.io|viafoura\.co|lmao\.ninja|disease\.sh|web\.app|twitch\.tv|rmbl\.ws|stories\.sc|vid\.me|spot\.im|spots\.im|inthegame\.io|cybercdn\.live|h-cdn\.co|minute\.ly|vttp\.co|tldw\.me|feeder\.co|del\.icio\.us|telegram\.me|yandex\.ru|dailymail\.co\.uk|dailystar\.co\.uk|bbc\.net\.uk|bbc\.co\.uk|cnn\.io|bit\.ly|goo\.gl|g\.co|youtu\.be|t\.co|fb\.me|m\.me|instagr\.am|wa\.me|amzn\.to|wp\.me|git\.io|docdro\.id|arcg\.is|ow\.ly|disq\.us|discord\.gg|tiny\.cc|ex\.co|jogo\.studio|nagishly\.co|user1st\.info|knesset\.tv|knesset\.live|walla\.cloud|103\.fm|nickjr\.tv|amagi\.tv|logidea\.info|zoomanalytics\.co|firstimpression\.io|rtk\.io|trb\.tv|ren\.tv|atom-data\.io|sentry\.io|outbid\.io))\.?([\/\:]|$))^[^\/\:\.]+\:\/+[^\/\:\.]/$third-party,domain=6days.walla.co.il|animals.walla.co.il|astrology.walla.co.il|b.walla.co.il|buzzit.walla.co.il|calendar.walla.co.il|cars.walla.co.il|celebs.walla.co.il|e.walla.co.il|elections.walla.co.il|euro.walla.co.il|fashion.walla.co.il|finance.walla.co.il|food.walla.co.il|forums.walla.co.il|fun.walla.co.il|healthy.walla.co.il|home.walla.co.il|judaism.walla.co.il|kids.walla.co.il|mag.walla.co.il|maps.walla.co.il|milon.walla.co.il|movies.walla.co.il|mundial.walla.co.il|nadlan.walla.co.il|news.walla.co.il|nick.walla.co.il|olympics.walla.co.il|search.walla.co.il|sports.walla.co.il|tags.walla.co.il|tech.walla.co.il|translate.walla.co.il|travel.walla.co.il|tv-guide.walla.co.il|tv.walla.co.il|usaelections.walla.co.il|viva.walla.co.il|vod.walla.co.il|weather.walla.co.il|walla.co.il
 /^(https?://)?[a-z]{10,12}\.easy\.co($|/.*$)/
+/^[0-9]{4,}\.[a-z]+/
 /^[a-za-z0-9\-]+\:\/+[0-9\.]+([\/\:]|$)/$image,media,script,stylesheet,subdocument,third-party,domain=6days.walla.co.il|animals.walla.co.il|astrology.walla.co.il|b.walla.co.il|buzzit.walla.co.il|calendar.walla.co.il|cars.walla.co.il|celebs.walla.co.il|e.walla.co.il|elections.walla.co.il|euro.walla.co.il|fashion.walla.co.il|finance.walla.co.il|food.walla.co.il|forums.walla.co.il|fun.walla.co.il|healthy.walla.co.il|home.walla.co.il|judaism.walla.co.il|kids.walla.co.il|mag.walla.co.il|maps.walla.co.il|milon.walla.co.il|movies.walla.co.il|mundial.walla.co.il|nadlan.walla.co.il|news.walla.co.il|nick.walla.co.il|olympics.walla.co.il|search.walla.co.il|sports.walla.co.il|tags.walla.co.il|tech.walla.co.il|translate.walla.co.il|travel.walla.co.il|tv-guide.walla.co.il|tv.walla.co.il|usaelections.walla.co.il|viva.walla.co.il|vod.walla.co.il|weather.walla.co.il|walla.co.il
 /^\w+://[0-9a-z]{11}\.taxliencode\.com//$1p,script
 /^\w+://[0-9a-z]{12}\.adria\.gg//$1p,script
@@ -22589,7 +22587,6 @@
 00eeekk.com//html5/activitypage/
 01234movies.
 0123movie.
-0123movie.*
 0123movies.
 01fmovies.com/mmmasdfl-asd$xhr,1p
 01net.com/app/uploads/2023/03/nordvpn-tesla-side.jpg
@@ -22693,7 +22690,6 @@
 1.im.cz/ad/gemius.js
 1.vg
 10-81.s.cdn15.com/cr/38440/
-10.10.34.
 10000xing.cn/images/we
 1000site.ir/asset/media/banner
 1000ukg.kz/uploads/banner/
@@ -66453,12 +66449,6 @@ zztxdown.
 zzup.com/ad.php
 zzzezeroe.
 zzzpooeaz-
-~kat.at
-~kat.rip
-~kickass.codes
-~kickass.website
-~paparazzi.ru
-~zvezdi.ru
 örnsköldsviksgymnasium.se
 š427.biz
 мвд.рф
