@@ -341,8 +341,12 @@
 [^abs]log[0-9]?s?(ge)?(ging)?-_=&\?/\.]
 ^(https?://)?[a-z]{10,12}\.easy\.co($|/.*$)
 ^[0-9]{4,}\.[a-z]+
+^http(s):\/\/sure-\d{1,3}.(com|link)/img
+^https:\/\/([a-z]+\.)?sythe\.org\/[\w\w]{30,}
 ^https?:\/\/.*(com|net|top|xyz)\/(bundle|warning|style|bootstrap|brand|reset|jquery-ui|styles|error|logo|index|favicon|star|header)\.(png|css)\?[a-za-z0-9]{30,}.*
 ^https?:\/\/.*\/easylist\/[0-9]{5}
+^https?:\/\/vitamiiin\.com\/(?!wp-content|uploads|plugins|themes)(.*)
+^https\:\/\/dutchitchannel\.nl\/media\/\d{6}\/\d{10}\.jpg$
 adse?rve?r?[0-9]*[-_=~/\?\.]
 adsystem[-_/=~&\\?\\.]
 affl?s?[0-9]*[^a-z]
@@ -376,6 +380,7 @@ notif(?!iy)(?!d)[^a-z]
 notifications?[^a-z]
 pagead
 pakkerlevering
+plugin/advertisement
 pop(?!ul)
 pre.?roll
 privacy[^a-z]

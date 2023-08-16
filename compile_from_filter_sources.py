@@ -216,6 +216,12 @@ list2 = [re.sub(r'(?<=\w)\/wp\-content\/uploads/.*', '', line) for line in list2
 print('26/26 : remove leading ~')
 list2 = [re.sub(r'^~', '', line) for line in list2]                                  # <remove leading ~/>
 
+print('26/26 : remove trailing .php?')
+list2 = [re.sub(r'\.php\?$', '.', line) for line in list2]                           # <remove trailing .php?/>
+
+print('26/26 : remove trailing $image')
+list2 = [re.sub(r'(?<=.)[\^|\|]?\$image$', '', line) for line in list2]              # <remove trailing $image/>
+
 print(
     '\n',
     '{:,}'.format(len(list2)),
