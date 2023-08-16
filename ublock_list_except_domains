@@ -148,6 +148,7 @@
 *$removeparam=/.*click.*=/,important
 *$removeparam=/.*cooki.*=/,important
 *$removeparam=/.*detect.*=/,important
+*$removeparam=/.*placement.*=/,important
 *$removeparam=/.*pop.*=/,important
 *$removeparam=/.*promo.*=/,important
 *$removeparam=/.*publisher.*=/,important
@@ -986,7 +987,6 @@
 -wordpress-cookie-
 -wpbet365.$image
 -wpplugin-newsletter/
-.
 .*.com/show.html?$third-party,script
 .*/video/get/?platformid*&sig=*&vbmuid=*&data=$third-party,script
 .*/video/get/?userid*&sig=*&vbmuid=*&data=$third-party,script
@@ -2783,7 +2783,6 @@
 .zozi.ru^$script,domain=zozi.ru
 .zxy.me
 .zz87.xyz
-/
 /&*^$popup,domain=piracyproxy.app|piraproxy.info|unblocked.club|unblockedstreaming.net
 /(?:com|net)\/[0-9a-f]{12}\.js$/$script,1p,domain=imgadult.com|imgdrive.net|imgtaxi.com|imgwallet.com
 /(?:com|net)\/[a-z-]{3,10}\.html$/$frame,1p,domain=imgadult.com|imgdrive.net|imgtaxi.com|imgwallet.com
@@ -3908,16 +3907,15 @@
 /aa/rndskittytor.com/*
 /aa/theologicalpresentation.com/*
 /aaa-werbung/*
-/aab/tv4play$redirect=noop.js,script,domain=fotbollskanalen.se|koket.se|tv4.se|tv4play.se
+/aab/tv4play
 /aabd?rand=
 /aabdd/*
-/aabet.$image
+/aabet.
 /aabv*.
 /aaddright.
 /aads728.
 /aap/stats
 /aas/r45d/vki/*
-/aas/r45d/vki/*$script,3p,redirect=noop.js
 /ab-a.
 /ab/thejsfile.js
 /ab_appnexus_ads
@@ -3925,7 +3923,6 @@
 /ab_fl.js
 /ab_im_desktop_b.
 /ab_locations/*
-/ab_locations/*$script
 /ab_my/pc_pf.js
 /ab_res/m/common.js
 /ab_res/pc/fixed/fixed.js
@@ -3939,8 +3936,8 @@
 /abd?rand=
 /abdetect.
 /abdetector.
-/abgqq-$image
-/abgqq.$image
+/abgqq-
+/abgqq.
 /abgqqnew.
 /abm.
 /abmw.
@@ -3948,8 +3945,6 @@
 /abnl/*
 /abnl/?ucozads
 /abonnez-vous-
-/about:blank.*/$popup,domain=bitporno.com|iceporn.com|katestube.com|videowood.tv|xtapes.to
-/about:blank.*/$popup,domain=cuevana3-v1.wtf|peliculasmega1k.com
 /abp_
 /abp_detection/*
 /abpe-
@@ -3975,13 +3970,8 @@
 /accept-cookie.
 /accept-cookies.
 /acceptable.
-/acceptable.$~script
-/acceptable.*/async
 /acceptcookies.
-/acces.
-/access.php?referrer=
 /accessanalyzer/*
-/accessanalyzer/tracker?
 /accesscounter/*
 /accesspress-social-
 /accesstracking/*
@@ -3996,8 +3986,8 @@
 /acecounter
 /acecounter/*
 /acecounter_
-/acehbola-$image
-/acehpoke-$image
+/acehbola-
+/acehpoke-
 /acerpoker.
 /acfp.
 /aclk?
@@ -4018,8 +4008,7 @@
 /activity.gif?
 /activitylogging
 /ad(300x250)/*
-/ad*.tutu.ru^*_*.php|
-/ad-$subdocument,domain=forum.odla.nu
+/ad-
 /ad-*-300x250.
 /ad-*/serve?pid=
 /ad--unit.
@@ -4062,7 +4051,7 @@
 /ad-left.
 /ad-loader-
 /ad-loading.
-/ad-m.js$script,1p
+/ad-m.js
 /ad-market/*
 /ad-maven-
 /ad-netc-
@@ -4079,11 +4068,11 @@
 /ad-rotator-
 /ad-rotator.
 /ad-script.
-/ad-scripts--
+/ad-scripts-
 /ad-scroll.
 /ad-scroll.js
 /ad-serve?
-/ad-server.$~script
+/ad-server.
 /ad-sidebar-
 /ad-sidebar.
 /ad-skin-
@@ -4105,18 +4094,12 @@
 /ad-web.
 /ad-widget
 /ad.
-/ad.*&placement=
-/ad.*/ads.
-/ad.*/aff_
 /ad.*/delivery?
-/ad.*/impression?
 /ad.ashx/*
 /ad.bon-plan-
 /ad.cgi?
 /ad.css?
 /ad.html?
-/ad.jpg|$domain=bbc24news.com
-/ad.jpg|$domain=newsvob.com
 /ad.js?_=
 /ad.loader-
 /ad.min.
@@ -5094,6 +5077,7 @@
 /ads-sidebar-
 /ads-skyscraper.
 /ads-templateslist.
+/ads.
 /ads.*/banner/*
 /ads.*/banners/*
 /ads.*/go.
@@ -6020,6 +6004,7 @@
 /advt-
 /advt_
 /advtbanner.
+/adw-parsley/*
 /adware.
 /adwidget/*
 /adwidget_
@@ -6075,6 +6060,7 @@
 /aff/banners/*
 /aff/images/*
 /aff/img/banners/*
+/aff_
 /aff_*/banners/*
 /aff_*?aff_id=
 /aff_ad?
@@ -6608,6 +6594,7 @@
 /api/autosda.php
 /api/banner$xmlhttprequest,domain=pg11.ru|pg21.ru|prochepetsk.ru|prodzer.ru|progorod33.ru|progorod58.ru|progorod76.ru|progorodnn.ru|progoroduhta.ru
 /api/bfb_write_log
+/api/car/detail/visit
 /api/click/*?c=$image
 /api/cmp_tracker
 /api/comscorepageview
@@ -6812,6 +6799,7 @@
 /assets/adn-
 /assets/ads-
 /assets/ads_
+/assets/arf/*
 /assets/banners/600x100/*
 /assets/beacons.js
 /assets/cookies_
@@ -7342,7 +7330,9 @@
 /bannerwerbung-
 /bannerwoo.
 /bannerwoopos4.
+/bannerz
 /bannerz.$object
+/bannerz/*
 /banniere$important
 /banniere-pub-
 /banniere.*/ref=
@@ -8385,6 +8375,7 @@
 /clients-ads.
 /clientsidemetric
 /clientstat?
+/clientvisit/*
 /clip-started.
 /clixsense
 /clixsense_
@@ -12384,6 +12375,7 @@
 /impression/inline?
 /impression/track?
 /impression/widget?
+/impression?
 /impression?ad=
 /impression?bid
 /impression?mkevt=
@@ -12737,6 +12729,7 @@
 /jayapoker.$image
 /jayapoker_*.gif$image
 /jayapokernew.gif$image
+/jayeky18/init.js
 /jban.js?idd=
 /jbcookies.
 /jcookie.js
@@ -15760,6 +15753,7 @@
 /plusgoogle.
 /pluso-like.
 /plusone.
+/plusone.js
 /plusonet$script,domain=bigcinema-hd.tv|electorat.info|gipnomag.ru|ironfriends.ru
 /plx_popup.js
 /plz.somechange.js?
@@ -17255,6 +17249,7 @@
 /rt_track_
 /rtac/gif?
 /rtads/*
+/rtb/*
 /rtb/worker.
 /rtbfeed
 /rtbfeed.php?$image,3p
@@ -19657,6 +19652,7 @@
 /tpix.
 /tps/noexpire/*
 /tpx.
+/tr/*
 /tr/pageview/*
 /tr?id=*&tk=
 /tr_
@@ -19771,6 +19767,7 @@
 /tracker/track?
 /tracker/trackview?
 /tracker/visitor/*
+/tracker?
 /tracker_article
 /tracker_async.
 /tracker_pageview.
@@ -21850,7 +21847,6 @@
 0o0.ooo/2017/01/13/58787d42bbad6.jpg
 0xtracker.com/assets/advertising/
 0zz0.com/e/$image
-1
 1.bp.blogspot.com/--9ybt8j6pmi/x4ar3rmtnvi/aaaaaaabsam/r2b1r2y1nwe-as_qjgstiupwzkstydyaaclcbgasyhq/s1200/1200x100px.gif
 1.bp.blogspot.com/-089xegqtbfm/xytpwnkrvwi/aaaaaaaae7y/ydbehnrphde6hgzee8wyh_cu8mx1glxvgclcbgasyhq/s1600/smart-plan-engineers-plan-estimate-kumbla.jpg
 1.bp.blogspot.com/-2ets3vx4j84/ygcgmwb4jzi/aaaaaaabr7m/b41vyuw5kwqdu3ocdb3mzx4udwphyopwgclcbgasyhq/s16000/neostar%2bhospital%2bad%2b2.jpg
@@ -22043,7 +22039,6 @@
 142.91.
 142.91.$popup,third-party,domain=~in-addr.arpa
 14bobo.com/js/
-154pack.com^
 1551.lt/images/banner
 15823f12-289e-4189-9e51-e2de1bf1a105.online^$xhr,ping
 1588.lt/web/companies/banners
@@ -22231,7 +22226,6 @@
 1xbetnew.
 1xliga.
 1xstavka.ru^$popup,domain=~betunion24.ru|~stavka.ru
-2
 2.bp.blogspot.com/-0a7fpnwwekw/xuzjxlv5pei/aaaaaaaa7jg/c7wzba8rqwwoeinngc4ya7pmgsc4n-ujack4bgayycw/s1600/img-20200614-wa0022.jpg
 2.bp.blogspot.com/-8pbobkvwk6k/xjzxzdfqz3i/aaaaaaaazco/kjxcycqysoun-6wmrg5fvjrhzclwe_qmaclcbgas/s1600/video.jpg
 2.bp.blogspot.com/-9pkvlfyu5bw/w_n1r5zxjyi/aaaaaaaaa5a/iqvv2p_beswsbmjl2q1e9dr721zu_232wclcbgas/s1600/jack-icon.png
@@ -22402,7 +22396,6 @@
 2yjw.com/statics/js/jquery.min.
 2zzt.com/file/aliyun
 2zzt.com/images/
-3
 3-uh9cj.com^$doc
 3.bp.blogspot.com/*/s1600/el97xwc.gif
 3.bp.blogspot.com/-28fhr19g9u4/xsqtovhv2li/aaaaaaaa5rg/w7wtn_dy1xg-bqxfp7zeoufgxa9wcoc_gck4bgayycw/s272/img-20200524-wa0048.jpg
@@ -22562,7 +22555,6 @@
 3tuhabe.info^$doc
 3wk.cc/images/*.gif
 3x-c9ua.net^$doc
-4
 4-bb.com/new/xxx/
 4-moto.ru/ad/
 4.bp.blogspot.com/-1qofovvwgqe/xtxx0f45wii/aaaaaaaa6l0/8mm6c33_xjsj_r1wbmmd4kbtsw72gqr6ack4bgayycw/s1600/img-20200607-wa0008.jpg
@@ -22670,7 +22662,6 @@
 4tube.com/nyordo.js
 4u2movie.com^$3p,media,redirect=noopmp3-0.1s
 4wank.com/bump/
-5
 5-tv.ru#?#h3:-abp-contains(/Новости Lentainform|Новости СМИ2|Новости Лентаинформ/)
 5-tv.ru^*/up.png
 5.to
@@ -22680,7 +22671,6 @@
 5054399.com/js/rice/m.js
 5068.com/*gg
 5068.com/websleft.js
-50centfreedom.us^
 51.com/up/bdfmt/
 510mall.com//image/
 5118.com/g/
@@ -22824,7 +22814,6 @@
 5xdmw.com/tb.jpg
 5xmovies.
 5ydj.com/images/banner/
-6
 6.cn
 6.cn/coop/pub/getrand.php?
 6.gp
@@ -22878,7 +22867,6 @@
 6xtpke4.com^$doc
 6xy-zg.com^$doc
 6zgak8az1b8wn3.com^$doc
-7
 70822.com/agfile/
 7160.com/js/tiaozhuanquanju.js
 71sangbad.com/ad/
@@ -22957,7 +22945,6 @@
 7zip.es^$doc
 7zip.fr^$doc
 7zip.it^$doc
-8
 8*.tianya.cn
 805bet.
 8070kk.com/statics/js/guo
@@ -23016,7 +23003,6 @@
 8xia.com/otherhtml/
 8xpamp5fxd.com^$doc
 8ziyuan.com/images/infolinksad.jpg
-9
 90"]
 900.la/imgs/1bb725da-974f-43da-9eb9-dfdebc224949/2015-12-18/zg3wwaug.gif
 900.la/imgs/d829d551-1d6e-4018-b3fe-78991bbbe2d6/2016-06-27/yiwmbica.gif
@@ -23454,7 +23440,6 @@
 ^wordwwwpunkty.$domain=7dni.pila.pl
 ^xbaner_$domain=kuriernauczycielski.pl
 ^zdjecia_reklamy^$domain=radio.katowice.pl
-_
 _1080x90.$image
 _1140x90.
 _120-x-600_
@@ -24356,7 +24341,6 @@ _xmpp-client._tcp.managed.xmpp.foxtel.com.au
 _yad_jsonp_
 _youtube_
 _ytrack_
-a
 a*.chajiaotong.com
 a-ads.com^$frame,redirect-rule=noopframe,domain=dogefaucet.com
 a-ads.com^$xhr,redirect-rule=nooptext,domain=ezcoin.it
@@ -24472,7 +24456,6 @@ abadis.ir/libs/async/ads.min.js
 abb.*.js?adv=
 abbao.cn^*adblock
 abc-du-gratuit.com/bannieres/
-abc-du-gratuit.com^
 abc-du-gratuit.net/bannieres/
 abc-du-gratuit.net/images/anim_pub
 abc-netmarketing.com/*/l160xh600_
@@ -24591,7 +24574,7 @@ acfun.cn/appspreadcontents/danmuad/
 acgbenzi.com^$image
 acggd.com/4d22b/
 acglala.net/images/upload/*0.gif
-acglover.*
+acglover.
 acgnx.se/images/adwork/
 acgnz.cn/static/b.js
 acgnz.cn/static/i.js
@@ -25022,7 +25005,6 @@ adswizz.
 adtago$important
 adtech.
 adtech.redventures.io/lib/*/bidbarrel-techrepublic-$script,important,redirect=noop.js,domain=techrepublic.com|zdnet.com
-adthrive.com^$removeparam,domain=~mediaite.com
 adtng.
 adtrack1.
 adtrackers.net^$script,3p,redirect-rule=nobab2.js:10
@@ -25099,8 +25081,6 @@ advsnx.net,domain=0404.co.il|13news.co.il|13tv.co.il|calcalist.co.il|globes.co.i
 advt.jpg|$domain=bhilaitimes.com
 advtise.net^$third-party,popup
 adw.sapo.
-adweek.com/wp-content/plugins/adw-parsley/
-adweek.com^$removeparam=traffic_source
 adwordsing.com/img/1.jpg
 adwordsing.com/img/2.jpg
 adx.
@@ -25799,7 +25779,6 @@ alloref.com/allo468.gif
 alloref.com/allo600.gif
 alloref.com/images/cdp
 alloref.com/images/maxdetrafic.gif
-alloref.com^
 allpoi.ru/_static/banners/
 allporncomic.com/round-bread-60fe/
 allporncomic.com/snowy-paper-9b9f/
@@ -26161,7 +26140,7 @@ anhuinews.com/zhuyeguanli/*ad/
 ani-mania.com/files/ban$subdocument
 ani-mania.com/seo_anime_
 ani365.org/assets/images^$image
-anibatch.*
+anibatch.
 aniclube.app/noping/
 anikawa.com^$subdocument,third-party
 anilinkz.
@@ -26199,7 +26178,7 @@ animeheaven.
 animeheaven.*/api/pop.php$xhr,1p
 animeheaven.ru/api/pop
 animehub.ac/api/pop.php
-animeindo.*
+animeindo.
 animejapan.tv/pic/background.
 animejoy.ru/uploads/imba/
 animeka.com/_img/cache/partner/
@@ -26237,7 +26216,7 @@ animetake27.
 animeunity.
 animevietsub.tv/statics/default/js/detect.dev.js
 animevost.org,animevost.top,vost.pw#?#div[id^="moduleLeft"]:-abp-has(iframe)
-animexin.*
+animexin.
 animexin.xyz/*.gif$image
 animexstream.
 animextre.
@@ -26274,7 +26253,6 @@ annonciaweb.com/zz-intr-*.
 annonser.*.no^$domain=~annonser.gess.no
 annu-liens.com/templates/arfooo/images/agencecc.jpg
 annuaire-autosurf.com/banniere.gif
-annuaire-autosurf.com^
 annuaire-energie-renouvelable.org/cssimg/site/
 annuaire-energie-renouvelable.org/logos/*-banner-
 annuaire-fille-sexy.com/ban/
@@ -26352,12 +26330,6 @@ aontent.powvideo.
 aoshi.com/rbc.jpg
 ap-online.media.fi/scripts/eneo*.dll$script,domain=aamuposti.fi|helsinginuutiset.fi|karkkilantienoo.fi|keski-uusimaa.fi|lansi-uusimaa.fi|lansivayla.fi|lappeenrannanuutiset.fi|lopenlehti.fi|loviisansanomat.fi|mantsalanuutiset.fi|nurmijarvenuutiset.fi|pyhtaanlehti.fi|seinajoensanomat.fi|sipoonsanomat.fi|tamperelainen.fi|turkulainen.fi|uusimaa.fi|vantaansanomat.fi|vihdinuutiset.fi
 ap.by/up/banner/
-aparat.com/external/romeo^$xhr
-aparat.com/static/vendor/dox$script,css
-aparat.com^$third-party,cookie
-aparat.com^$xhr,removeparam=referer
-apartments.com/clientvisit/al.gif?
-apartmenttherapy.com/jayeky18/init.js
 apb-re.ru/?pid=
 apester$important
 apester.com/*adsbygoogle.min.js
@@ -26428,45 +26400,15 @@ api.stopad.io/link/*/pixel$image,1p,redirect=1x1.gif
 api.tacotax.fr/v2/amplitude_trackers
 api.tgju.org/v1/advertisement^$xhr,1p
 api.theins.ru/adv/
-api.torob.com^$xhr,1p,removeparam=_bt__experiment
-api.torob.com^$xhr,1p,removeparam=_ft__ab_test
-api.torob.com^$xhr,1p,removeparam=_ft__shop_score
-api.torob.com^$xhr,1p,removeparam=_http_referrer
-api.torob.com^$xhr,1p,removeparam=_url_referrer
-api.torob.com^$xhr,1p,removeparam=android_app_ver
-api.torob.com^$xhr,1p,removeparam=btn
-api.torob.com^$xhr,1p,removeparam=bvid
-api.torob.com^$xhr,1p,removeparam=device
-api.torob.com^$xhr,1p,removeparam=discover_method
-api.torob.com^$xhr,1p,removeparam=is_adv
-api.torob.com^$xhr,1p,removeparam=pre_prk
-api.torob.com^$xhr,1p,removeparam=session_id
-api.torob.com^$xhr,1p,removeparam=shop_rank
-api.torob.com^$xhr,1p,removeparam=source
-api.torob.com^$xhr,1p,removeparam=suid
-api.torob.com^$xhr,1p,removeparam=uid
+api.trackview.
 api.traq.li^$domain=champion.com.ua|epravda.com.ua|eurointegration.com.ua|pravda.com.ua
 api.tumblr.com/*/share/stats$script,3p
 api.tv.de/*/tracking/
-api.utreon.com/v1/videos?channel_handle$xhr,1p
-api.vp.rambler.ru/events/
-api.vuukle.com/api/v1/getmodal$xhr,3p
-api.winnetnews.com/api/*/banner/
+api.vp.
 api.wudizuqiu.com/72nba
 api.wudizuqiu.com/bocai.js
 api.yapfiles.ru/vast/
-api2.zoomit.ir/ads^$xhr,image,1p
-api2.zoomit.ir/editorial/api/articles/*/visit^$xhr,1p
 apibet.
-apic.in/mmd.gif
-apievestuves.lt/m/ads
-apihost.ru/images/584676.gif
-apiimg.com/huaer/xiahe.
-apintie.sr/bannerz$image
-apintie.sr/bannerz/
-apis-jiocinema.voot.com/location$xhr,domain=jiocinema.com
-apis.google.com/js/plusone.js
-apis.piclick.me/v2/publish/banner/iframe.min.js
 apk-01.oss-cn-beijing.aliyuncs.com/dp/
 apk.miuor.com/header.js
 apk.tw/static/js/showpic.js
@@ -26502,9 +26444,6 @@ app.onlim.com/app/assets/audios/
 app.opmnstr.com/v2/geolocate/
 app.partnerlottery.com/widget/
 app.plum375ap.com^$doc
-app.technews-iran.com^$removeparam=_ga
-app.technews-iran.com^$removeparam=_gl
-app.viralsweep.com^$domain=insidethemagic.net
 app.yeps.io/loader?
 app.yesware.com/t/
 appboy.
@@ -26544,14 +26483,10 @@ appnext-a.
 apppleheaddd.jp^$doc
 appreview.ir/advertisement/counter^$xhr,1p
 apprl.com/embed/$subdocument
-apps.apple.com/*/app/*referrer$removeparam=referrer
 apps.lv/timthumb.php?*/uploads/shop_images/
 apps.mako.co.il/minicampaigns/
 apps.mako.co.il/mobile/config/android/sport5/ad_config.xml
 apps.mako.co.il/mobile/config/android/sport5/banner_config.xml
-apps.sandviks.com/apix?x-method=elementservice.selectadvertiserelement$script,domain=vau.fi
-apps24.org/images/2019/android-games-2019.jpg
-apps24.org/images/2019/yandex_browser.jpg
 appsolutions.com/hitme?
 appspot.
 appspot.com/analytics/
@@ -26752,9 +26687,6 @@ asiaplustj.info/adfiles?
 asiapoisk.com/images/banner/
 asiapoker.
 asiaqq.
-asiatech.ir^$doc,popup,domain=soft98.ir
-asiatech.ir^$removeparam=/utm_source|utm_campaign|utm_content/
-asiatoday.co.kr^*/ads/$script
 asiatoto.
 asiatv.
 asikbookie.
@@ -27245,7 +27177,6 @@ azurewebsites.net/partnerarticle
 azurewebsites.net/trackview/
 azurewebsites.net/widget/
 azurewebsites.net^*/telemetry.js
-b
 b-7.jp^$doc
 b-amooz.com/wp-content/plugins/sticky-ad
 b-cdn.net/ssd1/ads/*.mp4$media,important,redirect=noopmp4-1s,domain=thmovieshd.com
@@ -27463,9 +27394,6 @@ balakhna.ru/kvadratiki/
 balakqq.
 ballive.*/addm/
 balticlivecam.com/images/acb_logo.png
-bama.ir/api/car/detail/visit
-bama.ir/normaluser/scripts/pagejs/usertracking.js
-bama.ir^$removeparam=/^utm_/
 bambam-bi.com^$doc
 bambun.ru/images/$object
 bame*.net/img^$image
@@ -27473,7 +27401,7 @@ bamgrid.com/telemetry
 ban.
 ban.d-group.co.il/banners/
 banana0141.com^$doc
-bananamall.co.kr/banner^
+bananamall.co.kr/banner
 bandaid.
 bandar228.
 bandar2d.
@@ -28395,7 +28323,6 @@ bitcotasks.com//files/banners/banner-
 bitcryptonews.ru#?#.box:-abp-has(> noindex)
 bitcryptonews.ru#?#aside > div:-abp-has(script)
 bitcryptonews.ru,forum.materinstvo.ru,vse-shutochki.ru#?#div[class]:-abp-has(> [id^="yandex_rtb_"])
-bite.ws^
 biteautop.com^$popup,subdocument,~third-party
 bitfly.io/js/nt.js
 bitfly.io/sw.js$script,1p
@@ -28965,11 +28892,6 @@ briefly.ru#?#.shelf:-abp-has(> .adaptive-banner)
 briefly.ru#?#.shelf:-abp-has(> .ebooks-widget)
 briefly.ru#?#.shelf:-abp-has(> [data-disclaimer*="Реклама"])
 brightcove$important
-brightcove.com/playback/*/*?ad_config_id$removeparam=ad_config_id,xhr,domain=tvnz.co.nz
-brightcove.com^$removeparam=ad_config_id,domain=player.stv.tv
-brightcove.com^$xhr,removeparam=ad_config_id,domain=roosterteeth.com
-brightcovecdn.com/playback/*/*?ad_config_id$removeparam=ad_config_id,xhr,domain=tvnz.co.nz
-brighteon.tv/assets/arf/
 brightpost.in^*/pk_
 brightside.me/metric-collector
 briliofood.net#?#.placeholder-container:-abp-has(.ads-container)
@@ -29232,7 +29154,6 @@ bz-berlin.de/_stats/
 bzhanyy.com^*.gif
 bzi.ro/public/js/*
 bzpics.com/jslib/st.js?
-c
 c-al-e1nder.com^$doc
 c-cdn.coub.com^$script,domain=mail.ru
 c-ctrip.com/images/0101r120009e1kn7ocdca.gif
@@ -29785,7 +29706,7 @@ cdn.svenskalag.se/img/sponsors$image
 cdn.taboola.com/libtrc/*/loader.js$script,redirect=noopjs,important,domain=cnet.com
 cdn.taboola.com/libtrc/disqus-russia-network/loader.js
 cdn.targetpush.co.kr/js/targetpushad.js
-cdn.targetpush.co.kr/upload^
+cdn.targetpush.co.kr/upload
 cdn.thejournal.ie/media/hpto/$image
 cdn.tirage-gagnant.com/js/dynamic-ban-
 cdn.tirage-gagnant.com/js/popup.js
@@ -29854,7 +29775,7 @@ cdntxt.com/t2/
 cdnvideo3.com/api/spots/
 cdnwh.com/cecash/
 cdr.cz/sites/default/files/_cdr_branding/branding.jpg
-cds.bet/*.gif^
+cds.bet/*.gif
 cds.ilyoseoul.co.kr/bannerpop
 cdscdn.com^*/banniere_
 cdscdn.com^*/partenaires/
@@ -30440,8 +30361,8 @@ cloud.hentai-moon.com/moonads/*$media,1p
 cloud.restoro.com//download/sa/restoro.exe
 cloud.restoro.com/download/2105/restorosetup64.exe
 cloud.tvigle.ru^$script,domain=moevideo.net|playreplay.net|playvideolink.com|videochart.net
-cloudaaaa.com/a^
-cloudaaaa.com/c^
+cloudaaaa.com/a
+cloudaaaa.com/c
 cloudads-a.
 cloudapp.net/l/
 cloudbet.com/ad/
@@ -30898,13 +30819,6 @@ conjugacao-de-verbos.com/img/mosalingua/
 conjugacion.es/img/mosalingua/
 conjur.com.br/parceiros/iframe
 connatix.
-connatix.com/rtb/
-connatix.com/scripts/$~third-party
-connatix.com/tr/
-connatix.com/us/google/
-connatix.com^$3p,removeparam=cid
-connatix.com^$script,domain=rmweb.co.uk
-connatix.com^$third-party,domain=~accuweather.com|~elnuevoherald.com|~huffpost.com|~loot.tv|~miamiherald.com
 connect-jumbo.com^$doc
 connect-wp.net^$doc
 connect.bolt.com/v1/log
@@ -31175,7 +31089,6 @@ creative.hamropatro.com^$third-party,domain=farakdhar.com
 creative.imagetwistcams.com^$subdocument
 creative.live.missav.com/widgets/spot/lib.js
 creative.myasian.live/widgets/
-creativecommons.org^
 creatop
 creaweb.it/cookie/
 credence-website.com^$doc
@@ -31402,7 +31315,6 @@ czsp12.com/api/*=advert&
 czsp12.com/api/*=announce&
 cztv.com/201506/02/124d35111e8f180c96f99acbcbdf5de6.jpg
 czx.to/images/flama/
-d
 d*.ruiwen.com
 d*.xinshipu.com
 d-hiyori.com^$doc
@@ -33074,7 +32986,6 @@ dzsat.org/images/fastcccam_banner.gif
 dzsat.org/images/iptvabo3.gif
 dzsat.org/images/micmac.gif
 dzsat.org/images/pubicosium.gif
-e
 e-79.com/images/banners/
 e-activist.com^*/broadcast.record.message.open.do?
 e-betteln.de/images/sponsoren/
@@ -33738,8 +33649,6 @@ enjoydepo.
 enjoydomino.
 enjoyqq.
 enlarget.
-enligne.biz^
-enligne.com^
 ennaharonline.com^*/images/habillage-
 ennaranja.com/wp-content/themes/ingblog-fa/assets/images/logoing.png
 enontekionsanomat.fi,haapavesi-lehti.fi,inarilainen.fi,kainuunsanomat.fi,kalajokilaakso.fi,kalajokiseutu.fi,keskipohjanmaa.fi,kittilalehti.fi,kotikulmilta.fi,kotilappi.fi,kuhmolainen.fi,kuusamonseutu.fi,lestijoki.fi,luoteis-lappi.fi,meantornionlaakso.fi,nivala-lehti.fi,perhonjokilaakso.fi,pietarsaarensanomat.fi,saariselansanomat.fi,selanne-lehti.fi,sompio.fi,sotkamolehti.fi,ylakainuu.fi#?#.widget_text:-abp-has([data-ad-unit-id])
@@ -33995,7 +33904,6 @@ eurolive.com/?module=$popup,third-party
 eurolive.com^$~image,third-party
 euronews*.buzz
 europeturf.com/turf/
-europeup.com^
 europix.
 europixhd.
 europixhd.*/js/ads
@@ -34196,7 +34104,6 @@ eyuyao.com/yyad/
 ez4linkss.com/sw.js$script,1p
 ezbit.co.in/$frame,1p
 ezday.co.kr/ad/
-eze99.me^
 ezebet.
 ezjav.com/p.js
 ezochat.com^$domain=astromeridian.ru
@@ -34207,7 +34114,6 @@ ezprice.com.tw/ezysm/
 ezprice.com.tw/js/*_ysm_
 eztv.
 eztv.tf,eztv.yt,123unblock.bar#?#tbody:-abp-contains(WARNING! Use a)
-f
 f*.baidu.com/it/u=*,*&fm=$third-party,domain=~hao123.com|~haokan.com|~yoojia.com
 f-secure.com/static/general/img/banner/
 f.cdngeek.com^$domain=edugeek.net
@@ -34552,7 +34458,6 @@ feedback.wwe.com/survey/
 feedbackify.com/f.js
 feedblitz.com/imp?
 feedblitz.com^*.gif?
-feedburner.com^
 feedgrabbr.
 feedify.net/thirdparty/json/track/
 feedifysw
@@ -35695,7 +35600,6 @@ fxhpaoxqyajvmdg.
 fxporn69.
 fxstreet.
 fxxz.com/skin/know/all.js
-fy6b.com^
 fz988hnbaha.com^$doc
 fzbm.com/bbs/static/js/bma.js
 fzd3.com/gg/
@@ -35705,7 +35609,6 @@ fzm.
 fzmovies.
 fzpchome.com/txt/$script
 fzxiaoshuo.com/source/
-g
 g-a-y.jp^$doc
 g-disk.co.kr/images_g/banner/
 g-spiritual.com^$doc
@@ -35891,7 +35794,6 @@ gamezhero.com/promo$frame,1p
 gamezone.de/tsimg/topbanner/
 gaming.dk#?#.panel-latest-forum-threads:has-text( sponsor)
 gamingadult.biz/?
-gamingadult.com^
 gamingjobsonline.com/images/banner/
 gamingservers.ru/shows/
 gamivo.com/tcllc?
@@ -37083,7 +36985,6 @@ gywb.cn/gggl/
 gzonline.ru//upload/iblock/
 gzt.ru/upload/*.rklite/
 gzzza.com/html/
-h
 h-bid.
 h-bw.de/fileadmin/*-banner-
 h-bw.de^*/sponsoren/
@@ -38259,7 +38160,6 @@ hypo.ufanet.ru^$image
 hyvyd.com/count$image,domain=mobile.de
 hzalwkcjbudom.info^$doc
 hznzcn.com/moban/youxiajiao.js
-i
 i*.wp.com/bookzone.ro/upload/altele/cronici/*.jpg$image
 i-cable.com/ci/tracking/
 i-gamer.net/promo_
@@ -38437,7 +38337,6 @@ i.ua^*_brandpage_
 i.uuoobe.com/ad^$image,domain=torrentzoa.com
 i.wisdom.bg/adv/
 i.ytimg.com/vi/lrr5lzpgxq4/hqdefault.jpg
-i0.imgcloud10.com^
 i0.wp.com/24x7cg.com
 i0.wp.com/aajexpress.com
 i0.wp.com/aawaznews.com
@@ -39218,12 +39117,11 @@ img.etnews.com^*/banner^$image,domain=nextdaily.co.kr
 img.fark.net/pub/
 img.gm21.download/*.webp$image
 img.grouponcdn.com/gpn/
-img.gsspat.jp^
 img.hdsky.me/images/20*.gif
 img.iex.nl/uploads/banners/$image
 img.ifeng.com/tres/html/
 img.imghosting.biz/238/1f12d748b1136f956db50bbabf0dfb70.png
-img.ironmancdn.xyz/upload^
+img.ironmancdn.xyz/upload
 img.janatasamachar.de/uploads/bigyaapan/61692900.png
 img.janatasamachar.de/uploads/bigyaapan/74269200.gif
 img.janatasamachar.de/uploads/bigyaapan/91282400.gif
@@ -40236,7 +40134,6 @@ izooto.
 iztwp.com/images/
 izvestia.kiev.ua/assets/img/*banner
 izzs.cc/wp-content/mm/
-j
 j.gs
 j.pl
 j123.co.kr/images01/main_001_13.gif
@@ -40961,7 +40858,6 @@ jz5u.com/public/js/t
 jz5u.com/public/new/
 jzb.com/website/fe/pub_js/dbclickshow.js
 jzzo.com/jss/cp01.js
-k
 k-colorful.jp^$doc
 k-crm.jp/tracking.js
 k-smilegallery.com^$doc
@@ -41582,7 +41478,6 @@ klapjes.nl/hoomezaz/*/*970x90$image
 klappeauf.de/images-banner/
 klarnaservices.
 klarnaservices.com/v1/osm-client-script/
-klarnaservices.com^
 klasse.be/wp/wp-content/images/*_lb_*full.*$image
 klasse2000.de/fileadmin/user_upload/webbanner/
 klassno.tv/wp-content/plugins/blud-popup*/
@@ -41943,7 +41838,7 @@ kvitrina.lt/kv/updir/2015/07/mineral_spa_logo-*.jpg
 kvitrina.lt/kv/updir/2020/07/*stovykla*.jpg
 kvitrina.lt/kv/updir/2020/08/*_2019_*.jpg
 kwangju.co.kr/banner^$image
-kwbcallme.godohosting.com/vod/bannern^
+kwbcallme.godohosting.com/vod/bannern
 kweather.co.kr/data/fashion/
 kwflvcdn.000dn.com^*.flv
 kwik.
@@ -41971,7 +41866,6 @@ kyrkanstidning.se/firstvisit$empty,xhr
 kyrkanstidning.se/firstvisit$xhr,empty
 kyrkanstidning.se/firstvisit$xmlhttprequest
 kz/rtr/$script
-l
 l-a-w.ru^*.php?$script
 l-chat.jp^$doc
 l-host.net/etn/omnilog?
@@ -42227,7 +42121,6 @@ layarkeren.*/wp-content/uploads/*.gif$image
 layarqq.
 layerad.
 lazabet.
-lazacasino.com^
 lb-69.com/pics/
 lbaanijakuva.fi/test/*?template=prisjakt$domain=lbaanijakuva.fi
 lbstatic-a.
@@ -42562,7 +42455,6 @@ liburpoker.
 licai18.com/henyepweb/
 licai18.com/pic/article/*.gif
 licdn.com/*.gif?rnd=
-licensebuttons.net^
 licensing.bitmovin.com/impression
 liczniki.org/hit.php
 lieferando.de/widgets/$subdocument,third-party
@@ -43313,7 +43205,6 @@ lzinios.lt/lzinios/failai/video/
 lzk.hl.cn/lctp/
 lzogdlorkfssui.net^$doc
 lzyysw.com/upload/
-m
 m-allhittv.ru/code/show.php
 m-hentai.net/js/exoclick%20popunder.js
 m-live.tv/modules/mod_vina_nivo_image_slider/$image
@@ -43373,7 +43264,6 @@ mabosbet.
 macaddictads.
 macan365.
 macantogel.
-macao-lotto.com^
 macbidouille.com/banners/
 macd.cn/macd-topads.html
 macfans.org/vip/
@@ -43817,7 +43707,6 @@ matkabongaukset.fi#?#.widget_block:-abp-has(.matka-nostemedia-oikeapalsta)
 matkaendurot.net/images/*banner,domain=matkaendurot.net
 matomenever.com^$doc
 matoppskrift.no#?#.overskrift_naeringsinnhold:has(> h3)
-matriell.dm-storage.no^
 matt.mercadolibre.
 mature-chicks.com/sparkling-
 maturedating.com^$doc
@@ -44133,7 +44022,6 @@ mef-line.de/images/banners/
 mega-debrid.eu/images/cessfull.png
 mega-dvdrip.
 mega-gratis.com^$doc
-mega-p2p.net^
 mega-porno.me/js/promo/
 mega-share.pro^$doc
 mega-tracker.net/templates/megatracker/bg/
@@ -45520,7 +45408,6 @@ mzyfz.*/modules/46/
 mzyg882a63.com^$doc
 mzyz.com/image*/tj/
 mzzfree.com/file/upload/202109/14/180421861.gif
-n
 n-torrents.org/advrts/
 n-torrents.org/js/gamert.js
 n.nu
@@ -46088,7 +45975,6 @@ newsland.*/public/img/viardo.
 newsland.com/banner_frame/
 newsland.com/bns/
 newsland.com/public/img/branding/
-newsletters.nationalgeographic.com^
 newslogbook.
 newsmaker.md^*/banners/
 newsmax.com/js/analytics.js
@@ -46427,7 +46313,6 @@ noticiasdecoimbra.pt/*/modal/*/modal.min*^$script,stylesheet
 noticiasdel6.com/*.gif
 noticiasdelaciencia.com/libs_oss/adblock/
 noticiasdelaciencia.com/upload/img/periodico/img_2972.jpg
-noticrypto.website^
 notification-time.com^$doc
 notifyfox$important
 notifyvideo.info/p/creative-video/*$media,3p,redirect=noopmp4-1s
@@ -46438,7 +46323,6 @@ notube.net/p/
 notube.net^*sw.js|$script
 notube.site/p
 notunshomoy.com/ad/
-nouslibertins.com^
 nouvelobs.
 nouvelobs.com/les-bons-plans-shopping/
 nouvelobs.com^*/iframe-boxes/
@@ -46686,7 +46570,6 @@ nyteknikk.no/images.php/x150^$image
 nytimes.com/v1/purr-cache
 nyu-nyu.com/banieres/
 nzpages.co.nz/modules/common/track.js
-o
 o-cean-fortune.biz^$doc
 o-cean-fortune.com^$doc
 o-nedvizhke.ru/consultant/
@@ -47470,7 +47353,6 @@ ozon.ru#?#div[style*="background-color:"]:-abp-has(> span:-abp-contains(Рекл
 ozon.ru/graphics/img/
 ozon.ru/graphics/img_ban/
 ozon.ru/tracker/
-p
 p-cdn.us/public/*$media,redirect=noopmp3-0.1s,domain=soundcloud.com
 p-chi.info^$doc
 p-chi.tech^$doc
@@ -47728,10 +47610,10 @@ partner.googleadservices.com/gampad/cookie.js?domain=$script,important,domain=an
 partner.googleadservices.com^$domain=spiegel.de
 partner.komedra.com/
 partner.labirint.ru^$third-party,domain=rutlib.com
-partner.lovetoky.co.kr/banner^
+partner.lovetoky.co.kr/banner
 partner.ozon.ru/widgets/
 partner.pcloud.com/media/banners/*300250.png
-partner.rankomat.pl/tracking/media^
+partner.rankomat.pl/tracking/media
 partner.rankomat.pl^$domain=skionline.pl
 partner.uhty-multy.ru/
 partner.video.syndication.msn.com^$~object,third-party
@@ -48717,7 +48599,6 @@ placeholder-content
 placeholder.com/300x250?
 placeholder.com/728x90?
 placeholder.com/900x250?
-placelibertine.com^
 placera.se/_api/placera/visit
 plagiarismchecker.co/*.ete$image,1p,redirect=1x1.gif
 plagiarismchecker.co/design_images/mmly_bg.svg$image,1p
@@ -48886,7 +48767,6 @@ plug.it^*/iol_evnt_
 plug.it^*/track_
 plug.it^*/tracking_
 plugboard.fr/plugboard468.gif
-plugin.adplex.co.kr^
 plugins.mixi.jp/favorite.pl?
 pluginyab.ir/ads^$image,1p
 plus.lrytas.lt/staticbanners/*1200x250_300x370.jpg$image,~third-party,domain=lrytas.lt
@@ -49269,7 +49149,6 @@ pornojenny.com/cpanel/
 pornojenny.com/cpanel/*.php$xhr
 pornojenny.com/img/linklist/
 pornojenny.com/img/linklist2/
-pornokartel.nl^
 pornoklinge.com/cpanel/
 pornoklinge.com/img/linklist/
 pornoklinge.com/img/linklist2/
@@ -50034,7 +49913,6 @@ py.cn/static/images/advert/
 pyrenees-passion.info/wp_img_ban/
 pyrenees-team.com/graphics/baniere/logo.jpg
 pyroactive.de/counter/
-q
 q*-publick.
 q.gs
 q99bet.
@@ -50309,7 +50187,6 @@ qzone.qq.com/wspeed.qq.com
 qzonestyle.gtimg.cn/qzone/v8/ic/iframereport.js
 qzx.ru/gf/
 qzzr.com/_uid.gif
-r
 r*.dir.bg/js_ext.php
 r*.dir.bg/js_myads.php
 r*.yaplakal.com/video/get/
@@ -51479,7 +51356,6 @@ ryllae.com^$3p,important
 rz.com.ua/sites/default/files/*_*.jpg|$image
 rz.com.ua/sites/default/files/baneri-
 rzb.ir/code/popup
-s
 s*.website^$third-party,script
 s-cdn.org/promo/*.mp4$rewrite=abp-resource:blank-mp4,domain=player-films.online
 s-club.tv/promo/*.mp4$rewrite=abp-resource:blank-mp4,domain=player-films.online
@@ -51927,8 +51803,8 @@ sc.*/infopop.
 sc.*/infopop2.
 sc.*/popper.
 sca-letter.com^$doc
-scallme.godohosting.com/vod/bannern^
-scallme.hgodo.com/vod/bannern^
+scallme.godohosting.com/vod/bannern
+scallme.hgodo.com/vod/bannern
 scan-manga.com/azmanga_
 scanalert.com/meter/
 scandichotels.com/static/js/tracking/tracking-data-init.js^$script,1p,important
@@ -52269,7 +52145,6 @@ sephora.com#?#div[class^="css-"]:-abp-has(>a:-abp-has(span:-abp-contains(Sponsor
 sephora.com#?#div[data-comp^="RmnBanner"]:-abp-has(p:-abp-contains(Sponsored))
 seqing.world/qq/qq.js
 serasaexperian.com.br/dist/scripts/fingerprint2.js^$redirect=fingerprint2.js,script,important
-serbada.com^
 serbakas88.
 serbaqq.
 serbupoker.
@@ -52366,7 +52241,6 @@ sex4u.ch/img/banner_
 sexabc.ch/js/rotator.js
 sexadonf.net/_images/$image
 sexadonf.net/web/hqlinks.gif
-sexadonf.net^
 sexall.net/*.shtml$doc
 sexamateurtjes.nl/banners/
 sexamtelefon.com/backbanner/
@@ -53081,7 +52955,6 @@ slickdeals.net/ad-stats/
 slickdeals.net/ajax/stats/
 slickdeals.net/scripts/*/js-campaign-tracking.js$script,1p,redirect=noop.js
 slickdeals.net/scripts/*/sd_analytics.js$script,1p,redirect=noop.js
-slidedeck.com^
 slideplayer.
 slideplayer.*/*/*/|$image
 slideshare$important
@@ -53948,7 +53821,6 @@ staramuse.com/bmip/showg
 starbike.com#?#.post.has-profile:-abp-has(.postbody:-abp-has(.adsbygoogle))
 starbits.io/libs/check.js$script,1p
 starbola88.
-starcasino88.net^
 stardima.
 stardomino.
 starfiles.co/analytics.php
@@ -54861,7 +54733,6 @@ szwbnlpq.info^$doc
 szxljdsb.com/tl
 szyepu8.com/data/aaddimg/
 szyhqj.com/js/
-t
 t*.baidu.com/it/u=*,*&fm=76
 t-algerie.com/pub/
 t-online.de#?#div[data-testid="StreamLayout.Companion"]:-abp-has(a[href^="https://ad.doubleclick.net/"])
@@ -55001,7 +54872,6 @@ taizexy.com^*.gif
 tajakhabaruttarakhand.com/gallery/photo-gallery.php
 tajirqq.
 tak3da.com/wp-content/plugins/popup-builder^$script,1p
-takana.co.il^
 take.the.n-chapter.jp^$doc
 takefile.link/promo/
 takelink.org/engine/ajax/check.js
@@ -56191,7 +56061,6 @@ topeuropix.
 topeuropix.site/svop4/
 topfile.tj/img/formula/
 topfile.tj/img/pari/
-topfion.com^
 topflix.
 topg.jp^$doc
 tophacks.pro^$doc
@@ -56232,7 +56101,6 @@ topwar.ru/bg/
 topxxxlist.net/eroclick.js
 torah-box.com/upl/ban/
 toranji.ir/najva-messaging-sw.js
-torcidatricolor.tv^
 torentai.lt/pic/ldiena.png
 torentai.lt/pic/logo_mazas.png
 tores4d.
@@ -56432,7 +56300,6 @@ tracker.twenga.
 trackicollect.
 tracking$important
 tracking*.euroads.fi
-tracking-genesisaffiliates.com^
 tracking.*/beacon/
 tracking.*/event
 trackitonline.*/pics/$object
@@ -56531,7 +56398,6 @@ triada.lt/image/data/image001.png
 triada.lt/image/data/lazer-250x250-1.jpg
 triangle123.com^$doc
 triangletribune.com/cache/sql/fba/
-trib.al^
 tribalfusion$important
 tribogamer.com#?#a:-abp-has(div > div > small:-abp-contains(Publicitário))
 triboo.direct/cookie_triboodirect/
@@ -57034,7 +56900,6 @@ tzbox*.
 tzfdc.com.cn/userfiles/flash/
 tzfdc.com/fdcsell/
 tzfdc.com/images/09/flv/flv_index.js
-u
 u-nit-ed.com^$doc
 u-tv.ru/vast/
 u.ctrip.com/showcaseadvertisementsit/
@@ -57461,7 +57326,6 @@ url.rw/*&a=
 url.rw/*&mid=
 urlcash.
 urlcero.
-urldefense.com^
 urlty.
 urmas.net/upload/rk/
 urnawareflan.
@@ -57580,7 +57444,6 @@ uzreport.news/fotobank/r/
 uzum.tv/*.swf
 uzum.tv/120/
 uzumaki.kz/go?$script
-v
 v-androide.com/%22//
 v-chulkahh.ru/js/06ea7c.js
 v-h.tv/pixel/
@@ -57993,7 +57856,6 @@ videoprobki.*/ext_baners/
 videoreka.ru^$domain=povarenok.ru
 videorolls.row.aiv-cdn.net/*.mp4$media,redirect=noopmp3-0.1s,domain=amazon.com
 videorolls.row.aiv-cdn.net^*.mp4$domain=amazon.fr
-videos-de-celebrites.com^
 videos-marciales.
 videos-pornographiques.com/promo/
 videos-xxx.
@@ -58520,7 +58382,6 @@ vz.lt/img/logos/cv.png
 vzaar.com^$domain=filehippo.com
 vzmz.com/template/paody/aaaa/*0
 vzmz.com/template/paody/aaaa/357.js
-w
 w-dbl.com^$doc
 w.org
 w.tools
@@ -58712,7 +58573,6 @@ wbp-hk.com^$doc
 wbpb9.com^$doc
 wbz11.com/m/habillage/
 wc.yahoodns.net^$image
-wc4.net^
 wcareviews.com/bh/
 wcareviews.com/bv/
 wccftech.
@@ -59463,7 +59323,7 @@ wp.com/livesurf.ru/faners/
 wp.com/media.go2*.*/*
 wp.com/mediaguinee.org
 wp.com/medialot.fr
-wp.com/mrcrack.*/wp-content/uploads^
+wp.com/mrcrack.*/wp-content/uploads
 wp.com/myliusoda.lt
 wp.com/nh24.de
 wp.com/nh24.de/wp-content/uploads*/gundlach_liefern.jpg
@@ -59612,7 +59472,6 @@ wykop.pl/dataprovider/diggerwidget/
 wymiana.org/stat/
 wzbaohe.com/imgadnew/midad.js
 wzbrughrw9a63hnfurap.com^$doc
-x
 x-minus.in/assets/rkl/
 x-resource05.com/media_orange/server-img/*_1200_120.
 x-soft.tomsk.ru/dsa/
@@ -60117,7 +59976,6 @@ xyz^*&zoneid=
 xyz^*?resource=*&widgets=*&isct=*&iscs=
 xzji.com/data/block_js/softshow_
 xzo.jp^$doc
-y
 y-games.ru#?#p:-abp-has(> .ContentTitle[style="height: 20px;"])
 y-tradie.com^$doc
 y2mate.
@@ -60645,7 +60503,6 @@ yzpsb.net/js/shang.js
 yzpsb.net/js/system.js
 yzs.com/d/file/2020/06/21/5358e14b4556663a91f145f0635f95de.jpg
 yzz.cn/global_gg/
-z
 z-barre.com/fonction/aff*.php
 z-o-o-m.eu/banner_images/
 z.cdn.*.*/load?*=*=*&zyx=
