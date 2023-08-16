@@ -1052,7 +1052,7 @@
 .ad.js
 .ad.wrapper.
 .ad/banner/
-.ad2.*?id=
+.ad2.
 .ad4link.
 .adaptv
 .adbutler-
@@ -1063,9 +1063,9 @@
 .adforge
 .adform
 .adframesrc
-.adhoc1.$popup,third-party
-.adhoc2.$popup,third-party
-.adhoc4.$popup,third-party
+.adhoc1.
+.adhoc2.
+.adhoc4.
 .adinject
 .adjarabet
 .adonweb
@@ -6576,6 +6576,7 @@
 /api-insights/log?
 /api.*/ads?
 /api.ad.
+/api/*banners/
 /api/0/stats
 /api/aaaac/list
 /api/ad.
@@ -8521,6 +8522,7 @@
 /collect?v$domain=thelocal.se
 /collect_data.php?
 /collect_stat.
+/collector/*
 /collector/beacon
 /collector/event
 /collector/hit?
@@ -8549,6 +8551,7 @@
 /comment-ads.
 /comments?[^a-z]/$important
 /commentshareicons.
+/commercial_api/banners_
 /commercial_horizontal.
 /commercial_top.
 /common-ads/*
@@ -12721,6 +12724,7 @@
 /js/*.js?$script,domain=all-sci.net|bib.social|economics.studio|economuch.com|finbook.news|lawbook.online|lawbooks.news|lib.sale|medinfo.live|myzooplanet.ru|pravo.studio|provse.news|psihologia.biz|sci-lib.biz|sci.house|scicenter.online|textbooks.studio|uchebnikfree.com|xn--80aaivjfyj3e.com
 /js//dfp.
 /js/1.js|$script,~third-party,domain=3dsmaxvideo.ru|archicadvideo.ru|autocadvideo.ru|coreldrawvideo.ru|excelvideo.ru|kompasvideo.ru|photoshopvideo.ru|solidworksvideo.ru|wordvideo.ru
+/js/38fbf0.js
 /js/_analytics/*
 /js/aa.htm$script
 /js/aahome.htm
@@ -12779,6 +12783,7 @@
 /js/fpu3/pu4.min.js
 /js/friendbuy.min.js$script,redirect-rule=noopjs,domain=coursera.org
 /js/fullpageads.js
+/js/func.js
 /js/gg0.js
 /js/gg123/*
 /js/ggtop.js
@@ -14588,6 +14593,7 @@
 /noadblock.
 /noblock.
 /nocopy.js$script,domain=xn--90adear.xn--p1ai
+/node/banner?
 /nodelmag/ytjs.php
 /nofa7.
 /nofa7.$script,1p
@@ -21771,6 +21777,7 @@
 /zanox/banner/*
 /zbackend_loader.
 /zbs.kek.js
+/zbst/events/
 /zcredirect?
 /zcredirect?visitid=
 /zcredirect?visitid=*&iframedetected=false|$doc
@@ -61818,6 +61825,7 @@ video-static.tunnl.com/js/blocker.min.js
 video-stats.
 video-tutorial.ucoz.ru/foto/
 video.909.su/feeds/feed.php?
+video.fp-engine
 video.golem.de/*/scripts/radiant/homad$xhr,redirect=nooptext,domain=golem.de
 video.google.com/api/stats/
 video.mediaset.it/polymediashowanalytics/
@@ -64128,12 +64136,7 @@ xxlargepop.com/apu.php$script,redirect=noopjs
 xxnx.
 xxooos.com/mm/
 xxvideoss.org/wp-content/uploads/*/bannerrtx.jpg$image,1p
-xxx-comics.pro/*?view=$doc,other,removeparam=view
-xxx-indian-porn.com/js/func.js
 xxx-news.
-xxx-russian.ru/js/38fbf0.js
-xxx-tracker.com/pics/
-xxx/*?video=video.fp-engine
 xxx18.uno/*-code.js
 xxxadd.com/js/hrqst.js
 xxxdessert.com/*_fe.js
@@ -64525,14 +64528,7 @@ young-porn-movie.com/adv.js
 youngasianporntube.net/js/cyc2z5gg0nwnqy2gy.js
 youngvarta.com/uploads/blocks/
 youngvarta.com/uploads/images/img_5eb60e9adf0a08-58588082-48284153.gif
-youplay.se/*.js*ap=true$removeparam=/^ap/,script
-youplay.se/*.js*ap=true$script,removeparam=/^ap/
-youplay.se^$third-party,domain=dayviews.com|emocore.se|extraextra.se|hamsterpaj.net|kalender.se|kamrat.com
-youplay.se^$third-party,domain=hamsterpaj.net|emocore.se|dayviews.com|kamrat.com|extraextra.se|kalender.se
 youporn.
-youporn.com#?#aside:-abp-has(a.ad-remove)
-youporn.com^$script,subdocument,domain=youporn.com|youporngay.com
-youporn.com^*?utm_
 youramateurtube.com/sw.js$script,1p
 yourbittorrent.
 yourbittorrent.com^$subdocument,~third-party
@@ -64570,20 +64566,10 @@ youtube-nocookie.com/api/stats/delayplay?
 youtube-nocookie.com/api/stats/qoe?
 youtube-nocookie.com/ptracking?
 youtube-nocookie.com/robots.txt?
-youtube-nocookie.com^$domain=proporno.org
-youtube.com#?#ytd-rich-item-renderer:-abp-has(> .ytd-rich-item-renderer > ytd-ad-slot-renderer)
-youtube.com#?#ytd-rich-item-renderer:-abp-has(ytd-display-ad-renderer)
-youtube.com$third-party,domain=wikitree.co.kr
 youtube.com/ad_companion
 youtube.com/api/stats/ads?
 youtube.com/api/stats/delayplay?
 youtube.com/api/stats/qoe?
-youtube.com/embed$frame,redirect=click2load.html,domain=ordfrontmagasin.se
-youtube.com/embed/$frame,domain=bestcash2020.com
-youtube.com/embed/*&origin=https%3a%2f%2ffeltet.dk&widgetid=1$subdocument
-youtube.com/embed/*autoplay$removeparam=autoplay,subdocument,domain=kritiker.se
-youtube.com/embed/*autoplay$subdocument,removeparam=autoplay,domain=kritiker.se
-youtube.com/embed/*youtebem.com&widgetid=$domain=youtebem.com
 youtube.com/embed/-pgjd8-iydq
 youtube.com/embed/1ljpilraaho
 youtube.com/embed/5tdsbsdqeku
@@ -64617,16 +64603,10 @@ youtube.com/get_video?
 youtube.com/get_video_info?*adunit$~third-party
 youtube.com/pagead/
 youtube.com/ptracking?
-youtube.com/redirect?$doc,removeparam=event
-youtube.com/redirect?$doc,removeparam=redir_token
-youtube.com/redirect?$doc,removeparam=v
+youtube.com/redirect?
 youtube.com/set_awesome?
 youtube.com/subscribe_embed?
 youtube.com/subscribe_widget
-youtube.com/v/*autoplay$third-party,domain=7chan.org|boards.4chan.org
-youtube.com^$domain=1link.vip
-youtube.com^*autoplay=1$domain=eldjoumhouria.dz|hitek.fr|mon-compte.org
-youtube.com^*modestbranding$subdocument,domain=moevideo.net|penzainform.ru|playreplay.me|playreplay.net|playvideolink.com|thesame.tv|videochart.net
 youtube2mp3.cc/p.php
 youtubekids.com/api/stats/ads?
 youtubekids.com/api/stats/qoe?
@@ -64947,20 +64927,6 @@ zhibok8.com/images/*.gif
 zhibok8.com/js/di
 zhibok8.com/js/scroll.js
 zhifuok.com/19xa.jpg
-zhihu.com#?#.TopstoryItem:-abp-has(.Popover > .TopstoryItem-advertButton)
-zhihu.com/api/*banners/
-zhihu.com/collector/
-zhihu.com/commercial_api/banners_
-zhihu.com/node/banner?
-zhihu.com/zbst/events/
-zhihu.com^$removeparam=hybrid_search_extra
-zhihu.com^$removeparam=hybrid_search_source
-zhimg.com/80/v2-503830bc48217331677fc5c7b67eee12.
-zhimg.com/80/v2-725c659194eeebb8c6b970e52e2dc8aa.
-zhimg.com/80/v2-c991beef44875fa5971c6bbfc6dc0ad2.
-zhimg.com/80/v2-f4b209014eeea058dd5b43f085aaef02.
-zhimg.com^*_600x250
-zhimg.com^*adx
 zhitomir.info/price$third-party,subdocument
 zhitomir.info^*/banner/$~image
 zhizhizhizhi.oss-*.aliyuncs.com
