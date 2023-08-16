@@ -8,54 +8,6 @@
 ! *$image,redirect-rule=1x1.gif
 ! attribute css selector : ##[]
 ! id css selector        : ###
-&ad*
-&ad.
-&ad_
-&arabycash
-&campaign=
-&cbiframe=
-&cp.*&key=*&tz
-&cp.*&tz*&key=
-&cp.*=*&key=
-&dci=
-&direct=
-&divid=
-&expires
-&id_publisher=
-&iframedetected=
-&ip=*&zoneid=
-&key=*&cp*&tz
-&key=*&tz*&cp.
-&key=*=true&tz=
-&lfapaff_id=
-&lptoken=
-&mi_ecmp=
-&noexitctapop=
-&ob=redirect
-&oid=
-&pagegroup=
-&popeye=
-&redid=
-&ref=
-&refer=
-&request_
-&runauction=
-&sadbl=
-&skip_oapopup=
-&srv_id=
-&sub_id=
-&subid=
-&t=main9
-&tds_campaign=
-&teasersttl=
-&token
-&tr4ck=
-&url_annonceur=
-&url_bnm_redirect=
-&vk_t=
-&voluumdata=
-&werbemittel=
-&zoneid=
 *##:matches-attr("/.+/"="/(?<!no)pop(?!ul)/i")
 *##:matches-attr("/.+/"="/(?<!no.)shar[eir]/i")
 *##:matches-attr("/.+/"="/[-_\s^]addespace/i")
@@ -178,76 +130,6 @@
 *##:matches-attr("/.+/"="/vk[-_o\s$]/i")
 *##:matches-attr("/.+/"="/yandex/i")
 *##:matches-attr("/.+/"="/yield/i")
-*##:matches-path(/^/$/) p:has-text(Artikeln innehåller annonslänkar):upward(a)
-*##:matches-path(/utm_medium=banner/) html:remove()
-*##:matches-path(/utm_medium=referral/) html:remove()
-*##:matches-path(/utm_medium=sidebar2-banner/) html:remove()
-*##:matches-path(~/shop) a[href*="/aclick?"]:not(.vsp_ads)
-*##:not(#container-top) > blockquote
-*##:not(#social_menu_buttons) > div > a[href^="http"]:not([href^="https://tverigrad.ru/"]) > img
-*##:not(.BigPic) > a[href*="sax.sina.com.cn/click?"]
-*##:not(.blinks) > .ad
-*##:not(.qy-index-page) > div[id^="100000"]
-*##:not(.sidebar) > .widget_text
-*##:not(.tbui_slideshow_slide) > div[data-daid]
-*##:not(.vgtrk-a1-list_inner) > .vgtrk-a1
-*##:not(.vse-slider-image) > .banner
-*##:not(.yandex_zen_link) + .yandex_zen_link
-*##:not(:matches-path(/^/$/)) .header:not(:matches-media((min-width: 750px))) + div[class] + div[class] .mobile-top-ad:style(margin: -10px auto !important)
-*##:not(:matches-path(/author/d-reportages)) ul#posts-container > li.post-item > .post-details > .post-meta > .author-meta:has-text(دپارتمان تبلیغات):upward(li.post-item)
-*##:not(:matches-path(/author/post/))
-*##:not(:matches-path(/category/website/reportage/)) .box:has-text(رپورتاژ آگهی)
-*##:not(:matches-path(/category/رپرتاژ-آگهی)) .archive-blog > article > figure > .entry-category:has-text(رپرتاژ آگهی):upward(article)
-*##:not(:matches-path(/category/رپرتاژ/)) article > footer > span.post-meta-cat:has-text(رپرتاژ):upward(article)
-*##:not(:matches-path(/fa/news/pr)) .items-row:has(.sazitem_imgcat:has-text(رپورتاژ آگهی))
-*##:not(:matches-path(/reportage)) .main-term-4662:remove()
-*##:not(:matches-path(/reportage)) .main-term-4998:remove()
-*##:not(:matches-path(/tag/رپورتاژ-آگهی/)) .posts-list > article.tag-8164 > .clearfix > a[class="title"][href$="reportage/"]:upward(article)
-*##:not(:matches-path(/رپورتاژ)) .art-post > .head-post > .cat-post:has-text(رپورتاژ):upward(.art-post)
-*##:not([align]) > a[href*="/goto/"]
-*##:not(div)[class][style*="height:"][style*="display:block !important"]
-*##:not(html) > iframe[style*="important"]:not([src^="https://disqus.com/embed/comments/"])
-*##:not(html):not(main):not(body):not(article):not(content):not(page):matches-attr("/.+/"="/leader.?board/i"):not(:matches-attr("/.+/"="/head/i")):not(:matches-attr("/.+/"="/block/i")):not(:matches-attr("/.+/"="/parallax/i"))
-*##:not(html):not(main):not(body):not(article):not(head):not(header):not(content):matches-attr("/.+/"="/pub(?!l)(?!.?date)[^l]/i"):not(:matches-attr("/.+/"="/page/i"))
-*##:not(html):not(main):not(body):not(head):not(header):not(content):not(page):matches-attr("/.+/"="/bann/i"):not(:matches-attr("/.+/"="/logo/i")):not(:matches-attr("/.+/"="/article/i"))
-*##:not(input):not(textarea),img:style(-webkit-touch-callout: default !important; -webkit-user-select: text !important; -moz-user-select: text !important; -ms-user-select: text !important; user-select: text !important;)
-*##:not(input):not(textarea)::selection:style(background-color:Highlight!important;color:HighlightText!important)
-*##:not(my-obnaruzhili-blokirovshchik)
-*##:not(td) > a[href*="//parnuxi.biz"]:not([href$=".html"])
-*##:not(this-site-promotes-malware)
-*##:root:style(--topbanner-height-min:unset!important;--topbanner-height-max:unset!important;)
-*##:root:style(scrollbar-color: revert !important; scrollbar-width: auto !important;)
-*##:root:style(user-select: unset !important;)
-*##:xpath("//*[(text()='Advertisement')]"):upward(1)
-*##:xpath('//*[(text()="AD")]/..')
-*##:xpath('//*[contains(text(),"AdB")]')
-*##:xpath('//*[contains(text(),"Adblock")]')
-*##:xpath('//*[contains(text(),"Hide your IP")]/..')
-*##:xpath('//*[contains(text(),"Sponsored")]'):upward(2)
-*##:xpath('//*[contains(text(),"VPN")]'):upward(2)
-*##:xpath('//*[contains(text(),"Watch HD")]')
-*##:xpath('//*[contains(text(),"Werbung")]') + [class]
-*##:xpath('//*[contains(text(),"allow ads")]'):upward(3)
-*##:xpath('//*[contains(text(),"blocker")]')
-*##:xpath('//*[contains(text(),"blocking software")]/../../..')
-*##:xpath('//*[string-length(@href) > 1600]')
-*##:xpath(//a[contains(text(),"VPN")]/../../..)
-*##:xpath(//div[contains(text(),"Adblock")]/..)
-*##:xpath(//div[contains(text(),"Advert")])
-*##:xpath(//div[not(@class="ui_qtext_para") and contains(text(), 'Quora') and contains(text(), 'by') and contains(text(), 'Business')]/parent::a/parent::div/parent::div/parent::div[@id])
-*##:xpath(//div[not(@class="ui_qtext_para") and contains(text(), 'ad by')]/parent::div/parent::div/parent::div[@id])
-*##:xpath(//div[not(@class="ui_qtext_para") and contains(text(), 'promoted') and contains(text(), 'by')]/parent::a/parent::div/parent::div/parent::div[@id])
-*##:xpath(//div[starts-with(@id, "dfp-ad")]/../..)
-*##:xpath(//p[(text()='d')]/../../../../..)
-*##:xpath(//p[contains(text(),"Ad ")]/../..)
-*##:xpath(//p[contains(text(),"Ad:")]/../..)
-*##:xpath(//span[(text()='Ad')]/../../..)
-*##:xpath(//span[(text()='S')]):upward(.s-item)
-*##:xpath(//span[contains(text(), 'by')]/ancestor::*[contains(concat(' ', @class, ' '), ' external_link ')]/../../..)
-*##:xpath(//span[contains(text(),"Advert")]/../..)
-*##:xpath(//span[contains(text(),"Around The")])
-*##:xpath(//span[contains(text(),"More from ")]/../preceding-sibling::div)
-*##:xpath(//strong[contains(text(),"VPN")]/../../..)
 *#*/ad/$image,redirect-rule=1x1.gif
 *$1p,image,redirect-rule=1x1.gif,domain=rte.ie
 *$1p,inline-script,script,domain=click.allkeyshop.com
@@ -280,15 +162,23 @@
 *$object,empty,domain=allcryptoz.net|crewbase.net|phineypet.com|shinbhu.net|talkforfitness.com
 *$other
 *$popunder
-*$redirect-rule=noopjs,script,domain=elahmad.com
 *$removeparam=/.*adb.*=/,important
 *$removeparam=/.*aff.*=/,important
+*$removeparam=/.*annonce.*=/,important
+*$removeparam=/.*campaign.*=/,important
+*$removeparam=/.*cash.*=/,important
 *$removeparam=/.*click.*=/,important
 *$removeparam=/.*cooki.*=/,important
+*$removeparam=/.*detect.*=/,important
+*$removeparam=/.*pop.*=/,important
 *$removeparam=/.*promo.*=/,important
+*$removeparam=/.*publisher.*=/,important
+*$removeparam=/.*redir.*=/,important
 *$removeparam=/.*sponsor.*=/,important
 *$removeparam=/.*zone.*=/,important
 *$removeparam=/^aabd=/,important
+*$removeparam=/^ad.*=/,important
+*$removeparam=/^ad_=/,important
 *$removeparam=/^adbisactive=/,important
 *$removeparam=/^adcid=/,important
 *$removeparam=/^adinstance.*=/,important
@@ -309,21 +199,23 @@
 *$removeparam=/^ban=/,important
 *$removeparam=/^bann.*=/,important
 *$removeparam=/^callback=/,important
-*$removeparam=/^campaign.*=/,important
+*$removeparam=/^cp.*/,important
 *$removeparam=/^ctier=/,important
+*$removeparam=/^dci=/,important
 *$removeparam=/^exotrack.*=/,important
 *$removeparam=/^hasads=/,important
 *$removeparam=/^hasfast=/,important
 *$removeparam=/^hit.*=/,important
 *$removeparam=/^memberid.*=/,important
+*$removeparam=/^oid=/,important
 *$removeparam=/^partner=/,important
-*$removeparam=/^popunder.*=/,important
 *$removeparam=/^pub.*=/,important
-*$removeparam=/^redir.*=/,important
 *$removeparam=/^rotat.*=/,important
-*$removeparam=/^track.*=/,important
+*$removeparam=/^tr.?ck.*=/,important
+*$removeparam=/^tz/,important
 *$removeparam=/^utm.*=/,important
 *$removeparam=/^visit.*=/,important
+*$removeparam=/^vk_=/,important
 *$script
 *$script,3p,denyallow=cdn77.org|cloudflare.net|googleapis.com|jsdelivr.net|jsdelivr.map.fastly.net,from=luscious.net
 *$script,3p,denyallow=cloudflare.com|google.com|gstatic.com|recaptcha.net|hcaptcha.com,from=scnlog.me
