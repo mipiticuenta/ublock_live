@@ -36,6 +36,7 @@
 *##:matches-attr("/.+/"="/[-_\s^]sky.?scrap/i")
 *##:matches-attr("/.+/"="/[-_\s^]soc[-_\s$]/i")
 *##:matches-attr("/.+/"="/[^(re)]spons/i")
+*##:matches-attr("/.+/"="/ad.wrap/i")
 *##:matches-attr("/.+/"="/adbl?o?c?k?/i")
 *##:matches-attr("/.+/"="/add.?this/i")
 *##:matches-attr("/.+/"="/addtoany/i")
@@ -156,7 +157,6 @@
 *$removeparam=/^aabd=/,important
 *$removeparam=/^ad.*=/,important
 *$removeparam=/^ad_=/,important
-*$removeparam=/^adbisactive=/,important
 *$removeparam=/^adcid=/,important
 *$removeparam=/^adinstance.*=/,important
 *$removeparam=/^adjomo.*=/,important
@@ -193,6 +193,7 @@
 *$removeparam=/^utm.*=/,important
 *$removeparam=/^visit.*=/,important
 *$removeparam=/^vk_=/,important
+*$removeparam=/apikey=/,important
 *$script
 *$websocket,domain=linuxtracker.org
 *$xhr
