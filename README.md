@@ -10,4 +10,6 @@
 !   - (lowest) show info on screen: cosmetic filters.
 !
 ! - simple, general filters preferred rather than complicated, specific ones.
-! - exceptions only if no better choice,
+! - regex only when efficient
+! - exceptions only if no better choice.
+

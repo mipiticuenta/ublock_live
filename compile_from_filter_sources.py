@@ -113,8 +113,9 @@ list2 = [re.sub(r'www\.', '', line).strip() for line in list2]                  
 list2 = [re.sub(r'^\://', '', line).strip() for line in list2]                       # <remove leading :///>
 list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                  # <remove leading :port/>
 
-print(' 7/17 : remove items with $badfilter')
+print(' 7/17 : remove items with $badfilter , about:')
 list2 = [line for line in list2 if not(re.search(r'[,\$]badfilter', line))]          # <remove items with $badfilter/>
+list2 = [line for line in list2 if not(re.search(r'about\.', line))]                 # <remove items with about:>
 
 print(' 8/17 : keep $csp=all')
 list2 = [re.sub(r'.*\$csp=.*', '*$csp=all', line) for line in list2]                 # <ensure *$csp=all'/>
@@ -148,12 +149,13 @@ list2s = [item[0] for line in list2s for item in line]                          
 list2 = sorted(set(list2) | set(list2s))                                             # <join retrieved domains to main list'/>
 del(list2s)
 
-print('10/17 : remove trailing $all, $third-party, $3p, $popup, $image')
+print('10/17 : remove trailing $ all, third-party, 3p, popup, image, doc')
 list2 = [re.sub(r'\$all$', '', line).strip() for line in list2]                      # <remove trailing $all/>
 list2 = [re.sub(r'\$third-party$', '', line).strip() for line in list2]              # <remove trailing $third-party/>
 list2 = [re.sub(r'\$3p$', '', line).strip() for line in list2]                       # <remove trailing $3p/>
 list2 = [re.sub(r'(?<=.)\$popup$', '', line).strip() for line in list2]              # <remove trailing $popup/>
 list2 = [re.sub(r'(?<=.)[\^|\|]?\$image$', '', line) for line in list2]              # <remove trailing $image/>
+list2 = [re.sub(r'\$doc$', '', line).strip() for line in list2]                      # <remove trailing $3p/>
 
 print('11/17 : remove || and trailing ^, |')
 list2 = [re.sub(r'\^$', '', line).strip() for line in list2]                         # <remove trailing ^/>
