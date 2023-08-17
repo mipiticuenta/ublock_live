@@ -77,67 +77,49 @@ del(list1)    # <clean up; make sure list1 is not used anymore hereafter/>
 print('Transforming filters')
 print('--------------------')
 
-print(' 1/25 : dedup spaces and remove leading/trailing spaces')
+print(' 1/17 : dedup spaces and remove leading/trailing spaces')
 list2 = [re.sub(r' +', ' ', line).strip() for line in list2]                         # <dedup spaces and remove leading/trailing spaces/>
+list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
 
-print(' 2/25 : remove uBO style trailing comments')
+print(' 2/17 : remove comments')
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
 list2 = [line for line in list2 if line[0] != '!']                                   # <remove uBO style comments'/>
-
-print(' 3/25 : remove not uBO style trailing comments')
 list2 = [line for line in list2 if line[0] != '#']                                   # <remove not uBO style trailing comments/>
 list2 = [re.sub(r' #(?!#+).*', '', line) for line in list2]                          # <remove not uBO style trailing comments/>
+list2 = [line for line in list2 if line[0] != '[']                                   # <remove not uBO style comments []/>
+list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
 
-print(' 4/25 : keep case only for cosmetic filter; apply lower case for the remaining')
+print(' 3/17 : keep case only for cosmetic filter; apply lower case for the remaining')
 list2 = (
         [line         for line in list2 if     re.search(r'#', line) ] + 
         [line.lower() for line in list2 if not(re.search(r'#', line))]               # <lower case for all except cosmetics/>
         )
-print(' 5/25 : remove items leaded by ****::*')
-list2 = [re.sub(r'....\:\:[0-9].*', '', line) for line in list2]                     # <remove IP6 addresses/>
 
-print(' 6/25 : remove IP addresses (complete or uncomplete)')
-list2 = [re.sub(r'[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+.*', '', line) for line in list2]    # <remove IP4 addresses/>
-list2 = [re.sub(r'^[0-9]+\.[0-9]+\.[0-9]+\.$', '', line) for line in list2]          # <remove IP4 addresses/>
-list2 = [re.sub(r'^[0-9]+\.[0-9]+\..$', '', line) for line in list2]                 # <remove IP4 addresses/>
-
-print(' 7/25 : remove www.')
-list2 = [re.sub(r'www\.', '', line).strip() for line in list2]                       # <remove www./>
-
-print(' 8/25 : remove trailing $all')
-list2 = [re.sub(r'\$all$', '', line).strip() for line in list2]                      # <remove trailing $all/>
-
-print(' 9/25 : remove trailing $third-party and $3p')
-list2 = [re.sub(r'\$third-party$', '', line).strip() for line in list2]              # <remove trailing $third-party/>
-list2 = [re.sub(r'\$3p$', '', line).strip() for line in list2]                       # <remove trailing $3p/>
-
-print('10/25 : remove trailing $popup')
-list2 = [re.sub(r'(?<=.)\$popup$', '', line).strip() for line in list2]              # <remove trailing $popup/>
-
-print('11/25 : remove trailing ^')
-list2 = [re.sub(r'\^$', '', line).strip() for line in list2]                         # <remove trailing ^/>
-
-print('12/25 : remove ||')
-list2 = [re.sub(r'\|\|', '', line).strip() for line in list2]                        # <remove ||/>
-
-print('13/25 : remove leading ::1 (dns style filter), :// and :port')
-list2 = [re.sub(r'\:\:1 ', '', line).strip() for line in list2]                       # <remove leading '::1 (dns style filter)'/>
-list2 = [re.sub(r'^\://', '', line).strip() for line in list2]                        # <remove leading :///>
-list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                   # <remove leading :port/>
-
-print('14/25 : remove leading 0.0.0.0 ')
+print(' 4/17 : capture domains from dns style filters; remove items leaded by localhost')
 list2 = [re.sub(r'0\.0\.0\.0 ', '', line).strip() for line in list2]                 # <remove leading '0.0.0.0 (dns style filter)'/>
-
-print('15/25 : remove leading 127.0.0.1 ')
 list2 = [re.sub(r'127\.0\.0\.1 ', '', line).strip() for line in list2]               # <remove leading '127.0.0.1 (dns style filter)'/>
+list2 = [re.sub(r'\:\:1 ', '', line).strip() for line in list2]                      # <remove leading '::1 (dns style filter)'/>
+list2 = [line for line in list2 if line[0:8] != 'localhost']                         # <remove items leaded by localhost />
 
-print('16/25 : remove items with $badfilter')
+print(' 5/17 : remove IP4/6 filters')
+list2 = [re.sub(r'[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+.*', '', line) for line in list2]    # <remove IP4 addresses d.d.d.d/>
+list2 = [re.sub(r'^[0-9]+\.[0-9]+\.[0-9]+\.$', '', line) for line in list2]          # <remove IP4 addresses d.d.d/>
+list2 = [re.sub(r'^[0-9]+\.[0-9]+\..$', '', line) for line in list2]                 # <remove IP4 addresses d.d/>
+list2 = [re.sub(r'....\:\:[0-9].*', '', line) for line in list2]                     # <remove IP6 addresses/>
+list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
+
+print(' 6/17 : remove leading www, :///, :port ')
+list2 = [re.sub(r'www\.', '', line).strip() for line in list2]                       # <remove www./>
+list2 = [re.sub(r'^\://', '', line).strip() for line in list2]                       # <remove leading :///>
+list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                  # <remove leading :port/>
+
+print(' 7/17 : remove items with $badfilter')
 list2 = [line for line in list2 if not(re.search(r'[,\$]badfilter', line))]          # <remove items with $badfilter/>
 
-print('17/25 : ensure $csp=all')
+print(' 8/17 : ensure $csp=all')
 list2 = [re.sub(r'.*\$csp=.*', '*$csp=all', line) for line in list2]                 # <ensure *$csp=all'/>
 
-print('18/25 : remove denyallow, popup, popunder, xhr, script, frame filters; keep domains')
+print(' 9/17 : remove denyallow, $popup, $popunder, $xhr, $script, frame filters combined with domain=')
 
 list2s = (
     [line for line in list2 if re.search(r'^\*\$.*denyallow.*domain=', line)] +      # <remove denyallow filters and add domains'/>
@@ -165,21 +147,19 @@ list2s = [item[0] for line in list2s for item in line]                          
 list2 = sorted(set(list2) | set(list2s))                                             # <join retrieved domains to main list'/>
 del(list2s)
 
-print('19/25 : remove items with length < 2')
-list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
+print('10/17 : remove trailing $all, $third-party, $3p, $popup, $image')
+list2 = [re.sub(r'\$all$', '', line).strip() for line in list2]                      # <remove trailing $all/>
+list2 = [re.sub(r'\$third-party$', '', line).strip() for line in list2]              # <remove trailing $third-party/>
+list2 = [re.sub(r'\$3p$', '', line).strip() for line in list2]                       # <remove trailing $3p/>
+list2 = [re.sub(r'(?<=.)\$popup$', '', line).strip() for line in list2]              # <remove trailing $popup/>
+list2 = [re.sub(r'(?<=.)[\^|\|]?\$image$', '', line) for line in list2]              # <remove trailing $image/>
 
-print('20/25 : remove items leaded by localhost')
-list2 = [line for line in list2 if line[0:8] != 'localhost']                         # <remove items leaded by localhost />
+print('11/17 : remove || and trailing ^, |')
+list2 = [re.sub(r'\^$', '', line).strip() for line in list2]                         # <remove trailing ^/>
+list2 = [re.sub(r'\|$', '', line).strip() for line in list2]                         # <remove trailing |/>
+list2 = [re.sub(r'\|\|', '', line).strip() for line in list2]                        # <remove ||/>
 
-print('21/25 : generalize cosmetic filters (*##)')
-list2 = [re.sub(r'^.*(?=##)', '*', line) for line in list2]                          # <generalize cosmetic filters (*##)'/>
-
-print('22/25 : replace leading *. / trailing .* with . ; replace leading */ with /')
-list2 = [re.sub(r'\.\*$', '.', line).strip() for line in list2]                      # <replace trailing .* with ./>
-list2 = [re.sub(r'^\*\.', '.', line).strip() for line in list2]                      # <replace leading *. with ./>
-list2 = [re.sub(r'^\*/', '/', line).strip() for line in list2]                       # <replace leading */ with / />
-
-print('23/25 : split domains with urls')
+print('12/17 : split domains with urls')
 
 list2s = [line for line in list2 if re.search(r'^[-_\.a-z0-9]+\.[a-z]+/.*', line)]   # <remove domains with url'/>
 
@@ -193,7 +173,7 @@ list22 = (
 list2 = sorted(set(list2) | set(list2s))                                             # <join retrieved domains to main list'/>
 del(list2s)
 
-print('24/25 : split urls with $domains=')
+print('13/17 : split urls with $domains=')
 
 list2s = [line for line in list2 if re.search(r'^[-_\.\*\/a-z0-9]+\$domain=', line)] # <remove domains with url'/>
 
@@ -210,17 +190,21 @@ list2s = [item[0] for line in list2s for item in line]                          
 list2 = sorted(set(list2) | set(list2s))                                             # <join retrieved domains to main list'/>
 del(list2s)
 
-print('25/25 : remove /wp-content/uploads/.*')
-list2 = [re.sub(r'(?<=\w)\/wp\-content\/uploads/.*', '', line) for line in list2]    # <remove /wp-content/uploads/.*'/>
-
-print('26/26 : remove leading ~')
+print('14/17 : replace leading/trailing * and leading ~')
+list2 = [re.sub(r'\.\*$', '.', line).strip() for line in list2]                      # <replace trailing .* with ./>
+list2 = [re.sub(r'^\*\.', '.', line).strip() for line in list2]                      # <replace leading *. with ./>
+list2 = [re.sub(r'^\*/', '/', line).strip() for line in list2]                       # <replace leading */ with / />
 list2 = [re.sub(r'^~', '', line) for line in list2]                                  # <remove leading ~/>
 
-print('26/26 : remove trailing .php?')
+print('15/17 : remove /wp-content/uploads/.*')
+list2 = [re.sub(r'(?<=\w)\/wp\-content\/uploads/.*', '', line) for line in list2]    # <remove /wp-content/uploads/.*'/>
+
+print('16/17 : remove trailing .php?')
 list2 = [re.sub(r'\.php\?$', '.', line) for line in list2]                           # <remove trailing .php?/>
 
-print('26/26 : remove trailing $image')
-list2 = [re.sub(r'(?<=.)[\^|\|]?\$image$', '', line) for line in list2]              # <remove trailing $image/>
+print('17/17 : generalize cosmetic filters (*##)')
+list2 = [re.sub(r'^.*(?=##)', '*', line) for line in list2]                          # <generalize cosmetic filters (*##)'/>
+
 
 print(
     '\n',
