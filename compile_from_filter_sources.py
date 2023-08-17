@@ -206,6 +206,7 @@ list2 = [re.sub(r'(?<=\w)\/wp\-content\/uploads/.*', '', line) for line in list2
 
 print('16/17 : remove trailing .php?')
 list2 = [re.sub(r'\.php\?$', '.', line) for line in list2]                           # <remove trailing .php?/>
+list2 = [re.sub(r'\$domain=$', '', line) for line in list2]                          # <remove trailing .$domain=/>
 
 print('17/17 : generalize cosmetic filters (*##)')
 list2 = [re.sub(r'^.*(?=##)', '*', line) for line in list2]                          # <generalize cosmetic filters (*##)'/>
