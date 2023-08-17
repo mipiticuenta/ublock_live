@@ -21,7 +21,7 @@
 [^a-z0-9](ads?v?x?|thumbs)rotator[^a-z]
 [^a-z0-9](ak.?(\-|\.).*|crashdump\.|ec\-.*|sto3\.|weblb.*)spotify[^a-z]
 [^a-z0-9](ampcid|contributor|marketingplatform|notifications|plus)\.google[^a-z]
-[^a-z0-9](bbt|check|get|i)stat(counter|s|tracker)(-_=&\?/\.]|$)
+[^a-z0-9](bbt|check|get|i)stat(counter|s|tracker)(-_=&\?/\.]$)
 [^a-z0-9](bloodhound|crashdump\.|ec\-.*|(audio|heads)\-ak\-|partner\-links\.|sto3\.|weblb.*|exp\.wg\.)spotify[^a-z]
 [^a-z0-9](browsi|sp\-)prod[^a-z]
 [^a-z0-9](contributor|notifications|plus)\.google[^a-z]
@@ -121,7 +121,7 @@
 [^a-z0-9]dfp
 [^a-z0-9]districtm[^a-z]
 [^a-z0-9]dm(ca|cdn)[^a-z]
-[^a-z0-9]donate([^a-z]|[0-9]*|$)
+[^a-z0-9]donate([^a-z]|[0-9]*$)
 [^a-z0-9]dwin1[^a-z]
 [^a-z0-9]dynatrace[^a-z]
 [^a-z0-9]e-planning[^a-z]
@@ -130,7 +130,7 @@
 [^a-z0-9]emploipartner[^a-z]
 [^a-z0-9]en25[^a-z]
 [^a-z0-9]epoq(|go)[^a-z]
-[^a-z0-9]experiments?(-_=&\?/\.]|$)
+[^a-z0-9]experiments?(-_=&\?/\.]$)
 [^a-z0-9]ezo(ic|dn)[^a-z]
 [^a-z0-9]farshake[^a-z]
 [^a-z0-9]fastly(\-|\-insights|lb)[^a-z]
@@ -290,7 +290,7 @@
 [^a-z0-9]sportslocalmedia[^a-z]
 [^a-z0-9]spot[^a-z]
 [^a-z0-9]stackadapt[^a-z]
-[^a-z0-9]stargate([\/\-_.\?]|$)
+[^a-z0-9]stargate([\/\-_.\?]$)
 [^a-z0-9]streamtheworld[^a-z]
 [^a-z0-9]subscri
 [^a-z0-9]suggestqueries[^a-z]
@@ -320,7 +320,7 @@
 [^a-z0-9]umeng (|cloud)[^a-z]
 [^a-z0-9]unpkg[^a-z]
 [^a-z0-9]urbanairship[^a-z]
-[^a-z0-9]user(\-behavior|_context|\-geo|\-id|\.min|zoom)(|\.js)([\/\-_.\?]|$)
+[^a-z0-9]user(\-behavior|_context|\-geo|\-id|\.min|zoom)(|\.js)([\/\-_.\?]$)
 [^a-z0-9]utm
 [^a-z0-9]uxcam[^a-z]
 [^a-z0-9]vidyard[^a-z]
@@ -406,6 +406,7 @@ upload/hzds
 upload/recommend/game
 utm[^a-z]
 werrx01
+widgets
 wp-content/plugins/best-ads-block-detector
 wp-content/plugins/uncopy
 zbst/events
