@@ -89,13 +89,13 @@ list2 = [re.sub(r' #(?!#+).*', '', line) for line in list2]                     
 list2 = [line for line in list2 if line[0] != '[']                                   # <remove not uBO style comments []/>
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
 
-print(' 3/17 : keep case only for cosmetic filter; apply lower case for the remaining')
+print(' 3/17 : keep case for cosmetic filters; apply lower case for the remaining')
 list2 = (
         [line         for line in list2 if     re.search(r'#', line) ] + 
         [line.lower() for line in list2 if not(re.search(r'#', line))]               # <lower case for all except cosmetics/>
         )
 
-print(' 4/17 : capture domains from dns style filters; remove items leaded by localhost')
+print(' 4/17 : capture domains from dns filters; remove items leaded by localhost')
 list2 = [re.sub(r'0\.0\.0\.0 ', '', line).strip() for line in list2]                 # <remove leading '0.0.0.0 (dns style filter)'/>
 list2 = [re.sub(r'127\.0\.0\.1 ', '', line).strip() for line in list2]               # <remove leading '127.0.0.1 (dns style filter)'/>
 list2 = [re.sub(r'\:\:1 ', '', line).strip() for line in list2]                      # <remove leading '::1 (dns style filter)'/>
@@ -108,7 +108,7 @@ list2 = [re.sub(r'^[0-9]+\.[0-9]+\..$', '', line) for line in list2]            
 list2 = [re.sub(r'....\:\:[0-9].*', '', line) for line in list2]                     # <remove IP6 addresses/>
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
 
-print(' 6/17 : remove leading www, :///, :port ')
+print(' 6/17 : remove leading www., :///, :port ')
 list2 = [re.sub(r'www\.', '', line).strip() for line in list2]                       # <remove www./>
 list2 = [re.sub(r'^\://', '', line).strip() for line in list2]                       # <remove leading :///>
 list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                  # <remove leading :port/>
@@ -116,10 +116,10 @@ list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]             
 print(' 7/17 : remove items with $badfilter')
 list2 = [line for line in list2 if not(re.search(r'[,\$]badfilter', line))]          # <remove items with $badfilter/>
 
-print(' 8/17 : ensure $csp=all')
+print(' 8/17 : keep $csp=all')
 list2 = [re.sub(r'.*\$csp=.*', '*$csp=all', line) for line in list2]                 # <ensure *$csp=all'/>
 
-print(' 9/17 : remove denyallow, $popup, $popunder, $xhr, $script, frame filters combined with domain=')
+print(' 9/17 : remove $ filters and ghide exceptions combined with domain=')
 
 list2s = (
     [line for line in list2 if re.search(r'^\*\$.*denyallow.*domain=', line)] +      # <remove denyallow filters and add domains'/>
@@ -130,11 +130,12 @@ list2s = (
     [line for line in list2 if re.search(r'^\*\$webrtc.*domain=', line)] +           # <remove webrtc filters and add domains'/>
     [line for line in list2 if re.search(r'^\*\$image.*domain=', line)] +            # <remove image filters and add domains'/>
     [line for line in list2 if re.search(r'^\*\$3p.*domain=', line)] +               # <remove 3p filters and add domains'/>
+    [line for line in list2 if re.search(r'^\*\$ping.*domain=', line)] +             # <remove ping filters and add domains'/>
+    [line for line in list2 if re.search(r'^\*\$.*frame.*domain=', line)]            # <remove frame filters and add domains'/>
     [line for line in list2 if re.search(r'^\@\@\*\$ghide.*domain=', line)] +        # <remove ghise exceptions and add domains'/>
     [line for line in list2 if re.search(r'^\*\&expire.*domain=', line)] +           # <remove expires filters and add domains'/>
     [line for line in list2 if re.search(r'^\*\&token.*domain=', line)] +            # <remove token filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*\$ping.*domain=', line)] +             # <remove ping filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*\$.*frame.*domain=', line)]            # <remove frame filters and add domains'/>
+
     )
 
 list2 = set(list2) - set(list2s)                                                     # <segregate removed filters'/>
