@@ -150,11 +150,13 @@ list2 = sorted(set(list2) | set(list2s))                                        
 del(list2s)
 
 print('10/17 : remove trailing $ all, third-party, 3p, popup, image, doc')
+list2 = [re.sub(r'\^\$', '$', line).strip() for line in list2]                       # <replace ^$ with $/>
+list2 = [re.sub(r'\|\$', '$', line).strip() for line in list2]                       # <replace |$ with $/>
 list2 = [re.sub(r'\$all$', '', line).strip() for line in list2]                      # <remove trailing $all/>
 list2 = [re.sub(r'\$third-party$', '', line).strip() for line in list2]              # <remove trailing $third-party/>
 list2 = [re.sub(r'\$3p$', '', line).strip() for line in list2]                       # <remove trailing $3p/>
 list2 = [re.sub(r'(?<=.)\$popup$', '', line).strip() for line in list2]              # <remove trailing $popup/>
-list2 = [re.sub(r'(?<=.)[\^|\|]?\$image$', '', line) for line in list2]              # <remove trailing $image/>
+list2 = [re.sub(r'(?<=.)\$image$', '', line) for line in list2]                      # <remove trailing $image/>
 list2 = [re.sub(r'\$doc$', '', line).strip() for line in list2]                      # <remove trailing $3p/>
 
 print('11/17 : remove || and trailing ^, |')
