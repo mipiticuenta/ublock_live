@@ -79,15 +79,14 @@ print('--------------------')
 
 print(' 1/17 : dedup spaces and remove leading/trailing spaces')
 list2 = [re.sub(r' +', ' ', line).strip() for line in list2]                         # <dedup spaces and remove leading/trailing spaces/>
-list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
+list2 = [line for line in list2 if len(line) > 0]                                    # <remove items with length = 0/>
 
 print(' 2/17 : remove comments')
-list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
 list2 = [line for line in list2 if line[0] != '!']                                   # <remove uBO style comments'/>
 list2 = [line for line in list2 if line[0] != '#']                                   # <remove not uBO style trailing comments/>
 list2 = [re.sub(r' #(?!#+).*', '', line) for line in list2]                          # <remove not uBO style trailing comments/>
 list2 = [line for line in list2 if line[0] != '[']                                   # <remove not uBO style comments []/>
-list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
+list2 = [line for line in list2 if len(line) > 0]                                    # <remove items with length = 0/>
 
 print(' 3/17 : keep case for cosmetic filters; apply lower case for the remaining')
 list2 = (
@@ -106,7 +105,7 @@ list2 = [re.sub(r'[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+.*', '', line) for line in list2
 list2 = [re.sub(r'^[0-9]+\.[0-9]+\.[0-9]+\.$', '', line) for line in list2]          # <remove IP4 addresses d.d.d/>
 list2 = [re.sub(r'^[0-9]+\.[0-9]+\..$', '', line) for line in list2]                 # <remove IP4 addresses d.d/>
 list2 = [re.sub(r'....\:\:[0-9].*', '', line) for line in list2]                     # <remove IP6 addresses/>
-list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
+list2 = [line for line in list2 if len(line) > 0]                                    # <remove items with length = 0/>
 
 print(' 6/17 : remove leading www., :///, :port ')
 list2 = [re.sub(r'www\.', '', line).strip() for line in list2]                       # <remove www./>
