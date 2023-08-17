@@ -131,10 +131,10 @@ list2s = (
     [line for line in list2 if re.search(r'^\*\$image.*domain=', line)] +            # <remove image filters and add domains'/>
     [line for line in list2 if re.search(r'^\*\$3p.*domain=', line)] +               # <remove 3p filters and add domains'/>
     [line for line in list2 if re.search(r'^\*\$ping.*domain=', line)] +             # <remove ping filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*\$.*frame.*domain=', line)]            # <remove frame filters and add domains'/>
+    [line for line in list2 if re.search(r'^\*\$.*frame.*domain=', line)] +          # <remove frame filters and add domains'/>
     [line for line in list2 if re.search(r'^\@\@\*\$ghide.*domain=', line)] +        # <remove ghise exceptions and add domains'/>
     [line for line in list2 if re.search(r'^\*\&expire.*domain=', line)] +           # <remove expires filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*\&token.*domain=', line)] +            # <remove token filters and add domains'/>
+    [line for line in list2 if re.search(r'^\*\&token.*domain=', line)]              # <remove token filters and add domains'/>
 
     )
 
