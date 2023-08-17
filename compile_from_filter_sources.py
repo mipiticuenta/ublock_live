@@ -99,7 +99,7 @@ print(' 4/17 : capture domains from dns filters; remove items leaded by localhos
 list2 = [re.sub(r'0\.0\.0\.0 ', '', line).strip() for line in list2]                 # <remove leading '0.0.0.0 (dns style filter)'/>
 list2 = [re.sub(r'127\.0\.0\.1 ', '', line).strip() for line in list2]               # <remove leading '127.0.0.1 (dns style filter)'/>
 list2 = [re.sub(r'\:\:1 ', '', line).strip() for line in list2]                      # <remove leading '::1 (dns style filter)'/>
-list2 = [line for line in list2 if line[0:8] != 'localhost']                         # <remove items leaded by localhost />
+list2 = [line for line in list2 if not(re.search(r'localhost', line))]               # <remove items containing localhost />
 
 print(' 5/17 : remove IP4/6 filters')
 list2 = [re.sub(r'[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+.*', '', line) for line in list2]    # <remove IP4 addresses d.d.d.d/>
