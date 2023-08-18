@@ -238,7 +238,7 @@ print(
 print('Dedup domains; this operation could take long time, please wait')
 print('---------------------------------------------------------------')
 
-list2  = set(list2) - set(list3)    # <only domains part are processed in this section/>
+list2  = set(list2) - set(list3)    # <only domains part are processed in this section/>º
 list3r = [line for line in list3 if re.search(r'^[a-z0-9][-_a-z0-9]+\.[a-z]+$', line)]    # <@.@ domains are elemental items/>
 
 print(
