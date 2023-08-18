@@ -194,18 +194,20 @@ list2s = [item[0] for line in list2s for item in line]                          
 list2 = sorted(set(list2) | set(list2s))                                             # <join retrieved domains to main list'/>
 del(list2s)
 
-print('14/17 : replace leading/trailing * and leading ~')
+print('14/17 : replace leading/trailing * , ~ , trailing ,')
 list2 = [re.sub(r'\.\*$', '.', line).strip() for line in list2]                      # <replace trailing .* with ./>
 list2 = [re.sub(r'^\*\.', '.', line).strip() for line in list2]                      # <replace leading *. with ./>
 list2 = [re.sub(r'^\*/', '/', line).strip() for line in list2]                       # <replace leading */ with / />
 list2 = [re.sub(r'^~', '', line) for line in list2]                                  # <remove leading ~/>
+list2 = [re.sub(r'~$', '', line).strip() for line in list2]                          # <remove trailing ~/>
+list2 = [re.sub(r',$', '', line).strip() for line in list2]                          # <remove trailing ,/>
 
 print('15/17 : remove /wp-content/uploads/.*')
 list2 = [re.sub(r'(?<=\w)\/wp\-content\/uploads/.*', '', line) for line in list2]    # <remove /wp-content/uploads/.*'/>
 
 print('16/17 : remove trailing .php?')
 list2 = [re.sub(r'\.php\?$', '.', line) for line in list2]                           # <remove trailing .php?/>
-list2 = [re.sub(r'domain=$', '', line) for line in list2]                          # <remove trailing .$domain=/>
+list2 = [re.sub(r'domain=$', '', line) for line in list2]                            # <remove trailing .$domain=/>
 
 print('17/17 : generalize cosmetic filters (*##)')
 list2 = [re.sub(r'^.*(?=##)', '*', line) for line in list2]                          # <generalize cosmetic filters (*##)'/>
