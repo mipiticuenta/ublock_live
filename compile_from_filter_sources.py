@@ -169,7 +169,7 @@ list2s = [line for line in list2 if re.search(r'^[-_\.a-z0-9]+\.[a-z]+/.*', line
 
 list2 = set(list2) - set(list2s)                                                     # <segregate removed filters'/>
 
-list22 = (
+list2s = (
         [re.sub(r'^[-_\.a-z0-9]+\.[a-z]+/', '/', line) for line in list2s] +         # <isolate url part/>
         [re.sub(r'(?<=\w)/.*', '', line) for line in list2s]                         # <isolate domains part/>
         )
@@ -183,7 +183,7 @@ list2s = [line for line in list2 if re.search(r'^[-_\.\*\/a-z0-9]+\$domain=', li
 
 list2 = set(list2) - set(list2s)                                                     # <segregate removed filters'/>
 
-list22 = (
+list2s = (
         [re.sub(r'^.*domain=', '', line) for line in list2s] +                       # <isolate domain list part/>
         [re.sub(r'\$domain=.*', '', line) for line in list2s]                        # <isolate url part/>
         )
@@ -205,9 +205,10 @@ list2 = [re.sub(r',$', '', line).strip() for line in list2]                     
 print('15/17 : remove /wp-content/uploads/.*')
 list2 = [re.sub(r'(?<=\w)\/wp\-content\/uploads/.*', '', line) for line in list2]    # <remove /wp-content/uploads/.*'/>
 
-print('16/17 : remove trailing .php?')
+print('16/17 : remove trailing .php? ; cleanup trailing .js')
 list2 = [re.sub(r'\.php\?$', '.', line) for line in list2]                           # <remove trailing .php?/>
-list2 = [re.sub(r'domain=$', '', line) for line in list2]                            # <remove trailing .$domain=/>
+list2 = [re.sub(r'domain=$', '', line) for line in list2]                            # <remove trailing $domain=/>
+list2 = [re.sub(r'\.js(?![a-z0-9]).*', '.js', line) for line in list2]               # <clean up trailing .js/>
 
 print('17/17 : generalize cosmetic filters (*##)')
 list2 = [re.sub(r'^.*(?=##)', '*', line) for line in list2]                          # <generalize cosmetic filters (*##)'/>
