@@ -156,7 +156,9 @@ list2 = [re.sub(r'\$third-party$', '', line).strip() for line in list2]         
 list2 = [re.sub(r'\$3p$', '', line).strip() for line in list2]                       # <remove trailing $3p/>
 list2 = [re.sub(r'(?<=.)\$popup$', '', line).strip() for line in list2]              # <remove trailing $popup/>
 list2 = [re.sub(r'(?<=.)\$image$', '', line) for line in list2]                      # <remove trailing $image/>
-list2 = [re.sub(r'\$doc$', '', line).strip() for line in list2]                      # <remove trailing $3p/>
+list2 = [re.sub(r'\$doc$', '', line).strip() for line in list2]                      # <remove trailing $doc/>
+list2 = [re.sub(r'\$xhr$', '', line).strip() for line in list2]                      # <remove trailing $xhr/>
+list2 = [re.sub(r'\$xmlhttprequest$', '', line).strip() for line in list2]           # <remove trailing $xmlhttprequest/>
 
 print('11/17 : remove || and trailing ^, |')
 list2 = [re.sub(r'\^$', '', line).strip() for line in list2]                         # <remove trailing ^/>
