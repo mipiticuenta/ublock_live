@@ -150,8 +150,8 @@ list2 = set(list2) - set(list2s)                                                
 list2s = [re.sub(r'.*domain=', '', line).strip() for line in list2s]                 # <remove leading .*domain=/>
 list2s = [re.sub(r'.*denyallow=', '', line).strip() for line in list2s]              # <remove leading .*denyallow=/>
 list2s = [re.sub(r'\,.*$', '', line).strip() for line in list2s]                     # <remove trailing .*,.*/>
-list2s = [line.split('|') for line in list2s]                                        # <flatten list'/>
-list2s = [item[0] for line in list2s if len(line) > 0 for item in line]              # <flatten list'/>
+list2s = [line.split('|') for line in list2s if len(line) > 0                        # <flatten list'/>
+list2s = [item[0] for line in list2s for item in line]                               # <flatten list'/>
 
 list2 = sorted(set(list2) | set(list2s))                                             # <join retrieved domains to main list'/>
 del(list2s)
