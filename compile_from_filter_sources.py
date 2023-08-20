@@ -198,6 +198,9 @@ del(list2s)
 
 print('14/17 : replace leading/trailing * , ~ , trailing ,')
 
+list2 = [re.sub(r'^/admin/', '/', line) for line in list2]                           # <remove leading /admin/ />
+list2 = [re.sub(r'^/ads?/(?!\*)', '/', line) for line in list2]                      # <remove leading /ads?/ />
+list2 = [re.sub(r'^/adv/(?!\*)', '/', line) for line in list2]                       # <remove leading /adv/ />
 list2 = [re.sub(r'^/images?/', '/', line) for line in list2]                         # <remove leading /image(s)/ >
 list2 = [re.sub(r'^/imgs?/', '/', line) for line in list2]                           # <remove leading /img(s)/ />
 list2 = [re.sub(r'^/js/', '/', line) for line in list2]                              # <remove leading /js/ />
