@@ -122,32 +122,33 @@ list2 = [re.sub(r'.*\$csp=.*', '*$csp=all', line) for line in list2]            
 print(' 9/21 : remove $ filters and ghide exceptions combined with domain=')
 
 list2s = (
-    [line for line in list2 if re.search(r'^\*?\$popup.*domain=', line)] +           # <remove popup filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*?\$popunder.*domain=', line)] +        # <remove popunder filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*?\$xhr.*domain=', line)] +             # <remove xhr filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*?\$script.*domain=', line)] +          # <remove script filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*?\$webrtc.*domain=', line)] +          # <remove webrtc filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*?\$image.*domain=', line)] +           # <remove image filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*?\$media.*domain=', line)] +           # <remove media filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*?\$object.*domain=', line)] +          # <remove object filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*?\$doc.*domain=', line)] +             # <remove doc filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*?\$1p.*domain=', line)] +              # <remove 1p filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*?\$3p.*domain=', line)] +              # <remove 3p filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*?\$ping.*domain=', line)] +            # <remove ping filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*?\$refirect.*domain=', line)] +        # <remove redirect filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*?\$.*denyallow.*domain=', line)] +     # <remove denyallow filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*?\$.*frame.*domain=', line)] +         # <remove frame filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*?\$.*denyallow=', line)] +             # <remove denyallow filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*\&?expire.*domain=', line)] +          # <remove expires filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*\&?pre\-?rroll.*domain=', line)] +     # <remove prerroll filters and add domains'/>
-    [line for line in list2 if re.search(r'^\*\&token.*domain=', line)]              # <remove token filters and add domains'/>
-    [line for line in list2 if re.search(r'^\@\@\*\$ghide.*domain=', line)] +        # <remove ghise exceptions and add domains'/>
+    [line for line in list2 if re.search(r'^\*?\$popup.*domain=', line)] +           # <remove popup filters and add domains/>
+    [line for line in list2 if re.search(r'^\*?\$popunder.*domain=', line)] +        # <remove popunder filters and add domains/>
+    [line for line in list2 if re.search(r'^\*?\$xhr.*domain=', line)] +             # <remove xhr filters and add domains/>
+    [line for line in list2 if re.search(r'^\*?\$script.*domain=', line)] +          # <remove script filters and add domains/>
+    [line for line in list2 if re.search(r'^\*?\$webrtc.*domain=', line)] +          # <remove webrtc filters and add domains/>
+    [line for line in list2 if re.search(r'^\*?\$image.*domain=', line)] +           # <remove image filters and add domains/>
+    [line for line in list2 if re.search(r'^\*?\$media.*domain=', line)] +           # <remove media filters and add domains/>
+    [line for line in list2 if re.search(r'^\*?\$object.*domain=', line)] +          # <remove object filters and add domains/>
+    [line for line in list2 if re.search(r'^\*?\$doc.*domain=', line)] +             # <remove doc filters and add domains/>
+    [line for line in list2 if re.search(r'^\*?\$1p.*domain=', line)] +              # <remove 1p filters and add domains/>
+    [line for line in list2 if re.search(r'^\*?\$3p.*domain=', line)] +              # <remove 3p filters and add domains/>
+    [line for line in list2 if re.search(r'^\*?\$ping.*domain=', line)] +            # <remove ping filters and add domains/>
+    [line for line in list2 if re.search(r'^\*?\$refirect.*domain=', line)] +        # <remove redirect filters and add domains/>
+    [line for line in list2 if re.search(r'^\*?\$.*denyallow.*domain=', line)] +     # <remove denyallow filters and add domains/>
+    [line for line in list2 if re.search(r'^\*?\$.*frame.*domain=', line)] +         # <remove frame filters and add domains/>
+    [line for line in list2 if re.search(r'^\*?\$.*denyallow=', line)] +             # <remove denyallow filters and add domains/>
+    [line for line in list2 if re.search(r'^\*\&?expire.*domain=', line)] +          # <remove expires filters and add domains/>
+    [line for line in list2 if re.search(r'^\*\&?pre\-?rroll.*domain=', line)] +     # <remove prerroll filters and add domains/>
+    [line for line in list2 if re.search(r'^\*\&token.*domain=', line)] +            # <remove token filters and add domains/>
+    [line for line in list2 if re.search(r'^\@\@\*\$ghide.*domain=', line)]          # <remove ghise exceptions and add domains/>
 
     )
 
 list2 = set(list2) - set(list2s)                                                     # <segregate removed filters'/>
 
 list2s = [re.sub(r'.*domain=', '', line).strip() for line in list2s]                 # <remove leading .*domain=/>
+list2s = [re.sub(r'.*denyallow=', '', line).strip() for line in list2s]              # <remove leading .*denyallow=/>
 list2s = [re.sub(r'\,.*$', '', line).strip() for line in list2s]                     # <remove trailing .*,.*/>
 list2s = [line.split('|') for line in list2s]                                        # <flatten list'/>
 list2s = [item[0] for line in list2s for item in line]                               # <flatten list'/>
