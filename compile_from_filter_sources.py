@@ -208,7 +208,8 @@ print('14/21 : remove leading /admin/ /ads?/ /adv/ /images?/ /img/ /js/ /*./ ')
 
 list2 = [re.sub(r'^/admin/', '/', line) for line in list2]                           # <remove leading /admin/ />
 list2 = [re.sub(r'^/ads?/(?!\*)', '/', line) for line in list2]                      # <remove leading /ads?/ />
-list2 = [re.sub(r'^/adv/(?!\*)', '/', line) for line in list2]                       # <remove leading /adv/ />
+list2 = [re.sub(r'^/adv?/(?!\*)', '/', line) for line in list2]                      # <remove leading /adv?/ />
+list2 = [re.sub(r'^/assets?/(?!\*)', '/', line) for line in list2]                   # <remove leading /assets?/ />
 list2 = [re.sub(r'^/images?/', '/', line) for line in list2]                         # <remove leading /image(s)/ >
 list2 = [re.sub(r'^/imgs?/', '/', line) for line in list2]                           # <remove leading /img(s)/ />
 list2 = [re.sub(r'^/js/', '/', line) for line in list2]                              # <remove leading /js/ />
@@ -248,6 +249,10 @@ list2 = [re.sub(r'^.*(?=##)', '*', line) for line in list2]                     
 print('21/21 : remove cosmetic filters (*##) and exceptions')
 list2 = [re.sub(r'^\*##(?!:matches).*', '', line) for line in list2]                 # <remove cosmetic filters except :matches/>
 list2 = [re.sub(r'^\@\@.*', '', line) for line in list2]                             # <remove exceptions/>
+
+print('22/22 : remove key domains (google.com , etc)')
+list2 = [re.sub(r'^google.com$', '', line) for line in list2]                        # <remove google.com/>
+list2 = [re.sub(r'^cloudflare.com$', '', line) for line in list2]                    # <remove cloudflare.com/>
 
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
 
