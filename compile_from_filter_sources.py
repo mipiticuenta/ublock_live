@@ -199,23 +199,24 @@ del(list2s)
 print('14/17 : replace leading/trailing * , ~ , trailing ,')
 list2 = [re.sub(r'\.\*$', '.', line).strip() for line in list2]                      # <replace trailing .* with ./ >
 list2 = [re.sub(r'^\*\.', '.', line).strip() for line in list2]                      # <replace leading *. with ./ >
-list2 = [re.sub(r'^\*/', '/', line).strip() for line in list2]                       # <replace leading */ with / >
-list2 = [re.sub(r'^/images?/', '', line) for line in list2]                          # <remove leading /image(s)/ >
-list2 = [re.sub(r'^/imgs?/', '', line) for line in list2]                            # <remove leading /img(s)/ />
+list2 = [re.sub(r'^\*\/', '/', line).strip() for line in list2]                       # <replace leading */ with / >
+list2 = [re.sub(r'^\/images?\/', '', line) for line in list2]                          # <remove leading /image(s)/ >
+list2 = [re.sub(r'^\/imgs?/', '', line) for line in list2]                            # <remove leading /img(s)/ />
 list2 = [re.sub(r'^~', '', line) for line in list2]                                  # <remove leading ~ />
-list2 = [re.sub(r'^(/\*)+', '', line) for line in list2]                             # <remove leading reperated /*./>
+list2 = [re.sub(r'^(\/\*)+', '', line) for line in list2]                             # <remove leading reperated /*./>
 list2 = [re.sub(r'~$', '', line).strip() for line in list2]                          # <remove trailing ~ />
 list2 = [re.sub(r',$', '', line).strip() for line in list2]                          # <remove trailing , />
-list2 = [re.sub(r'^/js$', '', line) for line in list2]                               # <remove /js lines />
-list2 = [re.sub(r'^/api$', '', line) for line in list2]                              # <remove /api lines />
+list2 = [re.sub(r'\.php\?$', '.', line) for line in list2]                           # <remove trailing .php?/>
+list2 = [re.sub(r'^\/js$', '', line) for line in list2]                               # <remove /js lines />
+list2 = [re.sub(r'^\/api$', '', line) for line in list2]                              # <remove /api lines />
 list2 = [re.sub(r'^\.png$', '', line) for line in list2]                             # <remove .png lines />
-list2 = [re.sub(r'^/[a-z0-9]/$', '', line) for line in list2]                        # <remove /*/ lines />
+list2 = [re.sub(r'^\/[a-z0-9]\/$', '', line) for line in list2]                        # <remove /*/ lines />
 
 print('15/17 : remove /wp-content/uploads/.*')
 list2 = [re.sub(r'(?<=\w)\/wp\-content\/uploads/.*', '', line) for line in list2]    # <remove /wp-content/uploads/.*'/>
 
 print('16/17 : remove trailing .php? ; cleanup trailing .js')
-list2 = [re.sub(r'\.php\?$', '.', line) for line in list2]                           # <remove trailing .php?/>
+
 list2 = [re.sub(r'domain=$', '', line) for line in list2]                            # <remove trailing $domain=/>
 list2 = [re.sub(r'\.js(?![a-z0-9]).*', '.js', line) for line in list2]               # <clean up trailing .js/>
 
