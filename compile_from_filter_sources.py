@@ -210,7 +210,7 @@ list2 = [re.sub(r'.*/images?/', '/', line) for line in list2]                   
 list2 = [re.sub(r'.*/imgs?/', '/', line) for line in list2]                          # <remove leading /img(s)/ />
 list2 = [re.sub(r'.*/js/', '/', line) for line in list2]                             # <remove leading /js/ />
 list2 = [re.sub(r'^(/[\*_])+', '', line) for line in list2]                          # <remove leading reperated /[*_] />
-list2 = [re.sub(r'^[-_\.\*a-z0-9/]+(?=/[-_\.\*a-z0-9]+$)', '', line) for line in list2]    # <simplify urls using last /* part />
+list2 = [re.sub(r'^[-_\.a-z0-9/]+(?=/[-_\.a-z0-9]+$)', '', line) for line in list2]  # <simplify urls using last /* part />
 
 print('14/21 : replace leading/trailing * ~ , trailing , ,php?')
 list2 = [re.sub(r'^\*\.', '.', line).strip() for line in list2]                      # <replace leading *. with ./ >
