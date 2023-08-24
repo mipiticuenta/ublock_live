@@ -247,7 +247,7 @@ print('20/21 : generalize cosmetic filters (*##)')
 list2 = [re.sub(r'^.*(?=##)', '*', line) for line in list2]                          # <generalize cosmetic filters (*##)'/>
 
 print('21/21 : remove cosmetic filters (*##) and exceptions')
-list2 = [re.sub(r'^\*##(?!:matches).*', '', line) for line in list2]                 # <remove cosmetic filters except :matches/>
+list2 = [re.sub(r'^\*##(?!\:).*', '', line) for line in list2]                       # <remove cosmetic filters except :matches/>
 list2 = [re.sub(r'^\@\@.*', '', line) for line in list2]                             # <remove exceptions/>
 
 print('22/22 : remove key domains (google.com , etc)')
