@@ -251,9 +251,10 @@ list2 = [re.sub(r'^\*##(?!:matches).*', '', line) for line in list2]            
 list2 = [re.sub(r'^\@\@.*', '', line) for line in list2]                             # <remove exceptions/>
 
 print('22/22 : remove key domains (google.com , etc)')
+list2 = [re.sub(r'^cloudflare.com$', '', line) for line in list2]                    # <remove cloudflare.com/>
 list2 = [re.sub(r'^google.com$', '', line) for line in list2]                        # <remove google.com/>
 list2 = [re.sub(r'^googleapis.com$', '', line) for line in list2]                    # <remove googleapis.com/>
-list2 = [re.sub(r'^cloudflare.com$', '', line) for line in list2]                    # <remove cloudflare.com/>
+list2 = [re.sub(r'^youtube.com$', '', line) for line in list2]                       # <remove youtube.com/>
 
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
 
