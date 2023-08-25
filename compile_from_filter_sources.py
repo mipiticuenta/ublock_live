@@ -74,7 +74,7 @@ del(list1)    # <clean up; make sure list1 is not used anymore hereafter/>
 
 # <process filter list>
 
-print('Transforming filters (2 pass)')
+print('Transforming filters (3 pass)')
 print('--------------------')
 
 # <transforming loop>
