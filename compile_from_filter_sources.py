@@ -221,6 +221,11 @@ for i in [1,2,3]:
     list2 = [re.sub(r'\.\*$', '.', line).strip() for line in list2]                      # <replace trailing .* with ./ >
     list2 = [re.sub(r'[~,]+$', '', line).strip() for line in list2]                      # <remove trailing ~ , />
     list2 = [re.sub(r'\.php\??$', '.', line) for line in list2]                          # <remove trailing .php?/>
+    list2 = [re.sub(r'\.ashx\??$', '.', line) for line in list2]                         # <remove trailing .ashx?/>
+    list2 = [re.sub(r'\.asp\??$', '.', line) for line in list2]                          # <remove trailing .asp?/>
+    list2 = [re.sub(r'\.gif\??$', '.', line) for line in list2]                          # <remove trailing .gif?/>
+    list2 = [re.sub(r'\.cgi\??$', '.', line) for line in list2]                          # <remove trailing .cgi?/>
+    list2 = [re.sub(r'\.html\??$', '.', line) for line in list2]                         # <remove trailing .html?/>
 
     print('15/23 : remove /api /app .png /*/ lines ')
     list2 = [re.sub(r'^\.js$', '', line) for line in list2]                              # <remove .js lines />
@@ -242,6 +247,8 @@ for i in [1,2,3]:
 
     print('18/23 : replace leading .@/ with /')
     list2 = [re.sub(r'^\.[a-z]/', '/', line) for line in list2]                          # <remove leading .@+/ />
+    list2 = [re.sub(r'^/?ima?ge?s?\*?(?=[-_\./])', '', line) for line in list2]          # <remove leading ./image? />
+    list2 = [re.sub(r'^/static\*?(?=[-_\./])', '', line) for line in list2]              # <remove leading ./static? />
 
     print('19/23 : generalize cosmetic filters (*##)')
     list2 = [re.sub(r'^.*(?=##)', '*', line) for line in list2]                          # <generalize cosmetic filters (*##) />
@@ -252,6 +259,7 @@ for i in [1,2,3]:
 
     print('21/23 : remove key domains (google.com , etc)')
     list2 = [re.sub(r'^cloudflare.com$', '', line) for line in list2]                    # <remove cloudflare.com/>
+    list2 = [re.sub(r'^com$', '', line) for line in list2]                               # <remove com/>
     list2 = [re.sub(r'^duckduckgo.com$', '', line) for line in list2]                    # <remove duckduckgo.com/>
     list2 = [re.sub(r'^google.com$', '', line) for line in list2]                        # <remove google.com/>
     list2 = [re.sub(r'^googleapis.com$', '', line) for line in list2]                    # <remove googleapis.com/>
