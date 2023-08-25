@@ -89,7 +89,7 @@ list2 = [re.sub(r'#(?!##?).*', '', line) for line in list2]                     
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
 
 print(' 3/21 : keep case for cosmetic filters; apply lower case for the remaining')
-list2 = [re.sub(r'^\$', '*$', line).strip() for line in list2]                      # <replace leading $ with *$ />
+list2 = [re.sub(r'^\$', '*$', line).strip() for line in list2]                       # <replace leading $ with *$ />
 list2 = (
         [line         for line in list2 if     re.search(r'#', line) ] + 
         [line.lower() for line in list2 if not(re.search(r'#', line))]               # <lower case for all except cosmetics/>
@@ -104,7 +104,7 @@ list2 = [line for line in list2 if not(re.search(r'\:\:', line))]               
 list2 = [line for line in list2 if not(re.search(r'localhost', line))]               # <remove items containing localhost />
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
 
-print(' 5/21 : remove leading www. :/// :port ')
+print(' 5/21 : remove leading www. :/// :port  http?:// | ||')
 list2 = [re.sub(r'www\.', '', line).strip() for line in list2]                       # <remove www. />
 list2 = [re.sub(r'^\://', '', line).strip() for line in list2]                       # <remove leading :// />
 list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                  # <remove leading :port />
@@ -121,26 +121,26 @@ list2 = [re.sub(r'.*\$csp=.*', '*$csp=all', line) for line in list2]            
 print(' 8/21 : remove $ filters and ghide exceptions combined with domain=')
 
 list2s = (
-    [line for line in list2 if re.search(r'^/?\*?\$popup.*domain=', line)] +          # <remove popup filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*?\$popunder.*domain=', line)] +       # <remove popunder filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*?\$xhr.*domain=', line)] +            # <remove xhr filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*?\$script.*domain=', line)] +         # <remove script filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*?\$webrtc.*domain=', line)] +         # <remove webrtc filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*?\$image.*domain=', line)] +          # <remove image filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*?\$media.*domain=', line)] +          # <remove media filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*?\$object.*domain=', line)] +         # <remove object filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*?\$doc.*domain=', line)] +            # <remove doc filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*?\$1p.*domain=', line)] +             # <remove 1p filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*?\$3p.*domain=', line)] +             # <remove 3p filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*?\$ping.*domain=', line)] +           # <remove ping filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*?\$refirect.*domain=', line)] +       # <remove redirect filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*?\$.*denyallow.*domain=', line)] +    # <remove denyallow filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*?\$.*frame.*domain=', line)] +        # <remove frame filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*?\$.*denyallow=', line)] +            # <remove denyallow filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*?\&?expire.*domain=', line)] +         # <remove expires filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*?\&?pre\-?rroll.*domain=', line)] +    # <remove prerroll filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*?\&token.*domain=', line)] +           # <remove token filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\@\@\*\$ghide.*domain=', line)]         # <remove ghise exceptions and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\$popup.*domain=', line)] +         # <remove popup filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\$popunder.*domain=', line)] +      # <remove popunder filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\$xhr.*domain=', line)] +           # <remove xhr filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\$script.*domain=', line)] +        # <remove script filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\$webrtc.*domain=', line)] +        # <remove webrtc filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\$image.*domain=', line)] +         # <remove image filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\$media.*domain=', line)] +         # <remove media filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\$object.*domain=', line)] +        # <remove object filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\$doc.*domain=', line)] +           # <remove doc filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\$1p.*domain=', line)] +            # <remove 1p filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\$3p.*domain=', line)] +            # <remove 3p filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\$ping.*domain=', line)] +          # <remove ping filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\$refirect.*domain=', line)] +      # <remove redirect filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\$.*denyallow.*domain=', line)] +   # <remove denyallow filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\$.*frame.*domain=', line)] +       # <remove frame filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\$.*denyallow=', line)] +           # <remove denyallow filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\&?expire.*domain=', line)] +       # <remove expires filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\&?pre\-?rroll.*domain=', line)] +  # <remove prerroll filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\&token.*domain=', line)] +         # <remove token filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\@\@\*\$ghide.*domain=', line)]        # <remove ghise exceptions and add domains/>
     )
 
 list2 = set(list2) - set(list2s)                                                     # <segregate removed filters'/>
@@ -201,15 +201,15 @@ list2s = [item[0] for line in list2s for item in line]                          
 list2 = sorted(set(list2) | set(list2s))                                             # <join retrieved domains to main list'/>
 del(list2s)
 
-print('13/21 : simplify urls keeping last /* part')
+print('13/21 : simplify urls keeping just last /* part')
 
-#list2 = [re.sub(r'.*/admin/', '/', line) for line in list2]                          # <remove leading /admin/ />
-#list2 = [re.sub(r'.*/ads?/(?!\*)', '/', line) for line in list2]                     # <remove leading /ads?/ />
-#list2 = [re.sub(r'.*/adv?/(?!\*)', '/', line) for line in list2]                     # <remove leading /adv?/ />
-#list2 = [re.sub(r'.*/assets?/(?!\*)', '/', line) for line in list2]                  # <remove leading /assets?/ />
-#list2 = [re.sub(r'.*/images?/', '/', line) for line in list2]                        # <remove leading /image(s)/ >
-#list2 = [re.sub(r'.*/imgs?/', '/', line) for line in list2]                          # <remove leading /img(s)/ />
-#list2 = [re.sub(r'.*/js/', '/', line) for line in list2]                             # <remove leading /js/ />
+#list2 = [re.sub(r'.*/admin/', '/', line) for line in list2]                         # <remove leading /admin/ />
+#list2 = [re.sub(r'.*/ads?/(?!\*)', '/', line) for line in list2]                    # <remove leading /ads?/ />
+#list2 = [re.sub(r'.*/adv?/(?!\*)', '/', line) for line in list2]                    # <remove leading /adv?/ />
+#list2 = [re.sub(r'.*/assets?/(?!\*)', '/', line) for line in list2]                 # <remove leading /assets?/ />
+#list2 = [re.sub(r'.*/images?/', '/', line) for line in list2]                       # <remove leading /image(s)/ >
+#list2 = [re.sub(r'.*/imgs?/', '/', line) for line in list2]                         # <remove leading /img(s)/ />
+#list2 = [re.sub(r'.*/js/', '/', line) for line in list2]                            # <remove leading /js/ />
 list2 = [re.sub(r'^(/[\*_])+', '', line) for line in list2]                          # <remove leading reperated /[*_] />
 list2 = [re.sub(r'^[-_\.a-z0-9/]+(?=/[-_\.a-z0-9]+$)', '', line) for line in list2]  # <simplify urls keeping last /* part />
 
@@ -230,6 +230,7 @@ list2 = [re.sub(r'^\.jpg$', '', line) for line in list2]                        
 list2 = [re.sub(r'^/app$', '', line) for line in list2]                              # <remove /app lines />
 list2 = [re.sub(r'^/?[a-z0-9]?/?$', '', line) for line in list2]                     # <remove /*/ lines />
 list2 = [re.sub(r'^[js/\*\.]+$', '', line) for line in list2]                        # <remove lines with combinations of js/*. />
+list2 = [re.sub(r'[-_\.][0-9]+[-_x\.][0-9]+[-_\./]', '', line) for line in list2]    # <remove dxd and similar />
 
 print('16/21 : remove /wp-content/uploads/.*')
 list2 = [re.sub(r'(?<=\w)/wp\-content/uploads/.*', '', line) for line in list2]      # <remove /wp-content/uploads/.*' />
