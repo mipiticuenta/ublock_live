@@ -136,6 +136,7 @@ for i in [1,2,3]:
         [line for line in list2 if re.search(r'^/?\*?\$media.*domain=', line)] +         # <remove media filters and add domains/>
         [line for line in list2 if re.search(r'^/?\*?\$object.*domain=', line)] +        # <remove object filters and add domains/>
         [line for line in list2 if re.search(r'^/?\*?\$websocket.*domain=', line)] +     # <remove websocket filters and add domains/>
+        [line for line in list2 if re.search(r'^/?\*?\$redirect.*domain=', line)] +      # <remove redirect filters and add domains/>
         [line for line in list2 if re.search(r'^/?\*?\$(sub)?doc.*domain=', line)] +     # <remove doc filters and add domains/>
         [line for line in list2 if re.search(r'^/?\*?\$1p.*domain=', line)] +            # <remove 1p filters and add domains/>
         [line for line in list2 if re.search(r'^/?\*?\$3p.*domain=', line)] +            # <remove 3p filters and add domains/>
@@ -245,7 +246,7 @@ for i in [1,2,3]:
     list2 = [re.sub(r'domain=$', '', line) for line in list2]                            # <remove trailing $domain= />
     list2 = [re.sub(r'\.js(?![a-z0-9]).*', '.js', line) for line in list2]               # <clean up trailing .js />
 
-    print('18/23 : replace leading .@/ with /')
+    print('18/23 : fix leading .@/ image static ')
     list2 = [re.sub(r'^\.[a-z]/', '/', line) for line in list2]                          # <remove leading .@+/ />
     list2 = [re.sub(r'^/?ima?ge?s?\*?(?=[-_\./])', '', line) for line in list2]          # <remove leading ./image? />
     list2 = [re.sub(r'^/static\*?(?=[-_\./])', '', line) for line in list2]              # <remove leading ./static? />
@@ -293,6 +294,8 @@ list2 = [re.sub(r'^\*\$script.*', '*$script', line) for line in list2]          
 list2 = [re.sub(r'^\*\$xhr.*', '*$xhr', line) for line in list2]                     # <ensure general *$xhr/>
 list2 = [re.sub(r'^\*\$\~?xmlhttprequest.*', '', line) for line in list2]            # <ensure general *$xhr/>
 list2 = [re.sub(r'^\*\$ping.*', '*$ping', line) for line in list2]                   # <ensure general *$ping/>
+
+list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
 
 # <transforming loop/>
 
