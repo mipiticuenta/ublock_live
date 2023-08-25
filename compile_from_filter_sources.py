@@ -115,7 +115,7 @@ list2 = [re.sub(r'.*\$csp=.*', '*$csp=all', line) for line in list2]            
 
 for i in [1,2,3]:
 
-    print(' 7/24 : remove leading www. :// :port  http?:// | ||')
+    print(' 7/24 : remove leading www. :// :port  http?:// |+')
     list2 = [re.sub(r'^\|?http.?\:/+', '/', line).strip() for line in list2]            # <remove leading |http:/+ >
     list2 = [re.sub(r'^\:?/+', '/', line).strip() for line in list2]                    # <remove leading :// >
     list2 = [re.sub(r'www\.', '', line).strip() for line in list2]                      # <remove www. />
@@ -289,8 +289,8 @@ for i in [1,2,3]:
     list2 = sorted(set(list2) | set(list2s))                                             # <join retrieved domains to main list'/>
     del(list2s)
 
-print('23/24 : remove general $ filters')
-list2 = [re.sub(r'(?<=/\w)/', '/*', line) for line in list2]                         # < fix /@/ url filters adding trailing * />
+print('23/24 : fix /@/ url filters adding trailing *')
+list2 = [re.sub(r'(?<=/\w)/$', '/*', line) for line in list2]                        # < fix /@/ ending url filters adding trailing * />
 
 print('24/24 : remove general $ filters')
 list2 = [re.sub(r'^\*\$frame.*', '', line) for line in list2]                        # <remove *$frame filters/>
