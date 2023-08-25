@@ -77,7 +77,7 @@ del(list1)    # <clean up; make sure list1 is not used anymore hereafter/>
 print('Transforming filters')
 print('--------------------')
 
-print(' 1/22 : dedup spaces and remove leading/trailing spaces')
+print(' 1/22 : dedup spaces; remove leading/trailing spaces')
 list2 = [re.sub(r' +', ' ', line).strip() for line in list2]                         # <dedup spaces and remove leading/trailing spaces/>
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
 
@@ -105,9 +105,9 @@ list2 = [line for line in list2 if not(re.search(r'localhost', line))]          
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items with length < 2/>
 
 print(' 5/21 : remove leading www. :/// :port ')
-list2 = [re.sub(r'www\.', '', line).strip() for line in list2]                       # <remove www./>
-list2 = [re.sub(r'^\://', '', line).strip() for line in list2]                       # <remove leading :///>
-list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                  # <remove leading :port/>
+list2 = [re.sub(r'www\.', '', line).strip() for line in list2]                       # <remove www. />
+list2 = [re.sub(r'^\://', '', line).strip() for line in list2]                       # <remove leading :// />
+list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                  # <remove leading :port />
 list2 = [re.sub(r'^\|http.?\://', '', line).strip() for line in list2]               # <remove leading |http://www./ >
 list2 = [re.sub(r'^\|+', '', line).strip() for line in list2]                        # <remove leading | >
 
@@ -137,9 +137,9 @@ list2s = (
     [line for line in list2 if re.search(r'^/?\*?\$.*denyallow.*domain=', line)] +    # <remove denyallow filters and add domains/>
     [line for line in list2 if re.search(r'^/?\*?\$.*frame.*domain=', line)] +        # <remove frame filters and add domains/>
     [line for line in list2 if re.search(r'^/?\*?\$.*denyallow=', line)] +            # <remove denyallow filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*\&?expire.*domain=', line)] +         # <remove expires filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*\&?pre\-?rroll.*domain=', line)] +    # <remove prerroll filters and add domains/>
-    [line for line in list2 if re.search(r'^/?\*\&token.*domain=', line)] +           # <remove token filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\&?expire.*domain=', line)] +         # <remove expires filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\&?pre\-?rroll.*domain=', line)] +    # <remove prerroll filters and add domains/>
+    [line for line in list2 if re.search(r'^/?\*?\&token.*domain=', line)] +           # <remove token filters and add domains/>
     [line for line in list2 if re.search(r'^/?\@\@\*\$ghide.*domain=', line)]         # <remove ghise exceptions and add domains/>
     )
 
@@ -201,24 +201,24 @@ list2s = [item[0] for line in list2s for item in line]                          
 list2 = sorted(set(list2) | set(list2s))                                             # <join retrieved domains to main list'/>
 del(list2s)
 
-print('13/21 : remove leading /admin/ /ads?/ /adv/ /images?/ /img/ /js/ /*./ ')
+print('13/21 : simplify urls keeping last /* part')
 
-list2 = [re.sub(r'.*/admin/', '/', line) for line in list2]                          # <remove leading /admin/ />
-list2 = [re.sub(r'.*/ads?/(?!\*)', '/', line) for line in list2]                     # <remove leading /ads?/ />
-list2 = [re.sub(r'.*/adv?/(?!\*)', '/', line) for line in list2]                     # <remove leading /adv?/ />
-list2 = [re.sub(r'.*/assets?/(?!\*)', '/', line) for line in list2]                  # <remove leading /assets?/ />
-list2 = [re.sub(r'.*/images?/', '/', line) for line in list2]                        # <remove leading /image(s)/ >
-list2 = [re.sub(r'.*/imgs?/', '/', line) for line in list2]                          # <remove leading /img(s)/ />
-list2 = [re.sub(r'.*/js/', '/', line) for line in list2]                             # <remove leading /js/ />
+#list2 = [re.sub(r'.*/admin/', '/', line) for line in list2]                          # <remove leading /admin/ />
+#list2 = [re.sub(r'.*/ads?/(?!\*)', '/', line) for line in list2]                     # <remove leading /ads?/ />
+#list2 = [re.sub(r'.*/adv?/(?!\*)', '/', line) for line in list2]                     # <remove leading /adv?/ />
+#list2 = [re.sub(r'.*/assets?/(?!\*)', '/', line) for line in list2]                  # <remove leading /assets?/ />
+#list2 = [re.sub(r'.*/images?/', '/', line) for line in list2]                        # <remove leading /image(s)/ >
+#list2 = [re.sub(r'.*/imgs?/', '/', line) for line in list2]                          # <remove leading /img(s)/ />
+#list2 = [re.sub(r'.*/js/', '/', line) for line in list2]                             # <remove leading /js/ />
 list2 = [re.sub(r'^(/[\*_])+', '', line) for line in list2]                          # <remove leading reperated /[*_] />
-list2 = [re.sub(r'^[-_\.a-z0-9/]+(?=/[-_\.a-z0-9]+$)', '', line) for line in list2]  # <simplify urls using last /* part />
+list2 = [re.sub(r'^[-_\.a-z0-9/]+(?=/[-_\.a-z0-9]+$)', '', line) for line in list2]  # <simplify urls keeping last /* part />
 
 print('14/21 : replace leading/trailing * ~ , trailing , ,php?')
 list2 = [re.sub(r'^\*\.', '.', line).strip() for line in list2]                      # <replace leading *. with ./ >
 list2 = [re.sub(r'^\*/', '/', line).strip() for line in list2]                       # <replace leading */ with / >
 list2 = [re.sub(r'^~', '', line) for line in list2]                                  # <remove leading ~ />
 list2 = [re.sub(r'\.\*$', '.', line).strip() for line in list2]                      # <replace trailing .* with ./ >
-list2 = [re.sub(r'[~,]$', '', line).strip() for line in list2]                       # <remove trailing ~ , />
+list2 = [re.sub(r'[~,]+$', '', line).strip() for line in list2]                      # <remove trailing ~ , />
 list2 = [re.sub(r'\.php\??$', '.', line) for line in list2]                          # <remove trailing .php?/>
 
 print('15/21 : remove /api .png /app /*/ lines ')
@@ -234,7 +234,7 @@ list2 = [re.sub(r'^[js/\*\.]+$', '', line) for line in list2]                   
 print('16/21 : remove /wp-content/uploads/.*')
 list2 = [re.sub(r'(?<=\w)/wp\-content/uploads/.*', '', line) for line in list2]      # <remove /wp-content/uploads/.*' />
 
-print('17/21 : remove trailing .php? ; cleanup trailing .js')
+print('17/21 : remove trailing .php ; cleanup trailing .js')
 list2 = [re.sub(r'domain=$', '', line) for line in list2]                            # <remove trailing $domain= />
 list2 = [re.sub(r'\.js(?![a-z0-9]).*', '.js', line) for line in list2]               # <clean up trailing .js />
 
@@ -263,7 +263,7 @@ list2 = [line for line in list2 if len(line) > 1]                               
 print(
     '\n',
     '{:,}'.format(len(list2)),
-    'lines remaining after 1st pass',
+    'filters remaining after transformation',
     '\n'
     )
 
