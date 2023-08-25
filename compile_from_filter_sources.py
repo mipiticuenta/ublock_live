@@ -116,13 +116,20 @@ list2 = [re.sub(r'.*\$csp=.*', '*$csp=all', line) for line in list2]            
 for i in [1,2,3]:
 
     print(' 7/23 : remove leading www. :// :port  http?:// | ||')
-    list2 = [re.sub(r'www\.', '', line).strip() for line in list2]                      # <remove www. />
+    list2 = [re.sub(r'^\|?http.?\:/+', '/', line).strip() for line in list2]            # <remove leading |http:/+ >
     list2 = [re.sub(r'^\:?/+', '/', line).strip() for line in list2]                    # <remove leading :// >
+    list2 = [re.sub(r'www\.', '', line).strip() for line in list2]                      # <remove www. />
     list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                 # <remove leading :port />
-    list2 = [re.sub(r'^\|http.?\:/+', '/', line).strip() for line in list2]             # <remove leading |http://www./ >
     list2 = [re.sub(r'^\|+', '', line).strip() for line in list2]                       # <remove leading | >
     list2 = [re.sub(r'^\$', '*$', line).strip() for line in list2]                      # <replace leading $ with *$ />
     list2 = [re.sub(r'^/\$', '*$', line).strip() for line in list2]                     # <replace leading /$ with *$ />
+    list2 = [re.sub(r'\.?gif\??', '*', line).strip() for line in list2]                 # <replace leading .gif with * >
+    list2 = [re.sub(r'\.?html?\??', '*', line).strip() for line in list2]               # <replace leading .htm with * >
+    list2 = [re.sub(r'\.?jpg\??', '*', line).strip() for line in list2]                 # <replace leading .jpg with * >
+    list2 = [re.sub(r'\.?js\??', '*', line).strip() for line in list2]                  # <replace leading .js with * >
+    list2 = [re.sub(r'\.?php\??', '*', line).strip() for line in list2]                 # <replace leading .php with * >
+    list2 = [re.sub(r'\.?png\??', '*', line).strip() for line in list2]                 # <replace leading .png with * >
+    list2 = [re.sub(r'\.?tiff\??', '*', line).strip() for line in list2]                # <replace leading .tiff with * >
 
     print(' 8/23 : remove $ filters and ghide exceptions combined with domain=')
 
@@ -216,28 +223,27 @@ for i in [1,2,3]:
     list2 = [re.sub(r'^[-_\.a-z0-9/]+(?=/[-_\.a-z0-9]+$)', '', line) for line in list2]  # <simplify urls keeping last /* part />
 
     print('14/23 : replace leading/trailing * ~ , trailing , ,php?')
-    list2 = [re.sub(r'^\(?\*\.', '.', line).strip() for line in list2]                   # <replace leading *. with ./ >
-    list2 = [re.sub(r'^\*/', '/', line).strip() for line in list2]                       # <replace leading */ with / >
+    list2 = [re.sub(r'^\(?\*\.', '.', line).strip() for line in list2]                   # <replace leading *. with . />
+    list2 = [re.sub(r'^\*/', '/', line).strip() for line in list2]                       # <replace leading */ with / />
     list2 = [re.sub(r'^~', '', line) for line in list2]                                  # <remove leading ~ />
-    list2 = [re.sub(r'\.\*$', '.', line).strip() for line in list2]                      # <replace trailing .* with ./ >
+    list2 = [re.sub(r'\.\*$', '.', line).strip() for line in list2]                      # <replace trailing .* with ./>
+    list2 = [re.sub(r'\*\.$', '*', line).strip() for line in list2]                      # <replace trailing *. with .* />
     list2 = [re.sub(r'[~,]+$', '', line).strip() for line in list2]                      # <remove trailing ~ , />
     list2 = [re.sub(r'\.php\??$', '.', line) for line in list2]                          # <remove trailing .php?/>
     list2 = [re.sub(r'\.ashx\??$', '.', line) for line in list2]                         # <remove trailing .ashx?/>
     list2 = [re.sub(r'\.asp\??$', '.', line) for line in list2]                          # <remove trailing .asp?/>
     list2 = [re.sub(r'\.gif\??$', '.', line) for line in list2]                          # <remove trailing .gif?/>
     list2 = [re.sub(r'\.cgi\??$', '.', line) for line in list2]                          # <remove trailing .cgi?/>
-    list2 = [re.sub(r'\.html\??$', '.', line) for line in list2]                         # <remove trailing .html?/>
+    list2 = [re.sub(r'\.?html?\??$', '.', line) for line in list2]                       # <remove trailing .html?/>
 
-    print('15/23 : remove /api /app .png /*/ lines ')
-    list2 = [re.sub(r'^\.js$', '', line) for line in list2]                              # <remove .js lines />
+    print('15/23 : remove /api /app /js /*/ lines ')
     list2 = [re.sub(r'^/js$', '', line) for line in list2]                               # <remove /js lines />
     list2 = [re.sub(r'^/api$', '', line) for line in list2]                              # <remove /api lines />
-    list2 = [re.sub(r'^\.png$', '', line) for line in list2]                             # <remove .png lines />
-    list2 = [re.sub(r'^\.jpg$', '', line) for line in list2]                             # <remove .jpg lines />
     list2 = [re.sub(r'^/app$', '', line) for line in list2]                              # <remove /app lines />
     list2 = [re.sub(r'^/?[a-z0-9]?/?$', '', line) for line in list2]                     # <remove /*/ lines />
     list2 = [re.sub(r'^[js/\*\.]+$', '', line) for line in list2]                        # <remove lines with combinations of js/*. />
-    list2 = [re.sub(r'[-_\.][0-9]+[-_x\.][0-9]+[-_\./]', '', line) for line in list2]    # <remove dxd and similar />
+    list2 = [re.sub(r'^[-_\./][0-9]+[-_x\.][0-9]+[-_\./]', '', line) for line in list2]  # <remove dxd and similar />
+    list2 = [re.sub(r'^[-_\./x0-9]+$', '', line) for line in list2]                      # <remove [-_\./x0-9] combinations />
 
     print('16/23 : remove /wp-content/uploads/.*')
     list2 = [re.sub(r'(?<=\w)/wp\-content/uploads/.*', '', line) for line in list2]      # <remove /wp-content/uploads/.*' />
@@ -249,7 +255,7 @@ for i in [1,2,3]:
     print('18/23 : fix leading .@/ image static ')
     list2 = [re.sub(r'^\.[a-z]/', '/', line) for line in list2]                          # <remove leading .@+/ />
     list2 = [re.sub(r'^/?ima?ge?s?\*?(?=[-_\./])', '', line) for line in list2]          # <remove leading ./image? />
-    list2 = [re.sub(r'^/static\*?(?=[-_\./])', '', line) for line in list2]              # <remove leading ./static? />
+    list2 = [re.sub(r'^/?static\*?(?=[-_\./])', '', line) for line in list2]             # <remove leading ./static? />
 
     print('19/23 : generalize cosmetic filters (*##)')
     list2 = [re.sub(r'^.*(?=##)', '*', line) for line in list2]                          # <generalize cosmetic filters (*##) />
@@ -260,7 +266,7 @@ for i in [1,2,3]:
 
     print('21/23 : remove key domains (google.com , etc)')
     list2 = [re.sub(r'^cloudflare.com$', '', line) for line in list2]                    # <remove cloudflare.com/>
-    list2 = [re.sub(r'^com$', '', line) for line in list2]                               # <remove com/>
+    list2 = [re.sub(r'^com\.?$', '', line) for line in list2]                            # <remove com/>
     list2 = [re.sub(r'^duckduckgo.com$', '', line) for line in list2]                    # <remove duckduckgo.com/>
     list2 = [re.sub(r'^google.com$', '', line) for line in list2]                        # <remove google.com/>
     list2 = [re.sub(r'^googleapis.com$', '', line) for line in list2]                    # <remove googleapis.com/>
@@ -283,7 +289,10 @@ for i in [1,2,3]:
     list2 = sorted(set(list2) | set(list2s))                                             # <join retrieved domains to main list'/>
     del(list2s)
 
-print('23/23 : remove general $ filters')
+print('23/24 : remove general $ filters')
+list2 = [re.sub(r'(?>=/\w)/', '/*', line) for line in list2]                         # < fix /@/ url filters adding trailing * />
+
+print('24/24 : remove general $ filters')
 list2 = [re.sub(r'^\*\$frame.*', '', line) for line in list2]                        # <remove *$frame filters/>
 list2 = [re.sub(r'^\*\$image.*', '', line) for line in list2]                        # <remove *$image filters/>
 list2 = [re.sub(r'^\*\$media.*', '', line) for line in list2]                        # <remove *$media filters/>
