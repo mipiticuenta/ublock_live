@@ -434,7 +434,7 @@ for i in range(i_max, -1, -1) :
     #list3 = [line for line in list3 if len(list(filter(lambda substring: ('.' + substring) in line, tqdm.tqdm(list3_filter[:n])))) == 0]
     # </filter() + list comprehension option>
 
-list3 = sorted(set(list3r) | set(list3)) ................# <rebuild domains list with elemetal domains and shrinked domains part/>
+list3 = sorted(set(list3r) | set(list3)). ...............# <rebuild domains list with elemetal domains and shrinked domains part/>
 
 print('removing urls redundant with domains')
 list2 = list(map(lambda line: line if (line[1:] not in list3) else '', tqdm.tqdm(list2)))    # <remove urls redundant with domains/>
