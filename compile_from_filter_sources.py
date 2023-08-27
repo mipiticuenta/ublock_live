@@ -120,6 +120,7 @@ print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 print(' 7/20 : remove cosmetic filters (##) and exceptions (@@) ')                   # <currently discarded; consider processing (future sprints?)/>
 list2 = [re.sub(r'^\*?##(?!\:).*', '', line) for line in list2]                      # <remove cosmetic filters except ##: />
 list2 = [re.sub(r'^\*?\@\@.*', '', line) for line in list2]                          # <remove exceptions />
+list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 for i in [1,2,3]:                                                                    # <recursive 3 pass loop />
@@ -158,6 +159,7 @@ for i in [1,2,3]:                                                               
     list2 = [re.sub(r'\*+', '*', line).strip() for line in list2]                           # <dedup * />
     list2 = [re.sub(r'^\*(?!\$)', '', line).strip() for line in list2]                      # <remove unnecesary leading * />
     list2 = [re.sub(r'^\.+', '', line).strip() for line in list2]                           # <remove unnecesary leading . />
+    list2 = [line for line in list2 if len(line) > 1]                                       # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
     print(' 9/20 : remove *$ denyallow and ghide exceptions combined with domain= ; keep the related domains')
@@ -180,6 +182,7 @@ for i in [1,2,3]:                                                               
     list2s = [item[0] for line in list2s for item in line]                               # <flatten list'/>
 
     list2 = sorted(set(list2) | set(list2s))                                             # <join retrieved domains to main list'/>
+    list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
     del(list2s)
     
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
@@ -214,6 +217,7 @@ for i in [1,2,3]:                                                               
     list2 = [re.sub(r'\$\~?third-party$', '', line).strip() for line in list2]           # <remove trailing $third-party/>
     list2 = [re.sub(r'\$\~?xhr$', '', line).strip() for line in list2]                   # <remove trailing $xhr/>
     list2 = [re.sub(r'\$\~?xmlhttprequest$', '', line).strip() for line in list2]        # <remove trailing $xmlhttprequest/>
+    list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
     print('11/20 : split domains with urls ')
@@ -228,6 +232,7 @@ for i in [1,2,3]:                                                               
             )
 
     list2 = sorted(set(list2) | set(list2s))                                             # <join retrieved domains to main list'/>
+    list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
     del(list2s)
 
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
@@ -247,6 +252,7 @@ for i in [1,2,3]:                                                               
     list2s = [item[0] for line in list2s for item in line]                               # <flatten list'/>
 
     list2 = sorted(set(list2) | set(list2s))                                             # <join retrieved domains to main list'/>
+    list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
     del(list2s)
 
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
@@ -328,6 +334,7 @@ list2 = [re.sub(r'^mozilla.org$', '', line) for line in list2]                  
 list2 = [re.sub(r'^\.?net\*?\.?$', '', line) for line in list2]                      # <remove net />
 list2 = [re.sub(r'^wikipedia.org$', '', line) for line in list2]                     # <remove wikipedia.org />
 list2 = [re.sub(r'^/?wp$', '', line) for line in list2]                              # <remove /wp />
+list2 = [re.sub(r'^/?wp\-content/\*$', '', line) for line in list2]                  # <remove /wp-content />
 list2 = [re.sub(r'^youtube.com$', '', line) for line in list2]                       # <remove youtube.com />
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
