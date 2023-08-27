@@ -135,7 +135,8 @@ for i in [1,2,3]:                                                               
     list2 = [re.sub(r'\.?png\??', '*', line).strip() for line in list2]                 # <replace leading .png with * >
     list2 = [re.sub(r'\.?tiff\??', '*', line).strip() for line in list2]                # <replace leading .tiff with * >
     list2 = [re.sub(r'\*+', '*', line).strip() for line in list2]                       # <dedup * />
-    list2 = [re.sub(r'\*\-', '-', line).strip() for line in list2]                      # <remove unnecesary leading * />
+    list2 = [re.sub(r'\*(?=[-\.])', '', line).strip() for line in list2]                # <remove unnecesary leading * />
+    list2 = [re.sub(r'\*(?=[a-z0-9])', '', line).strip() for line in list2]             # <remove unnecesary leading * />
 
     print(' 9/24 : remove $ filters denyallow and ghide exceptions combined with domain=')
 
@@ -179,18 +180,20 @@ for i in [1,2,3]:                                                               
     list2 = [re.sub(r'\^\$', '$', line).strip() for line in list2]                       # <fix: replace ^$ with $/>
     list2 = [re.sub(r'\|\$', '$', line).strip() for line in list2]                       # <fix: replace |$ with $/>
     list2 = [re.sub(r'\$all$', '', line).strip() for line in list2]                      # <remove trailing $all/>
-    list2 = [re.sub(r'\$3p$', '', line).strip() for line in list2]                       # <remove trailing $3p/>
-    list2 = [re.sub(r'\$third-party$', '', line).strip() for line in list2]              # <remove trailing $third-party/>
+    list2 = [re.sub(r'\$\~?3p$', '', line).strip() for line in list2]                    # <remove trailing $3p/>
+    list2 = [re.sub(r'\$\~?third-party$', '', line).strip() for line in list2]           # <remove trailing $third-party/>
     list2 = [re.sub(r'(?<=.)\$popup$', '', line).strip() for line in list2]              # <remove trailing $popup/>
     list2 = [re.sub(r'(?<=.)\$image$', '', line) for line in list2]                      # <remove trailing $image/>
-    list2 = [re.sub(r'\$doc$', '', line).strip() for line in list2]                      # <remove trailing $doc/>
-    list2 = [re.sub(r'\$xhr$', '', line).strip() for line in list2]                      # <remove trailing $xhr/>
-    list2 = [re.sub(r'\$xmlhttprequest$', '', line).strip() for line in list2]           # <remove trailing $xmlhttprequest/>
+    list2 = [re.sub(r'\$\~?doc$', '', line).strip() for line in list2]                   # <remove trailing $doc/>
+    list2 = [re.sub(r'\$\~?script$', '', line).strip() for line in list2]                # <remove trailing $script/>
+    list2 = [re.sub(r'\$\~?xhr$', '', line).strip() for line in list2]                   # <remove trailing $xhr/>
+    list2 = [re.sub(r'\$\~?xmlhttprequest$', '', line).strip() for line in list2]        # <remove trailing $xmlhttprequest/>
 
-    print('11/24 : trailing ^ | #')
+    print('11/24 : trailing ^ | # *')
     list2 = [re.sub(r'\^$', '', line).strip() for line in list2]                         # <remove trailing ^/>
     list2 = [re.sub(r'\|$', '', line).strip() for line in list2]                         # <remove trailing |/>
     list2 = [re.sub(r'#$', '', line).strip() for line in list2]                          # <remove trailing #/>
+    list2 = [re.sub(r'(?<!/)\*$', '', line).strip() for line in list2]                   # <remove trailing */>
 
     print('12/24 : split domains with urls')
 
