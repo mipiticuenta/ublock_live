@@ -315,6 +315,7 @@ list2 = [re.sub(r'^\*\$\~?frame.*', '', line) for line in list2]                
 list2 = [re.sub(r'^\*\$\~?image.*', '', line) for line in list2]                     # <remove *$image filters />
 list2 = [re.sub(r'^\*\$\~?media.*', '', line) for line in list2]                     # <remove *$media filters />
 list2 = [re.sub(r'^\*\$\~?object.*', '', line) for line in list2]                    # <remove *$object filters />
+list2 = [re.sub(r'^\*\$\~?popup.*', '', line) for line in list2]                     # <remove *$popup filters />
 list2 = [re.sub(r'^\*\$\~?third\-party.*', '', line) for line in list2]              # <remove *$3p filters />
 list2 = [re.sub(r'.*\$csp.*', '*$csp=all', line) for line in list2]                  # <enforce *$csp=all />
 list2 = [re.sub(r'^\*\$\~?ping.*', '*$ping', line) for line in list2]                # <enforce *$ping />
@@ -350,6 +351,7 @@ list2 = [re.sub(r'^/?js$', '', line) for line in list2]                         
 list2 = [re.sub(r'^microsoft.com$', '', line) for line in list2]                     # <remove microsoft.com />
 list2 = [re.sub(r'^mozilla.org$', '', line) for line in list2]                       # <remove mozilla.org />
 list2 = [re.sub(r'^\.?net\*?\.?$', '', line) for line in list2]                      # <remove net />
+list2 = [re.sub(r'^\.?org\*?\.?$', '', line) for line in list2]                      # <remove org />
 list2 = [re.sub(r'^wikipedia.org$', '', line) for line in list2]                     # <remove wikipedia.org />
 list2 = [re.sub(r'^/?wp$', '', line) for line in list2]                              # <remove /wp />
 list2 = [re.sub(r'^/?wp\-content/\*$', '', line) for line in list2]                  # <remove /wp-content />
