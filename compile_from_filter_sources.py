@@ -143,6 +143,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^\|+', '', line).strip() for line in list2]                           # <remove leading |+ >
     list2 = [re.sub(r'^\:?/+', '/', line).strip() for line in list2]                        # <remove leading :/+ >
     list2 = [re.sub(r'^~', '', line) for line in list2]                                     # <remove leading ~ />
+    list2 = [re.sub(r'^/', '', line) for line in list2 if not(re.search(r'[/\*]$', line))]  # <remove leading / />
     list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                     # <remove leading :port />
     list2 = [re.sub(r'^([/\.][-_0-9]+)+', '', line) for line in list2]                      # <remove leading repeated [/.][-_0-9]+ combinations  />
     list2 = [re.sub(r'^\$', '*$', line).strip() for line in list2]                          # <replace leading $ with *$ />
