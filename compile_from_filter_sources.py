@@ -72,8 +72,11 @@ del(list1)    # <clean up; make sure list1 is not used anymore hereafter/>
 
 # <process filter list>
 
-print('Transforming filters (n pass)')
-print('--------------------')
+print(
+    '\n',
+    'Transforming filters',
+    '--------------------'
+    )
 
 # <transforming loop>
 
@@ -131,14 +134,17 @@ while n_1 > len(list2):                                                         
     i   = i + 1
     n_1 = len(list2)
 
-    print('pass ', i)
+    print(
+        'pass', i,
+        '--------'
+        )
 
     print(' 8/20 : clean up leading |+ :/+ ~ * $ :port [-_./0-9]+ @/ asset asp cgi cfm gif htm http image jpg js mp4 php png static tiff www')
     list2 = [re.sub(r'^\|+', '', line).strip() for line in list2]                           # <remove leading |+ >
-    list2 = [re.sub(r'^\:?/+', '/', line).strip() for line in list2]                        # <remove leading /+ >
+    list2 = [re.sub(r'^\:?/+', '/', line).strip() for line in list2]                        # <remove leading :/+ >
     list2 = [re.sub(r'^~', '', line) for line in list2]                                     # <remove leading ~ />
     list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                     # <remove leading :port />
-    list2 = [re.sub(r'^[-_/\.0-9]+', '', line) for line in list2]                           # <remove leading [-_./0-9]+ combinations  />
+    list2 = [re.sub(r'^([/\.][-_0-9]+)+', '', line) for line in list2]                      # <remove leading repeated [/.][-_0-9]+ combinations  />
     list2 = [re.sub(r'^\$', '*$', line).strip() for line in list2]                          # <replace leading $ with *$ />
     list2 = [re.sub(r'^/\$', '*$', line).strip() for line in list2]                         # <replace leading /$ with *$ />
     list2 = [re.sub(r'^\.?[-_a-z0-9\*]+/', '/', line) for line in list2]                    # <replace leading @/ with / />
@@ -334,7 +340,7 @@ list2 = [re.sub(r'^/?api$', '', line) for line in list2]                        
 list2 = [re.sub(r'^/?app$', '', line) for line in list2]                             # <remove /app />
 list2 = [re.sub(r'^cloudflare.com$', '', line) for line in list2]                    # <remove cloudflare.com />
 list2 = [re.sub(r'^\.?com\*?\.?$', '', line) for line in list2]                      # <remove com />
-list2 = [re.sub(r'^duckduckgo.com$', '', line) for line in list2]                    # <remove duckduckgo.com />
+list2 = [re.sub(r'^(lite\.)?duckduckgo.com$', '', line) for line in list2]           # <remove duckduckgo.com />
 list2 = [re.sub(r'^google.com$', '', line) for line in list2]                        # <remove google.com />
 list2 = [re.sub(r'^googleapis.com$', '', line) for line in list2]                    # <remove googleapis.com />
 list2 = [re.sub(r'^googlevideo.com$', '', line) for line in list2]                   # <remove googlevideo.com />
@@ -368,8 +374,8 @@ print(
 
 # <remove redundant domains from list>
 
-print('Dedup domains; this operation could take long time, please wait')
-print('---------------------------------------------------------------')
+print('Deduping domains; this operation could take long time, please wait')
+print('------------------------------------------------------------------')
 
 list2  = set(list2) - set(list3)    # <only domains part are processed in this section/>º
 list3r = [line for line in list3 if re.search(r'^[a-z0-9][-_a-z0-9]+\.[a-z]+$', line)]    # <@.@ domains are elemental items/>
@@ -435,6 +441,7 @@ for i in range(i_max, -1, -1) :
     # </filter() + list comprehension option>
 
 list3 = sorted(set(list3r) | set(list3))                 # <rebuild domains list with elemetal domains and shrinked domains part/>
+del(list3r)                                              # <clean up; make sure list3r3 is not used anymore hereafter/>
 
 print('removing urls redundant with domains')
 list2 = list(map(lambda line: line if (line[1:] not in list3) else '', tqdm.tqdm(list2)))    # <remove urls redundant with domains/>
