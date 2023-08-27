@@ -119,7 +119,7 @@ list2 = [re.sub(r'^\*?\@\@.*', '', line) for line in list2]                     
 
 for i in [1,2,3]:                                                                    # <recursive 3 pass loop />
 
-    print(' 8/24 : remove leading http :/+ www. |+ :port ; replace leading .gif .htm . jpg .js .php .png .tiff with * ')
+    print(' 8/24 : remove leading http :/+ www. |+ :port ; replace leading asp cgi cfm gif htm jpg js mp4 php png tiff with * ')
     list2 = [re.sub(r'^\|?http.?\:/+', '/', line).strip() for line in list2]                # <remove leading |http:/+ >
     list2 = [re.sub(r'^\:?/+', '/', line).strip() for line in list2]                        # <remove leading :/+ >
     list2 = [re.sub(r'www\.', '', line).strip() for line in list2]                          # <remove www. />
@@ -305,7 +305,7 @@ list2 = [re.sub(r'^\*\$\~?xhr.*', '*$xhr', line) for line in list2]             
 list2 = [re.sub(r'^\*\$\~?xmlhttprequest.*', '', line) for line in list2]            # <enforce general *$xhr />
 
 print('24/24 : remove redundant .domain$domain=domain')
-list2 = [re.sub(r'.*=', '', line) for line in list2 if re.sub(r'\$.*', '', line)[1:] == re.sub(r'.*=', '', line)]     # <remove redundant .domain$domain=domain' />
+list2 = [re.sub(r'.*=', '', line) for line in list2 if re.sub(r'\$.*', '', line)[1:] == re.sub(r'.*=', '', line) and len(re.sub(r'.*=', '', line)) > 0]
 
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
 
