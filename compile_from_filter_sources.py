@@ -63,7 +63,7 @@ for line in list1 :
         print(
             '                         ',
             '{:,}'.format(len(list2)),
-            'cumulated lines gathered from sources'
+            'cumulated filters'
         )
 
 del(list1)    # <clean up; make sure list1 is not used anymore hereafter/>
@@ -72,7 +72,7 @@ del(list1)    # <clean up; make sure list1 is not used anymore hereafter/>
 
 # <process filter list>
 
-print('Transforming filters (3 pass)')
+print('Transforming filters (n pass)')
 print('--------------------')
 
 # <transforming loop>
@@ -123,7 +123,13 @@ list2 = [re.sub(r'^\*?\@\@.*', '', line) for line in list2]                     
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
-for i in [1,2,3]:                                                                    # <recursive 3 pass loop />
+n_1 = len(list2) + 1
+i   = 0
+
+while n_1 > len(list2):                                                              # <recursive pass loops up to no further list2 length reduction />
+
+    i   = i + 1
+    n_1 = len(list2)
 
     print('pass ', i)
 
@@ -307,7 +313,7 @@ list2 = [re.sub(r'^\*\$\~?ping.*', '*$ping', line) for line in list2]           
 list2 = [re.sub(r'^\*\$\~?script.*', '*$script', line) for line in list2]            # <enforce *$script />
 list2 = [re.sub(r'^\*\$\~?xhr.*', '*$xhr', line) for line in list2]                  # <enforce general *$xhr />
 list2 = [re.sub(r'^\*\$\~?xmlhttprequest.*', '', line) for line in list2]            # <enforce general *$xhr />
-print('        ', '{:,}'.format(len(list2)), 'filters remaining')
+print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print('18/20 : remove redundant .domain$domain=domain ')
 list2 = (
@@ -315,13 +321,13 @@ list2 = (
         [line for line in list2 if not(re.sub(r'\$.*', '', line)[1:] == re.sub(r'.*=', '', line) and len(re.sub(r'.*=', '', line)) > 0)]
         )
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
-print('        ', '{:,}'.format(len(list2)), 'filters remaining')
+print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print('19/20 : remove lines leaded by & *?')
 list2 = [re.sub(r'^\&.*', '', line) for line in list2]                               # <remove line leaded by & />
 list2 = [re.sub(r'^\*\?.*', '', line) for line in list2]                             # <remove line leaded by *? />
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
-print('        ', '{:,}'.format(len(list2)), 'filters remaining')
+print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print('20/20 : remove key domains and urls (google.com , etc) ')
 list2 = [re.sub(r'^/?api$', '', line) for line in list2]                             # <remove /api />
