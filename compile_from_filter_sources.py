@@ -355,7 +355,7 @@ print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print('\n', 'Listing domain filters: ', end = '')
 
-list3 = [line for line in list2 if re.search(r'^[a-z0-9[-_\.a-z0-9]+\.[a-z]+\.[a-z]+(\$important)?$', line) or re.search(r'^[a-z0-9][-_\.a-z0-9]+\.[a-z]+(\$important)?$', line)]
+list3 = [line for line in list2 if re.search(r'^[a-z0-9[-_\.a-z0-9]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
 list3 = [re.sub('r\$important$', '', line) for line in list3]    # <remove trailing $important from domains/>
 
 print(
@@ -434,7 +434,13 @@ for i in range(i_max, -1, -1) :
     #list3 = [line for line in list3 if len(list(filter(lambda substring: ('.' + substring) in line, tqdm.tqdm(list3_filter[:n])))) == 0]
     # </filter() + list comprehension option>
 
-list2 = sorted(set(list2) | set(list3r) | set(list3))    # <rebuild full list with elemetal domains and shrinked domains part/>
+list3 = sorted(set(list3r) | set(list3)) ................# <rebuild domains list with elemetal domains and shrinked domains part/>
+
+print('removing urls redundant with domains')
+list2 = list(map(lambda line: line if (line[1:] not in list3) else '', tqdm.tqdm(list2)))    # <remove urls redundant with domains/>
+list2 = [line for line in list2 if len(line) > 0]                                            # <cleanup empty lines/>
+
+list2 = sorted(set(list2) | set(list3))                                                      # <rebuild full list with elemetal domains and shrinked domains part/>
 
 print(
     '\n',
