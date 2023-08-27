@@ -263,10 +263,12 @@ for i in [1,2,3]:                                                               
     list2 = [re.sub(r'^/?[a-z]/?$', '', line) for line in list2]                         # <remove single letter lines />
     list2 = [re.sub(r'^[js/\*\.]+$', '', line) for line in list2]                        # <remove lines with combinations of js/*. />
     list2 = [re.sub(r'^[-_\.a-z0-9/]+(?=/[-_\.a-z0-9]+$)', '', line) for line in list2]  # <simplify urls keeping last /* part />
+    list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
     print('14/20 : remove /wp-content/uploads/.* ')
     list2 = [re.sub(r'(?<=\w)/wp\-content/uploads/.*', '', line) for line in list2]      # <remove /wp-content/uploads/.*' />
+    list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
     print('15/20 : split , separated domains ')
