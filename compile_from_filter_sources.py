@@ -136,6 +136,7 @@ while n_1 > len(list2):                                                         
 
     print(
         'pass', i,
+        '\n',
         '--------'
         )
 
