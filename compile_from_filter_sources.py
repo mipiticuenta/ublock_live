@@ -56,7 +56,7 @@ for line in list1 :
         ':',
         line,
         '\n'
-        '              ',
+        '                       ',
         '{:,}'.format(len(list2)),
         'cumulated lines gathered from sources',
         )
