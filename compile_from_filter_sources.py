@@ -54,16 +54,17 @@ for line in list1 :
         '/',
         len(list1),
         ':',
-        line,
-        '\n'
-        '                         ',
-        '{:,}'.format(len(list2)),
-        'cumulated lines gathered from sources',
+        line
         )
     i += 1
     response = requests.get(line, proxies=proxy_servers)
     if (response.status_code) :
         list2.update(response.text.split('\n'))
+        print(
+            '                         ',
+            '{:,}'.format(len(list2)),
+            'cumulated lines gathered from sources'
+        )
 
 print(
     '\n',
