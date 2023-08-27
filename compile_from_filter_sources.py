@@ -273,6 +273,7 @@ for i in [1,2,3]:                                                               
 
     print('15/20 : split , separated domains ')
 
+    list2 = [re.sub(r',$', '', line).strip() for line in list2]                                        # <remove trailing , />
     list2s = [line for line in list2 if re.search(r'\,', line) and not(re.search(r'[\$\&]', line))]    # <remove , separated domains />
 
     list2 = set(list2) - set(list2s)                                                     # <segregate removed filters'/>
