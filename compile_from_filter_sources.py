@@ -141,7 +141,7 @@ for i in [1,2,3]:                                                               
     list2 = [re.sub(r'\*+', '*', line).strip() for line in list2]                           # <dedup * />
     list2 = [re.sub(r'^\*(?=[-\.])', '', line).strip() for line in list2]                   # <remove unnecesary leading * />
     list2 = [re.sub(r'^\*(?=[a-z0-9])', '', line).strip() for line in list2]                # <remove unnecesary leading * />
-    list2 = [re.sub(r'^\.+)', '', line).strip() for line in list2]                          # <remove unnecesary leading . />
+    list2 = [re.sub(r'^\.+', '', line).strip() for line in list2]                           # <remove unnecesary leading . />
 
     print(' 9/24 : remove *$ denyallow and ghide exceptions combined with domain=')
 
