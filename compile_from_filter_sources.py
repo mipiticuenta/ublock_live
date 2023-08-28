@@ -148,7 +148,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^([-_/\.][0-9]+)+', '', line) for line in list2]                      # <remove leading [-_/.][0-9] combinations  />
     list2 = [re.sub(r'^([0-9]+[-_/\.])+', '', line) for line in list2]                      # <remove leading [0-9][-_/.] combinations  />
     list2 = [re.sub(r'^\$', '*$', line).strip() for line in list2]                          # <fix leading $ with *$ />
-    list2 = [re.sub(r'^/\$', '*$', line).strip() for line in list2]                         # <fix leading /$ with *$ />
+    list2 = [re.sub(r'^[/\.]\$', '*$', line).strip() for line in list2]                     # <fix leading /$ or .$ with *$ />
     list2 = [re.sub(r'^\.?[-_a-z0-9\*]+/', '/', line) for line in list2]                    # <replace leading @/ with / />
     list2 = [re.sub(r'^[/\.]?assets?\*?(?=[-_\./])', '', line) for line in list2]           # <remove leading asset />
     list2 = [re.sub(r'^\.?aspx?\??(?![a-z0-9])', '*', line).strip() for line in list2]      # <replace leading asp with * >
@@ -293,10 +293,14 @@ while n_1 > len(list2):                                                         
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print('15/20 : fix /@/ url filters adding trailing * ')
-list2 = (
-    [re.sub(r'/$', '/*', line) for line in list2 if re.search(r'/[-_\*a-z0-9]+/$', line)] +    # < fix /word/ ending url filters adding trailing * />
-    [line for line in list2 if not(re.search(r'/[-_\*a-z0-9]+/$', line))]
-    )
+
+list2 = [re.sub(r'(/[-_\*a-z0-9]+)/$', r'\1/*', line) for line in list2]             # < fix /word/ ending url filters adding trailing * />
+
+#list2 = (
+#    [re.sub(r'/$', '/*', line) for line in list2 if re.search(r'/[-_\*a-z0-9]+/$', line)] +    # < fix /word/ ending url filters adding trailing * />
+#    [line for line in list2 if not(re.search(r'/[-_\*a-z0-9]+/$', line))]
+#    )
+
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print('16/20 : remove *$ 1p 3p doc frame image media object filters; enforce *$ ping script xhr ')
