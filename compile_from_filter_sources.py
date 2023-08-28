@@ -273,6 +273,7 @@ while n_1 > len(list2):                                                         
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
     print('13/20 : simplify urls keeping just last /* part ')
+    list2 = [re.sub(r'^\!.*', '', line) for line in list2]                               # <remove ! leaded lines />
     list2 = [re.sub(r'^[-_/\.0-9]+$', '', line) for line in list2]                       # <remove numeric lines />
     list2 = [re.sub(r'^[-_/\.0-9]+x[-_/\.0-9]+', '', line) for line in list2]            # <remove leading [-_./0-9]+ x [-_./0-9]+ combinations  />
     list2 = [re.sub(r'^/?[a-z]/?$', '', line) for line in list2]                         # <remove single letter lines />
@@ -316,10 +317,14 @@ list2 = [re.sub(r'^\*\$\~?css.*', '', line) for line in list2]                  
 list2 = [re.sub(r'^\*\$\~?stylesheet.*', '', line) for line in list2]                # <remove *$css filters />
 list2 = [re.sub(r'^\*\$\~?(sub)?doc(ument)?.*', '', line) for line in list2]         # <remove *$doc filters />
 list2 = [re.sub(r'^\*\$\~?frame.*', '', line) for line in list2]                     # <remove *$frame filters />
+list2 = [re.sub(r'^\*\$from.*', '', line) for line in list2]                         # <remove *$from filters />
 list2 = [re.sub(r'^\*\$\~?image.*', '', line) for line in list2]                     # <remove *$image filters />
+list2 = [re.sub(r'^\*\$important.*', '', line) for line in list2]                    # <remove *$important filters />
+list2 = [re.sub(r'^\*\$.*\.js', '', line) for line in list2]                         # <remove *$...js filters />
 list2 = [re.sub(r'^\*\$\~?media.*', '', line) for line in list2]                     # <remove *$media filters />
 list2 = [re.sub(r'^\*\$\~?object.*', '', line) for line in list2]                    # <remove *$object filters />
 list2 = [re.sub(r'^\*\$\~?popup.*', '', line) for line in list2]                     # <remove *$popup filters />
+list2 = [re.sub(r'^\*\$redirect.*', '', line) for line in list2]                     # <remove *$redirect filters />
 list2 = [re.sub(r'^\*\$\~?third\-party.*', '', line) for line in list2]              # <remove *$3p filters />
 list2 = [re.sub(r'.*\$csp.*', '*$csp=all', line) for line in list2]                  # <enforce *$csp=all />
 list2 = [re.sub(r'^\*\$\~?ping.*', '*$ping', line) for line in list2]                # <enforce *$ping />
