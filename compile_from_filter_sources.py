@@ -147,7 +147,8 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^~', '', line) for line in list2]                                     # <remove leading ~ />
     list2 = [re.sub(r'^/', '', line) for line in list2 if not(re.search(r'[/\*]$', line))]  # <remove leading / />
     list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                     # <remove leading :port />
-    list2 = [re.sub(r'^([/\.][-_0-9]+)+', '', line) for line in list2]                      # <remove leading repeated [/.][-_0-9]+ combinations  />
+    list2 = [re.sub(r'^([-_/\.][0-9]+)+', '', line) for line in list2]                      # <remove leading [-_/.][0-9] combinations  />
+    list2 = [re.sub(r'^([0-9]+[-_/\.])+', '', line) for line in list2]                      # <remove leading [0-9][-_/.] combinations  />
     list2 = [re.sub(r'^\$', '*$', line).strip() for line in list2]                          # <replace leading $ with *$ />
     list2 = [re.sub(r'^/\$', '*$', line).strip() for line in list2]                         # <replace leading /$ with *$ />
     list2 = [re.sub(r'^\.?[-_a-z0-9\*]+/', '/', line) for line in list2]                    # <replace leading @/ with / />
@@ -274,6 +275,7 @@ while n_1 > len(list2):                                                         
 
     print('13/20 : simplify urls keeping just last /* part ')
     list2 = [re.sub(r'^\!.*', '', line) for line in list2]                               # <remove ! leaded lines />
+    list2 = [re.sub(r'^\+.*', '', line) for line in list2]                               # <remove + leaded lines />
     list2 = [re.sub(r'^[-_/\.0-9]+$', '', line) for line in list2]                       # <remove numeric lines />
     list2 = [re.sub(r'^[-_/\.0-9]+x[-_/\.0-9]+', '', line) for line in list2]            # <remove leading [-_./0-9]+ x [-_./0-9]+ combinations  />
     list2 = [re.sub(r'^/?[a-z]/?$', '', line) for line in list2]                         # <remove single letter lines />
@@ -376,7 +378,7 @@ print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print('\n', 'Listing domain filters: ', end = '')
 
-list3 = [line for line in list2 if re.search(r'^[a-z0-9[-_\.a-z0-9]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
+list3 = [line for line in list2 if re.search(r'^[-_\.a-z0-9]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
 list3 = [re.sub('r\$important$', '', line) for line in list3]    # <remove trailing $important from domains/>
 
 print(
