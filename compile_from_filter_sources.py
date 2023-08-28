@@ -302,7 +302,10 @@ while n_1 > len(list2):                                                         
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print('16/20 : fix /@/ url filters adding trailing * ')
-list2 = [re.sub(r'(?<=/\w)/$', '/*', line) for line in list2]                        # < fix /@/ ending url filters adding trailing * />
+list2 = (
+    [re.sub(r'/$', '/*', line) for line in list2 if re.search(r'/[-_\*a-z0-9]+/$', line)] +    # < fix /word/ ending url filters adding trailing * />
+    [line for line in list2 if not(re.search(r'/[-_\*a-z0-9]+/$', line))]
+    )
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print('17/20 : remove *$ 1p 3p doc frame image media object filters; enforce *$ ping script xhr ')
@@ -349,6 +352,7 @@ list2 = [re.sub(r'^googleapis.com$', '', line) for line in list2]               
 list2 = [re.sub(r'^googlevideo.com$', '', line) for line in list2]                   # <remove googlevideo.com />
 list2 = [re.sub(r'^/?js$', '', line) for line in list2]                              # <remove /js />
 list2 = [re.sub(r'^/?logo$', '', line) for line in list2]                             # <remove /logo />
+list2 = [re.sub(r'^/?main$', '', line) for line in list2]                             # <remove /main />
 list2 = [re.sub(r'^microsoft.com$', '', line) for line in list2]                     # <remove microsoft.com />
 list2 = [re.sub(r'^(developer\.)?mozilla.org$', '', line) for line in list2]         # <remove mozilla.org />
 list2 = [re.sub(r'^\.?net\*?\.?$', '', line) for line in list2]                      # <remove net />
