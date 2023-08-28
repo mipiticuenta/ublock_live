@@ -145,9 +145,6 @@ while n_1 > len(list2):                                                         
     print(' 8/20 : clean up leading :port [-_.:~|*]+ * $ [-_./0-9]+ @/ asset asp cgi cfm gif htm http image jpg js mp4 php png static tiff www')
     list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                     # <remove leading :port />
     list2 = [re.sub(r'^[-_\.\:\~\|\*]+(?=[/\.\$a-z0-9])', '', line) for line in list2]      # <remove leading [-_.:~|*]+ />
-    list2 = [re.sub(r'\*+', '*', line).strip() for line in list2]                           # <dedup * />
-    list2 = [re.sub(r'\.+', '.', line).strip() for line in list2]                           # <dedup . />
-    list2 = [re.sub(r'/+', '/', line).strip() for line in list2]                            # <dedup / />
     list2 = [re.sub(r'^([-_/\.][0-9]+)+', '', line) for line in list2]                      # <remove leading [-_/.][0-9] combinations  />
     list2 = [re.sub(r'^([0-9]+[-_/\.])+', '', line) for line in list2]                      # <remove leading [0-9][-_/.] combinations  />
     list2 = [re.sub(r'^\$', '*$', line).strip() for line in list2]                          # <fix leading $ with *$ />
@@ -272,6 +269,9 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[-_/\.0-9]+x[-_/\.0-9]+', '', line) for line in list2]            # <remove leading [-_./0-9]+ x [-_./0-9]+ combinations  />
     list2 = [re.sub(r'^/?[a-z]/?$', '', line) for line in list2]                         # <remove single letter lines />
     list2 = [re.sub(r'^[js/\*\.]+$', '', line) for line in list2]                        # <remove lines with combinations of js/*. />
+    list2 = [re.sub(r'\*+', '*', line).strip() for line in list2]                        # <dedup * />
+    list2 = [re.sub(r'\.+', '.', line).strip() for line in list2]                        # <dedup . />
+    list2 = [re.sub(r'/+', '/', line).strip() for line in list2]                         # <dedup / />
     list2 = [re.sub(r'^[-_\.a-z0-9/]+(?=/[-_\.a-z0-9]+$)', '', line) for line in list2]  # <simplify urls keeping last /* part />
     list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
