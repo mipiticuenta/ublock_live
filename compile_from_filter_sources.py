@@ -90,6 +90,7 @@ list2 = [line for line in list2 if line[0] != '!']                              
 list2 = [line for line in list2 if line[0] != '[']                                   # <remove not uBO style comments [] />
 list2 = [line for line in list2 if line[0] != '#']                                   # <remove not uBO style trailing comments />
 list2 = [re.sub(r'#(?!##?).*', '', line) for line in list2]                          # <remove not uBO style trailing comments />
+list2 = [line for line in list2 if line[0] != '{']                                   # <remove payload description />
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
