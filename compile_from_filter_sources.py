@@ -272,7 +272,7 @@ while n_1 > len(list2):                                                         
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
     print('13/20 : simplify urls keeping just last /* part ')
-    list2 = [re.sub(r'^[/0-9]+$', '', line) for line in list2]                           # <remove numeric lines />
+    list2 = [re.sub(r'^[-_/\.0-9]+$', '', line) for line in list2]                       # <remove numeric lines />
     list2 = [re.sub(r'^[-_/\.0-9]+x[-_/\.0-9]+', '', line) for line in list2]            # <remove leading [-_./0-9]+ x [-_./0-9]+ combinations  />
     list2 = [re.sub(r'^/?[a-z]/?$', '', line) for line in list2]                         # <remove single letter lines />
     list2 = [re.sub(r'^[js/\*\.]+$', '', line) for line in list2]                        # <remove lines with combinations of js/*. />
