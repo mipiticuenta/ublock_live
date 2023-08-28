@@ -131,22 +131,21 @@ print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 n_1 = len(list2) + 1
 i   = 0
 
-while n_1 > len(list2):                                                              # <recursive pass loops up to no further list2 length reduction />
+while n_1 > len(list2):                                                              # <recursive loops up to no further length reduction for list2 />
 
     i   = i + 1
     n_1 = len(list2)
 
     print(
-        'pass', i,
-        '\n',
-        '--------'
+        'loop', i, '\n',
+        '-------',
+        sep = ''
         )
 
     print(' 8/20 : clean up leading :port [-_.:~|*]+ * $ [-_./0-9]+ @/ asset asp cgi cfm gif htm http image jpg js mp4 php png static tiff www')
     list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                     # <remove leading :port />
     list2 = [re.sub(r'^[-_\.\:\~\|\*]+(?=[/\.\$a-z0-9])', '', line) for line in list2]      # <remove leading [-_.:~|*]+ />
-    list2 = [re.sub(r'^([-_/\.][0-9]+)+', '', line) for line in list2]                      # <remove leading [-_/.][0-9] combinations  />
-    list2 = [re.sub(r'^([0-9]+[-_/\.])+', '', line) for line in list2]                      # <remove leading [0-9][-_/.] combinations  />
+    list2 = [re.sub(r'^[-_/\.0-9]+', '', line) for line in list2]                           # <remove leading [-_/.0-9] combinations />
     list2 = [re.sub(r'^\$', '*$', line).strip() for line in list2]                          # <fix leading $ with *$ />
     list2 = [re.sub(r'^[/\.]\$', '*$', line).strip() for line in list2]                     # <fix leading /$ or .$ with *$ />
     list2 = [re.sub(r'^\.?[-_a-z0-9\*]+/', '/', line) for line in list2]                    # <replace leading @/ with / />
@@ -362,6 +361,9 @@ list2 = [re.sub(r'^/?wp\-content/\*$', '', line) for line in list2]             
 list2 = [re.sub(r'^youtube.com$', '', line) for line in list2]                       # <remove youtube.com />
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
+
+print('20/20 : adding filter to block [-_/\.0-9]+\.[a-z]+ domains ')
+list2.append('/^[-_/\.0-9]+\.[a-z]+/')                                               # <add filter to block [-_/\.0-9]+\.[a-z]+ domains />
 
 # <transforming loop/>
 
