@@ -169,7 +169,7 @@ while n_1 > len(list2):                                                         
     list2 = [line for line in list2 if len(line) > 1]                                           # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
-    print(' 9/20 : remove *$ denyallow 1and ghide exceptions combined with domain= ; keep the related domains')
+    print(' 9/20 : remove domain= denyallow= filters and keep the related domains')
 
     list2s = (
         [line for line in list2 if re.search(r'.*domain=', line)] +                      # <select *$ filters />
@@ -386,7 +386,7 @@ print(
 
 print('\n', 'removing #.@(.@) (numerical domain) filters: ', end = '')
 
-list3 = [line for line in list2 if not(re.search(r'^[-_\.a-z0-9]+\.[-_0-9]+\.[a-z]+(\.[a-z]+)?$', line))]
+list3 = [line for line in list3 if not(re.search(r'^[-_\.a-z0-9]+\.[-_0-9]+\.[a-z]+(\.[a-z]+)?$', line))]
 
 print(
     '{:,}'.format(len(list3)),
