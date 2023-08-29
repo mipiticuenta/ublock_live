@@ -154,6 +154,7 @@ while n_1 > len(list2):                                                         
             [re.sub(r'\$.*', '', line) for line in list2s]                               # <isolate url part/>
             )
 
+    list2 = [line for line in list2s if len(line) > 1]                                   # <remove items if length < 2 />
     list2s = [line.split('|') for line in list2s]                                        # <flatten list'/>
     list2s = [item[0] for line in list2s for item in line]                               # <flatten list'/>
 
