@@ -145,6 +145,8 @@ while n_1 > len(list2):                                                         
 
     print(' 8/20 : split urls with $domains= ')
 
+    list2 = [re.sub(r'^\|+', '', line) for line in list2]                                # <remove leading |+ />
+
     list2s = [line for line in list2 if re.search(r'\$.*domain=', line)]                 # <remove domains with url'/>
 
     list2 = set(list2) - set(list2s)                                                     # <segregate removed filters'/>
@@ -154,7 +156,6 @@ while n_1 > len(list2):                                                         
             [re.sub(r'\$.*', '', line) for line in list2s]                               # <isolate url part/>
             )
 
-    list2 = [line for line in list2s if len(line) > 1]                                   # <remove items if length < 2 />
     list2s = [line.split('|') for line in list2s]                                        # <flatten list'/>
     list2s = [item[0] for line in list2s for item in line]                               # <flatten list'/>
 
