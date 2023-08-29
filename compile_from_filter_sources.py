@@ -303,26 +303,16 @@ list2 = [re.sub(r'(/[-_\*a-z0-9]+)/$', r'\1/*', line) for line in list2]        
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print('16/20 : remove *$ 1p 3p doc frame image media object filters; enforce *$ ping script xhr ')
-list2 = [re.sub(r'^\*\$\~?1p.*', '', line) for line in list2]                        # <remove *$1p filters />
-list2 = [re.sub(r'^\*\$\~?3p.*', '', line) for line in list2]                        # <remove *$3p filters />
-list2 = [re.sub(r'^\*\$\~?css.*', '', line) for line in list2]                       # <remove *$css filters />
-list2 = [re.sub(r'^\*\$\~?stylesheet.*', '', line) for line in list2]                # <remove *$css filters />
-list2 = [re.sub(r'^\*\$\~?(sub)?doc(ument)?.*', '', line) for line in list2]         # <remove *$doc filters />
-list2 = [re.sub(r'^\*\$\~?frame.*', '', line) for line in list2]                     # <remove *$frame filters />
-list2 = [re.sub(r'^\*\$from.*', '', line) for line in list2]                         # <remove *$from filters />
-list2 = [re.sub(r'^\*\$\~?image.*', '', line) for line in list2]                     # <remove *$image filters />
-list2 = [re.sub(r'^\*\$important.*', '', line) for line in list2]                    # <remove *$important filters />
-list2 = [re.sub(r'^\*\$.*\.js', '', line) for line in list2]                         # <remove *$...js filters />
-list2 = [re.sub(r'^\*\$\~?media.*', '', line) for line in list2]                     # <remove *$media filters />
-list2 = [re.sub(r'^\*\$\~?object.*', '', line) for line in list2]                    # <remove *$object filters />
-list2 = [re.sub(r'^\*\$\~?popup.*', '', line) for line in list2]                     # <remove *$popup filters />
-list2 = [re.sub(r'^\*\$redirect.*', '', line) for line in list2]                     # <remove *$redirect filters />
-list2 = [re.sub(r'^\*\$\~?third\-party.*', '', line) for line in list2]              # <remove *$3p filters />
 list2 = [re.sub(r'.*\$csp.*', '*$csp=all', line) for line in list2]                  # <enforce *$csp=all />
 list2 = [re.sub(r'^\*\$\~?ping.*', '*$ping', line) for line in list2]                # <enforce *$ping />
 list2 = [re.sub(r'^\*\$\~?script.*', '*$script', line) for line in list2]            # <enforce *$script />
 list2 = [re.sub(r'^\*\$\~?xhr.*', '*$xhr', line) for line in list2]                  # <enforce general *$xhr />
 list2 = [re.sub(r'^\*\$\~?xmlhttprequest.*', '', line) for line in list2]            # <enforce general *$xhr />
+list2 = [re.sub(r'(?<!\*)\$\~?\w.*$(?<!important)', '', line) for line in list2]     # <remove specific $ filters except $important />
+list2 = [re.sub(r'^\*\$important.*', '', line) for line in list2]                    # <remove *$important filters />
+list2 = [re.sub(r'^\*\$.*\.js', '', line) for line in list2]                         # <remove *$...js filters />
+list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
+
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print('17/20 : remove redundant .domain$domain=domain ')
