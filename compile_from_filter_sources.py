@@ -201,6 +201,8 @@ while n_1 > len(list2):                                                         
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
     print('11/20 : clean up leading [-_.:~|*]+ * $ [-_./0-9]+ @/ asset asp cgi cfm gif htm http image jpg js mp4 php png static tiff www')
+
+    list2 = [re.sub(r'^[-_0-9]+[/\.\$]', '', line).strip() for line in list2]                   # <remove leading [-_0-9]+[/\.\$] />
     list2 = [re.sub(r'^[-_\:\=\~\|\*\!0-9]+(?=[/\.\$$])', '', line) for line in list2]          # <remove leading [-_:=~|*!0-9]+ followed by /.$ />
     list2 = [re.sub(r'^[a-z]\.', '', line).strip() for line in list2]                           # <remove leading a-z. />
     list2 = [re.sub(r'^\$', '*$', line).strip() for line in list2]                              # <fix leading $ with *$ />
@@ -349,14 +351,14 @@ list2 = [re.sub(r'^(lite\.)?duckduckgo.com$', '', line) for line in list2]      
 list2 = [re.sub(r'^google.com$', '', line) for line in list2]                        # <remove google.com />
 list2 = [re.sub(r'^googleapis.com$', '', line) for line in list2]                    # <remove googleapis.com />
 list2 = [re.sub(r'^googlevideo.com$', '', line) for line in list2]                   # <remove googlevideo.com />
-list2 = [re.sub(r'^[/\.]?css$', '', line) for line in list2]                         # <remove /css />
-list2 = [re.sub(r'^[/\.]?exe$', '', line) for line in list2]                         # <remove /exe />
-list2 = [re.sub(r'^[/\.]?jpe?g$', '', line) for line in list2]                       # <remove /jpg />
-list2 = [re.sub(r'^[/\.]?js$', '', line) for line in list2]                          # <remove /js />
-list2 = [re.sub(r'^[/\.]?logo$', '', line) for line in list2]                        # <remove /logo />
-list2 = [re.sub(r'^[/\.]?main$', '', line) for line in list2]                        # <remove /main />
-list2 = [re.sub(r'^[/\.]?png$', '', line) for line in list2]                         # <remove /png />
-list2 = [re.sub(r'^[/\.]?txt$', '', line) for line in list2]                         # <remove /txt />
+list2 = [re.sub(r'^[/\.]?css\??$', '', line) for line in list2]                      # <remove /css />
+list2 = [re.sub(r'^[/\.]?exe\??$', '', line) for line in list2]                      # <remove /exe />
+list2 = [re.sub(r'^[/\.]?jpe\???g$', '', line) for line in list2]                    # <remove /jpg />
+list2 = [re.sub(r'^[/\.]?js\??$', '', line) for line in list2]                       # <remove /js />
+list2 = [re.sub(r'^[/\.]?logo\??$', '', line) for line in list2]                     # <remove /logo />
+list2 = [re.sub(r'^[/\.]?main\??$', '', line) for line in list2]                     # <remove /main />
+list2 = [re.sub(r'^[/\.]?png\??$', '', line) for line in list2]                      # <remove /png />
+list2 = [re.sub(r'^[/\.]?txt\??$', '', line) for line in list2]                      # <remove /txt />
 list2 = [re.sub(r'^microsoft.com$', '', line) for line in list2]                     # <remove microsoft.com />
 list2 = [re.sub(r'^(developer\.)?mozilla.org$', '', line) for line in list2]         # <remove mozilla.org />
 list2 = [re.sub(r'^\.?net\*?\.?$', '', line) for line in list2]                      # <remove net />
@@ -365,6 +367,7 @@ list2 = [re.sub(r'^wikipedia.org$', '', line) for line in list2]                
 list2 = [re.sub(r'^/?wp$', '', line) for line in list2]                              # <remove /wp />
 list2 = [re.sub(r'^/?wp\-content/\*$', '', line) for line in list2]                  # <remove /wp-content />
 list2 = [re.sub(r'^youtube.com$', '', line) for line in list2]                       # <remove youtube.com />
+list2 = [re.sub(r'^[a-z]{1,3}$', '', line) for line in list2]                        # <remove ^[a-z]{1,3}$ />
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
