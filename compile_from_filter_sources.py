@@ -144,8 +144,7 @@ while n_1 > len(list2):                                                         
 
     print(' 8/20 : clean up leading :port [-_.:~|*]+ * $ [-_./0-9]+ @/ asset asp cgi cfm gif htm http image jpg js mp4 php png static tiff www')
     list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                         # <remove leading :port />
-    list2 = [re.sub(r'^[-_\.\:\=\~\|\*\!]+(?=[/\.\$a-z0-9$])', '', line) for line in list2]     # <remove leading [-_.:=~|*!]+ />
-    list2 = [re.sub(r'^[-_\.0-9]+', '', line) for line in list2]                                # <remove leading [-_.0-9] combinations />
+    list2 = [re.sub(r'^[-_\:\=\~\|\*\!0-9]+(?=[/\.\$$])', '', line) for line in list2]          # <remove leading [-_:=~|*!0-9]+ followed by /.$ />
     list2 = [re.sub(r'^\$', '*$', line).strip() for line in list2]                              # <fix leading $ with *$ />
     list2 = [re.sub(r'^[/\.\=\?]\$', '*$', line).strip() for line in list2]                     # <fix leading /$ .$ =$ ?$ with *$ />
     list2 = [re.sub(r'^\.?[-_a-z0-9\*]+/', '/', line) for line in list2]                        # <replace leading @/ with / />
@@ -362,7 +361,7 @@ list2 = [re.sub(r'^youtube.com$', '', line) for line in list2]                  
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
-print('20/20 : adding filter to block [-_/\.0-9]+\.[a-z]+ domains ')
+print('20/20 : adding filter to block #.@(.@) (numerical domains) ')
 list2.append('/^[-_\.a-z0-9]+\.[-_0-9]+\.[a-z]+(\.[a-z]+)/')                         # <add filter to block [-_/\.0-9]+\.[a-z]+ domains />
 
 # <transforming loop/>
@@ -390,7 +389,7 @@ list3 = [line for line in list3 if not(re.search(r'^[-_\.a-z0-9]+\.[-_0-9]+\.[a-
 
 print(
     '{:,}'.format(len(list3)),
-    'found',
+    'domains kept',
     '\n'
     )
 
