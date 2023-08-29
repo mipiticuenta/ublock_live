@@ -201,8 +201,7 @@ while n_1 > len(list2):                                                         
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
     print('11/20 : clean up leading [-_.:~|*]+ * $ [-_./0-9]+ @/ asset asp cgi cfm gif htm http image jpg js mp4 php png static tiff www')
-
-    list2 = [re.sub(r'^[-_0-9]+[/\.\$]', '', line).strip() for line in list2]                   # <remove leading [-_0-9]+[/\.\$] />
+    list2 = [re.sub(r'^[-_0-9]+[/\.\:]', '', line).strip() for line in list2]                   # <remove leading [-_0-9]+[/\.$] />
     list2 = [re.sub(r'^[-_\:\=\~\|\*\!0-9]+(?=[/\.\$$])', '', line) for line in list2]          # <remove leading [-_:=~|*!0-9]+ followed by /.$ />
     list2 = [re.sub(r'^[a-z]\.', '', line).strip() for line in list2]                           # <remove leading a-z. />
     list2 = [re.sub(r'^\$', '*$', line).strip() for line in list2]                              # <fix leading $ with *$ />
