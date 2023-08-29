@@ -138,14 +138,14 @@ while n_1 > len(list2):                                                         
     n_1 = len(list2)
 
     print(
-        'loop', i, '\n',
+        'loop ', i, '\n',
         '-------',
         sep = ''
         )
 
-    print(' 8/20 : split urls with $domains= ')
+    print(' 8/20 : split urls with $ domain= ')
 
-    list2s = [line for line in list2 if re.search(r'\$.*domain=', line)]                 # <remove domains with url'/>
+    list2s = [line for line in list2 if re.search(r'\$.*domain=', line)]                 # <gest urls with $ domain= '/>
 
     list2 = set(list2) - set(list2s)                                                     # <segregate removed filters'/>
 
@@ -362,7 +362,7 @@ list2 = [line for line in list2 if len(line) > 1]                               
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print('20/20 : adding filter to block #.@(.@) (numerical domains) ')
-list2.append('/^[-_\.a-z0-9]+\.[-_0-9]+\.[a-z]+(\.[a-z]+)/')                         # <add filter to block [-_/\.0-9]+\.[a-z]+ domains />
+list2.append('/^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)/')                         # <add filter to block [-_/\.0-9]+\.[a-z]+ domains />
 
 # <transforming loop/>
 
@@ -385,7 +385,7 @@ print(
 
 print('\n', 'removing #.@(.@) (numerical domain) filters: ', end = '')
 
-list3 = [line for line in list3 if not(re.search(r'^[-_\.a-z0-9]+\.[-_0-9]+\.[a-z]+(\.[a-z]+)?$', line))]
+list3 = [line for line in list3 if not(re.search(r'^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?$', line))]
 
 print(
     '{:,}'.format(len(list3)),
