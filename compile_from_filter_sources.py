@@ -145,8 +145,6 @@ while n_1 > len(list2):                                                         
 
     print(' 8/20 : split urls with $domains= ')
 
-    list2 = [re.sub(r'^\|+', '', line) for line in list2]                                # <remove leading |+ />
-
     list2s = [line for line in list2 if re.search(r'\$.*domain=', line)]                 # <remove domains with url'/>
 
     list2 = set(list2) - set(list2s)                                                     # <segregate removed filters'/>
@@ -157,7 +155,7 @@ while n_1 > len(list2):                                                         
             )
 
     list2s = [line.split('|') for line in list2s]                                        # <flatten list'/>
-    list2s = [item[0] for line in list2s for item in line]                               # <flatten list'/>
+    list2s = [item[0] for line in list2s for item in line if line !=[''] and item != ''] # <flatten list'/>
 
     list2 = sorted(set(list2) | set(list2s))                                             # <join retrieved domains to main list'/>
     list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
@@ -178,7 +176,7 @@ while n_1 > len(list2):                                                         
     list2s = [re.sub(r'.*denyallow=', '', line).strip() for line in list2s]              # <remove leading .*denyallow=/>
     list2s = [re.sub(r'\,.*$', '', line).strip() for line in list2s]                     # <remove trailing .*,.*/>
     list2s = [line.split('|') for line in list2s if len(line) > 0]                       # <flatten list'/>
-    list2s = [item[0] for line in list2s for item in line]                               # <flatten list'/>
+    list2s = [item[0] for line in list2s for item in line if line !=[''] and item != ''] # <flatten list'/>
 
     list2 = sorted(set(list2) | set(list2s))                                             # <join retrieved domains to main list'/>
     list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
@@ -195,7 +193,7 @@ while n_1 > len(list2):                                                         
     list2 = set(list2) - set(list2s)                                                     # <segregate removed filters'/>
 
     list2s = [line.split(',') for line in list2s]                                        # <flatten list'/>
-    list2s = [item[0] for line in list2s for item in line]                               # <flatten list'/>
+    list2s = [item[0] for line in list2s for item in line if line !=[''] and item != ''] # <flatten list'/>
 
     list2 = sorted(set(list2) | set(list2s))                                             # <join retrieved domains to main list'/>
     del(list2s)
