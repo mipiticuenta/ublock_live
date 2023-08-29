@@ -252,6 +252,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'\$\~?third-party$', '', line).strip() for line in list2]           # <remove trailing $third-party/>
     list2 = [re.sub(r'\$\~?xhr$', '', line).strip() for line in list2]                   # <remove trailing $xhr/>
     list2 = [re.sub(r'\$\~?xmlhttprequest$', '', line).strip() for line in list2]        # <remove trailing $xmlhttprequest/>
+    list2 = [re.sub(r'\?\*\=.*', '', line).strip() for line in list2]                    # <remove trailing ?*=... />
     list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
