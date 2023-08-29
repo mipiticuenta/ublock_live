@@ -143,33 +143,33 @@ while n_1 > len(list2):                                                         
         )
 
     print(' 8/20 : clean up leading :port [-_.:~|*]+ * $ [-_./0-9]+ @/ asset asp cgi cfm gif htm http image jpg js mp4 php png static tiff www')
-    list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                     # <remove leading :port />
-    list2 = [re.sub(r'^[-_\.\:\~\|\*]+(?=[/\.\$a-z0-9])', '', line) for line in list2]      # <remove leading [-_.:~|*]+ />
-    list2 = [re.sub(r'^[-_/\.0-9]+', '', line) for line in list2]                           # <remove leading [-_/.0-9] combinations />
-    list2 = [re.sub(r'^\$', '*$', line).strip() for line in list2]                          # <fix leading $ with *$ />
-    list2 = [re.sub(r'^[/\.]\$', '*$', line).strip() for line in list2]                     # <fix leading /$ or .$ with *$ />
-    list2 = [re.sub(r'^\.?[-_a-z0-9\*]+/', '/', line) for line in list2]                    # <replace leading @/ with / />
-    list2 = [re.sub(r'^[/\.]?assets?\*?(?=[-_\./])', '', line) for line in list2]           # <remove leading asset />
-    list2 = [re.sub(r'^\.?aspx?\??(?![a-z0-9])', '*', line).strip() for line in list2]      # <replace leading asp with * >
-    list2 = [re.sub(r'^\.?cgi\??(?![a-z0-9])', '*', line).strip() for line in list2]        # <replace leading cgi with * >
-    list2 = [re.sub(r'^\.?cfm\??(?![a-z0-9])', '*', line).strip() for line in list2]        # <replace leading cfm with * >
-    list2 = [re.sub(r'^\.?gif\??(?![a-z0-9])', '*', line).strip() for line in list2]        # <replace leading gif with * >
-    list2 = [re.sub(r'^\.?html?\??(?![a-z0-9])', '*', line).strip() for line in list2]      # <replace leading htm with * >
-    list2 = [re.sub(r'^[/\.]?ima?ge?s?\*?(?=[-_\./])', '*', line) for line in list2]        # <replace leading image with * />
-    list2 = [re.sub(r'^\.?jpg\??(?![a-z0-9])', '*', line).strip() for line in list2]        # <replace leading jpg with * >
-    list2 = [re.sub(r'^[/\.]?js/', '/', line) for line in list2]                            # <replace leading js/ with / />
-    list2 = [re.sub(r'^\.?js\??(?![a-z0-9])', '*', line).strip() for line in list2]         # <replace leading js with * >
-    list2 = [re.sub(r'^\|?http.?\:/+', '/', line).strip() for line in list2]                # <remove leading |http:/+ >
-    list2 = [re.sub(r'^\.?mp[0-9]\??(?![a-z0-9])', '*', line).strip() for line in list2]    # <replace leading mp* with * >
-    list2 = [re.sub(r'^\.?php\??(?![a-z0-9])', '*', line).strip() for line in list2]        # <replace leading php with * >
-    list2 = [re.sub(r'^\.?png\??(?![a-z0-9])', '*', line).strip() for line in list2]        # <replace leading png with * >
-    list2 = [re.sub(r'^[/\.]?static\*?(?=[-_\./])', '*', line) for line in list2]           # <replace leading static with * />
-    list2 = [re.sub(r'^\.?tiff\??(?![a-z0-9])', '*', line).strip() for line in list2]       # <replace leading tiff with * >
-    list2 = [re.sub(r'www\.', '', line).strip() for line in list2]                          # <remove www />
-    list2 = [line for line in list2 if len(line) > 1]                                       # <remove items if length < 2 />
+    list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                         # <remove leading :port />
+    list2 = [re.sub(r'^[-_\.\:\=\~\|\*\!]+(?=[/\.\$a-z0-9$])', '', line) for line in list2]     # <remove leading [-_.:=~|*!]+ />
+    list2 = [re.sub(r'^[-_/\.0-9]+', '', line) for line in list2]                               # <remove leading [-_/.0-9] combinations />
+    list2 = [re.sub(r'^\$', '*$', line).strip() for line in list2]                              # <fix leading $ with *$ />
+    list2 = [re.sub(r'^[/\.]\$', '*$', line).strip() for line in list2]                         # <fix leading /$ or .$ with *$ />
+    list2 = [re.sub(r'^\.?[-_a-z0-9\*]+/', '/', line) for line in list2]                        # <replace leading @/ with / />
+    list2 = [re.sub(r'^[/\.]?assets?\*?(?=[-_\./])', '', line) for line in list2]               # <remove leading asset />
+    list2 = [re.sub(r'^\.?aspx?\??(?![a-z0-9])', '*', line).strip() for line in list2]          # <replace leading asp with * >
+    list2 = [re.sub(r'^\.?cgi\??(?![a-z0-9])', '*', line).strip() for line in list2]            # <replace leading cgi with * >
+    list2 = [re.sub(r'^\.?cfm\??(?![a-z0-9])', '*', line).strip() for line in list2]            # <replace leading cfm with * >
+    list2 = [re.sub(r'^\.?gif\??(?![a-z0-9])', '*', line).strip() for line in list2]            # <replace leading gif with * >
+    list2 = [re.sub(r'^\.?html?\??(?![a-z0-9])', '*', line).strip() for line in list2]          # <replace leading htm with * >
+    list2 = [re.sub(r'^[/\.]?ima?ge?s?\*?(?=[-_\./])', '*', line) for line in list2]            # <replace leading image with * />
+    list2 = [re.sub(r'^\.?jpg\??(?![a-z0-9])', '*', line).strip() for line in list2]            # <replace leading jpg with * >
+    list2 = [re.sub(r'^[/\.]?js/', '/', line) for line in list2]                                # <replace leading js/ with / />
+    list2 = [re.sub(r'^\.?js\??(?![a-z0-9])', '*', line).strip() for line in list2]             # <replace leading js with * >
+    list2 = [re.sub(r'^\|?http.?\:/+', '/', line).strip() for line in list2]                    # <remove leading |http:/+ >
+    list2 = [re.sub(r'^\.?mp[0-9]\??(?![a-z0-9])', '*', line).strip() for line in list2]        # <replace leading mp* with * >
+    list2 = [re.sub(r'^\.?php\??(?![a-z0-9])', '*', line).strip() for line in list2]            # <replace leading php with * >
+    list2 = [re.sub(r'^\.?png\??(?![a-z0-9])', '*', line).strip() for line in list2]            # <replace leading png with * >
+    list2 = [re.sub(r'^[/\.]?static\*?(?=[-_\./])', '*', line) for line in list2]               # <replace leading static with * />
+    list2 = [re.sub(r'^\.?tiff\??(?![a-z0-9])', '*', line).strip() for line in list2]           # <replace leading tiff with * >
+    list2 = [re.sub(r'www\.', '', line).strip() for line in list2]                              # <remove www />
+    list2 = [line for line in list2 if len(line) > 1]                                           # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
-    print(' 9/20 : remove *$ denyallow and ghide exceptions combined with domain= ; keep the related domains')
+    print(' 9/20 : remove *$ denyallow 1and ghide exceptions combined with domain= ; keep the related domains')
 
     list2s = (
         [line for line in list2 if re.search(r'^/?\*?\$.*domain=', line)] +              # <select *$ filters />
@@ -333,9 +333,12 @@ list2 = (
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
-print('18/20 : remove lines leaded by & *?')
-list2 = [re.sub(r'^\&.*', '', line) for line in list2]                               # <remove line leaded by & />
-list2 = [re.sub(r'^\*\?.*', '', line) for line in list2]                             # <remove line leaded by *? />
+print('18/20 : remove lines leaded by & ? ^ : ')
+list2 = [re.sub(r'^\*?\&.*', '', line) for line in list2]                            # <remove line leaded by *& />
+list2 = [re.sub(r'^\*?\?.*', '', line) for line in list2]                            # <remove line leaded by *? />
+list2 = [re.sub(r'^\*?\^.*', '', line) for line in list2]                            # <remove line leaded by *^ />
+list2 = [re.sub(r'^\*?\:.*', '', line) for line in list2]                            # <remove line leaded by *: />
+list2 = [re.sub(r'^\*?\;.*', '', line) for line in list2]                            # <remove line leaded by *; />
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
