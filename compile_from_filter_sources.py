@@ -337,7 +337,8 @@ list2 = [line for line in list2 if len(line) > 1]                               
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print('19/20 : remove key domains and urls (google.com , etc) ')
-list2 = [re.sub(r'^[_\W]?[a-z0-9][_\W]?\*?$', '', line) for line in list2]           # <remove spurious single a-z0-9 filter />
+list2 = [re.sub(r'^[_\W]?[a-z0-9][_\W]?\*?$', '', line) for line in list2]           # <remove spurious single [a-z0-9] filter />
+list2 = [re.sub(r'^[_\W]?[a-z][0-9][_\W]?\*?$', '', line) for line in list2]         # <remove spurious single [a-z][0-9] sequence filter />
 list2 = [re.sub(r'^[_\W]?ajax[_\W]?\*?$', '', line) for line in list2]               # <remove spurious ajax filter />
 list2 = [re.sub(r'^[_\W]?api[_\W]?\*?$', '', line) for line in list2]                # <remove spurious api filter />
 list2 = [re.sub(r'^[_\W]?app[_\W]?\*?$', '', line) for line in list2]                # <remove spurious app filter />
@@ -358,6 +359,7 @@ list2 = [re.sub(r'^[_\W]?file[_\W]?\*?$', '', line) for line in list2]          
 list2 = [re.sub(r'^[_\W]?footer[_\W]?\*?$', '', line) for line in list2]             # <remove spurious footer filter />
 list2 = [re.sub(r'^[_\W]?front(end)?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious front(end) filter />
 list2 = [re.sub(r'^[_\W]?go[_\W]?\*?$', '', line) for line in list2]                 # <remove spurious go filter />
+list2 = [re.sub(r'^[_\W]?gogle[_\W]?\*?$', '', line) for line in list2]              # <remove spurious gogle filter />
 list2 = [re.sub(r'^[_\W]?head(er)?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious head(er) filter />
 list2 = [re.sub(r'^[_\W]?home[_\W]?\*?$', '', line) for line in list2]               # <remove spurious home filter />
 list2 = [re.sub(r'^[_\W]?ima?ge?s?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious im(a)g(e)(s) filter />
@@ -376,6 +378,7 @@ list2 = [re.sub(r'^[_\W]?linkedin[_\W]?\*?$', '', line) for line in list2]      
 list2 = [re.sub(r'^[_\W]?main[_\W]?\*?$', '', line) for line in list2]               # <remove spurious main filter />
 list2 = [re.sub(r'^[_\W]?master[_\W]?\*?$', '', line) for line in list2]             # <remove spurious master filter />
 list2 = [re.sub(r'^[_\W]?menu[_\W]?\*?$', '', line) for line in list2]               # <remove spurious menu filter />
+list2 = [re.sub(r'^[_\W]?microsoft[_\W]?\*?$', '', line) for line in list2]          # <remove spurious microsoft filter />
 list2 = [re.sub(r'^[_\W]?modules?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious module(s) filter />
 list2 = [re.sub(r'^[_\W]?mp[0-9[_\W]?\*?$', '', line) for line in list2]             # <remove spurious mpx filter />
 list2 = [re.sub(r'^[_\W]?net[_\W]?\*?$', '', line) for line in list2]                # <remove spurious net filter />
