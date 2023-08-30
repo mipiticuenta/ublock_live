@@ -389,6 +389,7 @@ list2 = [re.sub(r'^[_\W]?templates?[_\W]?\*?$', '', line) for line in list2]    
 list2 = [re.sub(r'^[_\W]?tr[_\W]?\*?$', '', line) for line in list2]                 # <remove spurious tr filter />
 list2 = [re.sub(r'^[_\W]?txt[_\W]?\*?$', '', line) for line in list2]                # <remove spurious txt filter />
 list2 = [re.sub(r'^[_\W]?uploads[_\W]?\*?$', '', line) for line in list2]            # <remove spurious uploads filter />
+list2 = [re.sub(r'^[_\W]?video[_\W]?\*?$', '', line) for line in list2]              # <remove spurious video filter />
 list2 = [re.sub(r'^[_\W]?web[_\W]?\*?$', '', line) for line in list2]                # <remove spurious web filter />
 list2 = [re.sub(r'^[_\W]?widgets?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious widget(s) filter />
 list2 = [re.sub(r'^[_\W]?wp[_\W]?\*?$', '', line) for line in list2]                 # <remove spurious wp filter />
