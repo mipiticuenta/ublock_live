@@ -95,8 +95,8 @@ print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print(' 3/20 : keep case for cosmetic filters; apply lower case for the remaining ')
 list2 = (
-        [line         for line in list2 if     re.search(r'#', line) ] + 
-        [line.lower() for line in list2 if not(re.search(r'#', line))]               # <lower case for all except cosmetics />
+        [line         for line in list2 if     re.search(r'[#\\]', line) ] + 
+        [line.lower() for line in list2 if not(re.search(r'[#\\]', line))]           # <lower case for all except cosmetics and regex />
         )
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
