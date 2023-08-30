@@ -349,6 +349,7 @@ list2 = [re.sub(r'^[_\W]?common[_\W]?\*?$', '', line) for line in list2]        
 list2 = [re.sub(r'^[_\W]?css[_\W]?\*?$', '', line) for line in list2]                # <remove spurious css filter />
 list2 = [re.sub(r'^[_\W]?com[_\W]?\*?$', '', line) for line in list2]                # <remove spurious com filter />
 list2 = [re.sub(r'^[_\W]?display[_\W]?\*?$', '', line) for line in list2]            # <remove spurious display filter />
+list2 = [re.sub(r'^[_\W]?editorial[_\W]?\*?$', '', line) for line in list2]          # <remove spurious editorial filter />
 list2 = [re.sub(r'^[_\W]?embed[_\W]?\*?$', '', line) for line in list2]              # <remove spurious embed filter />
 list2 = [re.sub(r'^[_\W]?exe[_\W]?\*?$', '', line) for line in list2]                # <remove spurious exe filter />
 list2 = [re.sub(r'^[_\W]?ext(ernal)?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious ext(ernal) filter />
