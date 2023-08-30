@@ -363,6 +363,7 @@ list2 = [re.sub(r'^[_\W]?jquery[_\W]?$', '', line) for line in list2]           
 list2 = [re.sub(r'^[_\W]?sp[_\W]?$', '', line) for line in list2]                    # <remove spurious sp filter />
 list2 = [re.sub(r'^[_\W]?tr[_\W]?$', '', line) for line in list2]                    # <remove spurious tr filter />
 list2 = [re.sub(r'^[_\W]?txt[_\W]?$', '', line) for line in list2]                   # <remove spurious txt filter />
+list2 = [re.sub(r'^[_\W]?uploads[_\W]?$', '', line) for line in list2]               # <remove spurious uploads filter />
 list2 = [re.sub(r'^[_\W]?wp[_\W]?$', '', line) for line in list2]                    # <remove spurious wp filter />
 list2 = [re.sub(r'^cloudflare.com$', '', line) for line in list2]                    # <remove cloudflare.com />
 list2 = [re.sub(r'^(lite\.)?duckduckgo.com$', '', line) for line in list2]           # <remove duckduckgo.com />
