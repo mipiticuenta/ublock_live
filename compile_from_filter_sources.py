@@ -392,6 +392,7 @@ list2 = [re.sub(r'^[_\W]?png[_\W]?\*?$', '', line) for line in list2]           
 list2 = [re.sub(r'^[_\W]?sp[_\W]?\*?$', '', line) for line in list2]                 # <remove spurious sp filter />
 list2 = [re.sub(r'^[_\W]?style[_\W]?\*?$', '', line) for line in list2]              # <remove spurious style filter />
 list2 = [re.sub(r'^[_\W]?search[_\W]?\*?$', '', line) for line in list2]             # <remove spurious search filter />
+list2 = [re.sub(r'^[_\W]?services?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious service(s) filter />
 list2 = [re.sub(r'^[_\W]?templates?[_\W]?\*?$', '', line) for line in list2]         # <remove spurious template(s)filter />
 list2 = [re.sub(r'^[_\W]?tr[_\W]?\*?$', '', line) for line in list2]                 # <remove spurious tr filter />
 list2 = [re.sub(r'^[_\W]?txt[_\W]?\*?$', '', line) for line in list2]                # <remove spurious txt filter />
