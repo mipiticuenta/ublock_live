@@ -336,7 +336,7 @@ list2 = [line for line in list2 if len(line) > 1]                               
 
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
-print('19/20 : remove key domains and urls (google.com , etc) to preserve unblocked ')
+print('19/20 : remove key domains and urls (google.com , etc) to be preserved unblocked ')
 list2 = [re.sub(r'^[_\W]?[a-z0-9][_\W]?\*?$', '', line) for line in list2]           # <remove spurious single [a-z0-9] filter />
 list2 = [re.sub(r'^[_\W]?[a-z][0-9][_\W]?\*?$', '', line) for line in list2]         # <remove spurious single [a-z][0-9] sequence filter />
 list2 = [re.sub(r'^[_\W]?ajax[_\W]?\*?$', '', line) for line in list2]               # <remove spurious ajax filter />
@@ -347,6 +347,7 @@ list2 = [re.sub(r'^[_\W]?base[_\W]?\*?$', '', line) for line in list2]          
 list2 = [re.sub(r'^[_\W]?bbc[_\W]?\*?$', '', line) for line in list2]                # <remove spurious bbc filter />
 list2 = [re.sub(r'^[_\W]?brand(ing)?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious brand(ing) filter />
 list2 = [re.sub(r'^[_\W]?code[_\W]?\*?$', '', line) for line in list2]               # <remove spurious code filter />
+list2 = [re.sub(r'^[_\W]?core[_\W]?\*?$', '', line) for line in list2]               # <remove spurious core filter />
 list2 = [re.sub(r'^[_\W]?common[_\W]?\*?$', '', line) for line in list2]             # <remove spurious common filter />
 list2 = [re.sub(r'^[_\W]?css[_\W]?\*?$', '', line) for line in list2]                # <remove spurious css filter />
 list2 = [re.sub(r'^[_\W]?com[_\W]?\*?$', '', line) for line in list2]                # <remove spurious com filter />
