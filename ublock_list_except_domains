@@ -3,11 +3,11 @@
 ! Expires: 1 day
 ! Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ublock_list_except_domains
 ! 
-###
-##.
-##[]
-#============================================================================================
-(|cloud)[^a-z]/
+!  expires: 1 day
+!  title: unified block list
+! *$image,redirect-rule=1x1.gif
+! attribute css selector : ##[]
+! id css selector        : ###
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no)pop(?!ul)/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no.)shar[eir]/i")
 *##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]ad\-h/i")
@@ -24762,9 +24762,7 @@
 /column-ad-
 /columnadcounter.
 /columnads/*
-/com
 /com.truex.truexrenderer.js
-/com/*
 /com/bazachic/*
 /com/cadre-emploi/*
 /com/collectorsquare-box/*
@@ -52962,7 +52960,6 @@ colorbox
 coloritpak.
 column-ad-
 columnadcounter.
-com
 com-inject.json?r
 com-news-reports.
 com-nitro.
