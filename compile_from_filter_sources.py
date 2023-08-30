@@ -362,7 +362,7 @@ list2 = [re.sub(r'^\.?org\*?\.?$', '', line) for line in list2]                 
 list2 = [re.sub(r'^wikipedia.org$', '', line) for line in list2]                     # <remove wikipedia.org />
 list2 = [re.sub(r'^/?wp$', '', line) for line in list2]                              # <remove /wp />
 list2 = [re.sub(r'^/?wp\-content/\*$', '', line) for line in list2]                  # <remove /wp-content />
-list2 = [re.sub(r'^youtube.com$', '', line) for line in list2]                       # <remove youtube.com />
+list2 = [re.sub(r'^(music\.)?youtube.com$', '', line) for line in list2]             # <remove youtube.com />
 list2 = [re.sub(r'^[a-z]{1,3}$', '', line) for line in list2]                        # <remove ^[a-z]{1,3}$ />
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
