@@ -337,26 +337,29 @@ list2 = [line for line in list2 if len(line) > 1]                               
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print('19/20 : remove key domains and urls (google.com , etc) ')
-list2 = [re.sub(r'^^[_\W]?api[_\W]?$', '', line) for line in list2]                  # <remove spurious api filter />
-list2 = [re.sub(r'^^[_\W]?app[_\W]?$', '', line) for line in list2]                  # <remove spurious app filter />
-list2 = [re.sub(r'^^[_\W]?brand(ing)?[_\W]?$', '', line) for line in list2]          # <remove spurious brand(ing) filter />
-list2 = [re.sub(r'^^[_\W]?css[_\W]?$', '', line) for line in list2]                  # <remove spurious css filter />
-list2 = [re.sub(r'^^[_\W]?com[_\W]?$', '', line) for line in list2]                  # <remove spurious com filter />
-list2 = [re.sub(r'^^[_\W]?exe[_\W]?$', '', line) for line in list2]                  # <remove spurious exe filter />
-list2 = [re.sub(r'^^[_\W]?footer[_\W]?$', '', line) for line in list2]               # <remove spurious footer filter />
-list2 = [re.sub(r'^^[_\W]?go[_\W]?$', '', line) for line in list2]                   # <remove spurious go filter />
-list2 = [re.sub(r'^^[_\W]?head(er)?[_\W]?$', '', line) for line in list2]            # <remove spurious head(er) filter />
-list2 = [re.sub(r'^^[_\W]?init[_\W]?$', '', line) for line in list2]                 # <remove spurious init filter />
-list2 = [re.sub(r'^^[_\W]?jpe?g[_\W]?$', '', line) for line in list2]                # <remove spurious jpg filter />
-list2 = [re.sub(r'^^[_\W]?js[_\W]?$', '', line) for line in list2]                   # <remove spurious js filter />
-list2 = [re.sub(r'^^[_\W]?logo[_\W]?$', '', line) for line in list2]                 # <remove spurious logo filter />
-list2 = [re.sub(r'^^[_\W]?main[_\W]?$', '', line) for line in list2]                 # <remove spurious main filter />
-list2 = [re.sub(r'^^[_\W]?mp[0-9[_\W]?$', '', line) for line in list2]               # <remove spurious mpx filter />
-list2 = [re.sub(r'^^[_\W]?net[_\W]?$', '', line) for line in list2]                  # <remove spurious net filter />
-list2 = [re.sub(r'^^[_\W]?org[_\W]?$', '', line) for line in list2]                  # <remove spurious org filter />
-list2 = [re.sub(r'^^[_\W]?png[_\W]?$', '', line) for line in list2]                  # <remove spurious png filter />
-list2 = [re.sub(r'^^[_\W]?txt[_\W]?$', '', line) for line in list2]                  # <remove spurious txt filter />
-list2 = [re.sub(r'^^[_\W]?wp[_\W]?$', '', line) for line in list2]                   # <remove spurious wp filter />
+list2 = [re.sub(r'^[_\W]?api[_\W]?$', '', line) for line in list2]                  # <remove spurious api filter />
+list2 = [re.sub(r'^[_\W]?app[_\W]?$', '', line) for line in list2]                  # <remove spurious app filter />
+list2 = [re.sub(r'^[_\W]?brand(ing)?[_\W]?$', '', line) for line in list2]          # <remove spurious brand(ing) filter />
+list2 = [re.sub(r'^[_\W]?css[_\W]?$', '', line) for line in list2]                  # <remove spurious css filter />
+list2 = [re.sub(r'^[_\W]?com[_\W]?$', '', line) for line in list2]                  # <remove spurious com filter />
+list2 = [re.sub(r'^[_\W]?display[_\W]?$', '', line) for line in list2]              # <remove spurious display filter />
+list2 = [re.sub(r'^[_\W]?exe[_\W]?$', '', line) for line in list2]                  # <remove spurious exe filter />
+list2 = [re.sub(r'^[_\W]?ext[_\W]?$', '', line) for line in list2]                  # <remove spurious ext filter />
+list2 = [re.sub(r'^[_\W]?footer[_\W]?$', '', line) for line in list2]               # <remove spurious footer filter />
+list2 = [re.sub(r'^[_\W]?go[_\W]?$', '', line) for line in list2]                   # <remove spurious go filter />
+list2 = [re.sub(r'^[_\W]?head(er)?[_\W]?$', '', line) for line in list2]            # <remove spurious head(er) filter />
+list2 = [re.sub(r'^[_\W]?init[_\W]?$', '', line) for line in list2]                 # <remove spurious init filter />
+list2 = [re.sub(r'^[_\W]?jpe?g[_\W]?$', '', line) for line in list2]                # <remove spurious jpg filter />
+list2 = [re.sub(r'^[_\W]?js[_\W]?$', '', line) for line in list2]                   # <remove spurious js filter />
+list2 = [re.sub(r'^[_\W]?logo[_\W]?$', '', line) for line in list2]                 # <remove spurious logo filter />
+list2 = [re.sub(r'^[_\W]?main[_\W]?$', '', line) for line in list2]                 # <remove spurious main filter />
+list2 = [re.sub(r'^[_\W]?mp[0-9[_\W]?$', '', line) for line in list2]               # <remove spurious mpx filter />
+list2 = [re.sub(r'^[_\W]?net[_\W]?$', '', line) for line in list2]                  # <remove spurious net filter />
+list2 = [re.sub(r'^[_\W]?org[_\W]?$', '', line) for line in list2]                  # <remove spurious org filter />
+list2 = [re.sub(r'^[_\W]?png[_\W]?$', '', line) for line in list2]                  # <remove spurious png filter />
+list2 = [re.sub(r'^[_\W]?tr[_\W]?$', '', line) for line in list2]                   # <remove spurious tr filter />
+list2 = [re.sub(r'^[_\W]?txt[_\W]?$', '', line) for line in list2]                  # <remove spurious txt filter />
+list2 = [re.sub(r'^[_\W]?wp[_\W]?$', '', line) for line in list2]                   # <remove spurious wp filter />
 list2 = [re.sub(r'^cloudflare.com$', '', line) for line in list2]                    # <remove cloudflare.com />
 list2 = [re.sub(r'^(lite\.)?duckduckgo.com$', '', line) for line in list2]           # <remove duckduckgo.com />
 list2 = [re.sub(r'^(developper\.)?google.com$', '', line) for line in list2]         # <remove google.com />
@@ -370,6 +373,20 @@ list2 = [re.sub(r'^/?wp\-content/\*$', '', line) for line in list2]             
 list2 = [re.sub(r'^(music\.)?youtube.com$', '', line) for line in list2]             # <remove youtube.com />
 list2 = [re.sub(r'^[a-z]{1,3}$', '', line) for line in list2]                        # <remove ^[a-z]{1,3}$ />
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
+print('       ', '{:,}'.format(len(list2)), 'filters remaining')
+
+print('11/20 : split space separated domains ')
+
+list2s = [line for line in list2 if re.search(r' ', line) and not(re.search(r'[\$\&]', line))]    # <remove space separated domains />
+
+list2 = set(list2) - set(list2s)                                                     # <segregate removed filters'/>
+
+list2s = [line.split(' ') for line in list2s]                                        # <flatten list'/>
+list2s = [item[0] for line in list2s for item in line if line !=[''] and item != ''] # <flatten list'/>
+
+list2 = sorted(set(list2) | set(list2s))                                             # <join retrieved domains to main list'/>
+del(list2s)
+
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print('20/20 : adding filter to block #.@(.@) (numerical domains) ')
