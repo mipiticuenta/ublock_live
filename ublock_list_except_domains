@@ -18144,6 +18144,7 @@
 /[^a-z0-9]comitium[^a-z]/
 /[^a-z0-9]commander1[^a-z]/
 /[^a-z0-9]comment/$important
+/[^a-z0-9]comments?[^a-z0-9]/$important
 /[^a-z0-9]conichi[^a-z]/
 /[^a-z0-9]connectif[^a-z]/
 /[^a-z0-9]consent/$important
@@ -18183,6 +18184,7 @@
 /[^a-z0-9]farshake[^a-z]/
 /[^a-z0-9]fastly(\-|\-insights|lb)[^a-z]/
 /[^a-z0-9]fb/$important
+/[^a-z0-9]fb[^a-z0-9]/$important
 /[^a-z0-9]flashtalking[^a-z]/
 /[^a-z0-9]flixfacts[^a-z]/
 /[^a-z0-9]footprints?(|\-pa)[^a-z]/
@@ -18312,6 +18314,7 @@
 /[^a-z0-9]purch[^a-z]/
 /[^a-z0-9]push(crew|er)[^a-z]/
 /[^a-z0-9]pwa[^a-z]/$important
+/[^a-z0-9]px[^a-z0-9]/$important
 /[^a-z0-9]pxlctl[^a-z]/
 /[^a-z0-9]quant(|x|serve)[^a-z]/
 /[^a-z0-9]qwerty24[^a-z]/
@@ -18386,8 +18389,6 @@
 /[^a-z0-9]ztat[^a-z]/
 /[^a-z]gpt/$important
 /[^abs]log[0-9]?s?(ge)?(ging)?-_=&\?/\.]/$important
-/[_\W]fb[_\W]/$important
-/[_\W]px[_\W]/$important
 /a-ads.
 /a-d-s/*
 /a-d-sys.js
@@ -24783,7 +24784,6 @@
 /comment-ads.
 /comment.js
 /comment_baidu.
-/comments?[^a-z]/$important
 /commentshareicons.
 /commercial_horizontal.
 /commercial_top.
