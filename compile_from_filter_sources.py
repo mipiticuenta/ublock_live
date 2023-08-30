@@ -336,7 +336,7 @@ list2 = [line for line in list2 if len(line) > 1]                               
 
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
-print('19/20 : remove key domains and urls (google.com , etc) ')
+print('19/20 : remove key domains and urls (google.com , etc) to preserve unblocked ')
 list2 = [re.sub(r'^[_\W]?[a-z0-9][_\W]?\*?$', '', line) for line in list2]           # <remove spurious single [a-z0-9] filter />
 list2 = [re.sub(r'^[_\W]?[a-z][0-9][_\W]?\*?$', '', line) for line in list2]         # <remove spurious single [a-z][0-9] sequence filter />
 list2 = [re.sub(r'^[_\W]?ajax[_\W]?\*?$', '', line) for line in list2]               # <remove spurious ajax filter />
@@ -394,6 +394,8 @@ list2 = [re.sub(r'^[_\W]?sp[_\W]?\*?$', '', line) for line in list2]            
 list2 = [re.sub(r'^[_\W]?style[_\W]?\*?$', '', line) for line in list2]              # <remove spurious style filter />
 list2 = [re.sub(r'^[_\W]?search[_\W]?\*?$', '', line) for line in list2]             # <remove spurious search filter />
 list2 = [re.sub(r'^[_\W]?services?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious service(s) filter />
+list2 = [re.sub(r'^[_\W]?specials?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious special(s) filter />
+list2 = [re.sub(r'^[_\W]?speed[_\W]?\*?$', '', line) for line in list2]              # <remove spurious speed filter />
 list2 = [re.sub(r'^[_\W]?templates?[_\W]?\*?$', '', line) for line in list2]         # <remove spurious template(s)filter />
 list2 = [re.sub(r'^[_\W]?tr[_\W]?\*?$', '', line) for line in list2]                 # <remove spurious tr filter />
 list2 = [re.sub(r'^[_\W]?txt[_\W]?\*?$', '', line) for line in list2]                # <remove spurious txt filter />
