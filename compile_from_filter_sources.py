@@ -399,6 +399,7 @@ list2 = [re.sub(r'^[_\W]?wordpress[_\W]?\*?$', '', line) for line in list2]     
 list2 = [re.sub(r'^akamai\.com$', '', line) for line in list2]                       # <remove akamai.com />
 list2 = [re.sub(r'^akamai\.net$', '', line) for line in list2]                       # <remove akamai.net />
 list2 = [re.sub(r'^cloudflare\.com$', '', line) for line in list2]                   # <remove cloudflare.com />
+list2 = [re.sub(r'^cloudfront\.net$', '', line) for line in list2]                   # <remove cloudfront.net />
 list2 = [re.sub(r'^(lite\.)?duckduckgo\.com$', '', line) for line in list2]          # <remove duckduckgo.com />
 list2 = [re.sub(r'^elconfidencial\.com$', '', line) for line in list2]               # <remove elconfidencial.com />
 list2 = [re.sub(r'^ecestaticos\.com$', '', line) for line in list2]                  # <remove ecestaticos.com />
