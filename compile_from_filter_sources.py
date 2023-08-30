@@ -338,10 +338,12 @@ print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print('19/20 : remove key domains and urls (google.com , etc) ')
 list2 = [re.sub(r'^[_\W]?[a-z0-9][_\W]?\*?$', '', line) for line in list2]           # <remove spurious single a-z0-9 filter />
+list2 = [re.sub(r'^[_\W]?ajax[_\W]?\*?$', '', line) for line in list2]               # <remove spurious ajax filter />
 list2 = [re.sub(r'^[_\W]?api[_\W]?\*?$', '', line) for line in list2]                # <remove spurious api filter />
 list2 = [re.sub(r'^[_\W]?app[_\W]?\*?$', '', line) for line in list2]                # <remove spurious app filter />
 list2 = [re.sub(r'^[_\W]?bbc[_\W]?\*?$', '', line) for line in list2]                # <remove spurious bbc filter />
 list2 = [re.sub(r'^[_\W]?brand(ing)?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious brand(ing) filter />
+list2 = [re.sub(r'^[_\W]?code[_\W]?\*?$', '', line) for line in list2]               # <remove spurious code filter />
 list2 = [re.sub(r'^[_\W]?css[_\W]?\*?$', '', line) for line in list2]                # <remove spurious css filter />
 list2 = [re.sub(r'^[_\W]?com[_\W]?\*?$', '', line) for line in list2]                # <remove spurious com filter />
 list2 = [re.sub(r'^[_\W]?display[_\W]?\*?$', '', line) for line in list2]            # <remove spurious display filter />
@@ -356,7 +358,7 @@ list2 = [re.sub(r'^[_\W]?jpe?g[_\W]?\*?$', '', line) for line in list2]         
 list2 = [re.sub(r'^[_\W]?jquery(\.min)?[_\W]?\*?$', '', line) for line in list2]     # <remove spurious jquery(.min) filter />
 list2 = [re.sub(r'^[_\W]?jquery(\.js)?[_\W]?\*?$', '', line) for line in list2]      # <remove spurious jquery(.js) filter />
 list2 = [re.sub(r'^[_\W]?js[_\W]?\*?$', '', line) for line in list2]                 # <remove spurious js filter />
-list2 = [re.sub(r'^[_\W]?logo[_\W]?\*?$', '', line) for line in list2]               # <remove spurious logo filter />
+list2 = [re.sub(r'^[_\W]?logos?[_\W]?\*?$', '', line) for line in list2]             # <remove spurious logo(s) filter />
 list2 = [re.sub(r'^[_\W]?lib[_\W]?\*?$', '', line) for line in list2]                # <remove spurious lib filter />
 list2 = [re.sub(r'^[_\W]?main[_\W]?\*?$', '', line) for line in list2]               # <remove spurious main filter />
 list2 = [re.sub(r'^[_\W]?menu[_\W]?\*?$', '', line) for line in list2]               # <remove spurious menu filter />
@@ -368,11 +370,14 @@ list2 = [re.sub(r'^[_\W]?plugins??[_\W]?\*?$', '', line) for line in list2]     
 list2 = [re.sub(r'^[_\W]?png[_\W]?\*?$', '', line) for line in list2]                # <remove spurious png filter />
 list2 = [re.sub(r'^[_\W]?sp[_\W]?\*?$', '', line) for line in list2]                 # <remove spurious sp filter />
 list2 = [re.sub(r'^[_\W]?style[_\W]?\*?$', '', line) for line in list2]              # <remove spurious style filter />
+list2 = [re.sub(r'^[_\W]?search[_\W]?\*?$', '', line) for line in list2]             # <remove spurious search filter />
 list2 = [re.sub(r'^[_\W]?tr[_\W]?\*?$', '', line) for line in list2]                 # <remove spurious tr filter />
 list2 = [re.sub(r'^[_\W]?txt[_\W]?\*?$', '', line) for line in list2]                # <remove spurious txt filter />
 list2 = [re.sub(r'^[_\W]?uploads[_\W]?\*?$', '', line) for line in list2]            # <remove spurious uploads filter />
 list2 = [re.sub(r'^[_\W]?wp[_\W]?\*?$', '', line) for line in list2]                 # <remove spurious wp filter />
 list2 = [re.sub(r'^[_\W]?wordpress[_\W]?\*?$', '', line) for line in list2]          # <remove spurious wordpress filter />
+list2 = [re.sub(r'^akamai.com$', '', line) for line in list2]                        # <remove akamai.com />
+list2 = [re.sub(r'^akamai.net$', '', line) for line in list2]                        # <remove akamai.net />
 list2 = [re.sub(r'^cloudflare.com$', '', line) for line in list2]                    # <remove cloudflare.com />
 list2 = [re.sub(r'^(lite\.)?duckduckgo.com$', '', line) for line in list2]           # <remove duckduckgo.com />
 list2 = [re.sub(r'^(developper\.)?google.com$', '', line) for line in list2]         # <remove google.com />
