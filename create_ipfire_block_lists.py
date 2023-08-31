@@ -147,14 +147,14 @@ print(
     )
 
 list3_out     = set(list3_out)
-list3_out     = sorted(list3_out, key = lambda x: (re.sub(r'^[-_\.a-z0-9]+\.(?=[a-z]+\.[a-z]+)', '', x)))    # <sort by a-z @(.@) />
+list3_out     = sorted(list3_out, key = lambda x: (re.sub(r'^[-_\.a-z0-9]+\.(?=[a-z]+\.[a-z]+$)', '', x)))    # <sort by a-z @(.@) />
 
 list3_out = sorted(list3_out)
 file3_out.writelines(line + '\n' for line in list3_out)
 file3_out.close()
 
 print(
-    ' Written to '
+    'Written to '
     + file3_out_name +
     '\n',
     sep = ''
