@@ -299,17 +299,37 @@ list2 = [re.sub(r'(/[-_\*a-z0-9]+)/$', r'\1/*', line) for line in list2]        
 
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
-print('17/20 : remove lines leaded by & ? ^ : ')
+print('17/20 : split space separated domains ')
+
+list2s = [line for line in list2 if re.search(r' ', line) and not(re.search(r'[\$\&]', line))]    # <remove space separated domains />
+
+list2 = set(list2) - set(list2s)                                                     # <segregate removed filters'/>
+
+list2s = [line.split(' ') for line in list2s]                                        # <flatten list'/>
+list2s = [item[0] for line in list2s for item in line if line !=[''] and item != ''] # <flatten list'/>
+
+list2 = sorted(set(list2) | set(list2s))                                             # <join retrieved domains to main list'/>
+del(list2s)
+
+print('       ', '{:,}'.format(len(list2)), 'filters remaining')
+
+print('18/20 : remove lines leaded by & ? ^ : and @.exe @.gif @.jpg @.png @.rar @.zip')
 list2 = [re.sub(r'^\*?\&.*', '', line) for line in list2]                            # <remove line leaded by & />
 list2 = [re.sub(r'^\*?\?.*', '', line) for line in list2]                            # <remove line leaded by ? />
 list2 = [re.sub(r'^\*?\^.*', '', line) for line in list2]                            # <remove line leaded by ^ />
 list2 = [re.sub(r'^\*?\:.*', '', line) for line in list2]                            # <remove line leaded by : />
 list2 = [re.sub(r'^\*?\;.*', '', line) for line in list2]                            # <remove line leaded by ; />
 list2 = [re.sub(r'^\*?\@.*', '', line) for line in list2]                            # <remove line leaded by @ />
+list2 = [re.sub(r'^.*\.exe$', '', line) for line in list2]                           # <remove @.exe filters />
+list2 = [re.sub(r'^.*\.gif$', '', line) for line in list2]                           # <remove @.gif filters />
+list2 = [re.sub(r'^.*\.jpe?g$', '', line) for line in list2]                         # <remove @.jp(e)g filters />
+list2 = [re.sub(r'^.*\.png$', '', line) for line in list2]                           # <remove @.png filters />
+list2 = [re.sub(r'^.*\.rar$', '', line) for line in list2]                           # <remove @.rar filters />
+list2 = [re.sub(r'^.*\.zip$', '', line) for line in list2]                           # <remove @.zip filters />
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
-print('18/20 : arrange *$ filters; keep beacon csp inline-font inline-script object other ping popunder script websocket xhr ')
+print('19/20 : arrange *$ filters; keep beacon csp inline-font inline-script object other ping popunder script websocket xhr ')
 list2 = [re.sub(r'^\*\$\~?1p.*', '', line) for line in list2]                               # <remove *$1p />
 list2 = [re.sub(r'^\*\$\~?3p.*', '', line) for line in list2]                               # <remove *$3p />
 list2 = [re.sub(r'^\*\$\~?third\-party.*', '', line) for line in list2]                     # <remove *$3p />
@@ -336,7 +356,7 @@ list2 = [line for line in list2 if len(line) > 1]                               
 
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
-print('19/20 : remove key domains and urls (google.com , etc) to be preserved unblocked ')
+print('20/20 : preserve key domains and urls (google.com , etc) from blocking ')
 list2 = [re.sub(r'^[_\W]?[a-z0-9][_\W]?\*?$', '', line) for line in list2]           # <remove spurious single [a-z0-9] filter />
 list2 = [re.sub(r'^[_\W]?[a-z][0-9][_\W]?\*?$', '', line) for line in list2]         # <remove spurious single [a-z][0-9] sequence filter />
 list2 = [re.sub(r'^[_\W]?ajax[_\W]?\*?$', '', line) for line in list2]               # <remove spurious ajax filter />
@@ -431,20 +451,6 @@ list2 = [re.sub(r'^[a-z]{1,3}$', '', line) for line in list2]                   
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
-print('20/20 : split space separated domains ')
-
-list2s = [line for line in list2 if re.search(r' ', line) and not(re.search(r'[\$\&]', line))]    # <remove space separated domains />
-
-list2 = set(list2) - set(list2s)                                                     # <segregate removed filters'/>
-
-list2s = [line.split(' ') for line in list2s]                                        # <flatten list'/>
-list2s = [item[0] for line in list2s for item in line if line !=[''] and item != ''] # <flatten list'/>
-
-list2 = sorted(set(list2) | set(list2s))                                             # <join retrieved domains to main list'/>
-del(list2s)
-
-print('       ', '{:,}'.format(len(list2)), 'filters remaining')
-
 print('adding filter to block #.@(.@) (numerical domains) ')
 list2.append('/^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)/')                         # <add filter to block [-_/\.0-9]+\.[a-z]+ domains />
 
@@ -470,8 +476,7 @@ print(
 print('\n', 'removing #.@(.@) (numerical domain) @.jpg @.png filters: ', end = '')
 
 list3 = [line for line in list3 if not(re.search(r'^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?$', line))]    # <remove #.@(.@) numerical domains/>
-list3 = [line for line in list3 if not(re.search(r'^.*\.jpg$', line))]                                          # <remove @.jpg domains />
-list3 = [line for line in list3 if not(re.search(r'^.*\.png$', line))]                                          # <remove @.png domains />
+list3 = [line for line in list3 if not(re.search(r'^.*\.js$', line))]                                           # <remove @.js from domains list />
 
 print(
     '{:,}'.format(len(list3)),
@@ -486,7 +491,7 @@ print(
 print('Deduping domains; this operation could take long time, please wait')
 print('------------------------------------------------------------------')
 
-list2  = set(list2) - set(list3)    # <only domains part are processed in this section/>º
+list2  = set(list2) - set(list3)    # <only domains part are processed in this section/>
 list3r = [line for line in list3 if re.search(r'^[-_a-z0-9]+\.[a-z]+$', line)]       # <@.@ domains are elemental items/>
 
 print(
