@@ -512,7 +512,7 @@ list3r  = sorted(set(list3r) | set(list3r3))             # <compile deduplicated
 # <write output>
 
 list3r3     = set(list3r3)
-list3r3     = sorted(list3r3, key = lambda x: (re.sub(r'^[a-z0-9][-_a-z0-9]+\.', '', x)))    # <sort by a-z @.@/>
+list3r3     = sorted(list3r3, key = lambda x: (re.sub(r'^[-_a-z0-9]+\.', '', x)))    # <sort by a-z @.@/>
 file3r3_out = open(file3r3_out_name, 'w')
 file3r3_out.writelines(line + '\n' for line in list3r3)
 file3r3_out.close()

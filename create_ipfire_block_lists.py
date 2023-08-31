@@ -130,49 +130,63 @@ file3_out.write(
     + '! Expires: 1 day\n'
     + '! Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_domain_block_list\n'
     + '! \n'
-)
+    )
 
 # <\open file3_out file and write header>
 
-print('Listing domain filters, please wait')
+print('\n', 'Listing domain filters: ', end = '')
 
-list3_out = set()
-pbar = pb.ProgressBar(maxval = len(list1_in)).start()
-progress = 0
+list3_out = [line for line in list1_in if re.search(r'^[-_\.a-z0-9]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
+list3_out = [re.sub('r\$important$', '', line) for line in list3_out]                        # <remove trailing $important from domains/>
 
-for line in list1_in:
+print(
+    '{:,}'.format(len(list3_out)),
+    'found',
+    '\n'
+    )
 
-    if line[-10:] == '$important':
-        line = line[0:-10]    # <remove ''$important'' tag at the end (if present)/>
+list3_out     = set(list3_out)
+list3_out     = sorted(list3_out, key = lambda x: (re.sub(r'^[-_\.a-z0-9]+\.(?=[a-z]+(\.[a-z]+)?)', '', x)))    # <sort by a-z @(.@) />
 
-    # <.root = .@.@ case>
-    string_r = ''
-    if string_r := re.search(r'\.[a-z|A-Z]+\.[a-z|A-Z]+$', line):
-        string_r = string_r.group()
-    string_L1_r = ''
-    if string_L1_r := re.search(r'^[a-z|A-Z|0-9][a-z|A-Z|0-9|\-|_|\.]+\.[a-z|A-Z]+\.[a-z|A-Z]+$', line):
-        string_L1_r = string_L1_r.group()   # L1.root(.@.@)
-    if string_r and string_L1_r:
-        list3_out.add(line)
-    # </ .root = .@.@ case>
+#print('Listing domain filters, please wait')
 
-    # <.root = .@ case>
-    else:
-        string_r = ''
-        if string_r := re.search(r'\.[a-z|A-Z]+$', line):
-            string_r = string_r.group()
-        string_L1_r = ''
-        if string_L1_r := re.search(r'^[a-z|A-Z|0-9][a-z|A-Z|0-9|\-|_|\.]+\.[a-z|A-Z]+$', line):
-            string_L1_r = string_L1_r.group()   # L1.root(.@.@)
-        if string_r and string_L1_r:
-            list3_out.add(line)
-    # </ .root = .@ case>
+#list3_out = set()
+#pbar = pb.ProgressBar(maxval = len(list1_in)).start()
+#progress = 0
 
-    progress += 1
-    pbar.update(progress)
+#for line in list1_in:
 
-pbar.finish()
-print('\n')
+#    if line[-10:] == '$important':
+#        line = line[0:-10]    # <remove ''$important'' tag at the end (if present)/>
+
+#    # <.root = .@.@ case>
+#    string_r = ''
+#    if string_r := re.search(r'\.[a-z]+\.[a-z]+$', line):
+#        string_r = string_r.group()
+#    string_L1_r = ''
+#    if string_L1_r := re.search(r'^[a-z|A-Z|0-9][a-z|A-Z|0-9|\-|_|\.]+\.[a-z|A-Z]+\.[a-z|A-Z]+$', line):
+#        string_L1_r = string_L1_r.group()   # L1.root(.@.@)
+#    if string_r and string_L1_r:
+#        list3_out.add(line)
+#    # </ .root = .@.@ case>
+
+#    # <.root = .@ case>
+#    else:
+#        string_r = ''
+#        if string_r := re.search(r'\.[a-z|A-Z]+$', line):
+#            string_r = string_r.group()
+#        string_L1_r = ''
+#        if string_L1_r := re.search(r'^[a-z|A-Z|0-9][a-z|A-Z|0-9|\-|_|\.]+\.[a-z|A-Z]+$', line):
+#            string_L1_r = string_L1_r.group()   # L1.root(.@.@)
+#        if string_r and string_L1_r:
+#            list3_out.add(line)
+#    # </ .root = .@ case>
+
+#    progress += 1
+#    pbar.update(progress)
+
+#pbar.finish()
+#print('\n')
 
 list3_out = sorted(list3_out)
 file3_out.writelines(line + '\n' for line in list3_out)
