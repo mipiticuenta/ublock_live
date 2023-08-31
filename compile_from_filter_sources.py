@@ -124,7 +124,7 @@ print(' 6/20 : generalize cosmetic filters (*##) ')
 list2 = [re.sub(r'^.*(?=##)', '*', line) for line in list2]                          # <generalize cosmetic filters (*##) />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
-print(' 7/20 : remove cosmetic filters (##) and exceptions (@@) ')                   # <currently discarded; consider processing (future sprints?)/>
+print(' 7/20 : remove cosmetic filters (##) and exceptions (@@) except *##:')        # <currently discarded; consider processing (future sprints?)/>
 list2 = [re.sub(r'^\*?##(?!\:).*', '', line) for line in list2]                      # <remove cosmetic filters except ##: />
 list2 = [re.sub(r'^\*?\@\@.*', '', line) for line in list2]                          # <remove exceptions />
 list2 = [re.sub(r'^\*?\#\@.*', '', line) for line in list2]                          # <remove exceptions />
