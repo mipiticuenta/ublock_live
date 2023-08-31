@@ -473,10 +473,12 @@ print(
 
 # <remove #.@(.@) (numerical domains) from list>
 
-print('\n', 'removing #.@(.@) (numerical domain) @.jpg @.png filters: ', end = '')
+print('\n', 'removing #.@(.@) (numerical domain) filters: ', end = '')
+
+list3 = [line for line in list3 if not(re.search(r'^.*\.js$', line))]                # <remove @.js from domains list />
+list2  = set(list2) - set(list3)                                                     # <only domains part are processed in this section; @.js are kept in list2 />
 
 list3 = [line for line in list3 if not(re.search(r'^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?$', line))]    # <remove #.@(.@) numerical domains/>
-list3 = [line for line in list3 if not(re.search(r'^.*\.js$', line))]                                           # <remove @.js from domains list />
 
 print(
     '{:,}'.format(len(list3)),
@@ -491,7 +493,6 @@ print(
 print('Deduping domains; this operation could take long time, please wait')
 print('------------------------------------------------------------------')
 
-list2  = set(list2) - set(list3)    # <only domains part are processed in this section/>
 list3r = [line for line in list3 if re.search(r'^[-_a-z0-9]+\.[a-z]+$', line)]       # <@.@ domains are elemental items/>
 
 print(
