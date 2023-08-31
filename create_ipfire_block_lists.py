@@ -134,59 +134,20 @@ file3_out.write(
 
 # <\open file3_out file and write header>
 
-print('\n', 'Listing domain filters: ', end = '')
+print('\n', 'Listing domain filters: ', end = '', sep = '')
 
 list3_out = [line for line in list1_in if re.search(r'^[-_\.a-z0-9]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
 list3_out = [re.sub('r\$important$', '', line) for line in list3_out]                        # <remove trailing $important from domains/>
 
 print(
     '{:,}'.format(len(list3_out)),
-    'found',
-    '\n'
+    'found. ',
+    end = '',
+    sep = ''
     )
 
 list3_out     = set(list3_out)
 list3_out     = sorted(list3_out, key = lambda x: (re.sub(r'^[-_\.a-z0-9]+\.(?=[a-z]+\.[a-z]+)', '', x)))    # <sort by a-z @(.@) />
-
-#print('Listing domain filters, please wait')
-
-#list3_out = set()
-#pbar = pb.ProgressBar(maxval = len(list1_in)).start()
-#progress = 0
-
-#for line in list1_in:
-
-#    if line[-10:] == '$important':
-#        line = line[0:-10]    # <remove ''$important'' tag at the end (if present)/>
-
-#    # <.root = .@.@ case>
-#    string_r = ''
-#    if string_r := re.search(r'\.[a-z]+\.[a-z]+$', line):
-#        string_r = string_r.group()
-#    string_L1_r = ''
-#    if string_L1_r := re.search(r'^[a-z|A-Z|0-9][a-z|A-Z|0-9|\-|_|\.]+\.[a-z|A-Z]+\.[a-z|A-Z]+$', line):
-#        string_L1_r = string_L1_r.group()   # L1.root(.@.@)
-#    if string_r and string_L1_r:
-#        list3_out.add(line)
-#    # </ .root = .@.@ case>
-
-#    # <.root = .@ case>
-#    else:
-#        string_r = ''
-#        if string_r := re.search(r'\.[a-z|A-Z]+$', line):
-#            string_r = string_r.group()
-#        string_L1_r = ''
-#        if string_L1_r := re.search(r'^[a-z|A-Z|0-9][a-z|A-Z|0-9|\-|_|\.]+\.[a-z|A-Z]+$', line):
-#            string_L1_r = string_L1_r.group()   # L1.root(.@.@)
-#        if string_r and string_L1_r:
-#            list3_out.add(line)
-#    # </ .root = .@ case>
-
-#    progress += 1
-#    pbar.update(progress)
-
-#pbar.finish()
-#print('\n')
 
 list3_out = sorted(list3_out)
 file3_out.writelines(line + '\n' for line in list3_out)
@@ -196,7 +157,8 @@ print(
     str(len(open(file3_out_name, encoding='UTF-8').readlines()))
     + ' lines written to '
     + file3_out_name +
-    '\n'
+    '\n',
+    sep = ''
 )
 
 # </write extracted L1.root domain type filters>
