@@ -467,10 +467,11 @@ print(
 
 # <remove #.@(.@) (numerical domains) from list>
 
-print('\n', 'removing #.@(.@) (numerical domain) @.jpg filters: ', end = '')
+print('\n', 'removing #.@(.@) (numerical domain) @.jpg @.png filters: ', end = '')
 
 list3 = [line for line in list3 if not(re.search(r'^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?$', line))]    # <remove #.@(.@) numerical domains/>
 list3 = [line for line in list3 if not(re.search(r'^.*\.jpg$', line))]                                          # <remove @.jpg domains />
+list3 = [line for line in list3 if not(re.search(r'^.*\.png$', line))]                                          # <remove @.png domains />
 
 print(
     '{:,}'.format(len(list3)),
