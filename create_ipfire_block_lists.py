@@ -141,7 +141,7 @@ list3_out = [re.sub('r\$important$', '', line) for line in list3_out]           
 
 print(
     '{:,}'.format(len(list3_out)),
-    'found. ',
+    ' found. ',
     end = '',
     sep = ''
     )
@@ -154,8 +154,7 @@ file3_out.writelines(line + '\n' for line in list3_out)
 file3_out.close()
 
 print(
-    str(len(open(file3_out_name, encoding='UTF-8').readlines()))
-    + ' lines written to '
+    ' Written to '
     + file3_out_name +
     '\n',
     sep = ''
