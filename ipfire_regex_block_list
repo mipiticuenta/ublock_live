@@ -7,10 +7,8 @@
 (?<![a-z])px
 (\/|\.)[a-fa-f0-9]{32}\.com\.?([\/\:]$)
 (fls|unagi|aan)[a-z0-9]+amazon
-(https?:\/\/)\w{30,}\.me\/\w{30,}\.
 21porno.com
 :/666(7|8)[0-9]{2}.xyz\
-:/f\.nordiskemedier\.dk/2[a-z0-9]{12,}\.(jpg|png|jpeg)
 :\/\/20\d\d\d\d\d\d\.*\.html
 [^a-z0-9]((browser|self|v10)\.events|settings\-win|vortex|vortex\-win)\.data\.microsoft[^a-z]
 [^a-z0-9](acc|push)engage[^a-z]
@@ -317,7 +315,6 @@
 [^a-z0-9]tubemogul[^a-z]
 [^a-z0-9]turnto[^a-z]
 [^a-z0-9]tvpassport[^a-z]
-[^a-z0-9]umeng (|cloud)[^a-z]
 [^a-z0-9]unpkg[^a-z]
 [^a-z0-9]urbanairship[^a-z]
 [^a-z0-9]utm
@@ -345,9 +342,7 @@
 \.com\/[-_0-9a-za-z]{4,}\/[-\/_0-9a-za-z]{25,}$
 \.com\/[_0-9a-za-z]+\.jpg$
 \.com\/proc\.php\?[0-9a-f]{40}$
-\/(?:[0-9a-z]{7,25}-){9,13}[0-9a-z]{10,15}\/(?:[0-9a-z]+\/)+index\.php
 \/[0-9a-f]{32}\/maq\/$
-\/[0-9a-z]{8,10}\?shu=[0-9a-z]{150,}
 \/[a-z]{1,3}\?zoneid\=\d{7}\-\d{7}$
 \/img\/(?!new).+\.gif
 \/n0cvd19n0fun\/(?:336x768-|dsw\d|s[a-z]_w3_).*
@@ -377,10 +372,8 @@
 ^https:\/\/(?:[a-z]{2}\.)?[a-z]{7,14}\.com\/r(?=[a-z]*[0-9a-z])[0-9a-za-z]{10,16}\/[a-za-z]{5}$
 ^https:\/\/(?:cdn77\.)?aj[0-9a-z]{2}\d{2}\.online\/[-_0-9a-za-z]{70,}$
 ^https:\/\/(?:www\.)?[a-z]{8,15}\.[a-z]{3}\/v1\/$
-^https:\/\/([a-z]+\.)?sythe\.org\/[\w\w]{30,}
 ^https:\/\/[-a-z]{8,15}\.(?:com|net)\/400\/\d{7}$
 ^https:\/\/[-a-z]{8,15}\.(?:com|net)\/401\/\d{7}$
-^https:\/\/[-a-z]{8,15}\.(?:com|net)\/500\/\d{7}\?
 ^https:\/\/[.\w]+\.[a-z]{2,3}\/z-[56]\d{6}$
 ^https:\/\/[a-z]{2,3}\d\.biz\/go\/[0-9a-z]{15,18}$
 ^https:\/\/[a-z]{3,5}\.[a-z]{10,14}\.top\/[a-z]{10,16}\/[a-z]{5,6}$
@@ -402,13 +395,10 @@
 ^https?:/[^\s]+(\/eu_widget|\/news_widget\/|\/widget\/)
 ^https?:/[a-z0-9]+\.in\.net/+[-a-z0-9_?&=]{25,}
 ^https?:/[a-z0-9]+\.info/+[-a-z0-9_?&=]{9,}
-^https?:\/\/(35|104)\.(\d){1,3}\.(\d){1,3}\.(\d){1,3}\
 ^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{5,16}\.[a-z]{3,7}\/[a-z](?=[a-z]{0,25}[0-9a-z])[0-9a-za-z]{3,26}\/\d{4,5}(?:\?[_v]=\d+)?$
 ^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.com\/[a-z](?=[a-z]{0,25}[0-9a-z])[0-9a-za-z]{3,26}\/(?:[1-6]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$
 ^https?:\/\/(?:[a-z]{2}\.)?[0-9a-z]{7,16}\.website\/[a-z](?=[a-z]{0,25}[0-9a-z])[0-9a-za-z]{3,26}\/(?:[1-6]\d{4}|[3-9]\d{3})\??(?:_=\d+|v=\d)?$
-^https?:\/\/(?:ak\.)?[a-z]{6,12}\.(?:com|net)\/4\/\d{7}
 ^https?:\/\/(?:www\.)?webcams?\-?[a-z]+\.nl\/media\/banners2?\
-^https?:\/\/.*(com|net|top|xyz)\/(bundle|warning|style|bootstrap|brand|reset|jquery-ui|styles|error|logo|index|favicon|star|header)\.(png|css)\?[a-za-z0-9]{30,}.*
 ^https?:\/\/.*\.(club|bid|biz|xyz|site|pro|info|online|icu|monster|buzz|website|biz|re|casa|top|one|space|network|live|systems|ml|world|life|co)\/.*
 ^https?:\/\/.*\.(club|news|live|online|store|tech|guru|cloud|bid|xyz|site|pro|info|online|icu|monster|buzz|fun|website|photos|re|casa|top|today|space|network|live|work|systems|ml|world|life)\/.*
 ^https?:\/\/.*\.(club|xyz|top|casa)\
@@ -420,7 +410,6 @@
 ^https?:\/\/.*\/[a-z0-9a-z_]{2,15}\.(php|jx|jsx|1ph|jsf|jz|jsm|j$)
 ^https?:\/\/.*\/easylist\/[0-9]{5}
 ^https?:\/\/.*bit(ly)?\.(com|ly)\
-^https?:\/\/146\.59\.211\.(\d){1,3}.*
 ^https?:\/\/[-0-9a-z]{5,}\.com\/[0-9a-z]{8,10}\?key=[0-9a-f]{32}$
 ^https?:\/\/[-a-z]{6,}\.com?\/[a-d][-\.\/_a-za-z][dhwxm][-\.\/_a-za-z][59fvz][-\.\/_a-za-z][6swyz][-\.\/_a-za-z][-\/_0-9a-za-z][-\.\/_a-za-z][-\/_0-9a-za-z]{22,162}$
 ^https?:\/\/[-a-z]{6,}\.info\/[a-d][-\.\/_a-za-z][dhwxm][-\.\/_a-za-z][59fvz][-\.\/_a-za-z][6swyz][-\.\/_a-za-z][-\/_0-9a-za-z][-\.\/_a-za-z][-\/_0-9a-za-z]{22,162}$
@@ -482,7 +471,6 @@ display.tweenui.com
 downfile.asp?sid=276663
 downloads.mailchimp.com
 e/aircraftmighty.com
-echangedeclics.*
 enter/?url=dont_go_away
 experiment.*flag
 faceboo?k
@@ -493,24 +481,19 @@ gh/sensitiveio/sbtracker@master
 gys.ad
 haaretz\.co\.il\/(?!.*\.(js)($|\?)).*
 haaretz\.co\.il\/[\w\.!]+\/[\w\.!]+\/[\w\.!]+\/[\w\.!]+\/[\w\.!]+\
-haaretz\.co\.il\/[\w\.!]+\/[\w\.!]+\/[\w\.!]+\/[\w\.!]+\/[\w\.!]+\/
 https:\/\/[www]{3}\.v{0}t{1}f{0}e{1}f{0}l{1}f{0}s{1}f{0}g{0}u{1}\.fi\/[\w]{3}\?[\d]{8}\+[\d]
 https\:\/\/nieuwsfiets\.nu\/wp-content\/uploads\/.*\/.*(?:banner-(?!mis|tip).*|\.gif)
-images\/(?:banner\d{1,2}\.|[a-z]{3}\/)
 inpl.log
-int/
 j.kissinsights.com
 livsstil.se\/cnp-assets\/[0-9]+.
 mailcache.appinthestore.com
 metrics[^a-z]
 nb.by\/img\/ban\d\
-nb.by\/img\/ban\d\/
 nb39.12
 new.cetrk.com
 notif(?!iy)(?!d)[^a-z]
 notifications?[^a-z]
 octo_cms/files/feltet.dk
-octo_cms/files/feltet.dk/
 ops.ccmbg.com
 pagead
 pixel.gif
@@ -523,10 +506,8 @@ promo[^a-z0-9]
 pwa[-_/=~&\\?\\.]
 px(?![a-z])
 reklam[-_/=~&\\?\\.]
-s/*/media/*=m3u&*_webdesktop_vod*$xhr,domain=foxsports.com,removeparam=/^((?!formats|profile).)*$
 scripts.hellobar.com
 service.?worker
-sm\.news/[^\s]{80,}
 socials?[0-9]?[^a-z]
 subscri.*[^a-z0-9]
 tags?[0-9]*[^a-z]
