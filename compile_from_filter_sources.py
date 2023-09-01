@@ -539,7 +539,7 @@ del(list3r3)    # <clean up; make sure list3r3 is not used anymore hereafter/>
 i_max = round(math.log((len(list3) + len(list3r)) / 1e5) / math.log(2))
 last_list3_len = len(list3) + 1
 for i in range(i_max, -1, -1) :                                                     # <jump to next if no reduction achieved in last loop />
-    if len(list3) = last_list3_len:
+    if len(list3) == last_list3_len :
         last_list3_len = last_list3_len + 1
         continue
     last_list3_len = len(list3)
