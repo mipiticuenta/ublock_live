@@ -39,7 +39,7 @@ list1 = [line for line in list1 if len(line) > 0]                               
 print(
     '\n',
     '{:,}'.format(len(list1)),
-    ' lines read from ',
+    ' distinct lines read from ',
     file1_in_name,
     ';',
     sep = '',
