@@ -32,20 +32,25 @@ print(
 # <get filename containing text lists, convert into list, sort and dedup>
 
 file1_in_name = input('Please enter filename for source text file : ')
-list1_in = set(line.strip() for line in open(file1_in_name, encoding='UTF-8'))    # <leading and trailing spaces removed with .strip()/>
+list1_in = set(line.strip() for line in open(file1_in_name, encoding='UTF-8'))      # <leading and trailing spaces removed with .strip()/>
 
 list1_in = sorted(list1_in)
+list1_in = [line for line in list1_in if len(line) > 0]                             # <remove empty elements from list1_in/>
 
-for line in list1_in:
-    if len(line) == 0:
-        list1_in.remove(line)    # <remove empty elements from list1_in/>
+#for line in list1_in:
+#    if len(line) == 0:
+#        list1_in.remove(line)    # <remove empty elements from list1_in/>
 
 print(
-    str(len(open(file1_in_name, encoding='UTF-8').readlines()))
-    + ' lines read from '
-    + file1_in_name
-    + '\n'
-)
+    '\n',
+    str(len(open(file1_in_name, encoding='UTF-8').readlines())),
+    ' lines read from ',
+    file1_in_name,
+    ';'
+    '\n',
+    sep = '',
+    end = ''
+    )
 
 # <\get filename containing text lists, convert into list, sort and dedup>
 
@@ -59,10 +64,11 @@ if file1_in_name + '_old' in filelist :
 os.rename(file1_in_name, file1_in_name + '_old')
 
 print(
-    'backup saved: '
-    + file1_in_name
-    + '_old'
-    + '\n'
+    ' backup saved: ',
+    file1_in_name,
+    '_old',
+    '\n',
+    sep = ''
 )
 
 # </save a backup renamed *_old; overwrite if exists>
