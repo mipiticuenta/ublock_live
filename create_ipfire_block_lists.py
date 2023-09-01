@@ -77,12 +77,6 @@ print(
 file1_out_name = file1_in_name
 file1_out = open(file1_out_name, 'w', encoding='UTF-8')
 
-print(
-    'Building updated input file; ',
-    sep = '',
-    end = ''
-    )
-
 list1_out = set()
 list1_out = (
         [line         for line in list1_in if     re.search(r'[#\\]', line) ] + 
@@ -95,11 +89,12 @@ file1_out.writelines(line + '\n' for line in list1_out)
 file1_out.close()
 
 print(
-    str(len(open(file1_out_name, encoding='UTF-8').readlines()))
-    + ' sorted lines written to '
-    + file1_out_name +
-    '\n'
-)
+    str(len(open(file1_out_name, encoding='UTF-8').readlines())),
+    ' sorted lines written to updated ',
+    file1_out_name,
+    '\n',
+    sep = ''
+    )
 
 # </save input file written to lower case except cosmetic filters (containing ##)>
 
