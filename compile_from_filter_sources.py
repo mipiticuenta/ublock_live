@@ -230,7 +230,7 @@ while n_1 > len(list2):                                                         
     list2 = [line for line in list2 if len(line) > 1]                                           # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
-    print('12/20 : clean up trailing ^ | # ~ * , .* domain= ash asp cgi gif htm js php and $ all doc image popup script 3p xhr filters')
+    print('12/20 : clean up trailing ^ | # ~ = ? * , .* ash asp cgi gif htm js php and $ all doc image popup script 3p xhr filters')
     list2 = [re.sub(r'[\^\|\=]\$', '$', line).strip() for line in list2]                 # <fix: replace ^$ |$ =$ with $/>
     list2 = [re.sub(r'\|+\$', '$', line).strip() for line in list2]                      # <fix: replace |$ with $/>
     list2 = [re.sub(r'[#,\~\|\^\?\=]+$', '', line).strip() for line in list2]            # <remove trailing # , ~ | ^ ? = />
@@ -424,6 +424,7 @@ list2 = [re.sub(r'^akamai(zed)?\.com$', '', line) for line in list2]            
 list2 = [re.sub(r'^akamai(zed)?\.net$', '', line) for line in list2]                # <remove akamai.net />
 list2 = [re.sub(r'^cloudflare\.com$', '', line) for line in list2]                  # <remove cloudflare.com />
 list2 = [re.sub(r'^cloudfront\.net$', '', line) for line in list2]                  # <remove cloudfront.net />
+list2 = [re.sub(r'^collinsdictionary\.com$', '', line) for line in list2]           # <remove collinsdictionary.com />
 list2 = [re.sub(r'^(lite\.)?duckduckgo\.com$', '', line) for line in list2]         # <remove duckduckgo.com />
 list2 = [re.sub(r'^elconfidencial\.com$', '', line) for line in list2]              # <remove elconfidencial.com />
 list2 = [re.sub(r'^ecestaticos\.com$', '', line) for line in list2]                 # <remove ecestaticos.com />
@@ -437,6 +438,7 @@ list2 = [re.sub(r'^microsoft\.com$', '', line) for line in list2]               
 list2 = [re.sub(r'^(developer\.)?mozilla\.org$', '', line) for line in list2]       # <remove mozilla.org />
 list2 = [re.sub(r'^tradingview\.com$', '', line) for line in list2]                 # <remove tradingview.com />
 list2 = [re.sub(r'^uecdn\.es$', '', line) for line in list2]                        # <remove uecdn.es />
+list2 = [re.sub(r'^wikimedia\.org$', '', line) for line in list2]                   # <remove wikipedia.org />
 list2 = [re.sub(r'^wikipedia\.org$', '', line) for line in list2]                   # <remove wikipedia.org />
 list2 = [re.sub(r'^wordpress\.com$', '', line) for line in list2]                   # <remove wordpress.com />
 list2 = [re.sub(r'^/?wp\-content/\*$', '', line) for line in list2]                 # <remove /wp-content />
