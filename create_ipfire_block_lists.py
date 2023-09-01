@@ -76,21 +76,21 @@ print(
 
 file1_out_name = file1_in_name
 file1_out = open(file1_out_name, 'w', encoding='UTF-8')
-file1_out.write(
-      '!  description: personal filters for ublock\n'
-    + '!  expires: 1 day\n'
-    + '!  homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/unified_block_list\n'
-    + '!  title: unified block list\n'
-    + '! #============================================================================================\n'
-    + '! *$image,redirect-rule=1x1.gif\n'
-    + '! *$popup,3p ! impedes ctrl&click open in another tab\n'
-    + '! attribute css selector : ##[]\n'
-    + '! class css selector     : ##.\n'
-    + '! id css selector        : ###\n'
-    + '!! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'
-    )
 
 list1_out = set()
+
+list1_out.add('!  description: personal filters for ublock')
+list1_out.add('!  expires: 1 day')
+list1_out.add('!  homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/unified_block_list')
+list1_out.add('!  title: unified block list')
+list1_out.add('! #============================================================================================')
+list1_out.add('! *$image,redirect-rule=1x1.gif')
+list1_out.add('! *$popup,3p ! impedes ctrl&click open in another tab')
+list1_out.add('! attribute css selector : ##[]')
+list1_out.add('! class css selector     : ##.')
+list1_out.add('! id css selector        : ###')
+list1_out.add('!! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+
 list1_out = (
         [line         for line in list1_in if     re.search(r'[#\\]', line) ] + 
         [line.lower() for line in list1_in if not(re.search(r'[#\\]', line))]       # <lower case for all except cosmetics and regex />
