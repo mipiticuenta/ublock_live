@@ -76,6 +76,20 @@ print(
 
 file1_out_name = file1_in_name
 file1_out = open(file1_out_name, 'w', encoding='UTF-8')
+file1_out.write(
+      '!  description: personal filters for ublock\n'
+    + '!  expires: 1 day\n'
+    + '!  homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/unified_block_list\n'
+    + '!  title: unified block list\n'
+    + '! #============================================================================================\n'
+    + '! *$image,redirect-rule=1x1.gif\n'
+    + '! *$popup,3p ! impedes ctrl&click open in another tab\n'
+    + '! attribute css selector : ##[]\n'
+    + '! class css selector     : ##.\n'
+    + '! id css selector        : ###\n'
+    + '!! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'
+    )
+
 list1_out = set()
 list1_out = (
         [line         for line in list1_in if     re.search(r'[#\\]', line) ] + 
@@ -104,11 +118,10 @@ list1_in = [line for line in list1_in if line[0] != '!']                        
 file3_out = open(file3_out_name, 'w', encoding='UTF-8')
 
 file3_out.write(
-      '! Title: domain block list\n'
-    + '! Description: personal domain filters for ipfire and ublock_origin\n'
-    + '! Expires: 1 day\n'
-    + '! Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_domain_block_list\n'
-    + '! \n'
+      '! description: personal domain filters for ipfire and ublock_origin\n'
+    + '! expires: 1 day\n'
+    + '! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_domain_block_list\n'
+    + '! title: domain block list\n'
     )
 
 # <\open file3_out file and write header>
@@ -137,11 +150,10 @@ print(
 file4_out = open(file4_out_name, 'w', encoding='UTF-8')
 
 file4_out.write(
-      '! Title: url block list\n'
-    + '! Description: personal url filters for ipfire and ublock_origin\n'
-    + '! Expires: 1 day\n'
-    + '! Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_url_block_list\n'
-    + '! \n'
+      '! description: personal url filters for ipfire and ublock_origin\n'
+    + '! expires: 1 day\n'
+    + '! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_url_block_list\n'
+    + '! title: url block list\n'
 )
 
 # <\open file4_out file and write header>
@@ -171,11 +183,10 @@ print(
 file5_out = open(file5_out_name, 'w', encoding='UTF-8')
 
 file5_out.write(
-      '! Title: regex block list\n'
-    + '! Description: personal regex filters for ipfire and ublock_origin\n'
-    + '! Expires: 1 day\n'
-    + '! Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list\n'
-    + '! \n'
+      '! description: personal regex filters for ipfire and ublock_origin\n'
+    + '! expires: 1 day\n'
+    + '! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list\n'
+    + '! title: regex block list\n'
 )
 
 # <\open file5_out file and write header>
@@ -205,11 +216,10 @@ print(
 file7_out = open(file7_out_name, 'w', encoding='UTF-8')
 
 file7_out.write(
-      '! Title: ublock list except domains\n'
-    + '! Description: personal filters for ublock_origin (excepting domains)\n'
-    + '! Expires: 1 day\n'
-    + '! Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ublock_list_except_domains\n'
-    + '! \n'
+      '! description: personal filters for ublock_origin (excepting domains)\n'
+    + '! expires: 1 day\n'
+    + '! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ublock_list_except_domains\n'
+    + '! title: ublock list except domains\n'
 )
 
 # <\open file7_out file and write header>
