@@ -453,7 +453,7 @@ list2 = [re.sub(r'^uecdn\.es$', '', line) for line in list2]                    
 list2 = [re.sub(r'^wikimedia\.org$', '', line) for line in list2]                   # <remove wikimedia.org />
 list2 = [re.sub(r'^wikipedia\.org$', '', line) for line in list2]                   # <remove wikipedia.org />
 list2 = [re.sub(r'^wordpress\.com$', '', line) for line in list2]                   # <remove wordpress.com />
-list2 = [re.sub(r'^/?wp\-content/\*$', '', line) for line in list2]                 # <remove /wp-content />
+list2 = [re.sub(r'^/?wp\-content/?(themes/|plugins/)?\*?$', '', line) for line in list2]    # <remove /wp-content />
 list2 = [re.sub(r'^(music\.)?youtube\.com$', '', line) for line in list2]           # <remove youtube.com />
 list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
