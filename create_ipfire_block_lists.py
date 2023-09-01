@@ -93,7 +93,7 @@ list1_out.append('! attribute css selector : ##[]')
 list1_out.append('! class css selector     : ##.')
 list1_out.append('! id css selector        : ###')
 list1_out.append('!! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
-
+list1_out = set(list1_out)
 list1_out = sorted(list1_out)
 file1_out.writelines(line + '\n' for line in list1_out)
 file1_out.close()
