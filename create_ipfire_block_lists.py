@@ -76,15 +76,12 @@ print(
 
 file1_out_name = file1_in_name
 file1_out = open(file1_out_name, 'w', encoding='UTF-8')
-
 list1_out = set()
 list1_out = (
         [line         for line in list1_in if     re.search(r'[#\\]', line) ] + 
         [line.lower() for line in list1_in if not(re.search(r'[#\\]', line))]       # <lower case for all except cosmetics and regex />
         )
-
 list1_out = sorted(list1_out)
-
 file1_out.writelines(line + '\n' for line in list1_out)
 file1_out.close()
 
@@ -116,23 +113,16 @@ file3_out.write(
 
 # <\open file3_out file and write header>
 
-list3_out = [line for line in list1_in if re.search(r'^[-_\.a-z0-9]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
-list3_out = [re.sub('r\$important$', '', line) for line in list3_out]               # <remove trailing $important from domains/>
-
-print(
-    '{:,}'.format(len(list3_out)),
-    ' domain filters found; ',
-    end = '',
-    sep = ''
-    )
-
-list3_out = set(list3_out)
-list3_out = sorted(list3_out, key = lambda x: (re.sub(r'^.*\.(?=[^\.]+\.[^\.]+\Z)', '', x)))    # <sort by a-z @(.@) />
-file3_out.writelines(line + '\n' for line in list3_out)
+list3 = [line for line in list1_in if re.search(r'^[-_\.a-z0-9]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
+list3 = [re.sub('r\$important$', '', line) for line in list3]               # <remove trailing $important from domains/>
+list3 = set(list3)
+list3 = sorted(list3, key = lambda x: (re.sub(r'^.*\.(?=[^\.]+\.[^\.]+\Z)', '', x)))    # <sort by a-z @(.@) />
+file3_out.writelines(line + '\n' for line in list3)
 file3_out.close()
 
 print(
-    'written to '
+    '{:,}'.format(len(list3)),
+    ' domain filters written to '
     + file3_out_name +
     '\n',
     sep = ''
@@ -156,35 +146,17 @@ file4_out.write(
 
 # <\open file4_out file and write header>
 
-print('Listing url filters, please wait')
-
-list4_out = set()
-pbar = pb.ProgressBar(maxval = len(list1_in)).start()
-progress = 0
-
-for line in (set(list1_in) - set(list3_out)):
-
-    string_r = ''
-    if line[-10:] == '$important':
-        line = line[0:-10]    # <remove ''$important'' tag at the end (if present)/>
-    if line[0:2] == '||':
-        line = line[2:]    # <remove ''||'' modifier at the beggining (if present)/>
-    if string_r := re.search(r'^[a-z|A-Z|\.|\-|_|\/]+$', line):
-        list4_out.add(line)
-
-    progress += 1
-    pbar.update(progress)
-
-pbar.finish()
-print('\n')
-
+list4_out = set(list1_in) - set(list3)
+list4_out = [re.sub(r'\$important$', '', line) for line in list4_out]               # <remove ''$important'' tag at the end (if present)/>
+list4_out = [re.sub(r'^\|\|', '', line) for line in list4_out]                      # <remove ''||'' modifier at the beggining (if present)/>
+list4_out = [line for line in list4_out if re.search(r'^[-_/\.a-z0-9]+$', line)]    # <keep url items/>
 list4_out = sorted(list4_out)
 file4_out.writelines(line + '\n' for line in list4_out)
 file4_out.close()
 
 print(
     str(len(open(file4_out_name, encoding='UTF-8').readlines()))
-    + ' lines written to '
+    + ' url filters written to '
     + file4_out_name
     + '\n'
 )
@@ -261,7 +233,7 @@ file7_out.write(
 
 print('Listing all filters except domain type, please wait')
 
-list7_out = set(list1_in) - set(list3_out)
+list7_out = set(list1_in) - set(list3)
 list7_out = sorted(list7_out)
 file7_out.writelines(line + '\n' for line in list7_out)
 file7_out.close()
