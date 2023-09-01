@@ -116,25 +116,23 @@ file3_out.write(
 
 # <\open file3_out file and write header>
 
-print('\n', 'Listing domain filters: ', end = '', sep = '')
-
 list3_out = [line for line in list1_in if re.search(r'^[-_\.a-z0-9]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
-list3_out = [re.sub('r\$important$', '', line) for line in list3_out]                        # <remove trailing $important from domains/>
+list3_out = [re.sub('r\$important$', '', line) for line in list3_out]               # <remove trailing $important from domains/>
 
 print(
     '{:,}'.format(len(list3_out)),
-    ' found. ',
+    ' domain filters found; ',
     end = '',
     sep = ''
     )
 
-list3_out     = set(list3_out)
-list3_out     = sorted(list3_out, key = lambda x: (re.sub(r'^.*\.(?=[^\.]+\.[^\.]+\Z)', '', x)))    # <sort by a-z @(.@) />
+list3_out = set(list3_out)
+list3_out = sorted(list3_out, key = lambda x: (re.sub(r'^.*\.(?=[^\.]+\.[^\.]+\Z)', '', x)))    # <sort by a-z @(.@) />
 file3_out.writelines(line + '\n' for line in list3_out)
 file3_out.close()
 
 print(
-    'Written to '
+    'written to '
     + file3_out_name +
     '\n',
     sep = ''
