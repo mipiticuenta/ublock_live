@@ -46,8 +46,7 @@ print(
     str(len(open(file1_in_name, encoding='UTF-8').readlines())),
     ' lines read from ',
     file1_in_name,
-    ';'
-    '\n',
+    ';',
     sep = '',
     end = ''
     )
