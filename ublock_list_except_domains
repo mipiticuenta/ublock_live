@@ -3,11 +3,6 @@
 ! Expires: 1 day
 ! Homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ublock_list_except_domains
 ! 
-!  expires: 1 day
-!  title: unified block list
-! *$image,redirect-rule=1x1.gif
-! attribute css selector : ##[]
-! id css selector        : ###
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no)pop(?!ul)/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no.)shar[eir]/i")
 *##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]ad\-h/i")

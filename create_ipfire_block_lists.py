@@ -77,25 +77,17 @@ print(
 file1_out_name = file1_in_name
 file1_out = open(file1_out_name, 'w', encoding='UTF-8')
 
-print('Building updated input file, please wait')
+print(
+    'Building updated input file; ',
+    sep = '',
+    end = ''
+    )
 
 list1_out = set()
-pbar = pb.ProgressBar(maxval = len(list1_in)).start()
-progress = 0
-
-for line in list1_in:
-
-    string_r = ''
-    if string_r := re.search(r'[#\\]', line):
-        list1_out.add(line)            # <cosmetics filters are case-sensitive/>
-    else :
-        list1_out.add(line.lower())    # <transform to lower case/>
-
-    progress += 1
-    pbar.update(progress)
-
-pbar.finish()
-print('\n')
+list1_out = (
+        [line         for line in list1_in if     re.search(r'[#\\]', line) ] + 
+        [line.lower() for line in list1_in if not(re.search(r'[#\\]', line))]       # <lower case for all except cosmetics and regex />
+        )
 
 list1_out = sorted(list1_out)
 
@@ -104,20 +96,14 @@ file1_out.close()
 
 print(
     str(len(open(file1_out_name, encoding='UTF-8').readlines()))
-    + ' lines written to '
+    + ' sorted lines written to '
     + file1_out_name +
     '\n'
 )
 
 # </save input file written to lower case except cosmetic filters (containing ##)>
 
-# <dismiss commented lines from list1_in>
-
-for line in list1_in:
-    if line[0] == '!':
-        list1_in.remove(line)    # <remove commented elements from list1_in/>
-
-# </dismiss commented lines from list1_in>
+list1_in = [line for line in list1_in if line[0] != '!']                            # <remove uBO style comments from list1_in />
 
 # <write extracted L1.root domain type filters>
 
