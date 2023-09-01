@@ -269,7 +269,10 @@ while n_1 > len(list2):                                                         
     print('14/20 : simplify urls and keep just last /* part ')
     list2 = [re.sub(r'^[a-z]{1,3}$', '', line) for line in list2]                        # <remove ^[a-z]{1,3}$ filters />
     list2 = [re.sub(r'^[_\W]?[^ap]?[^dx]?[_\W]?\*?$', '', line) for line in list2]       # <remove 2 chars max [a-z][0-9] sequence filter excluding ad px />
-    list2 = [re.sub(r'^[_\W]?(ax|pd)[_\W]?\*?$', '', line) for line in list2]            # <remove 2 ax pd sequence filter />
+    list2 = [re.sub(r'^[_\W]?a?[^d]?\*?$', '', line) for line in list2]                  # <remove 2 ax pd sequence filter />
+    list2 = [re.sub(r'^[_\W]?p?[^x]?\*?$', '', line) for line in list2]                  # <remove 2 ax pd sequence filter />
+    list2 = [re.sub(r'^[_\W]?[^a]?d?\*?$', '', line) for line in list2]                  # <remove 2 ax pd sequence filter />
+    list2 = [re.sub(r'^[_\W]?[^p]?x?\*?$', '', line) for line in list2]                  # <remove 2 ax pd sequence filter />
     list2 = [re.sub(r'^[-_/\.0-9]+\*?$', '', line) for line in list2]                    # <remove numeric lines />
     list2 = [re.sub(r'^[-_/\.0-9]+x[-_/\.0-9]+[/\.]', '', line) for line in list2]       # <remove leading [-_./0-9]+ x [-_./0-9]+ combinations />
     list2 = [re.sub(r'^[-_/\.0-9]+x[-_/\.0-9]+$', '', line) for line in list2]           # <remove lines comrpised by [-_./0-9]+ x [-_./0-9]+ combinations />
@@ -411,10 +414,12 @@ list2 = [re.sub(r'^[_\W]?pics?[_\W]?\*?$', '', line) for line in list2]         
 list2 = [re.sub(r'^[_\W]?(dis)?play[_\W]?\*?$', '', line) for line in list2]        # <remove spurious (dis)play filter />
 list2 = [re.sub(r'^[_\W]?plugins??[_\W]?\*?$', '', line) for line in list2]         # <remove spurious plugin(s) filter />
 list2 = [re.sub(r'^[_\W]?png[_\W]?\*?$', '', line) for line in list2]               # <remove spurious png filter />
+list2 = [re.sub(r'^[_\W]?resources?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious resource(s) filter />
 list2 = [re.sub(r'^[_\W]?sp[_\W]?\*?$', '', line) for line in list2]                # <remove spurious sp filter />
 list2 = [re.sub(r'^[_\W]?style[_\W]?\*?$', '', line) for line in list2]             # <remove spurious style filter />
 list2 = [re.sub(r'^[_\W]?search[_\W]?\*?$', '', line) for line in list2]            # <remove spurious search filter />
 list2 = [re.sub(r'^[_\W]?services?[_\W]?\*?$', '', line) for line in list2]         # <remove spurious service(s) filter />
+list2 = [re.sub(r'^[_\W]?skins?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious skin(s)filter />
 list2 = [re.sub(r'^[_\W]?specials?[_\W]?\*?$', '', line) for line in list2]         # <remove spurious special(s) filter />
 list2 = [re.sub(r'^[_\W]?speed[_\W]?\*?$', '', line) for line in list2]             # <remove spurious speed filter />
 list2 = [re.sub(r'^[_\W]?templates?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious template(s)filter />
