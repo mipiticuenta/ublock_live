@@ -236,7 +236,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'[#,\~\|\^]+$', '', line).strip() for line in list2]                # <remove trailing # , ~ | ^ />
     list2 = [re.sub(r'(?<!/)\*$', '', line).strip() for line in list2]                   # <remove trailing * except not-regex markup //*/>
     list2 = [re.sub(r'\.\*$', '.', line).strip() for line in list2]                      # <replace trailing .* with ./>
-    list2 = [re.sub(r'\*\.$', '', line).strip() for line in list2]                       # <remove trailing *. />
+    list2 = [re.sub(r'\*[\.\?]$', '', line).strip() for line in list2]                   # <remove trailing *. />
     list2 = [re.sub(r'\.cgi\??$', '.', line) for line in list2]                          # <remove trailing .cgi?/>
     list2 = [re.sub(r'\.ashx\??$', '.', line) for line in list2]                         # <remove trailing .ashx?/>
     list2 = [re.sub(r'\.asp\??$', '.', line) for line in list2]                          # <remove trailing .asp?/>
@@ -272,7 +272,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[-_/\.0-9]+\*?$', '', line) for line in list2]                    # <remove numeric lines />
     list2 = [re.sub(r'^[-_/\.0-9]+x[-_/\.0-9]+[/\.]', '', line) for line in list2]       # <remove leading [-_./0-9]+ x [-_./0-9]+ combinations />
     list2 = [re.sub(r'^[-_/\.0-9]+x[-_/\.0-9]+$', '', line) for line in list2]           # <remove lines comrpised by [-_./0-9]+ x [-_./0-9]+ combinations />
-    list2 = [re.sub(r'^[js/\*\.]+$', '', line) for line in list2]                        # <remove lines comprised by js/*. combinations />
+    list2 = [re.sub(r'^[_\Wjs]+$', '', line) for line in list2]                          # <remove lines comprised by j s symbols combinations />
     list2 = [re.sub(r'\*+', '*', line).strip() for line in list2]                        # <dedup * />
     list2 = [re.sub(r'\.+', '.', line).strip() for line in list2]                        # <dedup . />
     list2 = [re.sub(r'/+', '/', line).strip() for line in list2]                         # <dedup / />
