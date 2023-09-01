@@ -155,10 +155,11 @@ file4_out.writelines(line + '\n' for line in list4_out)
 file4_out.close()
 
 print(
-    str(len(open(file4_out_name, encoding='UTF-8').readlines()))
-    + ' url filters written to '
-    + file4_out_name
-    + '\n'
+    '{:,}'.format(len(list4_out)),
+    ' url filters written to ',
+    file4_out_name,
+    '\n',
+    sep = ''
 )
 
 # </write extracted url type filters>
@@ -188,10 +189,11 @@ file5_out.writelines(line + '\n' for line in list5_out)
 file5_out.close()
 
 print(
-    str(len(open(file5_out_name, encoding='UTF-8').readlines()))
-    + ' regex filters written to '
-    + file5_out_name
-    + '\n'
+    '{:,}'.format(len(list5_out)),
+    ' regex filters written to ',
+    file5_out_name,
+    '\n',
+    sep = ''
 )
 
 # </write extracted regex type filters>
