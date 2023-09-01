@@ -1317,8 +1317,6 @@
 /[^a-z0-9]collectors?[0-9]*[^a-z]/
 /[^a-z0-9]comitium[^a-z]/
 /[^a-z0-9]commander1[^a-z]/
-/[^a-z0-9]comment/$important
-/[^a-z0-9]comments?[^a-z0-9]/$important
 /[^a-z0-9]conichi[^a-z]/
 /[^a-z0-9]connectif[^a-z]/
 /[^a-z0-9]consent/$important
@@ -1562,6 +1560,7 @@
 /[^a-z0-9]ztat[^a-z]/
 /[^a-z]gpt/$important
 /[^abs]log[0-9]?s?(ge)?(ging)?-_=&\?/\.]/$important
+/[_\W]comments?[_\W]/$important
 /[_\W]fb[_\W]/$important
 /[_\W]px[_\W]/$important
 /[_\W]tags?[_\W]/$important
