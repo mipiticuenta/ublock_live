@@ -86,7 +86,7 @@ file1_out.writelines(line + '\n' for line in list1_out)
 file1_out.close()
 
 print(
-    str(len(open(file1_out_name, encoding='UTF-8').readlines())),
+    '{:,}'.format(len(list1_out)),
     ' sorted lines written to updated ',
     file1_out_name,
     '\n',
