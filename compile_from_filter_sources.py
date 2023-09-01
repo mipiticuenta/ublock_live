@@ -34,10 +34,10 @@ print(
 
 # <get filter url sources from file, dedup and sort>
 
-list1 = [line.strip() for line in open(file1_in_name, encoding='UTF-8')]    # <populate lists from sources/>
-list1 = [line.strip()               for line in list1 if line != '']        # <remove leading/trailing spaces and discard empty lines/>
-list1 = [line                       for line in list1 if line[0] != '!']    # <discard commented lines (leading !)/>
-list1 = [re.sub(r'\ !.*', '', line) for line in list1]                      # <remove trailing comments'/>
+list1 = [line for line in open(file1_in_name, encoding='UTF-8')]    # <populate lists from sources/>
+list1 = [line.strip() for line in list1 if line != '']              # <remove leading/trailing spaces and discard empty lines/>
+list1 = [line for line in list1 if line[0] != '!']                  # <discard commented lines (leading !)/>
+list1 = [re.sub(r' +!.*', '', line) for line in list1]              # <remove trailing comments'/>
 list1 = sorted(list1)
 
 # </get filter url sources from file, dedup and sort>
@@ -81,22 +81,22 @@ print(
 # <transforming loop>
 
 print(' 1/20 : remove leading/trailing/dup spaces ')
-list2 = [re.sub(r' +', ' ', line).strip() for line in list2]                         # <dedup spaces and remove leading/trailing spaces />
-list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
+list2 = [re.sub(r' +', ' ', line).strip() for line in list2]                        # <dedup spaces and remove leading/trailing spaces />
+list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print(' 2/20 : remove comments ')
-list2 = [line for line in list2 if line[0] != '{']                                   # <remove {payload...} description />
-list2 = [line for line in list2 if line[0] != '!']                                   # <remove uBO style comments />
-list2 = [line for line in list2 if line[0] != '[']                                   # <remove not uBO style comments [] />
-list2 = [re.sub(r'#(?!@?##?).*', '', line) for line in list2]                        # <remove not uBO style trailing comments />
-list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
+list2 = [line for line in list2 if line[0] != '{']                                  # <remove {payload...} description />
+list2 = [line for line in list2 if line[0] != '!']                                  # <remove uBO style comments />
+list2 = [line for line in list2 if line[0] != '[']                                  # <remove not uBO style comments [] />
+list2 = [re.sub(r'#{4,}', '', line) for line in list2]                              # <remove not uBO style trailing comments />
+list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print(' 3/20 : keep case for cosmetic filters; apply lower case for the remaining ')
 list2 = (
         [line         for line in list2 if     re.search(r'[#\\]', line) ] + 
-        [line.lower() for line in list2 if not(re.search(r'[#\\]', line))]           # <lower case for all except cosmetics and regex />
+        [line.lower() for line in list2 if not(re.search(r'[#\\]', line))]          # <lower case for all except cosmetics and regex />
         )
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
@@ -106,14 +106,14 @@ list2 = [re.sub(r'^127\.0\.0\.1 ', '', line).strip() for line in list2]         
 list2 = [re.sub(r'^\:\:1 ', '', line).strip() for line in list2]                     # <remove leading ::1 (dns style filter) />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
-print(' 5/20 : remove items containing % about: $badfilter localhost /wp-content/uploads/; remove http: IP4 IP6 :port www')
+print(' 5/20 : remove items containing % about: $badfilter localhost /wp-content/uploads/; remove http: IP4 IP6 :port/ www')
 list2 = [line for line in list2 if not(re.search(r'[,\$]badfilter', line))]          # <remove items with $badfilter />
 list2 = [line for line in list2 if not(re.search(r'about\:', line))]                 # <remove items with about: >
 list2 = [line for line in list2 if not(re.search(r'\%', line))]                      # <remove items with % >
 list2 = [re.sub(r'(\|+)?http.?\:/+', '/', line).strip() for line in list2]           # <replace |+http:/+ with / />
-list2 = [re.sub(r'^(\|+)?[0-9\.]+', '', line).strip() for line in list2]             # <remove IP4 addresses (d.)+ />
+list2 = [re.sub(r'^(\|+)?([0-9]+\.?)+', '', line).strip() for line in list2]         # <remove IP4 addresses (d.)+ />
 list2 = [line for line in list2 if not(re.search(r'\:\:', line))]                    # <remove IP6 addresses :: />
-list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                  # <remove leading :port />
+list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                  # <remove leading :port/ />
 list2 = [re.sub(r'www\.', '', line).strip() for line in list2]                       # <remove www. />
 list2 = [line for line in list2 if not(re.search(r'localhost', line))]               # <remove items containing localhost />
 list2 = [re.sub(r'(?<=\w)/wp\-content/uploads/.*', '', line) for line in list2]      # <remove items containing /wp-content/uploads/' />
@@ -275,8 +275,8 @@ while n_1 > len(list2):                                                         
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
     print('15/20 : simplify urls and keep just last /* part ')
-    list2 = [re.sub(r'^[_\W]?[a-z0-9][_\W]?\*?$', '', line) for line in list2]           # <remove single [a-z0-9] filter />
-    list2 = [re.sub(r'^[_\W]?[a-z][0-9][_\W]?\*?$', '', line) for line in list2]         # <remove 2 chars [a-z][0-9] sequence filter />
+    list2 = [re.sub(r'^[a-z]{1,3}$', '', line) for line in list2]                        # <remove ^[a-z]{1,3}$ filters />
+    list2 = [re.sub(r'^[_\W]?[a-z]?[0-9]?[_\W]?\*?$', '', line) for line in list2]       # <remove 2 chars max [a-z][0-9] sequence filter />
     list2 = [re.sub(r'^[-_/\.0-9]+$', '', line) for line in list2]                       # <remove numeric lines />
     list2 = [re.sub(r'^[-_/\.0-9]+x[-_/\.0-9]+[/\.]', '', line) for line in list2]       # <remove leading [-_./0-9]+ x [-_./0-9]+ combinations />
     list2 = [re.sub(r'^[-_/\.0-9]+x[-_/\.0-9]+$', '', line) for line in list2]           # <remove lines comrpised by [-_./0-9]+ x [-_./0-9]+ combinations />
@@ -448,7 +448,6 @@ list2 = [re.sub(r'^wikipedia\.org$', '', line) for line in list2]               
 list2 = [re.sub(r'^wordpress\.com$', '', line) for line in list2]                    # <remove wordpress.com />
 list2 = [re.sub(r'^/?wp\-content/\*$', '', line) for line in list2]                  # <remove /wp-content />
 list2 = [re.sub(r'^(music\.)?youtube\.com$', '', line) for line in list2]            # <remove youtube.com />
-list2 = [re.sub(r'^[a-z]{1,3}$', '', line) for line in list2]                        # <remove ^[a-z]{1,3}$ />
 list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 

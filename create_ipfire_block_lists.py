@@ -63,7 +63,7 @@ if file1_in_name + '_old' in filelist :
 os.rename(file1_in_name, file1_in_name + '_old')
 
 print(
-    ' backup saved: ',
+    ' backup saved to ',
     file1_in_name,
     '_old',
     '\n',
