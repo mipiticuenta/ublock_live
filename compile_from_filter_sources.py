@@ -268,7 +268,8 @@ while n_1 > len(list2):                                                         
 
     print('14/20 : simplify urls and keep just last /* part ')
     list2 = [re.sub(r'^[a-z]{1,3}$', '', line) for line in list2]                        # <remove ^[a-z]{1,3}$ filters />
-    list2 = [re.sub(r'^[_\W]?[a-z]?[0-9]?[_\W]?\*?$', '', line) for line in list2]       # <remove 2 chars max [a-z][0-9] sequence filter />
+    list2 = [re.sub(r'^[_\W]?[^ap]?[^dx]?[_\W]?\*?$', '', line) for line in list2]       # <remove 2 chars max [a-z][0-9] sequence filter excluding ad px />
+    list2 = [re.sub(r'^[_\W]?(ax|pd)[_\W]?\*?$', '', line) for line in list2]            # <remove 2 ax pd sequence filter />
     list2 = [re.sub(r'^[-_/\.0-9]+\*?$', '', line) for line in list2]                    # <remove numeric lines />
     list2 = [re.sub(r'^[-_/\.0-9]+x[-_/\.0-9]+[/\.]', '', line) for line in list2]       # <remove leading [-_./0-9]+ x [-_./0-9]+ combinations />
     list2 = [re.sub(r'^[-_/\.0-9]+x[-_/\.0-9]+$', '', line) for line in list2]           # <remove lines comrpised by [-_./0-9]+ x [-_./0-9]+ combinations />
