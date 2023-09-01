@@ -309,13 +309,13 @@ print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print('17/20 : remove lines leaded by ! + & ? ^ : ; @ and @.exe @.gif @.jpg @.png @.rar @.zip')
 list2 = [re.sub(r'^\!.*', '', line) for line in list2]                              # <remove ! leaded lines />
-list2 = [re.sub(r'^\*?\+.*', '', line) for line in list2]                           # <remove + leaded lines />
+list2 = [re.sub(r'^[/\*]?\+.*', '', line) for line in list2]                        # <remove + leaded lines />
 list2 = [re.sub(r'^\*?\&.*', '', line) for line in list2]                           # <remove & leaded lines />
 list2 = [re.sub(r'^\*?\?.*', '', line) for line in list2]                           # <remove ? leaded lines />
 list2 = [re.sub(r'^\*?\^.*', '', line) for line in list2]                           # <remove ^ leaded lines />
 list2 = [re.sub(r'^\*?\:.*', '', line) for line in list2]                           # <remove : leaded lines />
 list2 = [re.sub(r'^\*?\;.*', '', line) for line in list2]                           # <remove ; leaded lines />
-list2 = [re.sub(r'^\*?\@.*', '', line) for line in list2]                           # <remove @ leaded lines />
+list2 = [re.sub(r'^[/\*]?\@.*', '', line) for line in list2]                        # <remove @ leaded lines />
 list2 = [re.sub(r'^.*\.exe$', '', line) for line in list2]                          # <remove @.exe filters />
 list2 = [re.sub(r'^.*\.gif$', '', line) for line in list2]                          # <remove @.gif filters />
 list2 = [re.sub(r'^.*\.jpe?g$', '', line) for line in list2]                        # <remove @.jp(e)g filters />
