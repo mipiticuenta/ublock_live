@@ -14,23 +14,19 @@ file7_out_name = 'ublock_list_except_domains'
 # <setup/>
 
 print(
-    '\n'
-    + '######################################################################\n'
-    + '# \n'
-    + '# Extract domain and url filters from source text file\n'
-    + '#\n'
-    + '# input: a text file containing ublock_origin filters\n'
-    + '# \n'
-    + '# outputs are text files, sorted, deduplicated, without empty lines:\n'
-    + '# 1  input file renamed adding _old\n'
-    + '# 2  input file written to lower case except filters containing #\n'
-    + '# 3  <ipfire_domains_block_list>\n'
-    + '# 4  <ipfire_urls_block_list>\n'
-    + '# 5  <ipfire_regex_block_list>\n'
-    + '# 7  <ublock_list_except_domains>\n'
-    + '# \n'
-    + '######################################################################\n'
-    + '\n'
+                                                                            '\n',
+    '# ==================================================================', '\n',
+    '# Extract domain and url filters from source text file',               '\n',
+    '# ==================================================================', '\n',
+    '# input: a text file containing ublock_origin filters',                '\n',
+    '# outputs are text files, sorted, deduplicated, without empty lines:', '\n',
+    '# 1  input file renamed adding _old',                                  '\n',
+    '# 2  input file written to lower case except filters containing #',    '\n',
+    '# 3  <ipfire_domains_block_list>',                                     '\n',
+    '# 4  <ipfire_urls_block_list>',                                        '\n',
+    '# 5  <ipfire_regex_block_list>',                                       '\n',
+    '# 7  <ublock_list_except_domains>',                                    '\n',
+    '# ==================================================================', '\n',
 )
 
 # <get filename containing text lists, convert into list, sort and dedup>
