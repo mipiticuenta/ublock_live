@@ -3,7 +3,6 @@
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list
 ! title: regex block list
 /(?:com|net)\/[a-z-]{3,10}\.html$/
-/(?<![a-z])px/
 /(\/|\.)[a-fa-f0-9]{32}\.com\.?([\/\:]$)/
 /(fls|unagi|aan)[a-z0-9]+amazon/
 /21porno.com/
@@ -291,7 +290,6 @@
 /[^a-z0-9]suggestqueries[^a-z]/
 /[^a-z0-9]sumo[^a-z]/
 /[^a-z0-9]t\.co[^a-z]/
-/[^a-z0-9]tags?[0-9]*/
 /[^a-z0-9]tailtarget[^a-z]/
 /[^a-z0-9]tap(ad|lytics)[^a-z]/
 /[^a-z0-9]target(ing|spot)[^a-z]/
@@ -331,6 +329,9 @@
 /[^a-z0-9]ztat[^a-z]/
 /[^a-z]gpt/
 /[^abs]log[0-9]?s?(ge)?(ging)?-_=&\?/\.]/
+/[_\W]?fb[_\W]/
+/[_\W]?px[_\W]/
+/[_\W]?tags?[_\W]/
 /[a-z0-9]{12}(\.admin)?\.dataunlocker\.com\/
 /_/+1/
 /_dating\d\/index\.html\?aref=/
