@@ -214,20 +214,17 @@ file7_out.write(
 
 # <\open file7_out file and write header>
 
-print('Listing all filters except domain type, please wait')
-
 list7_out = set(list1_in) - set(list3)
 list7_out = sorted(list7_out)
 file7_out.writelines(line + '\n' for line in list7_out)
 file7_out.close()
 
-print('\n')
-
 print(
-    str(len(open(file7_out_name, encoding='UTF-8').readlines()))
-    + ' lines written to '
-    + file7_out_name
-    + '\n'
+    '{:,}'.format(len(list7_out)),
+    ' lines written to ',
+    file7_out_name,
+    '\n',
+    sep = ''
 )
 
 # </write extracted filters except domains>
