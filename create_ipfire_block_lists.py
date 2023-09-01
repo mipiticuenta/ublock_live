@@ -43,7 +43,7 @@ list1_in = [line for line in list1_in if len(line) > 0]                         
 
 print(
     '\n',
-    str(len(open(file1_in_name, encoding='UTF-8').readlines())),
+    '{:,}'.format(len(list1_in)),
     ' lines read from ',
     file1_in_name,
     ';',
