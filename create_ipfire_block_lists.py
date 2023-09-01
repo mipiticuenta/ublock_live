@@ -87,7 +87,7 @@ file1_out.close()
 
 print(
     '{:,}'.format(len(list1_out)),
-    ' sorted lines written to updated ',
+    ' sorted filters written to updated ',
     file1_out_name,
     '\n',
     sep = ''
@@ -179,36 +179,17 @@ file5_out.write(
 
 # <\open file5_out file and write header>
 
-print('Listing regex filters, please wait')
-
-list5_out = set()
-pbar = pb.ProgressBar(maxval = len(list1_in)).start()
-progress = 0
-
-for line in list1_in:
-
-    string_r = ''
-    if line[-10:] == '$important':
-        line = line[0:-10]    # <remove ''$important'' tag at the end (if present)/>
-    if line[0:2] == '||':
-        line = line[2:]    # <remove ''||'' modifier at the beggining (if present)/>
-    if string_r := re.search(r'^/.*/$', line):
-        string_r = string_r.group()[1:-1]
-        list5_out.add(string_r)
-
-    progress += 1
-    pbar.update(progress)
-
-pbar.finish()
-print('\n')
-
+list5_out = list1_in
+list5_out = [re.sub(r'\$important$', '', line) for line in list5_out]               # <remove ''$important'' tag at the end (if present)/>
+list5_out = [re.sub(r'^\|\|', '', line) for line in list5_out]                      # <remove ''||'' modifier at the beggining (if present)/>
+list5_out = [line for line in list5_out if re.search(r'^/.*/$', line)]              # keep regex items
 list5_out = sorted(list5_out)
 file5_out.writelines(line + '\n' for line in list5_out)
 file5_out.close()
 
 print(
     str(len(open(file5_out_name, encoding='UTF-8').readlines()))
-    + ' lines written to '
+    + ' regex filters written to '
     + file5_out_name
     + '\n'
 )
