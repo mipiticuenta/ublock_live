@@ -591,8 +591,6 @@ list3 = [line for line in list3 if len(line) > 0]    # <cleanup empty lines/>
 #list3 = [line for line in list3 if len(list(filter(lambda substring: ('.' + substring) in line, tqdm.tqdm(list3_filter[:n])))) == 0]
 # </filter() + list comprehension option>
 
-del(list3_filter)    # <clean up; make sure list3_filter is not used anymore hereafter/>
-
 print(
     '{:,}'.format(len(list3)),
     'domains remaining after deflating',
