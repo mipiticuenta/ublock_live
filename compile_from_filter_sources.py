@@ -107,6 +107,7 @@ list2 = [re.sub(r'^\:\:1 ', '', line).strip() for line in list2]                
 list2 = (                                                                           # <keep domain from #[] styl filter />
     [line[2:-1] for line in list2 if line[0:1] == '#[' and line[-1] == ']'] +
     [line for line in list2 if not(line[0:1] == '#[' and line[-1] == ']')]
+    )
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print(' 5/20 : remove items containing % about: $badfilter localhost /wp-content/uploads/; remove http: IP4 IP6 :port/ www')
