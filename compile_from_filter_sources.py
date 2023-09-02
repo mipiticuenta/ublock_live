@@ -104,7 +104,7 @@ print(' 4/20 : keep domains from dns and #[] style filters ')
 list2 = [re.sub(r'^0\.0\.0\.0 ', '', line).strip() for line in list2]               # <remove leading   0.0.0.0 (dns style filter) />
 list2 = [re.sub(r'^127\.0\.0\.1 ', '', line).strip() for line in list2]             # <remove leading 127.0.0.1 (dns style filter) />
 list2 = [re.sub(r'^\:\:1 ', '', line).strip() for line in list2]                    # <remove leading ::1 (dns style filter) />
-list2 = [line[2:-1] for line in list2 if line[0:1] == '#[' and line[-1] = ']' ]     # <keep domain from #[] styl filter />
+list2 = [line[2:-1] for line in list2 if line[0:1] == '#[' and line[-1] == ']' ]     # <keep domain from #[] styl filter />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print(' 5/20 : remove items containing % about: $badfilter localhost /wp-content/uploads/; remove http: IP4 IP6 :port/ www')
