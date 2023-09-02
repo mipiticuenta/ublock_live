@@ -16,7 +16,7 @@ import math                 # Math functions
 
 file1_in_name    = 'filter_sources'
 file2_out_name   = 'compiled_block_list'
-file3r3_out_name = '3words_domain_list'
+file3r_out_name  = '3words_domain_list'
 proxy_servers    = {'https': 'http://fw:8080'}
 
 # </settings>
@@ -100,10 +100,11 @@ list2 = (
         )
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
-print(' 4/20 : keep domains from dns style filters ')
+print(' 4/20 : keep domains from dns and #[] style filters ')
 list2 = [re.sub(r'^0\.0\.0\.0 ', '', line).strip() for line in list2]               # <remove leading   0.0.0.0 (dns style filter) />
 list2 = [re.sub(r'^127\.0\.0\.1 ', '', line).strip() for line in list2]             # <remove leading 127.0.0.1 (dns style filter) />
 list2 = [re.sub(r'^\:\:1 ', '', line).strip() for line in list2]                    # <remove leading ::1 (dns style filter) />
+list2 = [line[2:-1] for line in list2 if line[0:1] == '#[' and line[-1] = ']' ]     # <keep domain from #[] styl filter />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print(' 5/20 : remove items containing % about: $badfilter localhost /wp-content/uploads/; remove http: IP4 IP6 :port/ www')
@@ -311,8 +312,10 @@ del(list2s)
 
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
-print('17/20 : remove lines leaded by ! + & ? ^ : ; @ and @.exe @.gif @.jpg @.png @.rar @.zip')
+print('17/20 : remove lines leaded by ! # + & ? ^ : ; @ and @.exe @.gif @.jpg @.png @.rar @.zip')
+list2 = [re.sub(r'^\|\|', '', line) for line in list2]                              # <remove leading || />
 list2 = [re.sub(r'^\!.*', '', line) for line in list2]                              # <remove ! leaded lines />
+list2 = [re.sub(r'^#.*', '', line) for line in list2]                               # <remove # leaded lines />
 list2 = [re.sub(r'^[/\*]?\+.*', '', line) for line in list2]                        # <remove + leaded lines />
 list2 = [re.sub(r'^\*?\&.*', '', line) for line in list2]                           # <remove & leaded lines />
 list2 = [re.sub(r'^\*?\?.*', '', line) for line in list2]                           # <remove ? leaded lines />
@@ -400,7 +403,7 @@ list2 = [re.sub(r'^[_\W]?lists?[_\W]?\*?$', '', line) for line in list2]        
 list2 = [re.sub(r'^[_\W]?(up)?loads?[_\W]?\*?$', '', line) for line in list2]       # <remove spurious (up)load(s) filter />
 list2 = [re.sub(r'^[_\W]?login[_\W]?\*?$', '', line) for line in list2]             # <remove spurious login filter />
 list2 = [re.sub(r'^[_\W]?logos?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious logo(s) filter />
-list2 = [re.sub(r'^[_\W]?libs?[_\W]?\*?$', '', line) for line in list2]               # <remove spurious lib filter />
+list2 = [re.sub(r'^[_\W]?libs?[_\W]?\*?$', '', line) for line in list2]             # <remove spurious lib filter />
 list2 = [re.sub(r'^[_\W]?linkedin[_\W]?\*?$', '', line) for line in list2]          # <remove spurious linkedin filter />
 list2 = [re.sub(r'^[_\W]?main[_\W]?\*?$', '', line) for line in list2]              # <remove spurious main filter />
 list2 = [re.sub(r'^[_\W]?master[_\W]?\*?$', '', line) for line in list2]            # <remove spurious master filter />
@@ -441,15 +444,18 @@ list2 = [re.sub(r'^[_\W]?wp[_\W]?\*?$', '', line) for line in list2]            
 list2 = [re.sub(r'^[_\W]?wordpress[_\W]?\*?$', '', line) for line in list2]         # <remove spurious wordpress filter />
 list2 = [re.sub(r'^akamai(zed)?\.com$', '', line) for line in list2]                # <remove akamai.com />
 list2 = [re.sub(r'^akamai(zed)?(hd)?\.net$', '', line) for line in list2]           # <remove akamai.net />
-list2 = [re.sub(r'^cloudflare\.com$', '', line) for line in list2]                  # <remove cloudflare.com />
-list2 = [re.sub(r'^cloudfront\.net$', '', line) for line in list2]                  # <remove cloudfront.net />
+list2 = [re.sub(r'^apple\.com$', '', line) for line in list2]                       # <remove apple.com />
+list2 = [re.sub(r'^blogspot\.(com|net|org|[a-z]{2})$', '', line) for line in list2]     # <remove blogspot.(com|net|org|[a-z]{2}) />
+list2 = [re.sub(r'^cloudflare\.(com|net)$', '', line) for line in list2]            # <remove cloudflare.(com|net) />
+list2 = [re.sub(r'^cloudfront\.(com|net)$', '', line) for line in list2]            # <remove cloudfront..(com|net) />
 list2 = [re.sub(r'^collinsdictionary\.com$', '', line) for line in list2]           # <remove collinsdictionary.com />
 list2 = [re.sub(r'^(lite\.)?duckduckgo\.com$', '', line) for line in list2]         # <remove duckduckgo.com />
 list2 = [re.sub(r'^elconfidencial\.com$', '', line) for line in list2]              # <remove elconfidencial.com />
 list2 = [re.sub(r'^ecestaticos\.com$', '', line) for line in list2]                 # <remove ecestaticos.com />
 list2 = [re.sub(r'^expansion\.com$', '', line) for line in list2]                   # <remove expansion.com />
-list2 = [re.sub(r'^(developper\.)?google\.com$', '', line) for line in list2]       # <remove google.com />
-list2 = [re.sub(r'^(apis\.)?google\.com$', '', line) for line in list2]             # <remove google.com />
+list2 = [re.sub(r'^google\.(com|[a-z]{2})$', '', line) for line in list2]           # <remove google.(com|[a-z]{2}) />
+list2 = [re.sub(r'^developper\.google\.com$', '', line) for line in list2]          # <remove google.com />
+list2 = [re.sub(r'^apis\.google\.com$', '', line) for line in list2]                # <remove google.com />
 list2 = [re.sub(r'^googleapis\.com$', '', line) for line in list2]                  # <remove googleapis.com />
 list2 = [re.sub(r'^googlevideo\.com$', '', line) for line in list2]                 # <remove googlevideo.com />
 list2 = [re.sub(r'^gstatic\.com$', '', line) for line in list2]                     # <remove googlevideo.com />
@@ -461,7 +467,7 @@ list2 = [re.sub(r'^wikimedia\.org$', '', line) for line in list2]               
 list2 = [re.sub(r'^wikipedia\.org$', '', line) for line in list2]                   # <remove wikipedia.org />
 list2 = [re.sub(r'^wordpress\.com$', '', line) for line in list2]                   # <remove wordpress.com />
 list2 = [re.sub(r'^/?wp\-content/?(themes/|plugins|uploads/)?\*?$', '', line) for line in list2]   # <remove /wp-content />
-list2 = [re.sub(r'^(music\.)?youtube\.com$', '', line) for line in list2]           # <remove youtube.com />
+list2 = [re.sub(r'^(music\.)?youtube\.com$', '', line) for line in list2]           # <remove (music.)youtube.com />
 list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
@@ -490,12 +496,12 @@ print(
 print('\n', 'removing #.@(.@) (numerical domain) filters: ', end = '')
 
 list3 = [line for line in list3 if not(re.search(r'^.*\.js$', line))]               # <remove @.js from domains list />
+list3 = [line for line in list3 if not(re.search(r'blogspot\.[a-z]+$', line))]      # <remove ^blogspot\.[a-z]+$ from domain list to deflate />
+list3 = [line for line in list3 if not(re.search(r'tumbl\.[a-z]+$', line))]         # <remove ^tumblr\.[a-z]+$ from domain list to deflate />
 list2 = set(list2) - set(list3)                                                     # <only domains part are processed in this section; @.js are kept in list2 />
 
 list3 = [line for line in list3 if not(re.search(r'^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?$', line))]    # <remove #.@(.@) numerical domains/>
-list3 = [line for line in list3 if not(re.search(r'^[a-z]{2}\.[a-z]{2}$', line))]   # <remove ^[a-z]{2}\.[a-z]{2}$ root domains/>
-list3 = [line for line in list3 if not(re.search(r'^(com|net|org)\.[a-z]{2}$', line))]   # <remove ^(com|net|org)\.[a-z]{2}$ root domains/>
-list3 = [line for line in list3 if not(re.search(r'^[a-z]{2}\.(com|net|org)$', line))]   # <remove ^[a-z]{2}\.(com|net|org)$ root domains/>
+list3 = [line for line in list3 if not(re.search(r'^(com|net|org|[a-z]{2})\.(com|net|org|[a-z]{2})$', line))]   # <remove ^(com|net|org|[a-z]{2})\.(com|net|org|[a-z]{2})$ root domains/>
 
 print(
     '{:,}'.format(len(list3)),
@@ -507,14 +513,14 @@ print(
 
 # <remove redundant domains from list>
 
-print('Deduping domains; this operation could take long time, please wait')
+print('Domains deflating started; this operation could take long time, please wait')
 print('------------------------------------------------------------------')
 
 list3r = [line for line in list3 if re.search(r'^[-_a-z0-9]+\.[a-z]+$', line)]      # <@.@ domains are elemental items/>
 
 print(
     '{:,}'.format(len(list3r)),
-    'elemental @.@ domains found; excluded from recursive domain downsizing'
+    'elemental @.@ domains found; excluded from recursive domain deflating'
     )
 
 list3r3 = [line for line in list3 if re.search(r'^[-_a-z0-9]+\.[a-z0-9][-_a-z0-9]+\.[a-z]+$', line)]    # <@.@.@ domains items/>
@@ -522,10 +528,10 @@ list3   = set(list3) - set(list3r) - set(list3r3)                               
 list3   = sorted(list3, key = lambda x: -len(x))                                    # <sort by decreasing length for faster size reduction/>
 
 print(
-    'recursive domain downsizing',
+    'recursive domain deflating',
     '{:2.0f}'.format(1),
     '/',
-    '?',
+    '3',
     ';',
     '{:,}'.format(len(list3) + len(list3r3)),
     'domains kept'
@@ -533,56 +539,60 @@ print(
 list3r3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3r))) == 0) else '', tqdm.tqdm(list3r3)))
 list3r3 = [line for line in list3r3 if len(line) > 0]                               # <cleanup empty lines/>
 list3r  = sorted(set(list3r) | set(list3r3))                                        # <compile deduplicated domains up to current stage/>
+del(list3r3)    # <clean up; make sure list3r3 is not used anymore hereafter/>
 
 # <write output>
 
-list3r3 = set(list3r3)
-list3r3 = sorted(list3r3, key = lambda x: (re.sub(r'^[-_a-z0-9]+\.', '', x)))       # <sort by a-z @.@/>
-file3r3_out = open(file3r3_out_name, 'w')
-file3r3_out.writelines(line + '\n' for line in list3r3)
-file3r3_out.close()
+list3r = set(list3r)
+list3r = sorted(list3r, key = lambda x: (re.sub(r'^[-_a-z0-9]+\.', '', x)))       # <sort by a-z @.@/>
+file3r_out = open(file3r_out_name, 'w')
+file3r_out.writelines(line + '\n' for line in list3r)
+file3r_out.close()
 
 print(
-    'deduplicated 3 words domains (@.@.@) sorted by @.@ saved to textfile <' + file3r3_out_name + '>',
+    'deduplicated 3 words domains (@.@.@) sorted by @.@ saved to textfile <' + file3r_out_name + '>',
     )
-
-del(list3r3)    # <clean up; make sure list3r3 is not used anymore hereafter/>
 
 # </write output>
 
-i_max = round(math.log((len(list3) + len(list3r)) / 1e5) / math.log(2))
-last_list3_len = len(list3) + 1
-for i in range(i_max, -1, -1) :                                                     # <jump to next if no reduction achieved in last loop />
-    if len(list3) == last_list3_len :
-        last_list3_len = last_list3_len + 1
-        continue
-    last_list3_len = len(list3)
-    list3_filter = list(set(list3) | set(list3r))
-    n = round(len(list3_filter) / (2**i))
-    print(
-        'recursive domain downsizing',
-        '{:2.0f}'.format(i_max + 1 - i + 1),
-        '/',
-        i_max + 1 + 1,
-        ';',
-        '{:,}'.format(len(list3)),
-        'domains kept'
-        )
-    # <filter() + map() option>
-    list3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3_filter[:n]))) == 0) else '', tqdm.tqdm(list3)))
-    list3 = [line for line in list3 if len(line) > 0]    # <cleanup empty lines/>
-    # </filter() + map() option>
-    
-    # <filter() + list comprehension option; may worth it a benchmark vs map()?>
-    #list3 = [line for line in list3 if len(list(filter(lambda substring: ('.' + substring) in line, tqdm.tqdm(list3_filter[:n])))) == 0]
-    # </filter() + list comprehension option>
+print(
+    'recursive domain deflating',
+    '{:2.0f}'.format(2),
+    '/',
+    '3',
+    ';',
+    '{:,}'.format(len(list3) + len(list3r3)),
+    'domains kept'
+    )
+list3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3r))) == 0) else '', tqdm.tqdm(list3)))
+list3 = [line for line in list3 if len(line) > 0]                               # <cleanup empty lines/>
+list3 = sorted(set(list3r) | set(list3))                                        # <compile deduplicated domains up to current stage/>
+del(list3r)    # <clean up; make sure list3r is not used anymore hereafter/>
 
-list3 = sorted(set(list3r) | set(list3))                                            # <rebuild domains list with elemetal domains and shrinked domains part/>
-del(list3r)                                                                         # <clean up; make sure list3r3 is not used anymore hereafter/>
+list3_filter = list3
+print(
+    'recursive domain deflating',
+    '{:2.0f}'.format(3),
+    '/',
+    '3',
+    ';',
+    '{:,}'.format(len(list3)),
+    'domains kept'
+    )
+# <filter() + map() option>
+list3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3_filter[:n]))) == 0) else '', tqdm.tqdm(list3)))
+list3 = [line for line in list3 if len(line) > 0]    # <cleanup empty lines/>
+# </filter() + map() option>
+
+# <filter() + list comprehension option; may worth it a benchmark vs map()?>
+#list3 = [line for line in list3 if len(list(filter(lambda substring: ('.' + substring) in line, tqdm.tqdm(list3_filter[:n])))) == 0]
+# </filter() + list comprehension option>
+
+del(list3_filter)    # <clean up; make sure list3_filter is not used anymore hereafter/>
 
 print(
     '{:,}'.format(len(list3)),
-    'domains remaining after deduping',
+    'domains remaining after deflating',
     '\n'
     )
 
@@ -591,6 +601,7 @@ list2 = list(map(lambda line: line if (line[1:] not in list3) else '', tqdm.tqdm
 list2 = [line for line in list2 if len(line) > 0]                                   # <cleanup empty lines/>
 
 list2 = sorted(set(list2) | set(list3))                                             # <rebuild full list with elemetal domains and shrinked domains part/>
+del(list3)    # <clean up; make sure list3 is not used anymore hereafter/>
 
 print(
     '\n',
