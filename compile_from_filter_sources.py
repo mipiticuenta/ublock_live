@@ -541,7 +541,7 @@ print(
     '/',
     '3',
     ';',
-    '{:,}'.format(len(list3) + len(list3r + len(list3r3)),
+    '{:,}'.format(len(list3) + len(list3r) + len(list3r3)),
     'domains kept'
     )
 list3r3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3r))) == 0) else '', tqdm.tqdm(list3r3)))
