@@ -215,7 +215,7 @@ while n_1 > len(list2):                                                         
     print('11/20 : clean up leading symbols numbers asset asp cgi cfm gif htm http image jpg js mp4 php png static tiff www')
     list2 = [re.sub(r'^[-_\:\=\+\~\|\*\!0-9]+[/\.]', '', line) for line in list2]               # <remove leading symbols and numbers preceding / ./>
     list2 = [re.sub(r'^[-_\:\=\+\~\|\!0-9]+(?=\$)', '', line) for line in list2]                # <remove leading symbols and numbers preceding $ />
-    list2 = [re.sub(r'^[/\.]?[-_a-z0-9\*](?=[/\.])', '', line).strip() for line in list2]       # <remove leading single -_a-z0-9\* precedng / . />
+    list2 = [re.sub(r'^[/\.]?[-_a-z0-9\*](?=[/\.])', '', line).strip() for line in list2]       # <remove leading single -_a-z0-9\* preceding / . />
     list2 = [re.sub(r'^[/\.]\*', '*', line).strip() for line in list2]                          # <remove leading / . if followed by * />
     list2 = [re.sub(r'^\$', '*$', line).strip() for line in list2]                              # <fix leading $ with *$ />
     list2 = [re.sub(r'^[/\.\=\?]\$', '*$', line).strip() for line in list2]                     # <fix leading /$ .$ =$ ?$ with *$ />
@@ -290,6 +290,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[_\W]?[^p]?x?\*?$', '', line) for line in list2]                  # <remove 2 ax pd sequence filter />
     list2 = [re.sub(r'^[^a-z]+x[^a-z]+[/\.]', '', line) for line in list2]               # <remove leading [^a-z]+x[^a-z]+ combinations />
     list2 = [re.sub(r'^[-_\.a-z0-9/]+(?=/[-_\.a-z0-9]+$)', '', line) for line in list2]  # <simplify urls keeping last /* part />
+    list2 = [re.sub(r'^.*/\*/', '/', line).strip() for line in list2]                    # <replace any url preceded by /*/ (included) with / />
     list2 = [re.sub(r'^[-_/\.a-z0-9]*(\*[-_/\.a-z0-9]*)+$(?<!/\*)', '', line).strip() for line in list2]    # <remove url filters using * wildcard />
     list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
