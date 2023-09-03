@@ -497,7 +497,7 @@ print(
 
 # <remove #.@(.@) (numerical domains) from list>
 
-print('\n', 'removing #.@(.@) (numerical domain) filters: ', end = '')
+print('removing #.@(.@) (numerical domain) filters: ', end = '')
 
 list3 = [line for line in list3 if not(re.search(r'^.*\.js$', line))]               # <remove @.js from domains list />
 list3 = [line for line in list3 if not(re.search(r'blogspot\.[a-z]+$', line))]      # <remove ^blogspot\.[a-z]+$ from domain list to deflate />
