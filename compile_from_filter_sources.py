@@ -477,7 +477,7 @@ list2 = [line for line in list2 if len(line) > 1]                               
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print('20/20 : adding #.@(.@) filter to block numerical domains ')
-list2.append('/^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)/')                     # <add filter to block [-_/\.0-9]+\.[a-z]+ domains />
+list2.append('/^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/')                    # <add filter to block [-_/\.0-9]+\.[a-z]+ domains />
 
 # <transforming loop/>
 
