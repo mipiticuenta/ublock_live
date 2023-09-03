@@ -212,11 +212,11 @@ while n_1 > len(list2):                                                         
         sep = ''
         )
 
-    print('11/20 : clean up leading [-_.:~|*]+ * $ [-_./0-9]+ @/ asset asp cgi cfm gif htm http image jpg js mp4 php png static tiff www')
-    list2 = [re.sub(r'^[-_0-9]+[/\.\:]', '', line).strip() for line in list2]                   # <remove leading [-_0-9]+[/\.\:] />
-    list2 = [re.sub(r'^[-_\:\=\~\|\*\!0-9]+\.', '', line) for line in list2]                    # <remove leading [-_\:\=\~\|\*\!0-9]+\. />
-    list2 = [re.sub(r'^[-_\:\=\~\|\*\!0-9]+(?=[/\$])', '', line) for line in list2]             # <remove leading [-_:=~|*!0-9]+ followed by /$ />
-    list2 = [re.sub(r'^[a-z]\.', '', line).strip() for line in list2]                           # <remove leading a-z. />
+    print('11/20 : clean up leading symbols numbers asset asp cgi cfm gif htm http image jpg js mp4 php png static tiff www')
+    list2 = [re.sub(r'^[-_\:\=\+\~\|\*\!0-9]+[/\.]', '', line) for line in list2]               # <remove leading symbols and numbers preceding / ./>
+    list2 = [re.sub(r'^[-_\:\=\+\~\|\!0-9]+(?=\$)', '', line) for line in list2]                # <remove leading symbols and numbers preceding $ />
+    list2 = [re.sub(r'^[/\.]?[-_a-z0-9\*](?=[/\.])', '', line).strip() for line in list2]       # <remove leading single -_a-z0-9\* precedng / . />
+    list2 = [re.sub(r'^[/\.]\*', '*', line).strip() for line in list2]                          # <remove leading / . if followed by * />
     list2 = [re.sub(r'^\$', '*$', line).strip() for line in list2]                              # <fix leading $ with *$ />
     list2 = [re.sub(r'^[/\.\=\?]\$', '*$', line).strip() for line in list2]                     # <fix leading /$ .$ =$ ?$ with *$ />
     list2 = [re.sub(r'^\.?[-_a-z0-9\*]+/', '/', line) for line in list2]                        # <replace leading @/ with / />
@@ -233,7 +233,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^\.?mp[0-9]\??(?![a-z0-9])', '*', line).strip() for line in list2]        # <replace leading mp* with * >
     list2 = [re.sub(r'^\.?php\??(?![a-z0-9])', '*', line).strip() for line in list2]            # <replace leading php with * >
     list2 = [re.sub(r'^\.?png\??(?![a-z0-9])', '*', line).strip() for line in list2]            # <replace leading png with * >
-    list2 = [re.sub(r'^[/\.]?static\*?(?=[-_\./])', '*', line) for line in list2]               # <replace leading static with * />
+    list2 = [re.sub(r'^[/\.]?static\*?[/\.])', '*', line) for line in list2]                    # <replace leading static with * />
     list2 = [re.sub(r'^\.?tiff\??(?![a-z0-9])', '*', line).strip() for line in list2]           # <replace leading tiff with * >
     list2 = [line for line in list2 if len(line) > 1]                                           # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
@@ -275,21 +275,19 @@ while n_1 > len(list2):                                                         
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
     print('14/20 : simplify urls and keep just last /* part ')
+    list2 = [re.sub(r'\*+', '*', line).strip() for line in list2]                        # <dedup * />
+    list2 = [re.sub(r'\.+', '.', line).strip() for line in list2]                        # <dedup . />
+    list2 = [re.sub(r'/+', '/', line).strip() for line in list2]                         # <dedup / />
     list2 = [re.sub(r'^[^a-z]+$', '', line).strip() for line in list2]                   # <remove lines comprised only by simbols and numbers />
+    list2 = [re.sub(r'^[^a-z]+x[^a-z]+$', '', line) for line in list2]                   # <remove lines comrpised by [^a-z]+x[^a-z]+ combinations />
+    list2 = [re.sub(r'^[_\Wjs]+$', '', line) for line in list2]                          # <remove lines comprised by j s symbols combinations />
     list2 = [re.sub(r'^[a-z]{1,3}$', '', line) for line in list2]                        # <remove ^[a-z]{1,3}$ filters />
     list2 = [re.sub(r'^[_\W]?[^ap]?[^dx]?[_\W]?\*?$', '', line) for line in list2]       # <remove 2 chars max [a-z][0-9] sequence filter excluding ad px />
     list2 = [re.sub(r'^[_\W]?a?[^d]?[_\W]?\*?$', '', line) for line in list2]            # <remove 2 ax pd sequence filter />
     list2 = [re.sub(r'^[_\W]?p?[^x]?[_\W]?\*?$', '', line) for line in list2]            # <remove 2 ax pd sequence filter />
     list2 = [re.sub(r'^[_\W]?[^a]?d?[_\W]?\*?$', '', line) for line in list2]            # <remove 2 ax pd sequence filter />
     list2 = [re.sub(r'^[_\W]?[^p]?x?\*?$', '', line) for line in list2]                  # <remove 2 ax pd sequence filter />
-    list2 = [re.sub(r'^[-_/\.0-9]+\*?$', '', line) for line in list2]                    # <remove numeric lines />
-    list2 = [re.sub(r'^[-_/\.0-9]+x[-_/\.0-9]+[/\.]', '', line) for line in list2]       # <remove leading [-_./0-9]+ x [-_./0-9]+ combinations />
-    list2 = [re.sub(r'^[-_/\.0-9]+x[-_/\.0-9]+$', '', line) for line in list2]           # <remove lines comrpised by [-_./0-9]+ x [-_./0-9]+ combinations />
-    list2 = [re.sub(r'^[_\Wjs]+$', '', line) for line in list2]                          # <remove lines comprised by j s symbols combinations />
-    list2 = [re.sub(r'\*+', '*', line).strip() for line in list2]                        # <dedup * />
-    list2 = [re.sub(r'\.+', '.', line).strip() for line in list2]                        # <dedup . />
-    list2 = [re.sub(r'/+', '/', line).strip() for line in list2]                         # <dedup / />
-    list2 = [re.sub(r'/\*', '*', line).strip() for line in list2]                        # <remove / if followed by * />
+    list2 = [re.sub(r'^[^a-z]+x[^a-z]+[/\.]', '', line) for line in list2]               # <remove leading [^a-z]+x[^a-z]+ combinations />
     list2 = [re.sub(r'^[-_\.a-z0-9/]+(?=/[-_\.a-z0-9]+$)', '', line) for line in list2]  # <simplify urls keeping last /* part />
     list2 = [re.sub(r'^[-_/\.a-z0-9]*(\*[-_/\.a-z0-9]*)+$(?<!/\*)', '', line).strip() for line in list2]    # <remove url filters using * wildcard />
     list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
