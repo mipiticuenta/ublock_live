@@ -533,7 +533,7 @@ print(
     'recursive domain deflating',
     '{:2.0f}'.format(1),
     '/',
-    '3',
+    '2',
     ';',
     '{:,}'.format(len(list3) + len(list3r) + len(list3r3)),
     'domains kept'
@@ -561,7 +561,7 @@ print(
     'recursive domain deflating',
     '{:2.0f}'.format(2),
     '/',
-    '3',
+    '2',
     ';',
     '{:,}'.format(len(list3) + len(list3r)),
     'domains kept'
@@ -571,24 +571,24 @@ list3 = [line for line in list3 if len(line) > 0]                               
 list3 = sorted(set(list3r) | set(list3))                                        # <compile deduplicated domains up to current stage/>
 del(list3r)    # <clean up; make sure list3r is not used anymore hereafter/>
 
-list3_filter = list3
-print(
-    'recursive domain deflating',
-    '{:2.0f}'.format(3),
-    '/',
-    '3',
-    ';',
-    '{:,}'.format(len(list3)),
-    'domains kept'
-    )
-# <filter() + map() option>
-list3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3_filter))) == 0) else '', tqdm.tqdm(list3)))
-list3 = [line for line in list3 if len(line) > 0]    # <cleanup empty lines/>
-# </filter() + map() option>
+#list3_filter = list3
+#print(
+#    'recursive domain deflating',
+#    '{:2.0f}'.format(3),
+#    '/',
+#    '3',
+#    ';',
+#    '{:,}'.format(len(list3)),
+#    'domains kept'
+#    )
+## <filter() + map() option>
+#list3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3_filter))) == 0) else '', tqdm.tqdm(list3)))
+#list3 = [line for line in list3 if len(line) > 0]    # <cleanup empty lines/>
+## </filter() + map() option>
 
-# <filter() + list comprehension option; may worth it a benchmark vs map()?>
-#list3 = [line for line in list3 if len(list(filter(lambda substring: ('.' + substring) in line, tqdm.tqdm(list3_filter[:n])))) == 0]
-# </filter() + list comprehension option>
+## <filter() + list comprehension option; may worth it a benchmark vs map()?>
+##list3 = [line for line in list3 if len(list(filter(lambda substring: ('.' + substring) in line, tqdm.tqdm(list3_filter[:n])))) == 0]
+## </filter() + list comprehension option>
 
 print(
     '{:,}'.format(len(list3)),
