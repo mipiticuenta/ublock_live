@@ -530,7 +530,7 @@ list3   = set(list3) - set(list3r) - set(list3r3)                               
 list3   = sorted(list3, key = lambda x: -len(x))                                    # <sort by decreasing length for faster size reduction/>
 
 print(
-    'recursive domain deflating',
+    'recursive domain deflating (@.@.@ vs @.@)',
     '{:2.0f}'.format(1),
     '/',
     '2',
@@ -558,7 +558,7 @@ print(
 # </write output>
 
 print(
-    'recursive domain deflating',
+    'recursive domain deflating (all domains vs @.@.@)',
     '{:2.0f}'.format(2),
     '/',
     '2',
