@@ -99,10 +99,6 @@ list2 = [re.sub(r'^0\.0\.0\.0 ', '', line) for line in list2]                   
 list2 = [re.sub(r'^127\.0\.0\.1 ', '', line) for line in list2]                         # <remove leading 127.0.0.1 (dns style filter) />
 list2 = [re.sub(r'^\:\:1 ', '', line) for line in list2]                                # <remove leading ::1 (dns style filter) />
 list2 = [re.sub(r'^\|+', '', line) for line in list2]                                   # <remove leading domain mark (||) />
-list2 = (                                                                               # <keep domain from #[] style filter />
-    [line[2:-1].strip() for line in list2 if line[0:1] == '#[' and line[-1] == ']'] +
-    [line for line in list2 if not(line[0:1] == '#[' and line[-1] == ']')]
-    )
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print(' 4/20 : remove items containing % about: $badfilter localhost /wp-content/uploads/; remove http: IP4 IP6 :port/ www')
