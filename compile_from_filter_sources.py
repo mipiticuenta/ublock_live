@@ -239,22 +239,22 @@ while n_1 > len(list2):                                                         
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
     print('12/20 : clean up trailing ^ | # ~ = ? * , .* ash asp cgi gif htm js php and $ all doc image popup script 3p xhr filters')
-    list2 = [re.sub(r'[\^\|\=]\$', '$', line).strip() for line in list2]                 # <fix: replace ^$ |$ =$ with $/>
-    list2 = [re.sub(r'\|+\$', '$', line).strip() for line in list2]                      # <fix: replace |$ with $/>
-    list2 = [re.sub(r'[#,\~\|\^\?\=]+$', '', line).strip() for line in list2]            # <remove trailing # , ~ | ^ ? = />
-    list2 = [re.sub(r'(?<!/)\*$', '', line).strip() for line in list2]                   # <remove trailing * except not-regex markup //*/>
-    list2 = [re.sub(r'\.\*$', '.', line).strip() for line in list2]                      # <replace trailing .* with ./>
-    list2 = [re.sub(r'\*\.$', '', line).strip() for line in list2]                       # <remove trailing *. />
-    list2 = [re.sub(r'\.cgi\??$', '.', line) for line in list2]                          # <remove trailing .cgi?/>
-    list2 = [re.sub(r'\.ashx\??$', '.', line) for line in list2]                         # <remove trailing .ashx?/>
-    list2 = [re.sub(r'\.asp\??$', '.', line) for line in list2]                          # <remove trailing .asp?/>
-    list2 = [re.sub(r'\.gif\??$', '.', line) for line in list2]                          # <remove trailing .gif?/>
-    list2 = [re.sub(r'\.?html?\??$', '.', line) for line in list2]                       # <remove trailing .html?/>
-    list2 = [re.sub(r'\.js(?![a-z0-9]).*$', '.js', line) for line in list2]              # <clean up trailing .js />
-    list2 = [re.sub(r'\.php\??$', '.', line) for line in list2]                          # <remove trailing .php?/>
-    list2 = [re.sub(r'(?<!\*)\$\~?\w.*$(?<!important)', '', line) for line in list2]     # <remove specific trailing $ filters except $important />
-    list2 = [re.sub(r'\?\*\=.*', '', line).strip() for line in list2]                    # <remove trailing ?*=... />
-    list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
+    list2 = [re.sub(r'[\^\|\=]\$', '$', line).strip() for line in list2]                # <fix: replace ^$ |$ =$ with $/>
+    list2 = [re.sub(r'\|+\$', '$', line).strip() for line in list2]                     # <fix: replace |$ with $/>
+    list2 = [re.sub(r'[#,\~\|\^\?\=]+$', '', line).strip() for line in list2]           # <remove trailing # , ~ | ^ ? = />
+    list2 = [re.sub(r'(?<!/)\*$', '', line).strip() for line in list2]                  # <remove trailing * except not-regex markup //*/>
+    list2 = [re.sub(r'\.\*$', '.', line).strip() for line in list2]                     # <replace trailing .* with ./>
+    list2 = [re.sub(r'\*\.$', '', line).strip() for line in list2]                      # <remove trailing *. />
+    list2 = [re.sub(r'\.cgi\??$', '.', line) for line in list2]                         # <remove trailing .cgi?/>
+    list2 = [re.sub(r'\.ashx\??$', '.', line) for line in list2]                        # <remove trailing .ashx?/>
+    list2 = [re.sub(r'\.asp\??$', '.', line) for line in list2]                         # <remove trailing .asp?/>
+    list2 = [re.sub(r'\.gif\??$', '.', line) for line in list2]                         # <remove trailing .gif?/>
+    list2 = [re.sub(r'\.?html?\??$', '.', line) for line in list2]                      # <remove trailing .html?/>
+    list2 = [re.sub(r'\.js(?![a-z0-9]).*$', '.js', line) for line in list2]             # <clean up trailing .js />
+    list2 = [re.sub(r'\.php\??$', '.', line) for line in list2]                         # <remove trailing .php?/>
+    list2 = [re.sub(r'(?<!\*)\$\~?\w.*$(?<!important)', '', line) for line in list2]    # <remove specific trailing $ filters except $important />
+    list2 = [re.sub(r'\?\*\=.*', '', line).strip() for line in list2]                   # <remove trailing ?*=... />
+    list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
     print('13/20 : split domains with urls ')
@@ -264,12 +264,12 @@ while n_1 > len(list2):                                                         
     list2 = set(list2) - set(list2s)                                                     # <segregate removed filters'/>
 
     list2s = (
-            [re.sub(r'^[-_\.a-z0-9]+\.[a-z]+/', '/', line) for line in list2s] +         # <isolate url part/>
-            [re.sub(r'(?<=\w)/.*', '', line) for line in list2s]                         # <isolate domains part/>
-            )
+        [re.sub(r'^[-_\.a-z0-9]+\.[a-z]+/', '/', line) for line in list2s] +            # <isolate url part/>
+        [re.sub(r'(?<=\w)/.*', '', line) for line in list2s]                            # <isolate domains part/>
+        )
 
-    list2 = sorted(set(list2) | set(list2s))                                             # <join retrieved domains to main list'/>
-    list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
+    list2 = sorted(set(list2) | set(list2s))                                            # <join retrieved domains to main list'/>
+    list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
     del(list2s)
 
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
