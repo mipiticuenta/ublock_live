@@ -449,6 +449,7 @@ list2 = [re.sub(r'^[_\W]?wp[_\W]?\*?$', '', line) for line in list2]            
 list2 = [re.sub(r'^[_\W]?wordpress[_\W]?\*?$', '', line) for line in list2]         # <remove spurious wordpress filter />
 list2 = [re.sub(r'^akamai(zed)?\.com$', '', line) for line in list2]                # <remove akamai.com />
 list2 = [re.sub(r'^akamai(zed)?(hd)?\.net$', '', line) for line in list2]           # <remove akamai.net />
+list2 = [re.sub(r'^azureedge\.net$', '', line) for line in list2]                   # <remove azureedge.net />
 list2 = [re.sub(r'^apple\.com$', '', line) for line in list2]                       # <remove apple.com />
 list2 = [re.sub(r'^blogspot\.(com|net|org|[a-z]{2})$', '', line) for line in list2]     # <remove blogspot.(com|net|org|[a-z]{2}) />
 list2 = [re.sub(r'^cloudflare\.(com|net)$', '', line) for line in list2]            # <remove cloudflare.(com|net) />
@@ -467,6 +468,7 @@ list2 = [re.sub(r'^gstatic\.com$', '', line) for line in list2]                 
 list2 = [re.sub(r'^microsoft\.com$', '', line) for line in list2]                   # <remove microsoft.com />
 list2 = [re.sub(r'^(developer\.)?mozilla\.org$', '', line) for line in list2]       # <remove mozilla.org />
 list2 = [re.sub(r'^tradingview\.com$', '', line) for line in list2]                 # <remove tradingview.com />
+list2 = [re.sub(r'^tumblr\.com$', '', line) for line in list2]                      # <remove tumblr.com />
 list2 = [re.sub(r'^uecdn\.es$', '', line) for line in list2]                        # <remove uecdn.es />
 list2 = [re.sub(r'^wikimedia\.org$', '', line) for line in list2]                   # <remove wikimedia.org />
 list2 = [re.sub(r'^wikipedia\.org$', '', line) for line in list2]                   # <remove wikipedia.org />
@@ -483,7 +485,7 @@ list2.append('/^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/')                
 
 # <extract domains from list>
 
-print('\n', 'Listing domain filters; ', end = '')
+print('\n', 'Listing domain filters; ', end = '', sep = '')
 
 list3 = [line for line in list2 if re.search(r'^[-_\.a-z0-9]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
 list3 = [re.sub('r\$important$', '', line) for line in list3]                       # <remove trailing $important from domains/>
@@ -495,8 +497,6 @@ list3 = [re.sub('r\$important$', '', line) for line in list3]                   
 print('removing #.@(.@) (numerical domain) filters: ', end = '')
 
 list3 = [line for line in list3 if not(re.search(r'^.*\.js$', line))]               # <remove @.js from domains list />
-list3 = [line for line in list3 if not(re.search(r'blogspot\.[a-z]+$', line))]      # <remove ^blogspot\.[a-z]+$ from domain list to deflate />
-list3 = [line for line in list3 if not(re.search(r'tumbl\.[a-z]+$', line))]         # <remove ^tumblr\.[a-z]+$ from domain list to deflate />
 list2 = set(list2) - set(list3)                                                     # <only domains part are processed in this section; @.js are kept in list2 />
 
 list3 = [line for line in list3 if not(re.search(r'^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?$', line))]    # <remove #.@(.@) numerical domains/>
@@ -508,12 +508,15 @@ print(
     '\n'
     )
 
-# <remove #.@(.@) (numerical domains) from list/>
+# </remove #.@(.@) (numerical domains) from list>
 
 # <remove redundant domains from list>
 
-print('Domains deflating started; this operation could take long time, please wait')
-print('------------------------------------------------------------------')
+print(
+    'Domains deflating started; this operation could take long time, please wait', '\n',
+    '---------------------------------------------------------------------------',
+    sep = ''
+    )
 
 list3r = [line for line in list3 if re.search(r'^[-_a-z0-9]+\.[a-z]+$', line)]      # <@.@ domains are elemental items/>
 
