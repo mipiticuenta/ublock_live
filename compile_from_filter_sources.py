@@ -6,11 +6,11 @@
 
 # </product backlog>
 
-import os                   # Miscellaneous operating system interfaces
-import re                   # Regular expression operations
-import requests             # Get files using url
-import tqdm                 # Progress bar
-import math                 # Math functions
+import os                   # <miscellaneous operating system interfaces />
+import re                   # <regular expression operations />
+import requests             # <get files using url />
+import tqdm                 # <progress bar />
+import math                 # <math functions />
 
 # <settings>
 
@@ -34,10 +34,10 @@ print(
 
 # <get filter url sources from file, dedup and sort>
 
-list1 = [line for line in open(file1_in_name, encoding='UTF-8')]    # <populate lists from sources/>
-list1 = [line.strip() for line in list1 if line != '']              # <remove leading/trailing spaces and discard empty lines/>
-list1 = [line for line in list1 if line[0] != '!']                  # <discard commented lines (leading !)/>
-list1 = [re.sub(r' +!.*', '', line) for line in list1]              # <remove trailing comments'/>
+list1 = [line.strip() for line in open(file1_in_name, encoding='UTF-8')]        # <populate source lists; remove leading/trailing spaces />
+list1 = [re.sub(r'[( +)^]!.*', '', line) for line in list1]                     # <remove comments' />
+list1 = [line for line in list1 if line.strip() != '']                          # <discard empty lines />
+
 list1 = sorted(list1)
 
 # </get filter url sources from file, dedup and sort>
