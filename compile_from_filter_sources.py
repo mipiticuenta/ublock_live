@@ -142,7 +142,7 @@ print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print(' 8/20 : split urls with $ domain= ')
 
-list2s = [line for line in list2 if re.search(r'\$.*domain=', line)]                # <gest urls with $ domain= '/>
+list2s = [line for line in list2 if re.search(r'\$.*domain=', line)]                # <get urls with $ domain= '/>
 
 list2 = set(list2) - set(list2s)                                                    # <segregate removed filters'/>
 
