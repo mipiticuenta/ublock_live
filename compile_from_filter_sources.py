@@ -81,8 +81,8 @@ print(
 # <transforming loop>
 
 print(' 1/20 : remove leading/trailing/dup spaces ')
-list2 = [re.sub(r' +', ' ', line).strip() for line in list2]                    # <dedup spaces and remove leading/trailing spaces />
-list2 = [line for line in list2 if len(line) > 1]                               # <remove items if length < 2 />
+list2 = [re.sub(r' +', ' ', line).strip() for line in list2]                            # <dedup spaces and remove leading/trailing spaces />
+list2 = [line for line in list2 if len(line) > 1]                                       # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print(' 2/20 : remove comments ')
@@ -94,15 +94,15 @@ list2 = [re.sub(r'^[^a-z0-9]+$', '', line) for line in list2]                   
 list2 = [line for line in list2 if len(line) > 1]                                       # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
-print(' 3/20 : keep domains from dns and #[] style filters ')
+print(' 3/20 : keep domains from dns || #[] style filters ')
 list2 = [re.sub(r'^0\.0\.0\.0 ', '', line) for line in list2]                           # <remove leading   0.0.0.0 (dns style filter) />
 list2 = [re.sub(r'^127\.0\.0\.1 ', '', line) for line in list2]                         # <remove leading 127.0.0.1 (dns style filter) />
 list2 = [re.sub(r'^\:\:1 ', '', line) for line in list2]                                # <remove leading ::1 (dns style filter) />
+list2 = [re.sub(r'^\|+', '', line) for line in list2]                                   # <remove leading domain mark (||) />
 list2 = (                                                                               # <keep domain from #[] style filter />
     [line[2:-1].strip() for line in list2 if line[0:1] == '#[' and line[-1] == ']'] +
     [line for line in list2 if not(line[0:1] == '#[' and line[-1] == ']')]
     )
-list2 = [re.sub(r'^\|+', '', line) for line in list2]                                   # <remove leading domain mark (||) />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print(' 4/20 : remove items containing % about: $badfilter localhost /wp-content/uploads/; remove http: IP4 IP6 :port/ www')
@@ -110,13 +110,13 @@ list2 = [re.sub(r'^[^a-z]+$', '', line) for line in list2]                      
 list2 = [line for line in list2 if not(re.search(r'[,\$]badfilter', line))]         # <remove items comprising $badfilter />
 list2 = [line for line in list2 if not(re.search(r'about\:', line))]                # <remove items comprising about: >
 list2 = [line for line in list2 if not(re.search(r'\%', line))]                     # <remove items comprising % >
-list2 = [re.sub(r'http.?\:/+', '/', line).strip() for line in list2]          # <replace |+http:/+ with / />
-list2 = [re.sub(r'^/?([0-9]+\.)+([0-9]+)?', '', line).strip() for line in list2]       # <remove IP4 addresses (d.)+ />
-list2 = [line for line in list2 if not(re.search(r'\:\:', line))]                   # <remove IP6 addresses :: />
+list2 = [re.sub(r'http.?\:/+', '/', line).strip() for line in list2]                # <replace |+http:/+ with / />
+list2 = [re.sub(r'^/?([0-9]+\.)+([0-9]+)?', '', line).strip() for line in list2]    # <remove IP4 addresses (d.)+ />
+list2 = [line for line in list2 if not(re.search(r'\:+', line))]                    # <remove IP6 addresses :: />
 list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                 # <remove leading :port/ />
 list2 = [re.sub(r'www\.', '', line).strip() for line in list2]                      # <remove www. />
 list2 = [line for line in list2 if not(re.search(r'localhost', line))]              # <remove items containing localhost />
-list2 = [re.sub(r'^.*/wp\-content/uploads.*', '', line) for line in list2]          # <remove items containing /wp-content/uploads/' />
+list2 = [re.sub(r'^.*/wp\-content/uploads/?.*', '', line) for line in list2]        # <remove items containing /wp-content/uploads/' />
 list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
