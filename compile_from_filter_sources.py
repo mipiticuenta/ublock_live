@@ -106,13 +106,14 @@ list2 = [re.sub(r'^[^a-z]+$', '', line) for line in list2]                      
 list2 = [line for line in list2 if not(re.search(r'[,\$]badfilter', line))]         # <remove items comprising $badfilter />
 list2 = [line for line in list2 if not(re.search(r'about\:', line))]                # <remove items comprising about: >
 list2 = [line for line in list2 if not(re.search(r'\%', line))]                     # <remove items comprising % >
-list2 = [re.sub(r'http.?\:/+', '', line).strip() for line in list2]                 # <replace |+http:/+ with / />
+list2 = [re.sub(r'http.?\:/+', '', line) for line in list2]                         # <replace |+http:/+ with / />
 list2 = [re.sub(r'^/?([0-9]+\.)+([0-9]+)?', '', line).strip() for line in list2]    # <remove IP4 addresses (d.)+ />
 list2 = [line for line in list2 if not(re.search(r'\:+', line))]                    # <remove IP6 addresses :: />
-list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                 # <remove leading :port/ />
-list2 = [re.sub(r'www[0-9]*\.', '', line).strip() for line in list2]                # <remove www. />
+list2 = [re.sub(r'^\:[0-9]+/', '', line) for line in list2]                         # <remove leading :port/ />
+list2 = [re.sub(r'www[0-9]*\.', '', line) for line in list2]                        # <remove www. />
 list2 = [line for line in list2 if not(re.search(r'localhost', line))]              # <remove items containing localhost />
 list2 = [re.sub(r'^.*/wp\-content/uploads/?.*', '', line) for line in list2]        # <remove items containing /wp-content/uploads/' />
+list2 = [re.sub(r'(?<=[a-z])\^\*', '/*', line) for line in list2]                   # <replace ^* with / />
 list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
@@ -147,8 +148,8 @@ list2s = (
         [re.sub(r'\$.*', '', line) for line in list2s]                              # <isolate url part/>
         )
 
-list2s = [line.split('|') for line in list2s]                                           # <flatten list'/>
-list2s = [item for line in list2s for item in line if line !=[''] and item != '']       # <flatten list'/>
+list2s = [line.split('|') for line in list2s]                                       # <flatten list'/>
+list2s = [item for line in list2s for item in line if line !=[''] and item != '']   # <flatten list'/>
 
 list2 = sorted(set(list2) | set(list2s))                                            # <join retrieved domains to main list'/>
 list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
@@ -482,16 +483,10 @@ list2.append('/^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)/')                 
 
 # <extract domains from list>
 
-print('\n', 'Listing domain filters: ', end = '')
+print('\n', 'Listing domain filters; ', end = '')
 
 list3 = [line for line in list2 if re.search(r'^[-_\.a-z0-9]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
 list3 = [re.sub('r\$important$', '', line) for line in list3]                       # <remove trailing $important from domains/>
-
-print(
-    '{:,}'.format(len(list3)),
-    'found',
-    '\n'
-    )
 
 # </extract domains from list>
 
