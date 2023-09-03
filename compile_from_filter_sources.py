@@ -81,16 +81,16 @@ print(
 # <transforming loop>
 
 print(' 1/20 : remove leading/trailing/dup spaces ')
-list2 = [re.sub(r' +', ' ', line).strip() for line in list2]                        # <dedup spaces and remove leading/trailing spaces />
-list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
+list2 = [re.sub(r' +', ' ', line).strip() for line in list2]                    # <dedup spaces and remove leading/trailing spaces />
+list2 = [line for line in list2 if len(line) > 1]                               # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print(' 2/20 : remove comments ')
-list2 = [line for line in list2 if line[0] != '{']                                  # <remove {payload...} description />
-list2 = [line for line in list2 if line[0] != '!']                                  # <remove uBO style comments />
-list2 = [line for line in list2 if line[0] != '[']                                  # <remove not uBO style comments [] />
-list2 = [re.sub(r'#{4,}', '', line) for line in list2]                              # <remove not uBO style trailing comments />
-list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
+list2 = [re.sub(r'(^| +)!.*', '', line) for line in list2]                      # <remove uBO style comments />
+list2 = [re.sub(r'(^| +)# .*', '', line) for line in list2]                     # <remove not uBO style comments # />
+list2 = [re.sub(r'^\[.*', '', line) for line in list2]                          # <remove not uBO style comments [] />
+list2 = [re.sub(r'^\{.*', '', line) for line in list2]                          # <remove not uBO style comments {} />
+list2 = [line for line in list2 if len(line) > 1]                               # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print(' 3/20 : keep case for cosmetic filters; apply lower case for the remaining ')
