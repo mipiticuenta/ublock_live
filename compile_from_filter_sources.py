@@ -233,7 +233,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^\.?mp[0-9]\??(?![a-z0-9])', '*', line).strip() for line in list2]        # <replace leading mp* with * >
     list2 = [re.sub(r'^\.?php\??(?![a-z0-9])', '*', line).strip() for line in list2]            # <replace leading php with * >
     list2 = [re.sub(r'^\.?png\??(?![a-z0-9])', '*', line).strip() for line in list2]            # <replace leading png with * >
-    list2 = [re.sub(r'^[/\.]?static\*?[/\.])', '*', line) for line in list2]                    # <replace leading static with * />
+    list2 = [re.sub(r'^[/\.]?static\*?[/\.]', '*', line) for line in list2]                     # <replace leading static with * />
     list2 = [re.sub(r'^\.?tiff\??(?![a-z0-9])', '*', line).strip() for line in list2]           # <replace leading tiff with * >
     list2 = [line for line in list2 if len(line) > 1]                                           # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
