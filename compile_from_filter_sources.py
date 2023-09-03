@@ -35,7 +35,7 @@ print(
 # <get filter url sources from file, dedup and sort>
 
 list1 = [line.strip() for line in open(file1_in_name, encoding='UTF-8')]        # <populate source lists; remove leading/trailing spaces />
-list1 = [re.sub(r'[( +)^]!.*', '', line) for line in list1]                       # <remove comments' />
+list1 = [re.sub(r'(^| +)!.*', '', line) for line in list1]                      # <remove comments' />
 list1 = [line for line in list1 if line.strip() != '']                          # <discard empty lines />
 
 list1 = sorted(list1)
