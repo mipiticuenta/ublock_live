@@ -104,7 +104,7 @@ print(' 4/20 : keep domains from dns and #[] style filters ')
 list2 = [re.sub(r'^0\.0\.0\.0 ', '', line).strip() for line in list2]               # <remove leading   0.0.0.0 (dns style filter) />
 list2 = [re.sub(r'^127\.0\.0\.1 ', '', line).strip() for line in list2]             # <remove leading 127.0.0.1 (dns style filter) />
 list2 = [re.sub(r'^\:\:1 ', '', line).strip() for line in list2]                    # <remove leading ::1 (dns style filter) />
-list2 = (                                                                           # <keep domain from #[] styl filter />
+list2 = (                                                                           # <keep domain from #[] style filter />
     [line[2:-1] for line in list2 if line[0:1] == '#[' and line[-1] == ']'] +
     [line for line in list2 if not(line[0:1] == '#[' and line[-1] == ']')]
     )
@@ -120,18 +120,22 @@ list2 = [line for line in list2 if not(re.search(r'\:\:', line))]               
 list2 = [re.sub(r'^\:[0-9]+/', '', line).strip() for line in list2]                 # <remove leading :port/ />
 list2 = [re.sub(r'www\.', '', line).strip() for line in list2]                      # <remove www. />
 list2 = [line for line in list2 if not(re.search(r'localhost', line))]              # <remove items containing localhost />
-list2 = [re.sub(r'(?<=\w)/wp\-content/uploads/.*', '', line) for line in list2]     # <remove items containing /wp-content/uploads/' />
+list2 = [re.sub(r'^.*/wp\-content/uploads.*', '', line) for line in list2]          # <remove items containing /wp-content/uploads/' />
 list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
-print(' 6/20 : generalize cosmetic filters (*##) ')
-list2 = [re.sub(r'^.*(?=##)', '*', line) for line in list2]                         # <generalize cosmetic filters (*##) />
+print(' 6/20 : generalize cosmetic filters (*##) and exceptions (*#@ *#? *@@) ')
+list2 = [re.sub(r'^.*(?=\#\#)', '*', line) for line in list2]                       # <generalize cosmetic filters (*##) />
+list2 = [re.sub(r'^.*(?=\#\@)', '*', line) for line in list2]                       # <generalize cosmetic filters (*#@) />
+list2 = [re.sub(r'^.*(?=\#\?)', '*', line) for line in list2]                       # <generalize cosmetic filters (*#?) />
+list2 = [re.sub(r'^.*(?=\@\@)', '*', line) for line in list2]                       # <generalize cosmetic filters (*@@) />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print(' 7/20 : remove cosmetic filters (##) and exceptions (@@) except *##:')       # <currently discarded; consider processing (future sprints?)/>
-list2 = [re.sub(r'^\*?##(?!\:).*', '', line) for line in list2]                     # <remove cosmetic filters except ##: />
-list2 = [re.sub(r'^\*?\@\@.*', '', line) for line in list2]                         # <remove exceptions />
-list2 = [re.sub(r'^\*?\#\@.*', '', line) for line in list2]                         # <remove exceptions />
+list2 = [re.sub(r'^\*?\#\#(?!\:).*', '', line) for line in list2]                   # <remove cosmetic filters except ##: />
+list2 = [re.sub(r'^\*?\#\@.*', '', line) for line in list2]                         # <remove #@ exceptions />
+list2 = [re.sub(r'^\*?\#\?.*', '', line) for line in list2]                         # <remove #? exceptions />
+list2 = [re.sub(r'^\*?\@\@.*', '', line) for line in list2]                         # <remove @@ exceptions />
 list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
@@ -142,11 +146,11 @@ list2s = [line for line in list2 if re.search(r'\$.*domain=', line)]            
 list2 = set(list2) - set(list2s)                                                    # <segregate removed filters'/>
 
 list2s = (
-        [re.sub(r',.*', '', re.sub(r'^.*domain=', '', line)) for line in list2s] +      # <isolate domain list part/>
+        [re.sub(r',.*', '', re.sub(r'^.*domain=', '', line)) for line in list2s] +  # <isolate domain list part/>
         [re.sub(r'\$.*', '', line) for line in list2s]                              # <isolate url part/>
         )
 
-list2s = [line.split('|') for line in list2s]                                       # <flatten list'/>
+list2s = [line.split('|') for line in list2s]                                           # <flatten list'/>
 list2s = [item[0] for line in list2s for item in line if line !=[''] and item != '']    # <flatten list'/>
 
 list2 = sorted(set(list2) | set(list2s))                                            # <join retrieved domains to main list'/>
@@ -167,7 +171,8 @@ list2 = set(list2) - set(list2s)                                                
 list2s = [re.sub(r'.*domain=', '', line).strip() for line in list2s]                # <remove leading .*domain=/>
 list2s = [re.sub(r'.*denyallow=', '', line).strip() for line in list2s]             # <remove leading .*denyallow=/>
 list2s = [re.sub(r'\,.*$', '', line).strip() for line in list2s]                    # <remove trailing .*,.*/>
-list2s = [line.split('|') for line in list2s if len(line) > 0]                      # <flatten list'/>
+
+list2s = [line.split('|') for line in list2s if len(line) > 0]                          # <flatten list'/>
 list2s = [item[0] for line in list2s for item in line if line !=[''] and item != '']    # <flatten list'/>
 
 list2 = sorted(set(list2) | set(list2s))                                            # <join retrieved domains to main list'/>
@@ -184,7 +189,7 @@ list2s = [line for line in list2 if re.search(r'\,', line) and not(re.search(r'[
 
 list2 = set(list2) - set(list2s)                                                    # <segregate removed filters'/>
 
-list2s = [line.split(',') for line in list2s]                                       # <flatten list'/>
+list2s = [line.split(',') for line in list2s]                                           # <flatten list'/>
 list2s = [item[0] for line in list2s for item in line if line !=[''] and item != '']    # <flatten list'/>
 
 list2 = sorted(set(list2) | set(list2s))                                            # <join retrieved domains to main list'/>
@@ -536,7 +541,7 @@ print(
     '/',
     '3',
     ';',
-    '{:,}'.format(len(list3) + len(list3r3)),
+    '{:,}'.format(len(list3) + len(list3r + len(list3r3)),
     'domains kept'
     )
 list3r3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3r))) == 0) else '', tqdm.tqdm(list3r3)))
@@ -583,7 +588,7 @@ print(
     'domains kept'
     )
 # <filter() + map() option>
-list3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3_filter[:n]))) == 0) else '', tqdm.tqdm(list3)))
+list3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3_filter))) == 0) else '', tqdm.tqdm(list3)))
 list3 = [line for line in list3 if len(line) > 0]    # <cleanup empty lines/>
 # </filter() + map() option>
 
