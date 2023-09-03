@@ -272,7 +272,7 @@ while n_1 > len(list2):                                                         
 
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
-    print('14/20 : simplify urls and keep just last /* part ')
+    print('14/20 : simplify urls; keep just last /* part ')
     list2 = [re.sub(r'\*+', '*', line).strip() for line in list2]                        # <dedup * />
     list2 = [re.sub(r'\.+', '.', line).strip() for line in list2]                        # <dedup . />
     list2 = [re.sub(r'/+', '/', line).strip() for line in list2]                         # <dedup / />
