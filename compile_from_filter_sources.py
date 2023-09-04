@@ -6,11 +6,11 @@
 
 # </product backlog>
 
-import os                   # <miscellaneous operating system interfaces />
-import re                   # <regular expression operations />
-import requests             # <get files using url />
-import tqdm                 # <progress bar />
-import math                 # <math functions />
+import os                                                                       # < operating system interfaces />
+import re                                                                       # <regular expression operations />
+import requests                                                                 # <get files using url />
+import tqdm                                                                     # <progress bar />
+import math                                                                     # <math functions />
 
 # <settings>
 
@@ -43,8 +43,8 @@ list1 = sorted(list1)
 
 # <dump sources to list>
 
-list2 = set()    # <set()type ensures no elements' duplication/>
-i     = 1        # <counter for uncommented sources/>
+list2 = set()                                                                   # <set()type ensures no elements' duplication />
+i     = 1                                                                       # <counter for uncommented sources />
 
 for line in list1 :
     print(
@@ -54,7 +54,7 @@ for line in list1 :
         len(list1),
         ':',
         line
-        )
+    )
     i += 1
     response = requests.get(line, proxies=proxy_servers)
     if (response.status_code) :
@@ -65,7 +65,7 @@ for line in list1 :
             'cumulated filters'
         )
 
-del(list1)    # <clean up; make sure list1 is not used anymore hereafter/>
+del(list1)                                                                      # <clean up; make sure list1 is not used anymore hereafter/>
 
 # </dump sources to list>
 
@@ -75,13 +75,13 @@ print(
     '\n',
     'Transforming filters',
     '--------------------'
-    )
+)
 
 # <transforming loop>
 
 print(' 1/20 : remove leading/trailing/dup spaces ')
-list2 = [re.sub(r' +', ' ', line).strip() for line in list2]                            # <dedup spaces and remove leading/trailing spaces />
-list2 = [line for line in list2 if len(line) > 1]                                       # <remove items if length < 2 />
+list2 = [re.sub(r' +', ' ', line).strip() for line in list2]                    # <dedup spaces and remove leading/trailing spaces />
+list2 = [line for line in list2 if len(line) > 1]                               # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
 print(' 2/20 : remove comments ')
@@ -94,10 +94,10 @@ list2 = [line for line in list2 if len(line) > 1]                               
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
 print(' 3/20 : keep domains from dns || #[] style filters ')
-list2 = [re.sub(r'^0\.0\.0\.0 ', '', line) for line in list2]                           # <remove leading   0.0.0.0 (dns style filter) />
-list2 = [re.sub(r'^127\.0\.0\.1 ', '', line) for line in list2]                         # <remove leading 127.0.0.1 (dns style filter) />
-list2 = [re.sub(r'^\:\:1 ', '', line) for line in list2]                                # <remove leading ::1 (dns style filter) />
-list2 = [re.sub(r'^\|+', '', line) for line in list2]                                   # <remove leading domain mark (||) />
+list2 = [re.sub(r'^0\.0\.0\.0 ', '', line) for line in list2]                   # <remove leading   0.0.0.0 (dns style filter) />
+list2 = [re.sub(r'^127\.0\.0\.1 ', '', line) for line in list2]                 # <remove leading 127.0.0.1 (dns style filter) />
+list2 = [re.sub(r'^\:\:1 ', '', line) for line in list2]                        # <remove leading ::1 (dns style filter) />
+list2 = [re.sub(r'^\|+', '', line) for line in list2]                           # <remove leading domain mark (||) />
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
 print(' 4/20 : remove items containing % about: $badfilter localhost /wp-content/uploads/; remove http: IP4 IP6 :port/ www')
@@ -107,7 +107,7 @@ list2 = [line for line in list2 if not(re.search(r'about\:', line))]            
 list2 = [line for line in list2 if not(re.search(r'\%', line))]                     # <remove items comprising % >
 list2 = [re.sub(r'http.?\:/+', '', line) for line in list2]                         # <replace http:/+ with / />
 list2 = [re.sub(r'^/?([0-9]+\.)+([0-9]+)?', '', line).strip() for line in list2]    # <remove IP4 addresses (d.)+ />
-list2 = [line for line in list2 if not(re.search(r'\:\:', line))]                  # <remove IP6 addresses :: />
+list2 = [line for line in list2 if not(re.search(r'\:\:', line))]                   # <remove IP6 addresses :: />
 list2 = [re.sub(r'^\:[0-9]+/', '', line) for line in list2]                         # <remove leading :port/ />
 list2 = [re.sub(r'www[0-9]*\.', '', line) for line in list2]                        # <remove www. />
 list2 = [line for line in list2 if not(re.search(r'localhost', line))]              # <remove items containing localhost />
@@ -118,40 +118,40 @@ print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
 print(' 5/20 : keep case for cosmetic filters; apply lower case for the remaining ')
 list2 = (
-        [line         for line in list2 if     re.search(r'[#\\]', line) ] + 
-        [line.lower() for line in list2 if not(re.search(r'[#\\]', line))]          # <lower case for all except cosmetics and regex />
-        )
+    [line         for line in list2 if     re.search(r'[#\\]', line) ] + 
+    [line.lower() for line in list2 if not(re.search(r'[#\\]', line))]      # <lower case for all except cosmetics and regex />
+)
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
 print(' 6/20 : generalize cosmetic filters (*##) and exceptions (*#@ *#? *@@) ')
-list2 = [re.sub(r'^.*(?=\#[\#\?])', '*', line) for line in list2]                   # <generalize cosmetic (*##) (*#?) />
-list2 = [re.sub(r'^.*(?=[\#\@]\@)', '*', line) for line in list2]                   # <generalize exception (*#@) (*@@) />
+list2 = [re.sub(r'^.*(?=\#[\#\?])', '*', line) for line in list2]               # <generalize cosmetic (*##) (*#?) />
+list2 = [re.sub(r'^.*(?=[\#\@]\@)', '*', line) for line in list2]               # <generalize exception (*#@) (*@@) />
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
-print(' 7/20 : remove cosmetic filters (##) and exceptions (@@) except *##:')       # <currently discarded; consider processing (future sprints?)/>
-list2 = [re.sub(r'^\*?\#\#(?!\:).*', '', line) for line in list2]                   # <remove cosmetic filters except ##: />
-list2 = [re.sub(r'^\*?\#\@.*', '', line) for line in list2]                         # <remove #@ exceptions />
-list2 = [re.sub(r'^\*?\#\?.*', '', line) for line in list2]                         # <remove #? exceptions />
-list2 = [re.sub(r'^\*?\@\@.*', '', line) for line in list2]                         # <remove @@ exceptions />
-list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
+print(' 7/20 : remove cosmetic filters (##) and exceptions (@@) except *##:')   # <currently discarded; consider processing (future sprints?)/>
+list2 = [re.sub(r'^\*?\#\#(?!\:).*', '', line) for line in list2]               # <remove cosmetic filters except ##: />
+list2 = [re.sub(r'^\*?\#\@.*', '', line) for line in list2]                     # <remove #@ exceptions />
+list2 = [re.sub(r'^\*?\#\?.*', '', line) for line in list2]                     # <remove #? exceptions />
+list2 = [re.sub(r'^\*?\@\@.*', '', line) for line in list2]                     # <remove @@ exceptions />
+list2 = [line for line in list2 if len(line) > 1]                               # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
 print(' 8/20 : split urls with $ domain= ')
 
-list2s = [line for line in list2 if re.search(r'\$.*domain=', line)]                # <get urls with $ domain= '/>
+list2s = [line for line in list2 if re.search(r'\$.*domain=', line)]            # <get urls with $ domain= '/>
 
-list2 = set(list2) - set(list2s)                                                    # <segregate removed filters'/>
+list2 = set(list2) - set(list2s)                                                # <segregate removed filters'/>
 
 list2s = (
-        [re.sub(r',.*', '', re.sub(r'^.*domain=', '', line)) for line in list2s] +  # <isolate domain list part/>
-        [re.sub(r'\$.*', '', line) for line in list2s]                              # <isolate url part/>
-        )
+    [re.sub(r',.*', '', re.sub(r'^.*domain=', '', line)) for line in list2s] +  # <isolate domain list part/>
+    [re.sub(r'\$.*', '', line) for line in list2s]                              # <isolate url part/>
+)
 
 list2s = [line.split('|') for line in list2s]                                       # <flatten list'/>
 list2s = [item for line in list2s for item in line if line !=[''] and item != '']   # <flatten list'/>
 
-list2 = sorted(set(list2) | set(list2s))                                            # <join retrieved domains to main list'/>
-list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
+list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
+list2 = [line for line in list2 if len(line) > 1]                               # <remove items if length < 2 />
 del(list2s)
 
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
@@ -159,21 +159,21 @@ print('       ', '{:,}'.format(len(list2)), 'filters kept')
 print(' 9/20 : remove domain= denyallow= filters and keep the related domains')
 
 list2s = (
-    [line for line in list2 if re.search(r'.*domain=', line)] +                     # <select *$ filters />
-    [line for line in list2 if re.search(r'.*denyallow=', line)]                    # <select denyallow filters />
-    )
+    [line for line in list2 if re.search(r'.*domain=', line)] +                 # <select *$ filters />
+    [line for line in list2 if re.search(r'.*denyallow=', line)]                # <select denyallow filters />
+)
 
-list2 = set(list2) - set(list2s)                                                    # <segregate selected filters'/>
+list2 = set(list2) - set(list2s)                                                # <segregate selected filters'/>
 
-list2s = [re.sub(r'.*domain=', '', line).strip() for line in list2s]                # <remove leading .*domain=/>
-list2s = [re.sub(r'.*denyallow=', '', line).strip() for line in list2s]             # <remove leading .*denyallow=/>
-list2s = [re.sub(r'\,.*$', '', line).strip() for line in list2s]                    # <remove trailing .*,.*/>
+list2s = [re.sub(r'.*domain=', '', line).strip() for line in list2s]            # <remove leading .*domain=/>
+list2s = [re.sub(r'.*denyallow=', '', line).strip() for line in list2s]         # <remove leading .*denyallow=/>
+list2s = [re.sub(r'\,.*$', '', line).strip() for line in list2s]                # <remove trailing .*,.*/>
 
 list2s = [line.split('|') for line in list2s if len(line) > 0]                      # <flatten list'/>
 list2s = [item for line in list2s for item in line if line !=[''] and item != '']   # <flatten list'/>
 
-list2 = sorted(set(list2) | set(list2s))                                            # <join retrieved domains to main list'/>
-list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
+list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
+list2 = [line for line in list2 if len(line) > 1]                               # <remove items if length < 2 />
 del(list2s)
 
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
@@ -184,12 +184,12 @@ list2 = [re.sub(r'^,', '', line).strip() for line in list2]                     
 list2 = [re.sub(r',$', '', line).strip() for line in list2]                                        # <remove trailing , />
 list2s = [line for line in list2 if re.search(r'\,', line) and not(re.search(r'[\$\&]', line))]    # <remove , separated domains />
 
-list2 = set(list2) - set(list2s)                                                    # <segregate removed filters'/>
+list2 = set(list2) - set(list2s)                                                # <segregate removed filters'/>
 
 list2s = [line.split(',') for line in list2s]                                       # <flatten list'/>
 list2s = [item for line in list2s for item in line if line !=[''] and item != '']   # <flatten list'/>
 
-list2 = sorted(set(list2) | set(list2s))                                            # <join retrieved domains to main list'/>
+list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
 del(list2s)
 
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
@@ -197,7 +197,7 @@ print('       ', '{:,}'.format(len(list2)), 'filters kept')
 n_1 = len(list2) + 1
 i   = 0
 
-while n_1 > len(list2):                                                             # <recursive loops up to no further length reduction for list2 />
+while n_1 > len(list2):                                                         # <recursive loops up to no further length reduction for list2 />
 
     i   = i + 1
     n_1 = len(list2)
@@ -206,7 +206,7 @@ while n_1 > len(list2):                                                         
         'loop ', i, '\n',
         '-------',
         sep = ''
-        )
+    )
 
     print('11/20 : clean up leading symbols numbers asset asp cgi cfm gif htm image jpg js mp4 php png static tiff')
     list2 = [re.sub(r'^[-_\:\=\+\~\|\*\!0-9]+[/\.]', '', line) for line in list2]               # <remove leading symbols and numbers preceding / ./>
@@ -250,7 +250,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'\.js(?![a-z0-9]).*$', '.js', line) for line in list2]             # <clean up trailing .js />
     list2 = [re.sub(r'\.php\??$', '.', line) for line in list2]                         # <remove trailing .php?/>
     list2 = [re.sub(r'\.png\??$', '.', line) for line in list2]                         # <remove trailing .png?/>
-    list2 = [re.sub(r'(?<!\*)\$.*$(?<!/)(?<!important)', '', line) for line in list2]     # <remove specific trailing $ filters except *$ or ending with important />
+    list2 = [re.sub(r'(?<!\*)\$.*$(?<!/)(?<!important)', '', line) for line in list2]   # <remove specific trailing $ filters except *$ or ending with important />
     list2 = [re.sub(r'\??\*\=.*(^/)$', '', line).strip() for line in list2]             # <remove trailing ?*=... />
     list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters kept')
@@ -259,15 +259,15 @@ while n_1 > len(list2):                                                         
 
     list2s = [line for line in list2 if re.search(r'^[-_\.a-z0-9]+\.[a-z]+/.*', line)]   # <remove domains with url'/>
 
-    list2 = set(list2) - set(list2s)                                                     # <segregate removed filters'/>
+    list2 = set(list2) - set(list2s)                                            # <segregate removed filters'/>
 
     list2s = (
-        [re.sub(r'^[-_\.a-z0-9]+\.[a-z]+/', '/', line) for line in list2s] +            # <isolate url part/>
-        [re.sub(r'(?<=\w)/.*', '', line) for line in list2s]                            # <isolate domains part/>
-        )
+        [re.sub(r'^[-_\.a-z0-9]+\.[a-z]+/', '/', line) for line in list2s] +    # <isolate url part/>
+        [re.sub(r'(?<=\w)/.*', '', line) for line in list2s]                    # <isolate domains part/>
+    )
 
-    list2 = sorted(set(list2) | set(list2s))                                            # <join retrieved domains to main list'/>
-    list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
+    list2 = sorted(set(list2) | set(list2s))                                    # <join retrieved domains to main list'/>
+    list2 = [line for line in list2 if len(line) > 1]                           # <remove items if length < 2 />
     del(list2s)
 
     print('       ', '{:,}'.format(len(list2)), 'filters kept')
@@ -296,7 +296,7 @@ while n_1 > len(list2):                                                         
 
 print('15/20 : fix /@/ url filters adding trailing * ')
 
-list2 = [re.sub(r'(/[-_\*a-z0-9]+)/$', r'\1/*', line) for line in list2]            # < fix /word/ ending url filters adding trailing * />
+list2 = [re.sub(r'(/[-_\*a-z0-9]+)/$', r'\1/*', line) for line in list2]        # < fix /word/ ending url filters adding trailing * />
 
 #list2 = (
 #    [re.sub(r'/$', '/*', line) for line in list2 if re.search(r'/[-_\*a-z0-9]+/$', line)] +    # < fix /word/ ending url filters adding trailing * />
@@ -309,35 +309,35 @@ print('16/20 : split space separated domains ')
 
 list2s = [line for line in list2 if re.search(r' ', line) and not(re.search(r'[\$\&\#]', line))]    # <remove space separated domains />
 
-list2 = set(list2) - set(list2s)                                                    # <segregate removed filters'/>
+list2 = set(list2) - set(list2s)                                                # <segregate removed filters'/>
 
 list2s = [line.split(' ') for line in list2s]                                       # <flatten list'/>
 list2s = [item for line in list2s for item in line if line !=[''] and item != '']   # <flatten list'/>
 
-list2 = sorted(set(list2) | set(list2s))                                            # <join retrieved domains to main list'/>
+list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
 del(list2s)
 
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
 print('17/20 : remove lines leaded by ! # + & ? ^ : ; @ and @.exe @.gif @.jpg @.png @.rar @.zip')
-list2 = [re.sub(r'^\|\|', '', line) for line in list2]                              # <remove leading || />
-list2 = [re.sub(r'^\!.*', '', line) for line in list2]                              # <remove ! leaded lines />
-list2 = [re.sub(r'^#.*', '', line) for line in list2]                               # <remove # leaded lines />
-list2 = [re.sub(r'^[/\*]?\+.*', '', line) for line in list2]                        # <remove + leaded lines />
-list2 = [re.sub(r'^\*?\&.*', '', line) for line in list2]                           # <remove & leaded lines />
-list2 = [re.sub(r'^\*?\?.*', '', line) for line in list2]                           # <remove ? leaded lines />
-list2 = [re.sub(r'^\*?\^.*', '', line) for line in list2]                           # <remove ^ leaded lines />
-list2 = [re.sub(r'^\*?\:.*', '', line) for line in list2]                           # <remove : leaded lines />
-list2 = [re.sub(r'^\*?\;.*', '', line) for line in list2]                           # <remove ; leaded lines />
-list2 = [re.sub(r'^[/\*]?\@.*', '', line) for line in list2]                        # <remove @ leaded lines />
-list2 = [re.sub(r'^.*\.css$', '', line) for line in list2]                          # <remove @.css filters />
-list2 = [re.sub(r'^.*\.exe$', '', line) for line in list2]                          # <remove @.exe filters />
-list2 = [re.sub(r'^.*\.gif$', '', line) for line in list2]                          # <remove @.gif filters />
-list2 = [re.sub(r'^.*\.jpe?g$', '', line) for line in list2]                        # <remove @.jp(e)g filters />
-list2 = [re.sub(r'^.*\.png$', '', line) for line in list2]                          # <remove @.png filters />
-list2 = [re.sub(r'^.*\.rar$', '', line) for line in list2]                          # <remove @.rar filters />
-list2 = [re.sub(r'^.*\.zip$', '', line) for line in list2]                          # <remove @.zip filters />
-list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
+list2 = [re.sub(r'^\|\|', '', line) for line in list2]                          # <remove leading || />
+list2 = [re.sub(r'^\!.*', '', line) for line in list2]                          # <remove ! leaded lines />
+list2 = [re.sub(r'^#.*', '', line) for line in list2]                           # <remove # leaded lines />
+list2 = [re.sub(r'^[/\*]?\+.*', '', line) for line in list2]                    # <remove + leaded lines />
+list2 = [re.sub(r'^\*?\&.*', '', line) for line in list2]                       # <remove & leaded lines />
+list2 = [re.sub(r'^\*?\?.*', '', line) for line in list2]                       # <remove ? leaded lines />
+list2 = [re.sub(r'^\*?\^.*', '', line) for line in list2]                       # <remove ^ leaded lines />
+list2 = [re.sub(r'^\*?\:.*', '', line) for line in list2]                       # <remove : leaded lines />
+list2 = [re.sub(r'^\*?\;.*', '', line) for line in list2]                       # <remove ; leaded lines />
+list2 = [re.sub(r'^[/\*]?\@.*', '', line) for line in list2]                    # <remove @ leaded lines />
+list2 = [re.sub(r'^.*\.css$', '', line) for line in list2]                      # <remove @.css filters />
+list2 = [re.sub(r'^.*\.exe$', '', line) for line in list2]                      # <remove @.exe filters />
+list2 = [re.sub(r'^.*\.gif$', '', line) for line in list2]                      # <remove @.gif filters />
+list2 = [re.sub(r'^.*\.jpe?g$', '', line) for line in list2]                    # <remove @.jp(e)g filters />
+list2 = [re.sub(r'^.*\.png$', '', line) for line in list2]                      # <remove @.png filters />
+list2 = [re.sub(r'^.*\.rar$', '', line) for line in list2]                      # <remove @.rar filters />
+list2 = [re.sub(r'^.*\.zip$', '', line) for line in list2]                      # <remove @.zip filters />
+list2 = [line for line in list2 if len(line) > 1]                               # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
 print('18/20 : arrange *$ filters; keep beacon csp inline-font inline-script object other ping popunder script websocket xhr ')
@@ -506,7 +506,7 @@ list2 = [line for line in list2 if len(line) > 1]                               
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
 print('20/20 : adding #.@(.@) filter to block numerical domains and critical exceptions')
-list2.append('/^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/')                    # <add filter to block [-_/\.0-9]+\.[a-z]+ domains />
+list2.append('/^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/')                # <add filter to block [-_/\.0-9]+\.[a-z]+ domains />
 list2.append('@@||google.com^$script,1p')
 list2.append('@@||gstatic.com^$script,domain=google.com')
 list2.append('@@||google.com^$inline-script,1p')
@@ -518,7 +518,7 @@ list2.append('@@||google.com^$inline-script,1p')
 print('\n', 'Listing domain filters; ', end = '', sep = '')
 
 list3 = [line for line in list2 if re.search(r'^[-_\.a-z0-9]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
-list3 = [re.sub('r\$important$', '', line) for line in list3]                       # <remove trailing $important from domains/>
+list3 = [re.sub('r\$important$', '', line) for line in list3]                   # <remove trailing $important from domains/>
 
 # </extract domains from list>
 
@@ -526,8 +526,8 @@ list3 = [re.sub('r\$important$', '', line) for line in list3]                   
 
 print('removing #.@(.@) (numerical domain) filters: ', end = '')
 
-list3 = [line for line in list3 if not(re.search(r'^.*\.js$', line))]               # <remove @.js from domains list />
-list2 = set(list2) - set(list3)                                                     # <only domains part are processed in this section; @.js are kept in list2 />
+list3 = [line for line in list3 if not(re.search(r'^.*\.js$', line))]           # <remove @.js from domains list />
+list2 = set(list2) - set(list3)                                                 # <only domains part are processed in this section; @.js are kept in list2 />
 
 list3 = [line for line in list3 if not(re.search(r'^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?$', line))]    # <remove #.@(.@) numerical domains/>
 list3 = [line for line in list3 if not(re.search(r'^(com|edu|net|org|[a-z]{2})\.(com|edu|net|org|[a-z]{2})$', line))]   # <remove ^(com|edu|net|org|[a-z]{2})\.(com|edu|net|org|[a-z]{2})$ root domains/>
@@ -546,18 +546,18 @@ print(
     'Domains deflating started; this operation could take long time, please wait', '\n',
     '---------------------------------------------------------------------------',
     sep = ''
-    )
+)
 
-list3r = [line for line in list3 if re.search(r'^[-_a-z0-9]+\.[a-z]+$', line)]      # <@.@ domains are elemental items/>
+list3r = [line for line in list3 if re.search(r'^[-_a-z0-9]+\.[a-z]+$', line)]  # <get @.@ domains />
 
 print(
     '{:,}'.format(len(list3r)),
     'elemental @.@ domains found; excluded from recursive domain deflating'
-    )
+)
 
 list3r3 = [line for line in list3 if re.search(r'^[-_a-z0-9]+\.[a-z0-9][-_a-z0-9]+\.[a-z]+$', line)]    # <@.@.@ domains items/>
-list3   = set(list3) - set(list3r) - set(list3r3)                                   # <elemental domains removed for faster size reduction, and added to final result/>
-list3   = sorted(list3, key = lambda x: -len(x))                                    # <sort by decreasing length for faster size reduction/>
+list3   = set(list3) - set(list3r) - set(list3r3)                               # < @.@ and @.@.@ domains removed for faster deflation; then added to final result />
+list3   = sorted(list3, key = lambda x: -len(x))                                # <sort by decreasing length for faster size reduction/>
 
 print(
     'recursive domain deflating (@.@.@ vs @.@)',
@@ -567,11 +567,11 @@ print(
     ';',
     '{:,}'.format(len(list3) + len(list3r) + len(list3r3)),
     'domains kept'
-    )
+)
 list3r3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3r))) == 0) else '', tqdm.tqdm(list3r3)))
-list3r3 = [line for line in list3r3 if len(line) > 0]                               # <cleanup empty lines/>
-list3r  = sorted(set(list3r) | set(list3r3))                                        # <compile deduplicated domains up to current stage/>
-del(list3r3)    # <clean up; make sure list3r3 is not used anymore hereafter/>
+list3r3 = [line for line in list3r3 if len(line) > 0]                           # <cleanup empty lines/>
+list3r  = sorted(set(list3r) | set(list3r3))                                    # <compile deflated domains up to current stage/>
+del(list3r3)                                                                    # <clean up; make sure list3r3 is not used anymore hereafter/>
 
 print(
     'recursive domain deflating (@.@.@.@+ vs @.@.@)',
@@ -581,11 +581,11 @@ print(
     ';',
     '{:,}'.format(len(list3) + len(list3r)),
     'domains kept'
-    )
+)
 list3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3r))) == 0) else '', tqdm.tqdm(list3)))
 list3 = [line for line in list3 if len(line) > 0]                               # <cleanup empty lines/>
-list3 = sorted(set(list3r) | set(list3))                                        # <compile deduplicated domains up to current stage/>
-del(list3r)    # <clean up; make sure list3r is not used anymore hereafter/>
+list3 = sorted(set(list3r) | set(list3))                                        # <compile deflated domains up to current stage/>
+del(list3r)                                                                     # <clean up; make sure list3r is not used anymore hereafter/>
 
 #list3_filter = list3
 #print(
@@ -611,19 +611,19 @@ print(
     '{:,}'.format(len(list3)),
     'domains kept after deflating',
     '\n'
-    )
-list2 = list(map(lambda line: line if (line[1:] not in list3) else '', tqdm.tqdm(list2)))    # <remove urls redundant with domains/>
-list2 = [line for line in list2 if len(line) > 0]                                   # <cleanup empty lines/>
+)
+list2 = list(map(lambda line: line if (line[1:] not in list3) else '', tqdm.tqdm(list2)))   # <remove urls redundant with domains/>
+list2 = [line for line in list2 if len(line) > 0]                               # <cleanup empty lines/>
 
-list2 = sorted(set(list2) | set(list3))                                             # <rebuild full list with elemetal domains and shrinked domains part/>
-del(list3)    # <clean up; make sure list3 is not used anymore hereafter/>
+list2 = sorted(set(list2) | set(list3))                                         # <rebuild full list with elemetal domains and shrinked domains part/>
+del(list3)                                                                      # <clean up; make sure list3 is not used anymore hereafter/>
 
 print(
     '\n',
     '{:,}'.format(len(list2)),
     'lines remaining after compilation',
     '\n'
-    )
+)
 
 # </remove redundant domains from list>
 
@@ -641,7 +641,7 @@ print(
     'Backup saved:',
     file2_out_name + '_old',
     '\n'
-    )
+)
 
 # </save a backup renamed *_old; overwrite if exists>
 
@@ -660,7 +660,7 @@ file2_out.write(
     '! class css selector     : ##.\n' +
     '! id css selector        : ###\n' +
     '!! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'
-    )
+)
 
 file2_out.writelines(line + '\n' for line in list2)
 file2_out.close()
@@ -668,7 +668,7 @@ file2_out.close()
 print(
     'Results saved to textfile <' + file2_out_name + '>',
     '\n'
-    )
+)
 
 # </write output>
 
