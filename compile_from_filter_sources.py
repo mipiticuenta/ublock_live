@@ -44,7 +44,7 @@ list1 = sorted(list1)
 
 # <dump sources to list>
 
-list2 = set()    # <populating list2 as set type ensures no duplication/>
+list2 = set()    # <set()type ensures no elements' duplication/>
 i     = 1        # <counter for uncommented sources/>
 
 for line in list1 :
@@ -209,7 +209,7 @@ while n_1 > len(list2):                                                         
         sep = ''
         )
 
-    print('11/20 : clean up leading symbols numbers asset asp cgi cfm gif htm http image jpg js mp4 php png static tiff www')
+    print('11/20 : clean up leading symbols numbers asset asp cgi cfm gif htm image jpg js mp4 php png static tiff')
     list2 = [re.sub(r'^[-_\:\=\+\~\|\*\!0-9]+[/\.]', '', line) for line in list2]               # <remove leading symbols and numbers preceding / ./>
     list2 = [re.sub(r'^[-_\:\=\+\~\|\!0-9]+(?=\$)', '', line) for line in list2]                # <remove leading symbols and numbers preceding $ />
     list2 = [re.sub(r'^[/\.]?[-_a-z0-9\*](?=[/\.])', '', line).strip() for line in list2]       # <remove leading single -_a-z0-9\* preceding / . />
@@ -289,6 +289,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[-_/\.a-z0-9]+(?=/[-_\.a-z0-9]+$)', '', line) for line in list2]  # <simplify urls keeping last /* part />
     list2 = [re.sub(r'^.*/\*/', '/', line).strip() for line in list2]                    # <replace any url preceded by /*/ (included) with / />
     list2 = [re.sub(r'^[-_/\.a-z0-9]*(\*[-_/\.a-z0-9]*)+$(?<!/\*)', '', line).strip() for line in list2]    # <remove url filters using * wildcard />
+    list2 = [re.sub(r'^[-_/\.a-z0-9]*(\*[-_/\.a-z0-9]*)+/\*$', '', line).strip() for line in list2]         # <remove //* url filters using * wildcard />
     list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
@@ -412,12 +413,14 @@ list2 = [re.sub(r'^[_\W]?(up)?loads?[_\W]?\*?$', '', line) for line in list2]   
 list2 = [re.sub(r'^[_\W]?login[_\W]?\*?$', '', line) for line in list2]             # <remove spurious login filter />
 list2 = [re.sub(r'^[_\W]?logos?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious logo(s) filter />
 list2 = [re.sub(r'^[_\W]?libs?[_\W]?\*?$', '', line) for line in list2]             # <remove spurious lib filter />
+list2 = [re.sub(r'^[_\W]?links?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious link(s) filter />
 list2 = [re.sub(r'^[_\W]?linkedin[_\W]?\*?$', '', line) for line in list2]          # <remove spurious linkedin filter />
 list2 = [re.sub(r'^[_\W]?main[_\W]?\*?$', '', line) for line in list2]              # <remove spurious main filter />
 list2 = [re.sub(r'^[_\W]?master[_\W]?\*?$', '', line) for line in list2]            # <remove spurious master filter />
 list2 = [re.sub(r'^[_\W]?menu[_\W]?\*?$', '', line) for line in list2]              # <remove spurious menu filter />
 list2 = [re.sub(r'^[_\W]?meteoblue[_\W]?\*?$', '', line) for line in list2]         # <remove spurious meteoblue filter />
 list2 = [re.sub(r'^[_\W]?microsoft[_\W]?\*?$', '', line) for line in list2]         # <remove spurious microsoft filter />
+list2 = [re.sub(r'^[_\W]?misc[_\W]?\*?$', '', line) for line in list2]              # <remove spurious misc filter />
 list2 = [re.sub(r'^[_\W]?mobile[_\W]?\*?$', '', line) for line in list2]            # <remove spurious mobile filter />
 list2 = [re.sub(r'^[_\W]?modules?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious module(s) filter />
 list2 = [re.sub(r'^[_\W]?mp[0-9[_\W]?\*?$', '', line) for line in list2]            # <remove spurious mpx filter />
@@ -445,7 +448,7 @@ list2 = [re.sub(r'^[_\W]?thumb[_\W]?\*?$', '', line) for line in list2]         
 list2 = [re.sub(r'^[_\W]?tr[_\W]?\*?$', '', line) for line in list2]                # <remove spurious tr filter />
 list2 = [re.sub(r'^[_\W]?txt[_\W]?\*?$', '', line) for line in list2]               # <remove spurious txt filter />
 list2 = [re.sub(r'^[_\W]?twitter[_\W]?\*?$', '', line) for line in list2]           # <remove spurious twitter filter />
-list2 = [re.sub(r'^[_\W]?uploads[_\W]?\*?$', '', line) for line in list2]           # <remove spurious uploads filter />
+list2 = [re.sub(r'^[_\W]?user[_\W]?\*?$', '', line) for line in list2]              # <remove spurious user filter />
 list2 = [re.sub(r'^[_\W]?video[_\W]?\*?$', '', line) for line in list2]             # <remove spurious video filter />
 list2 = [re.sub(r'^[_\W]?view[_\W]?\*?$', '', line) for line in list2]              # <remove spurious view filter />
 list2 = [re.sub(r'^[_\W]?web(site)?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious web(site) filter />
@@ -644,6 +647,20 @@ print(
 # <write output>
 
 file2_out = open(file2_out_name, 'w')
+
+file2_out.write(
+    '!  description: personal filters for uBO\n' +
+    '!  expires: 1 day\n' +
+    '!  homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/' + file2_out_name + '\n' +
+    '!  title:' + file2_out_name + '\n' +
+    '! #============================================================================================\n' +)
+    '! *$popup,3p ! impedes ctrl&click open in another tab\n' +
+    '! attribute css selector : ##[]\n' +
+    '! class css selector     : ##.\n' +
+    '! id css selector        : ###\n' +
+    '!! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'
+    )
+
 file2_out.writelines(line + '\n' for line in list2)
 file2_out.close()
 

@@ -83,10 +83,10 @@ list1 = (
 
 # <add headers >
 
-list1.append('!  description: personal filters for ublock')
+list1.append('!  description: personal filters for uBO')
 list1.append('!  expires: 1 day')
-list1.append('!  homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/unified_block_list')
-list1.append('!  title: unified block list')
+list1.append('!  homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/' + file1_in_name)
+list1.append('!  title:' + file1_in_name)
 list1.append('! #============================================================================================')
 list1.append('! *$image,redirect-rule=1x1.gif')
 list1.append('! *$popup,3p ! impedes ctrl&click open in another tab')
