@@ -364,6 +364,7 @@ list2 = [re.sub(r'^\*\$\~?xmlhttprequest.*', '', line) for line in list2]       
 list2 = [re.sub(r'^\*\$important.*', '', line) for line in list2]                           # <remove *$important filters />
 list2 = [re.sub(r'^\*\$.*\.js$', '', line) for line in list2]                               # <remove *$...js filters />
 list2 = [re.sub(r'^/main\.js$', '', line) for line in list2]                                # <remove /main.js filter />
+list2 = [re.sub(r'^\.min\.js$', '', line) for line in list2]                                # <remove .min.js filter />
 list2 = [line for line in list2 if len(line) > 1]                                           # <remove items if length < 2 />
 
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
