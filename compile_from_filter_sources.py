@@ -653,7 +653,7 @@ file2_out.write(
     '!  expires: 1 day\n' +
     '!  homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/' + file2_out_name + '\n' +
     '!  title:' + file2_out_name + '\n' +
-    '! #============================================================================================\n' +)
+    '! #============================================================================================\n' +
     '! *$popup,3p ! impedes ctrl&click open in another tab\n' +
     '! attribute css selector : ##[]\n' +
     '! class css selector     : ##.\n' +
