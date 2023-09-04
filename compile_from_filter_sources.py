@@ -250,7 +250,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'\.js(?![a-z0-9]).*$', '.js', line) for line in list2]             # <clean up trailing .js />
     list2 = [re.sub(r'\.php\??$', '.', line) for line in list2]                         # <remove trailing .php?/>
     list2 = [re.sub(r'\.png\??$', '.', line) for line in list2]                         # <remove trailing .png?/>
-    list2 = [re.sub(r'(?<!\*)\$.*$(?<!/)(?<!important)', '', line) for line in list2]   # <remove specific trailing $ filters except *$ or ending with important />
+    list2 = [re.sub(r'\$(?<!\*).*$(?<!/)(?<!important)', '', line) for line in list2]   # <remove specific trailing $ filters except *$ or ending with important />
     list2 = [re.sub(r'\??\*\=.*(^/)$', '', line).strip() for line in list2]             # <remove trailing ?*=... />
     list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters kept')
@@ -290,7 +290,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^.*/\*/', '/', line).strip() for line in list2]                    # <replace any url preceded by /*/ (included) with / />
     list2 = [re.sub(r'^[-_/\.a-z0-9]*(\*[-_/\.a-z0-9]*)+$(?<!/\*)', '', line).strip() for line in list2]    # <remove url filters using * wildcard />
     list2 = [re.sub(r'^[-_/\.a-z0-9]*(\*[-_/\.a-z0-9]*)+/\*$', '', line).strip() for line in list2]         # <remove //* url filters using * wildcard />
-    list2 = [re.sub(r'^\.(?=[a-z]*\.(com|edu|net|org))', '', line).strip() for line in list2]                   # <remove leading . preceded by domain com edu net org />
+    list2 = [re.sub(r'^\.(?=[a-z]*\.(com|edu|net|org))', '', line).strip() for line in list2]               # <remove leading . preceded by domain com edu net org />
     list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
@@ -370,6 +370,7 @@ list2 = [line for line in list2 if len(line) > 1]                               
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
 print('19/20 : preserve key domains and urls (google.com , etc) from blocking ')
+list2 = [re.sub(r'^[_\W]?agent[_\W]?\*?$', '', line) for line in list2]             # <remove spurious agent filter />
 list2 = [re.sub(r'^[_\W]?ajax[_\W]?\*?$', '', line) for line in list2]              # <remove spurious ajax filter />
 list2 = [re.sub(r'^[_\W]?amazon[_\W]?\*?$', '', line) for line in list2]            # <remove spurious amazon filter />
 list2 = [re.sub(r'^[_\W]?api[_\W]?\*?$', '', line) for line in list2]               # <remove spurious api filter />
@@ -379,12 +380,15 @@ list2 = [re.sub(r'^[_\W]?assets?[_\W]?\*?$', '', line) for line in list2]       
 list2 = [re.sub(r'^[_\W]?background[_\W]?\*?$', '', line) for line in list2]        # <remove spurious background filter />
 list2 = [re.sub(r'^[_\W]?base[_\W]?\*?$', '', line) for line in list2]              # <remove spurious base filter />
 list2 = [re.sub(r'^[_\W]?bbc[_\W]?\*?$', '', line) for line in list2]               # <remove spurious bbc filter />
+list2 = [re.sub(r'^[_\W]?blocks?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious block(s) filter />
+list2 = [re.sub(r'^[_\W]?box[_\W]?\*?$', '', line) for line in list2]               # <remove spurious box filter />
 list2 = [re.sub(r'^[_\W]?brand(ing)?[_\W]?\*?$', '', line) for line in list2]       # <remove spurious brand(ing) filter />
 list2 = [re.sub(r'^[_\W]?bundle[_\W]?\*?$', '', line) for line in list2]            # <remove spurious bundle filter />
 list2 = [re.sub(r'^[_\W]?buttons?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious buttons(s) filter />
 list2 = [re.sub(r'^[_\W]?cache[_\W]?\*?$', '', line) for line in list2]             # <remove spurious cache filter />
 list2 = [re.sub(r'^[_\W]?client[_\W]?\*?$', '', line) for line in list2]            # <remove spurious client filter />
 list2 = [re.sub(r'^[_\W]?code[_\W]?\*?$', '', line) for line in list2]              # <remove spurious code filter />
+list2 = [re.sub(r'^[_\W]?content[_\W]?\*?$', '', line) for line in list2]           # <remove spurious content filter />
 list2 = [re.sub(r'^[_\W]?core[_\W]?\*?$', '', line) for line in list2]              # <remove spurious core filter />
 list2 = [re.sub(r'^[_\W]?common[_\W]?\*?$', '', line) for line in list2]            # <remove spurious common filter />
 list2 = [re.sub(r'^[_\W]?css[_\W]?\*?$', '', line) for line in list2]               # <remove spurious css filter />
@@ -399,9 +403,11 @@ list2 = [re.sub(r'^[_\W]?extras?[_\W]?\*?$', '', line) for line in list2]       
 list2 = [re.sub(r'^[_\W]?file[_\W]?\*?$', '', line) for line in list2]              # <remove spurious file filter />
 list2 = [re.sub(r'^[_\W]?flipboard[_\W]?\*?$', '', line) for line in list2]         # <remove spurious flipboard filter />
 list2 = [re.sub(r'^[_\W]?footer[_\W]?\*?$', '', line) for line in list2]            # <remove spurious footer filter />
+list2 = [re.sub(r'^[_\W]?foto[_\W]?\*?$', '', line) for line in list2]              # <remove spurious foto filter />
 list2 = [re.sub(r'^[_\W]?frame[_\W]?\*?$', '', line) for line in list2]             # <remove spurious frame filter />
 list2 = [re.sub(r'^[_\W]?front(end)?[_\W]?\*?$', '', line) for line in list2]       # <remove spurious front(end) filter />
 list2 = [re.sub(r'^[_\W]?generic[_\W]?\*?$', '', line) for line in list2]           # <remove spurious generic filter />
+list2 = [re.sub(r'^[_\W]?global[_\W]?\*?$', '', line) for line in list2]            # <remove spurious global filter />
 list2 = [re.sub(r'^[_\W]?go[_\W]?\*?$', '', line) for line in list2]                # <remove spurious go filter />
 list2 = [re.sub(r'^[_\W]?google[_\W]?\*?$', '', line) for line in list2]            # <remove spurious google filter />
 list2 = [re.sub(r'^[_\W]?head(er)?[_\W]?\*?$', '', line) for line in list2]         # <remove spurious head(er) filter />
@@ -435,9 +441,11 @@ list2 = [re.sub(r'^[_\W]?mp[0-9[_\W]?\*?$', '', line) for line in list2]        
 list2 = [re.sub(r'^[_\W]?net[_\W]?\*?$', '', line) for line in list2]               # <remove spurious net filter />
 list2 = [re.sub(r'^[_\W]?news?[_\W]?\*?$', '', line) for line in list2]             # <remove spurious new(s) filter />
 list2 = [re.sub(r'^[_\W]?org[_\W]?\*?$', '', line) for line in list2]               # <remove spurious org filter />
+list2 = [re.sub(r'^[_\W]?original[_\W]?\*?$', '', line) for line in list2]          # <remove spurious original filter />
 list2 = [re.sub(r'^[_\W]?pages?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious web filter />
-list2 = [re.sub(r'^[_\W]?player[_\W]?\*?$', '', line) for line in list2]            # <remove spurious player filter />
 list2 = [re.sub(r'^[_\W]?pics?[_\W]?\*?$', '', line) for line in list2]             # <remove spurious pic filter />
+list2 = [re.sub(r'^[_\W]?player[_\W]?\*?$', '', line) for line in list2]            # <remove spurious player filter />
+list2 = [re.sub(r'^[_\W]?price[_\W]?\*?$', '', line) for line in list2]             # <remove spurious price filter />
 list2 = [re.sub(r'^[_\W]?(dis)?play[_\W]?\*?$', '', line) for line in list2]        # <remove spurious (dis)play filter />
 list2 = [re.sub(r'^[_\W]?plugins??[_\W]?\*?$', '', line) for line in list2]         # <remove spurious plugin(s) filter />
 list2 = [re.sub(r'^[_\W]?png[_\W]?\*?$', '', line) for line in list2]               # <remove spurious png filter />
@@ -458,6 +466,7 @@ list2 = [re.sub(r'^[_\W]?tr[_\W]?\*?$', '', line) for line in list2]            
 list2 = [re.sub(r'^[_\W]?txt[_\W]?\*?$', '', line) for line in list2]               # <remove spurious txt filter />
 list2 = [re.sub(r'^[_\W]?twitter[_\W]?\*?$', '', line) for line in list2]           # <remove spurious twitter filter />
 list2 = [re.sub(r'^[_\W]?user[_\W]?\*?$', '', line) for line in list2]              # <remove spurious user filter />
+list2 = [re.sub(r'^[_\W]?vendors?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious vendor(s) filter />
 list2 = [re.sub(r'^[_\W]?video[_\W]?\*?$', '', line) for line in list2]             # <remove spurious video filter />
 list2 = [re.sub(r'^[_\W]?view[_\W]?\*?$', '', line) for line in list2]              # <remove spurious view filter />
 list2 = [re.sub(r'^[_\W]?web(site)?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious web(site) filter />
