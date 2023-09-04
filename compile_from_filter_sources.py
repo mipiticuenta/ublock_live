@@ -285,7 +285,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[_\W]?p?[^x]?[_\W]?\*?$', '', line) for line in list2]            # <remove 2 ax pd sequence filter />
     list2 = [re.sub(r'^[_\W]?[^a]?d?[_\W]?\*?$', '', line) for line in list2]            # <remove 2 ax pd sequence filter />
     list2 = [re.sub(r'^[_\W]?[^p]?x?\*?$', '', line) for line in list2]                  # <remove 2 ax pd sequence filter />
-    list2 = [re.sub(r'^[^a-z]+x[^a-z]+[/\.]', '', line) for line in list2]               # <remove leading [^a-z]+x[^a-z]+ combinations />
+    list2 = [re.sub(r'^[^a-z]+x[^a-z]+[/\.](?!(com|net))', '', line) for line in list2]  # <remove leading [^a-z]+x[^a-z]+ combinations />
     list2 = [re.sub(r'^[-_\.a-z0-9/]+(?=/[-_\.a-z0-9]+$)', '', line) for line in list2]  # <simplify urls keeping last /* part />
     list2 = [re.sub(r'^.*/\*/', '/', line).strip() for line in list2]                    # <replace any url preceded by /*/ (included) with / />
     list2 = [re.sub(r'^[-_/\.a-z0-9]*(\*[-_/\.a-z0-9]*)+$(?<!/\*)', '', line).strip() for line in list2]    # <remove url filters using * wildcard />
@@ -449,7 +449,7 @@ list2 = [re.sub(r'^[_\W]?wp[_\W]?\*?$', '', line) for line in list2]            
 list2 = [re.sub(r'^[_\W]?wordpress[_\W]?\*?$', '', line) for line in list2]         # <remove spurious wordpress filter />
 list2 = [re.sub(r'^akamai(zed)?\.com$', '', line) for line in list2]                # <remove akamai.com />
 list2 = [re.sub(r'^akamai(zed)?(hd)?\.net$', '', line) for line in list2]           # <remove akamai.net />
-list2 = [re.sub(r'^azureedge\.net$', '', line) for line in list2]                   # <remove azureedge.net />
+list2 = [re.sub(r'^azure(edge)?\.net$', '', line) for line in list2]                # <remove azureedge.net />
 list2 = [re.sub(r'^apple\.com$', '', line) for line in list2]                       # <remove apple.com />
 list2 = [re.sub(r'^blogspot\.(com|net|org|[a-z]{2})$', '', line) for line in list2]     # <remove blogspot.(com|net|org|[a-z]{2}) />
 list2 = [re.sub(r'^cloudflare\.(com|net)$', '', line) for line in list2]            # <remove cloudflare.(com|net) />
