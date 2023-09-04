@@ -1767,8 +1767,6 @@
 /?zona
 /?zone
 /?zoneid
-/?zoneid=*&timeout
-/[0-9a-f]{32}\/invoke\.js
 /[^a-z0-9]((browser|self|v10)\.events|settings\-win|vortex|vortex\-win)\.data\.microsoft[^a-z]/
 /[^a-z0-9](acc|push)engage[^a-z]/
 /[^a-z0-9](adblockana|analogana|crash|fitana|gameana|matherana|siteimproveana|tap|wowana)lytics[^a-z]/
@@ -1785,7 +1783,7 @@
 /[^a-z0-9](feed|reports)\.tunein[^a-z]/
 /[^a-z0-9](p|quicksilver|u|video\-fa)\.scdn[^a-z]/
 /[^a-z0-9](|0|123|3d|addfree|adservice|bbt|bel|check|dynamicsite|e|free|fuse|get|go|gold|hi|hit|hot|i|index|ladot|master|mi|mm|mp|my|myseo|n|ned|next|nextgen|o|one|pn|profi|ps|qs|rbi|remarket|right|shiny|site|s|smart|super|top|visi|web|wide)stats?(|[0-9]|4all|4u|camp|count|counter|s|session|sie|tracker|trax)[^a-z]/
-/[^a-z0-9](|24|ab1|bid|ceo|clhc|clickso|e|eml|kitara|reklam|remo|rq|sq2|uleads|voluum)trk(|[0-9]*|fl|jmp|reward)[^a-z]/
+/[^a-z0-9](|24|ab1|bid|ceo|clhc|clickso|e|eml|kitara|reklam|remo|rq|sq2|uleads|voluum)tra?k(|[0-9]*|fl|jmp|reward)[^a-z]/
 /[^a-z0-9](|aax|automat|ay|boosting|buysell|clckn|dcm|elastic|i|insur|kyo|moat|pub|securepub|show|supersonic|unity)ads?(|1|bar|bygoogle|experiment|keeper|id|wizz)[^a-z]/
 /[^a-z0-9](|anti|double|exo|fast|get|smart|web|x)click(|aine|hole|iocdn|jack|performance|s|s?24|tale|tracker|y)[^a-z]/
 /[^a-z0-9](|auto|c|e|eula|event|infinity\-|p|px|reg|sex|speedily)track(|ers?|ing|js|n\?)(|vtm)[^a-z]/
@@ -1806,7 +1804,6 @@
 /[^a-z0-9]365dm[^a-z]/
 /[^a-z0-9]acales[^a-z]/
 /[^a-z0-9]acpm[^a-z]/
-/[^a-z0-9]ad[^adefijmortu][^a]/$important
 /[^a-z0-9]adb?s?v?x?[0-9]?[^a-z]/$important
 /[^a-z0-9]add(evweb|oor|this|thiscdn|toany)[^a-z]/
 /[^a-z0-9]affirm[^a-z]/
@@ -1850,7 +1847,6 @@
 /[^a-z0-9]collectors?[0-9]*[^a-z]/
 /[^a-z0-9]comitium[^a-z]/
 /[^a-z0-9]commander1[^a-z]/
-/[^a-z0-9]comments?[^a-z0-9]/$important
 /[^a-z0-9]conichi[^a-z]/
 /[^a-z0-9]connectif[^a-z]/
 /[^a-z0-9]consent/$important
@@ -1952,7 +1948,6 @@
 /[^a-z0-9]listrakbi[^a-z]/
 /[^a-z0-9]livefyre[^a-z]/
 /[^a-z0-9]log[0-9]*(|ger|ging|s)[^a-z]/$important
-/[^a-z0-9]log[0-9]*[^oi]/$important
 /[^a-z0-9]lp4[^a-z]/
 /[^a-z0-9]lqm[^a-z]/
 /[^a-z0-9]marketing(cloudapis|sites)[^a-z]/
@@ -2072,7 +2067,7 @@
 /[^a-z0-9]tubemogul[^a-z]/
 /[^a-z0-9]turnto[^a-z]/
 /[^a-z0-9]tvpassport[^a-z]/
-/[^a-z0-9]umeng
+/[^a-z0-9]umeng/
 /[^a-z0-9]unpkg[^a-z]/
 /[^a-z0-9]urbanairship[^a-z]/
 /[^a-z0-9]user(\-behavior|_context|\-geo|\-id|\.min|zoom)(|\.js
@@ -2093,6 +2088,7 @@
 /[^a-z0-9]ztat[^a-z]/
 /[^a-z]gpt/$important
 /[^abs]log[0-9]?s?(ge)?(ging)?-_=&\?/\.]/$important
+/[_\W]comment?[_\W]/$important
 /[_\W]fb[_\W]/$important
 /[_\W]px[_\W]/$important
 /[_\W]tags?[_\W]/$important
@@ -2100,16 +2096,8 @@
 /\.(com|cn|top|xyz)\/(j|K)\/[0-9]{6}$/
 /\.(cyou|ink)\/[a-z]{4}_[0-9]{5}_[a-z]{5}js\?/
 /\.com\/proc\.php\?[0-9a-f]{40}$/
-/\/[0-9a-f]{32}\/invoke\.js
-/\/[0-9a-z]{8
-/\/[A-Za-z0-9]{5}\/[A-Za-z0-9]{33}\d{4}\.js
 /\/[a-z]{1,3}\?zoneId\=\d{7}\-\d{7}$/
-/\/t\/[0-9]{3}\/[0-9]{3}\/a[0-9]{4
-/\/uniqueten\.net\/[a-z]+\.js
-/^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)/
 /^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/
-/^*/edr.js
-/^/ennovelas.com\/[a-z0-9]{10}$/
 /_6eitxwuyom
 /__botcheck
 /__branding/*
@@ -10457,7 +10445,6 @@
 /fb.share.
 /fb2
 /fb24.
-/fb[^a-z0-9]/$important
 /fb_img_
 /fb_img_1575428224399
 /fb_img_1613448998028

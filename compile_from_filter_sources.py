@@ -290,6 +290,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^.*/\*/', '/', line).strip() for line in list2]                    # <replace any url preceded by /*/ (included) with / />
     list2 = [re.sub(r'^[-_/\.a-z0-9]*(\*[-_/\.a-z0-9]*)+$(?<!/\*)', '', line).strip() for line in list2]    # <remove url filters using * wildcard />
     list2 = [re.sub(r'^[-_/\.a-z0-9]*(\*[-_/\.a-z0-9]*)+/\*$', '', line).strip() for line in list2]         # <remove //* url filters using * wildcard />
+    list2 = [re.sub(r'^\.(?=[a-z]*\.(com|net|org))', '', line).strip() for line in list2]                   # <remove leading . preceded by domain com net or org />
     list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
