@@ -236,8 +236,8 @@ while n_1 > len(list2):                                                         
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
     print('12/20 : clean up trailing ^ | # ~ = ? * , .* ash asp cgi gif htm js php and $ all doc image popup script 3p xhr filters')
-    list2 = [re.sub(r'[\^\|\=]\$', '$', line).strip() for line in list2]                # <fix: replace ^$ |$ =$ with $/>
-    list2 = [re.sub(r'\|+\$', '$', line).strip() for line in list2]                     # <fix: replace |$ with $/>
+    list2 = [re.sub(r'[\^\|\=]\$', '$', line).strip() for line in list2]                # <replace ^$ |$ =$ with $/>
+    list2 = [re.sub(r'\|+\$', '$', line).strip() for line in list2]                     # <replace |$ with $/>
     list2 = [re.sub(r'[#,\~\|\^\?\=]+$', '', line).strip() for line in list2]           # <remove trailing # , ~ | ^ ? = />
     list2 = [re.sub(r'(?<!/)\*$', '', line).strip() for line in list2]                  # <remove trailing * except not-regex markup //*/>
     list2 = [re.sub(r'\.\*$', '.', line).strip() for line in list2]                     # <replace trailing .* with ./>
