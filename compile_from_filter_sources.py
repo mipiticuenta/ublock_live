@@ -106,7 +106,7 @@ list2 = [re.sub(r'^[^a-z]+$', '', line) for line in list2]                      
 list2 = [line for line in list2 if not(re.search(r'[,\$]badfilter', line))]         # <remove items comprising $badfilter />
 list2 = [line for line in list2 if not(re.search(r'about\:', line))]                # <remove items comprising about: >
 list2 = [line for line in list2 if not(re.search(r'\%', line))]                     # <remove items comprising % >
-list2 = [re.sub(r'http.?\:/+', '', line) for line in list2]                         # <replace |+http:/+ with / />
+list2 = [re.sub(r'http.?\:/+', '', line) for line in list2]                         # <replace http:/+ with / />
 list2 = [re.sub(r'^/?([0-9]+\.)+([0-9]+)?', '', line).strip() for line in list2]    # <remove IP4 addresses (d.)+ />
 list2 = [line for line in list2 if not(re.search(r'\:+', line))]                    # <remove IP6 addresses :: />
 list2 = [re.sub(r'^\:[0-9]+/', '', line) for line in list2]                         # <remove leading :port/ />
@@ -250,8 +250,8 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'\.js(?![a-z0-9]).*$', '.js', line) for line in list2]             # <clean up trailing .js />
     list2 = [re.sub(r'\.php\??$', '.', line) for line in list2]                         # <remove trailing .php?/>
     list2 = [re.sub(r'\.png\??$', '.', line) for line in list2]                         # <remove trailing .png?/>
-    list2 = [re.sub(r'(?<!\*)\$\~?\w.*$(?<!important)', '', line) for line in list2]    # <remove specific trailing $ filters except $important />
-    list2 = [re.sub(r'\?\*\=.*', '', line).strip() for line in list2]                   # <remove trailing ?*=... />
+    list2 = [re.sub(r'(?<!\*)\$\~?\w.*(^/)$(?<!important)', '', line) for line in list2]    # <remove specific trailing $ filters except $important />
+    list2 = [re.sub(r'\??\*\=.*(^/)$', '', line).strip() for line in list2]             # <remove trailing ?*=... />
     list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
@@ -286,7 +286,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[_\W]?[^a]?d?[_\W]?\*?$', '', line) for line in list2]            # <remove 2 ax pd sequence filter />
     list2 = [re.sub(r'^[_\W]?[^p]?x?\*?$', '', line) for line in list2]                  # <remove 2 ax pd sequence filter />
     list2 = [re.sub(r'^[^a-z]+x[^a-z]+[/\.](?!(com|net))', '', line) for line in list2]  # <remove leading [^a-z]+x[^a-z]+ combinations />
-    list2 = [re.sub(r'^[-_\.a-z0-9/]+(?=/[-_\.a-z0-9]+$)', '', line) for line in list2]  # <simplify urls keeping last /* part />
+    list2 = [re.sub(r'^[-_/\.a-z0-9]+(?=/[-_\.a-z0-9]+$)', '', line) for line in list2]  # <simplify urls keeping last /* part />
     list2 = [re.sub(r'^.*/\*/', '/', line).strip() for line in list2]                    # <replace any url preceded by /*/ (included) with / />
     list2 = [re.sub(r'^[-_/\.a-z0-9]*(\*[-_/\.a-z0-9]*)+$(?<!/\*)', '', line).strip() for line in list2]    # <remove url filters using * wildcard />
     list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
@@ -305,7 +305,7 @@ print('       ', '{:,}'.format(len(list2)), 'filters remaining')
 
 print('16/20 : split space separated domains ')
 
-list2s = [line for line in list2 if re.search(r' ', line) and not(re.search(r'[\$\&]', line))]    # <remove space separated domains />
+list2s = [line for line in list2 if re.search(r' ', line) and not(re.search(r'[\$\&\#]', line))]    # <remove space separated domains />
 
 list2 = set(list2) - set(list2s)                                                    # <segregate removed filters'/>
 
