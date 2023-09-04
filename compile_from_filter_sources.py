@@ -250,7 +250,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'\.js(?![a-z0-9]).*$', '.js', line) for line in list2]             # <clean up trailing .js />
     list2 = [re.sub(r'\.php\??$', '.', line) for line in list2]                         # <remove trailing .php?/>
     list2 = [re.sub(r'\.png\??$', '.', line) for line in list2]                         # <remove trailing .png?/>
-    list2 = [re.sub(r'(?<!\*)\$\~?\w.*(^/)$(?<!important)', '', line) for line in list2]    # <remove specific trailing $ filters except $important />
+    list2 = [re.sub(r'(?<!^\*)\$.*$(?<!/)(?<!important)', '', line) for line in list2]      # <remove specific trailing $ filters except $important />
     list2 = [re.sub(r'\??\*\=.*(^/)$', '', line).strip() for line in list2]             # <remove trailing ?*=... />
     list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters remaining')
