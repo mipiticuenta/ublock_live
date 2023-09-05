@@ -65,8 +65,6 @@ for line in list1 :
             'cumulated filters'
         )
 
-del(list1)                                                                      # <clean up; make sure list1 is not used anymore hereafter/>
-
 # </dump sources to list>
 
 # <process filter list>
@@ -660,17 +658,24 @@ print(
 file2_out = open(file2_out_name, 'w')
 
 file2_out.write(
-    '!  description: personal filters for uBO\n' +
-    '!  expires: 1 day\n' +
-    '!  homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/' + file2_out_name + '\n' +
-    '!  title:' + file2_out_name + '\n' +
+    '! description: personal filters for uBO; yet under heavy debugging\n' +
+    '! expires: 1 day\n' +
+    '! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/' + file2_out_name + '\n' +
+    '! title:' + file2_out_name + '\n' +
     '! #============================================================================================\n' +
-    '! *$popup,3p ! impedes ctrl&click open in another tab\n' +
-    '! attribute css selector : ##[]\n' +
-    '! class css selector     : ##.\n' +
-    '! id css selector        : ###\n' +
-    '!! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'
+    '!! simple, general filters preferred rather than complicated, specific ones\n' +
+    '!! regex only when efficient\n' +
+    '!! exceptions only if no better choice\n' +
+    '!! #============================================================================================\n' +
+    '!!! *$popup,3p avoided (impedes ctrl&click open in another tab)\n' +
+    '!!! attribute css selector : ##[]\n' +
+    '!!! class css selector     : ##.\n' +
+    '!!! id css selector        : ###\n' +
+    '!!! #============================================================================================\n' +
+    '!!! this file is based to the following lists (thanks to their maintainers!!)\n'
 )
+
+file2_out.writelines('!!!! ' + line + '\n' for line in list1)
 
 file2_out.writelines(line + '\n' for line in list2)
 file2_out.close()
