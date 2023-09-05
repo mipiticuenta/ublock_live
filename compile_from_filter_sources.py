@@ -290,7 +290,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^.*/\*/', '/', line).strip() for line in list2]                    # <replace any url preceded by /*/ (included) with / />
     list2 = [re.sub(r'^[-_/\.a-z0-9]*(\*[-_/\.a-z0-9]*)+$(?<!/\*)', '', line).strip() for line in list2]    # <remove url filters using * wildcard />
     list2 = [re.sub(r'^[-_/\.a-z0-9]*(\*[-_/\.a-z0-9]*)+/\*$', '', line).strip() for line in list2]         # <remove //* url filters using * wildcard />
-    list2 = [re.sub(r'^\.(?=[a-z]*\.(com|edu|gov|net|org))', '', line).strip() for line in list2]           # <remove leading . preceded by domain com edu gov net org />
+    list2 = [re.sub(r'^\.(?=[a-z]*\.(com|edu|gob|gou?v|net|org))', '', line).strip() for line in list2]           # <remove leading . preceded by domain com edu gob go(u)v net org />
     list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
@@ -571,7 +571,7 @@ list3 = [line for line in list3 if not(re.search(r'^.*\.js$', line))]           
 list2 = set(list2) - set(list3)                                                 # <only domains part are processed in this section; @.js are kept in list2 />
 
 list3 = [line for line in list3 if not(re.search(r'^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?$', line))]    # <remove #.@(.@) numerical domains/>
-list3 = [line for line in list3 if not(re.search(r'^(com|edu|gov|net|org|[a-z]{2})\.(com|edu|gov|net|org|[a-z]{2})$', line))]   # <remove ^(com|edu|gov|net|org|[a-z]{2})\.(com|edu|gov|net|org|[a-z]{2})$ root domains/>
+list3 = [line for line in list3 if not(re.search(r'^(com|edu|gob|gou?v|net|org|[a-z]{2})\.(com|edu|gob|gou?v|net|org|[a-z]{2})$', line))]   # <remove ^(com|edu|gob|go(u)v|net|org|[a-z]{2})\.(com|edu|gob|gou?v|net|org|[a-z]{2})$ root domains/>
 
 print(
     '{:,}'.format(len(list3)),
