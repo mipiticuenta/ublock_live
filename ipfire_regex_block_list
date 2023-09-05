@@ -41,7 +41,6 @@
 /[^a-z0-9]365dm[^a-z]/
 /[^a-z0-9]acales[^a-z]/
 /[^a-z0-9]acpm[^a-z]/
-/[^a-z0-9]adb?s?v?x?[0-9]?[^a-z]/
 /[^a-z0-9]add(evweb|oor|this|thiscdn|toany)[^a-z]/
 /[^a-z0-9]affirm[^a-z]/
 /[^a-z0-9]affl?s?[0-9]*[^a-z]/
@@ -323,6 +322,7 @@
 /[^a-z0-9]ztat[^a-z]/
 /[^a-z]gpt/
 /[^abs]log[0-9]?s?(ge)?(ging)?-_=&\?/\.]/
+/[_\W]adb[_\W]/
 /[_\W]comment?[_\W]/
 /[_\W]fb[_\W]/
 /[_\W]px[_\W]/
@@ -364,6 +364,7 @@
 /fw.html/
 /geo.?location/
 /gh/sensitiveio/sbtracker@master/
+/gif./
 /gys.ad/
 /haaretz\.co\.il\/(?!.*\.(js)($|\?)).*/
 /haaretz\.co\.il\/[\w\.!]+\/[\w\.!]+\/[\w\.!]+\/[\w\.!]+\/[\w\.!]+\/
@@ -395,8 +396,6 @@
 /tags?[0-9]*[^a-z]/
 /top-games.me/
 /ue(.?comments?|.?data|.?login|.?nydus|.?piano|.?userpanel|.?utils)/
-/upload/alexkova.popupad/
-/uploads/shares/gif./
 /utm[^a-z]/
 /view.php/
 /visitor.pixplug.in/

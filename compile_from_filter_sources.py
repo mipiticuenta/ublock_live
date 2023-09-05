@@ -290,7 +290,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^.*/\*/', '/', line).strip() for line in list2]                    # <replace any url preceded by /*/ (included) with / />
     list2 = [re.sub(r'^[-_/\.a-z0-9]*(\*[-_/\.a-z0-9]*)+$(?<!/\*)', '', line).strip() for line in list2]    # <remove url filters using * wildcard />
     list2 = [re.sub(r'^[-_/\.a-z0-9]*(\*[-_/\.a-z0-9]*)+/\*$', '', line).strip() for line in list2]         # <remove //* url filters using * wildcard />
-    list2 = [re.sub(r'^\.(?=[a-z]*\.(com|edu|net|org))', '', line).strip() for line in list2]               # <remove leading . preceded by domain com edu net org />
+    list2 = [re.sub(r'^\.(?=[a-z]*\.(com|edu|gov|net|org))', '', line).strip() for line in list2]           # <remove leading . preceded by domain com edu gov net org />
     list2 = [line for line in list2 if len(line) > 1]                                    # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
@@ -381,6 +381,7 @@ list2 = [re.sub(r'^[_\W]?assets?[_\W]?\*?$', '', line) for line in list2]       
 list2 = [re.sub(r'^[_\W]?background[_\W]?\*?$', '', line) for line in list2]        # <remove spurious background filter />
 list2 = [re.sub(r'^[_\W]?base[_\W]?\*?$', '', line) for line in list2]              # <remove spurious base filter />
 list2 = [re.sub(r'^[_\W]?bbc[_\W]?\*?$', '', line) for line in list2]               # <remove spurious bbc filter />
+list2 = [re.sub(r'^[_\W]?black[_\W]?\*?$', '', line) for line in list2]             # <remove spurious black filter />
 list2 = [re.sub(r'^[_\W]?blocks?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious block(s) filter />
 list2 = [re.sub(r'^[_\W]?box[_\W]?\*?$', '', line) for line in list2]               # <remove spurious box filter />
 list2 = [re.sub(r'^[_\W]?brand(ing)?[_\W]?\*?$', '', line) for line in list2]       # <remove spurious brand(ing) filter />
@@ -437,6 +438,7 @@ list2 = [re.sub(r'^[_\W]?links?[_\W]?\*?$', '', line) for line in list2]        
 list2 = [re.sub(r'^[_\W]?linkedin[_\W]?\*?$', '', line) for line in list2]          # <remove spurious linkedin filter />
 list2 = [re.sub(r'^[_\W]?main[_\W]?\*?$', '', line) for line in list2]              # <remove spurious main filter />
 list2 = [re.sub(r'^[_\W]?master[_\W]?\*?$', '', line) for line in list2]            # <remove spurious master filter />
+list2 = [re.sub(r'^[_\W]?media[_\W]?\*?$', '', line) for line in list2]             # <remove spurious media filter />
 list2 = [re.sub(r'^[_\W]?menu[_\W]?\*?$', '', line) for line in list2]              # <remove spurious menu filter />
 list2 = [re.sub(r'^[_\W]?meteoblue[_\W]?\*?$', '', line) for line in list2]         # <remove spurious meteoblue filter />
 list2 = [re.sub(r'^[_\W]?microsoft[_\W]?\*?$', '', line) for line in list2]         # <remove spurious microsoft filter />
@@ -445,6 +447,7 @@ list2 = [re.sub(r'^[_\W]?mobile[_\W]?\*?$', '', line) for line in list2]        
 list2 = [re.sub(r'^[_\W]?modal[_\W]?\*?$', '', line) for line in list2]             # <remove spurious modal filter />
 list2 = [re.sub(r'^[_\W]?modules?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious module(s) filter />
 list2 = [re.sub(r'^[_\W]?mp[0-9[_\W]?\*?$', '', line) for line in list2]            # <remove spurious mpx filter />
+list2 = [re.sub(r'^[_\W]?nav[_\W]?\*?$', '', line) for line in list2]               # <remove spurious nav filter />
 list2 = [re.sub(r'^[_\W]?net[_\W]?\*?$', '', line) for line in list2]               # <remove spurious net filter />
 list2 = [re.sub(r'^[_\W]?news?[_\W]?\*?$', '', line) for line in list2]             # <remove spurious new(s) filter />
 list2 = [re.sub(r'^[_\W]?noticias?[_\W]?\*?$', '', line) for line in list2]         # <remove spurious noticia(s) filter />
@@ -504,8 +507,9 @@ list2 = [re.sub(r'^ecestaticos\.com$', '', line) for line in list2]             
 list2 = [re.sub(r'^expansion\.com$', '', line) for line in list2]                   # <remove expansion.com />
 list2 = [re.sub(r'^flipboard\.com$', '', line) for line in list2]                   # <remove flipboard.com />
 list2 = [re.sub(r'^google\.(com|[a-z]{2})$', '', line) for line in list2]           # <remove google.(com|[a-z]{2}) />
-list2 = [re.sub(r'^developper\.google\.com$', '', line) for line in list2]          # <remove google.com />
-list2 = [re.sub(r'^apis\.google\.com$', '', line) for line in list2]                # <remove google.com />
+list2 = [re.sub(r'^apis\.google\.com$', '', line) for line in list2]                # <remove apis.google.com />
+list2 = [re.sub(r'^developper\.google\.com$', '', line) for line in list2]          # <remove developper.google.com />
+list2 = [re.sub(r'^play\.google\.com$', '', line) for line in list2]                # <remove play.google.com />
 list2 = [re.sub(r'^googleapis\.com$', '', line) for line in list2]                  # <remove googleapis.com />
 list2 = [re.sub(r'^googlevideo\.com$', '', line) for line in list2]                 # <remove googlevideo.com />
 list2 = [re.sub(r'^gstatic\.com$', '', line) for line in list2]                     # <remove gstatic.com />
@@ -564,7 +568,7 @@ list3 = [line for line in list3 if not(re.search(r'^.*\.js$', line))]           
 list2 = set(list2) - set(list3)                                                 # <only domains part are processed in this section; @.js are kept in list2 />
 
 list3 = [line for line in list3 if not(re.search(r'^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?$', line))]    # <remove #.@(.@) numerical domains/>
-list3 = [line for line in list3 if not(re.search(r'^(com|edu|net|org|[a-z]{2})\.(com|edu|net|org|[a-z]{2})$', line))]   # <remove ^(com|edu|net|org|[a-z]{2})\.(com|edu|net|org|[a-z]{2})$ root domains/>
+list3 = [line for line in list3 if not(re.search(r'^(com|edu|gov|net|org|[a-z]{2})\.(com|edu|gov|net|org|[a-z]{2})$', line))]   # <remove ^(com|edu|gov|net|org|[a-z]{2})\.(com|edu|gov|net|org|[a-z]{2})$ root domains/>
 
 print(
     '{:,}'.format(len(list3)),
@@ -697,8 +701,7 @@ file2_out.write(
     '!!! attribute css selector : ##[]\n' +
     '!!! class css selector     : ##.\n' +
     '!!! id css selector        : ###\n' +
-    '!!! #===========================================================================================\n' +
-    '!!! this file is based to the following lists (thanks to their maintainers!!)\n'
+    '!!! #===========================================================================================\n'
 )
 
 file2_out.writelines('!!!! ' + line + '\n' for line in list1)
