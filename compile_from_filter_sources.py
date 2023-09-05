@@ -83,7 +83,7 @@ list2 = [line for line in list2 if len(line) > 1]                               
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
 print(' 2/20 : remove comments ')
-list2 = [re.sub(r'(^| +)!.*', '', line) for line in list2]                              # <remove ! comment />
+list2 = [re.sub(r'(^| +)!+.*', '', line) for line in list2]                             # <remove ! comment />
 list2 = [re.sub(r'(^| +)#(?!(\?|@|#\:|#\.|##|#\[)).*', '', line) for line in list2]     # <remove # comment; preserve cosmetics and exceptions />
 list2 = [re.sub(r'^\[.*', '', line) for line in list2]                                  # <remove [comment] line />
 list2 = [re.sub(r'^\{.*', '', line) for line in list2]                                  # <remove {comment} line />
