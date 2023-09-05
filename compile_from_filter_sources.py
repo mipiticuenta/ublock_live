@@ -472,6 +472,7 @@ list2 = [re.sub(r'^[_\W]?services?[_\W]?\*?$', '', line) for line in list2]     
 list2 = [re.sub(r'^[_\W]?shared?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious share(d) filter />
 list2 = [re.sub(r'^[_\W]?simple[_\W]?\*?$', '', line) for line in list2]            # <remove spurious simple filter />
 list2 = [re.sub(r'^[_\W]?skins?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious skin(s)filter />
+list2 = [re.sub(r'^[_\W]?social[_\W]?\*?$', '', line) for line in list2]            # <remove spurious social filter />
 list2 = [re.sub(r'^[_\W]?specials?[_\W]?\*?$', '', line) for line in list2]         # <remove spurious special(s) filter />
 list2 = [re.sub(r'^[_\W]?speed[_\W]?\*?$', '', line) for line in list2]             # <remove spurious speed filter />
 list2 = [re.sub(r'^[_\W]?stats?(istics?)?[_\W]?\*?$', '', line) for line in list2]  # <remove spurious stat(s)(istic(s)) filter />
