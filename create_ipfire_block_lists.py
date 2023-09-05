@@ -71,33 +71,34 @@ print(
 
 # <save input file written to lower case except cosmetic and regex >
 
-file1_out_name = file1_in_name
-file1_out = open(file1_out_name, 'w', encoding='UTF-8')
-
 list1 = (
         [line         for line in list1 if     re.search(r'[#\\]', line) ] + 
         [line.lower() for line in list1 if not(re.search(r'[#\\]', line))]          # <lower case for all except cosmetics and regex />
         )
 
-# <save input file written to lower case except cosmetic and regex />
-
-# <add headers >
-
-list1.append('!  description: personal filters for uBO')
-list1.append('!  expires: 1 day')
-list1.append('!  homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/' + file1_in_name)
-list1.append('!  title:' + file1_in_name)
-list1.append('! #============================================================================================')
-list1.append('! *$popup,3p ! impedes ctrl&click open in another tab')
-list1.append('! attribute css selector : ##[]')
-list1.append('! class css selector     : ##.')
-list1.append('! id css selector        : ###')
-list1.append('!! ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
-
-# <add headers />
-
 list1 = set(list1)
 list1 = sorted(list1)
+
+file1_out_name = file1_in_name
+file1_out = open(file1_out_name, 'w', encoding='UTF-8')
+
+file1_out.write(
+    '! description: personal filters for uBO; yet under heavy debugging\n' +
+    '! expires: 1 day\n' +
+    '! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/' + file1_out_name + '\n' +
+    '! title:' + file1_out_name + '\n' +
+    '! #=============================================================================================\n' +
+    '!! simple, general filters preferred rather than complicated, specific ones\n' +
+    '!! regex only when efficient\n' +
+    '!! exceptions only if no better choice\n' +
+    '!! #============================================================================================\n' +
+    '!!! *$popup,3p avoided (impedes ctrl&click open in another tab)\n' +
+    '!!! attribute css selector : ##[]\n' +
+    '!!! class css selector     : ##.\n' +
+    '!!! id css selector        : ###\n' +
+    '!!! #===========================================================================================\n'
+)
+
 file1_out.writelines(line + '\n' for line in list1)
 file1_out.close()
 
@@ -108,6 +109,8 @@ print(
     '\n',
     sep = ''
     )
+
+# </save input file written to lower case except cosmetic and regex >
 
 list1 = [line for line in list1 if line[0] != '!']                                  # <remove uBO style comments from list1 />
 
