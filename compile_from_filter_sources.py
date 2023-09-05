@@ -389,6 +389,7 @@ list2 = [re.sub(r'^[_\W]?code[_\W]?\*?$', '', line) for line in list2]          
 list2 = [re.sub(r'^[_\W]?content[_\W]?\*?$', '', line) for line in list2]           # <remove spurious content filter />
 list2 = [re.sub(r'^[_\W]?core[_\W]?\*?$', '', line) for line in list2]              # <remove spurious core filter />
 list2 = [re.sub(r'^[_\W]?common[_\W]?\*?$', '', line) for line in list2]            # <remove spurious common filter />
+list2 = [re.sub(r'^[_\W]?community[_\W]?\*?$', '', line) for line in list2]         # <remove spurious community filter />
 list2 = [re.sub(r'^[_\W]?css[_\W]?\*?$', '', line) for line in list2]               # <remove spurious css filter />
 list2 = [re.sub(r'^[_\W]?com[_\W]?\*?$', '', line) for line in list2]               # <remove spurious com filter />
 list2 = [re.sub(r'^[_\W]?down[_\W]?\*?$', '', line) for line in list2]              # <remove spurious down filter />
@@ -398,6 +399,7 @@ list2 = [re.sub(r'^[_\W]?entry[_\W]?\*?$', '', line) for line in list2]         
 list2 = [re.sub(r'^[_\W]?exe[_\W]?\*?$', '', line) for line in list2]               # <remove spurious exe filter />
 list2 = [re.sub(r'^[_\W]?ext(ernal)?[_\W]?\*?$', '', line) for line in list2]       # <remove spurious ext(ernal) filter />
 list2 = [re.sub(r'^[_\W]?extras?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious extra(s)filter />
+list2 = [re.sub(r'^[_\W]?feed[_\W]?\*?$', '', line) for line in list2]              # <remove spurious feed filter />
 list2 = [re.sub(r'^[_\W]?file[_\W]?\*?$', '', line) for line in list2]              # <remove spurious file filter />
 list2 = [re.sub(r'^[_\W]?flipboard[_\W]?\*?$', '', line) for line in list2]         # <remove spurious flipboard filter />
 list2 = [re.sub(r'^[_\W]?footer[_\W]?\*?$', '', line) for line in list2]            # <remove spurious footer filter />
@@ -434,12 +436,15 @@ list2 = [re.sub(r'^[_\W]?meteoblue[_\W]?\*?$', '', line) for line in list2]     
 list2 = [re.sub(r'^[_\W]?microsoft[_\W]?\*?$', '', line) for line in list2]         # <remove spurious microsoft filter />
 list2 = [re.sub(r'^[_\W]?misc[_\W]?\*?$', '', line) for line in list2]              # <remove spurious misc filter />
 list2 = [re.sub(r'^[_\W]?mobile[_\W]?\*?$', '', line) for line in list2]            # <remove spurious mobile filter />
+list2 = [re.sub(r'^[_\W]?modal[_\W]?\*?$', '', line) for line in list2]             # <remove spurious modal filter />
 list2 = [re.sub(r'^[_\W]?modules?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious module(s) filter />
 list2 = [re.sub(r'^[_\W]?mp[0-9[_\W]?\*?$', '', line) for line in list2]            # <remove spurious mpx filter />
 list2 = [re.sub(r'^[_\W]?net[_\W]?\*?$', '', line) for line in list2]               # <remove spurious net filter />
 list2 = [re.sub(r'^[_\W]?news?[_\W]?\*?$', '', line) for line in list2]             # <remove spurious new(s) filter />
+list2 = [re.sub(r'^[_\W]?online[_\W]?\*?$', '', line) for line in list2]            # <remove spurious online filter />
 list2 = [re.sub(r'^[_\W]?org[_\W]?\*?$', '', line) for line in list2]               # <remove spurious org filter />
 list2 = [re.sub(r'^[_\W]?original[_\W]?\*?$', '', line) for line in list2]          # <remove spurious original filter />
+list2 = [re.sub(r'^[_\W]?overlay[_\W]?\*?$', '', line) for line in list2]           # <remove spurious overlay filter />
 list2 = [re.sub(r'^[_\W]?pages?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious web filter />
 list2 = [re.sub(r'^[_\W]?pics?[_\W]?\*?$', '', line) for line in list2]             # <remove spurious pic filter />
 list2 = [re.sub(r'^[_\W]?player[_\W]?\*?$', '', line) for line in list2]            # <remove spurious player filter />
@@ -518,6 +523,8 @@ list2.append('/^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/')                
 list2.append('@@||google.com^$script,1p')
 list2.append('@@||gstatic.com^$script,domain=google.com')
 list2.append('@@||google.com^$inline-script,1p')
+list2.append('@@||meteoblue.com^$inline-script,1p')
+list2.append('@@||meteoblue.com^$script,1p')
 
 # <transforming loop/>
 
@@ -662,7 +669,7 @@ file2_out.write(
     '! expires: 1 day\n' +
     '! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/' + file2_out_name + '\n' +
     '! title:' + file2_out_name + '\n' +
-    '! #============================================================================================\n' +
+    '! #=============================================================================================\n' +
     '!! simple, general filters preferred rather than complicated, specific ones\n' +
     '!! regex only when efficient\n' +
     '!! exceptions only if no better choice\n' +
@@ -671,7 +678,7 @@ file2_out.write(
     '!!! attribute css selector : ##[]\n' +
     '!!! class css selector     : ##.\n' +
     '!!! id css selector        : ###\n' +
-    '!!! #============================================================================================\n' +
+    '!!! #===========================================================================================\n' +
     '!!! this file is based to the following lists (thanks to their maintainers!!)\n'
 )
 
