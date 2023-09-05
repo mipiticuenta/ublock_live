@@ -217,6 +217,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^\.?[-_a-z0-9\*]+/', '/', line) for line in list2]                        # <replace leading @/ with / />
     list2 = [re.sub(r'^[/\.]?assets?\*?[/\.]', '', line) for line in list2]                     # <remove leading asset />
     list2 = [re.sub(r'^[/\.]?ima?ge?(ne)?s?\*?[/\.]', '', line) for line in list2]              # <replace leading image with * />
+    list2 = [re.sub(r'^[/\.]?public\*?[/\.]', '', line) for line in list2]                      # <replace leading public with * />
     list2 = [re.sub(r'^[/\.]?static\*?[/\.]', '', line) for line in list2]                      # <replace leading static with * />
     list2 = [re.sub(r'^[/\.]?uploads?.?\*?[/\.]', '', line) for line in list2]                  # <replace leading uploads with * />
     list2 = [re.sub(r'^[/\.]?web\*?[/\.]', '', line) for line in list2]                         # <replace leading web with * />
@@ -462,6 +463,7 @@ list2 = [re.sub(r'^[_\W]?price[_\W]?\*?$', '', line) for line in list2]         
 list2 = [re.sub(r'^[_\W]?(dis)?play[_\W]?\*?$', '', line) for line in list2]        # <remove spurious (dis)play filter />
 list2 = [re.sub(r'^[_\W]?plugins??[_\W]?\*?$', '', line) for line in list2]         # <remove spurious plugin(s) filter />
 list2 = [re.sub(r'^[_\W]?png[_\W]?\*?$', '', line) for line in list2]               # <remove spurious png filter />
+list2 = [re.sub(r'^[_\W]?public[_\W]?\*?$', '', line) for line in list2]            # <remove spurious public filter />
 list2 = [re.sub(r'^[_\W]?related[_\W]?\*?$', '', line) for line in list2]           # <remove spurious related filter />
 list2 = [re.sub(r'^[_\W]?resources?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious resource(s) filter />
 list2 = [re.sub(r'^[_\W]?sp[_\W]?\*?$', '', line) for line in list2]                # <remove spurious sp filter />
