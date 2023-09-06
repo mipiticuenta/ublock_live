@@ -675,14 +675,14 @@ del(list3r)                                                                     
 ##list3 = [line for line in list3 if len(list(filter(lambda substring: ('.' + substring) in line, tqdm.tqdm(list3_filter[:n])))) == 0]
 ## </filter() + list comprehension option>
 
-print(
-    'removing urls redundant with domains;'
-    '{:,}'.format(len(list3)),
-    'domains kept after deflating',
-    '\n'
-)
-list2 = list(map(lambda line: line if (line[1:] not in list3) else '', tqdm.tqdm(list2)))   # <remove urls redundant with domains/>
-list2 = [line for line in list2 if len(line) > 0]                               # <cleanup empty lines/>
+#print(
+#    'removing urls redundant with domains;'
+#    '{:,}'.format(len(list3)),
+#    'domains kept after deflating',
+#    '\n'
+#)
+#list2 = list(map(lambda line: line if (line[1:] not in list3) else '', tqdm.tqdm(list2)))   # <remove urls redundant with domains/>
+#list2 = [line for line in list2 if len(line) > 0]                               # <cleanup empty lines/>
 
 list2 = sorted(set(list2) | set(list3))                                         # <rebuild full list with elemetal domains and shrinked domains part/>
 del(list3)                                                                      # <clean up; make sure list3 is not used anymore hereafter/>
@@ -736,6 +736,10 @@ file2_out.write(
 )
 
 file2_out.writelines('!!!! ' + line + '\n' for line in list1)
+
+file2_out.write(
+    '!!! #===========================================================================================\n'
+)
 
 file2_out.writelines(line + '\n' for line in list2)
 file2_out.close()
