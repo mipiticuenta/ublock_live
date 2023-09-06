@@ -206,7 +206,7 @@ while n_1 > len(list2):                                                         
         sep = ''
     )
 
-    print('11/20 : clean up leading symbols numbers asset asp cgi cfm gif htm image jpg js mp4 php png static tiff')
+    print('11/20 : clean up leading symbols numbers prefix etc')
     list2 = [re.sub(r'^[-_\:\=\+\~\|\*\!0-9]+[/\.]', '', line) for line in list2]               # <remove leading symbols and numbers preceding / ./>
     list2 = [re.sub(r'^[-_\:\=\+\~\|\!0-9]+(?=\$)', '', line) for line in list2]                # <remove leading symbols and numbers preceding $ />
     list2 = [re.sub(r'^[/\.]?[-_a-z0-9\*](?=[/\.])', '', line).strip() for line in list2]       # <remove leading single -_a-z0-9\* preceding / . />
@@ -241,7 +241,7 @@ while n_1 > len(list2):                                                         
     list2 = [line for line in list2 if len(line) > 1]                                           # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
-    print('12/20 : clean up trailing ^ | # ~ = ? * , .* ash asp cgi gif htm js php and $ all doc image popup script 3p xhr filters')
+    print('12/20 : clean up trailing symbols numbers prefix $filters etc')
     list2 = [re.sub(r'[\^\|\=]\$', '$', line).strip() for line in list2]                # <replace ^$ |$ =$ with $/>
     list2 = [re.sub(r'\|+\$', '$', line).strip() for line in list2]                     # <replace |$ with $/>
     list2 = [re.sub(r'[#,\~\|\^\?\=]+$', '', line).strip() for line in list2]           # <remove trailing # , ~ | ^ ? = />
@@ -548,6 +548,7 @@ list2 = [re.sub(r'^rfi\.fr$', '', line) for line in list2]                      
 list2 = [re.sub(r'^tradingview\.com$', '', line) for line in list2]                 # <remove tradingview.com />
 list2 = [re.sub(r'^tumblr\.com$', '', line) for line in list2]                      # <remove tumblr.com />
 list2 = [re.sub(r'^twitter\.com$', '', line) for line in list2]                     # <remove twitter.com />
+list2 = [re.sub(r'^stackoverflow\.com$', '', line) for line in list2]               # <remove stackoverflow.com />
 list2 = [re.sub(r'^uecdn\.es$', '', line) for line in list2]                        # <remove uecdn.es />
 list2 = [re.sub(r'^weblogssl\.org$', '', line) for line in list2]                   # <remove weblogssl.com />
 list2 = [re.sub(r'^wikimedia\.org$', '', line) for line in list2]                   # <remove wikimedia.org />
@@ -586,6 +587,7 @@ print('\n', 'Listing domain filters; ', end = '', sep = '')
 
 list3 = [line for line in list2 if re.search(r'^[-_\.a-z0-9]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
 list3 = [re.sub('r\$important$', '', line) for line in list3]                   # <remove trailing $important from domains/>
+list3 = [line if re.search(r'^[^\.]', line) else line[1:] for line in list3]    # <remove leading . preceding domain />
 
 # </extract domains from list>
 
