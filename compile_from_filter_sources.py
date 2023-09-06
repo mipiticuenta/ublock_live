@@ -1,4 +1,6 @@
-''' Compile a single deduplicated lock list from url sources '''
+'''
+Compile a single deduplicated lock list from url sources
+'''
 
 # <product backlog>
 
@@ -520,6 +522,7 @@ list2 = [re.sub(r'^\.?cloudflare\.(com|net)$', '', line) for line in list2]     
 list2 = [re.sub(r'^\.?cloudfront\.(com|net)$', '', line) for line in list2]         # <remove cloudfront..(com|net) />
 list2 = [re.sub(r'^\.?cnn\.com$', '', line) for line in list2]                      # <remove cnn.com />
 list2 = [re.sub(r'^\.?collinsdictionary\.com$', '', line) for line in list2]        # <remove collinsdictionary.com />
+list2 = [re.sub(r'^\.?digitalocean\.com$', '', line) for line in list2]             # <remove digitalocean.com />
 list2 = [re.sub(r'^\.?(lite\.)?duckduckgo\.com$', '', line) for line in list2]      # <remove duckduckgo.com />
 list2 = [re.sub(r'^\.?elconfidencial\.com$', '', line) for line in list2]           # <remove elconfidencial.com />
 list2 = [re.sub(r'^\.?eleconomista\.es$', '', line) for line in list2]              # <remove eleconomista.es />
@@ -527,6 +530,7 @@ list2 = [re.sub(r'^\.?elmundo\.es$', '', line) for line in list2]               
 list2 = [re.sub(r'^\.?ecestaticos\.com$', '', line) for line in list2]              # <remove ecestaticos.com />
 list2 = [re.sub(r'^\.?expansion\.com$', '', line) for line in list2]                # <remove expansion.com />
 list2 = [re.sub(r'^\.?flipboard\.com$', '', line) for line in list2]                # <remove flipboard.com />
+list2 = [re.sub(r'^\.?geeksforgeeks\.org$', '', line) for line in list2]            # <remove geeksforgeeks.org />
 list2 = [re.sub(r'^\.?google\.(com|[a-z]{2})$', '', line) for line in list2]        # <remove google.(com|[a-z]{2}) />
 list2 = [re.sub(r'^\.?apis\.google\.com$', '', line) for line in list2]             # <remove apis.google.com />
 list2 = [re.sub(r'^\.?developper\.google\.com$', '', line) for line in list2]       # <remove developper.google.com />
