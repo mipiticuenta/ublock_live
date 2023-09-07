@@ -586,22 +586,18 @@ list2.append('*$xhr')
 print('\n', 'Listing domain filters; ', end = '', sep = '')
 
 list3 = [line for line in list2 if re.search(r'^[-_\.a-z0-9]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
-list3 = [re.sub('r\$important$', '', line) for line in list3]                   # <remove trailing $important from domains/>
-list3 = [line if re.search(r'^[^\.]', line) else line[1:] for line in list3]    # <remove leading . preceding domain />
+list3 = [line for line in list3 if not(re.search(r'^.*\.js(\$important)?$', line))]           # <remove @.js from domains list />
+list2 = set(list2) - set(list3)                                                 # <only domains part are processed in this section; @.js are kept in list2 />
 
 # </extract domains from list>
 
 # <remove #.@(.@) (numerical domains) from list>
 
 print('removing #.@(.@) (numerical domain) filters: ', end = '')
-
-list3 = [line for line in list3 if not(re.search(r'^.*\.js$', line))]           # <remove @.js from domains list />
-list2 = set(list2) - set(list3)                                                 # <only domains part are processed in this section; @.js are kept in list2 />
-
+list3 = [re.sub('r\$important$', '', line) for line in list3]                   # <remove trailing $important from domains/>
 list3 = [line for line in list3 if not(re.search(r'^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?$', line))]    # <remove #.@(.@) numerical domains/>
-list3 = [line for line in list3 if not(re.search(r'^(com|edu|gob|gou?v|net|org|[a-z]{2})\.(com|edu|gob|gou?v|net|org|[a-z]{2})$', line))]   # <remove ^(com|edu|gob|go(u)v|net|org|[a-z]{2})\.(com|edu|gob|gou?v|net|org|[a-z]{2})$ root domains/>
-list3 = [line for line in list3 if not(re.search(r'blogspot\.[a-z]+$', line))]      # <remove ^blogspot\.[a-z]+$ domains />
-list3 = [line for line in list3 if not(re.search(r'tumbl\.[a-z]+$', line))]         # <remove ^tumblr\.[a-z]+$ domains />
+list3 = [re.sub(r'^\.', '', line)  for line in list3]                           # <remove leading . preceding domain />
+list3 = [line for line in list3 if not(re.search(r'^(com|edu|gob|gou?v|net|org|[a-z]{2})\.(com|edu|gob|gou?v|net|org|[a-z]{2})$', line))]   # <remove @.@ root domains />
 list3 = [re.sub(r'^.*\.(?=[-_a-z0-9]+\.[-_a-z0-9]+\.[a-z]+$)', '', line) for line in list3]                             # <remove .* followed by @.@.@ />
 list3 = [re.sub(r'^.*\.(?=[-_a-z0-9]+\.[a-z]+$)(?!(com|net|or|[a-z]{2})\.[a-z]{2}$)', '', line) for line in list3]      # <remove .* followed by @.@ if not (com|net|or|[a-z]{2})\.[a-z]{2} />
 
