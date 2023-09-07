@@ -516,6 +516,7 @@ list2 = [re.sub(r'^[_\W]?wordpress[_\W]?\*?$', '', line) for line in list2]     
 list2 = [re.sub(r'^\.?abc\.(es|com)$', '', line) for line in list2]                 # <remove abc.(es|com) />
 list2 = [re.sub(r'^\.?akamai(zed)?\.com$', '', line) for line in list2]             # <remove akamai.com />
 list2 = [re.sub(r'^\.?akamai(edge|zed)?(hd)?\.net$', '', line) for line in list2]   # <remove akamai(edge|zed)(hd).net />
+list2 = [re.sub(r'^\.?amazon\.(com|es)$', '', line) for line in list2]              # <remove amazon.(com|es) />
 list2 = [re.sub(r'^\.?azure(edge)?\.net$', '', line) for line in list2]             # <remove azureedge.net />
 list2 = [re.sub(r'^\.?apple\.com$', '', line) for line in list2]                    # <remove apple.com />
 list2 = [re.sub(r'^\.?bbci?\.(com|co\.uk)$', '', line) for line in list2]           # <remove bbc(i).(com|co.uk) />
