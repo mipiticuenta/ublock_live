@@ -594,7 +594,7 @@ print('\n', 'Listing domain filters; ', end = '', sep = '')
 
 list3 = [line for line in list2 if re.search(r'^[-_\.a-z0-9]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
 list3 = [re.sub('r\$important$', '', line) for line in list3]                   # <remove trailing $important from domains/>
-list3 = [line if re.search(r'^[^\.]', line) else line[1:] for line in list3]    # <remove leading . preceding domain />
+list3 = [line[1:] if re.search(r'^\.', line) else line for line in list3]       # <remove leading . preceding domain />
 
 # </extract domains from list>
 
