@@ -337,6 +337,7 @@ list2 = [re.sub(r'^\*?\?.*', '', line) for line in list2]                       
 list2 = [re.sub(r'^\*?\^.*', '', line) for line in list2]                       # <remove ^ leaded lines />
 list2 = [re.sub(r'^\*?\:.*', '', line) for line in list2]                       # <remove : leaded lines />
 list2 = [re.sub(r'^\*?\;.*', '', line) for line in list2]                       # <remove ; leaded lines />
+list2 = [re.sub(r'^\*?\".*', '', line) for line in list2]                       # <remove " leaded lines />
 list2 = [re.sub(r'^[/\*]?\@.*', '', line) for line in list2]                    # <remove @ leaded lines />
 list2 = [re.sub(r'^.*\.css$', '', line) for line in list2]                      # <remove @.css filters />
 list2 = [re.sub(r'^.*\.exe$', '', line) for line in list2]                      # <remove @.exe filters />
@@ -352,9 +353,11 @@ print('18/20 : arrange *$ filters; keep beacon csp inline-font inline-script obj
 list2 = [re.sub(r'^\*\$\~?1p.*', '', line) for line in list2]                               # <remove *$1p />
 list2 = [re.sub(r'^\*\$\~?3p.*', '', line) for line in list2]                               # <remove *$3p />
 list2 = [re.sub(r'^\*\$\~?third\-party.*', '', line) for line in list2]                     # <remove *$3p />
+list2 = [re.sub(r'^\*\$\~?all.*', '', line) for line in list2]                              # <remove *$all />
 list2 = [re.sub(r'^\*\$\~?beacon.*', '*$beacon', line) for line in list2]                   # <enforce *$beacon />
 list2 = [re.sub(r'.*\$csp.*', '*$csp=all', line) for line in list2]                         # <enforce *$csp=all />
 list2 = [re.sub(r'^\*\$\~?(sub)?doc(ument)?.*', '', line) for line in list2]                # <remove *$(sub)doc />
+list2 = [re.sub(r'^\*\$\~?from.*', '', line) for line in list2]                             # <remove *$from />
 list2 = [re.sub(r'^\*\$\~?image.*', '', line) for line in list2]                            # <remove *$image />
 list2 = [re.sub(r'^\*\$\~?inline\-font.*', '*$inline-font', line) for line in list2]        # <enforce *$inline-font />
 list2 = [re.sub(r'^\*\$\~?inline\-script.*', '*$inline-script', line) for line in list2]    # <enforce *$inline-script />
