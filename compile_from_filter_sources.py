@@ -23,14 +23,14 @@ proxy_servers    = {'https': 'http://fw:8080'}
 # </settings>
 
 print(
-                                                                      '\n',
-    '# ============================================================', '\n',
-    '# Compile a single deduplicated block list from url sources',    '\n',
-    '# ============================================================', '\n',
-    '# input : <filter_sources> textfile',                            '\n',
-    '# output: <3words_domain_list> textfile, A-Z by @.@',            '\n',
-    '# output: <compiled_block_list> textfile, sorted, deduplicated', '\n',
-    '# ============================================================', '\n',
+                                                                  '\n',
+    '# ============================================================\n',
+    '# Compile a single deduplicated block list from url sources   \n',
+    '# ============================================================\n',
+    '# input : <filter_sources> textfile                           \n',
+    '# output: <3words_domain_list> textfile, A-Z by @.@           \n',
+    '# output: <compiled_block_list> textfile, sorted, deduplicated\n',
+    '# ============================================================\n',
     )
 
 # <get filter url sources from file, dedup and sort>
@@ -73,8 +73,8 @@ for line in list1 :
 
 print(
     '\n',
-    'Transforming filters',
-    '--------------------'
+    'Transforming filters\n',
+    '--------------------\n'
 )
 
 # <transforming loop>
@@ -586,6 +586,8 @@ list2.append('*$script')
 list2.append('*$websocket')
 list2.append('*$xhr')
 
+list2 = sorted(set(list2))
+
 # <transforming loop/>
 
 # <extract domains from list>
@@ -608,8 +610,7 @@ list3 = [line for line in list3 if not(re.search(r'^(com|edu|gob|gou?v|net|org|[
 
 print(
     '{:,}'.format(len(list3)),
-    'domains kept',
-    '\n'
+    'domains kept\n'
     )
 
 # </remove #.@(.@) (numerical domains) and @.@ root domains from list>
@@ -617,8 +618,8 @@ print(
 # <remove redundant domains from list>
 
 print(
-    'Domains deflating started; this operation could take long time, please wait', '\n',
-    '---------------------------------------------------------------------------',
+    'Domains deflating started; this operation could take long time, please wait\n',
+    '---------------------------------------------------------------------------\n',
     sep = ''
 )
 
@@ -695,8 +696,7 @@ del(list3)                                                                      
 print(
     '\n',
     '{:,}'.format(len(list2)),
-    'lines remaining after compilation',
-    '\n'
+    'lines remaining after compilation\n'
 )
 
 # </remove redundant domains from list>
@@ -713,8 +713,7 @@ if file2_out_name + '_old' in filelist :
 
 print(
     'Backup saved:',
-    file2_out_name + '_old',
-    '\n'
+    file2_out_name + '_old\n'
 )
 
 # </save a backup renamed *_old; overwrite if exists>
@@ -750,8 +749,7 @@ file2_out.writelines(line + '\n' for line in list2)
 file2_out.close()
 
 print(
-    'Results saved to textfile <' + file2_out_name + '>',
-    '\n'
+    'Results saved to textfile <' + file2_out_name + '>\n'
 )
 
 # </write output>
