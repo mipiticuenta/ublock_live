@@ -499,6 +499,7 @@ list2 = [re.sub(r'^[_\W]?speed[_\W]?\*?$', '', line) for line in list2]         
 list2 = [re.sub(r'^[_\W]?stats?(istics?)?[_\W]?\*?$', '', line) for line in list2]  # <remove spurious stat(s)(istic(s)) filter />
 list2 = [re.sub(r'^[_\W]?sites?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious site(s)) filter />
 list2 = [re.sub(r'^[_\W]?templates?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious template(s)filter />
+list2 = [re.sub(r'^[_\W]?theme?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious theme(s) filter />
 list2 = [re.sub(r'^[_\W]?third[_\W]?\*?$', '', line) for line in list2]             # <remove spurious third filter />
 list2 = [re.sub(r'^[_\W]?thumb[_\W]?\*?$', '', line) for line in list2]             # <remove spurious thumb filter />
 list2 = [re.sub(r'^[_\W]?tr[_\W]?\*?$', '', line) for line in list2]                # <remove spurious tr filter />
@@ -514,6 +515,7 @@ list2 = [re.sub(r'^[_\W]?web(site)?[_\W]?\*?$', '', line) for line in list2]    
 list2 = [re.sub(r'^[_\W]?widgets?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious widget(s) filter />
 list2 = [re.sub(r'^[_\W]?wp[_\W]?\*?$', '', line) for line in list2]                # <remove spurious wp filter />
 list2 = [re.sub(r'^[_\W]?wordpress[_\W]?\*?$', '', line) for line in list2]         # <remove spurious wordpress filter />
+list2 = [re.sub(r'^[_\W]?youtube[_\W]?\*?$', '', line) for line in list2]           # <remove spurious youtube filter />
 list2 = [re.sub(r'^/?wp\-content/?(themes/?|plugins/?|uploads/?)?\*?$', '', line) for line in list2]    # <remove generic /wp-content filters />
 list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
