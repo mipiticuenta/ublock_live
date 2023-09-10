@@ -431,6 +431,7 @@ list2 = [re.sub(r'^[_\W]?entry[_\W]?\*?$', '', line) for line in list2]         
 list2 = [re.sub(r'^[_\W]?exe[_\W]?\*?$', '', line) for line in list2]               # <remove spurious exe filter />
 list2 = [re.sub(r'^[_\W]?ext(ernal)?[_\W]?\*?$', '', line) for line in list2]       # <remove spurious ext(ernal) filter />
 list2 = [re.sub(r'^[_\W]?extras?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious extra(s)filter />
+list2 = [re.sub(r'^[_\W]?favicon(\.ico)?[_\W]?\*?$', '', line) for line in list2]   # <remove spurious favicon(.ico) filter />
 list2 = [re.sub(r'^[_\W]?feed[_\W]?\*?$', '', line) for line in list2]              # <remove spurious feed filter />
 list2 = [re.sub(r'^[_\W]?file[_\W]?\*?$', '', line) for line in list2]              # <remove spurious file filter />
 list2 = [re.sub(r'^[_\W]?flipboard[_\W]?\*?$', '', line) for line in list2]         # <remove spurious flipboard filter />
@@ -524,11 +525,9 @@ list2 = [re.sub(r'^[_\W]?wall[_\W]?\*?$', '', line) for line in list2]          
 list2 = [re.sub(r'^[_\W]?whatsapp[_\W]?\*?$', '', line) for line in list2]          # <remove spurious whatsapp filter />
 list2 = [re.sub(r'^[_\W]?web(site)?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious web(site) filter />
 list2 = [re.sub(r'^[_\W]?widgets?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious widget(s) filter />
-list2 = [re.sub(r'^[_\W]?wp[_\W]?\*?$', '', line) for line in list2]                # <remove spurious wp filter />
+list2 = [re.sub(r'^[_\W]?wp(\-content)?[_\W]?\*?$', '', line) for line in list2]    # <remove spurious wp(-content) filter />
 list2 = [re.sub(r'^[_\W]?wordpress[_\W]?\*?$', '', line) for line in list2]         # <remove spurious wordpress filter />
 list2 = [re.sub(r'^[_\W]?youtube[_\W]?\*?$', '', line) for line in list2]           # <remove spurious youtube filter />
-list2 = [re.sub(r'^[_\W]?favicon\.ico$', '', line) for line in list2]               # <remove spurious favicon.ico filter />
-list2 = [re.sub(r'^[_\W]?wp\-content/?(themes/?|plugins/?|uploads/?)?\*?$', '', line) for line in list2]    # <remove generic /wp-content filters />
 list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
