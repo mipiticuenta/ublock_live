@@ -222,6 +222,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.]?cdn\-cgi[/\.]', '', line) for line in list2]                       # <remove leading cdn-cgi />
     list2 = [re.sub(r'^[/\.]?css\*?[/\.]', '', line) for line in list2]                         # <remove leading css />
     list2 = [re.sub(r'^[/\.]?custom\*?[/\.]', '', line) for line in list2]                      # <remove leading custom />
+    list2 = [re.sub(r'^[/\.]?data\*?[/\.]', '', line) for line in list2]                        # <remove leading data />
     list2 = [re.sub(r'^[/\.]?default\*?[/\.]', '', line) for line in list2]                     # <remove leading default />
     list2 = [re.sub(r'^[/\.]?files?\*?[/\.]', '', line) for line in list2]                      # <remove leading file(s) />
     list2 = [re.sub(r'^[/\.]?forum?\*?[/\.]', '', line) for line in list2]                      # <remove leading forum />
@@ -419,6 +420,7 @@ list2 = [re.sub(r'^[_\W]?common[_\W]?\*?$', '', line) for line in list2]        
 list2 = [re.sub(r'^[_\W]?community[_\W]?\*?$', '', line) for line in list2]         # <remove spurious community filter />
 list2 = [re.sub(r'^[_\W]?css[_\W]?\*?$', '', line) for line in list2]               # <remove spurious css filter />
 list2 = [re.sub(r'^[_\W]?com[_\W]?\*?$', '', line) for line in list2]               # <remove spurious com filter />
+list2 = [re.sub(r'^[_\W]?data[_\W]?\*?$', '', line) for line in list2]              # <remove spurious data filter />
 list2 = [re.sub(r'^[_\W]?default[_\W]?\*?$', '', line) for line in list2]           # <remove spurious default filter />
 list2 = [re.sub(r'^[_\W]?desktop[_\W]?\*?$', '', line) for line in list2]           # <remove spurious desktop filter />
 list2 = [re.sub(r'^[_\W]?down[_\W]?\*?$', '', line) for line in list2]              # <remove spurious down filter />
@@ -525,8 +527,8 @@ list2 = [re.sub(r'^[_\W]?widgets?[_\W]?\*?$', '', line) for line in list2]      
 list2 = [re.sub(r'^[_\W]?wp[_\W]?\*?$', '', line) for line in list2]                # <remove spurious wp filter />
 list2 = [re.sub(r'^[_\W]?wordpress[_\W]?\*?$', '', line) for line in list2]         # <remove spurious wordpress filter />
 list2 = [re.sub(r'^[_\W]?youtube[_\W]?\*?$', '', line) for line in list2]           # <remove spurious youtube filter />
-list2 = [re.sub(r'^favicon\.ico$', '', line) for line in list2]                     # <remove spurious favicon.ico filter />
-list2 = [re.sub(r'^/?wp\-content/?(themes/?|plugins/?|uploads/?)?\*?$', '', line) for line in list2]    # <remove generic /wp-content filters />
+list2 = [re.sub(r'^[_\W]?favicon\.ico$', '', line) for line in list2]               # <remove spurious favicon.ico filter />
+list2 = [re.sub(r'^[_\W]?wp\-content/?(themes/?|plugins/?|uploads/?)?\*?$', '', line) for line in list2]    # <remove generic /wp-content filters />
 list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
