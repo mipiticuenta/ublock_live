@@ -232,6 +232,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.]?plugins?\*?[/\.]', '', line) for line in list2]                    # <remove leading plugin(s) />
     list2 = [re.sub(r'^[/\.]?public\*?[/\.]', '', line) for line in list2]                      # <remove leading public />
     list2 = [re.sub(r'^[/\.]?resources?\*?[/\.]', '', line) for line in list2]                  # <remove leading resource(s) />
+    list2 = [re.sub(r'^[/\.]?scripts?\*?[/\.]', '', line) for line in list2]                    # <remove leading script(s) />
     list2 = [re.sub(r'^[/\.]?sites?\*?[/\.]', '', line) for line in list2]                      # <remove leading site(s) />
     list2 = [re.sub(r'^[/\.]?_?static\*?[/\.]', '', line) for line in list2]                    # <remove leading static />
     list2 = [re.sub(r'^[/\.]?styles?\*?[/\.]', '', line) for line in list2]                     # <remove leading style(s) />
