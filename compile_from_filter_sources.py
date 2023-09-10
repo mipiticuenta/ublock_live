@@ -252,7 +252,7 @@ while n_1 > len(list2):                                                         
     print('12/20 : clean up trailing symbols numbers prefix $filters etc')
     list2 = [re.sub(r'[\^\|\=]\$', '$', line).strip() for line in list2]                # <replace ^$ |$ =$ with $/>
     list2 = [re.sub(r'\|+\$', '$', line).strip() for line in list2]                     # <replace |$ with $/>
-    list2 = [re.sub(r'[#,\~\|\^\?\=]+$', '', line).strip() for line in list2]           # <remove trailing # , ~ | ^ ? = />
+    list2 = [re.sub(r'[#,\~\|\^\?\=\&]+$', '', line).strip() for line in list2]         # <remove trailing # , ~ | ^ ? = & />
     list2 = [re.sub(r'(?<!/)\*$', '', line).strip() for line in list2]                  # <remove trailing * except not-regex markup //*/>
     list2 = [re.sub(r'\.\*$', '.', line).strip() for line in list2]                     # <replace trailing .* with ./>
     list2 = [re.sub(r'\*\.$', '', line).strip() for line in list2]                      # <remove trailing *. />
@@ -394,6 +394,7 @@ list2 = [re.sub(r'^[_\W]?ajax[_\W]?\*?$', '', line) for line in list2]          
 list2 = [re.sub(r'^[_\W]?amazon[_\W]?\*?$', '', line) for line in list2]            # <remove spurious amazon filter />
 list2 = [re.sub(r'^[_\W]?api[_\W]?\*?$', '', line) for line in list2]               # <remove spurious api filter />
 list2 = [re.sub(r'^[_\W]?app[_\W]?\*?$', '', line) for line in list2]               # <remove spurious app filter />
+list2 = [re.sub(r'^[_\W]?arriba[_\W]?\*?$', '', line) for line in list2]            # <remove spurious arriba filter />
 list2 = [re.sub(r'^[_\W]?art(icle)?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious art(icle) filter />
 list2 = [re.sub(r'^[_\W]?assets?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious base filter />
 list2 = [re.sub(r'^[_\W]?audio[_\W]?\*?$', '', line) for line in list2]             # <remove spurious audio filter />
@@ -524,6 +525,7 @@ list2 = [re.sub(r'^[_\W]?widgets?[_\W]?\*?$', '', line) for line in list2]      
 list2 = [re.sub(r'^[_\W]?wp[_\W]?\*?$', '', line) for line in list2]                # <remove spurious wp filter />
 list2 = [re.sub(r'^[_\W]?wordpress[_\W]?\*?$', '', line) for line in list2]         # <remove spurious wordpress filter />
 list2 = [re.sub(r'^[_\W]?youtube[_\W]?\*?$', '', line) for line in list2]           # <remove spurious youtube filter />
+list2 = [re.sub(r'^favicon\.ico$', '', line) for line in list2]                     # <remove spurious favicon.ico filter />
 list2 = [re.sub(r'^/?wp\-content/?(themes/?|plugins/?|uploads/?)?\*?$', '', line) for line in list2]    # <remove generic /wp-content filters />
 list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
