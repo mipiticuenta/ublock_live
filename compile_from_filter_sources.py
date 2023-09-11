@@ -475,6 +475,7 @@ list2 = [re.sub(r'^[_\W]?jquery(\.js)?[_\W]?\*?$', '', line) for line in list2] 
 list2 = [re.sub(r'^[_\W]?js(on)?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious js(on) filter />
 list2 = [re.sub(r'^[_\W]?lists?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious list(s) filter />
 list2 = [re.sub(r'^[_\W]?(down|up)?loads?[_\W]?\*?$', '', line) for line in list2]  # <remove spurious (down|up)load(s) filter />
+list2 = [re.sub(r'^[_\W]?local[_\W]?\*?$', '', line) for line in list2]             # <remove spurious local filter />
 list2 = [re.sub(r'^[_\W]?login[_\W]?\*?$', '', line) for line in list2]             # <remove spurious login filter />
 list2 = [re.sub(r'^[_\W]?logos?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious logo(s) filter />
 list2 = [re.sub(r'^[_\W]?libs?[_\W]?\*?$', '', line) for line in list2]             # <remove spurious lib filter />
@@ -505,10 +506,11 @@ list2 = [re.sub(r'^[_\W]?pages?[_\W]?\*?$', '', line) for line in list2]        
 list2 = [re.sub(r'^[_\W]?pics?[_\W]?\*?$', '', line) for line in list2]             # <remove spurious pic filter />
 list2 = [re.sub(r'^[_\W]?(dis)?play[_\W]?\*?$', '', line) for line in list2]        # <remove spurious (dis)play filter />
 list2 = [re.sub(r'^[_\W]?player[_\W]?\*?$', '', line) for line in list2]            # <remove spurious player filter />
+list2 = [re.sub(r'^[_\W]?plugins?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious plugin(s) filter />
+list2 = [re.sub(r'^[_\W]?playas?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious playa(s) filter />
 list2 = [re.sub(r'^[_\W]?post?[_\W]?\*?$', '', line) for line in list2]             # <remove spurious post filter />
 list2 = [re.sub(r'^[_\W]?price[_\W]?\*?$', '', line) for line in list2]             # <remove spurious price filter />
 list2 = [re.sub(r'^[_\W]?production[_\W]?\*?$', '', line) for line in list2]        # <remove spurious production filter />
-list2 = [re.sub(r'^[_\W]?plugins?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious plugin(s) filter />
 list2 = [re.sub(r'^[_\W]?png[_\W]?\*?$', '', line) for line in list2]               # <remove spurious png filter />
 list2 = [re.sub(r'^[_\W]?public[_\W]?\*?$', '', line) for line in list2]            # <remove spurious public filter />
 list2 = [re.sub(r'^[_\W]?rec[_\W]?\*?$', '', line) for line in list2]               # <remove spurious rec filter />
@@ -560,6 +562,7 @@ list2.append('@@||gstatic.com^$script,domain=google.com')
 list2.append('@@||google.com^$inline-script,1p')
 list2.append('@@||meteoblue.com^$inline-script,1p')
 list2.append('@@||meteoblue.com^$script,1p')
+list2.append('@@/lazysizes.min.js$script,1p')
 list2.append('*$beacon')
 list2.append('*$csp=all')
 list2.append('*$inline-font')
