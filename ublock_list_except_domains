@@ -2,11 +2,11 @@
 ! expires: 1 day
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ublock_list_except_domains
 ! title: ublock list except domains
+*##:not(html):not(body):matches-attr("/.+/"=    "/[-_\s^]addetail/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no)pop(?!ul)/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no.)shar[eir]/i")
 *##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]ad\-h/i")
 *##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]addespace/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]addetail/i")
 *##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]addisplay/i")
 *##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]addiv/i")
 *##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]aff/i")
@@ -150,7 +150,6 @@
 *$other
 *$ping
 *$popunder
-*$removeparam=/.*cooki.*/,important
 *$removeparam=/^ad/,important
 *$removeparam=/^ad_/,important
 *$removeparam=/^ad_=/,important
@@ -1955,6 +1954,7 @@
 /[^a-z0-9]listenlive[^a-z]/
 /[^a-z0-9]listrakbi[^a-z]/
 /[^a-z0-9]livefyre[^a-z]/
+/[^a-z0-9]log[0-9]*(|ger|ging|s)[^a-z]/$important
 /[^a-z0-9]lp4[^a-z]/
 /[^a-z0-9]lqm[^a-z]/
 /[^a-z0-9]marketing(cloudapis|sites)[^a-z]/
