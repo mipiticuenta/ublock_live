@@ -220,6 +220,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^\.?[-_a-z0-9\*]+/', '/', line) for line in list2]                        # <replace leading @/ with / />
     list2 = [re.sub(r'^[/\.]?assets?\*?(?=[/\.])', '', line) for line in list2]                 # <remove leading asset />
     list2 = [re.sub(r'^[/\.]?cdn\-cgi(?=[/\.])', '', line) for line in list2]                   # <remove leading cdn-cgi />
+    list2 = [re.sub(r'^[/\.]?content\*?(?=[/\.])', '', line) for line in list2]                 # <remove leading content />
     list2 = [re.sub(r'^[/\.]?css\*?(?=[/\.])', '', line) for line in list2]                     # <remove leading css />
     list2 = [re.sub(r'^[/\.]?custom\*?(?=[/\.])', '', line) for line in list2]                  # <remove leading custom />
     list2 = [re.sub(r'^[/\.]?data\*?(?=[/\.])', '', line) for line in list2]                    # <remove leading data />
@@ -644,6 +645,7 @@ list3 = [re.sub(r'^\.?datacamp\.com$', '', line) for line in list3]             
 list3 = [re.sub(r'^\.?digitalocean\.com$', '', line) for line in list3]             # <remove digitalocean.com />
 list3 = [re.sub(r'^\.?(lite\.)?duckduckgo\.com$', '', line) for line in list3]      # <remove duckduckgo.com />
 list3 = [re.sub(r'^\.?ecestaticos\.com$', '', line) for line in list3]              # <remove ecestaticos.com />
+list3 = [re.sub(r'^\.?ecosia\.org$', '', line) for line in list3]                   # <remove ecosia.org />
 list3 = [re.sub(r'^\.?elconfidencial\.com$', '', line) for line in list3]           # <remove elconfidencial.com />
 list3 = [re.sub(r'^\.?eleconomista\.es$', '', line) for line in list3]              # <remove eleconomista.es />
 list3 = [re.sub(r'^\.?elmundo\.es$', '', line) for line in list3]                   # <remove elmundo.es />
@@ -692,11 +694,12 @@ list3 = [re.sub(r'^\.?prensaiberica\.es$', '', line) for line in list3]         
 list3 = [re.sub(r'^\.?realpython\.com$', '', line) for line in list3]               # <remove realpython.com />
 list3 = [re.sub(r'^\.?reuters\.com$', '', line) for line in list3]                  # <remove reuters.com />
 list3 = [re.sub(r'^\.?rfi\.fr$', '', line) for line in list3]                       # <remove rfi.fr />
+list3 = [re.sub(r'^\.?stackexchange\.com$', '', line) for line in list3]            # <remove stackexchange.com />
+list3 = [re.sub(r'^\.?stackoverflow\.com$', '', line) for line in list3]            # <remove stackoverflow.com />
+list3 = [re.sub(r'^\.?startpage\.com$', '', line) for line in list3]                # <remove startpage.com />
 list3 = [re.sub(r'^\.?tradingview\.com$', '', line) for line in list3]              # <remove tradingview.com />
 list3 = [re.sub(r'^\.?tumblr\.com$', '', line) for line in list3]                   # <remove tumblr.com />
 list3 = [re.sub(r'^\.?twitter\.com$', '', line) for line in list3]                  # <remove twitter.com />
-list3 = [re.sub(r'^\.?stackexchange\.com$', '', line) for line in list3]            # <remove stackexchange.com />
-list3 = [re.sub(r'^\.?stackoverflow\.com$', '', line) for line in list3]            # <remove stackoverflow.com />
 list3 = [re.sub(r'^\.?uecdn\.es$', '', line) for line in list3]                     # <remove uecdn.es />
 list3 = [re.sub(r'^\.?w3schools\.org$', '', line) for line in list3]                # <remove w3schools.com />
 list3 = [re.sub(r'^\.?weblogssl\.com$', '', line) for line in list3]                # <remove weblogssl.com />
