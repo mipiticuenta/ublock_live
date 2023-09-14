@@ -393,6 +393,7 @@ list2 = [re.sub(r'^\*\$.*\.js$', '', line) for line in list2]                   
 list2 = [re.sub(r'^[_\W]?api\.js$', '', line) for line in list2]                            # <remove api.js filter />
 list2 = [re.sub(r'^[_\W]?base\.js$', '', line) for line in list2]                           # <remove base.js filter />
 list2 = [re.sub(r'^[_\W]?main\.js$', '', line) for line in list2]                           # <remove main.js filter />
+list2 = [re.sub(r'^[_\W]?(bootstrap\.)?min\.js$', '', line) for line in list2]              # <remove bootstrap.min.js filter />
 list2 = [re.sub(r'^[_\W]?(lazyload\.)?min\.js$', '', line) for line in list2]               # <remove lazyload.min.js filter />
 list2 = [line for line in list2 if len(line) > 1]                                           # <remove items if length < 2 />
 
@@ -644,6 +645,7 @@ list3 = [re.sub(r'^\.?developers\.google\.com$', '', line) for line in list3]   
 list3 = [re.sub(r'^\.?play\.google\.com$', '', line) for line in list3]             # <remove play.google.com />
 list3 = [re.sub(r'^\.?googleapis\.com$', '', line) for line in list3]               # <remove googleapis.com />
 list3 = [re.sub(r'^\.?googlevideo\.com$', '', line) for line in list3]              # <remove googlevideo.com />
+list3 = [re.sub(r'^\.?googleusercontent\.com$', '', line) for line in list3]        # <remove googleusercontent.com />
 list3 = [re.sub(r'^\.?gstatic\.com$', '', line) for line in list3]                  # <remove gstatic.com />
 list3 = [re.sub(r'^\.?ieee\.org$', '', line) for line in list3]                     # <remove ieee.org />
 list3 = [re.sub(r'^\.?investing\.com$', '', line) for line in list3]                # <remove investing.com />
