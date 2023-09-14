@@ -677,6 +677,7 @@ list3 = [re.sub(r'^\.?weblogssl\.org$', '', line) for line in list3]            
 list3 = [re.sub(r'^\.?wikimedia\.org$', '', line) for line in list3]                # <remove wikimedia.org />
 list3 = [re.sub(r'^\.?wikipedia\.org$', '', line) for line in list3]                # <remove wikipedia.org />
 list3 = [re.sub(r'^\.?wordpress\.com$', '', line) for line in list3]                # <remove wordpress.com />
+list3 = [re.sub(r'^\.?wordreference\.com$', '', line) for line in list3]            # <remove wordreference.com />
 list3 = [re.sub(r'^\.?(music\.)?youtube\.com$', '', line) for line in list3]        # <remove (music.)youtube.com />
 list3 = [re.sub(r'^\.?ytimg\.com$', '', line) for line in list3]                    # <remove ytimg.com />
 list3 = [line for line in list3 if not(re.search(r'^(com|edu|gob|gou?v|net|org|[a-z]{2})\.(com|edu|gob|gou?v|net|org|[a-z]{2})$', line))]   # <remove @.@ root domains />
