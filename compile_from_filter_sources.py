@@ -220,7 +220,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^\.?[-_a-z0-9\*]+/', '/', line) for line in list2]                        # <replace leading @/ with / />
     list2 = [re.sub(r'^[/\.]?assets?\*?(?=[/\.])', '', line) for line in list2]                 # <remove leading asset />
     list2 = [re.sub(r'^[/\.]?cdn\-cgi(?=[/\.])', '', line) for line in list2]                   # <remove leading cdn-cgi />
-    list2 = [re.sub(r'^[/\.]?content\*?(?=[/\.])', '', line) for line in list2]                 # <remove leading content />
+    list2 = [re.sub(r'^[/\.]?contents?\*?(?=[/\.])', '', line) for line in list2]               # <remove leading content(s) />
     list2 = [re.sub(r'^[/\.]?css\*?(?=[/\.])', '', line) for line in list2]                     # <remove leading css />
     list2 = [re.sub(r'^[/\.]?custom\*?(?=[/\.])', '', line) for line in list2]                  # <remove leading custom />
     list2 = [re.sub(r'^[/\.]?data\*?(?=[/\.])', '', line) for line in list2]                    # <remove leading data />
