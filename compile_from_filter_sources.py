@@ -272,7 +272,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'\.js(?![a-z0-9]).*$', '.js', line) for line in list2]             # <clean up trailing .js />
     list2 = [re.sub(r'\.php\??$', '.', line) for line in list2]                         # <remove trailing .php?/>
     list2 = [re.sub(r'\.png\??$', '.', line) for line in list2]                         # <remove trailing .png?/>
-    list2 = [re.sub(r'(^[^#]{2,})\$[a-z0-9,~]*$(?<!/)(?<!important)', r'\1', line) for line in list2]    # <remove specific trailing $ filters except *$ or ending with important />
+    list2 = [re.sub(r'(^[^#]{2,})\$[a-z0-9,~=]*$(?<!/)(?<!important)', r'\1', line) for line in list2]    # <remove specific trailing $ filters except *$ or ending with important />
     list2 = [re.sub(r'\??\*\=.*(^/)$', '', line).strip() for line in list2]             # <remove trailing ?*=... />
     list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters kept')
@@ -416,6 +416,7 @@ list2 = [re.sub(r'^[_\W]?back(ground)?[_\W]?\*?$', '', line) for line in list2] 
 list2 = [re.sub(r'^[_\W]?bar[_\W]?\*?$', '', line) for line in list2]               # <remove spurious bar filter />
 list2 = [re.sub(r'^[_\W]?base[_\W]?\*?$', '', line) for line in list2]              # <remove spurious base filter />
 list2 = [re.sub(r'^[_\W]?basic[_\W]?\*?$', '', line) for line in list2]             # <remove spurious basic filter />
+list2 = [re.sub(r'^[_\W]?batch[_\W]?\*?$', '', line) for line in list2]             # <remove spurious batch filter />
 list2 = [re.sub(r'^[_\W]?bbc[_\W]?\*?$', '', line) for line in list2]               # <remove spurious bbc filter />
 list2 = [re.sub(r'^[_\W]?bin[_\W]?\*?$', '', line) for line in list2]               # <remove spurious bin filter />
 list2 = [re.sub(r'^[_\W]?black[_\W]?\*?$', '', line) for line in list2]             # <remove spurious black filter />
@@ -615,7 +616,10 @@ list3 = [re.sub(r'^\.', '', line)  for line in list3]                           
 list3 = [re.sub(r'^\.?abc\.(es|com)$', '', line) for line in list3]                 # <remove abc.(es|com) />
 list3 = [re.sub(r'^\.?akamai(zed)?\.com$', '', line) for line in list3]             # <remove akamai.com />
 list3 = [re.sub(r'^\.?akamai(edge|zed)?(hd)?\.net$', '', line) for line in list3]   # <remove akamai(edge|zed)(hd).net />
-list3 = [re.sub(r'^\.?amazon(aws)?\.(com|es)$', '', line) for line in list3]        # <remove amazon(aws).(com|es) />
+list3 = [re.sub(r'^\.?amazon\.(com|es)$', '', line) for line in list3]              # <remove amazon.(com|es) />
+list3 = [re.sub(r'^\.?amazonaws\.com$', '', line) for line in list3]                # <remove amazonaws.com />
+list3 = [re.sub(r'^\.?media\-amazon\.com$', '', line) for line in list3]            # <remove media-amazon.com />
+list3 = [re.sub(r'^\.?ssl\-images\-amazon\.com$', '', line) for line in list3]      # <remove ssl-images-amazon.com />
 list3 = [re.sub(r'^\.?azure(edge)?\.net$', '', line) for line in list3]             # <remove azureedge.net />
 list3 = [re.sub(r'^\.?apple\.com$', '', line) for line in list3]                    # <remove apple.com />
 list3 = [re.sub(r'^\.?bbci?\.(com|co\.uk)$', '', line) for line in list3]           # <remove bbc(i).(com|co.uk) />
