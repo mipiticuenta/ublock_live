@@ -31,7 +31,6 @@
 *##:not(html):not(body):matches-attr("/.+/"="/^ad.?wrap/i")
 *##:not(html):not(body):matches-attr("/.+/"="/^ad\-h.*/i")
 *##:not(html):not(body):matches-attr("/.+/"="/^adbl?o?c?k?/i")
-*##:not(html):not(body):matches-attr("/.+/"="/^bann(er)?/i"):not(:matches-attr("/.+/"="/(search|header)/i"))
 *##:not(html):not(body):matches-attr("/.+/"="/^bg-black/i")
 *##:not(html):not(body):matches-attr("/.+/"="/^cmp/i")
 *##:not(html):not(body):matches-attr("/.+/"="/^cx/i")
@@ -141,6 +140,7 @@
 *##:not(html):not(body):matches-attr("/.+/"="/trustproject/i")
 *##:not(html):not(body):matches-attr("/.+/"="/yandex/i")
 *##:not(html):not(body):matches-attr("/.+/"="/yield/i")
+*##:not(html):not(body):not(header):matches-attr("/.+/"="/^bann(er)?/i"):not(:matches-attr("/.+/"="/search/i"))
 *$beacon
 *$csp=all
 *$inline-font
