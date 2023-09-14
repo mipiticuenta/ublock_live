@@ -432,6 +432,7 @@ list2 = [re.sub(r'^[_\W]?china[_\W]?\*?$', '', line) for line in list2]         
 list2 = [re.sub(r'^[_\W]?check[_\W]?\*?$', '', line) for line in list2]             # <remove spurious check filter />
 list2 = [re.sub(r'^[_\W]?client[_\W]?\*?$', '', line) for line in list2]            # <remove spurious client filter />
 list2 = [re.sub(r'^[_\W]?code[_\W]?\*?$', '', line) for line in list2]              # <remove spurious code filter />
+list2 = [re.sub(r'^[_\W]?connect[_\W]?\*?$', '', line) for line in list2]           # <remove spurious connect filter />
 list2 = [re.sub(r'^[_\W]?config[_\W]?\*?$', '', line) for line in list2]            # <remove spurious config filter />
 list2 = [re.sub(r'^[_\W]?copy[_\W]?\*?$', '', line) for line in list2]              # <remove spurious copy filter />
 list2 = [re.sub(r'^[_\W]?content[_\W]?\*?$', '', line) for line in list2]           # <remove spurious content filter />

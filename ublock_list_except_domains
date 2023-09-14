@@ -160,6 +160,7 @@
 *$removeparam=/^campaign.*/,important
 *$removeparam=/^cli?c?k/,important
 *$removeparam=/^cp.*/,important
+*$removeparam=/^cts/,important
 *$removeparam=/^js_stats/
 *$removeparam=/^mtm_/
 *$removeparam=/^oft_/
@@ -191,11 +192,10 @@
 *$removeparam=/cash/,important
 *$removeparam=/cooki/,important
 *$removeparam=/ctier/,important
-*$removeparam=/cts/,important
 *$removeparam=/dci/,important
 *$removeparam=/detect/,important
 *$removeparam=/exotra?ck/,important
-*$removeparam=/guce_/*
+*$removeparam=/guce_/,important
 *$removeparam=/hasads/,important
 *$removeparam=/hasfast/,important
 *$removeparam=/hash/,important
