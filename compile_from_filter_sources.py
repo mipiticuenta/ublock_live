@@ -80,6 +80,7 @@ print(
 # <transforming loop>
 
 print(' 1/20 : remove leading/trailing/dup spaces ')
+list2 = [re.sub(r'\t', ' ', line).strip() for line in list2]                    # <replace tab with space  />
 list2 = [re.sub(r' +', ' ', line).strip() for line in list2]                    # <dedup spaces and remove leading/trailing spaces />
 list2 = [line for line in list2 if len(line) > 1]                               # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
@@ -627,6 +628,7 @@ list3 = [re.sub(r'^\.?amazon\.(com|es)$', '', line) for line in list3]          
 list3 = [re.sub(r'^\.?amazonaws\.com$', '', line) for line in list3]                # <remove amazonaws.com />
 list3 = [re.sub(r'^\.?media\-amazon\.com$', '', line) for line in list3]            # <remove media-amazon.com />
 list3 = [re.sub(r'^\.?ssl\-images\-amazon\.com$', '', line) for line in list3]      # <remove ssl-images-amazon.com />
+list3 = [re.sub(r'^\.?arstechnica\.com$', '', line) for line in list3]              # <remove arstechnica.com />
 list3 = [re.sub(r'^\.?azure(edge)?\.net$', '', line) for line in list3]             # <remove azureedge.net />
 list3 = [re.sub(r'^\.?apple\.com$', '', line) for line in list3]                    # <remove apple.com />
 list3 = [re.sub(r'^\.?benzinga\.com$', '', line) for line in list3]                 # <remove benzinga.com />
@@ -656,6 +658,7 @@ list3 = [re.sub(r'^\.?fastly\.net$', '', line) for line in list3]               
 list3 = [re.sub(r'^\.?flipboard\.com$', '', line) for line in list3]                # <remove flipboard.com />
 list3 = [re.sub(r'^\.?genbeta\.com$', '', line) for line in list3]                  # <remove genbeta.com />
 list3 = [re.sub(r'^\.?geeksforgeeks\.org$', '', line) for line in list3]            # <remove geeksforgeeks.org />
+list3 = [re.sub(r'^\.?ghacks\.net$', '', line) for line in list3]                   # <remove ghacks.net />
 list3 = [re.sub(r'^\.?ggpht\.com$', '', line) for line in list3]                    # <remove ggpht.com />
 list3 = [re.sub(r'^\.?google\.(com|[a-z]{2})$', '', line) for line in list3]        # <remove google.(com|[a-z]{2}) />
 list3 = [re.sub(r'^\.?accounts\.google\.com$', '', line) for line in list3]         # <remove accounts.google.com />
@@ -690,6 +693,7 @@ list3 = [re.sub(r'^\.?nasdaq\.com$', '', line) for line in list3]               
 list3 = [re.sub(r'^\.?nih\.gov$', '', line) for line in list3]                      # <remove nih.gov />
 list3 = [re.sub(r'^\.?nytimes\.gov$', '', line) for line in list3]                  # <remove nytimes.gov />
 list3 = [re.sub(r'^\.?pcmag\.com$', '', line) for line in list3]                    # <remove pcmag.com />
+list3 = [re.sub(r'^\.?pcworld\.com$', '', line) for line in list3]                  # <remove pcworld.com />
 list3 = [re.sub(r'^\.?prensaiberica\.es$', '', line) for line in list3]             # <remove prensaiberica.es />
 list3 = [re.sub(r'^\.?realpython\.com$', '', line) for line in list3]               # <remove realpython.com />
 list3 = [re.sub(r'^\.?reuters\.com$', '', line) for line in list3]                  # <remove reuters.com />
@@ -697,6 +701,7 @@ list3 = [re.sub(r'^\.?rfi\.fr$', '', line) for line in list3]                   
 list3 = [re.sub(r'^\.?stackexchange\.com$', '', line) for line in list3]            # <remove stackexchange.com />
 list3 = [re.sub(r'^\.?stackoverflow\.com$', '', line) for line in list3]            # <remove stackoverflow.com />
 list3 = [re.sub(r'^\.?startpage\.com$', '', line) for line in list3]                # <remove startpage.com />
+list3 = [re.sub(r'^\.?theregister\.com$', '', line) for line in list3]              # <remove theregister.com />
 list3 = [re.sub(r'^\.?tradingview\.com$', '', line) for line in list3]              # <remove tradingview.com />
 list3 = [re.sub(r'^\.?tumblr\.com$', '', line) for line in list3]                   # <remove tumblr.com />
 list3 = [re.sub(r'^\.?twitter\.com$', '', line) for line in list3]                  # <remove twitter.com />
@@ -707,8 +712,10 @@ list3 = [re.sub(r'^\.?wikimedia\.org$', '', line) for line in list3]            
 list3 = [re.sub(r'^\.?wikipedia\.org$', '', line) for line in list3]                # <remove wikipedia.org />
 list3 = [re.sub(r'^\.?wordpress\.com$', '', line) for line in list3]                # <remove wordpress.com />
 list3 = [re.sub(r'^\.?wordreference\.com$', '', line) for line in list3]            # <remove wordreference.com />
+list3 = [re.sub(r'^\.?wsj\.com$', '', line) for line in list3]                      # <remove wsj.com />
 list3 = [re.sub(r'^\.?(music\.)?youtube\.com$', '', line) for line in list3]        # <remove (music.)youtube.com />
 list3 = [re.sub(r'^\.?ytimg\.com$', '', line) for line in list3]                    # <remove ytimg.com />
+list3 = [re.sub(r'^\.?zdnet\.com$', '', line) for line in list3]                    # <remove zdnet.com />
 list3 = [re.sub(r'^\.?xataka\.com$', '', line) for line in list3]                   # <remove xataka.com />
 list3 = [line for line in list3 if not(re.search(r'^(com|edu|gob|gou?v|net|org|[a-z]{2})\.(com|edu|gob|gou?v|net|org|[a-z]{2})$', line))]   # <remove @.@ root domains />
 
