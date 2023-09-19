@@ -600,7 +600,6 @@ list2.append('*$object')
 list2.append('*$other')
 list2.append('*$ping')
 list2.append('*$popunder')
-list2.append('*$script')
 list2.append('*$websocket')
 list2.append('*$xhr')
 
