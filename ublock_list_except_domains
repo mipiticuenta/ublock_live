@@ -1076,7 +1076,6 @@
 .browser-fingerprint-
 .bzshare.
 .bztotalshare.
-.cache.js
 .campaignsfileloaded
 .cash
 .cfd
@@ -1882,6 +1881,7 @@
 /[-\w]*analytics[-\w\.]*\.js/
 /[-\w]*banner[-\w\.]*\.js/
 /[-\w]*beacon[-\w\.]*\.js/
+/[-\w]*cache[-\w\.]*\.js/
 /[-\w]*chameleon[-\w\.]*\.js/
 /[-\w]*clipboard[-\w\.]*\.js/
 /[-\w]*comment[-\w\.]*\.js/
@@ -1892,9 +1892,11 @@
 /[-\w]*detect[-\w\.]*\.js/
 /[-\w]*dfp[-\w\.]*\.js/
 /[-\w]*didomi[-\w\.]*\.js/
+/[-\w]*dismiss[-\w\.]*\.js/
 /[-\w]*form[-\w\.]*\.js/
 /[-\w]*help[-\w\.]*\.js/
 /[-\w]*hook[-\w\.]*\.js/
+/[-\w]*hoverintent[-\w\.]*\.js/
 /[-\w]*incapsula[-\w\.]*\.js/
 /[-\w]*joly[-\w\.]*\.js/
 /[-\w]*landing[-\w\.]*\.js/
@@ -1918,9 +1920,11 @@
 /[-\w]*score[-\w\.]*\.js/
 /[-\w]*sdk[-\w\.]*\.js/
 /[-\w]*share[-\w\.]*\.js/
+/[-\w]*social[-\w\.]*\.js/
 /[-\w]*spm[-\w\.]*\.js/
 /[-\w]*status[-\w\.]*\.js/
 /[-\w]*stub[-\w\.]*\.js/
+/[-\w]*superfish[-\w\.]*\.js/
 /[-\w]*tag[-\w\.]*\.js/
 /[-\w]*timming[-\w\.]*\.js/
 /[-\w]*track[-\w\.]*\.js/
@@ -16911,12 +16915,9 @@
 /mahua_show.js
 /mail-stat.airdroid.com/*
 /mail-tracking/*
-/mail.sparksport.co.nz/forms/read/*
-/mail.sparksport.co.nz/mail/read/*
 /mail/ads/*
 /mail_s.
 /mailbutton_48.
-/mailcache.appinthestore.com/
 /mailentrymobile.do
 /mailisread
 /mailmunch/*
