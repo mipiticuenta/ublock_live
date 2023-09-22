@@ -1847,14 +1847,15 @@
 /9uc1jthe
 /9y1zcedu
 /9ytg7hda
-/[-\w]*banner[-\w]*\.js/
-/[-\w]*chameleon[-\w]*\.js/
-/[-\w]*help[-\w]*\.js/
-/[-\w]*incapsula[-\w]*\.js/
-/[-\w]*listen[-\w]*\.js/
-/[-\w]*optimizely[-\w]*\.js/
-/[-\w]*reverb[-\w]*\.js/
-/[-\w]*vendor[-\w]*\.js/
+/[-\w]*banner[-\w\.]*\.js/
+/[-\w]*chameleon[-\w\.]*\.js/
+/[-\w]*help[-\w\.]*\.js/
+/[-\w]*incapsula[-\w\.]*\.js/
+/[-\w]*listen[-\w\.]*\.js/
+/[-\w]*optimizely[-\w\.]*\.js/
+/[-\w]*policy[-\w\.]*\.js/
+/[-\w]*reverb[-\w\.]*\.js/
+/[-\w]*vendor[-\w\.]*\.js/
 /[^a-z0-9]((browser|self|v10)\.events|settings\-win|vortex|vortex\-win)\.data\.microsoft[^a-z]/
 /[^a-z0-9](acc|push)engage[^a-z]/
 /[^a-z0-9](adblockana|analogana|crash|fitana|gameana|matherana|siteimproveana|tap|wowana)lytics[^a-z]/
@@ -2290,9 +2291,7 @@
 /_track.
 /_tracker
 /_tracking/*
-/_ui/desktop/common/js/uianalytics/*
 /_uid.
-/_uploads/imgbanners/*
 /_vercel/insights/*
 /_visitcount
 /_werbung/*
@@ -10148,6 +10147,7 @@
 /design/promo/*
 /design_framework/images/crazy/affiliates/*
 /designil-pdpa/*
+/desktop.min.js
 /desktop/aliens/*
 /desktop/pub/*
 /desktop_kannada-min.webp
@@ -14742,6 +14742,7 @@
 /imgb/*
 /imgban
 /imgban/*
+/imgbanners/*
 /imgboeking/*
 /imgbup/*
 /imgcontador.
@@ -26806,6 +26807,7 @@
 /ui/ad/*
 /ui/analytics/*
 /uia
+/uianalytics/*
 /uic.
 /uifollow.
 /uim.html/*
@@ -36079,6 +36081,7 @@ comment-ad.
 comment-ads.
 comment.js
 comment_baidu.
+comments.js
 comments?[^a-z]/$important
 commentshareicons.
 commercial_horizontal.
@@ -46921,6 +46924,7 @@ permissionbar-
 permissionbar.
 permutive$important
 permutive-async.js
+permutive.min.js
 personal
 pesbola-
 pescookies.
@@ -46979,6 +46983,7 @@ pialabet.
 pialaqq.
 pialasports.
 piano-analytics.
+piano.min.js
 piano\.io
 pianoanalyticstags.js
 piao.js

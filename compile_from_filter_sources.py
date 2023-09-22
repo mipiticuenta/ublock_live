@@ -220,18 +220,29 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.\=\?]\$', '*$', line).strip() for line in list2]                     # <fix leading /$ .$ =$ ?$ with *$ />
     list2 = [re.sub(r'^\.?[-_a-z0-9\*]+/', '/', line) for line in list2]                        # <replace leading @/ with / />
     list2 = [re.sub(r'^[/\.]?api\*?(?=[/\.])', '', line) for line in list2]                     # <remove leading api />
+    list2 = [re.sub(r'^[/\.]?app\*?(?=[/\.])', '', line) for line in list2]                     # <remove leading app />
     list2 = [re.sub(r'^[/\.]?assets?\*?(?=[/\.])', '', line) for line in list2]                 # <remove leading asset />
-    list2 = [re.sub(r'^[/\.]?cdn\-cgi(?=[/\.])', '', line) for line in list2]                   # <remove leading cdn-cgi />
+    list2 = [re.sub(r'^[/\.]?attachments?\*?(?=[/\.])', '', line) for line in list2]            # <remove leading attachment />
+    list2 = [re.sub(r'^[/\.]?build\*?(?=[/\.])', '', line) for line in list2]                   # <remove leading build />
+    list2 = [re.sub(r'^[/\.]?business\*?(?=[/\.])', '', line) for line in list2]                # <remove leading business />
+    list2 = [re.sub(r'^[/\.]?catalog\*?(?=[/\.])', '', line) for line in list2]                 # <remove leading catalog />
+    list2 = [re.sub(r'^[/\.]?cdn(\-cgi)?(?=[/\.])', '', line) for line in list2]                # <remove leading cdn(-cgi) />
+    list2 = [re.sub(r'^[/\.]?center\*?(?=[/\.])', '', line) for line in list2]                  # <remove leading center />
+    list2 = [re.sub(r'^[/\.]?cgi\-bin\*?(?=[/\.])', '', line) for line in list2]                # <remove leading cgi-bin />
+    list2 = [re.sub(r'^[/\.]?common\*?(?=[/\.])', '', line) for line in list2]                  # <remove leading common />
     list2 = [re.sub(r'^[/\.]?contents?\*?(?=[/\.])', '', line) for line in list2]               # <remove leading content(s) />
+    list2 = [re.sub(r'^[/\.]?core\*?(?=[/\.])', '', line) for line in list2]                    # <remove leading core />
     list2 = [re.sub(r'^[/\.]?css\*?(?=[/\.])', '', line) for line in list2]                     # <remove leading css />
     list2 = [re.sub(r'^[/\.]?custom\*?(?=[/\.])', '', line) for line in list2]                  # <remove leading custom />
     list2 = [re.sub(r'^[/\.]?data\*?(?=[/\.])', '', line) for line in list2]                    # <remove leading data />
     list2 = [re.sub(r'^[/\.]?default\*?(?=[/\.])', '', line) for line in list2]                 # <remove leading default />
+    list2 = [re.sub(r'^[/\.]?ext\*?(?=[/\.])', '', line) for line in list2]                     # <remove leading ext />
     list2 = [re.sub(r'^[/\.]?files?\*?(?=[/\.])', '', line) for line in list2]                  # <remove leading file(s) />
     list2 = [re.sub(r'^[/\.]?forum\*?(?=[/\.])', '', line) for line in list2]                   # <remove leading forum />
     list2 = [re.sub(r'^[/\.]?home?\*?(?=[/\.])', '', line) for line in list2]                   # <remove leading home />
     list2 = [re.sub(r'^[/\.]?ima?ge?(ne)?s?\*?(?=[/\.])', '', line) for line in list2]          # <remove leading image />
     list2 = [re.sub(r'^[/\.]?jquery\*?(?=[/\.])', '', line) for line in list2]                  # <remove leading jquery />
+    list2 = [re.sub(r'^[/\.]?js\*?(?=[/\.])', '', line) for line in list2]                      # <remove leading js />
     list2 = [re.sub(r'^[/\.]?libs?\*?(?=[/\.])', '', line) for line in list2]                   # <remove leading lib(s) />
     list2 = [re.sub(r'^[/\.]?media\*?(?=[/\.])', '', line) for line in list2]                   # <remove leading media />
     list2 = [re.sub(r'^[/\.]?plugins?\*?(?=[/\.])', '', line) for line in list2]                # <remove leading plugin(s) /

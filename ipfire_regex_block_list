@@ -3,14 +3,15 @@
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list
 ! title: regex block list
 /(fls|unagi|aan)[a-z0-9]+amazon/
-/[-\w]*banner[-\w]*\.js/
-/[-\w]*chameleon[-\w]*\.js/
-/[-\w]*help[-\w]*\.js/
-/[-\w]*incapsula[-\w]*\.js/
-/[-\w]*listen[-\w]*\.js/
-/[-\w]*optimizely[-\w]*\.js/
-/[-\w]*reverb[-\w]*\.js/
-/[-\w]*vendor[-\w]*\.js/
+/[-\w]*banner[-\w\.]*\.js/
+/[-\w]*chameleon[-\w\.]*\.js/
+/[-\w]*help[-\w\.]*\.js/
+/[-\w]*incapsula[-\w\.]*\.js/
+/[-\w]*listen[-\w\.]*\.js/
+/[-\w]*optimizely[-\w\.]*\.js/
+/[-\w]*policy[-\w\.]*\.js/
+/[-\w]*reverb[-\w\.]*\.js/
+/[-\w]*vendor[-\w\.]*\.js/
 /[^a-z0-9]((browser|self|v10)\.events|settings\-win|vortex|vortex\-win)\.data\.microsoft[^a-z]/
 /[^a-z0-9](acc|push)engage[^a-z]/
 /[^a-z0-9](adblockana|analogana|crash|fitana|gameana|matherana|siteimproveana|tap|wowana)lytics[^a-z]/
