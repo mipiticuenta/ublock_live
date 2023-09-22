@@ -250,7 +250,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.]?resources?\*?(?=[/\.])', '', line) for line in list2]              # <remove leading resource(s) />
     list2 = [re.sub(r'^[/\.]?scripts?\*?(?=[/\.])', '', line) for line in list2]                # <remove leading script(s) />
     list2 = [re.sub(r'^[/\.]?sites?\*?(?=[/\.])', '', line) for line in list2]                  # <remove leading site(s) />
-    list2 = [re.sub(r'^[/\.]?_?static\*?(?=[/\.])', '', line) for line in list2]                # <remove leading static />
+    list2 = [re.sub(r'^[/\.]?_?statics?\*?(?=[/\.])', '', line) for line in list2]              # <remove leading static />
     list2 = [re.sub(r'^[/\.]?styles?\*?(?=[/\.])', '', line) for line in list2]                 # <remove leading style(s) />
     list2 = [re.sub(r'^[/\.]?themes?\*?(?=[/\.])', '', line) for line in list2]                 # <remove leading theme(s) />
     list2 = [re.sub(r'^[/\.]?uploads?.?\*?(?=[/\.])', '', line) for line in list2]              # <remove leading uploads />
