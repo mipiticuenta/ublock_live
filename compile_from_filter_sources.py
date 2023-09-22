@@ -673,6 +673,7 @@ list3 = [re.sub(r'^\.?ecestaticos\.com$', '', line) for line in list3]          
 list3 = [re.sub(r'^\.?ecosia\.org$', '', line) for line in list3]                   # <remove ecosia.org />
 list3 = [re.sub(r'^\.?elconfidencial\.com$', '', line) for line in list3]           # <remove elconfidencial.com />
 list3 = [re.sub(r'^\.?eleconomista\.es$', '', line) for line in list3]              # <remove eleconomista.es />
+list3 = [re.sub(r'^\.?elespanol\.com$', '', line) for line in list3]                # <remove elespanol.com />
 list3 = [re.sub(r'^\.?elmundo\.es$', '', line) for line in list3]                   # <remove elmundo.es />
 list3 = [re.sub(r'^\.?elpais\.com$', '', line) for line in list3]                   # <remove elpais.com />
 list3 = [re.sub(r'^\.?europasur\.es$', '', line) for line in list3]                 # <remove europasur.es />
