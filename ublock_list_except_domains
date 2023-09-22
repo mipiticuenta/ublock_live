@@ -2,6 +2,7 @@
 ! expires: 1 day
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ublock_list_except_domains
 ! title: ublock list except domains
+*##.loader
 *##:not(html):not(body):matches-attr("/.+/"= "/[-_\s^]addetail/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no)pop(?!ul)/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no.)shar[eir]/i")
@@ -1849,11 +1850,14 @@
 /9ytg7hda
 /[-\w]*banner[-\w\.]*\.js/
 /[-\w]*chameleon[-\w\.]*\.js/
+/[-\w]*detect[-\w\.]*\.js/
 /[-\w]*help[-\w\.]*\.js/
 /[-\w]*incapsula[-\w\.]*\.js/
 /[-\w]*listen[-\w\.]*\.js/
+/[-\w]*notification[-\w\.]*\.js/
 /[-\w]*optimizely[-\w\.]*\.js/
 /[-\w]*policy[-\w\.]*\.js/
+/[-\w]*promo[-\w\.]*\.js/
 /[-\w]*reverb[-\w\.]*\.js/
 /[-\w]*vendor[-\w\.]*\.js/
 /[^a-z0-9]((browser|self|v10)\.events|settings\-win|vortex|vortex\-win)\.data\.microsoft[^a-z]/
