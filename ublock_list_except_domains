@@ -2,7 +2,6 @@
 ! expires: 1 day
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ublock_list_except_domains
 ! title: ublock list except domains
-*##.loader
 *##:not(html):not(body):matches-attr("/.+/"= "/[-_\s^]addetail/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no)pop(?!ul)/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no.)shar[eir]/i")
@@ -96,6 +95,7 @@
 *##:not(html):not(body):matches-attr("/.+/"="/lgpd/i")
 *##:not(html):not(body):matches-attr("/.+/"="/ligatus/i")
 *##:not(html):not(body):matches-attr("/.+/"="/linicom/i")
+*##:not(html):not(body):matches-attr("/.+/"="/loader/i")
 *##:not(html):not(body):matches-attr("/.+/"="/mailchimp/i")
 *##:not(html):not(body):matches-attr("/.+/"="/mailmunch/i")
 *##:not(html):not(body):matches-attr("/.+/"="/marfeel/i")
@@ -113,7 +113,6 @@
 *##:not(html):not(body):matches-attr("/.+/"="/paylas/i")
 *##:not(html):not(body):matches-attr("/.+/"="/payserve/i")
 *##:not(html):not(body):matches-attr("/.+/"="/piano/i")
-*##:not(html):not(body):matches-attr("/.+/"="/pixel/i")
 *##:not(html):not(body):matches-attr("/.+/"="/popular/i")
 *##:not(html):not(body):matches-attr("/.+/"="/pqip/i")
 *##:not(html):not(body):matches-attr("/.+/"="/pre.?bid/i")
@@ -143,6 +142,7 @@
 *##:not(html):not(body):not(header):matches-attr("/.+/"="/^bann(er)?/i"):not(:matches-attr("/.+/"="/search/i"))
 *$beacon
 *$csp=all
+*$important,removeparam=/^promo/
 *$inline-font
 *$inline-script
 *$object
@@ -165,6 +165,7 @@
 *$removeparam=/^mtm_/
 *$removeparam=/^oft_/
 *$removeparam=/^pk_/
+*$removeparam=/^promo/,important
 *$removeparam=/^view/,important
 *$removeparam=/aabd/,important
 *$removeparam=/adb/,important
@@ -211,7 +212,6 @@
 *$removeparam=/pop/,important
 *$removeparam=/popup/,important
 *$removeparam=/popupnder/,important
-*$removeparam=/promo/,important
 *$removeparam=/pub/,important
 *$removeparam=/pubid/,important
 *$removeparam=/publisher/,important
@@ -238,6 +238,7 @@
 *$removeparam=bsft_ek
 *$removeparam=bsft_mid
 *$removeparam=bsft_uid
+*$removeparam=controller
 *$removeparam=dclid
 *$removeparam=ers
 *$removeparam=fb_action_ids
@@ -293,6 +294,7 @@
 *$removeparam=r,important
 *$removeparam=rb_clickid
 *$removeparam=s_cid
+*$removeparam=t
 *$removeparam=twclid
 *$removeparam=vero_conv
 *$removeparam=vero_id
@@ -1499,6 +1501,7 @@
 /1u8t4y8jk6rm.js
 /1ua/images/*
 /1vmzdhlb_-dcnbtubkfqpnnvsep_2gnsy/*
+/1x1.trans.
 /1x1_usermatch.
 /1xbet-link.
 /1xbet.
@@ -1848,18 +1851,54 @@
 /9uc1jthe
 /9y1zcedu
 /9ytg7hda
+/[-\w]*addthis[-\w\.]*\.js/
+/[-\w]*ads[-\w\.]*\.js/
+/[-\w]*ampz[-\w\.]*\.js/
+/[-\w]*analytics[-\w\.]*\.js/
 /[-\w]*banner[-\w\.]*\.js/
+/[-\w]*beacon[-\w\.]*\.js/
 /[-\w]*chameleon[-\w\.]*\.js/
+/[-\w]*clipboard[-\w\.]*\.js/
+/[-\w]*comment[-\w\.]*\.js/
+/[-\w]*compliance[-\w\.]*\.js/
+/[-\w]*consent[-\w\.]*\.js/
+/[-\w]*conversion[-\w\.]*\.js/
+/[-\w]*decode[-\w\.]*\.js/
 /[-\w]*detect[-\w\.]*\.js/
+/[-\w]*dfp[-\w\.]*\.js/
+/[-\w]*didomi[-\w\.]*\.js/
+/[-\w]*form[-\w\.]*\.js/
 /[-\w]*help[-\w\.]*\.js/
+/[-\w]*hook[-\w\.]*\.js/
 /[-\w]*incapsula[-\w\.]*\.js/
+/[-\w]*landing[-\w\.]*\.js/
+/[-\w]*link[-\w\.]*\.js/
 /[-\w]*listen[-\w\.]*\.js/
+/[-\w]*marfeel[-\w\.]*\.js/
+/[-\w]*modernizr[-\w\.]*\.js/
+/[-\w]*nfplug[-\w\.]*\.js/
 /[-\w]*notification[-\w\.]*\.js/
+/[-\w]*onesignal[-\w\.]*\.js/
 /[-\w]*optimizely[-\w\.]*\.js/
+/[-\w]*outbrain[-\w\.]*\.js/
+/[-\w]*plug[-\w\.]*\.js/
 /[-\w]*policy[-\w\.]*\.js/
+/[-\w]*postpage[-\w\.]*\.js/
+/[-\w]*prebid[-\w\.]*\.js/
 /[-\w]*promo[-\w\.]*\.js/
+/[-\w]*react[-\w\.]*\.js/
 /[-\w]*reverb[-\w\.]*\.js/
+/[-\w]*rocket[-\w\.]*\.js/
+/[-\w]*score[-\w\.]*\.js/
+/[-\w]*sdk[-\w\.]*\.js/
+/[-\w]*share[-\w\.]*\.js/
+/[-\w]*spm[-\w\.]*\.js/
+/[-\w]*status[-\w\.]*\.js/
+/[-\w]*stub[-\w\.]*\.js/
+/[-\w]*tag[-\w\.]*\.js/
+/[-\w]*timming[-\w\.]*\.js/
 /[-\w]*vendor[-\w\.]*\.js/
+/[-\w]*woocommerce[-\w\.]*\.js/
 /[^a-z0-9]((browser|self|v10)\.events|settings\-win|vortex|vortex\-win)\.data\.microsoft[^a-z]/
 /[^a-z0-9](acc|push)engage[^a-z]/
 /[^a-z0-9](adblockana|analogana|crash|fitana|gameana|matherana|siteimproveana|tap|wowana)lytics[^a-z]/
@@ -2180,6 +2219,7 @@
 /[_\W]pwa[_\W]/$important
 /[_\W]px[_\W]/$important
 /[_\W]tags?[_\W]/$important
+/\?{2}/
 /^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/
 /_6eitxwuyom
 /__botcheck
@@ -5769,6 +5809,7 @@
 /arabyads.
 /aradpardaz_
 /arc.js
+/arc/*
 /arcads
 /arcads.js
 /archive
@@ -8745,6 +8786,7 @@
 /com/rat/*
 /com/store/*
 /com/superherosnout/*
+/com_jchoptimize/*
 /com_joomla-visites/*
 /com_joomlawatch/*
 /comabacker.
@@ -8767,8 +8809,6 @@
 /comment-ad-
 /comment-ad.
 /comment-ads.
-/comment-reply.min.js
-/comment.js
 /comment_baidu.
 /commentshareicons.
 /commercial_horizontal.
@@ -10273,6 +10313,7 @@
 /dfpnew.
 /dfpscript.js
 /dfpsvc
+/dfsn.js
 /dftongjiad.js
 /dfumeiti.js
 /dfw.js
@@ -12646,6 +12687,7 @@
 /gadgetpagecounter.
 /gadgets/social/*
 /gads
+/gads.js
 /gads/*
 /gads_
 /gadv
@@ -17558,6 +17600,9 @@
 /minicounter
 /minified-video.js
 /minify-1.cms
+/minify/*
+/minify/*$script
+/minify/*$script,1p
 /minime/de/index.php?partner=*&campaign
 /mining.
 /minisiteinfo/*
@@ -17712,6 +17757,7 @@
 /mod_jbcookies/*
 /mod_letter.
 /mod_pagepeel_banner/*
+/mod_rok
 /mod_socialmedialinks/*
 /mod_socialslider/*
 /modal-0cb79-legacy.js
@@ -22326,6 +22372,7 @@
 /roitracker.
 /roitracker2.
 /roitrax.
+/rokbox/*
 /roll
 /roll/*
 /rollad.
@@ -25376,6 +25423,7 @@
 /td-ads-
 /td-newsletter/*
 /td-pageviews.
+/td-woo/*
 /td.asp?bstat
 /td.js
 /td24f164e52654fc593c6952240be1dc210935fe/*
