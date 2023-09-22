@@ -284,7 +284,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'\.asp\??$', '.', line) for line in list2]                         # <remove trailing .asp?/>
     list2 = [re.sub(r'\.gif\??$', '.', line) for line in list2]                         # <remove trailing .gif?/>
     list2 = [re.sub(r'\.?html?\??$', '.', line) for line in list2]                      # <remove trailing .html?/>
-    list2 = [re.sub(r'\.js(?![a-z0-9]).*$', '.js', line) for line in list2]             # <clean up trailing .js />
+    list2 = [re.sub(r'\.js(?![a-z0-9/]).*$', '.js', line) for line in list2]             # <clean up trailing .js />
     list2 = [re.sub(r'\.php\??$', '.', line) for line in list2]                         # <remove trailing .php?/>
     list2 = [re.sub(r'\.png\??$', '.', line) for line in list2]                         # <remove trailing .png?/>
     list2 = [re.sub(r'(^[^#]{2,})\$[a-z0-9,~=]*$(?<!/)(?<!important)', r'\1', line) for line in list2]    # <remove specific trailing $ filters except *$ or ending with important />
