@@ -219,6 +219,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^\$', '*$', line).strip() for line in list2]                              # <fix leading $ with *$ />
     list2 = [re.sub(r'^[/\.\=\?]\$', '*$', line).strip() for line in list2]                     # <fix leading /$ .$ =$ ?$ with *$ />
     list2 = [re.sub(r'^\.?[-_a-z0-9\*]+/', '/', line) for line in list2]                        # <replace leading @/ with / />
+    list2 = [re.sub(r'^[/\.]?api\*?(?=[/\.])', '', line) for line in list2]                     # <remove leading api />
     list2 = [re.sub(r'^[/\.]?assets?\*?(?=[/\.])', '', line) for line in list2]                 # <remove leading asset />
     list2 = [re.sub(r'^[/\.]?cdn\-cgi(?=[/\.])', '', line) for line in list2]                   # <remove leading cdn-cgi />
     list2 = [re.sub(r'^[/\.]?contents?\*?(?=[/\.])', '', line) for line in list2]               # <remove leading content(s) />
@@ -242,6 +243,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.]?styles?\*?(?=[/\.])', '', line) for line in list2]                 # <remove leading style(s) />
     list2 = [re.sub(r'^[/\.]?themes?\*?(?=[/\.])', '', line) for line in list2]                 # <remove leading theme(s) />
     list2 = [re.sub(r'^[/\.]?uploads?.?\*?(?=[/\.])', '', line) for line in list2]              # <remove leading uploads />
+    list2 = [re.sub(r'^[/\.]?v.?\*?(?=[/\.])', '', line) for line in list2]                     # <remove leading v />
     list2 = [re.sub(r'^[/\.]?web\*?(?=[/\.])', '', line) for line in list2]                     # <remove leading web />
     list2 = [re.sub(r'^[/\.]?wp\-content\*?(?=[/\.])', '', line) for line in list2]             # <remove leading wp-content />
     list2 = [re.sub(r'^\.?aspx?\??(?![a-z0-9])', '*', line).strip() for line in list2]          # <replace leading asp with * >
@@ -414,7 +416,7 @@ list2 = [re.sub(r'^[_\W]?arriba[_\W]?\*?$', '', line) for line in list2]        
 list2 = [re.sub(r'^[_\W]?art(icle)?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious art(icle) filter />
 list2 = [re.sub(r'^[_\W]?assets?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious base filter />
 list2 = [re.sub(r'^[_\W]?audio[_\W]?\*?$', '', line) for line in list2]             # <remove spurious audio filter />
-list2 = [re.sub(r'^[_\W]?back(ground)?[_\W]?\*?$', '', line) for line in list2]     # <remove spurious back(ground) filter />
+list2 = [re.sub(r'^[_\W]?back(grounds?)?[_\W]?\*?$', '', line) for line in list2]   # <remove spurious back(ground) filter />
 list2 = [re.sub(r'^[_\W]?bar[_\W]?\*?$', '', line) for line in list2]               # <remove spurious bar filter />
 list2 = [re.sub(r'^[_\W]?base[_\W]?\*?$', '', line) for line in list2]              # <remove spurious base filter />
 list2 = [re.sub(r'^[_\W]?basic[_\W]?\*?$', '', line) for line in list2]             # <remove spurious basic filter />
@@ -467,7 +469,7 @@ list2 = [re.sub(r'^[_\W]?feed[_\W]?\*?$', '', line) for line in list2]          
 list2 = [re.sub(r'^[_\W]?files?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious file filter />
 list2 = [re.sub(r'^[_\W]?flipboard[_\W]?\*?$', '', line) for line in list2]         # <remove spurious flipboard filter />
 list2 = [re.sub(r'^[_\W]?foot(er)?[_\W]?\*?$', '', line) for line in list2]         # <remove spurious foot(er) filter />
-list2 = [re.sub(r'^[_\W]?foto[_\W]?\*?$', '', line) for line in list2]              # <remove spurious foto filter />
+list2 = [re.sub(r'^[_\W]?fotos?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious foto filter />
 list2 = [re.sub(r'^[_\W]?frame[_\W]?\*?$', '', line) for line in list2]             # <remove spurious frame filter />
 list2 = [re.sub(r'^[_\W]?front(end)?[_\W]?\*?$', '', line) for line in list2]       # <remove spurious front(end) filter />
 list2 = [re.sub(r'^[_\W]?get[_\W]?\*?$', '', line) for line in list2]               # <remove spurious get filter />
