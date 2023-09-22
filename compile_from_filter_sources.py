@@ -545,6 +545,7 @@ list2 = [re.sub(r'^[_\W]?related[_\W]?\*?$', '', line) for line in list2]       
 list2 = [re.sub(r'^[_\W]?render(er)?[_\W]?\*?$', '', line) for line in list2]       # <remove spurious render(er) filter />
 list2 = [re.sub(r'^[_\W]?resources?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious resource(s) filter />
 list2 = [re.sub(r'^[_\W]?right[_\W]?\*?$', '', line) for line in list2]             # <remove spurious right filter />
+list2 = [re.sub(r'^[_\W]?samsung[_\W]?\*?$', '', line) for line in list2]           # <remove spurious samsung filter />
 list2 = [re.sub(r'^[_\W]?scripts?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious script(s) filter />
 list2 = [re.sub(r'^[_\W]?search[_\W]?\*?$', '', line) for line in list2]            # <remove spurious search filter />
 list2 = [re.sub(r'^[_\W]?services?[_\W]?\*?$', '', line) for line in list2]         # <remove spurious service(s) filter />
