@@ -221,6 +221,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^\.?[-_a-z0-9\*]+/', '/', line) for line in list2]                        # <replace leading @/ with / />
     list2 = [re.sub(r'^[/\.]?api\*?(?=[/\.])', '', line) for line in list2]                     # <remove leading api />
     list2 = [re.sub(r'^[/\.]?app\*?(?=[/\.])', '', line) for line in list2]                     # <remove leading app />
+    list2 = [re.sub(r'^[/\.]?apple\*?(?=[/\.])', '', line) for line in list2]                   # <remove leading apple />
     list2 = [re.sub(r'^[/\.]?assets?\*?(?=[/\.])', '', line) for line in list2]                 # <remove leading asset />
     list2 = [re.sub(r'^[/\.]?attachments?\*?(?=[/\.])', '', line) for line in list2]            # <remove leading attachment />
     list2 = [re.sub(r'^[/\.]?build\*?(?=[/\.])', '', line) for line in list2]                   # <remove leading build />
@@ -692,7 +693,7 @@ list3 = [re.sub(r'^\.?googleusercontent\.com$', '', line) for line in list3]    
 list3 = [re.sub(r'^\.?geekwired\.com$', '', line) for line in list3]                # <remove geekwired.com />
 list3 = [re.sub(r'^\.?gstatic\.com$', '', line) for line in list3]                  # <remove gstatic.com />
 list3 = [re.sub(r'^\.?gulfnews\.com$', '', line) for line in list3]                 # <remove gulfnews.com />
-list3 = [re.sub(r'^\.?hypertextual\.com$', '', line) for line in list3]             # <remove hypertextual.com />
+list3 = [re.sub(r'^\.?hipertextual\.com$', '', line) for line in list3]             # <remove hipertextual.com />
 list3 = [re.sub(r'^\.?ieee\.org$', '', line) for line in list3]                     # <remove ieee.org />
 list3 = [re.sub(r'^\.?investing\.com$', '', line) for line in list3]                # <remove investing.com />
 list3 = [re.sub(r'^\.?investopedia\.com$', '', line) for line in list3]             # <remove investopedia.com />
