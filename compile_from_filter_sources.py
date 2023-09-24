@@ -594,6 +594,7 @@ list2 = [re.sub(r'^[_\W]?static[_\W]?\*?$', '', line) for line in list2]        
 list2 = [re.sub(r'^[_\W]?stripe[_\W]?\*?$', '', line) for line in list2]            # <remove spurious stripe( filter />
 list2 = [re.sub(r'^[_\W]?styles?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious style(s) filter />
 list2 = [re.sub(r'^[_\W]?support[_\W]?\*?$', '', line) for line in list2]           # <remove spurious support filter />
+list2 = [re.sub(r'^[_\W]?(a)?sync[_\W]?\*?$', '', line) for line in list2]          # <remove spurious (a)sync filter />
 list2 = [re.sub(r'^[_\W]?tab[_\W]?\*?$', '', line) for line in list2]               # <remove spurious tab filter />
 list2 = [re.sub(r'^[_\W]?templates?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious template(s)filter />
 list2 = [re.sub(r'^[_\W]?themes?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious theme(s) filter />
