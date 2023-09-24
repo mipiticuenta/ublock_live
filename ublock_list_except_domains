@@ -2,7 +2,6 @@
 ! expires: 1 day
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ublock_list_except_domains
 ! title: ublock list except domains
-$removeparam=/^utm_/
 *##:not(html):not(body):matches-attr("/.+/"= "/[-_\s^]addetail/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no)pop(?!ul)/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no.)shar[eir]/i")
@@ -151,24 +150,22 @@ $removeparam=/^utm_/
 *$popunder
 *$removeparam=/^ad/,important
 *$removeparam=/^ad_/,important
-*$removeparam=/^ad_=/,important
-*$removeparam=/^ads.*=/,important
 *$removeparam=/^ads/,important
-*$removeparam=/^aff.*/,important
+*$removeparam=/^aff/,important
 *$removeparam=/^ban=/,important
-*$removeparam=/^bsft.*/
-*$removeparam=/^campaign.*/,important
+*$removeparam=/^bsft.*/,important
+*$removeparam=/^campaign/,important
 *$removeparam=/^cli?c?k/,important
 *$removeparam=/^cp.*/,important
 *$removeparam=/^cts/,important
-*$removeparam=/^itm_/
-*$removeparam=/^js_stats/
-*$removeparam=/^mtm_/
-*$removeparam=/^oft_/
-*$removeparam=/^pk_/
-*$removeparam=/^promo/
+*$removeparam=/^itm_/,important
+*$removeparam=/^js_stats/,important
+*$removeparam=/^mtm_/,important
+*$removeparam=/^oft_/,important
+*$removeparam=/^pk_/,important
 *$removeparam=/^promo/,important
 *$removeparam=/^utm_/
+*$removeparam=/^utm_/,important
 *$removeparam=/^view/,important
 *$removeparam=/aabd/,important
 *$removeparam=/adb/,important
@@ -36411,7 +36408,6 @@ dateads.
 dating
 dating-*&cid
 dating-gratuit.
-dating\d\/index\.html\?aref=/
 dating_lp?keyword
 datingaffiliation.
 datingaffiliation1.
@@ -42954,7 +42950,6 @@ livestrip-
 livetv
 livetvon.
 livezilla
-livsstil.se\/cnp-assets\/[0-9]+./
 lj.js
 lj_bookmarklet
 ljbmhkq.
@@ -43282,7 +43277,6 @@ lvrsvrtjvpqacn
 lvwymihr
 lwssuper
 lxonline.js
-ly)\/
 lycom
 lycostrack.
 lykill_banner
@@ -44435,7 +44429,6 @@ myisohunt.
 myjavascript.js
 myjino.
 mykesamu
-myket.ir$removeparam=/^utm_/
 mykings.
 mykocam.
 mykodial.
@@ -44564,7 +44557,6 @@ navigation_times
 navmultitracking.
 navtumblr.
 naytev.
-nb.by\/img\/ban\d\/
 nb.js
 nb_bl.
 nb_fl.
@@ -47048,7 +47040,6 @@ production_beacon
 produits-
 profile
 profile)\.org\.il)\.?([\/\:]
-profile.iwmf.ir$removeparam=/^utm_/
 profiles.js
 profiling.
 profit.
@@ -47535,7 +47526,6 @@ q3gsxw5.js
 q78g3n3f
 q99bet.
 q?c=*&t=wap_stream&l
-q\/js\/
 qa.js
 qavs0c
 qayqa.com:6868/jquery/*
@@ -48330,7 +48320,6 @@ rightad.
 rightad_v2.js
 rightads
 rightarror.
-rightel.ir$removeparam=/^utm_/
 rightnavads
 rightrailgoogleads
 rightsideaddisplay
@@ -49382,7 +49371,6 @@ shawmediahomes.
 shc_code.
 shchaoneng.
 sheee
-sheee)\.co\.il\.?(\/
 shell.no.
 shemales.
 shenmin_nuhair
@@ -50265,7 +50253,6 @@ soundpark-club.
 soundpark.
 soundtrack.js
 sourcecontent
-sourceiran.com$removeparam=/^utm_/
 sourcepoint
 sourcepoint.
 sourcepoint.js
@@ -51478,7 +51465,6 @@ test
 test.
 test.js
 test.mp4
-test15./
 test_rum_nv
 testab.
 testab.bundle.
@@ -52595,7 +52581,6 @@ twt_ico
 twt_side
 twtad_
 twuu.
-txt)/
 txt-abt-file
 txt.js
 txt_ad.
@@ -52862,7 +52847,6 @@ upi47fec
 uplinkto.
 uploadbaz.
 uploadbuzz.
-uploader\/
 uploadev.
 uploadhub.
 uploadimage
