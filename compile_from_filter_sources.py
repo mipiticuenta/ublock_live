@@ -256,6 +256,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.]?themes?\*?(?=[/\.])', '', line) for line in list2]                 # <remove leading theme(s) />
     list2 = [re.sub(r'^[/\.]?uploads?.?\*?(?=[/\.])', '', line) for line in list2]              # <remove leading uploads />
     list2 = [re.sub(r'^[/\.]?v.?\*?(?=[/\.])', '', line) for line in list2]                     # <remove leading v />
+    list2 = [re.sub(r'^[/\.]?videos?\*?(?=[/\.])', '', line) for line in list2]                 # <remove leading video(s) />
     list2 = [re.sub(r'^[/\.]?web\*?(?=[/\.])', '', line) for line in list2]                     # <remove leading web />
     list2 = [re.sub(r'^[/\.]?wp\-content\*?(?=[/\.])', '', line) for line in list2]             # <remove leading wp-content />
     list2 = [re.sub(r'^\.?aspx?\??(?![a-z0-9])', '*', line).strip() for line in list2]          # <replace leading asp with * >
