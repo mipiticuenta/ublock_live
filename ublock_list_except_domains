@@ -2,6 +2,7 @@
 ! expires: 1 day
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ublock_list_except_domains
 ! title: ublock list except domains
+$removeparam=/^utm_/
 *##:not(html):not(body):matches-attr("/.+/"= "/[-_\s^]addetail/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no)pop(?!ul)/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no.)shar[eir]/i")
@@ -160,11 +161,14 @@
 *$removeparam=/^cli?c?k/,important
 *$removeparam=/^cp.*/,important
 *$removeparam=/^cts/,important
+*$removeparam=/^itm_/
 *$removeparam=/^js_stats/
 *$removeparam=/^mtm_/
 *$removeparam=/^oft_/
 *$removeparam=/^pk_/
+*$removeparam=/^promo/
 *$removeparam=/^promo/,important
+*$removeparam=/^utm_/
 *$removeparam=/^view/,important
 *$removeparam=/aabd/,important
 *$removeparam=/adb/,important
@@ -1288,7 +1292,7 @@
 .tax
 .teaser.
 .tel
-.test15./
+.test15.
 .text-link-ads.
 .textads.
 .tipsy.cookie.
@@ -32723,7 +32727,6 @@ asiaon.
 asiapoker.
 asiaqq-
 asiaqq.
-asiatech.ir$removeparam=/utm_source|utm_campaign|utm_content/
 asiatech_
 asiatoto.
 asiatv.
@@ -33895,8 +33898,6 @@ bloackdas.
 bloackdas.js
 bload
 blob.core.
-blob:
-blob:veier24.no/
 blobopics.
 bloc-partenaire-
 bloc_newsletter.
@@ -34530,7 +34531,6 @@ c82ed9e0g00r8seoy015pd00104003cp.
 c89pmn9z
 c8b2c06dfa95b4f07bd47322a0033a6.
 c98302d256.js
-c?*.one.co.il/
 c?siteid
 c_fill
 c_track.
@@ -34668,8 +34668,6 @@ cars
 carsadtaggenerator.
 carsc.js
 carto
-casa
-casa)\/
 casalemedia$important
 casamama.
 cash
@@ -34985,9 +34983,7 @@ cjdoweph.js
 ck.js
 ckaudience
 ckeditor.js
-ckeditor\/
 ckfinder
-ckfinder\/
 ckies.js
 ckimg_1x1
 cklink.
@@ -35306,7 +35302,6 @@ cnxn6tzk
 cnzz
 cnzz.
 cnzz_
-co)\/.*/
 co?_
 coalesce
 cocobet.
@@ -36159,7 +36154,6 @@ csp_report
 cspreport
 css$script,important
 css$xhr,important
-css)/
 css2.js
 ct99tglf
 cta-banner.
@@ -36729,11 +36723,8 @@ digg
 digg-
 diggbutton
 digibox.
-digikala.com$removeparam=/^promo/
-digikala.com$removeparam=/^utm_/
-digikalajet.com$removeparam=/^utm_/
+digikala.com*
 digikey.
-digistyle.com$removeparam=/^utm_/
 digital
 digital-data-enrichment.
 digital2cloud.
@@ -38177,7 +38168,6 @@ fans.js
 fantasyde
 fapl_
 fapnado.
-faradars.org$removeparam=/^utm_/
 faridabadlatestnews
 farkit-btn.
 farlex.
@@ -38346,7 +38336,6 @@ fh5bwzag
 fh_social.
 fhore.
 fi*?isiframe=true
-fidibo.com$removeparam=/^utm_/
 fidus
 fifa
 fifadomino.
@@ -40108,8 +40097,6 @@ h9df22b1c3f0041b2874ddfd38836993em.
 h_112
 h_98
 h_pxz0vn5h4
-haaretz\.co\.il\/(?!.*\.(js)($|\?)).*/
-haaretz\.co\.il\/[\w\.!]+\/[\w\.!]+\/[\w\.!]+\/[\w\.!]+\/[\w\.!]+\/
 hab-
 habaapac.
 haberbusch-kooperation_
@@ -40907,7 +40894,6 @@ ietf
 if.php?id
 ifeng_jdttemplate.js
 ifengrotatorad.js
-ifilo.net$removeparam=/^utm_/
 ifr?zoneid
 ifrah
 iframe
@@ -41275,7 +41261,6 @@ inetlog.
 inextmovies.
 inf.js
 infb.
-infectedchink.cat:38241/
 infinite-ads
 infinity.
 infinity.js
@@ -41501,7 +41486,6 @@ inwestenergiacom
 inx-ad.
 inyourpocket.
 inz3svur
-io-tech\.fi\/.*\/[0-9a-f]{32}\./
 ioam
 ioam.
 iocbet.
@@ -41566,8 +41550,6 @@ iqmwie
 iqra
 iqra-classes
 iqtm.
-iranecar.com$removeparam=/^utm_/
-iranicard.ir$removeparam=/utm_source|utm_campaign|utm_content/
 ireland_adv_update.
 iri.
 irisbuddies.
@@ -42235,8 +42217,6 @@ kggtn56g
 kgk95aw2q.js
 khabermala-700x80-1.
 khajura-gapa-banke.
-khanoumi.com$removeparam=/^itm_/
-khanoumi.com$removeparam=/^utm_/
 khatrimaza.
 khatrimazafull.
 khp.js
@@ -42668,7 +42648,6 @@ lemon7.
 lemonde.fr*&cts
 lemonde.fr*&stc
 lendingclub.
-lendo.ir$removeparam=/^utm_/
 length
 lenkino.
 lenta
@@ -42728,8 +42707,6 @@ lien468.
 liens.
 lieqi.
 lietuva_laisva.
-life
-life)\/.*/
 life.js
 lifebox.
 lifelockad.
@@ -42823,7 +42800,6 @@ likhu12.
 liligo.
 limelight.
 limetorrents.
-limoo.host$removeparam=/utm_source|utm_campaign|utm_content|utm_term|wr/
 lin-ks.
 lindung.
 line
