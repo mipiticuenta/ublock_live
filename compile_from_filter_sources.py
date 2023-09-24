@@ -744,6 +744,7 @@ list3 = [re.sub(r'^\.?nih\.gov$', '', line) for line in list3]                  
 list3 = [re.sub(r'^\.?nytimes\.gov$', '', line) for line in list3]                  # <remove nytimes.gov />
 list3 = [re.sub(r'^\.?pcmag\.com$', '', line) for line in list3]                    # <remove pcmag.com />
 list3 = [re.sub(r'^\.?pcworld\.com$', '', line) for line in list3]                  # <remove pcworld.com />
+list3 = [re.sub(r'^\.?postmedia\.difital$', '', line) for line in list3]            # <remove postmedia.digital />
 list3 = [re.sub(r'^\.?prensaiberica\.es$', '', line) for line in list3]             # <remove prensaiberica.es />
 list3 = [re.sub(r'^\.?realpython\.com$', '', line) for line in list3]               # <remove realpython.com />
 list3 = [re.sub(r'^\.?reuters\.com$', '', line) for line in list3]                  # <remove reuters.com />
