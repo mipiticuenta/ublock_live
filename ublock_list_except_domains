@@ -1922,7 +1922,8 @@
 /[-\w]*score[-~\w\.]*\.js/
 /[-\w]*sdk[-~\w\.]*\.js/
 /[-\w]*share[-~\w\.]*\.js/
-/[-\w]*social[-~\w\.]*\.js/
+/[-\w]*socials?[-~\w\.]*/
+/[-\w]*socials?[-~\w\.]*\.js/
 /[-\w]*spm[-~\w\.]*\.js/
 /[-\w]*status[-~\w\.]*\.js/
 /[-\w]*stub[-~\w\.]*\.js/
@@ -23593,7 +23594,6 @@
 /socialnetworksprite.
 /socialplugins/*
 /socialpod-
-/socials?[0-9]?[^a-z]/$important
 /socialsharecount.
 /socialshareplugin.
 /socialshareprivacy/*
@@ -49989,7 +49989,6 @@ socialplugin$important
 socialpod$important
 socialpod-
 socials-new
-socials?[0-9]?[^a-z]/$important
 socials_new
 socialshar$important
 socialsharecount.

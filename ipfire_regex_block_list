@@ -70,7 +70,8 @@
 /[-\w]*score[-~\w\.]*\.js/
 /[-\w]*sdk[-~\w\.]*\.js/
 /[-\w]*share[-~\w\.]*\.js/
-/[-\w]*social[-~\w\.]*\.js/
+/[-\w]*socials?[-~\w\.]*/
+/[-\w]*socials?[-~\w\.]*\.js/
 /[-\w]*spm[-~\w\.]*\.js/
 /[-\w]*status[-~\w\.]*\.js/
 /[-\w]*stub[-~\w\.]*\.js/
@@ -453,7 +454,6 @@
 /pwa[-_/=~&\\?\\.]/
 /reklam[-_/=~&\\?\\.]/
 /service.?worker/
-/socials?[0-9]?[^a-z]/
 /subscri.*[^a-z0-9]/
 /tags?[0-9]*[^a-z]/
 /top-games.me/
