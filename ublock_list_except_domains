@@ -1933,6 +1933,7 @@
 /[-\w]*track[-~\w\.]*\.js/
 /[-\w]*tracker[-~\w\.]*\.js/
 /[-\w]*tracking[-~\w\.]*\.js/
+/[-\w]*utm[-~\w\.]*\.js/
 /[-\w]*vendor[-~\w\.]*\.js/
 /[-\w]*woocommerce[-~\w\.]*\.js/
 /[^a-z0-9]((browser|self|v10)\.events|settings\-win|vortex|vortex\-win)\.data\.microsoft[^a-z]/
@@ -2257,6 +2258,7 @@
 /[_\W]px[_\W]/$important
 /[_\W]socials?[_\W]/
 /[_\W]tags?[_\W]/$important
+/[_\W]utm[_\W]/$important
 /^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/
 /_6eitxwuyom
 /__botcheck
@@ -26464,7 +26466,6 @@
 /utils78.js
 /utm-tracking.
 /utm.
-/utm[^a-z]/$important
 /utm_cookie.
 /utm_source
 /utms.js
@@ -28585,7 +28586,6 @@
 0jqdownload
 0mu
 1024wanzhai.
-103\.fm
 111cfd
 116poker.
 11juni.
