@@ -1922,7 +1922,6 @@
 /[-\w]*score[-~\w\.]*\.js/
 /[-\w]*sdk[-~\w\.]*\.js/
 /[-\w]*share[-~\w\.]*\.js/
-/[-\w]*socials?[-~\w\.]*/
 /[-\w]*socials?[-~\w\.]*\.js/
 /[-\w]*spm[-~\w\.]*\.js/
 /[-\w]*status[-~\w\.]*\.js/
@@ -2249,11 +2248,13 @@
 /[^a-z]gpt/$important
 /[^abs]log[0-9]?s?(ge)?(ging)?-_=&\?/\.]/$important
 /[_\W]adb[_\W]/$important
-/[_\W]comment?[_\W]/$important
+/[_\W]comments?[_\W]/
 /[_\W]fb[_\W]/$important
 /[_\W]ping[_\W]/$important
+/[_\W]promos?[_\W]/
 /[_\W]pwa[_\W]/$important
 /[_\W]px[_\W]/$important
+/[_\W]socials?[_\W]/
 /[_\W]tags?[_\W]/$important
 /^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/
 /_6eitxwuyom
