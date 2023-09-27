@@ -610,6 +610,7 @@ list2 = [re.sub(r'^[_\W]?user[_\W]?\*?$', '', line) for line in list2]          
 list2 = [re.sub(r'^[_\W]?vendors?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious vendor(s) filter />
 list2 = [re.sub(r'^[_\W]?video[_\W]?\*?$', '', line) for line in list2]             # <remove spurious video filter />
 list2 = [re.sub(r'^[_\W]?view[_\W]?\*?$', '', line) for line in list2]              # <remove spurious view filter />
+list2 = [re.sub(r'^[_\W]?vinted[_\W]?\*?$', '', line) for line in list2]            # <remove spurious vinted filter />
 list2 = [re.sub(r'^[_\W]?wall[_\W]?\*?$', '', line) for line in list2]              # <remove spurious wall filter />
 list2 = [re.sub(r'^[_\W]?whatsapp[_\W]?\*?$', '', line) for line in list2]          # <remove spurious whatsapp filter />
 list2 = [re.sub(r'^[_\W]?web(site)?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious web(site) filter />
