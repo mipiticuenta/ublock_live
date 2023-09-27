@@ -530,6 +530,7 @@ list2 = [re.sub(r'^[_\W]?lotus[_\W]?\*?$', '', line) for line in list2]         
 list2 = [re.sub(r'^[_\W]?main[_\W]?\*?$', '', line) for line in list2]              # <remove spurious main filter />
 list2 = [re.sub(r'^[_\W]?e?mail[_\W]?\*?$', '', line) for line in list2]            # <remove spurious (e)mail filter />
 list2 = [re.sub(r'^[_\W]?master[_\W]?\*?$', '', line) for line in list2]            # <remove spurious master filter />
+list2 = [re.sub(r'^[_\W]?max[_\W]?\*?$', '', line) for line in list2]               # <remove spurious max filter />
 list2 = [re.sub(r'^[_\W]?(multi)?media[_\W]?\*?$', '', line) for line in list2]     # <remove spurious (multi)media filter />
 list2 = [re.sub(r'^[_\W]?menu[_\W]?\*?$', '', line) for line in list2]              # <remove spurious menu filter />
 list2 = [re.sub(r'^[_\W]?meteoblue[_\W]?\*?$', '', line) for line in list2]         # <remove spurious meteoblue filter />
