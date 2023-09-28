@@ -440,6 +440,7 @@ list2 = [re.sub(r'^[_\W]?bin[_\W]?\*?$', '', line) for line in list2]           
 list2 = [re.sub(r'^[_\W]?black[_\W]?\*?$', '', line) for line in list2]             # <remove spurious black filter />
 list2 = [re.sub(r'^[_\W]?blogs?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious blog(s) filter />
 list2 = [re.sub(r'^[_\W]?blocks?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious block(s) filter />
+list2 = [re.sub(r'^[_\W]?bmw[_\W]?\*?$', '', line) for line in list2]               # <remove spurious bmw filter />
 list2 = [re.sub(r'^[_\W]?body[_\W]?\*?$', '', line) for line in list2]              # <remove spurious body filter />
 list2 = [re.sub(r'^[_\W]?bootstrap(\.min)?[_\W]?\*?$', '', line) for line in list2] # <remove spurious bootstrap(.min) filter />
 list2 = [re.sub(r'^[_\W]?bottom[_\W]?\*?$', '', line) for line in list2]            # <remove spurious bottom filter />
