@@ -3,6 +3,7 @@
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list
 ! title: regex block list
 /(fls|unagi|aan)[a-z0-9]+amazon/
+//ue\-.*\.js/
 /[-\w]*addthis[-~\w\.]*\.js/
 /[-\w]*adops[-~\w\.]*\.js/
 /[-\w]*ads[-~\w\.]*\.js/
@@ -55,6 +56,8 @@
 /[-\w]*osano[-~\w\.]*\.js/
 /[-\w]*outbrain[-~\w\.]*\.js/
 /[-\w]*perform[-~\w\.]*\.js/
+/[-\w]*permutive[-~\w\.]*\.js/
+/[-\w]*piano[-~\w\.]*\.js/
 /[-\w]*platform[-~\w\.]*\.js/
 /[-\w]*plug[-~\w\.]*\.js/
 /[-\w]*policy[-~\w\.]*\.js/
@@ -86,6 +89,7 @@
 /[-\w]*utm[-~\w\.]*\.js/
 /[-\w]*vendor[-~\w\.]*\.js/
 /[-\w]*woocommerce[-~\w\.]*\.js/
+/[-\w]*zeotap[-~\w\.]*\.js/
 /[^a-z]gpt/
 /[^abs]log[0-9]?s?(ge)?(ging)?-_=&\?/\.]/
 /[_\W]((browser|self|v10)\.events|settings\-win|vortex|vortex\-win)\.data\.microsoft[^a-z]/
