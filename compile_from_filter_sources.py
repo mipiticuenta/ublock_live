@@ -246,6 +246,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.]?js\*?(?=[/\.])', '', line) for line in list2]                      # <remove leading js />
     list2 = [re.sub(r'^[/\.]?libs?\*?(?=[/\.])', '', line) for line in list2]                   # <remove leading lib(s) />
     list2 = [re.sub(r'^[/\.]?(multi)?media\*?(?=[/\.])', '', line) for line in list2]           # <remove leading (multi)media />
+    list2 = [re.sub(r'^[/\.]?news?\*?(?=[/\.])', '', line) for line in list2]                   # <remove leading new(s) /
     list2 = [re.sub(r'^[/\.]?plugins?\*?(?=[/\.])', '', line) for line in list2]                # <remove leading plugin(s) /
     list2 = [re.sub(r'^[/\.]?public\*?(?=[/\.])', '', line) for line in list2]                  # <remove leading public />
     list2 = [re.sub(r'^[/\.]?resources?\*?(?=[/\.])', '', line) for line in list2]              # <remove leading resource(s) />
@@ -484,6 +485,7 @@ list2 = [re.sub(r'^[_\W]?extras?[_\W]?\*?$', '', line) for line in list2]       
 list2 = [re.sub(r'^[_\W]?favicon(\.ico)?[_\W]?\*?$', '', line) for line in list2]   # <remove spurious favicon(.ico) filter />
 list2 = [re.sub(r'^[_\W]?feed[_\W]?\*?$', '', line) for line in list2]              # <remove spurious feed filter />
 list2 = [re.sub(r'^[_\W]?files?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious file filter />
+list2 = [re.sub(r'^[_\W]?film[_\W]?\*?$', '', line) for line in list2]              # <remove spurious film filter />
 list2 = [re.sub(r'^[_\W]?fit[_\W]?\*?$', '', line) for line in list2]               # <remove spurious file fit />
 list2 = [re.sub(r'^[_\W]?flipboard[_\W]?\*?$', '', line) for line in list2]         # <remove spurious flipboard filter />
 list2 = [re.sub(r'^[_\W]?foot(er)?[_\W]?\*?$', '', line) for line in list2]         # <remove spurious foot(er) filter />
@@ -524,6 +526,7 @@ list2 = [re.sub(r'^[_\W]?lists?[_\W]?\*?$', '', line) for line in list2]        
 list2 = [re.sub(r'^[_\W]?(down|up)?load(er|s)?[_\W]?\*?$', '', line) for line in list2]  # <remove spurious (down|up)load(er|s) filter />
 list2 = [re.sub(r'^[_\W]?libs?[_\W]?\*?$', '', line) for line in list2]             # <remove spurious lib filter />
 list2 = [re.sub(r'^[_\W]?life[_\W]?\*?$', '', line) for line in list2]              # <remove spurious life filter />
+list2 = [re.sub(r'^[_\W]?like[_\W]?\*?$', '', line) for line in list2]              # <remove spurious like filter />
 list2 = [re.sub(r'^[_\W]?links?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious link(s) filter />
 list2 = [re.sub(r'^[_\W]?linkedin[_\W]?\*?$', '', line) for line in list2]          # <remove spurious linkedin filter />
 list2 = [re.sub(r'^[_\W]?live[_\W]?\*?$', '', line) for line in list2]              # <remove spurious live filter />
