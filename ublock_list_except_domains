@@ -2,11 +2,11 @@
 ! expires: 1 day
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ublock_list_except_domains
 ! title: ublock list except domains
-*##:not(html):not(body):matches-attr("/.+/"= "/[-_\s^]addetail/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no)pop(?!ul)/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no.)shar[eir]/i")
 *##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]ad\-h/i")
 *##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]addespace/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]addetail/i")
 *##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]addisplay/i")
 *##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]addiv/i")
 *##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]aff/i")
@@ -171,6 +171,7 @@
 *$removeparam=/adb/,important
 *$removeparam=/adbl/,important
 *$removeparam=/adcid/,important
+*$removeparam=/adformat/,important
 *$removeparam=/adinstance/,important
 *$removeparam=/adjomo/,important
 *$removeparam=/admode/,important
@@ -197,6 +198,7 @@
 *$removeparam=/ctier/,important
 *$removeparam=/dci/,important
 *$removeparam=/detect/,important
+*$removeparam=/embargoed/,important
 *$removeparam=/exotra?ck/,important
 *$removeparam=/guce_/,important
 *$removeparam=/hasads/,important
@@ -1906,6 +1908,7 @@
 /[-\w]*network[-~\w\.]*\.js/
 /[-\w]*nfplug[-~\w\.]*\.js/
 /[-\w]*notification[-~\w\.]*\.js/
+/[-\w]*observer[-~\w\.]*\.js/
 /[-\w]*onesignal[-~\w\.]*\.js/
 /[-\w]*optimizely[-~\w\.]*\.js/
 /[-\w]*osano[-~\w\.]*\.js/
@@ -4156,6 +4159,7 @@
 /adsense-
 /adsense.
 /adsense.index.js
+/adsense.js
 /adsense/*
 /adsense/search/*
 /adsensebase.
