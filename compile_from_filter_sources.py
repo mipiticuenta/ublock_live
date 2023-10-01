@@ -260,6 +260,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.]?videos?\*?(?=[/\.])', '', line) for line in list2]                 # <remove leading video(s) />
     list2 = [re.sub(r'^[/\.]?web\*?(?=[/\.])', '', line) for line in list2]                     # <remove leading web />
     list2 = [re.sub(r'^[/\.]?wp\-content\*?(?=[/\.])', '', line) for line in list2]             # <remove leading wp-content />
+    list2 = [re.sub(r'^[/\.]?www\*?(?=[/\.])', '', line) for line in list2]                     # <remove leading www />
     list2 = [re.sub(r'^\.?aspx?\??(?![a-z0-9])', '*', line).strip() for line in list2]          # <replace leading asp with * >
     list2 = [re.sub(r'^\.?cgi\??(?![a-z0-9])', '*', line).strip() for line in list2]            # <replace leading cgi with * >
     list2 = [re.sub(r'^\.?cfm\??(?![a-z0-9])', '*', line).strip() for line in list2]            # <replace leading cfm with * >
