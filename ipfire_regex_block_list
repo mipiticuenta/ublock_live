@@ -3,7 +3,6 @@
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list
 ! title: regex block list
 /(fls|unagi|aan)[a-z0-9]+amazon/
-//ue\-.*\.js/
 /[-\w]*addthis[-~\w\.]*\.js/
 /[-\w]*adops[-~\w\.]*\.js/
 /[-\w]*ads[-~\w\.]*\.js/
@@ -467,6 +466,7 @@
 /subscri.*[_\W]/
 /top-games.me/
 /ue(.?comments?|.?data|.?login|.?nydus|.?piano|.?userpanel|.?utils)/
+/ue\-.*\.js/
 /view.php/
 /visitor.pixplug.in/
 /yournewlocalflingfinder7.com/
