@@ -4,7 +4,8 @@
 ! title: ublock list except domains
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no)pop(?!ul)/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no.)shar[eir]/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]ad\-h/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]ad\-/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]ad\-[hv]/i")
 *##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]addespace/i")
 *##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]addetail/i")
 *##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]addisplay/i")

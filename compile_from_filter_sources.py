@@ -761,6 +761,7 @@ list3 = [re.sub(r'^\.?realpython\.com$', '', line) for line in list3]           
 list3 = [re.sub(r'^\.?reuters\.com$', '', line) for line in list3]                  # <remove reuters.com />
 list3 = [re.sub(r'^\.?researchgate\.net$', '', line) for line in list3]             # <remove researchgate.net />
 list3 = [re.sub(r'^\.?rfi\.fr$', '', line) for line in list3]                       # <remove rfi.fr />
+list3 = [re.sub(r'^\.?sandiegouniontribune\.com$', '', line) for line in list3]     # <remove sandiegouniontribune.com />
 list3 = [re.sub(r'^\.?samsung\.com$', '', line) for line in list3]                  # <remove samsung.com />
 list3 = [re.sub(r'^\.?sciencedirect\.com$', '', line) for line in list3]            # <remove sciencedirect.com />
 list3 = [re.sub(r'^\.?seekingalpha\.com$', '', line) for line in list3]             # <remove seekingalpha.com />
