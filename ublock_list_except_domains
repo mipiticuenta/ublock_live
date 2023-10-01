@@ -28,6 +28,7 @@
 *##:not(html):not(body):matches-attr("/.+/"="/[^(re)]spons.*/i")
 *##:not(html):not(body):matches-attr("/.+/"="/[^(re)]spons/i")
 *##:not(html):not(body):matches-attr("/.+/"="/^ad.?wrap/i")
+*##:not(html):not(body):matches-attr("/.+/"="/^ad\-.*/i")
 *##:not(html):not(body):matches-attr("/.+/"="/^ad\-[hv].*/i")
 *##:not(html):not(body):matches-attr("/.+/"="/^adbl?o?c?k?/i")
 *##:not(html):not(body):matches-attr("/.+/"="/^bg-black/i")
@@ -1870,6 +1871,7 @@
 /[-\w]*bibblio[-~\w\.]*\.js/
 /[-\w]*cache[-~\w\.]*\.js/
 /[-\w]*chameleon[-~\w\.]*\.js/
+/[-\w]*chunks?[-~\w\.]*\.js/
 /[-\w]*clipboard[-~\w\.]*\.js/
 /[-\w]*cmp[-~\w\.]*\.js/
 /[-\w]*collect[-~\w\.]*\.js/
@@ -1887,6 +1889,7 @@
 /[-\w]*footer[-~\w\.]*\.js/
 /[-\w]*form[-~\w\.]*\.js/
 /[-\w]*geo[-~\w\.]*\.js/
+/[-\w]*godo[-~\w\.]*\.js/
 /[-\w]*help[-~\w\.]*\.js/
 /[-\w]*hook[-~\w\.]*\.js/
 /[-\w]*hoverintent[-~\w\.]*\.js/
