@@ -217,6 +217,7 @@
 *$removeparam=/partner/,important
 *$removeparam=/placement/,important
 *$removeparam=/pop/,important
+*$removeparam=/popunder/,important
 *$removeparam=/popup/,important
 *$removeparam=/popupnder/,important
 *$removeparam=/pub/,important
@@ -1878,6 +1879,7 @@
 /[-\w]*chameleon[-~\w\.]*\.js(on)?/
 /[-\w]*chunks?[-~\w\.]*\.js(on)?/
 /[-\w]*clavis[-~\w\.]*\.js(on)?/
+/[-\w]*click[-~\w\.]*\.js(on)?/
 /[-\w]*clipboard[-~\w\.]*\.js(on)?/
 /[-\w]*cmp[-~\w\.]*\.js(on)?/
 /[-\w]*collect[-~\w\.]*\.js(on)?/
@@ -1912,6 +1914,9 @@
 /[-\w]*latest[-~\w\.]*\.js(on)?/
 /[-\w]*link[-~\w\.]*\.js(on)?/
 /[-\w]*listen[-~\w\.]*\.js(on)?/
+/[-\w]*logger[-~\w\.]*\.js(on)?/
+/[-\w]*logging[-~\w\.]*\.js(on)?/
+/[-\w]*logs?[-~\w\.]*\.js(on)?/
 /[-\w]*lux[-~\w\.]*\.js(on)?/
 /[-\w]*marfeel[-~\w\.]*\.js(on)?/
 /[-\w]*measure[-~\w\.]*\.js(on)?/
@@ -2042,6 +2047,7 @@
 /[_\W]cbbp1[^a-z]/
 /[_\W]chat(enabled|urbate)[^a-z]/
 /[_\W]cli?ck/$important
+/[_\W]cli?cks?[^a-z]/
 /[_\W]cludo[^a-z]/
 /[_\W]cmp/$important
 /[_\W]cnil[_\W]/
@@ -2149,7 +2155,8 @@
 /[_\W]listenlive[^a-z]/
 /[_\W]listrakbi[^a-z]/
 /[_\W]livefyre[^a-z]/
-/[_\W]log[0-9]*(|ger|ging|s)[^a-z]/$important
+/[_\W]logs?[0-9]*(|ger|ging|s)[^a-z]/$important
+/[_\W]logs?[^a-z]/
 /[_\W]lp4[^a-z]/
 /[_\W]lqm[^a-z]/
 /[_\W]marketing(cloudapis|sites)[^a-z]/
@@ -2275,6 +2282,7 @@
 /[_\W]user(\-behavior|_context|\-geo|\-id|\.min|zoom)(|\.js
 /[_\W]utm/$important
 /[_\W]utm[_\W]/$important
+/[_\W]utms?[^a-z]/
 /[_\W]uxcam[^a-z]/
 /[_\W]vidyard[^a-z]/
 /[_\W]vizion[^a-z]/
@@ -2298,7 +2306,6 @@
 /__gpt_qpage-
 /__imp_apg__/*
 /__infoc.
-/__log
 /__px.
 /__rmn.
 /__sttm.
@@ -2308,8 +2315,6 @@
 /__tvpa.
 /__ub.
 /__utm.
-/__utm.js
-/__utmala.js
 /__v1/_img/mediap/banere/*
 /__wsm.
 /_a_images/*
@@ -2365,8 +2370,6 @@
 /_img/ban/*
 /_img/banners/*
 /_img/cache/partner/*
-/_log
-/_log/*
 /_logo/*
 /_m/partner/*
 /_main.js
@@ -2392,7 +2395,6 @@
 /_sponsoren/*
 /_sq.
 /_stat/*
-/_stat/log/*
 /_stats/*
 /_styles/*
 /_svc/ad/*
@@ -2641,7 +2643,6 @@
 /action-impressions/*
 /action/*
 /action_
-/action_log/*
 /actionlog
 /actionlog/*
 /actionsnshare/*
@@ -3729,7 +3730,6 @@
 /adperf.
 /adpfile/*
 /adphoto/*
-/adpia_click_popup_after.js
 /adpick.
 /adpinline/*
 /adpixel.
@@ -4922,7 +4922,6 @@
 /afr.
 /afr?auid
 /afrpt.
-/afterclick.js
 /aftonbladet/crypt/?lpkey
 /aftrack
 /aftrack.
@@ -5008,7 +5007,6 @@
 /ait_analytics.
 /aitaotu
 /aiyidu/adver/*
-/aj/log/*
 /ajax-activity.
 /ajax-hits
 /ajax-hits-counter/*
@@ -5485,7 +5483,6 @@
 /annons_ver.
 /annonsar/*
 /annonsbanners
-/annonsclickscript.js
 /annonse-
 /annonse.
 /annonse/*
@@ -5748,7 +5745,6 @@
 /article_hit.
 /article_home_adv.js
 /article_inc.js
-/article_log.
 /articleacb0
 /articlead.js
 /articlecounter
@@ -5858,7 +5854,6 @@
 /async~sentry-
 /at-composer.js
 /at.js
-/at/log/*
 /at_banner_
 /at_banners
 /atapixel.js
@@ -6029,8 +6024,6 @@
 /awin
 /awin/*
 /awin?awc
-/awp.log
-/awpys.log
 /awrapper
 /aws-cookie/*
 /aws-sdk-kinesis.min.js
@@ -6758,7 +6751,6 @@
 /bcklad.
 /bcn.
 /bcn_
-/bcn_access_log/*
 /bcode.
 /bcookiesmessage.
 /bcsensor.
@@ -6896,7 +6888,6 @@
 /bf2bxwwa
 /bfb
 /bfb/*
-/bfb_write_log
 /bfile.ashx?placeid=*&fileid
 /bfr/*
 /bframe.ashx?place=*&ids
@@ -7071,7 +7062,6 @@
 /block-ads/*
 /block-console.js
 /block-keys.js
-/block-right-click.js
 /block.js
 /block.php?*adverts
 /block?blockid=544
@@ -7901,7 +7891,6 @@
 /cdp125.
 /cdp250.
 /cdp728.
-/cds/log/*
 /ce_l.aspx?showid
 /cebian
 /cecaitra_transito.
@@ -8118,10 +8107,8 @@
 /click*?pubid
 /click-
 /click-analytics.
-/click-c.js
 /click-count.
 /click-cpa.
-/click-l.js
 /click-logger.
 /click-tracker
 /click.
@@ -8130,7 +8117,6 @@
 /click.em.nike.com/*
 /click.email.
 /click.epl
-/click.js
 /click.php?c
 /click.php?data
 /click.php?key
@@ -8154,33 +8140,25 @@
 /click?track
 /click?trvid=*&externalid
 /click_
-/click_metrics-jquery.js
 /click_stats.
-/click_stats.js
-/click_track.js
 /click_tracking
 /clickability-
 /clickability.
 /clickability/*
-/clickadilla.js
 /clickads.
 /clickads/*
 /clickadu/*
-/clickback.js
 /clickboothad.
 /clickcount.
 /clickcount/*
 /clickcount_
-/clickctrl.js
 /clickdimensions-
 /clicker.
-/clickgruporeforma.js
 /clickhabillage/*
 /clickheat
 /clickheat.
-/clickheat.js
 /clicki/*
-/clickiotag_log/*
+/clickiotag_
 /clickjs.
 /clicklog.
 /clicklog/*
@@ -8188,8 +8166,6 @@
 /clicklog_
 /clicklogger
 /clicklogger_
-/clickm.js
-/clickmap.js
 /clickme1.
 /clickpartners.
 /clickpathmedia.
@@ -8203,13 +8179,11 @@
 /clicks/*==.
 /clicks/servlet/*
 /clickscript.
-/clickserver.js
 /clicksglygifbanner2.
 /clicksor.
 /clickstats.
 /clickstream
 /clickstream.aspx
-/clickstream.js
 /clickstream/*
 /clicktag.
 /clicktail.
@@ -8219,7 +8193,6 @@
 /clicktale_
 /clicktalecdn.
 /clicktoplay.
-/clicktotal.js
 /clicktrack
 /clicktrack.
 /clicktracker.
@@ -8227,9 +8200,7 @@
 /clicktracking/*
 /clicktrackscookies.
 /clickunder.
-/clickworker.js
 /clickx-tracker.
-/clicky.js
 /clictv
 /clicunder.js
 /clien.naver.js
@@ -8291,7 +8262,6 @@
 /clog
 /clog/track/*
 /close-circlepng
-/close-right-click.js
 /close.*?tid
 /close1.
 /closest-native
@@ -8637,7 +8607,6 @@
 /consent.min.js
 /consent/*
 /consent/auto_blocking/*
-/consent/log/*
 /consent/manager/*
 /consent[^a-z]/$important
 /consent_
@@ -8704,8 +8673,6 @@
 /control.
 /controller.ad.
 /controlli/*
-/controls/hpjs.ashx?act=log
-/controls/pub/*
 /contshare.
 /convergence/header/framed/*
 /conversations-embed.js
@@ -9372,14 +9339,12 @@
 /csm_sparkassen_arena_
 /csm_sponsoren-
 /csp_204
-/csp_log
 /csp_report
 /cspreport
 /css2.js
 /css_js/*
 /css_v0.1/img/skin/*
 /cssimg/site/*
-/csstatic.com/banners/*
 /cst/*
 /cstmvast.xml
 /cszz/*$third-party,script
@@ -9634,7 +9599,6 @@
 /dazui
 /db.js
 /db/000/*
-/dbclickshow.js
 /dbdm-
 /dbdm-events.
 /dbdm-events/*
@@ -9813,7 +9777,6 @@
 /detect-acceptable/*
 /detect-adblock.js
 /detect-adblocker.
-/detect-click.js
 /detect-private-browsing.js
 /detect.
 /detect.dev.js
@@ -10736,7 +10699,6 @@
 /email_30.
 /email_follow.
 /email_newsletter_
-/email_open_log_
 /email_opened_tracking_pixel
 /emailaddthis.
 /emailads/*
@@ -10900,7 +10862,6 @@
 /eroads.
 /eroadvertising.
 /erobanner.
-/eroclick.js
 /eroru/*
 /eros.
 /erotidates-banner.
@@ -11003,8 +10964,6 @@
 /even/*
 /event
 /event-adserver.
-/event-log
-/event-log/*
 /event-report
 /event-stream
 /event-tracking
@@ -11028,7 +10987,6 @@
 /event?stat_
 /event?token
 /event?tub_id
-/event_log/*
 /event_logger
 /event_logging/*
 /event_tracker
@@ -11130,7 +11088,6 @@
 /exobanner.
 /exoclick-
 /exoclick.
-/exoclick.js
 /exoclick300m.
 /exonative
 /exopop.js
@@ -13406,7 +13363,6 @@
 /heatmap-
 /heatmap.js
 /heatmap/*
-/heatmap_log.js
 /heatmapsessionrecording/*
 /hebatqq.
 /hec-add-final
@@ -14431,12 +14387,10 @@
 /inc_ifra
 /incarqq.
 /inchlv
-/inclick.js
 /include/ad/*
 /include/counter/*
 /include/pub_ra/*
 /include/show.asp?boardid
-/include_api/log/*
 /include_name.js
 /includes/adds/*
 /includes/ads/*
@@ -14637,7 +14591,6 @@
 /inosmi.
 /inouttool/*
 /inpic.js
-/inpl.log/
 /inpl.measure.
 /inpl.webpush.
 /inplaybn-
@@ -15025,7 +14978,6 @@
 /jcookie/*
 /jcookielaw.
 /jd_ceshi.
-/jdf/1.0.0/unit/log/*
 /jdjd/*
 /jdunion
 /jdzjgg/*
@@ -15057,7 +15009,6 @@
 /jgcabd-detect-
 /jgg
 /jgj_
-/jgs_portal_log_bildschirm.
 /jhanwar-ji
 /jhhe.
 /jianpian.obs.cn-
@@ -15186,7 +15137,6 @@
 /js_hotlink
 /js_ibeat_ext.
 /js_interstitial.
-/js_log_error.
 /js_logger.
 /js_lstrk.
 /js_min.js
@@ -15956,7 +15906,6 @@
 /link.html?wglinkid
 /link.pbtech.co.nz/mo/*
 /link.theatlantic.com/img/*
-/link/log/*
 /link?c
 /link?url
 /link_td01.
@@ -16176,78 +16125,6 @@
 /locotrack.js
 /loding.
 /lodown_
-/log
-/log-
-/log-ads.
-/log-customer-visit
-/log-event-
-/log-nt/*
-/log-player/*
-/log-reporter.
-/log-view.
-/log-visit
-/log.
-/log.act
-/log.aspx
-/log.cfm
-/log.collect.
-/log.do
-/log.jphp
-/log.js
-/log.json
-/log.jsp
-/log.min.js
-/log.php?*http
-/log.php?id
-/log.php?referrer
-/log.xhr
-/log/*
-/log/?pixel
-/log/collect/*
-/log/impression/*
-/log/report/*
-/log/sentry/*
-/log/track/*
-/log/views/*
-/log2.
-/log204
-/log?act
-/log?action
-/log?count
-/log?data
-/log?documenturl
-/log?entry
-/log?event
-/log?format
-/log?id
-/log?kc
-/log?method
-/log?ref
-/log?slog
-/log?tag
-/log?track_
-/log?uuid
-/log_
-/log_ad
-/log_ad_
-/log_agent.
-/log_amp_item_set
-/log_beacon.
-/log_e.php?id
-/log_event
-/log_h.jsp
-/log_hit.
-/log_impression.
-/log_impression/*
-/log_impressions
-/log_interaction
-/log_pageview
-/log_presence/*
-/log_stats.
-/log_syndication.
-/log_tracker.
-/log_view.
-/log_zon_img.
 /logaction
 /logactions
 /logactions.
@@ -17857,7 +17734,6 @@
 /newsletter.
 /newsletter.swf
 /newsletter/*
-/newsletter/log/*
 /newsletter/popin/*
 /newsletter/popup/*
 /newsletter/read?s
@@ -18013,7 +17889,6 @@
 /no-right-click-
 /no-right-click-images-plugin
 /no-right-click.
-/no-rightclick.js
 /no-selects.js
 /no.1-digital-ad_
 /noaabd*&promo
@@ -18051,7 +17926,6 @@
 /nordvpn.
 /norgesecure/*
 /norightclick.
-/norightclick.js
 /noteb/*
 /nothing.aspx
 /noti-blocker/*
@@ -18105,7 +17979,6 @@
 /noyaux/pub/*
 /nozomi4.js
 /np-uploads/advertisement/*
-/np?log
 /npa2.min.js
 /npage/*
 /npage/*$script,third-party
@@ -18128,7 +18001,6 @@
 /nrsu.js
 /ns-facebook-pixel
 /nsc.js
-/nsclick.js
 /nsd-cookie-
 /nsimpression/*
 /nsmg-tracking/*
@@ -19317,7 +19189,6 @@
 /ping?token
 /ping?utm_
 /ping_g.jsp
-/ping_hotclick.js
 /pingaudience
 /pingback
 /pingback/*
@@ -21652,7 +21523,6 @@
 /rift
 /right-ad-
 /right-ad.
-/right-click1.js
 /right-ssd.js
 /right.js
 /right0.
@@ -23294,7 +23164,6 @@
 /smartadserver/*
 /smartbanner
 /smartbanner/*
-/smartclick.js
 /smarteucookiebanner.
 /smartlink
 /smartlink/?a
@@ -23584,7 +23453,6 @@
 /socshapri.min.js
 /sodar/*
 /sofa/*
-/softclick.js
 /softnetics.
 /softshow_
 /sogopoker-
@@ -24654,7 +24522,6 @@
 /tangkaskita.
 /tangkaspro.
 /tangoead.
-/tanxclick.js
 /tao
 /tao/at/*
 /taobao
@@ -25444,7 +25311,6 @@
 /trackb.
 /trackbatchevents
 /trackclick.
-/trackclickevent.js
 /trackclicks_
 /trackcontentview
 /trackconversion
@@ -26417,7 +26283,6 @@
 /utm.
 /utm_cookie.
 /utm_source
-/utms.js
 /utr/*
 /utrack
 /utrack.
@@ -27768,7 +27633,6 @@
 /wpsafelink.
 /wpsite-background-takeover
 /wpsite-background-takeover/*
-/wpsite_clickable.js
 /wpsocial.
 /wpstatistics
 /wpstatistics/*
@@ -28673,8 +28537,6 @@ __super_edu__
 __t__
 __ub.
 __utm.
-__utm.js
-__utmala.js
 __wsm.
 _a_d_s.
 _ad
@@ -29296,7 +29158,6 @@ _slideshare.
 _smads_
 _small_ad.
 _small_share.
-_smartclick.js
 _sns-hatena.
 _sns_me2day.
 _social-advert-
@@ -29359,9 +29220,6 @@ _uid.
 _unten_ad.
 _urchin.
 _utm.
-_utm.js
-_utmala.js
-_verified.php?code=*&server=runetki.com
 _vertical_ad.
 _video_ads_
 _videoad.
@@ -30601,7 +30459,6 @@ adoverride$important
 adpack
 adpage_
 adperf.
-adpia_click_popup_after.js
 adpick.
 adpixel.
 adplacement.
@@ -30937,7 +30794,6 @@ adscdn.
 adscience.
 adscl.
 adsclick.php?adsid
-adsclick.yx.js
 adsconsent.
 adscontent.
 adscontent2.
@@ -31584,7 +31440,6 @@ afon7.
 afr.
 afr?auid
 afrpt.
-afterclick.js
 aftonbladet.se.
 aftonbladet.se.senaste.
 aftrack
@@ -32204,7 +32059,6 @@ annons_
 annons_hor.
 annons_ver.
 annonsbanners
-annonsclickscript.js
 annonse-
 annonse.
 annonse_
@@ -32435,7 +32289,6 @@ article_hit
 article_hit.
 article_home_adv.js
 article_inc.js
-article_log.
 articleacb0
 articlead.js
 articlecounter
@@ -33678,7 +33531,6 @@ bloc_partenaire_
 block-adblock.js
 block-console.js
 block-keys.js
-block-right-click.js
 block.js
 block.php?*adverts
 block.s3block.
@@ -34800,10 +34652,8 @@ click
 click*=ad
 click-
 click-analytics.
-click-c.js
 click-count.
 click-cpa.
-click-l.js
 click-logger.
 click-to-scroll
 click-tracker
@@ -34811,7 +34661,6 @@ click.
 click.*&pubid
 click.*&utm_
 click.email.
-click.js
 click.php?c
 click.php?data
 click.php?id
@@ -34829,27 +34678,20 @@ click?pub
 click?track
 click?trvid=*&externalid
 click_
-click_metrics-jquery.js
 click_stats.
-click_track.js
 click_tracking
 clickability-
-clickadilla.js
 clickads.
 clickafiliados.
 clickagy$important
 clickaine.
-clickback.js
 clickboothad.
 clickcount.
 clickcount_
-clickctrl.js
 clickdimensions-
 clicker.
-clickgruporeforma.js
 clickheat
 clickheat.
-clickheat.js
 clickintext.
 clickioadv
 clickiocdn
@@ -34860,8 +34702,6 @@ clicklog4pc.
 clicklog_
 clicklogger
 clicklogger_
-clickm.js
-clickmap.js
 clickme1.
 clickmoileclito.
 clicknupload.
@@ -34876,7 +34716,6 @@ clickserv.
 clicksglygifbanner2.
 clickstats.
 clickstream
-clickstream.js
 clicktag.
 clicktail.
 clicktale$important
@@ -34885,16 +34724,13 @@ clicktale.
 clicktale_
 clicktalecdn.
 clicktoplay.
-clicktotal.js
 clicktrack
 clicktrack.
 clicktracker.
 clicktracking.
 clicktrackscookies.
 clickunder.
-clickworker.js
 clickx-tracker.
-clicky.js
 clicrbs.
 clictv
 clien.naver.js
@@ -34949,7 +34785,6 @@ clloudia.
 clm10
 clock.js
 close-circlepng
-close-right-click.js
 close.*?tid
 cloud
 cloudads-a.
@@ -36172,7 +36007,6 @@ db.js
 dbanner
 dbbp1.
 dbbp1.net.
-dbclickshow.js
 dbdm-
 dbdm-events.
 dbhf.js
@@ -36326,7 +36160,6 @@ detales2.
 detect
 detect-adblock.js
 detect-adblocker.
-detect-click.js
 detect.
 detect.js
 detectadblockers
@@ -36815,7 +36648,6 @@ doubleclick
 doubleclick$important
 doubleclick-wp
 doubleclick.
-doubleclick_instream_ad_status.js
 doublelvisions.
 doublepimp.
 doublepimp2.
@@ -37324,7 +37156,6 @@ email-subscribe
 email_30.
 email_follow.
 email_newsletter_
-email_open_log_
 email_opened_tracking_pixel
 emailaddthis.
 emailbutton.
@@ -37471,7 +37302,6 @@ eroad2.
 eroads.
 eroadvertorial
 erobanner.
-eroclick.js
 erogen.
 eros.
 eroticlink$important
@@ -37674,7 +37504,6 @@ exoclick
 exoclick-
 exoclick-proxy-
 exoclick.
-exoclick.js
 exoclick300m.
 exonative
 exopopunderdesktop.js
@@ -40834,7 +40663,6 @@ incarqq.
 incarsakong.
 inchlv
 incisivetrk.
-inclick.js
 include_name.js
 incmpuad.
 incontent-expressvpn.
@@ -42711,7 +42539,6 @@ locotrack.
 locotrack.js
 lodown_
 lodynet.
-log-
 log-ads.
 log-customer-visit
 log-event-
@@ -42719,7 +42546,6 @@ log-player.
 log-reporter.
 log-view.
 log-visit
-log.
 log.collect.
 log.js
 log.php?*http
@@ -42742,8 +42568,6 @@ log?ref
 log?slog
 log?tag
 log?track_
-log?uuid
-log_
 log_ad
 log_ad_
 log_agent.
@@ -44558,7 +44382,6 @@ no-impression.
 no-right-click-
 no-right-click-images-plugin
 no-right-click.
-no-rightclick.js
 no-scroll
 no-selects.js
 noab.
@@ -44600,7 +44423,6 @@ nordvpn-affiliate-
 nordvpn.
 norgeskosalg.
 norightclick.
-norightclick.js
 northsky.
 norton.
 norwegian.com.
@@ -44659,7 +44481,6 @@ nrj?page=/rg.fake
 nrsu.js
 ns-facebook-pixel
 nsc.js
-nsclick.js
 nsd-cookie-
 nsimg.
 nsstatic.
@@ -45788,7 +45609,6 @@ ping?rid
 ping?spacedesc
 ping?token
 ping?utm_
-ping_hotclick.js
 pingabfactor
 pingaudience
 pingback
@@ -47920,7 +47740,6 @@ riesenrat.
 rift
 right-ad-
 right-ad.
-right-click1.js
 right-ssd.js
 right.js
 right0.
@@ -49496,7 +49315,6 @@ smartad_
 smartads$important
 smartadserver.
 smartclick$important
-smartclick.js
 smartclip$important
 smarteucookiebanner.
 smarticon.geotrust.
@@ -49792,7 +49610,6 @@ socshapri.
 socy.
 softarchive.
 softclick.
-softclick.js
 softnetics.
 softonic.
 softshow_
@@ -50812,7 +50629,6 @@ tangkasq.
 tangoead.
 tanisha
 tansen-webbanner-1140x90-pxl-mediadabali.com_.
-tanxclick.js
 taobao
 taobao_focus_
 tap_button.js
@@ -51647,7 +51463,6 @@ trackarticleaction
 trackb.
 trackbatchevents
 trackclick.
-trackclickevent.js
 trackcontentview
 trackconversion
 trackduck.
@@ -52542,14 +52357,11 @@ utils51.js
 utils78.js
 utm-tracking.
 utm.
-utm.js
 utm[^a-z]/$important
 utm_
 utm_campaign
 utm_cookie.
 utm_source
-utmala.js
-utms.js
 utrack
 utrack.
 utrack.js
@@ -53847,7 +53659,6 @@ wpsafelink.
 wpsandwatch.
 wpscdn.cnuploadad_adapter
 wpserveur-banner
-wpsite_clickable.js
 wpsocial.
 wpstatistics
 wptavern

@@ -20,6 +20,7 @@
 /[-\w]*chameleon[-~\w\.]*\.js(on)?/
 /[-\w]*chunks?[-~\w\.]*\.js(on)?/
 /[-\w]*clavis[-~\w\.]*\.js(on)?/
+/[-\w]*click[-~\w\.]*\.js(on)?/
 /[-\w]*clipboard[-~\w\.]*\.js(on)?/
 /[-\w]*cmp[-~\w\.]*\.js(on)?/
 /[-\w]*collect[-~\w\.]*\.js(on)?/
@@ -54,6 +55,9 @@
 /[-\w]*latest[-~\w\.]*\.js(on)?/
 /[-\w]*link[-~\w\.]*\.js(on)?/
 /[-\w]*listen[-~\w\.]*\.js(on)?/
+/[-\w]*logger[-~\w\.]*\.js(on)?/
+/[-\w]*logging[-~\w\.]*\.js(on)?/
+/[-\w]*logs?[-~\w\.]*\.js(on)?/
 /[-\w]*lux[-~\w\.]*\.js(on)?/
 /[-\w]*marfeel[-~\w\.]*\.js(on)?/
 /[-\w]*measure[-~\w\.]*\.js(on)?/
@@ -184,6 +188,7 @@
 /[_\W]cbbp1[^a-z]/
 /[_\W]chat(enabled|urbate)[^a-z]/
 /[_\W]cli?ck/
+/[_\W]cli?cks?[^a-z]/
 /[_\W]cludo[^a-z]/
 /[_\W]cmp/
 /[_\W]cnil[_\W]/
@@ -291,7 +296,8 @@
 /[_\W]listenlive[^a-z]/
 /[_\W]listrakbi[^a-z]/
 /[_\W]livefyre[^a-z]/
-/[_\W]log[0-9]*(|ger|ging|s)[^a-z]/
+/[_\W]logs?[0-9]*(|ger|ging|s)[^a-z]/
+/[_\W]logs?[^a-z]/
 /[_\W]lp4[^a-z]/
 /[_\W]lqm[^a-z]/
 /[_\W]marketing(cloudapis|sites)[^a-z]/
@@ -416,6 +422,7 @@
 /[_\W]urbanairship[^a-z]/
 /[_\W]utm/
 /[_\W]utm[_\W]/
+/[_\W]utms?[^a-z]/
 /[_\W]uxcam[^a-z]/
 /[_\W]vidyard[^a-z]/
 /[_\W]vizion[^a-z]/
@@ -460,7 +467,6 @@
 /gys.ad/
 /https\:\/\/nieuwsfiets\.nu\/wp-content\/uploads\/.*\/.*(?:banner-(?!mis|tip).*|\.gif)/
 /im\.chip\.de\/ii\/[0-9]{3}\/[0-9a-zA-Z\/\.]{54,59}\?im=AspectCrop.*&hash=[0-9a-z]{27}/
-/inpl.log/
 /io-tech\.fi\/.*\/[0-9a-f]{32}\./
 /livsstil.se\/cnp-assets\/[0-9]+./
 /media*=rotten_tomatoes_video$xhr,removeparam=/^((?!smil|formats).)*$/
