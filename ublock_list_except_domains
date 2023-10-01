@@ -223,6 +223,7 @@
 *$removeparam=/publisher/,important
 *$removeparam=/qoe/,important
 *$removeparam=/redir/,important
+*$removeparam=/redirect/,important
 *$removeparam=/rotat/,important
 *$removeparam=/sponsor/,important
 *$removeparam=/stc/,important
@@ -1940,6 +1941,7 @@
 /[-\w]*privacy[-~\w\.]*\.js(on)?/
 /[-\w]*promo[-~\w\.]*\.js(on)?/
 /[-\w]*react[-~\w\.]*\.js(on)?/
+/[-\w]*redirect[-~\w\.]*\.js(on)?/
 /[-\w]*remote[-~\w\.]*\.js(on)?/
 /[-\w]*responsive[-~\w\.]*\.js(on)?/
 /[-\w]*reverb[-~\w\.]*\.js(on)?/
@@ -4577,9 +4579,7 @@
 /adv_vert.js
 /adv_vertical.
 /advalidation.js
-/advanced-ads-
-/advanced-ads/*
-/advanced-advertising-system/js/*
+/advanced-advert
 /advanced-facebook-content-locker/*
 /advanced-social-widget/*
 /advanced.js
@@ -19159,7 +19159,6 @@
 /pfr_loader.
 /pfv5glksf5s5md5lwpupy.js
 /pfz.
-/pg-advanced-ads/*
 /pg/c/*
 /pg_pixel
 /pgad.
@@ -21242,14 +21241,12 @@
 /redir/*
 /redir/*.php?r
 /redir/stat/*
-/redirect
 /redirect$important
 /redirect*?banner
 /redirect.
 /redirect.*&a_aid=*&a_bid
 /redirect.a2b
 /redirect.aspx?pid=*&bid
-/redirect.js
 /redirect/*?banner
 /redirect/?spot_id
 /redirect/cpa/*
@@ -31339,8 +31336,7 @@ adv_vert.js
 adv_vertical.
 advalidation.js
 advance.
-advanced-ads
-advanced-ads-
+advanced-ads$important
 advanced.js
 advar.js
 advcontents.
@@ -45698,7 +45694,6 @@ pfpadv.
 pfr_loader.
 pfv5glksf5s5md5lwpupy.js
 pfz.
-pg-advanced-ads
 pg_pixel
 pgad.
 pgcookies.
@@ -47586,8 +47581,6 @@ redir
 redir-ad-
 redir.
 redir.*&id_emplacement=*&hash
-redirect
-redirect$important
 redirect.
 redirect.*&a_aid=*&a_bid
 redirect.a2b
