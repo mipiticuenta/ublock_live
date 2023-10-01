@@ -115,7 +115,7 @@
 *##:not(html):not(body):matches-attr("/.+/"="/paylas/i")
 *##:not(html):not(body):matches-attr("/.+/"="/payserve/i")
 *##:not(html):not(body):matches-attr("/.+/"="/piano/i")
-*##:not(html):not(body):matches-attr("/.+/"="/popular/i")
+*##:not(html):not(body):matches-attr("/.+/"="/popular/i"):not(.post)
 *##:not(html):not(body):matches-attr("/.+/"="/pqip/i")
 *##:not(html):not(body):matches-attr("/.+/"="/pre.?bid/i")
 *##:not(html):not(body):matches-attr("/.+/"="/pre.?roll/i")
@@ -1867,6 +1867,7 @@
 /[-\w]*akismet[-~\w\.]*\.js(on)?/
 /[-\w]*ampz[-~\w\.]*\.js(on)?/
 /[-\w]*analytics[-~\w\.]*\.js(on)?/
+/[-\w]*assoc[-~\w\.]*\.js(on)?/
 /[-\w]*audience[-~\w\.]*\.js(on)?/
 /[-\w]*banner[-~\w\.]*\.js(on)?/
 /[-\w]*beacon[-~\w\.]*\.js(on)?/
@@ -1883,12 +1884,14 @@
 /[-\w]*comscore[-~\w\.]*\.js(on)?/
 /[-\w]*consent[-~\w\.]*\.js(on)?/
 /[-\w]*conversion[-~\w\.]*\.js(on)?/
+/[-\w]*counter[-~\w\.]*\.js(on)?/
 /[-\w]*decode[-~\w\.]*\.js(on)?/
 /[-\w]*detect[-~\w\.]*\.js(on)?/
 /[-\w]*dfp[-~\w\.]*\.js(on)?/
 /[-\w]*didomi[-~\w\.]*\.js(on)?/
 /[-\w]*dismiss[-~\w\.]*\.js(on)?/
 /[-\w]*feedback[-~\w\.]*\.js(on)?/
+/[-\w]*flickity[-~\w\.]*\.js(on)?/
 /[-\w]*footer[-~\w\.]*\.js(on)?/
 /[-\w]*form[-~\w\.]*\.js(on)?/
 /[-\w]*geo[-~\w\.]*\.js(on)?/
@@ -24919,6 +24922,7 @@
 /textad.
 /textad/*
 /textad_
+/textadnewssites.
 /textadrotate.
 /textads
 /textads-
