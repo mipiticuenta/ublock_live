@@ -69,6 +69,13 @@ for line in list1 :
 
 # </dump sources to list>
 
+# <segregate regex filters>
+
+list2r = [line for line in list2 if re.search(r'^/.+/(\$important)?$', line) and re.search(r'[\.\?\[\(\\]', line)]
+list2 = set(list2) - set(list2r)
+
+# <segregate regex filters>
+
 # <process filter list>
 
 print(
@@ -210,9 +217,9 @@ while n_1 > len(list2):                                                         
     )
 
     print('11/20 : clean up leading symbols numbers prefix etc')
-    list2 = [re.sub(r'^[-_\:\=\+\~\|\*\!0-9]+[/\.]', '', line) for line in list2]               # <remove leading symbols and numbers preceding / ./>
-    list2 = [re.sub(r'^[-_\:\=\+\~\|\!0-9]+(?=\$)', '', line) for line in list2]                # <remove leading symbols and numbers preceding $ />
-    list2 = [re.sub(r'^[/\.]?[-_a-z0-9\*](?=[/\.])', '', line).strip() for line in list2]       # <remove leading single -_a-z0-9\* preceding / . />
+    list2 = [re.sub(r'^[_\W0-9]+[/\.]', '', line) for line in list2]                            # <remove leading symbols and numbers preceding / . />
+    list2 = [re.sub(r'^[_\W0-9]+(?=\$)', '', line) for line in list2]                           # <remove leading symbols and numbers preceding $ />
+    list2 = [re.sub(r'^[/\.]?[-\w\*](?=[/\.])', '', line).strip() for line in list2]            # <remove leading single -_a-z0-9\* preceding / . />
     list2 = [re.sub(r'^[/\.]?[a-z][0-9](?=[/\.])', '', line).strip() for line in list2]         # <remove leading single char number preceding / . />
     list2 = [re.sub(r'^[/\.]\*', '*', line).strip() for line in list2]                          # <remove leading / . if followed by * />
     list2 = [re.sub(r'^/\.', '/', line) for line in list2]                                      # <remove leading /. with / />
@@ -288,10 +295,10 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'\.asp\??$', '.', line) for line in list2]                         # <remove trailing .asp?/>
     list2 = [re.sub(r'\.gif\??$', '.', line) for line in list2]                         # <remove trailing .gif?/>
     list2 = [re.sub(r'\.?html?\??$', '.', line) for line in list2]                      # <remove trailing .html?/>
-    list2 = [re.sub(r'\.js(?![a-z0-9/]).*$', '.js', line) for line in list2]             # <clean up trailing .js />
+    list2 = [re.sub(r'\.js(?![a-z0-9/]).*$', '.js', line) for line in list2]            # <clean up trailing .js />
     list2 = [re.sub(r'\.php\??$', '.', line) for line in list2]                         # <remove trailing .php?/>
     list2 = [re.sub(r'\.png\??$', '.', line) for line in list2]                         # <remove trailing .png?/>
-    list2 = [re.sub(r'(^[^#]{2,})\$[a-z0-9,~=]*$(?<!/)(?<!important)', r'\1', line) for line in list2]    # <remove specific trailing $ filters except *$ or ending with important />
+    list2 = [re.sub(r'(^[^#]{2,})\$[-~,=a-z0-9]*$(?<!/)(?<!important)', r'\1', line) for line in list2]    # <remove specific trailing $ filters except *$ or ending with important />
     list2 = [re.sub(r'\??\*\=.*(^/)$', '', line).strip() for line in list2]             # <remove trailing ?*=... />
     list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2)), 'filters kept')
@@ -338,11 +345,6 @@ while n_1 > len(list2):                                                         
 print('15/20 : fix /@/ url filters adding trailing * ')
 
 list2 = [re.sub(r'(/[-_\*a-z0-9]+)/$', r'\1/*', line) for line in list2]        # < fix /word/ ending url filters adding trailing * />
-
-#list2 = (
-#    [re.sub(r'/$', '/*', line) for line in list2 if re.search(r'/[-_\*a-z0-9]+/$', line)] +    # < fix /word/ ending url filters adding trailing * />
-#    [line for line in list2 if not(re.search(r'/[-_\*a-z0-9]+/$', line))]
-#    )
 
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
@@ -633,13 +635,9 @@ list2 = [line for line in list2 if len(line) > 1]                               
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
 print('20/20 : adding #.@(.@) filter to block numerical domains, critical exceptions and filters')
-list2.append('/^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/')                # <add filter to block [-_/\.0-9]+\.[a-z]+ domains />
-list2.append('@@||google.com^$script,1p')
-list2.append('@@||gstatic.com^$script,domain=google.com')
+list2.append('/^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/')                     # <add filter to block [-_/\.0-9]+\.[a-z]+ domains />
 list2.append('@@||google.com^$inline-script,1p')
-list2.append('@@/lazysizes.min.js$script,1p')
 list2.append('@@||meteoblue.com^$inline-script,1p')
-list2.append('@@||meteoblue.com^$script,1p')
 list2.append('*$beacon')
 list2.append('*$csp=all')
 list2.append('*$inline-font')
@@ -653,11 +651,17 @@ list2.append('*$xhr')
 
 # <transforming loop/>
 
+# <aggregate regex filters>
+
+list2 = sorted(set(list2) | set(list2r))
+
+# </aggregate regex filters>
+
 # <extract domains from list>
 
 print('\n', 'Listing domain filters; ', end = '', sep = '')
 
-list3 = [line for line in list2 if re.search(r'^[-_\.a-z0-9]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
+list3 = [line for line in list2 if re.search(r'^[-\.\w]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
 list3 = [line for line in list3 if not(re.search(r'^.*\.js(\$important)?$', line))]           # <remove @.js from domains list />
 list2 = set(list2) - set(list3)                                                 # <only domains part are processed in this section; @.js are kept in list2 />
 
@@ -667,7 +671,7 @@ list2 = set(list2) - set(list3)                                                 
 
 print('removing #.@(.@) numerical domain filters, root @.@ and key domains (google.com etc) domains: ', end = '')
 list3 = [re.sub('r\$important$', '', line) for line in list3]                       # <remove trailing $important from domains/>
-list3 = [line for line in list3 if not(re.search(r'^([-_\.a-z0-9]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?$', line))]    # <remove #.@(.@) numerical domains/>
+list3 = [line for line in list3 if not(re.search(r'^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?$', line))]    # <remove #.@(.@) numerical domains/>
 list3 = [re.sub(r'^\.', '', line)  for line in list3]                               # <remove leading . preceding domain />
 list3 = [re.sub(r'^\.?20minutos\.es$', '', line) for line in list3]                 # <remove 20minutos.es />
 list3 = [re.sub(r'^\.?abc\.(es|com)$', '', line) for line in list3]                 # <remove abc.(es|com) />
