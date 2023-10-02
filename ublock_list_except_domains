@@ -8435,6 +8435,7 @@
 /comment-ad.
 /comment-ads.
 /comment_baidu.
+/comments?[^a-z]/$important
 /commentshareicons.
 /commercial_horizontal.
 /commercial_top.
@@ -12319,6 +12320,7 @@
 /genybet/*
 /geo
 /geo.
+/geo.?ip/$important
 /geo.?ip/important
 /geo.?location/$important
 /geo/*
@@ -20510,6 +20512,7 @@
 /pws/v1/ace/impression/*
 /pwt
 /px
+/px(?![a-z])/$important
 /px.
 /px.js
 /px/*
@@ -26094,6 +26097,7 @@
 /utils78.js
 /utm-tracking.
 /utm.
+/utm[^a-z]/$important
 /utm_cookie.
 /utm_source
 /utr/*
@@ -34746,7 +34750,6 @@ comment-ad-
 comment-ad.
 comment-ads.
 comment_baidu.
-comments?[^a-z]/$important
 commentshareicons.
 commercial_horizontal.
 commercial_top.
@@ -34821,7 +34824,6 @@ consent-magic-pro
 consent-manager.
 consent-tracking-
 consent.
-consent[^a-z]/$important
 consent_
 consent_banner-
 consent_non-eu.
@@ -37237,7 +37239,6 @@ expads-
 expandingads.
 expckwg.
 experiencesuite.
-experiment.*flag/$important
 experiments.$important
 expertad
 expla
@@ -37340,7 +37341,6 @@ fab_
 fabioalbini.
 fabulashesbytrisha.
 facash.
-faceboo?k/$important
 facebook
 facebook$important
 facebook-
@@ -38593,8 +38593,6 @@ geni.
 genius-classes
 gennaroespositomilano.
 geo.
-geo.?ip/important
-geo.?location/$important
 geo_
 geoanalysis.
 geoapiet.
@@ -42938,7 +42936,6 @@ metrics-
 metrics-ga.
 metrics.
 metrics.js
-metrics[^a-z]/$important
 metrics_logging_batched
 metricsconfig
 metricspar_
@@ -44086,7 +44083,6 @@ noticead
 noticemsg
 noticia_entidades_triarias_consultar.
 notif
-notif(?!iy)(?!d)[^a-z]/$important
 notification-
 notification-ext.
 notification-prod-sw.js
@@ -44096,7 +44092,6 @@ notification.js
 notificationcookies.
 notifications.
 notifications.js
-notifications?[^a-z]/$important
 notifications_lazy.
 notificationx
 notify.js
@@ -45680,7 +45675,6 @@ pooads.
 pooja_money_transfer.
 pool
 pool.ads.
-pop(?!ul)/$important
 pop-
 pop-ads.
 pop-banner.
@@ -45972,7 +45966,6 @@ prbd-
 prbd0.js
 prdyov3.
 pre-roll
-pre.?roll/$important
 prebid
 prebid$important
 prebid-
@@ -46090,7 +46083,6 @@ privacy-consent-
 privacy-cookie.
 privacy-notifier
 privacy.
-privacy[^a-z]/$important
 privacy_
 privacy_cookie.
 privacy_manager
@@ -46164,7 +46156,6 @@ promo.php?c
 promo.php?compte=*&idealsite
 promo2.
 promo?ref
-promo[_\W]/$important
 promo_
 promo_res
 promoblock-
@@ -46592,7 +46583,6 @@ pw.js
 pwabuilder-sw.js
 pws.
 pwt.js
-px(?![a-z])/$important
 px-
 px-1.
 px.
@@ -48172,7 +48162,6 @@ service-bar$important
 service-redirection-ppl.
 service-redirections.
 service-worker.js
-service.?worker/$important
 serviceworker.js
 serving-sys
 serving-sys.
@@ -51725,7 +51714,6 @@ udctrack
 udctrack.
 udqsatcz
 udupixpress-ad-strip_classes_
-ue(.?comments?|.?data|.?login|.?nydus|.?piano|.?userpanel|.?utils)/$important
 ue-piano.$important
 ue0cfwm7
 uedata
@@ -51994,7 +51982,6 @@ utils51.js
 utils78.js
 utm-tracking.
 utm.
-utm[^a-z]/$important
 utm_
 utm_campaign
 utm_cookie.
