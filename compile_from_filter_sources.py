@@ -72,7 +72,7 @@ for line in list1 :
 # <segregate regex filters>
 
 list2r = [line for line in list2 if re.search(r'^/.+/(\$important)?$', line) and re.search(r'[\.\?\[\(\\]', line)]
-list2 = set(list2) - set(list2r)
+list2  = set(list2) - set(list2r)
 
 # <segregate regex filters>
 
