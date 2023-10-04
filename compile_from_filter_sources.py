@@ -633,7 +633,7 @@ list2 = [re.sub(r'^[_\W]?youtube[_\W]?\*?$', '', line) for line in list2]       
 list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2) + len(list2r)), 'filters kept')
 
-print('20/20 : adding #.@(.@) filter to block numerical domains, critical exceptions and filters')
+print('20/20 : add filter to block numerical domains #.@(.@), critical exceptions and filters')
 list2.append('/^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/')                     # <add filter to block [-_/\.0-9]+\.[a-z]+ domains />
 list2.append('@@||google.com^$inline-script,1p')
 list2.append('@@||meteoblue.com^$inline-script,1p')
@@ -653,7 +653,7 @@ print('       ', '{:,}'.format(len(list2) + len(list2r)), 'filters kept')
 
 # <remove url filters covered by regex filters>
 
-print('\n', 'Deflating url filters covered by regex filters', sep = '')
+print('\n', 'Deflating url filters redundant with regex filters', sep = '')
 #list2 = list(map(lambda line: line if (len(list(filter(lambda string: re.search(re.sub(r'^/', '', re.sub(r'/(\$important)?$', '', string)), line), list2r))) == 0) else '', tqdm.tqdm(list2)))
 
 for string in tqdm.tqdm(list2r):
