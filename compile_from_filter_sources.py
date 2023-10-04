@@ -52,6 +52,7 @@ i     = 1                                                                       
 
 for line in list1 :
     print(
+        '\n',
         'reading source',
         '{:3.0f}'.format(i),
         '/',
@@ -826,7 +827,7 @@ print(
 
 # </remove #.@(.@) (numerical domains) and @.@ root domains from list>
 
-if dm_sw == 1:
+if dom_sw == 1:
 
     # <remove redundant domains from list>
 
