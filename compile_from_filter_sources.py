@@ -661,7 +661,7 @@ for string in tqdm.tqdm(list2r):
 
 print('       ', '{:,}'.format(len(list2) + len(list2r)), 'filters kept')
 
-# <remove url filters covered by regex filters>
+# </remove url filters covered by regex filters>
 
 # <aggregate regex filters>
 
