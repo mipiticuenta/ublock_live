@@ -653,9 +653,7 @@ list2.append('*$xhr')
 
 # <remove url filters covered by regex filters>
 
-print(list2r[0:50])
-
-list2 = list(map(lambda line: line if (len(list(filter(lambda string: re.search(re.sub(r'\$important$', '', string)[1:-1], line), list2r))) == 0) else '', tqdm.tqdm(list2)))
+list2 = list(map(lambda line: line if (len(list(filter(lambda string: re.search(re.sub(r'^/', '', re.sub(r'/(\$important)?$', '', string)), line), list2r))) == 0) else '', tqdm.tqdm(list2)))
 
 list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
 
