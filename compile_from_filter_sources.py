@@ -666,7 +666,7 @@ print('       ', '{:,}'.format(len(list2) + len(list2r)), 'filters kept')
 # <aggregate regex filters>
 
 list2 = sorted(set(list2) | set(list2r))
-del(list2s)
+del(list2r)
 
 # </aggregate regex filters>
 
