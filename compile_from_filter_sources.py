@@ -630,6 +630,7 @@ list2 = [re.sub(r'^[_\W]?webp[_\W]?\*?$', '', line) for line in list2]          
 list2 = [re.sub(r'^[_\W]?widgets?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious widget(s) filter />
 list2 = [re.sub(r'^[_\W]?wp(\-content)?[_\W]?\*?$', '', line) for line in list2]    # <remove spurious wp(-content) filter />
 list2 = [re.sub(r'^[_\W]?wordpress[_\W]?\*?$', '', line) for line in list2]         # <remove spurious wordpress filter />
+list2 = [re.sub(r'^[_\W]?xml[_\W]?\*?$', '', line) for line in list2]               # <remove spurious xml filter />
 list2 = [re.sub(r'^[_\W]?youtube[_\W]?\*?$', '', line) for line in list2]           # <remove spurious youtube filter />
 list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
@@ -656,7 +657,7 @@ list2.append('*$xhr')
 print('\n', 'Removing url filters covered by regex filters; ', end = '', sep = '')
 #list2 = list(map(lambda line: line if (len(list(filter(lambda string: re.search(re.sub(r'^/', '', re.sub(r'/(\$important)?$', '', string)), line), list2r))) == 0) else '', tqdm.tqdm(list2)))
 
-for tqdm.tqdm(string) in list2r:
+for string in tqdm.tqdm(list2r):
     list2 = [line for line in list2 if not(re.search(r'[\#\$]', line)) and not(re.search(re.sub(r'^/', '', re.sub(r'/(\$important)?$', '', string)), line))]
 
 list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
