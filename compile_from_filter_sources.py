@@ -656,8 +656,8 @@ list2.append('*$xhr')
 print('\n', 'Removing url filters covered by regex filters; ', end = '', sep = '')
 #list2 = list(map(lambda line: line if (len(list(filter(lambda string: re.search(re.sub(r'^/', '', re.sub(r'/(\$important)?$', '', string)), line), list2r))) == 0) else '', tqdm.tqdm(list2)))
 
-for string in list2r:
-    list2 = [line for line in list2 if not(re.search(r'[\#\$]', line)) and not(re.search(re.sub(r'^/', '', re.sub(r'/(\$important)?$', '', tqdm.tqdm(string))), line))]
+for tqdm.tqdm(string) in list2r:
+    list2 = [line for line in list2 if not(re.search(r'[\#\$]', line)) and not(re.search(re.sub(r'^/', '', re.sub(r'/(\$important)?$', '', string)), line))]
 
 list2 = [line for line in list2 if len(line) > 1]                                   # <remove items if length < 2 />
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
