@@ -662,7 +662,7 @@ print('\n', 'Removing url filters covered by regex filters')
 #list2 = list(map(lambda line: line if (len(list(filter(lambda string: re.search(re.sub(r'^/', '', re.sub(r'/(\$important)?$', '', string)), line), list2r))) == 0) else '', tqdm.tqdm(list2)))
 
 for string in tqdm.tqdm(list2r):
-    list2 = [line for line in list2 if not(re.search(r'[\#\$]', line)) and not(re.search(re.sub(r'^/', '', re.sub(r'/(\$important)?$', '', string)), line))]
+    list2 = [line for line in list2 if (re.search(r'[\#\$]', line) or not(re.search(re.sub(r'^/', '', re.sub(r'/(\$important)?$', '', string)), line)))]
 
 print('       ', '{:,}'.format(len(list2)), 'filters kept')
 
