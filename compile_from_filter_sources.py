@@ -517,6 +517,7 @@ list2 = [re.sub(r'^[_\W]?info[_\W]?\*?$', '', line) for line in list2]          
 list2 = [re.sub(r'^[_\W]?init[_\W]?\*?$', '', line) for line in list2]              # <remove spurious init filter />
 list2 = [re.sub(r'^[_\W]?instagram[_\W]?\*?$', '', line) for line in list2]         # <remove spurious instagram filter />
 list2 = [re.sub(r'^[_\W]?inter[_\W]?\*?$', '', line) for line in list2]             # <remove spurious inter filter />
+list2 = [re.sub(r'^[_\W]?island[_\W]?\*?$', '', line) for line in list2]            # <remove spurious island filter />
 list2 = [re.sub(r'^[_\W]?javascript[_\W]?\*?$', '', line) for line in list2]        # <remove spurious javascript filter />
 list2 = [re.sub(r'^[_\W]?jpe?g[_\W]?\*?$', '', line) for line in list2]             # <remove spurious jpg filter />
 list2 = [re.sub(r'^[_\W]?jquery(\.min)?(\.js)?[_\W]?\*?$', '', line) for line in list2]    # <remove spurious jquery(.min)(.js) filter />
