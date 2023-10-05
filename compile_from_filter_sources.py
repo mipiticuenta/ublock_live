@@ -241,6 +241,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.]?common\*?(?=[/\.])', '', line) for line in list2]                  # <remove leading common />
     list2 = [re.sub(r'^[/\.]?contents?\*?(?=[/\.])', '', line) for line in list2]               # <remove leading content(s) />
     list2 = [re.sub(r'^[/\.]?core\*?(?=[/\.])', '', line) for line in list2]                    # <remove leading core />
+    list2 = [re.sub(r'^[/\.]?creatives?\*?(?=[/\.])', '', line) for line in list2]              # <remove leading creative(s) />
     list2 = [re.sub(r'^[/\.]?css\*?(?=[/\.])', '', line) for line in list2]                     # <remove leading css />
     list2 = [re.sub(r'^[/\.]?custom\*?(?=[/\.])', '', line) for line in list2]                  # <remove leading custom />
     list2 = [re.sub(r'^[/\.]?data\*?(?=[/\.])', '', line) for line in list2]                    # <remove leading data />
@@ -544,6 +545,7 @@ list2 = [re.sub(r'^[_\W]?master[_\W]?\*?$', '', line) for line in list2]        
 list2 = [re.sub(r'^[_\W]?max[_\W]?\*?$', '', line) for line in list2]               # <remove spurious max filter />
 list2 = [re.sub(r'^[_\W]?(multi)?media[_\W]?\*?$', '', line) for line in list2]     # <remove spurious (multi)media filter />
 list2 = [re.sub(r'^[_\W]?menu[_\W]?\*?$', '', line) for line in list2]              # <remove spurious menu filter />
+list2 = [re.sub(r'^[_\W]?message[_\W]?\*?$', '', line) for line in list2]           # <remove spurious message filter />
 list2 = [re.sub(r'^[_\W]?meteoblue[_\W]?\*?$', '', line) for line in list2]         # <remove spurious meteoblue filter />
 list2 = [re.sub(r'^[_\W]?mini[_\W]?\*?$', '', line) for line in list2]              # <remove spurious mini filter />
 list2 = [re.sub(r'^[_\W]?microsoft[_\W]?\*?$', '', line) for line in list2]         # <remove spurious microsoft filter />
@@ -605,6 +607,7 @@ list2 = [re.sub(r'^[_\W]?sp[_\W]?\*?$', '', line) for line in list2]            
 list2 = [re.sub(r'^[_\W]?specials?[_\W]?\*?$', '', line) for line in list2]         # <remove spurious special(s) filter />
 list2 = [re.sub(r'^[_\W]?speed[_\W]?\*?$', '', line) for line in list2]             # <remove spurious speed filter />
 list2 = [re.sub(r'^[_\W]?sports?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious sport(s) filter />
+list2 = [re.sub(r'^[_\W]?square[_\W]?\*?$', '', line) for line in list2]            # <remove spurious square filter />
 list2 = [re.sub(r'^[_\W]?src[_\W]?\*?$', '', line) for line in list2]               # <remove spurious src filter />
 list2 = [re.sub(r'^[_\W]?stats?(istics?)?[_\W]?\*?$', '', line) for line in list2]  # <remove spurious stat(s)(istic(s)) filter />
 list2 = [re.sub(r'^[_\W]?static[_\W]?\*?$', '', line) for line in list2]            # <remove spurious static filter />
@@ -626,7 +629,7 @@ list2 = [re.sub(r'^[_\W]?twitter[_\W]?\*?$', '', line) for line in list2]       
 list2 = [re.sub(r'^[_\W]?une[_\W]?\*?$', '', line) for line in list2]               # <remove spurious une filter />
 list2 = [re.sub(r'^[_\W]?user[_\W]?\*?$', '', line) for line in list2]              # <remove spurious user filter />
 list2 = [re.sub(r'^[_\W]?vendors?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious vendor(s) filter />
-list2 = [re.sub(r'^[_\W]?video(playblack)?[_\W]?\*?$', '', line) for line in list2] # <remove spurious video(playback) filter />
+list2 = [re.sub(r'^[_\W]?video(js)?(playblack)?[_\W]?\*?$', '', line) for line in list2] # <remove spurious video(js)(playback) filter />
 list2 = [re.sub(r'^[_\W]?view[_\W]?\*?$', '', line) for line in list2]              # <remove spurious view filter />
 list2 = [re.sub(r'^[_\W]?vinted[_\W]?\*?$', '', line) for line in list2]            # <remove spurious vinted filter />
 list2 = [re.sub(r'^[_\W]?wall[_\W]?\*?$', '', line) for line in list2]              # <remove spurious wall filter />
@@ -797,6 +800,7 @@ list3 = [re.sub(r'^\.?sandiegouniontribune\.com$', '', line) for line in list3] 
 list3 = [re.sub(r'^\.?samsung\.com$', '', line) for line in list3]                  # <remove samsung.com />
 list3 = [re.sub(r'^\.?sciencedirect\.com$', '', line) for line in list3]            # <remove sciencedirect.com />
 list3 = [re.sub(r'^\.?seekingalpha\.com$', '', line) for line in list3]             # <remove seekingalpha.com />
+list3 = [re.sub(r'^\.?sky\.com$', '', line) for line in list3]                      # <remove sky.com />
 list3 = [re.sub(r'^\.?stackexchange\.com$', '', line) for line in list3]            # <remove stackexchange.com />
 list3 = [re.sub(r'^\.?stackoverflow\.com$', '', line) for line in list3]            # <remove stackoverflow.com />
 list3 = [re.sub(r'^\.?startpage\.com$', '', line) for line in list3]                # <remove startpage.com />
