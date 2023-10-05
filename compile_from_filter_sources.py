@@ -660,7 +660,7 @@ print('       ', '{:,}'.format(len(list2) + len(list2r)), 'filters kept')
 print('\n', 'Deflating url filters redundant with regex filters', sep = '')
 
 for string in tqdm.tqdm(list2r):
-    list2 = [line for line in list2 if (re.search(r'[\#\$]', line) or not(re.search(re.sub(r'^/', '', re.sub(r'/(\$important)?$', '', string)), ' ' + line + ' ')))]
+    list2 = [line for line in list2 if (re.search(r'(\#|removeparam)', line) or not(re.search(re.sub(r'^/', '', re.sub(r'/(\$important)?$', '', string)), ' ' + line + ' ')))]
 
 print('       ', '{:,}'.format(len(list2) + len(list2r)), 'filters kept')
 
