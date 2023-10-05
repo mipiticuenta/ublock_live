@@ -852,7 +852,7 @@ print(
 
 # </remove #.@(.@) (numerical domains) and @.@ root domains from list>
 
-if dom_sw == 'y' ':
+if dom_sw == 'y' :
 
     # <remove redundant domains from list>
 
