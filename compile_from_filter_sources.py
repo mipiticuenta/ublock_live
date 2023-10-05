@@ -34,7 +34,7 @@ print(
     '# ============================================================\n',
     )
 
-dom_sw = input('Enter 1 to include domain deflation : ')
+dom_sw = input('Enter <y> to include domain deflation : ')
 
 # <get filter url sources from file, dedup and sort>
 
@@ -509,6 +509,7 @@ list2 = [re.sub(r'^[_\W]?go[_\W]?\*?$', '', line) for line in list2]            
 list2 = [re.sub(r'^[_\W]?gomez[_\W]?\*?$', '', line) for line in list2]             # <remove spurious gomez filter />
 list2 = [re.sub(r'^[_\W]?google[_\W]?\*?$', '', line) for line in list2]            # <remove spurious google filter />
 list2 = [re.sub(r'^[_\W]?grupo[_\W]?\*?$', '', line) for line in list2]             # <remove spurious grupo filter />
+list2 = [re.sub(r'^[_\W]?gstatic[_\W]?\*?$', '', line) for line in list2]           # <remove spurious gstatic filter />
 list2 = [re.sub(r'^[_\W]?head(er)?[_\W]?\*?$', '', line) for line in list2]         # <remove spurious head(er) filter />
 list2 = [re.sub(r'^[_\W]?hero[_\W]?\*?$', '', line) for line in list2]              # <remove spurious hero filter />
 list2 = [re.sub(r'^[_\W]?history[_\W]?\*?$', '', line) for line in list2]           # <remove spurious history filter />
@@ -849,7 +850,7 @@ print(
 
 # </remove #.@(.@) (numerical domains) and @.@ root domains from list>
 
-if dom_sw == 1:
+if dom_sw == 'y' ':
 
     # <remove redundant domains from list>
 
