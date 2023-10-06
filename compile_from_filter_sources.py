@@ -940,7 +940,7 @@ del(list3)                                                                      
 print(
     '\n',
     '{:,}'.format(len(list2)),
-    'lines remaining after compilation\n'
+    'filters remaining after compilation\n'
 )
 
 # <process filter list>
