@@ -485,6 +485,7 @@ list2 = [re.sub(r'^[_\W]?duckduckgo[_\W]?\*?$', '', line) for line in list2]    
 list2 = [re.sub(r'^[_\W]?editorial[_\W]?\*?$', '', line) for line in list2]         # <remove spurious editorial filter />
 list2 = [re.sub(r'^[_\W]?embed[_\W]?\*?$', '', line) for line in list2]             # <remove spurious embed filter />
 list2 = [re.sub(r'^[_\W]?entry[_\W]?\*?$', '', line) for line in list2]             # <remove spurious entry filter />
+list2 = [re.sub(r'^[_\W]?europa[_\W]?\*?$', '', line) for line in list2]            # <remove spurious europa filter />
 list2 = [re.sub(r'^[_\W]?exe[_\W]?\*?$', '', line) for line in list2]               # <remove spurious exe filter />
 list2 = [re.sub(r'^[_\W]?express[_\W]?\*?$', '', line) for line in list2]           # <remove spurious express filter />
 list2 = [re.sub(r'^[_\W]?ext(ernal)?[_\W]?\*?$', '', line) for line in list2]       # <remove spurious ext(ernal) filter />
