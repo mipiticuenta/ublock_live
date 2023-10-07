@@ -581,6 +581,7 @@ list2 = [re.sub(r'^[_\W]?pdp[_\W]?\*?$', '', line) for line in list2]           
 list2 = [re.sub(r'^[_\W]?photos?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious photo(s) filter />
 list2 = [re.sub(r'^[_\W]?pics?[_\W]?\*?$', '', line) for line in list2]             # <remove spurious pic filter />
 list2 = [re.sub(r'^[_\W]?pinterest[_\W]?\*?$', '', line) for line in list2]         # <remove spurious pinterest filter />
+list2 = [re.sub(r'^[_\W]?plan[_\W]?\*?$', '', line) for line in list2]              # <remove spurious plan filter />
 list2 = [re.sub(r'^[_\W]?platform[_\W]?\*?$', '', line) for line in list2]          # <remove spurious platform filter />
 list2 = [re.sub(r'^[_\W]?(dis)?play[_\W]?\*?$', '', line) for line in list2]        # <remove spurious (dis)play filter />
 list2 = [re.sub(r'^[_\W]?player[_\W]?\*?$', '', line) for line in list2]            # <remove spurious player filter />
