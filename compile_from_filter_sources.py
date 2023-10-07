@@ -821,6 +821,7 @@ list3 = [re.sub(r'^\.?morningstar\.com$', '', line) for line in list3]          
 list3 = [re.sub(r'^\.?motortrend\.com$', '', line) for line in list3]               # <remove motortrend.com />
 list3 = [re.sub(r'^\.?(developer\.)?mozilla\.org$', '', line) for line in list3]    # <remove mozilla.org />
 list3 = [re.sub(r'^\.?nasdaq\.com$', '', line) for line in list3]                   # <remove nasdaq.com />
+list3 = [re.sub(r'^\.?nbc\.com$', '', line) for line in list3]                      # <remove nbc.com />
 list3 = [re.sub(r'^\.?nih\.gov$', '', line) for line in list3]                      # <remove nih.gov />
 list3 = [re.sub(r'^\.?nytimes\.gov$', '', line) for line in list3]                  # <remove nytimes.gov />
 list3 = [re.sub(r'^\.?pcmag\.com$', '', line) for line in list3]                    # <remove pcmag.com />
