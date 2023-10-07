@@ -19,7 +19,7 @@ import math                                                                     
 
 file1_in_name    = 'filter_sources'
 file2_out_name   = 'compiled_block_list'
-proxy_servers    = {'http': 'http://fw:8080'}
+proxy_servers    = {'https': 'https://fw:8080'}
 
 # </settings>
 
