@@ -594,6 +594,7 @@ list2 = [re.sub(r'^[_\W]?playas?[_\W]?\*?$', '', line) for line in list2]       
 list2 = [re.sub(r'^[_\W]?post?[_\W]?\*?$', '', line) for line in list2]             # <remove spurious post filter />
 list2 = [re.sub(r'^[_\W]?price[_\W]?\*?$', '', line) for line in list2]             # <remove spurious price filter />
 list2 = [re.sub(r'^[_\W]?prod(uction)?[_\W]?\*?$', '', line) for line in list2]     # <remove spurious prod(uction) filter />
+list2 = [re.sub(r'^[_\W]?profile[_\W]?\*?$', '', line) for line in list2]           # <remove spurious profile filter />
 list2 = [re.sub(r'^[_\W]?promotion[_\W]?\*?$', '', line) for line in list2]         # <remove spurious promotion filter />
 list2 = [re.sub(r'^[_\W]?png[_\W]?\*?$', '', line) for line in list2]               # <remove spurious png filter />
 list2 = [re.sub(r'^[_\W]?portal[_\W]?\*?$', '', line) for line in list2]            # <remove spurious portal filter />
