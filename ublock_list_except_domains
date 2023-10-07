@@ -4,33 +4,28 @@
 ! title: ublock list except domains
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no)pop(?!ul)/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no.)shar[eir]/i"):not(article)
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]ad\-/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]ad\-[hv]/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]addespace/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]addetail/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]addisplay/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]addiv/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]aff/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]bookmark/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]ccpa/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]cmp/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]dsgvo/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]fb/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]gplus/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]grdp/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]kvk/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]lgpd/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]oas/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]partenaire/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]payserve/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]purch_/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]roba/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[-_\s^]sky.?scrap/i")
-*##:not(html):not(body):matches-attr("/.+/"="/[^(re)]spons.*/i")
 *##:not(html):not(body):matches-attr("/.+/"="/[^(re)]spons/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W^]ad[sv]?[_\W]/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W^]addespace/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W^]addetail/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W^]addisplay/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W^]addiv/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W^]aff/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W^]bookmark/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W^]ccpa/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W^]cmp/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W^]dsgvo/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W^]fb/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W^]gplus/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W^]grdp/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W^]kvk/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W^]lgpd/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W^]oas/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W^]partenaire/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W^]payserve/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W^]purch_/i")
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W^]roba/i")
 *##:not(html):not(body):matches-attr("/.+/"="/^ad.?wrap/i")
-*##:not(html):not(body):matches-attr("/.+/"="/^ad\-.*/i")
-*##:not(html):not(body):matches-attr("/.+/"="/^ad\-[hv].*/i")
 *##:not(html):not(body):matches-attr("/.+/"="/^adbl?o?c?k?/i")
 *##:not(html):not(body):matches-attr("/.+/"="/^bg-black/i")
 *##:not(html):not(body):matches-attr("/.+/"="/^cmp/i")
@@ -202,11 +197,13 @@
 *$removeparam=/embargoed/,important
 *$removeparam=/exotra?ck/,important
 *$removeparam=/firefox/,important
+*$removeparam=/guce/*
 *$removeparam=/guce_/,important
 *$removeparam=/hasads/,important
 *$removeparam=/hasfast/,important
 *$removeparam=/hash/,important
 *$removeparam=/hit/,important
+*$removeparam=/hsa/*
 *$removeparam=/hsa/,important
 *$removeparam=/impress/,important
 *$removeparam=/initgoogle/,important
@@ -252,20 +249,6 @@
 *$removeparam=gbraid
 *$removeparam=gclid
 *$removeparam=gclsrc
-*$removeparam=guce_referrer
-*$removeparam=guce_referrer_sig
-*$removeparam=hsa_acc
-*$removeparam=hsa_ad
-*$removeparam=hsa_cam
-*$removeparam=hsa_grp
-*$removeparam=hsa_kw
-*$removeparam=hsa_la
-*$removeparam=hsa_mt
-*$removeparam=hsa_net
-*$removeparam=hsa_ol
-*$removeparam=hsa_src
-*$removeparam=hsa_tgt
-*$removeparam=hsa_ver
 *$removeparam=hsctatracking
 *$removeparam=imp
 *$removeparam=mc_eid
@@ -627,9 +610,6 @@
 -share-whatsapp.
 -sharebar-
 -sharebar.
--sharebutton2.
--sharebutton_
--sharebuttons_
 -shareit.
 -shares.
 -sharetools-
@@ -657,7 +637,6 @@
 -sponsorenlogos_
 -sponsorqq.
 -square-newsletter.
--ssl.
 -stats.phpjs.
 -stats.recjs.
 -stumbleupon
@@ -1436,12 +1415,13 @@
 /9uc1jthe
 /9y1zcedu
 /9ytg7hda
-/[_\W](default)?vendors?[_\W]/
 /[_\W](|de)collect(|or)[_\W]/
 /[_\W](|high)web(media|orama|trekk)[_\W]/
-/[_\W].*footer[-~\w\.]*\.js(on)?/
 /[_\W]2o7[_\W]/
 /[_\W]33across[_\W]/
+/[_\W][a-z]*footer[-~\w\.]*\.js(on)?/
+/[_\W][a-z]*share[-~\w\.]*\.js(on)?/
+/[_\W][a-z]*vendors?[_\W]/
 /[_\W]aaw[-~\w\.]*\.js(on)?/
 /[_\W]abtest[-~\w\.]*\.js(on)?/
 /[_\W]adblock[-~\w\.]*\.js(on)?/
@@ -1491,6 +1471,7 @@
 /[_\W]detail[-~\w\.]*\.js(on)?/
 /[_\W]detect[-~\w\.]*\.js(on)?/
 /[_\W]dfp[_\W]/$important
+/[_\W]dfsn[_\W]/$important
 /[_\W]didomi[-~\w\.]*\.js(on)?/
 /[_\W]dismiss[-~\w\.]*\.js(on)?/
 /[_\W]domready[_\W]/
@@ -1499,7 +1480,6 @@
 /[_\W]events?[_\W]/
 /[_\W]experimental[-~\w\.]*\.js(on)?/
 /[_\W]experiments?[-~\w\.]*\.js(on)?/
-/[_\W]facebook[_\W]/
 /[_\W]fb[_\W]/$important
 /[_\W]feedback[-~\w\.]*\.js(on)?/
 /[_\W]flickity[-~\w\.]*\.js(on)?/
@@ -1553,6 +1533,7 @@
 /[_\W]observe[-~\w\.]*\.js(on)?/
 /[_\W]onesignal[_\W]/
 /[_\W]onetap[-~\w\.]*\.js(on)?/
+/[_\W]optanon[_\W]/
 /[_\W]optimize[-~\w\.]*\.js(on)?/
 /[_\W]osano[-~\w\.]*\.js(on)?/
 /[_\W]outbrain[_\W]/
@@ -1562,6 +1543,7 @@
 /[_\W]permutive[_\W]/
 /[_\W]piano[-~\w\.]*\.js(on)?/
 /[_\W]ping[_\W]/$important
+/[_\W]pixel[_\W]/
 /[_\W]platform[-~\w\.]*\.js(on)?/
 /[_\W]plug[-~\w\.]*\.js(on)?/
 /[_\W]policy[_\W]/
@@ -1578,7 +1560,6 @@
 /[_\W]pub[-~\w\.]*\.js(on)?/
 /[_\W]purch[_\W]/
 /[_\W]pwa[_\W]/$important
-/[_\W]px[_\W]/
 /[_\W]pxl?(ctl)?[_\W]/$important
 /[_\W]quarantine[-~\w\.]*\.js(on)?/
 /[_\W]rawp[-~\w\.]*\.js(on)?/
@@ -1593,13 +1574,13 @@
 /[_\W]rocket[-~\w\.]*\.js(on)?/
 /[_\W]score[-~\w\.]*\.js(on)?/
 /[_\W]sdk[-~\w\.]*\.js(on)?/
-/[_\W]share[-~\w\.]*\.js(on)?/
 /[_\W]sharing[-~\w\.]*\.js(on)?/
 /[_\W]sidebar[-~\w\.]*\.js(on)?/
 /[_\W]socials?[_\W]/
 /[_\W]socy[^a-z]/
 /[_\W]spf[-~\w\.]*\.js(on)?/
 /[_\W]spm[-~\w\.]*\.js(on)?/
+/[_\W]sponsored[_\W]/
 /[_\W]sponsors?[_\W]/
 /[_\W]spot[^a-z]/
 /[_\W]status[-~\w\.]*\.js(on)?/
@@ -1607,8 +1588,11 @@
 /[_\W]streamsense[-~\w\.]*\.js(on)?/
 /[_\W]stub[-~\w\.]*\.js(on)?/
 /[_\W]superfish[-~\w\.]*\.js(on)?/
+/[_\W]swg[-~\w\.]*\.js(on)?/
+/[_\W]swq[-~\w\.]*\.js(on)?/
 /[_\W]tag[-~\w\.]*\.js(on)?/
 /[_\W]tampering[-~\w\.]*\.js(on)?/
+/[_\W]telemetry[_\W]/
 /[_\W]timming[-~\w\.]*\.js(on)?/
 /[_\W]track[-~\w\.]*\.js(on)?/
 /[_\W]tracker[-~\w\.]*\.js(on)?/
@@ -1682,7 +1666,6 @@
 /_pub/*
 /_rekl/*
 /_rel/logos/sponsoren/*
-/_slider/promo.nc/
 /_special/*
 /_sponsoren
 /_sponsoren/*
@@ -1781,7 +1764,6 @@
 /ab.functions.js
 /ab.js
 /ab.min.js
-/ab/pioneersuspectedjury.com/
 /ab_fl.
 /ab_fl.js
 /ab_im_desktop_b.
@@ -1913,7 +1895,6 @@
 /active-11-11.js
 /active-advertorial
 /activejs
-/actives.lists/
 /activetrackphp
 /activeview
 /activities
@@ -3313,7 +3294,6 @@
 /affilist-
 /affilitybanners.
 /affilizz.js
-/affl?s?[0-9]*[^a-z]/$important
 /afflight.
 /afftrack.
 /afftracking.
@@ -3366,7 +3346,6 @@
 /aggregate
 /aggregator
 /agile-cloud.js
-/ago.07c.myftpupload.com
 /agrani_bank
 /agreecookie.
 /agstatistics-
@@ -3912,7 +3891,6 @@
 /arenaqq.
 /arf-
 /argtk.
-/aria-web-telemetry-
 /aria/projectx/*
 /arjlk.js
 /ark.
@@ -4418,7 +4396,6 @@
 /banmanpro/*
 /banmas/index.php?informer
 /bann
-/bann(er)?[0-9]/
 /bann.js
 /bann/*
 /bann_
@@ -4693,9 +4670,7 @@
 /be/materials/*
 /be568.
 /be63731d1650680jpg
-/beacon[^a-z]/$important
 /beaconconfigs/*
-/beaconimages.netflix.net/*
 /beam
 /beams.js
 /bear.
@@ -4895,7 +4870,6 @@
 /blackfriday
 /blaisteneasyhome
 /blank-loading.
-/blank.
 /blank_spnsr300x250.
 /blankad_
 /blast.js
@@ -5813,7 +5787,6 @@
 /clear3.
 /cleardot$important
 /clerk.js
-/cli?ck[^a-z]/$important
 /clic.
 /clic.php?promoid
 /clicevent
@@ -5953,7 +5926,6 @@
 /cmdatatagutils
 /cmeluminate.
 /cmobet.
-/cmp[^a-z]/$important
 /cmpcookie.
 /cmpn_async.
 /cmpui-
@@ -6023,7 +5995,6 @@
 /code.min.js
 /code.php?a=index&z
 /code.php?id
-/code.snapengage.com/
 /code/script/*
 /code/yaoffer/*
 /code_13.js
@@ -6150,7 +6121,6 @@
 /connector.
 /consenso.js
 /consenso_lw.js
-/consent[^a-z]/$important
 /consentbanner-fragment/*
 /consentstorage.
 /consenttracking-
@@ -6161,7 +6131,6 @@
 /consultant-slider.js
 /consultant/*
 /contact-form
-/contact-pixel/*
 /contador.
 /contads.
 /container.
@@ -6373,7 +6342,6 @@
 /coolads.
 /coolpc_
 /coop/hezuo/*
-/coopcommerce-pixel.
 /cooper/*
 /cooperate/*
 /cooperation/*
@@ -6694,8 +6662,6 @@
 /customsocialbar/*
 /customtrackingscript.
 /cutead.
-/cv_pixel.
-/cv_pixel.js
 /cvborder.
 /cvdisplayad.
 /cviews.php?id
@@ -6795,6 +6761,7 @@
 /das2.js
 /dasense_iframe_api.js
 /dasf-
+/dashange123/*
 /dat/a/*
 /data*?bid
 /data-capture/*
@@ -7044,7 +7011,6 @@
 /dfpcitv/pcitv?type
 /dfpnew.
 /dfpsvc
-/dfsn.js
 /dftongjiad.js
 /dfumeiti.js
 /dfw.js
@@ -7085,7 +7051,6 @@
 /dibun5nodnbmp.js
 /didi
 /didna
-/didna-pixel-
 /didna_config.js
 /didomicmpconfig_
 /diecuo/*
@@ -7207,6 +7172,7 @@
 /divolte.
 /divolte.js
 /dixioforyoursite/*
+/diyibanzhu/*
 /diz_new/rek/*
 /djezzy-
 /djlib_
@@ -7242,7 +7208,6 @@
 /dmc_banniere_
 /dmcads_
 /dmedicina_marca.
-/dmhy.org/
 /dmpcollector.
 /dmtrack
 /dmtracking2.
@@ -7355,7 +7320,6 @@
 /downace.
 /downad
 /downads.
-/downfile.asp?sid=276663/
 /downicon.
 /downinfo-
 /download-button.
@@ -7371,7 +7335,6 @@
 /download_1.
 /download_after_activity_new_
 /download_sign
-/downloads.mailchimp.com/
 /downloadtrack
 /downshare
 /downweatherapp.
@@ -7743,7 +7706,6 @@
 /elvira
 /em-link-badenova--2019.
 /email-newsletter/*
-/email-pixel
 /email-signup.
 /email-subscribe
 /email/track/*
@@ -7840,7 +7802,6 @@
 /enligne.
 /ent_counter
 /entag.
-/enter/?url=dont_go_away/
 /enterprisetagging/*
 /entertogel.
 /entete_pub.
@@ -8199,7 +8160,6 @@
 /fastbutton
 /fastcounter.
 /fasterim-optin/*
-/fastpic.org/
 /fatads.
 /fathom.
 /favis/*
@@ -8775,7 +8735,6 @@
 /fusioncharts.charts.js
 /fusioncharts.js
 /fvgg.js
-/fw.html/
 /fwadmanager.
 /fwn.js
 /fwwstz49
@@ -9319,23 +9278,15 @@
 /ggzx/*
 /gh/91porny/*
 /gh/a901361/*
-/gh/bogachenko/fuckfuckadblock/master/fuckfuckadblock.txt?_=3
-/gh/bogachenko/fuckfuckadblock@master/fuckfuckadblock.txt
-/gh/dashange123/*
-/gh/diyibanzhu/*
 /gh/interactiveadvertisingbureau/*
-/gh/sensitiveio/sbtracker@master/
 /gh/sex169hub/*
 /gh/te89899/*
 /gh/yaociyuan/*
-/gh/yaofa88/bifa@main*960
-/gh/yaofa88/bifa@main/*960
 /ghdb.
 /ghjk/*
 /ghs_wa.js
 /gic-1.
 /gidonline.js
-/gif./
 /giga.js
 /gigaflat.js
 /gigya-socialize-for-wordpress/*
@@ -9681,7 +9632,6 @@
 /gym.
 /gymywan.
 /gyr.min.js
-/gys.ad/
 /gz/promotion/*
 /gzdiq2a.
 /gzlishi468google.js
@@ -9781,7 +9731,6 @@
 /hbxvariables.
 /hc*/?visitor
 /hc4fqft.
-/hc_pixel.
 /hd-episode/*
 /hd-main.js
 /hd.e.wap.
@@ -10825,7 +10774,6 @@
 /injector/deliver/*
 /inkorrect_ab/*
 /inline
-/inline-pixel.js
 /inline.
 /inlineads.
 /inlineads/*
@@ -10919,7 +10867,6 @@
 /intermarkets_
 /internads.
 /internal-matomo.
-/internal.telemetry
 /internal/*
 /internalads/*
 /internet-cloud-download
@@ -11278,10 +11225,6 @@
 /jqmodal.
 /jqmodal.js
 /jqueri.
-/jquery-1.2.6.min.js
-/jquery-1.9.1.min.js
-/jquery-2.3.1.min.js
-/jquery-3.2.min.js
 /jquery-pin-it-
 /jquery-ui-min.js
 /jquery-ui.js
@@ -11653,7 +11596,6 @@
 /krisok-theke-vokta-e1570777467656.
 /kro.
 /krux-
-/krux-pixel.
 /krux-sass-helper.
 /krux.
 /krux.js
@@ -12494,7 +12436,6 @@
 /mapia.
 /mappa/*
 /mapping_service
-/maps.sponsored-pill.
 /maps/api/branding/*
 /mapstats.
 /mapuid/*
@@ -12617,14 +12558,12 @@
 /mdsfw.js
 /me.php?id
 /measure
-/measure/pixel/*
 /measure/visit/*
 /measurement/*
 /measurements
 /measurements/*
 /med/*
 /media*&ssaiprofile
-/media*=rotten_tomatoes_video$xhr,removeparam=/^((?!smil|formats).)*$/
 /media*~mv2.
 /media-asia.
 /media_share/*
@@ -12725,12 +12664,10 @@
 /metrica.
 /metricool.
 /metricool.js
-/metrics[^a-z]/$important
 /metricsconfig
 /metricspar_
 /metrik
 /metrika/*
-/metrika/?token
 /metriweb
 /metrixevents.
 /metro-affiliate
@@ -13015,7 +12952,6 @@
 /monetiz/*
 /monetization.
 /monetization/legacy-pixels/*
-/monetization/pixel-sdk/*
 /money.js
 /money/*
 /mongoose.
@@ -13308,7 +13244,6 @@
 /naytev.
 /naytev.min.js
 /nb.js
-/nb39.12/
 /nb_bl.
 /nb_fl.
 /nb_front.
@@ -13324,7 +13259,6 @@
 /nc-follow1.
 /nc2nlplcsunox5a.js
 /ncc-bankjpg
-/ncj-pixel.js
 /ncsu.js
 /nct
 /nct.
@@ -13667,8 +13601,6 @@
 /notices.min.js
 /noticia_entidades_triarias_consultar.
 /noticias/sqn.php?zones
-/notif(?!iy)(?!d)[^a-z]/$important
-/notifications?[^a-z]/$important
 /notificationx
 /notify.
 /notify.php?key
@@ -13819,7 +13751,6 @@
 /ocounter.
 /oct.js
 /octi
-/octo_cms/files/feltet.dk/
 /oddeven_btc_de_4x.
 /oddjs/*
 /odds/unibet/*
@@ -13827,7 +13758,6 @@
 /odoscope.
 /odoscope.js
 /odwrpsjxzqsqsskw.js
-/oewa_pixel_
 /ofc4/*
 /off/*
 /offer
@@ -13916,7 +13846,6 @@
 /ondemand.js
 /onderdelenshop
 /onderdelenshop.
-/one-pixel.
 /one-signal.
 /one_bank.
 /one_trust/*
@@ -14006,8 +13935,6 @@
 /oppa.js
 /oppabet.
 /oppo.
-/ops.ccmbg.com/
-/optanon-
 /optiextension.
 /optiextension.dll
 /optimization-perf.
@@ -14588,7 +14515,6 @@
 /pfv5glksf5s5md5lwpupy.js
 /pfz.
 /pg/c/*
-/pg_pixel
 /pgad.
 /pgcookies.
 /pge/?s
@@ -14771,40 +14697,8 @@
 /pixall.min.js
 /pixall/*
 /pixe/*
-/pixel
-/pixel-caffeine
-/pixel-caffeine/*
-/pixel-cat
-/pixel-content/*
-/pixel-geo
-/pixel-manager.js
-/pixel-prod.
-/pixel-render/*
-/pixel-track.
-/pixel-track/*
-/pixel.
-/pixel.fingerprint.
-/pixel.gif/
-/pixel.js
-/pixel.mathtag.com/*
-/pixel.track
-/pixel/*
-/pixel/email/*
-/pixel/stats/*
-/pixel/stream/*
 /pixel1.
 /pixel2.
-/pixel?adform_pid
-/pixel?cid
-/pixel?id
-/pixel?tag
-/pixel?type
-/pixel_
-/pixel_identifier.
-/pixel_iframe.
-/pixel_tag.
-/pixel_track.
-/pixel_v2.
 /pixelappcollector.
 /pixelarticolo
 /pixelb
@@ -14870,10 +14764,6 @@
 /planetstat.
 /planetup_
 /plat_tags
-/platform-telemetry/*
-/platform/js/lib/videojs/*
-/platform/scribe_endpoint.php/
-/platform/track/*
 /plausible$important
 /plausible.
 /plausible.js
@@ -15204,7 +15094,6 @@
 /priority/*
 /prisjakt
 /prismic-toolbar
-/privacy[^a-z]/$important
 /privacycookie/*
 /privacyframe.
 /private-browsing.js
@@ -15269,7 +15158,6 @@
 /projimg/brend/*
 /prom
 /prometeo-widgets.
-/promo.nc/
 /promo2.
 /promoblock-
 /promobrick_
@@ -15995,7 +15883,6 @@
 /reactads.
 /reactpage$important
 /reactsongclient.$important
-/reactvendor$important
 /readcounter
 /readmo.js
 /readreceipt/notify/?img
@@ -16345,7 +16232,6 @@
 /retarget
 /retarget.js
 /retarget/*
-/retarget_pixel.
 /retargeting-pixels
 /retargeting-pixels-
 /retargeting-pixels.
@@ -16669,7 +16555,6 @@
 /rule34hentai.
 /rum
 /rum-dytrc.
-/rum-telemetry/*
 /rum-track
 /rum.
 /rum.js
@@ -16890,7 +16775,6 @@
 /scpolls.js
 /scpu.js
 /scratch
-/screen.
 /screencount
 /screencount?vcid
 /screenshot-50.
@@ -17098,7 +16982,6 @@
 /series-streaming.
 /serp/v1/static/serp-js/paid/*
 /serp/v1/static/serp-js/shopping/*
-/serp/v1/static/serp-js/telemetry/*
 /servads
 /servads.
 /serve
@@ -17293,12 +17176,6 @@
 /sharebars/*
 /sharebiz.
 /sharebox.
-/sharebtn
-/sharebtn_
-/sharebtns.
-/sharebutton
-/sharebutton.
-/sharebuttons.
 /sharebutts.
 /sharecount
 /sharecount/*
@@ -17777,7 +17654,6 @@
 /smallfr/*
 /smallfr2/*
 /smalltop
-/smart-pixel.min.
 /smart-plan-kumbla-9895436683.
 /smart.js
 /smart_recovery.js
@@ -18127,26 +18003,6 @@
 /sponsorads/*
 /sponsorbanners/*
 /sponsorbg/*
-/sponsored
-/sponsored-
-/sponsored-links-
-/sponsored-links.
-/sponsored-links/*
-/sponsored-media
-/sponsored-media/*
-/sponsored-projects
-/sponsored-widget
-/sponsored.
-/sponsored/*
-/sponsored_
-/sponsored_articles
-/sponsored_content-
-/sponsored_link.
-/sponsored_links_
-/sponsored_positions
-/sponsored_text.
-/sponsored_title.
-/sponsored_top.
 /sponsoredads/*
 /sponsoredcontent.
 /sponsoredlinks
@@ -18350,7 +18206,6 @@
 /statistics-ajax
 /statistics.js
 /statistics.taf
-/statistics/pixel/*
 /statistics?counter
 /statisticservice.
 /statisticsv1/*
@@ -18955,7 +18810,6 @@
 /technolux/*
 /technomedia.
 /technorati_16.
-/technoratimedia-pixel.js
 /ted_vad.
 /tejumasala-web-add.
 /tekst_advertentie_
@@ -18968,9 +18822,6 @@
 /telegram_
 /telem
 /telemach2.
-/telemetry
-/telemetry.js
-/telemetry/*
 /telemv2
 /telerama.min.js
 /telerium_dev.js
@@ -19314,7 +19165,6 @@
 /toonad
 /top-10
 /top-10/*
-/top-games.me/
 /top-share
 /top-share-
 /top.js
@@ -19396,7 +19246,6 @@
 /tou.js
 /toubu.js
 /toucancookie.
-/touch
 /touch-clarity.
 /touch_track
 /touchclarity
@@ -19453,7 +19302,6 @@
 /track-internal-links.
 /track-opening/*
 /track-page-view.
-/track-pixel.
 /track-view
 /track-views
 /track-visit
@@ -19465,7 +19313,6 @@
 /track/*
 /track/?data
 /track/component/*
-/track/pixel/*
 /track/site/*
 /track/statistic/*
 /track/visitors/*
@@ -19490,7 +19337,6 @@
 /track_outbound_
 /track_page_view
 /track_pageview
-/track_pixel
 /track_proxy
 /track_stat
 /track_url/*
@@ -19523,7 +19369,6 @@
 /tracker_article
 /tracker_async.
 /tracker_pageview.
-/tracker_pixel.
 /trackers
 /trackers.
 /trackers/*
@@ -19653,7 +19498,6 @@
 /trafikfonden/*
 /trafmag
 /trail.
-/trans_pixel.
 /transad.
 /transcode/storyteller/*
 /transfert_aeirprot_
@@ -19662,15 +19506,12 @@
 /transparent1x
 /transparent1x1.
 /transparent4x
-/transparent_pixel-
-/transparent_pixel.
 /transpix.
 /transqq.
 /transversais/trr_bar/*
 /transversalsitios.
 /trash/*
 /travel-action.js
-/travel-pixel-
 /travel_cons.
 /travelads.
 /trax
@@ -19759,7 +19600,6 @@
 /ttt.
 /ttt.go
 /ttt/*
-/tttttttt-e4b70.appspot.com/o/new_rump_vb.net.txt?alt=media&token=b27d42df-d877-4be0-ab6a-efe2fee3e2b3
 /ttw.
 /ttwid/check/*
 /tu888/*
@@ -20292,10 +20132,8 @@
 /usernext
 /useronline.
 /useronline/*
-/users
 /users*&ev
 /users*^fill
-/users/*
 /users/*&ev
 /users/*^fill
 /users/2401/*
@@ -20577,7 +20415,6 @@
 /vienisi.
 /view-form-open
 /view.js
-/view.php/
 /view/core/adchecker/*
 /view/javascript/lightcookie/*
 /view_count
@@ -20658,7 +20495,6 @@
 /visit.
 /visit/?*&ref
 /visit?id
-/visit_pixel
 /visitcount
 /visitcounter
 /visitcounter.
@@ -20672,7 +20508,6 @@
 /visitor-params.
 /visitor-stats
 /visitor.
-/visitor.pixplug.in/
 /visitor_info
 /visitorapi-
 /visitorapi.
@@ -20721,7 +20556,6 @@
 /vjj_config.xml
 /vjslog
 /vjudi.
-/vk-pixel.js
 /vk2/*
 /vk_button.
 /vk_code.php?id
@@ -20737,7 +20571,6 @@
 /vltracedmd.js
 /vluggertjes.
 /vmap.xml
-/vmind.qqvideo.tc.qq.com
 /vms-script.js
 /vmtracking.
 /vnads.
@@ -20958,9 +20791,6 @@
 /web-data-ingress
 /web-design.
 /web-hosting/domaincheckapi/?affiliate
-/web-js-telemetry-service/*
-/web-pixel-shopify-app-pixel@
-/web-pixel-shopify-custom-pixel@
 /web-push
 /web-push-
 /web-push-worker.
@@ -21209,7 +21039,6 @@
 /where-go-add.
 /white.
 /white_menu/*
-/white_pixel.
 /whoisthere.js
 /whtapp-
 /whtapp-mob
@@ -21276,7 +21105,6 @@
 /widgets/blogstats/*
 /widgets/partner/*
 /widgets/populars/*
-/widgets/sponsored/*
 /widgets/trk/*
 /widgets/twitter/*
 /widgets/werbung/*
@@ -21855,7 +21683,6 @@
 /yourad1.
 /youradhere
 /yourlytics-
-/yournewlocalflingfinder7.com/
 /youtube+icon.
 /youtube-bg
 /youtube-button.
@@ -22125,7 +21952,6 @@
 /zzz/*
 /~shared/do/~/count
 /~shared/do/~/count/*
-/~tournreport/
 001com
 04cmm.com:8888/js
 0be
@@ -22647,7 +22473,6 @@ _toppbanner_
 _toroadv
 _track
 _track.
-_track_pixel.
 _tracker
 _tracker.
 _trackwebtrekkevents.
@@ -22657,7 +22482,6 @@ _uid.
 _urchin.
 _videoad.
 _videocommercial.
-_view_pixel
 _visitcount
 _visittkortannonse_
 _vodaaffi_
@@ -24349,7 +24173,6 @@ ainfiniteactivity-
 air-france-presented-by-
 airasiabet-
 airbell.
-airbnb.
 airbornehydrography
 airdog
 airport
@@ -24829,7 +24652,6 @@ app-ecatalog.js
 app-measurement
 app-measurement.
 app-pip.js
-app-uat.latrobehealth.com.au^predirect.snapdeal.com
 app14.
 app14.js
 app_csid
@@ -24916,7 +24738,6 @@ arenavision.
 arf-
 arfdgbd
 argtk.
-aria-web-telemetry-
 aria.microsoft.
 aristaadd.
 arjlk.js
@@ -25944,7 +25765,6 @@ blacktri-a.
 blaisteneasyhome
 blaklader.
 blamads-assets.
-blank.
 blankad_
 blast.js
 blazing.
@@ -27491,7 +27311,6 @@ coolboy112233.
 coolmoviez.
 coolpc_
 coop.no.
-coopcommerce-pixel.
 coordinatoromgevingsvergunningen-rijksoverheid-
 copy-of-business-marketing-agency-flyer-made-with-postermywall
 copy.js
@@ -27778,7 +27597,6 @@ customscript.js
 customtrackingscript.
 cutead.
 cuwopk.
-cv_pixel.
 cvborder.
 cvdisplayad.
 cviews.php?id
@@ -28197,7 +28015,6 @@ dibudaohang.js
 dibun5nodnbmp.js
 didi
 didna
-didna-pixel-
 didna_config.js
 didomi$important
 diff_affich_ban.
@@ -28510,6 +28327,7 @@ domrenderer.$important
 doncamillo_
 donneuropa.
 donotviewcookiemsg.
+dont_go_away
 donttouch
 dood.
 doodhwali.
@@ -28995,7 +28813,6 @@ eluminate
 eluminate.
 elvira
 email-decode$important
-email-pixel
 email-signup.
 email-subscribe
 email_30.
@@ -30034,6 +29851,7 @@ fuckadb
 fuckadblock-
 fuckadblock.
 fuckblok.
+fuckfuckadblock
 fuckfuckadblock.txt?_=3
 fuckfuckadblock@master/fuckfuckadblock.txt
 fuckingadblockplus.
@@ -30826,7 +30644,6 @@ googleanalyticstracking.
 googleanalyze
 googleanalyze1.
 googleanalyze2.
-googleapis
 googleasynctrack
 googleasynctrack.
 googlecontextualads.
@@ -31117,7 +30934,6 @@ hbxmedia.
 hbxmodify.
 hbxscript.
 hbxvariables.
-hc_pixel.
 hcaptcha
 hd")]')
 hd-main.js
@@ -32086,7 +31902,6 @@ injectad
 injectad.
 inkapelis.
 inline
-inline-pixel.js
 inline.
 inlinead
 inlineads.
@@ -33070,7 +32885,6 @@ krishi-bikash-bank.
 krishnapur.
 kristalqq.
 krux-
-krux-pixel.
 krux-sass-helper.
 krux.
 krux.js
@@ -34015,7 +33829,6 @@ mapping_service
 mapquest
 maps
 maps$image,important
-maps.sponsored-pill.
 mapstats.
 maptiler
 marapcana.
@@ -34999,7 +34812,6 @@ nc2nlplcsunox5a.js
 ncads.
 ncc_utsab-saving_artwork_a5
 ncdnstm.
-ncj-pixel.js
 ncsu.js
 nct.
 nct.php?nid
@@ -35499,7 +35311,6 @@ odoscope.js
 odwrpsjxzqsqsskw.js
 odysee
 oeckl_adress-service_
-oewa_pixel_
 oezto.com*&oezto.com
 oferplan$important
 offer
@@ -35734,7 +35545,6 @@ oppa.js
 oppabet.
 oppo.
 opt*?continue
-optanon-
 optiextension.
 optimization-perf.
 optimization-perf.js
@@ -36303,7 +36113,6 @@ pfpadv.
 pfr_loader.
 pfv5glksf5s5md5lwpupy.js
 pfz.
-pg_pixel
 pgad.
 pgcookies.
 pgjd8-iydq
@@ -36450,32 +36259,8 @@ pix_
 pix_st.
 pix_st_v2.
 pixall.
-pixel
-pixel$important
-pixel-caffeine
-pixel-cat
-pixel-geo
-pixel-manager.js
-pixel-prod.
-pixel-static.
-pixel-track.
-pixel.
-pixel.archive.
-pixel.fingerprint.
-pixel.js
 pixel1.
 pixel2.
-pixel?adform_pid
-pixel?cid
-pixel?id
-pixel?tag
-pixel?type
-pixel_
-pixel_identifier.
-pixel_iframe.
-pixel_tag.
-pixel_track.
-pixel_v2.
 pixelappcollector$important
 pixelappcollector.
 pixelarticolo
@@ -37694,7 +37479,6 @@ reactads-
 reactads.
 reactpage$important
 reactsongclient.$important
-reactvendor$important
 read?s
 readcomiconline.
 readcounter
@@ -37988,7 +37772,6 @@ resxclsa_
 resxclsx
 resxclsx.js
 retarget
-retarget_pixel.
 retargeting
 retargeting-pixels
 retargeting-pixels-
@@ -38537,7 +38320,6 @@ scores.
 scpdlvhk
 scpu.js
 scratch
-screen.
 screencount
 screencount?vcid
 screenpix.
@@ -39457,7 +39239,6 @@ smallad
 smallad-
 smalladblock
 smalltop
-smart-pixel.min.
 smart-plan-kumbla-9895436683.
 smart-trading.
 smart.js
@@ -39831,21 +39612,6 @@ sponso_
 sponsorad.
 sponsorad2.
 sponsorblok-
-sponsored
-sponsored-
-sponsored-links-
-sponsored-links.
-sponsored-projects
-sponsored-widget
-sponsored.
-sponsored_
-sponsored_content-
-sponsored_link.
-sponsored_links_
-sponsored_positions
-sponsored_text.
-sponsored_title.
-sponsored_top.
 sponsoredcontent.
 sponsoredlinks
 sponsoredlinks.
@@ -40706,7 +40472,6 @@ technicalatg.
 techno-media.
 technomedia.
 technorati_16.
-technoratimedia-pixel.js
 ted_vad.
 tedcdn
 teennick
@@ -40726,8 +40491,6 @@ telegram-icon.
 telegram_
 teleline
 telem
-telemetry
-telemetry$important
 telemv2
 telerama.fr*&ptag
 telerium$important
@@ -41229,13 +40992,13 @@ tototogel.
 tou.js
 toubu.js
 toucancookie.
-touch
 touch-clarity.
 touch_track
 touchclarity
 touchclarity.
 tour.*?id=*&type
 tourl.html?url
+tournreport
 tours
 tours.*&aid=*&clickid
 tours.*&sid=*&clickid
@@ -41275,7 +41038,6 @@ track-
 track-imp
 track-internal-links.
 track-page-view.
-track-pixel.
 track-view
 track-visit
 track-visit.
@@ -41299,7 +41061,6 @@ track_info_error
 track_outbound_
 track_page_view
 track_pageview
-track_pixel
 track_proxy
 track_stat
 track_video.php?id
@@ -41328,7 +41089,6 @@ tracker.twenga.
 tracker_article
 tracker_async.
 tracker_pageview.
-tracker_pixel.
 trackerinfo.
 trackers
 trackers.
@@ -41439,7 +41199,6 @@ trafikfonden.js
 trafunder.
 trail.
 trans.
-trans_pixel.
 transad.
 transfermarkt.
 transfert_aeirprot_
@@ -41448,8 +41207,6 @@ transparent.
 transparent1x
 transparent1x1.
 transparent4x
-transparent_pixel-
-transparent_pixel.
 transpix.
 transpoker.
 transqq.
@@ -41457,7 +41214,6 @@ transversalsitios.
 traueranzeige_
 travel
 travel-action.js
-travel-pixel-
 travelads.
 travelriskmap
 travelzoo.
@@ -42079,7 +41835,6 @@ usermatch.
 userneeds.
 usernext
 useronline.
-users
 users?token=*&uuid=&pii=&in=false
 userspace
 userstats_record
@@ -42465,7 +42220,6 @@ visit
 visit-tag
 visit.
 visit?id
-visit_pixel
 visitcount
 visitcounter
 visitcounter.
@@ -42529,7 +42283,6 @@ vjs-control-bar
 vjs-hidden
 vjslog
 vjudi.
-vk-pixel.js
 vk_button.
 vk_code.php?id
 vkdj.
@@ -42793,8 +42546,6 @@ weather2day
 web-data-ingress
 web-design.
 web-desn-poster
-web-pixel-shopify-app-pixel@
-web-pixel-shopify-custom-pixel@
 web-push
 web-push-
 web-push-worker.
@@ -43079,7 +42830,6 @@ whatsappshare.
 where-go-add.
 whipcountry.
 white-stone-residency-
-white_pixel.
 whoer.
 whoisthere.js
 whtapp-
