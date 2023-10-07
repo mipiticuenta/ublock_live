@@ -565,6 +565,7 @@ list2 = [re.sub(r'^[_\W]?misc[_\W]?\*?$', '', line) for line in list2]          
 list2 = [re.sub(r'^[_\W]?mobile[_\W]?\*?$', '', line) for line in list2]            # <remove spurious mobile filter />
 list2 = [re.sub(r'^[_\W]?modal[_\W]?\*?$', '', line) for line in list2]             # <remove spurious modal filter />
 list2 = [re.sub(r'^[_\W]?modules?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious module(s) filter />
+list2 = [re.sub(r'^[_\W]?mozilla[_\W]?\*?$', '', line) for line in list2]           # <remove spurious mozilla filter />
 list2 = [re.sub(r'^[_\W]?mp[0-9[_\W]?\*?$', '', line) for line in list2]            # <remove spurious mpx filter />
 list2 = [re.sub(r'^[_\W]?nav[_\W]?\*?$', '', line) for line in list2]               # <remove spurious nav filter />
 list2 = [re.sub(r'^[_\W]?net[_\W]?\*?$', '', line) for line in list2]               # <remove spurious net filter />
