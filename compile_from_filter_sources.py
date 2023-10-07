@@ -529,6 +529,7 @@ list2 = [re.sub(r'^[_\W]?includes?[_\W]?\*?$', '', line) for line in list2]     
 list2 = [re.sub(r'^[_\W]?index[_\W]?\*?$', '', line) for line in list2]             # <remove spurious index filter />
 list2 = [re.sub(r'^[_\W]?info[_\W]?\*?$', '', line) for line in list2]              # <remove spurious info filter />
 list2 = [re.sub(r'^[_\W]?init[_\W]?\*?$', '', line) for line in list2]              # <remove spurious init filter />
+list2 = [re.sub(r'^[_\W]?inline[_\W]?\*?$', '', line) for line in list2]            # <remove spurious inline filter />
 list2 = [re.sub(r'^[_\W]?instagram[_\W]?\*?$', '', line) for line in list2]         # <remove spurious instagram filter />
 list2 = [re.sub(r'^[_\W]?inter[_\W]?\*?$', '', line) for line in list2]             # <remove spurious inter filter />
 list2 = [re.sub(r'^[_\W]?island[_\W]?\*?$', '', line) for line in list2]            # <remove spurious island filter />
