@@ -806,6 +806,7 @@ list3 = [re.sub(r'^\.?leonoticias\.com$', '', line) for line in list3]          
 list3 = [re.sub(r'^\.?lexus\.com$', '', line) for line in list3]                    # <remove lexus.com />
 list3 = [re.sub(r'^\.?licdn\.com$', '', line) for line in list3]                    # <remove licdn.com />
 list3 = [re.sub(r'^\.?linkedin\.com$', '', line) for line in list3]                 # <remove linkedin.com />
+list3 = [re.sub(r'^\.?lnkd\.in$', '', line) for line in list3]                      # <remove lnkd.in />
 list3 = [re.sub(r'^\.?macworld\.com$', '', line) for line in list3]                 # <remove macworld.com />
 list3 = [re.sub(r'^\.?malagahoy\.es$', '', line) for line in list3]                 # <remove malagahoy.es />
 list3 = [re.sub(r'^\.?marketbeat\.com$', '', line) for line in list3]               # <remove marketbeat.com />
