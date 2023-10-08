@@ -474,6 +474,7 @@ list2 = [re.sub(r'^[_\W]?content[_\W]?\*?$', '', line) for line in list2]       
 list2 = [re.sub(r'^[_\W]?core[_\W]?\*?$', '', line) for line in list2]              # <remove spurious core filter />
 list2 = [re.sub(r'^[_\W]?common[_\W]?\*?$', '', line) for line in list2]            # <remove spurious common filter />
 list2 = [re.sub(r'^[_\W]?community[_\W]?\*?$', '', line) for line in list2]         # <remove spurious community filter />
+list2 = [re.sub(r'^[_\W]?cps[_\W]?\*?$', '', line) for line in list2]               # <remove spurious cps filter />
 list2 = [re.sub(r'^[_\W]?css[_\W]?\*?$', '', line) for line in list2]               # <remove spurious css filter />
 list2 = [re.sub(r'^[_\W]?com[_\W]?\*?$', '', line) for line in list2]               # <remove spurious com filter />
 list2 = [re.sub(r'^[_\W]?creative[_\W]?\*?$', '', line) for line in list2]          # <remove spurious creative filter />
