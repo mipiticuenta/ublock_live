@@ -421,6 +421,7 @@ print('       ', '{:,}'.format(len(list2) + len(list2r)), 'filters kept')
 
 print('19/20 : remove spurious url filters ')
 list2 = [re.sub(r'^[_\W]?account[_\W]?\*?$', '', line) for line in list2]           # <remove spurious account filter />
+list2 = [re.sub(r'^[_\W]?action[_\W]?\*?$', '', line) for line in list2]            # <remove spurious action filter />
 list2 = [re.sub(r'^[_\W]?activity[_\W]?\*?$', '', line) for line in list2]          # <remove spurious activity filter />
 list2 = [re.sub(r'^[_\W]?add(ons?)?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious add(on(s)) filter />
 list2 = [re.sub(r'^[_\W]?agent[_\W]?\*?$', '', line) for line in list2]             # <remove spurious agent filter />
@@ -489,6 +490,7 @@ list2 = [re.sub(r'^[_\W]?duckduckgo[_\W]?\*?$', '', line) for line in list2]    
 list2 = [re.sub(r'^[_\W]?editorial[_\W]?\*?$', '', line) for line in list2]         # <remove spurious editorial filter />
 list2 = [re.sub(r'^[_\W]?embed[_\W]?\*?$', '', line) for line in list2]             # <remove spurious embed filter />
 list2 = [re.sub(r'^[_\W]?entry[_\W]?\*?$', '', line) for line in list2]             # <remove spurious entry filter />
+list2 = [re.sub(r'^[_\W]?error[_\W]?\*?$', '', line) for line in list2]             # <remove spurious error filter />
 list2 = [re.sub(r'^[_\W]?europa[_\W]?\*?$', '', line) for line in list2]            # <remove spurious europa filter />
 list2 = [re.sub(r'^[_\W]?exe[_\W]?\*?$', '', line) for line in list2]               # <remove spurious exe filter />
 list2 = [re.sub(r'^[_\W]?express[_\W]?\*?$', '', line) for line in list2]           # <remove spurious express filter />
