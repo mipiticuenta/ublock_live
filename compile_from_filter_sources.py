@@ -630,6 +630,7 @@ list2 = [re.sub(r'^[_\W]?show[_\W]?\*?$', '', line) for line in list2]          
 list2 = [re.sub(r'^[_\W]?side(bar)[_\W]?\*?$', '', line) for line in list2]         # <remove spurious side(bar) filter />
 list2 = [re.sub(r'^[_\W]?simple[_\W]?\*?$', '', line) for line in list2]            # <remove spurious simple filter />
 list2 = [re.sub(r'^[_\W]?sites?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious site(s)) filter />
+list2 = [re.sub(r'^[_\W]?sizes?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious size(s) filter />
 list2 = [re.sub(r'^[_\W]?skins?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious skin(s)filter />
 list2 = [re.sub(r'^[_\W]?sky[_\W]?\*?$', '', line) for line in list2]               # <remove spurious sky filter />
 list2 = [re.sub(r'^[_\W]?snippets?[_\W]?\*?$', '', line) for line in list2]         # <remove spurious snippet(s)filter />
