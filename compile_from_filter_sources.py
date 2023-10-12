@@ -454,6 +454,7 @@ list2 = [re.sub(r'^[_\W]?bootstrap(\.min)?[_\W]?\*?$', '', line) for line in lis
 list2 = [re.sub(r'^[_\W]?bottom[_\W]?\*?$', '', line) for line in list2]            # <remove spurious bottom filter />
 list2 = [re.sub(r'^[_\W]?box[_\W]?\*?$', '', line) for line in list2]               # <remove spurious box filter />
 list2 = [re.sub(r'^[_\W]?brand(ing)?[_\W]?\*?$', '', line) for line in list2]       # <remove spurious brand(ing) filter />
+list2 = [re.sub(r'^[_\W]?braze[_\W]?\*?$', '', line) for line in list2]             # <remove spurious braze filter />
 list2 = [re.sub(r'^[_\W]?bridge[_\W]?\*?$', '', line) for line in list2]            # <remove spurious bridge filter />
 list2 = [re.sub(r'^[_\W]?build(er)?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious build(er) filter />
 list2 = [re.sub(r'^[_\W]?bundle[_\W]?\*?$', '', line) for line in list2]            # <remove spurious bundle filter />
