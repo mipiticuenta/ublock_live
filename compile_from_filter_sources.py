@@ -427,6 +427,7 @@ list2 = [re.sub(r'^[_\W]?add(ons?)?[_\W]?\*?$', '', line) for line in list2]    
 list2 = [re.sub(r'^[_\W]?agent[_\W]?\*?$', '', line) for line in list2]             # <remove spurious agent filter />
 list2 = [re.sub(r'^[_\W]?airbnb[_\W]?\*?$', '', line) for line in list2]            # <remove spurious airbnb filter />
 list2 = [re.sub(r'^[_\W]?ajax[_\W]?\*?$', '', line) for line in list2]              # <remove spurious ajax filter />
+list2 = [re.sub(r'^[_\W]?akamai(hd|zed)?[_\W]?\*?$', '', line) for line in list2]   # <remove spurious akamai(hd|zed) filter />
 list2 = [re.sub(r'^[_\W]?amazon[_\W]?\*?$', '', line) for line in list2]            # <remove spurious amazon filter />
 list2 = [re.sub(r'^[_\W]?api[0-9]?[_\W]?\*?$', '', line) for line in list2]         # <remove spurious api(0-9) filter />
 list2 = [re.sub(r'^[_\W]?app(le)?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious app(le) filter />
