@@ -641,6 +641,7 @@ list2 = [re.sub(r'^[_\W]?sp[_\W]?\*?$', '', line) for line in list2]            
 list2 = [re.sub(r'^[_\W]?specials?[_\W]?\*?$', '', line) for line in list2]         # <remove spurious special(s) filter />
 list2 = [re.sub(r'^[_\W]?speed[_\W]?\*?$', '', line) for line in list2]             # <remove spurious speed filter />
 list2 = [re.sub(r'^[_\W]?sports?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious sport(s) filter />
+list2 = [re.sub(r'^[_\W]?sprite[_\W]?\*?$', '', line) for line in list2]            # <remove spurious sprite filter />
 list2 = [re.sub(r'^[_\W]?square[_\W]?\*?$', '', line) for line in list2]            # <remove spurious square filter />
 list2 = [re.sub(r'^[_\W]?src[_\W]?\*?$', '', line) for line in list2]               # <remove spurious src filter />
 list2 = [re.sub(r'^[_\W]?ssl[_\W]?\*?$', '', line) for line in list2]               # <remove spurious ssl filter />
