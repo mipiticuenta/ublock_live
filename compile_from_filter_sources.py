@@ -787,6 +787,7 @@ list3 = [re.sub(r'^\.?eleconomista\.es$', '', line) for line in list3]          
 list3 = [re.sub(r'^\.?elespanol\.com$', '', line) for line in list3]                # <remove elespanol.com />
 list3 = [re.sub(r'^\.?elmundo\.es$', '', line) for line in list3]                   # <remove elmundo.es />
 list3 = [re.sub(r'^\.?elpais\.com$', '', line) for line in list3]                   # <remove elpais.com />
+list3 = [re.sub(r'^\.?europapress\.es$', '', line) for line in list3]               # <remove europapress.es />
 list3 = [re.sub(r'^\.?europasur\.es$', '', line) for line in list3]                 # <remove europasur.es />
 list3 = [re.sub(r'^\.?euroweeklynews\.com$', '', line) for line in list3]           # <remove euroweeklynews.com />
 list3 = [re.sub(r'^\.?expansion\.com$', '', line) for line in list3]                # <remove expansion.com />
