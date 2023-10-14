@@ -593,6 +593,7 @@ list2 = [re.sub(r'^[_\W]?nav[_\W]?\*?$', '', line) for line in list2]           
 list2 = [re.sub(r'^[_\W]?net[_\W]?\*?$', '', line) for line in list2]               # <remove spurious net filter />
 list2 = [re.sub(r'^[_\W]?news?letter[_\W]?\*?$', '', line) for line in list2]       # <remove spurious new(s)(letter) filter />
 list2 = [re.sub(r'^[_\W]?noticias?[_\W]?\*?$', '', line) for line in list2]         # <remove spurious noticia(s) filter />
+list2 = [re.sub(r'^[_\W]?nytimes[_\W]?\*?$', '', line) for line in list2]           # <remove spurious nytimes filter />
 list2 = [re.sub(r'^[_\W]?online[_\W]?\*?$', '', line) for line in list2]            # <remove spurious online filter />
 list2 = [re.sub(r'^[_\W]?open[_\W]?\*?$', '', line) for line in list2]              # <remove spurious open filter />
 list2 = [re.sub(r'^[_\W]?opinions?[_\W]?\*?$', '', line) for line in list2]         # <remove spurious opinion(s) filter />
