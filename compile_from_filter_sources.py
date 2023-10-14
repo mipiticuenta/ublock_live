@@ -259,6 +259,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.]?plugins?\*?(?=[/\.])', '', line) for line in list2]                # <remove leading plugin(s) /
     list2 = [re.sub(r'^[/\.]?public\*?(?=[/\.])', '', line) for line in list2]                  # <remove leading public />
     list2 = [re.sub(r'^[/\.]?resources?\*?(?=[/\.])', '', line) for line in list2]              # <remove leading resource(s) />
+    list2 = [re.sub(r'^[/\.]?scr\*?(?=[/\.])', '', line) for line in list2]                     # <remove leading src />
     list2 = [re.sub(r'^[/\.]?scripts?\*?(?=[/\.])', '', line) for line in list2]                # <remove leading script(s) />
     list2 = [re.sub(r'^[/\.]?sdk\*?(?=[/\.])', '', line) for line in list2]                     # <remove leading sdk />
     list2 = [re.sub(r'^[/\.]?sites?\*?(?=[/\.])', '', line) for line in list2]                  # <remove leading site(s) />
@@ -450,6 +451,7 @@ list2 = [re.sub(r'^[_\W]?black[_\W]?\*?$', '', line) for line in list2]         
 list2 = [re.sub(r'^[_\W]?blank[_\W]?\*?$', '', line) for line in list2]             # <remove spurious blank filter />
 list2 = [re.sub(r'^[_\W]?blogs?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious blog(s) filter />
 list2 = [re.sub(r'^[_\W]?blocks?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious block(s) filter />
+list2 = [re.sub(r'^[_\W]?blue[_\W]?\*?$', '', line) for line in list2]              # <remove spurious blue filter />
 list2 = [re.sub(r'^[_\W]?bmw[_\W]?\*?$', '', line) for line in list2]               # <remove spurious bmw filter />
 list2 = [re.sub(r'^[_\W]?body[_\W]?\*?$', '', line) for line in list2]              # <remove spurious body filter />
 list2 = [re.sub(r'^[_\W]?bootstrap(\.min)?[_\W]?\*?$', '', line) for line in list2] # <remove spurious bootstrap(.min) filter />
@@ -551,6 +553,7 @@ list2 = [re.sub(r'^[_\W]?javascript[_\W]?\*?$', '', line) for line in list2]    
 list2 = [re.sub(r'^[_\W]?jpe?g[_\W]?\*?$', '', line) for line in list2]             # <remove spurious jpg filter />
 list2 = [re.sub(r'^[_\W]?jquery(\.min)?(\.js)?[_\W]?\*?$', '', line) for line in list2]    # <remove spurious jquery(.min)(.js) filter />
 list2 = [re.sub(r'^[_\W]?js(on)?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious js(on) filter />
+list2 = [re.sub(r'^[_\W]?labels?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious label(s) filter />
 list2 = [re.sub(r'^[_\W]?large[_\W]?\*?$', '', line) for line in list2]             # <remove spurious large filter />
 list2 = [re.sub(r'^[_\W]?latest[_\W]?\*?$', '', line) for line in list2]            # <remove spurious latest filter />
 list2 = [re.sub(r'^[_\W]?launch[_\W]?\*?$', '', line) for line in list2]            # <remove spurious launch filter />
@@ -596,7 +599,7 @@ list2 = [re.sub(r'^[_\W]?org[_\W]?\*?$', '', line) for line in list2]           
 list2 = [re.sub(r'^[_\W]?original[_\W]?\*?$', '', line) for line in list2]          # <remove spurious original filter />
 list2 = [re.sub(r'^[_\W]?overlay[_\W]?\*?$', '', line) for line in list2]           # <remove spurious overlay filter />
 list2 = [re.sub(r'^[_\W]?owa[_\W]?\*?$', '', line) for line in list2]               # <remove spurious owa filter />
-list2 = [re.sub(r'^[_\W]?pages?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious page(s) filter />
+list2 = [re.sub(r'^[_\W]?(full)?pages?[_\W]?\*?$', '', line) for line in list2]     # <remove spurious (full)page(s) filter />
 list2 = [re.sub(r'^[_\W]?panels?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious panel(s) filter />
 list2 = [re.sub(r'^[_\W]?pdp[_\W]?\*?$', '', line) for line in list2]               # <remove spurious pdp filter />
 list2 = [re.sub(r'^[_\W]?photos?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious photo(s) filter />
@@ -608,6 +611,7 @@ list2 = [re.sub(r'^[_\W]?(dis)?play[_\W]?\*?$', '', line) for line in list2]    
 list2 = [re.sub(r'^[_\W]?player[_\W]?\*?$', '', line) for line in list2]            # <remove spurious player filter />
 list2 = [re.sub(r'^[_\W]?plugins?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious plugin(s) filter />
 list2 = [re.sub(r'^[_\W]?playas?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious playa(s) filter />
+list2 = [re.sub(r'^[_\W]?positions?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious position(s) filter />
 list2 = [re.sub(r'^[_\W]?post?[_\W]?\*?$', '', line) for line in list2]             # <remove spurious post filter />
 list2 = [re.sub(r'^[_\W]?price[_\W]?\*?$', '', line) for line in list2]             # <remove spurious price filter />
 list2 = [re.sub(r'^[_\W]?prod(uct(ion)?s?)?[_\W]?\*?$', '', line) for line in list2]     # <remove spurious prod(uct(ion)(s)) filter />
@@ -672,6 +676,7 @@ list2 = [re.sub(r'^[_\W]?txt[_\W]?\*?$', '', line) for line in list2]           
 list2 = [re.sub(r'^[_\W]?twitter[_\W]?\*?$', '', line) for line in list2]           # <remove spurious twitter filter />
 list2 = [re.sub(r'^[_\W]?l?ubuntu[_\W]?\*?$', '', line) for line in list2]          # <remove spurious (l)ubuntu filter />
 list2 = [re.sub(r'^[_\W]?une[_\W]?\*?$', '', line) for line in list2]               # <remove spurious une filter />
+list2 = [re.sub(r'^[_\W]?unique[_\W]?\*?$', '', line) for line in list2]            # <remove spurious unique filter />
 list2 = [re.sub(r'^[_\W]?users?[_\W]?\*?$', '', line) for line in list2]            # <remove spurious user(s) filter />
 list2 = [re.sub(r'^[_\W]?vendors?[_\W]?\*?$', '', line) for line in list2]          # <remove spurious vendor(s) filter />
 list2 = [re.sub(r'^[_\W]?video(js)?(playblack)?[_\W]?\*?$', '', line) for line in list2] # <remove spurious video(js)(playback) filter />
