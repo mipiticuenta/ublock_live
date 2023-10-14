@@ -878,6 +878,7 @@ list3 = [re.sub(r'^\.?(music\.)?youtube\.com$', '', line) for line in list3]    
 list3 = [re.sub(r'^\.?ytimg\.com$', '', line) for line in list3]                    # <remove ytimg.com />
 list3 = [re.sub(r'^\.?zdnet\.com$', '', line) for line in list3]                    # <remove zdnet.com />
 list3 = [re.sub(r'^\.?xataka\.com$', '', line) for line in list3]                   # <remove xataka.com />
+list3 = [re.sub(r'^\.?zalando\.com$', '', line) for line in list3]                  # <remove zalando.com />
 list3 = [line for line in list3 if not(re.search(r'^(com|edu|gob|gou?v|net|org|[a-z]{2})\.(com|edu|gob|gou?v|net|org|[a-z]{2})$', line))]   # <remove @.@ root domains />
 
 list3 = sorted(set(list3))                                                      # <dedup elements />
