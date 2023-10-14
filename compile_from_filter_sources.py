@@ -843,6 +843,7 @@ list3 = [re.sub(r'^\.?marketbeat\.com$', '', line) for line in list3]           
 list3 = [re.sub(r'^\.?marxa\.com$', '', line) for line in list3]                    # <remove marca.com />
 list3 = [re.sub(r'^\.?medium\.com$', '', line) for line in list3]                   # <remove medium.com />
 list3 = [re.sub(r'^\.?meteoblue\.com$', '', line) for line in list3]                # <remove meteoblue.com />
+list3 = [re.sub(r'^\.?miamidiario\.com$', '', line) for line in list3]              # <remove miamidiario.com />
 list3 = [re.sub(r'^\.?miamiherald\.com$', '', line) for line in list3]              # <remove miamiherald.com />
 list3 = [re.sub(r'^\.?(support\.)?microsoft\.com$', '', line) for line in list3]    # <remove (support.)microsoft.com />
 list3 = [re.sub(r'^\.?morningstar\.com$', '', line) for line in list3]              # <remove morningstar.com />
@@ -884,7 +885,7 @@ list3 = [re.sub(r'^\.?weblogssl\.com$', '', line) for line in list3]            
 list3 = [re.sub(r'^\.?wiki[mp]edia\.org$', '', line) for line in list3]             # <remove wiki(m|p)edia.org />
 list3 = [re.sub(r'^\.?wordpress\.com$', '', line) for line in list3]                # <remove wordpress.com />
 list3 = [re.sub(r'^\.?wordreference\.com$', '', line) for line in list3]            # <remove wordreference.com />
-list3 = [re.sub(r'^\.?wsj\.com$', '', line) for line in list3]                      # <remove wsj.com />
+list3 = [re.sub(r'^\.?wsj\.(com|net)$', '', line) for line in list3]                # <remove wsj.(com|net) />
 list3 = [re.sub(r'^\.?(music\.)?youtube\.com$', '', line) for line in list3]        # <remove (music.)youtube.com />
 list3 = [re.sub(r'^\.?ytimg\.com$', '', line) for line in list3]                    # <remove ytimg.com />
 list3 = [re.sub(r'^\.?zdnet\.com$', '', line) for line in list3]                    # <remove zdnet.com />
@@ -1015,24 +1016,24 @@ file2_out.write(
     '! expires: 1 day\n' +
     '! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/' + file2_out_name + '\n' +
     '! title:' + file2_out_name + '\n' +
-    '! #=============================================================================================\n' +
-    '!! simple, general filters preferred rather than complicated, specific ones\n' +
-    '!! regex only when efficient\n' +
-    '!! exceptions only if no better choice\n' +
-    '!! #============================================================================================\n' +
-    '!!! *$popup,3p avoided (impedes ctrl&click open in another tab)\n' +
-    '!!! attribute css selector : ##[]\n' +
-    '!!! class css selector     : ##.\n' +
-    '!!! id css selector        : ###\n' +
-    '!!! \w = [a-zA-Z0-9_]      : ###\n' +
-    '!!! \W = [^a-zA-Z0-9_]     : ###\n' +
-    '!!! #===========================================================================================\n'
+    '! ===========================================================================================\n' +
+    '! simple, general filters preferred rather than complicated, specific ones\n' +
+    '! regex only when efficient\n' +
+    '! exceptions only if no better choice\n' +
+    '! ===========================================================================================\n' +
+    '! *$popup,3p avoided (impedes ctrl&click open in another tab)\n' +
+    '! attribute css selector : ##[]\n' +
+    '! class css selector     : ##.\n' +
+    '! id css selector        : ###\n' +
+    '! \w = [a-zA-Z0-9_]      : ###\n' +
+    '! \W = [^a-zA-Z0-9_]     : ###\n' +
+    '! ===========================================================================================\n'
 )
 
-file2_out.writelines('!!!! ' + line + '\n' for line in list1)
+file2_out.writelines('! ' + line + '\n' for line in list1)
 
 file2_out.write(
-    '!!! #===========================================================================================\n'
+    '! ===========================================================================================\n'
 )
 
 file2_out.writelines(line + '\n' for line in list2)
