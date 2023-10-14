@@ -663,6 +663,7 @@ list2 = [re.sub(r'^[_\W]?support[_\W]?\*?$', '', line) for line in list2]       
 list2 = [re.sub(r'^[_\W]?sustainability[_\W]?\*?$', '', line) for line in list2]    # <remove spurious sustainability filter />
 list2 = [re.sub(r'^[_\W]?(a)?sync[_\W]?\*?$', '', line) for line in list2]          # <remove spurious (a)sync filter />
 list2 = [re.sub(r'^[_\W]?tab[_\W]?\*?$', '', line) for line in list2]               # <remove spurious tab filter />
+list2 = [re.sub(r'^[_\W]?teaser[_\W]?\*?$', '', line) for line in list2]            # <remove spurious teaser filter />
 list2 = [re.sub(r'^[_\W]?templates?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious template(s)filter />
 list2 = [re.sub(r'^[_\W]?themes?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious theme(s) filter />
 list2 = [re.sub(r'^[_\W]?third[_\W]?\*?$', '', line) for line in list2]             # <remove spurious third filter />
