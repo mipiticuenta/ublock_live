@@ -871,6 +871,7 @@ list3 = [re.sub(r'^\.?l?ubuntu\.(com|net)$', '', line) for line in list3]       
 list3 = [re.sub(r'^\.?uecdn\.es$', '', line) for line in list3]                     # <remove uecdn.es />
 list3 = [re.sub(r'^\.?usnews\.com$', '', line) for line in list3]                   # <remove usnews.com />
 list3 = [re.sub(r'^\.?w3schools\.com$', '', line) for line in list3]                # <remove w3schools.com />
+list3 = [re.sub(r'^\.?washingtonpost\.com$', '', line) for line in list3]           # <remove washingtonpost.com />
 list3 = [re.sub(r'^\.?weblogssl\.com$', '', line) for line in list3]                # <remove weblogssl.com />
 list3 = [re.sub(r'^\.?wiki[mp]edia\.org$', '', line) for line in list3]             # <remove wiki(m|p)edia.org />
 list3 = [re.sub(r'^\.?wordpress\.com$', '', line) for line in list3]                # <remove wordpress.com />
