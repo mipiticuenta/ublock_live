@@ -438,6 +438,7 @@ list2 = [re.sub(r'^[_\W]?arriba[_\W]?\*?$', '', line) for line in list2]        
 list2 = [re.sub(r'^[_\W]?art(icle)?s?[_\W]?\*?$', '', line) for line in list2]      # <remove spurious art(icle)(s) filter />
 list2 = [re.sub(r'^[_\W]?assets?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious base filter />
 list2 = [re.sub(r'^[_\W]?audio[_\W]?\*?$', '', line) for line in list2]             # <remove spurious audio filter />
+list2 = [re.sub(r'^[_\W]?auto[_\W]?\*?$', '', line) for line in list2]              # <remove spurious auto filter />
 list2 = [re.sub(r'^[_\W]?back(grounds?)?[_\W]?\*?$', '', line) for line in list2]   # <remove spurious back(ground) filter />
 list2 = [re.sub(r'^[_\W]?bar[_\W]?\*?$', '', line) for line in list2]               # <remove spurious bar filter />
 list2 = [re.sub(r'^[_\W]?base[_\W]?\*?$', '', line) for line in list2]              # <remove spurious base filter />
