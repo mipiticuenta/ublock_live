@@ -470,6 +470,7 @@ list2 = [re.sub(r'^[_\W]?call[_\W]?\*?$', '', line) for line in list2]          
 list2 = [re.sub(r'^[_\W]?capture[_\W]?\*?$', '', line) for line in list2]           # <remove spurious capture filter />
 list2 = [re.sub(r'^[_\W]?c_fill[_\W]?\*?$', '', line) for line in list2]            # <remove spurious c_fill filter />
 list2 = [re.sub(r'^[_\W]?channel[_\W]?\*?$', '', line) for line in list2]           # <remove spurious channel filter />
+list2 = [re.sub(r'^[_\W]?charts?[_\W]?\*?$', '', line) for line in list2]           # <remove spurious chart(s) filter />
 list2 = [re.sub(r'^[_\W]?china[_\W]?\*?$', '', line) for line in list2]             # <remove spurious china filter />
 list2 = [re.sub(r'^[_\W]?check[_\W]?\*?$', '', line) for line in list2]             # <remove spurious check filter />
 list2 = [re.sub(r'^[_\W]?client[_\W]?\*?$', '', line) for line in list2]            # <remove spurious client filter />
@@ -478,6 +479,7 @@ list2 = [re.sub(r'^[_\W]?cloud[_\W]?\*?$', '', line) for line in list2]         
 list2 = [re.sub(r'^[_\W]?code[_\W]?\*?$', '', line) for line in list2]              # <remove spurious code filter />
 list2 = [re.sub(r'^[_\W]?connect[_\W]?\*?$', '', line) for line in list2]           # <remove spurious connect filter />
 list2 = [re.sub(r'^[_\W]?config[_\W]?\*?$', '', line) for line in list2]            # <remove spurious config filter />
+list2 = [re.sub(r'^[_\W]?context[_\W]?\*?$', '', line) for line in list2]           # <remove spurious context filter />
 list2 = [re.sub(r'^[_\W]?copy[_\W]?\*?$', '', line) for line in list2]              # <remove spurious copy filter />
 list2 = [re.sub(r'^[_\W]?content[_\W]?\*?$', '', line) for line in list2]           # <remove spurious content filter />
 list2 = [re.sub(r'^[_\W]?core[_\W]?\*?$', '', line) for line in list2]              # <remove spurious core filter />
@@ -1040,7 +1042,8 @@ file2_out.write(
     '! id css selector        : ###\n' +
     '! \w = [a-zA-Z0-9_]      : ###\n' +
     '! \W = [^a-zA-Z0-9_]     : ###\n' +
-    '! ===========================================================================================\n'
+    '! ===========================================================================================\n' +
+    '! sources:\n'
 )
 
 file2_out.writelines('! ' + line + '\n' for line in list1)
