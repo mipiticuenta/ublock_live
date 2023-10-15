@@ -491,6 +491,7 @@ list2 = [re.sub(r'^[_\W]?css[_\W]?\*?$', '', line) for line in list2]           
 list2 = [re.sub(r'^[_\W]?com[_\W]?\*?$', '', line) for line in list2]               # <remove spurious com filter />
 list2 = [re.sub(r'^[_\W]?creative[_\W]?\*?$', '', line) for line in list2]          # <remove spurious creative filter />
 list2 = [re.sub(r'^[_\W]?cta[_\W]?\*?$', '', line) for line in list2]               # <remove spurious cta filter />
+list2 = [re.sub(r'^[_\W]?currency[_\W]?\*?$', '', line) for line in list2]          # <remove spurious currency filter />
 list2 = [re.sub(r'^[_\W]?data[_\W]?\*?$', '', line) for line in list2]              # <remove spurious data filter />
 list2 = [re.sub(r'^[_\W]?default[_\W]?\*?$', '', line) for line in list2]           # <remove spurious default filter />
 list2 = [re.sub(r'^[_\W]?delo[_\W]?\*?$', '', line) for line in list2]              # <remove spurious delo filter />
