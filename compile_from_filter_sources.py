@@ -748,6 +748,7 @@ list2 = [re.sub(r'^[_\W]?whatsapp[_\W]?\*?$', '', line) for line in list2]      
 list2 = [re.sub(r'^[_\W]?web(site)?[_\W]?\*?$', '', line) for line in list2]    # <remove spurious web(site) filter />
 list2 = [re.sub(r'^[_\W]?webp[_\W]?\*?$', '', line) for line in list2]          # <remove spurious webp filter />
 list2 = [re.sub(r'^[_\W]?widgets?[_\W]?\*?$', '', line) for line in list2]      # <remove spurious widget(s) filter />
+list2 = [re.sub(r'^[_\W]?windows?[_\W]?\*?$', '', line) for line in list2]      # <remove spurious window(s) filter />
 list2 = [re.sub(r'^[_\W]?wp(\-content)?[_\W]?\*?$', '', line) for line in list2]    # <remove spurious wp(-content) filter />
 list2 = [re.sub(r'^[_\W]?wordpress[_\W]?\*?$', '', line) for line in list2]     # <remove spurious wordpress filter />
 list2 = [re.sub(r'^[_\W]?worker[_\W]?\*?$', '', line) for line in list2]        # <remove spurious worker filter />
