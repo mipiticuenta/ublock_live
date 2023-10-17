@@ -103,17 +103,15 @@ file5_out.write(
 
 # </open file5_out file and write header>
 
-list5 = [re.sub(r'\$important$', '', line) for line in list5]                   # <remove ''$important'' tag at the end (if present)/>
-list5 = [line[1:-1] for line in list5]                                          # <clean leading and training / />
 list5 = sorted(list5)
-file5_out.writelines(line + '\n' for line in list5)
+file5_out.writelines(re.sub(r'\$important$', '', line)[1:-1] + '\n' for line in list5)
 file5_out.close()
 
 print(
+    '\n',
     '{:,}'.format(len(list5)),
     ' regex filters written to ',
     file5_out_name,
-    '\n',
     sep = ''
 )
 
@@ -671,6 +669,7 @@ list2 = [re.sub(r'^[_\W]?profile[_\W]?\*?$', '', line) for line in list2]       
 list2 = [re.sub(r'^[_\W]?promotion[_\W]?\*?$', '', line) for line in list2]         # <remove spurious promotion filter />
 list2 = [re.sub(r'^[_\W]?png[_\W]?\*?$', '', line) for line in list2]               # <remove spurious png filter />
 list2 = [re.sub(r'^[_\W]?portal[_\W]?\*?$', '', line) for line in list2]            # <remove spurious portal filter />
+list2 = [re.sub(r'^[_\W]?pre[_\W]?\*?$', '', line) for line in list2]               # <remove spurious pre filter />
 list2 = [re.sub(r'^[_\W]?public[_\W]?\*?$', '', line) for line in list2]            # <remove spurious public filter />
 list2 = [re.sub(r'^[_\W]?(in|out)put[_\W]?\*?$', '', line) for line in list2]       # <remove spurious (in|out)put filter />
 list2 = [re.sub(r'^[_\W]?raw(github)?[_\W]?\*?$', '', line) for line in list2]      # <remove spurious raw(github) filter />
