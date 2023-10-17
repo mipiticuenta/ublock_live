@@ -104,7 +104,7 @@ file5_out.write(
 # </open file5_out file and write header>
 
 list5 = sorted(list5)
-file5_out.writelines(re.sub(r'\$important$', '', line)[1:-1] + '\n' for line in list5)
+file5_out.writelines('.*' + re.sub(r'\$important$', '', line)[1:-1] + '.*' + '\n' for line in list5)
 file5_out.close()
 
 print(
@@ -565,8 +565,9 @@ list2 = [re.sub(r'^[_\W]?film[_\W]?\*?$', '', line) for line in list2]          
 list2 = [re.sub(r'^[_\W]?final[_\W]?\*?$', '', line) for line in list2]         # <remove spurious final filter />
 list2 = [re.sub(r'^[_\W]?fi[t|x][_\W]?\*?$', '', line) for line in list2]       # <remove spurious file fi(t|x) />
 list2 = [re.sub(r'^[_\W]?flipboard[_\W]?\*?$', '', line) for line in list2]     # <remove spurious flipboard filter />
+list2 = [re.sub(r'^[_\W]?follow[_\W]?\*?$', '', line) for line in list2]        # <remove spurious follow filter />
 list2 = [re.sub(r'^[_\W]?foot(er)?[_\W]?\*?$', '', line) for line in list2]     # <remove spurious foot(er) filter />
-list2 = [re.sub(r'^[_\W]?fotos?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious foto filter />
+list2 = [re.sub(r'^[_\W]?fotos?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious foto(s) filter />
 list2 = [re.sub(r'^[_\W]?frame[_\W]?\*?$', '', line) for line in list2]         # <remove spurious frame filter />
 list2 = [re.sub(r'^[_\W]?front(end)?[_\W]?\*?$', '', line) for line in list2]   # <remove spurious front(end) filter />
 list2 = [re.sub(r'^[_\W]?gallery[_\W]?\*?$', '', line) for line in list2]       # <remove spurious gallery filter />
@@ -896,6 +897,7 @@ list3 = [re.sub(r'^\.?infobae\.com$', '', line) for line in list3]              
 list3 = [re.sub(r'^\.?insider\.com$', '', line) for line in list3]              # <remove insider.com />
 list3 = [re.sub(r'^\.?investing\.com$', '', line) for line in list3]            # <remove investing.com />
 list3 = [re.sub(r'^\.?investopedia\.com$', '', line) for line in list3]         # <remove investopedia.com />
+list3 = [re.sub(r'^\.?japantimes\.co\.jp$', '', line) for line in list3]        # <remove japantimes.co.jp />
 list3 = [re.sub(r'^\.?jquery\.com$', '', line) for line in list3]               # <remove jquery.com />
 list3 = [re.sub(r'^\.?larazon\.es$', '', line) for line in list3]               # <remove larazon.es />
 list3 = [re.sub(r'^\.?latimes\.com$', '', line) for line in list3]              # <remove latimes.com />
