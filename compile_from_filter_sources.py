@@ -639,6 +639,7 @@ list2 = [re.sub(r'^[_\W]?react[_\W]?\*?$', '', line) for line in list2]         
 list2 = [re.sub(r'^[_\W]?re[c|f][_\W]?\*?$', '', line) for line in list2]           # <remove spurious re(c|f) filter />
 list2 = [re.sub(r'^[_\W]?related[_\W]?\*?$', '', line) for line in list2]           # <remove spurious related filter />
 list2 = [re.sub(r'^[_\W]?render(er)?[_\W]?\*?$', '', line) for line in list2]       # <remove spurious render(er) filter />
+list2 = [re.sub(r'^[_\W]?request[_\W]?\*?$', '', line) for line in list2]           # <remove spurious request filter />
 list2 = [re.sub(r'^[_\W]?resources?[_\W]?\*?$', '', line) for line in list2]        # <remove spurious resource(s) filter />
 list2 = [re.sub(r'^[_\W]?right[_\W]?\*?$', '', line) for line in list2]             # <remove spurious right filter />
 list2 = [re.sub(r'^[_\W]?rotate[_\W]?\*?$', '', line) for line in list2]            # <remove spurious rotate filter />
