@@ -837,6 +837,7 @@ list3 = [re.sub(r'^\.?californiatimes\.com$', '', line) for line in list3]      
 list3 = [re.sub(r'^\.?cdn77\.org$', '', line) for line in list3]                # <remove cdn77.org />
 list3 = [re.sub(r'^\.?cloudflare\.(com|net)$', '', line) for line in list3]     # <remove cloudflare.(com|net) />
 list3 = [re.sub(r'^\.?cloudfront\.(com|net)$', '', line) for line in list3]     # <remove cloudfront..(com|net) />
+list3 = [re.sub(r'^\.?cnbc\.com$', '', line) for line in list3]                 # <remove cnbc.com />
 list3 = [re.sub(r'^\.?cnet\.com$', '', line) for line in list3]                 # <remove cnet.com />
 list3 = [re.sub(r'^\.?cnn\.com$', '', line) for line in list3]                  # <remove cnn.com />
 list3 = [re.sub(r'^\.?collinsdictionary\.com$', '', line) for line in list3]    # <remove collinsdictionary.com />
@@ -1066,9 +1067,8 @@ print(
 
 filelist = os.listdir('.')
 
-if file2_out_name + '_old' in filelist :
-    os.remove(file2_out_name + '_old')
-    os.rename(file2_out_name, file2_out_name + '_old')
+if file2_out_name + '_old' in filelist : os.remove(file2_out_name + '_old')
+os.rename(file2_out_name, file2_out_name + '_old')
 
 print(
     'Backup saved:',
