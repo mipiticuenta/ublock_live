@@ -478,6 +478,7 @@ list2 = [re.sub(r'^[_\W]?client[_\W]?\*?$', '', line) for line in list2]        
 list2 = [re.sub(r'^[_\W]?close[_\W]?\*?$', '', line) for line in list2]             # <remove spurious close filter />
 list2 = [re.sub(r'^[_\W]?cloud[_\W]?\*?$', '', line) for line in list2]             # <remove spurious cloud filter />
 list2 = [re.sub(r'^[_\W]?code[_\W]?\*?$', '', line) for line in list2]              # <remove spurious code filter />
+list2 = [re.sub(r'^[_\W]?combined[_\W]?\*?$', '', line) for line in list2]          # <remove spurious combined filter />
 list2 = [re.sub(r'^[_\W]?connect[_\W]?\*?$', '', line) for line in list2]           # <remove spurious connect filter />
 list2 = [re.sub(r'^[_\W]?config[_\W]?\*?$', '', line) for line in list2]            # <remove spurious config filter />
 list2 = [re.sub(r'^[_\W]?context[_\W]?\*?$', '', line) for line in list2]           # <remove spurious context filter />
