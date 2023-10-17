@@ -938,6 +938,7 @@ list3 = [re.sub(r'^\.?samsung\.com$', '', line) for line in list3]              
 list3 = [re.sub(r'^\.?sciencedirect\.com$', '', line) for line in list3]        # <remove sciencedirect.com />
 list3 = [re.sub(r'^\.?seekingalpha\.com$', '', line) for line in list3]         # <remove seekingalpha.com />
 list3 = [re.sub(r'^\.?sky\.com$', '', line) for line in list3]                  # <remove sky.com />
+list3 = [re.sub(r'^\.?soundcloud\.com$', '', line) for line in list3]           # <remove soundcloud.com />
 list3 = [re.sub(r'^\.?spglobal\.com$', '', line) for line in list3]             # <remove spglobal.com />
 list3 = [re.sub(r'^\.?stackexchange\.com$', '', line) for line in list3]        # <remove stackexchange.com />
 list3 = [re.sub(r'^\.?stackoverflow\.com$', '', line) for line in list3]        # <remove stackoverflow.com />
