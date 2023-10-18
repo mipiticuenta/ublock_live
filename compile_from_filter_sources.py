@@ -832,6 +832,7 @@ list3 = [re.sub(r'^\.?bnnbloomberg?\.ca$', '', line) for line in list3]         
 list3 = [re.sub(r'^\.?bootstrapcdn\.com$', '', line) for line in list3]         # <remove bootstrapcdn.com />
 list3 = [re.sub(r'^\.?britannica\.com$', '', line) for line in list3]           # <remove britannica.com />
 list3 = [re.sub(r'^\.?businessinsider\.(com|es)$', '', line) for line in list3] # <remove businessinsider.(com|es) />
+list3 = [re.sub(r'^\.?businesswire\.com$', '', line) for line in list3]         # <remove businesswire.com />
 list3 = [re.sub(r'^\.?bwbx\.io$', '', line) for line in list3]                  # <remove bwbx.io />
 list3 = [re.sub(r'^\.?caranddriver\.com$', '', line) for line in list3]         # <remove caranddriver.com />
 list3 = [re.sub(r'^\.?cars\.com$', '', line) for line in list3]                 # <remove cars.com />
