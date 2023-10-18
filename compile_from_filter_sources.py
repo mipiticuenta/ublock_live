@@ -641,6 +641,7 @@ list2 = [re.sub(r'^[_\W]?more[_\W]?\*?$', '', line) for line in list2]          
 list2 = [re.sub(r'^[_\W]?mozilla[_\W]?\*?$', '', line) for line in list2]       # <remove spurious mozilla filter />
 list2 = [re.sub(r'^[_\W]?mp[0-9[_\W]?\*?$', '', line) for line in list2]        # <remove spurious mpx filter />
 list2 = [re.sub(r'^[_\W]?nav[_\W]?\*?$', '', line) for line in list2]           # <remove spurious nav filter />
+list2 = [re.sub(r'^[_\W]?native[_\W]?\*?$', '', line) for line in list2]        # <remove spurious native filter />
 list2 = [re.sub(r'^[_\W]?net[_\W]?\*?$', '', line) for line in list2]           # <remove spurious net filter />
 list2 = [re.sub(r'^[_\W]?news?letter[_\W]?\*?$', '', line) for line in list2]   # <remove spurious new(s)(letter) filter />
 list2 = [re.sub(r'^[_\W]?noticias?[_\W]?\*?$', '', line) for line in list2]     # <remove spurious noticia(s) filter />
