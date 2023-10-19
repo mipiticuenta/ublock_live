@@ -2,7 +2,6 @@
 ! expires: 1 day
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ublock_list_except_domains
 ! title: ublock list except domains
-
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no)pop(?!ul)/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no.)shar[eir]/i"):not(article)
 *##:not(html):not(body):matches-attr("/.+/"="/[_\W\A]ad.?wrap/i")
@@ -1481,7 +1480,6 @@
 /[_\W]ping[_\W]/$important
 /[_\W]pixel(cou?nt\w*)?[_\W]/
 /[_\W]platform[-~\w\.]*\.js(on)?/
-/[_\W]plug[-~\w\.]*\.js(on)?/
 /[_\W]policy[_\W]/
 /[_\W]polyfill[-~\w\.]*\.js(on)?/
 /[_\W]polyfill[_\W]/
@@ -15814,12 +15812,9 @@
 /serp/v1/static/serp-js/shopping/*
 /servads
 /servads.
-/serve
 /serve-leadbox/*
-/serve.
 /serve.*?random
 /serve.js
-/serve/*
 /serve/go.php?*&ref
 /serve?*&blank=*&type=*&ab
 /serve?*&w=160&h=600
@@ -15828,7 +15823,6 @@
 /serve?*&w=728&h=90
 /serve?inline=*&ab
 /serve?inline=*&w=*&h
-/serve_
 /servead
 /servead.
 /servead/*
@@ -15836,8 +15830,6 @@
 /serveadvert-live.
 /servedby
 /servedby.
-/server
-/server/*
 /server_time
 /serverxtrem_connector/*
 /servev
@@ -17092,6 +17084,7 @@
 /storage/1/*
 /storage/dumpster/*
 /storage/uploads/abcds_image/*
+/storage[-~\w\.]*\.js(on)?/
 /storagesync
 /store-share
 /store-share.
@@ -36109,8 +36102,6 @@ seriesflv.
 seriesly.
 servads
 servads.
-serve
-serve.
 serve.*?random
 serve.js
 serve?*&blank=*&type=*&ab
@@ -36121,7 +36112,6 @@ serve?*&w=728&h=90
 serve?inline=*&ab
 serve?inline=*&w=*&h
 serve?pid
-serve_
 servead
 servead.
 serveads.
@@ -36130,7 +36120,6 @@ servebo$important
 servedby
 servedby-buysellads
 servedby.
-server
 server.js
 server_time
 servewebads$important
