@@ -2,6 +2,7 @@
 ! expires: 1 day
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ublock_list_except_domains
 ! title: ublock list except domains
+
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no)pop(?!ul)/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no.)shar[eir]/i"):not(article)
 *##:not(html):not(body):matches-attr("/.+/"="/[_\W\A]ad.?wrap/i")
@@ -1417,7 +1418,6 @@
 /[_\W]hello[-~\w\.]*\.js(on)?/
 /[_\W]hello[_\W]/
 /[_\W]help[-~\w\.]*\.js(on)?/
-/[_\W]helper[-~\w\.]*\.js(on)?/
 /[_\W]helper[_\W]/
 /[_\W]hook[-~\w\.]*\.js(on)?/
 /[_\W]hoverintent[-~\w\.]*\.js(on)?/
@@ -9018,6 +9018,7 @@
 /heituad/*
 /heiva_pol_
 /heldige
+/helper[-~\w\.]*\.js(on)?/
 /helpus.
 /hemant-health-care
 /hengf.
@@ -12110,7 +12111,6 @@
 /mpuad.
 /mpuad/*
 /mpuadhelper.
-/mpuadhelper.js
 /mpuguardian.
 /mpulse.
 /mpulse.js
@@ -18214,7 +18214,6 @@
 /truls-svendsen
 /trust-university-barishal-
 /trustarchelper.
-/trustarchelper.js
 /trustev.min.js
 /trustlogo.js
 /tsc
@@ -38709,7 +38708,6 @@ truls-svendsen
 trust-islami-life-insurance_ipo-add.
 trustarc.
 trustarchelper.
-trustarchelper.js
 truste.
 trustedshops.
 trustivity.
