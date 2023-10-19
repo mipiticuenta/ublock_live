@@ -694,6 +694,7 @@ list2 = [re.sub(r'^[_\W]?scripts?[_\W]?\*?$', '', line) for line in list2]      
 list2 = [re.sub(r'^[_\W]?sdk[_\W]?\*?$', '', line) for line in list2]           # <remove spurious sdk filter />
 list2 = [re.sub(r'^[_\W]?search[_\W]?\*?$', '', line) for line in list2]        # <remove spurious search filter />
 list2 = [re.sub(r'^[_\W]?section[_\W]?\*?$', '', line) for line in list2]       # <remove spurious section filter />
+list2 = [re.sub(r'^[_\W]?server[_\W]?\*?$', '', line) for line in list2]        # <remove spurious server filter />
 list2 = [re.sub(r'^[_\W]?services?[_\W]?\*?$', '', line) for line in list2]     # <remove spurious service(s) filter />
 list2 = [re.sub(r'^[_\W]?shared?[_\W]?\*?$', '', line) for line in list2]       # <remove spurious share(d) filter />
 list2 = [re.sub(r'^[_\W]?show[_\W]?\*?$', '', line) for line in list2]          # <remove spurious show filter />
