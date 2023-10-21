@@ -1332,6 +1332,7 @@
 /[_\W]adsense[_\W]/
 /[_\W]adslot[_\W]/
 /[_\W]adv(erts?)?(isement)?[_\W]/
+/[_\W]adwords?[-~\w\.]*\.js(on)?/
 /[_\W]aff[-~\w\.]*\.js(on)?/
 /[_\W]affiliate[-~\w\.]*\.js(on)?/
 /[_\W]ai[sw]\.([-~\w\.]*\.)?js(on)?/
@@ -1428,9 +1429,12 @@
 /[_\W]impress(ions?)?[_\W]/$important
 /[_\W]incapsula[_\W]/
 /[_\W]index[-~\w\.]*\.js(on)?/
+/[_\W]inline[-~\w\.]*\.js(on)?/
 /[_\W]inner.?host[-~\w\.]*\.js(on)?/
 /[_\W]instant.?page[-~\w\.]*\.js(on)?/
 /[_\W]interstitial[-~\w\.]*\.js(on)?/
+/[_\W]ipsos[-~\w\.]*\.js(on)?/
+/[_\W]ipsos[_\W]/
 /[_\W]joly[-~\w\.]*\.js(on)?/
 /[_\W]journey[-~\w\.]*\.js(on)?/
 /[_\W]kaltura[-~\w\.]*\.js(on)?/
@@ -1500,6 +1504,7 @@
 /[_\W]rawp[-~\w\.]*\.js(on)?/
 /[_\W]react[-~\w\.]*\.js(on)?/
 /[_\W]react[_\W]/
+/[_\W]recirc[-~\w\.]*\.js(on)?/
 /[_\W]recommend[-~\w\.]*\.js(on)?/
 /[_\W]redir(ect)[_\W]/
 /[_\W]regenerator[-~\w\.]*\.js(on)?/
@@ -1527,6 +1532,7 @@
 /[_\W]spot[^a-z]/
 /[_\W]status[-~\w\.]*\.js(on)?/
 /[_\W]sticky[_\W]/
+/[_\W]store[-~\w\.]*\.js(on)?/
 /[_\W]streamsense[-~\w\.]*\.js(on)?/
 /[_\W]stub/
 /[_\W]stub[-~\w\.]*\.js(on)?/
@@ -17083,7 +17089,6 @@
 /storagesync
 /store-share
 /store-share.
-/store.everything.min.js
 /store/*
 /store/mfbanners/*
 /store_file_download?*&dir_path=/admin/swf
@@ -17143,7 +17148,6 @@
 /su4unbl-ssu.js
 /su_small.
 /sub
-/sub-store.js
 /subad.
 /subad2_
 /subadz.
@@ -37497,7 +37501,6 @@ su4unbl-r.js
 su4unbl-ssu.js
 su_small.
 suaraemas.
-sub-store.js
 sub2.bubblesmedia.
 subad.
 subad2_
