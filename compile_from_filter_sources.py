@@ -955,6 +955,7 @@ list3 = [re.sub(r'^\.?stackoverflow\.com$', '', line) for line in list3]        
 list3 = [re.sub(r'^\.?startpage\.com$', '', line) for line in list3]            # <remove startpage.com />
 list3 = [re.sub(r'^\.?startribune\.com$', '', line) for line in list3]          # <remove startribune.com />
 list3 = [re.sub(r'^\.?theregister\.com$', '', line) for line in list3]          # <remove theregister.com />
+list3 = [re.sub(r'^\.?timeout\.com$', '', line) for line in list3]              # <remove timeout.com />
 list3 = [re.sub(r'^\.?topgear\.com$', '', line) for line in list3]              # <remove topgear.com />
 list3 = [re.sub(r'^\.?tradingview\.com$', '', line) for line in list3]          # <remove tradingview.com />
 list3 = [re.sub(r'^\.?tumblr\.com$', '', line) for line in list3]               # <remove tumblr.com />
