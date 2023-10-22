@@ -4,8 +4,8 @@ Compile a single deduplicated lock list from url sources
 
 # <product backlog>
 
-# <sprint #1: dedup urls/>
-# <sprint #2: apply multicore/>
+    # <sprint #1: dedup urls/>
+    # <sprint #2: apply multicore/>
 
 # </product backlog>
 
