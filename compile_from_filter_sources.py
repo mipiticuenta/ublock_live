@@ -899,6 +899,7 @@ list3 = [re.sub(r'^\.?gulfnews\.com$', '', line) for line in list3]             
 list3 = [re.sub(r'^\.?gvt1\.com$', '', line) for line in list3]                 # <remove gvt1.com />
 list3 = [re.sub(r'^\.?hearstapps\.com$', '', line) for line in list3]           # <remove hearstapps.com />
 list3 = [re.sub(r'^\.?hipertextual\.com$', '', line) for line in list3]         # <remove hipertextual.com />
+list3 = [re.sub(r'^\.?howtogeek\.com$', '', line) for line in list3]            # <remove howtogeek.com />
 list3 = [re.sub(r'^\.?ieee\.org$', '', line) for line in list3]                 # <remove ieee.org />
 list3 = [re.sub(r'^\.?ikea\.com$', '', line) for line in list3]                 # <remove ikea.com />
 list3 = [re.sub(r'^\.?infobae\.com$', '', line) for line in list3]              # <remove infobae.com />
