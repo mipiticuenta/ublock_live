@@ -744,6 +744,7 @@ list2 = [re.sub(r'^[_\W]?timeline[_\W]?\*?$', '', line) for line in list2]      
 list2 = [re.sub(r'^[_\W]?top[_\W]?\*?$', '', line) for line in list2]           # <remove spurious top filter />
 list2 = [re.sub(r'^[_\W]?touch[_\W]?\*?$', '', line) for line in list2]         # <remove spurious touch filter />
 list2 = [re.sub(r'^[_\W]?tr(ai)?[_\W]?\*?$', '', line) for line in list2]       # <remove spurious tr(ai) filter />
+list2 = [re.sub(r'^[_\W]?tree[_\W]?\*?$', '', line) for line in list2]          # <remove spurious tree filter />
 list2 = [re.sub(r'^[_\W]?te?xt[_\W]?\*?$', '', line) for line in list2]         # <remove spurious t(e)xt filter />
 list2 = [re.sub(r'^[_\W]?twitter[_\W]?\*?$', '', line) for line in list2]       # <remove spurious twitter filter />
 list2 = [re.sub(r'^[_\W]?l?ubuntu[_\W]?\*?$', '', line) for line in list2]      # <remove spurious (l)ubuntu filter />
