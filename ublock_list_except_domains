@@ -5,7 +5,6 @@
 
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no)pop(?!ul)/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no.)shar[eir]/i"):not(article)
-*##:not(html):not(body):matches-attr("/.+/"="/[_\W\A]ad.?wrap/i")
 *##:not(html):not(body):matches-attr("/.+/"="/[_\W\A]ad[sv]?[_\W]/i"):not(.dictionary)
 *##:not(html):not(body):matches-attr("/.+/"="/[_\W\A]adbl?o?c?k?/i")
 *##:not(html):not(body):matches-attr("/.+/"="/[_\W\A]adv(?!i)e?r?t?[0-9]*/i"):not(.dictionary)
@@ -161,7 +160,7 @@
 *$removeparam=/buzz/,important
 *$removeparam=/bwe/,important
 *$removeparam=/bwm/,important
-*$removeparam=/callback/,important
+*$removeparam=/callback/i
 *$removeparam=/campaign/,important
 *$removeparam=/cash/,important
 *$removeparam=/cbr/,important
@@ -1533,10 +1532,10 @@
 /[_\W]spot[^a-z]/
 /[_\W]status[-~\w\.]*\.js(on)?/
 /[_\W]sticky[_\W]/
+/[_\W]stocky[-~\w\.]*\.js(on)?/
 /[_\W]store[-~\w\.]*\.js(on)?/
 /[_\W]streamsense[-~\w\.]*\.js(on)?/
 /[_\W]stub/
-/[_\W]stub[-~\w\.]*\.js(on)?/
 /[_\W]subscr[-~\w\.]*\.js(on)?/
 /[_\W]suggest(ions?)?[_\W]/
 /[_\W]suggest[-~\w\.]*\.js(on)?/
@@ -1545,6 +1544,8 @@
 /[_\W]tagmanager[_\W]/
 /[_\W]tampering[-~\w\.]*\.js(on)?/
 /[_\W]telemetry[_\W]/
+/[_\W]test[-~\w\.]*\.js(on)?/
+/[_\W]test[_\W]/
 /[_\W]timming[-~\w\.]*\.js(on)?/
 /[_\W]tra?ck[_\W]/
 /[_\W]track[-~\w\.]*\.js(on)?/
@@ -10410,7 +10411,6 @@
 /js-connect-
 /js-sir
 /js-xdp.js
-/js/th/*
 /js17/*
 /js2/*
 /js2mem.js
@@ -12640,7 +12640,6 @@
 /nobot
 /nocopy.js
 /nod.
-/node_
 /node_27508.
 /nodecounter/*
 /nodo.
@@ -15061,8 +15060,6 @@
 /requests.js
 /requesttrackerservlet
 /require-
-/res
-/res/*
 /res/ecom/*
 /res/i/anonym/jakobs/*
 /res/img/sampleads/*
@@ -17610,20 +17607,8 @@
 /terms_of_service.
 /terms_of_service.js
 /tes9deyv
-/test
-/test*?template=prisjakt
-/test-widget/*
-/test.
-/test.jdpay.com
-/test.js
-/test.mp4
-/test/*
-/test/*?template=prisjakt
-/test_cloud/z3gjv_w4zyu545ts846/*
-/test_rum_nv
 /testab.
 /testab.bundle.
-/testfile23.js
 /testingad.
 /testoid/*
 /tetehqq-728.
@@ -18821,7 +18806,6 @@
 /v60.js
 /v7zivayv
 /v_responsive
-/v_test
 /va-stat.
 /vaclog/*
 /vad-
@@ -19436,7 +19420,6 @@
 /webdelivery/*
 /webdig
 /webdig.js
-/webdig_test.js
 /webedia-money.
 /webediads/*
 /webevents/*
@@ -21148,7 +21131,6 @@ accrochepub300.
 accsky
 acctid
 accu-
-accuweather
 acecadserver.
 acecounter
 acecounter_
@@ -28370,7 +28352,6 @@ gntai.
 gnula.
 go-mpulse
 go-mpulse.
-go-test.
 go.*&zoneid
 go.*?af_sub
 go.*?zoneid
@@ -31067,7 +31048,6 @@ link-koyamato-co.
 link-koyamatou-co.
 link-linkedin.
 link-staging.
-link-test.
 link-twitter.
 link.*&siteid
 link.html?wglinkid
@@ -32634,7 +32614,6 @@ networktrack
 networktrackingservlet
 netxwatch.
 neudesicad.
-neuk-test
 neustar
 neustar.
 never.js
@@ -38021,15 +38000,9 @@ terra.
 terriblethumb.
 terror-en-el-cine.
 tes9deyv
-test
-test.
-test.js
-test.mp4
-test_rum_nv
 testab.
 testab.bundle.
 testedich.
-testfile23.js
 testingad.
 tetehqq-728.
 tetiere_
@@ -39305,7 +39278,6 @@ v6vs6ca
 v798879.
 v7zivayv
 v_responsive
-v_test
 va-stat.
 vad.js
 vadian.
@@ -39971,7 +39943,6 @@ webcount.
 webdesign-printdesign.
 webdig
 webdig.js
-webdig_test.js
 webedia-money.
 webengage.
 webflow

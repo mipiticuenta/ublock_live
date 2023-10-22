@@ -543,6 +543,7 @@ list2 = [re.sub(r'^[_\W]?delivery[_\W]?\*?$', '', line) for line in list2]      
 list2 = [re.sub(r'^[_\W]?design[_\W]?\*?$', '', line) for line in list2]        # <remove spurious design filter />
 list2 = [re.sub(r'^[_\W]?desktop[_\W]?\*?$', '', line) for line in list2]       # <remove spurious desktop filter />
 list2 = [re.sub(r'^[_\W]?detail[_\W]?\*?$', '', line) for line in list2]        # <remove spurious detail filter />
+list2 = [re.sub(r'^[_\W]?dev[_\W]?\*?$', '', line) for line in list2]           # <remove spurious dev filter />
 list2 = [re.sub(r'^[_\W]?digital(ocean)[_\W]?\*?$', '', line) for line in list2]    # <remove spurious digital(ocean) filter />
 list2 = [re.sub(r'^[_\W]?dollar[_\W]?\*?$', '', line) for line in list2]        # <remove spurious dollar filter />
 list2 = [re.sub(r'^[_\W]?down[_\W]?\*?$', '', line) for line in list2]          # <remove spurious down filter />
