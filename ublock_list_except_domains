@@ -2,6 +2,7 @@
 ! expires: 1 day
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ublock_list_except_domains
 ! title: ublock list except domains
+
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no)pop(?!ul)/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no.)shar[eir]/i"):not(article)
 *##:not(html):not(body):matches-attr("/.+/"="/[_\W\A]ad[sv]?[_\W]/i"):not(.dictionary)
@@ -697,7 +698,7 @@
 .gamingaffiliation.
 .gatracker.
 .gives
-.googleanalytics.prod.
+.googleanalytics.
 .gratis-reisebilletter.
 .hahaadblock
 .house
@@ -706,6 +707,7 @@
 .icu
 .iframetracker-
 .iframetracker.
+.invalid
 .isbnrs.
 .jsp?uid
 .kiwi
@@ -821,6 +823,7 @@
 .toroadvertising.
 .trackstar.
 .trackview.
+.truexrenderer.js
 .tubular
 .ucopy
 .unica.
@@ -1295,6 +1298,7 @@
 /9uc1jthe
 /9y1zcedu
 /9ytg7hda
+/?key=*&vn_buff=123
 /[_\W](fast)?cli?cks?[_\W]/
 /[_\W](|de)collect(|or)[_\W]/
 /[_\W](|high)web(media|orama|trekk)[_\W]/
@@ -3077,7 +3081,6 @@
 /adz-
 /adz.
 /adz/*
-/adz/js/*
 /adzads_
 /adzerk2_
 /adzones.
@@ -3254,24 +3257,6 @@
 /aiyidu/adver/*
 /ajax-activity.
 /ajax-hits
-/ajax/?key=*&vn_buff=123
-/ajax/bigbanner/*
-/ajax/bnzai?_
-/ajax/business_area_search/*
-/ajax/bz?_
-/ajax/cn-rgpd/*
-/ajax/eulerian/*
-/ajax/getbanner/*
-/ajax/getbanners/*
-/ajax/gw-light.php?method=triton.pixeltracking
-/ajax/iframe/*
-/ajax/libs/fingerprintjs2/*
-/ajax/libs/jbox/*
-/ajax/libs/snowstorm/$script,important
-/ajax/mtouch_perf_page_load_timings/*
-/ajax/qm/*
-/ajax/stat/*
-/ajax/stats/*
 /ajax_website_statistics.
 /ajaxad
 /ajaxads.
@@ -3975,7 +3960,6 @@
 /avvxseh6204cfrpqnnfeonkinonptuo4lhs7tuabe4lk1kaj_opuwfs4of1ssdr7mpcfktp3btt_y-be-ieiskdwck4qbcu7yjbiasmt03wb14yiz7oleonbef5cucvkgud2vbix3cvw9sk3jv5gpjpkxlkz5o-ug1haujw9c4kqgqtewrjcl9d97t40w0g6ca=w640-h422
 /avvxsehvwo_f_h3bdggegvt2u_fv7wk1cj8_bs9memlmtsthdnlowlqjre4a8ot4cc3s87nn2ahxihgdpwkulca3yt5t5vu3dehijxthsj8qjwxjsqhpl9ztltskaeyctfjljhqpl6xrxdicbnb09fhuedswmyzvpky0cya3xyyuj5kvkctvh7vz-mxkj5uryw=w640-h640
 /avw.
-/avy.da1.myftpupload.com
 /awanalytics.
 /away
 /away.
@@ -4261,6 +4245,7 @@
 /bayou_
 /bazaar
 /bazaar/*
+/bazachic/*
 /bazar_fast/*
 /bazarchic
 /bazarchic/*
@@ -4463,6 +4448,7 @@
 /bigban
 /bigbangads.
 /bigbank_
+/bigbanner/*
 /bigbox
 /bigboxad.
 /bigdatapushworker.js
@@ -4681,6 +4667,7 @@
 /bns/*
 /bnwz5cj3
 /bnzai
+/bnzai?_
 /bo.js
 /board/images/*
 /bobs/*
@@ -4692,7 +4679,6 @@
 /bofangshang.js
 /bofangwei.js
 /bofangxia.js
-/bogachenko/fuckfuckadblock/master/fuckfuckadblock.txt?_=3
 /bohum.
 /boise.
 /boise.js
@@ -4700,7 +4686,6 @@
 /boite_communication_
 /boite_de_communication_alger_1.
 /bokep-update.
-/bol.com/nl/upload/partnerprogramma/*
 /bola168.
 /bola777.
 /bolagila-
@@ -4986,6 +4971,7 @@
 /burstingres/*
 /burstingscript/*
 /business_area_search
+/business_area_search/*
 /busting
 /butler.
 /butterfly-java
@@ -5040,6 +5026,7 @@
 /byside_webcare.
 /byteads
 /bz-share.
+/bz?_
 /bz_share/*
 /bzvxeyl.
 /c*?s1
@@ -5066,6 +5053,7 @@
 /cadeaux-de-fin-dannee-
 /cadeaux_de_fin_dannee_
 /cadre-*?zoneid
+/cadre-emploi/*
 /cads-min.
 /caemax.
 /caf.js
@@ -5572,6 +5560,7 @@
 /cmsmodules/*
 /cmtaggingservices.
 /cn-fe-stats/*
+/cn-rgpd/*
 /cnads.
 /cnads.js
 /cnbanner/*
@@ -5648,27 +5637,16 @@
 /collectbanner
 /collected-forms/*
 /collectexception
+/collectorsquare-box/*
 /collectstats
-/collectstats;
 /collectsysteminfo
 /collisionadmarker.
 /colmeia
 /color-twitter-
 /colorbox
-/cols/*
 /columbia_logo.
 /columnadcounter.
-/com-inject.json?r
-/com.truex.truexrenderer.js
-/com/bazachic/*
-/com/cadre-emploi/*
-/com/collectorsquare-box/*
-/com/explorimmo_loc/*
-/com/luisaviaroma/*
-/com/mytravelchic-box/*
-/com/rat/*
-/com/store/*
-/com/superherosnout/*
+/com-inject.json
 /com_jchoptimize/*
 /com_joomla-visites/*
 /com_joomlawatch/*
@@ -5682,8 +5660,6 @@
 /comentarios_
 /comic-
 /comic/richmedia/*
-/comm/*
-/comm/mygg/*
 /commadv
 /commander/images/*
 /commentshareicons.
@@ -5713,7 +5689,6 @@
 /complexad.js
 /complianz.min.js
 /components/newsletter/*
-/components/taboola/*
 /comprar/affiliate/resource/*
 /compress
 /compteur.
@@ -5863,7 +5838,6 @@
 /countpixel.
 /country.
 /countserv/*
-/countserv/count/*
 /countshp.
 /countsjs.
 /countstat
@@ -6141,7 +6115,7 @@
 /da-client
 /da/base/*
 /da201
-/daanujs/daanujs/blob/main/rasomware2.0.exe?raw=true
+/daanujs/*
 /daartads.min
 /daas/*
 /dab.js
@@ -7278,6 +7252,7 @@
 /euconsentconfig.
 /eulerian
 /eulerian.js
+/eulerian/*
 /eumodaldialog
 /eumodaldialog.min.js
 /eureka.
@@ -7373,6 +7348,7 @@
 /expertad
 /expla
 /explor.
+/explorimmo_loc/*
 /export.js
 /export_news/*
 /exports/*
@@ -7651,6 +7627,7 @@
 /fingerprint3.min.js
 /fingerprintjs2
 /fingerprintjs2.
+/fingerprintjs2/*
 /fingerprints
 /finish
 /finnexternaldistribution.js
@@ -8354,6 +8331,7 @@
 /getbannerimage
 /getbannerinfo
 /getbanners
+/getbanners/*
 /getbeitou
 /getbglog.
 /getbglog.js
@@ -8838,6 +8816,7 @@
 /gv1qm4gz
 /gva/*
 /gvid
+/gw-light.php?method=triton.pixeltracking
 /gw.js
 /gw1/*
 /gwanmoon
@@ -10282,6 +10261,7 @@
 /jbitly.js
 /jbl.
 /jbmebsc6
+/jbox/*
 /jc.js
 /jccf
 /jchquujq
@@ -11377,6 +11357,7 @@
 /ltkrev.js
 /lube/*
 /lucky-cloud-66dc/*
+/luisaviaroma/*
 /lulu-
 /lumbini-club.
 /lumbungpoker-
@@ -12138,6 +12119,7 @@
 /mtm.js
 /mto.js
 /mtop
+/mtouch_perf_page_load_timings/*
 /mtp.
 /mtrack.
 /mtracking.
@@ -12199,6 +12181,7 @@
 /myexcitetr.
 /myfile/*
 /myfiles/*
+/mygg/*
 /myjs/*
 /mykesamu
 /mymodule/*
@@ -12217,6 +12200,7 @@
 /mystats.
 /mytest/*
 /mytiz/*
+/mytravelchic-box/*
 /myvids/*
 /myvids/mltbn/*
 /myvids/mltbn2/*
@@ -14682,7 +14666,9 @@
 /rapid.min.js
 /raptor-
 /raqmedia/adblock/*
+/rasomware2.0.exe?raw=true
 /rass7.
+/rat/*
 /ratan-combo-
 /rateit.
 /rating-widget/*
@@ -16507,6 +16493,7 @@
 /snowstorm-min.js
 /snowstorm.js
 /snowstorm.min.js
+/snowstorm/$script,important
 /snowstorm2.js
 /snowy-
 /snowy-paper-9b9f/*
@@ -17189,6 +17176,7 @@
 /superads_
 /superdomino.
 /superheader
+/superherosnout/*
 /superitcbet-
 /supermag-add
 /supernorthroomad.
@@ -17344,6 +17332,7 @@
 /taboola-iframe/*
 /taboola-module.
 /taboola.js
+/taboola/*
 /taboola1.js
 /taboola_7.4.1.js
 /taboola_header.
