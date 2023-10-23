@@ -265,6 +265,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^\$', '*$', line).strip() for line in list2]              # <fix leading $ with *$ />
     list2 = [re.sub(r'^[/\.\=\?]\$', '*$', line).strip() for line in list2]     # <fix leading /$ .$ =$ ?$ with *$ />
     list2 = [re.sub(r'^\.?[-_a-z0-9\*]+/', '/', line) for line in list2]        # <replace leading @/ with / />
+    list2 = [re.sub(r'^[/\.]?ajax\*?(?=[/\.])', '', line) for line in list2]    # <remove leading ajax />
     list2 = [re.sub(r'^[/\.]?api\*?(?=[/\.])', '', line) for line in list2]     # <remove leading api />
     list2 = [re.sub(r'^[/\.]?app\*?(?=[/\.])', '', line) for line in list2]     # <remove leading app />
     list2 = [re.sub(r'^[/\.]?apple\*?(?=[/\.])', '', line) for line in list2]   # <remove leading apple />
@@ -276,6 +277,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.]?cdn(\-cgi)?(?=[/\.])', '', line) for line in list2]                # <remove leading cdn(-cgi) />
     list2 = [re.sub(r'^[/\.]?center\*?(?=[/\.])', '', line) for line in list2]  # <remove leading center />
     list2 = [re.sub(r'^[/\.]?cgi\-bin\*?(?=[/\.])', '', line) for line in list2]                # <remove leading cgi-bin />
+    list2 = [re.sub(r'^[/\.]?comm?\*?(?=[/\.])', '', line) for line in list2]   # <remove leading com(m) />
     list2 = [re.sub(r'^[/\.]?common\*?(?=[/\.])', '', line) for line in list2]  # <remove leading common />
     list2 = [re.sub(r'^[/\.]?contents?\*?(?=[/\.])', '', line) for line in list2]               # <remove leading content(s) />
     list2 = [re.sub(r'^[/\.]?core\*?(?=[/\.])', '', line) for line in list2]    # <remove leading core />
@@ -379,7 +381,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^.*/\*/', '/', line) for line in list2]                   # <replace any url preceded by /*/ (included) with / />
     list2 = [re.sub(r'^[-_/\.a-z0-9]*(\*[-_/\.a-z0-9]*)+$(?<!/\*)', '', line).strip() for line in list2]    # <remove url filters using * wildcard />
     list2 = [re.sub(r'^[-_/\.a-z0-9]*(\*[-_/\.a-z0-9]*)+/\*$', '', line).strip() for line in list2]         # <remove //* url filters using * wildcard />
-    list2 = [re.sub(r'^\.(?=[a-z]*\.(com|edu|gob|gou?v|net|org))', '', line).strip() for line in list2]           # <remove leading . preceded by domain com edu gob go(u)v net org />
+    list2 = [re.sub(r'^\.(?=[a-z]*\.(com|edu|gob|gou?v|net|org))', '', line).strip() for line in list2]     # <remove leading . preceded by domain com edu gob go(u)v net org />
     list2 = [line for line in list2 if len(line) > 1]                           # <remove items if length < 2 />
     print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
@@ -523,6 +525,7 @@ list2 = [re.sub(r'^[_\W]?client[_\W]*$', '', line) for line in list2]           
 list2 = [re.sub(r'^[_\W]?close[_\W]*$', '', line) for line in list2]            # <remove spurious close filter />
 list2 = [re.sub(r'^[_\W]?cloud[_\W]*$', '', line) for line in list2]            # <remove spurious cloud filter />
 list2 = [re.sub(r'^[_\W]?code[_\W]*$', '', line) for line in list2]             # <remove spurious code filter />
+list2 = [re.sub(r'^[_\W]?cols[_\W]*$', '', line) for line in list2]             # <remove spurious col(s) filter />
 list2 = [re.sub(r'^[_\W]?combined[_\W]*$', '', line) for line in list2]         # <remove spurious combined filter />
 list2 = [re.sub(r'^[_\W]?common[_\W]*$', '', line) for line in list2]           # <remove spurious common filter />
 list2 = [re.sub(r'^[_\W]?community[_\W]*$', '', line) for line in list2]        # <remove spurious community filter />
