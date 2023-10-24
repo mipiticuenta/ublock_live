@@ -1016,8 +1016,8 @@ list3 = [re.sub(r'^\.?(mail\.)?google\.(com|[a-z]{2})$', '', line) for line in l
 # <get domains white list from file, dedup and sort>
 
 list8 = [line.strip() for line in open(file8_in_name, encoding='UTF-8')]        # <populate source lists; remove leading/trailing spaces />
-list8 = [re.sub(r'(^| +)!.*', '', line) for line in list1]                      # <remove comments' />
-list8 = [line for line in list1 if line.strip() != '']                          # <discard empty lines />
+list8 = [re.sub(r'(^| +)!.*', '', line) for line in list8]                      # <remove comments' />
+list8 = [line for line in list8 if line.strip() != '']                          # <discard empty lines />
 
 list3 = sorted(set(list3) - set(list8))
 
