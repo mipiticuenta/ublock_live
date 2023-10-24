@@ -187,6 +187,7 @@
 *$removeparam=/initgoogle/,important
 *$removeparam=/keepalive/,important
 *$removeparam=/metric/i
+*$removeparam=/mgte/,important
 *$removeparam=/mtm/,important
 *$removeparam=/offer/,important
 *$removeparam=/oft/,important
@@ -1383,6 +1384,7 @@
 /[_\W]domready[_\W]/
 /[_\W]donat[-~\w\.]*\.js(on)?/
 /[_\W]donate[_\W]/
+/[_\W]drivek[-~\w\.]*\.js(on)?/
 /[_\W]eloqua[_\W]/
 /[_\W]email.?decode[_\W]/
 /[_\W]events?[_\W]/
@@ -1509,6 +1511,7 @@
 /[_\W]sailthru[_\W]/
 /[_\W]score[-~\w\.]*\.js(on)?/
 /[_\W]sdk[-~\w\.]*\.js(on)?/
+/[_\W]sentiments[-~\w\.]*\.js(on)?/
 /[_\W]seo[_\W]/
 /[_\W]sharing[-~\w\.]*\.js(on)?/
 /[_\W]shim[-~\w\.]*\.js(on)?/
@@ -1558,6 +1561,7 @@
 /[_\W]vendor[-~\w\.]*\.js(on)?/
 /[_\W]visit[-~\w\.]*\.js(on)?/$important
 /[_\W]visitor[_\W]/
+/[_\W]vote[-~\w\.]*\.js(on)?/
 /[_\W]whoami[_\W]/
 /[_\W]widget[-~\w\.]*\.js(on)?/
 /[_\W]woocommerce[-~\w\.]*\.js(on)?/
@@ -6446,6 +6450,7 @@
 /diff_affich_ban.
 /diffuser.
 /diffuser.js
+/difoosion/$important
 /digg-
 /diggbutton
 /digibox.
@@ -19134,7 +19139,6 @@
 /vop/*
 /vops.js
 /vortexloader.js
-/vote-sentiments-
 /voteplugin.
 /votre-site-article.
 /voyage_organise_
@@ -25991,7 +25995,6 @@ didna_config.js
 diff_affich_ban.
 diffuser.
 diffuser.js
-difoosion$important
 digg
 digg-
 diggbutton
