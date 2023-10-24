@@ -864,6 +864,7 @@ list3 = [re.sub(r'^\.?cnet\.com$', '', line) for line in list3]                 
 list3 = [re.sub(r'^\.?cnn\.com$', '', line) for line in list3]                  # <remove cnn.com />
 list3 = [re.sub(r'^\.?collinsdictionary\.com$', '', line) for line in list3]    # <remove collinsdictionary.com />
 list3 = [re.sub(r'^\.?corrosionpedia\.com$', '', line) for line in list3]       # <remove corrosionpedia.com />
+list3 = [re.sub(r'^\.?contentstack\.(com|io)$', '', line) for line in list3]    # <remove contentstack.(com|io) />
 list3 = [re.sub(r'^\.?computerhoy\.com$', '', line) for line in list3]          # <remove computerhoy.com />
 list3 = [re.sub(r'^\.?datacamp\.com$', '', line) for line in list3]             # <remove datacamp.com />
 list3 = [re.sub(r'^\.?dailymail\.co\.uk$', '', line) for line in list3]         # <remove dailymail.co.uk />
