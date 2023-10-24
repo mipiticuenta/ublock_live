@@ -23,7 +23,7 @@ file3_out_name = 'ipfire_domain_block_list'
 file4_out_name = 'ipfire_url_block_list'
 file5_out_name = 'ipfire_regex_block_list'
 file7_out_name = 'ublock_list_except_domains'
-file8_in_name  = 'domains_whilte_list'
+file8_in_name  = 'domains_white_list'
 proxy_servers  = {'https': 'http://fw:8080'}
 
 # </settings>
@@ -838,6 +838,8 @@ list3 = [re.sub(r'^\.', '', line)  for line in list3]                           
 list3 = [re.sub('r\$important$', '', line) for line in list3]                   # <remove trailing $important from domains/>
 list3 = [line for line in list3 if not(re.search(r'^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?$', line))]    # <remove #.@(.@) numerical domains/>
 list3 = [line for line in list3 if not(re.search(r'^(com|edu|gob|gou?v|net|org|[a-z]{2})\.(com|edu|gob|gou?v|net|org|[a-z]{2})$', line))]   # <remove @.@ root domains />
+list3 = [re.sub(r'^\.?blogs?(spot)?\.(com|net|org|[a-z]{2})$', '', line) for line in list3]     # <remove blog(s(spot).(com|net|org|[a-z]{2}) />
+list3 = [re.sub(r'^\.?(mail\.)?google\.(com|[a-z]{2})$', '', line) for line in list3]   # <remove (mail.)google.(com|[a-z]{2}) />
 
 #list3 = [re.sub(r'^\.?20minutos\.es$', '', line) for line in list3]             # <remove 20minutos.es />
 #list3 = [re.sub(r'^\.?abc(news)?\.(es|com)$', '', line) for line in list3]      # <remove abc(news).(es|com) />
@@ -857,7 +859,6 @@ list3 = [line for line in list3 if not(re.search(r'^(com|edu|gob|gou?v|net|org|[
 #list3 = [re.sub(r'^\.?bbcverticals\.com$', '', line) for line in list3]         # <remove bbcverticals.com />
 #list3 = [re.sub(r'^\.?benzinga\.com$', '', line) for line in list3]             # <remove benzinga.com />
 #list3 = [re.sub(r'^\.?bizjournals\.com$', '', line) for line in list3]          # <remove bizjournals.com />
-list3 = [re.sub(r'^\.?blogs?(spot)?\.(com|net|org|[a-z]{2})$', '', line) for line in list3]     # <remove blog(s(spot).(com|net|org|[a-z]{2}) />
 #list3 = [re.sub(r'^\.?bloomberg(law)?\.com$', '', line) for line in list3]      # <remove bloomberg(law).com />
 #list3 = [re.sub(r'^\.?bnnbloomberg?\.ca$', '', line) for line in list3]         # <remove bnnbloomberg.ca />
 #list3 = [re.sub(r'^\.?bootstrapcdn\.com$', '', line) for line in list3]         # <remove bootstrapcdn.com />
@@ -945,7 +946,6 @@ list3 = [re.sub(r'^\.?blogs?(spot)?\.(com|net|org|[a-z]{2})$', '', line) for lin
 #list3 = [re.sub(r'^\.?lnkd\.in$', '', line) for line in list3]                  # <remove lnkd.in />
 #list3 = [re.sub(r'^\.?l?ubuntu\.(com|net)$', '', line) for line in list3]       # <remove (l)ubuntu.(com|net) />
 #list3 = [re.sub(r'^\.?macworld\.com$', '', line) for line in list3]             # <remove macworld.com />
-list3 = [re.sub(r'^\.?(mail\.)?google\.(com|[a-z]{2})$', '', line) for line in list3]   # <remove (mail.)google.(com|[a-z]{2}) />
 #list3 = [re.sub(r'^\.?malagahoy\.es$', '', line) for line in list3]             # <remove malagahoy.es />
 #list3 = [re.sub(r'^\.?marketbeat\.com$', '', line) for line in list3]           # <remove marketbeat.com />
 #list3 = [re.sub(r'^\.?marketscreener\.com$', '', line) for line in list3]       # <remove marketscreener.com />
