@@ -2,7 +2,6 @@
 ! expires: 1 day
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ublock_list_except_domains
 ! title: ublock list except domains
-
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no)pop(?!ul)/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no.)shar[eir]/i"):not(article)
 *##:not(html):not(body):matches-attr("/.+/"="/[_\W\A]ad[sv]?[_\W]/i"):not(.dictionary)
@@ -1314,6 +1313,7 @@
 /[_\W]aaw[-~\w\.]*\.js(on)?/
 /[_\W]abba[-~\w\.]*\.js(on)?/
 /[_\W]abtest[-~\w\.]*\.js(on)?/
+/[_\W]ace[-~\w\.]*\.js(on)?/
 /[_\W]adb(lock(er)?)?.?detect[-~\w\.]/
 /[_\W]adblock[-~\w\.]*\.js(on)?/
 /[_\W]addressdotnet[_\W]/
@@ -1354,7 +1354,9 @@
 /[_\W]chartbeat[_\W]/
 /[_\W]chunks?[-~\w\.]*\.js(on)?/
 /[_\W]clavis[-~\w\.]*\.js(on)?/
+/[_\W]clear.?dot[_\W]/
 /[_\W]clipboard[-~\w\.]*\.js(on)?/
+/[_\W]cloudfront.*\.js(on)?/
 /[_\W]cludo[^a-z]/
 /[_\W]cmp[_\W]/$important
 /[_\W]cmpsp[_\W]/$important
@@ -1430,6 +1432,7 @@
 /[_\W]inner.?host[-~\w\.]*\.js(on)?/
 /[_\W]instant.?page[-~\w\.]*\.js(on)?/
 /[_\W]interstitial[-~\w\.]*\.js(on)?/
+/[_\W]ip.?check[-~\w\.]*\.js(on)?/
 /[_\W]ipsos[-~\w\.]*\.js(on)?/
 /[_\W]ipsos[_\W]/
 /[_\W]joly[-~\w\.]*\.js(on)?/
@@ -1512,6 +1515,7 @@
 /[_\W]reverb[-~\w\.]*\.js(on)?/
 /[_\W]rightad[-~\w\.]*\.js(on)?/
 /[_\W]rocket[-~\w\.]*\.js(on)?/
+/[_\W]rtim[-~\w\.]*\.js(on)?/
 /[_\W]sailthru[_\W]/
 /[_\W]score[-~\w\.]*\.js(on)?/
 /[_\W]sdk[-~\w\.]*\.js(on)?/
@@ -1534,6 +1538,7 @@
 /[_\W]streamsense[-~\w\.]*\.js(on)?/
 /[_\W]stub/
 /[_\W]subscr[-~\w\.]*\.js(on)?/
+/[_\W]subscribe[_\W]/
 /[_\W]suggest(ions?)?[_\W]/
 /[_\W]suggest[-~\w\.]*\.js(on)?/
 /[_\W]superfish[-~\w\.]*\.js(on)?/
@@ -1561,9 +1566,11 @@
 /[_\W]unique(.?id)?[-~\w\.]*\.js(on)?/
 /[_\W]user[-~\w\.]*\.js(on)?/
 /[_\W]utms?[_\W]/$important
+/[_\W]v[at]m[-~\w\.]*\.js(on)?/
 /[_\W]vendor[-~\w\.]*\.js(on)?/
 /[_\W]visit[-~\w\.]*\.js(on)?/$important
 /[_\W]visitor[_\W]/
+/[_\W]voonto[-~\w\.]*\.js(on)?/
 /[_\W]vote[-~\w\.]*\.js(on)?/
 /[_\W]webresource[_\W]/
 /[_\W]whoami[_\W]/
@@ -1813,7 +1820,6 @@
 /accu-
 /accu/*
 /accueil/regie/*
-/ace.min.js
 /acecadserver.
 /acecounter
 /acecounter/*
@@ -2004,7 +2010,6 @@
 /adbutler.
 /adbw/*
 /adbybm.
-/adc
 /adc-300-250-
 /adc-336-280-
 /adc-728-90-
@@ -5284,7 +5289,6 @@
 /champaran-hostel
 /chanb_images
 /chance.php?aid
-/change/*
 /changyan_config_
 /channel.js
 /channelblockads
@@ -5412,7 +5416,6 @@
 /clear1.
 /clear2.
 /clear3.
-/cleardot$important
 /clerk.js
 /clic.
 /clic.php?promoid
@@ -7080,7 +7083,6 @@
 /em-link-badenova--2019.
 /email-newsletter/*
 /email-signup.
-/email-subscribe
 /email_30.
 /email_follow.
 /email_newsletter_
@@ -7310,8 +7312,6 @@
 /exblss1.
 /exc
 /exceptionrules.txt
-/exchange
-/exchange/*
 /exchangebanners/*
 /exchg
 /exclimbwuzhi
@@ -10875,7 +10875,6 @@
 /leaderbord
 /leaderbox.
 /leadforensics/$important
-/leadin-subscribe.
 /leads.
 /leads/*
 /leads/content/upload/*
@@ -12474,7 +12473,6 @@
 /newsletter-portlet/*
 /newsletter-signup-
 /newsletter-signup.
-/newsletter-subscribe-
 /newsletter-subscription-
 /newsletter.swf
 /newsletter/read?s
@@ -12484,7 +12482,6 @@
 /newsletter2011_
 /newsletter_background_
 /newsletter_cta.
-/newsletter_subscribe_
 /newsletter_wdgts.
 /newsletter_wdgts/*
 /newsletter_widget.
@@ -17122,16 +17119,6 @@
 /subisu-263-x-150.
 /subnavtop.js
 /subs-bam.*&clickid
-/subscribe-
-/subscribe-button-
-/subscribe-buttons.
-/subscribe-icons-
-/subscribe-newsletter-
-/subscribe.
-/subscribe/*
-/subscribe_embed
-/subscribe_twitter.
-/subscribe_widget
 /subscriber-count
 /subscriber.newsletter.
 /subscribermagnet/*
@@ -17666,6 +17653,7 @@
 /thomann.
 /thpix.
 /thread
+/threadeskupsimple
 /thrive-leads
 /thrive-leads/*
 /thumb_1000_70_
@@ -18338,7 +18326,6 @@
 /twitter_share_
 /twitter_sprite.
 /twitter_square.
-/twitter_subscribe.
 /twitter_tasto_
 /twitter_title_
 /twitter_top_icon.
@@ -18714,7 +18701,6 @@
 /users/*&ev
 /users/*^fill
 /users/2401/*
-/users/subscribe/*
 /users?token=*&uuid=&pii=&in=false
 /users_upload/*
 /userspace
@@ -18794,7 +18780,6 @@
 /valueclickvert.
 /vam.
 /vamm.
-/vamp.js
 /vanalytics
 /vanillaanalytics/*
 /vanillastats/*
@@ -18884,6 +18869,7 @@
 /verma.
 /vernambanner.
 /verney10.
+/verso/*
 /versus/*
 /vert728ad.
 /vertical-stats.
@@ -19874,7 +19860,6 @@
 /wwp2/*
 /wwrpn4er
 /wws.js
-/www-subscribe-widget-
 /www2/*
 /wwwad.
 /wwwads.
@@ -24949,7 +24934,6 @@ clckcloud.
 clcknads$important
 clcknads.
 clear-map
-cleardot$important
 clearspring.
 cleartrip.
 clerk.js
@@ -26771,7 +26755,6 @@ eluminate
 eluminate.
 elvira
 email-signup.
-email-subscribe
 email_30.
 email_follow.
 email_newsletter_
@@ -26998,7 +26981,6 @@ exads-
 exbl.
 exbls1.
 exblss1.
-exchange
 exchange-it.
 exchg
 exclimbwuzhi
@@ -30822,7 +30804,6 @@ leaderboardads.
 leaderbord
 leaderbox.
 leadia
-leadin-subscribe.
 leadpages.
 leads.
 leadzutw.
@@ -32666,12 +32647,10 @@ newsletter-pack.
 newsletter-pattern.
 newsletter-signup-
 newsletter-signup.
-newsletter-subscribe-
 newsletter-subscription-
 newsletter2011_
 newsletter_background_
 newsletter_cta.
-newsletter_subscribe_
 newsletter_wdgts.
 newsletter_widget.
 newsletterform-
@@ -37448,15 +37427,6 @@ subefotos.
 subnavtop.js
 subnewss
 subs-bam.*&clickid
-subscribe-
-subscribe-button-
-subscribe-buttons.
-subscribe-icons-
-subscribe-newsletter-
-subscribe.
-subscribe_embed
-subscribe_twitter.
-subscribe_widget
 subscriber-count
 subscriber.newsletter.
 subscriptiongenius.
@@ -38815,7 +38785,6 @@ twitter_share_
 twitter_small
 twitter_sprite.
 twitter_square.
-twitter_subscribe.
 twitter_tasto_
 twitter_title_
 twitter_top_icon.
@@ -39252,7 +39221,6 @@ valuad.
 valueclickvert.
 vam.
 vamm.
-vamp.js
 vanalytics
 vanime.
 vans-adapter-google-ima.
