@@ -2,6 +2,7 @@
 ! expires: 1 day
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ublock_list_except_domains
 ! title: ublock list except domains
+
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no)pop(?!ul)/i")
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no.)shar[eir]/i"):not(article)
 *##:not(html):not(body):matches-attr("/.+/"="/[_\W\A]ad[sv]?[_\W]/i"):not(.dictionary)
@@ -206,7 +207,6 @@
 *$removeparam=/sponsor/,important
 *$removeparam=/stats/,important
 *$removeparam=/stc/,important
-*$removeparam=/streamingstats/,important
 *$removeparam=/subscr/,important
 *$removeparam=/tra?ck/,important
 *$removeparam=/utm/,important
@@ -1371,7 +1371,9 @@
 /[_\W]count(er)?[-~\w\.]*\.js(on)?/
 /[_\W]count(er)[_\W]/
 /[_\W]criteo[_\W]/
+/[_\W]cross.?domain[-~\w\.]*\.js(on)?/
 /[_\W]csp[_\W]/
+/[_\W]cx[_\W]/
 /[_\W]danelei[-~\w\.]*\.js(on)?/
 /[_\W]dasf[-~\w\.]*\.js(on)?/
 /[_\W]decode[-~\w\.]*\.js(on)?/
@@ -1392,6 +1394,7 @@
 /[_\W]email.?decode[_\W]/
 /[_\W]eventlog[_\W]/
 /[_\W]events?[_\W]/
+/[_\W]experience[-~\w\.]*\.js(on)?/
 /[_\W]experimental[-~\w\.]*\.js(on)?/
 /[_\W]experiments?[-~\w\.]*\.js(on)?/
 /[_\W]fb[_\W]/$important
@@ -1410,7 +1413,7 @@
 /[_\W]gigya[-~\w\.]*\.js(on)?/
 /[_\W]godo[-~\w\.]*\.js(on)?/
 /[_\W]googleads?[_\W]/
-/[_\W]gpt\.(.*\.)?js(on)?/
+/[_\W]gpt\.(.*\.)?js(on)?/$important
 /[_\W]gtm[-~\w\.]*\.js(on)?/
 /[_\W]hanealneh[-~\w\.]*\.js(on)?/
 /[_\W]heartbeat[-~\w\.]*\.js(on)?/
@@ -1424,7 +1427,7 @@
 /[_\W]i18n[-~\w\.]*\.js(on)?/
 /[_\W]iaw[-~\w\.]*\.js(on)?/
 /[_\W]iaw\.(.*\.)?js(on)?/
-/[_\W]idcta[_\W]/
+/[_\W]id.?cta[_\W]/
 /[_\W]impress(ions?)?[_\W]/$important
 /[_\W]incapsula[_\W]/
 /[_\W]index[-~\w\.]*\.js(on)?/
@@ -1448,6 +1451,7 @@
 /[_\W]logs?[_\W]/
 /[_\W]lux[-~\w\.]*\.js(on)?/
 /[_\W]marfeel[_\W]/
+/[_\W]mast.?head[-~\w\.]*\.js(on)?/
 /[_\W]measure[-~\w\.]*\.js(on)?/
 /[_\W]metadata[-~\w\.]*\.js(on)?/
 /[_\W]metrics[_\W]/$important
@@ -3885,10 +3889,8 @@
 /atu4/*
 /auctioninformer/*
 /aud/*
-/audience
 /audience-meter.
 /audience-science.
-/audience.
 /audience_science-
 /audience_science.
 /audience_science_
@@ -6087,14 +6089,6 @@
 /cwtrack.
 /cwtrack.js
 /cwzuvc/*
-/cx-
-/cx-emediate-userprofile-se
-/cx-scrolldepth.js
-/cx.
-/cx.cce.js
-/cx.js
-/cx/*
-/cx_
 /cxense-candy.js
 /cxense-entitlement.js
 /cxense.js
@@ -6804,6 +6798,7 @@
 /dtagent_
 /dtbdst/*
 /dtcheck.
+/dtci/*
 /dti_apg/*
 /dtiadvert
 /dtim300x
@@ -10777,14 +10772,11 @@
 /lahanpoker-
 /laiminga.
 /land/*
-/landing
 /landing*&ad2
 /landing*&ad3
 /landing*&ad4
 /landing*&publisher
-/landing-
 /landing.*/?ats
-/landing/*
 /landing/*&ad2
 /landing/*&ad3
 /landing/*&ad4
@@ -23246,10 +23238,8 @@ attractiveads
 attribute
 attribution
 au_informer.js
-audience
 audience-meter.
 audience-science.
-audience.
 audience_science-
 audience_science.
 audience_science_
@@ -25574,14 +25564,6 @@ cvqbi14_init.js
 cwggoogleadshow.
 cwtrack.
 cwtrack.js
-cx-
-cx-emediate-userprofile-se
-cx-provider
-cx-scrolldepth.js
-cx.
-cx.cce.js
-cx.js
-cx_
 cxense$important
 cxense-candy.js
 cxense-entitlement.js
@@ -30711,10 +30693,8 @@ lalbagh.
 lalit-graphics
 laljhadi.
 lallan_area
-landing
 landing.*/?ats
 landing1.
-landing_
 landing_pages
 landing_pages_
 landinglog$important
@@ -37881,7 +37861,6 @@ telerium_dev.js
 teleriumads-
 telesales-poster-
 telesat-
-telescope-vote$important
 telesport
 teletrade
 teliad.
