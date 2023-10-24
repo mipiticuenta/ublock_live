@@ -1304,6 +1304,7 @@
 /[_\W](|high)web(media|orama|trekk)[_\W]/
 /[_\W]2o7[_\W]/
 /[_\W]33across[_\W]/
+/[_\W]ScriptResource[_\W]/
 /[_\W][a-z]*collect(ors?)?[_\W]/$important
 /[_\W][a-z]*comments?[_\W]/
 /[_\W][a-z]*footer[-~\w\.]*\.js(on)?/
@@ -1315,6 +1316,7 @@
 /[_\W]abtest[-~\w\.]*\.js(on)?/
 /[_\W]adb(lock(er)?)?.?detect[-~\w\.]/
 /[_\W]adblock[-~\w\.]*\.js(on)?/
+/[_\W]addressdotnet[_\W]/
 /[_\W]addthis[-~\w\.]*\.js(on)?/
 /[_\W]addthis[_\W]/
 /[_\W]adfuel[-~\w\.]*\.js(on)?/
@@ -1386,11 +1388,13 @@
 /[_\W]drivek[-~\w\.]*\.js(on)?/
 /[_\W]eloqua[_\W]/
 /[_\W]email.?decode[_\W]/
+/[_\W]eventlog[_\W]/
 /[_\W]events?[_\W]/
 /[_\W]experimental[-~\w\.]*\.js(on)?/
 /[_\W]experiments?[-~\w\.]*\.js(on)?/
 /[_\W]fb[_\W]/$important
 /[_\W]feedback[-~\w\.]*\.js(on)?/
+/[_\W]fitvids[_\W]/
 /[_\W]flickity[-~\w\.]*\.js(on)?/
 /[_\W]footer[-~\w\.]*\.js(on)?/
 /[_\W]form[-~\w\.]*\.js(on)?/
@@ -1459,6 +1463,7 @@
 /[_\W]nfplug[-~\w\.]*\.js(on)?/
 /[_\W]notification[-~\w\.]*\.js(on)?/
 /[_\W]notify[-~\w\.]*\.js(on)?/
+/[_\W]nuxt[_\W]/
 /[_\W]oas\.([-~\w\.]*\.)?js(on)?/
 /[_\W]observe[-~\w\.]*\.js(on)?/
 /[_\W]onesignal[-~\w\.]*\.js(on)?/
@@ -1512,7 +1517,6 @@
 /[_\W]sdk[-~\w\.]*\.js(on)?/
 /[_\W]sentiments[-~\w\.]*\.js(on)?/
 /[_\W]seo[_\W]/
-/[_\W]sharing[-~\w\.]*\.js(on)?/
 /[_\W]shim[-~\w\.]*\.js(on)?/
 /[_\W]showads?[_\W]/
 /[_\W]side.?bar[-~\w\.]*\.js(on)?/
@@ -1561,6 +1565,7 @@
 /[_\W]visit[-~\w\.]*\.js(on)?/$important
 /[_\W]visitor[_\W]/
 /[_\W]vote[-~\w\.]*\.js(on)?/
+/[_\W]webresource[_\W]/
 /[_\W]whoami[_\W]/
 /[_\W]widget[-~\w\.]*\.js(on)?/
 /[_\W]woocommerce[-~\w\.]*\.js(on)?/
@@ -7275,9 +7280,6 @@
 /eventemitter
 /eventhubstats.
 /eventing
-/eventing.coursera.org/img/*
-/eventlog.ajax
-/eventlog.axd
 /eventlogservlet
 /eventpage
 /eventtrack
@@ -14364,7 +14366,6 @@
 /pup
 /pup-a9-header-bidder/*
 /pup.
-/pure
 /puribet.
 /purs
 /purst
@@ -16007,6 +16008,7 @@
 /sharing-buttons.
 /sharing.
 /sharing/sprites/*
+/sharing[-~\w\.]*\.js(on)?/
 /sharing_icons/*
 /sharingbar
 /sharingbar/*
@@ -19424,7 +19426,6 @@
 /webpushiframe.
 /webpushprompt.js
 /webpushr-sw
-/webresource.axd
 /webroot/referrals/*
 /websales_push_*_big.php?id
 /webscript.js
@@ -19445,7 +19446,6 @@
 /webstats.js
 /webstats/*
 /websurvey/*
-/webtanl.appspot.com/o/ss.vbs?alt=media&token=aa6bbc10-e8f5-4ff9-b5ec-b3ddc1986066
 /webtech.
 /webtrack
 /webtrack.js
@@ -22992,6 +22992,7 @@ app14.
 app14.js
 app_csid
 app_wap.
+appad
 appadhoc$important
 appartamentiflora.
 appbacktotop_
@@ -23215,6 +23216,7 @@ async_lib.js
 asyncadload.
 asyncchatwithus.
 asyncggtracking.
+asyncgoogletag
 asyncjs.
 asyncspc.
 async~sentry-
@@ -24189,6 +24191,7 @@ bottom_vimeo
 bottomad
 bottomad.
 bottomads.
+bottomcx
 bottomsidead
 bottone-condividi.
 bounceexchange$important
@@ -25589,6 +25592,7 @@ cwtrack.
 cwtrack.js
 cx-
 cx-emediate-userprofile-se
+cx-provider
 cx-scrolldepth.js
 cx.
 cx.cce.js
@@ -25765,6 +25769,7 @@ datomata.
 datos.elconfidencial.
 datukqq.
 day-voice-pack-1160-x-120.
+dayjs
 dazbet.
 dazui
 db.js
@@ -25911,6 +25916,7 @@ deutschland_urlaub_horzu_
 dev-console-detect.
 dev.js
 devdaha.
+deverror
 deviantart
 device-fingerprint.
 device.js
@@ -26286,6 +26292,7 @@ domotique-maison-intilligente-
 dompetbola.
 domredirect?visitid
 domrenderer.$important
+domutil
 doncamillo_
 donneuropa.
 dont_go_away
@@ -26961,7 +26968,6 @@ eventcnt.
 eventemitter
 eventhubstats.
 eventing
-eventlog$important
 eventlogservlet
 eventpage
 eventtrack
@@ -34598,7 +34604,6 @@ punjab_insurance_strip-a-sec1
 punto-de-compras-2-productos
 puopen.
 pup.
-pure
 pureshort.
 puribet.
 purs
@@ -35046,6 +35051,7 @@ recommend*=article_
 recommend.
 recommendations
 recommendations.
+recommendcx
 recommended_1.html?language
 recommends
 recommendtrack
@@ -39137,6 +39143,9 @@ usahaberhasil.
 usahatoto.
 usca.
 uscoll.
+useanalytics
+usecxitem
+usefocusring
 usenext
 user-a
 user-agent-analyzer
