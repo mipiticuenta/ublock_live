@@ -585,6 +585,7 @@ list2 = [re.sub(r'^[_\W]?flipboard[_\W]*$', '', line) for line in list2]        
 list2 = [re.sub(r'^[_\W]?follow[_\W]*$', '', line) for line in list2]           # <remove spurious follow filter />
 list2 = [re.sub(r'^[_\W]?foot(er)?[_\W]*$', '', line) for line in list2]        # <remove spurious foot(er) filter />
 list2 = [re.sub(r'^[_\W]?fotos?[_\W]*$', '', line) for line in list2]           # <remove spurious foto(s) filter />
+list2 = [re.sub(r'^[_\W]?forum[_\W]*$', '', line) for line in list2]            # <remove spurious forum filter />
 list2 = [re.sub(r'^[_\W]?frame[_\W]*$', '', line) for line in list2]            # <remove spurious frame filter />
 list2 = [re.sub(r'^[_\W]?front(end)?[_\W]*$', '', line) for line in list2]      # <remove spurious front(end) filter />
 list2 = [re.sub(r'^[_\W]?(full)?pages?[_\W]*$', '', line) for line in list2]    # <remove spurious (full)page(s) filter />
