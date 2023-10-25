@@ -1334,6 +1334,7 @@
 /[_\W]analytics?[_\W]/$important
 /[_\W]angular[-~\w\.]*\.js(on)?/
 /[_\W]aos\.(.*\.)?js(on)?/
+/[_\W]apester[-~\w\.]*\.js(on)?/
 /[_\W]apw[_\W]/
 /[_\W]assoc[-~\w\.]*\.js(on)?/
 /[_\W]audience[-~\w\.]*\.js(on)?/
@@ -1375,6 +1376,7 @@
 /[_\W]cx[_\W]/
 /[_\W]danelei[-~\w\.]*\.js(on)?/
 /[_\W]dasf[-~\w\.]*\.js(on)?/
+/[_\W]deal[-~\w\.]*\.js(on)?/
 /[_\W]decode[-~\w\.]*\.js(on)?/
 /[_\W]detail[-~\w\.]*\.js(on)?/
 /[_\W]detect[-~\w\.]*\.js(on)?/
@@ -1400,8 +1402,10 @@
 /[_\W]feedback[-~\w\.]*\.js(on)?/
 /[_\W]fitvids[_\W]/
 /[_\W]flickity[-~\w\.]*\.js(on)?/
+/[_\W]foot(er)?[-~\w\.]*\.js(on)?/
 /[_\W]footer[-~\w\.]*\.js(on)?/
 /[_\W]form[-~\w\.]*\.js(on)?/
+/[_\W]freyr[-~\w\.]*\.js(on)?/
 /[_\W]ga[_\W]/
 /[_\W]ga[_\W][-~\w\.]*\.js(on)?/
 /[_\W]gads[_\W]/
@@ -1526,6 +1530,7 @@
 /[_\W]sailthru[_\W]/
 /[_\W]score[-~\w\.]*\.js(on)?/
 /[_\W]sdk[-~\w\.]*\.js(on)?/
+/[_\W]segment[-~\w\.]*\.js(on)?/
 /[_\W]sentiments[-~\w\.]*\.js(on)?/
 /[_\W]seo[_\W]/
 /[_\W]shim[-~\w\.]*\.js(on)?/
@@ -1555,6 +1560,7 @@
 /[_\W]telemetry[_\W]/
 /[_\W]test[-~\w\.]*\.js(on)?/
 /[_\W]test[_\W]/
+/[_\W]tg\-[-~\w\.]*\.js(on)?/
 /[_\W]timming[-~\w\.]*\.js(on)?/
 /[_\W]tra?ck[_\W]/
 /[_\W]track[-~\w\.]*\.js(on)?/
@@ -1612,7 +1618,6 @@
 /_adz/*
 /_affiliate/hubtraffic/*
 /_annonser
-/_api/consents/*
 /_api/drom/*
 /_ban_
 /_bann/*
@@ -3383,7 +3388,6 @@
 /allowlist.txt
 /allpage.js
 /allpc.js
-/alls_foot.js
 /alls_top.js
 /allsbw.
 /allsvenskan-script-min.js
@@ -5732,10 +5736,7 @@
 /connector.
 /consenso.js
 /consenso_lw.js
-/consentbanner-fragment/*
-/consentstorage.
-/consenttracking-
-/consentui/*
+/consent/$important
 /console-ban.min.js
 /console-blocker/*
 /consult.
@@ -7183,7 +7184,6 @@
 /eos/*
 /ep.js
 /ep/sda/*
-/epaas.consentdrawer.
 /epespad.
 /epf_v1_95.
 /eplanningv4.
@@ -7256,7 +7256,6 @@
 /eu-notice.
 /eu-notice.js
 /eu-survey.js
-/euconsentconfig.
 /eulerian
 /eulerian.js
 /eulerian/*
@@ -7788,7 +7787,6 @@
 /fons/*
 /fontend/addimage/*
 /fooboom/*
-/foot.js
 /foot1.
 /foot_img
 /footad-
@@ -11450,7 +11448,6 @@
 /main-v001.js
 /main.course.js
 /main.ex.js
-/main.min.js
 /main/refs/*
 /main100.js
 /main_001_13.
@@ -15663,12 +15660,9 @@
 /seg-2
 /segment-api.
 /segment-cdn.
-/segment.js
 /segment/api/*
 /segment/js/*
-/segmentify.js
 /segmentio.
-/segmentio.js
 /segmentiotrack
 /sejal.
 /sejie
@@ -19183,7 +19177,6 @@
 /w_sky_media
 /wa?ctag
 /wa_code.
-/wa_consentui.
 /wa_lib.
 /wa_lib.js
 /wa_process.
@@ -22606,7 +22599,6 @@ allo600.
 alloref.
 allpage.js
 allpc.js
-alls_foot.js
 alls_top.js
 allsportsflix.
 allsvenskan-script-min.js
@@ -25174,8 +25166,6 @@ consenso_lw.js
 consensu
 consensu$important
 consensu.
-consentstorage.
-consenttracking-
 console-ban.min.js
 consultant-slider.js
 contact-form
@@ -26783,7 +26773,6 @@ entry_stats
 envoy.
 eo?_t
 ep.js
-epaas.consentdrawer.
 epanalipseis.
 epartner.
 epespad.
@@ -26864,7 +26853,6 @@ etua-lainalaskuri.min.js
 eu-notice.
 eu-notice.js
 eu-survey.js
-euconsentconfig.
 eulerian
 eulerian.js
 eumodaldialog
@@ -27435,7 +27423,6 @@ foobar
 food
 foot-gplus
 foot-linkedin
-foot.js
 foot1.
 foot_img
 footad
@@ -35830,10 +35817,7 @@ segmanta
 segment-api.
 segment-cdn.
 segment-data.
-segment.js
-segmentify.js
 segmentio.
-segmentio.js
 segmentiotrack
 segucrwj
 seirsanduk.
@@ -39597,7 +39581,6 @@ w_227
 w_sky_media
 wa?ctag
 wa_code.
-wa_consentui.
 wa_lib.
 wa_lib.js
 wa_process.
