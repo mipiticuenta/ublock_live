@@ -2,6 +2,7 @@
 ! expires: 1 day
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list
 ! title: regex block list
+.*/\?\?\-.*
 .*[_\W](fast)?cli?cks?[_\W].*
 .*[_\W](|de)collect(|or)[_\W].*
 .*[_\W](|high)web(media|orama|trekk)[_\W].*
@@ -54,6 +55,7 @@
 .*[_\W]bundle[-~\w\.]*\.js(on)?.*
 .*[_\W]cache[-~\w\.]*\.js(on)?.*
 .*[_\W]callback[_\W].*
+.*[_\W]ccpa[-~\w\.]*\.js(on)?.*
 .*[_\W]chameleon[-~\w\.]*\.js(on)?.*
 .*[_\W]chartbeat[_\W].*
 .*[_\W]chunks?[-~\w\.]*\.js(on)?.*
@@ -65,6 +67,7 @@
 .*[_\W]cmp[_\W].*
 .*[_\W]cmpsp[_\W].*
 .*[_\W]cnil[_\W].*
+.*[_\W]commercial[-~\w\.]*\.js(on)?.*
 .*[_\W]compliance[-~\w\.]*\.js(on)?.*
 .*[_\W]complianz/[_\W].*
 .*[_\W]comscore[-~\w\.]*\.js(on)?.*
@@ -186,6 +189,7 @@
 .*[_\W]optimize[-~\w\.]*\.js(on)?.*
 .*[_\W]osano[-~\w\.]*\.js(on)?.*
 .*[_\W]partner[-~\w\.]*\.js(on)?.*
+.*[_\W]pbjs[-~\w\.]*\.js(on)?.*
 .*[_\W]perform[-~\w\.]*\.js(on)?.*
 .*[_\W]performance[-~\w\.]*\.js(on)?.*
 .*[_\W]permutive[_\W].*
@@ -317,3 +321,4 @@
 .*sharing[-~\w\.]*\.js(on)?.*
 .*storage[-~\w\.]*\.js(on)?.*
 .*stub[-~\w\.]*\.js(on)?.*
+.*stub[_\W].*
