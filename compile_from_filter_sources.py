@@ -603,6 +603,7 @@ list2 = [re.sub(r'^[_\W]?head(er)?[_\W]*$', '', line) for line in list2]        
 list2 = [re.sub(r'^[_\W]?hero[_\W]*$', '', line) for line in list2]             # <remove spurious hero filter />
 list2 = [re.sub(r'^[_\W]?history[_\W]*$', '', line) for line in list2]          # <remove spurious history filter />
 list2 = [re.sub(r'^[_\W]?home[_\W]*$', '', line) for line in list2]             # <remove spurious home filter />
+list2 = [re.sub(r'^[_\W]?hospital[_\W]*$', '', line) for line in list2]         # <remove spurious hospital filter />
 list2 = [re.sub(r'^[_\W]?html[_\W]*$', '', line) for line in list2]             # <remove spurious html filter />
 list2 = [re.sub(r'^[_\W]?icons?[_\W]*$', '', line) for line in list2]           # <remove spurious icon(s) filter />
 list2 = [re.sub(r'^[_\W]?iframe[_\W]*$', '', line) for line in list2]           # <remove spurious iframe filter />
