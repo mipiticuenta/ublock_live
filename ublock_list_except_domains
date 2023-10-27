@@ -238,7 +238,7 @@
 *$removeparam=twclid
 *$removeparam=vero_conv
 *$removeparam=vero_id
-*$removeparam=view,important
+*$removeparam=view
 *$removeparam=wbraid
 *$removeparam=wickedid
 *$websocket
@@ -1374,6 +1374,7 @@
 /[_\W]cross.?domain[-~\w\.]*\.js(on)?/
 /[_\W]csp[_\W]/
 /[_\W]cx[_\W]/
+/[_\W]cxense[-~\w\.]*\.js(on)?/
 /[_\W]danelei[-~\w\.]*\.js(on)?/
 /[_\W]dasf[-~\w\.]*\.js(on)?/
 /[_\W]deal[-~\w\.]*\.js(on)?/
@@ -1453,6 +1454,7 @@
 /[_\W]logging[_\W]/
 /[_\W]logs?[_\W]/
 /[_\W]lux[-~\w\.]*\.js(on)?/
+/[_\W]mailcheck[-~\w\.]*\.js(on)?/
 /[_\W]marfeel[_\W]/
 /[_\W]mast.?head[-~\w\.]*\.js(on)?/
 /[_\W]measure[-~\w\.]*\.js(on)?/
@@ -1469,7 +1471,6 @@
 /[_\W]netdale[-~\w\.]*\.js(on)?/
 /[_\W]network[-~\w\.]*\.js(on)?/
 /[_\W]news.?letter[-~\w\.]*\.js(on)?/
-/[_\W]newsletter[-~\w\.]*\.js(on)?/
 /[_\W]nextcustom[-~\w\.]*\.js(on)?/
 /[_\W]nfplug[-~\w\.]*\.js(on)?/
 /[_\W]notification[-~\w\.]*\.js(on)?/
@@ -1495,6 +1496,7 @@
 /[_\W]pixel(cou?nt\w*)?[_\W]/
 /[_\W]platform[-~\w\.]*\.js(on)?/
 /[_\W]policy[_\W]/
+/[_\W]poll[-~\w\.]*\.js(on)?/
 /[_\W]polyfill[-~\w\.]*\.js(on)?/
 /[_\W]polyfill[_\W]/
 /[_\W]popp?er[_\W]/
@@ -1508,6 +1510,7 @@
 /[_\W]promos?[_\W]/
 /[_\W]pub(?!l)[-~\w\.]*\.js(on)?/
 /[_\W]pub[_\W]/
+/[_\W]punycode[-~\w\.]*\.js(on)?/
 /[_\W]purch[_\W]/
 /[_\W]push[-~\w\.]*\.js(on)?/
 /[_\W]push[_\W]/
@@ -4491,8 +4494,6 @@
 /bilder/stern_5/allgemein/extras_vermarktet/*
 /bildschirmfoto_2020-11-09_um_09.53.39.
 /bill/*
-/billboard
-/billboard-
 /billiger
 /bilmur.min.js
 /bimages/*
@@ -5938,9 +5939,7 @@
 /crazyad.
 /cread.php?s
 /creamcredit
-/create
 /create-lead.js
-/create_
 /creation_de_site_web_
 /creationsiteweb.
 /creative-video/*
@@ -6091,9 +6090,6 @@
 /cwtrack.
 /cwtrack.js
 /cwzuvc/*
-/cxense-candy.js
-/cxense-entitlement.js
-/cxense.js
 /cxense/*
 /cxgg/*
 /cxjmmeat
@@ -9483,7 +9479,6 @@
 /iframe468x60-
 /iframe468x60.
 /iframe468x60/*
-/iframe_api
 /iframe_autos_neufs_occasions.
 /iframe_end_textadv.s.
 /iframe_load_
@@ -12071,7 +12066,6 @@
 /mrkbanners/*
 /mrskinleftside.
 /mrtarg.js
-/ms.js
 /mscc/*
 /mscx-mtmwntq5.
 /msdng.js
@@ -13810,7 +13804,6 @@
 /pm.js
 /pm_brand_
 /pm_monet_offers.js
-/pmc-cxense.js
 /pmd-newsletter/*
 /pmd_gdfp-
 /pmspixel
@@ -13870,9 +13863,7 @@
 /policies
 /policyaccept.
 /polished-
-/poll.
 /poll/video/*
-/polls-
 /polyad.
 /polymediashowanalytics/*
 /pomegranate.
@@ -23791,8 +23782,6 @@ bijitogel-
 bike.
 bilder-a.
 bilder-for-annonser
-billboard-
-billboard_
 billiger
 billing.
 bineos.
@@ -25369,9 +25358,7 @@ crazyhell.
 creacdn.
 cread.php?s
 creamcredit
-create
 create-lead.js
-create_
 createadblocker
 createjs
 createsend1.
@@ -25504,9 +25491,6 @@ cwggoogleadshow.
 cwtrack.
 cwtrack.js
 cxense$important
-cxense-candy.js
-cxense-entitlement.js
-cxense.js
 cxjmmeat
 cxlnb.
 cxzpmqsz
@@ -33931,7 +33915,6 @@ pm-728.
 pm.js
 pm_brand_
 pm_monet_offers.js
-pmc-cxense.js
 pmd_gdfp-
 pmdipads-a.
 pmspixel
@@ -34042,10 +34025,8 @@ polarnexus.js
 policies
 policyaccept.
 polished-
-poll.
 polldaddy.
 polling.
-polls-
 poloriz
 polska-vinted-
 polyad
@@ -39475,7 +39456,6 @@ vops.js
 vortex.
 vortex.data.
 vortexloader.js
-vote-sentiments-
 voteplugin.
 voxmedia$important
 voxmedia.
