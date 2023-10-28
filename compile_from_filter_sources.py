@@ -520,6 +520,7 @@ list2 = [re.sub(r'^[_\W]?buttons?[_\W]*$', '', line) for line in list2]         
 list2 = [re.sub(r'^[_\W]?cache[_\W]*$', '', line) for line in list2]            # <remove spurious cache filter />
 list2 = [re.sub(r'^[_\W]?call[_\W]*$', '', line) for line in list2]             # <remove spurious call filter />
 list2 = [re.sub(r'^[_\W]?capture[_\W]*$', '', line) for line in list2]          # <remove spurious capture filter />
+list2 = [re.sub(r'^[_\W]?center[_\W]*$', '', line) for line in list2]           # <remove spurious center filter />
 list2 = [re.sub(r'^[_\W]?c_fill[_\W]*$', '', line) for line in list2]           # <remove spurious c_fill filter />
 list2 = [re.sub(r'^[_\W]?channels?[_\W]*$', '', line) for line in list2]        # <remove spurious channel(s) filter />
 list2 = [re.sub(r'^[_\W]?charts?[_\W]*$', '', line) for line in list2]          # <remove spurious chart(s) filter />
