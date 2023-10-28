@@ -708,6 +708,7 @@ list2 = [re.sub(r'^[_\W]?prod(uct(ion)?s?)?[_\W]*$', '', line) for line in list2
 list2 = [re.sub(r'^[_\W]?profile[_\W]*$', '', line) for line in list2]          # <remove spurious profile filter />
 list2 = [re.sub(r'^[_\W]?projects?[_\W]*$', '', line) for line in list2]        # <remove spurious project(s) filter />
 list2 = [re.sub(r'^[_\W]?promotion[_\W]*$', '', line) for line in list2]        # <remove spurious promotion filter />
+list2 = [re.sub(r'^[_\W]?proxy[_\W]*$', '', line) for line in list2]            # <remove spurious proxy filter />
 list2 = [re.sub(r'^[_\W]?public[_\W]*$', '', line) for line in list2]           # <remove spurious public filter />
 list2 = [re.sub(r'^[_\W]?pure[_\W]*$', '', line) for line in list2]             # <remove spurious pure filter />
 list2 = [re.sub(r'^[_\W]?raw(github)?[_\W]*$', '', line) for line in list2]     # <remove spurious raw(github) filter />
