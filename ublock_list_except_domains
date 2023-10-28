@@ -221,6 +221,7 @@
 *$removeparam=controller
 *$removeparam=dclid
 *$removeparam=df
+*$removeparam=digest
 *$removeparam=domain_key
 *$removeparam=ers
 *$removeparam=gbraid
@@ -1296,6 +1297,7 @@
 /9ytg7hda
 /?key=*&vn_buff=123
 /[_\W](fast)?cli?cks?[_\W]/
+/[_\W](web)?worker[-~\w\.]*\.js(on)?/
 /[_\W](|de)collect(|or)[_\W]/
 /[_\W](|high)web(media|orama|trekk)[_\W]/
 /[_\W]2o7[_\W]/
@@ -1367,6 +1369,7 @@
 /[_\W]consent[_\W]/$important
 /[_\W]conversion[-~\w\.]*\.js(on)?/
 /[_\W]cookies?[_\W]/
+/[_\W]copy[-~\w\.]*\.js(on)?/
 /[_\W]corot[_\W]/
 /[_\W]count(er)?[-~\w\.]*\.js(on)?/
 /[_\W]count(er)[_\W]/
@@ -1542,6 +1545,7 @@
 /[_\W]slick[-~\w\.]*\.js(on)?/
 /[_\W]socials?[_\W]/
 /[_\W]socy[^a-z]/
+/[_\W]sphinxs[-~\w\.]*\.js(on)?/
 /[_\W]spm\.([-~\w\.]*\.)?js(on)?/
 /[_\W]sponsored[_\W]/
 /[_\W]sponsors?[_\W]/
@@ -1558,6 +1562,7 @@
 /[_\W]suggest[-~\w\.]*\.js(on)?/
 /[_\W]superfish[-~\w\.]*\.js(on)?/
 /[_\W]sw[gq]?[-~\w\.]*\.js(on)?/
+/[_\W]tab[-~\w\.]*\.js(on)?/
 /[_\W]tagmanager[_\W]/
 /[_\W]tampering[-~\w\.]*\.js(on)?/
 /[_\W]telemetry[_\W]/
@@ -1592,7 +1597,6 @@
 /[_\W]whoami[_\W]/
 /[_\W]widget[-~\w\.]*\.js(on)?/
 /[_\W]woocommerce[-~\w\.]*\.js(on)?/
-/[_\W]worker[-~\w\.]*\.js(on)?/
 /[_\W]wow[-~\w\.]*\.js(on)?/
 /[_\W]wpp[-~\w\.]*\.js(on)?/
 /[_\W]zeotap[-~\w\.]*\.js(on)?/
@@ -5803,10 +5807,6 @@
 /cooperate/*
 /cooperation/*
 /coperchimneyjpg
-/copy.js
-/copy.min.js
-/copy_text.js
-/copyfun.js
 /coradiant.js
 /core201
 /coretracking.
@@ -6606,7 +6606,6 @@
 /dnschecker.js
 /dny.
 /do.cgi?widget
-/doc-
 /doc/minisites/laposte/*
 /doc/minisites/solution_business/*
 /doc/partenaires/*
@@ -12352,7 +12351,6 @@
 /new-gallery-dump-small.
 /new-hit/*
 /new-relic.
-/new-tab.js
 /new160x
 /new300x
 /new_detail_
@@ -17247,24 +17245,18 @@
 /ta3_vod_com
 /ta3_vod_com/*
 /tab-slide/*
-/tab49fb22988.js
 /tabads
 /tabbao
 /tabl
 /tableadnorth.
 /tabligh
-/tabligh.js
 /tablytics
 /tablytics.
 /taboola-footer.
 /taboola-header.
-/taboola-header.js
 /taboola-iframe/*
 /taboola-module.
-/taboola.js
 /taboola/*
-/taboola1.js
-/taboola_7.4.1.js
 /taboola_header.
 /taboolaarticle.
 /taboolaarticlefooter.
@@ -25223,9 +25215,6 @@ coolpc_
 coop.no.
 coordinatoromgevingsvergunningen-rijksoverheid-
 copy-of-business-marketing-agency-flyer-made-with-postermywall
-copy.js
-copy_text.js
-copyfun.js
 copyright.ru*/?file
 coradiant.js
 coralogix
@@ -26063,7 +26052,6 @@ dny.
 do-community.
 do.cgi?widget
 do?session_
-doc-
 doc44017378_668269434?hash=1xpr8pd2lqvjztzsfcr5zo3pzq1l86eot1ysfynkjxw&dl=qzxscoycv44wt8ikwmaapwzrejzvlshufndk3veg9jo&api=1&no_preview=1
 doc44017378_668269545?hash=tu0v4btnvb4e4cdtznkczx4ucnhhc3lzudmzkuyvnzw&dl=ye4mjkpkvgmccztizv9pmedxojlyt0dgydf4qxklajl&api=1&no_preview=1
 doc44017378_668278023?hash=ed3r8jj74xhjtk6kl8aplt85gm79yqhtu5zkyfimwux&dl=kckanuiy5xpolck0umxyvn3cqwqqbgnuegfj9sfjozw&api=1&no_preview=1
@@ -32458,7 +32446,6 @@ new-ads2.
 new-gallery-dump-small.
 new-gomovies.
 new-relic.
-new-tab.js
 new160x
 new300x
 new_detail_
@@ -37484,13 +37471,11 @@ ta1234.js
 ta22f6590aec.js
 ta2b8ed9c305.js
 ta3_vod_com
-tab49fb22988.js
 tabads
 tabbao
 tabl
 tableadnorth.
 tabligh
-tabligh.js
 tablytics
 tablytics.
 tabonitobrasil.
@@ -37498,10 +37483,7 @@ taboola
 taboola$important
 taboola-footer.
 taboola-header.
-taboola-header.js
 taboola-module.
-taboola.js
-taboola1.js
 taboola_header.
 taboolaarticle.
 taboolaarticlefooter.
