@@ -198,7 +198,7 @@
 *$removeparam=/pub/,important
 *$removeparam=/publisher/,important
 *$removeparam=/qoe/,important
-*$removeparam=/redir/,important
+*$removeparam=/redir/*
 *$removeparam=/registration/,important
 *$removeparam=/reload/,important
 *$removeparam=/rotat/,important
@@ -264,7 +264,6 @@
 -90ban.
 -90mh-gg.
 -abgqq.
--abtesting$important
 -ad0
 -ad160x600.
 -ad300x250-
@@ -1305,9 +1304,9 @@
 /[_\W][a-z]*footer[-~\w\.]*\.js(on)?/
 /[_\W][a-z]*rightad[-~\w\.]*\.js(on)?/
 /[_\W][a-z]*share[-~\w\.]*\.js(on)?/
-/[_\W][a-z]*vendors?[_\W]/
 /[_\W]aaw[-~\w\.]*\.js(on)?/
 /[_\W]abba[-~\w\.]*\.js(on)?/
+/[_\W]abtest(ing)?[_\W]/$important
 /[_\W]abtest[-~\w\.]*\.js(on)?/
 /[_\W]ace[-~\w\.]*\.js(on)?/
 /[_\W]adb(lock(er)?)?.?detect[-~\w\.]/
@@ -1347,6 +1346,7 @@
 /[_\W]bundle[-~\w\.]*\.js(on)?/
 /[_\W]cache[-~\w\.]*\.js(on)?/
 /[_\W]callback[_\W]/
+/[_\W]campaign[-~\w\.]*\.js(on)?/$important
 /[_\W]ccpa[-~\w\.]*\.js(on)?/
 /[_\W]chameleon[-~\w\.]*\.js(on)?/
 /[_\W]chartbeat[_\W]/
@@ -1524,6 +1524,7 @@
 /[_\W]react[_\W]/
 /[_\W]recirc[-~\w\.]*\.js(on)?/
 /[_\W]recommend[-~\w\.]*\.js(on)?/
+/[_\W]recommend[-~\w\.]*\.js(on)?/$important
 /[_\W]redir(ect)[_\W]/
 /[_\W]regenerator[-~\w\.]*\.js(on)?/
 /[_\W]reklama?[_\W]/
@@ -1567,6 +1568,7 @@
 /[_\W]tab[-~\w\.]*\.js(on)?/
 /[_\W]tagmanager[_\W]/
 /[_\W]tampering[-~\w\.]*\.js(on)?/
+/[_\W]target[-~\w\.]*\.js(on)?/$important
 /[_\W]telemetry[_\W]/
 /[_\W]test[-~\w\.]*\.js(on)?/
 /[_\W]test[_\W]/
@@ -1591,6 +1593,7 @@
 /[_\W]utms?[_\W]/$important
 /[_\W]v[at]m[-~\w\.]*\.js(on)?/
 /[_\W]vendor[-~\w\.]*\.js(on)?/
+/[_\W]vendor[-~\w\.]*\.js(on)?/$important
 /[_\W]visit[-~\w\.]*\.js(on)?/$important
 /[_\W]visitor[_\W]/
 /[_\W]voonto[-~\w\.]*\.js(on)?/
@@ -1802,8 +1805,6 @@
 /abs/*
 /absolutebm.
 /abstat.
-/abtest.
-/abtest_ab.
 /abtestinit-
 /abtshield-snippet.
 /abutoned.
@@ -5112,8 +5113,6 @@
 /campagne/*
 /campagne/redir/*
 /campagnes/*
-/campaign
-/campaign$important
 /campaign-manager-client/*
 /campaign/*
 /campaignpost
@@ -5655,7 +5654,6 @@
 /coins.js
 /cointraffic-
 /coke_daaraz_1200x100.
-/col
 /col_droite_googleads2
 /colada2
 /collectbanner
@@ -5961,7 +5959,6 @@
 /criteorta.
 /criterio.js
 /crlt.
-/crm-campaign-handler.js
 /crm4d.
 /crod.js
 /cron.php?rand
@@ -8515,7 +8512,6 @@
 /glimr
 /glimr-static
 /global-conf.js
-/global-targeting.js
 /global.js
 /global/annons/*
 /global/html5player/*
@@ -10404,6 +10400,7 @@
 /jscript/*&informer_
 /jscss/*
 /jsd
+/jsd/*
 /jsdd/*
 /jse
 /jsecoin.
@@ -16147,7 +16144,6 @@
 /site_files/d-sitebanners/*
 /site_id
 /site_id/*
-/site_news_target.js
 /site_rencontre/ban/*
 /site_skin.js
 /site_specific_code.
@@ -17307,16 +17303,13 @@
 /tapad.js
 /tapatalkdetect
 /tapatalkdetect.
-/target-main-at.js
 /targetanalyticsapi-
 /targetemsecure.
 /targeting.
-/targeting.js
 /targeting/*
 /targetingad.
 /targetingwebapp/*
 /targetpushad.
-/targetpushad.js
 /tarteaucitron
 /tarteaucitron.
 /tarteaucitron/*
@@ -20607,7 +20600,6 @@ _chatad_
 _chl_code.
 _clic.
 _clicktale.
-_col.
 _commonad.
 _companionad.
 _ctrack.
@@ -20952,7 +20944,6 @@ absoluporn.
 absolutebm.
 abstat.
 abtasty$important
-abtest_ab.
 abtestinit-
 abtshield-snippet.
 abutoned.
@@ -25360,7 +25351,6 @@ criteo3_
 criteorta.
 criterio.js
 crlt.
-crm-campaign-handler.js
 crm4d.
 crod.js
 crohasit.
@@ -28137,7 +28127,6 @@ gldotpvifbo_index-annuaire.
 glimr
 global-conf.js
 global-ime.
-global-targeting.js
 global.js
 global_head.js
 global_hr_solution_desktop.
@@ -34847,15 +34836,8 @@ reclame-nieuws.
 reclame.
 reclame2.
 recll-js.js
-recommend
-recommend$important
-recommend*=article_
-recommend.
-recommendations
-recommendations.
 recommendcx
 recommended_1.html?language
-recommends
 recommendtrack
 record
 record-page-view.
@@ -36314,7 +36296,6 @@ site=*/size=*/viewid
 site=*/viewid=*/size
 site_catalyst
 site_id
-site_news_target.js
 site_skin.js
 site_specific_code.
 site_statistics.
@@ -37527,14 +37508,11 @@ tapatalk-cdn
 tapatalkdetect
 tapatalkdetect.
 tara-miultimedia-logo1.
-target-main-at.js
 targetanalyticsapi-
 targetemsecure.
 targeting.
-targeting.js
 targetingad.
 targetpushad.
-targetpushad.js
 tarjetarojatvonline.
 tarkeswar-napa-1-
 tarteaucitron.
