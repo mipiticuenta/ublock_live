@@ -768,6 +768,7 @@ list2 = [re.sub(r'^[_\W]?third[_\W]*$', '', line) for line in list2]            
 list2 = [re.sub(r'^[_\W]?thumb[_\W]*$', '', line) for line in list2]            # <remove spurious thumb filter />
 list2 = [re.sub(r'^[_\W]?timeline[_\W]*$', '', line) for line in list2]         # <remove spurious timeline filter />
 list2 = [re.sub(r'^[_\W]?tiny[_\W]*$', '', line) for line in list2]             # <remove spurious tiny filter />
+list2 = [re.sub(r'^[_\W]?tools?[_\W]*$', '', line) for line in list2]           # <remove spurious tool(s) filter />
 list2 = [re.sub(r'^[_\W]?top[_\W]*$', '', line) for line in list2]              # <remove spurious top filter />
 list2 = [re.sub(r'^[_\W]?touch[_\W]*$', '', line) for line in list2]            # <remove spurious touch filter />
 list2 = [re.sub(r'^[_\W]?tr(ai)?[_\W]*$', '', line) for line in list2]          # <remove spurious tr(ai) filter />

@@ -44,6 +44,8 @@ links = [re.sub(r'^.*//', '', line) for line in links]
 links = [re.sub(r'^www\.', '', line) for line in links]
 links = [re.sub(r'/.*$', '', line) for line in links]
 
+links = sorted(set(links))
+
 # <open file1_out file and write header and data>
 
 file1_out = open(file1_out_name, 'w', encoding='UTF-8')
