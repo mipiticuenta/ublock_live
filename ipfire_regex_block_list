@@ -3,7 +3,6 @@
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list
 ! title: regex block list
 .*/\?\?\-.*
-.*[-\W]xn\-\-.*
 .*[_\W](fast)?cli?cks?[_\W].*
 .*[_\W](web)?worker[-~\w\.]*\.js(on)?.*
 .*[_\W](|de)collect(|or)[_\W].*
@@ -65,6 +64,7 @@
 .*[_\W]clavis[-~\w\.]*\.js(on)?.*
 .*[_\W]clear.?dot[_\W].*
 .*[_\W]clipboard[-~\w\.]*\.js(on)?.*
+.*[_\W]cloudflare[-~\w\.]*\.js(on)?.*
 .*[_\W]cloudfront.*\.js(on)?.*
 .*[_\W]cludo[^a-z].*
 .*[_\W]cmp[_\W].*
@@ -310,6 +310,7 @@
 .*[_\W]woocommerce[-~\w\.]*\.js(on)?.*
 .*[_\W]wow[-~\w\.]*\.js(on)?.*
 .*[_\W]wpp[-~\w\.]*\.js(on)?.*
+.*[_\W]xn\-\-.*
 .*[_\W]zeotap[-~\w\.]*\.js(on)?.*
 .*[_\W]zephr[-~\w\.]*\.js(on)?.*
 .*^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?.*
