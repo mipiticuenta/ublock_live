@@ -728,6 +728,7 @@ list2 = [re.sub(r'^[_\W]?search[_\W]*$', '', line) for line in list2]           
 list2 = [re.sub(r'^[_\W]?section[_\W]*$', '', line) for line in list2]          # <remove spurious section filter />
 list2 = [re.sub(r'^[_\W]?server?[_\W]*$', '', line) for line in list2]          # <remove spurious serve(r) filter />
 list2 = [re.sub(r'^[_\W]?services?[_\W]*$', '', line) for line in list2]        # <remove spurious service(s) filter />
+list2 = [re.sub(r'^[_\W]?set[_\W]*$', '', line) for line in list2]              # <remove spurious set filter />
 list2 = [re.sub(r'^[_\W]?shared?[_\W]*$', '', line) for line in list2]          # <remove spurious share(d) filter />
 list2 = [re.sub(r'^[_\W]?show[_\W]*$', '', line) for line in list2]             # <remove spurious show filter />
 list2 = [re.sub(r'^[_\W]?side(bar)[_\W]*$', '', line) for line in list2]        # <remove spurious side(bar) filter />

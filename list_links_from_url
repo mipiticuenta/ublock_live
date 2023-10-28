@@ -17,6 +17,16 @@ from bs4 import BeautifulSoup                                                   
 
 # <settings>
 
+print(
+                                                                  '\n',
+    '# ============================================================\n',
+    '# List links from url                                         \n',
+    '# ============================================================\n',
+    '# input : url                                                 \n',
+    '# output: <hrefs found> file                                  \n',
+    '# ============================================================\n',
+)
+
 file1_out_name = 'hrefs_found'
 proxy_servers  = {'https': 'http://fw:8080'}
 
