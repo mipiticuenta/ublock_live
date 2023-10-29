@@ -1304,7 +1304,7 @@
 /[_\W]addthis[-~\w\.]*\.js(on)?/
 /[_\W]addthis[_\W]/
 /[_\W]adfuel[-~\w\.]*\.js(on)?/
-/[_\W]adops[_\W]/
+/[_\W]adops?[_\W]/
 /[_\W]ads?[_\W]/
 /[_\W]adse?rv/
 /[_\W]adsense[_\W]/
@@ -1351,6 +1351,7 @@
 /[_\W]cmpsp[_\W]/$important
 /[_\W]cnil[_\W]/
 /[_\W]commercial[-~\w\.]*\.js(on)?/
+/[_\W]companion[-~\w\.]*\.js(on)?/
 /[_\W]compliance[-~\w\.]*\.js(on)?/
 /[_\W]complianz/[_\W]/
 /[_\W]comscore[-~\w\.]*\.js(on)?/
@@ -1413,6 +1414,7 @@
 /[_\W]googleads?[_\W]/
 /[_\W]gpt\.(.*\.)?js(on)?/$important
 /[_\W]gtm[-~\w\.]*\.js(on)?/
+/[_\W]gulp[-~\w\.]*\.js(on)?/
 /[_\W]hanealneh[-~\w\.]*\.js(on)?/
 /[_\W]heartbeat[-~\w\.]*\.js(on)?/
 /[_\W]hello[-~\w\.]*\.js(on)?/
@@ -1431,6 +1433,7 @@
 /[_\W]index[-~\w\.]*\.js(on)?/
 /[_\W]inline[-~\w\.]*\.js(on)?/
 /[_\W]inner.?host[-~\w\.]*\.js(on)?/
+/[_\W]inner[-~\w\.]*\.js(on)?/
 /[_\W]instant.?page[-~\w\.]*\.js(on)?/
 /[_\W]interstitial[-~\w\.]*\.js(on)?/
 /[_\W]ip.?check[-~\w\.]*\.js(on)?/
@@ -1442,6 +1445,7 @@
 /[_\W]landing[-~\w\.]*\.js(on)?/
 /[_\W]latest[-~\w\.]*\.js(on)?/
 /[_\W]layer[-~\w\.]*\.js(on)?/
+/[_\W]leadtag[-~\w\.]*\.js(on)?/
 /[_\W]link[-~\w\.]*\.js(on)?/
 /[_\W]listen[-~\w\.]*\.js(on)?/
 /[_\W]logger[_\W]/
@@ -1536,6 +1540,7 @@
 /[_\W]shim[-~\w\.]*\.js(on)?/
 /[_\W]showads?[_\W]/
 /[_\W]side.?bar[-~\w\.]*\.js(on)?/
+/[_\W]sirv[-~\w\.]*\.js(on)?/
 /[_\W]slick[-~\w\.]*\.js(on)?/
 /[_\W]snowstorm[-~\w\.]*\.js(on)?/
 /[_\W]socials?[_\W]/
@@ -2452,9 +2457,6 @@
 /adonline.
 /adonly468.
 /adonspot.
-/adop$important
-/adop.js
-/adop_sdk2.
 /adopdmp.
 /adopspush-
 /adoreclothing
@@ -4378,7 +4380,6 @@
 /beliqq.
 /bella.
 /ben/*
-/benchmarketingsmarttag/*
 /benderapoker.
 /benecta.
 /bennerad.
@@ -4852,7 +4853,6 @@
 /brandingvideo.js
 /brandlift.
 /brandminizal.js
-/brands/*
 /brandxuandong.js
 /bravo.
 /breakad_
@@ -9862,8 +9862,6 @@
 /inlineads.
 /inlineads/*
 /inlist-inlistsponsored
-/inner
-/inner.js
 /inner?block
 /innerads.
 /innerpagesidebar.
@@ -16291,9 +16289,7 @@
 /smartserve
 /smartserve-
 /smartshake
-/smarttag-
-/smarttag-prod.
-/smarttag.bundle.
+/smarttag/$important
 /smeadvert
 /smeadvertisement
 /smetkoplan.
@@ -17402,7 +17398,6 @@
 /terms_of_service.js
 /tes9deyv
 /testab.
-/testab.bundle.
 /testingad.
 /testoid/*
 /tetehqq-728.
@@ -17415,7 +17410,6 @@
 /texaspoker_
 /texaspokercc-
 /texaspokercc.
-/texaspokercc.webp
 /texasqq.
 /texnomag.
 /text.js
@@ -17906,7 +17900,6 @@
 /trafmag
 /trail.
 /transad.
-/transcode/storyteller/*
 /transfert_aeirprot_
 /transp.bmp
 /transparent.
@@ -21398,9 +21391,6 @@ adonline.
 adonly468.
 adonspot.
 adonweb
-adop$important
-adop.js
-adop_sdk2.
 adopdmp.
 adopspush-
 adoreclothing
@@ -29292,8 +29282,6 @@ inlinead
 inlineads.
 inmobi
 inmobisdk-a.
-inner
-inner.js
 inner?block
 innerads.
 innerpagesidebar.
@@ -36239,10 +36227,6 @@ smartrotator.js
 smartserve
 smartserve-
 smartshake
-smarttag$important
-smarttag-
-smarttag-prod.
-smarttag.bundle.
 smartxads
 smblock.
 smcservice$important
@@ -37452,7 +37436,6 @@ terriblethumb.
 terror-en-el-cine.
 tes9deyv
 testab.
-testab.bundle.
 testedich.
 testingad.
 tetehqq-728.
