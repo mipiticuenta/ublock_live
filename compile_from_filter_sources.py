@@ -272,6 +272,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.]?apple\*?(?=[/\.])', '', line) for line in list2]   # <remove leading apple />
     list2 = [re.sub(r'^[/\.]?assets?\*?(?=[/\.])', '', line) for line in list2] # <remove leading asset />
     list2 = [re.sub(r'^[/\.]?attachments?\*?(?=[/\.])', '', line) for line in list2]            # <remove leading attachment />
+    list2 = [re.sub(r'^[/\.]?brands?\*?(?=[/\.])', '', line) for line in list2] # <remove leading brand(s) />
     list2 = [re.sub(r'^[/\.]?build\*?(?=[/\.])', '', line) for line in list2]   # <remove leading build />
     list2 = [re.sub(r'^[/\.]?business\*?(?=[/\.])', '', line) for line in list2]                # <remove leading business />
     list2 = [re.sub(r'^[/\.]?catalog\*?(?=[/\.])', '', line) for line in list2] # <remove leading catalog />
@@ -619,6 +620,7 @@ list2 = [re.sub(r'^[_\W]?(inc?|out|left|right)[_\W]*$', '', line) for line in li
 list2 = [re.sub(r'^[_\W]?index[_\W]*$', '', line) for line in list2]            # <remove spurious index filter />
 list2 = [re.sub(r'^[_\W]?info[_\W]*$', '', line) for line in list2]             # <remove spurious info filter />
 list2 = [re.sub(r'^[_\W]?init[_\W]*$', '', line) for line in list2]             # <remove spurious init filter />
+list2 = [re.sub(r'^[_\W]?inner[_\W]*$', '', line) for line in list2]            # <remove spurious inner filter />
 list2 = [re.sub(r'^[_\W]?inline[_\W]*$', '', line) for line in list2]           # <remove spurious inline filter />
 list2 = [re.sub(r'^[_\W]?(in|out)put[_\W]*$', '', line) for line in list2]      # <remove spurious (in|out)put filter />
 list2 = [re.sub(r'^[_\W]?instagram[_\W]*$', '', line) for line in list2]        # <remove spurious instagram filter />
