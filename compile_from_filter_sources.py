@@ -718,6 +718,7 @@ list2 = [re.sub(r'^[_\W]?promotion[_\W]*$', '', line) for line in list2]        
 list2 = [re.sub(r'^[_\W]?proxy[_\W]*$', '', line) for line in list2]            # <remove spurious proxy filter />
 list2 = [re.sub(r'^[_\W]?public[_\W]*$', '', line) for line in list2]           # <remove spurious public filter />
 list2 = [re.sub(r'^[_\W]?pure[_\W]*$', '', line) for line in list2]             # <remove spurious pure filter />
+list2 = [re.sub(r'^[_\W]?pulse[_\W]*$', '', line) for line in list2]            # <remove spurious pulse filter />
 list2 = [re.sub(r'^[_\W]?raw(github)?[_\W]*$', '', line) for line in list2]     # <remove spurious raw(github) filter />
 list2 = [re.sub(r'^[_\W]?react[_\W]*$', '', line) for line in list2]            # <remove spurious react filter />
 list2 = [re.sub(r'^[_\W]?re[cfsv][_\W]*$', '', line) for line in list2]         # <remove spurious re(c|f|s|v) filter />

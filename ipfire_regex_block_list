@@ -3,6 +3,7 @@
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list
 ! title: regex block list
 .*/\?\?\-.*
+.*/js/th/.*
 .*[_\W](fast)?cli?cks?[_\W].*
 .*[_\W](web)?worker[-~\w\.]*\.js(on)?.*
 .*[_\W](|de)collect(|or)[_\W].*
@@ -306,7 +307,6 @@
 .*[_\W]tracking[_\W].*
 .*[_\W]transp(arent)?[_\W].*
 .*[_\W]tscp[_\W].*
-.*[_\W]twitter[_\W].*
 .*[_\W]u?tag[-~\w\.]*\.js(on)?.*
 .*[_\W]u?tag[_\W].*
 .*[_\W]uac[-~\w\.]*\.js(on)?.*
@@ -331,6 +331,7 @@
 .*[_\W]webresource[_\W].*
 .*[_\W]whoami[_\W].*
 .*[_\W]widget[-~\w\.]*\.js(on)?.*
+.*[_\W]wizard[-~\w\.]*\.js(on)?.*
 .*[_\W]woocommerce[-~\w\.]*\.js(on)?.*
 .*[_\W]wow[-~\w\.]*\.js(on)?.*
 .*[_\W]wpp[-~\w\.]*\.js(on)?.*
@@ -352,7 +353,6 @@
 .*geo.?ip.*
 .*geo.?location.*
 .*helper[-~\w\.]*\.js(on)?.*
-.*js/th.*
 .*leadforensics.*
 .*omniture.*
 .*outbrain.*
