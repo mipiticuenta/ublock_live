@@ -634,6 +634,7 @@ list2 = [re.sub(r'^[_\W]?landing[_\W]*$', '', line) for line in list2]          
 list2 = [re.sub(r'^[_\W]?large[_\W]*$', '', line) for line in list2]            # <remove spurious large filter />
 list2 = [re.sub(r'^[_\W]?latest[_\W]*$', '', line) for line in list2]           # <remove spurious latest filter />
 list2 = [re.sub(r'^[_\W]?launch[_\W]*$', '', line) for line in list2]           # <remove spurious launch filter />
+list2 = [re.sub(r'^[_\W]?leon?[_\W]*$', '', line) for line in list2]            # <remove spurious leo(n) filter />
 list2 = [re.sub(r'^[_\W]?libs?[_\W]*$', '', line) for line in list2]            # <remove spurious lib filter />
 list2 = [re.sub(r'^[_\W]?li[f|k]e[_\W]*$', '', line) for line in list2]         # <remove spurious li(f|k)e filter />
 list2 = [re.sub(r'^[_\W]?lightbox[_\W]*$', '', line) for line in list2]         # <remove spurious lightbox filter />
