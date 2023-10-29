@@ -803,6 +803,7 @@ list2 = [re.sub(r'^[_\W]?world[_\W]*$', '', line) for line in list2]            
 list2 = [re.sub(r'^[_\W]?wp(\-content)?[_\W]*$', '', line) for line in list2]   # <remove spurious wp(-content) filter />
 list2 = [re.sub(r'^[_\W]?xml[_\W]*$', '', line) for line in list2]              # <remove spurious xml filter />
 list2 = [re.sub(r'^[_\W]?youtube[_\W]*$', '', line) for line in list2]          # <remove spurious youtube filter />
+list2 = [re.sub(r'^[_\W]?zaf[_\W]*$', '', line) for line in list2]              # <remove spurious zaf filter />
 list2 = [re.sub(r'^[_\W]?zalando[_\W]*$', '', line) for line in list2]          # <remove spurious zalando filter />
 
 list2 = [line for line in list2 if len(line) > 1]                               # <remove items if length < 2 />
