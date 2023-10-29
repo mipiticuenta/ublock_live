@@ -291,7 +291,6 @@
 -adspace.
 -adspromo.
 -adtrack
--adunits$important
 -advertising_
 -advertisment-
 -advt-
@@ -715,7 +714,6 @@
 .news
 .newsletterform-
 .newsletterform.
-.normal.
 .ntpagetag.
 .ooo
 .openad.
@@ -1309,6 +1307,7 @@
 /[_\W]adse?rv/
 /[_\W]adsense[_\W]/
 /[_\W]adslot[_\W]/
+/[_\W]adunits?[_\W]/$important
 /[_\W]adv(erts?)?(isement)?[_\W]/
 /[_\W]adwords?[-~\w\.]*\.js(on)?/
 /[_\W]aff[-~\w\.]*\.js(on)?/
@@ -1343,6 +1342,7 @@
 /[_\W]chunks?[-~\w\.]*\.js(on)?/
 /[_\W]clavis[-~\w\.]*\.js(on)?/
 /[_\W]clear.?dot[_\W]/
+/[_\W]client.?data[_\W]/
 /[_\W]clipboard[-~\w\.]*\.js(on)?/
 /[_\W]cloudflare[-~\w\.]*\.js(on)?/
 /[_\W]cloudfront.*\.js(on)?/
@@ -1356,6 +1356,7 @@
 /[_\W]complianz/[_\W]/
 /[_\W]comscore[-~\w\.]*\.js(on)?/
 /[_\W]consent[_\W]/$important
+/[_\W]contact.?form[_\W]/
 /[_\W]conversion[-~\w\.]*\.js(on)?/
 /[_\W]cookies?[_\W]/
 /[_\W]copy[-~\w\.]*\.js(on)?/
@@ -1372,6 +1373,7 @@
 /[_\W]deal[-~\w\.]*\.js(on)?/
 /[_\W]decode[-~\w\.]*\.js(on)?/
 /[_\W]detail[-~\w\.]*\.js(on)?/
+/[_\W]detect.?view[_\W]/$important
 /[_\W]detect[-~\w\.]*\.js(on)?/
 /[_\W]devicepx[-~\w\.]*\.js(on)?/
 /[_\W]dfp[_\W]/$important
@@ -1578,6 +1580,7 @@
 /[_\W]tracker[-~\w\.]*\.js(on)?/
 /[_\W]tracker[_\W]/
 /[_\W]tracking[_\W]/
+/[_\W]transp(arent)?[_\W]/$important
 /[_\W]tscp[_\W]/
 /[_\W]twitter[_\W]/
 /[_\W]u?tag[-~\w\.]*\.js(on)?/
@@ -1589,6 +1592,7 @@
 /[_\W]underscore[-~\w\.]*\.js(on)?/
 /[_\W]underscore[_\W]/
 /[_\W]unique(.?id)?[-~\w\.]*\.js(on)?/
+/[_\W]user.?info[_\W]/$important
 /[_\W]user[-~\w\.]*\.js(on)?/
 /[_\W]utms?[_\W]/$important
 /[_\W]v[at]m[-~\w\.]*\.js(on)?/
@@ -2924,9 +2928,6 @@
 /adunblock.
 /adunblocker/*
 /adunion
-/adunit
-/adunits
-/adunits.
 /adunitsbreakpoints.
 /adunitsdata.
 /adunix
@@ -5114,7 +5115,6 @@
 /camstats.js
 /camwhores.
 /camwhoreshd.
-/can
 /can/cde/*
 /canalpalatin.
 /canarias-
@@ -5482,7 +5482,6 @@
 /client/sound/*
 /client_204
 /client_a.
-/client_data/*
 /client_pathlog.
 /client_storage/*
 /clientbanner/*
@@ -5733,7 +5732,6 @@
 /consult.
 /consultant-slider.js
 /consultant/*
-/contact-form
 /contador.
 /contads.
 /container.
@@ -8243,7 +8241,6 @@
 /get_tiz.
 /get_trackingcode.
 /get_video
-/get_video_info?*adunit
 /getad
 /getad/*
 /getadcode
@@ -9817,7 +9814,6 @@
 /infoblocks
 /infoj.
 /infojdem/lib/cheezwhiz/*
-/infomaniak-hosted-by-black-transparent.
 /inform/*
 /informb_
 /informb_stat.
@@ -11931,7 +11927,6 @@
 /molodejj/*
 /momopoker88.
 /momsads.
-/mon
 /monetate.
 /monetate.js
 /monetiz$important
@@ -13149,7 +13144,6 @@
 /pakkerlevering/*
 /pal.js
 /palae.js
-/palli-bazar-logo-illustrator-transparent_1.
 /palottifm.
 /palyflash_
 /palyyoubian.js
@@ -14886,8 +14880,6 @@
 /reproad300.
 /req.php?z
 /reqsads
-/request/page/json/params*&adunits
-/request/page/json/params/*&adunits
 /requestadvertisement.
 /requestdata.
 /requestmyspacead.
@@ -17901,8 +17893,6 @@
 /trail.
 /transad.
 /transfert_aeirprot_
-/transp.bmp
-/transparent.
 /transparent1x
 /transparent1x1.
 /transparent4x
@@ -18406,7 +18396,6 @@
 /userfingerprinttoken/*
 /userfly
 /userid
-/userinfo.
 /userlike
 /userlike-cdn-
 /userlog
@@ -20352,9 +20341,6 @@ _adtoma.
 _adtool
 _adtop
 _adtxt.
-_adunit
-_adunit$important
-_adunit.
 _advertentie300x250_
 _advertentieleaderboardhome.
 _advertise-
@@ -21852,10 +21838,6 @@ adultworld
 adunblock
 adunblock.
 adunion
-adunit
-adunit_
-adunits
-adunits.
 adunitsbreakpoints.
 adunitsdata.
 adunix
@@ -24236,7 +24218,6 @@ camwhores.
 camwhoreshd.
 camwhorestv.
 camz.
-can_
 canadianrugs.
 canalesportivo.
 canarias-
@@ -24908,7 +24889,6 @@ consensu$important
 consensu.
 console-ban.min.js
 consultant-slider.js
-contact-form
 contador.
 contadordevisitas.
 contadores.
@@ -25539,7 +25519,6 @@ detectincognito
 detective.
 detector
 detector_active
-detectview$important
 detikbet.
 detm-container-
 detm_adobe.
@@ -27677,7 +27656,6 @@ get_statistics.
 get_tiz.
 get_trackingcode.
 get_video
-get_video_info?*adunit
 getad
 getad.
 getadcode
@@ -38013,7 +37991,6 @@ transad.
 transfermarkt.
 transfert_aeirprot_
 translate
-transparent.
 transparent1x
 transparent1x1.
 transparent4x
@@ -38528,8 +38505,6 @@ usercapabilities
 userdata_n
 userfly
 userid
-userinfo$important
-userinfo.
 userlike
 userlike-cdn-
 userload.

@@ -710,6 +710,7 @@ list2 = [re.sub(r'^[_\W]?positions?[_\W]*$', '', line) for line in list2]       
 list2 = [re.sub(r'^[_\W]?post?[_\W]*$', '', line) for line in list2]            # <remove spurious post filter />
 list2 = [re.sub(r'^[_\W]?pre[_\W]*$', '', line) for line in list2]              # <remove spurious pre filter />
 list2 = [re.sub(r'^[_\W]?price[_\W]*$', '', line) for line in list2]            # <remove spurious price filter />
+list2 = [re.sub(r'^[_\W]?process[_\W]*$', '', line) for line in list2]          # <remove spurious process filter />
 list2 = [re.sub(r'^[_\W]?prod(uct(ion)?s?)?[_\W]*$', '', line) for line in list2]     # <remove spurious prod(uct(ion)(s)) filter />
 list2 = [re.sub(r'^[_\W]?profile[_\W]*$', '', line) for line in list2]          # <remove spurious profile filter />
 list2 = [re.sub(r'^[_\W]?projects?[_\W]*$', '', line) for line in list2]        # <remove spurious project(s) filter />
