@@ -170,7 +170,6 @@
 *$removeparam=/ctier/,important
 *$removeparam=/dci/,important
 *$removeparam=/detect/,important
-*$removeparam=/embargoed/*
 *$removeparam=/event/*
 *$removeparam=/exotra?ck/,important
 *$removeparam=/experiment/,important
@@ -186,7 +185,7 @@
 *$removeparam=/initgoogle/,important
 *$removeparam=/keepalive/*
 *$removeparam=/metric/i
-*$removeparam=/mgte/,important
+*$removeparam=/mgte/*
 *$removeparam=/mtm/,important
 *$removeparam=/offer/,important
 *$removeparam=/oft/,important
@@ -200,7 +199,6 @@
 *$removeparam=/qoe/,important
 *$removeparam=/redir/*
 *$removeparam=/registration/,important
-*$removeparam=/reload/,important
 *$removeparam=/rotat/,important
 *$removeparam=/safari/,important
 *$removeparam=/sponsor/,important
@@ -1446,7 +1444,6 @@
 /[_\W]ipsos[_\W]/
 /[_\W]joly[-~\w\.]*\.js(on)?/
 /[_\W]journey[-~\w\.]*\.js(on)?/
-/[_\W]kaltura[-~\w\.]*\.js(on)?/
 /[_\W]landing[-~\w\.]*\.js(on)?/
 /[_\W]latest[-~\w\.]*\.js(on)?/
 /[_\W]layer[-~\w\.]*\.js(on)?/
@@ -1578,6 +1575,7 @@
 /[_\W]test[_\W]/
 /[_\W]tg\-[-~\w\.]*\.js(on)?/
 /[_\W]timming[-~\w\.]*\.js(on)?/
+/[_\W]tmgrefresh[-~\w\.]*\.js(on)?/
 /[_\W]tra?ck$/$important
 /[_\W]tra?ck[_\W]/$important
 /[_\W]track[-~\w\.]*\.js(on)?/
@@ -1615,7 +1613,6 @@
 /[_\W]wow[-~\w\.]*\.js(on)?/
 /[_\W]wpp[-~\w\.]*\.js(on)?/
 /[_\W]xn\-\-/$important
-/[_\W]zeotap[-~\w\.]*\.js(on)?/
 /[_\W]zephr[-~\w\.]*\.js(on)?/
 /^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/
 /_6eitxwuyom
@@ -6047,7 +6044,6 @@
 /customadmode.
 /customads/*
 /customadsense.
-/customer/*
 /customer_code.js
 /customer_image_service
 /customerad_
@@ -11878,7 +11874,6 @@
 /monetization.
 /monetization/legacy-pixels/*
 /money.js
-/money/*
 /mongoose.
 /mongoose.fp.js
 /monitoring
@@ -13141,7 +13136,6 @@
 /particles-sel.
 /particles-sel.js
 /particles.min.js
-/particles/*
 /partn.
 /partner
 /partner-
@@ -15125,7 +15119,6 @@
 /rss-file.
 /rss-files.
 /rss-rasa.
-/rss_
 /rss_news.
 /rssfeed.
 /rssi/*
@@ -19913,7 +19906,7 @@
 /zen_init.min.js
 /zenk8wby
 /zentv-300-2.
-/zeotap$important
+/zeotap/$important
 /zephyr.js
 /zepto-lie.js
 /zerg-inf-
@@ -29748,8 +29741,6 @@ kalikaas.
 kalo.
 kalo.onvid.
 kalooga.
-kaltura
-kaltura$important
 kalyan1-
 kamarjudi.
 kameleoon
@@ -31459,7 +31450,6 @@ monetiz$important
 monetization.min.js
 monetizer
 monetizer_
-money
 money.js
 money4exit.
 money?date
@@ -34846,7 +34836,6 @@ rso.js
 rss-file.
 rss-files.
 rss-rasa.
-rss_
 rss_news.
 rssfeed.
 rstat
@@ -40075,8 +40064,6 @@ zendesk.
 zenfield.
 zenk8wby
 zentv-300-2.
-zeotap$important
-zeotap.
 zephyr.js
 zepto-lie.js
 zerg-inf-
