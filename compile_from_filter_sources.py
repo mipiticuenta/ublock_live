@@ -499,6 +499,7 @@ list2 = [re.sub(r'^[_\W]?basic[_\W]*$', '', line) for line in list2]            
 list2 = [re.sub(r'^[_\W]?batch[_\W]*$', '', line) for line in list2]            # <remove spurious batch filter />
 list2 = [re.sub(r'^[_\W]?bbc[_\W]*$', '', line) for line in list2]              # <remove spurious bbc filter />
 list2 = [re.sub(r'^[_\W]?bcn[_\W]*$', '', line) for line in list2]              # <remove spurious bcn filter />
+list2 = [re.sub(r'^[_\W]?below[_\W]*$', '', line) for line in list2]            # <remove spurious below filter />
 list2 = [re.sub(r'^[_\W]?beta[_\W]*$', '', line) for line in list2]             # <remove spurious beta filter />
 list2 = [re.sub(r'^[_\W]?bi[g|n][_\W]*$', '', line) for line in list2]          # <remove spurious bi(g|n) filter />
 list2 = [re.sub(r'^[_\W]?billboard[_\W]*$', '', line) for line in list2]        # <remove spurious billboard filter />
