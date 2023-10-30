@@ -2,6 +2,7 @@
 ! expires: 1 day
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list
 ! title: regex block list
+.*/1x/.*
 .*/\?\?\-.*
 .*/js/th/.*
 .*[_\W](fast)?cli?cks?[_\W].*
@@ -134,7 +135,6 @@
 .*[_\W]ga[_\W][-~\w\.]*\.js(on)?.*
 .*[_\W]gads[_\W].*
 .*[_\W]gdpr[_\W].*
-.*[_\W]gen(erate)?.?204[_\W].*
 .*[_\W]geo[-~\w\.]*\.js(on)?.*
 .*[_\W]geo[_\W].*
 .*[_\W]gfg[-~\w\.]*\.js(on)?.*
@@ -341,6 +341,7 @@
 .*[_\W]xn\-\-.*
 .*[_\W]zephr[-~\w\.]*\.js(on)?.*
 .*^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?.*
+.*ad_break.*
 .*advinion.*
 .*algolia.*
 .*browser.?info.*
@@ -353,6 +354,7 @@
 .*experiment.*flag.*
 .*faceboo?k.*
 .*fuckfuckadblock.*
+.*gen(erate)?.?204.*
 .*geo.?ip.*
 .*geo.?location.*
 .*helper[-~\w\.]*\.js(on)?.*
@@ -363,6 +365,7 @@
 .*parsely.*
 .*pre.?bid.*
 .*pre.?roll.*
+.*qoe\?.*
 .*service.?worker.*
 .*sharing[-~\w\.]*\.js(on)?.*
 .*smarttag.*
@@ -370,6 +373,7 @@
 .*stub[-~\w\.]*\.js(on)?.*
 .*stub[_\W].*
 .*textad.*
+.*timedtext\?.*
 .*uc\?export=.*
 .*uc\?id=.*
 .*zeotap.*
