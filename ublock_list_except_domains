@@ -170,7 +170,7 @@
 *$removeparam=/ctier/,important
 *$removeparam=/dci/,important
 *$removeparam=/detect/,important
-*$removeparam=/embargoed/,important
+*$removeparam=/embargoed/*
 *$removeparam=/event/,important
 *$removeparam=/exotra?ck/,important
 *$removeparam=/experiment/,important
@@ -184,7 +184,7 @@
 *$removeparam=/hsa/,important
 *$removeparam=/impress/,important
 *$removeparam=/initgoogle/,important
-*$removeparam=/keepalive/,important
+*$removeparam=/keepalive/*
 *$removeparam=/metric/i
 *$removeparam=/mgte/,important
 *$removeparam=/mtm/,important
@@ -1308,7 +1308,7 @@
 /[_\W]adse?rv/
 /[_\W]adsense[_\W]/
 /[_\W]adslot[_\W]/
-/[_\W]adunits?[_\W]/$important
+/[_\W]adunits?[_\W]/
 /[_\W]adv(erts?)?(isement)?[_\W]/
 /[_\W]adwords?[-~\w\.]*\.js(on)?/
 /[_\W]aff[-~\w\.]*\.js(on)?/
@@ -1410,7 +1410,7 @@
 /[_\W]ga[_\W][-~\w\.]*\.js(on)?/
 /[_\W]gads[_\W]/
 /[_\W]gdpr[_\W]/
-/[_\W]gen.?204[_\W]/$important
+/[_\W]gen(erate)?.?204[_\W]/
 /[_\W]geo[-~\w\.]*\.js(on)?/
 /[_\W]geo[_\W]/
 /[_\W]gfg[-~\w\.]*\.js(on)?/
@@ -1502,7 +1502,7 @@
 /[_\W]policy[_\W]/
 /[_\W]poll[-~\w\.]*\.js(on)?/
 /[_\W]polyfill[-~\w\.]*\.js(on)?/
-/[_\W]polyfill[_\W]/
+/[_\W]polyfills?[_\W]/
 /[_\W]popp?er[_\W]/
 /[_\W]popu?nder[_\W]/
 /[_\W]popup[_\W]/
@@ -8134,7 +8134,6 @@
 /generali_236x60_new.
 /generalinew.
 /generalinis_kas.
-/generate_204$important
 /generateadimage
 /generateads.
 /generateadtag.
@@ -27430,7 +27429,6 @@ genads.
 general_sts.js
 generalback-
 generalinis_kas.
-generate_204$important
 generateadimage
 generateads.
 generateadtag.
