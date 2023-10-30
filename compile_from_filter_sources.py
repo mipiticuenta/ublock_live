@@ -542,6 +542,7 @@ list2 = [re.sub(r'^[_\W]?com[_\W]*$', '', line) for line in list2]              
 list2 = [re.sub(r'^[_\W]?config[_\W]*$', '', line) for line in list2]           # <remove spurious config filter />
 list2 = [re.sub(r'^[_\W]?connect[_\W]*$', '', line) for line in list2]          # <remove spurious connect filter />
 list2 = [re.sub(r'^[_\W]?conte[nx]t[_\W]*$', '', line) for line in list2]       # <remove spurious conte(n|x)t filter />
+list2 = [re.sub(r'^[_\W]?control[_\W]*$', '', line) for line in list2]          # <remove spurious control filter />
 list2 = [re.sub(r'^[_\W]?copy[_\W]*$', '', line) for line in list2]             # <remove spurious copy filter />
 list2 = [re.sub(r'^[_\W]?core[_\W]*$', '', line) for line in list2]             # <remove spurious core filter />
 list2 = [re.sub(r'^[_\W]?cps[_\W]*$', '', line) for line in list2]              # <remove spurious cps filter />
