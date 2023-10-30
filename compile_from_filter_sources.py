@@ -625,6 +625,7 @@ list2 = [re.sub(r'^[_\W]?init[_\W]*$', '', line) for line in list2]             
 list2 = [re.sub(r'^[_\W]?inner[_\W]*$', '', line) for line in list2]            # <remove spurious inner filter />
 list2 = [re.sub(r'^[_\W]?inline[_\W]*$', '', line) for line in list2]           # <remove spurious inline filter />
 list2 = [re.sub(r'^[_\W]?(in|out)put[_\W]*$', '', line) for line in list2]      # <remove spurious (in|out)put filter />
+list2 = [re.sub(r'^[_\W]?intro[_\W]*$', '', line) for line in list2]            # <remove spurious intro filter />
 list2 = [re.sub(r'^[_\W]?instagram[_\W]*$', '', line) for line in list2]        # <remove spurious instagram filter />
 list2 = [re.sub(r'^[_\W]?instant[_\W]*$', '', line) for line in list2]          # <remove spurious instant filter />
 list2 = [re.sub(r'^[_\W]?inter[_\W]*$', '', line) for line in list2]            # <remove spurious inter filter />
