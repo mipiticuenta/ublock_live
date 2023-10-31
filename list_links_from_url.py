@@ -28,7 +28,7 @@ print(
 )
 
 file1_out_name = 'hrefs_found'
-proxy_servers  = {'https': 'http://fw:8080'}
+proxy_servers  = {'https': 'http://fw:8080', 'https': ''}
 
 # </settings>
 
