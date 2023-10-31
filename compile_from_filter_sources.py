@@ -1,5 +1,5 @@
 '''
-Compile a single deduplicated lock list from url sources
+Compile a single deduplicated block list from url sources
 '''
 
 # <product backlog>
