@@ -554,6 +554,7 @@ list2 = [re.sub(r'^[_\W]?css[_\W]*$', '', line) for line in list2]              
 list2 = [re.sub(r'^[_\W]?cta[_\W]*$', '', line) for line in list2]              # <remove spurious cta filter />
 list2 = [re.sub(r'^[_\W]?currency[_\W]*$', '', line) for line in list2]         # <remove spurious currency filter />
 list2 = [re.sub(r'^[_\W]?customer[_\W]*$', '', line) for line in list2]         # <remove spurious custormer filter />
+list2 = [re.sub(r'^[_\W]?daily[_\W]*$', '', line) for line in list2]            # <remove spurious daily filter />
 list2 = [re.sub(r'^[_\W]?data[_\W]*$', '', line) for line in list2]             # <remove spurious data filter />
 list2 = [re.sub(r'^[_\W]?default[_\W]*$', '', line) for line in list2]          # <remove spurious default filter />
 list2 = [re.sub(r'^[_\W]?delivery[_\W]*$', '', line) for line in list2]         # <remove spurious delivery filter />
