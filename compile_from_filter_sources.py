@@ -85,7 +85,6 @@ for line in list1 :
 
 # <segregate regex filters>
 
-#list5 = [line for line in list2 if re.search(r'^/.+/(\$important)?$', line) and re.search(r'[\.\?\[\(\\]', line)]
 list5 = [line for line in list2 if re.search(r'^/.+/(\$important)?$', line)]
 list2  = set(list2) - set(list5)
 
@@ -1130,5 +1129,3 @@ print(
 )
 
 # </write extracted filters except domains />
-
-
