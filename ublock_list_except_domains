@@ -421,7 +421,6 @@
 -klik66-728.
 -klikqq-728-
 -klikqq-728.
--leaderboard.
 -lexabet.
 -liga99-728-
 -liga99-728.
@@ -1303,6 +1302,7 @@
 /[_\W]adfuel[-~\w\.]*\.js(on)?/
 /[_\W]adops?[_\W]/
 /[_\W]ads?[_\W]/
+/[_\W]adsbygoogle[_\W]/
 /[_\W]adse?rv/
 /[_\W]adsense[_\W]/
 /[_\W]adslot[_\W]/
@@ -1481,10 +1481,12 @@
 /[_\W]onesignal[-~\w\.]*\.js(on)?/
 /[_\W]onesignal[_\W]/
 /[_\W]onetap[-~\w\.]*\.js(on)?/
+/[_\W]onion[-~\w\.]*\.js(on)?/
 /[_\W]onwards?[-~\w\.]*\.js(on)?/
 /[_\W]optanon[_\W]/
 /[_\W]optimize[-~\w\.]*\.js(on)?/
 /[_\W]osano[-~\w\.]*\.js(on)?/
+/[_\W]overlay[-~\w\.]*\.js(on)?/
 /[_\W]partner[-~\w\.]*\.js(on)?/
 /[_\W]pbjs[-~\w\.]*\.js(on)?/
 /[_\W]perform[-~\w\.]*\.js(on)?/
@@ -1548,6 +1550,7 @@
 /[_\W]socials?[_\W]/
 /[_\W]socy[^a-z]/
 /[_\W]sonar[-~\w\.]*\.js(on)?/
+/[_\W]spf[-~\w\.]*\.js(on)?/
 /[_\W]sphinxs[-~\w\.]*\.js(on)?/
 /[_\W]spm[-~\w\.]*\.js(on)?/
 /[_\W]spm\.([-~\w\.]*\.)?js(on)?/
@@ -1593,6 +1596,7 @@
 /[_\W]underscore[-~\w\.]*\.js(on)?/
 /[_\W]underscore[_\W]/
 /[_\W]unique(.?id)?[-~\w\.]*\.js(on)?/
+/[_\W]url[-~\w\.]*\.js(on)?/
 /[_\W]user.?info[_\W]/$important
 /[_\W]user[-~\w\.]*\.js(on)?/
 /[_\W]utms?[_\W]/$important
@@ -1614,6 +1618,7 @@
 /[_\W]wpp[-~\w\.]*\.js(on)?/
 /[_\W]xn\-\-/$important
 /[_\W]zephr[-~\w\.]*\.js(on)?/
+/[_\W]zepto[-~\w\.]*\.js(on)?/
 /^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/
 /_6eitxwuyom
 /__botcheck
@@ -1799,7 +1804,6 @@
 /abnormal.
 /abo-direkt/*
 /abonnez-vous-
-/about/*
 /abp-filters-anti-cv.txt
 /abp.js
 /abp/*
@@ -2647,8 +2651,6 @@
 /adsbox.
 /adsbpuda
 /adsby.
-/adsbygoogle-
-/adsbygoogle.j
 /adsbypfmnt.
 /adsbyskyline.
 /adscache.
@@ -3375,6 +3377,7 @@
 /aliyun
 /aliyun-
 /all-for-kompa-guest.js
+/all-js
 /all-top.js
 /all/gft/*
 /all_css.js
@@ -9737,7 +9740,6 @@
 /inf
 /inf.js
 /infb.
-/infinity.
 /infinity.js
 /info-user-session$important
 /info.js
@@ -10727,10 +10729,6 @@
 /le_unified_window/*
 /leadboxes
 /leaderad.
-/leaderboard
-/leaderboard-
-/leaderboard.
-/leaderboard_
 /leaderboardad.
 /leaderboardads.
 /leaderbord
@@ -12902,7 +12900,6 @@
 /outwebad
 /ov.js
 /overall_header_iframe.
-/overlay.js
 /overlayad
 /overlayad.
 /overlayads.
@@ -14763,7 +14760,6 @@
 /remotetrack
 /remotevisit.
 /remove/*
-/remove_url.js
 /remplib.js
 /remxcvxkeozodickpenis.bin
 /ren.
@@ -16446,7 +16442,6 @@
 /speedqueen.
 /speedtrapinsert.
 /spell.js
-/spf.js
 /sphere
 /sphinx_
 /spi.
@@ -18250,15 +18245,10 @@
 /urdev.js
 /urgent/1/*
 /url-coin
-/url-open.js
-/url.
-/url.js
 /urlcheck
 /urldynamik/*
 /urlreplacer
 /urlreplacer-fc.
-/urlshortener.js
-/urlshortener.min.js
 /us-travels-1.
 /us/google/*
 /usa_250_120.
@@ -18544,7 +18534,6 @@
 /videoheartbeat.
 /videojs-contrib.min.js
 /videojs-kwikstat.min.js
-/videojs-overlay.js
 /videojs-share.
 /videojs-vast-vpaid-waterfall.
 /videojs.adss.
@@ -19764,7 +19753,6 @@
 /youtube-custom.
 /youtube-follow.
 /youtube-home.
-/youtube-logo-
 /youtube-over.
 /youtube-small.
 /youtube-space.
@@ -19899,7 +19887,6 @@
 /zentv-300-2.
 /zeotap/$important
 /zephyr.js
-/zepto-lie.js
 /zerg-inf-
 /zerg-inf-multi
 /zerg-inf-multi.js
@@ -21446,9 +21433,6 @@ adsbanner_
 adsbox.
 adsbpuda
 adsby.
-adsbygoogle-
-adsbygoogle.js
-adsbygoogle.min.js
 adsbypfmnt.
 adsbyskyline.
 adsbyso.js
@@ -28994,7 +28978,6 @@ inetlog.
 inextmovies.
 inf.js
 infb.
-infinity.
 infinity.js
 infisecure.
 info-user-session$important
@@ -30160,10 +30143,6 @@ lead_custom.
 leadboxes
 leaddyno-client-images.
 leaderad.
-leaderboard
-leaderboard-
-leaderboard.
-leaderboard_
 leaderboardad.
 leaderboardads.
 leaderbord
@@ -32631,7 +32610,6 @@ outwebad
 ov.js
 overflow-hidden
 overlay-content
-overlay.js
 overlayad
 overlayads.
 overlayshare
@@ -34492,7 +34470,6 @@ remotemodulestrack
 remotetargetingservice.
 remotetrack
 remotevisit.
-remove_url.js
 rempko.
 remplib.js
 ren.
@@ -38213,8 +38190,6 @@ urchin.js
 urchinstats.
 urdev.js
 url-coin
-url-open.js
-url.js
 url.rw*&a
 url.rw*&mid
 urlcash.
@@ -38222,7 +38197,6 @@ urlcero.
 urlcheck
 urlreplacer
 urlreplacer-fc.
-urlshortener.js
 urlty.
 urnawareflan.
 urnkawsxxh.
@@ -38508,8 +38482,6 @@ videojs.adss.
 videojs.ima.
 videojs.sda.
 videopcads
-videoplayer
-videoplayer.
 videoplayer.js
 videoplayerhub.
 videopress
@@ -40046,7 +40018,6 @@ zenfield.
 zenk8wby
 zentv-300-2.
 zephyr.js
-zepto-lie.js
 zerg-inf-
 zerg-inf-multi
 zerg-inf-multi.js
