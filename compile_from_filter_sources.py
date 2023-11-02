@@ -760,6 +760,7 @@ list2 = [re.sub(r'^[_\W]?render(er)?[_\W]*$', '', line) for line in list2]      
 list2 = [re.sub(r'^[_\W]?request[_\W]*$', '', line) for line in list2]          # <remove spurious request filter />
 list2 = [re.sub(r'^[_\W]?resources?[_\W]*$', '', line) for line in list2]       # <remove spurious resource(s) filter />
 list2 = [re.sub(r'^[_\W]?right[_\W]*$', '', line) for line in list2]            # <remove spurious right filter />
+list2 = [re.sub(r'^[_\W]?rokbox[_\W]*$', '', line) for line in list2]           # <remove spurious rokbox filter />
 list2 = [re.sub(r'^[_\W]?rotate[_\W]*$', '', line) for line in list2]           # <remove spurious rotate filter />
 list2 = [re.sub(r'^[_\W]?rss[_\W]*$', '', line) for line in list2]              # <remove spurious rss filter />
 list2 = [re.sub(r'^[_\W]?samsung[_\W]*$', '', line) for line in list2]          # <remove spurious samsung filter />
