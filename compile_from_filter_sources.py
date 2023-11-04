@@ -303,6 +303,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.]?files?\*?(?=[/\.])', '', line) for line in list2]  # <remove leading file(s) />
     list2 = [re.sub(r'^[/\.]?forum\*?(?=[/\.])', '', line) for line in list2]   # <remove leading forum />
     list2 = [re.sub(r'^[/\.]?home?\*?(?=[/\.])', '', line) for line in list2]   # <remove leading home />
+    list2 = [re.sub(r'^[/\.]?html?\*?(?=[/\.])', '', line) for line in list2]   # <remove leading html />
     list2 = [re.sub(r'^[/\.]?ima?ge?(ne)?s?\*?(?=[/\.])', '', line) for line in list2]  # <remove leading image />
     list2 = [re.sub(r'^[/\.]?jquery\*?(?=[/\.])', '', line) for line in list2]  # <remove leading jquery />
     list2 = [re.sub(r'^[/\.]?js\*?(?=[/\.])', '', line) for line in list2]      # <remove leading js />
@@ -609,6 +610,7 @@ list2 = [re.sub(r'^[_\W]?export[_\W]*$', '', line) for line in list2]           
 list2 = [re.sub(r'^[_\W]?express[_\W]*$', '', line) for line in list2]          # <remove spurious express filter />
 list2 = [re.sub(r'^[_\W]?ext(ernal)?[_\W]*$', '', line) for line in list2]      # <remove spurious ext(ernal) filter />
 list2 = [re.sub(r'^[_\W]?extras?[_\W]*$', '', line) for line in list2]          # <remove spurious extra(s)filter />
+list2 = [re.sub(r'^[_\W]?fab[_\W]*$', '', line) for line in list2]              # <remove spurious fab filter />
 list2 = [re.sub(r'^[_\W]?fancybox[_\W]*$', '', line) for line in list2]         # <remove spurious fancybox filter />
 list2 = [re.sub(r'^[_\W]?favicon(\.ico)?[_\W]*$', '', line) for line in list2]  # <remove spurious favicon(.ico) filter />
 list2 = [re.sub(r'^[_\W]?feed(back)[_\W]*$', '', line) for line in list2]       # <remove spurious feed(back) filter />
@@ -696,6 +698,7 @@ list2 = [re.sub(r'^[_\W]?menu[_\W]*$', '', line) for line in list2]             
 list2 = [re.sub(r'^[_\W]?message[_\W]*$', '', line) for line in list2]          # <remove spurious message filter />
 list2 = [re.sub(r'^[_\W]?meteoblue[_\W]*$', '', line) for line in list2]        # <remove spurious meteoblue filter />
 list2 = [re.sub(r'^[_\W]?microsoft[_\W]*$', '', line) for line in list2]        # <remove spurious microsoft filter />
+list2 = [re.sub(r'^[_\W]?middle[_\W]*$', '', line) for line in list2]           # <remove spurious middle filter />
 list2 = [re.sub(r'^[_\W]?mini[_\W]*$', '', line) for line in list2]             # <remove spurious mini filter />
 list2 = [re.sub(r'^[_\W]?misc[_\W]*$', '', line) for line in list2]             # <remove spurious misc filter />
 list2 = [re.sub(r'^[_\W]?mobile[_\W]*$', '', line) for line in list2]           # <remove spurious mobile filter />
@@ -802,6 +805,7 @@ list2 = [re.sub(r'^[_\W]?studio[_\W]*$', '', line) for line in list2]           
 list2 = [re.sub(r'^[_\W]?styles?[_\W]*$', '', line) for line in list2]          # <remove spurious style(s) filter />
 list2 = [re.sub(r'^[_\W]?support[_\W]*$', '', line) for line in list2]          # <remove spurious support filter />
 list2 = [re.sub(r'^[_\W]?sustainability[_\W]*$', '', line) for line in list2]   # <remove spurious sustainability filter />
+list2 = [re.sub(r'^[_\W]?svc[_\W]*$', '', line) for line in list2]              # <remove spurious svc filter />
 list2 = [re.sub(r'^[_\W]?tab[_\W]*$', '', line) for line in list2]              # <remove spurious tab filter />
 list2 = [re.sub(r'^[_\W]?te?xt[_\W]*$', '', line) for line in list2]            # <remove spurious t(e)xt filter />
 list2 = [re.sub(r'^[_\W]?teaser[_\W]*$', '', line) for line in list2]           # <remove spurious teaser filter />
@@ -817,6 +821,7 @@ list2 = [re.sub(r'^[_\W]?touch[_\W]*$', '', line) for line in list2]            
 list2 = [re.sub(r'^[_\W]?tr(ai)?[_\W]*$', '', line) for line in list2]          # <remove spurious tr(ai) filter />
 list2 = [re.sub(r'^[_\W]?tree[_\W]*$', '', line) for line in list2]             # <remove spurious tree filter />
 list2 = [re.sub(r'^[_\W]?twitter[_\W]*$', '', line) for line in list2]          # <remove spurious twitter filter />
+list2 = [re.sub(r'^[_\W]?unblock[_\W]*$', '', line) for line in list2]          # <remove spurious unblock filter />
 list2 = [re.sub(r'^[_\W]?une[_\W]*$', '', line) for line in list2]              # <remove spurious une filter />
 list2 = [re.sub(r'^[_\W]?unique[_\W]*$', '', line) for line in list2]           # <remove spurious unique filter />
 list2 = [re.sub(r'^[_\W]?url[_\W]*$', '', line) for line in list2]              # <remove spurious url filter />
