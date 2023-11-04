@@ -289,7 +289,6 @@
 -adspace.
 -adspromo.
 -adtrack
--advertising_
 -advertisment-
 -advt-
 -advt.
@@ -328,7 +327,6 @@
 -btn-rss
 -btn-skip
 -btn-youtube
--campaign_
 -cantikqq-728-
 -cantikqq-728.
 -capsa365-
@@ -645,7 +643,6 @@
 .browser-fingerprint-
 .bzshare.
 .bztotalshare.
-.campaignsfileloaded
 .cash
 .cfd
 .clickafiliados.
@@ -658,6 +655,8 @@
 .company
 .coo-kie.js
 .counters.
+.css$script,important
+.css$xhr,important
 .cyou
 .dating
 .directpubs.
@@ -776,7 +775,6 @@
 .supply
 .supportus.js
 .suslider.js
-.svc
 .swf?*&link1
 .swf?alink
 .swf?data
@@ -797,7 +795,6 @@
 .tizer-
 .tizermedia.
 .tizers.
-.toroadvertising.
 .trackstar.
 .trackview.
 .truexrenderer.js
@@ -1325,6 +1322,7 @@
 /[_\W]assoc[-~\w\.]*\.js(on)?/
 /[_\W]audience[-~\w\.]*\.js(on)?/
 /[_\W]auto.?complete[-~\w\.]*\.js(on)?/
+/[_\W]auto.?optimize[-~\w\.]*\.js(on)?/
 /[_\W]bann?i?ere?s?/$important
 /[_\W]beacons?[_\W]/
 /[_\W]beam[-~\w\.]*\.js(on)?/
@@ -1349,6 +1347,7 @@
 /[_\W]cludo[^a-z]/
 /[_\W]cmp[_\W]/$important
 /[_\W]cmpsp[_\W]/$important
+/[_\W]cms[_\W]/
 /[_\W]cnil[_\W]/
 /[_\W]commercial[-~\w\.]*\.js(on)?/
 /[_\W]companion[-~\w\.]*\.js(on)?/
@@ -1372,6 +1371,7 @@
 /[_\W]dasf[-~\w\.]*\.js(on)?/
 /[_\W]deal[-~\w\.]*\.js(on)?/
 /[_\W]decode[-~\w\.]*\.js(on)?/
+/[_\W]desktop[-~\w\.]*\.js(on)?/
 /[_\W]detail[-~\w\.]*\.js(on)?/
 /[_\W]detect.?view[_\W]/$important
 /[_\W]detect[-~\w\.]*\.js(on)?/
@@ -1388,6 +1388,7 @@
 /[_\W]donat[-~\w\.]*\.js(on)?/
 /[_\W]donate[_\W]/
 /[_\W]drivek[-~\w\.]*\.js(on)?/
+/[_\W]ebx.*\.js(on)?/
 /[_\W]eloqua[_\W]/
 /[_\W]email.?decode[_\W]/
 /[_\W]eventlog[_\W]/
@@ -1436,6 +1437,7 @@
 /[_\W]inline[-~\w\.]*\.js(on)?/
 /[_\W]inner.?host[-~\w\.]*\.js(on)?/
 /[_\W]inner[-~\w\.]*\.js(on)?/
+/[_\W]insight[-~\w\.]*\.js(on)?/
 /[_\W]instant.?page[-~\w\.]*\.js(on)?/
 /[_\W]interstitial[-~\w\.]*\.js(on)?/
 /[_\W]ip.?check[-~\w\.]*\.js(on)?/
@@ -3021,16 +3023,7 @@
 /advertiserv2/*
 /advertiserwidget.
 /advertises/*
-/advertising
-/advertising-block.
-/advertising-core/*
-/advertising/*
-/advertising2.
-/advertisingbanner.
-/advertisingbanners/*
-/advertisingbynewindex_
-/advertisingmodule.
-/advertisingview
+/advertising/$important
 /advertisment-
 /advertisment.
 /advertisment/*
@@ -3454,7 +3447,6 @@
 /amazon.svg
 /amazon234x60_
 /amazon_products_prod.js
-/amazon_widget.cms?type=amazondeal
 /amazonaffiliate-
 /amazonaffiliate.
 /amazonproducts.
@@ -3841,7 +3833,6 @@
 /asp_
 /aspbanner
 /aspixel.js
-/asrv/campaign/*
 /ass
 /assets-components/partenaires/*
 /assets8/js/*
@@ -3957,9 +3948,6 @@
 /autopromo.
 /autopromo/*
 /autopromotion.
-/autoptimize/js/*
-/autoptimize_
-/autoptimize_single_
 /autosda.
 /autosurf
 /autosurf-promotion/*
@@ -4456,6 +4444,7 @@
 /bgout.php?id
 /bgp57cw4
 /bgrd.
+/bgs/*
 /bgtop4.
 /bharat-masala
 /bhob
@@ -4584,7 +4573,6 @@
 /blockadblock
 /blockadblock-
 /blockadblock.
-/blockadvertising/*
 /blockandinf.
 /blockandinf.js
 /blockblock.
@@ -5027,8 +5015,6 @@
 /bvwfncew
 /bwin
 /bwsocialicons.
-/bww-advertising
-/bww-wp-advertising
 /bx-abd.js
 /bx/*
 /bx_stat
@@ -5103,13 +5089,7 @@
 /campagne/*
 /campagne/redir/*
 /campagnes/*
-/campaign-manager-client/*
-/campaign/*
-/campaignpost
-/campaignpost/reg/*
-/campaigns.
-/campaigns/*
-/campaigns/covering/*
+/campaign/$important
 /campub/*
 /cams/*
 /camstats.js
@@ -5163,7 +5143,6 @@
 /cari/daybanner/*
 /carousel/*
 /carouselads.
-/carrefour-desktop.js
 /carrepubhome.
 /carsadtaggenerator.
 /carsc.js
@@ -5554,16 +5533,6 @@
 /cmpn_async.
 /cmpui-
 /cmpui.
-/cms
-/cms-gg.
-/cms-gg.js
-/cms.
-/cms/10000/*
-/cms/stats/*
-/cms/topbanner/*
-/cms/werbung/*
-/cms_
-/cms_media/module_wb/*
 /cmslead_new.v2.js
 /cmslog.
 /cmslog.dll
@@ -6265,13 +6234,11 @@
 /deliverjs.
 /deliversds.
 /deliverx/*
-/delivery*&campaignid
 /delivery*&zoneid
 /delivery.js
 /delivery.php?pool_id
 /delivery.php?rnd
 /delivery.php?zone
-/delivery/*&campaignid
 /delivery/*&zoneid
 /delivery/jsonp/?zoneid
 /delivery/rta/*
@@ -6304,10 +6271,8 @@
 /design/partner/*
 /design_framework/images/crazy/affiliates/*
 /designil-pdpa/*
-/desktop.min.js
 /desktop/aliens/*
 /desktop_kannada-min.webp
-/desktopmediamanager.js
 /destination-sync.
 /detailright.
 /detales2.
@@ -6860,7 +6825,6 @@
 /easyad.js
 /easyad2.js
 /easyads
-/easyadvertising/*
 /easyazon-
 /easypicads.js
 /eatms.
@@ -6883,7 +6847,6 @@
 /ebm-300x250.
 /ebooks.
 /ebs_show.
-/ebx.js
 /ec-discuss-widget.
 /ec5bcb7487ff.js
 /ec_adalt
@@ -7033,6 +6996,7 @@
 /emasbet.
 /embd.php?type
 /embed*?stat
+/embed-player/dist/index.html?partner
 /embed.js
 /embed.min.js
 /embed/*?stat
@@ -7145,14 +7109,12 @@
 /eribi.js
 /erjiadv.
 /ero-
-/ero-advertising.
 /ero.
 /ero_
 /eroad
 /eroad.
 /eroad2.
 /eroads.
-/eroadvertising.
 /erobanner.
 /eroru/*
 /eros.
@@ -7378,7 +7340,6 @@
 /fa9yi.js
 /faaa/*
 /fab.min.js
-/fab_
 /facash.
 /face.
 /facebkiconnet/*
@@ -7431,9 +7392,7 @@
 /fbcirclebtn.
 /fbcounter/*
 /fbds.js
-/fbevents-amd.js
-/fbevents.js
-/fbevents.min.js
+/fbevent/$important
 /fbfooter.
 /fbimage.
 /fbk.
@@ -8210,7 +8169,6 @@
 /getadv.
 /getadvert
 /getadvertise
-/getadvertisingleft
 /getadvertisment
 /getadverts
 /getaliyunadv.
@@ -8382,7 +8340,6 @@
 /ggzx/*
 /gh/91porny/*
 /gh/a901361/*
-/gh/interactiveadvertisingbureau/*
 /gh/sex169hub/*
 /gh/te89899/*
 /gh/yaociyuan/*
@@ -9128,11 +9085,6 @@
 /hstrck-
 /hstrck-detect.
 /ht.js
-/html.ng/*
-/html/bans/*
-/html/embed-player/dist/index.html?partner
-/html/img/bgs/*
-/html/js/*
 /html5
 /html5.js
 /html5/*
@@ -9424,7 +9376,6 @@
 /ilabspush.
 /ilike/597/*
 /iliustracijos/skelbimu_logotipai/ban/*
-/illustrations/campaigns/*
 /ilmugendam.
 /ilpost.
 /ilsqd81v
@@ -9674,7 +9625,6 @@
 /include/show.asp?boardid
 /include_name.js
 /includes/adds/*
-/includes/javascript/advertising/*
 /includes/js/rotator/*
 /includes/scripts/*
 /includes/shoppable-images/*
@@ -9697,7 +9647,6 @@
 /index.php?m=games&c=index&a=ztad
 /index.php?m=poster
 /index.php?option=com_content&view=article&id
-/index.php?page=advertisingpage
 /index.php?ukey=product_widget
 /index.php?wi=*&ws
 /index.s.
@@ -9833,8 +9782,6 @@
 /inside15.
 /inside_2075-4-15.
 /insidead.
-/insight.
-/insight.js
 /insight_web.
 /insights-emitter
 /insights/*
@@ -10232,7 +10179,6 @@
 /jquery-ui.js
 /jquery1.min.js
 /jquery6.min.js
-/jqueryadvertising.
 /jqueryetrack
 /jquerygg.js
 /jquerymin
@@ -10767,7 +10713,6 @@
 /legagnant250.
 /legendpoker-
 /legends11_
-/legion-advertising-atlasastro/*
 /legrand.
 /lele.
 /lele36.
@@ -11608,6 +11553,7 @@
 /mf.swf
 /mfad/*
 /mfc/*
+/mfe-universal-ui/*
 /mfp2wlxw
 /mft/capcode/*
 /mftracker/*
@@ -11657,8 +11603,6 @@
 /midad.js
 /midadvertise
 /midadvertise/*
-/middle
-/middle.
 /middleads.
 /midroll
 /midroll.
@@ -11694,11 +11638,8 @@
 /miniadvert.
 /minibanner
 /minibanner_
-/minicampaigns/*
 /minicounter
 /minified-video.js
-/minify-1.cms
-/minime/de/index.php?partner=*&campaign
 /mining.
 /minisiteinfo/*
 /ministore/*
@@ -12113,7 +12054,6 @@
 /nativeads/*
 /nativeads_
 /nativeads_v2_
-/nativeadvertising/*
 /nativeexternal/*
 /nativendo.
 /nativendo.js
@@ -12299,7 +12239,6 @@
 /newsletter-bkg.
 /newsletter-box-
 /newsletter-button.
-/newsletter-campaign-manager/*
 /newsletter-header.
 /newsletter-hover/*
 /newsletter-inline.
@@ -12586,7 +12525,6 @@
 /oasadframe
 /oasadfunction
 /oascache
-/oascampaign
 /oascentral
 /oascentral.
 /oascentral/*
@@ -13230,7 +13168,6 @@
 /pbtopads.
 /pbwrapper.js
 /pc.js
-/pc/advertising/*
 /pc/caltimes/?pulse2001
 /pc/gg/*
 /pc/js/as/*
@@ -13423,7 +13360,6 @@
 /pictureads/*
 /pictures/*
 /pictures/brandings/*
-/pictures/campaigns/*
 /pictures/habillages/*
 /pictures/tirgoshanas/*
 /pictures_user/asystem/*
@@ -13873,8 +13809,6 @@
 /pro-cp-dialog.
 /pro.
 /proads
-/proadvertising.
-/proadvertising_
 /proban/*
 /probashi-palli_3.
 /probe.
@@ -14355,6 +14289,7 @@
 /qubittrack
 /query.php*=adver-
 /queryadcontent.
+/queryly/$important
 /quickads/*
 /quickbanner
 /quickbanner_
@@ -15565,6 +15500,7 @@
 /service.?worker/$important
 /service/display/*
 /service/visitlist/*
+/service\-bar/$important
 /services/annoncesjaunes/*
 /services/auto/*
 /services/button/*
@@ -15824,7 +15760,6 @@
 /showadcode.
 /showadcode2.
 /showadvert.
-/showadvertising.
 /showban
 /showban.
 /showbanner.
@@ -16022,7 +15957,6 @@
 /sitetrek.js
 /siteunder.js
 /sitewide_
-/sitewise_cms.
 /situsbet368.
 /sitzung.fcgi
 /siuntosjpg
@@ -16165,8 +16099,7 @@
 /smartads.
 /smartadserver.
 /smartadserver/*
-/smartbanner
-/smartbanner/*
+/smartbanner/$important
 /smartlink
 /smartlink/?a
 /smartlinks.epl
@@ -16431,7 +16364,6 @@
 /spec/*
 /specfiles/*
 /special_script.js
-/specialadcampaign
 /specialads/*
 /specialctrl.js
 /specials.js
@@ -16612,7 +16544,6 @@
 /st_digg_
 /sta.wawacity.
 /stab.js
-/stan/campaign.do?*&affiliateid
 /star-health
 /star88bet.
 /star88win.
@@ -16812,7 +16743,7 @@
 /streaming.
 /streaming/video*&adnetworkid
 /streaming/video/*&adnetworkid
-/streamsense.
+/streamsense/$important
 /streamtelemetry
 /streamvip.
 /strip_ngn_2020_august
@@ -16857,7 +16788,6 @@
 /subscriber-count
 /subscriber.newsletter.
 /subscribermagnet/*
-/subscriptionhomepage.cms
 /substrate.
 /subxgdlv3.min.js
 /subyshare.
@@ -16953,7 +16883,6 @@
 /svideo.js
 /svop4/*
 /svs.
-/sw.cms
 /sw3d_hornygamer.
 /swa_t.
 /swabhavdosh_part2_h.
@@ -17180,7 +17109,6 @@
 /tds.js
 /tds/*
 /tds/ae?*&clickid
-/tds/ae?tds_campaign
 /te.js
 /te42b6ma
 /te9e85dc6853.js
@@ -17827,7 +17755,6 @@
 /trk
 /trk-
 /trk.
-/trk.*&campaign
 /trk.*?zone
 /trk.js
 /trk/*
@@ -18263,6 +18190,7 @@
 /user-agent-analyzer
 /user-context?referrer
 /user-data
+/user.?profile/$important
 /user/informers/*
 /user_is_temp
 /user_pic/flash/*
@@ -19859,9 +19787,7 @@
 /zcredirect?visitid
 /zcredirect?visitid=*&iframedetected=false
 /zcsgpkz.
-/zcvisitor*?campaignid
 /zcvisitor/*
-/zcvisitor/*?campaignid
 /zd-email.
 /zd.js
 /zdad.js
@@ -20099,7 +20025,6 @@ _1250003941712088_895715502_n-1.
 _1250004868378662_1157421196_n.
 _2_onbt.
 _2d1f1d4ff1_o.
-_300-x
 _300x250v1.
 _300x500pix
 _3016353408446060_1835668036530507058_n-1
@@ -20226,8 +20151,6 @@ _advertentieleaderboardhome.
 _advertise-
 _advertise.
 _advertisehere.
-_advertising.
-_advertising_img.
 _advertisment.
 _advertorial.
 _advertorial_
@@ -20268,7 +20191,6 @@ _btnad_
 _buttonad
 _buttonad.
 _buzzad
-_campaigns
 _carre_300_
 _centerl
 _chatad_
@@ -21789,15 +21711,6 @@ advertisements-
 advertisements_
 advertiser
 advertiserwidget.
-advertising
-advertising$important
-advertising-block.
-advertising-core-
-advertising2.
-advertisingbanner.
-advertisingbynewindex_
-advertisingmodule.
-advertisingview
 advertisment-
 advertisment.
 advertisment2.
@@ -21874,7 +21787,6 @@ adzones.
 ae.js
 ae6d298321568877d478a611c6536f4.js
 ae?*&clickid
-ae?tds_campaign
 aefe15bb944d485135b69ada0ffe6d.
 aeoijipb.js
 aerreravasi.
@@ -22279,7 +22191,6 @@ amazon-associates-link-
 amazon234x60_
 amazon_prime_
 amazon_products_prod.js
-amazon_widget.cms?type=amazondeal
 amazonaffiliate-
 amazonaffiliate.
 amazonaws
@@ -23971,8 +23882,6 @@ bvoc
 bvsvjs
 bvwfncew
 bwsocialicons.
-bww-advertising
-bww-wp-advertising
 bx-abd.js
 bx_stat
 bxaue52c
@@ -24071,13 +23980,6 @@ camhub.
 campagne
 campagne.
 campagne.php?cp
-campaign
-campaign$important
-campaign.
-campaign.do?*&affiliateid
-campaignpost
-campaigns.
-campaignsfileloaded
 campartner.
 campion-college.
 cams.
@@ -24142,7 +24044,6 @@ cariqqiu.
 carouselads$important
 carouselads.
 carre_300_
-carrefour-desktop.js
 carrepubhome.
 cars
 carsadtaggenerator.
@@ -24608,10 +24509,6 @@ cmpmngr.
 cmpn_async.
 cmpui-
 cmpui.
-cms-gg.
-cms-gg.js
-cms.
-cms_
 cmslog.
 cmstrendslog.
 cmtaggingservices.
@@ -25026,8 +24923,6 @@ cshow.
 csi_204
 csm_sparkassen_arena_
 cspreport
-css$script,important
-css$xhr,important
 css2.js
 ct99tglf
 cta-loaded.js
@@ -25367,7 +25262,6 @@ design-warez.ru.js
 desiremovies.
 desiupload.
 desivideos.
-desktopmediamanager.js
 destination-sync.
 detailright.
 detales2.
@@ -26031,7 +25925,6 @@ ebm-300x250.
 ebookmed.
 ebooks.
 ebs_show.
-ebx.js
 ec-discuss-widget.
 ec2143-239.
 ec5bcb7487ff.js
@@ -26299,7 +26192,6 @@ eresmas.
 eribi.js
 erjiadv.
 ero-
-ero-advertising.
 ero.
 ero_
 eroad
@@ -26513,7 +26405,6 @@ fa4b3a32-632e-4a43-94c7-ce20e35e2b74
 fa65afa1-bb40-4efb-bb1a-d85e36fb66b3
 fa952cba73b0d4fbf043e9be45cb366.
 faarup.com-
-fab_
 fabioalbini.
 fabulashesbytrisha.
 facash.
@@ -26585,9 +26476,6 @@ fbcdn
 fbcdn-
 fbcirclebtn.
 fbds.js
-fbevent$important
-fbevents-amd.js
-fbevents.js
 fbf0.js
 fbfooter.
 fbimage.
@@ -27468,7 +27356,6 @@ getadurls
 getadv.
 getadvert
 getadvertise
-getadvertisingleft
 getadverts
 getaliyunadv.
 getall
@@ -29068,7 +28955,6 @@ inside.js
 insidead.
 insided.
 insight.
-insight.js
 insight_web.
 insights-emitter
 insightxe.
@@ -29515,7 +29401,6 @@ jqueri.
 jquery-pin-it-
 jquery-ui-min.js
 jquery-ui.js
-jqueryadvertising.
 jqueryetrack
 jquerygg.js
 jquerymin.js
@@ -29643,8 +29528,6 @@ juicyads_
 jujutorrent
 julmabvc
 jumia.
-jumia.*/static/cms*?downsize
-jumia.*/static/cms/*?downsize
 jumpstartunpaidad.
 jumptap.
 jun0120211102193659.
@@ -30408,7 +30291,6 @@ liuxue-show
 liuxue_output.js
 live-casino.
 live.crackstreams.
-live.whassup.fr*&campaign
 live1
 live_b
 live_b_
@@ -30833,7 +30715,6 @@ makan
 makebnr.
 makelarjudi.
 maket-
-malayalam.samayam.com*/amazon_widget.cms?type=amazondeal
 maliwebnetcdn-
 mamahd.
 mamatogel.
@@ -31194,7 +31075,6 @@ microad.
 microreporting.
 mid.js
 midad.js
-middle
 middle-container
 middleads.
 midroll.
@@ -32253,7 +32133,6 @@ oasadframe
 oasadfunction
 oasapps.
 oascache
-oascampaign
 oascentral
 oascentral.
 oasconfig
@@ -33636,8 +33515,6 @@ pro*?video=video.fp-engine
 pro-cp-dialog.
 pro-qq.
 proads
-proadvertising.
-proadvertising_
 probet24.
 probet99.
 probola.
@@ -34087,7 +33964,6 @@ querbanner_
 querofilmehd.
 query.php*=adver-
 queryadcontent.
-queryly$important
 quickbanner
 quickbanner_
 quickbet
@@ -35293,7 +35169,6 @@ server.js
 server_time
 servewebads$important
 service-authentification-inc.
-service-bar$important
 service-redirection-ppl.
 service-redirections.
 serving-sys
@@ -35595,7 +35470,6 @@ show_std.
 showadcode.
 showadcode2.
 showadvert.
-showadvertising.
 showban
 showban.
 showbanner.
@@ -35790,7 +35664,6 @@ sitetrek.
 sitetrek.js
 siteunder.js
 sitewide_
-sitewise_cms.
 situs-judionline.
 situsberita2terbaru.
 situsbet368.
@@ -36220,7 +36093,6 @@ spcjs.
 spd.
 special-promotion-2-01-
 special_script.js
-specialadcampaign
 specialctrl.js
 specials.js
 speed4.
@@ -36603,8 +36475,6 @@ streamplay
 streamplay.
 streamrail
 streamsb.
-streamsense$important
-streamsense.
 streamsport.
 streamta.
 streamtape.
@@ -37517,7 +37387,6 @@ tormalayalamhd.
 torna-su.
 tornadomovies.
 toro.
-toroadvertising.
 torrent-telik.
 torrent.
 torrent9.
@@ -37767,7 +37636,6 @@ trivago.fr^/srv/*
 trixhentai.js
 trk-
 trk.
-trk.*&campaign
 trk.*?zone
 trk.js
 trk2
@@ -37827,8 +37695,6 @@ tuanbola.
 tube.js
 tube32.
 tube8.
-tubeadvertising
-tubeadvertisingcpa
 tubeon.
 tubidy.
 tubrog-
@@ -38079,7 +37945,6 @@ umovies.
 umq0gekd
 umt.
 unbenannt-1.
-unblock.
 unblocked.
 unblocker.
 unblockit.
@@ -39196,7 +39061,6 @@ widget_js.
 widget_like.
 widget_mntzm.
 widgetad.
-widgets*&campaignid=*&creativeid
 widgets-bazarchic-
 widgets-zoom-annonce-shopping.
 widgets-zoom-mytravelchic.

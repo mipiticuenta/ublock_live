@@ -52,6 +52,7 @@
 .*[_\W]assoc[-~\w\.]*\.js(on)?.*
 .*[_\W]audience[-~\w\.]*\.js(on)?.*
 .*[_\W]auto.?complete[-~\w\.]*\.js(on)?.*
+.*[_\W]auto.?optimize[-~\w\.]*\.js(on)?.*
 .*[_\W]bann?i?ere?s?.*
 .*[_\W]beacons?[_\W].*
 .*[_\W]beam[-~\w\.]*\.js(on)?.*
@@ -76,6 +77,7 @@
 .*[_\W]cludo[^a-z].*
 .*[_\W]cmp[_\W].*
 .*[_\W]cmpsp[_\W].*
+.*[_\W]cms[_\W].*
 .*[_\W]cnil[_\W].*
 .*[_\W]commercial[-~\w\.]*\.js(on)?.*
 .*[_\W]companion[-~\w\.]*\.js(on)?.*
@@ -99,6 +101,7 @@
 .*[_\W]dasf[-~\w\.]*\.js(on)?.*
 .*[_\W]deal[-~\w\.]*\.js(on)?.*
 .*[_\W]decode[-~\w\.]*\.js(on)?.*
+.*[_\W]desktop[-~\w\.]*\.js(on)?.*
 .*[_\W]detail[-~\w\.]*\.js(on)?.*
 .*[_\W]detect.?view[_\W].*
 .*[_\W]detect[-~\w\.]*\.js(on)?.*
@@ -115,6 +118,7 @@
 .*[_\W]donat[-~\w\.]*\.js(on)?.*
 .*[_\W]donate[_\W].*
 .*[_\W]drivek[-~\w\.]*\.js(on)?.*
+.*[_\W]ebx.*\.js(on)?.*
 .*[_\W]eloqua[_\W].*
 .*[_\W]email.?decode[_\W].*
 .*[_\W]eventlog[_\W].*
@@ -163,6 +167,7 @@
 .*[_\W]inline[-~\w\.]*\.js(on)?.*
 .*[_\W]inner.?host[-~\w\.]*\.js(on)?.*
 .*[_\W]inner[-~\w\.]*\.js(on)?.*
+.*[_\W]insight[-~\w\.]*\.js(on)?.*
 .*[_\W]instant.?page[-~\w\.]*\.js(on)?.*
 .*[_\W]interstitial[-~\w\.]*\.js(on)?.*
 .*[_\W]ip.?check[-~\w\.]*\.js(on)?.*
@@ -348,9 +353,11 @@
 .*[_\W]zepto[-~\w\.]*\.js(on)?.*
 .*^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?.*
 .*ad_break.*
+.*advertising.*
 .*advinion.*
 .*algolia.*
 .*browser.?info.*
+.*campaign.*
 .*comscore.*
 .*consent.*
 .*cooki.*
@@ -359,6 +366,7 @@
 .*doubleclick.*
 .*experiment.*flag.*
 .*faceboo?k.*
+.*fbevent.*
 .*fuckfuckadblock.*
 .*gen(erate)?.?204.*
 .*geo.?ip.*
@@ -373,14 +381,19 @@
 .*pre.?bid.*
 .*pre.?roll.*
 .*qoe\?.*
+.*queryly.*
 .*service.?worker.*
+.*service\-bar.*
 .*sharing[-~\w\.]*\.js(on)?.*
+.*smartbanner.*
 .*smarttag.*
 .*storage[-~\w\.]*\.js(on)?.*
+.*streamsense.*
 .*stub[-~\w\.]*\.js(on)?.*
 .*stub[_\W].*
 .*textad.*
 .*timedtext\?.*
 .*uc\?export=.*
 .*uc\?id=.*
+.*user.?profile.*
 .*zeotap.*
