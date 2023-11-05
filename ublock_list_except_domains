@@ -294,9 +294,6 @@
 -advt.
 -advt_
 -advts
--affiliate-
--affiliate-earn-
--affiliates-
 -agen-judi-
 -agen-poker-
 -agenbet.
@@ -675,7 +672,6 @@
 .fun
 .fyi
 .gal
-.gamingaffiliation.
 .gatracker.
 .gives
 .googleanalytics.
@@ -939,7 +935,6 @@
 /1716mid.js
 /173fee/*
 /1788892882side1.
-/1800x1000-affiliation.
 /1808_mudanzas_benicalap.
 /180x
 /188bet.
@@ -1312,6 +1307,7 @@
 /[_\W]akismet[_\W]/
 /[_\W]all\.(.*\.)?js(on)?/
 /[_\W]ampz?[_\W]/
+/[_\W]analytic[-~\w\.]*\.js(on)?/
 /[_\W]analytics?[_\W]/$important
 /[_\W]angular[-~\w\.]*\.js(on)?/
 /[_\W]aos[-~\w\.]*\.js(on)?/
@@ -1340,6 +1336,7 @@
 /[_\W]clavis[-~\w\.]*\.js(on)?/
 /[_\W]clear.?dot[_\W]/
 /[_\W]client.?data[_\W]/
+/[_\W]client[-~\w\.]*\.js(on)?/
 /[_\W]clipboard[-~\w\.]*\.js(on)?/
 /[_\W]cloudflare[-~\w\.]*\.js(on)?/
 /[_\W]cloudfront.*\.js(on)?/
@@ -1445,6 +1442,7 @@
 /[_\W]ipsos[_\W]/
 /[_\W]joly[-~\w\.]*\.js(on)?/
 /[_\W]journey[-~\w\.]*\.js(on)?/
+/[_\W]keyboard[-~\w\.]*\.js(on)?/
 /[_\W]landing[-~\w\.]*\.js(on)?/
 /[_\W]latest[-~\w\.]*\.js(on)?/
 /[_\W]layer[-~\w\.]*\.js(on)?/
@@ -1488,6 +1486,7 @@
 /[_\W]optanon[_\W]/
 /[_\W]optimize[-~\w\.]*\.js(on)?/
 /[_\W]osano[-~\w\.]*\.js(on)?/
+/[_\W]otautoblock[-~\w\.]*\.js(on)?/
 /[_\W]overlay[-~\w\.]*\.js(on)?/
 /[_\W]partner[-~\w\.]*\.js(on)?/
 /[_\W]pbjs[-~\w\.]*\.js(on)?/
@@ -1511,6 +1510,8 @@
 /[_\W]postscribe[-~\w\.]*\.js(on)?/
 /[_\W]privacy[-~\w\.]*\.js(on)?/
 /[_\W]privacy[_\W]/$important
+/[_\W]processecm[-~\w\.]*\.js(on)?/
+/[_\W]processmktchannel[-~\w\.]*\.js(on)?/
 /[_\W]promos?[_\W]/
 /[_\W]pub(?!l)[-~\w\.]*\.js(on)?/
 /[_\W]pub[_\W]/
@@ -1526,7 +1527,6 @@
 /[_\W]react[-~\w\.]*\.js(on)?/
 /[_\W]react[_\W]/
 /[_\W]recirc[-~\w\.]*\.js(on)?/
-/[_\W]recommend[-~\w\.]*\.js(on)?/
 /[_\W]recommend[-~\w\.]*\.js(on)?/$important
 /[_\W]redir(ect)[_\W]/
 /[_\W]regenerator[-~\w\.]*\.js(on)?/
@@ -1563,6 +1563,7 @@
 /[_\W]status[-~\w\.]*\.js(on)?/
 /[_\W]sticky[_\W]/
 /[_\W]stocky[-~\w\.]*\.js(on)?/
+/[_\W]storage[-~\w\.]*\.js(on)?/
 /[_\W]store[-~\w\.]*\.js(on)?/
 /[_\W]streamsense[-~\w\.]*\.js(on)?/
 /[_\W]stub/
@@ -1589,6 +1590,7 @@
 /[_\W]tracker[_\W]/
 /[_\W]tracking[_\W]/
 /[_\W]transp(arent)?[_\W]/$important
+/[_\W]trd[-~\w\.]*\.js(on)?/
 /[_\W]tscp[_\W]/
 /[_\W]u?tag[-~\w\.]*\.js(on)?/
 /[_\W]u?tag[_\W]/
@@ -1612,7 +1614,6 @@
 /[_\W]voonto[-~\w\.]*\.js(on)?/
 /[_\W]vote[-~\w\.]*\.js(on)?/
 /[_\W]vtm[-~\w\.]*\.js(on)?/
-/[_\W]webresource[_\W]/
 /[_\W]whoami[_\W]/
 /[_\W]widget[-~\w\.]*\.js(on)?/
 /[_\W]wizard[-~\w\.]*\.js(on)?/
@@ -1644,7 +1645,6 @@
 /_adsbanner
 /_adsmodern/*
 /_adz/*
-/_affiliate/hubtraffic/*
 /_annonser
 /_api/drom/*
 /_ban_
@@ -3162,40 +3162,7 @@
 /affilate/*
 /affilatebanner.
 /affilatebanner_
-/affiliate
-/affiliate-
-/affiliate-butler-
-/affiliate-program/*
-/affiliate-zone/*
-/affiliate.
-/affiliate/*
-/affiliate/park/*
-/affiliate_
-/affiliate_marketing
-/affiliate_marketing/*
-/affiliate_upload/*
-/affiliate_widget
-/affiliate_widget/*
-/affiliateads/*
-/affiliateframe
-/affiliateframe.
-/affiliateframe/*
-/affiliategallery
-/affiliatehelper
-/affiliateid
-/affiliates
-/affiliates-landing-
-/affiliates.
-/affiliates/*
-/affiliates/promotools/*
-/affiliates2.
-/affiliatesiamges/*
-/affiliatetracking.
-/affiliatetracking/*
-/affiliation-mb.
-/affiliation_simple/*
-/affiliationbanner.
-/affiliationbanner/*
+/affiliat/$important
 /affilinetretargeting.
 /affilist-
 /affilitybanners.
@@ -3439,7 +3406,6 @@
 /amar.js
 /amateurwebcams
 /amaz_
-/amazon-affiliate-
 /amazon-associates-
 /amazon-associates-link-
 /amazon-auto-links/*
@@ -3448,8 +3414,6 @@
 /amazon.svg
 /amazon234x60_
 /amazon_products_prod.js
-/amazonaffiliate-
-/amazonaffiliate.
 /amazonproducts.
 /amazonproducts.js
 /amazonservice/search/*
@@ -5127,7 +5091,6 @@
 /captcha.js
 /capture.js
 /capture_client.
-/capture_client.js
 /capturestat.
 /capu.
 /car_dealer.
@@ -5455,8 +5418,6 @@
 /client-info
 /client-timing
 /client-timings
-/client.js
-/client.min.js
 /client.rum.
 /client/default/sound/*
 /client/sound/*
@@ -5667,7 +5628,6 @@
 /complexad.js
 /complianz.min.js
 /components/newsletter/*
-/comprar/affiliate/resource/*
 /compress
 /compteur.
 /compteur_page.
@@ -6140,8 +6100,6 @@
 /dating-*&cid
 /dating-gratuit.
 /dating_lp?keyword
-/datingaffiliation.
-/datingaffiliation1.
 /datomata.
 /datugg/*
 /datukqq.
@@ -6270,7 +6228,6 @@
 /deshsanchar
 /design-warez.ru.js
 /design/partner/*
-/design_framework/images/crazy/affiliates/*
 /designil-pdpa/*
 /desktop/aliens/*
 /desktop_kannada-min.webp
@@ -6820,8 +6777,6 @@
 /eastday_
 /eastday_tj.js
 /eastlink-
-/easy-affiliate-links
-/easy-affiliate-links/*
 /easyad.js
 /easyad2.js
 /easyads
@@ -8132,7 +8087,6 @@
 /get.php?user_id=*&mode
 /get.script.core
 /get_advplace.
-/get_affiliate_
 /get_content.js
 /get_delivery_data.
 /get_img/offers/*
@@ -8754,6 +8708,7 @@
 /hatenabutton_
 /haubim/*
 /haut/*
+/hawk.?link/$important
 /hawk.js
 /hawkers_2017a.
 /hawkeye.
@@ -9269,7 +9224,6 @@
 /identity.min.js
 /identity/*
 /identity/device/*
-/idevaffiliate/*
 /idg_clarity.
 /idlc-2-300x113.
 /idle.min.js
@@ -10058,7 +10012,6 @@
 /javascript/wal/*
 /javascript_nbenhadverts/*
 /javascriptinsert.js
-/javascripts/common/affiliate_widget/*
 /javascripts/reco/*
 /javatop.js
 /javhd-jpjpg
@@ -10423,7 +10376,6 @@
 /key/get?partner_id
 /keyade.
 /keyade.js
-/keyboard.
 /keypress.
 /keypress.js
 /keys/*
@@ -10586,22 +10538,6 @@
 /lahanpoker-
 /laiminga.
 /land/*
-/landing*&ad2
-/landing*&ad3
-/landing*&ad4
-/landing*&publisher
-/landing.*/?ats
-/landing/*&ad2
-/landing/*&ad3
-/landing/*&ad4
-/landing/*&publisher
-/landing_btn/*
-/landing_page
-/landing_pages
-/landing_pages/*
-/landing_pages_
-/landingpage/*
-/landingpagehitlog.
 /langitqq.
 /lanmeta.
 /laomo_dibu.
@@ -10924,7 +10860,6 @@
 /livewebcam/*&id_affilie
 /livewebcam/?id_affilie
 /livezilla
-/livre-affiliation/*
 /lj.js
 /ljbmhkq.
 /ljcounter
@@ -11185,7 +11120,6 @@
 /lyqgekfk
 /lyrics/img/kwgg/*
 /lysing
-/lz/assets/affiliate/*
 /lz_loader.
 /lzdmailer.
 /lzdmailer.letter.open
@@ -11334,7 +11268,6 @@
 /marina-365.
 /markconf
 /market-static/*
-/market-static/affiliate/*
 /marketgid_
 /marketing-channel
 /marketing.js
@@ -11434,7 +11367,6 @@
 /mdidronkjuo
 /mdkd5hbv
 /mdr/p_adplace/*
-/mds/recommendation/*
 /mdsfw.js
 /me.php?id
 /med/*
@@ -11493,8 +11425,6 @@
 /mellowads.
 /mellowpresence.com
 /meltyad/*
-/members*&affiliate
-/members/*&affiliate
 /membres/bonsplan/*
 /memphis.
 /memphis.js
@@ -11541,7 +11471,6 @@
 /metrika/*
 /metriweb
 /metrixevents.
-/metro-affiliate
 /metsol-
 /mew.
 /mew.js
@@ -11661,7 +11590,6 @@
 /misereor_275.
 /misiqq-
 /misites/*
-/missaffiliate/*
 /mistat-data/*
 /mistats/*
 /misty-brook-
@@ -12398,7 +12326,6 @@
 /nordcode.
 /nordea
 /nordicbet_logo
-/nordvpn-affiliate-
 /nordvpn.
 /norgesecure/*
 /noteb/*
@@ -12729,11 +12656,11 @@
 /oppa.js
 /oppabet.
 /oppo.
+/opti?mi?ze?ly/$important
 /optiextension.
 /optiextension.dll
 /optimization-perf.
 /optimization-perf.js
-/optimizely/$important
 /optimost-
 /optimost.
 /optimost/*
@@ -12748,7 +12675,6 @@
 /optimostheader2.
 /optimostpagecode.
 /optin-cat-elite-wp
-/optmzly/*
 /optonlineadcode.
 /optscript/*
 /opuspoker-
@@ -12783,7 +12709,6 @@
 /ost/njkvuwpauvq4sr/*
 /ot_e404.
 /ot_square.pl
-/otautoblock.js
 /otca.js
 /other-analitycs/*
 /other.js
@@ -12810,7 +12735,6 @@
 /out/pictures/partner/image/*
 /out?zoneid
 /outbrain/$important
-/outil-dating-affiliation.
 /outil-dating.
 /outils.js
 /outils/compteur_php/*
@@ -13096,11 +13020,9 @@
 /partnernavsocialbuttons.
 /partnerprogramm/*
 /partners
-/partners*=affiliate
 /partners.
 /partners.php?id
 /partners/*
-/partners/*=affiliate
 /partners/gamekult/*
 /partners_block/*
 /partnerschaft_
@@ -13782,7 +13704,6 @@
 /prestol
 /price.js
 /pricecomparison/*
-/pricee/assets/affiliate/*
 /prig.txt
 /prikbordadvertentie_
 /prime-
@@ -14495,18 +14416,6 @@
 /reclame2.
 /reclamebanners/*
 /recll-js.js
-/recommend
-/recommend$important
-/recommend*=article_
-/recommend.
-/recommend/*
-/recommendad/*
-/recommendations
-/recommendations.
-/recommendations/*
-/recommended_1.html?language
-/recommends
-/recommendtrack
 /record
 /record-page-view.
 /record-stats
@@ -15275,7 +15184,6 @@
 /sc_font.js
 /sc_ifeng/*
 /sc_rss.
-/sca_affiliate_
 /scandalloader.js
 /scanscout
 /scantrad-net/*
@@ -15368,7 +15276,6 @@
 /sdfhyl
 /sdkloader/*
 /se-recommendation-microservice
-/se-wordpress-affiliatehelper
 /se.js
 /se/wf/*
 /se4pqujpg-1.
@@ -15715,7 +15622,6 @@
 /shinystat_
 /shiokuda.
 /shop/data/skin/interactive_c/img/main/*
-/shop/recommend/*
 /shopify-boomerang-
 /shopify_rolling_
 /shopify_stats.js
@@ -16703,8 +16609,6 @@
 /stocktwits_share.
 /stop-ru.js
 /stopvideo
-/storage
-/storage/*
 /storage/1/*
 /storage/dumpster/*
 /storage/uploads/abcds_image/*
@@ -17274,8 +17178,6 @@
 /thirdpartyframe
 /thirdpartypix
 /thirdpartytrack
-/thirstyaffiliates
-/thirstyaffiliates/*
 /thiru-50.
 /thixel.
 /thixel.js
@@ -17735,7 +17637,6 @@
 /trendmd.min.js
 /trends
 /tres/html/*
-/tres/recommend/*
 /tri?tid
 /triadshow.
 /tribalad.
@@ -18309,7 +18210,6 @@
 /vas-bundles/*
 /vast
 /vast-
-/vast-client-browser.min.js
 /vast-im.js
 /vast.
 /vast.js
@@ -18827,7 +18727,6 @@
 /wdzlu2wm
 /web-data-ingress
 /web-design.
-/web-hosting/domaincheckapi/?affiliate
 /web-q-bd
 /web-script.js
 /web-vitals
@@ -19096,7 +18995,6 @@
 /widget/stat/*
 /widget/static/media/*
 /widget/uploads/ankeiler/*
-/widget?affiliate
 /widget_add_this_
 /widget_community.
 /widget_community_messages.
@@ -19216,8 +19114,6 @@
 /wp-admin/sm02zsvdywdotb7rql/*
 /wp-analytify
 /wp-api.js
-/wp-auto-affiliate
-/wp-auto-affiliate-links/*
 /wp-cart-for-digital-products/*
 /wp-clickmap/*
 /wp-content-copy-protection
@@ -19414,7 +19310,6 @@
 /xcvbukkb
 /xd.sjs
 /xda
-/xda-kco-affiliate/*
 /xdirect
 /xdirect.
 /xdirect/*
@@ -20153,7 +20048,6 @@ _advt.
 _advt_
 _affadsense_
 _affid
-_affiliate.
 _alenty.
 _alenty.js
 _ali213tv.js
@@ -21812,22 +21706,6 @@ affil$important
 affilate-
 affilatebanner.
 affilatebanner_
-affiliate
-affiliate-
-affiliate-butler-
-affiliate.
-affiliate_
-affiliateframe
-affiliateframe.
-affiliates
-affiliates-landing-
-affiliates.
-affiliates2.
-affiliatetracking.
-affiliation-mb.
-affiliation.
-affiliationbanner.
-affiliationjs.
 affilinetretargeting.
 affilist-
 affilitybanners.
@@ -22177,14 +22055,11 @@ amazceczm-co-jp.
 amazceom-co-jp.
 amazceozm-co-jp.
 amazococn.
-amazon-affiliate-
 amazon-associates-
 amazon-associates-link-
 amazon234x60_
 amazon_prime_
 amazon_products_prod.js
-amazonaffiliate-
-amazonaffiliate.
 amazonaws
 amazonproducts.
 amazonproducts.js
@@ -23193,7 +23068,6 @@ bet2poker-
 bet2poker.
 bet2poker_
 bet365.
-bet365.com*?affiliate
 bet388-
 bet388.
 bet88me.
@@ -23203,7 +23077,6 @@ betald-exponering
 betatesterfmb.
 betawiqq.
 betberry.
-betburdaaffiliates.
 betcity.ru*?widget_id
 betclic-1.
 betcoin-
@@ -24012,7 +23885,6 @@ captcha-
 captcha.js
 capture.js
 capture_client.
-capture_client.js
 capturestat.
 capu.
 car_dealer.
@@ -24411,7 +24283,6 @@ clien.naver.js
 client-info
 client-timing
 client-timings
-client.js
 client.rum.
 client_204
 client_a.
@@ -24573,7 +24444,6 @@ colmeia
 colorbox
 coloritpak.
 columnadcounter.
-com*&affiliate
 com-inject.json?r
 com-news-reports.
 com-nitro.
@@ -24943,7 +24813,6 @@ cubeads_
 cuevana3.
 cuk_core.js
 cum.js
-curatecontext=affiliate
 curlad.
 custom-links
 custom-share.
@@ -25127,8 +24996,6 @@ dating
 dating-*&cid
 dating-gratuit.
 dating_lp?keyword
-datingaffiliation.
-datingaffiliation1.
 datomata.
 datos.elconfidencial.
 datukqq.
@@ -25882,7 +25749,6 @@ easing.js
 east.
 eastday_
 eastday_tj.js
-easy-affiliate-links
 easy-coin.
 easy.onvid.
 easyad.js
@@ -27174,7 +27040,6 @@ gameswelt.
 gametrack
 gamezhero
 gamezone.
-gamingaffiliation.
 gammacdn
 ganalytics.
 gangrumah.
@@ -27311,7 +27176,6 @@ get?partner_id
 get?pvt=*&ab=*&ref
 get?script_slot=beroll_script
 get_advplace.
-get_affiliate_
 get_content.js
 get_delivery_data.
 get_installer.php?r
@@ -27977,7 +27841,6 @@ hawk.js
 hawkeye-data-production.
 hawkeye.
 hawkeye.js
-hawklink$important
 haymarket-whistleout.
 hazipatika.
 hb.js
@@ -29926,8 +29789,6 @@ laljhadi.
 lallan_area
 landing.*/?ats
 landing1.
-landing_pages
-landing_pages_
 landinglog$important
 landingpagehitlog.
 landrover.
@@ -30993,7 +30854,6 @@ messagingnotcfapi.js
 messenger--collapse
 metaad.
 metacafe
-metaffiliation.
 metapic.
 metatag
 meter-svc.
@@ -31010,7 +30870,6 @@ metrika.
 metriweb
 metrix.$important
 metrixevents.
-metro-affiliate
 metro-trending
 metsol-
 mew.
@@ -31989,7 +31848,6 @@ nordcode.
 nordea
 nordea.no.
 nordnet.no.
-nordvpn-affiliate-
 nordvpn.
 norgeskosalg.
 northsky.
@@ -32430,7 +32288,6 @@ ot_e404.
 otakudesu.
 otakuindo.
 otaserve.
-otautoblock.js
 otca.js
 other.js
 otherads
@@ -32445,7 +32302,6 @@ ourworldindata
 out.js
 out.streamcomplet.
 out?zoneid
-outil-dating-affiliation.
 outil-dating.
 outils.js
 outletpic.
@@ -32550,7 +32406,6 @@ page-viewed
 page-views-count
 page-visit
 page.js
-page?src=netaffiliation
 page_count
 page_imp;
 page_view
@@ -34163,8 +34018,8 @@ reclame-nieuws.
 reclame.
 reclame2.
 recll-js.js
+recommendad
 recommendcx
-recommended_1.html?language
 recommendtrack
 record
 record-page-view.
@@ -34901,7 +34756,6 @@ sc_check
 sc_code_
 sc_font.js
 sc_rss.
-sca_affiliate_
 scandalloader.js
 scanfact.
 scanscout
@@ -34996,7 +34850,6 @@ sdmoviespoint.
 sdsblotto.
 sdtfrom
 sduif98q3rijax
-se-wordpress-affiliatehelper
 se.js
 sea-pearlad.
 sea-short-stats
@@ -37090,7 +36943,6 @@ thirdpartyads
 thirdpartyframe
 thirdpartypix
 thirdpartytrack
-thirstyaffiliates
 this
 thisav.
 thixel.
@@ -38170,7 +38022,6 @@ vars.js
 vartoken.
 vast
 vast-
-vast-client-browser.min.js
 vast-im.js
 vast.
 vast.js
@@ -39034,7 +38885,6 @@ widget-*?ref
 widget-bucket-files
 widget-livementor
 widget-loader
-widget?affiliate
 widget_add_this_
 widget_community.
 widget_community_messages.
@@ -39154,7 +39004,6 @@ wp-accessibility
 wp-adblock-
 wp-analytify
 wp-api.js
-wp-auto-affiliate
 wp-content-copy-protection
 wp-content-copy-protector
 wp-copy-protect
