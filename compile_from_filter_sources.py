@@ -27,8 +27,8 @@ file8_in_name  = 'domains_white_list'
 proxy_servers  = {
     'https': 'https://fw:8080',
     'http' : 'http://fw:8080',
-    'https': 'https://',
-    'http' : 'http://'
+    'https': '',
+    'http' : ''
 }
 #proxy_servers  = {'https': 'http://fw:8080'}
 
