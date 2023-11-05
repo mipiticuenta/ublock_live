@@ -51,9 +51,9 @@ dom_sw = input('Enter <y> to include domain deflation : ')
 
 try:
     r = requests.get('https://google.com', timeout = 5, proxies=proxy_servers)
-except requests.exceptions.ConnectionError as ex:
-    print('\nError: ' + str(ex) + '. Trying alt proxy servers')
-    proxy_servers  = proxy_servers_alt                                          # <if connection error, try proxy_servers_alt/>
+except:
+    print('\nError; trying alt proxy servers.')
+    proxy_servers  = proxy_servers_alt
 
 # </test direct connection to internet>
 

@@ -17,6 +17,12 @@ from bs4 import BeautifulSoup                                                   
 
 # <settings>
 
+file1_out_name = 'hrefs_found'
+proxy_servers  = {'https': '', 'http': ''}
+proxy_servers_alt  = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
+
+# </settings>
+
 print(
                                                                   '\n',
     '# ============================================================\n',
@@ -27,10 +33,15 @@ print(
     '# ============================================================\n',
 )
 
-file1_out_name = 'hrefs_found'
-proxy_servers  = {'https': 'http://fw:8080', 'https': ''}
+# <test direct connection to internet>
 
-# </settings>
+try:
+    r = requests.get('https://google.com', timeout = 5, proxies=proxy_servers)
+except requests.exceptions.ConnectionError as ex:
+    print('\nError: ' + str(ex) + '. Trying alt proxy servers.')
+    proxy_servers  = proxy_servers_alt
+
+# </test direct connection to internet>
 
 htmlpage = input('Enter url to examine : ')
 response = requests.get(htmlpage, proxies=proxy_servers)
