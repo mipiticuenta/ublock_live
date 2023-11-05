@@ -662,7 +662,6 @@
 .directpubs.
 .dkshare.
 .dktotalshare.
-.domains
 .dsgvo.
 .easyshare:
 .engine?*&zoneid
@@ -1408,6 +1407,7 @@
 /[_\W]ga[_\W]/
 /[_\W]ga[_\W][-~\w\.]*\.js(on)?/
 /[_\W]gads[_\W]/
+/[_\W]gallium[-~\w\.]*\.js(on)?/
 /[_\W]gdpr[_\W]/
 /[_\W]geo[-~\w\.]*\.js(on)?/
 /[_\W]geo[_\W]/
@@ -6566,7 +6566,6 @@
 /domain-hosting.
 /domain-registration.
 /domaine-libre-big.
-/domains
 /dombnrs.
 /domcount.
 /domcount.nsf/*
@@ -8798,8 +8797,9 @@
 /headbanner
 /headbanner/*
 /headbiggg_
-/header-bidding.js
 /header-werbung.
+/header.?ad/$important
+/header.?bidding/$important
 /header.js
 /header/reclames/*
 /header300x20.
@@ -8807,10 +8807,6 @@
 /header_external
 /header_info.
 /header_pic.
-/headerad.
-/headerads.
-/headerads1.
-/headerbidding.js
 /headermktgpromoads.
 /headerpixel.
 /headersocialicons.
@@ -17329,7 +17325,7 @@
 /timingcg.
 /timings.
 /timings/*
-/timthumb.
+/timthumb/
 /tinlads.
 /tinyad.
 /tinypass-gtp.min.js
@@ -20236,7 +20232,6 @@ _habillage
 _hbx_
 _hcode.
 _header_share.
-_headerad.
 _hit.
 _hitcount1.
 _hits_
@@ -25571,7 +25566,6 @@ domainads
 domaine-libre-big.
 domainjudionline.
 domainking.
-domains
 dombnrs.
 domcount
 domcount.
@@ -28050,18 +28044,12 @@ head486x
 head_right_top.
 headad.js
 headbiggg_
-header-bidding.js
 header-werbung.
 header.js
 header_bg.
 header_external
 header_info.
 header_pic.
-headerad$important
-headerad.
-headerads.
-headerads1.
-headerbidding.js
 headermktgpromoads.
 headerpixel.
 headersocialicons.
