@@ -47,6 +47,17 @@ print(
 
 dom_sw = input('Enter <y> to include domain deflation : ')
 
+# <test direct connection to internet>
+
+r = requests.get('https:/google.com', timeout = 3)
+print(r.content)
+print(r.status_code)
+if r.status_code != 200:
+    print('\nNo direct internet connection; trying alt proxy servers')
+    proxy_servers  = proxy_servers_alt                                          # <no direct connection available, apply proxy_servers_alt/>
+
+# </test direct connection to internet>
+
 # <get filter url sources from file, dedup and sort>
 
 list1 = [line.strip() for line in open(file1_in_name, encoding='UTF-8')]        # <populate source lists; remove leading/trailing spaces />
@@ -56,17 +67,6 @@ list1 = [line for line in list1 if line.strip() != '']                          
 list1 = sorted(list1)
 
 # </get filter url sources from file, dedup and sort>
-
-# <test direct connection to internet>
-
-r = requests.get(list1[0], timeout = 3)
-print(r.content)
-print(r.status_code)
-if r.status_code != 200:
-    print('\nNo direct internet connection; trying alt proxy servers')
-    proxy_servers  = proxy_servers_alt                                          # <no direct connection available, apply proxy_servers_alt/>
-
-# </test direct connection to internet>
 
 # <dump sources to list>
 
