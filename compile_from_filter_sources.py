@@ -59,7 +59,7 @@ list1 = sorted(list1)
 
 # <test direct connection to internet>
 
-r = requests.get(list1[0], timeout = 5)
+r = requests.get(list1[0], timeout = 3)
 print(r.content)
 print(r.status_code)
 if r.status_code != 200:
