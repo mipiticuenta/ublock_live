@@ -50,7 +50,7 @@ dom_sw = input('Enter <y> to include domain deflation : ')
 # <test direct connection to internet>
 
 r = requests.get('https://github.com', proxies=proxy_servers, timeout = 5)
-print(r.status.code)
+print(r.status_code)
 if r.status_code != 200:
     print('\nNo direct internet connection; trying alt proxy servers')
     proxy_servers  = proxy_servers_alt                                          # <no direct connection available, apply proxy_servers_alt/>
