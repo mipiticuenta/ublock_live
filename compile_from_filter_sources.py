@@ -52,7 +52,7 @@ dom_sw = input('Enter <y> to include domain deflation : ')
 try:
     r = requests.get('https://google.com', timeout = 5, proxies=proxy_servers)
 except:
-    print('\nError; trying alt proxy servers.')
+    print('\nNetwork connection error; trying alt proxy servers.')
     proxy_servers  = proxy_servers_alt
 
 # </test direct connection to internet>
@@ -758,7 +758,7 @@ list2 = [re.sub(r'^[_\W]?positions?[_\W]*$', '', line) for line in list2]       
 list2 = [re.sub(r'^[_\W]?post?[_\W]*$', '', line) for line in list2]            # <remove spurious post filter />
 list2 = [re.sub(r'^[_\W]?pre[_\W]*$', '', line) for line in list2]              # <remove spurious pre filter />
 list2 = [re.sub(r'^[_\W]?price[_\W]*$', '', line) for line in list2]            # <remove spurious price filter />
-list2 = [re.sub(r'^[_\W]?process[_\W]*$', '', line) for line in list2]          # <remove spurious process filter />
+list2 = [re.sub(r'^[_\W]?process(or)?[_\W]*$', '', line) for line in list2]     # <remove spurious process(or) filter />
 list2 = [re.sub(r'^[_\W]?prod(uct(ion)?s?)?[_\W]*$', '', line) for line in list2]     # <remove spurious prod(uct(ion)(s)) filter />
 list2 = [re.sub(r'^[_\W]?profile[_\W]*$', '', line) for line in list2]          # <remove spurious profile filter />
 list2 = [re.sub(r'^[_\W]?projects?[_\W]*$', '', line) for line in list2]        # <remove spurious project(s) filter />
@@ -786,6 +786,7 @@ list2 = [re.sub(r'^[_\W]?search[_\W]*$', '', line) for line in list2]           
 list2 = [re.sub(r'^[_\W]?section[_\W]*$', '', line) for line in list2]          # <remove spurious section filter />
 list2 = [re.sub(r'^[_\W]?server?[_\W]*$', '', line) for line in list2]          # <remove spurious serve(r) filter />
 list2 = [re.sub(r'^[_\W]?services?[_\W]*$', '', line) for line in list2]        # <remove spurious service(s) filter />
+list2 = [re.sub(r'^[_\W]?session[_\W]*$', '', line) for line in list2]          # <remove spurious session filter />
 list2 = [re.sub(r'^[_\W]?set[_\W]*$', '', line) for line in list2]              # <remove spurious set filter />
 list2 = [re.sub(r'^[_\W]?shared?[_\W]*$', '', line) for line in list2]          # <remove spurious share(d) filter />
 list2 = [re.sub(r'^[_\W]?show[_\W]*$', '', line) for line in list2]             # <remove spurious show filter />
