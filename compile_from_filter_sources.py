@@ -51,7 +51,7 @@ dom_sw = input('Enter <y> to include domain deflation : ')
 
 r = requests.get('https://github.com', timeout = 5)
 if r.status_code == 200:
-    print('No direct internet connection; trying alt proxy servers')
+    print('\nNo direct internet connection; trying alt proxy servers')
     proxy_servers  = proxy_servers_alt                                          # <no direct connection available, apply proxy_servers_alt/>
 
 # </test direct connection to internet>
@@ -604,6 +604,7 @@ list2 = [re.sub(r'^[_\W]?detail[_\W]*$', '', line) for line in list2]           
 list2 = [re.sub(r'^[_\W]?dev[_\W]*$', '', line) for line in list2]              # <remove spurious dev filter />
 list2 = [re.sub(r'^[_\W]?digital(ocean)[_\W]*$', '', line) for line in list2]   # <remove spurious digital(ocean) filter />
 list2 = [re.sub(r'^[_\W]?do[ct][_\W]*$', '', line) for line in list2]           # <remove spurious do(c|t) filter />
+list2 = [re.sub(r'^[_\W]?domains?[_\W]*$', '', line) for line in list2]         # <remove spurious domain(s) filter />
 list2 = [re.sub(r'^[_\W]?dollar[_\W]*$', '', line) for line in list2]           # <remove spurious dollar filter />
 list2 = [re.sub(r'^[_\W]?down[_\W]*$', '', line) for line in list2]             # <remove spurious down filter />
 list2 = [re.sub(r'^[_\W]?duckduckgo[_\W]*$', '', line) for line in list2]       # <remove spurious duckduckgo filter />
