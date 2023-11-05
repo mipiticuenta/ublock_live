@@ -37,8 +37,8 @@ print(
 
 try:
     r = requests.get('https://google.com', timeout = 5, proxies=proxy_servers)
-except requests.exceptions.ConnectionError as ex:
-    print('\nError: ' + str(ex) + '. Trying alt proxy servers.')
+except:
+    print('\nNetwork connection error; trying alt proxy servers.')
     proxy_servers  = proxy_servers_alt
 
 # </test direct connection to internet>
