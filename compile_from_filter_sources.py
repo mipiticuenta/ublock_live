@@ -24,13 +24,8 @@ file4_out_name = 'ipfire_url_block_list'
 file5_out_name = 'ipfire_regex_block_list'
 file7_out_name = 'ublock_list_except_domains'
 file8_in_name  = 'domains_white_list'
-#proxy_servers  = {
-#    'https': 'http://fw:8080',
-#    'http' : 'http://fw:8080',
-#    'https': '',
-#    'http' : ''
-#}
-proxy_servers  = {'https': 'http://fw:8080'}
+proxy_servers  = {'https': '', 'http': ''}
+proxy_servers_alt  = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
 
 # </settings>
 
@@ -51,6 +46,14 @@ print(
 )
 
 dom_sw = input('Enter <y> to include domain deflation : ')
+
+# <test direct connection to internet>
+
+r = requests.get('https://github.com', timeout = 5)
+if r.status_code == 200:
+    proxy_servers  = proxy_servers_alt                                          # <no direct connection available, apply proxy_servers_alt/>
+
+# </test direct connection to internet>
 
 # <get filter url sources from file, dedup and sort>
 
