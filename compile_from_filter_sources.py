@@ -53,7 +53,8 @@ try:
     r = requests.get('https://google.com', timeout = 5, proxies=proxy_servers)
     print(r.content)
     print(r.status_code)
-except r.status_code != 200:
+except requests.exceptions.ConnectionError as ex:
+    print('Issue file download...'+str(ex))
     print('\nNo direct internet connection; trying alt proxy servers')
     proxy_servers  = proxy_servers_alt                                          # <no direct connection available, apply proxy_servers_alt/>
 
