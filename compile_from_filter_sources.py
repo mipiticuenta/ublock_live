@@ -335,7 +335,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.]?uploads?.?\*?(?=[/\.])', '', line) for line in list2]      # <remove leading uploads />
     list2 = [re.sub(r'^[/\.]?v.?\*?(?=[/\.])', '', line) for line in list2]     # <remove leading v />
     list2 = [re.sub(r'^[/\.]?videos?\*?(?=[/\.])', '', line) for line in list2] # <remove leading video(s) />
-    list2 = [re.sub(r'^[/\.]?web\*?(?=[/\.])', '', line) for line in list2]     # <remove leading web />
+    list2 = [re.sub(r'^[/\.]?web(resource)?\*?(?=[/\.])', '', line) for line in list2]     # <remove leading web(resource) />
     list2 = [re.sub(r'^[/\.]?wp\-content\*?(?=[/\.])', '', line) for line in list2]     # <remove leading wp-content />
     list2 = [re.sub(r'^[/\.]?www\*?(?=[/\.])', '', line) for line in list2]     # <remove leading www />
     list2 = [re.sub(r'^\.?aspx?\??(?![a-z0-9])', '*', line).strip() for line in list2]  # <replace leading asp with * >
@@ -851,6 +851,7 @@ list2 = [re.sub(r'^[_\W]?vinted[_\W]*$', '', line) for line in list2]           
 list2 = [re.sub(r'^[_\W]?wall[_\W]*$', '', line) for line in list2]             # <remove spurious wall filter />
 list2 = [re.sub(r'^[_\W]?webp[_\W]*$', '', line) for line in list2]             # <remove spurious webp filter />
 list2 = [re.sub(r'^[_\W]?web(site)?[_\W]*$', '', line) for line in list2]       # <remove spurious web(site) filter />
+list2 = [re.sub(r'^[_\W]?webresource[_\W]*$', '', line) for line in list2]      # <remove spurious webresource filter />
 list2 = [re.sub(r'^[_\W]?whatsapp[_\W]*$', '', line) for line in list2]         # <remove spurious whatsapp filter />
 list2 = [re.sub(r'^[_\W]?widgets?[_\W]*$', '', line) for line in list2]         # <remove spurious widget(s) filter />
 list2 = [re.sub(r'^[_\W]?windows?[_\W]*$', '', line) for line in list2]         # <remove spurious window(s) filter />
