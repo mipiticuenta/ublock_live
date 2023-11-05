@@ -25,8 +25,8 @@ file5_out_name = 'ipfire_regex_block_list'
 file7_out_name = 'ublock_list_except_domains'
 file8_in_name  = 'domains_white_list'
 proxy_servers  = {
-    'https': 'http://fw:3128',
-    'http' : 'http://fw:3128',
+    'https': 'http://fw:8080',
+    'http' : 'http://fw:8080',
     'https': '',
     'http' : ''
 }
