@@ -26,9 +26,9 @@ file7_out_name = 'ublock_list_except_domains'
 file8_in_name  = 'domains_white_list'
 proxy_servers  = {
     'https': 'http://fw:8080',
-    'http' : 'http://fw:8080',
+    'http': 'http://fw:8080',
     'https': '',
-    'http' : ''
+    'http': ''
 }
 #proxy_servers  = {'https': 'http://fw:8080'}
 
