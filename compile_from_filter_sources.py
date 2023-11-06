@@ -770,6 +770,7 @@ list2 = [re.sub(r'^[_\W]?projects?[_\W]*$', '', line) for line in list2]        
 list2 = [re.sub(r'^[_\W]?promotion[_\W]*$', '', line) for line in list2]        # <remove spurious promotion filter />
 list2 = [re.sub(r'^[_\W]?proxy[_\W]*$', '', line) for line in list2]            # <remove spurious proxy filter />
 list2 = [re.sub(r'^[_\W]?public[_\W]*$', '', line) for line in list2]           # <remove spurious public filter />
+list2 = [re.sub(r'^[_\W]?publisher[_\W]*$', '', line) for line in list2]        # <remove spurious publisher filter />
 list2 = [re.sub(r'^[_\W]?pulse[_\W]*$', '', line) for line in list2]            # <remove spurious pulse filter />
 list2 = [re.sub(r'^[_\W]?pure[_\W]*$', '', line) for line in list2]             # <remove spurious pure filter />
 list2 = [re.sub(r'^[_\W]?raw(github)?[_\W]*$', '', line) for line in list2]     # <remove spurious raw(github) filter />
