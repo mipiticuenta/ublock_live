@@ -1285,6 +1285,8 @@
 /[_\W]ab.?test[-~\w\.]*\.js(on)?/
 /[_\W]abba[-~\w\.]*\.js(on)?/
 /[_\W]ace[-~\w\.]*\.js(on)?/
+/[_\W]ad.?script[-~\w\.]*\.js(on)?/
+/[_\W]ad.?scripts?[_\W]/$important
 /[_\W]adb(lock(er)?)?.?detect[-~\w\.]/
 /[_\W]adblock[-~\w\.]*\.js(on)?/
 /[_\W]addressdotnet[_\W]/
@@ -1396,6 +1398,7 @@
 /[_\W]fb[_\W]/$important
 /[_\W]feedback[-~\w\.]*\.js(on)?/
 /[_\W]fitvids[_\W]/
+/[_\W]flash[-~\w\.]*\.js(on)?/
 /[_\W]flickity[-~\w\.]*\.js(on)?/
 /[_\W]foot(er)?[-~\w\.]*\.js(on)?/
 /[_\W]footer[-~\w\.]*\.js(on)?/
@@ -1429,6 +1432,7 @@
 /[_\W]iaw[-~\w\.]*\.js(on)?/
 /[_\W]iaw\.(.*\.)?js(on)?/
 /[_\W]id.?cta[_\W]/
+/[_\W]id.?generator[-~\w\.]*\.js(on)?/
 /[_\W]impress(ions?)?[_\W]/$important
 /[_\W]incapsula[_\W]/
 /[_\W]index[-~\w\.]*\.js(on)?/
@@ -1490,6 +1494,7 @@
 /[_\W]otautoblock[-~\w\.]*\.js(on)?/
 /[_\W]overlay[-~\w\.]*\.js(on)?/
 /[_\W]partner[-~\w\.]*\.js(on)?/
+/[_\W]pb\.([-~\w\.]*\.)?js(on)?/
 /[_\W]pbjs[-~\w\.]*\.js(on)?/
 /[_\W]perform[-~\w\.]*\.js(on)?/
 /[_\W]performance[-~\w\.]*\.js(on)?/
@@ -1582,6 +1587,7 @@
 /[_\W]test[-~\w\.]*\.js(on)?/
 /[_\W]test[_\W]/
 /[_\W]tg\-[-~\w\.]*\.js(on)?/
+/[_\W]timer[-~\w\.]*\.js(on)?/
 /[_\W]timming[-~\w\.]*\.js(on)?/
 /[_\W]tmgrefresh[-~\w\.]*\.js(on)?/
 /[_\W]tra?ck$/$important
@@ -1603,6 +1609,7 @@
 /[_\W]underscore[_\W]/
 /[_\W]unique(.?id)?[-~\w\.]*\.js(on)?/
 /[_\W]url[-~\w\.]*\.js(on)?/
+/[_\W]user.?data[_\W]/$important
 /[_\W]user.?info[_\W]/$important
 /[_\W]user[-~\w\.]*\.js(on)?/
 /[_\W]utms?[_\W]/$important
@@ -1712,7 +1719,6 @@
 /a4u_pu.
 /a4u_pu.js
 /a4u_pu_
-/a4u_pu_timer.js
 /a53c582bdeb69a2421656d4c824cec7b-5e77374fd1e5a.
 /a57xq6rhr5uuzzyf.
 /a59f56e82f7264926cc16478a7a8d0ed15d8596fae859fad5e672c54b6e80695.
@@ -2668,8 +2674,6 @@
 /adscores/*
 /adscpc/*
 /adscr.
-/adscript
-/adscript_
 /adscriptcode.
 /adscroll.
 /adsct
@@ -2792,7 +2796,6 @@
 /adsrtb.
 /adss.
 /adss/*
-/adsscript.
 /adssdk-
 /adsserv.
 /adsservedby.
@@ -3071,8 +3074,6 @@
 /advs.js
 /advs/*
 /advs_
-/advscript.
-/advscript.js
 /advservice/*
 /advshow.
 /advstats/*
@@ -4885,14 +4886,11 @@
 /bti/*
 /btmads.
 /btmadsx.
-/btn-
 /btn-autosurf-
 /btn-blog
 /btn-digg
 /btn-feedback
 /btn.js
-/btn/*
-/btn_
 /btn_back2top
 /btn_back2top.
 /btn_back2top_
@@ -8700,6 +8698,7 @@
 /haramine
 /hariqq.
 /harvard_tamil_chair.
+/hash[-~\w\.]*\.js(on)?/
 /hash_stat/*
 /hash_stat_bulk/*
 /hashcash.
@@ -10005,8 +10004,6 @@
 /jasonsavard.js
 /jass/*
 /jatag/*
-/java.
-/java/*
 /javamy.js
 /javascript.gp
 /javascript/wal/*
@@ -11054,8 +11051,6 @@
 /lookaside/crawler/*
 /lookbanner
 /lookbanner/*
-/lookup
-/lookup/*
 /looping.js
 /looppy/*
 /lorado.js
@@ -11247,7 +11242,6 @@
 /maniaqq.
 /maniaslot.
 /manifest.json
-/manimg/userdata/*
 /mankwetter.
 /mantan-express
 /mantapkiu.
@@ -12212,8 +12206,6 @@
 /newtrackingscript.
 /newtrk/*
 /newzoninfotech
-/next.
-/next/*
 /next/images/*
 /nextperformanceretargeting.
 /nfhry32_78.js
@@ -13064,7 +13056,6 @@
 /paywallmeter.
 /payyans1.
 /pb-babla
-/pb.js
 /pb.min.
 /pbasitetracker.
 /pbex.
@@ -13504,9 +13495,7 @@
 /plus_rpad_
 /plusgoogle.
 /pluso-like.
-/plusone.
-/plusone.js
-/plusonet
+/plusone/
 /plusplus
 /plx.js
 /ply.*/?v
@@ -13668,6 +13657,7 @@
 /prbd_6.19.0.js
 /prdyov3.
 /pre.?bid/$important
+/pre.?fetch/
 /pre.?roll/$important
 /preccount
 /preconnect.
@@ -17957,10 +17947,8 @@
 /unipro/*
 /uniqueuservisit
 /uniroll.js
-/unit/*
 /united-photo-state-nagaur
 /unitogel-
-/units/*
 /universal-trackers/*
 /universal.js
 /universal?id
@@ -18072,7 +18060,6 @@
 /usenext
 /user-agent-analyzer
 /user-context?referrer
-/user-data
 /user.?profile/$important
 /user/informers/*
 /user_is_temp
@@ -18081,7 +18068,6 @@
 /userad
 /userads.
 /userbanners
-/userdata_n
 /userevent/*
 /userevents/*
 /userfiles/b/*
@@ -19087,6 +19073,7 @@
 /world_of_satellite.
 /wos2.
 /wos3.
+/wotdscript/
 /wow/*
 /wow_
 /wozhfhu.
@@ -20022,7 +20009,6 @@ _ads4stream_
 _ads860x120.
 _adsbanner
 _adscommon.
-_adscript.
 _adsens_
 _adsepxhd.
 _adsetup.
@@ -20338,7 +20324,6 @@ a3lan_
 a4u_pu.
 a4u_pu.js
 a4u_pu_
-a4u_pu_timer.js
 a57xq6rhr5uuzzyf.
 a6e27-be5b-4442-86e5-9f4adb51894d
 a720.
@@ -21263,10 +21248,6 @@ adscontrol.
 adscontroller.
 adscpm.
 adscr.
-adscript
-adscript.
-adscript.js
-adscript_
 adscriptcode.
 adscroll.
 adscroller.
@@ -21385,7 +21366,6 @@ adsrt.
 adsrtb.
 adsrumahsakong.
 adss.
-adsscript.
 adssdk-
 adsserv.
 adsservedby.
@@ -21639,7 +21619,6 @@ advrt_iphone-14-pro-
 advs
 advs.js
 advs_
-advscript.
 advshow.
 advsnx
 advsystem
@@ -23643,7 +23622,6 @@ btdb.
 btdigg.js
 btmads.
 btmadsx.
-btn-
 btn-autosurf-
 btn-blog
 btn-digg
@@ -23652,7 +23630,6 @@ btn-feedback
 btn-sm.btn-coin
 btn-success.get-link
 btn.js
-btn_
 btn_back2top
 btn_back2top.
 btn_back2top_
@@ -29116,7 +29093,6 @@ jasaqq.
 jasaqqsakong.
 jasndckx
 jasonsavard.js
-java.
 javamy.js
 javascript.do?message
 javascript:*settimeout
@@ -30358,7 +30334,6 @@ look.php?key=*&id
 lookcam.
 lookmovie.
 lookmovie186.
-lookup
 looping.js
 lootlinks.
 loptelink.
@@ -31727,7 +31702,6 @@ newtexas.
 newtoki
 newtopmsgad.
 newtrackingscript.
-next.
 next.php?r
 nextorrent.
 nextperformanceretargeting.
@@ -32638,7 +32612,6 @@ payperpost.
 paytmscripts.
 paywall.
 paywallmeter.
-pb.js
 pb.min.
 pbasitetracker.
 pbex.
@@ -33050,9 +33023,6 @@ plus_google.
 plus_rpad_
 plusgoogle.
 pluso-like.
-plusone.
-plusone.js
-plusonet
 plusplus
 plusupload.
 plx.js
@@ -37909,7 +37879,6 @@ usenext
 user-a
 user-agent-analyzer
 user-context?referrer
-user-data
 user=null
 user_is_temp
 user_sync_widget
@@ -37918,7 +37887,6 @@ userads.
 userapi
 userbanners
 usercapabilities
-userdata_n
 userfly
 userid
 userlike

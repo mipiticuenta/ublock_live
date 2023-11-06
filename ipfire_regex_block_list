@@ -21,6 +21,8 @@
 .*[_\W]ab.?test[-~\w\.]*\.js(on)?.*
 .*[_\W]abba[-~\w\.]*\.js(on)?.*
 .*[_\W]ace[-~\w\.]*\.js(on)?.*
+.*[_\W]ad.?script[-~\w\.]*\.js(on)?.*
+.*[_\W]ad.?scripts?[_\W].*
 .*[_\W]adb(lock(er)?)?.?detect[-~\w\.].*
 .*[_\W]adblock[-~\w\.]*\.js(on)?.*
 .*[_\W]addressdotnet[_\W].*
@@ -132,6 +134,7 @@
 .*[_\W]fb[_\W].*
 .*[_\W]feedback[-~\w\.]*\.js(on)?.*
 .*[_\W]fitvids[_\W].*
+.*[_\W]flash[-~\w\.]*\.js(on)?.*
 .*[_\W]flickity[-~\w\.]*\.js(on)?.*
 .*[_\W]foot(er)?[-~\w\.]*\.js(on)?.*
 .*[_\W]footer[-~\w\.]*\.js(on)?.*
@@ -165,6 +168,7 @@
 .*[_\W]iaw[-~\w\.]*\.js(on)?.*
 .*[_\W]iaw\.(.*\.)?js(on)?.*
 .*[_\W]id.?cta[_\W].*
+.*[_\W]id.?generator[-~\w\.]*\.js(on)?.*
 .*[_\W]impress(ions?)?[_\W].*
 .*[_\W]incapsula[_\W].*
 .*[_\W]index[-~\w\.]*\.js(on)?.*
@@ -226,6 +230,7 @@
 .*[_\W]otautoblock[-~\w\.]*\.js(on)?.*
 .*[_\W]overlay[-~\w\.]*\.js(on)?.*
 .*[_\W]partner[-~\w\.]*\.js(on)?.*
+.*[_\W]pb\.([-~\w\.]*\.)?js(on)?.*
 .*[_\W]pbjs[-~\w\.]*\.js(on)?.*
 .*[_\W]perform[-~\w\.]*\.js(on)?.*
 .*[_\W]performance[-~\w\.]*\.js(on)?.*
@@ -318,6 +323,7 @@
 .*[_\W]test[-~\w\.]*\.js(on)?.*
 .*[_\W]test[_\W].*
 .*[_\W]tg\-[-~\w\.]*\.js(on)?.*
+.*[_\W]timer[-~\w\.]*\.js(on)?.*
 .*[_\W]timming[-~\w\.]*\.js(on)?.*
 .*[_\W]tmgrefresh[-~\w\.]*\.js(on)?.*
 .*[_\W]tra?ck$.*
@@ -339,6 +345,7 @@
 .*[_\W]underscore[_\W].*
 .*[_\W]unique(.?id)?[-~\w\.]*\.js(on)?.*
 .*[_\W]url[-~\w\.]*\.js(on)?.*
+.*[_\W]user.?data[_\W].*
 .*[_\W]user.?info[_\W].*
 .*[_\W]user[-~\w\.]*\.js(on)?.*
 .*[_\W]utms?[_\W].*
@@ -381,6 +388,7 @@
 .*gen(erate)?.?204.*
 .*geo.?ip.*
 .*geo.?location.*
+.*hash[-~\w\.]*\.js(on)?.*
 .*hawk.?link.*
 .*header.?ad.*
 .*header.?bidding.*
@@ -392,7 +400,9 @@
 .*outbrain.*
 .*pagead.*
 .*parsely.*
+.*plusone.*
 .*pre.?bid.*
+.*pre.?fetch.*
 .*pre.?roll.*
 .*qoe\?.*
 .*queryly.*
@@ -412,4 +422,5 @@
 .*uc\?export=.*
 .*uc\?id=.*
 .*user.?profile.*
+.*wotdscript.*
 .*zeotap.*
