@@ -846,6 +846,7 @@ list2 = [re.sub(r'^[_\W]?units?[_\W]*$', '', line) for line in list2]           
 list2 = [re.sub(r'^[_\W]?unique[_\W]*$', '', line) for line in list2]           # <remove spurious unique filter />
 list2 = [re.sub(r'^[_\W]?url[_\W]*$', '', line) for line in list2]              # <remove spurious url filter />
 list2 = [re.sub(r'^[_\W]?users?[_\W]*$', '', line) for line in list2]           # <remove spurious user(s) filter />
+list2 = [re.sub(r'^[_\W]?vam[_\W]*$', '', line) for line in list2]              # <remove spurious vam filter />
 list2 = [re.sub(r'^[_\W]?variations?[_\W]*$', '', line) for line in list2]      # <remove spurious variation(s) filter />
 list2 = [re.sub(r'^[_\W]?vendors?[_\W]*$', '', line) for line in list2]         # <remove spurious vendor(s) filter />
 list2 = [re.sub(r'^[_\W]?video(js)?(playblack)?[_\W]*$', '', line) for line in list2] # <remove spurious video(js)(playback) filter />
