@@ -2,6 +2,7 @@
 ! expires: 1 day
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list
 ! title: regex block list
+.*(?<!b)logg.*
 .*/\?\?\-.*
 .*/js/th/.*
 .*[_\W](fast)?cli?cks?[_\W].*
@@ -40,6 +41,7 @@
 .*[_\W]adwords?[-~\w\.]*\.js(on)?.*
 .*[_\W]aff[-~\w\.]*\.js(on)?.*
 .*[_\W]affiliate[-~\w\.]*\.js(on)?.*
+.*[_\W]ai[_\W]([-~\w\.]*\.)?js(on)?.*
 .*[_\W]ai[sw]\.([-~\w\.]*\.)?js(on)?.*
 .*[_\W]aimatch[_\W].*
 .*[_\W]akam[_\W].*
@@ -201,7 +203,6 @@
 .*[_\W]moapt[-~\w\.]*\.js(on)?.*
 .*[_\W]moapt[_\W].*
 .*[_\W]modern[-~\w\.]*\.js(on)?.*
-.*[_\W]modernizr[-~\w\.]*\.js(on)?.*
 .*[_\W]moment[-~\w\.]*\.js(on)?.*
 .*[_\W]monitor[_\W].*
 .*[_\W]my[-~\w\.]*\.js(on)?.*
@@ -210,10 +211,9 @@
 .*[_\W]news.?letter[-~\w\.]*\.js(on)?.*
 .*[_\W]nextcustom[-~\w\.]*\.js(on)?.*
 .*[_\W]nfplug[-~\w\.]*\.js(on)?.*
-.*[_\W]notification[-~\w\.]*\.js(on)?.*
-.*[_\W]notify[-~\w\.]*\.js(on)?.*
+.*[_\W]notif[-~\w\.]*\.js(on)?.*
 .*[_\W]nuxt[_\W].*
-.*[_\W]oas\.([-~\w\.]*\.)?js(on)?.*
+.*[_\W]oas[_\W]([-~\w\.]*\.)?js(on)?.*
 .*[_\W]observe[-~\w\.]*\.js(on)?.*
 .*[_\W]onesignal[-~\w\.]*\.js(on)?.*
 .*[_\W]onesignal[_\W].*
@@ -228,7 +228,6 @@
 .*[_\W]pb\.([-~\w\.]*\.)?js(on)?.*
 .*[_\W]pbjs[-~\w\.]*\.js(on)?.*
 .*[_\W]perform[-~\w\.]*\.js(on)?.*
-.*[_\W]performance[-~\w\.]*\.js(on)?.*
 .*[_\W]permutive[_\W].*
 .*[_\W]pi?xl?(ctl)?[_\W].*
 .*[_\W]piano[-~\w\.]*\.js(on)?.*
@@ -391,7 +390,7 @@
 .*incapsula.*
 .*jsdelivr.*
 .*leadforensics.*
-.*logg.*
+.*log.?impression.*
 .*marfeel.*
 .*omniture.*
 .*optanon.*
@@ -420,6 +419,7 @@
 .*streamsense.*
 .*stub[-~\w\.]*\.js(on)?.*
 .*stub[_\W].*
+.*tagcommander.*
 .*textad.*
 .*timedtext\?.*
 .*timthumb.*
@@ -427,5 +427,7 @@
 .*uc\?id=.*
 .*usabilla.*
 .*user.?profile.*
+.*webtrack.*
+.*webtrend.*
 .*wotdscript.*
 .*zeotap.*
