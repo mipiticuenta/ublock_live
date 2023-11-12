@@ -277,7 +277,6 @@
 -adikteev.
 -adimage
 -adimage-
--adloader-
 -admarket-
 -adobedatalayer
 -adobedatalayer_
@@ -628,7 +627,6 @@
 .ashx?adid
 .ashx?btag
 .ashx?u
-.audiencetarget.
 .autos
 .bbn
 .beauty
@@ -1272,7 +1270,6 @@
 /[_\W](|high)web(media|orama|trekk)[_\W]/
 /[_\W]2o7[_\W]/
 /[_\W]33across[_\W]/
-/[_\W]ScriptResource[_\W]/
 /[_\W][a-z]*collect(ors?)?[_\W]/$important
 /[_\W][a-z]*comments?[_\W]/
 /[_\W][a-z]*footer[-~\w\.]*\.js(on)?/
@@ -1283,6 +1280,7 @@
 /[_\W]ab.?test[-~\w\.]*\.js(on)?/
 /[_\W]abba[-~\w\.]*\.js(on)?/
 /[_\W]ace[-~\w\.]*\.js(on)?/
+/[_\W]ad(re)?load/$important
 /[_\W]ad.?script[-~\w\.]*\.js(on)?/
 /[_\W]ad.?scripts?[_\W]/$important
 /[_\W]adb(lock(er)?)?.?detect[-~\w\.]/
@@ -1303,6 +1301,7 @@
 /[_\W]aff[-~\w\.]*\.js(on)?/
 /[_\W]affiliate[-~\w\.]*\.js(on)?/
 /[_\W]ai[sw]\.([-~\w\.]*\.)?js(on)?/
+/[_\W]aimatch[_\W]/$important
 /[_\W]akam[_\W]/
 /[_\W]akismet[_\W]/
 /[_\W]all\.(.*\.)?js(on)?/
@@ -1318,6 +1317,7 @@
 /[_\W]audience[-~\w\.]*\.js(on)?/
 /[_\W]auto.?complete[-~\w\.]*\.js(on)?/
 /[_\W]auto.?optimize[-~\w\.]*\.js(on)?/
+/[_\W]aweber[-~\w\.]*\.js(on)?/
 /[_\W]bann?i?ere?s?/$important
 /[_\W]beacons?[_\W]/
 /[_\W]beam[-~\w\.]*\.js(on)?/
@@ -2346,8 +2346,6 @@
 /adlik2.
 /adlink
 /adlinks.
-/adload.
-/adloaders/*
 /adlocationconfig
 /adlocker.
 /adlog.
@@ -2523,8 +2521,6 @@
 /adrefresh
 /adrefresh-
 /adrelated
-/adreload$important
-/adreloader
 /adremedy
 /adremote
 /adrender
@@ -3209,7 +3205,6 @@
 /aia.js
 /aibaoliang.
 /aika.swf
-/aimatch
 /aimfillcampus.
 /aimg/*
 /aimgs/*
@@ -3843,7 +3838,7 @@
 /audience_signup_widgets/*
 /audiencenetwork/*
 /audiencescience.
-/audiencetarget
+/audiencetarget/$important
 /audios/*
 /audit
 /audit/*
@@ -4679,6 +4674,7 @@
 /boost/*
 /boost_stats.
 /boosted
+/booster.?cache/
 /boostersite-logo.
 /boot.js
 /boot_data.js
@@ -17935,8 +17931,7 @@
 /us-travels-1.
 /us/google/*
 /usa_250_120.
-/usabilla
-/usabilla.js
+/usabilla/$important
 /usage
 /usage.
 /usaha-berhasil.
@@ -20818,7 +20813,6 @@ adlik.
 adlik2.
 adlink
 adlipay.
-adloadversion
 adlocationconfig
 adlocker.
 adlog.
@@ -20996,7 +20990,6 @@ adrefresh
 adrefresh-
 adreinsertion
 adrelated
-adreload$important
 adremedy
 adremote
 adrender
@@ -21699,8 +21692,6 @@ aia.js
 aibaoliang.
 aiidatapro.
 aikidochark.
-aimatch
-aimatch$important
 aimdigital.
 aimp
 ainder.
@@ -22433,9 +22424,6 @@ audience_science_
 audiencescience
 audiencescience.
 audiencesegment*$important
-audiencetarget
-audiencetarget$important
-audiencetarget*$important
 audioholics.
 audiotools.
 audit
@@ -37648,8 +37636,6 @@ urlty.
 urnawareflan.
 urnkawsxxh.
 usa_250_120.
-usabilla
-usabilla$important
 usaelections
 usage
 usage.
