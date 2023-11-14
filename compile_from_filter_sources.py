@@ -310,6 +310,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.]?custom\*?(?=[/\.])', '', line) for line in list2]  # <remove leading custom />
     list2 = [re.sub(r'^[/\.]?data\*?(?=[/\.])', '', line) for line in list2]    # <remove leading data />
     list2 = [re.sub(r'^[/\.]?default\*?(?=[/\.])', '', line) for line in list2] # <remove leading default />
+    list2 = [re.sub(r'^[/\.]?ebay\*?(?=[/\.])', '', line) for line in list2]    # <remove leading ebay />
     list2 = [re.sub(r'^[/\.]?ext\*?(?=[/\.])', '', line) for line in list2]     # <remove leading ext />
     list2 = [re.sub(r'^[/\.]?files?\*?(?=[/\.])', '', line) for line in list2]  # <remove leading file(s) />
     list2 = [re.sub(r'^[/\.]?forum\*?(?=[/\.])', '', line) for line in list2]   # <remove leading forum />
@@ -608,6 +609,7 @@ list2 = [re.sub(r'^[_\W]?(down|up)?load(er|s)?[_\W]*$', '', line) for line in li
 list2 = [re.sub(r'^[_\W]?down[_\W]*$', '', line) for line in list2]             # <remove spurious down filter />
 list2 = [re.sub(r'^[_\W]?duckduckgo[_\W]*$', '', line) for line in list2]       # <remove spurious duckduckgo filter />
 list2 = [re.sub(r'^[_\W]?dynamic[_\W]*$', '', line) for line in list2]          # <remove spurious dynamic filter />
+list2 = [re.sub(r'^[_\W]?ebay[_\W]*$', '', line) for line in list2]             # <remove spurious ebay filter />
 list2 = [re.sub(r'^[_\W]?editorial[_\W]*$', '', line) for line in list2]        # <remove spurious editorial filter />
 list2 = [re.sub(r'^[_\W]?e?mail[_\W]*$', '', line) for line in list2]           # <remove spurious (e)mail filter />
 list2 = [re.sub(r'^[_\W]?elm[_\W]*$', '', line) for line in list2]              # <remove spurious elm filter />
