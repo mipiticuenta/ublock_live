@@ -1415,6 +1415,7 @@
 /[_\W]gigya[-~\w\.]*\.js(on)?/
 /[_\W]godo[-~\w\.]*\.js(on)?/
 /[_\W]gpt\.(.*\.)?js(on)?/$important
+/[_\W]gtag[_\W]/
 /[_\W]gtm[-~\w\.]*\.js(on)?/
 /[_\W]gulp[-~\w\.]*\.js(on)?/
 /[_\W]hanealneh[-~\w\.]*\.js(on)?/
@@ -1485,6 +1486,7 @@
 /[_\W]otautoblock[-~\w\.]*\.js(on)?/
 /[_\W]overlay[-~\w\.]*\.js(on)?/
 /[_\W]partner[-~\w\.]*\.js(on)?/
+/[_\W]pb[-~\w\.]*\.js(on)?/
 /[_\W]pb\.([-~\w\.]*\.)?js(on)?/
 /[_\W]pbjs[-~\w\.]*\.js(on)?/
 /[_\W]perform[-~\w\.]*\.js(on)?/
@@ -1588,6 +1590,7 @@
 /[_\W]u?tag[_\W]/
 /[_\W]uac[-~\w\.]*\.js(on)?/
 /[_\W]uedata[_\W]/
+/[_\W]uelogin[_\W]/
 /[_\W]uic[-~\w\.]*\.js(on)?/
 /[_\W]unagi[_\W]/
 /[_\W]underscore[-~\w\.]*\.js(on)?/
@@ -3265,12 +3268,10 @@
 /albumview.
 /alcsrnetwork.
 /aleft
-/alert-info.js
-/alert.js
 /alert/*
 /alert/replacement/*
+/alert[-~\w\.]*\.js(on)?/
 /alertpay120x60.
-/alertswidget.js
 /alexa.
 /alexa_a.js
 /alexavegas.
@@ -7717,7 +7718,6 @@
 /front.js
 /front_end_assets/images/biggapon/*
 /frontale.
-/frontend-gtag.
 /frontend-sentry-
 /frontend/media/cm/*
 /frontend_loader
@@ -8491,10 +8491,6 @@
 /gt6skyadtop.
 /gta/*
 /gta_origins.
-/gtag
-/gtag.
-/gtag/*
-/gtag/js?id=ua-
 /gtlytics.js
 /gtm-
 /gtm-listeners.
@@ -12965,7 +12961,6 @@
 /pbjsandwich-
 /pbjsandwich.
 /pbmu.$important
-/pbmu.js
 /pbnr1.
 /pbnr2.
 /pbnr3.
@@ -12974,7 +12969,6 @@
 /pbstrackingplugin.
 /pbtopads
 /pbtopads.
-/pbwrapper.js
 /pc.js
 /pc/caltimes/?pulse2001
 /pc/gg/*
@@ -13456,6 +13450,7 @@
 /pokerzara.
 /pokevita-
 /pokped-
+/polarbyte/$important
 /polarnexus.js
 /policies
 /policyaccept.
@@ -14856,11 +14851,8 @@
 /ruhrmedic-kooperation_
 /rule34.
 /rule34hentai.
-/rum
 /rum-dytrc.
-/rum.
 /rum.min.
-/rum/*
 /rum?ddsource
 /rumahbokep.
 /rumcdn.
@@ -18488,7 +18480,6 @@
 /wagnzhantuiguang366.oss-
 /wahha/*
 /wahoha.
-/wait.
 /wall-post-
 /wall_street.js
 /walla-form
@@ -21736,10 +21727,7 @@ albumtk
 albumview.
 alcsrnetwork.
 aleft
-alert-info.js
-alert.js
 alertpay120x60.
-alertswidget.js
 alexa-sitestats.
 alexa.
 alexa_a.js
@@ -26630,7 +26618,6 @@ frond_der.
 front.js
 frontads
 frontale.
-frontend-gtag.
 frontend-sentry-
 frontend_loader
 frontend_loader.
@@ -27460,8 +27447,6 @@ gsurl.
 gt.js
 gt6skyadtop.
 gta_origins.
-gtag
-gtag.
 gtlytics.js
 gtm-
 gtm-listeners.
@@ -32385,7 +32370,6 @@ pbjsandwich
 pbjsandwich-
 pbjsandwich.
 pbmu.$important
-pbmu.js
 pbnr1.
 pbnr2.
 pbnr3.
@@ -32901,7 +32885,6 @@ pokevita-
 pokexgames-tutoriais.
 poki.
 pokped-
-polarbyte$important
 polarnexus.js
 policies
 policyaccept.
@@ -34262,7 +34245,6 @@ ruhrmedic-kooperation_
 rule34.
 rule34hentai.
 rum-dytrc.
-rum.
 rum.min.
 rum?ddsource
 rumahbokep.
@@ -38189,7 +38171,6 @@ wahanatoto.
 wahanatoto1.
 wahoha.
 wahyupoker.
-wait.
 wall_street.js
 walla-form
 walla.js

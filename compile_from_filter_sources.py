@@ -674,6 +674,7 @@ list2 = [re.sub(r'^[_\W]?(in|out)put[_\W]*$', '', line) for line in list2]      
 list2 = [re.sub(r'^[_\W]?instagram[_\W]*$', '', line) for line in list2]        # <remove spurious instagram filter />
 list2 = [re.sub(r'^[_\W]?instant[_\W]*$', '', line) for line in list2]          # <remove spurious instant filter />
 list2 = [re.sub(r'^[_\W]?inter[_\W]*$', '', line) for line in list2]            # <remove spurious inter filter />
+list2 = [re.sub(r'^[_\W]?intelligence[_\W]*$', '', line) for line in list2]     # <remove spurious intelligence filter />
 list2 = [re.sub(r'^[_\W]?intro[_\W]*$', '', line) for line in list2]            # <remove spurious intro filter />
 list2 = [re.sub(r'^[_\W]?island[_\W]*$', '', line) for line in list2]           # <remove spurious island filter />
 list2 = [re.sub(r'^[_\W]?items?[_\W]*$', '', line) for line in list2]           # <remove spurious item(s) filter />
