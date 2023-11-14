@@ -572,7 +572,6 @@
 -visitogel.
 -visittkortannonse-
 -vodlocker
--votre-publicite.
 -warnaqq-
 -webad
 -webads
@@ -722,7 +721,6 @@
 .promorewards.
 .propellerads.
 .publicidade.
-.publicite.
 .rbtify.min.js
 .redtram.
 .reject.js
@@ -1445,6 +1443,7 @@
 /[_\W]ipsos[_\W]/
 /[_\W]joly[-~\w\.]*\.js(on)?/
 /[_\W]journey[-~\w\.]*\.js(on)?/
+/[_\W]key[_\W]/
 /[_\W]keyboard[-~\w\.]*\.js(on)?/
 /[_\W]landing[-~\w\.]*\.js(on)?/
 /[_\W]latest[-~\w\.]*\.js(on)?/
@@ -1476,8 +1475,6 @@
 /[_\W]nuxt[_\W]/
 /[_\W]oas[_\W]([-~\w\.]*\.)?js(on)?/
 /[_\W]observe[-~\w\.]*\.js(on)?/
-/[_\W]onesignal[-~\w\.]*\.js(on)?/
-/[_\W]onesignal[_\W]/
 /[_\W]onetap[-~\w\.]*\.js(on)?/
 /[_\W]onion[-~\w\.]*\.js(on)?/
 /[_\W]onwards?[-~\w\.]*\.js(on)?/
@@ -1486,11 +1483,9 @@
 /[_\W]otautoblock[-~\w\.]*\.js(on)?/
 /[_\W]overlay[-~\w\.]*\.js(on)?/
 /[_\W]partner[-~\w\.]*\.js(on)?/
+/[_\W]pb?\.([-~\w\.]*\.)?js(on)?/
 /[_\W]pb[-~\w\.]*\.js(on)?/
-/[_\W]pb\.([-~\w\.]*\.)?js(on)?/
-/[_\W]pbjs[-~\w\.]*\.js(on)?/
 /[_\W]perform[-~\w\.]*\.js(on)?/
-/[_\W]permutive[_\W]/
 /[_\W]pi?xl?(ctl)?[_\W]/$important
 /[_\W]piano[-~\w\.]*\.js(on)?/
 /[_\W]ping[_\W]/$important
@@ -1502,6 +1497,7 @@
 /[_\W]popu?nder[_\W]/
 /[_\W]popup[_\W]/
 /[_\W]position[-~\w\.]*\.js(on)?/
+/[_\W]post.?rating[_\W]/
 /[_\W]privacy[-~\w\.]*\.js(on)?/
 /[_\W]privacy[_\W]/$important
 /[_\W]processecm[-~\w\.]*\.js(on)?/
@@ -1509,6 +1505,7 @@
 /[_\W]promos?[_\W]/
 /[_\W]pub(?!l)[-~\w\.]*\.js(on)?/
 /[_\W]pub[_\W]/
+/[_\W]publi[_\W]/
 /[_\W]punycode[-~\w\.]*\.js(on)?/
 /[_\W]purch[_\W]/
 /[_\W]push[-~\w\.]*\.js(on)?/
@@ -1546,10 +1543,9 @@
 /[_\W]socials?[_\W]/
 /[_\W]socy[^a-z]/
 /[_\W]sonar[-~\w\.]*\.js(on)?/
-/[_\W]spf[-~\w\.]*\.js(on)?/
+/[_\W]sp[fm][-~\w\.]*\.js(on)?/
+/[_\W]spamshield[_\W]/
 /[_\W]sphinxs[-~\w\.]*\.js(on)?/
-/[_\W]spm[-~\w\.]*\.js(on)?/
-/[_\W]spm\.([-~\w\.]*\.)?js(on)?/
 /[_\W]sponsored[_\W]/
 /[_\W]sponsors?[_\W]/
 /[_\W]spot[^a-z]/
@@ -1647,6 +1643,7 @@
 /_bone/reklo/*
 /_carre_300_
 /_da.
+/_desktop/aliens/*
 /_export/informers/*
 /_ext/widget/*
 /_external.js
@@ -2426,10 +2423,8 @@
 /adobe-dtm
 /adobe-prd
 /adobe-prd/*
-/adobe-target*$important
+/adobe.?target/$important
 /adobe.js
-/adobe.targetv2-
-/adobe/target/*
 /adobe_audience_manager
 /adobeanalytics/*
 /adobeanalyticsandtargetoverwrites.
@@ -2793,6 +2788,7 @@
 /adstx.
 /adsupload/*
 /adsurge-
+/adsutils/$important
 /adsview
 /adsview.
 /adsview/*
@@ -4099,7 +4095,6 @@
 /bandeau_
 /bandeau_ok.swf
 /bandeaucnil/*
-/bandeaupublicite/*
 /bandeaux/*
 /bandito.
 /bandwagonhost-top.
@@ -5006,8 +5001,6 @@
 /can/cde/*
 /canalpalatin.
 /canarias-
-/candy
-/candy/*
 /candy_corrector.js
 /canizsk8
 /canteen.
@@ -6526,6 +6519,7 @@
 /dright.js
 /driveroff.js
 /drivers/*
+/drk_ledadv/*
 /droibam/*
 /droite.
 /droite/*
@@ -7520,9 +7514,6 @@
 /followusontwitter.
 /fonbet_
 /fonctions.min.js
-/fond
-/fond.
-/fond/*
 /fond2.
 /fondpub/*
 /fondsticky.
@@ -7588,7 +7579,6 @@
 /forumpixlog.
 /forums/ocpbanners/*
 /forums13.
-/forward?key
 /fosn.
 /foto/bnr/*
 /fotobank/r/*
@@ -7683,6 +7673,7 @@
 /frond_der.
 /front-end/assets/img/add/*
 /front.js
+/front/new/images/*
 /front_end_assets/images/biggapon/*
 /frontale.
 /frontend-sentry-
@@ -8059,7 +8050,6 @@
 /getfuolist
 /getgame
 /getgeo
-/getgg.php?key
 /getgoods
 /gethotrank
 /getimage
@@ -8193,9 +8183,7 @@
 /gidonline.js
 /giga.js
 /gigaflat.js
-/gigya-socialize-for-wordpress/*
-/gigyagaintegration.
-/gigyatargetad.
+/gigya/
 /gilapoker-
 /gillkom
 /gingeranalytics.
@@ -9470,7 +9458,6 @@
 /index.php?c=dudu_
 /index.php?cp
 /index.php?idsite
-/index.php?key=*&t1
 /index.php?m=games&c=index&a=ztad
 /index.php?m=poster
 /index.php?option=com_content&view=article&id
@@ -9587,7 +9574,6 @@
 /inouttool/*
 /inpic.js
 /inpl.measure.
-/inpl.webpush.
 /inplaybn-
 /inplayer.
 /inread.
@@ -9677,6 +9663,7 @@
 /interwin.
 /intf
 /intg.js
+/intltelinput/
 /intrf.js
 /intro.mp4
 /intstatcheck.
@@ -10242,8 +10229,6 @@
 /ketuapkr.
 /ketuapoker.
 /ketuapokernew.
-/key.
-/key/get?partner_id
 /keyade.
 /keyade.js
 /keypress.
@@ -10789,7 +10774,6 @@
 /local.js
 /local_hydn/*
 /local_p.
-/local_p.js
 /local_ssu.
 /local_ssu.js
 /local_su.
@@ -10913,7 +10897,6 @@
 /longbanner_
 /lonteqq-
 /look.*/offer?prod
-/look.php?key=*&id
 /lookaside/crawler/*
 /lookbanner
 /lookbanner/*
@@ -11095,6 +11078,7 @@
 /makam2.
 /makebnr.
 /mallpleven.
+/mama_tips/*
 /mamairtetislogo.
 /mamatogel.
 /mamibit-
@@ -11663,7 +11647,6 @@
 /mrkbanners/*
 /mrskinleftside.
 /mrtarg.js
-/mscc/*
 /mscx-mtmwntq5.
 /msdng.js
 /msetupwidget
@@ -12194,7 +12177,6 @@
 /noticias/sqn.php?zones
 /notificationx
 /notify.
-/notify.php?key
 /notka
 /notmundo/*
 /notsmutty.
@@ -12432,12 +12414,7 @@
 /onedot$important
 /onedot.
 /oneinstack-
-/onesignalfix.
-/onesignalsdk-
-/onesignalsdkstyles
-/onesignalsdkupdaterworker.
-/onesignalsdkworker
-/onesignalsdkworker.
+/onesignal/$important
 /onestat.
 /onestat.js
 /onetag/*
@@ -12763,7 +12740,6 @@
 /pageview/*
 /pageview;
 /pageview?client
-/pageview?key
 /pageview?pageid
 /pageview?pageviewid
 /pageview?t
@@ -13027,6 +13003,7 @@
 /permission-client
 /permissionbar-
 /permissionbar.
+/permutive/$important
 /personalisation/logdata/*
 /pesbola-
 /pesonaqq.
@@ -13114,7 +13091,6 @@
 /pics/ban/*
 /pics/bapics/*
 /pics/design2/*
-/pics/publi/*
 /pics/shirts/*
 /pics_bdd/habillage/*
 /picsart_09.
@@ -13595,7 +13571,6 @@
 /profilbannercreate/*
 /profilerotator/*
 /profiles.js
-/profit.
 /programming-code-signs
 /progressads/*
 /prohockey-
@@ -13614,7 +13589,6 @@
 /promoitpret300x600.
 /promolanding
 /promoredirect
-/promoredirect?key
 /promosads/*
 /promosi365.
 /promoted
@@ -13766,17 +13740,9 @@
 /pubing
 /pubing/*
 /publ1c1te.
-/publi
-/publi*.html?t
-/publi-300x200.
-/publi/*
 /publi468.
 /publi728.
 /publi728/*
-/publi_120_
-/publi_300_
-/publi_700_
-/publi_728_
 /publicagentgo.
 /publicapi/*
 /publicidad
@@ -13793,16 +13759,7 @@
 /publicidadsetup/*
 /publicitario.
 /publicitat.
-/publicite-
-/publicite.
-/publicite/*
-/publicite2.
-/publicite3.
-/publicite_
-/publiciter.
-/publicites.
-/publicites/*
-/publicitesky.
+/publicite/
 /publicity
 /publicity.
 /publicity/*
@@ -13813,7 +13770,6 @@
 /publish/*
 /publisher-widgets
 /publisher/render/widget/*
-/publisher:getclientid?key
 /publisher_configurations.
 /publishers
 /publishers/*
@@ -13854,11 +13810,9 @@
 /pulse-custom-svm-plugin.
 /pulse.min.js
 /pulsetracking
-/pum-
 /pum-site-scripts-
 /pum-site-scripts.
 /pum-site-scripts.js
-/pum/*
 /puma_
 /punder
 /punder-rotate.
@@ -14491,7 +14445,6 @@
 /resonance.
 /resonateanalytics.
 /resource?zones
-/resources?key
 /resourcestat.
 /ressources/images/habillages/*
 /ressources/img/autopromo/*
@@ -14958,7 +14911,6 @@
 /sbackend_loader.
 /sbanken
 /sbar.
-/sbar.json?key
 /sbbi
 /sbbi/*
 /sbcagent.
@@ -16022,14 +15974,6 @@
 /sound/*
 /sounds/*
 /soundtrack.js
-/source.min.js
-/source/*
-/source/_desktop/aliens/*
-/source/adds/*
-/source/front/new/images/*
-/source/plugin/drk_ledadv/*
-/source/plugin/mama_tips/*
-/source/special/*
 /sourcecontent
 /sourcepoint
 /sourcepoint.js
@@ -16394,6 +16338,7 @@
 /stickyad3.
 /stickyads
 /stickyads.
+/stickyfill/
 /stickylb.
 /stijlvolsexybanner
 /stms.
@@ -16867,7 +16812,6 @@
 /template/default/style/t6/other/*
 /template/default_pc/bbs/*
 /template/images/*
-/template/images/publi/*
 /template/jiejiesao/aaaa/*
 /template/mytheme/statics/image/1/*
 /template/pubs/*
@@ -16927,8 +16871,6 @@
 /texasqq.
 /texnomag.
 /text.js
-/text_publi_01.
-/text_publi_02.
 /text_show.php?id
 /textad/$important
 /textlink.
@@ -17648,7 +17590,6 @@
 /txt.js
 /txt_iframe.
 /txt_publ
-/txt_publi_vert.
 /txtad.
 /txtad1
 /txtads
@@ -18009,7 +17950,6 @@
 /vast.js
 /vast.min.js
 /vast.xml
-/vast.xml?key
 /vast/*
 /vast/?zid
 /vast/mtg?pod
@@ -18483,11 +18423,7 @@
 /wasnap_
 /wasserle.
 /watch-now
-/watch?*&zone_key
-/watch?key=*&refer
-/watch?site_key
 /watchbutton11.
-/watchnew?key
 /watchnew?shu
 /watchteencam.
 /watchtime?$important
@@ -18599,16 +18535,7 @@
 /weboffer
 /weboffer/*
 /webplayer.
-/webpush
-/webpush-production.js
-/webpush.
-/webpush.ma.js
-/webpush/*
-/webpush_register.
-/webpushanalytics
-/webpushiframe.
-/webpushprompt.js
-/webpushr-sw
+/webpush/
 /webroot/referrals/*
 /webscript.js
 /webshow.
@@ -19986,9 +19913,6 @@ _publ1c1te
 _publ1c1te.
 _publicidade.
 _publicidade_
-_publicite.
-_publicite1.
-_publicite_
 _publog_
 _publog_2.
 _pubscript.
@@ -20822,9 +20746,7 @@ adobe
 adobe-analytics2.
 adobe-dtm
 adobe-prd
-adobe-target*$important
 adobe.js
-adobe.targetv2-
 adobe_audience_manager
 adobeanalyticsandtargetoverwrites.
 adobeanalyticsbundle.
@@ -22044,7 +21966,6 @@ apester$important
 apex.
 api-pravoved.
 api_ip_info.
-api_key
 apibet.
 apifetchadsdata
 apilog
@@ -23603,7 +23524,6 @@ camz.
 canadianrugs.
 canalesportivo.
 canarias-
-candy
 candy_corrector.js
 canizsk8
 cannontwin.
@@ -26346,12 +26266,8 @@ followus
 followusontwitter.
 fon-
 fonbet_
-fond
-fond-
 fond-site-
-fond.
 fond2.
-fond_
 fondsticky.
 fontawesome
 fontsproject
@@ -26440,7 +26356,6 @@ forumpixlog.
 forums
 forumviewtopicbottomad
 forumviewtopiccontentad
-forward?key
 fosn.
 fotocash.js
 foumovies.
@@ -26578,7 +26493,6 @@ ft_rss.
 ft_youtube.
 ftt.js
 fttrack2.
-ftv-publicite.
 fuckadb
 fuckadblock-
 fuckadblock.
@@ -26943,7 +26857,6 @@ getfreecourses.
 getfuolist
 getgame
 getgeo
-getgg.php?key
 getgo.
 getgoods
 gethotrank
@@ -27059,9 +26972,6 @@ giantsavings-a.
 giga.js
 gigaflat.js
 gigantporno.
-gigya$important
-gigyagaintegration.
-gigyatargetad.
 giiveaway-discord$important
 gilapoker-
 gillkom
@@ -28448,7 +28358,6 @@ inosmi.
 inp0st.
 inpic.js
 inpl.measure.
-inpl.webpush.
 inplaybn-
 inplayer.
 inpost-
@@ -29200,7 +29109,6 @@ kerstarrangementen.
 ketuapkr.
 ketuapoker.
 ketuapokernew.
-key.
 keyade.
 keyade.js
 keypress.
@@ -29907,7 +29815,6 @@ lobbyqq.
 lobyqq.
 local.js
 local_p.
-local_p.js
 local_ssu.
 local_ssu.js
 local_su.
@@ -30009,7 +29916,6 @@ longad.
 lonteqq-
 look-sport.
 look.*/offer?prod
-look.php?key=*&id
 lookcam.
 lookmovie.
 lookmovie186.
@@ -31516,7 +31422,6 @@ noticead
 noticemsg
 noticia_entidades_triarias_consultar.
 notificationx
-notify.php?key
 notifyfox$important
 notka
 notsmutty.
@@ -31787,12 +31692,6 @@ oneesports.
 oneinstack-
 onema-deyak.
 onesbet.
-onesignalfix.
-onesignalsdk-
-onesignalsdkstyles
-onesignalsdkupdaterworker.
-onesignalsdkworker
-onesignalsdkworker.
 onestat.
 onestat.js
 onetrust$important
@@ -31805,7 +31704,6 @@ online*rd.php?id
 online-casino-bonus-min.
 online-poker-rules.
 online-protection-now.
-online.*/promoredirect?key
 online.swedbank.se.swedd.
 online_calc.js
 onlinead$important
@@ -32120,7 +32018,6 @@ pageview.
 pageview.js
 pageview;
 pageview?client
-pageview?key
 pageview?pageid
 pageview?pageviewid
 pageview?t
@@ -33014,7 +32911,6 @@ productads.
 produits-
 profiles.js
 profiling.
-profit.
 programming-code-signs
 project-free-tv.
 projectfreetv.
@@ -33033,7 +32929,6 @@ promoimage.
 promoitpret300x600.
 promolanding
 promoredirect
-promoredirect?key
 promorewards.
 promosi365.
 promote.js
@@ -33165,16 +33060,8 @@ pubicosium.
 pubilbanat.
 pubimppixel.
 publ1c1te.
-publi
-publi*.html?t
-publi-300x200.
-publi.forum.
 publi468.
 publi728.
-publi_120_
-publi_300_
-publi_700_
-publi_728_
 publicagentgo.
 publicidad
 publicidad.
@@ -33188,14 +33075,6 @@ publicidees.
 publicitario.
 publicitat
 publicitat.
-publicite
-publicite.
-publicite2.
-publicite3.
-publicite_
-publiciter.
-publicites.
-publicitesky.
 publicity.
 publier-
 publis
@@ -33226,7 +33105,6 @@ pulsario.
 pulsario.js
 pulse-custom-svm-plugin.
 pulsetracking
-pum-
 pum-site-scripts
 pum-site-scripts-
 pum-site-scripts.
@@ -33867,7 +33745,6 @@ resoliltiu.
 resonance.
 resonateanalytics.
 resource?zones
-resources?key
 resourcestat.
 resp_
 responsiveads$important
@@ -34327,7 +34204,6 @@ sbackend_loader.
 sbanken
 sbanken.no.
 sbar.
-sbar.json?key
 sbbanner.
 sbcagent.
 sbchip.
@@ -36474,8 +36350,6 @@ texasqq.
 texnomag.
 text.js
 text_all
-text_publi_01.
-text_publi_02.
 text_show.php?id
 textfk
 textlink.
@@ -37287,7 +37161,6 @@ txt-abt-file
 txt.js
 txt_iframe.
 txt_publ
-txt_publi_vert.
 txtad.
 txtad1
 txtads
@@ -37627,7 +37500,6 @@ vast-
 vast-im.js
 vast.
 vast.js
-vast.xml?key
 vast3.
 vast4.js
 vast?t=vjs&v
@@ -38137,9 +38009,6 @@ wasnap_
 watch-now
 watch-series.
 watch4hd.
-watch?*&zone_key
-watch?key=*&refer
-watch?site_key
 watchbutton11.
 watchcartoononline.
 watchcartoonsonline.
@@ -38148,7 +38017,6 @@ watchgameofthrones.
 watchmovie.
 watchmovierulz.
 watchmovieshd.
-watchnew?key
 watchnew?shu
 watcho.
 watchomovies.
@@ -38271,15 +38139,6 @@ webnotf.js
 webp.net-resizeimage.
 webpc-passthru.php?src
 webplayer.
-webpush
-webpush-production.js
-webpush.
-webpush.ma.js
-webpush_register.
-webpushanalytics
-webpushiframe.
-webpushprompt.js
-webpushr-sw
 webroot.
 webscript.js
 webshow.
