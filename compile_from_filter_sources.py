@@ -290,8 +290,8 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^\.?[-_a-z0-9\*]+/', '/', line) for line in list2]        # <replace leading @/ with / />
     list2 = [re.sub(r'^[/\.]?ajax\*?(?=[/\.])', '', line) for line in list2]    # <remove leading ajax />
     list2 = [re.sub(r'^[/\.]?api\*?(?=[/\.])', '', line) for line in list2]     # <remove leading api />
-    list2 = [re.sub(r'^[/\.]?app\*?(?=[/\.])', '', line) for line in list2]     # <remove leading app />
     list2 = [re.sub(r'^[/\.]?apple\*?(?=[/\.])', '', line) for line in list2]   # <remove leading apple />
+    list2 = [re.sub(r'^[/\.]?app\*?(?=[/\.])', '', line) for line in list2]     # <remove leading app />
     list2 = [re.sub(r'^[/\.]?assets?\*?(?=[/\.])', '', line) for line in list2] # <remove leading asset />
     list2 = [re.sub(r'^[/\.]?attachments?\*?(?=[/\.])', '', line) for line in list2]    # <remove leading attachment />
     list2 = [re.sub(r'^[/\.]?brands?\*?(?=[/\.])', '', line) for line in list2] # <remove leading brand(s) />
@@ -325,17 +325,18 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.]?plugins?\*?(?=[/\.])', '', line) for line in list2]        # <remove leading plugin(s) /
     list2 = [re.sub(r'^[/\.]?public\*?(?=[/\.])', '', line) for line in list2]  # <remove leading public />
     list2 = [re.sub(r'^[/\.]?resources?\*?(?=[/\.])', '', line) for line in list2]      # <remove leading resource(s) />
-    list2 = [re.sub(r'^[/\.]?scr\*?(?=[/\.])', '', line) for line in list2]     # <remove leading src />
     list2 = [re.sub(r'^[/\.]?scripts?\*?(?=[/\.])', '', line) for line in list2]        # <remove leading script(s) />
+    list2 = [re.sub(r'^[/\.]?scr\*?(?=[/\.])', '', line) for line in list2]     # <remove leading src />
     list2 = [re.sub(r'^[/\.]?sdk\*?(?=[/\.])', '', line) for line in list2]     # <remove leading sdk />
     list2 = [re.sub(r'^[/\.]?sites?\*?(?=[/\.])', '', line) for line in list2]  # <remove leading site(s) />
+    list2 = [re.sub(r'^[/\.]?source\*?(?=[/\.])', '', line) for line in list2]  # <remove leading source />
     list2 = [re.sub(r'^[/\.]?_?statics?\*?(?=[/\.])', '', line) for line in list2]      # <remove leading static />
     list2 = [re.sub(r'^[/\.]?styles?\*?(?=[/\.])', '', line) for line in list2] # <remove leading style(s) />
     list2 = [re.sub(r'^[/\.]?temp\*?(?=[/\.])', '', line) for line in list2]    # <remove leading temp />
     list2 = [re.sub(r'^[/\.]?themes?\*?(?=[/\.])', '', line) for line in list2] # <remove leading theme(s) />
     list2 = [re.sub(r'^[/\.]?uploads?.?\*?(?=[/\.])', '', line) for line in list2]      # <remove leading uploads />
-    list2 = [re.sub(r'^[/\.]?v.?\*?(?=[/\.])', '', line) for line in list2]     # <remove leading v />
     list2 = [re.sub(r'^[/\.]?videos?\*?(?=[/\.])', '', line) for line in list2] # <remove leading video(s) />
+    list2 = [re.sub(r'^[/\.]?v.?\*?(?=[/\.])', '', line) for line in list2]     # <remove leading v />
     list2 = [re.sub(r'^[/\.]?web(resource)?\*?(?=[/\.])', '', line) for line in list2]     # <remove leading web(resource) />
     list2 = [re.sub(r'^[/\.]?wp\-content\*?(?=[/\.])', '', line) for line in list2]     # <remove leading wp-content />
     list2 = [re.sub(r'^[/\.]?www\*?(?=[/\.])', '', line) for line in list2]     # <remove leading www />
@@ -814,6 +815,7 @@ list2 = [re.sub(r'^[_\W]?slick[_\W]*$', '', line) for line in list2]            
 list2 = [re.sub(r'^[_\W]?slider[_\W]*$', '', line) for line in list2]           # <remove spurious slider filter />
 list2 = [re.sub(r'^[_\W]?snippets?[_\W]*$', '', line) for line in list2]        # <remove spurious snippet(s)filter />
 list2 = [re.sub(r'^[_\W]?social[_\W]*$', '', line) for line in list2]           # <remove spurious social filter />
+list2 = [re.sub(r'^[_\W]?source[_\W]*$', '', line) for line in list2]           # <remove spurious source filter />
 list2 = [re.sub(r'^[_\W]?sp(acer?)?[_\W]*$', '', line) for line in list2]       # <remove spurious sp(ace(r)) filter />
 list2 = [re.sub(r'^[_\W]?specials?[_\W]*$', '', line) for line in list2]        # <remove spurious special(s) filter />
 list2 = [re.sub(r'^[_\W]?speed[_\W]*$', '', line) for line in list2]            # <remove spurious speed filter />

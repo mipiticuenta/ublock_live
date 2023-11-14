@@ -186,6 +186,7 @@
 .*[_\W]ipsos[_\W].*
 .*[_\W]joly[-~\w\.]*\.js(on)?.*
 .*[_\W]journey[-~\w\.]*\.js(on)?.*
+.*[_\W]key[_\W].*
 .*[_\W]keyboard[-~\w\.]*\.js(on)?.*
 .*[_\W]landing[-~\w\.]*\.js(on)?.*
 .*[_\W]latest[-~\w\.]*\.js(on)?.*
@@ -217,8 +218,6 @@
 .*[_\W]nuxt[_\W].*
 .*[_\W]oas[_\W]([-~\w\.]*\.)?js(on)?.*
 .*[_\W]observe[-~\w\.]*\.js(on)?.*
-.*[_\W]onesignal[-~\w\.]*\.js(on)?.*
-.*[_\W]onesignal[_\W].*
 .*[_\W]onetap[-~\w\.]*\.js(on)?.*
 .*[_\W]onion[-~\w\.]*\.js(on)?.*
 .*[_\W]onwards?[-~\w\.]*\.js(on)?.*
@@ -227,11 +226,9 @@
 .*[_\W]otautoblock[-~\w\.]*\.js(on)?.*
 .*[_\W]overlay[-~\w\.]*\.js(on)?.*
 .*[_\W]partner[-~\w\.]*\.js(on)?.*
+.*[_\W]pb?\.([-~\w\.]*\.)?js(on)?.*
 .*[_\W]pb[-~\w\.]*\.js(on)?.*
-.*[_\W]pb\.([-~\w\.]*\.)?js(on)?.*
-.*[_\W]pbjs[-~\w\.]*\.js(on)?.*
 .*[_\W]perform[-~\w\.]*\.js(on)?.*
-.*[_\W]permutive[_\W].*
 .*[_\W]pi?xl?(ctl)?[_\W].*
 .*[_\W]piano[-~\w\.]*\.js(on)?.*
 .*[_\W]ping[_\W].*
@@ -243,6 +240,7 @@
 .*[_\W]popu?nder[_\W].*
 .*[_\W]popup[_\W].*
 .*[_\W]position[-~\w\.]*\.js(on)?.*
+.*[_\W]post.?rating[_\W].*
 .*[_\W]privacy[-~\w\.]*\.js(on)?.*
 .*[_\W]privacy[_\W].*
 .*[_\W]processecm[-~\w\.]*\.js(on)?.*
@@ -250,6 +248,7 @@
 .*[_\W]promos?[_\W].*
 .*[_\W]pub(?!l)[-~\w\.]*\.js(on)?.*
 .*[_\W]pub[_\W].*
+.*[_\W]publi[_\W].*
 .*[_\W]punycode[-~\w\.]*\.js(on)?.*
 .*[_\W]purch[_\W].*
 .*[_\W]push[-~\w\.]*\.js(on)?.*
@@ -287,10 +286,9 @@
 .*[_\W]socials?[_\W].*
 .*[_\W]socy[^a-z].*
 .*[_\W]sonar[-~\w\.]*\.js(on)?.*
-.*[_\W]spf[-~\w\.]*\.js(on)?.*
+.*[_\W]sp[fm][-~\w\.]*\.js(on)?.*
+.*[_\W]spamshield[_\W].*
 .*[_\W]sphinxs[-~\w\.]*\.js(on)?.*
-.*[_\W]spm[-~\w\.]*\.js(on)?.*
-.*[_\W]spm\.([-~\w\.]*\.)?js(on)?.*
 .*[_\W]sponsored[_\W].*
 .*[_\W]sponsors?[_\W].*
 .*[_\W]spot[^a-z].*
@@ -360,6 +358,7 @@
 .*^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?.*
 .*ad.?rotat.*
 .*ad_break.*
+.*adsutils.*
 .*advertising.*
 .*advinion.*
 .*affiliat.*
@@ -390,6 +389,7 @@
 .*gen(erate)?.?204.*
 .*geo.?ip.*
 .*geo.?location.*
+.*gigya.*
 .*googleads.*
 .*hash[-~\w\.]*\.js(on)?.*
 .*hawk.?link.*
@@ -397,16 +397,19 @@
 .*header.?bidding.*
 .*helper[-~\w\.]*\.js(on)?.*
 .*incapsula.*
+.*intltelinput.*
 .*jsdelivr.*
 .*leadforensics.*
 .*log.?impression.*
 .*marfeel.*
 .*omniture.*
+.*onesignal.*
 .*optanon.*
 .*opti?mi?ze?ly.*
 .*outbrain.*
 .*pagead.*
 .*parsely.*
+.*permutive.*
 .*plusone.*
 .*polarbyte.*
 .*polyfill.*
@@ -416,6 +419,7 @@
 .*pre.?fetch.*
 .*pre.?roll.*
 .*promotion.*
+.*publicite.*
 .*qoe\?.*
 .*queryly.*
 .*reklama.*
@@ -425,6 +429,7 @@
 .*smartbanner.*
 .*smarttag.*
 .*social.?media.*
+.*stickyfill.*
 .*storage[-~\w\.]*\.js(on)?.*
 .*streamsense.*
 .*stub[-~\w\.]*\.js(on)?.*
@@ -437,6 +442,7 @@
 .*uc\?id=.*
 .*usabilla.*
 .*user.?profile.*
+.*webpush.*
 .*webtrack.*
 .*webtrend.*
 .*wotdscript.*
