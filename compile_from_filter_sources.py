@@ -635,6 +635,7 @@ list2 = [re.sub(r'^[_\W]?fi[tx][_\W]*$', '', line) for line in list2]           
 list2 = [re.sub(r'^[_\W]?flash[_\W]*$', '', line) for line in list2]            # <remove spurious flash filter />
 list2 = [re.sub(r'^[_\W]?flipboard[_\W]*$', '', line) for line in list2]        # <remove spurious flipboard filter />
 list2 = [re.sub(r'^[_\W]?follow[_\W]*$', '', line) for line in list2]           # <remove spurious follow filter />
+list2 = [re.sub(r'^[_\W]?fond[_\W]*$', '', line) for line in list2]             # <remove spurious fond filter />
 list2 = [re.sub(r'^[_\W]?foot(er)?[_\W]*$', '', line) for line in list2]        # <remove spurious foot(er) filter />
 list2 = [re.sub(r'^[_\W]?forum[_\W]*$', '', line) for line in list2]            # <remove spurious forum filter />
 list2 = [re.sub(r'^[_\W]?fotos?[_\W]*$', '', line) for line in list2]           # <remove spurious foto(s) filter />
