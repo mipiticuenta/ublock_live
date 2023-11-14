@@ -337,7 +337,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.]?uploads?.?\*?(?=[/\.])', '', line) for line in list2]      # <remove leading uploads />
     list2 = [re.sub(r'^[/\.]?videos?\*?(?=[/\.])', '', line) for line in list2] # <remove leading video(s) />
     list2 = [re.sub(r'^[/\.]?v.?\*?(?=[/\.])', '', line) for line in list2]     # <remove leading v />
-    list2 = [re.sub(r'^[/\.]?web(resource)?\*?(?=[/\.])', '', line) for line in list2]     # <remove leading web(resource) />
+    list2 = [re.sub(r'^[/\.]?web(resource)?\*?(?=[/\.])', '', line) for line in list2]  # <remove leading web(resource) />
     list2 = [re.sub(r'^[/\.]?wp\-content\*?(?=[/\.])', '', line) for line in list2]     # <remove leading wp-content />
     list2 = [re.sub(r'^[/\.]?www\*?(?=[/\.])', '', line) for line in list2]     # <remove leading www />
     list2 = [re.sub(r'^\.?aspx?\??(?![a-z0-9])', '*', line).strip() for line in list2]  # <replace leading asp with * >
@@ -348,7 +348,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^\.?jpg\??(?![a-z0-9])', '*', line).strip() for line in list2]    # <replace leading jpg with * >
     list2 = [re.sub(r'^[/\.]?js/', '/', line) for line in list2]                # <replace leading js/ with / />
     list2 = [re.sub(r'^\.?js\??(?![a-z0-9])', '*', line).strip() for line in list2]     # <replace leading js with * >
-    list2 = [re.sub(r'^\.?mp[0-9]\??(?![a-z0-9])', '*', line).strip() for line in list2]        # <replace leading mp* with * >
+    list2 = [re.sub(r'^\.?mp[0-9]\??(?![a-z0-9])', '*', line).strip() for line in list2]    # <replace leading mp* with * >
     list2 = [re.sub(r'^\.?php\??(?![a-z0-9])', '*', line).strip() for line in list2]    # <replace leading php with * >
     list2 = [re.sub(r'^\.?png\??(?![a-z0-9])', '*', line).strip() for line in list2]    # <replace leading png with * >
     list2 = [re.sub(r'^\.?tiff\??(?![a-z0-9])', '*', line).strip() for line in list2]   # <replace leading tiff with * >
@@ -560,6 +560,7 @@ list2 = [re.sub(r'^[_\W]?buttons?[_\W]*$', '', line) for line in list2]         
 list2 = [re.sub(r'^[_\W]?cache[_\W]*$', '', line) for line in list2]            # <remove spurious cache filter />
 list2 = [re.sub(r'^[_\W]?call[_\W]*$', '', line) for line in list2]             # <remove spurious call filter />
 list2 = [re.sub(r'^[_\W]?can[_\W]*$', '', line) for line in list2]              # <remove spurious can filter />
+list2 = [re.sub(r'^[_\W]?candy[_\W]*$', '', line) for line in list2]            # <remove spurious candy filter />
 list2 = [re.sub(r'^[_\W]?capture[_\W]*$', '', line) for line in list2]          # <remove spurious capture filter />
 list2 = [re.sub(r'^[_\W]?center[_\W]*$', '', line) for line in list2]           # <remove spurious center filter />
 list2 = [re.sub(r'^[_\W]?c_fill[_\W]*$', '', line) for line in list2]           # <remove spurious c_fill filter />
@@ -773,6 +774,7 @@ list2 = [re.sub(r'^[_\W]?pre[_\W]*$', '', line) for line in list2]              
 list2 = [re.sub(r'^[_\W]?price[_\W]*$', '', line) for line in list2]            # <remove spurious price filter />
 list2 = [re.sub(r'^[_\W]?process(or)?[_\W]*$', '', line) for line in list2]     # <remove spurious process(or) filter />
 list2 = [re.sub(r'^[_\W]?prod(uct(ion)?s?)?[_\W]*$', '', line) for line in list2]     # <remove spurious prod(uct(ion)(s)) filter />
+list2 = [re.sub(r'^[_\W]?profit[_\W]*$', '', line) for line in list2]           # <remove spurious profit filter />
 list2 = [re.sub(r'^[_\W]?profile[_\W]*$', '', line) for line in list2]          # <remove spurious profile filter />
 list2 = [re.sub(r'^[_\W]?projects?[_\W]*$', '', line) for line in list2]        # <remove spurious project(s) filter />
 list2 = [re.sub(r'^[_\W]?promotion[_\W]*$', '', line) for line in list2]        # <remove spurious promotion filter />
@@ -780,6 +782,7 @@ list2 = [re.sub(r'^[_\W]?proxy[_\W]*$', '', line) for line in list2]            
 list2 = [re.sub(r'^[_\W]?public[_\W]*$', '', line) for line in list2]           # <remove spurious public filter />
 list2 = [re.sub(r'^[_\W]?publisher[_\W]*$', '', line) for line in list2]        # <remove spurious publisher filter />
 list2 = [re.sub(r'^[_\W]?pulse[_\W]*$', '', line) for line in list2]            # <remove spurious pulse filter />
+list2 = [re.sub(r'^[_\W]?pum[_\W]*$', '', line) for line in list2]              # <remove spurious pum filter />
 list2 = [re.sub(r'^[_\W]?pure[_\W]*$', '', line) for line in list2]             # <remove spurious pure filter />
 list2 = [re.sub(r'^[_\W]?raw(github)?[_\W]*$', '', line) for line in list2]     # <remove spurious raw(github) filter />
 list2 = [re.sub(r'^[_\W]?react[_\W]*$', '', line) for line in list2]            # <remove spurious react filter />
