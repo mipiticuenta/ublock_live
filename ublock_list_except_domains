@@ -497,7 +497,6 @@
 -redes-youtube.
 -reklamy
 -reklamy-
--release.min.js
 -rgocasino-
 -rgocasino.
 -rightrailad
@@ -1520,6 +1519,7 @@
 /[_\W]recommend[-~\w\.]*\.js(on)?/$important
 /[_\W]redir(ect)[_\W]/
 /[_\W]regenerator[-~\w\.]*\.js(on)?/
+/[_\W]release[-~\w\.]*\.js(on)?/
 /[_\W]remote[-~\w\.]*\.js(on)?/
 /[_\W]responsive[-~\w\.]*\.js(on)?/
 /[_\W]reverb[-~\w\.]*\.js(on)?/
@@ -1534,6 +1534,7 @@
 /[_\W]segment[-~\w\.]*\.js(on)?/
 /[_\W]sentiments[-~\w\.]*\.js(on)?/
 /[_\W]seo[_\W]/
+/[_\W]shcore[-~\w\.]*\.js(on)?/
 /[_\W]shim[-~\w\.]*\.js(on)?/
 /[_\W]showads?[_\W]/
 /[_\W]side.?bar[-~\w\.]*\.js(on)?/
@@ -5010,7 +5011,6 @@
 /caoaa
 /caoaa.js
 /caoaa5.js
-/caos
 /cap
 /cap_
 /cap_batiactu/*
@@ -11135,8 +11135,7 @@
 /mas_informacion/*
 /masculin_box
 /masf-
-/mashshare
-/mashshare-videopost/*
+/mashshare/
 /masonad.
 /massage-chinois
 /massy-1000x90-
@@ -11159,13 +11158,8 @@
 /matomo.js
 /matomo/*
 /matomo/js/*
-/matomyads
-/matomyads160x600.
-/matomyads250x250.
-/matomyads468x60.
-/matomyads728x90.
+/matomyads/
 /matpoules.
-/matrimoney/matrimoneybanners/*
 /mavenjump.
 /mavennofile.js
 /max468.
@@ -14034,7 +14028,6 @@
 /rad
 /rad.
 /rad.js
-/rad_station.release.js
 /radarmagazine.se.js
 /radeika_
 /radient-fish-worldjpg
@@ -16912,15 +16905,7 @@
 /thesport.
 /thetrack
 /thevy-mahal.swf
-/third-party-
-/third_party/*
-/thirdparty
-/thirdparty.
-/thirdparty/*
-/thirdpartyads
-/thirdpartyframe
-/thirdpartypix
-/thirdpartytrack
+/third.?party/
 /thiru-50.
 /thixel.
 /thixel.js
@@ -18549,6 +18534,7 @@
 /webstat2.
 /webstat_
 /webstatistics.
+/webstatsutil/$important
 /websurvey/*
 /webtech.
 /webtrack/$important
@@ -23534,7 +23520,6 @@ canvasad.
 caoaa
 caoaa.js
 caoaa5.js
-caos
 cap_
 capacomer.
 capital-diagnostic-n.
@@ -30202,8 +30187,6 @@ mas.
 masculin_box
 masf-
 masha
-mashshare
-mashsharer$important
 masonad.
 massage-chinois
 massariuscdn.
@@ -30236,11 +30219,6 @@ matom.js
 matomo
 matomo.
 matomo.js
-matomyads
-matomyads160x600.
-matomyads250x250.
-matomyads468x60.
-matomyads728x90.
 matpoules.
 matt.mercadolibre.
 mautaruhanbola.
@@ -33357,7 +33335,6 @@ racaty.
 rackcdn
 rad.
 rad.js
-rad_station.release.js
 radarr.js
 radeika_
 radio.
@@ -36418,13 +36395,6 @@ thevidhd.
 theweathernetwork
 thichviet.
 thinglink
-third-party
-third-party-
-thirdparty.
-thirdpartyads
-thirdpartyframe
-thirdpartypix
-thirdpartytrack
 this
 thisav.
 thixel.
