@@ -561,6 +561,7 @@ list2 = [re.sub(r'^[_\W]?cache[_\W]*$', '', line) for line in list2]            
 list2 = [re.sub(r'^[_\W]?call[_\W]*$', '', line) for line in list2]             # <remove spurious call filter />
 list2 = [re.sub(r'^[_\W]?can[_\W]*$', '', line) for line in list2]              # <remove spurious can filter />
 list2 = [re.sub(r'^[_\W]?candy[_\W]*$', '', line) for line in list2]            # <remove spurious candy filter />
+list2 = [re.sub(r'^[_\W]?caos[_\W]*$', '', line) for line in list2]             # <remove spurious caos filter />
 list2 = [re.sub(r'^[_\W]?capture[_\W]*$', '', line) for line in list2]          # <remove spurious capture filter />
 list2 = [re.sub(r'^[_\W]?center[_\W]*$', '', line) for line in list2]           # <remove spurious center filter />
 list2 = [re.sub(r'^[_\W]?c_fill[_\W]*$', '', line) for line in list2]           # <remove spurious c_fill filter />
