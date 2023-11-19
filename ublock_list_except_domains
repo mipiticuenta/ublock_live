@@ -123,6 +123,7 @@
 *$inline-script
 *$object
 *$other
+*$ping
 *$removeparam=/[_\W\A]ad[_\W]/,important
 *$removeparam=/[_\W\A]adb/,important
 *$removeparam=/[_\W\A]aff/,important
@@ -811,8 +812,6 @@
 /-open2/*
 /-pgjd8-iydq
 /-y15ylq6qjozjhinh9kr-a.
-//\?\?\-/$important
-//js/th//$important
 /00050ypw
 /001_bloginforam.
 /001x486x60_sport_ppc.
@@ -1267,19 +1266,15 @@
 /[_\W](|high)web(media|orama|trekk)[_\W]/
 /[_\W]2o7[_\W]/
 /[_\W]33across[_\W]/
-/[_\W][a-z]*collect(ors?)?[_\W]/$important
 /[_\W][a-z]*comments?[_\W]/
 /[_\W][a-z]*footer[-~\w\.]*\.js(on)?/
 /[_\W][a-z]*rightad[-~\w\.]*\.js(on)?/
 /[_\W][a-z]*share[-~\w\.]*\.js(on)?/
 /[_\W]aaw[-~\w\.]*\.js(on)?/
-/[_\W]ab.?test(ing)?[_\W]/$important
 /[_\W]ab.?test[-~\w\.]*\.js(on)?/
 /[_\W]abba[-~\w\.]*\.js(on)?/
 /[_\W]ace[-~\w\.]*\.js(on)?/
-/[_\W]ad(re)?load/$important
 /[_\W]ad.?script[-~\w\.]*\.js(on)?/
-/[_\W]ad.?scripts?[_\W]/$important
 /[_\W]adb(lock(er)?)?.?detect[-~\w\.]/
 /[_\W]adblock[-~\w\.]*\.js(on)?/
 /[_\W]addressdotnet[_\W]/
@@ -1327,7 +1322,7 @@
 /[_\W]bundle[-~\w\.]*\.js(on)?/
 /[_\W]cache[-~\w\.]*\.js(on)?/
 /[_\W]callback[_\W]/
-/[_\W]campaign[-~\w\.]*\.js(on)?/$important
+/[_\W]campaign[-~\w\.]*\.js
 /[_\W]ccpa[-~\w\.]*\.js(on)?/
 /[_\W]chameleon[-~\w\.]*\.js(on)?/
 /[_\W]chartbeat[_\W]/
@@ -1361,6 +1356,7 @@
 /[_\W]criteo[_\W]/
 /[_\W]cross.?domain[-~\w\.]*\.js(on)?/
 /[_\W]csp[_\W]/
+/[_\W]custom[-~\w\.]*\.js(on)?/
 /[_\W]cx[_\W]/
 /[_\W]cxense[-~\w\.]*\.js(on)?/
 /[_\W]danelei[-~\w\.]*\.js(on)?/
@@ -1516,7 +1512,7 @@
 /[_\W]rawp[-~\w\.]*\.js(on)?/
 /[_\W]react[-~\w\.]*\.js(on)?/
 /[_\W]recirc[-~\w\.]*\.js(on)?/
-/[_\W]recommend[-~\w\.]*\.js(on)?/$important
+/[_\W]recommend[-~\w\.]*\.js
 /[_\W]redir(ect)[_\W]/
 /[_\W]regenerator[-~\w\.]*\.js(on)?/
 /[_\W]release[-~\w\.]*\.js(on)?/
@@ -1566,7 +1562,7 @@
 /[_\W]tab[-~\w\.]*\.js(on)?/
 /[_\W]tagmanager[_\W]/
 /[_\W]tampering[-~\w\.]*\.js(on)?/
-/[_\W]target[-~\w\.]*\.js(on)?/$important
+/[_\W]target[-~\w\.]*\.js
 /[_\W]telemetry[_\W]/
 /[_\W]test[-~\w\.]*\.js(on)?/
 /[_\W]test[_\W]/
@@ -1599,7 +1595,7 @@
 /[_\W]utms?[_\W]/$important
 /[_\W]v[at]m[-~\w\.]*\.js(on)?/
 /[_\W]vendor[-~\w\.]*\.js(on)?/
-/[_\W]visit[-~\w\.]*\.js(on)?/$important
+/[_\W]visit[-~\w\.]*\.js
 /[_\W]visitor[_\W]/
 /[_\W]voonto[-~\w\.]*\.js(on)?/
 /[_\W]vote[-~\w\.]*\.js(on)?/
@@ -1884,7 +1880,6 @@
 /actueel_images
 /acuezzx6
 /acyhqyrkzus.mp4
-/ad.?rotat/$important
 /ad0.
 /ad02.
 /ad1
@@ -1926,7 +1921,6 @@
 /ad728.
 /ad920-
 /ad920.
-/ad_break/$important
 /ada.
 /adactions
 /adad2
@@ -3873,8 +3867,6 @@
 /autotrack-
 /autotrack.
 /autotrack.carbon.js
-/autotrack.custom.js
-/autotrack.custom.min.js
 /autotrack.js
 /autotrack.min.js
 /autotracker
@@ -5886,13 +5878,11 @@
 /curlad.
 /custom-blocks/*
 /custom-community/images/*
-/custom-elements-es5-adapter.js
 /custom-fan-gate
 /custom-fan-gate-plugin/*
 /custom-fan-gate/*
 /custom-script/*
 /custom-share.
-/custom_advanced.js
 /custom_rec_item
 /custom_rec_item/*
 /custom_vast/*
@@ -5901,13 +5891,11 @@
 /customadmode.
 /customads/*
 /customadsense.
-/customer_code.js
 /customer_image_service
 /customerad_
 /customerinsight
 /customers/*
 /customscript.
-/customscript.js
 /customsocialbar/*
 /customtrackingscript.
 /cutead.
@@ -7933,8 +7921,6 @@
 /genericobservablejs
 /genesis-simple-share
 /genybet/*
-/geo.?ip/$important
-/geo.?location/$important
 /geoanalysis.
 /geobox.
 /geocc.
@@ -8620,7 +8606,6 @@
 /headbanner/*
 /headbiggg_
 /header-werbung.
-/header.?ad/$important
 /header.?bidding/$important
 /header.js
 /header/reclames/*
@@ -15855,7 +15840,6 @@
 /sociable
 /sociable-
 /sociables/*
-/social.?media/$important
 /socialappsintegrator.
 /socialbadges.
 /socialbar-
@@ -16879,6 +16863,7 @@
 /tghtml/*
 /tgydqurh_o.
 /th*&riu
+/th/$important
 /th/*&riu
 /th9kcrs1
 /th_hit.
@@ -17029,7 +17014,6 @@
 /tnbjpg
 /tnc.
 /tnke7i3ijcr17dbnpqpzx.js
-/tnl_custom_snippet.js
 /tnscounter.
 /tnsmetrix/*
 /to_pagetop.
@@ -19011,7 +18995,6 @@
 /xe.js
 /xf.js
 /xf/trump/*
-/xfbml.customerchat.js
 /xfmftxmfneef
 /xforum/js/rotatingads/*
 /xgemius
@@ -24454,17 +24437,14 @@ cum.js
 curlad.
 custom-links
 custom-share.
-custom_advanced.js
 custom_videos.
 customad.
 customadmode.
 customadsense.
 customerad_
-customerchat.js
 customerinsight
 customers3773923site
 customscript.
-customscript.js
 customtrackingscript.
 cutead.
 cuwopk.
@@ -36515,7 +36495,6 @@ tnadstlinj.js
 tnbjpg
 tnc.
 tnke7i3ijcr17dbnpqpzx.js
-tnl_custom_snippet.js
 tnscounter.
 tnwcdn.
 to_pagetop.
