@@ -9,11 +9,11 @@ Compile a single deduplicated block list from url sources
 
 # </product backlog>
 
+import math                                                                     # <math functions />
 import os                                                                       # <operating system interfaces />
 import re                                                                       # <regular expression operations />
 import requests                                                                 # <get files using url />
 import tqdm                                                                     # <progress bar />
-import math                                                                     # <math functions />
 
 # <settings>
 
@@ -69,7 +69,7 @@ list1 = sorted(list1)
 
 # <dump sources to list>
 
-list2 = set()                                                                   # <set()type ensures no elements' duplication />
+list2 = set()                                                                   # <set() type ensures no elements' duplication />
 i     = 1                                                                       # <counter for uncommented sources />
 
 for line in list1 :
@@ -96,7 +96,7 @@ for line in list1 :
 
 # <segregate regex filters>
 
-list5 = [line for line in list2 if re.search(r'^/.+/(\$important)?$', line)]
+list5 = [line for line in list2 if re.search(r'^/.+/(\$[,a-z]+])?$', line)]
 list2  = set(list2) - set(list5)
 
 # <segregate regex filters>
