@@ -268,14 +268,10 @@
 -ad300x250-
 -ad480x60-
 -ad728x90-
--adbanner.
 -adblock-notice-
 -adbox-
 -adds-
--adfliction
--adfliction.
 -adhese.
--adikteev.
 -adimage
 -adimage-
 -admarket-
@@ -284,10 +280,6 @@
 -adrum.
 -ads720.
 -adskin.
--adslots.
--adsonar.
--adspace.
--adspromo.
 -adtrack
 -advertisment-
 -advt-
@@ -1250,7 +1242,6 @@
 /[_\W](|high)web(media|orama|trekk)[_\W]/
 /[_\W]2o7[_\W]/
 /[_\W]33across[_\W]/
-/[_\W][a-z]*comments?[_\W]/
 /[_\W][a-z]*footer[-~\w\.]*\.js(on)?/
 /[_\W][a-z]*rightad[-~\w\.]*\.js(on)?/
 /[_\W][a-z]*share[-~\w\.]*\.js(on)?/
@@ -1298,6 +1289,7 @@
 /[_\W]beam[-~\w\.]*\.js(on)?/
 /[_\W]bibblio[-~\w\.]*\.js(on)?/
 /[_\W]bloo\.(.*\.)?js(on)?/$important
+/[_\W]bootstrap[-~\w\.]*\.js(on)?/
 /[_\W]bottom[-~\w\.]*\.js(on)?/
 /[_\W]bump[-~\w\.]*\.js(on)?/
 /[_\W]bundle[-~\w\.]*\.js(on)?/
@@ -1351,17 +1343,15 @@
 /[_\W]dfp[_\W]/$important
 /[_\W]dfsn[_\W]/$important
 /[_\W]dfw\.([-~\w\.]*\.)?js(on)?/
-/[_\W]didomi[-~\w\.]*\.js(on)?/
 /[_\W]dismiss[-~\w\.]*\.js(on)?/
 /[_\W]djcmp[-~\w\.]*\.js(on)?/
 /[_\W]dmedianet[-~\w\.]*\.js(on)?/
 /[_\W]dom.?ready[-~\w\.]*\.js(on)?/
-/[_\W]domready[_\W]/
+/[_\W]dom.?ready[_\W]/
 /[_\W]donat[-~\w\.]*\.js(on)?/
 /[_\W]donate[_\W]/
 /[_\W]drivek[-~\w\.]*\.js(on)?/
 /[_\W]ebx.*\.js(on)?/
-/[_\W]eloqua[_\W]/
 /[_\W]email.?decode[_\W]/
 /[_\W]eventlog[_\W]/
 /[_\W]events?[_\W]/
@@ -1397,7 +1387,6 @@
 /[_\W]help[-~\w\.]*\.js(on)?/
 /[_\W]helper[_\W]/
 /[_\W]hook[-~\w\.]*\.js(on)?/
-/[_\W]hoverintent[-~\w\.]*\.js(on)?/
 /[_\W]htlbid[-~\w\.]*\.js(on)?/
 /[_\W]i18n[-~\w\.]*\.js(on)?/
 /[_\W]iaw[-~\w\.]*\.js(on)?/
@@ -1453,7 +1442,6 @@
 /[_\W]onetap[-~\w\.]*\.js(on)?/
 /[_\W]onion[-~\w\.]*\.js(on)?/
 /[_\W]onwards?[-~\w\.]*\.js(on)?/
-/[_\W]optimize[-~\w\.]*\.js(on)?/
 /[_\W]osano[-~\w\.]*\.js(on)?/
 /[_\W]otautoblock[-~\w\.]*\.js(on)?/
 /[_\W]overlay[-~\w\.]*\.js(on)?/
@@ -1938,9 +1926,7 @@
 /adban.
 /adbang.js
 /adbani
-/adbanner
-/adbanner_
-/adbanners/*
+/adbanner/
 /adbarmetrosprite.
 /adbase_
 /adbb.js
@@ -2131,7 +2117,7 @@
 /adflag.
 /adflash
 /adflash/*
-/adfliction-
+/adfliction/
 /adflight.
 /adflow.
 /adfoot
@@ -2176,7 +2162,7 @@
 /adifyad
 /adifyids
 /adifyoverlay
-/adikteev
+/adikteev/
 /adim.
 /adimage
 /adimage-
@@ -2619,7 +2605,7 @@
 /adsload.
 /adsloader-
 /adsloader/*
-/adslots.
+/adslot/
 /adsman/www/images/*
 /adsmanager.nsf/*
 /adsmanager/*
@@ -2635,20 +2621,13 @@
 /adsnippet.
 /adsniptrack.
 /adson/*
-/adsonar.
+/adsonar/
 /adsoptimal.
 /adsoptimal/*
 /adsoptimizer
 /adsource_
 /adsoverlay_
-/adspace
-/adspace.
-/adspace/*
-/adspace1.
-/adspace2.
-/adspace3.
-/adspacer.
-/adspaces.
+/adspace/
 /adspage.
 /adspan.
 /adspaymedia.
@@ -2662,9 +2641,7 @@
 /adspot.
 /adspot/*
 /adspot_
-/adspromo-
-/adspromo.
-/adspromo/*
+/adspromo/
 /adspub/*
 /adsquare-
 /adsquare.
@@ -4583,7 +4560,6 @@
 /boot.js
 /boot_data.js
 /bootloader.js
-/bootstrap.js
 /bordeaux.js
 /borky/*
 /borostcf/*
@@ -5438,6 +5414,7 @@
 /comic/richmedia/*
 /commadv
 /commander/images/*
+/comments?[_\W]/
 /commentshareicons.
 /commercial_horizontal.
 /commercial_top.
@@ -6714,6 +6691,7 @@
 /elephant/*
 /elite-barber-shop
 /elker_
+/eloqua/$important
 /elp
 /elpo-
 /elqcfg-
@@ -8512,8 +8490,6 @@
 /head_right_top.
 /head_xs.
 /headad.js
-/headbanner
-/headbanner/*
 /headbiggg_
 /header-werbung.
 /header.?bidding/$important
@@ -10651,8 +10627,6 @@
 /loadjsfingerprint.
 /loadpart.js
 /loadpluginsite
-/loadslotlocator
-/loadslotlocator.
 /loadsticky.
 /loadsv.
 /loadub.
@@ -12366,6 +12340,7 @@
 /optiextension.dll
 /optimization-perf.
 /optimization-perf.js
+/optimizely/$important
 /optimost-
 /optimost.
 /optimost/*
@@ -16093,7 +16068,6 @@
 /static_files/richmedia/*
 /static_files/zones/*
 /static_templates
-/staticadslot.
 /staticadssra.
 /staticbanners
 /staticfiles
@@ -16590,7 +16564,6 @@
 /tck/*
 /tcllc
 /tcv-
-/tcx?*adbanner
 /td-newsletter/*
 /td-pageviews.
 /td-woo/*
@@ -17276,7 +17249,6 @@
 /ttg-
 /ttg_
 /ttj?id
-/ttn_adspaces
 /ttrack
 /ttstatistics.
 /ttt.
@@ -19527,9 +19499,6 @@ _adb
 _adb&*&partnerid
 _adb_300x250_
 _adb_728x90_
-_adbanner.
-_adbanner_
-_adbanners.
 _adbar.
 _adblock_killer.
 _adblock_stat.
@@ -19579,7 +19548,6 @@ _adsfullsite
 _adshow.
 _adskin.
 _adskin_
-_adspromo.
 _adstyle.
 _adtech
 _adtech-
@@ -20113,8 +20081,6 @@ adback.
 adbackground.
 adban.
 adbang.js
-adbanner
-adbanner_
 adbarmetrosprite.
 adbase_
 adbasket.
@@ -20343,7 +20309,6 @@ adfiles?adid
 adfiller
 adflag.
 adflash
-adfliction-
 adflight.
 adflow.
 adfloz.
@@ -20385,8 +20350,6 @@ adify_
 adifyad
 adifyids
 adifyoverlay
-adikteev
-adikteev.
 adim.
 adimage
 adimage-
@@ -20823,7 +20786,6 @@ adsligados.
 adsligapoker.
 adsload.
 adsloader-
-adslots.
 adsmanager.js
 adsmanagerv2.
 adsmouse.
@@ -20835,19 +20797,11 @@ adsnews.
 adsnip.
 adsnippet.
 adsniptrack.
-adsonar.
 adsoptimal.
 adsoptimizer
 adsota$important
 adsource_
 adsoverlay_
-adspace
-adspace.
-adspace1.
-adspace2.
-adspace3.
-adspacer.
-adspaces.
 adspage.
 adspan.
 adspaymedia.
@@ -20861,9 +20815,6 @@ adsplus.
 adsponsor.
 adspot_
 adspot_top
-adspromo$important
-adspromo-
-adspromo.
 adsquare-
 adsremote.
 adsroute.
@@ -22094,8 +22045,6 @@ autoonderdelen
 autoonderdelen24_
 autoplay
 autopromo.
-autoptimize_
-autoptimize_single_
 autoriparazioniflorisgiorgio.
 autosave.js
 autosda.
@@ -22943,7 +22892,6 @@ boostersite-logo.
 boot.js
 boot_data.js
 bootloader.js
-bootstrap.js
 bootstrapcdn
 bordeaux.js
 bosbobet.
@@ -29597,8 +29545,6 @@ loadingshow.
 loadjsfingerprint.
 loadpart.js
 loadpluginsite
-loadslotlocator
-loadslotlocator.
 loadsv.
 loadub.
 lobbyqq.
@@ -29818,7 +29764,6 @@ mackeeperapp1.
 macro
 mad.
 mad.js
-madbanner.
 madlan
 madrasdub.
 mads.
@@ -35088,7 +35033,6 @@ softonic.
 softshow_
 sogopoker-
 sogopoker.
-sogou_wap_setjsonadslot
 sohu.
 soj2.js
 solarcode.
@@ -35392,7 +35336,6 @@ statcounter.
 statdata-
 static2.vidto.
 static_pc.min.js
-staticadslot.
 staticadssra.
 statically.
 staticbanners
@@ -35978,7 +35921,6 @@ tcfuzvca
 tckn-code.
 tcllc
 tcv-
-tcx?*adbanner
 td-pageviews.
 td.js
 tdeymorh.js
@@ -36750,7 +36692,6 @@ ttbp.
 ttg-
 ttg_
 ttj?id
-ttn_adspaces
 ttrack
 ttt.
 ttvnw
