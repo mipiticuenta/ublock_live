@@ -673,6 +673,7 @@ list2 = [re.sub(r'^[_\W]?(inc?|out|left|right)[_\W]*$', '', line) for line in li
 list2 = [re.sub(r'^[_\W]?index[_\W]*$', '', line) for line in list2]            # <remove spurious index filter />
 list2 = [re.sub(r'^[_\W]?infinity[_\W]*$', '', line) for line in list2]         # <remove spurious infinity filter />
 list2 = [re.sub(r'^[_\W]?info[_\W]*$', '', line) for line in list2]             # <remove spurious info filter />
+list2 = [re.sub(r'^[_\W]?i?phone[_\W]*$', '', line) for line in list2]          # <remove spurious (i)phone filter />
 list2 = [re.sub(r'^[_\W]?init[_\W]*$', '', line) for line in list2]             # <remove spurious init filter />
 list2 = [re.sub(r'^[_\W]?inline[_\W]*$', '', line) for line in list2]           # <remove spurious inline filter />
 list2 = [re.sub(r'^[_\W]?inner[_\W]*$', '', line) for line in list2]            # <remove spurious inner filter />

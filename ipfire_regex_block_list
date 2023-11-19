@@ -2,6 +2,7 @@
 ! expires: 1 day
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list
 ! title: regex block list
+.*/adblock.*
 .*[_\W](fast)?cli?cks?[_\W].*
 .*[_\W](web)?worker[-~\w\.]*\.js(on)?.*
 .*[_\W](|de)collect(|or)[_\W].*
@@ -20,8 +21,6 @@
 .*[_\W]adb(lock(er)?)?.?detect[-~\w\.].*
 .*[_\W]adblock[-~\w\.]*\.js(on)?.*
 .*[_\W]addressdotnet[_\W].*
-.*[_\W]addthis[-~\w\.]*\.js(on)?.*
-.*[_\W]addthis[_\W].*
 .*[_\W]adfuel[-~\w\.]*\.js(on)?.*
 .*[_\W]adops?[_\W].*
 .*[_\W]adrum[-~\w\.]*\.js(on)?.*
@@ -38,7 +37,6 @@
 .*[_\W]ai[_\W]([-~\w\.]*\.)?js(on)?.*
 .*[_\W]ai[sw]\.([-~\w\.]*\.)?js(on)?.*
 .*[_\W]akam[_\W].*
-.*[_\W]akismet[_\W].*
 .*[_\W]all\.(.*\.)?js(on)?.*
 .*[_\W]ampz?[_\W].*
 .*[_\W]analytic[-~\w\.]*\.js(on)?.*
@@ -322,6 +320,16 @@
 .*[_\W]zephr[-~\w\.]*\.js(on)?.*
 .*[_\W]zepto[-~\w\.]*\.js(on)?.*
 .*^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?.*
+.*adbrite.*
+.*adbutler.*
+.*adchoice.*
+.*addthis.*
+.*adengage.*
+.*adform.*
+.*adframe.*
+.*adfuel.*
+.*admanagesystem.*
+.*akismet.*
 .*alert[-~\w\.]*\.js(on)?.*
 .*booster.?cache.*
 .*csp.?report.*
@@ -342,6 +350,7 @@
 .*publicite.*
 .*reklama.*
 .*sharing[-~\w\.]*\.js(on)?.*
+.*sponsoren.*
 .*stickyfill.*
 .*storage[-~\w\.]*\.js(on)?.*
 .*stub[-~\w\.]*\.js(on)?.*
