@@ -751,7 +751,6 @@
 .siteclarity.
 .sitetracking.
 .slavaangel.
-.snow.js
 .snowplowanalytics.
 .sociallocker.
 .speedostream.
@@ -1389,7 +1388,6 @@
 /[_\W]experiment[-~\w\.]*\.js(on)?/
 /[_\W]fb[_\W]/$important
 /[_\W]feedback[-~\w\.]*\.js(on)?/
-/[_\W]fitvids[_\W]/
 /[_\W]flash[-~\w\.]*\.js(on)?/
 /[_\W]flickity[-~\w\.]*\.js(on)?/
 /[_\W]foot(er)?[-~\w\.]*\.js(on)?/
@@ -1401,7 +1399,7 @@
 /[_\W]ga[_\W][-~\w\.]*\.js(on)?/
 /[_\W]gads[_\W]/
 /[_\W]gallium[-~\w\.]*\.js(on)?/
-/[_\W]gdpr[_\W]/
+/[_\W]gdpr[_\W]/$important
 /[_\W]geo[-~\w\.]*\.js(on)?/
 /[_\W]geo[_\W]/
 /[_\W]gfg[-~\w\.]*\.js(on)?/
@@ -1537,6 +1535,7 @@
 /[_\W]side.?bar[-~\w\.]*\.js(on)?/
 /[_\W]sirv[-~\w\.]*\.js(on)?/
 /[_\W]slick[-~\w\.]*\.js(on)?/
+/[_\W]snow[-~\w\.]*\.js(on)?/
 /[_\W]snowstorm[-~\w\.]*\.js(on)?/
 /[_\W]socials?[_\W]/
 /[_\W]socy[^a-z]/
@@ -5226,7 +5225,6 @@
 /choose/view/*
 /christmas-panda
 /christmas-snow.
-/christmas-snow.js
 /christmasify/*
 /chs/share/*
 /cht/share/*
@@ -7372,6 +7370,7 @@
 /firstvisit
 /fishfingers
 /fit?analyticssession
+/fitvids/
 /fiver300_600.
 /fixads.js
 /fixblock.js
@@ -8854,6 +8853,7 @@
 /housepix.
 /houston.js
 /houzz-button.
+/hover.?intent/$important
 /hoverad.
 /hoverad.js
 /howe-co.
@@ -15787,25 +15787,14 @@
 /snippet.min.js
 /snmp.
 /snow
-/snow-fall.js
-/snow-falling.js
 /snow-storm-
 /snow-storm/*
-/snow.js
-/snow2.js
-/snowday262.js
-/snowfall-master.min.js
 /snowfall.jquery.
-/snowfall.jquery.js
-/snowfall.jquery.min.js
-/snowfall.min.jquery.js
 /snowplow
 /snowplow-
-/snowplow.js
 /snowplow/*
 /snowplow_
 /snowplowjs.
-/snowstorm/$script,important
 /snowy-
 /snowy-paper-9b9f/*
 /sns-twi
@@ -23758,7 +23747,6 @@ chome_
 chome_pmt_
 christmas-panda
 christmas-snow.
-christmas-snow.js
 chronicle.com1
 chrono24.
 chukumaandtunde.
@@ -27715,7 +27703,6 @@ houseing-loan_
 housepix.
 houston.js
 houzz-button.
-hover-intent$important
 hoverad.
 hoya-jackpot.
 hoya-poker.
@@ -35130,18 +35117,10 @@ snigelweb.
 snippet.js
 snmp.
 snow
-snow-fall.js
-snow-falling.js
 snow-storm-
-snow.js
-snow2.js
-snowday262.js
-snowfall-master.min.js
 snowfall.jquery.
-snowfall.jquery.js
 snowplow
 snowplow-
-snowplow.js
 snowplow_
 snowplowjs.
 snowy-
