@@ -245,6 +245,8 @@
 *$removeparam=wickedid
 *$websocket
 *$xhr
+*[_\W]sharer?[_\W].*/$important
+*[_\W]sharing?[_\W].*/$important
 -1-pauta
 -100evrest-dainik.
 -120v600.
@@ -1319,8 +1321,10 @@
 /[_\W]compliance[-~\w\.]*\.js(on)?/
 /[_\W]complianz/[_\W]/
 /[_\W]comscore[-~\w\.]*\.js(on)?/
+/[_\W]config[-~\w\.]*\.js(on)?/
 /[_\W]consent[_\W]/$important
 /[_\W]contact.?form[_\W]/
+/[_\W]context[-~\w\.]*\.js(on)?/
 /[_\W]conversion[-~\w\.]*\.js(on)?/
 /[_\W]conversion[_\W]/$important
 /[_\W]cookies?[_\W]/
@@ -1512,6 +1516,7 @@
 /[_\W]shcore[-~\w\.]*\.js(on)?/
 /[_\W]shim[-~\w\.]*\.js(on)?/
 /[_\W]showads?[_\W]/
+/[_\W]sibbo[_\W]/
 /[_\W]side.?bar[-~\w\.]*\.js(on)?/
 /[_\W]sirv[-~\w\.]*\.js(on)?/
 /[_\W]slick[-~\w\.]*\.js(on)?/
@@ -5452,13 +5457,9 @@
 /conductor/assets/media/*
 /confiant.
 /confiant.js
-/config.js
-/config.json
 /configcreatives/*
 /configdouble11.
 /configuration-stat.
-/configuration-stat.js
-/configuration.js
 /connect-retarget
 /connectics.
 /connector.
@@ -5497,7 +5498,6 @@
 /contentmobilead.
 /contentrotator/*
 /contenttrackingcall.
-/context3rd.jsp
 /contextfeed.
 /contextlogresource/*
 /contextualad.
@@ -6132,7 +6132,6 @@
 /dibun5nodnbmp.js
 /didi
 /didna
-/didna_config.js
 /didomi/$important
 /diecuo/*
 /dif/?cid
@@ -8077,7 +8076,6 @@
 /global/annons/*
 /global/html5player/*
 /global/new-hongbao/*
-/global_config.json
 /global_gg/*
 /global_head.js
 /global_hr_solution_desktop.
@@ -10979,7 +10977,6 @@
 /marvel.js
 /marvel_new.
 /marxy.js
-/mas.
 /mas_informacion/*
 /masculin_box
 /masf-
@@ -14644,7 +14641,6 @@
 /s?z
 /s?z=tianya
 /s_code.js
-/s_code_global_context.js
 /s_local_customization.
 /s_remote_code
 /s_retargeting.js
@@ -15800,7 +15796,6 @@
 /sovetnik.webpartner.
 /sp-2.0.0.min.js
 /sp-config.
-/sp-config.min.js
 /sp.js
 /sp.min.js
 /sp/delivery/*
@@ -23869,11 +23864,8 @@ conf_csid
 confection_send_data
 confiant.
 confiant.js
-config.js
 configdouble11.
 configuration-stat.
-configuration-stat.js
-configuration.js
 connatix.
 connect-retarget
 connect_240
@@ -24579,7 +24571,6 @@ dibudaohang.js
 dibun5nodnbmp.js
 didi
 didna
-didna_config.js
 diff_affich_ban.
 diffuser.
 diffuser.js
@@ -27531,7 +27522,6 @@ hublytics
 hubspot$important
 hubxt.
 hucd2iyy
-huffingtonpost.
 huidig_aanbieding.
 huijiad.
 huimi-
@@ -29899,7 +29889,6 @@ maruti-24320200550461-1972020012511-1.
 maruti-may-1140x100pix.
 marvel.js
 marxy.js
-mas.
 masculin_box
 masf-
 masha
@@ -33777,7 +33766,6 @@ s?z
 s?z=tianya
 s_code
 s_code.js
-s_code_global_context.js
 s_local_customization.
 s_remote_code
 s_retargeting.js
@@ -35060,7 +35048,6 @@ southparkstudios.
 sovetnik.webpartner.
 sovrnlabs.
 sp-config.
-sp-config.min.js
 sp-message-open
 sp-prod.
 sp.js
