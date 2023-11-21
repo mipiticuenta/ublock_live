@@ -123,7 +123,6 @@
 *$inline-script
 *$object
 *$other
-*$ping
 *$removeparam=/[_\W\A]ad[_\W]/,important
 *$removeparam=/[_\W\A]adb/,important
 *$removeparam=/[_\W\A]aff/,important
@@ -245,8 +244,6 @@
 *$removeparam=wickedid
 *$websocket
 *$xhr
-*[_\W]sharer?[_\W].*/$important
-*[_\W]sharing?[_\W].*/$important
 -1-pauta
 -100evrest-dainik.
 -120v600.
@@ -348,7 +345,6 @@
 -emarketplace.
 -emasbet.
 -error-reporting
--eventtrack
 -ezykasino.
 -follow-icon-
 -follow-icons.
@@ -461,7 +457,6 @@
 -partenaires.
 -partner-
 -patriotique-
--pcmmodule-taboola-
 -permads
 -pgjd8-iydq
 -plugins-wppas-
@@ -502,22 +497,12 @@
 -rotator
 -sbcc.
 -scripteo
--share-buttons2.
--share-icon.
--share-icons-
--share-icons.
--share-sprite-
--share-sprite.
--share-tools-
--share-twiiter.
--share-whatsapp.
 -sharebar-
 -sharebar.
 -shareit.
 -shares.
 -sharetools-
 -sharewidget.
--sharing
 -shop.
 -sidebar-newsletter-
 -sirajaqq-
@@ -542,8 +527,6 @@
 -stumbleupon
 -survey
 -sync2ad
--taboola-article.
--taboola-loader.
 -teasers-
 -tiketbet.
 -toppannonse-
@@ -646,7 +629,6 @@
 .easyshare:
 .engine?*&zoneid
 .etargetnet.
-.eventtracking.
 .exclusiverewards.
 .fail
 .fake.
@@ -677,7 +659,6 @@
 .lol
 .management
 .min.25-t1.js
-.mobile-share.
 .modal.min.js
 .mtblocked
 .nativeads.
@@ -715,9 +696,6 @@
 .sale
 .sex
 .sextizer.
-.share.dossierheader.
-.share.lead.
-.share.utils.
 .shareaholic-
 .sharecount.
 .sharecounter.
@@ -1244,7 +1222,6 @@
 /[_\W]adb(lock(er)?)?.?detect[-~\w\.]/
 /[_\W]adblock[-~\w\.]*\.js(on)?/
 /[_\W]addressdotnet[_\W]/
-/[_\W]adfuel[-~\w\.]*\.js(on)?/
 /[_\W]adops?[_\W]/
 /[_\W]adrum[-~\w\.]*\.js(on)?/
 /[_\W]ads?[_\W]/
@@ -1253,7 +1230,7 @@
 /[_\W]adsense[_\W]/
 /[_\W]adslot[_\W]/
 /[_\W]adunits?[_\W]/
-/[_\W]adv(erts?)?(isement)?[_\W]/
+/[_\W]adv(erts?)?[_\W]/
 /[_\W]adwords?[-~\w\.]*\.js(on)?/
 /[_\W]aff[-~\w\.]*\.js(on)?/
 /[_\W]affiliate[-~\w\.]*\.js(on)?/
@@ -1286,7 +1263,6 @@
 /[_\W]bundle[-~\w\.]*\.js(on)?/
 /[_\W]cache[-~\w\.]*\.js(on)?/
 /[_\W]callback[_\W]/
-/[_\W]campaign[-~\w\.]*\.js
 /[_\W]ccpa[-~\w\.]*\.js(on)?/
 /[_\W]chameleon[-~\w\.]*\.js(on)?/
 /[_\W]choice[-~\w\.]*\.js(on)?/
@@ -1478,6 +1454,7 @@
 /[_\W]pwa[_\W]/$important
 /[_\W]qoe[_\W]/$important
 /[_\W]quant[-~\w\.]*\.js(on)?/
+/[_\W]quantcast[-~\w\.]*\.js(on)?/
 /[_\W]quarantine[-~\w\.]*\.js(on)?/
 /[_\W]question[-~\w\.]*\.js(on)?/
 /[_\W]rawp[-~\w\.]*\.js(on)?/
@@ -1503,6 +1480,7 @@
 /[_\W]seo[_\W]/
 /[_\W]sharer?[_\W]/$important
 /[_\W]sharing?[_\W]/$important
+/[_\W]sharing[_\W]/$important
 /[_\W]shcore[-~\w\.]*\.js(on)?/
 /[_\W]shim[-~\w\.]*\.js(on)?/
 /[_\W]showads?[_\W]/
@@ -1661,7 +1639,6 @@
 /a191124004.
 /a200304_1170x87.
 /a200304png
-/a2a_share_
 /a3lan-
 /a3lan_
 /a4kwg6k.
@@ -2139,6 +2116,7 @@
 /adfrut.
 /adfshow
 /adfuel/
+/adfuel/$important
 /adfuncs.
 /adfunction
 /adfunction.
@@ -2280,12 +2258,10 @@
 /admgr
 /admgr.
 /admicro.
-/admin
 /admin-ajax.
 /admin-ajax.php?action=*default*_code*_url*&rnd
 /admin-ajax.php?action=*default_code_url&rnd
 /admin-file.js
-/admin/*
 /admin/add/*
 /admin/add_images/*
 /admin/dashboard/images/poster/*
@@ -2867,12 +2843,7 @@
 /advertise250.
 /advertise_
 /advertisehere.
-/advertisementimages
-/advertisementimages/*
-/advertisements
-/advertisements-
-/advertisements/*
-/advertisements_
+/advertisement/$important
 /advertiserv/*
 /advertiserv2/*
 /advertiserwidget.
@@ -3318,9 +3289,6 @@
 /analyze/*
 /analyzer.
 /analyzer2
-/anametrix.
-/anametrix/*
-/anametrix_
 /anapixel.
 /ancadtrack.
 /anchor-2.
@@ -3330,7 +3298,6 @@
 /andfox.
 /andreamedia.
 /andreamedia.js
-/android-share.
 /andy/*
 /anekaqq.
 /anex/*
@@ -3569,7 +3536,6 @@
 /articleacb0
 /articlead.js
 /articlecounter
-/articlempuadvert
 /articlesocialshare.
 /articleviewtracking/*
 /articleyunyans.js
@@ -4258,7 +4224,6 @@
 /bigdatapushworker.js
 /biggapon
 /biggapon.
-/bigphoto_share.
 /bigtopl.
 /bigyaapan
 /bigyaapan/*
@@ -4613,7 +4578,6 @@
 /brending/*
 /briefmenow.
 /brightcovead/$important
-/brightcoveads.
 /brightedge.
 /brightedge.js
 /britetrack
@@ -4664,8 +4628,6 @@
 /bt_pagetop
 /bt_pagetop.
 /bt_rss
-/bt_share
-/bt_share_
 /bt_sns
 /bt_twiter
 /bt_you_tube
@@ -4688,8 +4650,6 @@
 /btn_gotop.
 /btn_pagetop
 /btn_pagetop.
-/btn_share
-/btn_share_
 /btnfoursquare
 /btnfoursquare.
 /btngigpark
@@ -4739,10 +4699,7 @@
 /butterfly-java
 /button-linkedin
 /button.js
-/button1-share
-/button1-share.
 /button_pinterest.
-/button_share.
 /button_to_top.
 /buttonad
 /buttonad/*
@@ -4757,7 +4714,6 @@
 /buyad
 /buyclicks/*
 /buyproxies-
-/buysellads.
 /buysellads/$important
 /buyspinslot-
 /buyspinslot.
@@ -4783,9 +4739,7 @@
 /byside_webcare
 /byside_webcare.
 /byteads/
-/bz-share.
 /bz?_
-/bz_share/*
 /bzvxeyl.
 /c*?s1
 /c-79.
@@ -4882,9 +4836,7 @@
 /carado-matkailuauto.
 /carasexe.
 /carbon.js
-/carbonads-
 /carbonads/$important
-/carbonads/*
 /cardio-curejpg
 /carglasshome.
 /cargo.js
@@ -4971,9 +4923,7 @@
 /cecaitra_transito.
 /cecash/*
 /cece/agof/*
-/cedexis.js
 /cedexis/$important
-/cedexisus.
 /cedric.js
 /ceef/gdt3g0/tbt/*
 /celebrusinsert
@@ -5079,8 +5029,6 @@
 /christmas-panda
 /christmas-snow.
 /christmasify/*
-/chs/share/*
-/cht/share/*
 /chungnam.
 /chunkath-png.
 /chunks/*
@@ -5100,8 +5048,6 @@
 /cinefield300x250-1.
 /cio.js
 /circads
-/circle_share
-/circle_share.
 /circus
 /cit-exprace.
 /city24
@@ -5295,7 +5241,6 @@
 /cntrpt.
 /cnvtr.
 /cnvtr.js
-/cnw.share.
 /cnxad-
 /cnxh/*
 /cnxn6tzk
@@ -5452,9 +5397,6 @@
 /controlli/*
 /contshare.
 /convergence/header/framed/*
-/conversion.
-/conversion_
-/conversion_async.
 /conversions/*
 /convertjsontoad.
 /convertplug
@@ -5464,7 +5406,6 @@
 /coobann/*
 /coockiealert.
 /cooki/$important
-/cool-share/*
 /coolads.
 /coolpc_
 /coop/hezuo/*
@@ -5563,7 +5504,6 @@
 /cpc_i.js
 /cpeevent
 /cpeevent.
-/cpeeventtracking.
 /cphospital_20200921105056.
 /cpit83jq
 /cplybpyk
@@ -5682,7 +5622,6 @@
 /ctagsimgcmd.act
 /ctamlive160x
 /ctasp-server.
-/ctd-sourcepoint.
 /ctd-tealium.
 /ctm-
 /ctn
@@ -5718,7 +5657,6 @@
 /custom-fan-gate-plugin/*
 /custom-fan-gate/*
 /custom-script/*
-/custom-share.
 /custom_rec_item
 /custom_rec_item/*
 /custom_vast/*
@@ -6185,7 +6123,6 @@
 /djsuggester/*
 /djtop.js
 /dk-grafik.
-/dk-share.
 /dk?cmd=videostatnew
 /dl-now.
 /dl.js
@@ -6446,7 +6383,6 @@
 /dynamic_ytrack_
 /dynamicad/$important
 /dynamicanalytics.
-/dynamicgafunctions
 /dynamicgafunctions/$important
 /dynamictag.
 /dynamicyield/*
@@ -6841,9 +6777,6 @@
 /eventlogservlet
 /eventpage
 /eventtrack/$important
-/eventtracking-
-/eventtracking.
-/eventtracking/*
 /everest.
 /everest_college.
 /everest_law.
@@ -7007,7 +6940,6 @@
 /fadb.
 /fado.
 /fads.$important
-/fadvertisement
 /faehren_info_w.
 /fairqq.
 /fake.
@@ -7051,7 +6983,6 @@
 /fbk.
 /fblikefp.
 /fbn/*
-/fbook-share-
 /fbpixel.
 /fbpixel/*
 /fbpromo.
@@ -7168,9 +7099,7 @@
 /finish
 /finnexternaldistribution.js
 /finno.
-/firebase-messaging.js
-/firebase.
-/firebase.js
+/firebase/$important
 /firehose?_
 /firestats/*
 /firms/*
@@ -7549,7 +7478,6 @@
 /g-g/*
 /g-plus
 /g-scripts
-/g-share.
 /g-temp/*
 /g1000/*
 /g11.js
@@ -7577,7 +7505,6 @@
 /gadgetpagecounter.
 /gadv
 /gaevent
-/gaeventtracking.
 /gafc.
 /gafoawrapper
 /gafunction
@@ -7718,7 +7645,6 @@
 /genere_ban.
 /generic.js
 /genericobservablejs
-/genesis-simple-share
 /genybet/*
 /geoanalysis.
 /geobox.
@@ -7901,7 +7827,6 @@
 /gfx/*
 /gfx/partner/*
 /gg*?x
-/gg-share.
 /gg.js
 /gg/*?x
 /gg0.js
@@ -8082,7 +8007,6 @@
 /google_lander2.
 /google_plus.
 /google_radlinks_
-/google_share_
 /google_stats.
 /googleaccount
 /googleads/$important
@@ -8097,24 +8021,12 @@
 /googleanalyt
 /googleanalyticactionlib.
 /googleanalytics/$important
-/googleanalytics1.
-/googleanalytics4.
-/googleanalytics?utmac
-/googleanalyticsbase_
-/googleanalyticsbc3.
-/googleanalyticsdatalayer.
-/googleanalyticsevents.
-/googleanalyticsmodule.
-/googleanalyticsplus/*
-/googleanalyticstracking.
 /googleanalyze
 /googleanalyze1.
 /googleanalyze2.
 /googleasynctrack
 /googleasynctrack.
 /googlecontextualads.
-/googleeventtrack
-/googleeventtracking.
 /googleheadad.
 /googleicon.
 /googleleader.
@@ -8182,7 +8094,6 @@
 /graphics/img/*
 /graphics/img_ban/*
 /graphics/linkus/*
-/graphics/share/*
 /graphql?operationname=citrusad
 /green.
 /greenoaks.
@@ -8405,7 +8316,6 @@
 /headersocialicons.
 /headflash1_
 /heading-jm
-/headline_share_
 /headsoc.
 /headupstats.
 /headvert.
@@ -8457,10 +8367,6 @@
 /hidemyass468-
 /hidemyassban.
 /hier_werben.
-/highlight-and-share-
-/highlight-and-share.
-/highlight-and-share/*
-/highlight_share.
 /hilostripperad.
 /himg/monst/*
 /hintaopas
@@ -8770,8 +8676,6 @@
 /ibstwd2y
 /ibuqq.
 /ibzj74j2
-/ic-share
-/ic-share-
 /ic4dsg3j
 /ic_delicious
 /ic_delicious.
@@ -8780,8 +8684,6 @@
 /ic_pagetop
 /ic_pagetop.
 /ic_reddit.
-/ic_share
-/ic_share.
 /ic_stumbleupon
 /ic_stumbleupon.
 /ic_technorati.
@@ -8807,7 +8709,6 @@
 /icon32_pinterest
 /icon_gototop.
 /icon_scrollup.
-/icon_share_
 /icon_sharethis_
 /icon_sns_
 /icon_social1.
@@ -8822,7 +8723,6 @@
 /iconoyt.
 /iconpinterest.
 /icons-follow-
-/icons-share-
 /icons.js
 /icontent/*
 /icontwitter.
@@ -9210,7 +9110,6 @@
 /includes/scripts/*
 /includes/shoppable-images/*
 /includes/werbung/*
-/incmpuad.
 /incontent-expressvpn.
 /increment-pv
 /incs/*
@@ -9596,7 +9495,6 @@
 /j94vegux
 /ja/ap/*
 /ja/ap/tw/js/*
-/ja/share/*
 /jachai_video.mp4
 /jack-icon.
 /jackets
@@ -9691,7 +9589,6 @@
 /jianpian.obs.cn-
 /jiansshu.js
 /jiaoche
-/jiathis_share.
 /jibondip.
 /jimpres.
 /jing.js
@@ -9740,7 +9637,6 @@
 /jp_display.
 /jpbet.
 /jpdewa.
-/jplayeradfoxadvertisementplugin.
 /jppoker.
 /jpslot88-
 /jqads.
@@ -10083,7 +9979,6 @@
 /kooomo.
 /koop-home/*
 /koop/*
-/kor/share/*
 /kosmonaut/*
 /koukoku/list?positions
 /kppp.js
@@ -10277,7 +10172,6 @@
 /lftracker.
 /lftracker_
 /lfyfedhj
-/lg-share.
 /lgads.
 /lgdpscript.
 /lgil.
@@ -10290,7 +10184,6 @@
 /lhnhelpouttab-current.
 /lhnhelpouttab-current.min.js
 /lhzbsrfkjf/js/*
-/li_share.
 /lianmeng.js
 /lianxi.js
 /lib*&adl
@@ -10413,7 +10306,6 @@
 /list_adblock.txt
 /list_sidebar_
 /listad.js
-/listadvertisementproductshandler.
 /listener
 /listpromoted
 /listrelated.json
@@ -10554,7 +10446,6 @@
 /logadhit.
 /logads.
 /logadv.
-/logadvertisements
 /logaholictracker.
 /logajaxerr_
 /logamphit
@@ -10942,7 +10833,6 @@
 /media*&ssaiprofile
 /media*~mv2.
 /media-asia.
-/media_share/*
 /mediaad.
 /mediaconnect
 /mediacontroller.php?pid
@@ -11040,7 +10930,6 @@
 /metrika/*
 /metriweb
 /metrix/$important
-/metrixevents.
 /metsol-
 /mew.
 /mew.js
@@ -11117,7 +11006,6 @@
 /min/1/pw/*
 /min/747b35c9/painaltube/p/*
 /min/gtm/*
-/min_share.
 /minbostadstatic/js/partner/*
 /mine/partner/*
 /mine10-hwdyoztq.
@@ -11175,8 +11063,6 @@
 /mjx-oas.
 /mjx.
 /mkads/*
-/mkg-share-
-/mkg-share.
 /mkqjrg38
 /mkt/*
 /mkt_t.
@@ -11199,8 +11085,6 @@
 /mmcore.
 /mmcore.js
 /mmd.
-/mmetrix.
-/mmetrix.mobi/*
 /mmm/*
 /mmmasdfl-asd
 /mmog/*
@@ -11224,8 +11108,6 @@
 /mobapoker-
 /mobiads.js
 /mobile-shar
-/mobile-share-
-/mobile-sharing/*
 /mobile-welcome-overlay/*
 /mobile.js
 /mobile_general_
@@ -11276,7 +11158,6 @@
 /modules/pinpan/inc_ifra.php?par
 /modules/statistics/*
 /moduletracker.
-/modulo/taboola/*
 /moegirlinsight.
 /moemgorod.
 /mois_de_la_chance__
@@ -11346,9 +11227,7 @@
 /mps-statistic-reporting.
 /mpturl
 /mpu-dm.
-/mpuad.
 /mpuad/$important
-/mpuadhelper.
 /mpuguardian.
 /mpulse.
 /mpulse.js
@@ -11441,8 +11320,6 @@
 /myadproxy
 /myadproxy_
 /myads.
-/myadvertisements
-/myadvertisements.
 /mybaner/*
 /myblock.
 /mydirtyhobby.
@@ -11690,7 +11567,6 @@
 /news29rb
 /news_iframe.
 /news_ltr.
-/news_share_
 /news_view_gg
 /newsad.js
 /newsadvtrack_
@@ -12734,7 +12610,6 @@
 /pharos.js
 /pharos/*
 /phenomtrack.
-/phoenixgoogleanalytics.
 /photo-gallery.
 /photo/bg/*
 /photo/rek/*
@@ -12819,7 +12694,6 @@
 /pimage/sdc/*
 /pimage/visit-x/*
 /pin-interest-icon.
-/pin-share.
 /pin_it_button.
 /pincttrack
 /pingaudience
@@ -12853,8 +12727,6 @@
 /pinterest-footer-
 /pinterest-over.
 /pinterest-pixels.
-/pinterest-share-
-/pinterest-share.
 /pinterest-sidebar.
 /pinterest_badge_
 /pinterest_pin.
@@ -13241,7 +13113,6 @@
 /prize*.php?c
 /prize/*.php?c
 /prj/*
-/prn.share.
 /prnad300x
 /pro-cp-dialog.
 /pro.
@@ -13646,7 +13517,6 @@
 /qq188_
 /qq1bet.
 /qq36bet-
-/qq_share_
 /qqalfa.
 /qqangpao-
 /qqasli.
@@ -13923,7 +13793,6 @@
 /redaccio/publicitat/*
 /redban
 /redbuttonx.
-/reddit-share.
 /reddit-small.
 /redes_rss
 /redex_728.
@@ -14112,7 +13981,6 @@
 /reproad300.
 /req.php?z
 /reqsads
-/requestadvertisement.
 /requestdata.
 /requestmyspacead.
 /requests.js
@@ -14474,7 +14342,6 @@
 /ruxitagentjs_
 /rv.js
 /rview.
-/rw_share_
 /rwtag.
 /rwtaghome.
 /rxbox/*
@@ -14912,37 +14779,6 @@
 /shangyk1z5o3o.js
 /shantii.
 /shapepress-dsgvo/*
-/share-actions.
-/share-actions/*
-/share-addtoany.
-/share-and-follow/*
-/share-bar/*
-/share-button
-/share-button.
-/share-buttons-
-/share-buttons.
-/share-controller.
-/share-count.
-/share-count/*
-/share-footer.
-/share-icon-
-/share-icon.
-/share-icons-
-/share-icons.
-/share-instagram-
-/share-link
-/share-linkedin-
-/share-on-diaspora/*
-/share-pinterest-
-/share-sprite-
-/share-sprite.
-/share-this-
-/share-tools-
-/share-twitter1a.
-/share.php?buttons
-/share/?d
-/share/footer/*
-/share/frame/*
 /share0
 /share1
 /share2
@@ -14954,31 +14790,6 @@
 /share7
 /share8
 /share9
-/share_28x13.
-/share_bebo.
-/share_button
-/share_button.
-/share_button_
-/share_buttons-
-/share_buttons_
-/share_buzz_
-/share_byline_
-/share_count.
-/share_iframe.
-/share_link/*
-/share_link_
-/share_linkedin_
-/share_pinterest-
-/share_save_
-/share_sprite.
-/share_sprite_
-/share_tiwwer.
-/share_toolbar.
-/share_tumblr-
-/share_v1_
-/share_view.
-/share_wechat.
-/share_weibo.
 /shareaholic.
 /shareaholic/*
 /shareamex/*
@@ -15013,7 +14824,6 @@
 /sharelike.
 /sharepage-
 /sharepost/*
-/sharer.
 /sharesession.
 /sharestats.
 /sharestyle.
@@ -15030,17 +14840,10 @@
 /sharetwitter
 /sharetwitter.
 /sharewidgetbackgrounds.
-/shariff-sharing/*
 /shariff.
 /shariff.min.js
 /shariff/*
-/sharing
-/sharing-
-/sharing-buttons.
-/sharing.
-/sharing/sprites/*
 /sharing[-~\w\.]*\.js(on)?/
-/sharing_icons/*
 /sharingbar
 /sharingbar/*
 /sharr
@@ -15104,7 +14907,6 @@
 /showban.
 /showcase.
 /showcase/index.php?id=*&country
-/showcaseadvertisementsit/*
 /showcode
 /showcodejsonp
 /showcounter.
@@ -15215,7 +15017,6 @@
 /simple-miner-
 /simple-monero-
 /simple-pull-quote/*
-/simple-share-
 /simple_reach.
 /simple_reach.js
 /simpleadvert.
@@ -15332,7 +15133,6 @@
 /skins/tonkowikineo/*
 /skipad.
 /sklep-motoryzacyjny-
-/skm/assets/share/*
 /skout.js
 /skr
 /skrar/augl/*
@@ -15360,7 +15160,6 @@
 /sl/e/*
 /sl_h$important
 /sl_l$important
-/sl_share-public.
 /slade.js
 /slade888.js
 /sladewap.js
@@ -15398,14 +15197,11 @@
 /slovenske_novice
 /slujebni/*
 /slurmjpg.
-/sm-share
-/sm-share-
 /sm-youtube-
 /sm/getcode?apikey
 /sm360.js
 /sm?referrer
 /sm_capture_
-/sm_share_
 /sma.
 /sma8.js
 /smalads
@@ -15422,8 +15218,6 @@
 /smart-plan-kumbla-9895436683.
 /smart.js
 /smart_recovery.js
-/smart_share
-/smart_share.
 /smart_source
 /smartad
 /smartad-
@@ -15449,7 +15243,6 @@
 /smartshake
 /smarttag/$important
 /smeadvert
-/smeadvertisement
 /smetkoplan.
 /smf/bn/*
 /smh/*
@@ -15471,8 +15264,6 @@
 /smwidget.
 /smyw_anima_1.
 /sn_plurk
-/sn_share
-/sn_share_
 /sna-pushwoosh
 /sna-pushwoosh.
 /snack-
@@ -15571,7 +15362,6 @@
 /socket.
 /socket.io.js
 /socket?platform=*&href
-/socmed-share.
 /socmedicon
 /socmedicon_
 /socmedicons.
@@ -15629,11 +15419,7 @@
 /sounds/*
 /soundtrack.js
 /sourcecontent
-/sourcepoint
-/sourcepoint.js
-/sourcepoint/*
-/sourcepoint/msg?v
-/sourcepoint_js_files/*
+/sourcepoint/$important
 /south+a+u+add.
 /sovetnik.webpartner.
 /sp-2.0.0.min.js
@@ -15764,8 +15550,6 @@
 /spring.js
 /sprinkle.js
 /sprite-footer-partners.
-/sprite-share
-/sprite-share.
 /sprite-sharetools.
 /spriteiconshare.
 /sprites-social2.
@@ -15997,7 +15781,6 @@
 /stocksad2.
 /stocksad3
 /stocksad3.
-/stocktwits_share.
 /stop-ru.js
 /stopvideo
 /storage/1/*
@@ -16005,8 +15788,6 @@
 /storage/uploads/abcds_image/*
 /storage[-~\w\.]*\.js(on)?/
 /storagesync
-/store-share
-/store-share.
 /store/*
 /store_file_download?*&dir_path=/admin/swf
 /store_file_download?*&dir_path=/admin/swf/*
@@ -16265,17 +16046,7 @@
 /tabligh
 /tablytics
 /tablytics.
-/taboola-footer.
-/taboola-header.
-/taboola-iframe/*
-/taboola-module.
 /taboola/$important
-/taboola/*
-/taboola_header.
-/taboolaarticle.
-/taboolaarticlefooter.
-/taboolahead.
-/taboolasection.
 /tacoda
 /tacoda.
 /tacoda_
@@ -16559,7 +16330,6 @@
 /thomann.
 /thpix.
 /thread
-/threadeskupsimple
 /threadeskupsimple/$important
 /thrive-leads
 /thrive-leads/*
@@ -16677,7 +16447,6 @@
 /tnc.
 /tnke7i3ijcr17dbnpqpzx.js
 /tnscounter.
-/tnsmetrix/*
 /to_pagetop.
 /toast.js
 /toaster-checker.
@@ -16720,8 +16489,6 @@
 /toonad
 /top-10
 /top-10/*
-/top-share
-/top-share-
 /top.js
 /top.mp4
 /top/bans/*
@@ -17110,7 +16877,6 @@
 /tw.js
 /tw_follow.
 /tw_footer.
-/tw_share_
 /tw_small.
 /tw_top.
 /twad
@@ -17195,7 +16961,6 @@
 /twplayer
 /tws.js
 /twt-ico
-/twt-share
 /twt1.
 /twt_ico
 /twt_side
@@ -17471,7 +17236,7 @@
 /userstats.pl
 /userstats_record
 /usersync
-/usertiming
+/usertiming/
 /usertracking/*
 /usocial.pp
 /usr/affpc/*
@@ -17694,7 +17459,6 @@
 /videoheartbeat.
 /videojs-contrib.min.js
 /videojs-kwikstat.min.js
-/videojs-share.
 /videojs-vast-vpaid-waterfall.
 /videojs.adss.
 /videojs.ima.
@@ -18073,7 +17837,6 @@
 /web_js_stats.
 /web_miner
 /web_miner/*
-/web_share
 /web_traffic
 /web_traffic_capture.js
 /web_trends
@@ -18445,7 +18208,6 @@
 /wp-powerstat/*
 /wp-rum/*
 /wp-sentry-integration
-/wp-share
 /wp-slimstat/*
 /wp-snow-effect
 /wp-snow-effect-pro/*
@@ -18589,7 +18351,6 @@
 /xads.
 /xadv
 /xadv_
-/xadvertisement.
 /xadyaeyd
 /xahnqhalt/*
 /xapads.
@@ -18641,7 +18402,6 @@
 /xiatui.js
 /xiazai
 /xiazxvbgyjw220923.js
-/xicon_share.
 /xinbkill.js
 /xingkong6688s.oss-
 /xitcore-min.
@@ -18663,7 +18423,6 @@
 /xmr-monero.
 /xmr.
 /xmrig-6.10.0-linux-static-x64.tar.gz
-/xnapp/share/*
 /xnewadsx/*
 /xopen.
 /xopind.js
@@ -18733,7 +18492,6 @@
 /y3q6rd2w
 /ya-awaps2/*
 /ya-papka-wpliva/*
-/ya-share.
 /ya-wsplivayu.js
 /yabinding.js
 /yabo
@@ -19405,7 +19163,6 @@ _floatingad_
 _flyad.
 _fon.
 _footer_newsletter.
-_footer_share_
 _frontend_loader.
 _fullimage_pinterest.
 _fullimage_youtube.
@@ -19419,7 +19176,6 @@ _gstat.
 _habillage
 _hbx_
 _hcode.
-_header_share.
 _hit.
 _hitcount1.
 _hits_
@@ -19519,9 +19275,6 @@ _sbobet_
 _scode.
 _script.js
 _sdc.
-_share_bookmark.
-_share_widget_
-_sharing
 _sharrre.
 _shopping_box.
 _side_ads01.
@@ -19534,7 +19287,6 @@ _skin-vip
 _skinad.
 _slideshare.
 _smads_
-_small_share.
 _sns-hatena.
 _sns_me2day.
 _socialbadges.
@@ -19604,7 +19356,6 @@ a191124002.
 a191124003.
 a191124004.
 a200304png
-a2a_share_
 a2z-computer.
 a2zapk
 a2zapk.
@@ -20222,7 +19973,6 @@ admenu.js
 admgr
 admgr.
 admicro.
-admin
 admin-ajax.
 admin-ajax.php?action=*default*_code*_url*&rnd
 admin-ajax.php?action=*default_code_url&rnd
@@ -20796,10 +20546,6 @@ advertise2.
 advertise250.
 advertise_
 advertisehere.
-advertisementimages
-advertisements
-advertisements-
-advertisements_
 advertiser
 advertiserwidget.
 advertisment-
@@ -21314,8 +21060,6 @@ analyticstracking_
 analyze.
 analyzer.
 analyzer2
-anametrix.
-anametrix_
 ananadhospital
 anapixel.
 ancadtrack.
@@ -21326,7 +21070,6 @@ andfox.
 andreamedia.
 andreamedia.js
 andrewmelchior.
-android-share.
 androidaba.
 anekabola.
 anekaqq.
@@ -21601,7 +21344,6 @@ article_inc.js
 articleacb0
 articlead.js
 articlecounter
-articlempuadvert
 articlesocialshare.
 articleyunyans.js
 articulo-patrocinado
@@ -22348,7 +22090,6 @@ bigextracash.
 biggapon
 bigkickass.
 bigmir.
-bigphoto_share.
 bigtech
 bigtopl.
 bijitogel-
@@ -22724,8 +22465,6 @@ bridgetrack.
 briefmenow.
 brightcove
 brightcove$important
-brightcovead.
-brightcoveads.
 brightcovecdn
 brightedge.
 brightedge.js
@@ -22747,7 +22486,6 @@ browser-updater
 browseranalytic.
 browserdetection
 browserfp.
-browsermetrix$important
 browsermine.
 browserpushv3.js
 browsiprod
@@ -22782,8 +22520,6 @@ bt_google
 bt_pagetop
 bt_pagetop.
 bt_rss
-bt_share
-bt_share_
 bt_sns
 bt_twiter
 bt_you_tube
@@ -22811,8 +22547,6 @@ btn_like
 btn_linkedin
 btn_pagetop
 btn_pagetop.
-btn_share
-btn_share_
 btnfoursquare
 btnfoursquare.
 btngigpark
@@ -22869,10 +22603,7 @@ bustyporn.com*.php?src
 butler.
 button-linkedin
 button.js
-button1-share
-button1-share.
 button_pinterest.
-button_share.
 button_to_top.
 buttonad
 buttonads.
@@ -22887,9 +22618,6 @@ buyjiocoin.
 buymeacoffee$important
 buymeacoffee.
 buyproxies-
-buysellads$important
-buysellads-
-buysellads.
 buyspinslot-
 buyspinslot.
 buyu905.
@@ -22925,7 +22653,6 @@ bypassmajs
 byside.
 byside_webcare
 byside_webcare.
-bz-share.
 bz?_
 bzshare
 bzshare.
@@ -23052,9 +22779,6 @@ caramenangtaruhan.
 carasexe$important
 carasexe.
 carbon.js
-carbonads$important
-carbonads-
-carbonads.
 carbonpoker.
 carglasshome.
 cargo.js
@@ -23166,9 +22890,6 @@ cdx-radar
 cebanqq.
 cebian
 cecaitra_transito.
-cedexis$important
-cedexis.js
-cedexisus.
 cedric.js
 ceisystems.
 cekakses.
@@ -23327,8 +23048,6 @@ cintapoker.
 cintent.streanplay.
 cio.js
 circads
-circle_share
-circle_share.
 circus
 circusposter.
 cit.
@@ -23536,7 +23255,6 @@ cntr.
 cntrpt.
 cnvtr.
 cnvtr.js
-cnw.share.
 cnxad-
 cnxn6tzk
 cnzz
@@ -23692,9 +23410,6 @@ controls__like
 controlsgc.prisacom.
 contshare.
 conversantmedia$important
-conversion.
-conversion_
-conversion_async.
 convertexperiments.
 convertjsontoad.
 convertplug
@@ -23803,7 +23518,6 @@ cpc_
 cpc_i.js
 cpeevent
 cpeevent.
-cpeeventtracking.
 cperformmedia-a.
 cphospital_20200921105056.
 cpit83jq
@@ -23920,7 +23634,6 @@ ct99tglf
 cta-loaded.js
 ctamlive160x
 ctasp-server.
-ctd-sourcepoint.
 ctd-tealium.
 ctedgecdn
 ctm-
@@ -23946,7 +23659,6 @@ cuk_core.js
 cum.js
 curlad.
 custom-links
-custom-share.
 custom_videos.
 customad.
 customadmode.
@@ -24447,7 +24159,6 @@ djrxqhzkbsgf.js
 djtop.js
 djuegos_media_v1
 djurs.com-
-dk-share.
 dk?cmd=videostatnew
 dkipoker.
 dkshare.
@@ -24772,7 +24483,6 @@ dyn.js
 dynamic-ban-
 dynamic_ytrack_
 dynamicanalytics.
-dynamicgafunctions
 dynamictag.
 dynamicwebad
 dynamicyield
@@ -25206,10 +24916,6 @@ eventhubstats.
 eventing
 eventlogservlet
 eventpage
-eventtrack
-eventtrack$important
-eventtracking-
-eventtracking.
 everest_college.
 everesttech.
 evergage$important
@@ -25351,7 +25057,6 @@ factorads.
 fadb.
 fado.
 fads.$important
-fadvertisement
 faehren_info_w.
 fahima-latest.
 fairbet88.
@@ -25416,9 +25121,7 @@ fbf0.js
 fbfooter.
 fbimage.
 fbk.
-fbk_share
 fblikefp.
-fbook-share-
 fbpixel.
 fbpromo.
 fbsbx
@@ -25561,12 +25264,6 @@ finish
 finn.no.
 finnexternaldistribution.js
 finno.
-firebase$important
-firebase-messaging.js
-firebase.
-firebase.js
-firebaseapp
-firebaseio
 firefoxusercontent
 firehose?_
 firestats
@@ -25770,7 +25467,6 @@ footer_gplus
 footer_myspace
 footer_pinterest
 footer_pinterest-
-footer_share_
 footer_sociale.
 footer_youtube.
 footerad
@@ -26022,7 +25718,6 @@ fzmovies.
 fzwap-
 g-plus
 g-scripts
-g-share.
 g07f6a
 g11.js
 g12.
@@ -26049,7 +25744,6 @@ gadingpoker.
 gadispoker.
 gadv
 gaevent
-gaeventtracking.
 gafc.
 gafoawrapper
 gafunction
@@ -26199,7 +25893,6 @@ generateadtag.
 generateplayerads.
 genere_ban.
 generic.js
-genesis-simple-share
 gengtoto.
 geni.
 genius-classes
@@ -26390,7 +26083,6 @@ gexternalad.
 gfplib.js
 gfsrv.
 gfycat
-gg-share.
 gg.js
 gg0.js
 gg163ad.js
@@ -26471,7 +26163,6 @@ glr.js
 gluservices.
 glx_
 gmasst.
-gmetrix.
 gmifr_lei.
 gmqpnnvi
 gmu-download.oss-
@@ -26540,7 +26231,6 @@ gonews
 gongyi.
 gonzai-renault.
 goo.
-goo_share
 gooals.
 good-negobers-bajura-by-najiknews.com.
 good-nevres-international-bajura-add.
@@ -26585,7 +26275,6 @@ google_lander2.
 google_plus$important
 google_plus.
 google_radlinks_
-google_share_
 google_stats.
 google_unique_id
 googleadapis.
@@ -26598,16 +26287,6 @@ googleanal.
 googleanal.js
 googleanalystics.
 googleanalyticactionlib.
-googleanalytics.prod.
-googleanalytics1.
-googleanalytics4.
-googleanalytics?utmac
-googleanalyticsbase_
-googleanalyticsbc3.
-googleanalyticsdatalayer.
-googleanalyticsevents.
-googleanalyticsmodule.
-googleanalyticstracking.
 googleanalyze
 googleanalyze1.
 googleanalyze2.
@@ -26615,8 +26294,6 @@ googleasynctrack
 googleasynctrack.
 googlecontextualads.
 googledfpslot.
-googleeventtrack
-googleeventtracking.
 googlegroups
 googleheadad.
 googleicon.
@@ -26953,7 +26630,6 @@ headerpixel.
 headersocialicons.
 headflash1_
 heading-jm
-headline_share_
 headsoc.
 headupstats.
 headvert.
@@ -27019,9 +26695,6 @@ hideout.
 hier_werben.
 high-final.
 highcharts
-highlight-and-share-
-highlight-and-share.
-highlight_share.
 hightraffic_code
 hiidude.
 hiidudemoviez.
@@ -27363,8 +27036,6 @@ ibuqq.
 ibw8.
 ibytedtos
 ibzj74j2
-ic-share
-ic-share-
 ic4dsg3j
 ic_delicious
 ic_delicious.
@@ -27373,8 +27044,6 @@ ic_digg.
 ic_pagetop
 ic_pagetop.
 ic_reddit.
-ic_share
-ic_share.
 ic_stumbleupon
 ic_stumbleupon.
 ic_technorati.
@@ -27403,7 +27072,6 @@ icon2_youtube
 icon32_pinterest
 icon_gototop.
 icon_scrollup.
-icon_share_
 icon_sharethis_
 icon_sns_
 icon_social1.
@@ -27418,7 +27086,6 @@ iconotw.
 iconoyt.
 iconpinterest.
 icons-follow-
-icons-share-
 icons8
 iconscout
 iconsocial$important
@@ -27678,7 +27345,6 @@ incarsakong.
 inchlv
 incisivetrk.
 include_name.js
-incmpuad.
 incontent-expressvpn.
 incrasebux.
 increment-pv
@@ -28204,7 +27870,6 @@ jhk0iw
 jianpian.obs.cn-
 jiansshu.js
 jiaoche
-jiathis_share.
 jibondip.
 jilani.
 jimpres.
@@ -28262,7 +27927,6 @@ jp_display.
 jpbet.
 jpdewa.
 jpe?g
-jplayeradfoxadvertisementplugin.
 jppoker.
 jpslot88-
 jqads.
@@ -28944,7 +28608,6 @@ lftrack
 lftracker.
 lftracker_
 lfyfedhj
-lg-share.
 lgads.
 lgdpscript.
 lgpub.
@@ -28952,7 +28615,6 @@ lgsitewise.js
 lhfdy3jswvq8.js
 lhnhelpouttab-current.
 lhnhelpouttab-current.min.js
-li_share.
 lianmeng.js
 lianxi.js
 liao.me.
@@ -29139,7 +28801,6 @@ list?params
 list?positions
 list_sidebar_
 listad.js
-listadvertisementproductshandler.
 listener
 listenlive.
 listpromoted
@@ -29278,7 +28939,6 @@ logad
 logadhit.
 logads.
 logadv.
-logadvertisements
 logaholictracker.
 logajaxerr_
 logamphit
@@ -29852,8 +29512,6 @@ metricspar_
 metrik
 metrika.
 metriweb
-metrix.$important
-metrixevents.
 metro-trending
 metsol-
 mew.
@@ -29921,7 +29579,6 @@ milt9fnh9bi
 mimaletadepeliculas.
 mimaletamusical.
 mimpi4d.
-min_share.
 mind-of-wrong.
 mindshare.
 miner-ui.
@@ -29985,8 +29642,6 @@ mjx-oas.
 mjx.
 mk-sense
 mk73sxf
-mkg-share-
-mkg-share.
 mkhk9x
 mkqjrg38
 mkt_t.
@@ -30017,7 +29672,6 @@ mmclient.js
 mmcore.
 mmcore.js
 mmd.
-mmetrix.
 mmmasdfl-asd
 mmogamez.
 mmonlyapp.js
@@ -30045,8 +29699,6 @@ mobclix
 mobi
 mobiads.js
 mobile-shar
-mobile-share-
-mobile-share.
 mobile-verif.
 mobile.js
 mobile_btn
@@ -30245,8 +29897,6 @@ mplxtms.
 mpoker.
 mpturl
 mpu-dm.
-mpuad.
-mpuadhelper.
 mpuguardian.
 mpulse.
 mpulse.js
@@ -30371,8 +30021,6 @@ myadd?id
 myadproxy
 myadproxy_
 myads.
-myadvertisements
-myadvertisements.
 mybestpoker.
 mybet188.
 mybiz
@@ -30646,7 +30294,6 @@ news2
 news29rb
 news_iframe.
 news_ltr.
-news_share_
 news_view_gg
 newsad.js
 newsadvtrack_
@@ -31731,7 +31378,6 @@ pharos.js
 phc1yjn
 phenomtrack.
 phishing
-phoenixgoogleanalytics.
 photo-gallery.
 photo-zenith.
 photo.*.html?tk
@@ -31788,7 +31434,6 @@ pika-img.
 pilarqq.
 pill
 pin-interest-icon.
-pin-share.
 pin_it_button.
 pincttrack
 pinetech
@@ -31823,8 +31468,6 @@ pinterest-button12.
 pinterest-footer-
 pinterest-over.
 pinterest-pixels.
-pinterest-share-
-pinterest-share.
 pinterest-sidebar.
 pinterest_badge_
 pinterest_pin.
@@ -32291,7 +31934,6 @@ privatemoviez.
 privy.
 prixa.
 prmovies.
-prn.share.
 prnad300x
 prntscr
 pro*?video=video.fp-engine
@@ -32662,7 +32304,6 @@ qq338nn.
 qq338proses.
 qq338super.
 qq36bet-
-qq_share_
 qqalfa.
 qqangpao-
 qqasia99.
@@ -32709,10 +32350,7 @@ quality-channel.
 qualtrics$important
 quant.
 quantast
-quantcast$important
-quantcast-
 quantcast-choice.
-quantcast_
 quantserve.
 quantv2.
 qubit-integration
@@ -32965,7 +32603,6 @@ red-linkedin
 redban
 redbullqq.
 reddit
-reddit-share.
 reddit-small.
 redditmedia
 redditstatic
@@ -33125,7 +32762,6 @@ repostus_bttn_
 reproad300.
 req.php?z
 reqsads
-requestadvertisement.
 requestdata.
 requestmyspacead.
 requests.js
@@ -33460,7 +33096,6 @@ rutube_dynamic.
 ruxitagentjs_
 rv.js
 rview.
-rw_share_
 rwtag.
 rwtaghome.
 ry7z6dru
@@ -33887,7 +33522,6 @@ serveads.
 serveadvert-live.
 servebo$important
 servedby
-servedby-buysellads
 servedby.
 server.js
 server_time
@@ -33986,40 +33620,6 @@ shangvsnhfbrq220923.js
 shangyk1z5o3o.js
 shantii.
 shara-
-share-actions.
-share-addtoany.
-share-bar
-share-button
-share-button.
-share-buttons-
-share-buttons.
-share-controller.
-share-count.
-share-email
-share-footer.
-share-icon-
-share-icon.
-share-icons-
-share-icons.
-share-instagram-
-share-link
-share-linkedin-
-share-master
-share-pinterest-
-share-save
-share-sprite
-share-sprite-
-share-sprite.
-share-this-
-share-tools
-share-tools-
-share-twiiter
-share-twitter1a.
-share-whatsapp
-share.dossierheader.
-share.lead.
-share.php?buttons
-share.utils.
 share0
 share1
 share2
@@ -34032,30 +33632,6 @@ share6
 share7
 share8
 share9
-share_28x13.
-share_bebo.
-share_button
-share_button.
-share_button_
-share_buttons-
-share_buttons_
-share_buzz_
-share_byline_
-share_count.
-share_iframe.
-share_link_
-share_linkedin_
-share_pinterest-
-share_save_
-share_sprite.
-share_sprite_
-share_tiwwer.
-share_toolbar.
-share_tumblr-
-share_v1_
-share_view.
-share_wechat.
-share_weibo.
 shareaholic$important
 shareaholic-
 shareaholic.
@@ -34091,8 +33667,6 @@ shareit_
 sharelike.
 sharelink$important
 sharepage-
-sharer$important
-sharer.
 sharesession.
 sharestats.
 sharestyle.
@@ -34113,10 +33687,6 @@ sharetwitter
 sharetwitter.
 sharewidgetbackgrounds.
 shariff.
-sharing
-sharing-
-sharing-buttons.
-sharing.
 sharingbar
 sharr
 sharrre$important
@@ -34289,7 +33859,6 @@ simpatiqq-
 simpatiqq.
 simple-miner-
 simple-monero-
-simple-share-
 simple_reach.
 simple_reach.js
 simpleads
@@ -34446,7 +34015,6 @@ skyscraperad.
 skyscrapper
 skyscreeper-
 sl.js
-sl_share-public.
 slade.js
 slade888.js
 sladewap.js
@@ -34488,19 +34056,15 @@ slovenske_novice
 sloxyz
 slreamplay.
 slurmjpg.
-sm-share
-sm-share-
 sm-youtube-
 sm360.js
 sm?referrer
 sm_capture_
-sm_share_
 sma.
 sma8.js
 smalads
 small-dt.
 small-loading.
-small_share.
 smallad
 smallad-
 smalladblock
@@ -34508,8 +34072,6 @@ smalltop
 smart-plan-kumbla-9895436683.
 smart-trading.
 smart.js
-smart_share
-smart_share.
 smart_source
 smartad
 smartad-
@@ -34531,7 +34093,6 @@ smartxads
 smblock.
 smcservice$important
 smeadvert
-smeadvertisement
 smetric.
 smi-
 smi-2
@@ -34551,8 +34112,6 @@ smv-cdn
 smwidget.
 smyw_anima_1.
 sn_plurk
-sn_share
-sn_share_
 sna-pushwoosh
 sna-pushwoosh.
 snack-
@@ -34687,7 +34246,6 @@ socket.
 socket.io.js
 socket?platform=*&href
 sockshare1.
-socmed-share.
 socmedicon
 socmedicon_
 socmedicons.
@@ -34749,9 +34307,6 @@ soundpark-club.
 soundpark.
 soundtrack.js
 sourcecontent
-sourcepoint
-sourcepoint.
-sourcepoint.js
 sousou-no-frieren.
 south+a+u+add.
 southfreak.
@@ -34886,8 +34441,6 @@ springserve$important
 springserve.
 sprinkle$important
 sprinkle.js
-sprite-share
-sprite-share.
 sprite-sharetools.
 spriteiconshare.
 sprites-social2.
@@ -35108,14 +34661,11 @@ stocksad2.
 stocksad3
 stocksad3.
 stockstar.com*duilian&t
-stocktwits_share.
 stooq.
 stop-ru.js
 stopvideo
 storagesync
 store
-store-share
-store-share.
 store_pagespixel
 storeadvimpression.
 stormyachiever.
@@ -35248,8 +34798,6 @@ sun_24_11_2019_03_58_05
 sundul99.
 sundulqq.
 suning-
-sunmedia$important
-sunmediaads.
 sunny-
 sunrise_bank.
 suo.
@@ -35409,17 +34957,6 @@ tabligh
 tablytics
 tablytics.
 tabonitobrasil.
-taboola
-taboola$important
-taboola-footer.
-taboola-header.
-taboola-module.
-taboola_header.
-taboolaarticle.
-taboolaarticlefooter.
-taboolahead.
-taboolasection.
-taboolasyndication
 tacoda
 tacoda.
 tacoda_
@@ -35978,8 +35515,6 @@ top*rd.php?id
 top-10
 top-affiche-
 top-right
-top-share
-top-share-
 top.js
 top.mp4
 top468
@@ -36207,7 +35742,6 @@ trackui
 trackuity.
 trackuser
 trackv&tmp
-trackvisit
 trackwebpage
 tracky
 trade.js
@@ -36404,7 +35938,6 @@ tw.js
 tw_follow.
 tw_footer.
 tw_ico
-tw_share_
 tw_small.
 tw_top.
 twad
@@ -36491,7 +36024,6 @@ twos.js
 twplayer
 tws.js
 twt-ico
-twt-share
 twt1.
 twt_ico
 twt_side
@@ -36977,7 +36509,6 @@ videogame.
 videoheartbeat
 videoheartbeat.
 videojs-contrib.min.js
-videojs-share.
 videojs-vast-vpaid-waterfall.
 videojs.adss.
 videojs.ima.
@@ -37415,7 +36946,6 @@ web_answertip.
 web_js.
 web_js_stats.
 web_miner
-web_share
 web_traffic
 web_traffic_capture.js
 web_trends
@@ -37794,7 +37324,6 @@ wp-postviews
 wp-power-stats
 wp-powerstat
 wp-script-leaderboard.
-wp-share
 wp-snow-effect
 wp-statistics
 wp-stats-manager
@@ -37998,7 +37527,6 @@ xads.
 xadv
 xadv-invid
 xadv_
-xadvertisement.
 xadyaeyd
 xapads.
 xb.js
@@ -38077,7 +37605,6 @@ xiaoqiang
 xiatui.js
 xiazai
 xiazxvbgyjw220923.js
-xicon_share.
 xinbkill.js
 xingkong6688s.oss-
 xinhuanetad.
@@ -38185,7 +37712,6 @@ y2mate.
 y39hpqsy
 y3q6rd2w
 y98ssd2
-ya-share.
 ya-wsplivayu.js
 yab-adimages.
 yabinding.js
