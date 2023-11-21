@@ -235,6 +235,7 @@
 *$removeparam=r,important
 *$removeparam=rnd
 *$removeparam=s_cid
+*$removeparam=stigma
 *$removeparam=swjiylwa
 *$removeparam=twclid
 *$removeparam=vero_conv
@@ -1321,6 +1322,7 @@
 /[_\W]consent[_\W]/$important
 /[_\W]contact.?form[_\W]/
 /[_\W]conversion[-~\w\.]*\.js(on)?/
+/[_\W]conversion[_\W]/$important
 /[_\W]cookies?[_\W]/
 /[_\W]copy[-~\w\.]*\.js(on)?/
 /[_\W]corot[_\W]/
@@ -1352,6 +1354,7 @@
 /[_\W]donat[-~\w\.]*\.js(on)?/
 /[_\W]donate[_\W]/
 /[_\W]drivek[-~\w\.]*\.js(on)?/
+/[_\W]e?privacy[_\W]/$important
 /[_\W]ebx.*\.js(on)?/
 /[_\W]email.?decode[_\W]/
 /[_\W]embed[-~\w\.]*\.js(on)?/
@@ -1504,6 +1507,8 @@
 /[_\W]segment[-~\w\.]*\.js(on)?/
 /[_\W]sentiments[-~\w\.]*\.js(on)?/
 /[_\W]seo[_\W]/
+/[_\W]sharer?[_\W]/$important
+/[_\W]sharing?[_\W]/$important
 /[_\W]shcore[-~\w\.]*\.js(on)?/
 /[_\W]shim[-~\w\.]*\.js(on)?/
 /[_\W]showads?[_\W]/
@@ -16267,6 +16272,7 @@
 /sungg/*
 /suning-
 /sunmaker_logo.svg
+/sunmedia/$important
 /sunshine.
 /sunstatic/frms/*
 /sunwc.
