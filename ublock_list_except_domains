@@ -233,6 +233,7 @@
 *$removeparam=oly_anon_id
 *$removeparam=oly_enc_id
 *$removeparam=r,important
+*$removeparam=rnd
 *$removeparam=s_cid
 *$removeparam=swjiylwa
 *$removeparam=twclid
@@ -1396,6 +1397,7 @@
 /[_\W]id.?generator[-~\w\.]*\.js(on)?/
 /[_\W]impress(ions?)?[_\W]/$important
 /[_\W]index[-~\w\.]*\.js(on)?/
+/[_\W]inf.?scroll[-~\w\.]*\.js(on)?/
 /[_\W]inline[-~\w\.]*\.js(on)?/
 /[_\W]inner.?host[-~\w\.]*\.js(on)?/
 /[_\W]inner[-~\w\.]*\.js(on)?/
@@ -1446,7 +1448,9 @@
 /[_\W]osano[-~\w\.]*\.js(on)?/
 /[_\W]otautoblock[-~\w\.]*\.js(on)?/
 /[_\W]overlay[-~\w\.]*\.js(on)?/
+/[_\W]pKisalt[-~\w\.]*\.js(on)?/
 /[_\W]partner[-~\w\.]*\.js(on)?/
+/[_\W]paylas[_\W]/$important
 /[_\W]pb?\.([-~\w\.]*\.)?js(on)?/
 /[_\W]pb[-~\w\.]*\.js(on)?/
 /[_\W]perform[-~\w\.]*\.js(on)?/
@@ -1478,6 +1482,7 @@
 /[_\W]qoe[_\W]/$important
 /[_\W]quant[-~\w\.]*\.js(on)?/
 /[_\W]quarantine[-~\w\.]*\.js(on)?/
+/[_\W]question[-~\w\.]*\.js(on)?/
 /[_\W]rawp[-~\w\.]*\.js(on)?/
 /[_\W]react[-~\w\.]*\.js(on)?/
 /[_\W]recirc[-~\w\.]*\.js(on)?/
@@ -1505,6 +1510,7 @@
 /[_\W]side.?bar[-~\w\.]*\.js(on)?/
 /[_\W]sirv[-~\w\.]*\.js(on)?/
 /[_\W]slick[-~\w\.]*\.js(on)?/
+/[_\W]slot[-~\w\.]*\.js(on)?/
 /[_\W]snow[-~\w\.]*\.js(on)?/
 /[_\W]snowstorm[-~\w\.]*\.js(on)?/
 /[_\W]socials?[_\W]/
@@ -5426,7 +5432,6 @@
 /complexad.js
 /complianz.min.js
 /components/newsletter/*
-/compress
 /compteur.
 /compteur_page.
 /compteurs/*
@@ -6876,7 +6881,6 @@
 /eumodaldialog.min.js
 /eureka.
 /eureka.js
-/euro.
 /euroanimal.
 /eurogdpr/*
 /europixads.
@@ -15545,7 +15549,6 @@
 /slot
 /slot-code/*
 /slot-gacor.
-/slot-slideup.js
 /slots.php?site
 /slovenske_novice
 /slujebni/*
@@ -16722,6 +16725,7 @@
 /thpix.
 /thread
 /threadeskupsimple
+/threadeskupsimple/$important
 /thrive-leads
 /thrive-leads/*
 /thumb_1000_70_
@@ -19752,7 +19756,6 @@ _svpressa.js
 _tacoda
 _targeting.
 _technorati_24.
-_thumbs_
 _tizer.
 _tizer2.
 _tizers.
@@ -25427,7 +25430,6 @@ eulerian.js
 eumodaldialog
 eureka.
 eureka.js
-euro
 euroanimal.
 eurogamer.
 eurolive.
@@ -34774,7 +34776,6 @@ slinkway.
 slot
 slot-
 slot-gacor.
-slot-slideup.js
 slots.php?site
 slovenske_novice
 sloxyz
@@ -36092,7 +36093,6 @@ thrive-architect.
 thrive-leads
 thumblink.
 thumbnail_bettingstugan
-thumbs_
 thuzianayltics.
 ti.js
 tianshu_get
