@@ -506,6 +506,7 @@ list2 = [re.sub(r'^[_\W]?action[_\W]*$', '', line) for line in list2]           
 list2 = [re.sub(r'^[_\W]?activity[_\W]*$', '', line) for line in list2]         # <remove spurious activity filter />
 list2 = [re.sub(r'^[_\W]?adc[_\W]*$', '', line) for line in list2]              # <remove spurious adc filter />
 list2 = [re.sub(r'^[_\W]?add(ons?)?[_\W]*$', '', line) for line in list2]       # <remove spurious add(on(s)) filter />
+list2 = [re.sub(r'^[_\W]?admin[_\W]*$', '', line) for line in list2]            # <remove spurious admin filter />
 list2 = [re.sub(r'^[_\W]?afr[_\W]*$', '', line) for line in list2]              # <remove spurious afr filter />
 list2 = [re.sub(r'^[_\W]?agent[_\W]*$', '', line) for line in list2]            # <remove spurious agent filter />
 list2 = [re.sub(r'^[_\W]?airbnb[_\W]*$', '', line) for line in list2]           # <remove spurious airbnb filter />
