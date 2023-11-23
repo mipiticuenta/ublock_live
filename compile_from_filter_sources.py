@@ -944,6 +944,7 @@ list2.append('@@||meteoblue.com^$inline-script,xhr,1p')
 list2.append('@@||meteoblue.com^$removeparam=/callback/i')
 list2.append('@@||meteoblue.com^$removeparam=/metric/i')
 list2.append('@@/[_\W]adunits?[_\W]/$domain=youtube.com')
+list2.append('@@||worldbank.org^$inline-script,1p')
 list2.append('@@||www.linkedin.com^$inline-script,xhr,1p')
 list2.append('@@||youtube.com^$inline-script,xhr,1p')
 
