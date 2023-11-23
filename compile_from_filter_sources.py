@@ -754,6 +754,7 @@ list2 = [re.sub(r'^[_\W]?nodes?[_\W]*$', '', line) for line in list2]           
 list2 = [re.sub(r'^[_\W]?normal[_\W]*$', '', line) for line in list2]           # <remove spurious normal filter />
 list2 = [re.sub(r'^[_\W]?noticias?[_\W]*$', '', line) for line in list2]        # <remove spurious noticia(s) filter />
 list2 = [re.sub(r'^[_\W]?nytimes[_\W]*$', '', line) for line in list2]          # <remove spurious nytimes filter />
+list2 = [re.sub(r'^[_\W]?oil[_\W]*$', '', line) for line in list2]              # <remove spurious oil filter />
 list2 = [re.sub(r'^[_\W]?online[_\W]*$', '', line) for line in list2]           # <remove spurious online filter />
 list2 = [re.sub(r'^[_\W]?open[_\W]*$', '', line) for line in list2]             # <remove spurious open filter />
 list2 = [re.sub(r'^[_\W]?opinions?[_\W]*$', '', line) for line in list2]        # <remove spurious opinion(s) filter />

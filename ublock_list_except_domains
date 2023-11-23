@@ -216,6 +216,7 @@
 *$removeparam=_hsenc
 *$removeparam=_openstat
 *$removeparam=b
+*$removeparam=browserid,important
 *$removeparam=controller
 *$removeparam=dclid
 *$removeparam=df
@@ -1470,6 +1471,7 @@
 /[_\W]sibbo[_\W]/
 /[_\W]side.?bar[-~\w\.]*\.js(on)?/
 /[_\W]sirv[-~\w\.]*\.js(on)?/
+/[_\W]skypecheck[-~\w\.]*\.js(on)?/
 /[_\W]slick[-~\w\.]*\.js(on)?/
 /[_\W]slot[-~\w\.]*\.js(on)?/
 /[_\W]snow[-~\w\.]*\.js(on)?/
@@ -1530,6 +1532,7 @@
 /[_\W]user[-~\w\.]*\.js(on)?/
 /[_\W]utms?[_\W]/$important
 /[_\W]v[at]m[-~\w\.]*\.js(on)?/
+/[_\W]validform[-~\w\.]*\.js(on)?/
 /[_\W]vendor[-~\w\.]*\.js(on)?/
 /[_\W]visitor[_\W]/
 /[_\W]voonto[-~\w\.]*\.js(on)?/
@@ -12243,7 +12246,6 @@
 /parrainage/*
 /parrainage468x
 /parrainage468x60.
-/parse.
 /parseforads.
 /parsely/$important
 /part/*
@@ -16178,7 +16180,6 @@
 /tikilink
 /tilda-stat-
 /timedtext\?/$important
-/timer.
 /timerecorder
 /timeslog.
 /timestrend_
@@ -18792,6 +18793,7 @@
 @@||meteoblue.com^$inline-script,xhr,1p
 @@||meteoblue.com^$removeparam=/callback/i
 @@||meteoblue.com^$removeparam=/metric/i
+@@||worldbank.org^$inline-script,1p
 @@||www.linkedin.com^$inline-script,xhr,1p
 @@||youtube.com^$inline-script,xhr,1p
 _120by600_
@@ -30855,7 +30857,6 @@ parkview.
 parler
 parrainage468x
 parrainage468x60.
-parse.
 parseforads.
 parsevast$important
 partenaire.
@@ -35028,11 +35029,9 @@ tikilink
 tiktok
 tiktokcdn
 tilda-stat-
-time.
 timeanddate
 timeincuk$important
 timeline_wrapper
-timer.
 timerecorder
 timeslog.
 timestrend_
