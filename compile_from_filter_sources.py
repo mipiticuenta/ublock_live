@@ -320,6 +320,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.]?jquery\*?(?=[/\.])', '', line) for line in list2]  # <remove leading jquery />
     list2 = [re.sub(r'^[/\.]?js\*?(?=[/\.])', '', line) for line in list2]      # <remove leading js />
     list2 = [re.sub(r'^[/\.]?libs?\*?(?=[/\.])', '', line) for line in list2]   # <remove leading lib(s) />
+    list2 = [re.sub(r'^[/\.]?modules?\*?(?=[/\.])', '', line) for line in list2]    # <remove leading module(s) />
     list2 = [re.sub(r'^[/\.]?(multi)?media\*?(?=[/\.])', '', line) for line in list2]   # <remove leading (multi)media />
     list2 = [re.sub(r'^[/\.]?news?\*?(?=[/\.])', '', line) for line in list2]   # <remove leading new(s) /
     list2 = [re.sub(r'^[/\.]?pics?\*?(?=[/\.])', '', line) for line in list2]   # <remove leading pic(s) /
@@ -582,6 +583,7 @@ list2 = [re.sub(r'^[_\W]?common[_\W]*$', '', line) for line in list2]           
 list2 = [re.sub(r'^[_\W]?community[_\W]*$', '', line) for line in list2]        # <remove spurious community filter />
 list2 = [re.sub(r'^[_\W]?compress[_\W]*$', '', line) for line in list2]         # <remove spurious compress filter />
 list2 = [re.sub(r'^[_\W]?com[_\W]*$', '', line) for line in list2]              # <remove spurious com filter />
+list2 = [re.sub(r'^[_\W]?company[_\W]*$', '', line) for line in list2]          # <remove spurious company filter />
 list2 = [re.sub(r'^[_\W]?config[_\W]*$', '', line) for line in list2]           # <remove spurious config filter />
 list2 = [re.sub(r'^[_\W]?connect[_\W]*$', '', line) for line in list2]          # <remove spurious connect filter />
 list2 = [re.sub(r'^[_\W]?conte[nx]t[_\W]*$', '', line) for line in list2]       # <remove spurious conte(n|x)t filter />
