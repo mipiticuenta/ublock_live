@@ -894,6 +894,7 @@ list2 = [re.sub(r'^[_\W]?webresource[_\W]*$', '', line) for line in list2]      
 list2 = [re.sub(r'^[_\W]?web(site)?[_\W]*$', '', line) for line in list2]       # <remove spurious web(site) filter />
 list2 = [re.sub(r'^[_\W]?whatsapp[_\W]*$', '', line) for line in list2]         # <remove spurious whatsapp filter />
 list2 = [re.sub(r'^[_\W]?widgets?[_\W]*$', '', line) for line in list2]         # <remove spurious widget(s) filter />
+list2 = [re.sub(r'^[_\W]?wiki[pm]edia[_\W]*$', '', line) for line in list2]     # <remove spurious wiki(p|m)edia filter />
 list2 = [re.sub(r'^[_\W]?windows?[_\W]*$', '', line) for line in list2]         # <remove spurious window(s) filter />
 list2 = [re.sub(r'^[_\W]?word(press)?[_\W]*$', '', line) for line in list2]     # <remove spurious word(press) filter />
 list2 = [re.sub(r'^[_\W]?work(er)?[_\W]*$', '', line) for line in list2]        # <remove spurious work(er) filter />
