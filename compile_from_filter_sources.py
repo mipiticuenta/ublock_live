@@ -977,9 +977,8 @@ list2 = sorted(set(list2) | set(list5))
 print('\n', 'Listing domain filters; ', end = '', sep = '')
 
 list3 = [line for line in list2 if re.search(r'^[-\.\w]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
-list3 = [re.sub(r'^\.', '', line)  for line in list3]                           # <remove leading . preceding domain />
 list3 = [line for line in list3 if not(re.search(r'^.*\.js(\$important)?$', line))] # <remove @.js from domains list />
-list3 = [line for line in list3 if not(line[0] == '-')]                         # <remove -@.@ from domains list />
+list3 = [line for line in list3 if line[0] != '-']                              # <remove -@.@ from domains list />
 list2 = set(list2) - set(list3)                                                 # <only domains part are processed in this section; @.js are kept in list2 />
 
 # </extract domains from list>
@@ -988,6 +987,7 @@ list2 = set(list2) - set(list3)                                                 
 
 print('removing #.@(.@) numerical domain filters, root @.@ and key domains (google.com etc) domains: ', end = '')
 
+list3 = [re.sub(r'^\.', '', line)  for line in list3]                           # <remove leading . preceding domain />
 list3 = [re.sub('r\$important$', '', line) for line in list3]                   # <remove trailing $important from domains/>
 list3 = [line for line in list3 if not(re.search(r'^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?$', line))]    # <remove #.@(.@) numerical domains/>
 list3 = [line for line in list3 if not(re.search(r'^(com|edu|gob|gou?v|net|org|[a-z]{2})\.(com|edu|gob|gou?v|net|org|[a-z]{2})$', line))]   # <remove @.@ root domains />
