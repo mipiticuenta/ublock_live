@@ -542,6 +542,7 @@ list2 = [re.sub(r'^[_\W]?bestbuy[_\W]*$', '', line) for line in list2]          
 list2 = [re.sub(r'^[_\W]?beta[_\W]*$', '', line) for line in list2]             # <remove spurious beta filter />
 list2 = [re.sub(r'^[_\W]?bi[g|n][_\W]*$', '', line) for line in list2]          # <remove spurious bi(g|n) filter />
 list2 = [re.sub(r'^[_\W]?billboard[_\W]*$', '', line) for line in list2]        # <remove spurious billboard filter />
+list2 = [re.sub(r'^[_\W]?bing[_\W]*$', '', line) for line in list2]             # <remove spurious bing filter />
 list2 = [re.sub(r'^[_\W]?bla[cn]k[_\W]*$', '', line) for line in list2]         # <remove spurious bla(c|n)k filter />
 list2 = [re.sub(r'^[_\W]?blocks?[_\W]*$', '', line) for line in list2]          # <remove spurious block(s) filter />
 list2 = [re.sub(r'^[_\W]?blogs?[_\W]*$', '', line) for line in list2]           # <remove spurious blog(s) filter />
