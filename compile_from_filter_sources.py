@@ -1173,6 +1173,7 @@ file3_out.write(
 list3 = [line for line in list2 if re.search(r'^[-_\.a-z0-9]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
 list3 = [re.sub('r\$important$', '', line) for line in list3]                   # <remove trailing $important from domain list/>
 list3 = [line for line in list3 if not(re.search(r'.*\.js$', line))]            # <remove .*\.js$ from domain list />
+list3 = [line for line in list3 if line[0] != '-']                              # <remove -@.@ from domains list />
 list3 = set(list3)
 list3 = sorted(list3, key = lambda x: (re.sub(r'^.*\.(?=[^\.]+\.[^\.]+\Z)', '', x)))    # <sort by a-z @(.@) />
 file3_out.writelines(line + '\n' for line in list3)
