@@ -1,0 +1,1163 @@
+{
+    "domain": "vee24.com",
+    "owner": {
+        "name": "Vee24",
+        "displayName": "Vee24"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "cdn",
+        "gds",
+        "static-us",
+        "static",
+        "web-us",
+        "web",
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "vee24\\.com\\/disco\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "Navigator.prototype.appVersion": 5,
+                "window.sessionStorage": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "b3448f2661d40fe59f84015fd4fecf5763b34a7b78984935fd2e1f73cc2d1899"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.goldsmiths.co.uk",
+                "www.jordans.com",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/api\\/disco",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gds"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "69a1509b35eb14b7d0a902c8ab3f29b4df607126d4c9b3e95a67fdfc1b49a96c",
+                "51464dcb253bd1b0b93b083347212cb4cc20606bf4adfb0fb8261c1dfc705f39"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.goldsmiths.co.uk",
+                "www.jordans.com",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/api\\/disco",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gds"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.goldsmiths.co.uk",
+                "www.jordans.com",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/js\\/v24Embedded\\.js",
+            "cookies": 0.0000341,
+            "fingerprinting": 3,
+            "subdomains": [
+                "static-us",
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "Date.prototype.getTime": 5,
+                "Navigator.prototype.appVersion": 5,
+                "Screen.prototype.width": 5,
+                "Screen.prototype.height": 5,
+                "window.sessionStorage": 5,
+                "Navigator.prototype.platform": 5,
+                "window.name": 5,
+                "Document.cookie getter": 5,
+                "window.localStorage": 5,
+                "window.devicePixelRatio": 3,
+                "Navigator.prototype.mediaDevices": 3,
+                "MediaDevices.prototype.enumerateDevices": 3,
+                "Document.cookie setter": 5,
+                "window.innerHeight": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "fdc7ad40037ac36019ce411c3adc384d5aff43e5626c407d1977878dd5d1ec82",
+                "f35b071f1edfcbd71950b0e148c941d091574368d03a560dd2aa0b2344549330"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "v24u_easternbank": {
+                    "ttl": 315569264,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "v24s_easternbank": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "vee24.nudges": {
+                    "ttl": null,
+                    "length": 38,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "v24u_goldsmiths": {
+                    "ttl": 315569277,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "v24s_goldsmiths": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "v24u_jordans": {
+                    "ttl": 315569269,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "v24s_jordans": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "v24u_schuh": {
+                    "ttl": 315569265,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "v24s_schuh": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.goldsmiths.co.uk",
+                "www.jordans.com",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/api\\/c\\/pagebehaviour",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-us",
+                "web"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "156548d9f253e2dc0dadd8006ab56194fa6df0e5eb0292ddd57db10c3090e106",
+                "f46fe2592f17829125e5f9b84d701a81047016ebe5e137a3a1d5588ce68c0c86",
+                "5b87a73ce45e2d8bb380099f0e12e9cd68d5c409bd3bdfbd74ac01805e877d82",
+                "eab92aa71ed435411c25d532b5fd014ef71c04eeec15761febd69a12b2b3f707"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.goldsmiths.co.uk",
+                "www.jordans.com",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/api\\/n\\/loggerpage",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-us",
+                "web"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "da3cbaf3fb6a04c864bea2e044efa66797245949168ad19381dea844df09d9ce",
+                "b77efb77d60e38070b8c22017a091b29f6b6e73ecf40bf945dfb9ed35c73608e",
+                "a40500202fea345162fb094b3ae5662e6d589c76eb02b1cb5ce8148cc82beec0",
+                "b81d4fe55736873f01cb0dc62c65d87e27c51a7ac80cffda67cb2c287e719f24"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.goldsmiths.co.uk",
+                "www.jordans.com",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/api\\/n\\/loggerpage",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-us",
+                "web"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.goldsmiths.co.uk",
+                "www.jordans.com",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/api\\/n\\/capabilities",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-us",
+                "web"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.goldsmiths.co.uk",
+                "www.jordans.com",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/api\\/n\\/capabilities",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-us",
+                "web"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.goldsmiths.co.uk",
+                "www.jordans.com",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/api\\/n\\/cookiesenabled",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-us",
+                "web"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "5acf3ff77b4420677b5923071f303facaba7a9273a346284a667a275df325146"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.goldsmiths.co.uk",
+                "www.jordans.com",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/api\\/c\\/domainsuffix",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-us",
+                "web"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "f27e0a1005bcaf81805bf56b1f36834d950fd9bf2e5f6c9b8044c19502afbfd2",
+                "ae8cc00cdf2f48adecd2064407161dc862aa6420ccba8af618dd21e30e43fa2d",
+                "297daf60a2f669770b90acbebbeda0c671809a5f9149422b9b7904f2e142f1f2",
+                "64ae0000dd443b8cb5af12a11194c14152f4555c4353e84171b3e32b2e982cd4"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.goldsmiths.co.uk",
+                "www.jordans.com",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/api\\/c\\/resources",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-us",
+                "web"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "d52b57d6d5da7f9e1bae30add411d2b2b6ae79ddf50e11e9a9f858dc49e93fec",
+                "9ef5c5850aa3bccee5242f878541b623280741aa23418fa97d63ed2b3ae4ccba",
+                "6fb627415991e0f2d2bd477532d85e21c217d497d3ae0567fdb62da81feb6d4a",
+                "5dd9a27eebf0c4006d482af037bf7c9a38a0279e04d7219cd9d5b1d65d161b53"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.goldsmiths.co.uk",
+                "www.jordans.com",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/js\\/modules\\/841\\.2520b428a8df98f97abf\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-us"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "23600b609fc92d18b52ad4a5942d6634c7f301211cdea5853e090e911ca4cac1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.jordans.com"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/js\\/modules\\/993\\.5f98401e1dbfd6154a30\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-us"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "bbdb085f9686f2e012570cc45540ed54fc66132c2b0ea386e72bfca32db54c67"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.jordans.com"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/js\\/modules\\/309\\.46331dec0a3e2ae53f52\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-us"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "36d122bc81755dba997265cad0fce39b435848940bef720f87c8f268ed1aad95"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.jordans.com"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/js\\/modules\\/21\\.b122653a3b2a03027790\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-us"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e62fb1a0cea71001c4e84845dfe59dd9e86daddeda11fdff8a8085d2b555a25e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.jordans.com"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/js\\/modules\\/vee24_assistance\\.component\\.ee6199229d059bb68456\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-us"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "77c54768ea7da34b1e7e44cd7bd143b97cee9e6d9075339b8379075b4c11b3d0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.jordans.com"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/js\\/modules\\/vee24_container\\.component\\.bf147aba9d60eeac0206\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-us"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "f2997a24985d8dfb45f2face3b3c3cf536bc1264f2f20de994df1da0892287d8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.jordans.com"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/js\\/modules\\/vee24_features_tab\\.component\\.d33e2fb36f072430218e\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-us"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e8cdea6241823f290be56e766a4810a9da361fd1debd9dea8d2e0d3043cb8efc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.jordans.com"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/css\\/global\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-us",
+                "static"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "c908b7c60dc1e3df1d7960a989170856d72c708f6c05fa4b79360c7e5f468ea8",
+                "2a5645d09452f4d011a912a439d6b01fc8f198797cb1eb6f3461b694df7501a4"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.goldsmiths.co.uk",
+                "www.jordans.com",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/css\\/engagement\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-us",
+                "static"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "ef958d15495973a11fa8dd1e9b95db18016b87e5cdab4e6585030fdd0e9c58a0",
+                "7b1af67fed97eefaef001aa825f5f42feebe652732d4828d621e962aa801ed8a"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.goldsmiths.co.uk",
+                "www.jordans.com",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/js\\/modules\\/vee24_components_pre-engagement-form\\.component\\.03e7fd1d6a9548d143ad\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-us"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "a8485ac8eacf78cdb098433651e7f9f5873e37c76c20e6beb744805c1207bcdc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.jordans.com"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/js\\/modules\\/vee24_features_panel\\.component\\.851760a1b976c89f9411\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-us"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "08b10ab900c6ebfb47c573a2801b26de497a3086274f91a1b6e5f981348b07da"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.jordans.com"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/js\\/modules\\/vee24-controllers-nudges-controller\\.8b6a8ca340ca63c163ce\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-us"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "228918ac9a7e7ee1f19e09b6c4eb9715a5bfe2c20bcec19438467987829b68a6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.jordans.com"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/css\\/fonts\\/v24-modern-icons\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-us",
+                "static"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "56f940c965564c93676491cc5eb38b87e4395566e7e93e8a577b3f9bef79a21f"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.goldsmiths.co.uk",
+                "www.jordans.com",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v24\\/veedesk\\/themes\\/easternbank\\/en-us\\/images\\/logo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ebc106566c38f9fec75d0e4622c8c7410be5b2e10355fa16721d52a9727f5a4a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v24\\/veedesk\\/themes\\/master\\/images\\/logo-black\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-us",
+                "static"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "7c3ef637995642966cc38885452c39c7f5172a90a60984131af6dce45eac6b1a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.goldsmiths.co.uk",
+                "www.jordans.com",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v24\\/clients\\/master\\/pages\\/legal\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-us",
+                "static"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "972a031c7cffa2b71e8d9ce021c34aca282989b44433c15fb52a9f0869e2fa0b"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.goldsmiths.co.uk",
+                "www.jordans.com"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v24\\/clients\\/master\\/pages\\/reset\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-us",
+                "static"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "2bd61fab7dd5e62af38b232183d441e2ab0b790f2e46c9626cda6c189d5be69e"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.goldsmiths.co.uk",
+                "www.jordans.com"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v24\\/clients\\/master\\/pages\\/iframe\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-us",
+                "static"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "98e786e67c4436f57bc907e6b2c79cd3e2fb99ee53b5e7cbe0c0a45a3cf50ba5"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.easternbank.com",
+                "www.goldsmiths.co.uk",
+                "www.jordans.com"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/api\\/c\\/openinghours",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6894fd94c8a5e1bec7b71af5f9f1151b1e5d513952f9d7d21245156391cb8ce7"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easternbank.com",
+                "www.jordans.com"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/api\\/availability\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "eeeb15e93a2717cb7a97c66db6ae7f9a9c39ba595668771b4080df48aea203af"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goldsmiths.co.uk",
+                "www.goldsmiths.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/js\\/modules\\/841\\.6a87cfd14cc3d44dfc76\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4f2de346ea32455d608466f8f04c1b03439c597fe81ab77465784d279bf4ad9f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goldsmiths.co.uk",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/js\\/modules\\/993\\.0c8603243f23b1c094aa\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "18df1445df5b297e16281b17bacc9d4a5dc4f15199adc9c60b56f359ec0bc73f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goldsmiths.co.uk",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/js\\/modules\\/309\\.e3fd65b89d04728f6258\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2cdab4e293a7b3baf802a2745dc04c2b0e20f2c6a664be5440edf0f1ed416c13"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goldsmiths.co.uk",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/js\\/modules\\/21\\.8862af85dbaabf83f980\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ea4bcbea87495d630a6c45fc2189ecd435d5a6f64be369daa93d6b2a150702e9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goldsmiths.co.uk",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/js\\/modules\\/vee24_assistance\\.component\\.5430cfeac55977760110\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "77972e44a3513b45476408c55eb1a658264ad410480797de32d44316ee97e29f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goldsmiths.co.uk",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/js\\/modules\\/vee24_container\\.component\\.62409a6bafee1b5ea945\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "aef231ba7ff5c2425dd9f0f800b56cd47efd16ca71ab8f785627d9202b80889e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goldsmiths.co.uk",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/js\\/modules\\/vee24_components_pre-engagement-form\\.component\\.93664374d3ca7d21d7f7\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4c83a0b48b3ea40ec2e85aa351b8792bb20f0f2603bfeda0567729753dc94b6b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goldsmiths.co.uk",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/js\\/modules\\/vee24_features_panel\\.component\\.421463a447a2381c9feb\\.mjs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1a410c8d60e20c3bc14f7cf60e9982894ccc6dccf93f91423dcba16ffeddac0b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goldsmiths.co.uk",
+                "www.schuh.co.uk"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v2\\/clients\\/jordans\\/theme\\/fonts\\/fonts\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e535abaa9d50f1fcb229245021623141f84c450f6bcd248f7c7bf6ce59939361"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jordans.com",
+                "www.jordans.com"
+            ]
+        },
+        {
+            "rule": "vee24\\.com\\/v24\\/veedesk\\/themes\\/jordans\\/en-us\\/images\\/logo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d573a56247a95a0a6afac1469f973fea367b35b86f58e43d35fe5c2923d2549a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jordans.com",
+                "www.jordans.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000409,
+    "topInitiators": [
+        {
+            "domain": "gbqofs.com",
+            "prevalence": 0.42424242424242425
+        },
+        {
+            "domain": "contentsquare.net",
+            "prevalence": 0.18181818181818182
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.18181818181818182
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.12121212121212122
+        },
+        {
+            "domain": "newrelic.com",
+            "prevalence": 0.06060606060606061
+        },
+        {
+            "domain": "msecnd.net",
+            "prevalence": 0.030303030303030304
+        }
+    ],
+    "types": {
+        "Script": 58,
+        "XHR": 5,
+        "Preflight": 14,
+        "Fetch": 31,
+        "Stylesheet": 20,
+        "Font": 5,
+        "Image": 9,
+        "Document": 4
+    },
+    "nameservers": [
+        "ns4.vee24.com",
+        "ns1.vee24.com",
+        "ns2.vee24.com",
+        "ns3.vee24.com"
+    ]
+}

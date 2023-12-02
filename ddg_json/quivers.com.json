@@ -1,0 +1,248 @@
+{
+    "domain": "quivers.com",
+    "owner": {
+        "name": "Quivers International, Inc.",
+        "displayName": "Quivers International"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "hovercart",
+        "hovercart-ws"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "quivers\\.com\\/",
+            "cookies": 0.0000409,
+            "fingerprinting": 1,
+            "subdomains": [
+                "hovercart"
+            ],
+            "apis": {
+                "window.localStorage": 6,
+                "Date.prototype.getTime": 6,
+                "window.sessionStorage": 6,
+                "Document.cookie getter": 6,
+                "Document.cookie setter": 6,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 6,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "660299daf796d5eb652dfca73e64aa41f300dbfc14b8dc0eb83c013d73ac8889",
+                "ab6d606bda0fa4d96ee7f72d4d9d2fc41af6069d4e81f8fe1a671ce0945c7bfc",
+                "63356777c315187754993ba3720fd19d48b0a170c313ceb22c0f56d83285b495",
+                "94d4f7d80f71f633547e6408aeca09cbf7b2d12db8f5fc102df9e90b79b9118b",
+                "9a9f58bd5a0db2f588843fc73cd955858864b33e819eb612cb8d70f22bce9f2a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "QuiversSession": {
+                    "ttl": 251703394813,
+                    "length": 36,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anthemav.com",
+                "www.kicker.com",
+                "www.ndspro.com",
+                "www.paradigm.com",
+                "www.rme-usa.com",
+                "www.topeak.com"
+            ]
+        },
+        {
+            "rule": "quivers\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hovercart-ws"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anthemav.com",
+                "www.kicker.com",
+                "www.ndspro.com",
+                "www.paradigm.com",
+                "www.rme-usa.com",
+                "www.topeak.com"
+            ]
+        },
+        {
+            "rule": "quivers\\.com\\/api\\/v1\\/app\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hovercart"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anthemav.com",
+                "www.kicker.com",
+                "www.ndspro.com",
+                "www.paradigm.com",
+                "www.rme-usa.com",
+                "www.topeak.com"
+            ]
+        },
+        {
+            "rule": "quivers\\.com\\/api\\/v1\\/app\\/",
+            "cookies": 0.0000409,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hovercart"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "4347fe72ff58eb6bf343ccb9e187d9a22f77e549f36636020ce35055f32a432a",
+                "dd41f274e84f6a60df0288e4a4e8b77b598bdae8840ed8074602fc6a93059c1b",
+                "aeaaad044626af05146dbaf371e6c51e492df787052f8a3eb507b5ff21a4c543",
+                "6c34da24706cab06edd43f487a22d1db0eb2724439b2115820fbf5ad64553549",
+                "eb183c2939c0eb5de177eef6d7e5649eb951e5a661791a193c0755d9fb52ecbc"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anthemav.com",
+                "www.kicker.com",
+                "www.ndspro.com",
+                "www.paradigm.com",
+                "www.rme-usa.com",
+                "www.topeak.com"
+            ]
+        },
+        {
+            "rule": "quivers\\.com\\/css\\/styles\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hovercart"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "fd116de94be0451c3eadf843c98db448ec235ca3c11fb2fb33daea0b1e735a63"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anthemav.com",
+                "www.kicker.com",
+                "www.ndspro.com",
+                "www.paradigm.com",
+                "www.rme-usa.com",
+                "www.topeak.com"
+            ]
+        },
+        {
+            "rule": "quivers\\.com\\/img\\/loading\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hovercart"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "075cbd0f62294d13f28d2f9e3e160748f1f57d6d2868f3a894cc5195d5dd04a7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "anthemav.com",
+                "www.kicker.com",
+                "www.ndspro.com",
+                "www.paradigm.com",
+                "www.rme-usa.com",
+                "www.topeak.com"
+            ]
+        },
+        {
+            "rule": "quivers\\.com\\/fonts\\/glyphicons-halflings-regular\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hovercart"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "7f98ff9434849daca0cadf865d4639a48d85a7ad473a30961680c7f285a885eb"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kicker.com",
+                "www.kicker.com",
+                "www.ndspro.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000477,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6428571428571429
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.21428571428571427
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.14285714285714285
+        }
+    ],
+    "types": {
+        "Script": 6,
+        "WebSocket": 6,
+        "Preflight": 6,
+        "XHR": 6,
+        "Stylesheet": 6,
+        "Image": 6,
+        "Font": 3
+    },
+    "nameservers": [
+        "pdns04.domaincontrol.com",
+        "pdns03.domaincontrol.com"
+    ]
+}

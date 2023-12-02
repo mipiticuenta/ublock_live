@@ -1,0 +1,126 @@
+{
+    "domain": "canal-plus.com",
+    "owner": {
+        "name": "GROUPE CANAL +",
+        "displayName": "Groupe Canal+"
+    },
+    "source": [
+        "DuckDuckGo-FR"
+    ],
+    "prevalence": 0.000404,
+    "sites": 4,
+    "subdomains": [
+        "pass-api-v2",
+        "secure-webtv-static"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "canal-plus\\.com\\/provider\\/services\\/fr\\/public\\/createToken",
+            "cookies": 0.000202,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pass-api-v2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "046929f06c468c29755d3092b6c386db34f508b8f0cced2e3d0c8515d169a284"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canalplus.com",
+                "client.canalplus.com"
+            ]
+        },
+        {
+            "rule": "canal-plus\\.com\\/provider\\/services\\/fr\\/public\\/createToken",
+            "cookies": 0.000202,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pass-api-v2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "8c315d5f7749a46c78031cdb4b483a6cd9afa2efcef088f0f30f591cd9249c94"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canalplus.com",
+                "www.canalplus.com"
+            ]
+        },
+        {
+            "rule": "canal-plus\\.com\\/metadata\\/cpfra\\/fr\\/all\\/v2\\.2\\/globalchannels\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "secure-webtv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "dd93d1630059e6c5025b7af79ae0b75f908c4d5c8540b6453556a5ffe3ccad68"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canalplus.com",
+                "www.canalplus.com"
+            ]
+        },
+        {
+            "rule": "canal-plus\\.com\\/metadata\\/all-v2\\.2\\/genres\\/genres\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "secure-webtv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "38328888c04ce0815c84d73a5087624f7db9b9e7a09394a845d716422305b151"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canalplus.com",
+                "www.canalplus.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000404,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "XHR": 6,
+        "Fetch": 2
+    },
+    "nameservers": [
+        "nsc.perf1.com",
+        "nsb.perf1.com",
+        "nsa.perf1.fr"
+    ]
+}

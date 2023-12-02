@@ -1,0 +1,93 @@
+{
+    "domain": "pollster.pl",
+    "owner": {
+        "name": "ZPR Media Group",
+        "displayName": "ZPR"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000749,
+    "sites": 11,
+    "subdomains": [
+        "cdn2",
+        "service"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "pollster\\.pl\\/nw\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn2"
+            ],
+            "apis": {
+                "window.localStorage": 11
+            },
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "7fbad2f1796d5bd7eb09e89c70e0fef0de296b56e070b2f49e67fa7602828575"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "se.pl",
+                "fit.poradnikzdrowie.pl",
+                "forum.muratordom.pl",
+                "lubimyczytac.pl",
+                "muratordom.pl",
+                "www.eska.pl",
+                "www.mjakmama24.pl",
+                "www.muratorplus.pl",
+                "www.poradnikzdrowie.pl",
+                "www.salon24.pl",
+                "www.se.pl"
+            ]
+        },
+        {
+            "rule": "pollster\\.pl\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "service"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "muratordom.pl",
+                "forum.muratordom.pl"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 11,
+        "Image": 2
+    },
+    "nameservers": [
+        "dns1.supermedia.pl",
+        "dns2.supermedia.pl",
+        "dns3.supermedia.pl"
+    ]
+}

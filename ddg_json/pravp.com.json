@@ -1,0 +1,129 @@
+{
+    "domain": "pravp.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "insight",
+        "avp"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "pravp\\.com\\/analytics",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "insight"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "absolutdrinks.com",
+                "www.jamesonwhiskey.com"
+            ]
+        },
+        {
+            "rule": "pravp\\.com\\/analytics",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "insight"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "absolutdrinks.com",
+                "www.jamesonwhiskey.com"
+            ]
+        },
+        {
+            "rule": "pravp\\.com\\/jameson-whiskey",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "avp"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4a0c4a13d557a5f4df5b52298be0a36c1da4d95782015d89958d2dc3b64142ea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jamesonwhiskey.com",
+                "www.jamesonwhiskey.com"
+            ]
+        },
+        {
+            "rule": "pravp\\.com\\/whereami",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "avp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b85f8f2f88d5d3293b669ece14154db316b1a00ac5bf590a91c60e6176639e62"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jamesonwhiskey.com",
+                "www.jamesonwhiskey.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Preflight": 2,
+        "Fetch": 4,
+        "Script": 2
+    },
+    "nameservers": [
+        "a8-67.akam.net",
+        "a12-67.akam.net",
+        "a2-64.akam.net",
+        "a5-66.akam.net",
+        "a3-65.akam.net",
+        "a1-30.akam.net"
+    ]
+}

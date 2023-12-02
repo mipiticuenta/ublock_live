@@ -1,0 +1,93 @@
+{
+    "domain": "cimcontent.net",
+    "owner": {
+        "name": "Comcast Corporation",
+        "displayName": "Comcast",
+        "privacyPolicy": "https://www.xfinity.com/Corporate/Customers/Policies/CustomerPrivacy",
+        "url": "http://xfinity.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "static"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "cimcontent\\.net\\/common-web-assets\\/fonts\\/xfinity-brown-optimized\\/xfinitybrown-regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "1bd0989804a8b94fc15f92e7ff50d87c8ab470a032acaec23444fbb3888b6644"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xumo.com",
+                "www.wellsfargocenterphilly.com",
+                "www.xumo.com"
+            ]
+        },
+        {
+            "rule": "cimcontent\\.net\\/data-layer\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "window.sessionStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "893319fd3d3510803c821541f9b18849c26cfd1c74330a299fe2be9fd41ee5d1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "xumo.com",
+                "www.xumo.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "comcast.com",
+            "prevalence": 0.7142857142857143
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2857142857142857
+        }
+    ],
+    "types": {
+        "Font": 3,
+        "Script": 2
+    },
+    "nameservers": [
+        "dns104.comcast.net",
+        "dns103.comcast.net",
+        "dns105.comcast.net",
+        "dns101.comcast.net",
+        "dns102.comcast.net"
+    ]
+}

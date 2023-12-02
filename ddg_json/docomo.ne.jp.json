@@ -1,0 +1,337 @@
+{
+    "domain": "docomo.ne.jp",
+    "owner": {
+        "name": "Nippon Telegraph and Telephone Corporation",
+        "displayName": "NTT"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000341,
+    "sites": 50,
+    "subdomains": [
+        "cdn.dmc",
+        "nidan.addlv.smt",
+        "sjs.ssdsp.smt",
+        "rec1.smt",
+        "smt",
+        "sync.addlv.smt",
+        "cdn.adnwif.smt",
+        "tracking.prismpartner.smt"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "docomo\\.ne\\.jp\\/js\\/contents\\/union3\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.dmc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ahamo.com",
+                "www.ichi-oshi.jp"
+            ]
+        },
+        {
+            "rule": "docomo\\.ne\\.jp\\/id\\/daisy\\/sync",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nidan.addlv.smt"
+            ],
+            "apis": {},
+            "sites": 19,
+            "prevalence": 0.000129,
+            "cnames": [],
+            "responseHashes": [
+                "779716d0779a1dbc3d2328a34aa01757aa0205a6df69b6c02eab389f6e63bd6f",
+                "c476137760f27910121d19753c15a21e494b839ca4b0ebf75480d1b4464379ea",
+                "5038eed405896938085d24d8f4390e8d66aa22453cd44e64df44b24c71eda956",
+                "9cc4e4d97dd72d9450a9aec6a634c1cfb9e57c7ffb6e3fbd3ab8d9d5574817b4",
+                "81d0168ab32a184efc4c3026e69df9d966557d0ce1e4145bdf6f8e66216137ef",
+                "d21c71657f1b030ab25a2a5a63844f0efb720d099c6b0d782c1adcc60e84c2e0",
+                "98182c077b1bc31fab6ec9ae6a0a876e15a114dc9268da9406301ffc531bb113",
+                "0cec33da4a427910700089acdf4aa0b770591165a5b464f87b5064e7ee8c6170",
+                "4ee0956f81f8ed09befe86d9a5bd32a5a53c4fbe9d17c7470d36d94e7a314b8d",
+                "563e067c33e22b6a455fc43451fd19acbee03fd29f577553d54bb70cb7840367",
+                "ffa9839809a2a4c9db6140c00381837d7a1c831ab391508456a1975d7402ed67",
+                "3856640e213547d6f378fec59a2f8a53a79f46570f24712bce8145a8a6c75dac",
+                "57835c796b4bd31bbb97b959019ea2a03c99a50c46725a55894967de606b3fb5",
+                "1ef2f4243e3f8678761bda92e3699c844714041932adca6fe8b5257af1d650ab",
+                "041a90f119884f1344bf02efb8f024b7f7c1cd323a9f219a2cb063c4bfcd6d24",
+                "d3e6be1783bd6ff90cbe145add41486090d88d53790208ea13a5fa8f14502aff",
+                "cb3834c26303a63b8d68addf97cf3f5fde239def0a88d330e0af00f2082c100e",
+                "161d77451ce0538ff055aaf6f2e08133955393cb56c6c08472b0e5a92d8db8aa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ahamo.com",
+                "business.nikkei.com",
+                "furunavi.jp",
+                "himitsu.wakasa.jp",
+                "hitosara.com",
+                "jaf.or.jp",
+                "jpn.mizuno.com",
+                "meetsmore.com",
+                "nanboya.com",
+                "shingakunet.com",
+                "star.cocoloni.jp",
+                "www.dot-st.com",
+                "www.furusato-tax.jp",
+                "www.hotespa.net",
+                "www.jcb.co.jp",
+                "www.livable.co.jp",
+                "www.meiji.co.jp",
+                "www.princehotels.co.jp",
+                "www.takarakuji-official.jp"
+            ]
+        },
+        {
+            "rule": "docomo\\.ne\\.jp\\/js\\/dc3\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sjs.ssdsp.smt"
+            ],
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 6,
+                "Document.cookie getter": 6,
+                "NavigatorUAData.prototype.platform": 6,
+                "Navigator.prototype.userAgent": 6
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "018f70846fa0a2b22a19d9d650aa732dbc0f3f5f80604b58bbf835d17412148a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allabout.co.jp",
+                "cojicaji.jp",
+                "pmall.gpoint.co.jp",
+                "rurubu.jp",
+                "thebest-1.com",
+                "www.ichi-oshi.jp"
+            ]
+        },
+        {
+            "rule": "docomo\\.ne\\.jp\\/bcn_access_log\\/index",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rec1.smt"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "a2cff3f70900fcf26917a3477dbbbd69ba5ef7ecedc0a20154d89f8b12679ebf",
+                "bfca120e7ca5086e584e2e4a5850b350484584baa7ffd7f03e25b1d3a94be1f0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allabout.co.jp",
+                "getnavi.jp",
+                "www.ichi-oshi.jp"
+            ]
+        },
+        {
+            "rule": "docomo\\.ne\\.jp\\/dmpf\\/tagereco\\/owdrmd\\/recommendAccept\\/index\\.do",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "smt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "47a4e42dd4e43e3804a728bedfc993691356b8532f71f673fe3c50cafe5b7189"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allabout.co.jp",
+                "www.ichi-oshi.jp"
+            ]
+        },
+        {
+            "rule": "docomo\\.ne\\.jp\\/rec_data_deliver\\/index",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rec1.smt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d716de9dac4ead54cc3df7992fb5b647ecb1c21659de75f559b057bef12b273b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allabout.co.jp",
+                "www.ichi-oshi.jp"
+            ]
+        },
+        {
+            "rule": "docomo\\.ne\\.jp\\/tafs\\/p\\/dsync",
+            "cookies": 0.0000954,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync.addlv.smt"
+            ],
+            "apis": {},
+            "sites": 14,
+            "prevalence": 0.0000954,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boatrace.jp",
+                "boxil.jp",
+                "comic.k-manga.jp",
+                "en-gage.net",
+                "l-tike.com",
+                "store.world.co.jp",
+                "www.ana.co.jp",
+                "www.cmoa.jp",
+                "www.dlsite.com",
+                "www.irisplaza.co.jp",
+                "www.mazda.co.jp",
+                "www.nitori-net.jp",
+                "www.sanseito.jp",
+                "www.smbc.co.jp"
+            ]
+        },
+        {
+            "rule": "docomo\\.ne\\.jp\\/scripts\\/retargeting\\/retargeting\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.adnwif.smt"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "taisho.co.jp",
+                "himitsu.wakasa.jp",
+                "knowledge.nurse-senka.jp",
+                "minne.com",
+                "www.hotespa.net",
+                "www.livable.co.jp",
+                "www.tepco.co.jp"
+            ]
+        },
+        {
+            "rule": "docomo\\.ne\\.jp\\/sync\\/adx",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking.prismpartner.smt"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "071d0a5d172af491aedca9041f20e830d25fd4d339a1006bca3bed949069aa30"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bscholarly.com",
+                "gethindi.net"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000136,
+    "topInitiators": [
+        {
+            "domain": "d2c.ne.jp",
+            "prevalence": 0.2835820895522388
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.1791044776119403
+        },
+        {
+            "domain": "microad.jp",
+            "prevalence": 0.1791044776119403
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.1044776119402985
+        },
+        {
+            "domain": "kanade-ad.net",
+            "prevalence": 0.08955223880597014
+        },
+        {
+            "domain": "primead.jp",
+            "prevalence": 0.07462686567164178
+        },
+        {
+            "domain": "yjtag.jp",
+            "prevalence": 0.029850746268656716
+        },
+        {
+            "domain": "googlesyndication.com",
+            "prevalence": 0.029850746268656716
+        },
+        {
+            "domain": "geoedge.be",
+            "prevalence": 0.014925373134328358
+        },
+        {
+            "domain": "adlightning.com",
+            "prevalence": 0.014925373134328358
+        }
+    ],
+    "types": {
+        "Script": 41,
+        "Image": 16
+    },
+    "nameservers": [
+        "ns002.docomo.ne.jp",
+        "ns001.docomo.ne.jp"
+    ]
+}

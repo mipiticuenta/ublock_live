@@ -1,0 +1,104 @@
+{
+    "domain": "clickguardian.app",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "v2"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "clickguardian\\.app\\/track\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "v2"
+            ],
+            "apis": {
+                "window.localStorage": 5,
+                "window.sessionStorage": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "dcdf62f54440f8c224dcdfb6453c53106600c573d3cb5e4c0ba0d1cafcda3edc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "james-mccormack.com",
+                "petertyson.co.uk",
+                "roli.com",
+                "www.concretefasteners.com",
+                "www.msgcu.org"
+            ]
+        },
+        {
+            "rule": "clickguardian\\.app\\/tracking",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "v2"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "james-mccormack.com",
+                "petertyson.co.uk",
+                "roli.com",
+                "www.concretefasteners.com",
+                "www.msgcu.org"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.4166666666666667
+        },
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "ravenjs.com",
+            "prevalence": 0.08333333333333333
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.08333333333333333
+        },
+        {
+            "domain": "bigcommerce.com",
+            "prevalence": 0.08333333333333333
+        }
+    ],
+    "types": {
+        "Script": 5,
+        "XHR": 5
+    },
+    "nameservers": [
+        "ns-cloud-a3.googledomains.com",
+        "ns-cloud-a4.googledomains.com",
+        "ns-cloud-a2.googledomains.com",
+        "ns-cloud-a1.googledomains.com"
+    ]
+}

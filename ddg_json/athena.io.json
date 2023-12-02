@@ -1,0 +1,83 @@
+{
+    "domain": "athena.io",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "cdn.nimbus"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "athena\\.io\\/static\\/login-branding-content\\/1\\.0\\.3\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.nimbus"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "523358723bb14de8bae7b6872752076934351149793508fbe28f5a034602557b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "athenahealth.com",
+                "athenanet.athenahealth.com"
+            ]
+        },
+        {
+            "rule": "athena\\.io\\/ping\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.nimbus"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d5db8805dc99a096cecddc0f88792a2ec055cd0f038d09643786b9b138cbaabd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "athenahealth.com",
+                "athenanet.athenahealth.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "dns4.p03.nsone.net",
+        "ns02.athenahealth-dns.com",
+        "dns3.p03.nsone.net",
+        "ns04.athenahealth-dns.com",
+        "ns03.athenahealth-dns.com",
+        "dns2.p03.nsone.net",
+        "ns01.athenahealth-dns.com",
+        "dns1.p03.nsone.net"
+    ]
+}

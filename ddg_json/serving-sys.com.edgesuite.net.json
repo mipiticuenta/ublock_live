@@ -1,0 +1,172 @@
+{
+    "domain": "serving-sys.com.edgesuite.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000613,
+    "sites": 9,
+    "subdomains": [
+        "secure-ds"
+    ],
+    "cnames": [
+        {
+            "original": "secure-ds.serving-sys.com",
+            "resolved": "secure-ds.serving-sys.com.edgesuite.net"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "serving-sys\\.com\\.edgesuite\\.net\\/SemiCachedScripts\\/ebOneTag\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "secure-ds"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [
+                {
+                    "original": "secure-ds.serving-sys.com",
+                    "resolved": "secure-ds.serving-sys.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "4c2e03d0e2d3f21d25a50ac39491f5124a03d778da219ccb65801c522201a370"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "SZMKuid": {
+                    "ttl": 2592003,
+                    "length": 24,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amazon.com",
+                "advertising.amazon.com",
+                "de.twitch.tv",
+                "en-gb.twitch.tv",
+                "fr.twitch.tv",
+                "hiring.amazon.com",
+                "www.twitch.tv"
+            ]
+        },
+        {
+            "rule": "serving-sys\\.com\\.edgesuite\\.net\\/adServingData\\/PROD\\/TMClient\\/2\\/1073749112",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "secure-ds"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "secure-ds.serving-sys.com",
+                    "resolved": "secure-ds.serving-sys.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "fa07f9745e6670fe5706f10e5c2e94f8bed8908712a0ee64f55a879909b87d36"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amazon.com",
+                "advertising.amazon.com"
+            ]
+        },
+        {
+            "rule": "serving-sys\\.com\\.edgesuite\\.net\\/adServingData\\/PROD\\/TMClient\\/5\\/1073745825",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "secure-ds"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "secure-ds.serving-sys.com",
+                    "resolved": "secure-ds.serving-sys.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "38b497b910a2245a74451044e066c971ed6ea5b4010a42af0ead8770f33e618a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "twitch.tv",
+                "en-gb.twitch.tv",
+                "fr.twitch.tv",
+                "www.twitch.tv"
+            ]
+        },
+        {
+            "rule": "serving-sys\\.com\\.edgesuite\\.net\\/adServingData\\/PROD\\/TMClient\\/2\\/1073746592",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "secure-ds"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "secure-ds.serving-sys.com",
+                    "resolved": "secure-ds.serving-sys.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "392c5f4263e8d4e51e381c5ccd353b410ba5ff505ae44439fa5a383d5ade3187"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amazon.com",
+                "hiring.amazon.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "twitchcdn.net",
+            "prevalence": 0.45454545454545453
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.36363636363636365
+        },
+        {
+            "domain": "media-amazon.com",
+            "prevalence": 0.18181818181818182
+        }
+    ],
+    "types": {
+        "Script": 7,
+        "XHR": 8
+    },
+    "nameservers": []
+}

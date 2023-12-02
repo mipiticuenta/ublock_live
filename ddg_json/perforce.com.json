@@ -1,0 +1,71 @@
+{
+    "domain": "perforce.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "www"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "perforce\\.com\\/libraries\\/utm-persist\\/utm-persist\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0cd386ca040a732e43b6f2de593b9b2b1df09819bfd4dcb17bd994a297881124"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "p4_test": {
+                    "ttl": -86397,
+                    "length": 2,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "p4_utmOrigVals": {
+                    "ttl": 15552004,
+                    "length": 147,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "openlogic.com",
+                "www.puppet.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2
+    },
+    "nameservers": [
+        "lady.ns.cloudflare.com",
+        "zod.ns.cloudflare.com"
+    ]
+}

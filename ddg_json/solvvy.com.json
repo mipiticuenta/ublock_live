@@ -1,0 +1,2658 @@
+{
+    "domain": "solvvy.com",
+    "owner": {
+        "name": "Solvvy",
+        "displayName": "Solvvy"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000606,
+    "sites": 89,
+    "subdomains": [
+        "api",
+        "cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "solvvy\\.com\\/v1\\/pixels\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 52,
+            "prevalence": 0.000354,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_slvs": 0.00032697770420779434
+            },
+            "exampleSites": [
+                "support.strava.com",
+                "onxmapssupport.zendesk.com",
+                "support.seatgeek.com",
+                "pendulumlife.com",
+                "app.plangrid.com",
+                "www.tax1099.com",
+                "4patriots.com",
+                "www.everlywell.com",
+                "www.honeylove.com",
+                "www.opentable.com",
+                "support.ring.com",
+                "support.twilio.com",
+                "www.babylist.com",
+                "support.fubo.tv",
+                "support.airtable.com",
+                "auraframes.com",
+                "www.puffco.com",
+                "support.tastyworks.com",
+                "support.zwift.com",
+                "support.authy.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/ui\\/v5-stable\\/solvvy\\.v5\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 42,
+                "Date.prototype.getTime": 42,
+                "Document.cookie getter": 37,
+                "window.innerWidth": 42,
+                "Navigator.prototype.userAgent": 42,
+                "Screen.prototype.height": 20,
+                "CanvasRenderingContext2D.prototype.measureText": 6,
+                "Event.prototype.timeStamp": 4,
+                "Document.cookie setter": 1
+            },
+            "sites": 44,
+            "prevalence": 0.0003,
+            "cnames": [],
+            "responseHashes": [
+                "35b16a92344e123d10cda5ec4883a74644b85a94cb717d6d627ad8183c2fef29"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3606,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "support.strava.com",
+                "opentable.com",
+                "help.auraframes.com",
+                "help.feit.com",
+                "steelseries.com",
+                "www.saatva.com",
+                "support.zwift.com",
+                "support.seatgeek.com",
+                "support.ancestry.com",
+                "4patriots.com",
+                "app.plangrid.com",
+                "ring.com",
+                "www.zwift.com",
+                "support.myfitnesspal.com",
+                "hingeapp.zendesk.com",
+                "onxmapssupport.zendesk.com",
+                "pendulumlife.com",
+                "support.simplepractice.com",
+                "www.tax1099.com",
+                "support.steelseries.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/zoom\\/lazy-solvvy\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 5
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "3c60a2243b88643d872471a094e913e6ada70ff065f378c4fbf4b1921445b463"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zoom.us",
+                "explore.zoom.us",
+                "live.zoom.us",
+                "support.zoom.us",
+                "www.zoom.com",
+                "www.zoom.us"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/auraframes\\/solvvy\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.language": 2,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2c4deda743fa9d2eee70fca708240636c7eb473346e44e8ca445a749159046fb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3602,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 62313,
+                    "length": 4,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_slvlcl": {
+                    "ttl": 31536002,
+                    "length": 5,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "auraframes.com",
+                "help.auraframes.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/auraframes\\/16\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "abe5a91397a20f3fdaa39c779079e57a71a340ec42e8f3cc513783f61b2f9acd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "auraframes.com",
+                "help.auraframes.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/auraframes",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "eee7c3ec1b228c14af72191d3ca53ac04333a3e0d07e8702cc70643df9436416"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "auraframes.com",
+                "help.auraframes.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/auraframes\\/cos\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ee2696257472d27853622807f4b0fa091e9b7533cc3041747235f7fd6406be4f"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "auraframes.com",
+                "help.auraframes.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/ring\\/solvvy\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "27a79913d9ba1a02b1a8048e045e478f5280eb4e8878e60b534ad5e5fe7cd460"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3603,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 72185,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "_slvlcl": {
+                    "ttl": 31536003,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ring.com",
+                "support.ring.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/ring\\/132\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2cb6f7ad9d8f465528f1febdd8189e2827017ef2af58f12135c7588b5033c81d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ring.com",
+                "support.ring.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/ring",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "da08b096511fb13159465ff34f05f729a357b6b11fb75857c7a05445320c0952"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ring.com",
+                "support.ring.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/zwift\\/solvvy\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 4,
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 4,
+                "Navigator.prototype.userAgent": 4,
+                "Date.prototype.getTime": 4,
+                "Navigator.prototype.language": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "2fcd60426a60ee0e5e2984a0f0cc03faaad2c63de817981fb52475de238682ed"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3618,
+                    "length": 36,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 3385,
+                    "length": 4,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 0.25
+                },
+                "_slvlcl": {
+                    "ttl": 31536018,
+                    "length": 3,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 0.75
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zwift.com",
+                "support.zwift.com",
+                "us.zwift.com",
+                "www.zwift.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/zwift\\/80\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "window.localStorage": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "1b0ebf8f2c6318d9ed360cc28929779bd906e6bcc36ec3e689658003e53279b5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zwift.com",
+                "support.zwift.com",
+                "us.zwift.com",
+                "www.zwift.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/zwift",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "ccd7b46b48cbb0a3b4204e122f246d3d4f4f77cfd0c5478417214b8481679576"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zwift.com",
+                "support.zwift.com",
+                "us.zwift.com",
+                "www.zwift.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/soundcloud\\/solvvy\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e388d80fb4c4791ffa3aa375ded5aa2698b33b285964f5eb8ca10f0e671d433e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3603,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 82130,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "_slvlcl": {
+                    "ttl": 31536003,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soundcloud.com",
+                "help.soundcloud.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/soundcloud\\/22\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1efa8fa32478236f145101888d85f01dccc740112a2a7c122c50ca2311ca1da4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soundcloud.com",
+                "help.soundcloud.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/soundcloud",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "905d9a721fc3e939707c0e0cb774866ed715c10aec92d9911eedfc0e2f9f1936"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soundcloud.com",
+                "help.soundcloud.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/turo\\/solvvy\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5c5fe3baaf57c3ce2ec2d745941340a115fc06d5f502df8b1886639a73071d28"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3607,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 71990,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "_slvlcl": {
+                    "ttl": 31536007,
+                    "length": 5,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "turo.com",
+                "help.turo.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/turo\\/40\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 1,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2fb15a54bad777245f758e38a032d63c101f17fad47e024c83a1650bbc32cba8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "turo.com",
+                "help.turo.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/turo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cf96503754303a3ef0cbc3744d19b16e8638538d8484b8fb6efe70edd8d329ef"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "turo.com",
+                "help.turo.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/vimeo4\\/solvvy\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f91572d75d64a753fcd4fc01aae26f253d62ca9c15d8e8fef576581d224631a5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vimeo.com",
+                "help.vimeo.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/vimeo4\\/26\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "df46a5c46c18327c87908a926365bda268dfc12f9f9be04d03d57b5715af0b22"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vimeo.com",
+                "help.vimeo.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/vimeo4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0f75fadfdbeda8939fb44a974c35772faa48777b2803fa6e06ec851ce42c4072"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vimeo.com",
+                "help.vimeo.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/onxmaps\\/solvvy\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d54f2593ab97b7973013d47fe9875bd9aefcc19cf19f679113195c63433640fa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3604,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 79972,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zendesk.com",
+                "onxmapssupport.zendesk.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/onxmaps\\/56\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c37490d7568d92729a2bbd6b64eaab9047095ddea6aa2bbf8ffd942655d57958"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zendesk.com",
+                "onxmapssupport.zendesk.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/onxmaps",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ee61b1db49e22355e330a4f07008037fdbdc13190a23dd9caec9c8feb4986bfd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zendesk.com",
+                "onxmapssupport.zendesk.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/opentable\\/solvvy\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "10bfec81a92552b63e8a8a20ca805f863583254700a8d51cc88fc910f360b899"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3605,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 76145,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "_slvlcl": {
+                    "ttl": 31536005,
+                    "length": 5,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opentable.com",
+                "www.opentable.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/opentable\\/36\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "68581eb573db54e6c1d553be79ad935ebb2ce2fdc27072e92aef73487e55f01a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opentable.com",
+                "www.opentable.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/opentable",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "93349ece1d6993e5badac2bfa7128fbab5677bd547feb89c11bc6326be1852b0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opentable.com",
+                "www.opentable.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/pixels\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_slvs": 0.000020436106512987146
+            },
+            "exampleSites": [
+                "ring.com",
+                "support.blinkforhome.com",
+                "support.ring.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/steelseries\\/solvvy\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.language": 2,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "54c425a38eef9df084f36a6d8a22b4d4d90a0c2ebdca5592eda3f44e7634627e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "steelseries.com",
+                "support.steelseries.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/steelseries\\/46\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f691a385d245bced65efcd6d984e5a0efb30fbbbe947f8a4146f248084fa5f61"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "steelseries.com",
+                "support.steelseries.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/steelseries",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e6899f61e84e6928b046c55997ecb278e20df3be3169967f6b1b88812ef817ba"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "steelseries.com",
+                "support.steelseries.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/airtable\\/solvvy\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5da13cdaaa5e2e02e7f561afcc6185d93f56cc46547c012ffd32ab2429661474"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3602,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "_slvddv": {
+                    "ttl": 33292,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "_slvlcl": {
+                    "ttl": 31536002,
+                    "length": 2,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "airtable.com",
+                "support.airtable.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/airtable\\/57\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Navigator.prototype.language": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1cc02fcf712323d3bd6a02ed406c6f815c5e75f4a117b30ccf5b655b6ff4afa8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "airtable.com",
+                "support.airtable.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/airtable",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "20ff1bc1b1f42ac0db78ad1c0b11d4338cc5629225011c07ccaed21f1821ee90"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "airtable.com",
+                "support.airtable.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/ancestry\\/solvvy\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7f8d30dd3c7deb0124f9eaa800965bfe0e7f12a2e4b7a15773b781d63bcef3de"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3603,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 56913,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "_slvlcl": {
+                    "ttl": 31536003,
+                    "length": 5,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ancestry.com",
+                "support.ancestry.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/ancestry",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "24ee2d873479247d4ce4bd7bd445f66547d5707f4e2384ef93649f45ce5c503f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ancestry.com",
+                "support.ancestry.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/ancestry\\/ancestry-avatar-black\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "96832ca78ec62a741b1434bc9ef37c0df84f4dd6f340e537a9921b8a8aaad8a0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ancestry.com",
+                "support.ancestry.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/twilio-v4\\/solvvy\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "280a7947276493d89d5d42f2e5be2d3340a873b75958d3fadea68525d682a68d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3603,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 60926,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "authy.com",
+                "support.twilio.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/twilio-v4\\/20\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "953925a4cac5e2cc112f219fcd6d18d87fb5d6ae77229f20e139bbb6dcedcf61"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "authy.com",
+                "support.twilio.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/twilio-v4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a80ca15540963d61577e695398706a118af8777bf39da31c566a37a9e6f40d12"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "authy.com",
+                "support.twilio.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/ui\\/v5\\.53\\.0\\/solvvy\\.v5\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "window.innerWidth": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a4f61eecb459598ab5b0780e2a09af3b7d27d5b49e505c0c838023df5650c857"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "authy.com",
+                "support.twilio.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/blink\\/solvvy\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "473ab95a3c205a4236889bf7a10a54b987d791a8ed6fb551f7ed8fdef4b069f1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3604,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 67692,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blinkforhome.com",
+                "support.blinkforhome.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/blink\\/20\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5ef64b67362f1a31bd075bd1b2bc76d5b57a91fa3f991c056c0d864d7a7c08b2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blinkforhome.com",
+                "support.blinkforhome.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/blink",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5d5972eec1649aee05a36912f102f67e1d4b6906483a43d2faafa4dfa6e4ee06"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blinkforhome.com",
+                "support.blinkforhome.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/eero\\/solvvy\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cc95058e58c212e0bd53b9115843fb8cfe78b9637ecd14bb90c2ac484d8af97e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3603,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 62945,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eero.com",
+                "support.eero.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/eero\\/29\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bfd78a3ac55fa1c54b8a28d00e4ba71274bc68b2ed4ea086859da84945135873"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eero.com",
+                "support.eero.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/eero",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "83c1078a7cce9b1961c8050f8db9dc5357ea998f7c5e2a16c975d37ff78f5cc8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eero.com",
+                "support.eero.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/ui\\/v5-beta\\/solvvy\\.v5\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 3,
+                "Date.prototype.getTime": 3,
+                "Document.cookie getter": 3,
+                "window.innerWidth": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Screen.prototype.height": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "35b16a92344e123d10cda5ec4883a74644b85a94cb717d6d627ad8183c2fef29"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eero.com",
+                "support.eero.com",
+                "www.schoolhouse.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/fubo\\/solvvy\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0028034735b8b4eb8f99f7e33711dbba507f203c472d27180be44f751585ab71"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3602,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 64628,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "_slvlcl": {
+                    "ttl": 31536003,
+                    "length": 5,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fubo.tv",
+                "support.fubo.tv"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/fubo\\/33\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c9332aa4c78057f21f6904911830ba7d0f83172e7421a3d653edf43647838efc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fubo.tv",
+                "support.fubo.tv"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/fubo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4610b557d05a02440c871dad95c73c776f344933b6e34e89ecd9c1568927f40e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fubo.tv",
+                "support.fubo.tv"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/fubo\\/cos\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0b25ce33d977574b6d01f757ac9d510ab4a01b37b2b526ed76d15cf6696f9866"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fubo.tv",
+                "support.fubo.tv"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/fubo\\/fuboTVNewLogo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "54e2e9e09c091e49f8b29ddcbb1d13bcfc0e717145b570170cce01a127d85edd"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fubo.tv",
+                "support.fubo.tv"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/seatgeek\\/solvvy\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a06c7926777bab52f629ccef786ca8f55197bde41adb49d88ba697a95ab438bc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3601,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 82275,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "_slvlcl": {
+                    "ttl": 31536001,
+                    "length": 5,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "seatgeek.com",
+                "support.seatgeek.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/seatgeek\\/40\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f8d4969a9dbbdf08e63e2ed4b5bdca20894f5053ad2af154c41b774273479d6b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "seatgeek.com",
+                "support.seatgeek.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/seatgeek",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "57f341a6e4d492b36612097e80d251624ddf67a8cb9b535055b27db05df38e83"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "seatgeek.com",
+                "support.seatgeek.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/strava\\/solvvy\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.language": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "219b30feabbfca2d7f9cd5d577406eb2d3eba47bad9b3f444cabdf795251fcb7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3601,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 58767,
+                    "length": 4,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_slvlcl": {
+                    "ttl": 31536001,
+                    "length": 5,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "strava.com",
+                "support.strava.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/strava\\/31\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "167f5050d605e5109f243dd5ed394aa7ec5e738f0e113641edc53eea8a6f4270"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "strava.com",
+                "support.strava.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/strava",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2229a1723d10e4276a466d015bdf689b10aa65b071eb1b3ce170ca2c97acc4b3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "strava.com",
+                "support.strava.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/wyze\\/solvvy\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e93978107972f036b6cf060d25f48c34a272d13f8112cb043fe93592acac9634"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3605,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 66460,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "_slvlcl": {
+                    "ttl": 31536005,
+                    "length": 5,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wyze.com",
+                "support.wyze.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/wyze\\/58\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f682694d175cae59263b5b90e5c6904e52ac1a0da83a76c87f6213b329a0063c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wyze.com",
+                "support.wyze.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/wyze",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "021ca72050a52bf290d614f9d2de78b7455e0eb8657489af33367436c77532be"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wyze.com",
+                "support.wyze.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/zwift\\/solvvy\\.preloader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "aa09565e9ab2e2e3acb89c110b3743e6555a1d68735b2723d00546adab82e304"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zwift.com",
+                "support.zwift.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/babylist\\/solvvy\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "309d081de798ed786242b780647eeb82df732a5fd57fa15fe789a0d4d58e162b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3607,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 71875,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "_slvlcl": {
+                    "ttl": 31536007,
+                    "length": 2,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "babylist.com",
+                "www.babylist.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/babylist\\/37\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "35034f8bd48083771f674808bb61e439aa7088a53b7bd727326dede9f0891bc0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "babylist.com",
+                "www.babylist.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/babylist",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5c381b9a0f30319ba73d68955e9cf3b3f15a83089df6e5d94c8302d39bdbae59"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "babylist.com",
+                "www.babylist.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/blenders\\/solvvy\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "be1545aa5bf1264e57696c34ed6539d1eec4448d8a72f305fa77e9bc04552bfd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3606,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 74844,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "_slvlcl": {
+                    "ttl": 31536006,
+                    "length": 2,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blenderseyewear.com",
+                "www.blenderseyewear.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/blenders\\/11\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4acb7009e0809a9c9d6e9ff6bbd4072a6c0bdbf9a27ebeb595a5ef4ef7d68f17"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blenderseyewear.com",
+                "www.blenderseyewear.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/blenders",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "37cb2c13c7e9e2d328e0da761142e3525beeaec95ba168461ab6f960661d31ce"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blenderseyewear.com",
+                "www.blenderseyewear.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/hellofresh\\/solvvy\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 3,
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.language": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "d6fb82aa29882f34142a8c0d513e9a25251008b6c2a1ee244c605effd7a9e908"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3605,
+                    "length": 36,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 46779,
+                    "length": 4,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 0.3333333333333333
+                },
+                "_slvlcl": {
+                    "ttl": 31536005,
+                    "length": 5,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hellofresh.ca",
+                "www.hellofresh.co.uk",
+                "www.hellofresh.de"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/hellofresh\\/52\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 3,
+                "Document.cookie getter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "50ef0825536c4da6210b2bee0ee66c211a77d5222ae31a5c65fe21a391525cc0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hellofresh.ca",
+                "www.hellofresh.co.uk",
+                "www.hellofresh.de"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/hellofresh",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "568dea25897bf478d3341228e475e0cedb02066d199cafb14eb4838c70eca615"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hellofresh.ca",
+                "www.hellofresh.co.uk",
+                "www.hellofresh.de"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/ui\\/v5\\.58\\.0\\/solvvy\\.v5\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 3,
+                "Date.prototype.getTime": 3,
+                "Document.cookie getter": 3,
+                "window.innerWidth": 3,
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "aeeaf7941aef93b7c3083fdf0f1b14521e6edb8acf468d289ea44f8138c73aa0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hellofresh.ca",
+                "www.hellofresh.co.uk",
+                "www.hellofresh.de"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/puffco\\/solvvy\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cb28cceab12ff80ca49d83a60fc18c4f33b62418e0496b24039efdebf5dc26f1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3602,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 84917,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "puffco.com",
+                "www.puffco.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/puffco\\/20\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c190b11d794249fb125319669dc041faa44064e7d9c252963bc529c9c6798ea5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "puffco.com",
+                "www.puffco.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/puffco",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "721b6cd4ca1b420ecfc4d4a40d3fe3cf3becaf5ec6b77f6605ce85f62d8a18a2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "puffco.com",
+                "www.puffco.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/saatva\\/solvvy\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f2aa9d4b81effa1bd24536b3da9f5bbbf8b45d7b569e5393da57554f133f5ae9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3610,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 63090,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "_slvlcl": {
+                    "ttl": 31536010,
+                    "length": 2,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "saatva.com",
+                "www.saatva.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/saatva\\/8\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "319e31448eac56ce95b500e9dc065348d03671183f7ff755486bcc4806a3b2dc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "saatva.com",
+                "www.saatva.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/saatva",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a14e53f9b7a48f7ce36680a4ff6318728fff3eb18fa678e6f0a34bfe8ca7e5b4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "saatva.com",
+                "www.saatva.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/saatva\\/cosProd\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.name": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "74e88a591872068881a75521bc93ff6ce8ac47ff852e2355dd6aa55736ff7038"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "saatva.com",
+                "www.saatva.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/schoolhouse2022\\/solvvy\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fedc6839e230d6688bc4f9c19ec408c697e84ec88c3a42421ef883c7624d20b7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_slvs": {
+                    "ttl": 3604,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_slvddv": {
+                    "ttl": 82678,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "schoolhouse.com",
+                "www.schoolhouse.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/deflect\\/customization\\/schoolhouse2022\\/13\\/solvvy\\.customization\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dabd172740b2d0d8e71e5cfde6a30b77f0e0cd498421201c769c02a6cd60972f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "schoolhouse.com",
+                "www.schoolhouse.com"
+            ]
+        },
+        {
+            "rule": "solvvy\\.com\\/v1\\/resolve-ui-configurations\\/by-name\\/schoolhouse2022",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d881f318a78929b4cdb7f21c6b4d11bd54b7ae0b25c9bb79274ab256f8bc7c40"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "schoolhouse.com",
+                "www.schoolhouse.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000477,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7110266159695817
+        },
+        {
+            "domain": "sentry-cdn.com",
+            "prevalence": 0.07984790874524715
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.045627376425855515
+        },
+        {
+            "domain": "osano.com",
+            "prevalence": 0.04182509505703422
+        },
+        {
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 0.034220532319391636
+        },
+        {
+            "domain": "instana.io",
+            "prevalence": 0.030418250950570342
+        },
+        {
+            "domain": "yottaa.com",
+            "prevalence": 0.022813688212927757
+        },
+        {
+            "domain": "figpii.com",
+            "prevalence": 0.015209125475285171
+        },
+        {
+            "domain": "d39xvdj9d5ntm1.cloudfront.net",
+            "prevalence": 0.0076045627376425855
+        },
+        {
+            "domain": "zoom.us",
+            "prevalence": 0.0076045627376425855
+        }
+    ],
+    "types": {
+        "XHR": 103,
+        "Script": 160,
+        "Document": 6,
+        "Preflight": 3,
+        "Image": 4
+    },
+    "nameservers": [
+        "ns-cloud-b2.googledomains.com",
+        "ns-cloud-b1.googledomains.com",
+        "ns-cloud-b4.googledomains.com",
+        "ns-cloud-b3.googledomains.com"
+    ]
+}

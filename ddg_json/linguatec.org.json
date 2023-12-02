@@ -1,0 +1,85 @@
+{
+    "domain": "linguatec.org",
+    "owner": {
+        "name": "Linguatec GmbH",
+        "displayName": "Linguatec"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "vrweb15"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "linguatec\\.org\\/VoiceReaderWeb15User\\/player20\\/scripts\\/readpremium20\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "vrweb15"
+            ],
+            "apis": {
+                "HTMLMediaElement.prototype.canPlayType": 3,
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "0dc3cfd93024937604825029a5f44f582844c940c01d920c4357b38508a81e89"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "km-bw.de",
+                "www.baden-wuerttemberg.de",
+                "www.rnz.de"
+            ]
+        },
+        {
+            "rule": "linguatec\\.org\\/VoiceReaderWeb15User\\/player20\\/styles\\/black\\/player_skin\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vrweb15"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1328328ca5be59ebf89d594deb8eaa0d529ea9decb97ef2216848c054c144e32"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baden-wuerttemberg.de",
+                "www.rnz.de"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "Stylesheet": 2
+    },
+    "nameservers": [
+        "ns.udag.net",
+        "ns.udag.org",
+        "ns.udag.de"
+    ]
+}

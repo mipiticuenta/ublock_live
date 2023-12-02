@@ -1,0 +1,82 @@
+{
+    "domain": "altura-advertising.s3.eu-west-2.amazonaws.com",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "altura-advertising\\.s3\\.eu-west-2\\.amazonaws\\.com\\/altchar\\.com\\/Ads-main\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dbc7e4e539d2f8b646f757e63702415eb1808165914a58fc7deffdc01c6bb1cf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "altchar.com",
+                "www.altchar.com"
+            ]
+        },
+        {
+            "rule": "altura-advertising\\.s3\\.eu-west-2\\.amazonaws\\.com\\/altchar\\.com\\/ads-style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d6cb5cf9ce12d245183173c55cf4410ec5b7fc1f85a3b03f0118abecc6c0445d"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "altchar.com",
+                "www.altchar.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Stylesheet": 2
+    },
+    "nameservers": [
+        "ns-430.awsdns-53.com",
+        "ns-1204.awsdns-22.org",
+        "ns-1608.awsdns-09.co.uk",
+        "ns-561.awsdns-06.net"
+    ]
+}

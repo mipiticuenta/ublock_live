@@ -1,0 +1,280 @@
+{
+    "domain": "byside.com",
+    "owner": {
+        "name": "BYSIDE - LEAD ACTIVATION, S.A.",
+        "displayName": "BYSIDE - LEAD ACTIVATION"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "s1",
+        "wwe3",
+        "wwe1",
+        "wsa1",
+        "wwe2",
+        "webcare",
+        "bywe1",
+        "bywe3",
+        "bysa1",
+        "bywe2",
+        "we1",
+        "we2",
+        "pnsa1",
+        "pnwe2"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "byside\\.com\\/socket\\.io\\/1\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s1",
+                "wwe3",
+                "wwe1",
+                "wsa1",
+                "wwe2"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "8a1b68192cce43bfeeb59a13f8c8290e5ce5933f1d3a468a89ad7fe16745e417",
+                "4e86138e20bbf040b731b8f20a3f80bba78da6d1d335b0d72638a1835ada978f",
+                "36e1b9da0c2ecd77df5a03bf1c02e6073d800ea20c376fe021ac5b252a45037d",
+                "7326b7ad6734ad09c58f5c80b3358c1720a99f3cf1a58946e6ddb699985d8012",
+                "790a46d530a77540ac006fb51ff156c8d2e6e6b1b04b12ca613f9282a1b604aa",
+                "fc7d42e929658f166eca26fb6a17b3c2ffa445005151d2a82748118041dadd7a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "masmovil.es",
+                "www.meo.pt",
+                "www.movistarplus.es",
+                "www.nos.pt",
+                "www.tim.com.br",
+                "www.vodafone.pt",
+                "www.yoigo.com"
+            ]
+        },
+        {
+            "rule": "byside\\.com\\/BWAC9857E6B19\\/widget\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webcare"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c1a5a4a8836082791f561eea460b5181de00b3f06424427054820f60f0c29c24"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "masmovil.es",
+                "www.masmovil.es"
+            ]
+        },
+        {
+            "rule": "byside\\.com\\/custom\\/widgetScripts\\/Window\\/Generic\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bywe1",
+                "bywe3",
+                "bysa1",
+                "bywe2"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "c1b9893143377bd47dae10e891b7ee90f584a79665ad8630a56b47924e4fec65"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "masmovil.es",
+                "www.meo.pt",
+                "www.nos.pt",
+                "www.tim.com.br",
+                "www.yoigo.com"
+            ]
+        },
+        {
+            "rule": "byside\\.com\\/custom\\/byside\\/powered_by_byside\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webcare",
+                "bywe3",
+                "we1",
+                "bysa1",
+                "we2",
+                "bywe2"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "7a737a87f67763569123d9ad610d5410ae550cfa0f20fe11d01f0912cb239062"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "masmovil.es",
+                "www.meo.pt",
+                "www.nos.pt",
+                "www.tim.com.br",
+                "www.vodafone.pt",
+                "www.yoigo.com"
+            ]
+        },
+        {
+            "rule": "byside\\.com\\/BWAC9857E6B19\\/usert_feedback\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webcare"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "masmovil.es",
+                "www.masmovil.es"
+            ]
+        },
+        {
+            "rule": "byside\\.com\\/web-push\\/byside\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "pnsa1",
+                "pnwe2"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5606c3478b5792f1e02376426cd7e6292e575d433e56e4cc52191e1415bc4802"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tim.com.br",
+                "www.vodafone.pt"
+            ]
+        },
+        {
+            "rule": "byside\\.com\\/agent\\/byside_webcare_we2\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 2,
+            "subdomains": [
+                "bywe2"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie getter": 2,
+                "window.sessionStorage": 1,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Notification.permission": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f140d83f70c5287e145e500ed8d7bcef7851f14ac3d370302f7c149944895956"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "byside_webcare_tuid": {
+                    "ttl": 63072004,
+                    "length": 30,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vodafone.pt",
+                "www.yoigo.com"
+            ]
+        },
+        {
+            "rule": "byside\\.com\\/BWABA07BC42F0\\/widget\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bywe2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "84222b9e39d3bb331d1d0c5a6cae3f37e18ffc40fc633071d0375067fed13e1e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yoigo.com",
+                "www.yoigo.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "XHR": 7,
+        "Script": 13,
+        "Image": 8
+    },
+    "nameservers": [
+        "ns-cloud-b1.googledomains.com",
+        "ns2.byside.com",
+        "ns-cloud-b3.googledomains.com",
+        "ns-cloud-b4.googledomains.com",
+        "ns-cloud-b2.googledomains.com",
+        "ns.byside.com"
+    ]
+}

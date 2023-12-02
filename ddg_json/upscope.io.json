@@ -1,0 +1,151 @@
+{
+    "domain": "upscope.io",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000681,
+    "sites": 10,
+    "subdomains": [
+        "js",
+        "data--us-east",
+        "code"
+    ],
+    "cnames": [],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "upscope\\.io\\/upscope-2\\.3\\.18\\.es6\\.js",
+            "cookies": 0.0000477,
+            "fingerprinting": 3,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {
+                "window.localStorage": 7,
+                "Navigator.prototype.userAgent": 7,
+                "Navigator.prototype.appVersion": 7,
+                "Document.cookie getter": 7,
+                "Document.cookie setter": 7,
+                "window.sessionStorage": 7,
+                "window.innerHeight": 6,
+                "Navigator.prototype.getBattery": 3,
+                "Navigator.prototype.platform": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "Navigator.prototype.languages": 3,
+                "Navigator.prototype.deviceMemory": 3,
+                "Navigator.prototype.hardwareConcurrency": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Screen.prototype.colorDepth": 3,
+                "Screen.prototype.pixelDepth": 3,
+                "Screen.prototype.availTop": 3,
+                "Screen.prototype.availHeight": 3,
+                "Screen.prototype.availWidth": 3,
+                "window.matchMedia(\"prefers-color-scheme\")": 3,
+                "HTMLCanvasElement.prototype.toDataURL": 3,
+                "Navigator.prototype.mediaDevices": 3,
+                "MediaDevices.prototype.enumerateDevices": 3,
+                "Date.prototype.getTime": 6,
+                "window.innerWidth": 4
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "1111f034726ec8ec9fb683efab8b618d886bf8bb61ba52a2e5b6e84d8d710bd5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_upscope__region": {
+                    "ttl": 2595604,
+                    "length": 12,
+                    "prevalence": 0.00004768424853030334,
+                    "uniqueness": 0.14285714285714285
+                },
+                "_upscope__shortId": {
+                    "ttl": 2595605,
+                    "length": 26,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lawpath.com.au",
+                "shop.sysco.com",
+                "silvergoldbull.ca",
+                "www.editions-tissot.fr",
+                "www.getcalfresh.org",
+                "www.moo.com",
+                "www.thorne.com"
+            ]
+        },
+        {
+            "rule": "upscope\\.io\\/session",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "data--us-east"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lawpath.com.au",
+                "silvergoldbull.ca",
+                "www.thorne.com"
+            ]
+        },
+        {
+            "rule": "upscope\\.io\\/odAuhqFvUg\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "code"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d5129bbf86630a8b80adb8eb5969ca7729188a69c1e83dbd8f73bf641e119813"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thorne.com",
+                "www.thorne.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000545,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.6
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.4
+        }
+    ],
+    "types": {
+        "Script": 9,
+        "WebSocket": 3
+    },
+    "nameservers": [
+        "ns-645.awsdns-16.net",
+        "ns-1373.awsdns-43.org",
+        "ns-1549.awsdns-01.co.uk",
+        "ns-118.awsdns-14.com"
+    ]
+}

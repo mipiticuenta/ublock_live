@@ -1,0 +1,74 @@
+{
+    "domain": "shoelace.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000681,
+    "sites": 10,
+    "subdomains": [
+        "lacestatic"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "shoelace\\.com\\/pixel\\/v2\\.js",
+            "cookies": 0.0000409,
+            "fingerprinting": 1,
+            "subdomains": [
+                "lacestatic"
+            ],
+            "apis": {
+                "Document.cookie getter": 6,
+                "Document.cookie setter": 6
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "45486b5b5a67ca5da17576613987ef5ffaf1bbd4eb09e2ececbcdbda671a5aaf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "sl_session_start": {
+                    "ttl": null,
+                    "length": 74,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 1
+                },
+                "sl_time_on_site_markers": {
+                    "ttl": null,
+                    "length": 335,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ktmtwins.com",
+                "kytebaby.com",
+                "www.drakewaterfowl.com",
+                "www.freshpair.com",
+                "www.statebicycle.com",
+                "www.superseeds.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000613,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 6
+    },
+    "nameservers": [
+        "lee.ns.cloudflare.com",
+        "connie.ns.cloudflare.com"
+    ]
+}

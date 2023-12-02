@@ -1,0 +1,74 @@
+{
+    "domain": "rapidsearch.dev",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000954,
+    "sites": 14,
+    "subdomains": [
+        "static2"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "rapidsearch\\.dev\\/resultpage\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static2"
+            ],
+            "apis": {
+                "Document.cookie getter": 11,
+                "Navigator.prototype.userAgent": 10,
+                "window.localStorage": 10,
+                "Date.prototype.getTime": 10,
+                "window.sessionStorage": 10,
+                "window.name": 10,
+                "window.innerWidth": 10
+            },
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "1316e9aacf299d35775818cb50de84ca03546dad5c6acb546742a16751615800",
+                "d185c9aed1666d138f83e47a1dcaa1cd552f94466af4e6fddd88af811663d988"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blade-city.com",
+                "caskcartel.com",
+                "drclarkstore.com",
+                "fenix-store.com",
+                "theranchtable.com",
+                "www.bandolierstyle.com",
+                "www.goatguns.com",
+                "www.hcctac.com",
+                "www.organicprairie.com",
+                "www.racedayquads.com",
+                "www.territoryahead.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 11
+    },
+    "nameservers": [
+        "ns4-34.azure-dns.info",
+        "ns3-34.azure-dns.org",
+        "ns2-34.azure-dns.net",
+        "ns1-34.azure-dns.com"
+    ]
+}

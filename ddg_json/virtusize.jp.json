@@ -1,0 +1,495 @@
+{
+    "domain": "virtusize.jp",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "static.api",
+        "services",
+        "events",
+        "api",
+        "i18n"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "virtusize\\.jp\\/a\\/aoyama\\/2\\.14\\.40\\/integration\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static.api"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.product": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.platform": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4534509ab2ac28e395dde784b07c3702d848c33b843149c34ef88186ed914a39"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "virtusize.bid": {
+                    "ttl": 15552022,
+                    "length": 32,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "voi.0101.co.jp"
+            ]
+        },
+        {
+            "rule": "virtusize\\.jp\\/product\\/check",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "60c8edfdaca83d178559fb3748d6775acb74e929065630e46a204d50d059b010"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "voi.0101.co.jp"
+            ]
+        },
+        {
+            "rule": "virtusize\\.jp\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e0b3f19addc0c2620a963e866f15ea9c132c1bfdcdd3afe438fd5331a6580676",
+                "409e8ecb91e58d00e5cad384c062dffd37bfc53f46eafd51fa94b062dedeb5aa"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "store.world.co.jp",
+                "voi.0101.co.jp"
+            ]
+        },
+        {
+            "rule": "virtusize\\.jp\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "store.world.co.jp",
+                "voi.0101.co.jp"
+            ]
+        },
+        {
+            "rule": "virtusize\\.jp\\/proxy\\/latest\\/vs-aoyama-proxy\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "da83bc13294e5658a19a2544a82c09e8f658d4b7310023202dee9d7ec85135a5"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "virtusize.bid": 0.000027248142017316195
+            },
+            "exampleSites": [
+                "world.co.jp",
+                "voi.0101.co.jp"
+            ]
+        },
+        {
+            "rule": "virtusize\\.jp\\/proxy\\/latest\\/session\\.d463f814\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bdccfa2a29e052f95f02595f7e34da2a5f0da743286fe530e88be683de3a6f49"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "voi.0101.co.jp"
+            ]
+        },
+        {
+            "rule": "virtusize\\.jp\\/a\\/api\\/v3\\/sessions",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6f68be317037de1f2760d34f9a935e919cb4f4a646a5be05077c317cc8c76d35"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "voi.0101.co.jp"
+            ]
+        },
+        {
+            "rule": "virtusize\\.jp\\/a\\/aoyama\\/2\\.14\\.40\\/design-system\\.8dff3114\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static.api"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "336843622a846f487bb25bec2bdb58d54fd196735f1cba6323397e0245f093b4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "voi.0101.co.jp"
+            ]
+        },
+        {
+            "rule": "virtusize\\.jp\\/a\\/aoyama\\/2\\.14\\.40\\/design-system\\.113262aa\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "400759c185bc785a0ac182d8ab0b10bb8f52c4f58cf9d1747b160df4ea486415"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "voi.0101.co.jp"
+            ]
+        },
+        {
+            "rule": "virtusize\\.jp\\/a\\/aoyama\\/2\\.14\\.40\\/bootstrap\\.aec4b22c\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static.api"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8714f356ae4c687a5d134e5a4fab1d129070781579fc318a22d847608b4a6399"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "voi.0101.co.jp"
+            ]
+        },
+        {
+            "rule": "virtusize\\.jp\\/a\\/aoyama\\/2\\.14\\.40\\/bootstrap\\.3b329933\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0e88191e445d76b7710757879113454169d1cc47bcb32e74504b081906b5759a"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "voi.0101.co.jp"
+            ]
+        },
+        {
+            "rule": "virtusize\\.jp\\/a\\/aoyama\\/2\\.14\\.40\\/Loader\\.6fbfadd7\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "00fe4a13d5f7b243ce1efb0cc55ebf8a60009aff536e206be35d8e7f208c622b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "voi.0101.co.jp"
+            ]
+        },
+        {
+            "rule": "virtusize\\.jp\\/a\\/aoyama\\/2\\.14\\.40\\/Loader\\.d348a42d\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "778512199790a8d384f6c14bd517ee977c7caf5adef7a009f6c8be24d4801e2f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "voi.0101.co.jp"
+            ]
+        },
+        {
+            "rule": "virtusize\\.jp\\/a\\/api\\/v3\\/product-types\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "53cd355041d4c3aee933f86830acaa521478c894fc9edf27df9c495f8891f10d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "voi.0101.co.jp"
+            ]
+        },
+        {
+            "rule": "virtusize\\.jp\\/bundle-payloads\\/aoyama\\/ja",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i18n"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5ce908d27460624859f92ef13c3aad29ff3acb16b5bf8bcc86dbcc546000c643"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "voi.0101.co.jp"
+            ]
+        },
+        {
+            "rule": "virtusize\\.jp\\/a\\/aoyama\\/2\\.14\\.40\\/globalLoader\\.942a3c71\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "17c1bd9243577a47e379690ec9c6568ffb71db606f6a09afc91aad13427b203c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "voi.0101.co.jp"
+            ]
+        },
+        {
+            "rule": "virtusize\\.jp\\/a\\/aoyama\\/2\\.14\\.40\\/inpageFooterLogo\\.svg\\.aef38423\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c06c2ce5a80ee2142faf1e3e6a7224fded54321432ec57fa1aa76eda7ddf0ee2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "voi.0101.co.jp"
+            ]
+        },
+        {
+            "rule": "virtusize\\.jp\\/assets\\/measurements\\/7\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "42ca4fcd20eff919f9df3d437bcfc6eec994c7c1738b66a5939f3c70b0f441f9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "voi.0101.co.jp"
+            ]
+        },
+        {
+            "rule": "virtusize\\.jp\\/a\\/aoyama\\/2\\.14\\.40\\/skirt\\.6abb4ac2\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "19eeb4a885df926d05f472b16286ca630529b194901d4b0de9947dd3bbeaec48"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "world.co.jp",
+                "voi.0101.co.jp"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "d2m7rhdanvg09z.cloudfront.net",
+            "prevalence": 0.5384615384615384
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.46153846153846156
+        }
+    ],
+    "types": {
+        "Script": 16,
+        "XHR": 13,
+        "Preflight": 3,
+        "Document": 2,
+        "Stylesheet": 6
+    },
+    "nameservers": [
+        "ns-776.awsdns-33.net",
+        "ns-1118.awsdns-11.org",
+        "ns-1668.awsdns-16.co.uk",
+        "ns-491.awsdns-61.com"
+    ]
+}

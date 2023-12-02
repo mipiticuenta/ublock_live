@@ -1,0 +1,964 @@
+{
+    "domain": "theadex.com",
+    "owner": {
+        "name": "Virtual Minds AG",
+        "displayName": "Virtual Minds",
+        "privacyPolicy": "https://www.virtualminds.de/en/",
+        "url": "http://virtualminds.de"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000177,
+    "sites": 26,
+    "subdomains": [
+        "dmp",
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "theadex\\.com\\/trace\\.js",
+            "cookies": 0.00015,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dmp"
+            ],
+            "apis": {},
+            "sites": 22,
+            "prevalence": 0.00015,
+            "cnames": [],
+            "responseHashes": [
+                "ed1fe4f4c3bacebbab93108ec0a2e2cf4c2c17d8cd5b65d27e296881b60c4f78",
+                "fe1a4576ecb7eceb3d89c5ece47497aefb0a9bb96efaf66dae3b64151f194f1d",
+                "c15d1071ed127c839f717ec9be397b939eb5d2c60d492d7ff63528cf85cc10fe",
+                "85cedc74d4bf1276066ba00d5a78a47d62ca3a31979e307a5d84da90264a9123",
+                "aa5ab9011533157a5e270df3c4258e83209006bbdc8015256cf526f18fe50105",
+                "e88543455dc3e1b4ace3b1c6c2c25edad897b74c65b4f71443987ce7cf44195e",
+                "c62a489b03a424c8b9d6dc96ff56396e93039d4f982e013ddda8381d5eb2fa06",
+                "1de301c0b4a1bfc50ef30e70172f1f8c43c36b5b00e5f9c6150909c3333e0b6d",
+                "fcbd01ef32f947b8c443f795614be379b02b4097d7849d86b7730eef40198eae",
+                "b95c81ce104b9af92aff7474f39721efd3fe6cc495ce7310ad3d00d0c9dc5433",
+                "7e6dcaab968389f4775bda4b91913f6ae63a092d84543402ad2211347117303b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "axd": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "www.harpersbazaar.de",
+                "4fansites.de",
+                "www.lovelybooks.de",
+                "www.falk.de",
+                "www.apotheke-adhoc.de",
+                "www.sportsillustrated.de",
+                "diablo.4fansites.de",
+                "www.frag-mutti.de",
+                "www.instyle.de",
+                "www.elle.de",
+                "www.testedich.de",
+                "www.hamburg.de",
+                "www.helpster.de",
+                "www.playboy.de",
+                "www.speisekarte.de",
+                "forum.frag-mutti.de",
+                "www.esquire.de",
+                "www.freundin.de",
+                "www.mein-schoener-garten.de",
+                "www.reutersagency.com"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/collector\\/v1\\/d\\/1868\\/7424\\/i\\/2\\.gif",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "axd": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "4fansites.de",
+                "diablo.4fansites.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/d\\/cm\\.gif",
+            "cookies": 0.000143,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dmp"
+            ],
+            "apis": {},
+            "sites": 21,
+            "prevalence": 0.000143,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "axd": 0.00006812035504329048,
+                "G_ENABLED_IDPS": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "www.sanego.de",
+                "www.esquire.de",
+                "www.lovelybooks.de",
+                "www.speisekarte.de",
+                "www.helpster.de",
+                "diablo.4fansites.de",
+                "www.testedich.de",
+                "www.frag-mutti.de",
+                "www.reutersagency.com",
+                "www.elle.de",
+                "www.sportsillustrated.de",
+                "www.freundin.de",
+                "www.hamburg.de",
+                "www.falk.de",
+                "www.harpersbazaar.de",
+                "www.playboy.de",
+                "www.apotheke-adhoc.de",
+                "forum.frag-mutti.de",
+                "www.mein-schoener-garten.de",
+                "4fansites.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/d\\/285\\/7654\\/s\\/adex\\.js",
+            "cookies": 0.0000545,
+            "fingerprinting": 3,
+            "subdomains": [
+                "dmp"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 9,
+                "window.localStorage": 9,
+                "Document.cookie getter": 9,
+                "Date.prototype.getTimezoneOffset": 9,
+                "Navigator.prototype.plugins": 9,
+                "Screen.prototype.width": 9,
+                "Screen.prototype.height": 9,
+                "Screen.prototype.colorDepth": 9,
+                "Screen.prototype.pixelDepth": 9,
+                "Screen.prototype.availWidth": 9,
+                "Screen.prototype.availHeight": 9,
+                "Screen.prototype.availLeft": 9,
+                "Screen.prototype.availTop": 9,
+                "window.innerWidth": 9,
+                "window.innerHeight": 9,
+                "Document.cookie setter": 8
+            },
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "8c278d4465f802c88e0e24e31ad10b78583d1b01318174af0eb949106927977b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "axd": {
+                    "ttl": 7779609,
+                    "length": 19,
+                    "prevalence": 0.00005449628403463239,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "focus-arztsuche.de",
+                "www.elle.de",
+                "www.esquire.de",
+                "www.freundin.de",
+                "www.harpersbazaar.de",
+                "www.instyle.de",
+                "www.mein-schoener-garten.de",
+                "www.playboy.de",
+                "www.sportsillustrated.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/d\\/1708\\/6754\\/s\\/adex\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 3,
+            "subdomains": [
+                "dmp"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.plugins": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.availLeft": 2,
+                "Screen.prototype.availTop": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9a39992de399666a95259c396de5885cc1d893ef7b6a8b07c878b09669cd1d19"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "axd": {
+                    "ttl": 7779606,
+                    "length": 19,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "frag-mutti.de",
+                "www.frag-mutti.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/collector\\/v1\\/d\\/1708\\/6754\\/cmframe\\/nhMCBBAUGBwoKiw0cnbCAc4BhAKCA7wDsATeBA",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7fa46c68b75d9b8e0acaad76c689e32e2720793ce3092d7446a31c4c0ac87a14"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "axd": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "frag-mutti.de",
+                "www.frag-mutti.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/d\\/1708\\/6754\\/i\\/1\\.gif",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dmp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "axd": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "frag-mutti.de",
+                "www.frag-mutti.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/collector\\/v1\\/d\\/1708\\/6754\\/i\\/2\\.gif",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "axd": 0.000020436106512987146
+            },
+            "exampleSites": [
+                "frag-mutti.de",
+                "forum.frag-mutti.de",
+                "www.frag-mutti.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/d\\/1708\\/i\\/2\\.gif",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dmp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "frag-mutti.de",
+                "www.frag-mutti.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/d\\/506\\/3014\\/s\\/adex\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 3,
+            "subdomains": [
+                "dmp"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.plugins": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.availLeft": 2,
+                "Screen.prototype.availTop": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "62762d3431b04754c47302cd14b8aa4bea80bebdd2ac5957058a6c5f190c8bec"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "axd": {
+                    "ttl": 7779611,
+                    "length": 19,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apotheke-adhoc.de",
+                "www.reutersagency.com"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/collector\\/v1\\/d\\/506\\/3014\\/cmframe\\/lAoCBBAUGBwqdoQCsAQ",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7d2973c92f60d16c15e0b38c92eaa4fd4f2b29e9ba714eab3c2d2d8434d17a48"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "axd": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "apotheke-adhoc.de",
+                "www.reutersagency.com"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/d\\/506\\/3014\\/i\\/1\\.gif",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dmp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "axd": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "apotheke-adhoc.de",
+                "www.reutersagency.com"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/d\\/506\\/i\\/2\\.gif",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dmp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apotheke-adhoc.de",
+                "www.reutersagency.com"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/collector\\/v1\\/d\\/506\\/3014\\/i\\/2\\.gif",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "axd": 0.000020436106512987146
+            },
+            "exampleSites": [
+                "apotheke-adhoc.de",
+                "www.apotheke-adhoc.de",
+                "www.reutersagency.com"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/d\\/1609\\/6436\\/s\\/adex\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "dmp"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 4,
+                "window.localStorage": 4,
+                "Document.cookie getter": 4,
+                "Date.prototype.getTimezoneOffset": 4,
+                "Navigator.prototype.plugins": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Screen.prototype.colorDepth": 4,
+                "Screen.prototype.pixelDepth": 4,
+                "Screen.prototype.availWidth": 4,
+                "Screen.prototype.availHeight": 4,
+                "Screen.prototype.availLeft": 4,
+                "Screen.prototype.availTop": 4,
+                "window.innerWidth": 4,
+                "window.innerHeight": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "61d94797f0203f8616bcaa790a808f1c2291cf314f9217c21fd3ab0d80db90ef"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ecologiaverde.com",
+                "www.expertoanimal.com",
+                "www.recetasgratis.net",
+                "www.tudoreceitas.com"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/collector\\/v1\\/d\\/285\\/7654\\/cmframe\\/hQQINs4BsAQ",
+            "cookies": 0.0000545,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "a7b1ff4141d464a6652e12de9b9a54d102b3c173107317018132199932d99700",
+                "9679ba308ee8b03adcdffc1d3bea601e3a11e6167aab31cd5714fd20abd782e3",
+                "4e29ba51cd01d4376f318c3f63dfd2ba5b2cfa5fa02ec09f41062ce86765d9a7",
+                "15e6cae6ea3dc12c1d0e3de2f83a19e17c61a90faed04295f5826e76d5935c6d",
+                "091a80ffaad9902655b4f8c2bdc8fa768bbe0bdac0b45ee6e1112bd1495de143",
+                "a36cbf3df1ead402f1e4ed3c0c5ac51ea4a9045676901d1a0682f82af5ebd4da",
+                "aaddccb64cb5695069414345e23db2b6992b54a6095e6f205aa9bad29b960c64"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "axd": 0.00005449628403463239
+            },
+            "exampleSites": [
+                "elle.de",
+                "www.esquire.de",
+                "www.freundin.de",
+                "www.harpersbazaar.de",
+                "www.instyle.de",
+                "www.mein-schoener-garten.de",
+                "www.playboy.de",
+                "www.sportsillustrated.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/d\\/285\\/7654\\/i\\/1\\.gif",
+            "cookies": 0.0000545,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dmp"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00009536849706060668,
+                "axd": 0.00005449628403463239
+            },
+            "exampleSites": [
+                "elle.de",
+                "www.esquire.de",
+                "www.freundin.de",
+                "www.harpersbazaar.de",
+                "www.instyle.de",
+                "www.mein-schoener-garten.de",
+                "www.playboy.de",
+                "www.sportsillustrated.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/collector\\/v1\\/d\\/285\\/7654\\/i\\/2\\.gif",
+            "cookies": 0.0000613,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "axd": 0.00006130831953896144
+            },
+            "exampleSites": [
+                "elle.de",
+                "www.elle.de",
+                "www.esquire.de",
+                "www.freundin.de",
+                "www.harpersbazaar.de",
+                "www.instyle.de",
+                "www.mein-schoener-garten.de",
+                "www.playboy.de",
+                "www.sportsillustrated.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/d\\/285\\/5184\\/s\\/adex\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 3,
+            "subdomains": [
+                "dmp"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.plugins": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.availLeft": 2,
+                "Screen.prototype.availTop": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3a6db7df6205a9e3dcf3c88fdb4e570e4b38f7a3499b488f1f814caba1c9045b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "axd": {
+                    "ttl": 7779619,
+                    "length": 19,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "tis": {
+                    "ttl": 7779621,
+                    "length": 12,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "falk.de",
+                "www.hamburg.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/collector\\/v1\\/d\\/285\\/5184\\/cmframe\\/LBACBAgQFBgcKjQ2drQBhAKwA4wEsAQ",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6ac562d6fa2747fa32d5b95c369fe6ac7cdc488db4ac913dbb18c5d521b95258"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "axd": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "falk.de",
+                "www.hamburg.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/d\\/285\\/5184\\/i\\/1\\.gif",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dmp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "axd": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "falk.de",
+                "www.hamburg.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/d\\/285\\/5184\\/i\\/2\\.gif",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dmp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "axd": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "falk.de",
+                "www.hamburg.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/collector\\/v1\\/d\\/285\\/5184\\/i\\/2\\.gif",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "axd": 0.000020436106512987146
+            },
+            "exampleSites": [
+                "falk.de",
+                "www.falk.de",
+                "www.hamburg.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/d\\/285\\/i\\/2\\.gif",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dmp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "falk.de",
+                "www.hamburg.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/collector\\/v1\\/d\\/1714\\/6760\\/i\\/2\\.gif",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "axd": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "helpster.de",
+                "www.helpster.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/collector\\/v1\\/d\\/1726\\/6772\\/i\\/2\\.gif",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "axd": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "lovelybooks.de",
+                "www.lovelybooks.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/collector\\/v1\\/d\\/1711\\/6757\\/i\\/2\\.gif",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "axd": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "sanego.de",
+                "www.sanego.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/collector\\/v1\\/d\\/1717\\/6763\\/i\\/2\\.gif",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "axd": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "speisekarte.de",
+                "www.speisekarte.de"
+            ]
+        },
+        {
+            "rule": "theadex\\.com\\/collector\\/v1\\/d\\/1720\\/6766\\/i\\/2\\.gif",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "axd": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "testedich.de",
+                "www.testedich.de"
+            ]
+        }
+    ],
+    "categories": [
+        "Ad Motivated Tracking",
+        "Advertising"
+    ],
+    "performance": {},
+    "cookies": 0.000143,
+    "topInitiators": [
+        {
+            "domain": "privacy-mgmt.com",
+            "prevalence": 0.4166666666666667
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.3125
+        },
+        {
+            "domain": "atf-tagmanager.de",
+            "prevalence": 0.08333333333333333
+        },
+        {
+            "domain": "h5v.eu",
+            "prevalence": 0.07291666666666667
+        },
+        {
+            "domain": "admanmedia.com",
+            "prevalence": 0.041666666666666664
+        },
+        {
+            "domain": "stroeerdigitalgroup.de",
+            "prevalence": 0.020833333333333332
+        },
+        {
+            "domain": "aumago.com",
+            "prevalence": 0.010416666666666666
+        },
+        {
+            "domain": "selfcampaign.com",
+            "prevalence": 0.010416666666666666
+        },
+        {
+            "domain": "conative.network",
+            "prevalence": 0.010416666666666666
+        },
+        {
+            "domain": "usercentrics.eu",
+            "prevalence": 0.010416666666666666
+        }
+    ],
+    "types": {
+        "Script": 41,
+        "Image": 73,
+        "Document": 14
+    },
+    "nameservers": [
+        "ns1056.ui-dns.de",
+        "ns1056.ui-dns.org",
+        "ns1056.ui-dns.com",
+        "ns1056.ui-dns.biz"
+    ]
+}

@@ -1,0 +1,150 @@
+{
+    "domain": "whistle.mobi",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "pixel",
+        "n-feed-api"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "whistle\\.mobi\\/feedAds\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "pixel"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bdd1351ffbd379a8bd0636310f6ef97f160770a800cd75366709f1647139c283"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "commonfloor.com",
+                "www.quikr.com"
+            ]
+        },
+        {
+            "rule": "whistle\\.mobi\\/js\\/config_library\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pixel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "59e121c9a9098d7752c636e65b891db467d61ad0818b9567468ccdcc0394f351"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "commonfloor.com",
+                "www.quikr.com"
+            ]
+        },
+        {
+            "rule": "whistle\\.mobi\\/js\\/index_original\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "pixel"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bb8c750907d46ca6792cfd4598c090bbfa8d8d24fc32f7c0549d1dcb24750699"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "commonfloor.com",
+                "www.quikr.com"
+            ]
+        },
+        {
+            "rule": "whistle\\.mobi\\/displayAdsApi",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "n-feed-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "commonfloor.com",
+                "www.quikr.com"
+            ]
+        },
+        {
+            "rule": "whistle\\.mobi\\/displayAdsApi",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "n-feed-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "41d24dd1779d1ad9378cef55c10ee51f11cfeee89f93de9d4ac4577ec7f428da"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "commonfloor.com",
+                "www.quikr.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "googlesyndication.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 6,
+        "Preflight": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "ns-716.awsdns-25.net",
+        "ns-1455.awsdns-53.org",
+        "ns-108.awsdns-13.com",
+        "ns-1724.awsdns-23.co.uk"
+    ]
+}

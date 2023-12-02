@@ -1,0 +1,326 @@
+{
+    "domain": "syllable.ai",
+    "owner": {
+        "name": "Syllable Corporation",
+        "displayName": "Syllable"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "snippet",
+        "widget-6",
+        "winston-production",
+        "static"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "syllable\\.ai\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "snippet",
+                "widget-6"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "41cae762f28ef9022db4d4b143c99d376fbd714430422cc47338d31f10ed3981"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "columbiadoctors.org",
+                "www.columbiadoctors.org"
+            ]
+        },
+        {
+            "rule": "syllable\\.ai\\/get_settings_web",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "winston-production"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "columbiadoctors.org",
+                "www.columbiadoctors.org"
+            ]
+        },
+        {
+            "rule": "syllable\\.ai\\/get_settings_web",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "winston-production"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "139817441ec2d720b84d54405221eeb850fba8059d82a03e994acb29dfa8c509"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "columbiadoctors.org",
+                "www.columbiadoctors.org"
+            ]
+        },
+        {
+            "rule": "syllable\\.ai\\/js\\/rrweb-record-0\\.9\\.9\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d9a65c12dd32c0ccbb08a07b474b34581d953954b46ca1de5ab46b0539b42522"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "columbiadoctors.org",
+                "www.columbiadoctors.org"
+            ]
+        },
+        {
+            "rule": "syllable\\.ai\\/web\\/prd\\/minibar6\\/27cc4ae-1693519362\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4aa12cb70f7772205e5421e2311ab2dcaa1da899557c7fb9473e13ba16072211"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "columbiadoctors.org",
+                "www.columbiadoctors.org"
+            ]
+        },
+        {
+            "rule": "syllable\\.ai\\/571\\/app-27cc4ae-1693519362\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fcfa9fbce47b574de1ac29bbbcea8bca62f06c2b5ec6b169d5181498c740a921"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "columbiadoctors.org",
+                "www.columbiadoctors.org"
+            ]
+        },
+        {
+            "rule": "syllable\\.ai\\/333\\/app-27cc4ae-1693519362\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1683c47e21c6c3a3d304af24139cfd5bcd05b9996fd61febc2be056d7e131d0d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "columbiadoctors.org",
+                "www.columbiadoctors.org"
+            ]
+        },
+        {
+            "rule": "syllable\\.ai\\/688\\/app-27cc4ae-1693519362\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4d35e4ac8efe635b81139e599ae4d128d2c40665ddb1c8fd2b2d82b13c619243"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "columbiadoctors.org",
+                "www.columbiadoctors.org"
+            ]
+        },
+        {
+            "rule": "syllable\\.ai\\/608\\/app-27cc4ae-1693519362\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5d79a56b8a003799cf58ea1930bd0aa178017bf8fbce59ade1af35f0456ab838"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "columbiadoctors.org",
+                "www.columbiadoctors.org"
+            ]
+        },
+        {
+            "rule": "syllable\\.ai\\/338\\/app-27cc4ae-1693519362\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b6ba15d670197400529201cdebdcb88329fe5dbb106e6860900634fb312c0412"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "columbiadoctors.org",
+                "www.columbiadoctors.org"
+            ]
+        },
+        {
+            "rule": "syllable\\.ai\\/942\\/app-27cc4ae-1693519362\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "83025f52d93c90087ab319a3e46d487cfa492a6ec0e54c8587c29b087a3ef772"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "columbiadoctors.org",
+                "www.columbiadoctors.org"
+            ]
+        },
+        {
+            "rule": "syllable\\.ai\\/web\\/prd\\/minibar6\\/app-27cc4ae-1693519362\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "376390cf72d07702d6b61afe00ce5bfd68e00431fd5e5cdc96dc093c032fff04"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "columbiadoctors.org",
+                "www.columbiadoctors.org"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 18,
+        "Preflight": 2,
+        "XHR": 2,
+        "Stylesheet": 2
+    },
+    "nameservers": [
+        "cheryl.ns.cloudflare.com",
+        "glen.ns.cloudflare.com"
+    ]
+}

@@ -1,0 +1,147 @@
+{
+    "domain": "abct.cloud",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-NO"
+    ],
+    "prevalence": 0.000201,
+    "sites": 2,
+    "subdomains": [
+        "prod-hegnar",
+        "prod"
+    ],
+    "cnames": [
+        {
+            "original": "imaginary.finansavisen.no",
+            "resolved": "prod-hegnar.abct.cloud"
+        },
+        {
+            "original": "weather-ws.startsiden.no",
+            "resolved": "prod.abct.cloud"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "abct\\.cloud\\/resize",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-hegnar"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "imaginary.finansavisen.no",
+                    "resolved": "prod-hegnar.abct.cloud"
+                }
+            ],
+            "responseHashes": [
+                "343783eba9be2c53dd2488a0d4dd19480bb8700232c4cc209ee916843b4246dc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "finansavisen.no",
+                "www.finansavisen.no"
+            ]
+        },
+        {
+            "rule": "abct\\.cloud\\/pipe",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-hegnar"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "imaginary.finansavisen.no",
+                    "resolved": "prod-hegnar.abct.cloud"
+                }
+            ],
+            "responseHashes": [
+                "23ed11851ce10c499f4d2bff04bf0029be7e312668cc7227cb9ed9f07c3c9416"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "finansavisen.no",
+                "www.finansavisen.no"
+            ]
+        },
+        {
+            "rule": "abct\\.cloud\\/api\\/v1\\/search",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "weather-ws.startsiden.no",
+                    "resolved": "prod.abct.cloud"
+                }
+            ],
+            "responseHashes": [
+                "0d3ee79a50474f6ae19810b73a7eaaf8ce9891797042a054334c757d907e45d9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "startsiden.no",
+                "www.startsiden.no"
+            ]
+        },
+        {
+            "rule": "abct\\.cloud\\/api\\/v1\\/weather_details",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "weather-ws.startsiden.no",
+                    "resolved": "prod.abct.cloud"
+                }
+            ],
+            "responseHashes": [
+                "554e9346459e423cdb2ff9adf9ed0546cfbfba8ed9e9ca5c89e8253de14ba92c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "startsiden.no",
+                "www.startsiden.no"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000101,
+    "types": {
+        "Image": 4,
+        "XHR": 4
+    },
+    "nameservers": [
+        "ns-foo.linpro.net",
+        "ns-zoo.linpro.net",
+        "ns-bar.i.bitbit.net",
+        "ns-zoo.i.bitbit.net"
+    ]
+}

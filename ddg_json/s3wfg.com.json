@@ -1,0 +1,65 @@
+{
+    "domain": "s3wfg.com",
+    "owner": {
+        "name": "WEB FINANCIAL GROUP SA",
+        "displayName": "WEB FINANCIAL GROUP"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "vm"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "s3wfg\\.com\\/js\\/vortexloader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "vm"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1d68ab35370aa720a552637555c20fa123b006ca908f16e7db714839763719a5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "countryeconomy.com",
+                "www.burbuja.info"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "quantcast.com",
+            "prevalence": 0.5
+        }
+    ],
+    "types": {
+        "Script": 2
+    },
+    "nameservers": [
+        "anita.ns.cloudflare.com",
+        "rommy.ns.cloudflare.com"
+    ]
+}

@@ -1,0 +1,82 @@
+{
+    "domain": "lz-pub-ads.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "img"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "lz-pub-ads\\.com\\/ads\\/lz_loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b137e7fa90949c71914e823488107896d8f9f7df18e5181223ff0772be84fe01"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "misterpoll.com",
+                "original.misterpoll.com"
+            ]
+        },
+        {
+            "rule": "lz-pub-ads\\.com\\/f\\/gstats",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "misterpoll.com",
+                "original.misterpoll.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "ns-874.awsdns-45.net",
+        "ns-1654.awsdns-14.co.uk",
+        "ns-180.awsdns-22.com",
+        "ns-1155.awsdns-16.org"
+    ]
+}

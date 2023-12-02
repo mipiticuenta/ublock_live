@@ -1,0 +1,151 @@
+{
+    "domain": "accesstype.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "www"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "accesstype\\.com\\/frontend\\/v2\\/accesstype\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "a04804c4f3401cf32866ddb38a67d2f5f3c33fc6ef41c9ae238ed524baac53d6",
+                "4e08a28ff07d14278003813d5ef2e35725134e5d35543143409400d36433953a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thequint.com",
+                "www.thequint.com",
+                "www.westernstandard.news"
+            ]
+        },
+        {
+            "rule": "accesstype\\.com\\/api\\/v1\\/campaigns\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "954e1be16825a09b4b6176330170095f28c0a5203b57ce68f1b4681931a7f7cc"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thequint.com",
+                "www.thequint.com"
+            ]
+        },
+        {
+            "rule": "accesstype\\.com\\/api\\/v1\\/subscription_groups\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "7de94467bc10dffba6116598228fa98c061f7677fb74dc0f983be574d92f504a",
+                "9f3c10de33aab8b147fcf339ec9b46f73731b1a8643bfc2159ab686944e96b2a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thequint.com",
+                "www.thequint.com",
+                "www.westernstandard.news"
+            ]
+        },
+        {
+            "rule": "accesstype\\.com\\/api\\/v1\\/subscription_groups\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7de94467bc10dffba6116598228fa98c061f7677fb74dc0f983be574d92f504a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thequint.com",
+                "www.thequint.com"
+            ]
+        },
+        {
+            "rule": "accesstype\\.com\\/api\\/v1\\/asset\\/story\\/pricing_plans\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "eff020c5a7ba8e12500d517cdc91df890156e67003edea78e1e1b7cf1290a000"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "westernstandard.news",
+                "www.westernstandard.news"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "assettype.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "Fetch": 5,
+        "XHR": 4
+    },
+    "nameservers": [
+        "alan.ns.cloudflare.com",
+        "ulla.ns.cloudflare.com"
+    ]
+}

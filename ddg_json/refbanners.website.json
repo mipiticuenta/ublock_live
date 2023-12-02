@@ -1,0 +1,103 @@
+{
+    "domain": "refbanners.website",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "refbanners\\.website\\/I",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ae6c45876c75ee00179b3ff05100ff81abb7bb30149f27db772d3cd943093b26"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "futbol24.com",
+                "www.futbol24.com"
+            ]
+        },
+        {
+            "rule": "refbanners\\.website\\/checker\\/checker\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "198a55310d4d5b786ff571ff4f16a66505bb17545c557818c8de810851616955"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "che_g": {
+                    "ttl": 2592006,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "futbol24.com",
+                "www.futbol24.com"
+            ]
+        },
+        {
+            "rule": "refbanners\\.website\\/redirect\\/stat\\/run\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9682f312f23e078bb135f23ea5a178b178e75c02d33672f20044d18c6d258928"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "futbol24.com",
+                "www.futbol24.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Document": 2,
+        "Script": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "dana.ns.cloudflare.com",
+        "damon.ns.cloudflare.com"
+    ]
+}

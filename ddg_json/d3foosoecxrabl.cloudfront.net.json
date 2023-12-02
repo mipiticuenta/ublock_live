@@ -1,0 +1,83 @@
+{
+    "domain": "d3foosoecxrabl.cloudfront.net",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "d3foosoecxrabl\\.cloudfront\\.net\\/sdk\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 3,
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "0ec89b53d8fd96817b217704139fbeefd535f075137cb9db0cabdbfaef536e33",
+                "fdd767ddfd15a5cf441864fe3e937ee9dfaa03d2554052697978bfdc6d18af4e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_radTrack_203": {
+                    "ttl": 2522880006,
+                    "length": 62,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_radTrack_342": {
+                    "ttl": 2522880011,
+                    "length": 62,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adoreme.com",
+                "www.adoreme.com",
+                "www.lecreuset.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.5
+        }
+    ],
+    "types": {
+        "Script": 3
+    },
+    "nameservers": [
+        "ns-843.awsdns-41.net",
+        "ns-1840.awsdns-38.co.uk",
+        "ns-349.awsdns-43.com",
+        "ns-1201.awsdns-22.org"
+    ]
+}

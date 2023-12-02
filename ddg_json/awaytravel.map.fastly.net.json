@@ -1,0 +1,119 @@
+{
+    "domain": "awaytravel.map.fastly.net",
+    "owner": {
+        "name": "Fastly, Inc.",
+        "displayName": "Fastly",
+        "privacyPolicy": "https://www.fastly.com/privacy",
+        "url": "http://fastly.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "api.awaytravel.com",
+            "resolved": "awaytravel.map.fastly.net"
+        },
+        {
+            "original": "assets.awaytravel.com",
+            "resolved": "awaytravel.map.fastly.net"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "awaytravel\\.map\\.fastly\\.net\\/api\\/us\\/storefront\\/subscription_modal",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.awaytravel.com",
+                    "resolved": "awaytravel.map.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "awaytravel.com",
+                "www.awaytravel.com"
+            ]
+        },
+        {
+            "rule": "awaytravel\\.map\\.fastly\\.net\\/api\\/us\\/storefront\\/subscription_modal",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.awaytravel.com",
+                    "resolved": "awaytravel.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "74ba05a2252d154dbf6a633d6aaaf50d414237bad3ea1ce94321ed5925df0d8c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "awaytravel.com",
+                "www.awaytravel.com"
+            ]
+        },
+        {
+            "rule": "awaytravel\\.map\\.fastly\\.net\\/assets\\/open-replay-5\\.0\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets.awaytravel.com",
+                    "resolved": "awaytravel.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "b4da3da660e77cd26c990ce31fe99c8932ec3ab82058e31ac9e517a826af39b4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "awaytravel.com",
+                "www.awaytravel.com"
+            ]
+        }
+    ],
+    "categories": [
+        "Ad Motivated Tracking",
+        "Advertising",
+        "Analytics",
+        "Third-Party Analytics Marketing",
+        "Action Pixels",
+        "CDN",
+        "Embedded Content",
+        "Session Replay"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "types": {
+        "Preflight": 2,
+        "Fetch": 2,
+        "Script": 2
+    },
+    "nameservers": []
+}

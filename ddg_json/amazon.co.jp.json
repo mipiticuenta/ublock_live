@@ -1,0 +1,93 @@
+{
+    "domain": "amazon.co.jp",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "rcm-jp",
+        "unagi"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "amazon\\.co\\.jp\\/e\\/cm",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rcm-jp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "asyura2.com",
+                "www.asyura2.com"
+            ]
+        },
+        {
+            "rule": "amazon\\.co\\.jp\\/1\\/events\\/com\\.amazon\\.csm\\.csa\\.prod",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "unagi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "audible.com.au",
+                "www.audible.com.au"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8947368421052632
+        },
+        {
+            "domain": "ssl-images-amazon.com",
+            "prevalence": 0.05263157894736842
+        },
+        {
+            "domain": "d3906v0a0ezp6.cloudfront.net",
+            "prevalence": 0.05263157894736842
+        }
+    ],
+    "types": {
+        "Document": 2,
+        "Ping": 2
+    },
+    "nameservers": [
+        "ns1.amzndns.net",
+        "ns1.amzndns.org",
+        "ns2.amzndns.net",
+        "ns1.amzndns.co.uk",
+        "ns2.amzndns.com",
+        "ns2.amzndns.co.uk",
+        "ns1.amzndns.com",
+        "ns2.amzndns.org"
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "domain": "ip-label.net",
+    "owner": {
+        "name": "IP LABEL",
+        "displayName": "IP LABEL"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "data-ekararum",
+        "cloud-observer"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "ip-label\\.net\\/20255b6d-6927-465b-8851-6664f5070817",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "data-ekararum"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "351573d8d5d08010146c74bbec7ad56d9b6aea43eca703848e0a56045f27ee93"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aircaraibes.com",
+                "www.aircaraibes.com"
+            ]
+        },
+        {
+            "rule": "ip-label\\.net\\/Data\\/coll\\.ipl",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cloud-observer"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "frenchbee.com",
+                "www.frenchbee.com",
+                "www.renfe.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.2
+        }
+    ],
+    "types": {
+        "Ping": 2,
+        "Image": 3
+    },
+    "nameservers": [
+        "ns-9-a.gandi.net",
+        "ns-188-c.gandi.net",
+        "ns-61-b.gandi.net"
+    ]
+}

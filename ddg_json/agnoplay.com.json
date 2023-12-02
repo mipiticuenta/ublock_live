@@ -1,0 +1,92 @@
+{
+    "domain": "agnoplay.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000817,
+    "sites": 12,
+    "subdomains": [
+        "player"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "agnoplay\\.com\\/static\\/agnoplay\\/js\\/agnoplay\\.js",
+            "cookies": 0.0000817,
+            "fingerprinting": 1,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 12,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 12,
+            "prevalence": 0.0000817,
+            "cnames": [],
+            "responseHashes": [
+                "543102d36a1695ba5bb69a137b3bf3b7575c4a9aaf92da556e14f45bc92ca673"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "belfasttelegraph.co.uk",
+                "m.sundayworld.com",
+                "www.belfasttelegraph.co.uk",
+                "www.gva.be",
+                "www.hbvl.be",
+                "www.independent.ie",
+                "www.limburger.nl",
+                "www.nieuwsblad.be",
+                "www.noordhollandsdagblad.nl",
+                "www.standaard.be",
+                "www.sundayworld.com",
+                "www.want.nl"
+            ]
+        },
+        {
+            "rule": "agnoplay\\.com\\/static\\/api\\/v1\\/configs\\/want\\.json",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "48a6c8a61d45fcc208269b940c6ad2cf0a36ac25b757e54743c752a1509057bb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "want.nl",
+                "www.want.nl"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000817,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 12,
+        "XHR": 2
+    },
+    "nameservers": [
+        "elliot.ns.cloudflare.com",
+        "erin.ns.cloudflare.com"
+    ]
+}

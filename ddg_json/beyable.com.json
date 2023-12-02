@@ -1,0 +1,169 @@
+{
+    "domain": "beyable.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000817,
+    "sites": 12,
+    "subdomains": [
+        "front.activation",
+        "tag",
+        "front.lytics"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "beyable\\.com\\/api\\/v2\\/displays",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "front.activation"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "739fb08dc59c78f38b21671fe36976745e3f1bc5b03c9e6da07d193fa3e4de9f",
+                "201e0e4019c8ce979fc5ab31faf93c7bf8b10bcde6cb80cdb1299dd1308c7f7d",
+                "f6eda05971faccf082341f8a283697ac6c8f1437d67fcd626ad229fdc9918578",
+                "3fb23b1ee6b19b958eaa2c71aaba25de0425c9501c5673f4a1e2e2b17f8b1020",
+                "09cbcf1e5c299b192157befab4ddf768d2932930c480ef2745c1793168c03461"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "beyable-TrackingId": 0.000020436106512987146
+            },
+            "exampleSites": [
+                "specialchem.com",
+                "cosmetics.specialchem.com",
+                "omnexus.specialchem.com",
+                "www.france-mineraux.fr",
+                "www.la-vie-naturelle.com",
+                "www.mr-bricolage.fr"
+            ]
+        },
+        {
+            "rule": "beyable\\.com\\/api\\/beYableJS-analytics\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 2,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "Document.cookie getter": 4,
+                "Navigator.prototype.webdriver": 4,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 4,
+                "Navigator.prototype.language": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Date.prototype.getTime": 4,
+                "Document.cookie setter": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "1b6bd1cbdba073ce4c0cfd76114254105ef6c4a0ef06f167897a96f64291ecba"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_bey_id": {
+                    "ttl": 33696009,
+                    "length": 32,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alltricks.fr",
+                "www.bricorama.fr",
+                "www.bricomarche.com",
+                "www.philibertnet.com"
+            ]
+        },
+        {
+            "rule": "beyable\\.com\\/v1\\/api\\/pageview",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "front.lytics"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "88d536946d738b823524dc16043a2f0ee2de7136d6be42280bf4ef2e89940c60",
+                "380880eeca723ec3c9c6cc57b2910239ffab1522a6b8434ba063d6f1c0edbdab",
+                "7d98dd8052422270f35db19a92044f5bdfc7fe33ce5eecac45972b786d1961fe"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alltricks.fr",
+                "www.bricorama.fr",
+                "www.bricomarche.com",
+                "www.philibertnet.com"
+            ]
+        },
+        {
+            "rule": "beyable\\.com\\/v1\\/api\\/pageview",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "front.lytics"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alltricks.fr",
+                "www.bricorama.fr",
+                "www.bricomarche.com",
+                "www.philibertnet.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "msecnd.net",
+            "prevalence": 0.6176470588235294
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.3235294117647059
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.029411764705882353
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.029411764705882353
+        }
+    ],
+    "types": {
+        "Script": 10,
+        "XHR": 4,
+        "Preflight": 4
+    },
+    "nameservers": [
+        "dns200.anycast.me",
+        "ns200.anycast.me"
+    ]
+}

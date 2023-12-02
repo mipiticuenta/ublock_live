@@ -1,0 +1,680 @@
+{
+    "domain": "sophi.io",
+    "owner": {
+        "name": "The Globe and Mail Inc.",
+        "displayName": "The Globe and Mail",
+        "privacyPolicy": "https://www.theglobeandmail.com/privacy-terms/privacy-policy",
+        "url": "http://theglobeandmail.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000232,
+    "sites": 34,
+    "subdomains": [
+        "dynpaywall-api-chicagotribune.ml",
+        "cdn",
+        "collector2",
+        "ecollector-us-east",
+        "collector",
+        "apps"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "sophi\\.io\\/v1\\/\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dynpaywall-api-chicagotribune.ml"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fa4f785e481398c142660ec55b54092968e4d839770e8cb8416244430fd492e7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chicagotribune.com",
+                "www.chicagotribune.com"
+            ]
+        },
+        {
+            "rule": "sophi\\.io\\/latest\\/sophi\\.min\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.onLine": 6,
+                "window.localStorage": 6,
+                "window.sessionStorage": 6,
+                "Navigator.prototype.userAgent": 6,
+                "Navigator.prototype.doNotTrack": 6,
+                "Navigator.prototype.language": 6,
+                "Screen.prototype.width": 5,
+                "Screen.prototype.height": 5,
+                "Screen.prototype.colorDepth": 5,
+                "Navigator.prototype.cookieEnabled": 6,
+                "Date.prototype.getTime": 6,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 6,
+                "Navigator.prototype.connection": 6,
+                "window.innerWidth": 6,
+                "window.innerHeight": 6,
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 4
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "72d4bde5ff8cdb3db436c3077fbc4a7556367c5b5099ecea01950b90333c74f3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "sophiTagses.23dd": {
+                    "ttl": 1803,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "sophiTagid.23dd": {
+                    "ttl": 63072003,
+                    "length": 108,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_sp_duid": {
+                    "ttl": 63072003,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "sophiTagses.fe05": {
+                    "ttl": 1806,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "sophiTagid.fe05": {
+                    "ttl": 63072006,
+                    "length": 108,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "sophiTagid.4e3b": {
+                    "ttl": 63072005,
+                    "length": 108,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "sophiTagses.4e3b": {
+                    "ttl": 1805,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chicagotribune.com",
+                "jp.reuters.com",
+                "thewest.com.au",
+                "www.ajc.com",
+                "www.chicagotribune.com",
+                "www.reuters.com"
+            ]
+        },
+        {
+            "rule": "sophi\\.io\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector2",
+                "ecollector-us-east",
+                "collector"
+            ],
+            "apis": {},
+            "sites": 19,
+            "prevalence": 0.000129,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chicagotribune.com",
+                "globalnews.ca",
+                "highschoolsports.nj.com",
+                "jp.reuters.com",
+                "thewest.com.au",
+                "www.ajc.com",
+                "www.al.com",
+                "www.annarbor.com",
+                "www.chicagotribune.com",
+                "www.cleveland.com",
+                "www.lehighvalleylive.com",
+                "www.masslive.com",
+                "www.mlive.com",
+                "www.nj.com",
+                "www.oregonlive.com",
+                "www.pennlive.com",
+                "www.reuters.com",
+                "www.silive.com",
+                "www.syracuse.com"
+            ]
+        },
+        {
+            "rule": "sophi\\.io\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector2",
+                "ecollector-us-east",
+                "collector"
+            ],
+            "apis": {},
+            "sites": 19,
+            "prevalence": 0.000129,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chicagotribune.com",
+                "globalnews.ca",
+                "highschoolsports.nj.com",
+                "jp.reuters.com",
+                "thewest.com.au",
+                "www.ajc.com",
+                "www.al.com",
+                "www.annarbor.com",
+                "www.chicagotribune.com",
+                "www.cleveland.com",
+                "www.lehighvalleylive.com",
+                "www.masslive.com",
+                "www.mlive.com",
+                "www.nj.com",
+                "www.oregonlive.com",
+                "www.pennlive.com",
+                "www.reuters.com",
+                "www.silive.com",
+                "www.syracuse.com"
+            ]
+        },
+        {
+            "rule": "sophi\\.io\\/advancelocal\\/sophi\\.min\\.js",
+            "cookies": 0.0000749,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 12,
+                "window.sessionStorage": 12,
+                "Navigator.prototype.userAgent": 9,
+                "Navigator.prototype.doNotTrack": 9,
+                "Navigator.prototype.language": 9,
+                "Screen.prototype.width": 9,
+                "Screen.prototype.height": 9,
+                "Screen.prototype.colorDepth": 9,
+                "Navigator.prototype.cookieEnabled": 9,
+                "Date.prototype.getTime": 12,
+                "Document.cookie setter": 11,
+                "Document.cookie getter": 12,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 12,
+                "Navigator.prototype.connection": 12,
+                "window.innerWidth": 11,
+                "window.innerHeight": 11,
+                "Navigator.prototype.onLine": 9
+            },
+            "sites": 12,
+            "prevalence": 0.0000817,
+            "cnames": [],
+            "responseHashes": [
+                "b9afeb90db17ffa772a8bbc38f8ae37524ac4c0660dfc228f528cfe36a38d53d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "sophiTagses.6327": {
+                    "ttl": 1807,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "sophiTagid.6327": {
+                    "ttl": 63072007,
+                    "length": 108,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_sp_duid": {
+                    "ttl": 63072002,
+                    "length": 36,
+                    "prevalence": 0.00005449628403463239,
+                    "uniqueness": 1
+                },
+                "sophiTagses.8d36": {
+                    "ttl": 1803,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "sophiTagid.8d36": {
+                    "ttl": 63072003,
+                    "length": 108,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "sophiTagid.ad2a": {
+                    "ttl": 63072005,
+                    "length": 108,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "sophiTagses.ad2a": {
+                    "ttl": 1805,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "sophiTagses.24d1": {
+                    "ttl": 1802,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "sophiTagid.24d1": {
+                    "ttl": 63072002,
+                    "length": 108,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "sophiTagses.073a": {
+                    "ttl": 1806,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "sophiTagid.073a": {
+                    "ttl": 63072006,
+                    "length": 108,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "sophiTagses.32f5": {
+                    "ttl": 1803,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "sophiTagid.32f5": {
+                    "ttl": 63072003,
+                    "length": 108,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "sophiTagses.8a3b": {
+                    "ttl": 1803,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "sophiTagid.8a3b": {
+                    "ttl": 63072003,
+                    "length": 108,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "sophiTagses.5e05": {
+                    "ttl": 1802,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "sophiTagid.5e05": {
+                    "ttl": 63072002,
+                    "length": 108,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "sophiTagses.566f": {
+                    "ttl": 1805,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "sophiTagid.566f": {
+                    "ttl": 63072005,
+                    "length": 108,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nj.com",
+                "www.al.com",
+                "www.annarbor.com",
+                "www.cleveland.com",
+                "www.lehighvalleylive.com",
+                "www.masslive.com",
+                "www.mlive.com",
+                "www.nj.com",
+                "www.oregonlive.com",
+                "www.pennlive.com",
+                "www.silive.com",
+                "www.syracuse.com"
+            ]
+        },
+        {
+            "rule": "sophi\\.io\\/latest\\/al-nj\\.segments\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3b8a4f0e313610b4261201212db59a495ede9a18c6a3274a567ed44d44cd4811"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nj.com",
+                "www.nj.com"
+            ]
+        },
+        {
+            "rule": "sophi\\.io\\/latest\\/config_reuters\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1c4e7ea8202945502c41c4aa4eedffed8fbb19e85f9abfe6b1eb032f699667a1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reuters.com",
+                "www.reuters.com"
+            ]
+        },
+        {
+            "rule": "sophi\\.io\\/latest\\/al-mlive\\.segments\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0709e11f34bb1e47193a170bc8baf94732a32a867443b29be840c550cc03981d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "annarbor.com",
+                "www.mlive.com"
+            ]
+        },
+        {
+            "rule": "sophi\\.io\\/latest\\/al-cleveland\\.segments\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7e4fdd303f6197866ff8010cf09633df1a66230187a66c3c002dd1b5c2476776"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cleveland.com",
+                "www.cleveland.com"
+            ]
+        },
+        {
+            "rule": "sophi\\.io\\/latest\\/al-lehighvalleylive\\.segments\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e32d3476855eafb0b5c6b9ffef54eb9ce1967ffdc79ac46ff9223822c88d2c59"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lehighvalleylive.com",
+                "www.lehighvalleylive.com"
+            ]
+        },
+        {
+            "rule": "sophi\\.io\\/latest\\/al-masslive\\.segments\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6687a225512df153cd23a535cd3d7e9975efa453dc01a032d437684ff39f73cd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "masslive.com",
+                "www.masslive.com"
+            ]
+        },
+        {
+            "rule": "sophi\\.io\\/latest\\/al-oregonlive\\.segments\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a93dedd108ae410c46fc75f617609e111581aa7f90720c27ceb5206313758adc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oregonlive.com",
+                "www.oregonlive.com"
+            ]
+        },
+        {
+            "rule": "sophi\\.io\\/latest\\/al-pennlive\\.segments\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2add9f690c3f7d4d55c8c313b6988532723df3fb27bb3e5baa109d36767e7680"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pennlive.com",
+                "www.pennlive.com"
+            ]
+        },
+        {
+            "rule": "sophi\\.io\\/latest\\/al-silive\\.segments\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "66db5bff85bfceb9564948938781845996fbc61bf1b02b8f33d46cfe0ba94ce8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "silive.com",
+                "www.silive.com"
+            ]
+        },
+        {
+            "rule": "sophi\\.io\\/latest\\/al-syracuse\\.segments\\.min\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
+            "subdomains": [
+                "apps"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "53771af7c040b9c6699c8f560187251428853e9418f50c0ee19bd306d6c5befd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "sophiTagid.566f": {
+                    "ttl": 63160204,
+                    "length": 117,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "sophiTagses.566f": {
+                    "ttl": 1804,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "syracuse.com",
+                "www.syracuse.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000177,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7857142857142857
+        },
+        {
+            "domain": "osano.com",
+            "prevalence": 0.11428571428571428
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.04285714285714286
+        },
+        {
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 0.02857142857142857
+        },
+        {
+            "domain": "mlive.com",
+            "prevalence": 0.02857142857142857
+        }
+    ],
+    "types": {
+        "XHR": 21,
+        "Script": 38,
+        "Preflight": 19
+    },
+    "nameservers": [
+        "ns-800.awsdns-36.net",
+        "ns-1220.awsdns-24.org",
+        "ns-1615.awsdns-09.co.uk",
+        "ns-150.awsdns-18.com"
+    ]
+}

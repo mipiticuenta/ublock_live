@@ -1,0 +1,89 @@
+{
+    "domain": "access-api-prod-node-v16.us-east-1.elasticbeanstalk.com",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "production-access-api.cotopaxi.com",
+            "resolved": "access-api-prod-node-v16.us-east-1.elasticbeanstalk.com"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "access-api-prod-node-v16\\.us-east-1\\.elasticbeanstalk\\.com\\/section\\/abTestSectionsByShopifyProductId\\/9436798154",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "production-access-api.cotopaxi.com",
+                    "resolved": "access-api-prod-node-v16.us-east-1.elasticbeanstalk.com"
+                }
+            ],
+            "responseHashes": [
+                "7aed1604510829abf8d8ddfa91313a2be23b8f5a7aa6f672f51b57c9538b143d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cotopaxi.com",
+                "www.cotopaxi.com"
+            ]
+        },
+        {
+            "rule": "access-api-prod-node-v16\\.us-east-1\\.elasticbeanstalk\\.com\\/yotpo\\/bottomLine\\/9436798154",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "production-access-api.cotopaxi.com",
+                    "resolved": "access-api-prod-node-v16.us-east-1.elasticbeanstalk.com"
+                }
+            ],
+            "responseHashes": [
+                "4b54a49f7b429c155e46081f98e0424a052e1b0d42c9377bb035f2f7106fbbda"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cotopaxi.com",
+                "www.cotopaxi.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "XHR": 4
+    },
+    "nameservers": []
+}

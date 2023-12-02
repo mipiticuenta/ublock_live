@@ -1,0 +1,94 @@
+{
+    "domain": "cibc.com.edgekey.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "www.cibconline"
+    ],
+    "cnames": [
+        {
+            "original": "www.cibconline.cibc.com",
+            "resolved": "www.cibconline.cibc.com.edgekey.net"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "cibc\\.com\\.edgekey\\.net\\/maintenance\\/login\\.json",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www.cibconline"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "www.cibconline.cibc.com",
+                    "resolved": "www.cibconline.cibc.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "5666df476b4113d86d8ec65f517c8624ffb160c4e8b8a310a4b631de982d898c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cibc.com",
+                "www.cibc.com"
+            ]
+        },
+        {
+            "rule": "cibc\\.com\\.edgekey\\.net\\/ebm-resources\\/public\\/banking\\/cibc\\/client\\/web\\/olbtxn\\/index\\.html",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "www.cibconline"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "www.cibconline.cibc.com",
+                    "resolved": "www.cibconline.cibc.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "6d31cd1f8e6fae5608b0f0eb7003293e3166297d00a0c5bb024f72db9e6d02b7"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cibc.com",
+                "www.cibc.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "XHR": 2,
+        "Document": 2
+    },
+    "nameservers": []
+}

@@ -1,0 +1,82 @@
+{
+    "domain": "nordvpn.com",
+    "owner": {
+        "name": "Tefincom S.A.",
+        "displayName": "Tefincom"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "tracy"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "nordvpn\\.com\\/v1\\/collect",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracy"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nordaccount.com",
+                "my.nordaccount.com",
+                "nordlocker.com",
+                "nordpass.com"
+            ]
+        },
+        {
+            "rule": "nordvpn\\.com\\/v1\\/collect",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracy"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nordaccount.com",
+                "my.nordaccount.com",
+                "nordlocker.com",
+                "nordpass.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000341,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Preflight": 4,
+        "Ping": 4
+    },
+    "nameservers": [
+        "lily.ns.cloudflare.com",
+        "seth.ns.cloudflare.com"
+    ]
+}

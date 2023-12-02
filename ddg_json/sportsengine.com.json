@@ -1,0 +1,144 @@
+{
+    "domain": "sportsengine.com",
+    "owner": {
+        "name": "Comcast Corporation",
+        "displayName": "Comcast",
+        "privacyPolicy": "https://www.xfinity.com/Corporate/Customers/Policies/CustomerPrivacy",
+        "url": "http://xfinity.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "se-fe-analytics.ui",
+        "se-api",
+        "motion",
+        "www"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "sportsengine\\.com\\/se-analytics-core\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "se-fe-analytics.ui"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "c2fd159ad0ef6528844a6a5a25838bb0dc481fde0d39638eff462b369fef1d42"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sportngin.com",
+                "www.gomotionapp.com",
+                "www.leagueathletics.com",
+                "www.teamunify.com"
+            ]
+        },
+        {
+            "rule": "sportsengine\\.com\\/global_session\\/me",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "se-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "48aebe670173c570b263c596eeea4c01c6a06a247db5d5864c74613d605a074d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sportngin.com",
+                "user.sportngin.com"
+            ]
+        },
+        {
+            "rule": "sportsengine\\.com\\/sites\\/default\\/files\\/css\\/css_WhlNpW3Xx7LzvpWO-3Xbn-BvWAQZmZOtZYF9Yli864I\\.css",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "motion",
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5a194da56dd7c7b2f3be958efb75db9fe06f5804199993ad65817d6258bceb82"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gomotionapp.com",
+                "www.leagueathletics.com"
+            ]
+        },
+        {
+            "rule": "sportsengine\\.com\\/v3\\/utd",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "se-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "434a63d08de33f93bec26a09fc8ba77ca86c3e5c1fcb78156d7b596f80538c3f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gomotionapp.com",
+                "www.leagueathletics.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7
+        },
+        {
+            "domain": "storage.googleapis.com",
+            "prevalence": 0.2
+        },
+        {
+            "domain": "sportsengine.com",
+            "prevalence": 0.1
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "XHR": 4,
+        "Stylesheet": 2
+    },
+    "nameservers": [
+        "ns2.dnsmadeeasy.com",
+        "ns0.dnsmadeeasy.com",
+        "ns4.dnsmadeeasy.com",
+        "ns3.dnsmadeeasy.com",
+        "ns1.dnsmadeeasy.com"
+    ]
+}

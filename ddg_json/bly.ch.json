@@ -1,0 +1,93 @@
+{
+    "domain": "bly.ch",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "manor.rt",
+        "ochsnersport.rt"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "bly\\.ch\\/",
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
+            "subdomains": [
+                "manor.rt",
+                "ochsnersport.rt"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "481ba531a23bcce8dc3b1b63fe79e887e4e1e63f7956cb79d28cab1296c226f9",
+                "4e772e0501cb9e4ef4a121d9171c5a25cae61180d39fd81093e4e7d03cade6b3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "manor.ch",
+                "www.manor.ch",
+                "www.ochsnersport.ch"
+            ]
+        },
+        {
+            "rule": "bly\\.ch\\/blytm\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "manor.rt",
+                "ochsnersport.rt"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e5108faac9a5e56933e56ae4b89d692a485507b6dc0432056265d4432d122900"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "manor.ch",
+                "www.ochsnersport.ch"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "connectsvr.ch",
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "connects.ch",
+            "prevalence": 0.3333333333333333
+        }
+    ],
+    "types": {
+        "Script": 5
+    },
+    "nameservers": [
+        "ns-1776.awsdns-30.co.uk",
+        "ns-455.awsdns-56.com",
+        "ns-1272.awsdns-31.org",
+        "ns-604.awsdns-11.net"
+    ]
+}

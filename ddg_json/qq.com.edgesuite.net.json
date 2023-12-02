@@ -1,0 +1,100 @@
+{
+    "domain": "qq.com.edgesuite.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "news.ssp",
+        "i.news"
+    ],
+    "cnames": [
+        {
+            "original": "i.news.qq.com",
+            "resolved": "i.news.qq.com.edgesuite.net"
+        },
+        {
+            "original": "news.ssp.qq.com",
+            "resolved": "news.ssp.qq.com.edgesuite.net"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "qq\\.com\\.edgesuite\\.net\\/app",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "news.ssp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "news.ssp.qq.com",
+                    "resolved": "news.ssp.qq.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "72f36cf8009535b0f2e44a6b8059ed7974324e8f50c8e79c05d0c128c4b7952b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "new.qq.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\.edgesuite\\.net\\/getQQNewsComment",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "i.news"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "i.news.qq.com",
+                    "resolved": "i.news.qq.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "d5e6cc707209672e112d2006de6f8f2813666dcf30ce62df72ac2a7ed2f7c860"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "new.qq.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "gtimg.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "XHR": 4
+    },
+    "nameservers": []
+}

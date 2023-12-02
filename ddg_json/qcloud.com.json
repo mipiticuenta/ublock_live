@@ -1,0 +1,166 @@
+{
+    "domain": "qcloud.com",
+    "owner": {
+        "name": "Tencent Holdings Ltd.",
+        "displayName": "Tencent"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "kepler.captcha",
+        "turing.captcha"
+    ],
+    "cnames": [],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "qcloud\\.com\\/tencent-kepler\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 3,
+            "subdomains": [
+                "kepler.captcha"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Screen.prototype.colorDepth": 2,
+                "CanvasRenderingContext2D.prototype.isPointInPath": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "WebGLRenderingContext.prototype.getContextAttributes": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 2,
+                "Navigator.prototype.language": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.vendor": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.webdriver": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.outerWidth": 2,
+                "window.outerHeight": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "Navigator.prototype.getBattery": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "document.fonts.check": 2,
+                "Document.cookie setter": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2bc44ec886542faf19965c1aad8d5b273f052d76585cc5fd934ce59f1d24ebe2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "tKeplerToken": {
+                    "ttl": 43200026,
+                    "length": 48,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "kepler_fp": {
+                    "ttl": 43200026,
+                    "length": 60,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "kepler_ticket": {
+                    "ttl": 43200026,
+                    "length": 163,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        },
+        {
+            "rule": "qcloud\\.com\\/getwt",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "kepler.captcha"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4f97658ed9b0219920a275fd365d612b069d6e64d7752caf295551cdf4530b6f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        },
+        {
+            "rule": "qcloud\\.com\\/TCaptcha\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "turing.captcha"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bc4ac878d90b7721264cb605ea1efae6bc7ab573c801620651416fab052c1f4a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "monkey.app",
+                "www.monkey.app"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "cdn-go.cn",
+            "prevalence": 0.5555555555555556
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.4444444444444444
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "XHR": 2
+    },
+    "nameservers": [
+        "ns2.qq.com",
+        "ns1.qq.com",
+        "ns4.qq.com",
+        "ns3.qq.com"
+    ]
+}

@@ -1,0 +1,492 @@
+{
+    "domain": "kijk.nl",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "embed",
+        "static",
+        "static.prod",
+        "embed.prod"
+    ],
+    "cnames": [],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "kijk\\.nl\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gids.tv",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "kijk\\.nl\\/_next\\/static\\/css\\/d2e1d3885dc9fe12\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "db5607c75115aa56a65294326267a14cde1aeec9ecb5b02d951f8a3f48ee7cf7"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gids.tv",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "kijk\\.nl\\/lib\\/nr_embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gids.tv",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "kijk\\.nl\\/_next\\/static\\/chunks\\/webpack-86f23edaf58cb0a9\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e848420e089649de5b65a47124d303d72fdbec5c9f01458ba0b985fabe905d48"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gids.tv",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "kijk\\.nl\\/_next\\/static\\/chunks\\/framework-46611630e39cfdeb\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gids.tv",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "kijk\\.nl\\/_next\\/static\\/chunks\\/main-733307f6366dc9b2\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gids.tv",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "kijk\\.nl\\/_next\\/static\\/chunks\\/pages\\/_app-502c4088d481b11c\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "URL.createObjectURL": 2,
+                "Navigator.prototype.requestMediaKeySystemAccess": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ad_detection": {
+                    "ttl": 2678400,
+                    "length": 11,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gids.tv",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "kijk\\.nl\\/_next\\/static\\/chunks\\/532-69b8cdc79df08dbe\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gids.tv",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "kijk\\.nl\\/_next\\/static\\/chunks\\/pages\\/index-53a332c5418844cf\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.name": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gids.tv",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "kijk\\.nl\\/_next\\/static\\/fJFQExNYMv0MCtRXBM5yt\\/_buildManifest\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gids.tv",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "kijk\\.nl\\/_next\\/static\\/fJFQExNYMv0MCtRXBM5yt\\/_ssgManifest\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gids.tv",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "kijk\\.nl\\/prebid\\/ad\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gids.tv",
+                "www.gids.tv",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "kijk\\.nl\\/lib\\/consentproxy\\/otSDKStub\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "eb687324bdaf12c27221fafc5147b7dbdcb6bce202111e6742732024b0e8b4c4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gids.tv",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "kijk\\.nl\\/features-embed\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5e0993f1fb35d25bbc6874ce967a6d6427f02d02585fa86d0c637af9673e2137"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gids.tv",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "kijk\\.nl\\/prebid\\/ad\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "ad_detection": 0.000020436106512987146
+            },
+            "exampleSites": [
+                "gids.tv",
+                "www.gids.tv",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "kijk\\.nl\\/fonts\\/cera_pro_regular\\/CeraPro-Regular\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b019099d724e42bc2b46298a8b1037940310b8cf2e822a241659424941eb2e6a"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gids.tv",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "kijk\\.nl\\/api\\/playerconfig",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ed11dc90919887c53967360d887009fc18f24228b6b8d3cc7aa759959f768775"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gids.tv",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "kijk\\.nl\\/lib\\/Admanager_6\\.43\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "47c8b0095a120005d89e6a3a284c6ca07a68e045538e56d08f36da6d687f2cc8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gids.tv",
+                "www.hartvannederland.nl"
+            ]
+        },
+        {
+            "rule": "kijk\\.nl\\/images\\/alert\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "89308008ba4d53e762fdf913c575723cd77076897087f0d37854fd2363042fff"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gids.tv",
+                "www.hartvannederland.nl"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "kijk.nl",
+            "prevalence": 0.36363636363636365
+        },
+        {
+            "domain": "jwpcdn.com",
+            "prevalence": 0.36363636363636365
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.022727272727272728
+        }
+    ],
+    "types": {
+        "Document": 2,
+        "Stylesheet": 2,
+        "Script": 22,
+        "XHR": 7,
+        "Image": 5,
+        "Font": 2
+    },
+    "nameservers": [
+        "ns-265.awsdns-33.com",
+        "ns-839.awsdns-40.net",
+        "ns-1618.awsdns-10.co.uk",
+        "ns-1069.awsdns-05.org"
+    ]
+}

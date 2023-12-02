@@ -1,0 +1,110 @@
+{
+    "domain": "styla.com",
+    "owner": {
+        "name": "Amazine GmbH",
+        "displayName": "Amazine"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "engine",
+        "config",
+        "seoapi"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "styla\\.com\\/init\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "engine"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "6fbac2d3c4b813e00ffc3b60346915d799a8eed183b59b0afb99e9f7e333362a",
+                "10cff3203bd2fbd3a0782f3fe1c1bd5038d46495933765162a6ea7b1cbeb6512"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hss.com",
+                "www.sarahraven.com",
+                "www.schuhe.de"
+            ]
+        },
+        {
+            "rule": "styla\\.com\\/v2\\/boot",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "config"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "ce72a0094c01acf142debcbf9b80801b19febc04263bc62cf5de5cc7c4a1f9b9",
+                "d9cda5182f40a9c3a59b5e9944b40fd380862950c02129df7870d97cac64297c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sarahraven.com",
+                "www.sarahraven.com",
+                "www.schuhe.de"
+            ]
+        },
+        {
+            "rule": "styla\\.com\\/clients\\/null",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "seoapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "08a52cc810540129921a60ce15342c7ccfcefbdfb13b71252297a87cb79f5aca"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sarahraven.com",
+                "www.sarahraven.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "XHR": 5
+    },
+    "nameservers": [
+        "ns-1711.awsdns-21.co.uk",
+        "ns-353.awsdns-44.com",
+        "ns-907.awsdns-49.net",
+        "ns-1109.awsdns-10.org"
+    ]
+}

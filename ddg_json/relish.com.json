@@ -1,0 +1,186 @@
+{
+    "domain": "relish.com",
+    "owner": {
+        "name": "Fexy Media, Inc.",
+        "displayName": "Fexy Media"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "www"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "relish\\.com\\/scripts\\/relish\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.platform": 4,
+                "Screen.prototype.orientation": 4,
+                "window.innerHeight": 4,
+                "window.innerWidth": 4,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "3709642d486290b0b7fa011ded4c408a90bee042386092398c78c99c0cd3ee55",
+                "d8c4db0a14823c77b7f3c2f2c13763046030a0f6be6756584c6c7fcf207d6499",
+                "dc59d36413a6cad9b59110c666c12949684406764dffb4f06ecaf9c44381f1e0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easyweeknightrecipes.com",
+                "ohsweetbasil.com",
+                "www.inspiredtaste.net",
+                "www.macheesmo.com"
+            ]
+        },
+        {
+            "rule": "relish\\.com\\/scripts\\/storage",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "window.localStorage": 4,
+                "Date.prototype.getTime": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "2ebb731b37e4f788106060dd6628262d405454f01ccc749246270ed234cb1714",
+                "37b5eb05b69eab7c97527374240a7f012fde9258eb8082b2258f8ae96672d2e3",
+                "bc60af3b5d53a911b2a6b87aae85d4f9de7d2925a5bc918881253d19ed4ade8f"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easyweeknightrecipes.com",
+                "ohsweetbasil.com",
+                "www.inspiredtaste.net",
+                "www.macheesmo.com"
+            ]
+        },
+        {
+            "rule": "relish\\.com\\/cdn-cgi\\/rum",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easyweeknightrecipes.com",
+                "ohsweetbasil.com",
+                "www.inspiredtaste.net",
+                "www.macheesmo.com"
+            ]
+        },
+        {
+            "rule": "relish\\.com\\/api\\/v1\\/retailers\\/00000",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "8d02132090a30db62918de15c672e6f1d0068b1a9a9399949e2453f820f6e4b5"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easyweeknightrecipes.com",
+                "ohsweetbasil.com",
+                "www.inspiredtaste.net",
+                "www.macheesmo.com"
+            ]
+        },
+        {
+            "rule": "relish\\.com\\/api-insights\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "36486f6f8ea9c0ede9e0b7fa48630f2a837c376efa25adc78efac2a0a2068665"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easyweeknightrecipes.com",
+                "www.inspiredtaste.net"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.46153846153846156
+        },
+        {
+            "domain": "cloudflareinsights.com",
+            "prevalence": 0.19230769230769232
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.19230769230769232
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.07692307692307693
+        },
+        {
+            "domain": "confiant-integrations.net",
+            "prevalence": 0.07692307692307693
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "Document": 4,
+        "XHR": 4,
+        "Fetch": 6
+    },
+    "nameservers": [
+        "betty.ns.cloudflare.com",
+        "hans.ns.cloudflare.com"
+    ]
+}

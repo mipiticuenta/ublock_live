@@ -1,0 +1,86 @@
+{
+    "domain": "mensxp.com.edgekey.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "frontend-api-navik"
+    ],
+    "cnames": [
+        {
+            "original": "frontend-api-navik.mensxp.com",
+            "resolved": "frontend-api-navik.mensxp.com.edgekey.net"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "mensxp\\.com\\.edgekey\\.net\\/v1\\/api\\/content\\/latest",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "frontend-api-navik"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "frontend-api-navik.mensxp.com",
+                    "resolved": "frontend-api-navik.mensxp.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mensxp.com",
+                "www.mensxp.com"
+            ]
+        },
+        {
+            "rule": "mensxp\\.com\\.edgekey\\.net\\/v1\\/api\\/content\\/latest",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "frontend-api-navik"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "frontend-api-navik.mensxp.com",
+                    "resolved": "frontend-api-navik.mensxp.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "28fa0e621d105c0b84b7853701600b8a4c7b8b91853116e10c1bb99477f30503"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mensxp.com",
+                "www.mensxp.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "types": {
+        "Preflight": 2,
+        "Fetch": 2
+    },
+    "nameservers": []
+}

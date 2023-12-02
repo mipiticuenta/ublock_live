@@ -1,0 +1,183 @@
+{
+    "domain": "freespee.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000613,
+    "sites": 9,
+    "subdomains": [
+        "analytics"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "freespee\\.com\\/js\\/external\\/fs\\.min\\.js",
+            "cookies": 0.0000409,
+            "fingerprinting": 1,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "57c37002e16a8cdc9274f3612aa135655ee49e388ff760e229121339cca9424e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__fs_dncs_sessionid_bilweb": {
+                    "ttl": 1812,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "__fs_dncs_trackingid_bilweb": {
+                    "ttl": 31536012,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "__fs_dncs_exttrack": {
+                    "ttl": 31536029,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "__fs_dncs_sessionid_mscus": {
+                    "ttl": 1829,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "__fs_dncs_trackingid_mscus": {
+                    "ttl": 31536029,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bilweb.se",
+                "classics.honestjohn.co.uk",
+                "vans.honestjohn.co.uk",
+                "www.autovillage.co.uk",
+                "www.honestjohn.co.uk",
+                "www.msccruisesusa.com",
+                "www.msccruises.com"
+            ]
+        },
+        {
+            "rule": "freespee\\.com\\/index\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e6cdbbb0871c0a87a7d665b0ce6a6658c4130fd8b04bf3f4dfc323fbec9ef7fb",
+                "bca44ad616d62a5f09ea4e9c841777133fa5aa2ebf7d24d4db813d5793ef2d7a",
+                "9762f7fea505563c134f7a5cfb4e1c8102a3636a15bf92aff72a021a47d130f5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bilweb.se",
+                "www.iwc.com",
+                "www.msccruisesusa.com",
+                "www.vroomly.com"
+            ]
+        },
+        {
+            "rule": "freespee\\.com\\/js\\/external\\/fs\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c2b0e0984370a0452736824f1fe9b8f5a725f67a9ad8566986f29b53f704dd9f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__fs_dncs_sessionid": {
+                    "ttl": 1810,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "__fs_dncs_trackingid": {
+                    "ttl": 31536010,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "__fs_dncs_exttrack": {
+                    "ttl": 31536010,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "__fs_dncs_sessionid_368208ca-3e20-4f96-a4f7-7032d13aa4bd": {
+                    "ttl": 1805,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "__fs_dncs_trackingid_368208ca-3e20-4f96-a4f7-7032d13aa4bd": {
+                    "ttl": 31536005,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "iwc.com",
+                "www.vroomly.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000545,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.75
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.25
+        }
+    ],
+    "types": {
+        "Script": 13
+    },
+    "nameservers": [
+        "ns-804.awsdns-36.net",
+        "ns-1584.awsdns-06.co.uk",
+        "ns-396.awsdns-49.com",
+        "ns-1479.awsdns-56.org"
+    ]
+}

@@ -1,0 +1,133 @@
+{
+    "domain": "audience11.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "collector"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "audience11\\.com\\/mamon\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "collector"
+            ],
+            "apis": {
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.orientation": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Screen.prototype.width": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0ae83a8daa06bced57b2bdea325b56f65a101a12f1d2ca0cacd5eec935aed962"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "audience11_vc": {
+                    "ttl": 33955205,
+                    "length": 21,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "audience11_sc": {
+                    "ttl": 1805,
+                    "length": 21,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unifyd.tv",
+                "www.unifydhealing.com"
+            ]
+        },
+        {
+            "rule": "audience11\\.com\\/save",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unifyd.tv",
+                "www.unifydhealing.com"
+            ]
+        },
+        {
+            "rule": "audience11\\.com\\/save",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collector"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c88a0b907419a70c27ab7c1f8e5fb54441a4d9c3567e4c928fa7b2091194aecf"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unifyd.tv",
+                "www.unifydhealing.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "parastorage.com",
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.3333333333333333
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Preflight": 2,
+        "Ping": 2
+    },
+    "nameservers": [
+        "ns48.domaincontrol.com",
+        "ns47.domaincontrol.com"
+    ]
+}

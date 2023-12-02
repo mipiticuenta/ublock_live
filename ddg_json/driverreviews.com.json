@@ -1,0 +1,102 @@
+{
+    "domain": "driverreviews.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "widget"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "driverreviews\\.com\\/script\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "3037171f57c35bfceaf367c6c5a0225cd5f53907c75be798e4451f5ab78a5574",
+                "c2ee5fe651ece44958f885f692fdb730a56d7b47fae5d25a30bd11fb0e16ca44"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atseuromaster.co.uk",
+                "www.blackcircles.ca",
+                "www.blackcircles.com",
+                "www.euromaster.nl",
+                "www.hankooktire.com"
+            ]
+        },
+        {
+            "rule": "driverreviews\\.com\\/api\\/retailer\\/widget",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "643b246fc1bfe04cd1053b28355f4f06047ff76ded403611641687c90cbad6df"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blackcircles.ca",
+                "www.blackcircles.com"
+            ]
+        },
+        {
+            "rule": "driverreviews\\.com\\/api\\/retailer\\/widget",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blackcircles.ca",
+                "www.blackcircles.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 5,
+        "Fetch": 2,
+        "Preflight": 2
+    },
+    "nameservers": [
+        "susan.ns.cloudflare.com",
+        "brady.ns.cloudflare.com"
+    ]
+}

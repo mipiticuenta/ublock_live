@@ -1,0 +1,74 @@
+{
+    "domain": "production-tomcat-1846099426.us-west-2.elb.amazonaws.com",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "chip-orders.hgtvhomebysherwinwilliams.com",
+            "resolved": "production-tomcat-1846099426.us-west-2.elb.amazonaws.com"
+        },
+        {
+            "original": "chip-orders.valspar.com",
+            "resolved": "production-tomcat-1846099426.us-west-2.elb.amazonaws.com"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "production-tomcat-1846099426\\.us-west-2\\.elb\\.amazonaws\\.com\\/api\\/v2\\/user\\/token",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "chip-orders.hgtvhomebysherwinwilliams.com",
+                    "resolved": "production-tomcat-1846099426.us-west-2.elb.amazonaws.com"
+                },
+                {
+                    "original": "chip-orders.valspar.com",
+                    "resolved": "production-tomcat-1846099426.us-west-2.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "206e83506419c6ac87770790265bf98dad45c5727caeeab9b716cc5ce69631ef",
+                "4f78f61b0cc363d6ad632d8d843c4b605a8f92038e789827bb15e15abbb91b5b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hgtvhomebysherwinwilliams.com",
+                "www.hgtvhomebysherwinwilliams.com",
+                "www.valspar.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "ensighten.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Fetch": 3
+    },
+    "nameservers": []
+}

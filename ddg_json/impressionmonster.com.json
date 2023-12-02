@@ -1,0 +1,75 @@
+{
+    "domain": "impressionmonster.com",
+    "owner": {
+        "name": "Network Gateway Solutions",
+        "displayName": "Network Gateway Solutions"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "delivery"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "impressionmonster\\.com\\/sync\\.php",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "delivery"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0632809126e70e540c82dfe496603585f90cbfe7e2e9e92eab5910973d8cea97"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "sppc_uuid": {
+                    "ttl": 31536003,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {
+                "sppc_uuid": 0.000006812035504329049,
+                "tf_flbk_uuid": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "contoseroticoscnn.com",
+                "thehun.net"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "trafforsrv.com",
+            "prevalence": 0.8181818181818182
+        },
+        {
+            "domain": "tfosrv.com",
+            "prevalence": 0.18181818181818182
+        }
+    ],
+    "types": {
+        "Script": 2
+    },
+    "nameservers": [
+        "ns1.reflected.net",
+        "ns0.reflected.net"
+    ]
+}

@@ -1,0 +1,115 @@
+{
+    "domain": "brightline.tv",
+    "owner": {
+        "name": "BrightLine Partners LLC",
+        "displayName": "BrightLine"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "cdn-media",
+        "events"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "brightline\\.tv\\/sdk\\/gen2\\/webkit\\/media\\/js\\/brightline\\.webkit\\.sdk\\.2\\.1\\.3\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn-media"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1,
+                "window.innerHeight": 1,
+                "window.innerWidth": 1,
+                "Date.prototype.getTimezoneOffset": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e0de41f00c1301ebf1bf1e3c97abf31c5bea62dd3757e64ef0372e4e9789adc6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbc.com",
+                "www.nbc.com",
+                "www.usanetwork.com"
+            ]
+        },
+        {
+            "rule": "brightline\\.tv\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbc.com",
+                "www.nbc.com",
+                "www.ncaa.com"
+            ]
+        },
+        {
+            "rule": "brightline\\.tv\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbc.com",
+                "www.nbc.com",
+                "www.ncaa.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "XHR": 3,
+        "Preflight": 3
+    },
+    "nameservers": [
+        "ns3.dnsmadeeasy.com",
+        "ns1.dnsmadeeasy.com",
+        "ns2.dnsmadeeasy.com",
+        "ns0.dnsmadeeasy.com",
+        "ns4.dnsmadeeasy.com"
+    ]
+}

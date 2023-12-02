@@ -1,0 +1,280 @@
+{
+    "domain": "rutarget.ru",
+    "owner": {
+        "name": "RuTarget LLC",
+        "displayName": "RuTarget",
+        "privacyPolicy": "https://segmento.ru/privacy",
+        "url": "http://segmento.ru"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00119,
+    "sites": 175,
+    "subdomains": [
+        "yandex-dmp-sync",
+        "sape-sync",
+        "alfasense-sync",
+        "videonow-sync",
+        "buzzoola-sync",
+        "mts-dsp-sync",
+        "solta-sync",
+        "adriver-sync",
+        "videotarget-sync",
+        "adfox-hb-bidder",
+        "clientside-video-bidder",
+        "tag",
+        "cdn",
+        "bidvol-sync"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "rutarget\\.ru\\/sync",
+            "cookies": 0.00105,
+            "fingerprinting": 0,
+            "subdomains": [
+                "yandex-dmp-sync",
+                "sape-sync",
+                "alfasense-sync",
+                "videonow-sync",
+                "buzzoola-sync",
+                "mts-dsp-sync",
+                "solta-sync",
+                "adriver-sync",
+                "videotarget-sync"
+            ],
+            "apis": {},
+            "sites": 154,
+            "prevalence": 0.00105,
+            "cnames": [],
+            "responseHashes": [
+                "77b1d2c0857d4e95d4c2ae7aa0abc5aaafa6bd4581b31203d1592759c26f5c44",
+                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744",
+                "f4eef8263281c0b26486637831251059757bc3fdc4c3a48045a8ef8646b36e8f",
+                "cbd100d7cdab80ff21d2b11415e4d289beb2560bf07960915286afbeb5460c12"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stopgame.ru",
+                "povar.ru",
+                "turkru.guru",
+                "zvukipro.com",
+                "my-calend.ru",
+                "www.webapteka.ru",
+                "aldebaran.ru",
+                "wooordhunt.ru",
+                "ilibrary.ru",
+                "www.ontvtime.ru",
+                "fapreactor.com",
+                "remontka.pro",
+                "lyrsense.com",
+                "www.afisha.ru",
+                "assistentus.ru",
+                "kakpishem.ru",
+                "landofgames.ru",
+                "lisa.ru",
+                "vkino.lafa.site",
+                "basetop.ru"
+            ]
+        },
+        {
+            "rule": "rutarget\\.ru\\/bid",
+            "cookies": 0.0000749,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adfox-hb-bidder",
+                "clientside-video-bidder"
+            ],
+            "apis": {},
+            "sites": 16,
+            "prevalence": 0.000109,
+            "cnames": [],
+            "responseHashes": [
+                "846949c5a40e3ffbb702473e54dfac0646541aa624a844369b6e24e51ddaf96b",
+                "a71702232a771b558b12f8c0012a15f5652b500fd2e33464d283406cee36754d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "3dnews.ru",
+                "calorizator.ru",
+                "cyberleninka.ru",
+                "eadaily.com",
+                "obrazovaka.ru",
+                "ren.tv",
+                "smart-lab.ru",
+                "www.anekdot.ru",
+                "www.drive2.ru",
+                "www.igromania.ru",
+                "www.ixbt.com",
+                "www.liveinternet.ru",
+                "www.playground.ru",
+                "www.rbc.ru",
+                "www.sports.ru",
+                "www.sunhome.ru"
+            ]
+        },
+        {
+            "rule": "rutarget\\.ru\\/tag",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tag"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldorado.ru",
+                "ntvplus.tv",
+                "www.detmir.ru",
+                "www.kaspersky.ru",
+                "www.letu.ru"
+            ]
+        },
+        {
+            "rule": "rutarget\\.ru\\/static\\/tag\\/tag\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 4,
+                "Date.prototype.getTimezoneOffset": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "f3e974f42bddaac647ada00e08552cec3c12f9e45c733bed6d06f3e83f8368a7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dodopizza.ru",
+                "ntvplus.tv",
+                "www.detmir.ru",
+                "www.kaspersky.ru"
+            ]
+        },
+        {
+            "rule": "rutarget\\.ru\\/bid",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "clientside-video-bidder"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "a71702232a771b558b12f8c0012a15f5652b500fd2e33464d283406cee36754d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dtf.ru",
+                "gotovim-doma.ru",
+                "ren.tv",
+                "stopgame.ru",
+                "www.eg.ru",
+                "www.playground.ru"
+            ]
+        },
+        {
+            "rule": "rutarget\\.ru\\/sync",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bidvol-sync",
+                "mts-dsp-sync"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rbc.ru",
+                "www.rbc.ru"
+            ]
+        }
+    ],
+    "categories": [
+        "Ad Motivated Tracking",
+        "Audience Measurement",
+        "Third-Party Analytics Marketing"
+    ],
+    "performance": {},
+    "cookies": 0.00118,
+    "topInitiators": [
+        {
+            "domain": "yastatic.net",
+            "prevalence": 0.6277533039647577
+        },
+        {
+            "domain": "acint.net",
+            "prevalence": 0.1145374449339207
+        },
+        {
+            "domain": "videonow.ru",
+            "prevalence": 0.05947136563876652
+        },
+        {
+            "domain": "viqeo.tv",
+            "prevalence": 0.048458149779735685
+        },
+        {
+            "domain": "yandex.ru",
+            "prevalence": 0.03524229074889868
+        },
+        {
+            "domain": "viadata.store",
+            "prevalence": 0.022026431718061675
+        },
+        {
+            "domain": "buzzoola.com",
+            "prevalence": 0.019823788546255508
+        },
+        {
+            "domain": "ccsyncuuid.net",
+            "prevalence": 0.015418502202643172
+        },
+        {
+            "domain": "alfasense.com",
+            "prevalence": 0.00881057268722467
+        },
+        {
+            "domain": "flocktory.com",
+            "prevalence": 0.006607929515418502
+        }
+    ],
+    "types": {
+        "Image": 154,
+        "XHR": 16,
+        "Document": 5,
+        "Script": 4,
+        "Fetch": 8
+    },
+    "nameservers": [
+        "opal.ns.cloudflare.com",
+        "derek.ns.cloudflare.com"
+    ]
+}

@@ -1,0 +1,189 @@
+{
+    "domain": "ca.edgesuite.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000116,
+    "sites": 17,
+    "subdomains": [
+        "recodata.shared-svc.bellmedia",
+        "auth.9c9media",
+        "account.bellmedia",
+        "production.sportsnet"
+    ],
+    "cnames": [
+        {
+            "original": "account.bellmedia.ca",
+            "resolved": "account.bellmedia.ca.edgesuite.net"
+        },
+        {
+            "original": "auth.9c9media.ca",
+            "resolved": "auth.9c9media.ca.edgesuite.net"
+        },
+        {
+            "original": "production-cdn.sportsnet.ca",
+            "resolved": "production.sportsnet.ca.edgesuite.net"
+        },
+        {
+            "original": "recodata.shared-svc.bellmedia.ca",
+            "resolved": "recodata.shared-svc.bellmedia.ca.edgesuite.net"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "ca\\.edgesuite\\.net\\/api\\/recommendation\\/v2\\/mostPopular\\/articles",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "recodata.shared-svc.bellmedia"
+            ],
+            "apis": {},
+            "sites": 12,
+            "prevalence": 0.0000817,
+            "cnames": [
+                {
+                    "original": "recodata.shared-svc.bellmedia.ca",
+                    "resolved": "recodata.shared-svc.bellmedia.ca.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "f8d73133620749c9b182a5c1c7eb6d866e5cd712db2c8e65a1bf0d00890b93e0",
+                "0ea6a3f19734dbd3413d0260da98390d308f440a129483cebe7c81de61be1d6b",
+                "3bf00f4b291f7291f0cadf036ae64662dd0d80e3dd21e0e2d0118b05d753444c",
+                "80d727477631d93a53f8764d0cedbf2400727dbf6fc4fb28db302281a086d9f1",
+                "02efd07003d8b8e439a62aa3402e3fef3b45aaaa639908fa1269d49202456182",
+                "a652d09ea6c2716dcb2e278c3b62f2e4c87ee6648dfb0fbf0fdc5cb9ec49660c",
+                "5a816298c1b2a0d09c347c0edebc75991253c7206e4d30f578b45eeda99aeeff",
+                "7b45fed8243bdc6a9404c06af6849fc6532011159f717c065140399375ba2508",
+                "c37cb3115e8979d663ccd7ca9476cc5270c54e24dc8addcae86db58574b24a54",
+                "112b84b6e39aa0272062ecbf4ece1efdcf2cab6d2943aac189c515b24796079d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ctvnews.ca",
+                "bc.ctvnews.ca",
+                "edmonton.ctvnews.ca",
+                "kitchener.ctvnews.ca",
+                "london.ctvnews.ca",
+                "montreal.ctvnews.ca",
+                "northernontario.ctvnews.ca",
+                "regina.ctvnews.ca",
+                "saskatoon.ctvnews.ca",
+                "toronto.ctvnews.ca",
+                "windsor.ctvnews.ca",
+                "www.ctvnews.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgesuite\\.net\\/auth\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "auth.9c9media"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "auth.9c9media.ca",
+                    "resolved": "auth.9c9media.ca.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ctvnews.ca",
+                "www.ctvnews.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgesuite\\.net\\/legacy\\/unsupported",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "account.bellmedia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "account.bellmedia.ca",
+                    "resolved": "account.bellmedia.ca.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ctvnews.ca",
+                "www.ctvnews.ca"
+            ]
+        },
+        {
+            "rule": "ca\\.edgesuite\\.net\\/api\\/schedules",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production.sportsnet"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "production-cdn.sportsnet.ca",
+                    "resolved": "production.sportsnet.ca.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "c340e5278d4f980215e3f9ecb662f7f1e4fa36a3eccd86c5590f3cd58446906c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sportsnet.ca",
+                "watch.sportsnet.ca"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0.0000477,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9
+        },
+        {
+            "domain": "sportsnet-static.com",
+            "prevalence": 0.1
+        }
+    ],
+    "types": {
+        "XHR": 12,
+        "Script": 4,
+        "Fetch": 2
+    },
+    "nameservers": []
+}

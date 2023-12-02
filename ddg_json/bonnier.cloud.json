@@ -1,0 +1,122 @@
+{
+    "domain": "bonnier.cloud",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "tracking",
+        "images",
+        "ctm"
+    ],
+    "cnames": [
+        {
+            "original": "tracking.bilmagasinet.dk",
+            "resolved": "tracking.bonnier.cloud"
+        },
+        {
+            "original": "tracking.pctidningen.se",
+            "resolved": "tracking.bonnier.cloud"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "bonnier\\.cloud\\/gtm\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "tracking.bilmagasinet.dk",
+                    "resolved": "tracking.bonnier.cloud"
+                },
+                {
+                    "original": "tracking.pctidningen.se",
+                    "resolved": "tracking.bonnier.cloud"
+                }
+            ],
+            "responseHashes": [
+                "6eb6be137c185f8670851cd4af9576b288839570fead677245a91f6c99afc7a2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bilmagasinet.dk",
+                "pctidningen.se"
+            ]
+        },
+        {
+            "rule": "bonnier\\.cloud\\/files\\/gds\\/production\\/20220303124451\\/NB_component\\.newsletter-box\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5e5c7b463b7ac1c2ddb60c9e0321c52b31407bc6c762c11995e48a029a334fee"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gds.se",
+                "goerdetselv.dk"
+            ]
+        },
+        {
+            "rule": "bonnier\\.cloud\\/api\\/teasers",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ctm"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "8fe32e407a1038ee38753b70e5374b3a46d6ae9d5f16cd5b73c53abaca8f5ed0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gds.se",
+                "iform.dk",
+                "iform.se",
+                "kuntoplus.fi"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Image": 2,
+        "XHR": 4
+    },
+    "nameservers": [
+        "hugh.ns.cloudflare.com",
+        "venus.ns.cloudflare.com"
+    ]
+}

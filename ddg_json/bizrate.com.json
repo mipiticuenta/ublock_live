@@ -1,0 +1,1440 @@
+{
+    "domain": "bizrate.com",
+    "owner": {
+        "name": "Synapse Group, Inc.",
+        "displayName": "Synapse Group",
+        "privacyPolicy": "http://about.bizrate.com/privacy-policy",
+        "url": "http://bizrate.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000599,
+    "sites": 88,
+    "subdomains": [
+        "medals",
+        "insights",
+        "resource",
+        "widget",
+        "chirp"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "bizrate\\.com\\/medals\\/dynamic\\/105878_medal\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "34c46f9c788874d2dba517b9f56f5859cc8498936a3a18f2ea73b659768387d3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "appliancepartspros.com",
+                "www.appliancepartspros.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/js\\/init\\.js",
+            "cookies": 0.0000817,
+            "fingerprinting": 1,
+            "subdomains": [
+                "insights"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 16
+            },
+            "sites": 16,
+            "prevalence": 0.000109,
+            "cnames": [],
+            "responseHashes": [
+                "729170f7f5171aa6a30342437a3a905a3422d0b5db4f9a3486251ea83ec996f4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "babybrezza.com",
+                "beallsflorida.com",
+                "campingworld.com",
+                "tartecosmetics.com",
+                "victoriassecret.com",
+                "www.batterymart.com",
+                "www.beallsflorida.com",
+                "www.brecks.com",
+                "www.campingworld.com",
+                "www.doversaddlery.com",
+                "www.dutchbulbs.com",
+                "www.forestry-suppliers.com",
+                "www.overtons.com",
+                "www.papersource.com",
+                "www.thesource.ca",
+                "www.victoriassecret.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/static\\/e5e7edc6\\/dist\\/main\\.js",
+            "cookies": 0.000109,
+            "fingerprinting": 2,
+            "subdomains": [
+                "resource"
+            ],
+            "apis": {
+                "Navigator.prototype.vendor": 16,
+                "Navigator.prototype.userAgent": 16,
+                "window.innerWidth": 16,
+                "Document.cookie getter": 16,
+                "Navigator.prototype.appName": 14,
+                "window.innerHeight": 16,
+                "Date.prototype.getTime": 16,
+                "Document.cookie setter": 16,
+                "window.localStorage": 5
+            },
+            "sites": 16,
+            "prevalence": 0.000109,
+            "cnames": [],
+            "responseHashes": [
+                "cff7d7ef22f99a1ffbd3b59a328b51b3a7b69e90a5e6332bc5b1d2fe2de7c2b5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cnx_sid": {
+                    "ttl": 31536008,
+                    "length": 18,
+                    "prevalence": 0.00010899256806926478,
+                    "uniqueness": 1
+                },
+                "cnx_start": {
+                    "ttl": 31536008,
+                    "length": 13,
+                    "prevalence": 0.00010899256806926478,
+                    "uniqueness": 1
+                },
+                "cnx_rid": {
+                    "ttl": 31536008,
+                    "length": 19,
+                    "prevalence": 0.00010899256806926478,
+                    "uniqueness": 1
+                },
+                "cnx_views": {
+                    "ttl": 31536008,
+                    "length": 1,
+                    "prevalence": 0.00010899256806926478,
+                    "uniqueness": 0.0625
+                },
+                "cnx_pg": {
+                    "ttl": 31536008,
+                    "length": 13,
+                    "prevalence": 0.00010899256806926478,
+                    "uniqueness": 1
+                },
+                "cnx_t_views": {
+                    "ttl": 1808,
+                    "length": 1,
+                    "prevalence": 0.00010899256806926478,
+                    "uniqueness": 0.0625
+                },
+                "cnx_t_tos": {
+                    "ttl": 1808,
+                    "length": 13,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "babybrezza.com",
+                "beallsflorida.com",
+                "campingworld.com",
+                "tartecosmetics.com",
+                "victoriassecret.com",
+                "www.batterymart.com",
+                "www.beallsflorida.com",
+                "www.brecks.com",
+                "www.campingworld.com",
+                "www.doversaddlery.com",
+                "www.dutchbulbs.com",
+                "www.forestry-suppliers.com",
+                "www.overtons.com",
+                "www.papersource.com",
+                "www.thesource.ca",
+                "www.victoriassecret.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/js\\/invite-template",
+            "cookies": 0.000109,
+            "fingerprinting": 0,
+            "subdomains": [
+                "insights"
+            ],
+            "apis": {},
+            "sites": 16,
+            "prevalence": 0.000109,
+            "cnames": [],
+            "responseHashes": [
+                "647f5cc1b124811f2c4566434e4c151e17aba77df1d9a698c4df178fe13ea2ec",
+                "af9f688e607864be8ad33b316ebef9c4613ac487327d603702b377df6a8c8cdd",
+                "fc70758c171616bf9634c37dd31d9dda450447ae2dd1320dc668cbe620b1f610",
+                "8090220f3b03d50985888bd113c3f1d1f3057d515b3b621f97760ffb2fc9ffa3",
+                "d61d835deb6cb5fd7fb9e4331dd7020d0fa437fb86998cb253a1b6e8c8e87cde",
+                "67cdb9bed3af136bd8da68dbe820934941cc73f2a43e9d8218a603372949ca62",
+                "513dfcfaea112648c72dce39e1677ac20521fe6ed107d2351b8894083ed9e783",
+                "83e6c6fd458f6e3c5262038c7384a5198bcc9f5ab5be75a91951b4663ffd9db6",
+                "447b38fff4d145992268c97e5d85fa991ff78a7fbe5a2cf02ed45599370bd409",
+                "9b780cad7dd4b6e700da64ea59544143a56b668656aaac92de025351cb8d9cd0",
+                "9670857dab7ef3fccbe84714673ce4b3177e7662dc665b179e590923e46ee65f",
+                "98301478b412d5f2ee8cad0705020932d76af1cd721f8dbe3d8bcedba06ef5ee",
+                "bf3e1d52188156964c5c49513334e0a9a818b34ebf1607d55d45468e452b8f16",
+                "06e14c0a03eb9b4f1ed212660d6b5a8a206b4084782664e355b833ebe8210232",
+                "40ada637296d3c5f01148c6e1a7b8ae5dfa95dd0e74bfb05983f5b9c4f12854b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "babybrezza.com",
+                "beallsflorida.com",
+                "campingworld.com",
+                "tartecosmetics.com",
+                "victoriassecret.com",
+                "www.batterymart.com",
+                "www.beallsflorida.com",
+                "www.brecks.com",
+                "www.campingworld.com",
+                "www.doversaddlery.com",
+                "www.dutchbulbs.com",
+                "www.forestry-suppliers.com",
+                "www.overtons.com",
+                "www.papersource.com",
+                "www.thesource.ca",
+                "www.victoriassecret.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/static\\/e5e7edc6\\/dist\\/main\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "resource"
+            ],
+            "apis": {},
+            "sites": 14,
+            "prevalence": 0.0000954,
+            "cnames": [],
+            "responseHashes": [
+                "149415b80daa685bd05576bd848539f0dd7b3e428f0696ab980d05444d8b0462"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "babybrezza.com",
+                "campingworld.com",
+                "tartecosmetics.com",
+                "victoriassecret.com",
+                "www.batterymart.com",
+                "www.brecks.com",
+                "www.campingworld.com",
+                "www.doversaddlery.com",
+                "www.dutchbulbs.com",
+                "www.forestry-suppliers.com",
+                "www.overtons.com",
+                "www.papersource.com",
+                "www.thesource.ca",
+                "www.victoriassecret.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/collect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "insights"
+            ],
+            "apis": {},
+            "sites": 16,
+            "prevalence": 0.000109,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "cnx_sid": 0.00010899256806926478,
+                "cnx_start": 0.00010899256806926478,
+                "cnx_rid": 0.00010899256806926478,
+                "cnx_pg": 0.00010899256806926478
+            },
+            "exampleSites": [
+                "babybrezza.com",
+                "beallsflorida.com",
+                "campingworld.com",
+                "tartecosmetics.com",
+                "victoriassecret.com",
+                "www.batterymart.com",
+                "www.beallsflorida.com",
+                "www.brecks.com",
+                "www.campingworld.com",
+                "www.doversaddlery.com",
+                "www.dutchbulbs.com",
+                "www.forestry-suppliers.com",
+                "www.overtons.com",
+                "www.papersource.com",
+                "www.thesource.ca",
+                "www.victoriassecret.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/awards\\/vertical\\/large\\/280525_coe\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d8d7e61b9ce1d6d8ab8fa6387af99b7065e4a26b170a78b9b9cf5e4a77bfaa80"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "firemountaingems.com",
+                "www.firemountaingems.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/awards\\/vertical\\/medium\\/52916_coe\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e276fb302898bdedbd10a9766451f6c10b37843c122e34b426723a5ba89a26ff"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "1aauto.com",
+                "www.1aauto.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/awards\\/horizontal\\/22495_coe\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "643423edec4eb9bbbbb9b4296cafd48d2d509218d83b8e27caef77c3fd1df466"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adorama.com",
+                "www.adorama.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/js\\/258422_medal\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b56ca47862422de9ce38b3e7602635af6cbae48705309c55bb979658d413cbb7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brecks.com",
+                "www.brecks.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/review\\/258422\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2a20667b4ce2369f39d468d59c4fea0fbaccb734ea5b293f13e30c9f9a6677e2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brecks.com",
+                "www.brecks.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/summary\\/258422_medal_summary\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1b64a48c539d50a557816492122e74654e2eb70ee150a884595b55f1b99a1344"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brecks.com",
+                "www.brecks.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/review\\/258422",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4dae9c414bdb1fd876a654d0405a41f584e44f4fcd0f2f734045f413215c90cb"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brecks.com",
+                "www.brecks.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/review\\/258422",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brecks.com",
+                "www.brecks.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/sync\\.js",
+            "cookies": 0.0000477,
+            "fingerprinting": 1,
+            "subdomains": [
+                "chirp"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 7,
+                "Document.cookie setter": 7
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "7fd6ef590c3345032c89bd6bba6b27e12297fda9ac87e57debc2e84b0683152c",
+                "0ecb6b7266b53998684b0e2e3926bd3aad59b09764d6776ace6fafc5c71a7403",
+                "f6cadd8d8c498365bc35e37876a595426d3035a467985dd069274730137e3cb2",
+                "8727c354a5a3010c26a5563eff96aea84880a046d6a485f4680f9f5c80c612a2",
+                "12eab07b806ccf0df90a3cf2ca080addf2970e5db11838339baf40e270d1e542",
+                "8b01ea8c34925fa932c4de17eaf48bd494b614030f47188050f5e8f5e2f6d9a8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "UID_BIZRATE": {
+                    "ttl": 157680008,
+                    "length": 35,
+                    "prevalence": 0.00004768424853030334,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brecks.com",
+                "www.brecks.com",
+                "www.buytwowayradios.com",
+                "www.gardensalive.com",
+                "www.gurneys.com",
+                "www.michiganbulb.com",
+                "www.springhillnursery.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/review\\/69509\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2a20667b4ce2369f39d468d59c4fea0fbaccb734ea5b293f13e30c9f9a6677e2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buytwowayradios.com",
+                "www.buytwowayradios.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/review\\/69509",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c9a3e33f5579b3baf195c42c89cfddfe14e231ebe1d8b0326e33d82907d157e9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buytwowayradios.com",
+                "www.buytwowayradios.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/review\\/69509",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buytwowayradios.com",
+                "www.buytwowayradios.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/dynamic\\/77500_medal\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "efa2443f429fb69628b4b5c4345eae1f766e05a7b64c18848e05dc3de7f74896"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dacardworld.com",
+                "www.dacardworld.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/awards\\/vertical\\/77500_coe\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ed8d57425c29aa82d16e8f7f6889c190846eb1b13238e54c3fb8602f274ce26e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dacardworld.com",
+                "www.dacardworld.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/summary\\/77500_medal_summary\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "18ba15e07a493172633cc0e83ba8d1ab535b6ac552c8ad0199d4a7f5473b5125"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dacardworld.com",
+                "www.dacardworld.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/js\\/233795_medal\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0075104a55bc22b3363dd1b404795ca18185cd6a77a10b1737f99125dfba533c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "decorativeceilingtiles.net",
+                "www.decorativeceilingtiles.net"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/summary\\/233795_medal_summary\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "49c52aebc4ad93ac7f1755fd6b22b0939062042c14117022861c787193479d2f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "decorativeceilingtiles.net",
+                "www.decorativeceilingtiles.net"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/js\\/139768_medal\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "56ae64c506b69ca53c846603cb33fa3e410d657bf5bba46190c18063ea7c4256"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doversaddlery.com",
+                "www.doversaddlery.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/dynamic\\/139768_medal\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "efa2443f429fb69628b4b5c4345eae1f766e05a7b64c18848e05dc3de7f74896"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doversaddlery.com",
+                "www.doversaddlery.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/summary\\/139768_medal_summary\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "49c52aebc4ad93ac7f1755fd6b22b0939062042c14117022861c787193479d2f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doversaddlery.com",
+                "www.doversaddlery.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/collect\\/product",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "insights"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "cnx_sid": 0.000013624071008658098,
+                "cnx_start": 0.000013624071008658098,
+                "cnx_rid": 0.000013624071008658098,
+                "cnx_pg": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "doversaddlery.com",
+                "www.thesource.ca"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/review\\/258416\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2a20667b4ce2369f39d468d59c4fea0fbaccb734ea5b293f13e30c9f9a6677e2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gurneys.com",
+                "www.gurneys.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/review\\/258416",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9823abd2b5ed1966be7a1a8379690bde79cb1cf80201ee9768842e14320b62f6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gurneys.com",
+                "www.gurneys.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/review\\/258416",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gurneys.com",
+                "www.gurneys.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/js\\/261_medal\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {
+                "Document.cookie getter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "6487d8cd1e31daecbc726d4d210a651fedcd05693b7a895e8bda01fd7bcfcdc9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "horizonhobby.com",
+                "www.horizonhobby.com",
+                "www.towerhobbies.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/dynamic\\/230799_medal\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "efa2443f429fb69628b4b5c4345eae1f766e05a7b64c18848e05dc3de7f74896"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "liveaquaria.com",
+                "www.liveaquaria.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/awards\\/horizontal\\/146613_coe\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5a5266dd73281d7537975c16c523f5762ff0e70f372bab4e7577e4383e1f45c4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovelyskin.com",
+                "www.lovelyskin.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/dynamic\\/113956_medal\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "efa2443f429fb69628b4b5c4345eae1f766e05a7b64c18848e05dc3de7f74896"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "professionalplastics.com",
+                "www.professionalplastics.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/js\\/113956_medal\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8bb03959cefe63cb5651784bcf7be27621f1e01a65b953baf0367b8e0b531b83"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "professionalplastics.com",
+                "www.professionalplastics.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/summary\\/113956_medal_summary\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "50a3eebd90892bfd2dd71d8f5544bb18fa330f4d106eec35e33a12e088aa8fba"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "professionalplastics.com",
+                "www.professionalplastics.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/dynamic\\/small\\/17136_medal\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "547f701f3264689ccb28995e8ac7f8631f612a9f7743cdd6ae18f0150002ae09"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ross-simons.com",
+                "www.ross-simons.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/js\\/17136_medal\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dd38f0abd03efe136210549b12cba5e9c768d564ef85b94d0efe0f9dda683c4d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ross-simons.com",
+                "www.ross-simons.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/summary\\/17136_medal_summary\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "18ba15e07a493172633cc0e83ba8d1ab535b6ac552c8ad0199d4a7f5473b5125"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ross-simons.com",
+                "www.ross-simons.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/dynamic\\/20881_medal\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "efa2443f429fb69628b4b5c4345eae1f766e05a7b64c18848e05dc3de7f74896"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scuba.com",
+                "www.scuba.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/js\\/221124_medal\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "81b92c1b537a2a75415b9c2185e23343adab5a439b46d61ebc2df330efcf2e29"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sdtrucksprings.com",
+                "www.sdtrucksprings.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/dynamic\\/221124_medal\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8e2cc52e81a074be372a0b841f5d637fb11ac20918e5c22ef590982a078929f2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sdtrucksprings.com",
+                "www.sdtrucksprings.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/summary\\/221124_medal_summary\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e5ad4bce9e183ad73839c590d86e24aa4fb0f8f913137c147a5ea9faff5cd597"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sdtrucksprings.com",
+                "www.sdtrucksprings.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/js\\/50670_medal\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5494721406e072a51a539ef01f9164500b4d9526efcdb239595e4404eac81f95"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "springhillnursery.com",
+                "www.springhillnursery.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/review\\/50670\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2a20667b4ce2369f39d468d59c4fea0fbaccb734ea5b293f13e30c9f9a6677e2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "springhillnursery.com",
+                "www.springhillnursery.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/dynamic\\/50670_medal\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "34c46f9c788874d2dba517b9f56f5859cc8498936a3a18f2ea73b659768387d3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "springhillnursery.com",
+                "www.springhillnursery.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/summary\\/50670_medal_summary\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "50a3eebd90892bfd2dd71d8f5544bb18fa330f4d106eec35e33a12e088aa8fba"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "springhillnursery.com",
+                "www.springhillnursery.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/review\\/50670",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a5ed7dd18710d2073593cb73734d688b5683734a2d76a46ad562f154ab092635"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "springhillnursery.com",
+                "www.springhillnursery.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/review\\/50670",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "springhillnursery.com",
+                "www.springhillnursery.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/dynamic\\/60472_medal\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "efa2443f429fb69628b4b5c4345eae1f766e05a7b64c18848e05dc3de7f74896"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sstack.com",
+                "www.sstack.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/awards\\/horizontal\\/60472_coe\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e9fbaac5fd15503563d97bac5b2ed5e2f8b2b9b82e60d2c7bad9c60d4b0f073f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sstack.com",
+                "www.sstack.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/dynamic\\/small\\/19220_medal\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "547f701f3264689ccb28995e8ac7f8631f612a9f7743cdd6ae18f0150002ae09"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tactics.com",
+                "www.tactics.com"
+            ]
+        },
+        {
+            "rule": "bizrate\\.com\\/medals\\/dynamic\\/18022_medal\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medals"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "efa2443f429fb69628b4b5c4345eae1f766e05a7b64c18848e05dc3de7f74896"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zzounds.com",
+                "www.zzounds.com"
+            ]
+        }
+    ],
+    "categories": [
+        "Ad Motivated Tracking",
+        "Advertising",
+        "Analytics",
+        "Audience Measurement",
+        "Third-Party Analytics Marketing",
+        "Action Pixels",
+        "Embedded Content"
+    ],
+    "performance": {},
+    "cookies": 0.000225,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6225165562913907
+        },
+        {
+            "domain": "yottaa.com",
+            "prevalence": 0.16556291390728478
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.152317880794702
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.026490066225165563
+        },
+        {
+            "domain": "bolt.com",
+            "prevalence": 0.019867549668874173
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.013245033112582781
+        }
+    ],
+    "types": {
+        "Image": 52,
+        "Script": 80,
+        "Stylesheet": 14,
+        "Ping": 18,
+        "Fetch": 8,
+        "Preflight": 8
+    },
+    "nameservers": [
+        "ns-2038.awsdns-62.co.uk",
+        "ns-1189.awsdns-20.org",
+        "ns-528.awsdns-02.net",
+        "ns-398.awsdns-49.com"
+    ]
+}

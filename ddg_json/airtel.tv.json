@@ -1,0 +1,100 @@
+{
+    "domain": "airtel.tv",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "events",
+        "package"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "airtel\\.tv\\/tv\\/events\\/v1\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b866b2657c15e1ae9818ca98a60278a0604665701078511d806334ab1858f03b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "airtelxstream.in",
+                "www.airtelxstream.in"
+            ]
+        },
+        {
+            "rule": "airtel\\.tv\\/app\\/v3\\/layout",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "package"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "airtelxstream.in",
+                "www.airtelxstream.in"
+            ]
+        },
+        {
+            "rule": "airtel\\.tv\\/app\\/v3\\/layout",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "package"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "edfac2cf330faa46b94e5c78877c794b1dbccf41155204119bce2e3c2fce6952"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "airtelxstream.in",
+                "www.airtelxstream.in"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "XHR": 4,
+        "Preflight": 2
+    },
+    "nameservers": [
+        "ns-573.awsdns-07.net",
+        "ns-1283.awsdns-32.org",
+        "ns-122.awsdns-15.com",
+        "ns-1901.awsdns-45.co.uk"
+    ]
+}

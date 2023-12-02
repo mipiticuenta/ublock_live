@@ -1,0 +1,107 @@
+{
+    "domain": "graphcdn.app",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "drive-boot",
+        "contentful-opi",
+        "rugby-au-cms"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "graphcdn\\.app\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "drive-boot",
+                "contentful-opi",
+                "rugby-au-cms"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drive.com.au",
+                "www.drive.com.au",
+                "www.opi.com",
+                "www.rugby.com.au"
+            ]
+        },
+        {
+            "rule": "graphcdn\\.app\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "drive-boot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "aedded7f78da39e9a291ab393e7888115a89c948ac94a5caea8c03b96996ec36"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drive.com.au",
+                "www.drive.com.au"
+            ]
+        },
+        {
+            "rule": "graphcdn\\.app\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "contentful-opi",
+                "rugby-au-cms"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "27a15b6d31b1f67cde3479b2d34a8a6ee83a43a4e6aeae6ba7c4e47fdfbcb565",
+                "3e886ce0f91fde7553c9dc646c38e5b8de96275bd8f642211653e59677bb3edf"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opi.com",
+                "www.opi.com",
+                "www.rugby.com.au"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Preflight": 4,
+        "XHR": 2,
+        "Fetch": 3
+    },
+    "nameservers": [
+        "yadiel.ns.cloudflare.com",
+        "sloan.ns.cloudflare.com"
+    ]
+}

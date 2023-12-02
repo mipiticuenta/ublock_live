@@ -1,0 +1,132 @@
+{
+    "domain": "funnelfuel.io",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "analytics"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "funnelfuel\\.io\\/js\\/tracker\\.php",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
+                "Navigator.prototype.vendor": 2,
+                "Document.cookie getter": 2,
+                "window.name": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "NavigatorUAData.prototype.brands": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "788134ddc38fd90d1349aeb732a5adf97a82872ca344a997ea8d6f50bcc783f2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pk_id.5.1852": {
+                    "ttl": 33955204,
+                    "length": 28,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_pk_ses.5.1852": {
+                    "ttl": 1806,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "crn.com",
+                "www.crn.com"
+            ]
+        },
+        {
+            "rule": "funnelfuel\\.io\\/js\\/tracker\\.php",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "crn.com",
+                "www.crn.com"
+            ]
+        },
+        {
+            "rule": "funnelfuel\\.io\\/plugins\\/HeatmapSessionRecording\\/configs\\.php",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ea5ff765591bd094854e8ce00d5148572063a804258d9245dbb412baa81b4296"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "crn.com",
+                "www.crn.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "Ping": 2
+    },
+    "nameservers": [
+        "ns-88.awsdns-11.com",
+        "ns-580.awsdns-08.net",
+        "ns-1110.awsdns-10.org",
+        "ns-1731.awsdns-24.co.uk"
+    ]
+}

@@ -1,0 +1,182 @@
+{
+    "domain": "go-odu.org",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "my"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "go-odu\\.org\\/mtc\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 2,
+            "subdomains": [
+                "my"
+            ],
+            "apis": {
+                "Navigator.prototype.language": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Navigator.prototype.appVersion": 3,
+                "Navigator.prototype.doNotTrack": 3,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 3,
+                "window.localStorage": 3,
+                "Document.cookie setter": 3,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.plugins": 1,
+                "Navigator.prototype.appName": 1,
+                "HTMLMediaElement.prototype.canPlayType": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "26e4ebf8ab4461df7df88c5aa6bc51f1dfa4e6e573e56508a64146f7938ffcbc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "mtc_id": {
+                    "ttl": null,
+                    "length": 7,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                },
+                "mtc_sid": {
+                    "ttl": null,
+                    "length": 23,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                },
+                "mautic_device_id": {
+                    "ttl": null,
+                    "length": 23,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "odu.edu",
+                "ww1.odu.edu",
+                "www.odu.edu"
+            ]
+        },
+        {
+            "rule": "go-odu\\.org\\/mtc\\/event",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "my"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "5260030394549cb2eb5f457042eabce3cc45dda85f73989c30a942081f159e0b",
+                "a4f8785f58d3043fba96e4180532369cedfb5398ba96d8154256cedcdb79a7aa"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "odu.edu",
+                "ww1.odu.edu",
+                "www.odu.edu"
+            ]
+        },
+        {
+            "rule": "go-odu\\.org\\/mtc\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "my"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "odu.edu",
+                "ww1.odu.edu",
+                "www.odu.edu"
+            ]
+        },
+        {
+            "rule": "go-odu\\.org\\/mautic\\/app\\/bundles\\/CoreBundle\\/Assets\\/js\\/libraries\\/froogaloop2\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "my"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f0a7e38d3da10f50c1f5f4ed4e50d920bd6e81f650a7c2f05d200bdfa3d47426"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "odu.edu",
+                "www.odu.edu"
+            ]
+        },
+        {
+            "rule": "go-odu\\.org\\/mautic\\/media\\/css\\/mediaelementplayer\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "my"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "adea6cfe24286114630ca422a7924926e9f74b1cd0987bb769c55801cd50f7a7"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "odu.edu",
+                "www.odu.edu"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 5,
+        "XHR": 3,
+        "Preflight": 3,
+        "Stylesheet": 2
+    },
+    "nameservers": [
+        "ns-675.awsdns-20.net",
+        "ns-1482.awsdns-57.org",
+        "ns-1880.awsdns-43.co.uk",
+        "ns-276.awsdns-34.com"
+    ]
+}

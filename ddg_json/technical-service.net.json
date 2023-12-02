@@ -1,0 +1,93 @@
+{
+    "domain": "technical-service.net",
+    "owner": {
+        "name": "CBC Cologne Broadcasting Center GmbH",
+        "displayName": "CBC Cologne Broadcasting Center"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000102,
+    "sites": 15,
+    "subdomains": [
+        "te",
+        "te-static"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "technical-service\\.net\\/api",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "te"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7ed908190a07ab5a0e74ee427fd883b5cd2f9e54ef3e21b9d6805592f30bf20c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "uuidpd": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "rtl.de",
+                "www.tvnow.de"
+            ]
+        },
+        {
+            "rule": "technical-service\\.net\\/netid\\/ntvde\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "te-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9567161dd3d77374b52fb8127db686978d71c4042bd6fa7392a0ba5c37250f50"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "n-tv.de",
+                "www.n-tv.de"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8666666666666667
+        },
+        {
+            "domain": "rtl.de",
+            "prevalence": 0.06666666666666667
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.06666666666666667
+        }
+    ],
+    "types": {
+        "Fetch": 2,
+        "Script": 2
+    },
+    "nameservers": [
+        "ns1.eurodns.com",
+        "ns2.eurodns.com",
+        "ns3.eurodns.com",
+        "ns4.eurodns.com"
+    ]
+}

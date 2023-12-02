@@ -1,0 +1,642 @@
+{
+    "domain": "exdynsrv.com",
+    "owner": {
+        "name": "ExoClick, S.L.",
+        "displayName": "ExoClick",
+        "privacyPolicy": "https://www.exoclick.com/privacy/",
+        "url": "http://exoclick.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000708,
+    "sites": 104,
+    "subdomains": [
+        "a",
+        "syndication"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "exdynsrv\\.com\\/ads\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "a"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e1da8a7084d3171a06501700b818317fb9c8162945a87bf184ce2abc58e3d08a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myvidster.com",
+                "api.myvidster.com",
+                "backpagelocals.com",
+                "www.myvidster.com"
+            ]
+        },
+        {
+            "rule": "exdynsrv\\.com\\/ads-iframe-display\\.php",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "syndication"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "101d99d2d77d1822eb4ba5adc241d1f002c7841252b0fbbb175a1243d0452bf2",
+                "c02d952983f70be26f78d92d980577bb52d79c834aed8e4a0ee446863a92af5c"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myvidster.com",
+                "api.myvidster.com",
+                "backpagelocals.com",
+                "www.myvidster.com"
+            ]
+        },
+        {
+            "rule": "exdynsrv\\.com\\/ad-provider\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "a"
+            ],
+            "apis": {
+                "Document.cookie getter": 12,
+                "Navigator.prototype.userAgent": 31,
+                "Navigator.prototype.language": 16,
+                "NavigatorUAData.prototype.getHighEntropyValues": 12,
+                "Document.cookie setter": 3,
+                "window.innerWidth": 9,
+                "window.innerHeight": 3
+            },
+            "sites": 42,
+            "prevalence": 0.000286,
+            "cnames": [],
+            "responseHashes": [
+                "1629502f1264b6513d4b70eb04c4d424165ccea710643c964670b9a6b6a98226"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "zone-cap-4929538": {
+                    "ttl": 363,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "zone-cap-5045012": {
+                    "ttl": 362,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "zone-cap-4929426": {
+                    "ttl": 363,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "justpicsplease.com",
+                "www.homemoviestube.com",
+                "www.amateurporn.me",
+                "clipsbai.com",
+                "deepfakesporn.com",
+                "tioanime.com",
+                "www.novelcool.com",
+                "www.freexcafe.com",
+                "daftsex.net",
+                "heroine-xxx.com",
+                "www.pornlulu.com",
+                "asstoo.com",
+                "tlgrm.ru",
+                "meaws.com",
+                "kissjav.li",
+                "mangadistrict.com",
+                "hentai2w.com",
+                "vercomicsporno.com",
+                "www.mypornhere.com",
+                "moviexk.biz"
+            ]
+        },
+        {
+            "rule": "exdynsrv\\.com\\/v1\\/api\\.php",
+            "cookies": 0.000177,
+            "fingerprinting": 0,
+            "subdomains": [
+                "syndication"
+            ],
+            "apis": {},
+            "sites": 27,
+            "prevalence": 0.000184,
+            "cnames": [],
+            "responseHashes": [
+                "a71d497f0037da1de656dd8ecb4174c805085735ec3e0d170715d6b78b60a9be",
+                "610b192cb2ab33f64a3c0aac318c89a1da279d17f8717b09881965f586848b4a",
+                "86f21ba41246dee5161de0bd61df2f914243d415c5cf6a4fab1beabe6ea43272",
+                "673ec0813343fc780051c7133edc8dbc479112a3c8afb504a019187a46d73f37",
+                "fe8f7adfcd6de147884b6375a694fcf0b03e612c70abe9f67dcf71433d7415d8",
+                "dd173ee33caa9e1e3b0bdd4a5a851874ea53b31c010517ace94cf4a9e083d35c",
+                "0e4ea155410f10b67f33c6dfa86c9a230af32e1f801375a18d2eb366c3174d3f",
+                "989c924c7c3ec1f95e7cda89d6f2735ebfa70b4ac7faf01c86b0cc68f6a57324",
+                "a0963fa6db1f5a46fbdf02b04bc54616ba5960cfc4187135a55c7276e8dbd9c3",
+                "df2950d68da1ccc75f5aedcca87b95d06287edb95d3c64626562845e4f29ef47",
+                "93d192e4553fbf70f886eaf19392c34219259119ccf7aa9d33e49465a5ea9727",
+                "0df84a3ffa026a54bc0cc349d07e59c0420879de8cac3885739b4194fb9545f5",
+                "fa768832a8a69a5eb47ca1ecc1c1bf0b042e82d866dbddff29b2847efdd9a846",
+                "e272c254464ad58ab674681346063d8d69fb5c5337bd9edbe94656aae24b1705",
+                "9d71d03074dca183ed337df66b3af322e2cb34326e8bbfcc6e47c145d2dc4d11",
+                "b5351cbb99a16b1114db67ad35f769413f449ef48ee99e67c12a592886a1e3c4",
+                "be012975a838dad4d51024b251bbf74241ac6a1c794d5ca0d279f04921cfbe86",
+                "e23f29492342f690f69d37874a783af6080851ef00b924f9ca635ba428ca5ac1",
+                "1f88733ed64748afd51ca7fee15037251c330a1c3bf4d2802df88a37dd2cac03",
+                "c3cb24a84fd19e5d35d3fbd7623be592a7aa59162fa889435141e94ed85915bf",
+                "b6b626adae3cf05519f0320531d219eb9e57ed7c773a0d5826a95ebf189a94f7",
+                "070cc5932d62627c1615e8d89ccb20b477f7cf02035087c4ad34f3b5873e1f64",
+                "40cb3e6cdd7ed8f4668eacd8a8f9c2e8b7dce9cf459cb3d6dadac901b08367bf",
+                "8d09663cecb1424562f2204aabc05e5ff8f97198997b929890f6c4cf59301609",
+                "3b0f34f4d2a093937ff582c0a7d2508174a85dbdf8f1e0f7151af38a81721fd0",
+                "b081e89d5d687d900a35fed54bc0dafd757f857a67a4ff1dd8e033ef44d97120"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "justpicsplease.com",
+                "www.homemoviestube.com",
+                "vercomicsporno.com",
+                "tlgrm.ru",
+                "megapornx.com",
+                "www.mypornhere.com",
+                "asianporn.li",
+                "moviexk.biz",
+                "taligram.org",
+                "meaws.com",
+                "javideo.net",
+                "kissjav.li",
+                "toonx.net",
+                "hentai2w.com",
+                "hitomi.la",
+                "vermangasporno.com",
+                "mangadistrict.com",
+                "imgchest.com",
+                "clipsbai.com",
+                "chapmanganato.com"
+            ]
+        },
+        {
+            "rule": "exdynsrv\\.com\\/cimp\\.php",
+            "cookies": 0.000177,
+            "fingerprinting": 0,
+            "subdomains": [
+                "syndication"
+            ],
+            "apis": {},
+            "sites": 26,
+            "prevalence": 0.000177,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "justpicsplease.com",
+                "www.homemoviestube.com",
+                "xxxpicz.com",
+                "asianporn.li",
+                "v5.voiranime.com",
+                "javideo.net",
+                "moviexk.biz",
+                "kissjav.li",
+                "toonx.net",
+                "vercomicsporno.com",
+                "www.mypornhere.com",
+                "www.freexcafe.com",
+                "megapornx.com",
+                "www.farthub.com",
+                "hitomi.la",
+                "imgchest.com",
+                "chapmanganato.com",
+                "meaws.com",
+                "clipsbai.com",
+                "www.manhuagui.com"
+            ]
+        },
+        {
+            "rule": "exdynsrv\\.com\\/nativeads-v2\\.js",
+            "cookies": 0.0000817,
+            "fingerprinting": 1,
+            "subdomains": [
+                "a"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 21,
+                "NavigatorUAData.prototype.getHighEntropyValues": 14,
+                "Date.prototype.getTime": 14,
+                "window.innerWidth": 16,
+                "Document.cookie setter": 12
+            },
+            "sites": 27,
+            "prevalence": 0.000184,
+            "cnames": [],
+            "responseHashes": [
+                "660fa9aa6b2f12e102eb6241326e7caa3f77133101fe7d39b6ff3b42ad40004a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "imagefap.com",
+                "www.imagefap.com",
+                "www.fullhdxxxindia.com",
+                "xxxbp.tv",
+                "www.youngsexer.com",
+                "www.hdpornvideo.xxx",
+                "www.sexfreehdxxxindia.pro",
+                "www.pornv.xxx",
+                "videosection.com",
+                "deepsukebe.io",
+                "www.atube.xxx",
+                "www.porno71.com",
+                "www.sexmovr.com",
+                "xnxvideosex.com",
+                "xxxbf.tv",
+                "de.hdsex.org",
+                "xxxgrannypics.com",
+                "www.sexm.xxx",
+                "cdn.deepsukebe.io",
+                "www.sex-hd.xxx"
+            ]
+        },
+        {
+            "rule": "exdynsrv\\.com\\/splash\\.php",
+            "cookies": 0.000157,
+            "fingerprinting": 0,
+            "subdomains": [
+                "syndication"
+            ],
+            "apis": {},
+            "sites": 32,
+            "prevalence": 0.000218,
+            "cnames": [],
+            "responseHashes": [
+                "d920123050af0b1524e915866a402a9e8900e74f0182b77d8a408e98423e037b",
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "29cc4d092c34893477d290ae72b971fc2be4ab3f51b8738b22cda8ce1bf985f3",
+                "3b01a3560396fc7cbcf1fa8d2f8031cf8d40b9aa0b81ffea17260847ad82d45d",
+                "99df0b49953d5c752ac4b3d437b4e0726c257ed2283366cee5b1ac35a58f9b29",
+                "fb112e178015248375bc47835832442a20f794e602d753d1adc2cdaea23f97ef",
+                "ca043665335b433d83a84176d8afcfa22e9af9cc83ae43e3ebac8b2f2eb1692d",
+                "8dcbb26518274058b4e431e6d7807e632361755ccd81347f3fc8797662584db9",
+                "1831a30e197bce140bfba7e63e522ed81fc5ed1b1624bd024f9beefbdca54c8d",
+                "3416a6607686e7f4fcd982c70a334fd2d30ab92fbef89af9d2d12c1fb9141557",
+                "2cfca3c16af25af657482c544672b2733ec9fc642916a68767110f1c694aa73c",
+                "4b389df931d44b2867084fa338219e1c353dfe8e6e416628c5cccf7c22687957",
+                "f4a07edf4eb5b808a79f29d8cbf8817542a0dcea6fb269403d1aa752fbb72985",
+                "3ed101185dd8c5e305764f638e6662ace0790e150d3a0efd99b5196740069a31",
+                "eeda7adb3f103e3d39115fccc8264e85bb2571dd3befba251cd9804b9303d620",
+                "4094513e386ac9bd3ec49da383abb630b18e75654f207a780036e7300b9d6857",
+                "9d5eb6ba960760ded9863ade84b8866710af6f68a341c8c94258a1f2cb6bd752",
+                "df6613a8f5456619fd5a47c3289a4a48ec381824f82bc269480fcd46b3d42361",
+                "692bc8499baceedd69ab40797f61ad95ecb05be4f2b1a91445248dde6001b179"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "imagefap.com",
+                "thepiratebay.org",
+                "www.imagefap.com",
+                "www.hdpornvideo.xxx",
+                "www.sexmovr.com",
+                "www.atube.xxx",
+                "videosection.com",
+                "matureclub.com",
+                "www.youngsexer.com",
+                "www.pornv.xxx",
+                "www.farthub.com",
+                "hdsex2.com",
+                "xxxbp.tv",
+                "shemale.taxi",
+                "hdsex.org",
+                "hentai2w.com",
+                "deepsukebe.io",
+                "hentai2read.com",
+                "xnxvideosex.com",
+                "www.sex-hd.xxx"
+            ]
+        },
+        {
+            "rule": "exdynsrv\\.com\\/splash\\.php",
+            "cookies": 0.00015,
+            "fingerprinting": 0,
+            "subdomains": [
+                "syndication"
+            ],
+            "apis": {},
+            "sites": 23,
+            "prevalence": 0.000157,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "imagefap.com",
+                "thepiratebay.org",
+                "www.imagefap.com",
+                "www.sexm.xxx",
+                "hdsex2.com",
+                "deepsukebe.io",
+                "www.sexmovr.com",
+                "matureclub.com",
+                "de.hdsex.org",
+                "videosection.com",
+                "www.atube.xxx",
+                "xxxbp.tv",
+                "shemale.taxi",
+                "beta.imagefap.com",
+                "www.fullhdxxxindia.com",
+                "xnxvideosex.com",
+                "xxxbf.tv",
+                "www.pornv.xxx",
+                "www.sexfreehd.xxx",
+                "www.farthub.com"
+            ]
+        },
+        {
+            "rule": "exdynsrv\\.com\\/iframe\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.0000886,
+            "cnames": [],
+            "responseHashes": [
+                "0aeac6cca129ef139dad9f8f4105b25b0415422010a3bca2713dc7a00c43dfae",
+                "bd594cdaf6d18734587b5897b08cf2ccc52c7007d80acf3671ab40e87f0dfd7a",
+                "407a3a73edbae306a8ff56a02876b2862580b726d8c9e939a2c9dba4c79aa994",
+                "47cf7da11136ddfd28d488b8c7a913bab7b79359478b10483f53a26c6e587253",
+                "080eab462626743a682e1be5cc6649b64958b4d09bceea3f422824f09d6d16a3",
+                "9b7a3dfb5d1f85272a798f172789eb6284e8a50cfbed83e3292e39ae70b59b47",
+                "e2acaaef13c7b4a08a76ea891e4ad0823225439c69d48296ac8b9f729e360e82"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clipsbai.com",
+                "justpicsplease.com",
+                "meaws.com",
+                "megapornx.com",
+                "moviexk.biz",
+                "toonx.net",
+                "vercomicsporno.com",
+                "vermangasporno.com",
+                "www.amateurporn.me",
+                "www.freexcafe.com",
+                "www.homemoviestube.com",
+                "www.mypornhere.com",
+                "xxxpicz.com"
+            ]
+        },
+        {
+            "rule": "exdynsrv\\.com\\/build-iframe-js-url\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.0000886,
+            "cnames": [],
+            "responseHashes": [
+                "4f1b1f214c6b60cf3984050fe249b66768d700beb1b51f7fbc1596b27a2a398e",
+                "19b9c08b9b3a29c405c810b596448042edac1988ea19393219b8d94ed51afa5c",
+                "ef9ce96957b829cec8425eba3d6552e0c6e92a6745810d99774a416acb4ff242",
+                "dff0adc934b55b7f09860285933103072643472234fc75864fd2f59ddf6a341a",
+                "248a1b6d46165d5082820751c84ee3bb2d049d7704e64491de38d142793cee68",
+                "f8a8b793200276e784453781c2d8146f109d8a96b038c9ffc240a3c3cd1ead4f",
+                "478f094315f8c149c5318019b6296c06c3bf1adb1c23486de01b4dbc2f5b907b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clipsbai.com",
+                "justpicsplease.com",
+                "meaws.com",
+                "megapornx.com",
+                "moviexk.biz",
+                "toonx.net",
+                "vercomicsporno.com",
+                "vermangasporno.com",
+                "www.amateurporn.me",
+                "www.freexcafe.com",
+                "www.homemoviestube.com",
+                "www.mypornhere.com",
+                "xxxpicz.com"
+            ]
+        },
+        {
+            "rule": "exdynsrv\\.com\\/iframe\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.0000886,
+            "cnames": [],
+            "responseHashes": [
+                "2f65b4f988019f08a1050db98c2fb1b019b0c25bb287eec5d879c464a7802909",
+                "904fef0416005cbae1bad632130e870ac0c7458d385538134ff883e9cc3f5b82",
+                "e702e9f8a64e7f48ce70dd582789b8330746c56ccc1231e539f7d298c9252c14",
+                "498e4661e56521326c9e6eba1bd5173896a1748fe9c06b5be9142cbc11374a97",
+                "4b8087f55395d873b216270629edff7eef79bacbf26bac339109e16232696899",
+                "500157e2aa338f1f3b89df7cbcffb68f5a72444e158c4dcd7b12e0544899c74a",
+                "c2853222e09a83cae3cea373725a0f8fa553c5c47a01cc78f96304ad2a4d68aa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clipsbai.com",
+                "justpicsplease.com",
+                "meaws.com",
+                "megapornx.com",
+                "moviexk.biz",
+                "toonx.net",
+                "vercomicsporno.com",
+                "vermangasporno.com",
+                "www.amateurporn.me",
+                "www.freexcafe.com",
+                "www.homemoviestube.com",
+                "www.mypornhere.com",
+                "xxxpicz.com"
+            ]
+        },
+        {
+            "rule": "exdynsrv\\.com\\/video-slider\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "a"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "cbbeba47427df0c584fc20be12bfb6abf2e8e5923ac965ba1d03996bf5718b11"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hentai2read.com",
+                "hentai2w.com",
+                "ww1.onepiecemangafree.com"
+            ]
+        },
+        {
+            "rule": "exdynsrv\\.com\\/ad-provider\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pmatehunter.com",
+                "www.elitebabes.com",
+                "www.femjoyhunter.com",
+                "www.ftvhunter.com",
+                "www.metarthunter.com"
+            ]
+        },
+        {
+            "rule": "exdynsrv\\.com\\/splash\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "syndication"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fullhdxxxindia.com",
+                "www.hdpornvideo.xxx",
+                "www.sex-hd.xxx",
+                "www.sexfreehd.xxx",
+                "www.videoshd.xxx",
+                "www.xxxvideor.com",
+                "www.youngsexer.com"
+            ]
+        }
+    ],
+    "categories": [
+        "Ad Motivated Tracking",
+        "Advertising"
+    ],
+    "performance": {},
+    "cookies": 0.00045,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.48677248677248675
+        },
+        {
+            "domain": "magsrv.com",
+            "prevalence": 0.09523809523809523
+        },
+        {
+            "domain": "veryn1ce.com",
+            "prevalence": 0.07936507936507936
+        },
+        {
+            "domain": "bestxxxaction.com",
+            "prevalence": 0.042328042328042326
+        },
+        {
+            "domain": "songtopbrand.com",
+            "prevalence": 0.042328042328042326
+        },
+        {
+            "domain": "rocketcdn.me",
+            "prevalence": 0.037037037037037035
+        },
+        {
+            "domain": "bigpornclips.com",
+            "prevalence": 0.031746031746031744
+        },
+        {
+            "domain": "topsexmovs.com",
+            "prevalence": 0.031746031746031744
+        },
+        {
+            "domain": "g--o.info",
+            "prevalence": 0.031746031746031744
+        },
+        {
+            "domain": "banneradsday.com",
+            "prevalence": 0.021164021164021163
+        }
+    ],
+    "types": {
+        "Script": 102,
+        "Document": 17,
+        "XHR": 85,
+        "Preflight": 23,
+        "Fetch": 5,
+        "Other": 7
+    },
+    "nameservers": [
+        "sec2.rcode0.net",
+        "sec1.rcode0.net",
+        "dns1.cloudns.net",
+        "dns2.cloudns.net"
+    ]
+}

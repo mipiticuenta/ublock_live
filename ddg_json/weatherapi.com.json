@@ -1,0 +1,80 @@
+{
+    "domain": "weatherapi.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "weatherapi\\.com\\/v1\\/forecast\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "24b727670568447e5648e2caf20884ce466aa00204d0939d7e1460bae6cb906e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aqi.in",
+                "www.hss.com"
+            ]
+        },
+        {
+            "rule": "weatherapi\\.com\\/v1\\/current\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1ac3711a7bcc5b9363365ea27fcc32a2a86724ea1b8fe5bcd3a810c6a1cee889"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aqi.in",
+                "www.hss.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7142857142857143
+        },
+        {
+            "domain": "gbqofs.com",
+            "prevalence": 0.2857142857142857
+        }
+    ],
+    "types": {
+        "XHR": 4
+    },
+    "nameservers": [
+        "pdns06.domaincontrol.com",
+        "pdns05.domaincontrol.com"
+    ]
+}

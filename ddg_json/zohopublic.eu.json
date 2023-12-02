@@ -1,0 +1,120 @@
+{
+    "domain": "zohopublic.eu",
+    "owner": {
+        "name": "ZOHO Corporation",
+        "displayName": "ZOHO"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "salesiq",
+        "vts",
+        "files"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "zohopublic\\.eu\\/visitor\\/v2\\/channels\\/website",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "salesiq"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "d55be1dd03d339a23388d0c7bdd106e3a5c1a71a73ceacf3120c034cce8048c5",
+                "b52f20dcd4bfd1e3eb276cebd1f569a5d9469455e9f825f3942295b34ed6e41c",
+                "125055fc75136f793a8420bda7570fa5657ad79d5a51c89f6e5c0fed26ff5ff0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aplaceinthesun.com",
+                "www.aplaceinthesun.com",
+                "www.cruisedirect.co.uk",
+                "www.loxone.com"
+            ]
+        },
+        {
+            "rule": "zohopublic\\.eu\\/watchws",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vts"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aplaceinthesun.com",
+                "www.aplaceinthesun.com",
+                "www.cruisedirect.co.uk"
+            ]
+        },
+        {
+            "rule": "zohopublic\\.eu\\/public",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "files"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "58db697ab96ad9631407574287400a224b7f39b28866bfd048e4d8c17c847c76"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aplaceinthesun.com",
+                "www.aplaceinthesun.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "zoho.eu",
+            "prevalence": 0.7777777777777778
+        },
+        {
+            "domain": "zohocdn.com",
+            "prevalence": 0.2222222222222222
+        }
+    ],
+    "types": {
+        "XHR": 4,
+        "WebSocket": 3,
+        "Image": 2
+    },
+    "nameservers": [
+        "NS21.ZNS-53.NET",
+        "NS31.ZNS-53.COM",
+        "NS11.ZNS-53.COM",
+        "PDNS90.ULTRADNS.BIZ",
+        "PDNS90.ULTRADNS.NET",
+        "NS41.ZNS-53.NET",
+        "PDNS90.ULTRADNS.COM",
+        "NS1.ZOHOCORP.COM"
+    ]
+}

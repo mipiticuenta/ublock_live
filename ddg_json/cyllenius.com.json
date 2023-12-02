@@ -1,0 +1,83 @@
+{
+    "domain": "cyllenius.com",
+    "owner": {
+        "name": "Cyllenius (division of VEGAS.com)",
+        "displayName": "Cyllenius (division of VEGAS.com)"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "ws"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "cyllenius\\.com\\/echo\\/vegas\\.www\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vegas.com",
+                "www.vegas.com"
+            ]
+        },
+        {
+            "rule": "cyllenius\\.com\\/echo\\/vegas\\.www\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ws"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "ca237db8e194b65af34f6bd4d34868fd6ac18d15c92ce2fc56868093281d3671"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vegas.com",
+                "m.vegas.com",
+                "www.vegas.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8333333333333334
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.16666666666666666
+        }
+    ],
+    "types": {
+        "Preflight": 2,
+        "Fetch": 3
+    },
+    "nameservers": [
+        "ns1.vegas.com",
+        "ns2.vegas.com"
+    ]
+}

@@ -1,0 +1,317 @@
+{
+    "domain": "incrowdsports.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "opta-football",
+        "rugby-union-feeds",
+        "article-cms-api",
+        "promoblocks-cms-api",
+        "media-cdn",
+        "polls",
+        "forms",
+        "sentry"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "incrowdsports\\.com\\/v1\\/matches",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "opta-football",
+                "rugby-union-feeds"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cpfc.co.uk",
+                "www.unitedrugby.com"
+            ]
+        },
+        {
+            "rule": "incrowdsports\\.com\\/v2\\/articles\\/a7c94258-83f8-4ed7-ac78-0b1acd6d6e90",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "article-cms-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f9777ad22f885f4cec74062c0f8b42336cdf7784fc0d39166b626f2dd660c9b6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cpfc.co.uk",
+                "www.cpfc.co.uk"
+            ]
+        },
+        {
+            "rule": "incrowdsports\\.com\\/v1\\/PALACEFC\\/campaigns\\/summary",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "promoblocks-cms-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "36c1ea6dff884169fc626ed6d8441e5c30f543bb3c1d9f7f981197a981bc4f4b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cpfc.co.uk",
+                "www.cpfc.co.uk"
+            ]
+        },
+        {
+            "rule": "incrowdsports\\.com\\/81434a11-8d40-4cdb-9629-c4784752c2b9\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8334c15e7d338b3155deac69660844585b952ba358e46ff802a67e02ea84b16e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cpfc.co.uk",
+                "www.cpfc.co.uk"
+            ]
+        },
+        {
+            "rule": "incrowdsports\\.com\\/f0b610b0-9fc4-4d8b-ad62-60ca58cfbc3d\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7b5734a2291373a4d2da6e0c3677f1b427edcc696e4da510db69baca439030ac"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cpfc.co.uk",
+                "www.cpfc.co.uk"
+            ]
+        },
+        {
+            "rule": "incrowdsports\\.com\\/14002d85-020a-4e6b-8f96-a1da9c3ad3a9\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8d0dc2cc95bf6b38ed0ba364e01fae586038a05fcf4fecb7a796cb2fc4d7ff71"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "euroleaguebasketball.net",
+                "www.euroleaguebasketball.net"
+            ]
+        },
+        {
+            "rule": "incrowdsports\\.com\\/js\\/index\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "polls",
+                "forms"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.product": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "de25ea263f38da0e9bb274c789398310c652f0f43b0d40ee0da4fb5514e0f960"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unitedrugby.com",
+                "www.unitedrugby.com"
+            ]
+        },
+        {
+            "rule": "incrowdsports\\.com\\/22a99b50-4cdc-4bea-a103-175ff73d1c17\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cee46e3bf57ed98567a90d8877380dce355b718bf8c95a16ef3ad38922f343d7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unitedrugby.com",
+                "www.unitedrugby.com"
+            ]
+        },
+        {
+            "rule": "incrowdsports\\.com\\/api\\/43\\/envelope\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sentry"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "94179ee0bae35dd5ff44a75873dfc591b9cad1f5a794c116baf2611ce141dd81"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unitedrugby.com",
+                "www.unitedrugby.com"
+            ]
+        },
+        {
+            "rule": "incrowdsports\\.com\\/v2\\/articles",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "article-cms-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7b7721302a27345223c85f2ae64f2408f894f06fd879ef806dfad7607b52c9b2"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unitedrugby.com",
+                "www.unitedrugby.com"
+            ]
+        },
+        {
+            "rule": "incrowdsports\\.com\\/v2\\/categories",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "article-cms-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c0a89cf5121a60560be7ef6d9884e12efb14cddf8b6f94f01d54a85f0dce4596"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unitedrugby.com",
+                "www.unitedrugby.com"
+            ]
+        },
+        {
+            "rule": "incrowdsports\\.com\\/v1\\/PRO14\\/campaigns\\/content",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "promoblocks-cms-api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8f4ad7f58be07b175a6bb3cd896a4cac31883a63d98fa7253899911bd8e19cc1"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unitedrugby.com",
+                "www.unitedrugby.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9930555555555556
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.006944444444444444
+        }
+    ],
+    "types": {
+        "Preflight": 2,
+        "XHR": 4,
+        "Image": 8,
+        "Script": 2,
+        "Fetch": 8
+    },
+    "nameservers": [
+        "ns-1049.awsdns-03.org",
+        "ns-102.awsdns-12.com",
+        "ns-669.awsdns-19.net",
+        "ns-1741.awsdns-25.co.uk"
+    ]
+}

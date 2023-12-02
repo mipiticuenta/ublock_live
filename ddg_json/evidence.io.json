@@ -1,0 +1,259 @@
+{
+    "domain": "evidence.io",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000817,
+    "sites": 12,
+    "subdomains": [
+        "code",
+        "config",
+        "wss"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "evidence\\.io\\/js\\/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9\\.eyJzdWIiOjI5MTF9\\.Mu6Rfs_ZEhkFfy9zeW4eXPAxn5jgTQLXIabGeUW3ZKc",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "code"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1918b81fd636b9560d6e10a0970efd3fe895cab2c90ebe61a1868c5e439c64ae"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "evidence_visitor": {
+                    "ttl": 7776003,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "evidence_visit": {
+                    "ttl": 1803,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allusedparts.com",
+                "automotix.net"
+            ]
+        },
+        {
+            "rule": "evidence\\.io\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "config"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allusedparts.com",
+                "automotix.net",
+                "churchleaders.com",
+                "monumentmetals.com",
+                "www.canadapharmacy.com",
+                "www.generalitravelinsurance.com",
+                "www.thecarnivoredietcoach.com",
+                "www.yourgreenpal.com"
+            ]
+        },
+        {
+            "rule": "evidence\\.io\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "config"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "62d782e7a01462ecc9330685555fb556d99d2106f01df12fe1607c7adb893332",
+                "d4e714262649d3054e4093adba6ce9f5e49dbae1d136fd46285d5ca9a5d29992",
+                "010f7764ebf1ac435e195164bda9411d2631c12f748c4b8562f994d4626be6cd",
+                "6a777238cdca49289876046de24995c6385ca4b31d0c20ae73c527fda3f05ea8",
+                "861765cecff854142651a4353731c56ef8c4645b54de38122eb59e91d05e0be5",
+                "0c6f6bd80e7e47380ac64a695fc826835d37c70f74c4ee9139dc6f4cb366db08",
+                "08e45d3bdda5889625513b12c8bd7296b3d01090a3dc72ebd40bd7ad7f92b682"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allusedparts.com",
+                "automotix.net",
+                "churchleaders.com",
+                "monumentmetals.com",
+                "www.canadapharmacy.com",
+                "www.generalitravelinsurance.com",
+                "www.thecarnivoredietcoach.com",
+                "www.yourgreenpal.com"
+            ]
+        },
+        {
+            "rule": "evidence\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wss"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allusedparts.com",
+                "automotix.net",
+                "churchleaders.com",
+                "monumentmetals.com",
+                "www.canadapharmacy.com",
+                "www.generalitravelinsurance.com",
+                "www.thecarnivoredietcoach.com",
+                "www.yourgreenpal.com"
+            ]
+        },
+        {
+            "rule": "evidence\\.io\\/metrics",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "config"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "695b77da6bb2ef2e17418de2fca91c74292d5f566c81fd051e7ea23f7c7a8f7e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "churchleaders.com",
+                "www.yourgreenpal.com"
+            ]
+        },
+        {
+            "rule": "evidence\\.io\\/metrics",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "config"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "churchleaders.com",
+                "www.yourgreenpal.com"
+            ]
+        },
+        {
+            "rule": "evidence\\.io\\/js\\/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9\\.eyJzdWIiOjU4Mjd9\\.EIKVUycg6Tb96gS9rSLVSJ1KxDWdPfAW2laKtIURRWE",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "code"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1918b81fd636b9560d6e10a0970efd3fe895cab2c90ebe61a1868c5e439c64ae"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "evidence_visitor": {
+                    "ttl": 7776011,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "evidence_visit": {
+                    "ttl": 1811,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canadapharmacy.com",
+                "www.canadapharmacy.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000817,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7058823529411765
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.23529411764705882
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.058823529411764705
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "Preflight": 10,
+        "XHR": 10,
+        "WebSocket": 8
+    },
+    "nameservers": [
+        "ns-1480.awsdns-57.org",
+        "ns-546.awsdns-04.net",
+        "ns-289.awsdns-36.com",
+        "ns-1760.awsdns-28.co.uk"
+    ]
+}

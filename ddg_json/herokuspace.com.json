@@ -1,0 +1,249 @@
+{
+    "domain": "herokuspace.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "safe-mountain-4175.stark-beyond-1371",
+        "peaceful-taiga-3791.secure-wave-9327",
+        "young-oasis-6556.desolate-refuge-8168",
+        "evening-springs-6813.desolate-refuge-8168"
+    ],
+    "cnames": [
+        {
+            "original": "api-graphql.biolifeplasma.com",
+            "resolved": "young-oasis-6556.desolate-refuge-8168.herokuspace.com"
+        },
+        {
+            "original": "api-scheduler.biolifeplasma.com",
+            "resolved": "evening-springs-6813.desolate-refuge-8168.herokuspace.com"
+        },
+        {
+            "original": "backboard.heroku.com",
+            "resolved": "peaceful-taiga-3791.secure-wave-9327.herokuspace.com"
+        },
+        {
+            "original": "doppler.heroku.com",
+            "resolved": "safe-mountain-4175.stark-beyond-1371.herokuspace.com"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "herokuspace\\.com\\/app\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "safe-mountain-4175.stark-beyond-1371"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "doppler.heroku.com",
+                    "resolved": "safe-mountain-4175.stark-beyond-1371.herokuspace.com"
+                }
+            ],
+            "responseHashes": [
+                "266b872cef3de806f65a202f39a371dc98601c25060d08675cb2e9093b326cc9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "heroku.com",
+                "devcenter.heroku.com",
+                "www.heroku.com"
+            ]
+        },
+        {
+            "rule": "herokuspace\\.com\\/hamurai",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "peaceful-taiga-3791.secure-wave-9327"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "backboard.heroku.com",
+                    "resolved": "peaceful-taiga-3791.secure-wave-9327.herokuspace.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "heroku.com",
+                "devcenter.heroku.com",
+                "www.heroku.com"
+            ]
+        },
+        {
+            "rule": "herokuspace\\.com\\/shift",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "safe-mountain-4175.stark-beyond-1371"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "doppler.heroku.com",
+                    "resolved": "safe-mountain-4175.stark-beyond-1371.herokuspace.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "heroku.com",
+                "devcenter.heroku.com",
+                "www.heroku.com"
+            ]
+        },
+        {
+            "rule": "herokuspace\\.com\\/v1\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "young-oasis-6556.desolate-refuge-8168"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api-graphql.biolifeplasma.com",
+                    "resolved": "young-oasis-6556.desolate-refuge-8168.herokuspace.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "biolifeplasma.com",
+                "www.biolifeplasma.com"
+            ]
+        },
+        {
+            "rule": "herokuspace\\.com\\/v1\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "young-oasis-6556.desolate-refuge-8168"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api-graphql.biolifeplasma.com",
+                    "resolved": "young-oasis-6556.desolate-refuge-8168.herokuspace.com"
+                }
+            ],
+            "responseHashes": [
+                "d8ded2aa9b42d38a61761a79e51b04d4dd4633ae6395690263412fc7d1ef3410"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "biolifeplasma.com",
+                "www.biolifeplasma.com"
+            ]
+        },
+        {
+            "rule": "herokuspace\\.com\\/users\\/session",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "evening-springs-6813.desolate-refuge-8168"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api-scheduler.biolifeplasma.com",
+                    "resolved": "evening-springs-6813.desolate-refuge-8168.herokuspace.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "biolifeplasma.com",
+                "www.biolifeplasma.com"
+            ]
+        },
+        {
+            "rule": "herokuspace\\.com\\/users\\/session",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "evening-springs-6813.desolate-refuge-8168"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api-scheduler.biolifeplasma.com",
+                    "resolved": "evening-springs-6813.desolate-refuge-8168.herokuspace.com"
+                }
+            ],
+            "responseHashes": [
+                "32460949c58d8afc72c9d51a7b345c6d963249d5b1e49d14c5da4f796ab6696f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "biolifeplasma.com",
+                "www.biolifeplasma.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000409,
+    "topInitiators": [
+        {
+            "domain": "salesforce.com",
+            "prevalence": 0.8
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "XHR": 8,
+        "Preflight": 4,
+        "Fetch": 2
+    },
+    "nameservers": [
+        "ns-1872.awsdns-42.co.uk",
+        "ns-752.awsdns-30.net",
+        "ns-1136.awsdns-14.org",
+        "ns-489.awsdns-61.com"
+    ]
+}

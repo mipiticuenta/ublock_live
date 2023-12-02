@@ -1,0 +1,82 @@
+{
+    "domain": "zonka.co",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "us-js"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "zonka\\.co\\/645933a59e5ab50008130b6c",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "us-js"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "URL.createObjectURL": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2496bbc6a5210490c11ff446fb8bc08e309dee4dea8d9e3b45637fcf99cd0ad7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "zfm_usr_sess_ck_id": {
+                    "ttl": 1805,
+                    "length": 24,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "zfm_cnt_ck_id": {
+                    "ttl": 31536005,
+                    "length": 24,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jeld-wen.com",
+                "www.jeld-wen.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "cookiebot.com",
+            "prevalence": 0.75
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.25
+        }
+    ],
+    "types": {
+        "Script": 2
+    },
+    "nameservers": [
+        "pdns04.domaincontrol.com",
+        "pdns03.domaincontrol.com"
+    ]
+}

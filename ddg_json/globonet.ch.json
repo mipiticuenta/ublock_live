@@ -1,0 +1,129 @@
+{
+    "domain": "globonet.ch",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-CH"
+    ],
+    "prevalence": 0.000302,
+    "sites": 3,
+    "subdomains": [
+        "tracking"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "globonet\\.ch\\/piwik\\.js",
+            "cookies": 0.000302,
+            "fingerprinting": 2,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "window.name": 3,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.mimeTypes": 3,
+                "Navigator.prototype.javaEnabled": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Navigator.prototype.platform": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "0995371a359a4a701d66f8b183de6144de9a042e5bac84b6f920968f51567742"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pk_id.1836.a335": {
+                    "ttl": 33955203,
+                    "length": 52,
+                    "prevalence": 0.00010054293183189222,
+                    "uniqueness": 1
+                },
+                "_pk_ses.1836.a335": {
+                    "ttl": 1802,
+                    "length": 1,
+                    "prevalence": 0.00010054293183189222,
+                    "uniqueness": 1
+                },
+                "_pk_id.1756.421d": {
+                    "ttl": 33955203,
+                    "length": 52,
+                    "prevalence": 0.00010054293183189222,
+                    "uniqueness": 1
+                },
+                "_pk_ses.1756.421d": {
+                    "ttl": 1802,
+                    "length": 1,
+                    "prevalence": 0.00010054293183189222,
+                    "uniqueness": 1
+                },
+                "_pk_id.1559.2f92": {
+                    "ttl": 33955203,
+                    "length": 52,
+                    "prevalence": 0.00010054293183189222,
+                    "uniqueness": 1
+                },
+                "_pk_ses.1559.2f92": {
+                    "ttl": 1802,
+                    "length": 1,
+                    "prevalence": 0.00010054293183189222,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hiob.ch",
+                "vhszh.ch",
+                "www.solarmarkt.ch"
+            ]
+        },
+        {
+            "rule": "globonet\\.ch\\/piwik\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hiob.ch",
+                "vhszh.ch",
+                "www.solarmarkt.ch"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000302,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "Image": 3
+    },
+    "nameservers": [
+        "ns3.globonet.ch",
+        "ns1.globonet.ch",
+        "ns4.globonet.ch"
+    ]
+}

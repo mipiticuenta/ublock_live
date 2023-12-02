@@ -1,0 +1,114 @@
+{
+    "domain": "goodglamm.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "static.sso",
+        "sso"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "goodglamm\\.com\\/sso-script\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static.sso"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 4,
+                "Navigator.prototype.userAgent": 4,
+                "window.localStorage": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "2d9b8fc8dd72b16c75a393dac284d71cb894564d1f02a9888fe0c4ecd6b60755"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "popxo.com",
+                "marathi.popxo.com",
+                "www.popxo.com",
+                "www.scoopwhoop.com"
+            ]
+        },
+        {
+            "rule": "goodglamm\\.com\\/5\\.chunk\\.7d28c\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.sso"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "3dae845cb74c5bad82ea38c93988cb898c5ae9bd057b83ccea7a6fea38c6820a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "popxo.com",
+                "marathi.popxo.com",
+                "www.popxo.com",
+                "www.scoopwhoop.com"
+            ]
+        },
+        {
+            "rule": "goodglamm\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sso"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "2e90dee68c9571393e2320dc737986b500db63e6f070cf54a8b4323ee39d4044"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "popxo.com",
+                "marathi.popxo.com",
+                "www.popxo.com",
+                "www.scoopwhoop.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 8,
+        "Document": 4
+    },
+    "nameservers": [
+        "ns-1521.awsdns-62.org",
+        "ns-535.awsdns-02.net",
+        "ns-1893.awsdns-44.co.uk",
+        "ns-390.awsdns-48.com"
+    ]
+}

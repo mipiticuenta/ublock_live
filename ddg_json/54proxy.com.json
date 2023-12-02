@@ -1,0 +1,84 @@
+{
+    "domain": "54proxy.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "apoteket-se",
+        "budgetsport-fi-prod",
+        "intersport-fi-prod"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "54proxy\\.com\\/getEntitiesByAttribute",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apoteket-se",
+                "budgetsport-fi-prod",
+                "intersport-fi-prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apoteket.se",
+                "www.budgetsport.fi",
+                "www.intersport.fi"
+            ]
+        },
+        {
+            "rule": "54proxy\\.com\\/getEntitiesByAttribute",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "budgetsport-fi-prod",
+                "intersport-fi-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f4de6d75fa5cefcc20b4d066ea8ad16493e5707c3e4e2a808a04f9a2f33553d5"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "budgetsport.fi",
+                "www.intersport.fi"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Preflight": 3,
+        "Fetch": 2
+    },
+    "nameservers": [
+        "ns1.dnsmadeeasy.com",
+        "ns0.dnsmadeeasy.com",
+        "ns4.dnsmadeeasy.com",
+        "ns3.dnsmadeeasy.com",
+        "ns2.dnsmadeeasy.com"
+    ]
+}

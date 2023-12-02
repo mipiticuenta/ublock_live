@@ -1,0 +1,122 @@
+{
+    "domain": "arbitrum.io",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "arb1",
+        "bridge",
+        "tokenlist"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "arbitrum\\.io\\/rpc",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "arb1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "81b302f80eed195794cf133e96f0b1a5bd70e59cf7a784c6be6d63cbfe86a7a3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aave.com",
+                "app.lfgswap.finance"
+            ]
+        },
+        {
+            "rule": "arbitrum\\.io\\/rpc",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "arb1"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aave.com",
+                "app.lfgswap.finance",
+                "chainlist.org"
+            ]
+        },
+        {
+            "rule": "arbitrum\\.io\\/token-list-42161\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bridge"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "14f027ee72784feba18c267386ae6cfdd0bc3ef89c827d38903ac188eb5a8691"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "uniswap.org",
+                "app.uniswap.org"
+            ]
+        },
+        {
+            "rule": "arbitrum\\.io\\/ArbTokenLists\\/arbed_arb_whitelist_era\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tokenlist"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "14f027ee72784feba18c267386ae6cfdd0bc3ef89c827d38903ac188eb5a8691"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "uniswap.org",
+                "app.uniswap.org"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Fetch": 6,
+        "Preflight": 3
+    },
+    "nameservers": [
+        "james.ns.cloudflare.com",
+        "arya.ns.cloudflare.com"
+    ]
+}

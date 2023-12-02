@@ -1,0 +1,145 @@
+{
+    "domain": "depositfix.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "widgets",
+        "app",
+        "ce"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "depositfix\\.com\\/m\\/df-membership\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widgets"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e012da17ae033bfc4f245073679c8b28345a8ff324af7c625f07133635f0bc83"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stlmag.com",
+                "www.stlmag.com"
+            ]
+        },
+        {
+            "rule": "depositfix\\.com\\/auth0\\/portal\\/4055000\\/config\\/properties",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stlmag.com",
+                "www.stlmag.com"
+            ]
+        },
+        {
+            "rule": "depositfix\\.com\\/auth0\\/portal\\/4055000\\/config\\/properties",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "97431eb398bccfea5a70de90e0d927d619d7d28f3f73079d345a45042c2537a3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stlmag.com",
+                "www.stlmag.com"
+            ]
+        },
+        {
+            "rule": "depositfix\\.com\\/api\\/v1\\/content-gate\\/check",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ce"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d4602235686c9e48df5b6612a665c4cf6f8d2f5162f87617f96236a68e71d685"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stlmag.com",
+                "www.stlmag.com"
+            ]
+        },
+        {
+            "rule": "depositfix\\.com\\/api\\/v1\\/content-gate\\/check",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ce"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stlmag.com",
+                "www.stlmag.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Preflight": 4,
+        "Fetch": 4
+    },
+    "nameservers": [
+        "apollo.ns.cloudflare.com",
+        "dana.ns.cloudflare.com"
+    ]
+}

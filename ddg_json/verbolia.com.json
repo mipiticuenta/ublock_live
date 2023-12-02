@@ -1,0 +1,80 @@
+{
+    "domain": "verbolia.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "cdn.backend",
+        "lapeyre-frfr.backend",
+        "ulla-popken-dede.backend"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "verbolia\\.com\\/assets\\/global\\/js\\/psl\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.backend"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a465d8738f3558860d654b0ab9b2b10b1414c9d84dae53394bc83978c53c7ddc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boohoo.com",
+                "www.nastygal.com"
+            ]
+        },
+        {
+            "rule": "verbolia\\.com\\/v\\/api\\/gial",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lapeyre-frfr.backend",
+                "ulla-popken-dede.backend"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "48e086e6550d5e55ea1de23b124f892d2129ab9fdebbed76e38c00eed58c47ee"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lapeyre.fr",
+                "www.ullapopken.de"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "dns104.ovh.net",
+        "ns104.ovh.net"
+    ]
+}

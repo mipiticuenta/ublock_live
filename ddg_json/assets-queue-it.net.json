@@ -1,0 +1,104 @@
+{
+    "domain": "assets-queue-it.net",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "static",
+        "assets"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "assets-queue-it\\.net\\/script\\/cloudflare\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "748c42c4722b2bd84aa71c5744eab7c4170d3e980c74eedad4939cd6a2329269"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rct.uk",
+                "www.rct.uk",
+                "www.rsa.ie",
+                "www.thespacecinema.it"
+            ]
+        },
+        {
+            "rule": "assets-queue-it\\.net\\/royalcollection\\/integrationconfig\\/javascript\\/queueclientConfig\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f9bf80dd9481da964cf3ddc492ec3cea6c1536729b081ea23ec78d92152f9e8d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rct.uk",
+                "www.rct.uk"
+            ]
+        },
+        {
+            "rule": "assets-queue-it\\.net\\/rsaie\\/integrationconfig\\/javascript\\/queueclientConfig\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b69472b251eb234d608c3c85fd3126392dd0d8454b3a303ed916baae8319654d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rsa.ie",
+                "www.rsa.ie"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 8
+    },
+    "nameservers": [
+        "dora.ns.cloudflare.com",
+        "sid.ns.cloudflare.com"
+    ]
+}

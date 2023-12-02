@@ -1,0 +1,91 @@
+{
+    "domain": "gamemonkey.org",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "cdn",
+        "tracker"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "gamemonkey\\.org\\/gamemonkey-sdk-javascript\\/5\\.1\\.1\\/script\\/gamemonkey-sdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 7
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "d4f31876d3647b02707b37456236cecc3c652b935f3252233e349b8c62cffc2e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "play-snake.com",
+                "snowrider3d.com",
+                "wordwipe.io",
+                "www.1001jeux.fr",
+                "www.drifted.com",
+                "www.elkspel.nl",
+                "www.mahjongconnect.net",
+                "www.spiele-umsonst.de"
+            ]
+        },
+        {
+            "rule": "gamemonkey\\.org\\/v1\\/gamemonkey\\/track\\/gd\\/event\\/pageview",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracker"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snowrider3d.com",
+                "wordwipe.io",
+                "www.1001jeux.fr",
+                "www.drifted.com",
+                "www.elkspel.nl",
+                "www.mahjongconnect.net",
+                "www.spiele-umsonst.de"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "gamedistribution.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 8,
+        "XHR": 7
+    },
+    "nameservers": [
+        "max.ns.cloudflare.com",
+        "mimi.ns.cloudflare.com"
+    ]
+}

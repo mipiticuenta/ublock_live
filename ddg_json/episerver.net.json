@@ -1,0 +1,1283 @@
+{
+    "domain": "episerver.net",
+    "owner": {
+        "name": "EPiServer AB",
+        "displayName": "EPiServer"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00221,
+    "sites": 324,
+    "subdomains": [
+        "dl",
+        "s.usea01.idio",
+        "s.apac01.idio",
+        "s.emea01.idio",
+        "s.manager.usea01.idio",
+        "s.environment.idio",
+        "a.usea01.idio",
+        "a.apac01.idio",
+        "a.emea01.idio",
+        "livingspaceprod.peerius",
+        "distributor.uswe01.productrecs",
+        "mcnaughtonmckayprod.peerius",
+        "siemessgcprod.peerius",
+        "vbs-hobby.peerius",
+        "webprod.raymourflanigan.com.dxcloud",
+        "page.connectwise.com.dxcloud",
+        "cms.buzzrx.com.dxcloud",
+        "prod-cms.carbonite.com.dxcloud",
+        "epi.dometic.com.dxcloud",
+        "api.usea01.idio"
+    ],
+    "cnames": [
+        {
+            "original": "cms.buzzrx.com",
+            "resolved": "cms.buzzrx.com.dxcloud.episerver.net"
+        },
+        {
+            "original": "epi.dometic.com",
+            "resolved": "epi.dometic.com.dxcloud.episerver.net"
+        },
+        {
+            "original": "page.connectwise.com",
+            "resolved": "page.connectwise.com.dxcloud.episerver.net"
+        },
+        {
+            "original": "prod-cms.carbonite.com",
+            "resolved": "prod-cms.carbonite.com.dxcloud.episerver.net"
+        },
+        {
+            "original": "webprod.raymourflanigan.com",
+            "resolved": "webprod.raymourflanigan.com.dxcloud.episerver.net"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "episerver\\.net\\/13\\.5\\.8\\/epi-util\\/find\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dl"
+            ],
+            "apis": {
+                "Document.cookie getter": 154
+            },
+            "sites": 177,
+            "prevalence": 0.00121,
+            "cnames": [],
+            "responseHashes": [
+                "67004276e5cbe57d0cc96a32bd76d47b1daf4f91f52f807df4d8f9259c69b844"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.centralbank.net",
+                "www.mint.ca",
+                "www.rwbaird.com",
+                "www.woolmark.com",
+                "www.sfopera.com",
+                "www.lews.com",
+                "www.epicor.com",
+                "www.cenhud.com",
+                "professional.dolby.com",
+                "www.riogrande.com",
+                "www.vegvesen.no",
+                "www.invitedclubs.com",
+                "www.moaa.org",
+                "vismaspcs.se",
+                "www.ellsworth.com",
+                "www.kellyservices.com",
+                "www.ruckusnetworks.com",
+                "www.broadviewfcu.com",
+                "www.firstpremier.com",
+                "www.milestonesys.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/ia\\.js",
+            "cookies": 0.000436,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s.usea01.idio",
+                "s.apac01.idio",
+                "s.emea01.idio",
+                "s.manager.usea01.idio",
+                "s.environment.idio"
+            ],
+            "apis": {
+                "Document.cookie getter": 64,
+                "Document.cookie setter": 64,
+                "Date.prototype.getTime": 73
+            },
+            "sites": 77,
+            "prevalence": 0.000525,
+            "cnames": [],
+            "responseHashes": [
+                "23a1a6f198b4d909350fa59d97d61ffcc56410ed6c85bb0f10dfb1885ed7e9b1",
+                "7224b8368011d1943fbc4183dc82ad58a942d08f3a312106c12c9fee4346e547",
+                "c87248e40a582a0fd1ed277d647585fed86bcdc89f10ca2e327142f1a3a897df"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "is": {
+                    "ttl": 1803,
+                    "length": 36,
+                    "prevalence": 0.000422346201268401,
+                    "uniqueness": 1
+                },
+                "iv": {
+                    "ttl": 63072003,
+                    "length": 36,
+                    "prevalence": 0.000422346201268401,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.ohlq.com",
+                "www.valvolineglobal.com",
+                "www.personalwissen.de",
+                "www.zoom.com",
+                "www.agric.wa.gov.au",
+                "www.rushtruckcenters.com",
+                "www.riogrande.com",
+                "www.crisisprevention.com",
+                "www.gardeners.com",
+                "app.zoom.us",
+                "zoom.us",
+                "www.atb.com",
+                "www.glhomes.com",
+                "www.birkenstock.com",
+                "danieldefense.com",
+                "www.whoop.com",
+                "www.symetra.com",
+                "www.jacksonhewitt.com",
+                "www.wef.org",
+                "www.comptia.org"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/ia\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a.usea01.idio",
+                "a.apac01.idio",
+                "a.emea01.idio"
+            ],
+            "apis": {},
+            "sites": 75,
+            "prevalence": 0.000511,
+            "cnames": [],
+            "responseHashes": [
+                "c00a759275b8628823a9809f24cbeca08cb48b52713adf221f70284e66d9c82f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "is": 0.00048365452080736243,
+                "iv": 0.00048365452080736243,
+                "IR_gbd": 0.00006130831953896144,
+                "dlv-leadlandurl": 0.000006812035504329049,
+                "_ga": 0.000013624071008658098,
+                "__tld": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "www.ent.com",
+                "www.tevapharm.com",
+                "screenconnect.connectwise.com",
+                "www.aaha.org",
+                "www.ohlq.com",
+                "explore.zoom.us",
+                "www.roadscholar.org",
+                "www.zoom.com",
+                "www.connectwise.com",
+                "www.ryder.com",
+                "www.johnsonfinancialgroup.com",
+                "www.valvoline.com",
+                "www.whoop.com",
+                "www.zoom.us",
+                "www.cpg.org",
+                "www.visitoslo.com",
+                "www.lakewoodchurch.com",
+                "www.gatecity.bank",
+                "gardeners.com",
+                "zoom.us"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/tracker\\/peerius\\.page",
+            "cookies": 0.0000409,
+            "fingerprinting": 1,
+            "subdomains": [
+                "livingspaceprod.peerius",
+                "distributor.uswe01.productrecs",
+                "mcnaughtonmckayprod.peerius",
+                "siemessgcprod.peerius",
+                "vbs-hobby.peerius"
+            ],
+            "apis": {
+                "Document.cookie getter": 6,
+                "Date.prototype.getTime": 6,
+                "Document.cookie setter": 6,
+                "Navigator.prototype.userAgent": 6
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "8fc69c0f0fc9e4008b7d036a7896005549a90bd02ea4088927f348604dded4ca",
+                "613ee0718417073a0d25d19e60b2c4205a3af5157d1b9f1e86ada2326815269d",
+                "d4dc4ed7f5e0390dcd1d1e71f7f3272c05d1eda81b094a29f9bba821709d2c70",
+                "aa5ede687b4e270e8a6ad9a2c7046a654d687a94687efa835c75aeb2067af33a",
+                "68aeb1b18ed8496ca21c14e37cded37e56336cac79db1061439a6e0e4612aec7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "peerius_rid": {
+                    "ttl": 5,
+                    "length": 2,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 0.16666666666666666
+                },
+                "peerius_ct": {
+                    "ttl": 6,
+                    "length": 1,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 0.16666666666666666
+                },
+                "peerius_sess": {
+                    "ttl": 14407,
+                    "length": 56,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 1
+                },
+                "peerius_user": {
+                    "ttl": 622080008,
+                    "length": 61,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "livingspaces.com",
+                "www.dcne.com",
+                "www.livingspaces.com",
+                "www.mc-mc.com",
+                "www.schuhcenter.de",
+                "www.vbs-hobby.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/tracker\\/tracker\\.page",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "livingspaceprod.peerius",
+                "distributor.uswe01.productrecs",
+                "mcnaughtonmckayprod.peerius",
+                "siemessgcprod.peerius",
+                "vbs-hobby.peerius"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "8b9d3792fabe463beeb52b399e4a1e4f73c8154b1e1fe037226d63eb939f6872",
+                "150bd7b9f123e935f7e93eb49c5713781e24e56deb6e06caa42bece575fc56ba",
+                "ef5947dc276357b8ab21cb316f873f6c1dc75b6210e1802a86eb05cc83eb4f46",
+                "3c0eef3bef9c92a99239650177802e1b516ec51651ef7b0e3bb619238d8984ec",
+                "91e8f87f06cf5fd6097fb8b1a31e479080730f6cc440bc23053f54ec649aaa2f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_li_dcdm_c": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "livingspaces.com",
+                "www.dcne.com",
+                "www.livingspaces.com",
+                "www.mc-mc.com",
+                "www.schuhcenter.de",
+                "www.vbs-hobby.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/tracker\\/trackerform\\.page",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "livingspaceprod.peerius",
+                "distributor.uswe01.productrecs",
+                "mcnaughtonmckayprod.peerius",
+                "siemessgcprod.peerius",
+                "vbs-hobby.peerius"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "f2ce0ff91ad88c95cf9bb2821399aaafbbaaf73777c84581707a707442312aae",
+                "c3ea8f5737b7b497c1fb29fce93cb2cdde5bcc2883ae565adce6aec7b93b5c08",
+                "21347a74c060e20cf46422bbe67764a42c322d4c95c1e06f751508d08d330acc",
+                "1ad8f0b232273793a8106b9bc7b3a1bd564acff1a447d409bfbc4370dffc0273",
+                "b2635940ae6035c60f8b281f44b6ce79c5e24650878350a97ac223c6bbc65eb9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "livingspaces.com",
+                "www.dcne.com",
+                "www.livingspaces.com",
+                "www.mc-mc.com",
+                "www.schuhcenter.de",
+                "www.vbs-hobby.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/12\\.4\\.1\\/epi-util\\/find\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dl"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d52e5ac6bb4e82696f569faccb9cab4fa274b5bdac8d84b844995f1e64aa1e53"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "longbeach.gov",
+                "www.longbeach.gov"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/static\\/fonts\\/796041\\/E584E6E2721BC4F88\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webprod.raymourflanigan.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "webprod.raymourflanigan.com",
+                    "resolved": "webprod.raymourflanigan.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "bba7edd05225b22f77b575d9f737fe63102be82197557b6ac2c2f8b4fc8646d4"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "raymourflanigan.com",
+                "www.raymourflanigan.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/ip\\.js",
+            "cookies": 0.0000341,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s.usea01.idio",
+                "s.apac01.idio",
+                "s.emea01.idio"
+            ],
+            "apis": {
+                "Document.cookie getter": 9,
+                "Document.cookie setter": 5
+            },
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "c005514b7ed028359358d1e5471237b576afba5ec03b50cd55ad561fc6bd7fe7",
+                "53e35c29ccbef11bd5e647750585006906e3381a7fc29044c3746a7e2f54522b",
+                "8b98b36527f95d1c5e572b7268e6ae2cfb0bbdbb33043b9831ecfdc2b3498341"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "is": {
+                    "ttl": 1809,
+                    "length": 36,
+                    "prevalence": 0.00003406017752164524,
+                    "uniqueness": 0.8
+                },
+                "iv": {
+                    "ttl": 63072009,
+                    "length": 36,
+                    "prevalence": 0.00003406017752164524,
+                    "uniqueness": 0.8
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "connectwise.com",
+                "screenconnect.connectwise.com",
+                "www.adairs.com.au",
+                "www.commscope.com",
+                "www.connectwise.com",
+                "www.jacksonhewitt.com",
+                "www.johnsonfinancialgroup.com",
+                "www.legalandgeneral.com",
+                "www.novanthealth.org",
+                "www.roadscholar.org",
+                "www.terminix.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/cheq-ppc-invalid-users",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "page.connectwise.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "page.connectwise.com",
+                    "resolved": "page.connectwise.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "a449e5e27898840e5a64b346500d4596ecf304cb92800f8633f58ae7252f7c75"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "connectwise.com",
+                "www.connectwise.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/assets\\/css\\/main\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "page.connectwise.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "page.connectwise.com",
+                    "resolved": "page.connectwise.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "1411f55e7f8741299d670abfad0551d2f53769ef25c94d1a3d1af6f753a14cc0"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "connectwise.com",
+                "www.connectwise.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/assets\\/js\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "page.connectwise.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "page.connectwise.com",
+                    "resolved": "page.connectwise.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "9755622d000f1983e8dfbcbb684b497b8045f456f18317a1a3b4976c26eff0b3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "connectwise.com",
+                "www.connectwise.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/current\\/epi-util\\/find\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dl"
+            ],
+            "apis": {
+                "Document.cookie getter": 3
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "67004276e5cbe57d0cc96a32bd76d47b1daf4f91f52f807df4d8f9259c69b844"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sl.se",
+                "ww2.montgomeryschoolsmd.org",
+                "www.montgomeryschoolsmd.org",
+                "www.politiet.no"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/13\\.4\\.4\\.1\\/epi-util\\/find\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dl"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c74fbf06fbc387f21c3dde88cfdb524dbfdf7c65892353943680275334c77bc0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vioc.com",
+                "store.vioc.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/13\\.5\\.8\\/epi-util\\/native\\.history\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "dl"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.appCodeName": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "819faf214852f03bbda3d910e133a2b620b70d35f4a57ba505fff2a4d363385f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aisc.org",
+                "www.aisc.org",
+                "www.redfunnel.co.uk"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/api\\/episerver\\/connect\\/token",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cms.buzzrx.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cms.buzzrx.com",
+                    "resolved": "cms.buzzrx.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "1ace59c7b9167387e8427255bc0fd57a9d3a37974218c7c9c7f2d6627d4497d8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buzzrx.com",
+                "www.buzzrx.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/globalassets\\/hero-blocks\\/ot_img_home_pill1\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-cms.carbonite.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "prod-cms.carbonite.com",
+                    "resolved": "prod-cms.carbonite.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "fb16776bb5d4cc131383ca414c6eb06315516f43e9de9761a978e293f6db5bf1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "carbonite.com",
+                "www.carbonite.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/assets\\/browser\\.bundle\\.dd2607b9193ba01ca2cb\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "epi.dometic.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "epi.dometic.com",
+                    "resolved": "epi.dometic.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "7df7998c3ff229552b3264d6759a534effc8006f2f2fb270700083f06257793b"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dometic.com",
+                "www.dometic.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/assets\\/browser\\.bundle\\.547e63e9acc875cb257d\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "epi.dometic.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "epi.dometic.com",
+                    "resolved": "epi.dometic.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "495aa9569d7ac530381877333c269fbac860deafecf4e29e271f9b4c8064cf24"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dometic.com",
+                "www.dometic.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/assets\\/vendor\\.chunk\\.79ec6846d89008028643\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "epi.dometic.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "epi.dometic.com",
+                    "resolved": "epi.dometic.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "4cf923fad046b55336c71e6734c6a4858eef153fa83849523b3800c813978f5a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dometic.com",
+                "www.dometic.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/externalassets\\/dometic-cfx3-75dz_9600025333_96840\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "epi.dometic.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "epi.dometic.com",
+                    "resolved": "epi.dometic.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "eced6b4f9b8c26d8e950bf6bfab98c081b036f0ee7e8c5c3581dcafc720d8de3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dometic.com",
+                "www.dometic.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/assets\\/gibson-regular\\.a3b5d28a451563e9af6244c67d64920e\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "epi.dometic.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "epi.dometic.com",
+                    "resolved": "epi.dometic.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "8dca2b56e1d4240a33a4ff395bbc3f14a4fe0b869eaf2b876b3e7a8737ae82ca"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dometic.com",
+                "www.dometic.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/assets\\/gibson-semibold\\.311f38d8369b196d26185c6d89dc5b2b\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "epi.dometic.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "epi.dometic.com",
+                    "resolved": "epi.dometic.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "a3c488fab388ff7bf6c799c3d42134cf0696b1f27dcf95a5158cd850078c782e"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dometic.com",
+                "www.dometic.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/assets\\/gibson-bold\\.500ca76bcd27df06598981c76ea8707d\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "epi.dometic.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "epi.dometic.com",
+                    "resolved": "epi.dometic.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "f2b2fcf32f257afcbdba01281e947ae1a0b3a6d65b3716a222808170030da689"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dometic.com",
+                "www.dometic.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/assets\\/3\\.chunk\\.3cf244507e99b3851f38\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "epi.dometic.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "epi.dometic.com",
+                    "resolved": "epi.dometic.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "a93da4b4f4fb6311bade690be1597de8f43e0e0b45240262ec8413b163605425"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dometic.com",
+                "www.dometic.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/assets\\/8\\.chunk\\.04087f8ae797db2b3b4e\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "epi.dometic.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "epi.dometic.com",
+                    "resolved": "epi.dometic.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "320e767dd135d6a62778630bc4899de2e077f201edbc4bb0b20677120cbbfa70"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dometic.com",
+                "www.dometic.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/assets\\/0\\.chunk\\.b435d0664e5cb619dd96\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "epi.dometic.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "epi.dometic.com",
+                    "resolved": "epi.dometic.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "d6903ed2d68e6febeac067ba39c9d30a45a019a791d151f5eeb422139e080dcc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dometic.com",
+                "www.dometic.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/assets\\/116\\.chunk\\.1cde48fab511b383019f\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "epi.dometic.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "epi.dometic.com",
+                    "resolved": "epi.dometic.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "649ad89e8cc13a97c94131defe4713da3ef323b71fa93bf456ec3be9422931d7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dometic.com",
+                "www.dometic.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/assets\\/52\\.chunk\\.c81acb5832257d3315ba\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "epi.dometic.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "epi.dometic.com",
+                    "resolved": "epi.dometic.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "bd67f51e6be944c1310ed06cca0c126eba3e12de699d1a1b81e11db5f20b1778"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dometic.com",
+                "www.dometic.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/assets\\/27\\.chunk\\.a3eca13999d59700ecfc\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "epi.dometic.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "epi.dometic.com",
+                    "resolved": "epi.dometic.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "806a10b09446accd8f68c26cc3fc709a0dae899d6e3738d6f9a9bcee9ea0b9d3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dometic.com",
+                "www.dometic.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/assets\\/72\\.chunk\\.25ba6309292633cc6bfd\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "epi.dometic.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "epi.dometic.com",
+                    "resolved": "epi.dometic.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "f248e3b416cd2947e7a99b25bf5c72855cf7fb34eb2a13daece36e5ee6c3278a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dometic.com",
+                "www.dometic.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/assets\\/97\\.chunk\\.d711501fe889042c6300\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "epi.dometic.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "epi.dometic.com",
+                    "resolved": "epi.dometic.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "633e7f15d5759b2edbaecd0c03abf5f841f15aae7474cd51baac54adb2588d4a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dometic.com",
+                "www.dometic.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/assets\\/67\\.chunk\\.1bed7df2a1169f9a018a\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "epi.dometic.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "epi.dometic.com",
+                    "resolved": "epi.dometic.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "a58516a82e84e207e7e979cef5705d2c4f5f8e35a88497de26ad2004c3c97e1d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dometic.com",
+                "www.dometic.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/assets\\/118\\.chunk\\.e71b7e7d53813d1e1f93\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "epi.dometic.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "epi.dometic.com",
+                    "resolved": "epi.dometic.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "6ded88c5a9c5001bca966bb7d6e2225182f016c04e66717436012ce306687ee4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dometic.com",
+                "www.dometic.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/assets\\/outdoor\\.chunk\\.e75cfe786278027e1061\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "epi.dometic.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "epi.dometic.com",
+                    "resolved": "epi.dometic.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "851f84cb76d9d1234e9ef30bc87b3e244577191a504a6072bc6379e023243b14"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dometic.com",
+                "www.dometic.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/assets\\/117\\.chunk\\.67595d75ddb8f66eb05d\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "epi.dometic.com.dxcloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "epi.dometic.com",
+                    "resolved": "epi.dometic.com.dxcloud.episerver.net"
+                }
+            ],
+            "responseHashes": [
+                "f797f3eaf63cda10a6684538bd5e2d68faaefb89e38a6b05f8b73f35401a9764"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dometic.com",
+                "www.dometic.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/1\\.0\\/users\\/idio_visitor_id:22104191-f0d1-4b26-8313-5b1cc8090e79\\/content",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.usea01.idio"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "27d777661d49016de30f948a05384bbbdaa156d3b6c784c625f6ced926525b8d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "iv": 0.000027248142017316195
+            },
+            "exampleSites": [
+                "jacksonhewitt.com",
+                "www.jacksonhewitt.com"
+            ]
+        },
+        {
+            "rule": "episerver\\.net\\/1\\.0\\/users\\/idio_visitor_id:62b0068a-49fe-4fcc-94ab-7613e87947d8\\/content",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.usea01.idio"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3eec2d64e7e6dca25c565781ef38b52455fbdaecc1848cce529dd012287cd4b4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "iv": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "terminix.com",
+                "www.terminix.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000729,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7962085308056872
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.11848341232227488
+        },
+        {
+            "domain": "episerver.net",
+            "prevalence": 0.04265402843601896
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.011848341232227487
+        },
+        {
+            "domain": "cookiebot.com",
+            "prevalence": 0.011848341232227487
+        },
+        {
+            "domain": "cheqzone.com",
+            "prevalence": 0.0071090047393364926
+        },
+        {
+            "domain": "valvolineglobal.com",
+            "prevalence": 0.004739336492890996
+        },
+        {
+            "domain": "ohiosos.gov",
+            "prevalence": 0.002369668246445498
+        },
+        {
+            "domain": "yottaa.com",
+            "prevalence": 0.002369668246445498
+        },
+        {
+            "domain": "ccm19.de",
+            "prevalence": 0.002369668246445498
+        }
+    ],
+    "types": {
+        "Script": 328,
+        "Image": 79,
+        "Stylesheet": 6,
+        "Document": 2,
+        "Fetch": 2,
+        "Font": 6
+    },
+    "nameservers": [
+        "ns-1436.awsdns-51.org",
+        "ns-1660.awsdns-15.co.uk",
+        "ns-194.awsdns-24.com",
+        "ns-876.awsdns-45.net"
+    ]
+}

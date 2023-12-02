@@ -1,0 +1,111 @@
+{
+    "domain": "aivideofeed.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "cdn",
+        "pixel"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "aivideofeed\\.com\\/pixel\\/v1\\/analytics\\.1\\.0\\.2\\.js",
+            "cookies": 0.0000477,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 7,
+                "Date.prototype.getTime": 7,
+                "Document.cookie setter": 7,
+                "Screen.prototype.width": 7,
+                "Screen.prototype.height": 7,
+                "window.innerWidth": 7,
+                "window.innerHeight": 7,
+                "Screen.prototype.colorDepth": 7,
+                "Navigator.prototype.userAgent": 7,
+                "Navigator.prototype.maxTouchPoints": 7,
+                "Date.prototype.getTimezoneOffset": 7
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "b4bf084254bcbe7a3ea19038b4d0ab7877dbc8fde250e8a8ce2daddba57b728e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__videoTrack_uid": {
+                    "ttl": 63072011,
+                    "length": 24,
+                    "prevalence": 0.00004768424853030334,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dentonrc.com",
+                "newstalkkzrg.com",
+                "winknews.com",
+                "www.amny.com",
+                "www.brooklynpaper.com",
+                "www.lakemchenryscanner.com",
+                "www.tdtnews.com"
+            ]
+        },
+        {
+            "rule": "aivideofeed\\.com\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pixel"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "__videoTrack_uid": 0.00004768424853030334
+            },
+            "exampleSites": [
+                "dentonrc.com",
+                "newstalkkzrg.com",
+                "winknews.com",
+                "www.amny.com",
+                "www.brooklynpaper.com",
+                "www.lakemchenryscanner.com",
+                "www.tdtnews.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000477,
+    "topInitiators": [
+        {
+            "domain": "sendtonews.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 7,
+        "Ping": 7
+    },
+    "nameservers": [
+        "ns-315.awsdns-39.com",
+        "ns-886.awsdns-46.net",
+        "ns-1166.awsdns-17.org",
+        "ns-1814.awsdns-34.co.uk"
+    ]
+}

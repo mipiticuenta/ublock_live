@@ -1,0 +1,74 @@
+{
+    "domain": "pcmag.com",
+    "owner": {
+        "name": "Ziff Davis LLC",
+        "displayName": "Ziff Davis"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000681,
+    "sites": 10,
+    "subdomains": [
+        "g"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "pcmag\\.com\\/geocc\\.js",
+            "cookies": 0.0000409,
+            "fingerprinting": 1,
+            "subdomains": [
+                "g"
+            ],
+            "apis": {
+                "Document.cookie setter": 6
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "03abb79e0dbe50a1e23e9eca45094fefb296018f5ae85daa2e7cbe2c8099cedb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "geoCC": {
+                    "ttl": 14400,
+                    "length": 2,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 0.16666666666666666
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "neoseeker.com",
+                "strategywiki.org",
+                "wccftech.com",
+                "www.howardforums.com",
+                "www.neoseeker.com",
+                "www.phonearena.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000681,
+    "topInitiators": [
+        {
+            "domain": "nsstatic.net",
+            "prevalence": 0.8
+        },
+        {
+            "domain": "nsstatic.com",
+            "prevalence": 0.2
+        }
+    ],
+    "types": {
+        "Script": 6
+    },
+    "nameservers": [
+        "melinda.ns.cloudflare.com",
+        "stan.ns.cloudflare.com"
+    ]
+}

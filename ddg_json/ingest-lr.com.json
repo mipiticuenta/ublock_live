@@ -1,0 +1,306 @@
+{
+    "domain": "ingest-lr.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00015,
+    "sites": 22,
+    "subdomains": [
+        "cdn",
+        "r"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "ingest-lr\\.com\\/LogRocket\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 5,
+                "Navigator.prototype.connection": 6,
+                "Navigator.prototype.onLine": 6
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "57bc92e8ee7d57d5486542dcf3b4a56662a71f46f5e1126da8cae5cd8e4a1687",
+                "5ff0ee76d13938109abdc96b10f15ffb4758d8ea71db0fcbfedf5780d1a2816a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "crackerbarrel.com",
+                "guestrelations.crackerbarrel.com",
+                "store.crackerbarrel.com",
+                "www.crackerbarrel.com",
+                "www.graeters.com",
+                "www.natptax.com",
+                "www.tripster.com"
+            ]
+        },
+        {
+            "rule": "ingest-lr\\.com\\/logger-1\\.min\\.js",
+            "cookies": 0.0000681,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 14,
+                "window.sessionStorage": 14,
+                "window.localStorage": 14,
+                "URL.createObjectURL": 14,
+                "Document.cookie getter": 10,
+                "Document.cookie setter": 10,
+                "Navigator.prototype.appCodeName": 10,
+                "Navigator.prototype.language": 10,
+                "Navigator.prototype.appName": 10,
+                "Navigator.prototype.platform": 10,
+                "Navigator.prototype.appVersion": 10,
+                "PerformanceTiming.prototype.navigationStart": 10,
+                "Performance.prototype.memory": 10
+            },
+            "sites": 15,
+            "prevalence": 0.000102,
+            "cnames": [],
+            "responseHashes": [
+                "0879565f46c6413aa9c0334b66b69ec858f628d9813b7d570e3dc96361089a77",
+                "afba921ebddda89ced502ca512f283b7387fd899cf10d68b54ea212504b4f5ae"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_lr_tabs_-eltkin%2Fcracker-barrel": {
+                    "ttl": 86408,
+                    "length": 142,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                },
+                "_lr_hb_-eltkin%2Fcracker-barrel": {
+                    "ttl": 86408,
+                    "length": 31,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                },
+                "_lr_uf_-eltkin": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                },
+                "_lr_tabs_-graeters%2Fm2": {
+                    "ttl": 86404,
+                    "length": 142,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_lr_hb_-graeters%2Fm2": {
+                    "ttl": 86404,
+                    "length": 31,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_lr_uf_-graeters": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "bmF0cHRheC5jb20%3D-_lr_tabs_-h5adjb%2Fweb": {
+                    "ttl": 86404,
+                    "length": 142,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "bmF0cHRheC5jb20%3D-_lr_hb_-h5adjb%2Fweb": {
+                    "ttl": 86404,
+                    "length": 31,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "bmF0cHRheC5jb20%3D-_lr_uf_-h5adjb": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_lr_tabs_-3koqyz%2Fcorporate-portal-docker-prod": {
+                    "ttl": 86406,
+                    "length": 142,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_lr_hb_-3koqyz%2Fcorporate-portal-docker-prod": {
+                    "ttl": 86406,
+                    "length": 31,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_lr_uf_-3koqyz": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_lr_tabs_-xi3hul%2Fspeedwaymotorscom-production": {
+                    "ttl": 86404,
+                    "length": 142,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_lr_hb_-xi3hul%2Fspeedwaymotorscom-production": {
+                    "ttl": 86404,
+                    "length": 31,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_lr_uf_-xi3hul": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_lr_tabs_-t6un7f%2Fstoryblocks-05ohi": {
+                    "ttl": 86408,
+                    "length": 142,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_lr_hb_-t6un7f%2Fstoryblocks-05ohi": {
+                    "ttl": 86408,
+                    "length": 31,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_lr_uf_-t6un7f": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_lr_tabs_-jxnujk%2Fproduction-hydrogen-storefront": {
+                    "ttl": 86414,
+                    "length": 142,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_lr_hb_-jxnujk%2Fproduction-hydrogen-storefront": {
+                    "ttl": 86403,
+                    "length": 31,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_lr_uf_-jxnujk": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_lr_tabs_-y23pte%2Ftripster": {
+                    "ttl": 86401,
+                    "length": 142,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_lr_hb_-y23pte%2Ftripster": {
+                    "ttl": 86401,
+                    "length": 31,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_lr_uf_-y23pte": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "crackerbarrel.com",
+                "store.crackerbarrel.com",
+                "www.bidnow.us",
+                "www.bookerauction.co",
+                "www.crackerbarrel.com",
+                "www.graeters.com",
+                "www.hubermanlab.com",
+                "www.mbauction.com",
+                "www.natptax.com",
+                "www.physiciansmutual.com",
+                "www.rollerauction.com",
+                "www.speedwaymotors.com",
+                "www.storyblocks.com",
+                "www.tecovas.com",
+                "www.tripster.com"
+            ]
+        },
+        {
+            "rule": "ingest-lr\\.com\\/i",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "r"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "115ea0e0317720eee194cc349912779222dc07f74a8d1d071825901fb67d93a0",
+                "2ce9994607f743ac0d2db8d188add080d810a43690b303a43452281a067f84b8",
+                "228036c321748707a969fcc05f90d8c2beb94e15ad8e17f68cdbcc7db515400d",
+                "5487341ab69e339e8d163c2de5b173d305118cbdc6232366536d689976bb4576",
+                "70fe5963bf780fae5f09754b56e6b66a04406396fa63486b6da30aa735f0c63a",
+                "0896cea4d5638a5a5138b0df08ee4c095d561cb6c88cf49cd17fe1b7feb16c4c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "crackerbarrel.com",
+                "store.crackerbarrel.com",
+                "www.crackerbarrel.com",
+                "www.graeters.com",
+                "www.natptax.com",
+                "www.physiciansmutual.com",
+                "www.speedwaymotors.com",
+                "www.tecovas.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000954,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5555555555555556
+        },
+        {
+            "domain": "shopify.com",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.1388888888888889
+        },
+        {
+            "domain": "osano.com",
+            "prevalence": 0.05555555555555555
+        }
+    ],
+    "types": {
+        "Script": 22,
+        "XHR": 8
+    },
+    "nameservers": [
+        "rita.ns.cloudflare.com",
+        "dan.ns.cloudflare.com"
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "domain": "tme.eu",
+    "owner": {
+        "name": "Transfer Multisort Elektronik Sp. z o.o.",
+        "displayName": "Transfer Multisort Elektronik"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "static0"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "tme\\.eu\\/www\\/delivery\\/asyncjs\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e547c8fe6b39f598c7af3a53f5a969a5c82b498d6c6f63f93ae10fc7a493f419"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tme.com",
+                "www.tme.com"
+            ]
+        },
+        {
+            "rule": "tme\\.eu\\/www\\/delivery\\/asyncspc\\.php",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "648995b56d0718df362a567a8a0bf62212b51797a03a142f98e120dd1b07c452"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tme.com",
+                "www.tme.com"
+            ]
+        },
+        {
+            "rule": "tme\\.eu\\/www\\/delivery\\/lg\\.php",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static0"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tme.com",
+                "www.tme.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "cloudimg.io",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "XHR": 2,
+        "Image": 2
+    },
+    "nameservers": [
+        "dalary.ns.cloudflare.com",
+        "albert.ns.cloudflare.com"
+    ]
+}

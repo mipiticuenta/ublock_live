@@ -1,0 +1,92 @@
+{
+    "domain": "admasters.media",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "rtg"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "admasters\\.media\\/resources\\/content\\/movavi\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "rtg"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 3,
+                "window.name": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "a0fa5ba281062861d27df0a8959adab5e124a6d15fed4f49b7e3dcc197bd325a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__adm_tid": {
+                    "ttl": 31536007,
+                    "length": 23,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "movavi.com",
+                "www.movavi.com",
+                "www.screencapture.com"
+            ]
+        },
+        {
+            "rule": "admasters\\.media\\/hit\\/movavi\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rtg"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "__adm_tid": 0.000020436106512987146
+            },
+            "exampleSites": [
+                "movavi.com",
+                "www.movavi.com",
+                "www.screencapture.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 6
+    },
+    "nameservers": [
+        "elijah.ns.cloudflare.com",
+        "rosalie.ns.cloudflare.com"
+    ]
+}

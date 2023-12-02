@@ -1,0 +1,97 @@
+{
+    "domain": "petco.com",
+    "owner": {
+        "name": "Petco Animal Supplies Stores, Inc.",
+        "displayName": "Petco Animal Supplies Stores"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000886,
+    "sites": 13,
+    "subdomains": [
+        "www",
+        "sgtm"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "petco\\.com\\/shop\\/en\\/petcostore",
+            "cookies": 0.0000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000681,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bartleylawoffice.com",
+                "ewn.co.za",
+                "luun.ru",
+                "newsable.asianetnews.com",
+                "teliahelp.com",
+                "www.cnnphilippines.com",
+                "www.nigella.com",
+                "www.noise11.com",
+                "www.thesouthafrican.com",
+                "xcelebs.ru"
+            ]
+        },
+        {
+            "rule": "petco\\.com\\/g\\/collect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sgtm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.00005449628403463239
+            },
+            "exampleSites": [
+                "vetcoclinics.com",
+                "www.vetcoclinics.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000681,
+    "topInitiators": [
+        {
+            "domain": "korfo.org",
+            "prevalence": 0.7692307692307693
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.15384615384615385
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.07692307692307693
+        }
+    ],
+    "types": {
+        "Script": 10,
+        "XHR": 2
+    },
+    "nameservers": [
+        "val.ns.cloudflare.com",
+        "major.ns.cloudflare.com"
+    ]
+}

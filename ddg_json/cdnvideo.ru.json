@@ -1,0 +1,96 @@
+{
+    "domain": "cdnvideo.ru",
+    "owner": {
+        "name": "LLC \"CDN-video\"",
+        "displayName": "CDN-video"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000817,
+    "sites": 12,
+    "subdomains": [
+        "ads-storage-avito",
+        "ntv-static"
+    ],
+    "cnames": [
+        {
+            "original": "ads-storage.avito.ru",
+            "resolved": "ads-storage-avito.cdnvideo.ru"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "cdnvideo\\.ru\\/manrope-medium\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ads-storage-avito"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "ads-storage.avito.ru",
+                    "resolved": "ads-storage-avito.cdnvideo.ru"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "avito.ru",
+                "www.avito.ru"
+            ]
+        },
+        {
+            "rule": "cdnvideo\\.ru\\/home\\/news\\/20190702\\/ntv_air\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ntv-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c8a67aa568319b046042ed3e440ea3a694f1509aa30d4841fb73248b3753bc46"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ntv.ru",
+                "www.ntv.ru"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9166666666666666
+        },
+        {
+            "domain": "buzzoola.com",
+            "prevalence": 0.08333333333333333
+        }
+    ],
+    "types": {
+        "Font": 2,
+        "Image": 2
+    },
+    "nameservers": [
+        "ns009.cdnvideo.ru",
+        "ns006.cdnvideo.ru",
+        "ns060.cdnvideo.ru",
+        "ns007.cdnvideo.ru",
+        "ns008.cdnvideo.ru"
+    ]
+}

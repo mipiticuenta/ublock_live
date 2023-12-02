@@ -1,0 +1,84 @@
+{
+    "domain": "medialinq.se",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "www"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "medialinq\\.se\\/js\\/medialinq\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "URL.createObjectURL": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5e0552c5c0397d16f3feb9f46e18f9c44400d3e9c228ddc996cecaf36bafa560"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "frihetsnytt.se",
+                "newsvoice.se"
+            ]
+        },
+        {
+            "rule": "medialinq\\.se\\/util\\/probe\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "window.localStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ee70741b13cabc9ef39551cf88e3e1ff117196aa42cd1a403afc1cfaa2e6fafe"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "frihetsnytt.se",
+                "newsvoice.se"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Document": 2
+    },
+    "nameservers": [
+        "ns-902.awsdns-48.net",
+        "ns-1668.awsdns-16.co.uk",
+        "ns-1449.awsdns-53.org",
+        "ns-380.awsdns-47.com"
+    ]
+}

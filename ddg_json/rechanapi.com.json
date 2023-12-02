@@ -1,0 +1,117 @@
+{
+    "domain": "rechanapi.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "media",
+        "nexus"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "rechanapi\\.com\\/plugins\\/analytics\\/vtrk-min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "media"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2c74f2f304580fc5f9ef7e71665c1619f10d8ac96c8c1e9976203e826dccfea2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "vtrk": {
+                    "ttl": null,
+                    "length": 430,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "vtrk_visitid": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "betway.com",
+                "www.jackpotcitycasino.com"
+            ]
+        },
+        {
+            "rule": "rechanapi\\.com\\/privacy\\/v1\\/c\\/r\\.rnc",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nexus"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jackpotcitycasino.com",
+                "www.jackpotcitycasino.com"
+            ]
+        },
+        {
+            "rule": "rechanapi\\.com\\/privacy\\/v1\\/b\\/r\\.rnc",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nexus"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jackpotcitycasino.com",
+                "www.jackpotcitycasino.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Image": 4
+    },
+    "nameservers": [
+        "lex.ns.cloudflare.com",
+        "zoe.ns.cloudflare.com"
+    ]
+}

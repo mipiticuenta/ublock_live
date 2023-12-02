@@ -1,0 +1,210 @@
+{
+    "domain": "elisa.fi",
+    "owner": {
+        "name": "Elisa Oyj",
+        "displayName": "Elisa Oyj"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "occhat"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "elisa\\.fi\\/chatserver\\/\\/Scripts\\/oc-chat-v2\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "occhat"
+            ],
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b032e94f8866847e3e095929795d1b8d957d761514912fd89b1ed79217411796"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "oc-d40076d1-2b46-4f38-bd21-9648dd3cc4f9-1195-D9064E00CBEA41D18B6AAA40D327268E6BA0D54B-arrivedToSite": {
+                    "ttl": null,
+                    "length": 13,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opintopolku.fi",
+                "www.helen.fi"
+            ]
+        },
+        {
+            "rule": "elisa\\.fi\\/chatserver\\/Version",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "occhat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4dccadeaaca906a7ca8de72098c3e87adb735d99a90777323c196e8f30e95167"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opintopolku.fi",
+                "www.helen.fi"
+            ]
+        },
+        {
+            "rule": "elisa\\.fi\\/chatserver\\/Content\\/reset\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "occhat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dcb72a621f961aaa1470dd0d6083039198d73f10e31d57044b56c7cede5d7487"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opintopolku.fi",
+                "www.helen.fi"
+            ]
+        },
+        {
+            "rule": "elisa\\.fi\\/chatserver\\/Content\\/default\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "occhat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8e10cfa4da3b45f3cb257a17a6a46c8bf1f83e20f1c2f3cadaba82b48c9bf8e5"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opintopolku.fi",
+                "www.helen.fi"
+            ]
+        },
+        {
+            "rule": "elisa\\.fi\\/chatserver\\/chathub",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "occhat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opintopolku.fi",
+                "www.helen.fi"
+            ]
+        },
+        {
+            "rule": "elisa\\.fi\\/chatserver\\/Content\\/img\\/thumb_up_not_selected\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "occhat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "da5b9eeecc46cb90c27a97f4ed889cb14c234220cda108a329dbbd70514aa0d4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opintopolku.fi",
+                "www.helen.fi"
+            ]
+        },
+        {
+            "rule": "elisa\\.fi\\/chatserver\\/Content\\/img\\/thumb_down_not_selected\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "occhat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e329fbec129b289912482c5c57c85f88590390bb973ff81360cfe60802cc3969"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "opintopolku.fi",
+                "www.helen.fi"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "azure.com",
+            "prevalence": 0.75
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.25
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "XHR": 2,
+        "Stylesheet": 4,
+        "WebSocket": 2,
+        "Image": 4
+    },
+    "nameservers": [
+        "ns-se.elisa.net",
+        "ns1.z.fi",
+        "ns-fi.elisa.net",
+        "ns2.z.fi"
+    ]
+}

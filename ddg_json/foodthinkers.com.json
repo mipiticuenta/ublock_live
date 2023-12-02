@@ -1,0 +1,104 @@
+{
+    "domain": "foodthinkers.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "api",
+        "web-assets"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "foodthinkers\\.com\\/algoliaProxy",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5b9925ca11e96fd5d649fe79f75aa1c08c0df7c62066f04ca4b84d3cf3cbf287"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baratza.com",
+                "www.breville.com"
+            ]
+        },
+        {
+            "rule": "foodthinkers\\.com\\/commercetools\\/oauth\\/anonymous",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "defd987bd266ddaac3163c1f65fefe0c801ab3dd06746453505ea1d26151e205"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "breville.com",
+                "www.breville.com"
+            ]
+        },
+        {
+            "rule": "foodthinkers\\.com\\/decision-tool-widget\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
+            "subdomains": [
+                "web-assets"
+            ],
+            "apis": {
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0af985a0fb82352e3bb0983e5684cc667c83338f2630cd1078cc3de50ce02bfe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "breville.com",
+                "www.breville.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Fetch": 2,
+        "XHR": 2,
+        "Script": 2
+    },
+    "nameservers": [
+        "dns1.cscdns.net",
+        "dns2.cscdns.net"
+    ]
+}

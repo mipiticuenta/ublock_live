@@ -1,0 +1,126 @@
+{
+    "domain": "logico3c.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "logico3c\\.com\\/aud\\/clientjs\\/ptag\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e17171073932389ebdca291552a8fc13fbbad7e9ed6a30729d60c19bf78cba59"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cdkeys.com",
+                "www.cdkeys.com",
+                "www.dhgate.com",
+                "www.manfrotto.com"
+            ]
+        },
+        {
+            "rule": "logico3c\\.com\\/aud\\/clientjs\\/4126\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1,
+                "window.outerWidth": 1,
+                "window.innerWidth": 1,
+                "window.outerHeight": 1,
+                "window.innerHeight": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dcf45faa9ff900149fe73bd67a0cd7f0d8fc9fe27edd6692dc0534148de207b4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cdkeys.com",
+                "www.cdkeys.com"
+            ]
+        },
+        {
+            "rule": "logico3c\\.com\\/aud\\/clientjs\\/4583\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "window.outerWidth": 2,
+                "window.innerWidth": 2,
+                "window.outerHeight": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3c0cef02f9a7bacc0aa1a1fb8becf9cbaf651bacc5b32b9b447ee413c3335b65"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dhgate.com",
+                "www.dhgate.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.4
+        },
+        {
+            "domain": "trmit.com",
+            "prevalence": 0.4
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2
+        }
+    ],
+    "types": {
+        "Script": 8
+    },
+    "nameservers": [
+        "norman.ns.cloudflare.com",
+        "aria.ns.cloudflare.com"
+    ]
+}

@@ -1,0 +1,120 @@
+{
+    "domain": "ipromcloud.com",
+    "owner": {
+        "name": "IPROM, d.o.o.",
+        "displayName": "IPROM"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "ipromcloud\\.com\\/ipromNS\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.language": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7c792a0a7d16012f1daf2b8cb1aa407a8b758a063aa3435d1433d4f15116f03a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hribi.net",
+                "www.rtvslo.si"
+            ]
+        },
+        {
+            "rule": "ipromcloud\\.com\\/script\\/Utils\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Screen.prototype.width": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "00584687a50d50c48a0e9c24bb243e3d526236d1ecb24bf3f60c5a5f61da298c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hribi.net",
+                "www.rtvslo.si"
+            ]
+        },
+        {
+            "rule": "ipromcloud\\.com\\/script\\/format\\/Classic\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "02638d82c5262138597d5a3b13f1020ea6dc9500bd8ef7942626506f537c8f0e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hribi.net",
+                "www.rtvslo.si"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6363636363636364
+        },
+        {
+            "domain": "iprom.net",
+            "prevalence": 0.36363636363636365
+        }
+    ],
+    "types": {
+        "Script": 6
+    },
+    "nameservers": [
+        "adrian.ns.cloudflare.com",
+        "logan.ns.cloudflare.com"
+    ]
+}

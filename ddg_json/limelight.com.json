@@ -1,0 +1,94 @@
+{
+    "domain": "limelight.com",
+    "owner": {
+        "name": "Limelight Networks, Inc.",
+        "displayName": "Limelight Networks"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "video",
+        "assets.video"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "limelight\\.com\\/player\\/limelightjs-player\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "video"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "HTMLMediaElement.prototype.canPlayType": 5,
+                "Navigator.prototype.maxTouchPoints": 5,
+                "Navigator.prototype.languages": 5,
+                "MediaSource.isTypeSupported": 5,
+                "window.localStorage": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "d9d5ad05b5b32314a7a39e4b5f0831ec18f2040bfd6f1962091710cdfae2781c",
+                "e0ad93c2d8fd72c7d48c01724bc19267be4c322cf703582bd45d789585b10902"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vanguard.com",
+                "personal.vanguard.com",
+                "www.cardiovascular.abbott",
+                "www.pgim.com",
+                "www.ppa.com"
+            ]
+        },
+        {
+            "rule": "limelight\\.com\\/production\\/limelightjs-player\\/limelightjs-player-5\\.2\\.1\\/limelightjs-player\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.video"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "e0ad93c2d8fd72c7d48c01724bc19267be4c322cf703582bd45d789585b10902"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vanguard.com",
+                "personal.vanguard.com",
+                "www.cardiovascular.abbott",
+                "www.pgim.com",
+                "www.ppa.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 10
+    },
+    "nameservers": [
+        "aa2.dns.llnw.net",
+        "aa1.dns.llnw.net"
+    ]
+}

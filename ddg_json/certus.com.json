@@ -1,0 +1,81 @@
+{
+    "domain": "certus.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "certus\\.com\\/global\\/js\\/livechat\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "486c9ccab51e99dd618560a281ca71009f350096a85dd9239ff26d7396c18791"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dmvflorida.org",
+                "www.dmvflorida.org",
+                "www.stateofflorida.com"
+            ]
+        },
+        {
+            "rule": "certus\\.com\\/global\\/js\\/site-config\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2b21c9398ad56e05ef91580177370f95933d39a9cc4e94941b2998f509e498b0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stateofflorida.com",
+                "www.stateofflorida.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 5
+    },
+    "nameservers": [
+        "ns4-01.azure-dns.info",
+        "ns3-01.azure-dns.org",
+        "ns2-01.azure-dns.net",
+        "ns1-01.azure-dns.com"
+    ]
+}

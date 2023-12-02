@@ -1,0 +1,80 @@
+{
+    "domain": "blox-custom-resources.s3.amazonaws.com",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "blox-custom-resources\\.s3\\.amazonaws\\.com\\/both_domains\\/newsletter_dynamic_redesign_v1\\/css\\/newsletter-dynamic\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1eacb2225b35be603d62c3342c12e8bbe3e8c6d3b739272cd9c4c66fd0bb3494"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nola.com",
+                "www.theadvocate.com"
+            ]
+        },
+        {
+            "rule": "blox-custom-resources\\.s3\\.amazonaws\\.com\\/both_domains\\/newsletter_dynamic_redesign_v1\\/script\\/newsletter-dynamic\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "55e8e30182f5d537408756194f64f374c7f14093839a07a3702b3edeb5ce86ee"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nola.com",
+                "www.theadvocate.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Stylesheet": 2,
+        "Script": 2
+    },
+    "nameservers": [
+        "ns-1620.awsdns-10.co.uk",
+        "ns-328.awsdns-41.com",
+        "ns-1173.awsdns-18.org",
+        "ns-674.awsdns-20.net"
+    ]
+}

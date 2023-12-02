@@ -1,0 +1,109 @@
+{
+    "domain": "centarro.io",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "static.zyrtec",
+        "api.zyrtec"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "centarro\\.io\\/library\\/zyrtec\\.b6c9ad20974479a76add\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static.zyrtec"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f2a2123d150c47223be25f026b8198c8d438da1d8f19145a2be7ebfc5b66a382"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cartToken": {
+                    "ttl": 86402,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zyrtec.com",
+                "www.zyrtec.com"
+            ]
+        },
+        {
+            "rule": "centarro\\.io\\/jsonapi\\/carts",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.zyrtec"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zyrtec.com",
+                "www.zyrtec.com"
+            ]
+        },
+        {
+            "rule": "centarro\\.io\\/jsonapi\\/carts",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.zyrtec"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5d77ff66711dd0f94e70376fa742032c8763e8e494677a2a629591232ed0fc01"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zyrtec.com",
+                "www.zyrtec.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Preflight": 2,
+        "Fetch": 2
+    },
+    "nameservers": [
+        "dns2.registrar-servers.com",
+        "dns1.registrar-servers.com"
+    ]
+}

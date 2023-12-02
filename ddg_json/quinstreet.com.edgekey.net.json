@@ -1,0 +1,138 @@
+{
+    "domain": "quinstreet.com.edgekey.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "www"
+    ],
+    "cnames": [
+        {
+            "original": "autoinsurance.insure.com",
+            "resolved": "www.quinstreet.com.edgekey.net"
+        },
+        {
+            "original": "getquotes.insurance.com",
+            "resolved": "www.quinstreet.com.edgekey.net"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "quinstreet\\.com\\.edgekey\\.net\\/api\\/getipaddress",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "autoinsurance.insure.com",
+                    "resolved": "www.quinstreet.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "9c60f58dab2a90cb12e751e2ebcbcebbb7e9433e0d09fa33c6e061675777ad9a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "carinsurance.com",
+                "www.carinsurance.com"
+            ]
+        },
+        {
+            "rule": "quinstreet\\.com\\.edgekey\\.net\\/api\\/ip2geo",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "autoinsurance.insure.com",
+                    "resolved": "www.quinstreet.com.edgekey.net"
+                },
+                {
+                    "original": "getquotes.insurance.com",
+                    "resolved": "www.quinstreet.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "17b669387ba374b310ed0ef018233307e5937e83454d318afea744e395f9e012"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "carinsurance.com",
+                "www.carinsurance.com",
+                "www.insurance.com",
+                "www.insure.com"
+            ]
+        },
+        {
+            "rule": "quinstreet\\.com\\.edgekey\\.net\\/api\\/clickcapture",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "autoinsurance.insure.com",
+                    "resolved": "www.quinstreet.com.edgekey.net"
+                },
+                {
+                    "original": "getquotes.insurance.com",
+                    "resolved": "www.quinstreet.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "cd9dd95efcdfca1ff97a9af796bff1335b4846572e1d25fa53ade195a148c67b",
+                "4126f9808a09069218bf8322988d4f603f487b01fb62c15fde3fa189202599fb",
+                "2de492ae3336f558ac727c65469c7dc597cad901c16276ea76eb0193c7705523"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "carinsurance.com",
+                "www.carinsurance.com",
+                "www.insurance.com",
+                "www.insure.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000409,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Fetch": 10
+    },
+    "nameservers": []
+}

@@ -1,0 +1,151 @@
+{
+    "domain": "scotiabank.com.edgekey.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "passport",
+        "dmtags"
+    ],
+    "cnames": [
+        {
+            "original": "dmtags.scotiabank.com",
+            "resolved": "dmtags.scotiabank.com.edgekey.net"
+        },
+        {
+            "original": "passport.scotiabank.com",
+            "resolved": "passport.scotiabank.com.edgekey.net"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "scotiabank\\.com\\.edgekey\\.net\\/oauth2\\/v1\\/authorize",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "passport"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "passport.scotiabank.com",
+                    "resolved": "passport.scotiabank.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scotiabank.com",
+                "www.scotiaonline.scotiabank.com"
+            ]
+        },
+        {
+            "rule": "scotiabank\\.com\\.edgekey\\.net\\/launch\\/novaweb\\/27c34d6e7144\\/094054a424e3\\/launch-edbf66c903b6\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "dmtags"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "dmtags.scotiabank.com",
+                    "resolved": "dmtags.scotiabank.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "704047b0be3c511da9ca3130d4664be265ef47d15f42e82d90afdec91a963721"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scotiabank.com",
+                "www.scotiaonline.scotiabank.com"
+            ]
+        },
+        {
+            "rule": "scotiabank\\.com\\.edgekey\\.net\\/launch\\/novaweb\\/27c34d6e7144\\/094054a424e3\\/ef953ee29fd6\\/hostedLibFiles\\/EPe51f9b26f7c243dfa8d1d3ea2bf16f5f\\/AppMeasurement\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "dmtags"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "dmtags.scotiabank.com",
+                    "resolved": "dmtags.scotiabank.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "6b470a5ec92399b5420afa5e81b07fe400eeb24c317d911ce76aabcf7e02db39"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scotiabank.com",
+                "www.scotiaonline.scotiabank.com"
+            ]
+        },
+        {
+            "rule": "scotiabank\\.com\\.edgekey\\.net\\/launch\\/novaweb\\/27c34d6e7144\\/094054a424e3\\/ef953ee29fd6\\/hostedLibFiles\\/EPe51f9b26f7c243dfa8d1d3ea2bf16f5f\\/AppMeasurement_Module_ActivityMap\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dmtags"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "dmtags.scotiabank.com",
+                    "resolved": "dmtags.scotiabank.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "2f12bf7ca8e0bc82ac4634c7f6b5d9cd3b260ec31c2ec76d2db01d983770cf48"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scotiabank.com",
+                "www.scotiaonline.scotiabank.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Document": 2,
+        "Script": 6
+    },
+    "nameservers": []
+}

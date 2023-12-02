@@ -1,0 +1,194 @@
+{
+    "domain": "walmart.com.akadns.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "cdn-csp",
+        "beacon-cdn-custom"
+    ],
+    "cnames": [
+        {
+            "original": "beacon.walmart.com",
+            "resolved": "beacon-cdn-custom.walmart.com.akadns.net"
+        },
+        {
+            "original": "csp.walmart.com",
+            "resolved": "cdn-csp.walmart.com.akadns.net"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "walmart\\.com\\.akadns\\.net\\/c\\/r\\/gl",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-csp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "csp.walmart.com",
+                    "resolved": "cdn-csp.walmart.com.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "walmart.com",
+                "mystore.walmart.com",
+                "www.walmart.com"
+            ]
+        },
+        {
+            "rule": "walmart\\.com\\.akadns\\.net\\/rum\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 2,
+            "subdomains": [
+                "beacon-cdn-custom"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "beacon.walmart.com",
+                    "resolved": "beacon-cdn-custom.walmart.com.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "84e47c6ea3d6b8cd6581de332151b815766494aa5ce3c82cdf75da67c7bfe093",
+                "6284515b04eb70c0eeea16fa21a5dc1d7813301542ca88368b0c45a486165655"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "walmart.com",
+                "mystore.walmart.com",
+                "photos3.walmart.com",
+                "www.walmart.com"
+            ]
+        },
+        {
+            "rule": "walmart\\.com\\.akadns\\.net\\/rum\\.gif",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "beacon-cdn-custom"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "beacon.walmart.com",
+                    "resolved": "beacon-cdn-custom.walmart.com.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "13f86bd1a6d578ee82ca0c54a9a634e03d8d7db09380d72590b158f173f53790"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "walmart.com",
+                "mystore.walmart.com",
+                "www.walmart.com"
+            ]
+        },
+        {
+            "rule": "walmart\\.com\\.akadns\\.net\\/rum\\.gif",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "beacon-cdn-custom"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "beacon.walmart.com",
+                    "resolved": "beacon-cdn-custom.walmart.com.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "13f86bd1a6d578ee82ca0c54a9a634e03d8d7db09380d72590b158f173f53790"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "walmart.com",
+                "mystore.walmart.com",
+                "photos3.walmart.com",
+                "www.walmart.com"
+            ]
+        },
+        {
+            "rule": "walmart\\.com\\.akadns\\.net\\/tap\\.gif",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "beacon-cdn-custom"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "beacon.walmart.com",
+                    "resolved": "beacon-cdn-custom.walmart.com.akadns.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "walmart.com",
+                "photos3.walmart.com",
+                "www.walmart.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0.0000409,
+    "topInitiators": [
+        {
+            "domain": "walmartimages.com",
+            "prevalence": 0.9545454545454546
+        },
+        {
+            "domain": "wal.co",
+            "prevalence": 0.045454545454545456
+        }
+    ],
+    "types": {
+        "Other": 3,
+        "Script": 4,
+        "Ping": 3,
+        "Image": 7
+    },
+    "nameservers": []
+}

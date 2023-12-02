@@ -1,0 +1,106 @@
+{
+    "domain": "wemfbox.ch",
+    "owner": {
+        "name": "NET-Metrix AG",
+        "displayName": "NET-Metrix"
+    },
+    "source": [
+        "DuckDuckGo-CH"
+    ],
+    "prevalence": 0.000603,
+    "sites": 6,
+    "subdomains": [
+        "rts-ssl",
+        "idgcompu-ssl",
+        "srg-ssl"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "wemfbox\\.ch\\/2004\\/01\\/survey\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rts-ssl",
+                "idgcompu-ssl"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000402,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rts.ch",
+                "pages.rts.ch",
+                "programmesradio.rts.ch",
+                "www.computerworld.ch"
+            ]
+        },
+        {
+            "rule": "wemfbox\\.ch\\/cgi-bin\\/ivw\\/CP\\/programmesradio",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rts-ssl"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rts.ch",
+                "pages.rts.ch",
+                "programmesradio.rts.ch"
+            ]
+        },
+        {
+            "rule": "wemfbox\\.ch\\/cgi-bin\\/ivw\\/CP\\/de\\/start",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "srg-ssl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "srgssr.ch",
+                "www.srgssr.ch"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7142857142857143
+        },
+        {
+            "domain": "usercentrics.eu",
+            "prevalence": 0.2857142857142857
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "Image": 5
+    },
+    "nameservers": [
+        "ch.ch-inter.net",
+        "de.ch-inter.net"
+    ]
+}

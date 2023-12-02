@@ -1,0 +1,66 @@
+{
+    "domain": "m.global-ssl.fastly.net",
+    "owner": {
+        "name": "Fastly, Inc.",
+        "displayName": "Fastly",
+        "privacyPolicy": "https://www.fastly.com/privacy",
+        "url": "http://fastly.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "assets.digitalocean.com",
+            "resolved": "m.global-ssl.fastly.net"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "m\\.global-ssl\\.fastly\\.net\\/labs\\/search\\.js\\.gz",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "assets.digitalocean.com",
+                    "resolved": "m.global-ssl.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "a76d5f88b046e46f1df5e6c10e907e7297c6398790b6e342811341ed7d38ba06"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "digitalocean.com",
+                "docs.digitalocean.com",
+                "www.digitalocean.com"
+            ]
+        }
+    ],
+    "categories": [
+        "Ad Motivated Tracking",
+        "Advertising",
+        "Analytics",
+        "Third-Party Analytics Marketing",
+        "Action Pixels",
+        "CDN",
+        "Embedded Content",
+        "Session Replay"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "types": {
+        "Script": 3
+    },
+    "nameservers": []
+}

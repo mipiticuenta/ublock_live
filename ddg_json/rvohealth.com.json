@@ -1,0 +1,316 @@
+{
+    "domain": "rvohealth.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000886,
+    "sites": 13,
+    "subdomains": [
+        "cdn",
+        "ingest.make"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "rvohealth\\.com\\/cohesion\\/cohesion-latest\\.min\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 4,
+                "window.localStorage": 4,
+                "window.sessionStorage": 4,
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 4,
+                "Navigator.prototype.userAgent": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "77848bda8772ae57a43819d2322e5ae2ccf1b0b36ff2a019541441e059db9fa0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "chsn_cnsnt": {
+                    "ttl": 63072003,
+                    "length": 58,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 0.75
+                },
+                "tglr_anon_id": {
+                    "ttl": 63072003,
+                    "length": 36,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 1
+                },
+                "tglr_sess_id": {
+                    "ttl": 1803,
+                    "length": 36,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 1
+                },
+                "tglr_req": {
+                    "ttl": 1803,
+                    "length": 41,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 1
+                },
+                "tglr_sess_count": {
+                    "ttl": 63072003,
+                    "length": 1,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 0.25
+                },
+                "tglr_tenant_id": {
+                    "ttl": 63072003,
+                    "length": 31,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 0.75
+                },
+                "cohsn_xs_id": {
+                    "ttl": 63072003,
+                    "length": 36,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "healthline.com",
+                "care.healthline.com",
+                "perks.optum.com",
+                "www.healthgrades.com"
+            ]
+        },
+        {
+            "rule": "rvohealth\\.com\\/v2\\/t",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ingest.make"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "eb5c27f7e26ba308222b7abdded5b69d49c77a09d1aef2bac4df47ec24c285e9",
+                "590234f598afae8f1a47f3007b2e39b7e9cd8cce3058604fcb50206e73f3b1f0",
+                "62dcf2fc0dae4bb29bfc28adf6cf76a4b5b17054974dced20d39e5177e6f695e",
+                "7d03f4b686ccee615fd6c6596093dc2b6c755f8d7c04f9cb19ef50a16e545300",
+                "bd0584d6744aa149db7bf627c870895f6b8943388837e6ec2a881a873d9deb62",
+                "46138f726c1da01416085c1b5050c19e2a1ced6916ca5759868b34ffba734d8d",
+                "3558d7b7a5a0e463f703cc89ebd07c7b8529ee305d0f9d387b8a0149a109312f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "healthline.com",
+                "care.healthline.com",
+                "greatist.com",
+                "perks.optum.com",
+                "psychcentral.com",
+                "www.healthgrades.com",
+                "www.healthline.com",
+                "www.medicalnewstoday.com"
+            ]
+        },
+        {
+            "rule": "rvohealth\\.com\\/v2\\/t",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ingest.make"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "healthline.com",
+                "care.healthline.com",
+                "greatist.com",
+                "perks.optum.com",
+                "psychcentral.com",
+                "www.healthgrades.com",
+                "www.healthline.com",
+                "www.medicalnewstoday.com"
+            ]
+        },
+        {
+            "rule": "rvohealth\\.com\\/cohesion\\/xs1\\.html",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 8,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "8edbaff0f06b9a7dd980e4d8bc65c8a024273d78a7018632ba6969d3cea43c45"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "healthline.com",
+                "care.healthline.com",
+                "greatist.com",
+                "perks.optum.com",
+                "psychcentral.com",
+                "www.healthgrades.com",
+                "www.healthline.com",
+                "www.medicalnewstoday.com"
+            ]
+        },
+        {
+            "rule": "rvohealth\\.com\\/cohesion\\/xs2\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 4
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "9ae13ddab63acb296700ae3579ebf12ca93759bcf6285822acc5f831fc6f62f0"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "healthline.com",
+                "care.healthline.com",
+                "greatist.com",
+                "perks.optum.com",
+                "psychcentral.com",
+                "www.healthgrades.com",
+                "www.healthline.com",
+                "www.medicalnewstoday.com"
+            ]
+        },
+        {
+            "rule": "rvohealth\\.com\\/cohesion\\/ext\\/experimental\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "f74071d4a8436cc22b7e436067a7c97f24b19279ec686dd5e14530818c76e945"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "greatist.com",
+                "psychcentral.com",
+                "www.healthline.com",
+                "www.medicalnewstoday.com"
+            ]
+        },
+        {
+            "rule": "rvohealth\\.com\\/preamp\\/api\\/v1\\/decisions",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "d02fa05c1e01f9ff031412fa058cec33246f92a89621b1536cd2d22f96681e45",
+                "a8e766ab712af151aae207fb8f84602c2c7771d2e3a36c293ab9677f0009d528",
+                "6ccb6d6f9a60fddb0eb11afc18694a9c0d03243dc2649393b8e00067b85f5294"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "greatist.com",
+                "psychcentral.com",
+                "www.healthline.com",
+                "www.medicalnewstoday.com"
+            ]
+        },
+        {
+            "rule": "rvohealth\\.com\\/preamp\\/api\\/v1\\/confirmation",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "27badc983df1780b60c2b3fa9d3a19a00e46aac798451f0febdca52920faaddf"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "greatist.com",
+                "psychcentral.com",
+                "www.healthline.com",
+                "www.medicalnewstoday.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000545,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9647058823529412
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.023529411764705882
+        },
+        {
+            "domain": "cookielaw.org",
+            "prevalence": 0.011764705882352941
+        }
+    ],
+    "types": {
+        "Script": 8,
+        "XHR": 16,
+        "Preflight": 8,
+        "Document": 16
+    },
+    "nameservers": [
+        "ns-1078.awsdns-06.org",
+        "ns-675.awsdns-20.net",
+        "ns-454.awsdns-56.com",
+        "ns-1652.awsdns-14.co.uk"
+    ]
+}

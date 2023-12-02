@@ -1,0 +1,120 @@
+{
+    "domain": "usefomo.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00017,
+    "sites": 25,
+    "subdomains": [
+        "geocode",
+        "www"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "usefomo\\.com\\/json\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "geocode"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "9973b342373ad6f20fd320fbac08668520c034d9edb70489fb1515d933bf48d2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baselang.com",
+                "lingopie.com",
+                "pool-spa-supplies.com",
+                "retrievist.akc.org",
+                "www.bldup.com",
+                "www.healthrangerstore.com",
+                "www.jbtools.com"
+            ]
+        },
+        {
+            "rule": "usefomo\\.com\\/api\\/v1\\/vjrF0_X1r8FHyhscVCZBRA\\/load\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b8af721d633495b5269d34107f9fcaea1261b42ed5694496a1c0de26f4d1f42c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kettleandfire.com",
+                "blog.kettleandfire.com"
+            ]
+        },
+        {
+            "rule": "usefomo\\.com\\/api\\/v1\\/S4d_ZTBW05BFjt4YUFUVOg\\/load\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.maxTouchPoints": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "59e15e976ff598faa8cbf69efc4c5b85b13d99f92b27c7d71aca05d9b230ce31"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loopycases.com",
+                "www.loopycases.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5384615384615384
+        },
+        {
+            "domain": "fomo.com",
+            "prevalence": 0.4230769230769231
+        },
+        {
+            "domain": "cookieassistant.com",
+            "prevalence": 0.038461538461538464
+        }
+    ],
+    "types": {
+        "Script": 11
+    },
+    "nameservers": [
+        "lorna.ns.cloudflare.com",
+        "sid.ns.cloudflare.com"
+    ]
+}

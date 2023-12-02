@@ -1,0 +1,79 @@
+{
+    "domain": "bossapps.co",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "pre"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "bossapps\\.co\\/js\\/script",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "pre"
+            ],
+            "apis": {
+                "window.localStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "65ed4a8599fc9e19a139b8623d05eddd2e1c072fd6907bcf90d5fea5752fca5e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "energymuse.com",
+                "www.chriscoffee.com"
+            ]
+        },
+        {
+            "rule": "bossapps\\.co\\/api\\/js\\/chriscoffee-com\\.myshopify\\.com\\/variants",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pre"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "01d49f8a6784df3cdae98305deb79c28ad669034b02cc6634c48f8be7695ec59"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chriscoffee.com",
+                "www.chriscoffee.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Fetch": 2
+    },
+    "nameservers": [
+        "dns1.registrar-servers.com",
+        "dns2.registrar-servers.com"
+    ]
+}

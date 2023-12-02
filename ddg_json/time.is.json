@@ -1,0 +1,81 @@
+{
+    "domain": "time.is",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "widget"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "time\\.is\\/t\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "03d06b84aed185ec658d4eede7823fd6ca89a9ca4f0d1b94c4d60584161797d1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "conformingtojesus.com",
+                "www.conformingtojesus.com",
+                "www.i2rtf.com"
+            ]
+        },
+        {
+            "rule": "time\\.is\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "86bc46bd7809a22fb382011f939e0d75e9de50cc10a395c98589f6bd7e5a5dda",
+                "8b8fda0a674be933bc7348a31a7c0cc00d2252afe47db5216644da1d080dda3b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "conformingtojesus.com",
+                "www.conformingtojesus.com",
+                "www.i2rtf.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 6
+    },
+    "nameservers": [
+        "zeus.ns.cloudflare.com",
+        "venus.ns.cloudflare.com"
+    ]
+}

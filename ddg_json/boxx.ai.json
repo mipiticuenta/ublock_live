@@ -1,0 +1,321 @@
+{
+    "domain": "boxx.ai",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000102,
+    "sites": 15,
+    "subdomains": [
+        "js",
+        "eun1-js",
+        "loki",
+        "use1-loki",
+        "sfs",
+        "eun1-loki"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "boxx\\.ai\\/js_init\\/",
+            "cookies": 0.0000272,
+            "fingerprinting": 1,
+            "subdomains": [
+                "js",
+                "eun1-js"
+            ],
+            "apis": {
+                "Document.cookie getter": 6,
+                "Date.prototype.getTime": 6,
+                "Document.cookie setter": 4
+            },
+            "sites": 13,
+            "prevalence": 0.0000886,
+            "cnames": [],
+            "responseHashes": [
+                "1f5f1e927ed9b4ac96a05309ada099830aed505a6fcf3439da6929f8da0815f1",
+                "2ef02f7de94ff0441f9c95093bbb5494d6b902a92bad239d8b6ea366af167f04",
+                "668e00a2d1e48be4dffaec6722248a40709290ceae3bdb3f18cbae7d2718aff8",
+                "fa4b40d901d5d9cf36fcf682946c1a1f5aac9faf118dd3505b0e4f4885d452fc",
+                "dd170c3e31586265e9b7e1ef8a281d3375e6100e1fa4e530f7f8bda97a7ed626",
+                "282c2aa52f71affc729b0a337a619b287f795a5989732120d14926c819bea8f2",
+                "d6e847de9056efd24fc2c028e7a596cf1a41dd6d3d7693e8798cead1f8756f66",
+                "6598d7d61e2a2d01d08b1e18e8d7b66231382c504115c8a35dbfd03fd5c2175e",
+                "0cc774c9edcfacef32f5d7401c7e74d7e601de7e6a977a0a8d0b1667341cc62d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "bxSesT": {
+                    "ttl": 1816,
+                    "length": 24,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 1
+                },
+                "bxSesC": {
+                    "ttl": 63072016,
+                    "length": 24,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 1
+                },
+                "bxSegDetail": {
+                    "ttl": 63072022,
+                    "length": 178,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 1
+                },
+                "boxx_token_id": {
+                    "ttl": 3196800019,
+                    "length": 48,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 1
+                },
+                "bxCacheInit": {
+                    "ttl": 622,
+                    "length": 8,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00004768424853030334
+            },
+            "exampleSites": [
+                "rumah123.com",
+                "ph.theasianparent.com",
+                "sg.theasianparent.com",
+                "www.airindiaexpress.com",
+                "www.desertcart.com.au",
+                "www.easemytrip.com",
+                "www.gramedia.com",
+                "www.holzkern.com",
+                "www.khaleejtimes.com",
+                "www.rumah123.com",
+                "www.tennis-point.com",
+                "www.thestar.com.my",
+                "www.tobi.com"
+            ]
+        },
+        {
+            "rule": "boxx\\.ai\\/sdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "js"
+            ],
+            "apis": {
+                "window.sessionStorage": 4,
+                "Navigator.prototype.userAgent": 4,
+                "Screen.prototype.availWidth": 4,
+                "Screen.prototype.availHeight": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "window.localStorage": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "26b1d095d4f0626fa12ada957e16ac39aec8fe5bde58c0031b8dbc4729b45f07",
+                "43e1e31a04b2f70a38a9ab5ecf6e85000a0916659aafa95f5625ad9ff3afe6da",
+                "a750dcd8af6c44b56834c06d1961d6269a0b6ba349014b611d7ae109d0e28bd2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "easemytrip.com",
+                "www.gramedia.com",
+                "www.khaleejtimes.com",
+                "www.tennis-point.com"
+            ]
+        },
+        {
+            "rule": "boxx\\.ai\\/nav\\/",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "loki",
+                "use1-loki"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "cadb97504bfa79ef713418115c58bac3684c37b772c8d0159df7a207be42cd49",
+                "e7230e3e3114cec503cc4c4fe8ab44fa1f89c5794188ad589185aa9dad4257ff"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "easemytrip.com",
+                "www.gramedia.com",
+                "www.khaleejtimes.com",
+                "www.tennis-point.com"
+            ]
+        },
+        {
+            "rule": "boxx\\.ai\\/nav\\/",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "loki",
+                "use1-loki"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "easemytrip.com",
+                "www.gramedia.com",
+                "www.khaleejtimes.com",
+                "www.tennis-point.com"
+            ]
+        },
+        {
+            "rule": "boxx\\.ai\\/sdk",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sfs"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8f5d35655db04eeb62d7b7c070a2a69505528299ae812e6df0dc0ca98f5a3581"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "bxSesT": {
+                    "ttl": 1828,
+                    "length": 24,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "bxSesC": {
+                    "ttl": 63072028,
+                    "length": 24,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "bxSegDetail": {
+                    "ttl": 63072030,
+                    "length": 208,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "boxx_token_id": {
+                    "ttl": 31536028,
+                    "length": 48,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "bxCacheInit": {
+                    "ttl": 630,
+                    "length": 8,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "holzkern.com",
+                "www.rumah123.com"
+            ]
+        },
+        {
+            "rule": "boxx\\.ai\\/nav",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eun1-loki",
+                "loki"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "5947ae78d942f6f55c22bafd5056f6ea9d5845766026670ae94d01277c561208"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "holzkern.com",
+                "www.holzkern.com",
+                "www.rumah123.com"
+            ]
+        },
+        {
+            "rule": "boxx\\.ai\\/nav",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eun1-loki",
+                "loki"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "holzkern.com",
+                "www.rumah123.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000545,
+    "topInitiators": [
+        {
+            "domain": "netcoresmartech.com",
+            "prevalence": 0.7894736842105263
+        },
+        {
+            "domain": "baqend.com",
+            "prevalence": 0.15789473684210525
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.05263157894736842
+        }
+    ],
+    "types": {
+        "Script": 19,
+        "Fetch": 7,
+        "Preflight": 6
+    },
+    "nameservers": [
+        "ns-1025.awsdns-00.org",
+        "ns-937.awsdns-53.net",
+        "ns-280.awsdns-35.com",
+        "ns-1655.awsdns-14.co.uk"
+    ]
+}

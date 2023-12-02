@@ -1,0 +1,121 @@
+{
+    "domain": "flip-pay.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000681,
+    "sites": 10,
+    "subdomains": [
+        "api",
+        "cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "flip-pay\\.com\\/v1\\/access",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "heavy.com",
+                "m.belfasttelegraph.co.uk",
+                "www.thedailymash.co.uk"
+            ]
+        },
+        {
+            "rule": "flip-pay\\.com\\/v1\\/access",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "c8c458ddf2aaf0231f8b1eb0a5679991731c62cc5f21a42ca1e308715edd1d32",
+                "910024d6dc3df1460ff6eb67a912f96ba7ed21aa3c8796bdd91a68690795e94a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "heavy.com",
+                "m.belfasttelegraph.co.uk",
+                "www.thedailymash.co.uk"
+            ]
+        },
+        {
+            "rule": "flip-pay\\.com\\/clients\\/mh\\/inm\\/14\\/flip-pay\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "window.localStorage": 1,
+                "window.sessionStorage": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "975a45fe44c6b082766bece48868d223f72a2bfe5a85fd3383bf9a675f46ff66"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "fp.access.inm": {
+                    "ttl": null,
+                    "length": 166,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "belfasttelegraph.co.uk",
+                "m.independent.ie",
+                "www.belfasttelegraph.co.uk",
+                "www.independent.ie"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9090909090909091
+        },
+        {
+            "domain": "agnoplay.com",
+            "prevalence": 0.09090909090909091
+        }
+    ],
+    "types": {
+        "Preflight": 3,
+        "XHR": 3,
+        "Script": 4
+    },
+    "nameservers": [
+        "bella.ns.cloudflare.com",
+        "woz.ns.cloudflare.com"
+    ]
+}

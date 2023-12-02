@@ -1,0 +1,84 @@
+{
+    "domain": "atmng.io",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "t"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "atmng\\.io\\/consent\\/default\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "87e683d522379b3870407038cbfc30424d557fac56ff2c17491edb30f4c02465"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cosmosmagazine.com",
+                "forskning.no",
+                "www.aperitif.no"
+            ]
+        },
+        {
+            "rule": "atmng\\.io\\/adweb\\/-89XI49sY\\.prod\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c984178973c8cb07bb596646726fbbfc320b559e3ba2afd3dc1ebaa9b43d4b55"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "meteo.gr",
+                "www.meteo.gr"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Stylesheet": 3,
+        "Script": 2
+    },
+    "nameservers": [
+        "ns-1153.awsdns-16.org",
+        "ns-1929.awsdns-49.co.uk",
+        "ns-846.awsdns-41.net",
+        "ns-483.awsdns-60.com"
+    ]
+}

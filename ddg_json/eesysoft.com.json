@@ -1,0 +1,115 @@
+{
+    "domain": "eesysoft.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "fft",
+        "unt-canvas"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "eesysoft\\.com\\/resources\\/js\\/canvas\\/launch\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "fft",
+                "unt-canvas"
+            ],
+            "apis": {
+                "window.sessionStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "16bbb7dc9b1e19e11a39078a017b5cd126443064c28e7b335369a41c0309b311"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "instructure.com",
+                "canvas.instructure.com",
+                "unt.instructure.com"
+            ]
+        },
+        {
+            "rule": "eesysoft\\.com\\/rest\\/public\\/canvasLaunchSettings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fft",
+                "unt-canvas"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "ecfaec39698fa37a12c717afc84d1a7139bf5147d0b02e41f6d2c84e281157ad",
+                "c4020d7c810c717459f17bdf663c36a903bd15ed4618c66145bfbc27706e56a8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "instructure.com",
+                "canvas.instructure.com",
+                "unt.instructure.com"
+            ]
+        },
+        {
+            "rule": "eesysoft\\.com\\/rest\\/public\\/canvasLaunchSettings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fft",
+                "unt-canvas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "instructure.com",
+                "unt.instructure.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "du11hjcvx0uqb.cloudfront.net",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "instructure-uploads.s3.amazonaws.com",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.16666666666666666
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "Fetch": 3,
+        "Preflight": 2
+    },
+    "nameservers": [
+        "emerie.ns.cloudflare.com",
+        "fonzie.ns.cloudflare.com"
+    ]
+}

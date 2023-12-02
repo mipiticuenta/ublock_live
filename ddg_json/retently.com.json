@@ -1,0 +1,114 @@
+{
+    "domain": "retently.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-AU"
+    ],
+    "prevalence": 0.000704,
+    "sites": 7,
+    "subdomains": [
+        "cdn",
+        "app"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "retently\\.com\\/public\\/components\\/embed\\/sdk\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 6,
+                "Navigator.prototype.product": 6
+            },
+            "sites": 7,
+            "prevalence": 0.000704,
+            "cnames": [],
+            "responseHashes": [
+                "5efaf54527700e8af9c9435b03c13faf98b8afea3fb2f0a0f3842f8f1f405cee"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bluemountainsgazette.com.au",
+                "www.standard.net.au",
+                "www.theadvocate.com.au",
+                "www.thecourier.com.au",
+                "www.theland.com.au",
+                "www.theleader.com.au",
+                "www.westernadvocate.com.au"
+            ]
+        },
+        {
+            "rule": "retently\\.com\\/api\\/remote\\/tracking\\/5dc37a35667ddf7c1d681292",
+            "cookies": 0.000402,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000603,
+            "cnames": [],
+            "responseHashes": [
+                "ead1e5076ba78e9264bc2bb63ac0d0d30085c35ca615e5f6aaf6c460d689bb47"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bluemountainsgazette.com.au",
+                "www.standard.net.au",
+                "www.theadvocate.com.au",
+                "www.thecourier.com.au",
+                "www.theland.com.au",
+                "www.westernadvocate.com.au"
+            ]
+        },
+        {
+            "rule": "retently\\.com\\/api\\/remote\\/tracking\\/5dc37a35667ddf7c1d681292",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000503,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "standard.net.au",
+                "www.theadvocate.com.au",
+                "www.thecourier.com.au",
+                "www.theland.com.au",
+                "www.westernadvocate.com.au"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000402,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 7,
+        "XHR": 6,
+        "Preflight": 5
+    },
+    "nameservers": [
+        "dina.ns.cloudflare.com",
+        "rick.ns.cloudflare.com"
+    ]
+}

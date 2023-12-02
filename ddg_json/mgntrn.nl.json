@@ -1,0 +1,85 @@
+{
+    "domain": "mgntrn.nl",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "mgntrn\\.nl\\/js\\/script\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "Navigator.prototype.webdriver": 3,
+                "window.localStorage": 3,
+                "window.innerWidth": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "ae4216bfc85c99ffd32e7745f0d7d4cd5f57b714f3a4911176b8cd78a176c97c",
+                "5322948a55d14b5be5ec1e95106860efba0bae5f4ae49eda62f72f264f96317f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "whichmuseum.com",
+                "whichmuseum.nl",
+                "www.filmvandaag.nl"
+            ]
+        },
+        {
+            "rule": "mgntrn\\.nl\\/api\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "whichmuseum.com",
+                "whichmuseum.nl",
+                "www.filmvandaag.nl"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "XHR": 3
+    },
+    "nameservers": [
+        "ns093.auroradns.info",
+        "ns092.auroradns.nl",
+        "ns091.auroradns.eu"
+    ]
+}

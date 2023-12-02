@@ -1,0 +1,1055 @@
+{
+    "domain": "rakuten.edgekey.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000177,
+    "sites": 26,
+    "subdomains": [
+        "t2",
+        "evsan",
+        "t1"
+    ],
+    "cnames": [
+        {
+            "original": "anz.rd.rakuten.co.jp",
+            "resolved": "t2.rakuten.edgekey.net"
+        },
+        {
+            "original": "ashiato.rakuten.co.jp",
+            "resolved": "evsan.rakuten.edgekey.net"
+        },
+        {
+            "original": "cart-api.step.rakuten.co.jp",
+            "resolved": "t1.rakuten.edgekey.net"
+        },
+        {
+            "original": "cdn.rex.contents.rakuten.co.jp",
+            "resolved": "t2.rakuten.edgekey.net"
+        },
+        {
+            "original": "error.rakuten.co.jp",
+            "resolved": "evsan.rakuten.edgekey.net"
+        },
+        {
+            "original": "image.books.rakuten.co.jp",
+            "resolved": "t2.rakuten.edgekey.net"
+        },
+        {
+            "original": "img.travel.rakuten.co.jp",
+            "resolved": "t2.rakuten.edgekey.net"
+        },
+        {
+            "original": "jp.rakuten-static.com",
+            "resolved": "t2.rakuten.edgekey.net"
+        },
+        {
+            "original": "mall.ashiato.rakuten.co.jp",
+            "resolved": "t1.rakuten.edgekey.net"
+        },
+        {
+            "original": "rat.rakuten.com",
+            "resolved": "t2.rakuten.edgekey.net"
+        },
+        {
+            "original": "stream.cms.rakuten.co.jp",
+            "resolved": "t2.rakuten.edgekey.net"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/1\\/grp\\/banner\\/js\\/create\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [
+                {
+                    "original": "jp.rakuten-static.com",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "85b3bf5164ab5e21e4e5c0f0a62ef89fca9640d3a57e038fc921a2ff430fcb11"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "books.rakuten.co.jp",
+                "fril.jp",
+                "item.fril.jp",
+                "plaza.rakuten.co.jp",
+                "recipe.rakuten.co.jp",
+                "www.rakuten-card.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/1\\/js\\/lib\\/prm_selector\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "jp.rakuten-static.com",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "c87099d745c83e0931d242b145d0f12a09068ef6ebb9847e5d3e36803616df53"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "search.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/1\\/js\\/grp\\/hdr\\/prm_sender\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "jp.rakuten-static.com",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "69316729e070e29e5e3e6be04f999d2509deaead8185237ed963e2bf33660625"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "search.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/1\\/js\\/grp\\/ftr\\/js\\/parm_selector_footer\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "jp.rakuten-static.com",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "502f954546d1eb180655e32f688d7a871277d61a11b56dd25cde7d5170311f7c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "www.rakuten-sec.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/r-cookiecleaner\\/r-cc-rat\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "evsan"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.0000886,
+            "cnames": [
+                {
+                    "original": "error.rakuten.co.jp",
+                    "resolved": "evsan.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "c78c1aa53f023755aafc6b5d1297b4c388e00192ba2b9faaf3bfd95e898af7d4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "books.rakuten.co.jp",
+                "event.rakuten.co.jp",
+                "item.rakuten.co.jp",
+                "network.mobile.rakuten.co.jp",
+                "plaza.rakuten.co.jp",
+                "ranking.rakuten.co.jp",
+                "recipe.rakuten.co.jp",
+                "review.rakuten.co.jp",
+                "search.rakuten.co.jp",
+                "search.travel.rakuten.co.jp",
+                "travel.rakuten.co.jp",
+                "www.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/1\\/grp\\/banner\\/js\\/cmo_dynamic_scid\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [
+                {
+                    "original": "jp.rakuten-static.com",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "c74343111a6028fcdd51b15ecb7e0eb9c194d5366acc4cd19a2cb4d2d7fe3f3a",
+                "eac46b2760d28913d0cc311d8dff7a05a11d4d443e96105ac0f83e84bf0878c8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "books.rakuten.co.jp",
+                "fril.jp",
+                "item.fril.jp",
+                "recipe.rakuten.co.jp",
+                "www.rakuten-card.co.jp",
+                "www.rakuten-sec.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/1\\/js\\/grp\\/hdr\\/prm_list\\.jsonp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "jp.rakuten-static.com",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "1ba933f8c8c1d9d7beaf8e31f69e391d31688386d81724004e4d9e6cde30163a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "search.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/1\\/js\\/grp\\/ftr\\/jsonp\\/footer_prm_list\\.jsonp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "jp.rakuten-static.com",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "39b483ebcfbd717ddab10debd1435caa83a2dd492951b532e96f7699985cf3c0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "www.rakuten-sec.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/rms\\/mall\\/ashiato\\/trc",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t1"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "mall.ashiato.rakuten.co.jp",
+                    "resolved": "t1.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "82b82c1819e775d3c0b185b2f032ea4fc51f7d8a4c2e3c4f09b7fde8e125aeb7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "item.rakuten.co.jp",
+                "search.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/books\\/img\\/common\\/main\\/icon\\/icon_ebook_35x15_20130809\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "image.books.rakuten.co.jp",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "02debfc25ecaaf446a99029b5dbbd1fbe6ed9a926af8cefe2d142dab1865a61e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "books.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/p\\/",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "anz.rd.rakuten.co.jp",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "82b82c1819e775d3c0b185b2f032ea4fc51f7d8a4c2e3c4f09b7fde8e125aeb7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "event.rakuten.co.jp",
+                "item.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/rms\\/mall\\/cart\\/count\\/all\\/jsonp\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t1"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [
+                {
+                    "original": "cart-api.step.rakuten.co.jp",
+                    "resolved": "t1.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "4b5c7ea187aa63e51ee23eba8e66e7e16234b825d1670f985669478d60b6999c",
+                "cf3512e50ee3cc5f2b7c70f729eb001260873fdb0bc3ae154306ee86acfeac44",
+                "0591838ba6e74bb5b8ab0ddcb40a34fb6be6a5502e8a1fd3845c8189d5adbe28",
+                "972cd1b0e29650f7d5d92712d787f135427e7d83f3a0e75afb8aa902a76b270c",
+                "18332799814889572593cffed853cda218a8df415dad8fa4828cd933664c5e1b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "books.rakuten.co.jp",
+                "event.rakuten.co.jp",
+                "item.rakuten.co.jp",
+                "review.rakuten.co.jp",
+                "search.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/rms\\/sd\\/ashiato\\/vc",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "evsan"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [
+                {
+                    "original": "ashiato.rakuten.co.jp",
+                    "resolved": "evsan.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "d1333ef4283eaf0a42a897607f0f05a3a507963dc6fa4c6aaaed0b2c8cc38018",
+                "1f65207fd0c4a3d55a13dfa1fd109b9e11bf976e14089d9c2c0b4287dbfd170e",
+                "4f0b5184c50aff47aaf30c0c5795af7c35f797d3f21fb2309c1448ac943bdfbf",
+                "19d76116e10c1e0621cd272c77556b2dfb8f10794ea608510ba9b6fbe3206be8",
+                "7ef838a11e01d7f0d0c71cf212c1103f76fb8e865ee730c206cb229f93dd3a1c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "event.rakuten.co.jp",
+                "product.rakuten.co.jp",
+                "review.rakuten.co.jp",
+                "search.rakuten.co.jp",
+                "www.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/r-cookiecleaner\\/r-cc-config-rat\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "evsan"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [
+                {
+                    "original": "error.rakuten.co.jp",
+                    "resolved": "evsan.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ead9d9bcf329d2e814bd6843abda8ccb93c8a38da19aa66670c5e162f9fb4117"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "event.rakuten.co.jp",
+                "network.mobile.rakuten.co.jp",
+                "ranking.rakuten.co.jp",
+                "search.rakuten.co.jp",
+                "travel.rakuten.co.jp",
+                "www.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/rms\\/mall\\/cart\\/jsonp\\/list\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t1"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "cart-api.step.rakuten.co.jp",
+                    "resolved": "t1.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "59aca30b3211767ddb56aadc5a39e83d6e2b6d4adb66367727debab7fd9039c6",
+                "4dd1da7e1a91f40ecd9d7840615b166d36b8d5c0459ed01b87660c2b7cb095e5",
+                "f7484ce098726afefd64e7586339a26dfeabfdfc783e97500f27b418fc12d7a8",
+                "3487243138cb0e04d7836f99925b21cc7e90d688cc27464f29265940a16cb956"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "product.rakuten.co.jp",
+                "ranking.rakuten.co.jp",
+                "search.rakuten.co.jp",
+                "www.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/1\\/grp\\/banner\\/css\\/rc-gp-sp-crimson_red\\.v3\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "jp.rakuten-static.com",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "06abb3129f6c6f3a2d59dab5445fd229fb1bc0ea8f90219c9a47a790418b4210"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fril.jp",
+                "item.fril.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/1\\/grp\\/banner\\/js\\/rc_gp_sp_banner\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "jp.rakuten-static.com",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "fae7fb605e239303aa0034b731fa1592e003256adf4312efe5c9ed9a79ad24c9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fril.jp",
+                "item.fril.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/1\\/grp\\/banner\\/js\\/rc-gp-sp\\.v3\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "jp.rakuten-static.com",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "2ab915d2882ad7eb5cf113accaf18f4810d615cb40981e2d84c5ff419f03f35b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fril.jp",
+                "item.fril.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/rex-ips\\/2\\.1\\.0\\/js\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.rex.contents.rakuten.co.jp",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "703b934da9c41a5b7bc9e8c98fecabd151233eebf91b86492fc8b03cb434ade7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "www.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/rex-ips\\/2\\.1\\.0\\/js\\/language\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.rex.contents.rakuten.co.jp",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e9c51e3b6829d0148bb45c2ba9b5b5c029fe6c7e6943c94c396633a6b49ae0dd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "www.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/rex-ips\\/2\\.1\\.0\\/js\\/isActive\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.rex.contents.rakuten.co.jp",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "4db7b299b4625fa3fd66ce3be0dd1547078a24ff25b356dfa8f6a84f303aeee6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "www.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/1\\/grp\\/banner\\/docs\\/mno_231101\\/mno_banner_231101_noncardholder_MNP6000_pc\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "jp.rakuten-static.com",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "ee141e62fbdf2a0847ff5baad468beeb62d9b5c8c9e3317de222d86b2a07c1f0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "plaza.rakuten.co.jp",
+                "www.rakuten-card.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/1\\/grp\\/banner\\/img\\/mno_231101\\/231101_noncardholder_MNP6000_pc_1440x50\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "jp.rakuten-static.com",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f63372d8d1c9fa8ccee023acbd38fcfb356faa19e8a323a2a5c5f608978cf02f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "www.rakuten-card.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rat.rakuten.com",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "82b82c1819e775d3c0b185b2f032ea4fc51f7d8a4c2e3c4f09b7fde8e125aeb7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.com",
+                "www.rakuten.com"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/recipe\\/d-pc\\/common\\/img_noimage\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "jp.rakuten-static.com",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "333b94c9679fcefa2d8d5ded0cac53c591838276a7bf9c72c042478f31392f8f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "recipe.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/recipe-space\\/d\\/strg\\/ctrl\\/3\\/0bb7cc6bdaeadfe9dedef14f8a3435d4a21b18ae\\.16\\.2\\.3\\.2\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "jp.rakuten-static.com",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "886fc989aadb36d1574e15b452f53c06e68d34611e20cd75b9efb770d0d3efd1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "recipe.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/recipe-space\\/d\\/strg\\/ctrl\\/3\\/7246d8d182b32cb776ce67e645eca7af1f7f0926\\.16\\.2\\.3\\.2\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "jp.rakuten-static.com",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "dd15b64f27969fa5c7bae895afee96a8301da1dc32e4366c18a19e9f20a27e67"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "recipe.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/recipe-space\\/d\\/strg\\/ctrl\\/3\\/0428d9a91922870083e404eeae5f3f75d9fddfcd\\.16\\.2\\.3\\.2\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "jp.rakuten-static.com",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "7c662d75ad9a7458209916bbf4d2ef4ced0ff7b00a1c8f70c59387e16ce15702"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "recipe.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/share\\/images\\/null\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "img.travel.rakuten.co.jp",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "75301b6f8fa60829015618ade544c3d33adf1f375bd560d9a4753b5be887058f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "travel.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/share\\/common\\/images\\/travel-logo-pc\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "img.travel.rakuten.co.jp",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "9dc019f620731dc39b97636e6dc38e39df2df7ee9c87604c0c19cd52f5004598"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "travel.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/special\\/onsen-sale\\/202311\\/bnr\\/pre_170_53\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "img.travel.rakuten.co.jp",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "00653a4163dd2b9fadd7f2d8f15b0ec6803144d50604d35d444c2eb0bc2a6eab"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "travel.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/gate\\/play_pf\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "stream.cms.rakuten.co.jp",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "0590d045595aaff3e91f088e7de01006591a5f53a0ddc21e271efda6f0eb3c9c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "search.travel.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten\\.edgekey\\.net\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rat.rakuten.com",
+                    "resolved": "t2.rakuten.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kobo.com",
+                "www.kobo.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000817,
+    "topInitiators": [
+        {
+            "domain": "r10s.jp",
+            "prevalence": 0.5294117647058824
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.3445378151260504
+        },
+        {
+            "domain": "googlesyndication.com",
+            "prevalence": 0.05042016806722689
+        },
+        {
+            "domain": "rakuten-static.com",
+            "prevalence": 0.025210084033613446
+        },
+        {
+            "domain": "flux-cdn.com",
+            "prevalence": 0.01680672268907563
+        },
+        {
+            "domain": "signalfx.com",
+            "prevalence": 0.01680672268907563
+        },
+        {
+            "domain": "yjtag.jp",
+            "prevalence": 0.008403361344537815
+        },
+        {
+            "domain": "rakuten.co.jp",
+            "prevalence": 0.008403361344537815
+        }
+    ],
+    "types": {
+        "Script": 73,
+        "Image": 26,
+        "Stylesheet": 2,
+        "XHR": 5
+    },
+    "nameservers": []
+}

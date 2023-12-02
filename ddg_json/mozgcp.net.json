@@ -1,0 +1,392 @@
+{
+    "domain": "mozgcp.net",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "assets-prod.sumo.prod.webservices"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "mozgcp\\.net\\/static\\/gtm-snippet\\.c572a96f8b784ca0\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assets-prod.sumo.prod.webservices"
+            ],
+            "apis": {
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "914bfa0315bd3500792d780d704b62db6903f56aa5feadb25839862abfe0f3ab"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mozilla.org",
+                "support.mozilla.org"
+            ]
+        },
+        {
+            "rule": "mozgcp\\.net\\/static\\/672\\.2aa5f418a3ec2171\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assets-prod.sumo.prod.webservices"
+            ],
+            "apis": {
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d478990cabf6edbfd4e3f28da87d4c0dcee8ae421c08a09f48a774c2394c0cda"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mozilla.org",
+                "support.mozilla.org"
+            ]
+        },
+        {
+            "rule": "mozgcp\\.net\\/static\\/common\\.9893a6d635185cd0\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assets-prod.sumo.prod.webservices"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.innerWidth": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b0abd7e26d0d031673cbf4ddfc02de0ce53bc6658c3cc1fbf45e1ff5357f3446"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "geoip_country_name": {
+                    "ttl": null,
+                    "length": 15,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "geoip_country_code": {
+                    "ttl": null,
+                    "length": 2,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mozilla.org",
+                "support.mozilla.org"
+            ]
+        },
+        {
+            "rule": "mozgcp\\.net\\/static\\/common\\.fx\\.download\\.7c161292b0ad1beb\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assets-prod.sumo.prod.webservices"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4c67fbcf3e8f6978d6e21c6536dbe2eb2c7e039e1acde55c4c0789d58974287b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mozilla.org",
+                "support.mozilla.org"
+            ]
+        },
+        {
+            "rule": "mozgcp\\.net\\/static\\/mozilla-support\\.c4f961a8d7b1d501\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets-prod.sumo.prod.webservices"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "545d97fa5caecc8dd0631687fe319f9fc7c8f9f021dae8ad196c0c57df45753d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mozilla.org",
+                "support.mozilla.org"
+            ]
+        },
+        {
+            "rule": "mozgcp\\.net\\/static\\/default-FFA-avatar\\.2f8c2a0592bda1c5\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets-prod.sumo.prod.webservices"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "193fedf09d4635992ad46ab9566c89f21e25ab047e2af6ad60a7f3b68ea3a2b4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mozilla.org",
+                "support.mozilla.org"
+            ]
+        },
+        {
+            "rule": "mozgcp\\.net\\/static\\/reader-mode\\.1d40422a5274c27c\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets-prod.sumo.prod.webservices"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1e1e0e0bbb559b1f50f8faf011a26cb853de894504a903a47618d83e57848f37"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mozilla.org",
+                "support.mozilla.org"
+            ]
+        },
+        {
+            "rule": "mozgcp\\.net\\/static\\/search\\.fb5914989a50d021\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets-prod.sumo.prod.webservices"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6733dd564d01ef3382b5c433155e1afdffb9e8df9b5f51b86e09e434852b1ddc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mozilla.org",
+                "support.mozilla.org"
+            ]
+        },
+        {
+            "rule": "mozgcp\\.net\\/static\\/white\\.143c28a7ab58d9f0\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets-prod.sumo.prod.webservices"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e7aca204b81cb03381250453a1436cfa01aecc8023c456400a64947d89042e31"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mozilla.org",
+                "support.mozilla.org"
+            ]
+        },
+        {
+            "rule": "mozgcp\\.net\\/static\\/white\\.b99f16c46397f452\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets-prod.sumo.prod.webservices"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9affbd7c74656c25495d0634c1b9f76ccc52abee7c91a8b8ce0ed61bd9262e65"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mozilla.org",
+                "support.mozilla.org"
+            ]
+        },
+        {
+            "rule": "mozgcp\\.net\\/static\\/white\\.1d82f6d68c1b50ea\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets-prod.sumo.prod.webservices"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "860f380bc81b16a972fba5234bb436a0db42faa94047a5573a911c8899081baa"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mozilla.org",
+                "support.mozilla.org"
+            ]
+        },
+        {
+            "rule": "mozgcp\\.net\\/static\\/logo-word-hor-white\\.ce39908a202988bb\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets-prod.sumo.prod.webservices"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7065c486ca5d1b122094c16dc7f911bea71f0b1730a8ff97d28276770e9354b4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mozilla.org",
+                "support.mozilla.org"
+            ]
+        },
+        {
+            "rule": "mozgcp\\.net\\/static\\/Inter-Bold\\.3717db0be15085ac\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets-prod.sumo.prod.webservices"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "565e677cb4179695f3c0a0f5c1d7368cf18884950ad162c0b75ad77a308b0c4d"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mozilla.org",
+                "support.mozilla.org"
+            ]
+        },
+        {
+            "rule": "mozgcp\\.net\\/static\\/Metropolis-Bold\\.e118a19885cddd9f\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets-prod.sumo.prod.webservices"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "30056983bd020f24b239d0a66771276eb2b48113bae92b2a713f414559a5bd4d"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mozilla.org",
+                "support.mozilla.org"
+            ]
+        },
+        {
+            "rule": "mozgcp\\.net\\/static\\/Inter-Regular\\.f80c55a7aedf3861\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets-prod.sumo.prod.webservices"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a1d697fc62d8c8d12d96f501041fcf85fb6e200f0576a6dc04b42d3609c62e92"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mozilla.org",
+                "support.mozilla.org"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 8,
+        "Image": 16,
+        "Font": 6
+    },
+    "nameservers": [
+        "ns-cloud-c4.googledomains.com",
+        "ns-cloud-c2.googledomains.com",
+        "ns-cloud-c1.googledomains.com",
+        "ns-cloud-c3.googledomains.com"
+    ]
+}

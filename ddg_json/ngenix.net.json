@@ -1,0 +1,194 @@
+{
+    "domain": "ngenix.net",
+    "owner": {
+        "name": "Limited Liability Company NGENIX",
+        "displayName": "NGENIX"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "tutu1-st.cdn",
+        "s32166.cdn",
+        "a3569456158-s73767.cdn",
+        "a1311337287-s73767.cdn",
+        "s61745.cdn"
+    ],
+    "cnames": [
+        {
+            "original": "cdn.cian.site",
+            "resolved": "s61745.cdn.ngenix.net"
+        },
+        {
+            "original": "cdn1.tu-tu.ru",
+            "resolved": "tutu1-st.cdn.ngenix.net"
+        },
+        {
+            "original": "cdn4.tu-tu.ru",
+            "resolved": "s32166.cdn.ngenix.net"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "ngenix\\.net\\/fonts\\/direct\\/patch4\\/ALSDirect-Bold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tutu1-st.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn1.tu-tu.ru",
+                    "resolved": "tutu1-st.cdn.ngenix.net"
+                }
+            ],
+            "responseHashes": [
+                "ff6f7786bfb5a60947766cddb7c75c29753999093a2482a14bd7fe3b5a04373c"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tutu.ru",
+                "www.tutu.ru"
+            ]
+        },
+        {
+            "rule": "ngenix\\.net\\/fonts\\/direct\\/patch4\\/ALSDirect-Regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tutu1-st.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn1.tu-tu.ru",
+                    "resolved": "tutu1-st.cdn.ngenix.net"
+                }
+            ],
+            "responseHashes": [
+                "449616ab506b2cefb1629fa0de7e1d4548862b2eef05ebf3b77ce4715bfb9577"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tutu.ru",
+                "www.tutu.ru"
+            ]
+        },
+        {
+            "rule": "ngenix\\.net\\/static\\/order\\/order-icons\\.2681606cef5a37b22d714632970b4753629db814\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s32166.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn4.tu-tu.ru",
+                    "resolved": "s32166.cdn.ngenix.net"
+                }
+            ],
+            "responseHashes": [
+                "8b722bd87c240150afaa6e1eae722aefb8c0336a3421513b06cf458ba7305398"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tutu.ru",
+                "www.tutu.ru"
+            ]
+        },
+        {
+            "rule": "ngenix\\.net\\/1024807212418223\\/js\\/test-10kB\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a3569456158-s73767.cdn",
+                "a1311337287-s73767.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bf4d1219946aad8f85b5999e1a898c8a3e5ab64e89508b72f8155071d4a44ee7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tele2.ru",
+                "msk.tele2.ru"
+            ]
+        },
+        {
+            "rule": "ngenix\\.net\\/static\\/components\\/ui\\/prod\\/ui\\.d145d3f3cdda\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s61745.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.cian.site",
+                    "resolved": "s61745.cdn.ngenix.net"
+                }
+            ],
+            "responseHashes": [
+                "469b5602f2412c6174c73c290e986490c0223e0e49782726dd8f5f0221294faf"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cian.ru",
+                "www.cian.ru"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.983739837398374
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.008130081300813009
+        },
+        {
+            "domain": "ravenjs.com",
+            "prevalence": 0.008130081300813009
+        }
+    ],
+    "types": {
+        "Font": 4,
+        "XHR": 2,
+        "Script": 2,
+        "Stylesheet": 2
+    },
+    "nameservers": [
+        "ns.ngenix.net",
+        "ns1.ngenix.net"
+    ]
+}

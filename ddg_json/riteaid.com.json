@@ -1,0 +1,158 @@
+{
+    "domain": "riteaid.com",
+    "owner": {
+        "name": "Rite Aid Corporation",
+        "displayName": "Rite Aid"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "dynaag"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "riteaid\\.com\\/jstag\\/managed\\/0af9bfb2-30ba-4954-8403-e3ff4c4faf2f\\/b52fc261121850f8_complete\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "dynaag"
+            ],
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.connection": 2,
+                "URL.createObjectURL": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "window.indexedDB": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bc3d7134c8f0f1ba2be81cb620b0a0482a4e1c26cd0f868138ef872bb3a5b308"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "dTValidationCookie": {
+                    "ttl": -1698890567,
+                    "length": 2,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "dtCookie": {
+                    "ttl": null,
+                    "length": 105,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rxVisitor": {
+                    "ttl": null,
+                    "length": 45,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "dtPC": {
+                    "ttl": null,
+                    "length": 55,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rxvt": {
+                    "ttl": null,
+                    "length": 27,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "dtSa": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bartelldrugs.com",
+                "www.bartelldrugs.com"
+            ]
+        },
+        {
+            "rule": "riteaid\\.com\\/jstag\\/managed\\/ruxitagent_D_10275230919171419\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dynaag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "314a9a0fdb5542d4958b53b8048157e1d66b214178781135c3a27e25adbc6a0a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bartelldrugs.com",
+                "www.bartelldrugs.com"
+            ]
+        },
+        {
+            "rule": "riteaid\\.com\\/bf\\/0af9bfb2-30ba-4954-8403-e3ff4c4faf2f",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dynaag"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ba6f534041552bcf0e2b1696b2322f9e17b9eefab107447d3a4f6223c54a08a0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "dtCookie": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "bartelldrugs.com",
+                "www.bartelldrugs.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "XHR": 2
+    },
+    "nameservers": [
+        "dnsa.riteaid.com",
+        "dnsb.riteaid.com",
+        "dnsb.riteaid.net"
+    ]
+}

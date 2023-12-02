@@ -1,0 +1,159 @@
+{
+    "domain": "trengo.eu",
+    "owner": {
+        "name": "Trengo",
+        "displayName": "Trengo"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "static.widget",
+        "api.widget",
+        "cdn.widget"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "trengo\\.eu\\/embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static.widget"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 5,
+                "Navigator.prototype.userAgent": 5,
+                "window.localStorage": 5,
+                "Date.prototype.getTime": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "6809165acbeac09630fe72d97f42a22922fd8bb878cffa3c4ae75e53ae7894ba"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lampgigant.nl",
+                "wwoof.net",
+                "www.ohnuts.com",
+                "www.refurbished.nl",
+                "www.wildkamp.nl"
+            ]
+        },
+        {
+            "rule": "trengo\\.eu\\/web-widget-api\\/widget",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.widget"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "1c50502f3e9a8ea142c3df7447254317d2ec51c80eff089c25c5236b5f8cd67c",
+                "2f01e7f5b00248c26ffcddf753fb897a0e8dfabfb6f08e24fd7316bf4eb4e256",
+                "9b16a3bf645792ba7f6e412269316bef7c6192017bf11019f0e8250828329c6a",
+                "585d25c09d3ec80d48f27d8ebfdba57d4142fa88caab912b6a31919e7ee547db",
+                "44bd369240f079a1de99619abf76d9e8ee9aa9f050b9f27a84fb6ccec4b3c97d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lampgigant.nl",
+                "wwoof.net",
+                "www.kanker.nl",
+                "www.ohnuts.com",
+                "www.refurbished.nl",
+                "www.wildkamp.nl"
+            ]
+        },
+        {
+            "rule": "trengo\\.eu\\/widget\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static.widget",
+                "cdn.widget"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 6,
+                "Navigator.prototype.product": 4,
+                "Date.prototype.getTime": 6,
+                "window.localStorage": 3,
+                "Event.prototype.timeStamp": 1,
+                "window.sessionStorage": 1
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "4eb853c15e593926549b3be86012b0220c4e5f7d6ef717534e6741aa26e89084"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lampgigant.nl",
+                "wwoof.net",
+                "www.kanker.nl",
+                "www.ohnuts.com",
+                "www.refurbished.nl",
+                "www.wildkamp.nl"
+            ]
+        },
+        {
+            "rule": "trengo\\.eu\\/assets\\/chat\\.mp3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.widget"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "cf72ed0b2d260e377d8c9919c5ea7eaf614e26e26814eee3cea9cf4d6e69f260"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lampgigant.nl",
+                "wwoof.net",
+                "www.kanker.nl",
+                "www.ohnuts.com",
+                "www.refurbished.nl",
+                "www.wildkamp.nl"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 11,
+        "XHR": 6,
+        "Media": 6
+    },
+    "nameservers": [
+        "lars.ns.cloudflare.com",
+        "virginia.ns.cloudflare.com"
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "domain": "telecinco.es",
+    "owner": {
+        "name": "MEDIASET ESPANA COMUNICACION SA",
+        "displayName": "MEDIASET ESPANA COMUNICACION"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "www",
+        "login"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "telecinco\\.es\\/video\\/video-embed\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a9299c90691e9db8fd7b17db6c36263289db01624e17770dc0af751d7aa6ecc8"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldesmarque.com",
+                "www.eldesmarque.com"
+            ]
+        },
+        {
+            "rule": "telecinco\\.es\\/accounts\\.webSdkBootstrap",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "login"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c17617e46be03c6a14a3b8ef083d03003e7d924bc22ec2fdb2bb22cf8ce2b51f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldesmarque.com",
+                "www.eldesmarque.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "telecinco.es",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "gigya.com",
+            "prevalence": 0.3333333333333333
+        }
+    ],
+    "types": {
+        "Document": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "ns-229.awsdns-28.com",
+        "ns-638.awsdns-15.net",
+        "a28-64.akam.net",
+        "ns-1256.awsdns-29.org",
+        "a9-66.akam.net",
+        "a5-65.akam.net"
+    ]
+}

@@ -1,0 +1,88 @@
+{
+    "domain": "dmc.systems",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000613,
+    "sites": 9,
+    "subdomains": [
+        "maxmind-cache",
+        "lookup"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "dmc\\.systems\\/get-data",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "maxmind-cache"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "f6528a5d6d64740e0d93147c2c60d14a7c51411dc8f525dc5aaa655645d0138b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pancan.org",
+                "www.americanbible.org",
+                "www.amm.org",
+                "www.fredhutch.org",
+                "www.komen.org"
+            ]
+        },
+        {
+            "rule": "dmc\\.systems\\/donor-lookup",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lookup"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f315fccd9a923b29bd798538459f3979bf92986d9adc4427afe6cf6b8ac32abd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000027248142017316195
+            },
+            "exampleSites": [
+                "americanbible.org",
+                "www.americanbible.org"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "charitable.one",
+            "prevalence": 0.8
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2
+        }
+    ],
+    "types": {
+        "XHR": 7
+    },
+    "nameservers": [
+        "ns-1059.awsdns-04.org",
+        "ns-452.awsdns-56.com",
+        "ns-648.awsdns-17.net",
+        "ns-1604.awsdns-08.co.uk"
+    ]
+}

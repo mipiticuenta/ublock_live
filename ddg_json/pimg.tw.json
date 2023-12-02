@@ -1,0 +1,81 @@
+{
+    "domain": "pimg.tw",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "imageproxy"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "pimg\\.tw\\/resize",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imageproxy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a4abf524008842a8a458fa3a72636e381dc9cca011bf4b2024123cc7c5f70254"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "picuki.me",
+                "www.pixnet.net"
+            ]
+        },
+        {
+            "rule": "pimg\\.tw\\/zoomcrop",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "imageproxy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a836112ceb5be323398f81138a8f741c22b835667a027a958e477aa8a36d5226"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pixnet.net",
+                "www.pixnet.net"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8508771929824561
+        },
+        {
+            "domain": "pixfs.net",
+            "prevalence": 0.14912280701754385
+        }
+    ],
+    "types": {
+        "Image": 4
+    },
+    "nameservers": [
+        "ns1.pixdns.tw",
+        "ns3.pixdns.tw",
+        "ns4.pixdns.tw"
+    ]
+}

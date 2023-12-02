@@ -1,0 +1,83 @@
+{
+    "domain": "elitrack.com",
+    "owner": {
+        "name": "Elitrack SAS",
+        "displayName": "Elitrack"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "tck"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "elitrack\\.com\\/tag",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tck"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0e7323997e9a5fcfa4ecd490094909e4767ab4de914beec0178f438c6eb61299"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bricorama.fr",
+                "www.bricomarche.com"
+            ]
+        },
+        {
+            "rule": "elitrack\\.com\\/tag\\/store",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tck"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e505fe52a0e40e1de1df31d600d65168c512312e6b6bb2d95d7cd03b9a34b541"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bricorama.fr",
+                "www.bricomarche.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 4
+    },
+    "nameservers": [
+        "ns-99-c.gandi.net",
+        "ns-225-b.gandi.net",
+        "ns-83-a.gandi.net"
+    ]
+}

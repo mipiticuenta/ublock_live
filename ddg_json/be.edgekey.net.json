@@ -1,0 +1,411 @@
+{
+    "domain": "be.edgekey.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "v3-pixal-web.ah",
+        "static.delhaize",
+        "media.krefel",
+        "api.krefel"
+    ],
+    "cnames": [
+        {
+            "original": "api.krefel.be",
+            "resolved": "api.krefel.be.edgekey.net"
+        },
+        {
+            "original": "media.krefel.be",
+            "resolved": "media.krefel.be.edgekey.net"
+        },
+        {
+            "original": "static.delhaize.be",
+            "resolved": "static.delhaize.be.edgekey.net"
+        },
+        {
+            "original": "v3-pixal-web.ah.nl",
+            "resolved": "v3-pixal-web.ah.be.edgekey.net"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "be\\.edgekey\\.net\\/raw-customer-interaction-data",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "v3-pixal-web.ah"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "v3-pixal-web.ah.nl",
+                    "resolved": "v3-pixal-web.ah.be.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ah.nl",
+                "www.ah.nl"
+            ]
+        },
+        {
+            "rule": "be\\.edgekey\\.net\\/static\\/next\\/animations\\/product-loader-delhaize\\.json",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.delhaize"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.delhaize.be",
+                    "resolved": "static.delhaize.be.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e5d785f0f866800afb5eb5818980e35fdc88d258b895f3a91e5ffce82ec45cba"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "delhaize.be",
+                "www.delhaize.be"
+            ]
+        },
+        {
+            "rule": "be\\.edgekey\\.net\\/static\\/fonts\\/Roboto-Bold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media.krefel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "media.krefel.be",
+                    "resolved": "media.krefel.be.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "krefel.be",
+                "www.krefel.be"
+            ]
+        },
+        {
+            "rule": "be\\.edgekey\\.net\\/api\\/v2\\/krefel\\/algolia\\/querysuggestions",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.krefel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.krefel.be",
+                    "resolved": "api.krefel.be.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "795846bd8fd2aa48faf8fa96485406b4cf69da59c4f80a3592015987639e7274"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "krefel.be",
+                "www.krefel.be"
+            ]
+        },
+        {
+            "rule": "be\\.edgekey\\.net\\/api\\/v2\\/krefel\\/products\\/41004378\\/reviews",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.krefel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.krefel.be",
+                    "resolved": "api.krefel.be.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "fb8e76fb026c0c468db1984ceaebe0dc0f0a6904e9167d345cd67246f921df6b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "krefel.be",
+                "www.krefel.be"
+            ]
+        },
+        {
+            "rule": "be\\.edgekey\\.net\\/api\\/v2\\/krefel\\/bundle\\/41004378",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.krefel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.krefel.be",
+                    "resolved": "api.krefel.be.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "8eb95bcbc154530931e15fc418c8b1fe991095671409552099ea1aa596999ede"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "krefel.be",
+                "www.krefel.be"
+            ]
+        },
+        {
+            "rule": "be\\.edgekey\\.net\\/api\\/v2\\/krefel\\/products\\/41004378\\/references",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.krefel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.krefel.be",
+                    "resolved": "api.krefel.be.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f5af2154e65dfda4677f4eead20579e232d65978e2f96540e45f2ed7adda3d3c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "krefel.be",
+                "www.krefel.be"
+            ]
+        },
+        {
+            "rule": "be\\.edgekey\\.net\\/api\\/v2\\/krefel\\/kiyoh",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.krefel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.krefel.be",
+                    "resolved": "api.krefel.be.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f44d91a9a42b97fe0dd8562843ed4cbba12fcc4a6dfd306340ec52fe404b7c59"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "krefel.be",
+                "www.krefel.be"
+            ]
+        },
+        {
+            "rule": "be\\.edgekey\\.net\\/api\\/v2\\/krefel\\/cms\\/sites\\/krefel\\/catalogs\\/KrefelContentCatalog\\/versions\\/Online\\/footer",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.krefel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.krefel.be",
+                    "resolved": "api.krefel.be.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "a316289c9045ed1179541214597408a833bc73da246071ed7a2214eaa97b9d98"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "krefel.be",
+                "www.krefel.be"
+            ]
+        },
+        {
+            "rule": "be\\.edgekey\\.net\\/api\\/v2\\/krefel\\/notifications\\/search",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.krefel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.krefel.be",
+                    "resolved": "api.krefel.be.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "krefel.be",
+                "www.krefel.be"
+            ]
+        },
+        {
+            "rule": "be\\.edgekey\\.net\\/api\\/v2\\/krefel\\/products\\/41004378",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.krefel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.krefel.be",
+                    "resolved": "api.krefel.be.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "788e4a2819be3090df0a8adf4448f057bea4c69a8876dcaa66334cc677cbc8f1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "krefel.be",
+                "www.krefel.be"
+            ]
+        },
+        {
+            "rule": "be\\.edgekey\\.net\\/api\\/v2\\/krefel\\/products\\/41004378\\/variants",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.krefel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.krefel.be",
+                    "resolved": "api.krefel.be.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "8eb95bcbc154530931e15fc418c8b1fe991095671409552099ea1aa596999ede"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "krefel.be",
+                "www.krefel.be"
+            ]
+        },
+        {
+            "rule": "be\\.edgekey\\.net\\/api\\/v2\\/krefel\\/products\\/41004378\\/references",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.krefel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.krefel.be",
+                    "resolved": "api.krefel.be.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "krefel.be",
+                "www.krefel.be"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000409,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "cookielaw.org",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "go-mpulse.net",
+            "prevalence": 0.25
+        }
+    ],
+    "types": {
+        "XHR": 22,
+        "Font": 2,
+        "Preflight": 2
+    },
+    "nameservers": []
+}

@@ -1,0 +1,125 @@
+{
+    "domain": "lindenlab.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "ext-sltracking.agni"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "lindenlab\\.com\\/tracker\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ext-sltracking.agni"
+            ],
+            "apis": {
+                "Document.cookie getter": 4,
+                "Date.prototype.getTime": 4,
+                "Document.cookie setter": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "d2c74418ab141abc6c6cd28bc769908081f2d630f21a37cba55fd6a74c89d3c4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "secondlife_trk_uuid": {
+                    "ttl": 315360005,
+                    "length": 36,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "secondlife.com",
+                "community.secondlife.com",
+                "marketplace.secondlife.com",
+                "wiki.secondlife.com"
+            ]
+        },
+        {
+            "rule": "lindenlab\\.com\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ext-sltracking.agni"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "secondlife.com",
+                "community.secondlife.com",
+                "marketplace.secondlife.com",
+                "wiki.secondlife.com"
+            ]
+        },
+        {
+            "rule": "lindenlab\\.com\\/log",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ext-sltracking.agni"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "cf9297d480de4c04b1ecb4c86cda8bfad797260a1252da5bb663103a5b544ed2",
+                "67fd5dacbea48232aa8d1c0b1e9c8b1ef4013187b2bea639375076bee6548866",
+                "49a7b4b9e0d08f38a167751a6b1b7e7c2db57ac1436f02ad186c24d23c4ee2d2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "secondlife.com",
+                "community.secondlife.com",
+                "marketplace.secondlife.com",
+                "wiki.secondlife.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000545,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "Preflight": 4,
+        "XHR": 4
+    },
+    "nameservers": [
+        "a1-228.akam.net",
+        "a3-65.akam.net",
+        "a9-67.akam.net",
+        "a18-67.akam.net",
+        "a24-64.akam.net",
+        "a4-66.akam.net"
+    ]
+}

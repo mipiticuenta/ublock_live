@@ -1,0 +1,93 @@
+{
+    "domain": "mdgms.com",
+    "owner": {
+        "name": "FactSet Digital Solutions GmbH",
+        "displayName": "FactSet Digital Solutions"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "www.hlfunds",
+        "push.onvista"
+    ],
+    "cnames": [
+        {
+            "original": "chart.hl.co.uk",
+            "resolved": "www.hlfunds.mdgms.com"
+        },
+        {
+            "original": "push.onvista.de",
+            "resolved": "push.onvista.mdgms.com"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "mdgms\\.com\\/charts\\/chart\\.jsproto_large\\.chart",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www.hlfunds"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "chart.hl.co.uk",
+                    "resolved": "www.hlfunds.mdgms.com"
+                }
+            ],
+            "responseHashes": [
+                "fb2adfbb0018be4c8b40f70e4b76bf4eff3c6d5f802d36eaf652dbd17a554e1e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hl.co.uk",
+                "www.hl.co.uk"
+            ]
+        },
+        {
+            "rule": "mdgms\\.com\\/files\\/js-api\\/1\\.6\\.2\\/blank\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "push.onvista"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "push.onvista.de",
+                    "resolved": "push.onvista.mdgms.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "onvista.de",
+                "www.onvista.de"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "types": {
+        "Image": 2,
+        "Document": 2
+    },
+    "nameservers": [
+        "ns.is-asp.com",
+        "ns0033.secondary.cloudflare.com",
+        "ns0243.secondary.cloudflare.com"
+    ]
+}

@@ -1,0 +1,103 @@
+{
+    "domain": "htm1.ch",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-CH"
+    ],
+    "prevalence": 0.000704,
+    "sites": 7,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "htm1\\.ch\\/opix\\.js",
+            "cookies": 0.000503,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {
+                "Document.cookie getter": 5,
+                "Date.prototype.getTime": 6,
+                "Document.cookie setter": 5,
+                "Screen.prototype.width": 6,
+                "Screen.prototype.height": 6,
+                "window.innerWidth": 6,
+                "window.innerHeight": 6,
+                "Screen.prototype.colorDepth": 6,
+                "Navigator.prototype.userAgent": 6,
+                "Date.prototype.getTimezoneOffset": 6
+            },
+            "sites": 6,
+            "prevalence": 0.000603,
+            "cnames": [],
+            "responseHashes": [
+                "168f38903f79dcb1db216c39e01439876771028d2e357091ee1c729bfe2b1673"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__opix_uid": {
+                    "ttl": 492480003,
+                    "length": 19,
+                    "prevalence": 0.0005027146591594611,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "magic-x.ch",
+                "toolster.ch",
+                "www.lehner-versand.ch",
+                "www.schuler.ch",
+                "www.schweizergarten.ch",
+                "www.topcc.ch"
+            ]
+        },
+        {
+            "rule": "htm1\\.ch\\/spacer\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000603,
+            "cnames": [],
+            "responseHashes": [
+                "b0183f9b406b226ad670df64375013df3873c10f8287fd1d95324abc5c45ab03"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "__opix_uid": 0.0005027146591594611
+            },
+            "exampleSites": [
+                "magic-x.ch",
+                "toolster.ch",
+                "www.lehner-versand.ch",
+                "www.schuler.ch",
+                "www.schweizergarten.ch",
+                "www.topcc.ch"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000603,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8571428571428571
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.14285714285714285
+        }
+    ],
+    "types": {
+        "Script": 6,
+        "Ping": 6
+    },
+    "nameservers": [
+        "srv1.htm1.ch",
+        "srv2.htm1.ch"
+    ]
+}

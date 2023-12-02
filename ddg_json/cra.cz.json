@@ -1,0 +1,128 @@
+{
+    "domain": "cra.cz",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000749,
+    "sites": 11,
+    "subdomains": [
+        "player.ssl.cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "cra\\.cz\\/cra\\/3\\.9\\.2\\/ott-player-vjs-pack\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "player.ssl.cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.languages": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "MediaSource.isTypeSupported": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "PerformanceTiming.prototype.navigationStart": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e819ee43ffa83ae9b25f858740790ddba63d342ca5aef81ce11b186dd22378af"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "iprima.cz",
+                "fresh.iprima.cz"
+            ]
+        },
+        {
+            "rule": "cra\\.cz\\/cra\\/3\\.9\\.2\\/ott-player\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "player.ssl.cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.languages": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "MediaSource.isTypeSupported": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.vendor": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.appName": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.cookieEnabled": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "eff8c6f5e8b7a3ae213c650f9cf2d513d5d65a82ae4e99aacbd1f182ba79939c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "iprima.cz",
+                "fresh.iprima.cz"
+            ]
+        },
+        {
+            "rule": "cra\\.cz\\/cra\\/3\\.9\\.2\\/ott-player-config\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "player.ssl.cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f675561e3ab19b8c340b3d905d61effeae2a32535d82df10ca4e2812b62b1778"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "iprima.cz",
+                "fresh.iprima.cz"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7931034482758621
+        },
+        {
+            "domain": "flashscore.com",
+            "prevalence": 0.20689655172413793
+        }
+    ],
+    "types": {
+        "Script": 6
+    },
+    "nameservers": [
+        "ns2.bluetone.cz",
+        "ns.bluetone.cz",
+        "ns1.bluetone.cz"
+    ]
+}

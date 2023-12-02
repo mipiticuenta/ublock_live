@@ -1,0 +1,109 @@
+{
+    "domain": "userjournies.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "userjournies\\.com\\/journey\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "a7f5c46c07be491d34991aa04c0ce81e0bc80dabbac9af989d49150494d972b2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "userjournies": {
+                    "ttl": 2592008,
+                    "length": 36,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "banggood.com",
+                "www.dhgate.com",
+                "www.humblebundle.com"
+            ]
+        },
+        {
+            "rule": "userjournies\\.com\\/trackk\\/user",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "banggood.com",
+                "www.dhgate.com",
+                "www.humblebundle.com"
+            ]
+        },
+        {
+            "rule": "userjournies\\.com\\/trackk\\/user",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "banggood.com",
+                "www.dhgate.com",
+                "www.humblebundle.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000341,
+    "topInitiators": [
+        {
+            "domain": "omguk.com",
+            "prevalence": 0.625
+        },
+        {
+            "domain": "dhresource.com",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "sentry-cdn.com",
+            "prevalence": 0.125
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "Fetch": 3,
+        "Preflight": 3
+    },
+    "nameservers": [
+        "melinda.ns.cloudflare.com",
+        "jack.ns.cloudflare.com"
+    ]
+}

@@ -1,0 +1,1421 @@
+{
+    "domain": "instiengage.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00111,
+    "sites": 163,
+    "subdomains": [
+        "auth",
+        "geoip",
+        "eua",
+        "product",
+        "static",
+        "cms",
+        "comment",
+        "event"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "instiengage\\.com\\/auth\\/index\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "auth"
+            ],
+            "apis": {},
+            "sites": 118,
+            "prevalence": 0.000804,
+            "cnames": [],
+            "responseHashes": [
+                "32dcb7b5d0e79583353a56225e4d8097e004103102d584e245d1b96547f9948d"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.mississippivalleypublishing.com",
+                "sciencestruck.com",
+                "www.sidereel.com",
+                "www.macrotrends.net",
+                "www.morning-times.com",
+                "www.redvoicemedia.com",
+                "nutrineat.com",
+                "tastessence.com",
+                "www.sherdog.com",
+                "statesymbolsusa.org",
+                "homequicks.com",
+                "batteryuniversity.com",
+                "www.shorelinemedia.net",
+                "www.thedailyreview.com",
+                "www.state-journal.com",
+                "psychologenie.com",
+                "starlocalmedia.com",
+                "www.alternet.org",
+                "www.suncoastnews.com",
+                "www.bransontrilakesnews.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/json\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "geoip"
+            ],
+            "apis": {},
+            "sites": 118,
+            "prevalence": 0.000804,
+            "cnames": [],
+            "responseHashes": [
+                "8c175789c1e6ab058c52baaddec12307646cf95ebc7b1c63b5eda6409e6afbca"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.hawaiitribune-herald.com",
+                "www.northwestgeorgianews.com",
+                "www.paducahsun.com",
+                "www.thebeachguide.co.uk",
+                "www.bedfordgazette.com",
+                "gaming-fans.com",
+                "www.yoursourceone.com",
+                "www.republicanherald.com",
+                "www.cadillacnews.com",
+                "techspirited.com",
+                "www.hastingstribune.com",
+                "mydramalist.com",
+                "www.wnd.com",
+                "www.insidenova.com",
+                "www.ringtv.com",
+                "www.decaturdaily.com",
+                "hogville.net",
+                "cdllife.com",
+                "denvergazette.com",
+                "www.oswegocountynewsnow.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/auth\\/authIframe\\.js",
+            "cookies": 0.000729,
+            "fingerprinting": 1,
+            "subdomains": [
+                "auth"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 114,
+                "Navigator.prototype.cookieEnabled": 115,
+                "window.name": 115,
+                "window.localStorage": 107,
+                "Document.cookie setter": 107,
+                "Document.cookie getter": 107,
+                "Date.prototype.getTime": 27
+            },
+            "sites": 118,
+            "prevalence": 0.000804,
+            "cnames": [],
+            "responseHashes": [
+                "d1d05642e23866a6d7fb1b165615355e7c01fffaf89c61e9c14c0beecb96ae23"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bostonhockeynow.com",
+                "matrix.reshish.com",
+                "www.bedfordgazette.com",
+                "www.state-journal.com",
+                "www.thefantasyfootballers.com",
+                "bravewords.com",
+                "www.fauquier.com",
+                "www.owlstalk.co.uk",
+                "pittsburghhockeynow.com",
+                "www.newser.com",
+                "batteryuniversity.com",
+                "www.cadillacnews.com",
+                "starlocalmedia.com",
+                "www.thebeachguide.co.uk",
+                "www.publicschoolreview.com",
+                "hogville.net",
+                "www.mississippivalleypublishing.com",
+                "gaming-fans.com",
+                "www.sporcle.com",
+                "www.gettysburgtimes.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/v1\\/auth\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eua"
+            ],
+            "apis": {},
+            "sites": 114,
+            "prevalence": 0.000777,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "penlighten.com",
+                "www.cadillacnews.com",
+                "www.stardem.com",
+                "psychologenie.com",
+                "hogville.net",
+                "www.sidereel.com",
+                "www.besteveralbums.com",
+                "www.livenewsmag.com",
+                "www.thebeachguide.co.uk",
+                "www.westernjournal.com",
+                "www.yankton.net",
+                "www.allmusic.com",
+                "www.allfreesewing.com",
+                "www.republicanherald.com",
+                "mydramalist.com",
+                "www.mississippivalleypublishing.com",
+                "batteryuniversity.com",
+                "tastessence.com",
+                "denvergazette.com",
+                "www.hawaiitribune-herald.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/v1\\/auth\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eua"
+            ],
+            "apis": {},
+            "sites": 114,
+            "prevalence": 0.000777,
+            "cnames": [],
+            "responseHashes": [
+                "f1a047e2826e92a3467563f03231adbdaf667486b9116ce1e72b43af2abdf74a",
+                "be7c9045f99f5ab453f3b534939fb104f70c1bb716958f0afff9a44c5384cda3",
+                "990d78cde3d8fd07054ffc1dc5be7113d35ca14de7d8226ab1b49c39db26b9bf",
+                "be859c612f3c669fa8446f8424fbedf7f8fea4941e8233934eb9c9addda5b5ca",
+                "d08d854d427506ea3c55b1290b5b82ddcefe51c74c62befa5fe471fe260cd78c",
+                "e4f5337ce18ef95bf9d750c6fa613742df3c295fa5ed285cdefb5de8b8c5accb",
+                "0c129578391474a379a1bfcccd3d53c3bea2861a23543ede1d8a8b774f059897",
+                "9a07e6494beac9629fb805830bd9e35560644e493d329e68e1b43ecd97006b52",
+                "d95d48f68c2d21c7a738ca939119e5626b3a33bac622728d40c592a868e7ea8a",
+                "dfa3ec6d243d65fc72db4d07212ba142624d4acc1c511575dfa31ae2dd7b00a0",
+                "b9cb50700a559842d3806d3a434bd4c995d829b784a806885cac5ffeb357713f",
+                "8ab2a10abd13a0c981076d124170f62b23f7e1166d9b44f370edc08e3991002c",
+                "7601daab9f0f2125bf34a3423a950c1eef959d6d28b17c80926859d868106586",
+                "2ec0e479bf85f497e3aaff4cdee1916de27eb40208ccf802009a9fa2314841a6",
+                "044af11600d6a47388ef151bd4d67a48960f17afb32d91d6006dedfbef5e6d0e",
+                "b4ff65665486a1c0a2b32837ea9cf314f1aeed94f7a0defe39ee3197625116ff",
+                "ab332e7c5722d08863c2ff084d420699205f460fae584b7dc75f03324d727390",
+                "7ad37b725a83a7759670c606b811fae8ca4744bfc40c110d087a484cca310712",
+                "34a7f55b7fcba1fd8cc0eba3b2a79d56fc4266ea4e53d668e7e827b1323354a4",
+                "7c555b97163ae5ad968587e783b5e5d3e4e75de1157043b822662edf6e7cff5c",
+                "b0a025e6fefa4c9351a0008d939ba7afd7a58181fe737975ff4c338bb4e9fc74",
+                "cc708c6065c7cf5ccbb11bfc63feeb71b9469751dabc5c625621fe62f8cf3ece",
+                "75ca41ca48f76499ef2873535327c5884a0f1b950ff7206df158c5ae1a0e66e3",
+                "055fdd56969bd2a38a431a19d499d6ca28f433875a1a577167a209e084220911",
+                "32ea594e6caffe0b424c066ca9ec6feccf014e164d347baa4daab3d4800ce32f",
+                "402dac0ec5935644ba39f228e05e43d787cf67853e4c4b47c068d1e7ccd0bfb1",
+                "11f3a2c38fcf8733e5943a807e337c373b8a3eae6dfddbe6ecf95507605a3114",
+                "56b989bc95180dad762584f7d8a2e6c042ad5c33d578809d700678a487696e89",
+                "f66acb79d7a8616310590bf55426b8c1c0333c9d04c18fac49ca3814769d1758",
+                "d0deea29806a0880d03730ca202751a0ed2478d3acc65b6a5c2b01509f618998",
+                "12ecb1ec14390d032b301f642ddf5ebf8d86d15f32b92213d31e18b4e67f0dc5",
+                "5aa064ca0c08cb29efcb2ac6fd879a6d4a4c996a39a3f0d5d54f32b52d839312",
+                "75304c9b928efcf030dffaf6aa044a44cb155a23fb2d1027973fea1c60f99857",
+                "86f027b5fb138e5c494328aaa04572c05f9e619f7f9acef07fa949a56a7fd9a8",
+                "ccebe1d8a3af430f81823ed3b1d8b081fe1884b54c3c58aad6d305c27df2e98a",
+                "b1f9d0d0f1aeea8404252ea37693e037cdada37f8bd12f788f5db8e3d3429cb5",
+                "1b6cfea34adb5a9c409818ec54d4a4fb9df95e17a9bbfb31e0299e5a7bc6d0c1",
+                "38a94d8951b6188293ac0d1e0643eab1ae5aeb43a81e5067499e74ac79219869",
+                "e50bad9b8469a2c00e1422631ee3cd183e170b97041513fcaee10ade7ea0d4b7",
+                "5f744f5d3707abd28f1ea21be1282067910acbca641a627f176349a8807844f2",
+                "0d2204054cdb4575680d907bb6c1f68d7f973dfbd49f3bb4cc52b9cff95023bf",
+                "6bd4ab60f7f297e0cf291f383480fd5dde090b7c65b299d8bdb08a73c88d9673",
+                "1dc8a6290ac872673bc9ed19d5b45baeb4a85ca188b7b48624e65c6ecf60a76d",
+                "5b98209faa1633b464448b7ed70376f9facd06d3769830c902f95bdaab6cfb4a",
+                "8c30de857d1b6e8efc91fb37c7947aad04f30dcbbfdeeeb8aebf9730cc6459ca",
+                "c034b08548250319914df78e2dd070d6746248fc5f5be14da0e25c014b6068dc",
+                "e328b199168bc7e09b456cfdadf3ebf76f77881939552fa0460b25ae6613457d",
+                "22434e801aa35b2fc81bdbb22bacbdedf28ad445aedea4639b522a3eaa15e8cb",
+                "b7935d52abad70fd2c522a6a3152e69c36852508b852ec1eea38789380874f7e",
+                "8fd85d67a6fa0a91a9517603e056170761a515f89451425a20d5f8cacce096b7",
+                "a07d81610d1e8f075fb874c552515229f5737438bbd7055a106909b045ee0de9",
+                "49b3012e79664d0a3138eca019539a1e7affbd9d9c09e90abef1f675d0d4666e",
+                "2826d48ad691a4fffaab38b096d58f3b078dbcaa50ce8ceadfd1fe71cfab970c",
+                "f6aed4443b9ce9fb878d0e47b293672207aa6401d64483b4f8746ff685072b7b",
+                "a1ac898b8b2c355acaad01847cef37c2f06873d8907957dc0ac8cb05a5de871a",
+                "c2871637400f50dff7e0d60b583e0a7e529a99d15d34b88c0da14b9893dc49c2",
+                "509b7aa7b10649241d9026fbeb34742554773638b079b4d10af727f3d3eb595e",
+                "7341a5e15e1815b81e9c7547332c02610906397ab1a86c34dc7e42873b503b60",
+                "cb43dd7e7f28e0f358e8001f4d45bc2af560fe040093c4a0b0ecb1ff6c46c0da",
+                "e6f7cc71b62c3f9bfe25c97f4e9d94db91af5067f4fd96106f3aa10875cffe11",
+                "cea7b9fc783ffca03eb05f78f800915a062c59d3df0399afcdac1be42a3359e4",
+                "94988bf13e9852109022c17ce9b60cab85a05296931ceaaff61e2e76784d3929",
+                "999be4ba5240caab9ff69b780a773dba63e780fa74f8836c1a6baab89be9826c",
+                "be0c9dedb08585e4583a08ccdc5538d5117b16a9d27f3def51dfe7d4431c051b",
+                "fdbd4ea1f9577dcb7bf671e4c2c1248cf1078f3789f00f451bf22c0a46259454",
+                "d5f071e056bb1a760ee319289a7454dd9ac5348ae2731e72bdd850b664816d09",
+                "58f03f863705c993fd1962ea3bacb34ed59946668061887559b8ef7283146b63",
+                "c8d963e485e0ebf5b9ad44a0eec739139bed16e57efd78c9d7c13b03a3f5f34d",
+                "216e80a6d0c16e816a5c37a6749b0df532952a3a570e3379fc53f84a09700010",
+                "315b3263351014b1e33a7ad65f25669ff9022752717296191e7eae69206ce947",
+                "4e015bdf3d414dc02a6237d562327c967a00c2fcec67501cbfad460263e47583",
+                "6c17aae57962802fa5f34c076304b5f4961d4cd5256caaac69ae0494f99c9faa",
+                "113c30650f6745b343916958c5226f03d95089dec9d69905984193734c91ab45",
+                "b72023b69ae8582505c8455f91c7e358fe9ecfca57c083c8e483b666d9982be2",
+                "642cf9cc459e50ff178c698b0b2cfd0bbbd6b9dcaf4a37a4b7a609be60a2d6af",
+                "f9e909cb3616b91eb1b2b461912983883bc07520a13da2b17daa43103f74bbd4",
+                "4c10dea127c018dfe987d8d2bfe56d1790469ed4242f0b5e512454aa8d22ae03",
+                "7eaf26638255e2dc9b9a5346dd19241c4028fabfb9522cc20b0b09e71849497c",
+                "3efd7d45661a35af853248ec4d9389c6f0df2870b4d23daf40178386d9ed43c0",
+                "93b376862daaae55aba76e15737c6c59119a185cda77cf3c502488c253ba5111",
+                "86ffb519d26749aa0ab1fcd683224212da73c2ce6d83876e2121ef4bd15fdf32",
+                "9547092ae6022b25a0a82df45a5aa0c4d2172e44b6b6464098910dc07ec887f2",
+                "c846419f672cfc5897a13c724ec06dc0b4462cba3d9a7b83e9ff8b66af700593",
+                "db0bae857bfa60637b14015c6ebfe342a9dd5f104495ad91287a5d86eec4f229",
+                "f36b02f94a680d5131a94604b4f3e82af4a6cee84bf63b8812cf5070e35b1022",
+                "7928cc7838f9d97cb422fa7c4a0a01a5dcfc16741ff9c12a35be474434228faa",
+                "9efa025216f64868637e309a81b82809db85ae1fd0acb12c03bdd426873a5106",
+                "f17f9583cbdec88bfd08514bf9d8ac11d493eec9d5cfa8986d1d1991c6133578",
+                "8890d42888d87305a4bb1c66dd1544e2c43cf7934702934a621d353c7a86b904",
+                "b3ac133443f15f7491a6a6cbdfe37345656b9a14131be69c2d77b1920ace47a6",
+                "309dbc9d33b0d12d6afe718566c07a5c407e49993d8f0974b22a261cb121b9ff",
+                "2dbad4b9fafee180899d5f4371d50d09346b7d678ec953d476658c842143d995",
+                "d2390833df3700023f97e4cdbfb6b85e1cc11b307570459b0f19fe5683ff28a1",
+                "0f575eb98ce8c89a0fc60d8803f16646e9c9e4dbf550d7c9a3e738b16e1dc1e6",
+                "3cfcddadb63ee512d3f37679c73d6e3cf49b57892e6957990c67bf09b08d4672",
+                "bfa5a368b5e98d777b81ebd918de85a4008704b9cf35e65523efd63d8cdd646d",
+                "c4e2581f36f5a18515a5361b4d920ecaeb362c5a54f0d8689c358f1bd072e515",
+                "fcd369f843e278d007f53c016b3f4564b1e8494cd3ed343016a4abcece4bbe0a",
+                "90f5dc1bb8b17283713b7223871a36a7c9448a5c33111afe612722f4e1339a9d",
+                "c5b28cec57c1ceefffe2841f684d3c6b0da1c9ab9a69a278400a1d2053445f25",
+                "58e379ab4a8c4fcbb70e6a3232545df0de42a18ae104b8f450d9dbfaf4e05ca7",
+                "81f201ba9785c2b46914a463ab97e588ceebdbbe1ba6d0c92d4b7d9c1262a89d",
+                "5c44ad4076bcf612fea6c97b11124e6424fab6aececf9d3a9c66bc748cd57468",
+                "6c81ed9dcd20ccfc1f443e10d095a72c07c19052a2520f649c3d44691a6c9926",
+                "8efe89f21ebccdf698f90ff98fef404d218b7a956126500e2596ab16cb4f5eb8",
+                "f2cd91862356e09b627a44e989dbb49d0a755414587ba6c4b7197afa70eaf497",
+                "beaf4941982430b062c6bcde635327bc7f151166a9af8f19dd3a6341dfd2ab79",
+                "ca9f4ae8a279fa38c4e4880901d3cf0c410e63cec1cb63b3a78f309fa8f91c56"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.thebeachguide.co.uk",
+                "www.suncoastnews.com",
+                "bravewords.com",
+                "www.sporcle.com",
+                "www.owlstalk.co.uk",
+                "www.ringtv.com",
+                "holdtoreset.com",
+                "www.thetimes-tribune.com",
+                "crooksandliars.com",
+                "www.appenmedia.com",
+                "www.westhawaiitoday.com",
+                "flashbak.com",
+                "healthhearty.com",
+                "www.union-bulletin.com",
+                "www.standardspeaker.com",
+                "nutrineat.com",
+                "www.alternet.org",
+                "www.westernjournal.com",
+                "www.sherdog.com",
+                "www.williamsonherald.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/ceu-code\\/40c1ddd3-f53e-4cc2-99cf-8551b04a81fa\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 28,
+                "window.localStorage": 25,
+                "Navigator.prototype.language": 28,
+                "Navigator.prototype.languages": 28,
+                "Navigator.prototype.cookieEnabled": 28,
+                "Navigator.prototype.platform": 28,
+                "window.name": 26,
+                "window.innerHeight": 28
+            },
+            "sites": 36,
+            "prevalence": 0.000245,
+            "cnames": [],
+            "responseHashes": [
+                "6e1181b39902ae448afb2f60edda18397ea1f22460a4008e6ff235a69fc7e39b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "starlocalmedia.com",
+                "www.thedesertreview.com",
+                "www.qchron.com",
+                "homenewshere.com",
+                "www.suncoastnews.com",
+                "www.timesdaily.com",
+                "www.state-journal.com",
+                "www.chagrinvalleytoday.com",
+                "www.princewilliamtimes.com",
+                "www.shorelinemedia.net",
+                "www.gettysburgtimes.com",
+                "www.gillettenewsrecord.com",
+                "dailytimes.com",
+                "www.cadillacnews.com",
+                "www.fairfaxtimes.com",
+                "www.riograndesun.com",
+                "www.theunion.com",
+                "www.yoursourceone.com",
+                "www.union-bulletin.com",
+                "www.dnronline.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/files\\/images\\/embed4\\.0\\/app\\/logo-insticator-light-opt\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 57,
+            "prevalence": 0.000388,
+            "cnames": [],
+            "responseHashes": [
+                "6904003eca98c9ba2599e2b985dc0cc0e3e95e01f7a29892065c76b50810a923"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.northwestgeorgianews.com",
+                "www.morning-times.com",
+                "www.shorelinemedia.net",
+                "tastessence.com",
+                "www.union-bulletin.com",
+                "www.thewesterlysun.com",
+                "dailytimes.com",
+                "www.worshipchords.net",
+                "www.gettysburgtimes.com",
+                "www.chagrinvalleytoday.com",
+                "homenewshere.com",
+                "www.allfreesewing.com",
+                "www.genealogy.com",
+                "www.qchron.com",
+                "starlocalmedia.com",
+                "www.state-journal.com",
+                "sciencestruck.com",
+                "www.thedailyreview.com",
+                "www.yoursourceone.com",
+                "www.gillettenewsrecord.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/files\\/images\\/embed4\\.0\\/app\\/icon-check\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 57,
+            "prevalence": 0.000388,
+            "cnames": [],
+            "responseHashes": [
+                "34c2201cbfc3b501839820ae120c267b274aab5e3eaac1ed04dfc9703a274e28"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.genealogy.com",
+                "www.hawaiitribune-herald.com",
+                "www.chagrinvalleytoday.com",
+                "www.uscho.com",
+                "www.thedailyreview.com",
+                "www.sidereel.com",
+                "mydramalist.com",
+                "www.theunion.com",
+                "www.worshipchords.net",
+                "www.allfreesewing.com",
+                "www.princewilliamtimes.com",
+                "www.bedfordgazette.com",
+                "www.wfmz.com",
+                "historyplex.com",
+                "www.fairfaxtimes.com",
+                "www.stack.com",
+                "www.williamsonherald.com",
+                "www.shorelinemedia.net",
+                "www.thegardenisland.com",
+                "www.thewesterlysun.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/files\\/images\\/embed4\\.0\\/app\\/graphic-ooc-opt\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 57,
+            "prevalence": 0.000388,
+            "cnames": [],
+            "responseHashes": [
+                "a0a936f1245488f21db005cf7c3fad543bba22c45e837bed399e066c374bf830"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.state-journal.com",
+                "www.theunion.com",
+                "www.thewesterlysun.com",
+                "www.thegardenisland.com",
+                "www.hawaiitribune-herald.com",
+                "gardenerdy.com",
+                "www.princewilliamtimes.com",
+                "denvergazette.com",
+                "www.mississippivalleypublishing.com",
+                "mydramalist.com",
+                "www.gillettenewsrecord.com",
+                "starlocalmedia.com",
+                "www.gettysburgtimes.com",
+                "www.worshipchords.net",
+                "gaming-fans.com",
+                "www.qchron.com",
+                "historyplex.com",
+                "www.leaguesecretary.com",
+                "healthhearty.com",
+                "www.sidereel.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/v3\\/contents",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cms"
+            ],
+            "apis": {},
+            "sites": 57,
+            "prevalence": 0.000388,
+            "cnames": [],
+            "responseHashes": [
+                "eb4477d3ae4f93fa9d1f88b1b1923426786ef5f6fc93420c26428b01a343b59f",
+                "6ef46e3a50d316be9a91221d35a231a8d46fc1f460e82a125778f785d86557d3",
+                "90a5547e640144028018daf9a84a1d47d9bfdd16192109a086489adf71f9d0ee",
+                "dab46277b52b97a7d47f8fe08b90bb6a32f22b96a75ebf0f2148e047cfdabe1c",
+                "fed416e3a988f278ba44c2269c4dfba0cd7067f145192419a9ff6abf02782e0d",
+                "a8d25a5e28f00631b7759ca615cfef97455bd4613f7e484d90bc7e5d1c86df86",
+                "01fb86588f7f368057586cc0cb96f3a4b61f3c220d1bdf896d07db1067ed110a",
+                "096ce70b64c84d48ddbe15c94a3a7ae2f69c2cde32878f885974bd973b2fb0ee",
+                "18c2b52ae29ca060619b340c31d0a588b1f111f71658f8b86cc282a5dfad3a64",
+                "5bce2eb9f0c3906cb526adcd1fc0f92d332c7e12ca5b38d44106081000b35565",
+                "96447bebf2a0fecca16c08aedd8ee88473744f8b8c1f332e7515f9fe82901a65",
+                "4f6a647e414e69607e158ea28f2c6c8a52ba47baf64dc71fae7cf27101008654",
+                "941700011e67f72fb66cd15103788e6794ebc7eec77c9b686f136a15606977e9",
+                "365f7ec92629e099c682a6d8e78a83c6912c4577ea3f01ea7581c2b4f173dfba",
+                "9dc83a9300dedfafff4ddc4ba59926627c69704fe955e0dded8af98b9dee0c06",
+                "04573538e944fd68a29fec5fa8a0da71d34b8982cdb80b855a6b5b06bc99d356",
+                "5b67a2c1e8b91cd8a2b3e697e9bddc8972e9bd655d7805665d64dead925c2ace",
+                "ba4110e1a0a864c82105e755c7789a7ab995841caf5fa4ab01d726509f7516a8",
+                "3d6361db9553a2beb64b9b77b496ab21912605d648af3c6d3803cf7b518a9e89",
+                "f95afb5e09241364bdc532b519c9ed8fb9484d5437e0affc6bc44e490336850c",
+                "32130fff85ad18ddc90a20683fd321ae9b8e0a23c3e8aadd1d927f1ebb8741c8",
+                "5a5a885b0cf06c56ee3daf5c40ad17115a5a84f392c145904972ad846d08d3b4",
+                "9e1e28c28913d88c363491ceb4d3e548828ec99b080f5ccd68298b899e12cece",
+                "4fd109ae5ed9694f9d7723bbd006561bdd76e6c98251c94620b10e6f1b9e2b23",
+                "564857ab46fe3e64653f328e91dfc6e057111781f94443f438e8b6ac4af96f8c",
+                "eef0ef3f61b6b885dcacea69feebfb519ea7c2def9c8cc09b1c47e60c89e8916",
+                "ab5f4205c33db1250083468f661b060c7fe0f7041495aeabda304a34363d25aa"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.leaguesecretary.com",
+                "www.thedesertreview.com",
+                "mydramalist.com",
+                "www.uscho.com",
+                "www.morning-times.com",
+                "www.paducahsun.com",
+                "www.princewilliamtimes.com",
+                "historyplex.com",
+                "www.gillettenewsrecord.com",
+                "tastessence.com",
+                "sciencestruck.com",
+                "dailytimes.com",
+                "www.allmusic.com",
+                "www.mississippivalleypublishing.com",
+                "www.northwestgeorgianews.com",
+                "www.republicanherald.com",
+                "www.genealogy.com",
+                "www.fauquier.com",
+                "www.allfreesewing.com",
+                "www.birthdaymessages.net"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/article-sentiment-scripts\\/sentiments\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flashbak.com",
+                "www.blackenterprise.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/article-sentiment-scripts\\/vendors\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flashbak.com",
+                "www.blackenterprise.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/live\\/loader\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "comment"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "656c96eef3c9fdf33eef77ef6c2c5ac2489391670fef3dc3179dccc9c4b06827"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flashbak.com",
+                "www.blackenterprise.com",
+                "www.genealogy.com",
+                "www.nationalreview.com",
+                "www.sherdog.com",
+                "www.westernjournal.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/app-loader\\/static\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "656c96eef3c9fdf33eef77ef6c2c5ac2489391670fef3dc3179dccc9c4b06827"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flashbak.com",
+                "www.blackenterprise.com",
+                "www.genealogy.com",
+                "www.nationalreview.com",
+                "www.sherdog.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/v1\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "event"
+            ],
+            "apis": {},
+            "sites": 27,
+            "prevalence": 0.000184,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.qchron.com",
+                "www.birthdaymessages.net",
+                "www.morning-times.com",
+                "gardenerdy.com",
+                "www.thedesertreview.com",
+                "www.stardem.com",
+                "www.republicanherald.com",
+                "www.suncoastnews.com",
+                "www.worshipchords.net",
+                "www.northwestgeorgianews.com",
+                "www.princewilliamtimes.com",
+                "www.williamsonherald.com",
+                "psychologenie.com",
+                "www.theunion.com",
+                "historyplex.com",
+                "gaming-fans.com",
+                "www.hawaiitribune-herald.com",
+                "stocktwits.com",
+                "www.fauquier.com",
+                "www.thewesterlysun.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/v1\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "event"
+            ],
+            "apis": {},
+            "sites": 25,
+            "prevalence": 0.00017,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.fauquier.com",
+                "www.northwestgeorgianews.com",
+                "www.worshipchords.net",
+                "www.yankton.net",
+                "www.birthdaymessages.net",
+                "www.williamsonherald.com",
+                "gaming-fans.com",
+                "stocktwits.com",
+                "www.republicanherald.com",
+                "www.fairfaxtimes.com",
+                "gardenerdy.com",
+                "homenewshere.com",
+                "www.riograndesun.com",
+                "www.chagrinvalleytoday.com",
+                "psychologenie.com",
+                "www.theunion.com",
+                "historyplex.com",
+                "www.princewilliamtimes.com",
+                "www.qchron.com",
+                "www.suncoastnews.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/live\\/comments\\/api\\/externalAPI\\/getThreadsCounters",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "comment"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "e870cdfaa54f6673b11ae35f0ae6e881cc83634dc772edd5804141960f090ab8",
+                "355d59c2b2287f99b30a2bbcfd440bcc46fcec3c520fbc9a608d97169baa1c28",
+                "d31bdb99ece4fb63b28bdebc289c49ebefe50ea478e3b7fe3376d8a63067e085",
+                "d2a2cf3feeed061b44df27b31df5d0254b3244019c1cbee87be1abab3d9191f4",
+                "415b55bad956f759c3b482559e39686262452e748ea706310322fe0bc3b66cdb"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "okmagazine.com",
+                "radaronline.com",
+                "www.nationalreview.com",
+                "www.realitytea.com",
+                "www.sherdog.com",
+                "www.wrestlezone.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/live\\/comments\\/api\\/externalAPI\\/getThreadsCounters",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "comment"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "okmagazine.com",
+                "radaronline.com",
+                "www.nationalreview.com",
+                "www.realitytea.com",
+                "www.sherdog.com",
+                "www.wrestlezone.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/product-loader-code\\/c8c79eac-eda0-45a3-9269-fd6a392083dd\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bff39daf898d7d2a8f4effcdf0ba6ed2184b125c47bfd4c228c8cf2f104faf45"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allfreesewing.com",
+                "www.allfreesewing.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/ceu-code\\/62ceb535-0cf5-4e88-a850-8a3b684eadc1\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allkpop.com",
+                "www.allkpop.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/product-loader-code\\/c670eea3-82f7-4446-800b-c55b48ba631c\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5d771ac1832a8b580d0b2910345f9abe3ce4067a37f3dcd71f4e414a5392bfc1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "plsVisitorGeo": {
+                    "ttl": 86430,
+                    "length": 2,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "plsVisitorCity": {
+                    "ttl": 86430,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "barchart.com",
+                "www.barchart.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/product-loader-code\\/59300933-95eb-4b28-8053-c185f111bb7e\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "127c7476e7a5087df7726ea0192c2670cbdce73d10c31946a9375c70fb0b0bcb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "besteveralbums.com",
+                "www.besteveralbums.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/product-loader-code\\/1b16bf3f-eada-4ea8-96c2-4ca5c3b6fc2f\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b28fa1c31dfc36ab732c0177ffc730704742f802047aefaeea2d6fca23a92690"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "birthdaymessages.net",
+                "www.birthdaymessages.net"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/product-loader-code\\/a75fb639-e655-42ec-be73-2eabc9b52b7e\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "window.name": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "52a909b3c8629aa472cbd669870462333b4cee88607498b986c426da925a1c82"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "plsVisitorGeo": {
+                    "ttl": 86405,
+                    "length": 2,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "plsVisitorCity": {
+                    "ttl": 86405,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blackenterprise.com",
+                "www.blackenterprise.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/product-loader-code\\/f4419227-cf7a-43be-beb6-be058f2f7f1b\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "84e32b702a56c0c5869b5b7e9c1898f643f7e543dbd4c4ae3e9004c41cb116fc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cartoonbrew.com",
+                "www.cartoonbrew.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/ceu-code\\/9c029d9b-b71c-4485-a6ee-d4af32728178\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.languages": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Navigator.prototype.platform": 1,
+                "window.name": 1,
+                "window.innerHeight": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fe37ac7a78aac3a41ade241e74d5b8deb89d1b329242ec0e194d7c47f5d95b27"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eliteprospects.com",
+                "www.eliteprospects.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/product-loader-code\\/1528ad08-abbd-4ec4-8d43-0727f6c0342e\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c136e10c22fa453131d77c26c4ab37e0a0f00c724eae37a3073ab36ccc081ed7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "genealogy.com",
+                "www.genealogy.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/live\\/comments\\/api\\/comments\\/getContentIdByUrl",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "comment"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e71d7b6c57a70acb38e16c25cb1f3bc33ed044c3d5ad2cadd7631def02cb91d8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000013624071008658098,
+                "_li_dcdm_c": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "genealogy.com",
+                "www.genealogy.com",
+                "www.nationalreview.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/product-loader-code\\/fec4134a-9615-4601-a52a-17745428e69d\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1,
+                "window.name": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e084f86aedecc28a77d581d1f3025d1a1f77aa961e7042eb65571b86c726b364"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "plsVisitorGeo": {
+                    "ttl": 86401,
+                    "length": 2,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "plsVisitorCity": {
+                    "ttl": 86401,
+                    "length": 4,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "leaguesecretary.com",
+                "www.leaguesecretary.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/product-loader-code\\/294dc0f4-8bca-4a65-8ddd-f13d6e7327ae\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "milb.com",
+                "www.milb.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/v1\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "event"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mississippivalleypublishing.com",
+                "www.mississippivalleypublishing.com",
+                "www.stardem.com",
+                "www.williamsonherald.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/product-loader-code\\/0c41544c-29f9-4780-aec0-693eebfe42cf\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "window.name": 2,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b7385a086e2766ab65f3fa2634ec02848cf3958fa4035211a55107e9195026fe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "plsVisitorGeo": {
+                    "ttl": 86404,
+                    "length": 2,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "plsVisitorCity": {
+                    "ttl": 86404,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nationalreview.com",
+                "www.nationalreview.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/product-loader-code\\/e00696e5-c08d-4b5c-9057-03b6196101e5\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "881d98fe351a07f904be595da02fd41c602540c8c5561e651d8b334f9928970e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "newser.com",
+                "www.newser.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/product-loader-code\\/0a69e3d0-b8b8-4333-94ab-3d1747f14aa3\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "window.name": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8bdc16504a0984518cdfb1978ecc54fa763dc4aa9181f81657179fb6b43807c2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "plsVisitorGeo": {
+                    "ttl": 86405,
+                    "length": 2,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "plsVisitorCity": {
+                    "ttl": 86405,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "redvoicemedia.com",
+                "www.redvoicemedia.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/product-loader-code\\/5f282198-b6f9-4fbf-9244-cfb0317339b5\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7014846e5606e2e470d385e46a2fbe8c0eda82f71fe4fc75624c9c58151d6189"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ringtv.com",
+                "www.ringtv.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/product-loader-code\\/94fec0c3-29cd-48a5-aa8d-ba62d905279c\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1a1bce09aece70f65e7712996b232d64c8cf61613027c6bbd1d6c727643619d7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thefantasyfootballers.com",
+                "www.thefantasyfootballers.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/ceu-code\\/9989d532-5517-45d4-968a-b01f2ca70cc2\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "window.localStorage": 1,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.languages": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Navigator.prototype.platform": 1,
+                "window.name": 1,
+                "window.innerHeight": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bd17f9afcef099128e9f4fd49d6a8fc408f357e989eaedcdfc8021ed0260fa6e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thegardenisland.com",
+                "www.thegardenisland.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/ceu-code\\/fafdbd90-5bf0-4794-b385-facb449599dc\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "product"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2fb654676deeb5fb4fcf63837bb61856610ee36b07cd5c67b843a38af9fdb948"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "uscho.com",
+                "www.uscho.com"
+            ]
+        },
+        {
+            "rule": "instiengage\\.com\\/client_logos\\/c8afe158-72c1-454b-9574-c150e9630cb3\\/05132cb7-1afc-47b8-a123-7c3caa41b043",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "uscho.com",
+                "www.uscho.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000988,
+    "topInitiators": [
+        {
+            "domain": "d3lcz8vpax4lo2.cloudfront.net",
+            "prevalence": 0.4052863436123348
+        },
+        {
+            "domain": "d2na2p72vtqyok.cloudfront.net",
+            "prevalence": 0.24669603524229075
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.21145374449339208
+        },
+        {
+            "domain": "adlightning.com",
+            "prevalence": 0.033773861967694566
+        },
+        {
+            "domain": "d2f0uviei09pxb.cloudfront.net",
+            "prevalence": 0.023494860499265784
+        },
+        {
+            "domain": "script.ac",
+            "prevalence": 0.016152716593245228
+        },
+        {
+            "domain": "geoedge.be",
+            "prevalence": 0.011747430249632892
+        },
+        {
+            "domain": "d14pdm1b7fi5kh.cloudfront.net",
+            "prevalence": 0.011747430249632892
+        },
+        {
+            "domain": "soapps.net",
+            "prevalence": 0.010279001468428781
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.00881057268722467
+        }
+    ],
+    "types": {
+        "Document": 118,
+        "XHR": 202,
+        "Script": 205,
+        "Preflight": 145,
+        "Fetch": 123,
+        "Image": 173,
+        "Other": 4
+    },
+    "nameservers": [
+        "lola.ns.cloudflare.com",
+        "carl.ns.cloudflare.com"
+    ]
+}

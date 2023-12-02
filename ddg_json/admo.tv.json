@@ -1,0 +1,114 @@
+{
+    "domain": "admo.tv",
+    "owner": {
+        "name": "Clickon",
+        "displayName": "Clickon"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "ponant",
+        "burgerking-fr",
+        "carewell-us",
+        "orpi",
+        "carewell-us.script"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "admo\\.tv\\/server\\/receptor\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ponant",
+                "burgerking-fr",
+                "carewell-us",
+                "orpi"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9",
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ponant.com",
+                "us.ponant.com",
+                "www.burgerking.fr",
+                "www.carewell.com",
+                "www.orpi.com"
+            ]
+        },
+        {
+            "rule": "admo\\.tv\\/carewell-us\\/script\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "carewell-us.script"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c20a5464fa5bc3ed2ddabf074aa14de7fea18837707c246cd5816a2d941453e6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cikneeto_uuid": {
+                    "ttl": 33696005,
+                    "length": 39,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "cikneeto": {
+                    "ttl": null,
+                    "length": 18,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "carewell.com",
+                "www.carewell.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000341,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.6
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.4
+        }
+    ],
+    "types": {
+        "XHR": 5,
+        "Script": 2
+    },
+    "nameservers": [
+        "dns109.ovh.net",
+        "ns109.ovh.net"
+    ]
+}

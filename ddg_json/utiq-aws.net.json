@@ -1,0 +1,106 @@
+{
+    "domain": "utiq-aws.net",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "frontend.prod"
+    ],
+    "cnames": [
+        {
+            "original": "utiq.kreiszeitung.de",
+            "resolved": "frontend.prod.utiq-aws.net"
+        },
+        {
+            "original": "utiq.mopo.de",
+            "resolved": "frontend.prod.utiq-aws.net"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "utiq-aws\\.net\\/utiqLoader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "frontend.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "utiq.kreiszeitung.de",
+                    "resolved": "frontend.prod.utiq-aws.net"
+                },
+                {
+                    "original": "utiq.mopo.de",
+                    "resolved": "frontend.prod.utiq-aws.net"
+                }
+            ],
+            "responseHashes": [
+                "8d253f32931ac7c615b21a9bbcec353a55584a3fc403804f0186fff13550059c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kreiszeitung.de",
+                "www.mopo.de"
+            ]
+        },
+        {
+            "rule": "utiq-aws\\.net\\/op\\/idconnect\\/mno-precheck",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "frontend.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "utiq.kreiszeitung.de",
+                    "resolved": "frontend.prod.utiq-aws.net"
+                },
+                {
+                    "original": "utiq.mopo.de",
+                    "resolved": "frontend.prod.utiq-aws.net"
+                }
+            ],
+            "responseHashes": [
+                "5e11b7ef6783e1073cf81f0ec294a3959d9f02eccc595175a33d9e1ef56941c5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kreiszeitung.de",
+                "www.mopo.de"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "cdntrf.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "ns-27.awsdns-03.com",
+        "ns-1613.awsdns-09.co.uk",
+        "ns-638.awsdns-15.net",
+        "ns-1503.awsdns-59.org"
+    ]
+}

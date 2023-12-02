@@ -1,0 +1,176 @@
+{
+    "domain": "hlserve.com",
+    "owner": {
+        "name": "Criteo SA",
+        "displayName": "Criteo",
+        "privacyPolicy": "https://www.criteo.com/privacy/",
+        "url": "http://criteo.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000559,
+    "sites": 82,
+    "subdomains": [
+        "www",
+        "retail-eu.productads"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "hlserve\\.com\\/Delivery\\/ClientPaths\\/Library\\/onetag\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Document.cookie getter": 46
+            },
+            "sites": 51,
+            "prevalence": 0.000347,
+            "cnames": [],
+            "responseHashes": [
+                "4e0a6650a8f04186e47b8032f391f4faee14c2ddaf57f7bc7e3581293ecd5965",
+                "52dc22b382a72ffbcdef12abf7989ee5b495615291f994455543e366485139fe",
+                "ded935f23858996a8d74ce7a1d525d3e1b838158ee856ec90c22acf69ef20ff1",
+                "b2eb8ea50fc3d6795e000a629b89bfb26dc6d625a5857102000a82c112f9ae8f",
+                "9d5a9f8d57942f8d82a4e00e2df43654fa7193be78b024f1008175557d03fbf7",
+                "c0b4899b74a6309bdae891b131aca0b844a40cc26f4f8c48c76c59d8ac903cbe",
+                "dd88688723610f8acc7e206b7951631d7305b20337ade36235492669355f3616"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bestbuy.com",
+                "macys.com",
+                "www.bestbuy.com",
+                "www.costco.com",
+                "www.macys.com",
+                "groceries.asda.com",
+                "www.walmart.ca",
+                "wowma.jp",
+                "www.mydeal.com.au",
+                "www.baur.de",
+                "www.bestbuy.ca",
+                "www.primor.eu",
+                "www.plazavea.com.pe",
+                "www.costcobusinessdelivery.com",
+                "well.ca",
+                "super.walmart.com.mx",
+                "www.farfetch.com",
+                "www.ebates.com",
+                "rakuten.com",
+                "www.rakuten.com"
+            ]
+        },
+        {
+            "rule": "hlserve\\.com\\/Delivery\\/ClientPaths\\/Library\\/hook\\.js",
+            "cookies": 0.0000477,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www",
+                "retail-eu.productads"
+            ],
+            "apis": {
+                "Document.cookie getter": 7,
+                "Date.prototype.getTime": 7,
+                "Document.cookie setter": 7,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "c83de44e9368f988bf979a2ea0b1a14f76802747de4944153e46afb647eab537",
+                "498d44d428a4bc157943659385e8ea6e0937053386d31afd68d1c927f2abf9be",
+                "0156a5a16672236f6346bf9cd611ebb97f61031ac6b03695910894a9ae06f991"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "hl_p": {
+                    "ttl": 2592011,
+                    "length": 36,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 1
+                },
+                "CRTOABE": {
+                    "ttl": 86412,
+                    "length": 1,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 0.25
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "stores.dickssportinggoods.com",
+                "www.calia.com",
+                "www.dickssportinggoods.com",
+                "www.fingerhut.com",
+                "www.keurig.com",
+                "www.micromania.fr"
+            ]
+        },
+        {
+            "rule": "hlserve\\.com\\/delivery\\/v2\\/api\\/page",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dickssportinggoods.com",
+                "www.dickssportinggoods.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000681,
+    "topInitiators": [
+        {
+            "domain": "criteo.com",
+            "prevalence": 0.5568181818181818
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.26136363636363635
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.07954545454545454
+        },
+        {
+            "domain": "ensighten.com",
+            "prevalence": 0.06818181818181818
+        },
+        {
+            "domain": "appdynamics.com",
+            "prevalence": 0.022727272727272728
+        },
+        {
+            "domain": "dickssportinggoods.com",
+            "prevalence": 0.011363636363636364
+        }
+    ],
+    "types": {
+        "Script": 60
+    },
+    "nameservers": [
+        "ns1.criteo.com",
+        "ns2.criteo.com"
+    ]
+}

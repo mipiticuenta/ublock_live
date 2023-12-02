@@ -1,0 +1,220 @@
+{
+    "domain": "residenthome.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "api",
+        "collect1",
+        "media",
+        "assets"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "residenthome\\.com\\/auth\\/token",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dreamcloudsleep.com",
+                "www.nectarsleep.com"
+            ]
+        },
+        {
+            "rule": "residenthome\\.com\\/products",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dreamcloudsleep.com",
+                "www.nectarsleep.com"
+            ]
+        },
+        {
+            "rule": "residenthome\\.com\\/auth\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2b31481c0a0826f23facff6f1d8fb7858cbded18f22517fe5b281ee0c07346b2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dreamcloudsleep.com",
+                "www.nectarsleep.com"
+            ]
+        },
+        {
+            "rule": "residenthome\\.com\\/products",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "62d499be98c027b2b3b8e0247d82e823ffd0f73af2f2845bab73a50555ab849d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dreamcloudsleep.com",
+                "www.nectarsleep.com"
+            ]
+        },
+        {
+            "rule": "residenthome\\.com\\/production\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collect1"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "437a8195d41f2bd9f4e2b59080e11c4365ee83428c9458f4af1828d706183daa",
+                "1dd9734e118d1338c2d865877fe2a302d23213048fee0d3a741a6d6556595a45"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dreamcloudsleep.com",
+                "www.dreamcloudsleep.com",
+                "www.nectarsleep.com"
+            ]
+        },
+        {
+            "rule": "residenthome\\.com\\/production\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collect1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dreamcloudsleep.com",
+                "www.nectarsleep.com"
+            ]
+        },
+        {
+            "rule": "residenthome\\.com\\/fonts\\/biotif\\/biotif\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5c9f50a694ec9e9c301193bd126038c786f24f9545abd23b82a80562f0cf585c"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nectarsleep.com",
+                "www.nectarsleep.com"
+            ]
+        },
+        {
+            "rule": "residenthome\\.com\\/nectar\\/247277\\/public\\/stylesheets\\/app-nectar\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nectarsleep.com",
+                "www.nectarsleep.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.4
+        },
+        {
+            "domain": "tiktok.com",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.26666666666666666
+        }
+    ],
+    "types": {
+        "Preflight": 6,
+        "XHR": 7,
+        "Font": 2,
+        "Stylesheet": 2
+    },
+    "nameservers": [
+        "ns-194.awsdns-24.com",
+        "ns-701.awsdns-23.net",
+        "ns-1768.awsdns-29.co.uk",
+        "ns-1428.awsdns-50.org"
+    ]
+}

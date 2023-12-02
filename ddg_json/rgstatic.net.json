@@ -1,0 +1,86 @@
+{
+    "domain": "rgstatic.net",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "c5"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "rgstatic\\.net\\/javascript\\/header\\/load\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "c5"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "61ee69e3ff6cde2a9f3960ef92b0e9853563dc29251c44a47d7e4d0adc467c8e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "researchgate.net",
+                "www.researchgate.net"
+            ]
+        },
+        {
+            "rule": "rgstatic\\.net\\/javascript\\/delivery-manager\\/delivery-impl\\.1\\.210\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "c5"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 1,
+                "Screen.prototype.width": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d45dc9367e793f95e1e4b3ce45d0e77711d775c320220523e5cbbb4ed6d7261b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "researchgate.net",
+                "www.researchgate.net"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 4
+    },
+    "nameservers": [
+        "ns-915.awsdns-50.net",
+        "ns-1164.awsdns-17.org",
+        "ns-288.awsdns-36.com",
+        "ns-1652.awsdns-14.co.uk"
+    ]
+}

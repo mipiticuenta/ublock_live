@@ -1,0 +1,93 @@
+{
+    "domain": "livesession.io",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "cdn",
+        "rs"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "livesession\\.io\\/track\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "Document.cookie getter": 4,
+                "Date.prototype.getTime": 5,
+                "window.innerHeight": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "f727582678241a9b9b212f8ff80287c6842b90cc44ded48673889dcad6360ebd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bandolierstyle.com",
+                "www.calranch.com",
+                "www.farmandhomesupply.com",
+                "www.johnnywas.com",
+                "www.ninerbikes.com"
+            ]
+        },
+        {
+            "rule": "livesession\\.io\\/visitors\\/init",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rs"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "c298c5e7851a5b7679304dbe4f386ad6744c08ff4c2a1c78b5c1e8c2a14fb9cf"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bandolierstyle.com",
+                "www.calranch.com",
+                "www.farmandhomesupply.com",
+                "www.johnnywas.com",
+                "www.ninerbikes.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5833333333333334
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.4166666666666667
+        }
+    ],
+    "types": {
+        "Script": 5,
+        "XHR": 5
+    },
+    "nameservers": [
+        "vera.ns.cloudflare.com",
+        "dean.ns.cloudflare.com"
+    ]
+}

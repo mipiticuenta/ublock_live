@@ -1,0 +1,289 @@
+{
+    "domain": "wallkit.net",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "cdn1",
+        "popups",
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "wallkit\\.net\\/js\\/integration\\/latest\\/wallkit-integration-library\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn1"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "086cf25ec809673461cf4de9449a545e813f76fa2a7a7d7a86461a329de42d81"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "arktimes.com",
+                "boisedev.com",
+                "frontofficesports.com"
+            ]
+        },
+        {
+            "rule": "wallkit\\.net\\/js\\/sdk\\/latest\\/wallkit\\.umd\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn1"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9435d3ee6c4b499ed844c1121c73d3223f1c8c3c7d3a5c57221c7e7cce680580"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "arktimes.com",
+                "boisedev.com"
+            ]
+        },
+        {
+            "rule": "wallkit\\.net\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "popups"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "09c7570b1169c707e6f96a7c31f798efef984379dccb02d6e472040b5b47185c"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "wk-resource_dc72304e-b543-4740-842b-da2716256718": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "arktimes.com",
+                "boisedev.com"
+            ]
+        },
+        {
+            "rule": "wallkit\\.net\\/assets\\/css\\/1\\.0\\/spinner\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "132e8e15006916173f20928ff2f031cc0764851f860e1b491a85be440c1a0614"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "arktimes.com",
+                "boisedev.com"
+            ]
+        },
+        {
+            "rule": "wallkit\\.net\\/static\\/css\\/app\\.56990bffca8689a993441e2e217f671b\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "popups"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "20d4f6709c3bcfceeb8e252e4d945aa4a6f1420077cdc2958a39e6ca7fa8c267"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "arktimes.com",
+                "boisedev.com"
+            ]
+        },
+        {
+            "rule": "wallkit\\.net\\/static\\/js\\/manifest\\.2ae2e69a05c33dfc65f8\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "popups"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d414b80e539a45c4c5b318d37543f524d2cfcc69c92256879afb2f1dd980fdd1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "arktimes.com",
+                "boisedev.com"
+            ]
+        },
+        {
+            "rule": "wallkit\\.net\\/static\\/js\\/vendor\\.62aecd9ccc0c8275cb48\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 2,
+            "subdomains": [
+                "popups"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.maxTouchPoints": 1,
+                "Navigator.prototype.product": 1,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
+                "window.localStorage": 2,
+                "window.indexedDB": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.onLine": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "69f63fd3a7e75e38446fbc13558092466b2427fbfcb922b2dc63b197a15d7873"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "wk-resource_dc72304e-b543-4740-842b-da2716256718": {
+                    "ttl": 31536006,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "arktimes.com",
+                "boisedev.com"
+            ]
+        },
+        {
+            "rule": "wallkit\\.net\\/static\\/js\\/app\\.a0ea411e1f4061fb9940\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "popups"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "341db6d2885a77d9006806f1331d917a22be21a7a1c1a399c1008a9712e65182"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "arktimes.com",
+                "boisedev.com"
+            ]
+        },
+        {
+            "rule": "wallkit\\.net\\/api\\/v1\\/firebase\\/account",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "arktimes.com",
+                "boisedev.com"
+            ]
+        },
+        {
+            "rule": "wallkit\\.net\\/api\\/v1\\/firebase\\/account",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8da3369f1e4868a155ea0bce77cf75878a4c96329fb3d56d5f37d9ebcfbb4105"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "arktimes.com",
+                "boisedev.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 11,
+        "Document": 2,
+        "Stylesheet": 4,
+        "Preflight": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "ns-1091.awsdns-08.org",
+        "ns-906.awsdns-49.net",
+        "ns-1734.awsdns-24.co.uk",
+        "ns-292.awsdns-36.com"
+    ]
+}

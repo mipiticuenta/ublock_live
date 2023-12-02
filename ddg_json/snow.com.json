@@ -1,0 +1,702 @@
+{
+    "domain": "snow.com",
+    "owner": {
+        "name": "Vail Resorts Inc.",
+        "displayName": "Vail Resorts"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000613,
+    "sites": 9,
+    "subdomains": [
+        "b",
+        "cache",
+        "anpl",
+        "waitingroom"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "snow\\.com\\/id",
+            "cookies": 0.0000409,
+            "fingerprinting": 0,
+            "subdomains": [
+                "b"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "5b0fe61899dfc88f6d32ad298ddbee36fb8432f683f87ef480a118d9e41bcdf4",
+                "0e24635156769322581b5e587827ff86fe2de9db5421cdad5680ea3fdaf499e3",
+                "6fb44eaa82d3062630cf6f06c9adc1cd008f79afe03351202b9282c97cdb20d1",
+                "4aa9b1f33ea9f290e3c50e58c143f98dfc453ffc6ca773140e93c43a01bb115c",
+                "505599cd08864f02683452f4b5648d8b4eebde1f6319bcb6507db56f111ad410"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beavercreek.com",
+                "www.parkcitymountain.com",
+                "www.skicb.com",
+                "www.skiheavenly.com",
+                "www.stevenspass.com",
+                "www.stowe.com"
+            ]
+        },
+        {
+            "rule": "snow\\.com\\/api\\/weatherapi\\/GetOpenSnowWeatherForecast",
+            "cookies": 0.0000409,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cache"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "2fbac06d49ff1864c2d8f02cbd3c524a6e6332dbbfaaf627ac07b5f353f833c4",
+                "47a64e52aca1e74939a8e1b62c010bf8a1a07256fd0d27b2eb349ba7e9a81275",
+                "5da73e66b14ba045da2ec7b765c65f267ca1719eecf720cd8a07215a6d5cc09a",
+                "c7101a35af3744af75659917eb6f4666f0e0a3e137ed67ed879d2568f3d379a5",
+                "288502f9e4167cf07faf1fba0f1bd1363e4cc61c10049e4b06f652686f198f77"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beavercreek.com",
+                "www.parkcitymountain.com",
+                "www.skicb.com",
+                "www.skiheavenly.com",
+                "www.stevenspass.com",
+                "www.stowe.com"
+            ]
+        },
+        {
+            "rule": "snow\\.com\\/api\\/TerrainApi\\/GetTerrainStatus",
+            "cookies": 0.0000409,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cache"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "722691842457bbe7620b32b3d424c9682a5c5f53abe8fef912ab678bf2be550c",
+                "1cc4db22dd48c97cd97025692a8a55d2543eff028bdc7c8221097394940f2446",
+                "4747055c5beb6547315ec98dbbbb1a0341d33d042ba23edcf82099aad25059d9",
+                "acbcaca131fac180a5d847c47ab5108de79645b14fdc346f0346fda1dde95cce",
+                "273af0faac7c900b59d9afd1ff8b6b436e70a4f73f7365ac9c74e1af338050d1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beavercreek.com",
+                "www.parkcitymountain.com",
+                "www.skicb.com",
+                "www.skiheavenly.com",
+                "www.stevenspass.com",
+                "www.stowe.com"
+            ]
+        },
+        {
+            "rule": "snow\\.com\\/js\\/prod2\\/parkcity\\/AdobeVisitorAPI\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "anpl"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c7a3e5187ec4caed696e6bfb3ae97a5183bf7bf4bda0d4d938a382c0cc66cebd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "AMCV_974C370453295F9A0A490D44%40AdobeOrg": {
+                    "ttl": 63158404,
+                    "length": 264,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "AMCVS_974C370453295F9A0A490D44%40AdobeOrg": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "parkcitymountain.com",
+                "www.parkcitymountain.com"
+            ]
+        },
+        {
+            "rule": "snow\\.com\\/js\\/prod2\\/parkcity\\/parkcity\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "anpl"
+            ],
+            "apis": {
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.colorDepth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d55302a2271d8d8a6a88b9295dfae5ee7ea9bd413f867d7e2753797f827bfc40"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "customDDOCookie": {
+                    "ttl": 7776003,
+                    "length": 37,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "mbox": {
+                    "ttl": 63244805,
+                    "length": 103,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "dDweatherLastChecked": {
+                    "ttl": null,
+                    "length": 25,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "gpv_pn": {
+                    "ttl": 1804,
+                    "length": 55,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "s_ppv": {
+                    "ttl": null,
+                    "length": 82,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "s_tp": {
+                    "ttl": null,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "s_vnum": {
+                    "ttl": 2592004,
+                    "length": 22,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "s_invisit": {
+                    "ttl": 1804,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "s_lv": {
+                    "ttl": 94608004,
+                    "length": 13,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "s_lv_s": {
+                    "ttl": null,
+                    "length": 21,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "s_nr": {
+                    "ttl": 31536004,
+                    "length": 17,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "s_cc": {
+                    "ttl": null,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "AAMC_vailresorts_0": {
+                    "ttl": 15552009,
+                    "length": 10,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "aam_uuid": {
+                    "ttl": 2592009,
+                    "length": 38,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "parkcitymountain.com",
+                "www.parkcitymountain.com"
+            ]
+        },
+        {
+            "rule": "snow\\.com\\/api\\/WeatherApi\\/GetWeather\\/parkcity",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cache"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "89f61f0cea2fc8d40134de0ab9f514d46785d1d196a105f925ed4ee0e33868e4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "parkcitymountain.com",
+                "www.parkcitymountain.com"
+            ]
+        },
+        {
+            "rule": "snow\\.com\\/",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "waitingroom"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "parkcitymountain.com",
+                "www.parkcitymountain.com",
+                "www.stevenspass.com"
+            ]
+        },
+        {
+            "rule": "snow\\.com\\/js\\/prod2\\/stevenspass\\/AdobeVisitorAPI\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "anpl"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c7a3e5187ec4caed696e6bfb3ae97a5183bf7bf4bda0d4d938a382c0cc66cebd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "AMCV_974C370453295F9A0A490D44%40AdobeOrg": {
+                    "ttl": 63162004,
+                    "length": 264,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "AMCVS_974C370453295F9A0A490D44%40AdobeOrg": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stevenspass.com",
+                "www.stevenspass.com"
+            ]
+        },
+        {
+            "rule": "snow\\.com\\/js\\/prod2\\/stevenspass\\/stevenspass\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "anpl"
+            ],
+            "apis": {
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "window.innerHeight": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "49e9adc845e4c959c088de951a4dd9d5c12c6b26471f64ac97bfe4005d2fd419"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "customDDOCookie": {
+                    "ttl": 7776005,
+                    "length": 37,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "dDweatherLastChecked": {
+                    "ttl": null,
+                    "length": 25,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "gpv_pn": {
+                    "ttl": 1805,
+                    "length": 55,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "s_ppv": {
+                    "ttl": null,
+                    "length": 82,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "s_tp": {
+                    "ttl": null,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "mbox": {
+                    "ttl": 63244807,
+                    "length": 103,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "s_vnum": {
+                    "ttl": 2592006,
+                    "length": 22,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "s_invisit": {
+                    "ttl": 1806,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "s_lv": {
+                    "ttl": 94608006,
+                    "length": 13,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "s_lv_s": {
+                    "ttl": null,
+                    "length": 21,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "s_nr": {
+                    "ttl": 31536006,
+                    "length": 17,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "s_cc": {
+                    "ttl": null,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "AAMC_vailresorts_0": {
+                    "ttl": 15552009,
+                    "length": 10,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "aam_uuid": {
+                    "ttl": 2592009,
+                    "length": 38,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stevenspass.com",
+                "www.stevenspass.com"
+            ]
+        },
+        {
+            "rule": "snow\\.com\\/api\\/WeatherApi\\/GetWeather\\/stevenspass",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cache"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5f4e0db4c015743589ac5b99e2c6a3839a9fbcf6addb9a4dcd21202c242a911e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stevenspass.com",
+                "www.stevenspass.com"
+            ]
+        },
+        {
+            "rule": "snow\\.com\\/js\\/prod2\\/stowe\\/AdobeVisitorAPI\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "anpl"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c7a3e5187ec4caed696e6bfb3ae97a5183bf7bf4bda0d4d938a382c0cc66cebd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "AMCV_974C370453295F9A0A490D44%40AdobeOrg": {
+                    "ttl": 63162004,
+                    "length": 264,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "AMCVS_974C370453295F9A0A490D44%40AdobeOrg": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stowe.com",
+                "www.stowe.com"
+            ]
+        },
+        {
+            "rule": "snow\\.com\\/js\\/prod2\\/stowe\\/stowe\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "anpl"
+            ],
+            "apis": {
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.colorDepth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "33d8eb115c9b4e68493d96f1c008038f3a1d44b4e8abd2ab5720e8c8150d00a3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "customDDOCookie": {
+                    "ttl": 7776009,
+                    "length": 37,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "mbox": {
+                    "ttl": 63244812,
+                    "length": 103,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "dDweatherLastChecked": {
+                    "ttl": null,
+                    "length": 25,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "gpv_pn": {
+                    "ttl": 1809,
+                    "length": 24,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "s_ppv": {
+                    "ttl": null,
+                    "length": 46,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "s_tp": {
+                    "ttl": null,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "s_vnum": {
+                    "ttl": 2592009,
+                    "length": 22,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "s_invisit": {
+                    "ttl": 1810,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "s_lv": {
+                    "ttl": 94608010,
+                    "length": 13,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "s_lv_s": {
+                    "ttl": null,
+                    "length": 21,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "s_nr": {
+                    "ttl": 31536010,
+                    "length": 17,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "s_cc": {
+                    "ttl": null,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "AAMC_vailresorts_0": {
+                    "ttl": 15552013,
+                    "length": 10,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "aam_uuid": {
+                    "ttl": 2592013,
+                    "length": 38,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stowe.com",
+                "www.stowe.com"
+            ]
+        },
+        {
+            "rule": "snow\\.com\\/api\\/WeatherApi\\/GetWeather\\/stowe",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cache"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "10a6161cced71b42b2a5ed212f6c92ba6480b95d9a1fb45100173fc893440f1f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stowe.com",
+                "www.stowe.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000613,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "XHR": 24,
+        "Script": 12,
+        "Document": 3
+    },
+    "nameservers": [
+        "dns4.p03.nsone.net",
+        "dns1.p03.nsone.net",
+        "dns2.p03.nsone.net",
+        "dns3.p03.nsone.net"
+    ]
+}

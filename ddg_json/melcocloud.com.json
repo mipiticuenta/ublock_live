@@ -1,0 +1,82 @@
+{
+    "domain": "melcocloud.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "fusion-configurator"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "melcocloud\\.com\\/javascript\\/melco-configurator\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "fusion-configurator"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.language": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e6a173e2aa5222159ab3a34f683bb5c4c70e5d47f9ddb09fedd5d85b91c70b6d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buildabear.com",
+                "www.buildabear.com"
+            ]
+        },
+        {
+            "rule": "melcocloud\\.com\\/javascript\\/melco-configurator\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fusion-configurator"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6c90d1cb6a09bdb3a327e678d1589ba99ab0c1c2e66d2e652ab61b04d0b1f1db"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buildabear.com",
+                "www.buildabear.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Stylesheet": 2
+    },
+    "nameservers": [
+        "ns34.domaincontrol.com",
+        "ns33.domaincontrol.com"
+    ]
+}

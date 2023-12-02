@@ -1,0 +1,244 @@
+{
+    "domain": "enterprisebot.co",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "cp",
+        "ns-bot",
+        "franciscan",
+        "lner",
+        "swica-iq"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "enterprisebot\\.co\\/css\\/eb-minified-library\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cp",
+                "ns-bot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fe6a6220cd1e0ebde9ad3e9457ece2e26ca70cc38b1b728a5853161ffbd99e2c"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cp.pt",
+                "www.ns.nl"
+            ]
+        },
+        {
+            "rule": "enterprisebot\\.co\\/js\\/jquery\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cp",
+                "ns-bot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "131c0d82967fed05e1920e519e0ea6ec91ab97b7c40480f72f8af8680bba1f0a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cp.pt",
+                "www.ns.nl"
+            ]
+        },
+        {
+            "rule": "enterprisebot\\.co\\/js\\/eb-minified-library\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cp",
+                "ns-bot"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9108efc404987a225d3b301a32775726435a6c9083eccb31cdc5e96ac00159af"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cp.pt",
+                "www.ns.nl"
+            ]
+        },
+        {
+            "rule": "enterprisebot\\.co\\/js\\/jquery-ui\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cp",
+                "ns-bot"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a36a4fa8d2693241257c84cde38c4c3d755d4ef0f4b0a89a60466913ac138df8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cp.pt",
+                "www.ns.nl"
+            ]
+        },
+        {
+            "rule": "enterprisebot\\.co\\/v4\\/client-status",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cp",
+                "franciscan",
+                "lner",
+                "ns-bot",
+                "swica-iq"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "0158ba44297e65cd87b5e5b41726ba997e5b56969a2addaf27d005ef63184e59",
+                "b8b8db80bc4864655ba70f3d9e744c6989f2dc0159d6d7ac3aff7a2e87beb95d",
+                "f69598faf8a63c8eedbf7f5e937671685a591c2365c11fdc00098d7672b72047",
+                "94cfccecf4cbe6104e2b62f868f296623ab98aa9d59a0de6b98b1b617fb8be4a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cp.pt",
+                "www.franciscanhealth.org",
+                "www.lner.co.uk",
+                "www.ns.nl",
+                "www.swica.ch"
+            ]
+        },
+        {
+            "rule": "enterprisebot\\.co\\/dist\\/franciscan\\/ebInitChatWindow\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "franciscan"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e2899be1c25b2dd65c353bfc65f51721885154d6e622b31bc083c4b7530a96e8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "franciscanhealth.org",
+                "www.franciscanhealth.org"
+            ]
+        },
+        {
+            "rule": "enterprisebot\\.co\\/dist\\/franciscan\\/ebIframeCss\\.bundle\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "franciscan"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "604469eb4dab3edca7deade10d48da4761bec2a8b41b49f73c526d545426c5f7"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "franciscanhealth.org",
+                "www.franciscanhealth.org"
+            ]
+        },
+        {
+            "rule": "enterprisebot\\.co\\/dist\\/franciscan\\/ebIframeChatWindow\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "franciscan"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "83987dfc73cc1ca753a8ce5429c5275091244c694d35bf370c6e201009960ed2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "franciscanhealth.org",
+                "www.franciscanhealth.org"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.4666666666666667
+        },
+        {
+            "domain": "baqend.com",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "sentry-cdn.com",
+            "prevalence": 0.2
+        }
+    ],
+    "types": {
+        "Stylesheet": 4,
+        "Script": 10,
+        "XHR": 5
+    },
+    "nameservers": [
+        "pdns10.domaincontrol.com",
+        "pdns09.domaincontrol.com"
+    ]
+}

@@ -1,0 +1,1011 @@
+{
+    "domain": "dnsv1.com.cn",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000102,
+    "sites": 15,
+    "subdomains": [
+        "opc.cloud.tencent.com.dsa",
+        "act-api.cloud.tencent.com.dsa",
+        "vm.gtimg.cn.cdn",
+        "img2023.cnblogs.com.cdn",
+        "enapp.globaltimes.cn.dsa",
+        "static.jjwxc.net.cdn",
+        "my.jjwxc.net.dsa"
+    ],
+    "cnames": [
+        {
+            "original": "act-api.cloud.tencent.com",
+            "resolved": "act-api.cloud.tencent.com.dsa.dnsv1.com.cn"
+        },
+        {
+            "original": "enapp.globaltimes.cn",
+            "resolved": "enapp.globaltimes.cn.dsa.dnsv1.com.cn"
+        },
+        {
+            "original": "img2023.cnblogs.com",
+            "resolved": "img2023.cnblogs.com.cdn.dnsv1.com.cn"
+        },
+        {
+            "original": "my.jjwxc.net",
+            "resolved": "my.jjwxc.net.dsa.dnsv1.com.cn"
+        },
+        {
+            "original": "opc.cloud.tencent.com",
+            "resolved": "opc.cloud.tencent.com.dsa.dnsv1.com.cn"
+        },
+        {
+            "original": "static.jjwxc.net",
+            "resolved": "static.jjwxc.net.cdn.dnsv1.com.cn"
+        },
+        {
+            "original": "vm.gtimg.cn",
+            "resolved": "vm.gtimg.cn.cdn.dnsv1.com.cn"
+        }
+    ],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "dnsv1\\.com\\.cn\\/opc_resource\\/resource_public\\/resource_list",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "opc.cloud.tencent.com.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "opc.cloud.tencent.com",
+                    "resolved": "opc.cloud.tencent.com.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "6b9137fd5bb3331d31e496d8840f06af3123d3c2bdb51e8d7020d273e92a01e6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tencent.com",
+                "cloud.tencent.com"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/track\\/create-track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act-api.cloud.tencent.com.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "act-api.cloud.tencent.com",
+                    "resolved": "act-api.cloud.tencent.com.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tencent.com",
+                "cloud.tencent.com"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/track\\/create-track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "act-api.cloud.tencent.com.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "act-api.cloud.tencent.com",
+                    "resolved": "act-api.cloud.tencent.com.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "79d438ad859af4c494ae3625e9104c6f7fc8a9bcb739aead91284ec3916b60d0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tencent.com",
+                "cloud.tencent.com"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/thumbplayer\\/superplayer\\/superplayer\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "vm.gtimg.cn.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "vm.gtimg.cn",
+                    "resolved": "vm.gtimg.cn.cdn.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "7358d2fa71b90e8f9b06a5fdf77937927be3370286f2327ca227c92cd3699eea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "new.qq.com"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/tencentvideo\\/script\\/3\\.4\\.0\\/universal-report\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "vm.gtimg.cn.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "vm.gtimg.cn",
+                    "resolved": "vm.gtimg.cn.cdn.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "783159f8927cfade0d330f2d070b87d2a2a2834e163d16478e61d5bcd621bd3c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "new.qq.com"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/tencentvideo\\/txp\\/style\\/img\\/loading\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vm.gtimg.cn.cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "vm.gtimg.cn",
+                    "resolved": "vm.gtimg.cn.cdn.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "d18f99745d336eaa087bf4d89e0cc198c59911ccf0de91dab575bdc362f6856f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "v.qq.com",
+                "wetv.vip"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/blog\\/35695\\/202310\\/35695-20231031193344205-1876575539\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img2023.cnblogs.com.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "img2023.cnblogs.com",
+                    "resolved": "img2023.cnblogs.com.cdn.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "3281f99a33762f9be7cbee658045db0cb93cc794816d1d134455e489120b6bb2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnblogs.com",
+                "www.cnblogs.com"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/blog\\/35695\\/202310\\/35695-20231031193113444-742078829\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img2023.cnblogs.com.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "img2023.cnblogs.com",
+                    "resolved": "img2023.cnblogs.com.cdn.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "f484117afea7f5f5fed3a5a88abb766665f34cfa45b3b12a9c6c58ce5345e608"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnblogs.com",
+                "www.cnblogs.com"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/blog\\/35695\\/202311\\/35695-20231101070025470-1814189679\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img2023.cnblogs.com.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "img2023.cnblogs.com",
+                    "resolved": "img2023.cnblogs.com.cdn.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "801333d1bd378f621ca8332a98678c8882de689eeb509713ce52fe8b1c536f79"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnblogs.com",
+                "www.cnblogs.com"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/blog\\/35695\\/202310\\/35695-20231031193539301-813407418\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "img2023.cnblogs.com.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "img2023.cnblogs.com",
+                    "resolved": "img2023.cnblogs.com.cdn.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "27e1726040e4909c76da0d8a0ae227bbfe73b83dec8b13f011eeb9a123352517"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnblogs.com",
+                "www.cnblogs.com"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/web\\/logout",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "enapp.globaltimes.cn.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "enapp.globaltimes.cn",
+                    "resolved": "enapp.globaltimes.cn.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "96dbe46b5aa6ec4806875cb6bf6b4f852f47397ee6272cfbfd4d185fa312240d"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globaltimes.cn",
+                "www.globaltimes.cn"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/web\\/login",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "enapp.globaltimes.cn.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "enapp.globaltimes.cn",
+                    "resolved": "enapp.globaltimes.cn.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "96dbe46b5aa6ec4806875cb6bf6b4f852f47397ee6272cfbfd4d185fa312240d"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globaltimes.cn",
+                "www.globaltimes.cn"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/web\\/css\\/app\\.c442d43d\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "enapp.globaltimes.cn.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "enapp.globaltimes.cn",
+                    "resolved": "enapp.globaltimes.cn.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "8e395f02c7405f5787a7371efce95abdb822e762738298ab8d4c92ce5846930b"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globaltimes.cn",
+                "www.globaltimes.cn"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/web\\/js\\/app\\.8577c594\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "enapp.globaltimes.cn.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "enapp.globaltimes.cn",
+                    "resolved": "enapp.globaltimes.cn.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "1c64cafdcdf873b8660c521066cf6dd31763310e4902ef60a0716057782711ae"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globaltimes.cn",
+                "www.globaltimes.cn"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/web\\/css\\/chunk-3238cd16\\.062ecd55\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "enapp.globaltimes.cn.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "enapp.globaltimes.cn",
+                    "resolved": "enapp.globaltimes.cn.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globaltimes.cn",
+                "www.globaltimes.cn"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/web\\/js\\/chunk-3238cd16\\.cde219d5\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "enapp.globaltimes.cn.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "enapp.globaltimes.cn",
+                    "resolved": "enapp.globaltimes.cn.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globaltimes.cn",
+                "www.globaltimes.cn"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/web\\/css\\/chunk-3238cd16\\.062ecd55\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "enapp.globaltimes.cn.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "enapp.globaltimes.cn",
+                    "resolved": "enapp.globaltimes.cn.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "433fae6ef80b1e3663b911d0f0eb25560703ab7722606ef9fa6c4532a16d31d1"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globaltimes.cn",
+                "www.globaltimes.cn"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/web\\/js\\/chunk-3238cd16\\.cde219d5\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "enapp.globaltimes.cn.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "enapp.globaltimes.cn",
+                    "resolved": "enapp.globaltimes.cn.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "a7f29c5799388cf21299e259a3229d6b93293b6532a49b5ccf97293714820640"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globaltimes.cn",
+                "www.globaltimes.cn"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/web\\/fonts\\/ionicons\\.143146fa\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "enapp.globaltimes.cn.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "enapp.globaltimes.cn",
+                    "resolved": "enapp.globaltimes.cn.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "96a00675a8e0aee2b4472204a4c82782edf2894ad3c1d607d6e79c9d5611935b"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globaltimes.cn",
+                "www.globaltimes.cn"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/images\\/GT_logo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "enapp.globaltimes.cn.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "enapp.globaltimes.cn",
+                    "resolved": "enapp.globaltimes.cn.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "b4eb56899aa1a48e58efabe209f89dfb297bfd5efd408e827a7946daefb06506"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globaltimes.cn",
+                "www.globaltimes.cn"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/images\\/icon_facebook\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "enapp.globaltimes.cn.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "enapp.globaltimes.cn",
+                    "resolved": "enapp.globaltimes.cn.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "e3d45cb79292dddbc41bccc211001eb40e0e9f3f57cf5eda07e0b9177ff54916"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globaltimes.cn",
+                "www.globaltimes.cn"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/images\\/icon_twitter\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "enapp.globaltimes.cn.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "enapp.globaltimes.cn",
+                    "resolved": "enapp.globaltimes.cn.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "65a69bf4c5a39aadf5a4648078c45cd2eb2c956167c219f7534acd39836b5f61"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globaltimes.cn",
+                "www.globaltimes.cn"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/images\\/icon_wechat\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "enapp.globaltimes.cn.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "enapp.globaltimes.cn",
+                    "resolved": "enapp.globaltimes.cn.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "fc88fc72de8d18d08047db910e95bac85ca22a9e21000d8ecc861179c8920ac2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globaltimes.cn",
+                "www.globaltimes.cn"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/api\\/user\\/info\\/260",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "enapp.globaltimes.cn.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "enapp.globaltimes.cn",
+                    "resolved": "enapp.globaltimes.cn.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "b5143963e3a0875d0d1e9820567a342e81c797342990da5e69870be4a27a0b05"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globaltimes.cn",
+                "www.globaltimes.cn"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/css\\/channel_2010\\/index2010\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.jjwxc.net.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.jjwxc.net",
+                    "resolved": "static.jjwxc.net.cdn.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "8439d87475856b3da300290d75aa8826bd530637456cdfac83f5268d54ebff07"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jjwxc.net",
+                "www.jjwxc.net"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/scripts\\/jquery\\.blockUI\\.pack\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.jjwxc.net.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.jjwxc.net",
+                    "resolved": "static.jjwxc.net.cdn.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "85680a1b0dc29bf1eea0006164b6506f7c83b5a0826bf0a167d945bf74cb2fdc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jjwxc.net",
+                "www.jjwxc.net"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/scripts\\/jjlogin\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static.jjwxc.net.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.jjwxc.net",
+                    "resolved": "static.jjwxc.net.cdn.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "fca2721fd5b61cbc041311965186ceb357bacbcea0004ba22583ae5f506d526d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jjwxc.net",
+                "www.jjwxc.net"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/scripts\\/main\\.120724\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static.jjwxc.net.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.jjwxc.net",
+                    "resolved": "static.jjwxc.net.cdn.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "d09d3973d1d7f1aac01786f4eac068d4a90864a27b2c3889075960e947bd38cf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jjwxc.net",
+                "www.jjwxc.net"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/images\\/kexinwang\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.jjwxc.net.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.jjwxc.net",
+                    "resolved": "static.jjwxc.net.cdn.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "79fbbf8143389c51bbd5b3b3d02864083c89eb6a6803f439d8ffbdc7a3cca5de"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jjwxc.net",
+                "www.jjwxc.net"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/scripts\\/check\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.jjwxc.net.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.jjwxc.net",
+                    "resolved": "static.jjwxc.net.cdn.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "3f460d8e173afbb28eb5b7852e9652d3f8f8afb8de75f8f1851e25ffc958f57f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jjwxc.net",
+                "www.jjwxc.net"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/scripts\\/shumeiDeviceIdSdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static.jjwxc.net.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.jjwxc.net",
+                    "resolved": "static.jjwxc.net.cdn.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "e68dcb1fff0968c4d3a9c76b06eb7ad20804baaf6ffe7f26a76c4ae51f3b13a2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jjwxc.net",
+                "www.jjwxc.net"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/css\\/channel_2010\\/reset\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.jjwxc.net.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.jjwxc.net",
+                    "resolved": "static.jjwxc.net.cdn.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "452e43f81f7ea971a6e4dda260786f68681b86c1862c4b606f041ebd438614de"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jjwxc.net",
+                "www.jjwxc.net"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/css\\/channel_2010\\/hf\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.jjwxc.net.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.jjwxc.net",
+                    "resolved": "static.jjwxc.net.cdn.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "8fe15520f8b8d2336fe59dad94bb0fb7c11ed13e79ef0f19775e496c204c57af"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jjwxc.net",
+                "www.jjwxc.net"
+            ]
+        },
+        {
+            "rule": "dnsv1\\.com\\.cn\\/servertime\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "my.jjwxc.net.dsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "my.jjwxc.net",
+                    "resolved": "my.jjwxc.net.dsa.dnsv1.com.cn"
+                }
+            ],
+            "responseHashes": [
+                "d62440ae30bf11d6b45ae44900cb7af13f1bb2f1595855dc520a9f0db52d59e0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jjwxc.net",
+                "www.jjwxc.net"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000341,
+    "topInitiators": [
+        {
+            "domain": "itc.cn",
+            "prevalence": 0.35294117647058826
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.27450980392156865
+        },
+        {
+            "domain": "gtimg.cn",
+            "prevalence": 0.1568627450980392
+        },
+        {
+            "domain": "cdn-go.cn",
+            "prevalence": 0.13725490196078433
+        },
+        {
+            "domain": "gtimg.com",
+            "prevalence": 0.0392156862745098
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.0392156862745098
+        }
+    ],
+    "types": {
+        "XHR": 6,
+        "Preflight": 2,
+        "Script": 20,
+        "Image": 21,
+        "Document": 4,
+        "Stylesheet": 10,
+        "Other": 4,
+        "Font": 2
+    },
+    "nameservers": [
+        "ns4.dnsv5.com",
+        "ns3.dnsv5.com"
+    ]
+}

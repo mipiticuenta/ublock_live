@@ -1,0 +1,71 @@
+{
+    "domain": "gtm-yccus-alb-580386940.us-east-1.elb.amazonaws.com",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "tags.yankeecandle.com",
+            "resolved": "gtm-yccus-alb-580386940.us-east-1.elb.amazonaws.com"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "gtm-yccus-alb-580386940\\.us-east-1\\.elb\\.amazonaws\\.com\\/g\\/collect",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "tags.yankeecandle.com",
+                    "resolved": "gtm-yccus-alb-580386940.us-east-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "c3254904cc369bec5538f766b9d4ef64338dd60a461ccf2347472ffc02526954"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000013624071008658098,
+                "__cq_uuid": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "yankeecandle.com",
+                "www.yankeecandle.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.8888888888888888
+        },
+        {
+            "domain": "fullstory.com",
+            "prevalence": 0.1111111111111111
+        }
+    ],
+    "types": {
+        "XHR": 2
+    },
+    "nameservers": []
+}

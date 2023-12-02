@@ -1,0 +1,131 @@
+{
+    "domain": "flippingbook.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "online",
+        "fbo-b"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "flippingbook\\.com\\/EmbedScriptUrl\\.aspx",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "online"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.plugins": 3,
+                "Navigator.prototype.languages": 3
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "62ca438bf35177e03eb6c70d7acdf991bbd08091b64ae58dcb78f6aabe29b027"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dixondalefarms.com",
+                "www.christmasdesigners.com",
+                "www.glenair.com",
+                "www.webster.edu"
+            ]
+        },
+        {
+            "rule": "flippingbook\\.com\\/FrontendApi\\.svc\\/GetPublicationForDisplay",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fbo-b"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "1388b7d4a1167212c4bfc9041b56623778b64b17e76ce0fa8d9c2bdcfea71f24"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dixondalefarms.com",
+                "www.christmasdesigners.com",
+                "www.glenair.com"
+            ]
+        },
+        {
+            "rule": "flippingbook\\.com\\/FrontendApi\\.svc\\/GetPublicationForDisplay",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fbo-b"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dixondalefarms.com",
+                "www.christmasdesigners.com",
+                "www.glenair.com"
+            ]
+        },
+        {
+            "rule": "flippingbook\\.com\\/Thumbnail\\.aspx",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "online"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "american-apartment-owners-association.org",
+                "www.american-apartment-owners-association.org",
+                "www.glenair.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "XHR": 3,
+        "Preflight": 3,
+        "Image": 3
+    },
+    "nameservers": [
+        "ns-996.awsdns-60.net",
+        "ns-1245.awsdns-27.org",
+        "ns-1554.awsdns-02.co.uk",
+        "ns-264.awsdns-33.com"
+    ]
+}

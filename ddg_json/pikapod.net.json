@@ -1,0 +1,135 @@
+{
+    "domain": "pikapod.net",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000681,
+    "sites": 10,
+    "subdomains": [
+        "groovy-manul",
+        "handsome-heron"
+    ],
+    "cnames": [
+        {
+            "original": "analytics.noypigeeks.com",
+            "resolved": "handsome-heron.pikapod.net"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "pikapod\\.net\\/script\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "groovy-manul",
+                "handsome-heron"
+            ],
+            "apis": {
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Navigator.prototype.language": 4,
+                "window.localStorage": 4
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "analytics.noypigeeks.com",
+                    "resolved": "handsome-heron.pikapod.net"
+                }
+            ],
+            "responseHashes": [
+                "1ee8d27e37fc58960d302a50168120c05455a773d8f23fc90d0c91f228836ac2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "itsfoss.com",
+                "learnubuntu.com",
+                "linuxhandbook.com",
+                "news.itsfoss.com",
+                "www.noypigeeks.com"
+            ]
+        },
+        {
+            "rule": "pikapod\\.net\\/api\\/send",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "groovy-manul",
+                "handsome-heron"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "analytics.noypigeeks.com",
+                    "resolved": "handsome-heron.pikapod.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "learnubuntu.com",
+                "linuxhandbook.com",
+                "www.noypigeeks.com"
+            ]
+        },
+        {
+            "rule": "pikapod\\.net\\/api\\/send",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "groovy-manul",
+                "handsome-heron"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "analytics.noypigeeks.com",
+                    "resolved": "handsome-heron.pikapod.net"
+                }
+            ],
+            "responseHashes": [
+                "4c372b7451651b28e22b5adb6275267a1a23bfb9816fc6d50885d78696b11d4d",
+                "69985c5cbebc9d596a30dd555c05bbef33df01eb156a6a1eafd4891afd67cd73"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "learnubuntu.com",
+                "linuxhandbook.com",
+                "www.noypigeeks.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 5,
+        "Preflight": 3,
+        "Fetch": 3
+    },
+    "nameservers": [
+        "ns3.dnsimple.com",
+        "ns2.dnsimple.com",
+        "ns4.dnsimple.com",
+        "ns1.dnsimple.com"
+    ]
+}

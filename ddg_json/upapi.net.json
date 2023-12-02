@@ -1,0 +1,100 @@
+{
+    "domain": "upapi.net",
+    "owner": {
+        "name": "Blockthrough Inc.",
+        "displayName": "Blockthrough"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000817,
+    "sites": 12,
+    "subdomains": [
+        "mrb"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "upapi\\.net\\/code",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "mrb"
+            ],
+            "apis": {
+                "window.sessionStorage": 8,
+                "window.localStorage": 8,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "2cd4e39b1d03ef6a0bb05c2419f51b33e27d0cb103851f1a50e809587edb9982"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mako.co.il",
+                "mshironet.mako.co.il",
+                "rotter.net",
+                "shironet.mako.co.il",
+                "www.fxp.co.il",
+                "www.mako.co.il",
+                "www.n12.co.il",
+                "www.telemagazyn.pl"
+            ]
+        },
+        {
+            "rule": "upapi\\.net\\/pb\\/ex",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "602f10f5b51a7aaabd73c679cd2f5a49030b7c3248cddf18c67b00ea0a877694"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ynet.co.il",
+                "www.ynet.co.il"
+            ]
+        }
+    ],
+    "categories": [
+        "Ad Motivated Tracking",
+        "Advertising"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9230769230769231
+        },
+        {
+            "domain": "yieldbird.com",
+            "prevalence": 0.07692307692307693
+        }
+    ],
+    "types": {
+        "Script": 10
+    },
+    "nameservers": [
+        "anna.ns.cloudflare.com",
+        "anuj.ns.cloudflare.com"
+    ]
+}

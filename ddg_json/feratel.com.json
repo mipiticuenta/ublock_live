@@ -1,0 +1,83 @@
+{
+    "domain": "feratel.com",
+    "owner": {
+        "name": "feratel media technologies AG",
+        "displayName": "feratel media"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "wtvpict",
+        "webtv"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "feratel\\.com\\/picture\\/35\\/4175\\/be9a90a3-6c8b-41bb-b002-6ed89af31ffa\\.jpeg",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wtvpict"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "28e216f6ec958dd4331ba0a68fa5205b11420b217e7a8247f18ed6c38e38a0bf"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "basel.com",
+                "www.basel.com"
+            ]
+        },
+        {
+            "rule": "feratel\\.com\\/webtv\\/AjaxSessionSaveServlet",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webtv"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "basel.com",
+                "www.basel.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Image": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "sec2.rcode0.net",
+        "ns1.feratel.at",
+        "ns2.feratel.at",
+        "sec1.rcode0.net"
+    ]
+}

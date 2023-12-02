@@ -1,0 +1,83 @@
+{
+    "domain": "flux-analytics.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "prebid"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "flux-analytics\\.com\\/analytics\\/v1\\/analytics_event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prebid"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fril.jp",
+                "item.fril.jp",
+                "w.atwiki.jp"
+            ]
+        },
+        {
+            "rule": "flux-analytics\\.com\\/analytics\\/v1\\/analytics_event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prebid"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "da46a49b1f860eef4a92b8a6371329d3797aae639c1d2ff21e9105773bb49e14"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fril.jp",
+                "item.fril.jp",
+                "w.atwiki.jp"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "flux-cdn.com",
+            "prevalence": 0.625
+        },
+        {
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 0.375
+        }
+    ],
+    "types": {
+        "Preflight": 3,
+        "XHR": 3
+    },
+    "nameservers": [
+        "ns-cloud-d4.googledomains.com",
+        "ns-cloud-d1.googledomains.com",
+        "ns-cloud-d3.googledomains.com",
+        "ns-cloud-d2.googledomains.com"
+    ]
+}

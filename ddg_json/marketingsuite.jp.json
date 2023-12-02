@@ -1,0 +1,75 @@
+{
+    "domain": "marketingsuite.jp",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "sts",
+        "orgsts"
+    ],
+    "cnames": [
+        {
+            "original": "s.ma.dot-st.com",
+            "resolved": "orgsts.marketingsuite.jp"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "marketingsuite\\.jp\\/sts\\/scripts\\/conversen-SDK\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sts",
+                "orgsts"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "s.ma.dot-st.com",
+                    "resolved": "orgsts.marketingsuite.jp"
+                }
+            ],
+            "responseHashes": [
+                "735ace838c4f02a810a79d750fa248e3f70fa9483a4ede6f8f123bf6a314a4f3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "roomclip.jp",
+                "tenshoku.mynavi.jp",
+                "www.cmoa.jp",
+                "www.dot-st.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 4
+    },
+    "nameservers": [
+        "f.ns.marketingsuite.jp",
+        "e.ns.marketingsuite.jp",
+        "c.ns.marketingsuite.jp",
+        "b.ns.marketingsuite.jp",
+        "d.ns.marketingsuite.jp",
+        "a.ns.marketingsuite.jp"
+    ]
+}

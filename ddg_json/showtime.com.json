@@ -1,0 +1,86 @@
+{
+    "domain": "showtime.com",
+    "owner": {
+        "name": "Showtime Networks Inc.",
+        "displayName": "Showtime Networks"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "ap-hls-vod-cld.cdn1"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "showtime\\.com\\/measurements\\/r20\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ap-hls-vod-cld.cdn1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e963e7196beb9123059ec3534b042ebcd1ef0a470fa568bfbebfeab2f33c4fda"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paramountplus.com",
+                "www.paramountplus.com"
+            ]
+        },
+        {
+            "rule": "showtime\\.com\\/measurements\\/1536197413045-1555KB\\.ts",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ap-hls-vod-cld.cdn1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3f7cd636f2b4d285468bb4f8516e69edd13d866bb57e4537ee35ea8761a35a6a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paramountplus.com",
+                "www.paramountplus.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "cedexis.com",
+            "prevalence": 0.625
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.375
+        }
+    ],
+    "types": {
+        "Image": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "ns-1175.awsdns-18.org",
+        "ns-578.awsdns-08.net",
+        "ns-24.awsdns-03.com",
+        "ns-1730.awsdns-24.co.uk"
+    ]
+}

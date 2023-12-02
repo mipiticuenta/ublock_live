@@ -1,0 +1,96 @@
+{
+    "domain": "oraclecloud.net",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "api-meteoam-it.o.waas.oci"
+    ],
+    "cnames": [
+        {
+            "original": "api.meteoam.it",
+            "resolved": "api-meteoam-it.o.waas.oci.oraclecloud.net"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "oraclecloud\\.net\\/deda-skinny\\/wms",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-meteoam-it.o.waas.oci"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.meteoam.it",
+                    "resolved": "api-meteoam-it.o.waas.oci.oraclecloud.net"
+                }
+            ],
+            "responseHashes": [
+                "c12ab8c00d440900508f492a3ad6454731737fb2fadde938e854b9b68c389613"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "meteoam.it",
+                "www.meteoam.it"
+            ]
+        },
+        {
+            "rule": "oraclecloud\\.net\\/deda-ows\\/ows",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-meteoam-it.o.waas.oci"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.meteoam.it",
+                    "resolved": "api-meteoam-it.o.waas.oci.oraclecloud.net"
+                }
+            ],
+            "responseHashes": [
+                "edf5f6478dc1caaad0c9e5e21a03ca3914e3a264e85f3d9e00ade157415e93ce"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "meteoam.it",
+                "www.meteoam.it"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Image": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "ns4.dynamicnetworkservices.net",
+        "ns5.dynamicnetworkservices.net",
+        "ns1.dynamicnetworkservices.net",
+        "ns6.dynamicnetworkservices.net",
+        "ns2.dynamicnetworkservices.net",
+        "ns3.dynamicnetworkservices.net"
+    ]
+}

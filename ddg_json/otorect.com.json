@@ -1,0 +1,110 @@
+{
+    "domain": "otorect.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "otorect\\.com\\/ext",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5bab1f60ea415ec8e09abcf1ad39b1527c0719a72a6c283d0977e22ed5e76a7b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jackery.com",
+                "www.jackery.com"
+            ]
+        },
+        {
+            "rule": "otorect\\.com\\/s",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.outerWidth": 2,
+                "window.innerWidth": 2,
+                "window.devicePixelRatio": 2,
+                "window.outerHeight": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "080d956c285760fed1cffc12c41c6d63c076632f58d3f3a8827018392c552223"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "adid": {
+                    "ttl": 31536026,
+                    "length": 15,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jackery.com",
+                "www.jackery.com"
+            ]
+        },
+        {
+            "rule": "otorect\\.com\\/p",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "adid": 0.000013624071008658098,
+                "__lotl": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "jackery.com",
+                "www.jackery.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 6
+    },
+    "nameservers": [
+        "kevin.ns.cloudflare.com",
+        "ara.ns.cloudflare.com"
+    ]
+}

@@ -1,0 +1,356 @@
+{
+    "domain": "lemnisk.co",
+    "owner": {
+        "name": "Vizury Interactive Solutions Pvt Ltd",
+        "displayName": "Vizury Interactive Solutions"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "cdn12-s",
+        "mu-pl-s",
+        "mu-pl",
+        "mu-ax-s",
+        "mu-ax-n",
+        "cdn25-s",
+        "cdn12",
+        "cdn25"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "lemnisk\\.co\\/analyze\\/pixel\\.php",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn12-s"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cdbf30fee05d178addeafdcb369d9f3ce693baa46dd60b235ab287e0ca74e40c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_vz": {
+                    "ttl": 31536009,
+                    "length": 17,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "axisbank.com",
+                "www.axisbank.com"
+            ]
+        },
+        {
+            "rule": "lemnisk\\.co\\/analyze\\/analyze\\.php",
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
+            "subdomains": [
+                "mu-pl-s",
+                "mu-pl"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "037d134878d8fe2a464ca1e7ebda5b9634d43392d2b67b98dc97ed317f6268e3"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_vz": 0.000020436106512987146
+            },
+            "exampleSites": [
+                "axisbank.com",
+                "www.axisbank.com",
+                "www.kotak.com"
+            ]
+        },
+        {
+            "rule": "lemnisk\\.co\\/analyze\\/cookieCallback\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mu-pl-s",
+                "mu-pl"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "axisbank.com",
+                "www.axisbank.com",
+                "www.kotak.com",
+                "www.livspace.com"
+            ]
+        },
+        {
+            "rule": "lemnisk\\.co\\/onSiteNotification\\/GetJsFile\\.php",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn12-s"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2753f563b272b91c4db665ad60f690690023bb24e20e6afda6a84405771da1ee"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "axisbank.com",
+                "www.axisbank.com"
+            ]
+        },
+        {
+            "rule": "lemnisk\\.co\\/GetContent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mu-ax-s",
+                "mu-ax-n"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "3869d0b2ccd708a73677d046b9054ccf75cdf0d78bd8f79bdf6d34c24e11f57b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_vz": 0.000027248142017316195
+            },
+            "exampleSites": [
+                "axisbank.com",
+                "www.axisbank.com",
+                "www.kotak.com",
+                "www.livspace.com"
+            ]
+        },
+        {
+            "rule": "lemnisk\\.co\\/ssp\\/IN_AxisBank_DMP\\/sw\\/service-worker\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn25-s"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44440e89abcc876ffbada6585d951cfa95bb9d1fa5aea09d468815bd8f37aa2f"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "axisbank.com",
+                "www.axisbank.com"
+            ]
+        },
+        {
+            "rule": "lemnisk\\.co\\/smt\\/smthandler\\.php",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn12"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a6247b5a8d1668193d509ff5f13fa41592066d1a39a5bae985e36ad52a12d767"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_vz": {
+                    "ttl": 31536007,
+                    "length": 17,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hdfcergo.com",
+                "www.kotak.com"
+            ]
+        },
+        {
+            "rule": "lemnisk\\.co\\/ssp\\/banners\\/images\\/common\\/images\\/bfsi\\/ads\\/ads\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn25"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "8e6f84bb6d8f45adaf1e9a17e0fe2fb0c81a0914333262bb0cb77f85f2785878"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hdfcergo.com",
+                "www.kotak.com",
+                "www.livspace.com"
+            ]
+        },
+        {
+            "rule": "lemnisk\\.co\\/analyze\\/optinInfo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mu-pl"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hdfcergo.com",
+                "www.hdfcergo.com",
+                "www.kotak.com",
+                "www.livspace.com"
+            ]
+        },
+        {
+            "rule": "lemnisk\\.co\\/analyze\\/subMap",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mu-pl"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hdfcergo.com",
+                "www.kotak.com",
+                "www.livspace.com"
+            ]
+        },
+        {
+            "rule": "lemnisk\\.co\\/analyze\\/error",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mu-pl"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hdfcergo.com",
+                "www.kotak.com",
+                "www.livspace.com"
+            ]
+        },
+        {
+            "rule": "lemnisk\\.co\\/onSiteNotification\\/GetJsFileSngl\\.php",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn12"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "465982e598da8b48509713cf4bd243de69df467adc01bcda0b7f101cb7528355"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kotak.com",
+                "www.livspace.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000341,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 15,
+        "Document": 3,
+        "XHR": 4,
+        "Other": 2,
+        "Fetch": 10
+    },
+    "nameservers": [
+        "a14-67.akam.net",
+        "a2-65.akam.net",
+        "a16-64.akam.net",
+        "a3-66.akam.net",
+        "a1-73.akam.net",
+        "a13-66.akam.net"
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "domain": "netlifyglobalcdn.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000886,
+    "sites": 13,
+    "subdomains": [
+        "ssc-digital",
+        "fsecure"
+    ],
+    "cnames": [
+        {
+            "original": "analytics.silversea.com",
+            "resolved": "ssc-digital.netlifyglobalcdn.com"
+        },
+        {
+            "original": "assets.f-secure.com",
+            "resolved": "fsecure.netlifyglobalcdn.com"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "netlifyglobalcdn\\.com\\/index\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "ssc-digital"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "analytics.silversea.com",
+                    "resolved": "ssc-digital.netlifyglobalcdn.com"
+                }
+            ],
+            "responseHashes": [
+                "090335d37aab5a115cc51a17c73c64bab271c116bc58f216ea9ffe86012bbd1c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "silversea.com",
+                "www.silversea.com"
+            ]
+        },
+        {
+            "rule": "netlifyglobalcdn\\.com\\/fs-cookie-consent\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "fsecure"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets.f-secure.com",
+                    "resolved": "fsecure.netlifyglobalcdn.com"
+                }
+            ],
+            "responseHashes": [
+                "841797822b1c45678bdf31db30cd54ce28c1fb8b136fc72b9803e3cbaf31e1d0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "f-secure.com",
+                "www.f-secure.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.4
+        },
+        {
+            "domain": "transcend.io",
+            "prevalence": 0.4
+        },
+        {
+            "domain": "getelevar.com",
+            "prevalence": 0.2
+        }
+    ],
+    "types": {
+        "Script": 4
+    },
+    "nameservers": []
+}

@@ -1,0 +1,107 @@
+{
+    "domain": "yeticustomshop.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "customize"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "yeticustomshop\\.com\\/latest\\/widget\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "customize"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "91a9659bdd4d24649c998aa1088efdb2768785495a8ea35bf3816f127bcd9718"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yeti.com",
+                "www.yeti.com"
+            ]
+        },
+        {
+            "rule": "yeticustomshop\\.com\\/latest\\/app\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "customize"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9130fd8161dd530ffb0d3a4a9b7aed9221729844cdb63cc0543c513e4b0858aa"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yeti.com",
+                "www.yeti.com"
+            ]
+        },
+        {
+            "rule": "yeticustomshop\\.com\\/latest\\/app\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "customize"
+            ],
+            "apis": {
+                "Navigator.prototype.maxTouchPoints": 2,
+                "window.devicePixelRatio": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5147ead0977c1cf6b2073404e39790979bed53cde97b4b8772505821318a2f98"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yeti.com",
+                "www.yeti.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "yottaa.net",
+            "prevalence": 0.6
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.4
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "Stylesheet": 2
+    },
+    "nameservers": [
+        "gail.ns.cloudflare.com",
+        "karl.ns.cloudflare.com"
+    ]
+}

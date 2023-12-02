@@ -1,0 +1,85 @@
+{
+    "domain": "heeet.io",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "cdn",
+        "javascript"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "heeet\\.io\\/js\\/localstorage-gau\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0f5a38aee8d59391f3964776a1ebb8f307b17c5c2e8ab80ad995eec5e62bde7f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gradelink.com",
+                "www.invisalign.com"
+            ]
+        },
+        {
+            "rule": "heeet\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "javascript"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0cce18d104b265ad33816965939022bc443eb065db1b2538bde77760bf730d6c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sentinelone.com",
+                "www.sentinelone.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.8
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2
+        }
+    ],
+    "types": {
+        "Script": 4
+    },
+    "nameservers": [
+        "dns10.ovh.net",
+        "ns10.ovh.net"
+    ]
+}

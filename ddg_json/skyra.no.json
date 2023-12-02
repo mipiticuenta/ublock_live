@@ -1,0 +1,71 @@
+{
+    "domain": "skyra.no",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-NO"
+    ],
+    "prevalence": 0.000302,
+    "sites": 3,
+    "subdomains": [
+        "survey.staging"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "skyra\\.no\\/skyra-survey\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "survey.staging"
+            ],
+            "apis": {
+                "window.localStorage": 3,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.connection": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "window.devicePixelRatio": 1
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "b9db8feae682691e3fc08b5a0ddcc9bbf5d31d4efe9d176d12cad5364c3cca41"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fjordnorway.com",
+                "www.miljodirektoratet.no",
+                "www.vinmonopolet.no"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.42857142857142855
+        },
+        {
+            "domain": "azure.com",
+            "prevalence": 0.2857142857142857
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2857142857142857
+        }
+    ],
+    "types": {
+        "Script": 3
+    },
+    "nameservers": [
+        "brady.ns.cloudflare.com",
+        "michelle.ns.cloudflare.com"
+    ]
+}

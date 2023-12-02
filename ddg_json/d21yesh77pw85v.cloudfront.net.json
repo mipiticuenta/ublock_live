@@ -1,0 +1,87 @@
+{
+    "domain": "d21yesh77pw85v.cloudfront.net",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "d21yesh77pw85v\\.cloudfront\\.net\\/static\\/css\\/cart\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "c3ea1459153925bd51bc72dbe050b90ce4eaa97f8e4cae19759bf7eeb465bc73"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myeverlights.com",
+                "oxy-shop.com",
+                "www.blackoutcoffee.com"
+            ]
+        },
+        {
+            "rule": "d21yesh77pw85v\\.cloudfront\\.net\\/static\\/js\\/script_tags\\/cart_renderer\\.gz\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "URL.createObjectURL": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "2281378f48eb44bbc319e3b2f153d7caf222748166c3fd062ed9fee0a1ef54ef",
+                "5572222f27826c7873152f72d2832cff6e89e4c425d6dd624ad0a23c32746960"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myeverlights.com",
+                "oxy-shop.com",
+                "www.blackoutcoffee.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Stylesheet": 3,
+        "Script": 3
+    },
+    "nameservers": [
+        "ns-1147.awsdns-15.org",
+        "ns-164.awsdns-20.com",
+        "ns-1815.awsdns-34.co.uk",
+        "ns-549.awsdns-04.net"
+    ]
+}

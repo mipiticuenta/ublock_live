@@ -1,0 +1,92 @@
+{
+    "domain": "adserv.mobi",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000109,
+    "sites": 16,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "adserv\\.mobi\\/tagcontainer\\/extra\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "0d2b27fee27bba4db1b9e7a2a9b902add4b3ca9445299523a3ed1ef6a6b6af6f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "caracol.com.co",
+                "politica.expansion.mx",
+                "www.cocinafacil.com.mx",
+                "www.elcolombiano.com",
+                "www.ibtimes.co.uk",
+                "www.laprensagrafica.com",
+                "www.ngenespanol.com",
+                "www.quien.com",
+                "www.telediario.mx",
+                "www.tvn-2.com",
+                "www.wradio.com.co"
+            ]
+        },
+        {
+            "rule": "adserv\\.mobi\\/adsmovilUtil\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 3
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "7966b96f123df0307390ae916f521fa20fcfd15ee0aeba751fcb399e440fda9d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usps.com",
+                "informeddelivery.usps.com",
+                "www.lifemiles.com",
+                "www.nysaves.org"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.6842105263157895
+        },
+        {
+            "domain": "googlesyndication.com",
+            "prevalence": 0.15789473684210525
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.15789473684210525
+        }
+    ],
+    "types": {
+        "Script": 15
+    },
+    "nameservers": [
+        "lakas.ns.cloudflare.com",
+        "mia.ns.cloudflare.com"
+    ]
+}

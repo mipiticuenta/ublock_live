@@ -1,0 +1,180 @@
+{
+    "domain": "allesregional.de",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-DE"
+    ],
+    "prevalence": 0.000302,
+    "sites": 3,
+    "subdomains": [
+        "www",
+        "hub"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "allesregional\\.de\\/typo3conf\\/ext\\/allesregional\\/Resources\\/Public\\/Applications\\/ar-widget\\/Plugin\\/index\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "7f545faa840280d2b4ece571f42dbd0b3b617536e9c1cae74e52ceb050161d05"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "donaukurier.de",
+                "www.mittelbayerische.de",
+                "www.pnp.de"
+            ]
+        },
+        {
+            "rule": "allesregional\\.de\\/typo3conf\\/ext\\/allesregional\\/Resources\\/Public\\/Applications\\/ar-widget\\/Plugin\\/App\\/index\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 4
+            },
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [
+                "6bff64d1d5471115ff333e3bb508d5f70e3b7069d81fe9b96d4df20d69520016"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "donaukurier.de",
+                "www.donaukurier.de",
+                "www.mittelbayerische.de",
+                "www.pnp.de"
+            ]
+        },
+        {
+            "rule": "allesregional\\.de\\/api\\/offer",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hub"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "767c070e682c1143e0526e575702244faf4e821ed83a719de88f4c922bb5a2f5",
+                "954815da3ff58b5d348db12d749403eba5783c481f9927155810d561eaaf3cd8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "donaukurier.de",
+                "www.mittelbayerische.de",
+                "www.pnp.de"
+            ]
+        },
+        {
+            "rule": "allesregional\\.de\\/typo3conf\\/ext\\/theme\\/Resources\\/Public\\/Assets\\/fonts\\/dm-sans-v11-latin\\/dm-sans-v11-latin-700\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "ff5aa201c864f75bd31f77a1b07043d2ca550340fea1a0cb05339ff017747085"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "donaukurier.de",
+                "www.mittelbayerische.de",
+                "www.pnp.de"
+            ]
+        },
+        {
+            "rule": "allesregional\\.de\\/typo3conf\\/ext\\/theme\\/Resources\\/Public\\/Assets\\/fonts\\/dm-sans-v11-latin\\/dm-sans-v11-latin-regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "352a7c32317f4ec49ee7a48025552d5846b1aea3493dd398ed90888d8efda396"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "donaukurier.de",
+                "www.mittelbayerische.de",
+                "www.pnp.de"
+            ]
+        },
+        {
+            "rule": "allesregional\\.de\\/api\\/media\\/12815\\/732\\/494",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hub"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "98f955ac59495c5776cc33806b929e6a85f220bebf1a1a6f0991b1ddfd0fe521"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mittelbayerische.de",
+                "www.pnp.de"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "Document": 4,
+        "XHR": 3,
+        "Font": 6,
+        "Image": 2
+    },
+    "nameservers": [
+        "ns1.vgp.de",
+        "ns2.vgp.de",
+        "pns.dtag.de",
+        "secondary006.dtag.net"
+    ]
+}

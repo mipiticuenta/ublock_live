@@ -1,0 +1,489 @@
+{
+    "domain": "contents-search-windows.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000279,
+    "sites": 41,
+    "subdomains": [
+        "client",
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "contents-search-windows\\.com\\/csw_cl_b\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
+            "sites": 41,
+            "prevalence": 0.000279,
+            "cnames": [],
+            "responseHashes": [
+                "e12d2d4250f481317b70a846d13ac3f09163fa123edb439b2589af869b80cee6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "motor-fan.jp",
+                "gourmet-note.jp",
+                "wanchan.jp",
+                "mamagirl.jp",
+                "tabizine.jp",
+                "lamire.jp",
+                "iemone.jp",
+                "benesse.ne.jp",
+                "hands-media.jp",
+                "rank1-media.com",
+                "rank-king.jp",
+                "kuraneo.jp",
+                "newsmatomedia.com",
+                "shufuse.com",
+                "noel-media.jp",
+                "www.rere.jp",
+                "cherish-media.jp",
+                "lovely-media.jp",
+                "agripick.com",
+                "koimemo.com"
+            ]
+        },
+        {
+            "rule": "contents-search-windows\\.com\\/ise\\.js",
+            "cookies": 0.000211,
+            "fingerprinting": 3,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 37,
+                "Navigator.prototype.webdriver": 34,
+                "Navigator.prototype.language": 34,
+                "Screen.prototype.colorDepth": 34,
+                "Navigator.prototype.deviceMemory": 34,
+                "window.devicePixelRatio": 34,
+                "Navigator.prototype.hardwareConcurrency": 34,
+                "Screen.prototype.width": 34,
+                "Screen.prototype.height": 34,
+                "Screen.prototype.availWidth": 34,
+                "Screen.prototype.availHeight": 34,
+                "Date.prototype.getTimezoneOffset": 34,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 34,
+                "window.sessionStorage": 34,
+                "window.localStorage": 34,
+                "window.indexedDB": 34,
+                "Navigator.prototype.platform": 34,
+                "Navigator.prototype.doNotTrack": 34,
+                "Navigator.prototype.appName": 34,
+                "Navigator.prototype.plugins": 34,
+                "CanvasRenderingContext2D.prototype.isPointInPath": 34,
+                "HTMLCanvasElement.prototype.toDataURL": 34,
+                "WebGLRenderingContext.prototype.getExtension": 34,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 34,
+                "WebGLRenderingContext.prototype.getParameter": 34,
+                "WebGLRenderingContext.prototype.getContextAttributes": 34,
+                "WebGLRenderingContext.prototype.getShaderPrecisionFormat": 34,
+                "Navigator.prototype.languages": 34,
+                "Navigator.prototype.maxTouchPoints": 34,
+                "Navigator.prototype.productSub": 34,
+                "OfflineAudioContext.prototype.constructor": 34,
+                "AudioBuffer.prototype.getChannelData": 34,
+                "Document.cookie getter": 33,
+                "Document.cookie setter": 31
+            },
+            "sites": 41,
+            "prevalence": 0.000279,
+            "cnames": [],
+            "responseHashes": [
+                "cfe19f410de541d44ffc669da023c6782cabc59754fb51080c815f36680feff4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_ise_cuid": {
+                    "ttl": 31536010,
+                    "length": 36,
+                    "prevalence": 0.0002111731006342005,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kuraneo.jp",
+                "h1g.jp",
+                "car.motor-fan.jp",
+                "usyo.net",
+                "sugoren.com",
+                "realsound.jp",
+                "jpnculture.net",
+                "cherish-media.jp",
+                "agripick.com",
+                "cktt.jp",
+                "lamire.jp",
+                "mamagirl.jp",
+                "anime-drama.jp",
+                "koimemo.com",
+                "www.baseballchannel.jp",
+                "arty-matome.com",
+                "belcy.jp",
+                "botanica-media.jp",
+                "iemone.jp",
+                "tokyolucci.jp"
+            ]
+        },
+        {
+            "rule": "contents-search-windows\\.com\\/api\\/v1\\/s",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 34,
+            "prevalence": 0.000232,
+            "cnames": [],
+            "responseHashes": [
+                "c93369c8661c0546a9a1157a05c982d26ad8db7f0758e93fc6acc57fea00dfd2",
+                "642cd516c3f336d25c382445d33f6cc92325036376ae09711311f0ac860f93c4",
+                "c45c798634fd0b332c1782abbbdf777828bcce401b07fbe98325337f54f558c5",
+                "a8d6e7cb65cd0880a71c03971ccd19c3af1d67e5bd7d8908f65fb067d421a782",
+                "00a3d32854fe92534428c8768c271a24a36c3c613b41358105373e87aa413a63",
+                "4d5b9be1cb68364d699e2802014ba3ee88ae3763be5b7718b4a026011ddeb58e",
+                "2574eba9e87b5098974d0834062cc7cb663778f2cd895cfe9b2e74eb32a4d389",
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "7e0662ede19b9a890c055046132062bf80e5ebb09d3a784ef68cba94e63a4733",
+                "533e1f92cf52ab0453428b22a06283fd9c2a3abc188846dc3d8d11755a99e108",
+                "913773288d1bc33545aa5a3cb4acc0bd5bd9aa43a6625a80e5a2c3a9a38a43f5",
+                "1636a9d5a497074ed2e976ad074c85aa2df82456f9763c87f126d06f1f641fb4",
+                "fb8dba034ac5001ab7e930faf70de16a7402038d4e318dbfb8cd73701956e426",
+                "fff34359778c8d4c1ab69363aaa7f26e4089ac0b3e0cf564d0148d97b57fea72",
+                "6f08f50d827fa791fa0a892ae976ea62e13ae8b33407c64159c1323e29286ed5",
+                "085f69b2ad27f3579163f3c67618edf361386601ec21af205f1d34153ed6c68b",
+                "a01ca4543a629fc3ea7e1dd203fe49a09b21f41303ec8c55e109c7e90d064dbb",
+                "9344a4e23d12069260d74d3b2e35cd3ba18140b7c3f0973ca1cd4ad660f567df",
+                "c4ee425ab445ce6f1aee508ea717e7eebf91baa587bdf875a282100ac9a9fffe",
+                "df4540d2407c68ba3305809f23c5bcc201cfe3ffa805015b9d24ceaf7b67ed62",
+                "d6e68aa99b5720927b62b8906cd57039f2734f4b048aa538dc24021184587ddc",
+                "4826a6a270b471f5b0214c52432cd2afe58df326ba03a17ce89e639cd028b8e5",
+                "394e1ef43d5501232d741c9ab97a42f7333ccf875d29045eb6105c6775509379",
+                "d99998855ce89b99a2bf47ae651791ff0478c9ee3eb0c1e55da6a9566d322a49",
+                "c85d7f3000b72d06f7d5cc7029be795a9c8f9cdf27bae3366138ed6adb2140bb",
+                "283d565b509b70f7e2bd89e22faa466b05c1767aff843935890a63ef9d818a6f",
+                "01480f6ad475004e3d8bda60bed082a1152f4c5350e5fce127a0ebe0f69d857d",
+                "7875bcfb58378f156b305c4176b4403ca805d494853253243a9b23eef0db7c51",
+                "b1c52bdd186d5164c543bb9d88a4989634bdf9948e930195f7dab29a068f34e0",
+                "4d7d77dccdcc4ef87442b5fca1490c2020a2da1b4c814341864a40e021b2156e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "car-me.jp",
+                "hands-media.jp",
+                "mamagirl.jp",
+                "travel-star.jp",
+                "benesse.ne.jp",
+                "iemone.jp",
+                "usyo.net",
+                "wanchan.jp",
+                "kisetsumimiyori.com",
+                "cherish-media.jp",
+                "realsound.jp",
+                "kuraneo.jp",
+                "car.motor-fan.jp",
+                "www.baseballchannel.jp",
+                "rank1-media.com",
+                "spirituabreath.com",
+                "lovely-media.jp",
+                "botanica-media.jp",
+                "koimemo.com",
+                "motor-fan.jp"
+            ]
+        },
+        {
+            "rule": "contents-search-windows\\.com\\/api\\/v1\\/s",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 34,
+            "prevalence": 0.000232,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hands-media.jp",
+                "jpnculture.net",
+                "travel-star.jp",
+                "rank1-media.com",
+                "rank-king.jp",
+                "gourmet-note.jp",
+                "ciatr.jp",
+                "arty-matome.com",
+                "realsound.jp",
+                "spirituabreath.com",
+                "shufuse.com",
+                "car.motor-fan.jp",
+                "www.baseballchannel.jp",
+                "motor-fan.jp",
+                "car-me.jp",
+                "koimemo.com",
+                "cktt.jp",
+                "lovely-media.jp",
+                "kuraneo.jp",
+                "wanchan.jp"
+            ]
+        },
+        {
+            "rule": "contents-search-windows\\.com\\/api\\/v1\\/el",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 33,
+            "prevalence": 0.000225,
+            "cnames": [],
+            "responseHashes": [
+                "f58574989fecd6a3f5e20a732af95d005ded43298480db69ee6816e1130314c7",
+                "11f55f56092c7c1098ac996c88370e2388a5386a385f457cb55a228a19105d36",
+                "29939b958b5342815cfe2a1b450eacc3d80c3b1e9b6944ee6d7376299c153016",
+                "42b622cbec0b34a4124d02544672eac5304bebbf0bf609735415cec894a058d7",
+                "aefef8a0d44a6b56c715263f8b8d709426aa1d0af3ff53342a8b22ef6773f631",
+                "9231e0848335ee4f5c68dd5c4553ab9e5bfeca2534c6c953de363b48db551441",
+                "6576d485dfbc9b2467885334212bc633370a21ca4ce5fa6815f9841684f90b3e",
+                "e69de779c129b80288e2934c254573ebdbcec97e18c5d58ac1b595921eb6d93d",
+                "9f70e32d76303fd72ec8ce1abc881e203b00944d94ad316ef98fa502012c4bd5",
+                "b5f4b05287ad61e856b284351159cb89fea7e9c9949bbccdf21b135cad50c769",
+                "d4694634286a62cf08be84c4824330d228b25f9314b78ae171b21756b4a80d2d",
+                "4080010adb2e8241bf473693f3dfbdf30fe65f2e8122b8e3e18bdafcc3d02fef",
+                "b671777fd43265939dece086c7712d5ba50205c7dbc00d3c958a560a39eaa464",
+                "1a0a55e8f85487f35292f7b88a07471df24c68762175ba6c5fc1b5034f2af787",
+                "c4a89eeda8d82696bf0d1a7f27c71bb8e2e30a5bf9bb17eb84286430e20babde",
+                "61751dec006cc5ba37383b4d96c4788fe04f58d3c99599a6baf1e346c4ba988a",
+                "58586051a99d5172ad97bd1076f5d8c27a85062485d7e5625eb81d62499e4d0f",
+                "5a5091b866d2fae0afe3dba3941edb60bcb426714b613440f9fa677e3d919a8a",
+                "31bf979fd97c80cfbe95acb2d204ce6b66545fcd055e2c5ccb551600e3af5a17",
+                "9ca0caffca713ec4af651a5bc3e0bd8fb7c3d697e3e2e81a947cf156a87e52ff",
+                "429bbc49fa0824b2766e276695ff65a0c712bb0edd5aa1e1d8d6074473228711",
+                "9a3cb39157f5a4b3c52ad3e5ddbea4cfc7622e11b16267ca85c9f89a4db26fa9",
+                "b53c79ea8b385ed488cfbf06abefb61e567ea13b13c8fa849cf2923048451849",
+                "aa1befe0d74b5733375aeadf25417a9182e064facdb65f724b305af80492dda8",
+                "634d24036f1cbbd2b0694c135bb73683c2083dbe7c085dfc202cb782c39913e4",
+                "2a81b16336953727dfc7a118415e11f0c4430461c6e8c1cee8b646045f7a6880",
+                "cb9a7c203edf059a1eb4bb73a4b001fa592205123e5786d4a0987eff7b52bc02",
+                "72b9b382093d3f74c16a5702e2607cf9e85d700ce3e9a880ed87bfb35e713b18",
+                "c250ea789a8f00d6cf5ebd1b75f3581813d06d2011b6fbe5c2d1353840415263",
+                "1db35630e8382c62705e9474104008dc555ccb62612d6b45015ed891ac9532a6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "car.motor-fan.jp",
+                "www.baseballchannel.jp",
+                "benesse.ne.jp",
+                "arty-matome.com",
+                "wanchan.jp",
+                "usyo.net",
+                "anime-drama.jp",
+                "botanica-media.jp",
+                "jpnculture.net",
+                "travel-star.jp",
+                "leisurego.jp",
+                "rank-king.jp",
+                "iemone.jp",
+                "noel-media.jp",
+                "cktt.jp",
+                "tabizine.jp",
+                "gourmet-note.jp",
+                "agripick.com",
+                "shufuse.com",
+                "hands-media.jp"
+            ]
+        },
+        {
+            "rule": "contents-search-windows\\.com\\/api\\/v1\\/el",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 33,
+            "prevalence": 0.000225,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "noel-media.jp",
+                "rank1-media.com",
+                "leisurego.jp",
+                "kisetsumimiyori.com",
+                "cherish-media.jp",
+                "gourmet-note.jp",
+                "travel-star.jp",
+                "realsound.jp",
+                "anime-drama.jp",
+                "shufuse.com",
+                "rank-king.jp",
+                "car.motor-fan.jp",
+                "botanica-media.jp",
+                "cktt.jp",
+                "jpnculture.net",
+                "ciatr.jp",
+                "benesse.ne.jp",
+                "www.baseballchannel.jp",
+                "car-me.jp",
+                "hands-media.jp"
+            ]
+        },
+        {
+            "rule": "contents-search-windows\\.com\\/api\\/v1\\/xt\\.gif",
+            "cookies": 0.000198,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 30,
+            "prevalence": 0.000204,
+            "cnames": [],
+            "responseHashes": [
+                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ise_cuid": 0.00020436106512987146
+            },
+            "exampleSites": [
+                "sugoren.com",
+                "hands-media.jp",
+                "arty-matome.com",
+                "mamagirl.jp",
+                "car-me.jp",
+                "cherish-media.jp",
+                "kuraneo.jp",
+                "jpnculture.net",
+                "www.rere.jp",
+                "tabizine.jp",
+                "anime-drama.jp",
+                "botanica-media.jp",
+                "iemone.jp",
+                "noel-media.jp",
+                "kisetsumimiyori.com",
+                "cktt.jp",
+                "shufuse.com",
+                "koimemo.com",
+                "benesse.ne.jp",
+                "leisurego.jp"
+            ]
+        },
+        {
+            "rule": "contents-search-windows\\.com\\/images\\/ise_logo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {},
+            "sites": 30,
+            "prevalence": 0.000204,
+            "cnames": [],
+            "responseHashes": [
+                "43855ddd9e3a6d1a9b71ac3c5793f3dfadbb871ed90c353927eb5593ebb12802"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "benesse.ne.jp",
+                "car-me.jp",
+                "lovely-media.jp",
+                "spirituabreath.com",
+                "gourmet-note.jp",
+                "hands-media.jp",
+                "wanchan.jp",
+                "botanica-media.jp",
+                "shufuse.com",
+                "www.rere.jp",
+                "usyo.net",
+                "sugoren.com",
+                "www.baseballchannel.jp",
+                "jpnculture.net",
+                "arty-matome.com",
+                "iemone.jp",
+                "agripick.com",
+                "koimemo.com",
+                "cherish-media.jp",
+                "noel-media.jp"
+            ]
+        },
+        {
+            "rule": "contents-search-windows\\.com\\/images\\/noimg\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "3b7cdca177570a5c7197528802a212e95c8bdfaf186bd2fcb8e27b82a8b6bcaf"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "botanica-media.jp",
+                "cktt.jp",
+                "hands-media.jp",
+                "koimemo.com",
+                "tabizine.jp",
+                "usyo.net",
+                "www.baseballchannel.jp"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000211,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9782608695652174
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.021739130434782608
+        }
+    ],
+    "types": {
+        "Script": 82,
+        "XHR": 67,
+        "Preflight": 67,
+        "Image": 67
+    },
+    "nameservers": [
+        "ns-cloud-a1.googledomains.com",
+        "ns-cloud-a2.googledomains.com",
+        "ns-cloud-a4.googledomains.com",
+        "ns-cloud-a3.googledomains.com"
+    ]
+}

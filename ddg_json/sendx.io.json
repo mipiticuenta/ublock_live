@@ -1,0 +1,118 @@
+{
+    "domain": "sendx.io",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "sendx\\.io\\/prod\\/css\\/cleanslate\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "c4a24372572e336039c3c85dfaa6d1a397a5ead055d514591749aaf24a23d900"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "counter-currents.com",
+                "thehealthymarriage.org",
+                "www.sportsmole.co.uk"
+            ]
+        },
+        {
+            "rule": "sendx\\.io\\/prod\\/css\\/animate\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "8964eaabfdb399568ea0a04ee0ce2396656bb8a40541bda7811640350dd43f94"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "counter-currents.com",
+                "thehealthymarriage.org",
+                "www.sportsmole.co.uk"
+            ]
+        },
+        {
+            "rule": "sendx\\.io\\/prod\\/zUQ85k8RT6wy6HqFINqzD3\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5f352f78eecb9dc678fcbabadea4ca68b374bb00c5f80390360176f2667e59e5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookies.js": {
+                    "ttl": 7,
+                    "length": 9,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sportsmole.co.uk",
+                "www.sportsmole.co.uk"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000409,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "d2gj27cpfrxt9y.cloudfront.net",
+            "prevalence": 0.3333333333333333
+        }
+    ],
+    "types": {
+        "Stylesheet": 6,
+        "Script": 2
+    },
+    "nameservers": [
+        "ns-1377.awsdns-44.org",
+        "ns-695.awsdns-22.net",
+        "ns-1751.awsdns-26.co.uk",
+        "ns-266.awsdns-33.com"
+    ]
+}

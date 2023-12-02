@@ -1,0 +1,81 @@
+{
+    "domain": "ch.ch",
+    "owner": {
+        "name": "Schweizerische Bundeskanzlei",
+        "displayName": "Schweizerische Bundeskanzlei"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "webstats"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "ch\\.ch\\/piwik\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstats"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "admin.ch",
+                "www.fedlex.admin.ch"
+            ]
+        },
+        {
+            "rule": "ch\\.ch\\/plugins\\/HeatmapSessionRecording\\/configs\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webstats"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3635f4148f2619a3d4702dafea2a248bd37efa1a8f96b1bb4c4b15fe8e074411"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "admin.ch",
+                "www.fedlex.admin.ch"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Ping": 2,
+        "Script": 2
+    },
+    "nameservers": [
+        "ins1.admin.ch",
+        "ins3.admin.ch",
+        "ins2.admin.ch"
+    ]
+}

@@ -1,0 +1,77 @@
+{
+    "domain": "speechify.dev",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "audio.api"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "speechify\\.dev\\/v1\\/synthesis\\/client-voices",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "audio.api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mit.edu",
+                "climate.mit.edu",
+                "moneywise.com"
+            ]
+        },
+        {
+            "rule": "speechify\\.dev\\/v1\\/synthesis\\/client-voices",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "audio.api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e8a0fb54cedd947b27eebc844b4f57088a6f83d7bee8fc10ee7b4885b9f68125"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mit.edu",
+                "climate.mit.edu",
+                "moneywise.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Preflight": 3,
+        "Fetch": 3
+    },
+    "nameservers": [
+        "irena.ns.cloudflare.com",
+        "christian.ns.cloudflare.com"
+    ]
+}

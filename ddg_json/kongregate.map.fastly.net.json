@@ -1,0 +1,161 @@
+{
+    "domain": "kongregate.map.fastly.net",
+    "owner": {
+        "name": "Fastly, Inc.",
+        "displayName": "Fastly",
+        "privacyPolicy": "https://www.fastly.com/privacy",
+        "url": "http://fastly.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "cdn1.kongcdn.com",
+            "resolved": "kongregate.map.fastly.net"
+        },
+        {
+            "original": "cdn3.kongcdn.com",
+            "resolved": "kongregate.map.fastly.net"
+        },
+        {
+            "original": "cdn4.kongcdn.com",
+            "resolved": "kongregate.map.fastly.net"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "kongregate\\.map\\.fastly\\.net\\/compiled-assets\\/modal\\/modal_service_javascripts-7c63700bace869e3c9a57b84f64b79c22de02c5f53cc3853632cc878480c3e47\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn1.kongcdn.com",
+                    "resolved": "kongregate.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "7c63700bace869e3c9a57b84f64b79c22de02c5f53cc3853632cc878480c3e47"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kongregate.com",
+                "www.kongregate.com"
+            ]
+        },
+        {
+            "rule": "kongregate\\.map\\.fastly\\.net\\/compiled-assets\\/sitewide_javascripts-1b22372cde32f8381516f46c1531a41e058ea5a2c5bcee8721d2c6308d304510\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn1.kongcdn.com",
+                    "resolved": "kongregate.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "1b22372cde32f8381516f46c1531a41e058ea5a2c5bcee8721d2c6308d304510"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "kong_gameplays": {
+                    "ttl": 864000003,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kongregate.com",
+                "www.kongregate.com"
+            ]
+        },
+        {
+            "rule": "kongregate\\.map\\.fastly\\.net\\/compiled-assets\\/application-644643fe4b3eca3c0cda7093d93f6cf917766aa787e154ce3f3e27ee0dace738\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn3.kongcdn.com",
+                    "resolved": "kongregate.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "644643fe4b3eca3c0cda7093d93f6cf917766aa787e154ce3f3e27ee0dace738"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kongregate.com",
+                "www.kongregate.com"
+            ]
+        },
+        {
+            "rule": "kongregate\\.map\\.fastly\\.net\\/compiled-assets\\/metriks_javascripts-78e7c27bd9e7cf8fc3bd2bf12a3af378d2a73d245ac31636aae3ce597ad2c2b9\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn4.kongcdn.com",
+                    "resolved": "kongregate.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "78e7c27bd9e7cf8fc3bd2bf12a3af378d2a73d245ac31636aae3ce597ad2c2b9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kongregate.com",
+                "www.kongregate.com"
+            ]
+        }
+    ],
+    "categories": [
+        "Ad Motivated Tracking",
+        "Advertising",
+        "Analytics",
+        "Third-Party Analytics Marketing",
+        "Action Pixels",
+        "CDN",
+        "Embedded Content",
+        "Session Replay"
+    ],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 8
+    },
+    "nameservers": []
+}

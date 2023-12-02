@@ -1,0 +1,123 @@
+{
+    "domain": "consumerco.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "voyage",
+        "influx"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "consumerco\\.com\\/js\\/NxAdPlacements\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "voyage"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "007d0329864f52bfea8e772d3edffaa7deaf994659f5165fc207ad99627a16a3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fileunemployment.org",
+                "www.thepennyhoarder.com"
+            ]
+        },
+        {
+            "rule": "consumerco\\.com\\/js\\/nx-stream\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
+            "subdomains": [
+                "influx"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dc687fc1375da93aa60ca559d6a2ae18a6bb5652242c42c3c27e7f9314c7646b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "nx_anonymous_id": {
+                    "ttl": 157680000,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fileunemployment.org",
+                "www.thepennyhoarder.com"
+            ]
+        },
+        {
+            "rule": "consumerco\\.com\\/js\\/NxAdComponent\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "voyage"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "839921c8f78dd45164979681f92cb2c464c11e2ad824464565a5c62a53f8faf3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thepennyhoarder.com",
+                "www.thepennyhoarder.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 6
+    },
+    "nameservers": [
+        "bonnie.ns.cloudflare.com",
+        "greg.ns.cloudflare.com"
+    ]
+}

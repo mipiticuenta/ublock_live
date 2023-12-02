@@ -1,0 +1,73 @@
+{
+    "domain": "org.s3.amazonaws.com",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "static.zeno"
+    ],
+    "cnames": [
+        {
+            "original": "static.zeno.org",
+            "resolved": "static.zeno.org.s3.amazonaws.com"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "org\\.s3\\.amazonaws\\.com\\/books\\/9781482655179\\/0000c\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.zeno"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static.zeno.org",
+                    "resolved": "static.zeno.org.s3.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "fa67040e1f2b8df02ca649bd700e541926968083405b434cf275b4fd31456fe1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zeno.org",
+                "www.zeno.org"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "cookiebot.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Image": 2
+    },
+    "nameservers": [
+        "ns-509.awsdns-63.com",
+        "ns-777.awsdns-33.net",
+        "ns-1505.awsdns-60.org",
+        "ns-1728.awsdns-24.co.uk"
+    ]
+}

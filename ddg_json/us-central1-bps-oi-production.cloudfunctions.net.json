@@ -1,0 +1,76 @@
+{
+    "domain": "us-central1-bps-oi-production.cloudfunctions.net",
+    "owner": {
+        "name": "Google LLC",
+        "displayName": "Google",
+        "privacyPolicy": "https://policies.google.com/privacy?hl=en&gl=us",
+        "url": "http://google.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "us-central1-bps-oi-production\\.cloudfunctions\\.net\\/basspro-omt-web-handler",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cabelas.com",
+                "www.basspro.com",
+                "www.cabelas.com"
+            ]
+        },
+        {
+            "rule": "us-central1-bps-oi-production\\.cloudfunctions\\.net\\/basspro-omt-web-handler",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "f52bb01e46cf44d55836314d1d6816ff1a5dc30e3866d5fb510542c9b353ba9a",
+                "6cfd1ece30531088d805aeac3b4cd2e034374a3aff97bbd2e7333ce2fa066cd1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cabelas.com",
+                "www.basspro.com",
+                "www.cabelas.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "storage.googleapis.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Preflight": 3,
+        "XHR": 3
+    },
+    "nameservers": []
+}

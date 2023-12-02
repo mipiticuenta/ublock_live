@@ -1,0 +1,541 @@
+{
+    "domain": "cartfulsolutions.com",
+    "owner": {
+        "name": "Cartful Solutions LLC",
+        "displayName": "Cartful Solutions"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000681,
+    "sites": 10,
+    "subdomains": [
+        "embed",
+        "tracker",
+        "api",
+        "embed-cards"
+    ],
+    "cnames": [],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "cartfulsolutions\\.com\\/orvis\\/ogma\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "window.indexedDB": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e89f4430674e0ad494e4fe8e85b9f0b22c8c590f9a60487f479278575a60bb47"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orvis.com",
+                "news.orvis.com"
+            ]
+        },
+        {
+            "rule": "cartfulsolutions\\.com\\/cfsp\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.plugins": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d9a9b2a15666ace13ce304e0a34baaa8a82ce5bc9d01480872869c9871dc552c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_sp_ses.ad37": {
+                    "ttl": 1805,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "_sp_id.ad37": {
+                    "ttl": 63072005,
+                    "length": 108,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orvis.com",
+                "news.orvis.com"
+            ]
+        },
+        {
+            "rule": "cartfulsolutions\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracker"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orvis.com",
+                "news.orvis.com"
+            ]
+        },
+        {
+            "rule": "cartfulsolutions\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracker"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orvis.com",
+                "news.orvis.com"
+            ]
+        },
+        {
+            "rule": "cartfulsolutions\\.com\\/orvis\\/tf\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.indexedDB": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "40e19c2bfc7869411bd9a7803997dd66f904bb08b8296d30f97292ae84967c56"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orvis.com",
+                "news.orvis.com"
+            ]
+        },
+        {
+            "rule": "cartfulsolutions\\.com\\/orvis\\/rc\\/v5\\/model\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0e7d03d46f8c5a038e5fe8e1e331afdef20d6b8d115e5a91305941ea187185e9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orvis.com",
+                "news.orvis.com"
+            ]
+        },
+        {
+            "rule": "cartfulsolutions\\.com\\/orvis\\/rc\\/v5\\/group1-shard1of1\\.bin",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4d334d456342545ca15156e45c0f0c642a5697503f2a543dd6f2f91cf5c6292d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orvis.com",
+                "news.orvis.com"
+            ]
+        },
+        {
+            "rule": "cartfulsolutions\\.com\\/orvis-cleverbar-promotions\\/recommendation\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d54aabbe45a52224f69a6c1ee6371e1845bb3d05f914983fa1d8951aeca209fd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orvis.com",
+                "www.orvis.com"
+            ]
+        },
+        {
+            "rule": "cartfulsolutions\\.com\\/api\\/Experiences\\/562\\/getMessages",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orvis.com",
+                "www.orvis.com"
+            ]
+        },
+        {
+            "rule": "cartfulsolutions\\.com\\/api\\/Experiences\\/562\\/getMessages",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e20f4d9f83c955c1eee8baff953cd352432a9910f20f1007f1c82967970f7f7b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orvis.com",
+                "www.orvis.com"
+            ]
+        },
+        {
+            "rule": "cartfulsolutions\\.com\\/orvis-cleverbar-promotions\\/FS50_0422\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "02b21deec31394e121eba36eec6cd4c2c37ef7f13f955763dade5708bbc3e5d6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orvis.com",
+                "www.orvis.com"
+            ]
+        },
+        {
+            "rule": "cartfulsolutions\\.com\\/orvis-cleverbar-promotions\\/051123_US19_wader\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f8424dc07586a33dd6d11a1272a3dd93578d366f80b1b9ed0778f5a9af471112"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orvis.com",
+                "www.orvis.com"
+            ]
+        },
+        {
+            "rule": "cartfulsolutions\\.com\\/orvis-cleverbar-promotions\\/ic_offers-1\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b09ffc7e4f6cfac5a5b72c9e9bdf7eb410360e332868baa4920133279ec6299a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orvis.com",
+                "www.orvis.com"
+            ]
+        },
+        {
+            "rule": "cartfulsolutions\\.com\\/gjallarhorn_v1\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.language": 3,
+                "NavigatorUAData.prototype.getHighEntropyValues": 3,
+                "window.indexedDB": 3,
+                "window.localStorage": 3,
+                "Document.cookie getter": 3,
+                "Navigator.prototype.onLine": 3,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
+                "window.sessionStorage": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "d2aa1b285789b6e611cb74f04d51ecb57bd5a91d8c7e0e01b26c52b63942e353"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cubcadet.com",
+                "www.peets.com",
+                "www.smartwool.com"
+            ]
+        },
+        {
+            "rule": "cartfulsolutions\\.com\\/cfl\\.gdpr",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cubcadet.com",
+                "www.peets.com",
+                "www.smartwool.com"
+            ]
+        },
+        {
+            "rule": "cartfulsolutions\\.com\\/cflsp218\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Date.prototype.getTime": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e4bc79613bc6801fb72ec51f87df34825155fab6b48b05a5fa8e6bb3c329fe2f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cubcadet.com",
+                "www.smartwool.com"
+            ]
+        },
+        {
+            "rule": "cartfulsolutions\\.com\\/v1\\/app\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed-cards"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5d38297f13e77f219a5759d10c3a3a3ac43c24dd4fde9e9fbb50a95fb5bc2d7a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "llflooring.com",
+                "www.llflooring.com"
+            ]
+        },
+        {
+            "rule": "cartfulsolutions\\.com\\/MOloR9x2Fq_vGMENPH1oE\\/live\\/config\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed-cards"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b172e9e3bcc6a52e758e27c228806db20e5a94fd86bc4f3bd8c93bc9239db8de"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "llflooring.com",
+                "www.llflooring.com"
+            ]
+        },
+        {
+            "rule": "cartfulsolutions\\.com\\/p\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "smartwool.com",
+                "www.smartwool.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000341,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.4166666666666667
+        },
+        {
+            "domain": "contentsquare.net",
+            "prevalence": 0.2916666666666667
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.20833333333333334
+        },
+        {
+            "domain": "securedvisit.com",
+            "prevalence": 0.08333333333333333
+        }
+    ],
+    "types": {
+        "Script": 15,
+        "Preflight": 4,
+        "XHR": 2,
+        "Fetch": 13,
+        "Image": 6
+    },
+    "nameservers": [
+        "lily.ns.cloudflare.com",
+        "lars.ns.cloudflare.com"
+    ]
+}

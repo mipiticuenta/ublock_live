@@ -1,0 +1,85 @@
+{
+    "domain": "duke-energy.com",
+    "owner": {
+        "name": "Duke Energy Carolinas, LLC",
+        "displayName": "Duke Energy Carolinas"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "www"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "duke-energy\\.com\\/assets\\/vendor\\/js\\/tealeaf\\.5\\.5-duke-energy\\.min\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 2,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTime": 1,
+                "Document.cookie getter": 1,
+                "window.sessionStorage": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "window.devicePixelRatio": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.orientation": 1,
+                "Screen.prototype.availHeight": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
+                "window.localStorage": 1,
+                "Document.cookie setter": 1,
+                "window.name": 1,
+                "PerformanceTiming.prototype.navigationStart": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e5757235026c18d4260eede2aeb6e5679547a73064f82ac661e7f87249b4cc7a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "TLTSID": {
+                    "ttl": null,
+                    "length": 32,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "piedmontng.com",
+                "www.piedmontng.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9166666666666666
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.08333333333333333
+        }
+    ],
+    "types": {
+        "Script": 2
+    },
+    "nameservers": [
+        "ns10.duke-energy.com",
+        "ns20.duke-energy.com"
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "domain": "trbprodcloud.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "ssor.tribdss"
+    ],
+    "cnames": [
+        {
+            "original": "authenticate.baltimoresun.com",
+            "resolved": "ssor.tribdss.trbprodcloud.com"
+        },
+        {
+            "original": "authenticate.capitalgazette.com",
+            "resolved": "ssor.tribdss.trbprodcloud.com"
+        },
+        {
+            "original": "authenticate.chicagotribune.com",
+            "resolved": "ssor.tribdss.trbprodcloud.com"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "trbprodcloud\\.com\\/read_auth",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ssor.tribdss"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "authenticate.chicagotribune.com",
+                    "resolved": "ssor.tribdss.trbprodcloud.com"
+                },
+                {
+                    "original": "authenticate.baltimoresun.com",
+                    "resolved": "ssor.tribdss.trbprodcloud.com"
+                },
+                {
+                    "original": "authenticate.capitalgazette.com",
+                    "resolved": "ssor.tribdss.trbprodcloud.com"
+                }
+            ],
+            "responseHashes": [
+                "c9617e77a4bd2527a00c26de532048487009bb755c66661778bd6fda120433fb",
+                "687321977bc9ca5838a894a268c2cb61ba113c8acaa3f5daf1f5b3eba6949c92",
+                "ba2509f7d4f9b4734b33672086f4f6f9cf745144fcc7b08940fdb67aa00d1619"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chicagotribune.com",
+                "www.baltimoresun.com",
+                "www.capitalgazette.com",
+                "www.chicagotribune.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "osano.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 4
+    },
+    "nameservers": [
+        "ns-1246.awsdns-27.org",
+        "ns-1879.awsdns-42.co.uk",
+        "ns-866.awsdns-44.net",
+        "ns-352.awsdns-44.com"
+    ]
+}

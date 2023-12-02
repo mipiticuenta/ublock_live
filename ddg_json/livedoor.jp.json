@@ -1,0 +1,376 @@
+{
+    "domain": "livedoor.jp",
+    "owner": {
+        "name": "Naver Corporation",
+        "displayName": "Naver"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "parts.blog",
+        "t.blog"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "livedoor\\.jp\\/css\\/template\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "parts.blog"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "4843b36a91a2512b238dc12bbe7c880cdb33de6d65dd3022607c831f8bd2603b"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "esuteru.com",
+                "hamusoku.com",
+                "himasoku.com",
+                "mamekichimameko.blog.jp"
+            ]
+        },
+        {
+            "rule": "livedoor\\.jp\\/css\\/comment2\\/heart\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "parts.blog"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "5e9267da3292ce164d411531deb54542c9efd995341190829947b30c891d8b81"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "esuteru.com",
+                "hamusoku.com",
+                "himasoku.com",
+                "mamekichimameko.blog.jp"
+            ]
+        },
+        {
+            "rule": "livedoor\\.jp\\/css\\/comment2\\/icon\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "parts.blog"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "08736c069567e231f48318f92def7845ecdabeeefe9a6decc54011ee521e07e5"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "esuteru.com",
+                "hamusoku.com",
+                "himasoku.com",
+                "mamekichimameko.blog.jp"
+            ]
+        },
+        {
+            "rule": "livedoor\\.jp\\/js\\/jquery-1\\.11\\.1\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "parts.blog"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "540bc6dec1dd4b92ea4d3fb903f69eabf6d919afd48f4e312b163c28cff0f441"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "esuteru.com",
+                "hamusoku.com",
+                "himasoku.com",
+                "mamekichimameko.blog.jp"
+            ]
+        },
+        {
+            "rule": "livedoor\\.jp\\/js\\/c2\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 1,
+            "subdomains": [
+                "parts.blog"
+            ],
+            "apis": {
+                "Document.cookie getter": 4,
+                "Date.prototype.getTime": 5,
+                "Document.cookie setter": 4
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "7b79f6371a5db8cc078e82d443938ab514e824f0f3f2149b9da6bce2fb5da5b0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ldblog_v": {
+                    "ttl": 28748,
+                    "length": 1,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 0.25
+                },
+                "ldblog_c": {
+                    "ttl": 7804748,
+                    "length": 1,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 0.25
+                },
+                "ldblog_f": {
+                    "ttl": 7804748,
+                    "length": 10,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "esuteru.com",
+                "hamusoku.com",
+                "himasoku.com",
+                "mamekichimameko.blog.jp",
+                "world-fusigi.net"
+            ]
+        },
+        {
+            "rule": "livedoor\\.jp\\/js\\/smartphone\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "parts.blog"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "5de86ac3fd13dcc4b877629c113123b8ae9c99c22a0850ea61107246adb3ca8c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "esuteru.com",
+                "hamusoku.com",
+                "himasoku.com",
+                "mamekichimameko.blog.jp",
+                "world-fusigi.net"
+            ]
+        },
+        {
+            "rule": "livedoor\\.jp\\/js\\/related_articles\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "parts.blog"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "ce44bb571751134d73b0820cd6cfa47ef83e61c9dd13e9883ace79582db38342"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "esuteru.com",
+                "mamekichimameko.blog.jp",
+                "world-fusigi.net"
+            ]
+        },
+        {
+            "rule": "livedoor\\.jp\\/plugin\\/popular_articles_with_image_plugin\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "parts.blog"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "865b4b9ec0479f09080fdd3e3e308868d699abcc6a2d69ed4d9b73e6fff66dd4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "esuteru.com",
+                "hamusoku.com",
+                "himasoku.com",
+                "mamekichimameko.blog.jp",
+                "world-fusigi.net"
+            ]
+        },
+        {
+            "rule": "livedoor\\.jp\\/u\\.js",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t.blog"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "3df57799163c06b983cf0baa064d8d4ab241cfcbd41bf9d8a15cf9e7a24094c0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "esuteru.com",
+                "hamusoku.com",
+                "himasoku.com",
+                "mamekichimameko.blog.jp",
+                "world-fusigi.net"
+            ]
+        },
+        {
+            "rule": "livedoor\\.jp\\/js\\/emoji\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "parts.blog"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "49afbba41f2a3bc1b7ea1fd3e6d86e45dc578510610f1c0fbc394474434c8aea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "himasoku.com",
+                "mamekichimameko.blog.jp"
+            ]
+        },
+        {
+            "rule": "livedoor\\.jp\\/js\\/misc\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "parts.blog"
+            ],
+            "apis": {
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b8a5b50558c9fa5bd1005639923e55f14898f267a91fe22b77392cfad76da155"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "himasoku.com",
+                "mamekichimameko.blog.jp"
+            ]
+        },
+        {
+            "rule": "livedoor\\.jp\\/plugin\\/ldblog_monthly_plugin\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "parts.blog"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4fe52c07345d6e4746f59f2c3cc020ae4a553d2fb18398a2db5bd6242c661808"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "himasoku.com",
+                "mamekichimameko.blog.jp"
+            ]
+        },
+        {
+            "rule": "livedoor\\.jp\\/img\\/emoji\\/palette\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "parts.blog"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "himasoku.com",
+                "mamekichimameko.blog.jp"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000341,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.989010989010989
+        },
+        {
+            "domain": "livedoor.com",
+            "prevalence": 0.01098901098901099
+        }
+    ],
+    "types": {
+        "Stylesheet": 12,
+        "Script": 33,
+        "Image": 2
+    },
+    "nameservers": [
+        "ns2.naver.jp",
+        "adns2.naver.com",
+        "ns1.naver.jp",
+        "adns1.naver.com"
+    ]
+}

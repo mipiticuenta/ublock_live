@@ -1,0 +1,107 @@
+{
+    "domain": "metizapps.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "storelocator",
+        "gcc"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "metizapps\\.com\\/assets\\/js\\/app\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "storelocator",
+                "gcc"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "67a74495d8ed8d38d50f9c8cd21aff623516d75d98ba05b845ce28eca2fe8be1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bluebirdprovisions.co",
+                "siliconelovers.com",
+                "www.tatucouture.com"
+            ]
+        },
+        {
+            "rule": "metizapps\\.com\\/banner\\/getBannerAjax",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gcc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "36515c43e782d513bfcff2abe03aefca3a68a37e9986d99816136c9847872339"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "siliconelovers.com",
+                "www.tatucouture.com"
+            ]
+        },
+        {
+            "rule": "metizapps\\.com\\/assets\\/css\\/css\\/gdpr_front_bar\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gcc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fc27e234e8ee594878d4f37ddb068755f987f7399291a16c6a216712f6641336"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tatucouture.com",
+                "www.tatucouture.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000409,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "XHR": 2,
+        "Stylesheet": 2
+    },
+    "nameservers": [
+        "ns-751.awsdns-29.net",
+        "ns-1512.awsdns-61.org",
+        "ns-500.awsdns-62.com",
+        "ns-1700.awsdns-20.co.uk"
+    ]
+}

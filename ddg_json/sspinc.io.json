@@ -1,0 +1,259 @@
+{
+    "domain": "sspinc.io",
+    "owner": {
+        "name": "Secret Sauce Partners, Inc.",
+        "displayName": "Secret Sauce Partners"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "shoppremiumoutlets",
+        "jjill",
+        "johnnywas",
+        "revolve",
+        "ssense",
+        "c"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "sspinc\\.io\\/v1\\/ssp\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 2,
+            "subdomains": [
+                "shoppremiumoutlets",
+                "jjill",
+                "johnnywas",
+                "revolve",
+                "ssense"
+            ],
+            "apis": {
+                "window.localStorage": 4,
+                "Navigator.prototype.userAgent": 4,
+                "Date.prototype.getTimezoneOffset": 5,
+                "Date.prototype.getTime": 5,
+                "Navigator.prototype.doNotTrack": 4,
+                "Navigator.prototype.language": 4,
+                "Navigator.prototype.mimeTypes": 4,
+                "Navigator.prototype.javaEnabled": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Screen.prototype.colorDepth": 4,
+                "Navigator.prototype.cookieEnabled": 3,
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 4,
+                "PerformanceTiming.prototype.navigationStart": 4,
+                "window.innerWidth": 4,
+                "window.innerHeight": 4,
+                "Navigator.prototype.maxTouchPoints": 1
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "7a0d57940fea47643e91b6981a40e584de6535c343b35478126678b624b13366"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_sp_ses.f18c": {
+                    "ttl": 1808,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_sp_id.f18c": {
+                    "ttl": 63072008,
+                    "length": 108,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_sp_ses.47aa": {
+                    "ttl": 1817,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_sp_id.47aa": {
+                    "ttl": 63072017,
+                    "length": 108,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "SSP_AB_StyleFinder_20160425": {
+                    "ttl": 63072002,
+                    "length": 7,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_sp_ses.c6c8": {
+                    "ttl": 1804,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_sp_id.c6c8": {
+                    "ttl": 63072004,
+                    "length": 108,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shoppremiumoutlets.com",
+                "www.jjill.com",
+                "www.johnnywas.com",
+                "www.revolve.com",
+                "www.ssense.com"
+            ]
+        },
+        {
+            "rule": "sspinc\\.io\\/ssp\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "shoppremiumoutlets",
+                "jjill",
+                "johnnywas",
+                "revolve",
+                "ssense"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "5009b7568fcb18c3477fd93e28f9d71daf8e5bb7c49897a9858ca7e6d1fefeb3",
+                "872e1064f750fb637629fe859060298ee28827b2327a7368464a7329512cf913",
+                "67ea2b760652f291db0ba72c460267f6d87379dd1700bd6377be1da3042b2daf",
+                "cdd95fe3d03458014d9e02a2b29fa0e303345b49179790bd039a43f9e7f0c94a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "shoppremiumoutlets.com",
+                "www.jjill.com",
+                "www.johnnywas.com",
+                "www.revolve.com",
+                "www.ssense.com"
+            ]
+        },
+        {
+            "rule": "sspinc\\.io\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shoppremiumoutlets.com",
+                "www.jjill.com",
+                "www.johnnywas.com",
+                "www.revolve.com",
+                "www.ssense.com"
+            ]
+        },
+        {
+            "rule": "sspinc\\.io\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shoppremiumoutlets.com",
+                "www.jjill.com",
+                "www.johnnywas.com",
+                "www.revolve.com",
+                "www.ssense.com"
+            ]
+        },
+        {
+            "rule": "sspinc\\.io\\/lib\\/4\\.46\\.24\\/fitpredictor\\.en\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "shoppremiumoutlets",
+                "johnnywas",
+                "revolve",
+                "ssense"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 3
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "154528ff308329f06d6caf317783af0f4b3678e33e215f4c9c0ba9121d72c649"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shoppremiumoutlets.com",
+                "www.johnnywas.com",
+                "www.revolve.com",
+                "www.ssense.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000477,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "go-mpulse.net",
+            "prevalence": 0.1111111111111111
+        },
+        {
+            "domain": "cookielaw.org",
+            "prevalence": 0.05555555555555555
+        }
+    ],
+    "types": {
+        "Script": 9,
+        "XHR": 10,
+        "Preflight": 5
+    },
+    "nameservers": [
+        "ns-364.awsdns-45.com",
+        "ns-619.awsdns-13.net",
+        "ns-1409.awsdns-48.org",
+        "ns-1685.awsdns-18.co.uk"
+    ]
+}

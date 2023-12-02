@@ -1,0 +1,92 @@
+{
+    "domain": "skyword.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "tracking"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "skyword\\.com\\/tracker\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {
+                "Navigator.prototype.doNotTrack": 5,
+                "Date.prototype.getTime": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "3c9237f8569d7a3cbf7ab25bf871ad84aadc0098e254f3af2790c05c6a98fea3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "samsung.com",
+                "www.basspro.com",
+                "www.cabelas.com",
+                "www.thehealthy.com",
+                "www.tomsofmaine.com"
+            ]
+        },
+        {
+            "rule": "skyword\\.com\\/tracker\\.gif",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "__tld": 0.000006812035504329049,
+                "IR_gbd": 0.000013624071008658098,
+                "_li_dcdm_c": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "samsung.com",
+                "www.basspro.com",
+                "www.cabelas.com",
+                "www.thehealthy.com",
+                "www.tomsofmaine.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000341,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 5,
+        "Image": 5
+    },
+    "nameservers": [
+        "ns-695.awsdns-22.net",
+        "ns-435.awsdns-54.com",
+        "ns-1340.awsdns-39.org",
+        "ns-1578.awsdns-05.co.uk"
+    ]
+}

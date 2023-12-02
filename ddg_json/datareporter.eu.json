@@ -1,0 +1,132 @@
+{
+    "domain": "datareporter.eu",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "webcache",
+        "c"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "datareporter\\.eu\\/c\\/08f85641-1ca8-44d9-9852-25551c1bd240\\/9vWULyV9AvOq\\/Avv\\/banner\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webcache"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3bcce0e8c66d5c6f8544df0ecb27812debff03844197ac3546e5403eaa14ace3"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "silhouette.com",
+                "www.silhouette.com"
+            ]
+        },
+        {
+            "rule": "datareporter\\.eu\\/c\\/08f85641-1ca8-44d9-9852-25551c1bd240\\/9vWULyV9AvOq\\/Avv\\/banner\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "webcache"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4121db5f552df04dec0de21db88f121365abdf8c13d4998238477b7b4b6cb90e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "silhouette.com",
+                "www.silhouette.com"
+            ]
+        },
+        {
+            "rule": "datareporter\\.eu\\/e\\/1\\/08f85641-1ca8-44d9-9852-25551c1bd240\\/9vWULyV9AvOq\\/01\\/3d\\/o\\/--",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "silhouette.com",
+                "www.silhouette.com"
+            ]
+        },
+        {
+            "rule": "datareporter\\.eu\\/e\\/1\\/08f85641-1ca8-44d9-9852-25551c1bd240\\/9vWULyV9AvOq\\/01\\/3d\\/o\\/--",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a318c24216defe206feeb73ef5be00033fa9c4a74d0b967f6532a26ca5906d3b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "silhouette.com",
+                "www.silhouette.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000341,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.3
+        }
+    ],
+    "types": {
+        "Stylesheet": 2,
+        "Script": 2,
+        "Preflight": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "ns-149.awsdns-18.com",
+        "ns-1987.awsdns-56.co.uk",
+        "ns-633.awsdns-15.net",
+        "ns-1282.awsdns-32.org"
+    ]
+}

@@ -1,0 +1,180 @@
+{
+    "domain": "d2.shared.global.fastly.net",
+    "owner": {
+        "name": "Fastly, Inc.",
+        "displayName": "Fastly",
+        "privacyPolicy": "https://www.fastly.com/privacy",
+        "url": "http://fastly.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000102,
+    "sites": 15,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "prx.wayfair.com",
+            "resolved": "d2.shared.global.fastly.net"
+        }
+    ],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "d2\\.shared\\.global\\.fastly\\.net\\/px\\/client\\/main\\.min\\.js",
+            "cookies": 0.0000545,
+            "fingerprinting": 3,
+            "subdomains": [],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [
+                {
+                    "original": "prx.wayfair.com",
+                    "resolved": "d2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "19677d0c869fb937ad71b2e5c0f022a6156b2b3d90ca9ea39d79422898fee36a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_px3": {
+                    "ttl": 1209605,
+                    "length": 151,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 1
+                },
+                "_pxvid": {
+                    "ttl": 31536004,
+                    "length": 36,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 1
+                },
+                "pxcts": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wayfair.com",
+                "www.allmodern.com",
+                "www.birchlane.com",
+                "www.jossandmain.com",
+                "www.wayfair.ca",
+                "www.wayfair.co.uk",
+                "www.wayfair.com",
+                "www.wayfair.de"
+            ]
+        },
+        {
+            "rule": "d2\\.shared\\.global\\.fastly\\.net\\/px\\/xhr\\/api\\/v2\\/collector",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [
+                {
+                    "original": "prx.wayfair.com",
+                    "resolved": "d2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "a0f1558ff64526875af22449200462f35cb8d0a3a36a5d3fed465dde16242aba",
+                "21f91eef2c23edb8f6bcbfac78850db47acd4a8d835da0b0643c4d81a1d0e005",
+                "ce6413152cb442afe16293477476e88d3b982d2d391ea72cebbb5574581a95be",
+                "017828074bcd3eb7d3969c73fd91df6c427c22aebd09160ec4c51fc75e807e49",
+                "4739110b17ba644e2c0c41d94244e34bc2dec6cdff4ac871ae213f26e2ac9faf",
+                "a364f8994b1a31e77a20c7755e4b730a4943b3b8b25bfed9b7cb9050b42463f1",
+                "7af382bffb80e4a13e6c6c388f965cf87afd64d3088b23bb7087e5f3418d787a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wayfair.com",
+                "www.allmodern.com",
+                "www.birchlane.com",
+                "www.jossandmain.com",
+                "www.wayfair.ca",
+                "www.wayfair.co.uk",
+                "www.wayfair.com",
+                "www.wayfair.de"
+            ]
+        },
+        {
+            "rule": "d2\\.shared\\.global\\.fastly\\.net\\/px\\/client\\/main\\.min\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 3,
+            "subdomains": [],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "prx.wayfair.com",
+                    "resolved": "d2.shared.global.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {
+                "_px3": {
+                    "ttl": 1209608,
+                    "length": 151,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                },
+                "_pxvid": {
+                    "ttl": 31536006,
+                    "length": 36,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                },
+                "pxcts": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wayfair.com",
+                "www.allmodern.com",
+                "www.jossandmain.com",
+                "www.wayfair.de"
+            ]
+        }
+    ],
+    "categories": [
+        "Ad Motivated Tracking",
+        "Advertising",
+        "Analytics",
+        "Third-Party Analytics Marketing",
+        "Action Pixels",
+        "CDN",
+        "Embedded Content",
+        "Session Replay"
+    ],
+    "performance": {},
+    "cookies": 0.0000954,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 8,
+        "XHR": 12
+    },
+    "nameservers": []
+}

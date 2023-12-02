@@ -1,0 +1,131 @@
+{
+    "domain": "qumucloud.com",
+    "owner": {
+        "name": "Qumu",
+        "displayName": "Qumu"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "janushenderson",
+        "thrivent",
+        "cdn"
+    ],
+    "cnames": [
+        {
+            "original": "video.janushenderson.com",
+            "resolved": "janushenderson.qumucloud.com"
+        },
+        {
+            "original": "video.thrivent.com",
+            "resolved": "thrivent.qumucloud.com"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "qumucloud\\.com\\/widgets\\/application\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "janushenderson",
+                "thrivent"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "video.janushenderson.com",
+                    "resolved": "janushenderson.qumucloud.com"
+                },
+                {
+                    "original": "video.thrivent.com",
+                    "resolved": "thrivent.qumucloud.com"
+                }
+            ],
+            "responseHashes": [
+                "6b73c0a840629287b17202c8ea20ef38df8410d6ca74e73f1a4ce6d80efc6ad9",
+                "7c84b07d186e4f6f875dd4a7a2cc74ba69ba642543b1e95cfb0b4b7e63b01d8b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "janushenderson.com",
+                "www.janushenderson.com",
+                "www.thrivent.com"
+            ]
+        },
+        {
+            "rule": "qumucloud\\.com\\/origin\\/public\\/video\\.janushenderson\\.com\\/staticcontent\\/620\\/client\\/js-lib\\/widgets\\/jquery\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "717dd26f0a6497c5d239f8ddbbd2ad64470643a2c9ce5a03b4ddd00ce95a2ffe"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "janushenderson.com",
+                "www.janushenderson.com"
+            ]
+        },
+        {
+            "rule": "qumucloud\\.com\\/origin\\/public\\/video\\.janushenderson\\.com\\/staticcontent\\/620\\/client\\/application\\/widgets\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cb5fc4b112e133df2c5f30c6f796964c52e90386a2d175351849429168bcf651"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "janushenderson.com",
+                "www.janushenderson.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9
+        },
+        {
+            "domain": "cookielaw.org",
+            "prevalence": 0.1
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "XHR": 4
+    },
+    "nameservers": [
+        "ns-1096.awsdns-09.org",
+        "ns-735.awsdns-27.net",
+        "ns-299.awsdns-37.com",
+        "ns-1959.awsdns-52.co.uk"
+    ]
+}

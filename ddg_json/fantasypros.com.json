@@ -1,0 +1,214 @@
+{
+    "domain": "fantasypros.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "cdn",
+        "partners",
+        "scoreboard",
+        "api",
+        "images"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "fantasypros\\.com\\/realtime\\/mp-latest\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Navigator.prototype.vendor": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3537aca32fd9019a921a280a6cb8ee3ee9e7443dc14dd04ed24486a04704203d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "mp_949d2be9e34d246edb7ee4a4cc8720bc_mixpanel": {
+                    "ttl": 31536008,
+                    "length": 302,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bettingpros.com",
+                "www.bettingpros.com"
+            ]
+        },
+        {
+            "rule": "fantasypros\\.com\\/api\\/v1\\/ticker\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "partners"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bettingpros.com",
+                "www.bettingpros.com"
+            ]
+        },
+        {
+            "rule": "fantasypros\\.com\\/api\\/v1\\/ticker\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "partners"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "74f0161e52303044c717e154cd9e04beb9eeff95ddfd524518b554c14b4b2395"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bettingpros.com",
+                "www.bettingpros.com"
+            ]
+        },
+        {
+            "rule": "fantasypros\\.com\\/socket\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "scoreboard"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bettingpros.com",
+                "www.bettingpros.com"
+            ]
+        },
+        {
+            "rule": "fantasypros\\.com\\/v2\\/defloc",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6703cb3be65d1c77ff1e8d61d9b981748673fe0d027c473b5768efbfd59cd8a9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bettingpros.com",
+                "www.bettingpros.com"
+            ]
+        },
+        {
+            "rule": "fantasypros\\.com\\/images\\/logos\\/caesars-square\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a9d2fc53892bbee2d04d63de3ded63812dfc0f5a0f6f27743e860f115b85c8b1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bettingpros.com",
+                "www.bettingpros.com"
+            ]
+        },
+        {
+            "rule": "fantasypros\\.com\\/v2\\/mp\\/track\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e39a8118ec6cdf6ac33e6961518e9fe6ba3f6caf099aeeaec1389c2108ba90ba"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bettingpros.com",
+                "www.bettingpros.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9
+        },
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Preflight": 2,
+        "XHR": 4,
+        "WebSocket": 2,
+        "Fetch": 2,
+        "Image": 2
+    },
+    "nameservers": [
+        "ns-1262.awsdns-29.org",
+        "ns-1658.awsdns-15.co.uk",
+        "ns-830.awsdns-39.net",
+        "ns-434.awsdns-54.com"
+    ]
+}

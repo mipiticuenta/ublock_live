@@ -1,0 +1,79 @@
+{
+    "domain": "lflgroup.ca",
+    "owner": {
+        "name": "Leon's Furniture Limited",
+        "displayName": "Leon's Furniture"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "ecom.api"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "lflgroup\\.ca\\/ecom\\/user\\/profile",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ecom.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "leons.ca",
+                "www.thebrick.com"
+            ]
+        },
+        {
+            "rule": "lflgroup\\.ca\\/ecom\\/user\\/profile",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ecom.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "831b0e63eef0e086b4f5325ad103d8b14cae3f2d0c1e8377a5788ba42221b873"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "leons.ca",
+                "www.thebrick.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Preflight": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "ns1.thebrick.com",
+        "ns2.thebrick.com",
+        "ns30.thebrick.com"
+    ]
+}

@@ -1,0 +1,110 @@
+{
+    "domain": "strawpoll.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "strawpoll\\.com\\/dist\\/widgets\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 3
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "a759b1082716f2ca9884b8e06ae49bd4f204b124491eecb7556f6fffaa551995"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "biggbossteluguvote.in",
+                "statesymbolsusa.org",
+                "www.drafttek.com",
+                "www.equestriadaily.com"
+            ]
+        },
+        {
+            "rule": "strawpoll\\.com\\/dist\\/main\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "08eddc285f1e7b72b9c459a48b8be631ae7df12ed835ea692407ae6c8ac81964"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "biggbossteluguvote.in",
+                "statesymbolsusa.org",
+                "www.drafttek.com",
+                "www.equestriadaily.com"
+            ]
+        },
+        {
+            "rule": "strawpoll\\.com\\/dist\\/app\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.languages": 3,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 3
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "c6a249eb9f2e6b4aab3e4775d0eb702c6222f465d3d8c04c2930f43ca9e1a13a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "biggbossteluguvote.in",
+                "statesymbolsusa.org",
+                "www.drafttek.com",
+                "www.equestriadaily.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000341,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 8,
+        "Stylesheet": 4
+    },
+    "nameservers": [
+        "kate.ns.cloudflare.com",
+        "gerald.ns.cloudflare.com"
+    ]
+}

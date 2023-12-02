@@ -1,0 +1,114 @@
+{
+    "domain": "eadv.it",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "track",
+        "delivery1",
+        "panel"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "eadv\\.it\\/tag\\.min\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 1,
+            "subdomains": [
+                "track"
+            ],
+            "apis": {
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 4,
+                "Date.prototype.getTime": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "d69e139b8c1f796eeca424a5997e0159b67182f001ef647f542d345986b64968"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "controinformazione.info",
+                "www.freeforumzone.com",
+                "www.plcforum.it",
+                "www.tecnicadellascuola.it"
+            ]
+        },
+        {
+            "rule": "eadv\\.it\\/analytics\\.php",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "delivery1"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "f38c6a65a27f17ee435a5948b628893b28e7a1ab41fe9825b6637537a97f8189",
+                "df81e7d3b06d3be36d9c3c2fa6b4bba722dde0616838b0e217631bff23b9e7ba",
+                "87123f21a769a6caf44cbb6a93b1709c4eeb7d573d0c90313465f2be8fecad3e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "controinformazione.info",
+                "www.controinformazione.info",
+                "www.freeforumzone.com",
+                "www.plcforum.it",
+                "www.tecnicadellascuola.it"
+            ]
+        },
+        {
+            "rule": "eadv\\.it\\/favicon\\.ico",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "panel"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "75824a358e26d6fad37517a3d310e10a6cf3d078b52909d02d51124387c853a1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "controinformazione.info",
+                "www.freeforumzone.com",
+                "www.plcforum.it",
+                "www.tecnicadellascuola.it"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 9,
+        "Image": 4
+    },
+    "nameservers": [
+        "alan.ns.cloudflare.com",
+        "kara.ns.cloudflare.com"
+    ]
+}

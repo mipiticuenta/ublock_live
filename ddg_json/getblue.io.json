@@ -1,0 +1,261 @@
+{
+    "domain": "getblue.io",
+    "owner": {
+        "name": "getblue",
+        "displayName": "getblue"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000245,
+    "sites": 36,
+    "subdomains": [
+        "event",
+        "widget",
+        "cms"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "getblue\\.io\\/js\\/blue-tag\\.min\\.js",
+            "cookies": 0.000177,
+            "fingerprinting": 1,
+            "subdomains": [
+                "event"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 27,
+                "Date.prototype.getTime": 27,
+                "Navigator.prototype.cookieEnabled": 27,
+                "Document.cookie getter": 26,
+                "window.sessionStorage": 27,
+                "window.localStorage": 27,
+                "Document.cookie setter": 26
+            },
+            "sites": 27,
+            "prevalence": 0.000184,
+            "cnames": [],
+            "responseHashes": [
+                "a2be364e2921857c3e1415e1e9e74e5628a02318662a25da27a23da90929c84a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "blueID": {
+                    "ttl": 31536006,
+                    "length": 36,
+                    "prevalence": 0.00017711292311255528,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.sympla.com.br",
+                "www.eltiempo.com",
+                "www.buscape.com.br",
+                "www.vevor.com",
+                "www.centauro.com.br",
+                "sodimac.falabella.com",
+                "www.movavi.com",
+                "www.voegol.com.br",
+                "www.farmrio.com",
+                "www.leonisa.com",
+                "www.vevor.ca",
+                "uae.sharafdg.com",
+                "xeroshoes.com",
+                "www.latamairlines.com",
+                "www.localiza.com",
+                "www.falabella.com",
+                "www.webmotors.com.br",
+                "shop.samsung.com",
+                "www.occ.com.mx",
+                "www.rieker.co.uk"
+            ]
+        },
+        {
+            "rule": "getblue\\.io\\/p\\/",
+            "cookies": 0.00017,
+            "fingerprinting": 0,
+            "subdomains": [
+                "event"
+            ],
+            "apis": {},
+            "sites": 26,
+            "prevalence": 0.000177,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "01f9624a13d94ecdb8eeebfc2af429c224411d6dc549e01ee9683f444c1fab61",
+                "5a215387a12c5afed4cdef49da0157cda84c2012bc1f0162cd5306173a738376",
+                "842ced2f5c2b9234fdca68103820201eeb83479f0e44be2ce70f2beac51bad3c",
+                "456676b9a2fde4012f5d96cb015774bb23ff433cf3f040a104a4eb105f439a39",
+                "886c67faa55bc3c7f5942e143627094012425a3df18d2d846f77367898e9cc70",
+                "bcfb49f9a675c132f0fe58e5c4ec7291599fea0a2d26c51d6ecaaff38308297e",
+                "a2c2339691fc48fbd14fb307292dff3e21222712d9240810742d7df0c6d74dfb",
+                "c2b85186ed106adfa9d7a912512ed960e752b15521f20a90716b46b5fbbcc3f5",
+                "3ed3e18b2cb15dc25d54ec792574a2e41186503e2dfdcb6bff25d2ce75b9cb45",
+                "1f20d1085bc6239efbd9831935bd664b68b754a5c92fa2e9aaaac9683c2fdbd6",
+                "b05fa2e7973756f8425e3492d4d876e6986730ab01fc8fbe62257090a0cd753d",
+                "cd5f019df57e8dc4160a60e2fd0b04cb85c7b6a17fcce9b5880f898f3705cb1e",
+                "efd413d1c7d71d7c9c6acbfb7e3a6348342ede86fd8fedecffe0a257000f0c90",
+                "ff7245b01942f2667c3cb853400136ddf99e6682f1bac5094770f73f55452f90",
+                "04f30e4d8830e021ac06bd5ac60670eb9dce634b4e2133ca2ea2fb48801eb3f1",
+                "ff690a20b76474a6ca70ad7d1d575d5af0a91e851dbbdbe351c2791c1e66ff75"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "blueID": 0.00017711292311255528
+            },
+            "exampleSites": [
+                "www.vevor.com",
+                "www.leonisa.com",
+                "www.occ.com.mx",
+                "www.sympla.com.br",
+                "www.unicef.org",
+                "www.webmotors.com.br",
+                "sodimac.falabella.com",
+                "easeus.com",
+                "www.buscape.com.br",
+                "www.localiza.com",
+                "www.falabella.com",
+                "www.screencapture.com",
+                "www.farmrio.com",
+                "www.dhgate.com",
+                "recorder.easeus.com",
+                "www.centauro.com.br",
+                "www.movavi.com",
+                "shop.samsung.com",
+                "www.vevor.ca",
+                "xeroshoes.com"
+            ]
+        },
+        {
+            "rule": "getblue\\.io\\/event\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Screen.prototype.width": 14,
+                "Screen.prototype.height": 14,
+                "Screen.prototype.colorDepth": 14
+            },
+            "sites": 26,
+            "prevalence": 0.000177,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "5b92a408bbe994550b7055a07066d79ec13a646062d36f046dbd84a9d59e86e1",
+                "eb99134542c987f687360d120213eeec049a290d73d2302ee1b74a01ce279f4d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "blueID": 0.00017711292311255528
+            },
+            "exampleSites": [
+                "www.webmotors.com.br",
+                "www.eltiempo.com",
+                "www.occ.com.mx",
+                "www.vevor.ca",
+                "www.screencapture.com",
+                "www.falabella.com",
+                "www.movavi.com",
+                "www.centauro.com.br",
+                "www.voegol.com.br",
+                "easeus.com",
+                "www.buscape.com.br",
+                "www.vevor.com",
+                "uae.sharafdg.com",
+                "www.localiza.com",
+                "www.autonomous.ai",
+                "www.farmrio.com",
+                "www.sympla.com.br",
+                "shop.samsung.com",
+                "www.latamairlines.com",
+                "recorder.easeus.com"
+            ]
+        },
+        {
+            "rule": "getblue\\.io\\/cm\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cms"
+            ],
+            "apis": {},
+            "sites": 17,
+            "prevalence": 0.000116,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "blueID": 0.00011580460357359382
+            },
+            "exampleSites": [
+                "samsung.com",
+                "shop.samsung.com",
+                "sodimac.falabella.com",
+                "uae.sharafdg.com",
+                "www.autonomous.ai",
+                "www.buscape.com.br",
+                "www.centauro.com.br",
+                "www.dhgate.com",
+                "www.falabella.com",
+                "www.farmrio.com",
+                "www.leonisa.com",
+                "www.localiza.com",
+                "www.movavi.com",
+                "www.occ.com.mx",
+                "www.screencapture.com",
+                "www.vevor.ca",
+                "www.vevor.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000245,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.3392857142857143
+        },
+        {
+            "domain": "movavi.io",
+            "prevalence": 0.07142857142857142
+        },
+        {
+            "domain": "go-mpulse.net",
+            "prevalence": 0.03571428571428571
+        },
+        {
+            "domain": "dhresource.com",
+            "prevalence": 0.03571428571428571
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.017857142857142856
+        }
+    ],
+    "types": {
+        "Script": 53,
+        "Document": 26,
+        "Image": 17
+    },
+    "nameservers": [
+        "ns-1752.awsdns-27.co.uk",
+        "ns-1053.awsdns-03.org",
+        "ns-48.awsdns-06.com",
+        "ns-730.awsdns-27.net"
+    ]
+}

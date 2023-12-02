@@ -1,0 +1,1359 @@
+{
+    "domain": "migros.cloud",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000749,
+    "sites": 11,
+    "subdomains": [
+        "prod.cdn.gcp",
+        "mcap-lb11.gcp",
+        "mcap-lb02.gcp",
+        "mcap-lb04.gcp",
+        "migros-ch.service",
+        "onlineberatung-widget.service"
+    ],
+    "cnames": [
+        {
+            "original": "cdn.migros.ch",
+            "resolved": "prod.cdn.gcp.migros.cloud"
+        },
+        {
+            "original": "login.migros.ch",
+            "resolved": "mcap-lb11.gcp.migros.cloud"
+        },
+        {
+            "original": "msrc-version-api.migros.ch",
+            "resolved": "mcap-lb02.gcp.migros.cloud"
+        },
+        {
+            "original": "shared.migros.ch",
+            "resolved": "migros-ch.service.migros.cloud"
+        },
+        {
+            "original": "web-api.migros.ch",
+            "resolved": "mcap-lb04.gcp.migros.cloud"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "migros\\.cloud\\/ch\\.migros\\/static\\/fonts\\/helveticaneue-roman\\/helveticaneue-roman\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "23cefa1efe030e46138d511853b07c8fb75cc71bdb66fa0ead40bcf74e3243bc"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "famigros.migros.ch",
+                "filialen.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/ch\\.migros\\/static\\/fonts\\/helvetica-now\\/HelveticaNowTextW05-Regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "598a7a0d2eb02ebc407bb13fcdc95c3811851647f9346c2c1b8f3f663ba7d611"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "famigros.migros.ch",
+                "filialen.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/ch\\.migros\\/static\\/fonts\\/helvetica-now\\/HelveticaNowTextW05-Bold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "9de1bcc0479646274342cffab0cd7339a2d1f64596c62d71b38be041f2e3fe63"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "famigros.migros.ch",
+                "filialen.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/api\\/trackingid",
+            "cookies": 0.0000545,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mcap-lb11.gcp"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [
+                {
+                    "original": "login.migros.ch",
+                    "resolved": "mcap-lb11.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "7d95e218f8382a57951617ba26939f533399e4d7209e0cca861243a6fe6630a2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "famigros.migros.ch",
+                "filialen.migros.ch",
+                "impuls.migros.ch",
+                "migusto.migros.ch",
+                "www.doitgarden.ch",
+                "www.melectronics.ch",
+                "www.micasa.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/ch\\.migros\\/static\\/fonts\\/helveticaneue-bold\\/helveticaneue-bold\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "5f097cd1833697a7c31187591a4d87009731514501c5ef509a8834d82d69f935"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "famigros.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/ch\\.migros\\/static\\/fonts\\/helveticaneue-condensed-bold\\/helveticaneue-condensed-bold\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "5cf7d06a332f22ebd3b457449bb6efa97cb7bf140a0acc4732ef26b7a6e0e44d"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "www.klubschule.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/api\\/authenticationcontext",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mcap-lb11.gcp"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "login.migros.ch",
+                    "resolved": "mcap-lb11.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "3e58c6fcf10a31770582814c2babfd1ff71bb1a72cae32cdb1c1a428f406d47f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "famigros.migros.ch",
+                "filialen.migros.ch",
+                "impuls.migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mcap-lb02.gcp"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [
+                {
+                    "original": "msrc-version-api.migros.ch",
+                    "resolved": "mcap-lb02.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "corporate.migros.ch",
+                "famigros.migros.ch",
+                "filialen.migros.ch",
+                "impuls.migros.ch",
+                "migusto.migros.ch",
+                "www.doitgarden.ch",
+                "www.melectronics.ch",
+                "www.micasa.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/widgets\\/cmd\\/legaldocument\\/cookie_banner\\/de",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mcap-lb04.gcp"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "web-api.migros.ch",
+                    "resolved": "mcap-lb04.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "53b5bcf767aeb840d391c62c3c06ac9566a95431fb33611c26b46ae9cbbb30c6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "famigros.migros.ch",
+                "impuls.migros.ch",
+                "migusto.migros.ch",
+                "www.klubschule.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/api\\/trackingid",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mcap-lb11.gcp"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "login.migros.ch",
+                    "resolved": "mcap-lb11.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "7d95e218f8382a57951617ba26939f533399e4d7209e0cca861243a6fe6630a2"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "famigros.migros.ch",
+                "impuls.migros.ch",
+                "migusto.migros.ch",
+                "www.klubschule.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/ch\\.migros\\/static\\/img\\/m\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "d26026ada978a9a5bc7535cfe260e97468fcf4e8fe438d79bd2a9e341dea8d1b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "famigros.migros.ch",
+                "filialen.migros.ch",
+                "impuls.migros.ch",
+                "migusto.migros.ch",
+                "www.doitgarden.ch",
+                "www.melectronics.ch",
+                "www.micasa.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/\\.rest\\/fragments\\/v1\\/resources\\/css\\/basics\\.css",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "migros-ch.service"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "shared.migros.ch",
+                    "resolved": "migros-ch.service.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "f717108a58c41669ac0714e5ddb667a7810a9eb806bef9b06b8be3e9b8e4ded2"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "filialen.migros.ch",
+                "www.klubschule.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "4e4240f7d58f76b412c911e1f3a23ef9e77de38df515e3f63e8e4c99748a27a7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "impuls.migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/2470\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "22c7e0ae8076afdace08056e39e37ec9a47e5ddf008cdbb337863875d557984a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "impuls.migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/msrc-messenger\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "482514a7d588b32d76a430c3eadac82192c63e01a859ee3c28e81d42ab16a1a1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/migros-authenticator\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "98305aa0716b835062b56eab80867162358cf2a01ab21a157565ca7164a53d62"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "impuls.migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/6085\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "abfc158b7a55161398aaa5fc6af633fee05f4cb658c62c57e8980c247b434b22"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "impuls.migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/3563\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "7414062004d9e5acd5c80e462764e26395ab1853643cebec3efcc6d589f64ffa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "impuls.migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/5595\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "640e2fab4a0487fb768dce278fea96553ff9ca636b552f437387a928dd922f10"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "impuls.migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/7360\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "6ea18db220a43016353cd7717551acd32c76dfb39fcb30f609206e3b9cf7f125"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "impuls.migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/7320\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "15c5cab1b66f4da141efffb7277eac3b8c02c2e70b3f6122cd795bc58875f6b3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "impuls.migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/msrc-login\\/profile-flyout\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "cca497a6910cfb039bc4cbb28e4712b07c1bd8d89b09b075b48ee12cfc790c0f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "impuls.migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/msrc-login\\/button\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "bd0940c814b6bf73c2b1aa5d5e1a9bb2f77567086dd095cfe5799d4f190ac2df"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/9879\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "14cc96c32b06c8dffd82342a51d0e32d10fc2123f28a5ec0564f20a4f5d048fe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/8758\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "b3d0b97a55db778e7415d11286d0cf4c2ce05dafd30b9b50af4fbac3c4f10f2a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/2630\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "fe0f07fb4436917444e3d094c1c6fb9d42f624239eeb5195de46cf05f7a3d6e1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/1093\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "a5c4a7fc3a6c713c4fc41121c0676da88c16ae17fb106af1d1cefce00ab2fe84"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/7167\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "e4ed4ddc968810507f73e74ff848a047c778c6c986203b2d9078d9c3adf14cd3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/5772\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "f85fb7e5b80b0e8c3852b710e29a0e0346502c098519be691a7fba12a695e107"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/4237\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "ab6d20b4dd57cce2d568746d45bf7001245c08b37205469df4b590096060b39b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "impuls.migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/msrc-privacy\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "60039625e4df70a120c47442e08bbef027632e94670a7a35be4d679a1f747faa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "impuls.migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/authenticator\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "f0eb1dad239e427998edae51209a3f0468dc403233adb166075b68fdd5cfa9be"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "impuls.migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/8316\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "98ea09fab3ef4e055773010ba709592e03b3889a6045e77831df77a95f931d19"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "impuls.migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/msrc\\/20230516141353\\/widget-loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "77ecddde36e9304f6eb61ea6c6318e42bcdfca824292e7cc742717b7da5e5e17"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "impuls.migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/widgets\\/product_fragments_json",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mcap-lb04.gcp"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "web-api.migros.ch",
+                    "resolved": "mcap-lb04.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "c440451646d070ad5f123a4862ad5ffb3a6199c5823aec043d1e20c2897ae7e8",
+                "fc350d4dae4098d9e03a657c0d497815a3e347548a68895f6fdfd79ac723b32b",
+                "13822e8654c17ca42387817ed2568152893c123766796305f24abb2592fec93f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "famigros.migros.ch",
+                "filialen.migros.ch",
+                "migusto.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/ch\\.migros\\/static\\/fonts\\/helvetica-now\\/HelveticaNowDisplayW05-Blk\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "30e7efa7238c9e1d33f9c3b14c401254b542add80676bda2fdf415feef697931"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "filialen.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/\\.rest\\/fragments\\/v1\\/resources\\/js\\/header-footer-v2\\.min\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "migros-ch.service"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "shared.migros.ch",
+                    "resolved": "migros-ch.service.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "filialen.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/widgets\\/stores",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mcap-lb04.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "web-api.migros.ch",
+                    "resolved": "mcap-lb04.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "d598ea1ac40ace148bbe49394a7d84328fc957117ab1c9524582317ac8c324d6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "filialen.migros.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/reactions\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mcap-lb04.gcp"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "web-api.migros.ch",
+                    "resolved": "mcap-lb04.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "migusto.migros.ch",
+                "www.melectronics.ch",
+                "www.micasa.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/reactions\\/",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mcap-lb04.gcp"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "web-api.migros.ch",
+                    "resolved": "mcap-lb04.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "a49ad441be06a626c2611b2d0c6fd6f75ca7f669df113bbb9852f74dd827866f",
+                "24d1985456d723815409c76ff1b7c3c5cc27d6b21331ab755749442ac1857017",
+                "2557b649e0d74beaea0a9e2ae44c90485a37d12bfae3b0cbd622c989ca6c4077"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "migros.ch",
+                "migusto.migros.ch",
+                "www.melectronics.ch",
+                "www.micasa.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/ch\\.migros\\/static\\/fonts\\/helveticaneue-bold\\/helveticaneue-bold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "038565e03a3042347b6b606495f5915585dea56b3892f4b28624bd13c393ef59"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doitgarden.ch",
+                "www.melectronics.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/ch\\.migros\\/static\\/fonts\\/helveticaneue-condensed-bold\\/helveticaneue-condensed-bold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "b7e2050b6def06b23f5d87d4939fbfa3aad5ecbaeb7c1f74822df1530aa75f62"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doitgarden.ch",
+                "www.melectronics.ch",
+                "www.micasa.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/ch\\.migros\\/static\\/fonts\\/helveticaneue-roman\\/helveticaneue-roman\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "86034557e5b5abcded6efbf3bc28f256c448163e3d7980b025b467b241b64ec6"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doitgarden.ch",
+                "www.melectronics.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/ch\\.migros\\/static\\/fonts\\/helveticaneue-condensed\\/helveticaneue-condensed\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cdn.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.migros.ch",
+                    "resolved": "prod.cdn.gcp.migros.cloud"
+                }
+            ],
+            "responseHashes": [
+                "0bf2db9beea6665291bb674c4958ecdce4245209ceaedd57eb2fffca968de4f2"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doitgarden.ch",
+                "www.melectronics.ch"
+            ]
+        },
+        {
+            "rule": "migros\\.cloud\\/widget\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 1,
+            "subdomains": [
+                "onlineberatung-widget.service"
+            ],
+            "apis": {
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 4,
+                "window.innerWidth": 4,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.language": 3
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "0162b863821a49f9c3a00c682c34ec78c1363d0c665f52f1e67ebdf9bde5b562"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "onlineberatung-throttled": {
+                    "ttl": null,
+                    "length": 5,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 0.25
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "doitgarden.ch",
+                "www.melectronics.ch",
+                "www.micasa.ch",
+                "www.sportx.ch"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000749,
+    "topInitiators": [
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.47540983606557374
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.3770491803278688
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.13114754098360656
+        },
+        {
+            "domain": "maps.googleapis.com",
+            "prevalence": 0.01639344262295082
+        }
+    ],
+    "types": {
+        "Font": 24,
+        "XHR": 12,
+        "Fetch": 21,
+        "Ping": 9,
+        "Image": 8,
+        "Stylesheet": 3,
+        "Script": 64,
+        "Preflight": 4
+    },
+    "nameservers": [
+        "ns3-04.azure-dns.org",
+        "ns2-04.azure-dns.net",
+        "ns4-04.azure-dns.info",
+        "ns1-04.azure-dns.com"
+    ]
+}

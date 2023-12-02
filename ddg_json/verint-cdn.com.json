@@ -1,0 +1,203 @@
+{
+    "domain": "verint-cdn.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "ucm-us"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "verint-cdn\\.com\\/files\\/sites\\/brooksbrothers\\/live\\/sdk\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ucm-us"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "470bc8aba4204d0791c574d2f2bb6627ff8ed11df9ad58d187dfb505de5a2688"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "uws_visitor": {
+                    "ttl": 604818,
+                    "length": 106,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "uws_session": {
+                    "ttl": 1818,
+                    "length": 95,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "uws_rate_comparators": {
+                    "ttl": 1818,
+                    "length": 58,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brooksbrothers.com",
+                "www.brooksbrothers.com"
+            ]
+        },
+        {
+            "rule": "verint-cdn\\.com\\/files\\/sites\\/brooksbrothers\\/live\\/config\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ucm-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4633f20dc0b96f36552f1f95529096011318be6c84428fdbc8bc3beb32aa917e"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brooksbrothers.com",
+                "www.brooksbrothers.com"
+            ]
+        },
+        {
+            "rule": "verint-cdn\\.com\\/files\\/sites\\/brooksbrothers\\/live\\/customcode\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ucm-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "68aa1a14537df0eff2b2e8a9df3d02c60473d776249726ed3fb7ed5822dc4836"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brooksbrothers.com",
+                "www.brooksbrothers.com"
+            ]
+        },
+        {
+            "rule": "verint-cdn\\.com\\/files\\/modules\\/unified-websdk\\/1\\.9\\.0\\/visitor\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "ucm-us"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "window.devicePixelRatio": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9f373ea6ef1958ada2aa3fb58d79ff1f80e7c632a3bbc771890bb77f35a1c7ea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brooksbrothers.com",
+                "www.brooksbrothers.com"
+            ]
+        },
+        {
+            "rule": "verint-cdn\\.com\\/files\\/modules\\/unified-websdk\\/1\\.9\\.0\\/rules-engine\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ucm-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "83144ded618de66fdfe9c9ba96d5567263107c3877c07a5d243c081d2e089811"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brooksbrothers.com",
+                "www.brooksbrothers.com"
+            ]
+        },
+        {
+            "rule": "verint-cdn\\.com\\/files\\/sites\\/brooksbrothers\\/live\\/custom-style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ucm-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0b87f36581960725e538f9a359dfff8c04ff475c00118cf0bbdfdcb597cbb247"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brooksbrothers.com",
+                "www.brooksbrothers.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9
+        },
+        {
+            "domain": "quantummetric.com",
+            "prevalence": 0.1
+        }
+    ],
+    "types": {
+        "Script": 8,
+        "Fetch": 2,
+        "Stylesheet": 2
+    },
+    "nameservers": [
+        "ns-528.awsdns-02.net",
+        "ns-1246.awsdns-27.org",
+        "ns-1879.awsdns-42.co.uk",
+        "ns-150.awsdns-18.com"
+    ]
+}

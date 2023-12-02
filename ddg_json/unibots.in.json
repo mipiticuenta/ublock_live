@@ -1,0 +1,445 @@
+{
+    "domain": "unibots.in",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00032,
+    "sites": 47,
+    "subdomains": [
+        "cdn",
+        "newsbot",
+        "cpm",
+        "socket",
+        "cricket",
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "unibots\\.in\\/headerbidding\\/common\\/hb\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 4,
+                "Navigator.prototype.userAgent": 4,
+                "Screen.prototype.availWidth": 1
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "768cf82d3a0aa43f2e4142877b2655a9a2f4e587096e1bfbb4135f3f6afa0650"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "biggbossteluguvote.in",
+                "indianrail.gov.in",
+                "m.ragalahari.com",
+                "www.anandabazar.com",
+                "www.pravda.rs",
+                "www.telegraphindia.com"
+            ]
+        },
+        {
+            "rule": "unibots\\.in\\/headerbidding\\/common\\/adScript\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 3,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "NavigatorUAData.prototype.brands": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.devicePixelRatio": 2,
+                "Screen.prototype.availHeight": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "window.outerWidth": 2,
+                "window.outerHeight": 2,
+                "Screen.prototype.availWidth": 2,
+                "window.screenLeft": 2,
+                "window.screenTop": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.connection": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.languages": 2,
+                "window.name": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6caf4920eeb817f57e32ab8d2f5851ea0c3613d4ed9a867a8128e5b5fc075295"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_ubpbjs_userid_consent_data": {
+                    "ttl": 2592006,
+                    "length": 16,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "_pubcid": {
+                    "ttl": 31536011,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "biggbossteluguvote.in",
+                "m.ragalahari.com"
+            ]
+        },
+        {
+            "rule": "unibots\\.in\\/get_videos\\/ubpvideos",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "newsbot"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "df6bd189f986eb5bfa8c59969a595790827b26eb8a9eccdaccdb836e0512853c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "biggbossteluguvote.in",
+                "hindi.popxo.com",
+                "lifestyle.sindonews.com",
+                "pakobserver.net",
+                "telanganatoday.com",
+                "www.popxo.com",
+                "www.scrolldroll.com",
+                "www.techradar247.com"
+            ]
+        },
+        {
+            "rule": "unibots\\.in\\/hb",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cpm"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "d84f56aa5201721a24022362407993d3cdf03f4783e74df0326adc1e1bfeea55",
+                "cd374e64830ba3917e32c6948fd6823cdbbc2ce77b7e5f634fbc7fbaa8b8b693",
+                "8f5d9e95c6896602739977d9755b8f2c7f2b9d6297ccc4724a6cb46b5d9b1f34",
+                "bc30604103becb945afcc40be6fe7a9296987667c09940c280c685b80cd4b1bf",
+                "ef84ccc10eb723bfb6730146232d050e370682e772e41c20aaed4978c7afeb84"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cartermatt.com",
+                "panlasangpinoy.com",
+                "randomwordgenerator.com",
+                "statisticsbyjim.com",
+                "www.automateexcel.com",
+                "www.rentboard.ca"
+            ]
+        },
+        {
+            "rule": "unibots\\.in\\/website\\/playerConfig",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "socket"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "8c11d86cdb11c12e8e11db437fc9028bb8feb50a1b2cf8a32952a75a0aa045bf",
+                "6c41cd2d99b0504e7ca9f395d4d82bca6d373ebf1831a71458306887fd5c1733",
+                "7339ace8980113cd81a8d9a93bfaf31f7c46a7465b879bd3c8b4a227d302e522",
+                "cc818d2bc42e3cffc02cf901f3e5ea435f51c7c641601265e2f0fb67a6ae35f0",
+                "cb365d2f5a5179a18760bce4660c0d321bd3d695cdc3309e2f93041d75a4ff63",
+                "f5c63bf17d13905751e04e87e4eb89dcfd5eb27beac0bb3e5f66ede3effc8c5a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00003406017752164524
+            },
+            "exampleSites": [
+                "okezone.com",
+                "lifestyle.okezone.com",
+                "m.brilio.net",
+                "mzamin.com",
+                "theislamicinformation.com",
+                "vndoc.com",
+                "www.brilio.net",
+                "www.news18.com"
+            ]
+        },
+        {
+            "rule": "unibots\\.in\\/socket\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "socket"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "okezone.com",
+                "lifestyle.okezone.com",
+                "m.brilio.net",
+                "mzamin.com",
+                "vndoc.com",
+                "www.brilio.net"
+            ]
+        },
+        {
+            "rule": "unibots\\.in\\/genericcube\\/common\\/script\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "000d8950448207e7805a6719271a6ee6356d351b000b9a0c3fc933111c58f2f0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coffeemanga.io",
+                "mangaschan.net",
+                "tcb-scans.com",
+                "ww3.readkingdom.com",
+                "www.mangapill.com",
+                "www.primewire.tf"
+            ]
+        },
+        {
+            "rule": "unibots\\.in\\/genericcube\\/common\\/images\\/close_new\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "105379acfe350d0e8f107a0a12f6b8e69529bc91503fd2d9868d35abcff69230"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coffeemanga.io",
+                "mangaschan.net",
+                "tcb-scans.com",
+                "ww3.readkingdom.com",
+                "www.mangapill.com"
+            ]
+        },
+        {
+            "rule": "unibots\\.in\\/get_score",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cricket"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5e847092eda2a5f96bf77dbe71bde8cb4f544d32460c239e781368387bc5d472"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailypakistan.com.pk",
+                "en.dailypakistan.com.pk"
+            ]
+        },
+        {
+            "rule": "unibots\\.in\\/block",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "d7c78666c83d2c14da54f692c12f1d73092e0c6d82bd7159e56852619078ba61",
+                "7079c4a270a27cec5738869ff1c650bcb431e7427aa282e507005fbdd4102b4e"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000020436106512987146,
+                "_ply_first_visit_page": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "popxo.com",
+                "love.allwomenstalk.com",
+                "m.ragalahari.com",
+                "mzamin.com",
+                "pakobserver.net",
+                "telanganatoday.com",
+                "theislamicinformation.com",
+                "www.popxo.com",
+                "www.sakshi.com",
+                "www.scrolldroll.com",
+                "www.successcds.net"
+            ]
+        },
+        {
+            "rule": "unibots\\.in\\/get_videos\\/irctc",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "newsbot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "27634546f4d8c118a9ec43b131bae948c9e7bdfaf98b5e54b17d4bfc3f12ac37"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indianrail.gov.in",
+                "www.irctc.co.in"
+            ]
+        },
+        {
+            "rule": "unibots\\.in\\/get_videos\\/brilio",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "newsbot"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a0673ab1dc89a5a4243c215e9f58a2c83d67978d340a7ca369c50727d46f1773"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brilio.net",
+                "www.brilio.net"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.32038834951456313
+        },
+        {
+            "domain": "unibotscdn.com",
+            "prevalence": 0.30097087378640774
+        },
+        {
+            "domain": "m2.ai",
+            "prevalence": 0.08737864077669903
+        },
+        {
+            "domain": "pubguru.net",
+            "prevalence": 0.06796116504854369
+        },
+        {
+            "domain": "socket.io",
+            "prevalence": 0.05825242718446602
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.05825242718446602
+        },
+        {
+            "domain": "bidgear.com",
+            "prevalence": 0.04854368932038835
+        },
+        {
+            "domain": "pubfuture-ad.com",
+            "prevalence": 0.02912621359223301
+        },
+        {
+            "domain": "adtelligent.com",
+            "prevalence": 0.019417475728155338
+        },
+        {
+            "domain": "corover.ai",
+            "prevalence": 0.009708737864077669
+        }
+    ],
+    "types": {
+        "Script": 14,
+        "Fetch": 25,
+        "XHR": 14,
+        "WebSocket": 6,
+        "Image": 5
+    },
+    "nameservers": [
+        "ns3.linode.com",
+        "ns4.linode.com",
+        "ns5.linode.com",
+        "ns2.linode.com",
+        "ns1.linode.com"
+    ]
+}

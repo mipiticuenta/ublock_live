@@ -1,0 +1,114 @@
+{
+    "domain": "fcagroup.com",
+    "owner": {
+        "name": "Fiat Chrysler Automobiles",
+        "displayName": "Fiat Chrysler Automobiles"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "cookielaw.emea"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "fcagroup\\.com\\/CookieLawProduct\\/resources\\/generatecss",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cookielaw.emea"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fiat.de",
+                "www.media.stellantis.com",
+                "www.stellantis.com"
+            ]
+        },
+        {
+            "rule": "fcagroup\\.com\\/CookieLawProduct\\/resources\\/generatejs",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cookielaw.emea"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "f4cb0c6a7b51fb21b0f1cbd68f3ac034666cafa6e9294ead90ab8bba9b3ae353",
+                "9b17ec259255cf288f3604d3bea2e6321c380b6def837bb9625bd0d89890ef2d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fiat.de",
+                "www.media.stellantis.com",
+                "www.stellantis.com"
+            ]
+        },
+        {
+            "rule": "fcagroup\\.com\\/CookieLawProduct\\/resources\\/generatehtml",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cookielaw.emea"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "f82ae7c6ca8caf84bc22f77b3c0c4103b4d6b8e40f9f3edc841578b9812aa470",
+                "e46793e067e9e7b97ea1b8982db6a877c44711b46a6256ae811a09be576c8077"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fiat.de",
+                "www.media.stellantis.com",
+                "www.stellantis.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Stylesheet": 3,
+        "Script": 3,
+        "Document": 3
+    },
+    "nameservers": [
+        "dns1.p09.nsone.net",
+        "dns2.p09.nsone.net",
+        "dns3.p09.nsone.net",
+        "dns4.p09.nsone.net"
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "domain": "afi-b.com",
+    "owner": {
+        "name": "For it Inc.",
+        "displayName": "For it"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000954,
+    "sites": 14,
+    "subdomains": [
+        "t"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "afi-b\\.com\\/jslib\\/vref\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cf86a11e4b68fc63cfe81913440a80fe071739339ce20d8ac4d992e9224a4675"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mamagirl.jp",
+                "otokoro.com"
+            ]
+        },
+        {
+            "rule": "afi-b\\.com\\/jslib\\/lpcv\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {
+                "Document.cookie getter": 9,
+                "window.localStorage": 8
+            },
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "7ba9b1f38ed9acc3f0f1be2ab1bd5c3d777fd1941b8cd038c84f80bf8aa45116",
+                "26eb3d965bdcb6b0c4e12d9fa4b963f1b2bb4438117f2eee75a0617da71b9c7e",
+                "6b3fac6b4058816aa3b44a0ae6278515bb55e25de2d960e24528238c9b1313b5",
+                "03e2d48e97ec17f2330191432bea22d76f8dab14796f052fb4ba882cda8ecb2a",
+                "63c122b7f27388225e8a403693a6a1b0418a32d6245d0801bcc95d22607bb296",
+                "0e7ff1404a35e3c907021485e07fa1d16ee59e260b761928eed680c5bc336791",
+                "2c2bdadc6cb80d5649752d5793baf6bfaaf59c60d9083b970dc30564edeb0320",
+                "9bd923e01198c685a7c94254abeb10e27860f0c2cfa2a031c6be22a5cccaa860"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "agaroot.jp",
+                "www.beauty-park.jp",
+                "www.donki.com",
+                "www.dospara.co.jp",
+                "www.ekiten.jp",
+                "www.his-j.com",
+                "www.kusurinomadoguchi.com",
+                "www.s-b-c.net",
+                "www.sejuku.net"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.3888888888888889
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "yjtag.jp",
+            "prevalence": 0.2777777777777778
+        }
+    ],
+    "types": {
+        "Script": 11
+    },
+    "nameservers": [
+        "ns-1062.awsdns-04.org",
+        "ns-1922.awsdns-48.co.uk",
+        "ns-203.awsdns-25.com",
+        "ns-702.awsdns-23.net"
+    ]
+}

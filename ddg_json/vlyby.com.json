@@ -1,0 +1,469 @@
+{
+    "domain": "vlyby.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000102,
+    "sites": 15,
+    "subdomains": [
+        "cdn",
+        "pixel",
+        "v2track",
+        "v2analytics"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "vlyby\\.com\\/qad\\/qad-outer2\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 15,
+                "Document.cookie getter": 15,
+                "Navigator.prototype.appName": 15,
+                "Date.prototype.getTime": 15,
+                "Navigator.prototype.language": 14,
+                "Navigator.prototype.vendor": 3
+            },
+            "sites": 15,
+            "prevalence": 0.000102,
+            "cnames": [],
+            "responseHashes": [
+                "e2c38233524f4f0179fb9cb1946c9db323fa223f4713e517b1ab4002811dd1c2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fhm.nl",
+                "loesoe.nl",
+                "mixed.de",
+                "nl.motorsport.com",
+                "www.autoblog.nl",
+                "www.dogforum.de",
+                "www.fachanwalt.de",
+                "www.falk.de",
+                "www.filmtv.it",
+                "www.finanznachrichten.de",
+                "www.mein-schoener-garten.de",
+                "www.openpr.de",
+                "www.playboy.de",
+                "www.sportsillustrated.de",
+                "www.verkkouutiset.fi"
+            ]
+        },
+        {
+            "rule": "vlyby\\.com\\/pixel\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pixel"
+            ],
+            "apis": {},
+            "sites": 15,
+            "prevalence": 0.000102,
+            "cnames": [],
+            "responseHashes": [
+                "e9d90159a340e215a548bfe787ea3963b14260bf891a777014bb8104d0358ca7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fhm.nl",
+                "loesoe.nl",
+                "mixed.de",
+                "nl.motorsport.com",
+                "www.autoblog.nl",
+                "www.dogforum.de",
+                "www.fachanwalt.de",
+                "www.falk.de",
+                "www.filmtv.it",
+                "www.finanznachrichten.de",
+                "www.mein-schoener-garten.de",
+                "www.openpr.de",
+                "www.playboy.de",
+                "www.sportsillustrated.de",
+                "www.verkkouutiset.fi"
+            ]
+        },
+        {
+            "rule": "vlyby\\.com\\/qad\\/prebid\\.js",
+            "cookies": 0.0000817,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "NavigatorUAData.prototype.brands": 15,
+                "NavigatorUAData.prototype.platform": 15,
+                "window.sessionStorage": 15,
+                "Navigator.prototype.appName": 15,
+                "Date.prototype.getTime": 15,
+                "Document.cookie getter": 13,
+                "window.localStorage": 13,
+                "Navigator.prototype.cookieEnabled": 13,
+                "Navigator.prototype.userAgent": 12,
+                "window.innerWidth": 11,
+                "window.innerHeight": 11,
+                "Navigator.prototype.doNotTrack": 11,
+                "Navigator.prototype.language": 11,
+                "Document.cookie setter": 12,
+                "PerformanceTiming.prototype.navigationStart": 1,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 3,
+                "Navigator.prototype.connection": 9
+            },
+            "sites": 15,
+            "prevalence": 0.000102,
+            "cnames": [],
+            "responseHashes": [
+                "05941d0d156372c37bf028061a61a3c269800d255a23ced402a387a41dabd9b5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cto_bundle": {
+                    "ttl": 33696010,
+                    "length": 280,
+                    "prevalence": 0.00007493239054761953,
+                    "uniqueness": 1
+                },
+                "cto_bidid": {
+                    "ttl": 33696010,
+                    "length": 204,
+                    "prevalence": 0.00007493239054761953,
+                    "uniqueness": 1
+                },
+                "panoramaId_expiry": {
+                    "ttl": 86413,
+                    "length": 13,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 1
+                },
+                "_cc_id": {
+                    "ttl": 23328014,
+                    "length": 32,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 1
+                },
+                "panoramaId": {
+                    "ttl": 86413,
+                    "length": 64,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 1
+                },
+                "sharedid": {
+                    "ttl": 2419217,
+                    "length": 36,
+                    "prevalence": 0.00006812035504329048,
+                    "uniqueness": 1
+                },
+                "sharedid_cst": {
+                    "ttl": 2419217,
+                    "length": 16,
+                    "prevalence": 0.00006812035504329048,
+                    "uniqueness": 0.5
+                },
+                "qpbjs-unifiedid": {
+                    "ttl": 5184024,
+                    "length": 150,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                },
+                "qpbjs-unifiedid_cst": {
+                    "ttl": 5184024,
+                    "length": 16,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 0.3333333333333333
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fhm.nl",
+                "loesoe.nl",
+                "mixed.de",
+                "nl.motorsport.com",
+                "www.autoblog.nl",
+                "www.dogforum.de",
+                "www.fachanwalt.de",
+                "www.falk.de",
+                "www.filmtv.it",
+                "www.finanznachrichten.de",
+                "www.mein-schoener-garten.de",
+                "www.openpr.de",
+                "www.playboy.de",
+                "www.sportsillustrated.de",
+                "www.verkkouutiset.fi"
+            ]
+        },
+        {
+            "rule": "vlyby\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "v2track"
+            ],
+            "apis": {},
+            "sites": 15,
+            "prevalence": 0.000102,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00005449628403463239
+            },
+            "exampleSites": [
+                "fhm.nl",
+                "loesoe.nl",
+                "mixed.de",
+                "nl.motorsport.com",
+                "www.autoblog.nl",
+                "www.dogforum.de",
+                "www.fachanwalt.de",
+                "www.falk.de",
+                "www.filmtv.it",
+                "www.finanznachrichten.de",
+                "www.mein-schoener-garten.de",
+                "www.openpr.de",
+                "www.playboy.de",
+                "www.sportsillustrated.de",
+                "www.verkkouutiset.fi"
+            ]
+        },
+        {
+            "rule": "vlyby\\.com\\/qad\\/qimad-full2\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 7,
+                "Navigator.prototype.maxTouchPoints": 7,
+                "Navigator.prototype.languages": 7,
+                "HTMLMediaElement.prototype.canPlayType": 7,
+                "MediaSource.isTypeSupported": 7,
+                "Document.cookie getter": 7,
+                "Event.prototype.timeStamp": 6,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "78bf467871855f1802e0bc56ef735c773d8b356ab7b3bff8f3d743750a1bd452"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mixed.de",
+                "nl.motorsport.com",
+                "www.dogforum.de",
+                "www.fachanwalt.de",
+                "www.falk.de",
+                "www.filmtv.it",
+                "www.finanznachrichten.de",
+                "www.mein-schoener-garten.de"
+            ]
+        },
+        {
+            "rule": "vlyby\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "v2analytics"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000681,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mixed.de",
+                "www.fachanwalt.de",
+                "www.falk.de",
+                "www.filmtv.it",
+                "www.finanznachrichten.de",
+                "www.mein-schoener-garten.de",
+                "www.openpr.de",
+                "www.playboy.de",
+                "www.sportsillustrated.de",
+                "www.verkkouutiset.fi"
+            ]
+        },
+        {
+            "rule": "vlyby\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "v2analytics"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000681,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mixed.de",
+                "www.fachanwalt.de",
+                "www.falk.de",
+                "www.filmtv.it",
+                "www.finanznachrichten.de",
+                "www.mein-schoener-garten.de",
+                "www.openpr.de",
+                "www.playboy.de",
+                "www.sportsillustrated.de",
+                "www.verkkouutiset.fi"
+            ]
+        },
+        {
+            "rule": "vlyby\\.com\\/qad\\/qimad-full2\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "14859e1be6cc3562a3b7c06b3cf4204be1b55ce5319ed5ee49a0ef9d8793d6bc"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mixed.de",
+                "nl.motorsport.com",
+                "www.fachanwalt.de",
+                "www.falk.de",
+                "www.filmtv.it",
+                "www.finanznachrichten.de",
+                "www.mein-schoener-garten.de"
+            ]
+        },
+        {
+            "rule": "vlyby\\.com\\/qad\\/white\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "63d27fe9dbf097115f7a41ab8cec0514c8252d968c72a00c3b89a431c7c1f501"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mixed.de",
+                "nl.motorsport.com",
+                "www.fachanwalt.de",
+                "www.falk.de",
+                "www.filmtv.it",
+                "www.finanznachrichten.de"
+            ]
+        },
+        {
+            "rule": "vlyby\\.com\\/qad\\/white\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mixed.de",
+                "nl.motorsport.com",
+                "www.fachanwalt.de",
+                "www.falk.de",
+                "www.filmtv.it",
+                "www.finanznachrichten.de"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000817,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7126436781609196
+        },
+        {
+            "domain": "dspx.tv",
+            "prevalence": 0.09195402298850575
+        },
+        {
+            "domain": "mmcdn.nl",
+            "prevalence": 0.04597701149425287
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.04597701149425287
+        },
+        {
+            "domain": "consentmanager.net",
+            "prevalence": 0.022988505747126436
+        },
+        {
+            "domain": "subvid.ai",
+            "prevalence": 0.022988505747126436
+        },
+        {
+            "domain": "quantcast.com",
+            "prevalence": 0.022988505747126436
+        },
+        {
+            "domain": "privacy-mgmt.com",
+            "prevalence": 0.022988505747126436
+        },
+        {
+            "domain": "confiant-integrations.net",
+            "prevalence": 0.011494252873563218
+        }
+    ],
+    "types": {
+        "Script": 38,
+        "XHR": 15,
+        "Image": 21,
+        "Preflight": 10,
+        "Fetch": 10,
+        "Stylesheet": 7,
+        "Media": 6
+    },
+    "nameservers": [
+        "ns.udag.net",
+        "ns.udag.org",
+        "ns.udag.de"
+    ]
+}

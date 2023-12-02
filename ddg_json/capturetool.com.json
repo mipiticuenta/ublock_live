@@ -1,0 +1,119 @@
+{
+    "domain": "capturetool.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "capturetool\\.com\\/real_css\\/capturestyle\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "cd270ece942e517b40c29574c62900024b77c25c06d85f6adbb7fc4d1f1e0ac5"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dpstampede.com",
+                "www.pigeonforgetnguide.com",
+                "www.visitmysmokies.com"
+            ]
+        },
+        {
+            "rule": "capturetool\\.com\\/api\\/visitor",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dpstampede.com",
+                "www.pigeonforgetnguide.com",
+                "www.visitmysmokies.com"
+            ]
+        },
+        {
+            "rule": "capturetool\\.com\\/data\\/I5jACUHVJO\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c9571ea9c801b16c58d86841eddd6d668e55c40111731f4a3d8f26154f1e48eb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "barChoosRandom": {
+                    "ttl": 86403,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "siteElementsArrray": {
+                    "ttl": 86403,
+                    "length": 10,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "guestVisitor": {
+                    "ttl": 86403,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "visitmysmokies.com",
+                "www.visitmysmokies.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000341,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Stylesheet": 3,
+        "Fetch": 3,
+        "Script": 2
+    },
+    "nameservers": [
+        "lady.ns.cloudflare.com",
+        "dan.ns.cloudflare.com"
+    ]
+}

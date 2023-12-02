@@ -1,0 +1,546 @@
+{
+    "domain": "admatrix.jp",
+    "owner": {
+        "name": "fullspeed",
+        "displayName": "fullspeed"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000123,
+    "sites": 18,
+    "subdomains": [
+        "lib-3pas",
+        "acq-3pas",
+        "sync-tapi",
+        "ad.poly"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "admatrix\\.jp\\/3pas\\/js\\/AdMatrixAnalyze\\.min\\.js",
+            "cookies": 0.0000613,
+            "fingerprinting": 1,
+            "subdomains": [
+                "lib-3pas"
+            ],
+            "apis": {
+                "Document.cookie getter": 9,
+                "Date.prototype.getTime": 9,
+                "Document.cookie setter": 9,
+                "Navigator.prototype.appVersion": 7
+            },
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "84c2590f8087a90cfa127a3b0c130b7e3ec77dece5c7f48a590370f75237a5e2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_fsefo_user_id": {
+                    "ttl": 2592006,
+                    "length": 8,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unity.com",
+                "medical.nikkeibp.co.jp",
+                "share.timescar.jp",
+                "www.donki.com",
+                "www.fastly.com",
+                "www.jcb.co.jp",
+                "www.jpx.co.jp",
+                "www.kagoya.jp",
+                "www.pc-koubou.jp"
+            ]
+        },
+        {
+            "rule": "admatrix\\.jp\\/if\\/5\\/01\\/6515cfd6158c424ef3abf91638b225b5\\.fs",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "acq-3pas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c4f418c85cb85179fb1cfa8d4d4040b90510b24e99f0906916e88d3f82592db7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_fsefo_user_id": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "unity.com",
+                "assetstore.unity.com"
+            ]
+        },
+        {
+            "rule": "admatrix\\.jp\\/beacon\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "acq-3pas"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "c4f418c85cb85179fb1cfa8d4d4040b90510b24e99f0906916e88d3f82592db7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unity.com",
+                "help.ivanti.com",
+                "medical.nikkeibp.co.jp",
+                "share.timescar.jp",
+                "www.donki.com",
+                "www.fastly.com",
+                "www.ivanti.com",
+                "www.jcb.co.jp",
+                "www.jpx.co.jp",
+                "www.kagoya.jp",
+                "www.pc-koubou.jp"
+            ]
+        },
+        {
+            "rule": "admatrix\\.jp\\/data\\/sync\\.jsp",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sync-tapi"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boxil.jp",
+                "it-trend.jp",
+                "teratail.com"
+            ]
+        },
+        {
+            "rule": "admatrix\\.jp\\/cv\\/7\\/01\\/30fe569b603299756941267b0c0b000e\\.fs",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "acq-3pas"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "c4f418c85cb85179fb1cfa8d4d4040b90510b24e99f0906916e88d3f82592db7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ivanti.com",
+                "help.ivanti.com",
+                "www.ivanti.com"
+            ]
+        },
+        {
+            "rule": "admatrix\\.jp\\/if\\/5\\/01\\/79702b38bd38064e6941267b0c0b000e\\.fs",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "acq-3pas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nikkeibp.co.jp",
+                "medical.nikkeibp.co.jp"
+            ]
+        },
+        {
+            "rule": "admatrix\\.jp\\/if\\/5\\/01\\/c3bddebfc98b76a9edb901d67a9b4752\\.fs",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "acq-3pas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c4f418c85cb85179fb1cfa8d4d4040b90510b24e99f0906916e88d3f82592db7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_fsefo_user_id": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "timescar.jp",
+                "share.timescar.jp"
+            ]
+        },
+        {
+            "rule": "admatrix\\.jp\\/api\\/polyAdsLoader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ad.poly"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "8b9dd3dc363b46550fe69222aa1f4d05c2db893952cb77acc793d77b9ca1c095",
+                "561c673712e4d0286d823cdb2fe4bc7901dd9a846e44ce6652a406435b86f9c8",
+                "1a833c16579bdc6b91f1790b539b1fd0f02831f86a4f8d86aebe69b7b5a48a17"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "4gamer.net",
+                "www.4gamer.net",
+                "www.ehonnavi.net",
+                "www.sbbit.jp"
+            ]
+        },
+        {
+            "rule": "admatrix\\.jp\\/polyAd\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ad.poly"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "40cc7e40e9c86a575dfb24f698dcc6d8bbc00ac5054c5e6a9c96dd62ca715a85"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "4gamer.net",
+                "www.ehonnavi.net",
+                "www.sbbit.jp"
+            ]
+        },
+        {
+            "rule": "admatrix\\.jp\\/api\\/ad\\/request",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ad.poly"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "512ba744586a8c36e177ff2c73bbb59c42b9c1d2fbef105301e93ad43912dc42",
+                "49f9ce0a4ad5df63f4ab68c67ea3e854961a0c7b59d9c5c430ee14bcb5a9a159",
+                "d29819ac8712aba268817e46a929422d53c18df41d9f7c367adf27a0431cfe4f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "4gamer.net",
+                "www.4gamer.net",
+                "www.ehonnavi.net",
+                "www.sbbit.jp"
+            ]
+        },
+        {
+            "rule": "admatrix\\.jp\\/api\\/measure\\/cookie\\/write\\/web\\/uid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ad.poly"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "4gamer.net",
+                "www.4gamer.net",
+                "www.ehonnavi.net",
+                "www.sbbit.jp"
+            ]
+        },
+        {
+            "rule": "admatrix\\.jp\\/api\\/measure\\/ad\\/rendered",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ad.poly"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "4gamer.net",
+                "www.4gamer.net",
+                "www.ehonnavi.net",
+                "www.sbbit.jp"
+            ]
+        },
+        {
+            "rule": "admatrix\\.jp\\/api\\/measure\\/imp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ad.poly"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "f8fa2d7a848db24c1002f72554695158b9ec84e60a0c6c46fd688bec04cbafec"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "iuid": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "4gamer.net",
+                "www.4gamer.net",
+                "www.ehonnavi.net",
+                "www.sbbit.jp"
+            ]
+        },
+        {
+            "rule": "admatrix\\.jp\\/api\\/measure\\/position",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ad.poly"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "4gamer.net",
+                "www.4gamer.net",
+                "www.ehonnavi.net",
+                "www.sbbit.jp"
+            ]
+        },
+        {
+            "rule": "admatrix\\.jp\\/if\\/5\\/01\\/83b0cd3058815d93d3ed0d66e5fd1948\\.fs",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "acq-3pas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c4f418c85cb85179fb1cfa8d4d4040b90510b24e99f0906916e88d3f82592db7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_fsefo_user_id": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "donki.com",
+                "www.donki.com"
+            ]
+        },
+        {
+            "rule": "admatrix\\.jp\\/if\\/5\\/01\\/6ff4a6d73aed80197e5ec99082c9e3ed\\.fs",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "acq-3pas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_fsefo_user_id": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "fastly.com",
+                "www.fastly.com"
+            ]
+        },
+        {
+            "rule": "admatrix\\.jp\\/if\\/5\\/01\\/86d637b6a6e0964cad42e97e4350a469\\.fs",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "acq-3pas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c4f418c85cb85179fb1cfa8d4d4040b90510b24e99f0906916e88d3f82592db7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jcb.co.jp",
+                "www.jcb.co.jp"
+            ]
+        },
+        {
+            "rule": "admatrix\\.jp\\/if\\/5\\/01\\/8802e11365c471b6666e856ea24ee85c\\.fs",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "acq-3pas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c4f418c85cb85179fb1cfa8d4d4040b90510b24e99f0906916e88d3f82592db7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jpx.co.jp",
+                "www.jpx.co.jp"
+            ]
+        },
+        {
+            "rule": "admatrix\\.jp\\/if\\/5\\/01\\/c47515aa0dcee053f3abf91638b225b5\\.fs",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "acq-3pas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_fsefo_user_id": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "kagoya.jp",
+                "www.kagoya.jp"
+            ]
+        },
+        {
+            "rule": "admatrix\\.jp\\/if\\/5\\/01\\/320ca2f09ac731486941267b0c0b000e\\.fs",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "acq-3pas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_fsefo_user_id": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "pc-koubou.jp",
+                "www.pc-koubou.jp"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000123,
+    "topInitiators": [
+        {
+            "domain": "polymorphicads.jp",
+            "prevalence": 0.600896860986547
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.19282511210762332
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.16143497757847533
+        },
+        {
+            "domain": "yjtag.jp",
+            "prevalence": 0.04484304932735426
+        }
+    ],
+    "types": {
+        "Script": 13,
+        "Image": 39,
+        "Stylesheet": 3,
+        "XHR": 16
+    },
+    "nameservers": [
+        "ns-1048.awsdns-03.org",
+        "ns-1785.awsdns-31.co.uk",
+        "ns-368.awsdns-46.com",
+        "ns-989.awsdns-59.net"
+    ]
+}

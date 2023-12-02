@@ -1,0 +1,77 @@
+{
+    "domain": "dgu.hr",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "geoportal"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "dgu\\.hr\\/services\\/sla\\/dof_hok_tk\\/wmts",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "geoportal"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f971a6a84746a6393bf173bae2723b6afbe810cf734c49301688bc324e31d5cb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "uredjenazemlja.hr",
+                "oss.uredjenazemlja.hr"
+            ]
+        },
+        {
+            "rule": "dgu\\.hr\\/services\\/sla\\/orthophoto_2019_2020\\/wmts",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "geoportal"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "51de7a4335ebe467b24053279e1ad32c5aa5bae26a7027bd9e394d48cc91bb4e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "uredjenazemlja.hr",
+                "oss.uredjenazemlja.hr"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "XHR": 2,
+        "Image": 2
+    },
+    "nameservers": [
+        "dns1.t-com.hr",
+        "dns.dgu.hr"
+    ]
+}

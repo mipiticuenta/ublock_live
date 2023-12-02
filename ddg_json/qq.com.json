@@ -1,0 +1,702 @@
+{
+    "domain": "qq.com",
+    "owner": {
+        "name": "Tencent Holdings Ltd.",
+        "displayName": "Tencent"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00017,
+    "sites": 25,
+    "subdomains": [
+        "res.wx",
+        "dp3",
+        "a.gdt",
+        "cdn.midasbuy.com.tegsea.tc",
+        "aegis"
+    ],
+    "cnames": [
+        {
+            "original": "cdn.midasbuy.com",
+            "resolved": "cdn.midasbuy.com.tegsea.tc.qq.com"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "qq\\.com\\/open\\/js\\/jweixin-1\\.4\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "res.wx"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.platform": 3,
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "d2157f629b7c3d9ad48ac78c65ed4a9774ae2861c35bd723d169f4308ce4fe97"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sspai.com",
+                "www.globaltimes.cn",
+                "www.tuya.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/open\\/js\\/jweixin-1\\.6\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "res.wx"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 7,
+                "Navigator.prototype.platform": 7,
+                "Date.prototype.getTime": 7
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "50288566c4635cbdeaced6d25e6a968a4a310bf655fdc49ec19f3910db6d8c9b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "Hm_lvt_866c9be12d4a814454792b1fd0fed295": 0.000006812035504329049,
+                "Hm_lpvt_866c9be12d4a814454792b1fd0fed295": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "xreal.com",
+                "us.shop.xreal.com",
+                "www.chinadaily.com.cn",
+                "www.cnblogs.com",
+                "www.cupshe.com",
+                "www.fmshobby.com",
+                "www.htvront.com",
+                "www.xreal.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/stdlog",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dp3"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "cf29e1b2087058ccb7d034620fc45bb35671afa6509fbd6459f315ddf6b82343"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hkexpress.com",
+                "www.hkexpress.com",
+                "www.indonesia.travel",
+                "www.marinabaysands.com",
+                "www.studentuniverse.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a.gdt"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "f139e4295f71dc13b09f52f38526a00e06b1f5ddcc7cbe39c3ff4f314ddb9a24"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "dy_fs_page": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "hkexpress.com",
+                "www.indonesia.travel",
+                "www.marinabaysands.com",
+                "www.studentuniverse.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/pixel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "a.gdt"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "dy_fs_page": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "hkexpress.com",
+                "www.indonesia.travel",
+                "www.marinabaysands.com",
+                "www.studentuniverse.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/js\\/x-midas\\/kEc9hjFh5DQJbz_iPEWrfFxadMVk4PbLDS-5P8jE73pfdUuDwNGKNVZjdEztcHdofAVaHXo6zRGXgLwuvsK_afAEj6w_mKyiUmq-7AesIRU~\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn.midasbuy.com.tegsea.tc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.midasbuy.com",
+                    "resolved": "cdn.midasbuy.com.tegsea.tc.qq.com"
+                }
+            ],
+            "responseHashes": [
+                "2ab08d983fd6007359e6d1ab6c80dc87b34c0d1bccf702dea67e6d20b824a872"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/oversea_web\\/static\\/js\\/loginSdk2\\.1\\.11\\.f13c44fd\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.midasbuy.com.tegsea.tc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.midasbuy.com",
+                    "resolved": "cdn.midasbuy.com.tegsea.tc.qq.com"
+                }
+            ],
+            "responseHashes": [
+                "197581bccfb0512c89737194032eb33c43a957e02f0c02b21224570b4c8dd221"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/collect\\/whitelist",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aegis"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bb221a7e60f804731d8965873f7826f750f4def4abbe5b3bf132a9ce4b5e636e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/collect\\/pv",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aegis"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/oversea_web\\/static\\/media\\/DINMITTELSCHRIFTSTD\\.ae4cacf317c4c9c6befd\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.midasbuy.com.tegsea.tc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.midasbuy.com",
+                    "resolved": "cdn.midasbuy.com.tegsea.tc.qq.com"
+                }
+            ],
+            "responseHashes": [
+                "7156a9e6a8a8dc1beb8df3f839bab8a334004bc15bddb1ceed88dfd1fabf127c"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/oversea_web\\/static\\/js\\/midas\\.runtimev1\\.5\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.midasbuy.com.tegsea.tc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.midasbuy.com",
+                    "resolved": "cdn.midasbuy.com.tegsea.tc.qq.com"
+                }
+            ],
+            "responseHashes": [
+                "2865da632e98bc7194d4063d4d52456835f7d6df0e0c84b9872d4f23b4fabd70"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/oversea_web\\/static\\/js\\/midas\\.runtimev1\\.5\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.midasbuy.com.tegsea.tc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.midasbuy.com",
+                    "resolved": "cdn.midasbuy.com.tegsea.tc.qq.com"
+                }
+            ],
+            "responseHashes": [
+                "2865da632e98bc7194d4063d4d52456835f7d6df0e0c84b9872d4f23b4fabd70"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/oversea_web\\/static\\/js\\/jsencrypt\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.midasbuy.com.tegsea.tc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.midasbuy.com",
+                    "resolved": "cdn.midasbuy.com.tegsea.tc.qq.com"
+                }
+            ],
+            "responseHashes": [
+                "8886bcae7d40f6ebbdfd2c1552af2b1adb51ef5fcf24fe60468f4e8c1a6ca556"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/oversea_web\\/static\\/js\\/axios\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.midasbuy.com.tegsea.tc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.midasbuy.com",
+                    "resolved": "cdn.midasbuy.com.tegsea.tc.qq.com"
+                }
+            ],
+            "responseHashes": [
+                "24b7fb13c441efd97f78d07ba6e6d98f8e6d24b11d340c99c3bcf26453ebbdb6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/oversea_web\\/static\\/js\\/polyfills\\.1e9d0670\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.midasbuy.com.tegsea.tc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.midasbuy.com",
+                    "resolved": "cdn.midasbuy.com.tegsea.tc.qq.com"
+                }
+            ],
+            "responseHashes": [
+                "ac8ed87726a99397583986ae44774bf72ad85f6903933fa495b3d2e8a2272579"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/oversea_web\\/static\\/js\\/default\\.66459230\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.midasbuy.com.tegsea.tc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.midasbuy.com",
+                    "resolved": "cdn.midasbuy.com.tegsea.tc.qq.com"
+                }
+            ],
+            "responseHashes": [
+                "cd177b00b6ecc55865e700c0339ccacfbe800db469270fb30806ea308d0d5620"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/oversea_web\\/static\\/js\\/jsencrypt\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.midasbuy.com.tegsea.tc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.midasbuy.com",
+                    "resolved": "cdn.midasbuy.com.tegsea.tc.qq.com"
+                }
+            ],
+            "responseHashes": [
+                "8886bcae7d40f6ebbdfd2c1552af2b1adb51ef5fcf24fe60468f4e8c1a6ca556"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/oversea_web\\/static\\/js\\/axios\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.midasbuy.com.tegsea.tc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.midasbuy.com",
+                    "resolved": "cdn.midasbuy.com.tegsea.tc.qq.com"
+                }
+            ],
+            "responseHashes": [
+                "24b7fb13c441efd97f78d07ba6e6d98f8e6d24b11d340c99c3bcf26453ebbdb6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/oversea_web\\/static\\/js\\/polyfills\\.1e9d0670\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.midasbuy.com.tegsea.tc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.midasbuy.com",
+                    "resolved": "cdn.midasbuy.com.tegsea.tc.qq.com"
+                }
+            ],
+            "responseHashes": [
+                "ac8ed87726a99397583986ae44774bf72ad85f6903933fa495b3d2e8a2272579"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/oversea_web\\/static\\/js\\/default\\.66459230\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.midasbuy.com.tegsea.tc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.midasbuy.com",
+                    "resolved": "cdn.midasbuy.com.tegsea.tc.qq.com"
+                }
+            ],
+            "responseHashes": [
+                "cd177b00b6ecc55865e700c0339ccacfbe800db469270fb30806ea308d0d5620"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/apps\\/activity\\/js\\/api\\/api\\.global\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.midasbuy.com.tegsea.tc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.midasbuy.com",
+                    "resolved": "cdn.midasbuy.com.tegsea.tc.qq.com"
+                }
+            ],
+            "responseHashes": [
+                "f961d9db1ab1867c1db2ed1fde6088cb1b97df612bc913c216ec16f5bcaa3e16"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/speed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aegis"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/oversea_web\\/static\\/font\\/DINMITTELSCHRIFTSTD\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.midasbuy.com.tegsea.tc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.midasbuy.com",
+                    "resolved": "cdn.midasbuy.com.tegsea.tc.qq.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        },
+        {
+            "rule": "qq\\.com\\/speed\\/performance",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aegis"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.midasbuy.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "storage.googleapis.com",
+            "prevalence": 0.3779527559055118
+        },
+        {
+            "domain": "cdn-go.cn",
+            "prevalence": 0.25984251968503935
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.14960629921259844
+        },
+        {
+            "domain": "gtimg.cn",
+            "prevalence": 0.13385826771653545
+        },
+        {
+            "domain": "udesk.cn",
+            "prevalence": 0.047244094488188976
+        },
+        {
+            "domain": "dynatrace.com",
+            "prevalence": 0.023622047244094488
+        },
+        {
+            "domain": "hdslb.com",
+            "prevalence": 0.007874015748031496
+        }
+    ],
+    "types": {
+        "Script": 27,
+        "XHR": 17,
+        "Image": 4,
+        "Font": 4,
+        "Fetch": 10
+    },
+    "nameservers": [
+        "ns2.qq.com",
+        "ns1.qq.com",
+        "ns3.qq.com",
+        "ns4.qq.com"
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "domain": "oevplus.ch",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-CH"
+    ],
+    "prevalence": 0.000201,
+    "sites": 2,
+    "subdomains": [
+        "fahrplan"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "oevplus\\.ch\\/widget\\/index\\.css",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fahrplan"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9ad74c9a04b4d2ee122be11374cd68942240034cb88114279dea37c1d8bae20a"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bernmobil.ch",
+                "www.vbl.ch"
+            ]
+        },
+        {
+            "rule": "oevplus\\.ch\\/widget\\/index\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "fahrplan"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "224b21380d9735b878c6c7022fb7d89b3f94dd6012027777b9bbb2fbd444166b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bernmobil.ch",
+                "www.vbl.ch"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000201,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Stylesheet": 2,
+        "Script": 2
+    },
+    "nameservers": [
+        "ns1.bernmobil.ch",
+        "ns1.ip-plus.net"
+    ]
+}

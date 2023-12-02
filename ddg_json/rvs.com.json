@@ -1,0 +1,95 @@
+{
+    "domain": "rvs.com",
+    "owner": {
+        "name": "Campingworld Inc.",
+        "displayName": "Campingworld"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "customersso"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "rvs\\.com\\/js\\/oAuthv2\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "customersso"
+            ],
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6e6a4340facc47fce25f97b710ecd80d72d1277b8330b839bf6659c67f55d10e"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {
+                "testcookie": {
+                    "ttl": null,
+                    "length": 10,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goodsam.com",
+                "www.goodsam.com"
+            ]
+        },
+        {
+            "rule": "rvs\\.com\\/cdn-cgi\\/rum",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "customersso"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goodsam.com",
+                "www.goodsam.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "cloudflareinsights.com",
+            "prevalence": 0.5
+        }
+    ],
+    "types": {
+        "Document": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "ns1.rv.com",
+        "ns2.rv.com"
+    ]
+}

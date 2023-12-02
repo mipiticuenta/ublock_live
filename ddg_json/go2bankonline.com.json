@@ -1,0 +1,87 @@
+{
+    "domain": "go2bankonline.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "prod-cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "go2bankonline\\.com\\/modules\\/web-chat\\/current\\/stand-alone\\/static\\/css\\/main\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-cdn"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "72121fce6ac668acc9f73fa558a96d6d5810b2ad0e05b57bd8411f04edff9e1a"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "go2bank.com",
+                "www.go2bank.com",
+                "www.greendot.com",
+                "www.walmartgift.com",
+                "www.walmartmoneycard.com"
+            ]
+        },
+        {
+            "rule": "go2bankonline\\.com\\/modules\\/web-chat\\/current\\/stand-alone\\/static\\/js\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prod-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "window.localStorage": 5,
+                "Document.cookie getter": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "eb143372b24e5503ce58bc341f57df50cac36fd7dd8704a46c8331a989999197"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "go2bank.com",
+                "www.go2bank.com",
+                "www.greendot.com",
+                "www.walmartgift.com",
+                "www.walmartmoneycard.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Stylesheet": 5,
+        "Script": 5
+    },
+    "nameservers": [
+        "dexter.ns.cloudflare.com",
+        "aliza.ns.cloudflare.com"
+    ]
+}

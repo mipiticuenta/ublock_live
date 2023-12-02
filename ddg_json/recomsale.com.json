@@ -1,0 +1,110 @@
+{
+    "domain": "recomsale.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "cdn",
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "recomsale\\.com\\/assets\\/js\\/link_track002\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 5,
+                "Document.cookie getter": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "6ffa7bd9af47f2b21f2031981d414b56addba2344e94b3c2454497efa47d78d1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adriannapapell.com",
+                "www.adriannapapell.com",
+                "www.diatomaceousearth.com",
+                "www.eightvape.com",
+                "www.grayboe.com"
+            ]
+        },
+        {
+            "rule": "recomsale\\.com\\/v1\\/ref\\/shopCfg\\/infoOut",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8603a26ea591f78844e0b30c1870d552105a68f6e9428edd24ca1ee5fdc75228"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "diatomaceousearth.com",
+                "www.diatomaceousearth.com"
+            ]
+        },
+        {
+            "rule": "recomsale\\.com\\/v1\\/ref\\/widgetPopup\\/getShow",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "85961ea608def74c4f5bc9b3efea65a755890f979ec7f57a35f2d20025e7f7f3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "diatomaceousearth.com",
+                "www.diatomaceousearth.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8333333333333334
+        },
+        {
+            "domain": "shopify.com",
+            "prevalence": 0.16666666666666666
+        }
+    ],
+    "types": {
+        "Script": 5,
+        "XHR": 4
+    },
+    "nameservers": [
+        "lisa.ns.cloudflare.com",
+        "anirban.ns.cloudflare.com"
+    ]
+}

@@ -1,0 +1,118 @@
+{
+    "domain": "apifanpage-2004120061.eu-west-1.elb.amazonaws.com",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "api.fanpage.it",
+            "resolved": "apifanpage-2004120061.eu-west-1.elb.amazonaws.com"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "apifanpage-2004120061\\.eu-west-1\\.elb\\.amazonaws\\.com\\/views\\/vw\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.fanpage.it",
+                    "resolved": "apifanpage-2004120061.eu-west-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "024219cfcb78286c222cb43335c779b4fad1fabdd4929c3d32d48234dabe68fd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fanpage.it",
+                "www.fanpage.it"
+            ]
+        },
+        {
+            "rule": "apifanpage-2004120061\\.eu-west-1\\.elb\\.amazonaws\\.com\\/views\\/s\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "api.fanpage.it",
+                    "resolved": "apifanpage-2004120061.eu-west-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "7fff1569ea68ef52782ba25b0cf3934627f7a4fc1e8e22f4652de959c5f97978"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fanpage.it",
+                "www.fanpage.it",
+                "youmedia.fanpage.it"
+            ]
+        },
+        {
+            "rule": "apifanpage-2004120061\\.eu-west-1\\.elb\\.amazonaws\\.com\\/embed\\/channel70",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "api.fanpage.it",
+                    "resolved": "apifanpage-2004120061.eu-west-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "19cf3559f052646a100a61f47b23029d4c02f98415db7cee2dd1e6e50c1a7a79"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fanpage.it",
+                "www.fanpage.it",
+                "youmedia.fanpage.it"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "d2kujwgapv5t1y.cloudfront.net",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Image": 3,
+        "Document": 3
+    },
+    "nameservers": []
+}

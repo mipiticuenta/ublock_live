@@ -1,0 +1,120 @@
+{
+    "domain": "nvidiagrid.net",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "prod.cloudmatchbeta",
+        "gfnpc.api.entitlement-prod"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "nvidiagrid\\.net\\/v2\\/serverInfo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cloudmatchbeta"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "geforcenow.com",
+                "play.geforcenow.com"
+            ]
+        },
+        {
+            "rule": "nvidiagrid\\.net\\/v2\\/serverInfo",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.cloudmatchbeta"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6761edc95c7eda920b488a0caaebc4a4bbd3f86881bcf1b7c617f2464957ba10"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "geforcenow.com",
+                "play.geforcenow.com"
+            ]
+        },
+        {
+            "rule": "nvidiagrid\\.net\\/v3\\/client\\/streamingQuality",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gfnpc.api.entitlement-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "geforcenow.com",
+                "play.geforcenow.com"
+            ]
+        },
+        {
+            "rule": "nvidiagrid\\.net\\/v3\\/client\\/streamingQuality",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gfnpc.api.entitlement-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7d37f11be1721c076cf2e5bcdbac38d07f6f69759ec45cb15d0ba43ff90241bd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "geforcenow.com",
+                "play.geforcenow.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Preflight": 4,
+        "XHR": 4
+    },
+    "nameservers": [
+        "dns3.p01.nsone.net",
+        "dns4.p01.nsone.net",
+        "dns1.p01.nsone.net",
+        "dns2.p01.nsone.net"
+    ]
+}

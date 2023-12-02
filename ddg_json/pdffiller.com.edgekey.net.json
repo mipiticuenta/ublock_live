@@ -1,0 +1,94 @@
+{
+    "domain": "pdffiller.com.edgekey.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "static-ak"
+    ],
+    "cnames": [
+        {
+            "original": "static-ak.pdffiller.com",
+            "resolved": "static-ak.pdffiller.com.edgekey.net"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "pdffiller\\.com\\.edgekey\\.net\\/static\\/support-static\\/559\\/organisations\\/pdffiller\\/stylesheet\\/chat\\/chat\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-ak"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static-ak.pdffiller.com",
+                    "resolved": "static-ak.pdffiller.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "c257a5476e7d7da188be6a6f4f350416e87ca8358a1f6f074dc7ba11a5baface"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pdffiller.com",
+                "www.pdffiller.com"
+            ]
+        },
+        {
+            "rule": "pdffiller\\.com\\.edgekey\\.net\\/frontend\\/SupportChat\\/29100\\/app\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static-ak"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "static-ak.pdffiller.com",
+                    "resolved": "static-ak.pdffiller.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "68d6a28d882aa4f222d1c9c3f2bbefd81d4769ae255c41b87cd2625acbb747ea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pdffiller.com",
+                "www.pdffiller.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Stylesheet": 2,
+        "Script": 2
+    },
+    "nameservers": []
+}

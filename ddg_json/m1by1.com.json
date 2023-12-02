@@ -1,0 +1,82 @@
+{
+    "domain": "m1by1.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-FR"
+    ],
+    "prevalence": 0.000202,
+    "sites": 2,
+    "subdomains": [
+        "quatremurs.tracking",
+        "francetoner.tracking"
+    ],
+    "cnames": [
+        {
+            "original": "1by1.4murs.com",
+            "resolved": "quatremurs.tracking.m1by1.com"
+        },
+        {
+            "original": "1by1.francetoner.fr",
+            "resolved": "francetoner.tracking.m1by1.com"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "m1by1\\.com\\/ij\\.ashx",
+            "cookies": 0.000202,
+            "fingerprinting": 0,
+            "subdomains": [
+                "quatremurs.tracking",
+                "francetoner.tracking"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [
+                {
+                    "original": "1by1.4murs.com",
+                    "resolved": "quatremurs.tracking.m1by1.com"
+                },
+                {
+                    "original": "1by1.francetoner.fr",
+                    "resolved": "francetoner.tracking.m1by1.com"
+                }
+            ],
+            "responseHashes": [
+                "17aae59dff1064611b6bf53ea75a8f1bcd5d4a3a5a3c97f86139214dd8ad0e18",
+                "941a1a408c90a20cbed2a5b48b5c11c2c1d1c36aa531bc36e5171c601519b84d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "4murs.com",
+                "www.4murs.com",
+                "www.francetoner.fr"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000202,
+    "topInitiators": [
+        {
+            "domain": "m1by1.com",
+            "prevalence": 0.75
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.25
+        }
+    ],
+    "types": {
+        "Script": 3
+    },
+    "nameservers": [
+        "ns-658.awsdns-18.net",
+        "ns-1439.awsdns-51.org",
+        "ns-328.awsdns-41.com",
+        "ns-1537.awsdns-00.co.uk"
+    ]
+}

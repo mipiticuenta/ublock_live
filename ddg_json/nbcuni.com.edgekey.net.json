@@ -1,0 +1,623 @@
+{
+    "domain": "nbcuni.com.edgekey.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000238,
+    "sites": 35,
+    "subdomains": [
+        "id",
+        "mvpd-admin",
+        "ads-pd"
+    ],
+    "cnames": [
+        {
+            "original": "ads-pd.nbcuni.com",
+            "resolved": "ads-pd.nbcuni.com.edgekey.net"
+        },
+        {
+            "original": "id.nbcuni.com",
+            "resolved": "id.nbcuni.com.edgekey.net"
+        },
+        {
+            "original": "mps.nbcuni.com",
+            "resolved": "nbcuni.com.edgekey.net"
+        },
+        {
+            "original": "mvpd-admin.nbcuni.com",
+            "resolved": "mvpd-admin.nbcuni.com.edgekey.net"
+        },
+        {
+            "original": "pix.nbcuni.com",
+            "resolved": "nbcuni.com.edgekey.net"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "nbcuni\\.com\\.edgekey\\.net\\/fetch\\/ext\\/load-rottentomatoes-web\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "mps.nbcuni.com",
+                    "resolved": "nbcuni.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "def5601dac38c317beda22f95966c83ed4d61534ecac49e06c52227075e1fa9b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rottentomatoes.com",
+                "editorial.rottentomatoes.com",
+                "www.rottentomatoes.com"
+            ]
+        },
+        {
+            "rule": "nbcuni\\.com\\.edgekey\\.net\\/request\\/page\\/json\\/params\\/",
+            "cookies": 0.000116,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 17,
+            "prevalence": 0.000116,
+            "cnames": [
+                {
+                    "original": "mps.nbcuni.com",
+                    "resolved": "nbcuni.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "522049da8b214bf39669f818dd81369d085f27b5d4ddfc872d3c68dcd275d158",
+                "d94e4fefbb6734d4b8179b9dd0ad43c8e85c82a3dfa6379a8a037610c83eecf1",
+                "ff8541f840d866b46ce7ccb1dab76d494d8a794919c90d5e9a35bb8f07086cba",
+                "0fcd067e06459d38ab248433f78e7db2b8fb3d7d5c3683df95b0b29a54098202",
+                "2b8a4ddb2669cc6d8654af78cfe6ca828f91109ad953d2e1309f77d6a6f6e26a",
+                "a92842a6a8905b46ab17d677b0fc02499fdc6a6a755ac7af2cf301722c6ea66f",
+                "e6490c6459f31eebc10baa9085d5e66809b7b6fbf7f191d71eea7a855da19a43",
+                "5da5fd54ed390bcd479f1fc05f90e9f6902b77f07f2e9dbfcec91eed5920da6f",
+                "f17da1c980e87d7d98605d06d76189ee33601a2d77d84057503eb7048c643850",
+                "fc0547ad26ec9b1afb5196d613757fe8cecd642f873e29f93e82e2af2a03ab61",
+                "f7aee39070661bb8d3dc27fc4c4a4070bbad604f433750d9a3d0436b109d81ad",
+                "774d6e6c51b56fdb5aee493d59240398bfeb628176cc4b6c12b3316526bb33eb",
+                "77d433cff4ae57f036e5c0ebc0284d79ffabc20e1a5817d93830ca8ea8d72a02",
+                "4eb7504e438700eb45c16d03208a0d7adab6a6743dc0f6518608eb5739b1a8cb",
+                "637876a20e655b4cc625f3939b740c4ecc1f73551658f90cc80fded70f22c537",
+                "158b01dfe055b9f09374ae6e870d2b00d6c0e4642f458c7f595abb5b4bf79262"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "gpv_pn": 0.000020436106512987146
+            },
+            "exampleSites": [
+                "rottentomatoes.com",
+                "editorial.rottentomatoes.com",
+                "fandango.com",
+                "msnbc.com",
+                "stream.nbcsports.com",
+                "www.bravotv.com",
+                "www.eonline.com",
+                "www.fandango.com",
+                "www.msnbc.com",
+                "www.nbc.com",
+                "www.nbcnews.com",
+                "www.nbcsports.com",
+                "www.oxygen.com",
+                "www.rottentomatoes.com",
+                "www.syfy.com",
+                "www.telemundo.com",
+                "www.today.com"
+            ]
+        },
+        {
+            "rule": "nbcuni\\.com\\.edgekey\\.net\\/fetch\\/ext\\/load-fandango-web\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "mps.nbcuni.com",
+                    "resolved": "nbcuni.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "4fbd46562321a2069cab143cb0531887cd949e9a337f261adc90c8cc2f111dd3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookietest": {
+                    "ttl": -1698915276,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fandango.com",
+                "www.fandango.com"
+            ]
+        },
+        {
+            "rule": "nbcuni\\.com\\.edgekey\\.net\\/request\\/component\\/global",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "mps.nbcuni.com",
+                    "resolved": "nbcuni.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "a2c2339691fc48fbd14fb307292dff3e21222712d9240810742d7df0c6d74dfb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fandango.com",
+                "www.fandango.com"
+            ]
+        },
+        {
+            "rule": "nbcuni\\.com\\.edgekey\\.net\\/fetch\\/ext\\/load-nbcnews-bento\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "mps.nbcuni.com",
+                    "resolved": "nbcuni.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "88b4d4627e1e206d18640d49737db3589b7a76c88bc34f671842f685a618492e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookietest": {
+                    "ttl": -1698831363,
+                    "length": 1,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 0.25
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "msnbc.com",
+                "www.msnbc.com",
+                "www.nbcnews.com",
+                "www.today.com"
+            ]
+        },
+        {
+            "rule": "nbcuni\\.com\\.edgekey\\.net\\/fetch\\/ext\\/load-nbcsports-v2-web\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "mps.nbcuni.com",
+                    "resolved": "nbcuni.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "d022d1390fb2fe5f7785c2b82c4dc7557005968b0fa0e89a5f4246c4afe7a2a0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookietest": {
+                    "ttl": -1698877309,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbcsports.com",
+                "www.nbcsports.com"
+            ]
+        },
+        {
+            "rule": "nbcuni\\.com\\.edgekey\\.net\\/websdk\\/v2\\/identity-sdk\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 1,
+            "subdomains": [
+                "id"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "id.nbcuni.com",
+                    "resolved": "id.nbcuni.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "76b732c82eb9b901e52f50ecfa5748e5e1becf72abfd06b17b65a855403b06d1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bravotv.com",
+                "www.bravotv.com",
+                "www.oxygen.com",
+                "www.syfy.com"
+            ]
+        },
+        {
+            "rule": "nbcuni\\.com\\.edgekey\\.net\\/fetch\\/ext\\/load-bravo-web\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "mps.nbcuni.com",
+                    "resolved": "nbcuni.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "d2f6b4356a32f6788aa7551f126220f8f06580c4af30b953030f1bbcc4f01eac"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookietest": {
+                    "ttl": -1698878697,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bravotv.com",
+                "www.bravotv.com"
+            ]
+        },
+        {
+            "rule": "nbcuni\\.com\\.edgekey\\.net\\/websdk\\/config\\/v2-identity-config\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "id"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "id.nbcuni.com",
+                    "resolved": "id.nbcuni.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e8d7486bf84c0adc984dc1388cd0777fdc3ba1ba80965a8ed84e9a829528c4fc"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bravotv.com",
+                "www.bravotv.com",
+                "www.eonline.com",
+                "www.oxygen.com",
+                "www.syfy.com"
+            ]
+        },
+        {
+            "rule": "nbcuni\\.com\\.edgekey\\.net\\/x\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "pix.nbcuni.com",
+                    "resolved": "nbcuni.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bravotv.com",
+                "www.cnbc.com",
+                "www.oxygen.com"
+            ]
+        },
+        {
+            "rule": "nbcuni\\.com\\.edgekey\\.net\\/fetch\\/ext\\/load-e-web\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "mps.nbcuni.com",
+                    "resolved": "nbcuni.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "637ea25e15527ad9ee12f8b3e33e932399d7a7532f5821a345d263ab4433439f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookietest": {
+                    "ttl": -1698877667,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eonline.com",
+                "www.eonline.com"
+            ]
+        },
+        {
+            "rule": "nbcuni\\.com\\.edgekey\\.net\\/mvpd\\/service\\/image\\/proxy",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mvpd-admin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "mvpd-admin.nbcuni.com",
+                    "resolved": "mvpd-admin.nbcuni.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "adcbce60ee20c918176877174a6f3457a28cab29750a783db127e620d87d8842"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbc.com",
+                "www.nbc.com"
+            ]
+        },
+        {
+            "rule": "nbcuni\\.com\\.edgekey\\.net\\/sdk\\/v7\\.4\\.5\\/identity\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "id"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "id.nbcuni.com",
+                    "resolved": "id.nbcuni.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "546975e3dd6492d90828a8ac016952c236e7ab49de38712fd7ac5b9165d951d6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbcnews.com",
+                "www.nbcnews.com"
+            ]
+        },
+        {
+            "rule": "nbcuni\\.com\\.edgekey\\.net\\/tvn\\/43S635NISSAN15H_ENT_MEZZ\\/43S635NISSAN15H_ENT_MEZZ_HULU\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ads-pd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "ads-pd.nbcuni.com",
+                    "resolved": "ads-pd.nbcuni.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nbcsandiego.com",
+                "www.nbcsandiego.com"
+            ]
+        },
+        {
+            "rule": "nbcuni\\.com\\.edgekey\\.net\\/fetch\\/ext\\/load-oxygen-web\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "mps.nbcuni.com",
+                    "resolved": "nbcuni.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "eaa667365af14390810e8fba5871d393749875db29407149b3b65d212e2a30a1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookietest": {
+                    "ttl": -1698880918,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oxygen.com",
+                "www.oxygen.com"
+            ]
+        },
+        {
+            "rule": "nbcuni\\.com\\.edgekey\\.net\\/request\\/component\\/automagic",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "mps.nbcuni.com",
+                    "resolved": "nbcuni.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "461480878353d4d426011f9d0fbc60a95710b05d316b3737e2cf99f01412a6e1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "oxygen.com",
+                "www.oxygen.com"
+            ]
+        },
+        {
+            "rule": "nbcuni\\.com\\.edgekey\\.net\\/fetch\\/ext\\/load-syfy-d8-web\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "mps.nbcuni.com",
+                    "resolved": "nbcuni.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "c6f4ec9da37903e51658a68a31907be63c3c03805f1d19fddc828a5048af1f5c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookietest": {
+                    "ttl": -1698883386,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "syfy.com",
+                "www.syfy.com"
+            ]
+        },
+        {
+            "rule": "nbcuni\\.com\\.edgekey\\.net\\/websdk\\/v2\\/identity-sdk\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "id"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "id.nbcuni.com",
+                    "resolved": "id.nbcuni.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "017a8480c52ba01a15066ed4120ac171e46a15f66ff7bc0393aa6033df679007"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "today.com",
+                "www.today.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000198,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8441558441558441
+        },
+        {
+            "domain": "nbcnews.com",
+            "prevalence": 0.09090909090909091
+        },
+        {
+            "domain": "cookielaw.org",
+            "prevalence": 0.03896103896103896
+        },
+        {
+            "domain": "nbc.com",
+            "prevalence": 0.025974025974025976
+        }
+    ],
+    "types": {
+        "Script": 31,
+        "XHR": 17,
+        "Fetch": 5,
+        "Image": 5,
+        "Media": 2
+    },
+    "nameservers": []
+}

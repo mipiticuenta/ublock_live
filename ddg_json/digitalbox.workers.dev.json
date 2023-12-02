@@ -1,0 +1,161 @@
+{
+    "domain": "digitalbox.workers.dev",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "gas",
+        "dabds"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "digitalbox\\.workers\\.dev\\/gas\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "gas"
+            ],
+            "apis": {
+                "window.innerWidth": 4,
+                "window.innerHeight": 4
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "dcd55243f72c6b3f5296cf0fb25b30395bdf1d93ee2edd3c9ce9d591239c9845"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thetab.com",
+                "tvguide.co.uk",
+                "www.entertainmentdaily.co.uk",
+                "www.thedailymash.co.uk",
+                "www.tvguide.co.uk"
+            ]
+        },
+        {
+            "rule": "digitalbox\\.workers\\.dev\\/lib\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dabds"
+            ],
+            "apis": {
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ebcc743afce449f9437a470f5496ed8a9a96ced9b48190ece54a299328ca6e1e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thetab.com",
+                "www.thedailymash.co.uk"
+            ]
+        },
+        {
+            "rule": "digitalbox\\.workers\\.dev\\/modules\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "gas"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "Navigator.prototype.cookieEnabled": 5,
+                "window.sessionStorage": 5,
+                "Navigator.prototype.appName": 3,
+                "Date.prototype.getTime": 5,
+                "window.localStorage": 4,
+                "Navigator.prototype.language": 3,
+                "Navigator.prototype.doNotTrack": 5,
+                "Screen.prototype.height": 5,
+                "Screen.prototype.width": 5,
+                "window.innerWidth": 5,
+                "window.innerHeight": 5,
+                "Navigator.prototype.connection": 2,
+                "Document.cookie getter": 4,
+                "Screen.prototype.colorDepth": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "Navigator.prototype.vendor": 1
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "22d94e4aa548d8fb50d2b1683ad21d76e8e28d6bcc5cd36a0e1810f5e5d41505",
+                "737895d04393cd1cfab45e675340ac61dac2911da56c1694ef1a1dbc2bb1d18a",
+                "1f86f8ecc6f59117424e184e87eded2d11d94069744ed95a2185b778578d0888"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thetab.com",
+                "tvguide.co.uk",
+                "www.entertainmentdaily.co.uk",
+                "www.thedailymash.co.uk",
+                "www.tvguide.co.uk"
+            ]
+        },
+        {
+            "rule": "digitalbox\\.workers\\.dev\\/verify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dabds"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thetab.com",
+                "www.thedailymash.co.uk"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7857142857142857
+        },
+        {
+            "domain": "entertainmentdaily.com",
+            "prevalence": 0.14285714285714285
+        },
+        {
+            "domain": "inskinad.com",
+            "prevalence": 0.07142857142857142
+        }
+    ],
+    "types": {
+        "Script": 12,
+        "XHR": 2
+    },
+    "nameservers": [
+        "june.ns.cloudflare.com",
+        "owen.ns.cloudflare.com"
+    ]
+}

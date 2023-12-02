@@ -1,0 +1,81 @@
+{
+    "domain": "doppiocdn.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "edge-hls"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "doppiocdn\\.com\\/ping",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge-hls"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c45272c1b33373d94fb6786698d5145ba0cb558fc7494d91cbbb380b4fc561a8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "boocam.tv",
+                "sv.stripchat.com"
+            ]
+        },
+        {
+            "rule": "doppiocdn\\.com\\/hls\\/113355864\\/master\\/113355864_auto\\.m3u8",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "edge-hls"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8db091a27c7941e9a8d2265a65ccd4fa9a11e2fc876e16b7c9c2263ab5c5cc6c"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stripchat.com",
+                "sv.stripchat.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "strpst.com",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.5
+        }
+    ],
+    "types": {
+        "Fetch": 2,
+        "Media": 2
+    },
+    "nameservers": [
+        "duke.ns.cloudflare.com",
+        "amy.ns.cloudflare.com"
+    ]
+}

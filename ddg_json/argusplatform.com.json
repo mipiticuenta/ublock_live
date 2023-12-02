@@ -1,0 +1,99 @@
+{
+    "domain": "argusplatform.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "tmp",
+        "pixels"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "argusplatform\\.com\\/js\\/wid\\.tracker\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tmp"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "5a71dce5ef218c5278a8dcfb33a168e577c226ef79c909703471b16d223fb935"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "WID_VISITOR_ID": {
+                    "ttl": 31536004,
+                    "length": 19,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blackberry.com",
+                "www.blackberry.com",
+                "www.fortinet.com"
+            ]
+        },
+        {
+            "rule": "argusplatform\\.com\\/wh\\/track\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pixels"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "eec6b719c1df15556a3581632c1010a34d2f19f42481c6f875ab3ff21337748c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "WID_VISITOR_ID": 0.000013624071008658098,
+                "gpv_pn": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "blackberry.com",
+                "www.fortinet.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.8
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "XHR": 2
+    },
+    "nameservers": [
+        "ns-713.awsdns-25.net",
+        "ns-474.awsdns-59.com",
+        "ns-1079.awsdns-06.org",
+        "ns-1711.awsdns-21.co.uk"
+    ]
+}

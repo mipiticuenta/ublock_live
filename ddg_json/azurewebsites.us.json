@@ -1,0 +1,93 @@
+{
+    "domain": "azurewebsites.us",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "micourt-iam-prod"
+    ],
+    "cnames": [
+        {
+            "original": "login.courts.michigan.gov",
+            "resolved": "micourt-iam-prod.azurewebsites.us"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "azurewebsites\\.us\\/\\.well-known\\/openid-configuration",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "micourt-iam-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "login.courts.michigan.gov",
+                    "resolved": "micourt-iam-prod.azurewebsites.us"
+                }
+            ],
+            "responseHashes": [
+                "f5ffda642faaa9927316411e118660c8cdda588b5464848d798c9aa87e6de2e0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "michigan.gov",
+                "micourt.courts.michigan.gov"
+            ]
+        },
+        {
+            "rule": "azurewebsites\\.us\\/\\.well-known\\/openid-configuration\\/jwks",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "micourt-iam-prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "login.courts.michigan.gov",
+                    "resolved": "micourt-iam-prod.azurewebsites.us"
+                }
+            ],
+            "responseHashes": [
+                "0f50502bf5bd080d8e15e18003677a7bf21bc75306534ef3967e94b342e7003c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "michigan.gov",
+                "micourt.courts.michigan.gov"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "XHR": 4
+    },
+    "nameservers": [
+        "ns4-03.azuregov-dns.us",
+        "ns1-03.azuregov-dns.us",
+        "ns3-03.azuregov-dns.us",
+        "ns2-03.azuregov-dns.us"
+    ]
+}

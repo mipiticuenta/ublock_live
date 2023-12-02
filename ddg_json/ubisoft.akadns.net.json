@@ -1,0 +1,160 @@
+{
+    "domain": "ubisoft.akadns.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "pp-rvrs-default",
+        "connect"
+    ],
+    "cnames": [
+        {
+            "original": "connect.ubisoft.com",
+            "resolved": "connect.ubisoft.akadns.net"
+        },
+        {
+            "original": "overlay.ubisoft.com",
+            "resolved": "pp-rvrs-default.ubisoft.akadns.net"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "ubisoft\\.akadns\\.net\\/overlay-connect-integration\\/widget\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "pp-rvrs-default"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "overlay.ubisoft.com",
+                    "resolved": "pp-rvrs-default.ubisoft.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "f2b1078e11c30bca02d9114d43d92345b9cc9e8e8e675823927a84900ced7c50"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ubisoft.com",
+                "store.ubisoft.com",
+                "www.ubisoft.com"
+            ]
+        },
+        {
+            "rule": "ubisoft\\.akadns\\.net\\/sdk\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "connect"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "connect.ubisoft.com",
+                    "resolved": "connect.ubisoft.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "e64e3dac097c51d483d8465321eddf873a6023fb6a10154bf4e7490e8d8c6005"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ubisoft.com",
+                "store.ubisoft.com",
+                "www.ubisoft.com"
+            ]
+        },
+        {
+            "rule": "ubisoft\\.akadns\\.net\\/indexOverlay\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "connect"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "connect.ubisoft.com",
+                    "resolved": "connect.ubisoft.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "9bcf6954e7bb0708e4d779699ec60f5f7ef58c9f53ce8c7ad2d82ac4827223d5"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ubisoft.com",
+                "store.ubisoft.com",
+                "www.ubisoft.com"
+            ]
+        },
+        {
+            "rule": "ubisoft\\.akadns\\.net\\/v2\\/webauth\\/public\\/config\\/cors",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "connect"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "connect.ubisoft.com",
+                    "resolved": "connect.ubisoft.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "31331cd2f0606b3716bc9c4529251488e60a33ab83fa6144b3c54ef2cdbcaa77"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ubisoft.com",
+                "store.ubisoft.com",
+                "www.ubisoft.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "akamaihd.net",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "Document": 6,
+        "XHR": 3
+    },
+    "nameservers": []
+}

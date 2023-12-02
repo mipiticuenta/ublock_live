@@ -1,0 +1,81 @@
+{
+    "domain": "advertronic.io",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "advertronic\\.io\\/b\\/0bd1b4f6-f250-426d-9154-679f76f81279\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b3ec90e90695b4eac785c2e023110920ab4fca468d2aaaea21379996c1becc4a"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kino-teatr.ru",
+                "www.kino-teatr.ru"
+            ]
+        },
+        {
+            "rule": "advertronic\\.io\\/j\\/s\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.innerHeight": 1,
+                "window.innerWidth": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e6261b69f77ae7eba7aaa131f3bb6be8183761e4aec439d5bfc43adef6e70b16"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kino-teatr.ru",
+                "www.kino-teatr.ru"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Other": 2,
+        "Script": 2
+    },
+    "nameservers": [
+        "rory.ns.cloudflare.com",
+        "lilith.ns.cloudflare.com"
+    ]
+}

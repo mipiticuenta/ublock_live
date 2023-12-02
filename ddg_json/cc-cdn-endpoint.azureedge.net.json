@@ -1,0 +1,135 @@
+{
+    "domain": "cc-cdn-endpoint.azureedge.net",
+    "owner": {
+        "name": "Microsoft Corporation",
+        "displayName": "Microsoft",
+        "privacyPolicy": "https://privacy.microsoft.com/en-us/privacystatement",
+        "url": "http://microsoft.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "cdn.chesterfield.gov",
+            "resolved": "cc-cdn-endpoint.azureedge.net"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "cc-cdn-endpoint\\.azureedge\\.net\\/chesterbot@1\\.0\\/img\\/botHeader\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.chesterfield.gov",
+                    "resolved": "cc-cdn-endpoint.azureedge.net"
+                }
+            ],
+            "responseHashes": [
+                "7dc0367760bc63de16d15eda6e46f2e362fc2ebda8b91053c2599be67ecb5543"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chesterfield.gov",
+                "www.chesterfield.gov"
+            ]
+        },
+        {
+            "rule": "cc-cdn-endpoint\\.azureedge\\.net\\/chesterbot@1\\.1\\/css\\/app\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.chesterfield.gov",
+                    "resolved": "cc-cdn-endpoint.azureedge.net"
+                }
+            ],
+            "responseHashes": [
+                "d043aea4e54857b717bdb4bde328f39b90b946f236dd3987c0bd65b26efcdd73"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chesterfield.gov",
+                "www.chesterfield.gov"
+            ]
+        },
+        {
+            "rule": "cc-cdn-endpoint\\.azureedge\\.net\\/chesterbot@1\\.1\\/js\\/chesterbot-vendor\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.chesterfield.gov",
+                    "resolved": "cc-cdn-endpoint.azureedge.net"
+                }
+            ],
+            "responseHashes": [
+                "dd5ce4c6e2fcff42fffa69a973add11f78aa314a8bce3b7343e9973b08bfdfe4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chesterfield.gov",
+                "www.chesterfield.gov"
+            ]
+        },
+        {
+            "rule": "cc-cdn-endpoint\\.azureedge\\.net\\/chesterbot@1\\.1\\/js\\/app\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.chesterfield.gov",
+                    "resolved": "cc-cdn-endpoint.azureedge.net"
+                }
+            ],
+            "responseHashes": [
+                "57fa7564c869a154e8b157817f082f4b0df200c764014a310545b8b705d763c8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chesterfield.gov",
+                "www.chesterfield.gov"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "types": {
+        "Image": 2,
+        "Stylesheet": 2,
+        "Script": 4
+    },
+    "nameservers": []
+}

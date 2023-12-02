@@ -1,0 +1,90 @@
+{
+    "domain": "overconfidentfood.com",
+    "owner": {
+        "name": "Leven Labs, Inc. DBA Admiral",
+        "displayName": "Admiral"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "overconfidentfood\\.com\\/v2dps9Tn7ea41mAutSjzEp0LdLc57XmYiA7sE8YyaQfW2eYJJ-4FEDqg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "distractify.com",
+                "www.distractify.com"
+            ]
+        },
+        {
+            "rule": "overconfidentfood\\.com\\/v2sqmM-r8dC3ZDvsi5fWfBRJFDm4M9gYicwrg7sDFyPlcDmoMdyC1ZSE",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "CookieStore.prototype.getAll": 2,
+                "CookieStore.prototype.set": 2,
+                "Notification.permission": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2edd0b74107cca818f999739b21fe0973f1d178f0dac60e71076266df4c598f2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "obsev.com",
+                "www.obsev.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.625
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "d19m55ur8rme4m.cloudfront.net",
+            "prevalence": 0.125
+        }
+    ],
+    "types": {
+        "Script": 4
+    },
+    "nameservers": [
+        "ns-621.awsdns-13.net",
+        "ns-1101.awsdns-09.org",
+        "ns-2010.awsdns-59.co.uk",
+        "ns-333.awsdns-41.com"
+    ]
+}

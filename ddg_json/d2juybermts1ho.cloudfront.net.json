@@ -1,0 +1,121 @@
+{
+    "domain": "d2juybermts1ho.cloudfront.net",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "d2juybermts1ho\\.cloudfront\\.net\\/assets\\/application-3475d60fbe62664dad32df792444d3810b580054aadd94bfb8a2eb9d600af14d\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ce6d87a0d457d9d954aa9e7779ebd26cbdc0755106548f296b0f866bdd569533"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "artworkarchive.com",
+                "www.artworkarchive.com"
+            ]
+        },
+        {
+            "rule": "d2juybermts1ho\\.cloudfront\\.net\\/assets\\/application-5a61be3c24833150f22d5461c717c8aa01f0704eaf6e2118d85e756bb4422d9b\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3457e13e309c28b280e6b7453ae777d4fa21278b0506dd92364dfe562493610a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ahoy_visit": {
+                    "ttl": 14406,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "ahoy_visitor": {
+                    "ttl": 63072006,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "artworkarchive.com",
+                "www.artworkarchive.com"
+            ]
+        },
+        {
+            "rule": "d2juybermts1ho\\.cloudfront\\.net\\/assets\\/zoom-vanilla\\.min-e25e934599638ddaf12872008f7854f1afbf2743f32c80cbeb54244cb9ff8193\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "20c61d65ac38762243670bd3e6d5df13909c6ab1e99a04fc714316ac450ece59"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "artworkarchive.com",
+                "www.artworkarchive.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Stylesheet": 2,
+        "Script": 4
+    },
+    "nameservers": [
+        "ns-1899.awsdns-45.co.uk",
+        "ns-1222.awsdns-24.org",
+        "ns-590.awsdns-09.net",
+        "ns-490.awsdns-61.com"
+    ]
+}

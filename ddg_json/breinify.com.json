@@ -1,0 +1,612 @@
+{
+    "domain": "breinify.com",
+    "owner": {
+        "name": "Breinify Inc.",
+        "displayName": "Breinify"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00015,
+    "sites": 22,
+    "subdomains": [
+        "api",
+        "cdns",
+        "hiddenvalley",
+        "sallybeauty",
+        "baffin",
+        "bevmo",
+        "big5sportinggoods",
+        "cosmoprofbeauty",
+        "goodnes",
+        "verybestbaking"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "breinify\\.com\\/activity",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 12,
+            "prevalence": 0.0000817,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bws.com.au",
+                "hiddenvalley.com",
+                "kingsford.com",
+                "stores.sallybeauty.com",
+                "www.baffin.com",
+                "www.bevmo.com",
+                "www.big5sportinggoods.com",
+                "www.cosmoprofbeauty.com",
+                "www.gelsons.com",
+                "www.goodnes.com",
+                "www.hiddenvalley.com",
+                "www.verybestbaking.com"
+            ]
+        },
+        {
+            "rule": "breinify\\.com\\/activity",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 12,
+            "prevalence": 0.0000817,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bws.com.au",
+                "hiddenvalley.com",
+                "kingsford.com",
+                "stores.sallybeauty.com",
+                "www.baffin.com",
+                "www.bevmo.com",
+                "www.big5sportinggoods.com",
+                "www.cosmoprofbeauty.com",
+                "www.gelsons.com",
+                "www.goodnes.com",
+                "www.hiddenvalley.com",
+                "www.verybestbaking.com"
+            ]
+        },
+        {
+            "rule": "breinify\\.com\\/images\\/op\\/resource-loader",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdns"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "19526553b7c0f6b5561f029ab25f6db973825a6cea785db4a16d96fb5df1cbf3",
+                "8613c71578012c8eb68fb8545b1946ee271269d722c10cd805af902565486b10"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bws.com.au",
+                "kingsford.com",
+                "www.bevmo.com"
+            ]
+        },
+        {
+            "rule": "breinify\\.com\\/api\\/learning\\.min\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 2,
+            "subdomains": [
+                "hiddenvalley"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Navigator.prototype.permissions": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f3e43e8d7d69f6c856677c526acb248729650edd3ec02eb4b71975f3242396d3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "x-breinify-uuid": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "x-breinify-bid": {
+                    "ttl": 315360011,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "x-breinify-data": {
+                    "ttl": 31536011,
+                    "length": 134,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hiddenvalley.com",
+                "www.hiddenvalley.com"
+            ]
+        },
+        {
+            "rule": "breinify\\.com\\/api\\/personalization_1\\.4\\.9\\.min\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 2,
+            "subdomains": [
+                "hiddenvalley"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1,
+                "Date.prototype.getTime": 1,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Navigator.prototype.permissions": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0bb8fe7d8944b8ef11a3a33ca85c657961113cd377b49bcfbdf4fcc4caaae67c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "x-breinify-uuid": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "x-breinify-bid": {
+                    "ttl": 315360016,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "x-breinify-data": {
+                    "ttl": 31536016,
+                    "length": 134,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hiddenvalley.com",
+                "www.hiddenvalley.com"
+            ]
+        },
+        {
+            "rule": "breinify\\.com\\/recommendation",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hiddenvalley.com",
+                "kingsford.com",
+                "stores.sallybeauty.com",
+                "www.baffin.com",
+                "www.cosmoprofbeauty.com",
+                "www.goodnes.com",
+                "www.hiddenvalley.com",
+                "www.verybestbaking.com"
+            ]
+        },
+        {
+            "rule": "breinify\\.com\\/recommendation",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "6d60a26ff02b384e1ccac326e511c397ef1ea2e60ac6a4e15cf055ff6386e3d2",
+                "d9a9587fb967e8f5fe090e33159e9305954a48060aa0ce050ffeb9a008d3113f",
+                "1ffa63cd62a0af02471f24ba18bd11a2594ba9ba509779786e64a49b5b007221",
+                "a27c75b3bd671951e530828ccde3e3f9d97c1ac27c5fa73304db0412082d6b0e",
+                "a46f9be3b6201ec7b578ac01757a2d5b6db193ef2022e6e6ffb169f0b977b3b0",
+                "52fb7471dff2019218e5196f49a56fa67ab3e0a0fd81aa3e1584e83980dc2ff1",
+                "de076e4bf6b601d85a38987bf929029d63e27afe0d48e754f7c21c073659aaa5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hiddenvalley.com",
+                "kingsford.com",
+                "stores.sallybeauty.com",
+                "www.baffin.com",
+                "www.cosmoprofbeauty.com",
+                "www.goodnes.com",
+                "www.hiddenvalley.com",
+                "www.verybestbaking.com"
+            ]
+        },
+        {
+            "rule": "breinify\\.com\\/api\\/activity_1\\.5\\.0\\.min\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 2,
+            "subdomains": [
+                "sallybeauty"
+            ],
+            "apis": {
+                "window.sessionStorage": 3,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Navigator.prototype.permissions": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "a7dd18cafccbaeb6c8ab2a757738404ec6c2d3cd9b4b0de8d73852e479895fec"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "x-breinify-uuid": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "x-breinify-bid": {
+                    "ttl": 315360005,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sallybeauty.com",
+                "stores.sallybeauty.com",
+                "www.sallybeauty.com"
+            ]
+        },
+        {
+            "rule": "breinify\\.com\\/res\\/XoSzj~EeIB-F8G4NSfEvPGoB-mUfRaylKoR-B0ODiR~w3ChS~qw1cA-R-H4uPUEju-SI2YDxIZAV2B6Demj9lQx0SHjehQRWeTUMWKC2qgGSDEbkd94JuF7VUxWAC7GcFE~20LiGUNGNyXS463kHklrcEMb4TwhIN6UL5WgS5Q-mEgyP1NbVVXDhTF9kqoKoXdTewqvyurU2GREEirHpWTxKyIlOiQx2OYKVuf9pTFk_",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "x-breinify-uuid": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "sallybeauty.com",
+                "stores.sallybeauty.com",
+                "www.sallybeauty.com"
+            ]
+        },
+        {
+            "rule": "breinify\\.com\\/res\\/XoSzj~EeIB-F8G4NSfEvPGoB-mUfRaylKoR-B0ODiR~w3ChS~qw1cA-R-H4uPUEju-SI2YDxIZAV2B6Demj9lQx0SHjehQRWeTUMWKC2qgHAnXfk3mY2nbUruIS6-PEzwdT36EvrRm2DEwP9IDJCB7I7ztdBXvBn2upFJZ1n3lGUZgtp-OghofBPBDf~x9F-660WHvUvLpVzYeA0ngGk-w__",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sallybeauty.com",
+                "stores.sallybeauty.com"
+            ]
+        },
+        {
+            "rule": "breinify\\.com\\/api\\/activity_1\\.0\\.3\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "baffin"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.permissions": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bfe653d61853922b54ffd6034a48ca4bef35c00276dcdfbd95f8e92b355628dd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "x-breinify-uuid": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "x-breinify-bid": {
+                    "ttl": 315360025,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baffin.com",
+                "www.baffin.com"
+            ]
+        },
+        {
+            "rule": "breinify\\.com\\/api\\/script_1\\.9\\.16\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "bevmo"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.permissions": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4b1084338e6c120f60361ffea6ef1e47fb7d4b4cdb9246d47e2b6548d6b618dd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bevmo.com",
+                "www.bevmo.com"
+            ]
+        },
+        {
+            "rule": "breinify\\.com\\/api\\/activity_1\\.4\\.5\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "big5sportinggoods"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.permissions": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6d7fb50952542a8b945eb7b948d4ab7af9ed07f7c023ae7a42ec197d059b1c1d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "big5sportinggoods.com",
+                "www.big5sportinggoods.com"
+            ]
+        },
+        {
+            "rule": "breinify\\.com\\/api\\/activity_1\\.3\\.1\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cosmoprofbeauty"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Navigator.prototype.permissions": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a1dcdfc08b27ef3a760a2177c98ce4cc2651ce2bc2bc6c6e0bf6391380be9750"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "x-breinify-uuid": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "x-breinify-bid": {
+                    "ttl": 315360007,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cosmoprofbeauty.com",
+                "www.cosmoprofbeauty.com"
+            ]
+        },
+        {
+            "rule": "breinify\\.com\\/api\\/activity\\.min\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 2,
+            "subdomains": [
+                "goodnes",
+                "verybestbaking"
+            ],
+            "apis": {
+                "window.sessionStorage": 3,
+                "window.localStorage": 3,
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "Navigator.prototype.permissions": 3,
+                "Navigator.prototype.language": 3,
+                "Navigator.prototype.languages": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "59c7a9536d311af4fc35fec98a05b067e31700db73fb5fd76d3c0a8ebfcba7dc",
+                "490ad7e376660f51373a9f286ff3fe05f7ba8844386de6a758bbb243494e7590"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "x-breinify-uuid": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                },
+                "x-breinify-bid": {
+                    "ttl": 315360012,
+                    "length": 36,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goodnes.com",
+                "www.goodnes.com",
+                "www.verybestbaking.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000109,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.23076923076923078
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.15384615384615385
+        },
+        {
+            "domain": "sdiapi.com",
+            "prevalence": 0.15384615384615385
+        },
+        {
+            "domain": "transcend.io",
+            "prevalence": 0.12307692307692308
+        },
+        {
+            "domain": "cookielaw.org",
+            "prevalence": 0.1076923076923077
+        },
+        {
+            "domain": "innit-web-widget.s3-us-west-2.amazonaws.com",
+            "prevalence": 0.09230769230769231
+        },
+        {
+            "domain": "jsdelivr.net",
+            "prevalence": 0.06153846153846154
+        },
+        {
+            "domain": "quantummetric.com",
+            "prevalence": 0.03076923076923077
+        },
+        {
+            "domain": "yottaa.com",
+            "prevalence": 0.03076923076923077
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.015384615384615385
+        }
+    ],
+    "types": {
+        "XHR": 28,
+        "Preflight": 20,
+        "Script": 18
+    },
+    "nameservers": [
+        "ns-1776.awsdns-30.co.uk",
+        "ns-863.awsdns-43.net",
+        "ns-1122.awsdns-12.org",
+        "ns-496.awsdns-62.com"
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "domain": "onegini.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-NL"
+    ],
+    "prevalence": 0.000201,
+    "sites": 2,
+    "subdomains": [
+        "login-cz.prod",
+        "login-robeco.prod"
+    ],
+    "cnames": [
+        {
+            "original": "login.cz.nl",
+            "resolved": "login-cz.prod.onegini.com"
+        },
+        {
+            "original": "login.robeco.nl",
+            "resolved": "login-robeco.prod.onegini.com"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "onegini\\.com\\/saml\\/authn-response",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "login-cz.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "login.cz.nl",
+                    "resolved": "login-cz.prod.onegini.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cz.nl",
+                "mijn.cz.nl"
+            ]
+        },
+        {
+            "rule": "onegini\\.com\\/static\\/img\\/personal\\/session\\.png",
+            "cookies": 0.000101,
+            "fingerprinting": 0,
+            "subdomains": [
+                "login-cz.prod",
+                "login-robeco.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "login.cz.nl",
+                    "resolved": "login-cz.prod.onegini.com"
+                },
+                {
+                    "original": "login.robeco.nl",
+                    "resolved": "login-robeco.prod.onegini.com"
+                }
+            ],
+            "responseHashes": [
+                "86688428eb963a6f8d86adc49b8f3de7cfcfe68cb1b8e9206f279f2cab6e6bcc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cz.nl",
+                "www.robeco.nl"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000201,
+    "types": {
+        "Document": 2,
+        "Image": 2
+    },
+    "nameservers": [
+        "zita.ns.cloudflare.com",
+        "beau.ns.cloudflare.com"
+    ]
+}

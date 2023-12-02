@@ -1,0 +1,137 @@
+{
+    "domain": "2trk.info",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000102,
+    "sites": 15,
+    "subdomains": [
+        "cdn",
+        "ck"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "2trk\\.info\\/aud\\/clientjs\\/ptag\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "a8109f49b12d61712857c0fcec9b0ea354f5257459badbb82bb0da4d41869595"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trip.com",
+                "us.trip.com",
+                "www.trip.com"
+            ]
+        },
+        {
+            "rule": "2trk\\.info\\/aud\\/clientjs\\/1305\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 3,
+                "window.sessionStorage": 3,
+                "window.outerWidth": 3,
+                "window.innerWidth": 3,
+                "window.outerHeight": 3,
+                "window.innerHeight": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "4b7da39cdeeb15f301aa07e0133fa91261557be06136a76fbaeb878ec68d47ea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trip.com",
+                "us.trip.com",
+                "www.trip.com"
+            ]
+        },
+        {
+            "rule": "2trk\\.info\\/audit\\.aspx",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ck"
+            ],
+            "apis": {
+                "window.localStorage": 1
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "fc40844cd7c67abe393a1d3f2bc509550d1a141770a55c20ebe1f18e24acc661",
+                "319c4dd74cf7e7b60400ea7635a48fb3beae1489dfa0ec1f4b198e3237e50f2e",
+                "3b2e8c5c2b275d1e5b9a626701b5356d853415ea50028dc9e22b42dc00ee03a7",
+                "f66263dc835723b7167261f5f784a9b9380d0a4ff99aed59d8ea023f656d292c",
+                "4e481d6e623bd185fca0d24e8cdcdf7e582d0802a187df5157059a5bb495cc73",
+                "4b68fbe8bb117ecb5eac31ba697afe9b6a20c07fe3f8ae9479cf86156e1826b9",
+                "f931a89eac472e1adac5881c921d760e123b5c5258b7a3944fd7cd65c4bb53af"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "1001hobbies.com",
+                "www.dhgate.com",
+                "www.eataly.com",
+                "www.gonoise.com",
+                "www.lightinthebox.com",
+                "www.pepperfry.com",
+                "www.vevor.ca",
+                "www.vevor.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "preciso.net",
+            "prevalence": 0.5333333333333333
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2
+        },
+        {
+            "domain": "googlesyndication.com",
+            "prevalence": 0.06666666666666667
+        }
+    ],
+    "types": {
+        "Script": 14
+    },
+    "nameservers": [
+        "walk.ns.cloudflare.com",
+        "coleman.ns.cloudflare.com"
+    ]
+}

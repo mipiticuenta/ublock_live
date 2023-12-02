@@ -1,0 +1,867 @@
+{
+    "domain": "alza.cz",
+    "owner": {
+        "name": "L.S. Investments Limited",
+        "displayName": "L.S. Investments"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000681,
+    "sites": 10,
+    "subdomains": [
+        "measuring-pixel-service",
+        "cdn",
+        "external-banner-service",
+        "image",
+        "webapi",
+        "logapi"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "alza\\.cz\\/api\\/impresion",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "measuring-pixel-service"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kurzy.cz",
+                "sportnet.sme.sk",
+                "www.centrum.cz",
+                "www.kurzy.cz",
+                "www.mindmegette.hu",
+                "www.origo.hu",
+                "www.pravopisne.cz",
+                "www.sme.sk"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/Foto\\/e\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "10f9bfa42bb96c99729c9b2fee669803ad9c6fcd434d8d7d60a8dc8f5f7cc331"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kurzy.cz",
+                "sportnet.sme.sk",
+                "www.centrum.cz",
+                "www.kurzy.cz",
+                "www.mindmegette.hu",
+                "www.origo.hu",
+                "www.pravopisne.cz",
+                "www.sme.sk"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/api\\/banner\\/49282",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "external-banner-service"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2f19d0ce3b7adacfd66c25f37e528d7770d005f8aa3fa39dd75cfd44f0c9e7e1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sme.sk",
+                "www.sme.sk"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/Styles\\/full\\/images\\/bg-white\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bc8a9143b6177bc8ae39c6b2e7717b8a8a299703425c566356302e561e20c82b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.sk",
+                "www.alza.hu"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/Styles\\/full\\/images\\/bg-gradient\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c953ff93aef7cbba9293f9463f60eff2cb544b7672238a3f3f090208e29019c6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.sk",
+                "www.alza.hu"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/dist\\/a\\/lowPriorityStyles-full-59bc7265b1\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5903f3ab282f6c4b2bb62f6a5400212e3813b9c535b34b4226c48be5935808e1"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.sk",
+                "www.alza.hu"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/dist\\/b\\/loadCSSScript-9adc3dde82\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a4993fd9cce5b49b4c5f83e2f6dd828b41f300a67686e87e643f76be8872571a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.sk",
+                "www.alza.hu"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/dist\\/b\\/web-vitals-fac651a9f6\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1532ee9caf58bd9f997f2875aad03dbb4f0ff30b49ae067017c3492ab4b0dfc9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.sk",
+                "www.alza.hu"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/dist\\/a\\/global-full-bcd2c425a2\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fd5e0c3de00f005c4457a27c66a7fee9f18dc54b66b6b7815a45202e2741ce9f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.sk",
+                "www.alza.hu"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/dist\\/b\\/critical-abb1a0c5e8\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Element.prototype.getClientRects": 2,
+                "Event.prototype.timeStamp": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e61ecc5bfbbfe0e7fe410e9b72c6b539c74373c6b7e5e79fb6caf433ac897976"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.sk",
+                "www.alza.hu"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/dist\\/b\\/defaultDialogs-bbd5bd10c0\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d1db2e5929eee98bc5ce74b890f041da30392f103ae4c4fdfacf6211f12745e6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.sk",
+                "www.alza.hu"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/dist\\/b\\/asyncScripts-6aaed85e41\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c45fa89d966a93d9c6e779ea4208ecbfd63368651e0a1cd2cfe097396dcfa885"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.sk",
+                "www.alza.hu"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/dist\\/b\\/default-604da2530c\\.min\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3186e068b84fc6bd915c876c4435ccb49aa5b082012074a7fa0401159f678d96"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "sc/sport/nordic-walking-palice/leki/18872390-v8662.htm": {
+                    "ttl": 127,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.sk",
+                "www.alza.hu"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/Foto\\/or\\/cookies\\/january-2022\\/css\\/style\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6ed9f2d5091eba6d9f4b0caf047cdc493e52f593b35f1371c2c1c68050305fd0"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.sk",
+                "www.alza.hu"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/dist\\/a\\/defaultPage-full-b0a41f5a2a\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.sk",
+                "www.alza.hu"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/Styles\\/print\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.sk",
+                "www.alza.hu"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/Styles\\/images\\/svg\\/star-unified-empty\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7691b18017e4b78d8465dce6cb5882feaa912232a6b0e371b8b53cd4e086ce74"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.hu",
+                "www.alza.sk"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/Styles\\/images\\/svg\\/star-full\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9946db47780a981bcf92ae525afe9cd220b9057989dfae544a178372af0c2493"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.hu",
+                "www.alza.sk"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/Styles\\/full\\/fonts\\/Alza\\/fonts\\/alza-icons_5\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3712b36bc8c04626a624ed17ff088bae8284814e59f6e37edf338885c0006e80"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.hu",
+                "www.alza.sk"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/Styles\\/fonts\\/fontawesome-webfont\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2df92894e5406ee0f9dc9033e52cc6d671cafeba81f6d4e1146fac2db4ee5da5"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.hu",
+                "www.alza.sk"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/products\\/SPTlek1354\\/SPTlek1354\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "image"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4bcc137e3d44557be96dad53b4aa08ca79eefa5f97713d3c3d84785187a51b22"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.sk",
+                "www.alza.sk"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/Translations\\/Icu\\/Eshop\\/Common\\/cs-CZ\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f18f9c10188df6cc561995f8d1489113d695b59b4070df896f28178c85657b87"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.hu",
+                "www.alza.sk"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/products\\/SPTlek1350\\/SPTlek1350\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "image"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fc1dc9f70ed55161fd46f775a7d97dbd1c5f442b6eb6e1a5b7091bf6fb238bab"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.sk",
+                "www.alza.sk"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/Translations\\/Icu\\/Eshop\\/Common_-_navigation\\/cs-CZ\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9a239f8575d6c1ae6c1cad4209c1983c639a7a0ae544bec43b4375c4f669e521"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.hu",
+                "www.alza.sk"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/products\\/SPTlek1334nad\\/SPTlek1334nad\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "image"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "65934d4bc8ab5046d63ae8f05a3866731f8a0280f417212ebc47643f9bf51869"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.sk",
+                "www.alza.sk"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/Translations\\/Icu\\/Eshop\\/pageFooter\\/cs-CZ\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fbae4144b89b92340f2c0146afe856075a5283c846dda8316249449ae5158b50"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.hu",
+                "www.alza.sk"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/api\\/catalog\\/icons\\/dynamicIcon",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "328aa5c52970dea8c42e4e84977f809f15e8c77eccb3a3ec77d7763a9380fa47"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.sk",
+                "www.alza.sk"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/Translations\\/Icu\\/Eshop\\/commodity\\/cs-CZ\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "faaedf0bd6095a054ee214312e78491c26ca9fada64704bf812e563e9e028dc5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.hu",
+                "www.alza.sk"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/Translations\\/Icu\\/Eshop\\/Payment\\/cs-CZ\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "588c2c96320e56bbc31c2aef6e8e524ed0af74ecaa4a83156277ad72d127ed45"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.hu",
+                "www.alza.sk"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/api\\/log\\/v2\\/logs",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "logapi"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.hu",
+                "www.alza.hu",
+                "www.alza.sk"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/api\\/log\\/v2\\/logs",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "logapi"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.hu",
+                "www.alza.hu",
+                "www.alza.sk"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/Translations\\/Icu\\/Eshop\\/userDetail\\/cs-CZ\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a96273fa513b239f108f29d2084328b5cba1a900e0d20baa2010600c7e83fd7e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.sk",
+                "www.alza.hu"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/api\\/jean\\/v2\\/search",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1d4b215dc63ce0c6272919beb1ed6885fa19b329be14da6e2c5ceeea3e3a0c9c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.sk",
+                "www.alza.hu"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/api\\/jean\\/v2\\/search",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.sk",
+                "www.alza.hu"
+            ]
+        },
+        {
+            "rule": "alza\\.cz\\/products\\/CTP1010b1\\/CTP1010b1\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "image"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1b1c30d8d1e7990e6d1127da93b6fd490f3150ade2988d12c45bde1b677ef2ee"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alza.hu",
+                "www.alza.hu"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5033112582781457
+        },
+        {
+            "domain": "1603811301.rsc.cdn77.org",
+            "prevalence": 0.39072847682119205
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.052980132450331126
+        },
+        {
+            "domain": "adocean.pl",
+            "prevalence": 0.052980132450331126
+        }
+    ],
+    "types": {
+        "Image": 34,
+        "XHR": 19,
+        "Stylesheet": 8,
+        "Script": 12,
+        "Other": 2,
+        "Font": 4,
+        "Preflight": 5
+    },
+    "nameservers": [
+        "beau.ns.cloudflare.com",
+        "gigi.ns.cloudflare.com"
+    ]
+}

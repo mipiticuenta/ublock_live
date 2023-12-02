@@ -1,0 +1,155 @@
+{
+    "domain": "foxnews.com",
+    "owner": {
+        "name": "Fox Corporation",
+        "displayName": "Fox",
+        "privacyPolicy": "https://www.foxnews.com/privacy-policy",
+        "url": "http://foxnews.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00015,
+    "sites": 22,
+    "subdomains": [
+        "static"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "foxnews\\.com\\/static\\/orion\\/scripts\\/core\\/utils\\/geo\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "6e10f23a0d517549be3756c94f8b06a7da98bcb8f541b761a1737dd54e1baf98"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toofab.com",
+                "www.outkick.com",
+                "www.tmz.com"
+            ]
+        },
+        {
+            "rule": "foxnews\\.com\\/static\\/strike\\/scripts\\/libs\\/lodash\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "695f451e4fc7dcd1cf77c4bb26f4b8bfd64dcee1b35f7f131d08bd0017044064"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toofab.com",
+                "www.fox13seattle.com",
+                "www.fox6now.com",
+                "www.livenowfox.com",
+                "www.outkick.com"
+            ]
+        },
+        {
+            "rule": "foxnews\\.com\\/static\\/v\\/all\\/img\\/clear\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "931870ec1ad42a2613c8cfdb7d4b4056f0056a682e0ebfe5956d594d5589caea"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fox13seattle.com",
+                "www.fox13seattle.com",
+                "www.fox6now.com",
+                "www.livenowfox.com",
+                "www.outkick.com"
+            ]
+        },
+        {
+            "rule": "foxnews\\.com\\/static\\/isa\\/app\\/lib\\/ccpa\\.opt\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f698527abd2a5cb32b500bc1a49722158351b0d290695ceb1247f52f74d870ad"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "outkick.com",
+                "www.outkick.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7738095238095238
+        },
+        {
+            "domain": "fox.com",
+            "prevalence": 0.11904761904761904
+        },
+        {
+            "domain": "webcontentassessor.com",
+            "prevalence": 0.05952380952380952
+        },
+        {
+            "domain": "foxtv.com",
+            "prevalence": 0.047619047619047616
+        }
+    ],
+    "types": {
+        "Script": 10,
+        "Image": 5
+    },
+    "nameservers": [
+        "ns01.dns.fox",
+        "ns02.dns.fox",
+        "ns03.dns.fox",
+        "ns04.dns.fox",
+        "ns01.foxdoua.com",
+        "ns02.foxdoua.com",
+        "ns03.foxdoua.com",
+        "ns04.foxdoua.com"
+    ]
+}

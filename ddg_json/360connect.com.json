@@ -1,0 +1,180 @@
+{
+    "domain": "360connect.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "efw",
+        "www"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "360connect\\.com\\/widget\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "efw"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e0a7b6f3d9ba7fcf252ea9fd993e352ba80e478d8a105927ea95ccef67ef10da"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "barndominium.org",
+                "greenbuildingelements.com",
+                "metalbuildinghomes.org"
+            ]
+        },
+        {
+            "rule": "360connect\\.com\\/efw\\/v3\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "window.innerWidth": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "184f50e47cc99644255350dbfba21b3fb07f2b1be0c2e1db559eaa4fcb263d82",
+                "97c32c2e209725d76cd318f39607077240141ae83c930e56c1d9b2131a9297d0"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "barndominium.org",
+                "greenbuildingelements.com",
+                "metalbuildinghomes.org"
+            ]
+        },
+        {
+            "rule": "360connect\\.com\\/efw\\/v3\\/css\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "8b429e1e634275b057262f02521f026dbb06490be51f79ab42acb37fe4bf6740"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "barndominium.org",
+                "greenbuildingelements.com",
+                "metalbuildinghomes.org"
+            ]
+        },
+        {
+            "rule": "360connect\\.com\\/wp-content\\/themes\\/astra-child\\/assets\\/js\\/essential\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "c1fe66a4cf9c2ceff31a6af1b935ba9511bde706997cc550023cf9c3b598c15c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "vuid": {
+                    "ttl": 3606,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "referrer": {
+                    "ttl": 3606,
+                    "length": 30,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "isbot": {
+                    "ttl": 3606,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "barndominium.org",
+                "greenbuildingelements.com",
+                "metalbuildinghomes.org"
+            ]
+        },
+        {
+            "rule": "360connect\\.com\\/wp-content\\/plugins\\/360-custom-modules\\/modules\\/cs-quotes\\/images\\/radio-unchecked\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ac1256073eda25dbd0eb4ffec2e31ea73f86b542051a51eeaa675504b69955d5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "barndominium.org",
+                "metalbuildinghomes.org"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 6,
+        "Document": 3,
+        "Stylesheet": 3,
+        "Image": 2
+    },
+    "nameservers": [
+        "ns-336.awsdns-42.com",
+        "ns-828.awsdns-39.net",
+        "ns-1050.awsdns-03.org",
+        "ns-1659.awsdns-15.co.uk"
+    ]
+}

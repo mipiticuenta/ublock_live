@@ -1,0 +1,188 @@
+{
+    "domain": "getkoala.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000102,
+    "sites": 15,
+    "subdomains": [
+        "api",
+        "cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "getkoala\\.com\\/cable",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000681,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "ko_id": 0.00005449628403463239
+            },
+            "exampleSites": [
+                "deepgram.com",
+                "popsql.com",
+                "retool.com",
+                "segment.com",
+                "stackshare.io",
+                "vercel.com",
+                "www.airplane.dev",
+                "www.rupahealth.com",
+                "www.sanity.io",
+                "www.skydio.com"
+            ]
+        },
+        {
+            "rule": "getkoala\\.com\\/v1\\/pk_2259285616a56fdc4e870401da8492a33310\\/sdk\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.webdriver": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0b074ce2bb3c6fd40db82dd8b63c58a476ec4687b9a56b1ed670df0de283695d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ko_id": {
+                    "ttl": 31536005,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "ko_sid": {
+                    "ttl": 86405,
+                    "length": 64,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rupahealth.com",
+                "www.rupahealth.com"
+            ]
+        },
+        {
+            "rule": "getkoala\\.com\\/web\\/projects\\/pk_2259285616a56fdc4e870401da8492a33310",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "99cecc5b45bd0e9d61afb94dfe019d53060439b22aaef336447d205254cd30ae"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rupahealth.com",
+                "www.rupahealth.com"
+            ]
+        },
+        {
+            "rule": "getkoala\\.com\\/web\\/projects\\/pk_2259285616a56fdc4e870401da8492a33310\\/batch",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rupahealth.com",
+                "www.rupahealth.com"
+            ]
+        },
+        {
+            "rule": "getkoala\\.com\\/web\\/projects\\/pk_2259285616a56fdc4e870401da8492a33310\\/metrics",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rupahealth.com",
+                "www.rupahealth.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000341,
+    "topInitiators": [
+        {
+            "domain": "koala.live",
+            "prevalence": 0.5319148936170213
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.3404255319148936
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.10638297872340426
+        },
+        {
+            "domain": "mutinycdn.com",
+            "prevalence": 0.02127659574468085
+        }
+    ],
+    "types": {
+        "WebSocket": 10,
+        "Script": 2,
+        "Fetch": 2,
+        "Ping": 4
+    },
+    "nameservers": [
+        "nadia.ns.cloudflare.com",
+        "aragorn.ns.cloudflare.com"
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "domain": "salesforce.com.edgekey.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000613,
+    "sites": 9,
+    "subdomains": [
+        "iis.digital",
+        "c"
+    ],
+    "cnames": [
+        {
+            "original": "c.salesforce.com",
+            "resolved": "c.salesforce.com.edgekey.net"
+        },
+        {
+            "original": "iis.digital.salesforce.com",
+            "resolved": "iis.digital.salesforce.com.edgekey.net"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "salesforce\\.com\\.edgekey\\.net\\/services\\/api\\/user",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "iis.digital"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "iis.digital.salesforce.com",
+                    "resolved": "iis.digital.salesforce.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "d089c8a9fc28e4e50223eb38c9409e362521be9380a37341304fbac7a4cd9e5f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "salesforce.com",
+                "developer.salesforce.com",
+                "help.salesforce.com",
+                "ideas.salesforce.com",
+                "trailhead.salesforce.com"
+            ]
+        },
+        {
+            "rule": "salesforce\\.com\\.edgekey\\.net\\/wbin\\/www-core\\/f\\/g",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "c.salesforce.com",
+                    "resolved": "c.salesforce.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "5dfa8ecc6292f717601390359a80690ff1f4626a3fef6549f2c3cc2a0896146c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "salesforce.com",
+                "login.salesforce.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000477,
+    "topInitiators": [
+        {
+            "domain": "trailblazer.me",
+            "prevalence": 0.7142857142857143
+        },
+        {
+            "domain": "sfdcstatic.com",
+            "prevalence": 0.2857142857142857
+        }
+    ],
+    "types": {
+        "Fetch": 5,
+        "XHR": 2
+    },
+    "nameservers": []
+}

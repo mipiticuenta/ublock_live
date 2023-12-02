@@ -1,0 +1,131 @@
+{
+    "domain": "shoutout.global",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000749,
+    "sites": 11,
+    "subdomains": [
+        "www"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "shoutout\\.global\\/js\\/shoutout_theme\\.js",
+            "cookies": 0.0000409,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Document.cookie getter": 6,
+                "Document.cookie setter": 6
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "3a63afac48bc4120d6ff2fa8ea4544320e18b67779de59c583d79b11cfe0f676"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "aff": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "p": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.00003406017752164524,
+                    "uniqueness": 0.2
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baysmokes.com",
+                "mullerchokes.com",
+                "premierbodyarmor.com",
+                "www.blackoutcoffee.com",
+                "www.sweetleaf.com",
+                "www.thecubicle.com"
+            ]
+        },
+        {
+            "rule": "shoutout\\.global\\/js\\/shoutout_cart\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "9e9dba46f397aa95c8fbb7b28a71c69978861ab5ca04d04882c7acef5fecacb6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mullerchokes.com",
+                "premierbodyarmor.com",
+                "www.blackoutcoffee.com",
+                "www.sweetleaf.com",
+                "www.thecubicle.com"
+            ]
+        },
+        {
+            "rule": "shoutout\\.global\\/js\\/shoutout_square_tracking\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ab06e6f0b51820413fea9112de484784405843a36a9c90a2d69c92c72c56e7b1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "aff": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wavwatch.com",
+                "www.wavwatch.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000749,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 13
+    },
+    "nameservers": [
+        "ns64.domaincontrol.com",
+        "ns63.domaincontrol.com"
+    ]
+}

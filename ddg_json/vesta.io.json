@@ -1,0 +1,204 @@
+{
+    "domain": "vesta.io",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "platform.apac",
+        "js.dc.apac",
+        "collectorsvc.apac"
+    ],
+    "cnames": [],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "vesta\\.io\\/js\\/static\\/dcExtension\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "platform.apac"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4c05c4a790aa05b57b3e4c3f67a2654b973c7c91668dc5edbb1ed18936b60978"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "agoda.com",
+                "www.agoda.com"
+            ]
+        },
+        {
+            "rule": "vesta\\.io\\/js\\/dc\\/initiateSession",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js.dc.apac"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "490874b38feedcfa33d8c1e2ecef18b7958a6bdac7601c75defefe7383078ef5"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "agoda.com",
+                "www.agoda.com"
+            ]
+        },
+        {
+            "rule": "vesta\\.io\\/js\\/dc\\/initiateSession",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "js.dc.apac"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "agoda.com",
+                "www.agoda.com"
+            ]
+        },
+        {
+            "rule": "vesta\\.io\\/js\\/static\\/fingerprint\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 3,
+            "subdomains": [
+                "js.dc.apac"
+            ],
+            "apis": {
+                "Navigator.prototype.vendor": 2,
+                "OfflineAudioContext.prototype.constructor": 2,
+                "Screen.prototype.availTop": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availLeft": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availHeight": 2,
+                "AudioBuffer.prototype.getChannelData": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.languages": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "window.indexedDB": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.plugins": 2,
+                "CanvasRenderingContext2D.prototype.isPointInPath": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "360ce290ff8c8685b90a0394c9b64fe68f167dc5c89bf1c52a4e26c784d09323"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookietest": {
+                    "ttl": -1698891389,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "agoda.com",
+                "www.agoda.com"
+            ]
+        },
+        {
+            "rule": "vesta\\.io\\/DataCollectorProxy\\/Service\\/InsertSocialData",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collectorsvc.apac"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bukalapak.com",
+                "www.bukalapak.com"
+            ]
+        },
+        {
+            "rule": "vesta\\.io\\/DataCollectorProxy\\/Service\\/InsertSocialData",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "collectorsvc.apac"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bukalapak.com",
+                "www.bukalapak.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "agoda.net",
+            "prevalence": 0.8571428571428571
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.14285714285714285
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "Fetch": 2,
+        "Preflight": 2,
+        "XHR": 2,
+        "Other": 2
+    },
+    "nameservers": [
+        "udns1.ultradns.net",
+        "udns2.ultradns.net"
+    ]
+}

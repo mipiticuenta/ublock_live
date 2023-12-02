@@ -1,0 +1,327 @@
+{
+    "domain": "ad-srv.net",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000136,
+    "sites": 20,
+    "subdomains": [
+        "ad",
+        "ad9",
+        "ad10",
+        "ad27",
+        "ad28",
+        "tm",
+        "tm703",
+        "tm715"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "ad-srv\\.net\\/retarget",
+            "cookies": 0.0000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ad"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000681,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "brill.com",
+                "m.reolink.com",
+                "reolink.com",
+                "support.reolink.com",
+                "www.alle-noten.de",
+                "www.bader.de",
+                "www.eataly.com",
+                "www.gartentraum.de",
+                "www.klimaworld.com",
+                "www.mainova.de"
+            ]
+        },
+        {
+            "rule": "ad-srv\\.net\\/request\\.php",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ad9",
+                "ad10",
+                "ad27",
+                "ad28"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "4fansites.de",
+                "diablo.4fansites.de",
+                "forum.frag-mutti.de",
+                "www.dogforum.de",
+                "www.frag-mutti.de"
+            ]
+        },
+        {
+            "rule": "ad-srv\\.net\\/zone\\/h4p07tqbushx",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "ad"
+            ],
+            "apis": {
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availHeight": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "287c4213627d0d7d850a396e598d526923b0c6f2baef0184232265acbda09556"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "frag-mutti.de",
+                "www.frag-mutti.de"
+            ]
+        },
+        {
+            "rule": "ad-srv\\.net\\/tm\\/a\\/container\\/init\\/55a5609cb4\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tm"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e9db91dec762af285e37a29bda1eced48c67d4f3b097e52bb76b7c96bc994776",
+                "42282db9da6c8585c372370d5e7838687b92cc2f0c8b4ff4c944cd59a60d4b6e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reolink.com",
+                "m.reolink.com",
+                "support.reolink.com"
+            ]
+        },
+        {
+            "rule": "ad-srv\\.net\\/tm\\/a\\/container\\/eval\\/55a5609cb4\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tm703",
+                "tm715"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b62ba498906fff699fb3c6bb97bda7f4872d6f5f76d1d67a6e043e95ca2796ff"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reolink.com",
+                "support.reolink.com"
+            ]
+        },
+        {
+            "rule": "ad-srv\\.net\\/tm\\/a\\/container\\/tags\\/iframe\\/55a5609cb4\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tm703",
+                "tm715"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a6e0d1f357d2ea18d5f6760342bc22f828f18cdcd34aee84741bedc8ec0c422a"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reolink.com",
+                "support.reolink.com"
+            ]
+        },
+        {
+            "rule": "ad-srv\\.net\\/dsp\\/retargeting\\/123326lgavfz\\/",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ad"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "b06ecb4819de96d3e53c19a15305d8fa9993032e402e79bb9a08430d2d19c70e"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reolink.com",
+                "m.reolink.com",
+                "support.reolink.com"
+            ]
+        },
+        {
+            "rule": "ad-srv\\.net\\/dsp\\/retargeting\\/xcn706g3sdpa\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "900800761b80ca0a6a9d01127a0c4e9417f89b96214e646a8b3ff186a28c4e01"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alle-noten.de",
+                "www.alle-noten.de"
+            ]
+        },
+        {
+            "rule": "ad-srv\\.net\\/dsp\\/retargeting\\/akfsiu606bdb\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0365e7a260a5afcb5d07df59a6c7434c4e9b9ecdc11e81e03c54c4a3a01a77e7"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gartentraum.de",
+                "www.gartentraum.de"
+            ]
+        },
+        {
+            "rule": "ad-srv\\.net\\/dsp\\/retargeting\\/nucb8dy2abuq\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dee15bea875f9190f25a42f1a93cc7ae5e38f9281f5e80185bda565822394fdc"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mainova.de",
+                "www.mainova.de"
+            ]
+        },
+        {
+            "rule": "ad-srv\\.net\\/dsp\\/retargeting\\/r67xtjcxl51h\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ad"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8d6e767884fbcffa08f614d233c1e0074ff7570477876d597b8c511cc11a4892"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "verwoehnwochenende.de",
+                "www.verwoehnwochenende.de"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000129,
+    "topInitiators": [
+        {
+            "domain": "dwin1.com",
+            "prevalence": 0.4482758620689655
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2413793103448276
+        },
+        {
+            "domain": "confiant-integrations.net",
+            "prevalence": 0.13793103448275862
+        },
+        {
+            "domain": "googlesyndication.com",
+            "prevalence": 0.06896551724137931
+        },
+        {
+            "domain": "redintelligence.net",
+            "prevalence": 0.06896551724137931
+        },
+        {
+            "domain": "adcell.com",
+            "prevalence": 0.034482758620689655
+        }
+    ],
+    "types": {
+        "Document": 23,
+        "Script": 12
+    },
+    "nameservers": [
+        "ns1.as.neory-dns.net",
+        "ns2.as.neory-dns.net",
+        "ns3.as.neory-dns.net"
+    ]
+}

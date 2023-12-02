@@ -1,0 +1,126 @@
+{
+    "domain": "startquestion.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "library",
+        "www",
+        "app"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "startquestion\\.com\\/current\\/startquestion\\.js",
+            "cookies": 0.0000341,
+            "fingerprinting": 1,
+            "subdomains": [
+                "library"
+            ],
+            "apis": {
+                "window.localStorage": 5,
+                "window.innerHeight": 5,
+                "Document.cookie getter": 5,
+                "Document.cookie setter": 5,
+                "Date.prototype.getTime": 5,
+                "Navigator.prototype.userAgent": 5,
+                "window.innerWidth": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "caeaf364ec52455ff9b1215c318759b1749d8bb4d2fef45c03c35e87219546a3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "startquestion-session": {
+                    "ttl": 15552014,
+                    "length": 116,
+                    "prevalence": 0.00003406017752164524,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eobuwie.com.pl",
+                "www.arukereso.hu",
+                "www.compari.ro",
+                "www.gazetaprawna.pl",
+                "www.taniaksiazka.pl"
+            ]
+        },
+        {
+            "rule": "startquestion\\.com\\/survey\\/774880\\/zpetna-vazba\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "heureka.cz",
+                "www.pazaruvaj.com"
+            ]
+        },
+        {
+            "rule": "startquestion\\.com\\/widget-filling\\/configuration\\/f132f3da-40ec-11ec-8d09-00505685cca8",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6eb1eb1d6dcffef7262e02edad4d79cdbbc6adfb0460d2b559e939b32e6554c3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "arukereso.hu",
+                "www.compari.ro"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000341,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.5714285714285714
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2857142857142857
+        },
+        {
+            "domain": "ocdn.eu",
+            "prevalence": 0.14285714285714285
+        }
+    ],
+    "types": {
+        "Script": 5,
+        "Document": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "sara.ns.cloudflare.com",
+        "amit.ns.cloudflare.com"
+    ]
+}

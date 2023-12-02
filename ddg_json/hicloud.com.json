@@ -1,0 +1,80 @@
+{
+    "domain": "hicloud.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000136,
+    "sites": 20,
+    "subdomains": [
+        "dtm-dre.platform",
+        "dtm-drcn.platform"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "hicloud\\.com\\/download\\/web\\/dtm\\.js",
+            "cookies": 0.0000817,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dtm-dre.platform",
+                "dtm-drcn.platform"
+            ],
+            "apis": {
+                "Document.cookie getter": 10,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 13,
+            "prevalence": 0.0000886,
+            "cnames": [],
+            "responseHashes": [
+                "7e50762892e97ea4638c86302b07e50d15dc157b9fbd3389320faf398f89d197",
+                "caf16fcc8a47c63ecdbbae233c8686c7c28f4cfd29eb96b227ec22bf13ee8ab1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gulfnews.com",
+                "sodimac.falabella.com",
+                "www.ado.com.mx",
+                "www.banggood.com",
+                "www.betway.co.za",
+                "www.cebupacificair.com",
+                "www.encuentra24.com",
+                "www.falabella.com",
+                "www.mudah.my",
+                "www.netwerk24.com",
+                "www.news24.com",
+                "www.shein.com.mx",
+                "www.thestar.com.my"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000116,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.68
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.28
+        },
+        {
+            "domain": "ltwebstatic.com",
+            "prevalence": 0.04
+        }
+    ],
+    "types": {
+        "Script": 13
+    },
+    "nameservers": [
+        "ns4.dnsv5.com",
+        "ns3.dnsv5.com"
+    ]
+}

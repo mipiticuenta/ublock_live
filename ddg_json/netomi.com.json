@@ -1,0 +1,450 @@
+{
+    "domain": "netomi.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "chatapps-us",
+        "chatapps-us2"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "netomi\\.com\\/app\\/script\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "chatapps-us"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "db95f1cd5fa55591e6b302d942f1b397c4db883a9afd04e546a9fd67483d5f97"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "id.me",
+                "help.id.me"
+            ]
+        },
+        {
+            "rule": "netomi\\.com\\/app\\/chat_widget\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chatapps-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d3c624dc3e2ddb44b6071ea4dd711086a341f21815924b31616c8517882d5c6a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "id.me",
+                "help.id.me"
+            ]
+        },
+        {
+            "rule": "netomi\\.com\\/app\\/2\\.cfd7c22414bf6bcda607\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chatapps-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "04f1b2395eb3e9556900a752f321f1e7d92cd3acc56ffd28a5dd1c71c582205d"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "id.me",
+                "help.id.me"
+            ]
+        },
+        {
+            "rule": "netomi\\.com\\/app\\/app\\.9b1af812d54a764181b6\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chatapps-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b53c886e4b1645490ad06ca4f63f17a77e15013b8b4cc676703a8272a2b5c803"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "id.me",
+                "help.id.me"
+            ]
+        },
+        {
+            "rule": "netomi\\.com\\/app\\/vendor\\.548a3a3ac8ff4e66d735\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "chatapps-us"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.product": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4facbd2bf4050945cc7a0efab07772bde7810a9cc2d1eb85451f99e234c83aab"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "id.me",
+                "help.id.me"
+            ]
+        },
+        {
+            "rule": "netomi\\.com\\/app\\/netomi_sdk\\.548a3a3ac8ff4e66d735\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "chatapps-us"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "BroadcastChannel.prototype.constructor": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.onLine": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e77000c063a856a715c2a76408f34434dd3076b60c793e171a6170928115b7bc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "net_userId": {
+                    "ttl": 251703410621,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "net_conversationId": {
+                    "ttl": 1800,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "net_createdAt": {
+                    "ttl": 1800,
+                    "length": 13,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "id.me",
+                "help.id.me"
+            ]
+        },
+        {
+            "rule": "netomi\\.com\\/json-config\\/cd51179e-237e-4cb3-b044-577e5e5b3bc1\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chatapps-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bd216b4ce5284ba3570daa9385dd16219deb581192e5a4c06fc0cdae2f667067"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "id.me",
+                "help.id.me"
+            ]
+        },
+        {
+            "rule": "netomi\\.com\\/app\\/images\\/support_icon_dark\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chatapps-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "831b7862287f6512aec7532cc5333d428f186109a418aade81a6586031494d69"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "id.me",
+                "help.id.me"
+            ]
+        },
+        {
+            "rule": "netomi\\.com\\/assets\\/sound\\/default\\/bot\\/bot%20response\\.wav",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chatapps-us2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b0b6dcaf0139851d94841f5b5b22a8b37f124d92d57b54cbe30530d136d6f30c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "id.me",
+                "help.id.me"
+            ]
+        },
+        {
+            "rule": "netomi\\.com\\/assets\\/sound\\/default\\/user\\/User%20response\\.wav",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chatapps-us2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c1998d9ab6ad1048316442109fc4dfe5584dd365ff9cb10059631e6814db02f1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "id.me",
+                "help.id.me"
+            ]
+        },
+        {
+            "rule": "netomi\\.com\\/assets\\/sound\\/default\\/toggle\\/toggle\\.wav",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chatapps-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6363c01212169a5bf8f1aff6f6b165b3584d1d82566bda14fe936686f204cf94"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "id.me",
+                "help.id.me"
+            ]
+        },
+        {
+            "rule": "netomi\\.com\\/api\\/ip",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chatapps-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "id.me",
+                "help.id.me"
+            ]
+        },
+        {
+            "rule": "netomi\\.com\\/api\\/ip",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chatapps-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0f4b1c3cdee08939b7986245ac9c46b5b5bcd9f058fe47878df5fa6d9ef442a5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "id.me",
+                "help.id.me"
+            ]
+        },
+        {
+            "rule": "netomi\\.com\\/api\\/version",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chatapps-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "id.me",
+                "help.id.me"
+            ]
+        },
+        {
+            "rule": "netomi\\.com\\/api\\/version",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chatapps-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e91c32766cf49ce30c3a0c9039ca8b35745da1aec0988a4db013d5c9a957459f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "id.me",
+                "help.id.me"
+            ]
+        },
+        {
+            "rule": "netomi\\.com\\/api\\/mqtt",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chatapps-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "06fef9ed82a949afafb3db67a757d48e31f22ea67d2993797fb25a30230afe7b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "id.me",
+                "help.id.me"
+            ]
+        },
+        {
+            "rule": "netomi\\.com\\/api\\/mqtt",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chatapps-us"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "id.me",
+                "help.id.me"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 6,
+        "Fetch": 2,
+        "Stylesheet": 4,
+        "XHR": 14,
+        "Image": 2,
+        "Preflight": 6
+    },
+    "nameservers": [
+        "ns-551.awsdns-04.net",
+        "ns-178.awsdns-22.com",
+        "ns-1591.awsdns-06.co.uk",
+        "ns-1417.awsdns-49.org"
+    ]
+}

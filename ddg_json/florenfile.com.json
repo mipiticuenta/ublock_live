@@ -1,0 +1,124 @@
+{
+    "domain": "florenfile.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "florenfile\\.com\\/theme_2020\\/css\\/panel-dark\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "70be44f2b7ae8c2d1ad93d1e6bb57d5ba3b088b969ddca22340bb318a1de6c81"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ohgeekz.com",
+                "yourwishtoday.com"
+            ]
+        },
+        {
+            "rule": "florenfile\\.com\\/css\\/video-js\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fdf5dfab742b9d6c8c626174cd7e8899d2350d3ada34202ad6f3e87dadabb36c"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ohgeekz.com",
+                "yourwishtoday.com"
+            ]
+        },
+        {
+            "rule": "florenfile\\.com\\/js\\/video\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.languages": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "MediaSource.isTypeSupported": 2,
+                "Event.prototype.timeStamp": 2,
+                "URL.createObjectURL": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c2a90aeb1f68edd5507d70998f91b0e02c65fd05fd8716352b1335d61103d859"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ohgeekz.com",
+                "yourwishtoday.com"
+            ]
+        },
+        {
+            "rule": "florenfile\\.com\\/imagessvg\\/background-black\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c42155d8f1fdda17e2cf0f4d494d62f0ea6d65952c93b02173c4639bbad2c473"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ohgeekz.com",
+                "yourwishtoday.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "florenfile.com",
+            "prevalence": 0.5
+        }
+    ],
+    "types": {
+        "Stylesheet": 4,
+        "Script": 2,
+        "Image": 2
+    },
+    "nameservers": [
+        "carl.ns.cloudflare.com",
+        "gail.ns.cloudflare.com"
+    ]
+}

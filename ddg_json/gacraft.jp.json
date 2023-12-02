@@ -1,0 +1,878 @@
+{
+    "domain": "gacraft.jp",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000375,
+    "sites": 55,
+    "subdomains": [
+        "publish",
+        "sherpa-server-arm-prd24",
+        "sherpa-server-arm-prd25",
+        "sherpa-server-arm-prd30",
+        "sherpa-server-arm-prd27",
+        "static",
+        "sherpa-server-arm-auto-prd-i-0c083d6f7879bd382",
+        "sherpa-server-arm-prd26",
+        "sherpa-server-arm-prd33",
+        "sherpa-server-arm-auto-prd-i-01a7e71e9315a7821",
+        "sherpa-server-arm-prd29",
+        "sherpa-server-arm-auto-prd-i-0ac02146bee8ece15"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "gacraft\\.jp\\/9B97F250868D30B1FAE3723A61B2E325\\/sherpa\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "publish"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.product": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Event.prototype.timeStamp": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d440e63808f64a9423a1615db1cc0fc23d5f9d0a01baa3c991f732c9569f1ddc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ananweb.jp",
+                "www.jcb.co.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/9B97F250868D30B1FAE3723A61B2E325\\/sherpa-publish\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "publish"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "66631589d2df7945220e46fa6d87862ca310c199162b65db8fc2a5ec085e70c7"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ananweb.jp",
+                "www.jcb.co.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/socket\\/1v\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sherpa-server-arm-prd24",
+                "sherpa-server-arm-prd25",
+                "sherpa-server-arm-prd30",
+                "sherpa-server-arm-prd27"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "05da64d04fb012d907ff860db58e4d5e0ea9aa708376ce5e268bc77310144bd4",
+                "850232f7a7ba2d0162e3ad5376d8c67f2c0e4027579540c72489e9e31d175dda",
+                "b9b86ddba12f5b1300681a197826b5c631e2b3b61be721d47058dd0b2110c03d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ananweb.jp",
+                "belcy.jp",
+                "getnavi.jp",
+                "gooday.nikkei.co.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/socket\\/1v\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sherpa-server-arm-prd24",
+                "sherpa-server-arm-prd25",
+                "sherpa-server-arm-prd30",
+                "sherpa-server-arm-prd27"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ananweb.jp",
+                "belcy.jp",
+                "getnavi.jp",
+                "gooday.nikkei.co.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/advertisement_images\\/advertisement_images_14900_5f3077eb-f48d-47a7-a728-cae432e9f335\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "5fe06108dff321db6e128d496f165b0e6059a9f2fa8140e8cb8d88def3617b65"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ananweb.jp",
+                "omocoro.jp",
+                "realsound.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/publish\\/token\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.0000886,
+            "cnames": [],
+            "responseHashes": [
+                "9505f5d1da43b2a00bcd9fd09f2bf684d555940f065aa2074ba5cb6feab514d2"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ananweb.jp",
+                "cuty.jp",
+                "folk-media.com",
+                "gakumado.mynavi.jp",
+                "getnavi.jp",
+                "gooday.nikkei.co.jp",
+                "kurashi-no.jp",
+                "mens.tasclap.jp",
+                "travel.navitime.com",
+                "www.gnavi.co.jp",
+                "www.jcb.co.jp",
+                "www.navitime.co.jp",
+                "yogajournal.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/token\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000681,
+            "cnames": [],
+            "responseHashes": [
+                "ac14db476a4b5e3cd3f04db5687812621aa3692d7132b9625d28876de7a4371b",
+                "551f6f67b3ded55776b9a57e31979ff43ce9680c14811d1ac2ea61022b8e0049",
+                "d661e678f8c027ec6923d8d1d338e23c1752fa78286d3672bf65b37b1606ec51",
+                "b98ac8916416ffc32ab289bea363a70211f51ba6120649129164f4bd0f3e04dc",
+                "5f011593519cbd30fffc77d781ace0b7d1296017b0938f47b2ffa7314d0ad24c",
+                "91ae64fc5ece5663d19f3bb482931d97be24a791fa0e563770f19f12b79c6d53",
+                "a4213c9a8d765f8b796ac08c7855494404e3078cb8611086514e15fcbdea4647",
+                "57204ba256cb96336a9ffdcda2870014345eb8173022e41605ece56a2852e6f4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ananweb.jp",
+                "cuty.jp",
+                "folk-media.com",
+                "gakumado.mynavi.jp",
+                "getnavi.jp",
+                "gooday.nikkei.co.jp",
+                "travel.navitime.com",
+                "www.gnavi.co.jp",
+                "www.jcb.co.jp",
+                "yogajournal.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/BC82C063781C133D8EBFBB536FF8F8DD\\/sherpa\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "publish"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "NavigatorUAData.prototype.brands": 5,
+                "NavigatorUAData.prototype.platform": 5,
+                "window.localStorage": 5,
+                "window.sessionStorage": 5,
+                "Navigator.prototype.product": 5,
+                "Date.prototype.getTime": 5,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Event.prototype.timeStamp": 1
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "feebd07fd4bb1c6ab7904610b48948a15665a61455a13b8ada113abbf75bcb74"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "belcy.jp",
+                "gooday.nikkei.co.jp",
+                "kurashi-no.jp",
+                "woman.nikkei.com",
+                "www.travel.co.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/BC82C063781C133D8EBFBB536FF8F8DD\\/sherpa-publish\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "publish"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "82c5719b5a6d4e36eac4193b923bec742e7a08914768c509f5cbdae01f0c7b9f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "belcy.jp",
+                "gooday.nikkei.co.jp",
+                "kurashi-no.jp",
+                "woman.nikkei.com",
+                "www.travel.co.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/socket\\/2v\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sherpa-server-arm-prd27",
+                "sherpa-server-arm-auto-prd-i-0c083d6f7879bd382",
+                "sherpa-server-arm-prd25"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cktt.jp",
+                "folk-media.com",
+                "gakumado.mynavi.jp",
+                "www.gnavi.co.jp",
+                "www.jcb.co.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/socket\\/0v\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sherpa-server-arm-prd26",
+                "sherpa-server-arm-prd27"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cuty.jp",
+                "kurashi-no.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/socket\\/2v\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sherpa-server-arm-auto-prd-i-0c083d6f7879bd382",
+                "sherpa-server-arm-prd25",
+                "sherpa-server-arm-prd27"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "eff3cf0183fb7c9857aac2b77d45c82340ae430ecb825c873d768883da0b817a",
+                "af58d8b025abe32f003233c4a815a9da60e3edb9e6833810d8e80cf070145479",
+                "1fd7aca84b4dde8cc64e7e0be010fa9b6c1ff6f3e79569d51c3e80beb3cef65d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "folk-media.com",
+                "gakumado.mynavi.jp",
+                "www.gnavi.co.jp",
+                "www.jcb.co.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/596444ABE7FC4D7AA78FEDEF2ADC8C5F\\/sherpa\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "publish"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 6,
+                "NavigatorUAData.prototype.brands": 6,
+                "NavigatorUAData.prototype.platform": 6,
+                "window.localStorage": 6,
+                "window.sessionStorage": 6,
+                "Navigator.prototype.product": 6,
+                "Date.prototype.getTime": 6,
+                "window.innerWidth": 6,
+                "window.innerHeight": 6,
+                "Event.prototype.timeStamp": 5
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "427ddcbf3467103d37388933180fea4a1282db0cd3a16662a9be7cdeaad7137a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mynavi.jp",
+                "getnavi.jp",
+                "mens.tasclap.jp",
+                "travel.navitime.com",
+                "www.gnavi.co.jp",
+                "yogajournal.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/596444ABE7FC4D7AA78FEDEF2ADC8C5F\\/sherpa-publish\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "publish"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "d95c0fcc21d5bb63316a944bc31b02dc36371e2bc0c23317f7144858ce082aa8"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mynavi.jp",
+                "getnavi.jp",
+                "mens.tasclap.jp",
+                "travel.navitime.com",
+                "www.gnavi.co.jp",
+                "yogajournal.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/prebid-v3\\/flux_gamewith",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gamewith.jp",
+                "pokemongo.gamewith.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/publish\\/travelnavitime\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "834ee2800dec76ecabfd0c75b90bc0c75272559f8b339840821e06480006b5aa",
+                "867179bc021546f99b388584a8da6a450292693e03ac525062259cbff6bd5a6a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "navitime.com",
+                "japantravel.navitime.com",
+                "travel.navitime.com"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/advertisement_images\\/advertisement_images_standard_native_15697_75970d0d-ef22-4474-b437-2e1e1bd252c9\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e7e3ff08061779d144e3c96b533a0fc3ab4fb7ae73704d747547b63c1bada9cc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kufura.jp",
+                "oggi.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/socket\\/5v\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sherpa-server-arm-prd27",
+                "sherpa-server-arm-prd33",
+                "sherpa-server-arm-prd30",
+                "sherpa-server-arm-auto-prd-i-01a7e71e9315a7821"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df",
+                "0f9661cc0cc112d3450260705a9e48ae535dd9209f7e9ae798b6bcc447cf9574",
+                "f153ed13328d06b80d2d5135dc269efaf8b3b360ba8dbd62b38b146aea968edb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tasclap.jp",
+                "mens.tasclap.jp",
+                "rurubu.jp",
+                "travel.navitime.com",
+                "www.walkerplus.com"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/socket\\/5v\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sherpa-server-arm-prd27",
+                "sherpa-server-arm-prd33",
+                "sherpa-server-arm-prd30"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tasclap.jp",
+                "rurubu.jp",
+                "travel.navitime.com"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/advertisement_images\\/advertisement_images_standard_native_15978_da022f7d-c8a7-4750-97a7-d30351ab19e4\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4a3d4fbd7353f489672aa2b282d24e26b9271eeb6ab94c1f45b61f0b5fc2d54f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nifty.com",
+                "www.gnavi.co.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/F61D9DAE0E773284B4B4CA85235545CC\\/sherpa\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "publish"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "window.localStorage": 4,
+                "window.sessionStorage": 4,
+                "Navigator.prototype.product": 4,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "ef314c4a525d7b9b65a18414fa93f2ec9bbe53575a434cd61b74e4984a54c3a5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rurubu.jp",
+                "www.lettuceclub.net",
+                "www.mapple.net",
+                "www.navitime.co.jp",
+                "www.walkerplus.com"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/F61D9DAE0E773284B4B4CA85235545CC\\/sherpa-publish\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "publish"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "fdd79d45e9b0403554e30203eca2266bef5130e0aa2c72a04bcd2a42891303a4"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rurubu.jp",
+                "www.lettuceclub.net",
+                "www.mapple.net",
+                "www.navitime.co.jp",
+                "www.walkerplus.com"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/socket\\/6v\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sherpa-server-arm-prd29",
+                "sherpa-server-arm-prd30"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df",
+                "f002054d0a248966acaa8731d93388f8e39e93239967940c5261098e80527d8b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nikkei.com",
+                "woman.nikkei.com",
+                "yogajournal.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/socket\\/6v\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sherpa-server-arm-prd29",
+                "sherpa-server-arm-prd30"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nikkei.com",
+                "woman.nikkei.com",
+                "yogajournal.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/socket\\/4v\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sherpa-server-arm-prd30",
+                "sherpa-server-arm-auto-prd-i-0ac02146bee8ece15",
+                "sherpa-server-arm-auto-prd-i-0c083d6f7879bd382"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df",
+                "317f4d52403add2e0a5fb5c76bde923a21ab5eab8289cde980263e95d5a10125",
+                "8c7cdb8551554fe2854eafb33b25196f0bf9defa822dc7ac73e9ef146923020f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lettuceclub.net",
+                "www.lettuceclub.net",
+                "www.navitime.co.jp",
+                "www.travel.co.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/socket\\/4v\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sherpa-server-arm-prd30",
+                "sherpa-server-arm-auto-prd-i-0ac02146bee8ece15",
+                "sherpa-server-arm-auto-prd-i-0c083d6f7879bd382"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lettuceclub.net",
+                "www.navitime.co.jp",
+                "www.travel.co.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/socket\\/3v\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sherpa-server-arm-prd24"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "35668ad422f5606d9a82693c58a2bbf162da6b46977567e64916c3921e317c0a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mapple.net",
+                "www.mapple.net",
+                "www.navitime.co.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/socket\\/3v\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sherpa-server-arm-prd24"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mapple.net",
+                "www.navitime.co.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/publish\\/navitime\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8d7b0e8d04fda77290556898c807765cddc48689276fb7516f665f144979fd67"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "navitime.co.jp",
+                "www.navitime.co.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/publish\\/logly_linetravel\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b65ee726eccc78638a958af778c84033893f33428f5afed435ca5fb288cc8f3a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "travel.co.jp",
+                "www.travel.co.jp"
+            ]
+        },
+        {
+            "rule": "gacraft\\.jp\\/prebid-v3\\/vivi",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vivi.tv",
+                "www.vivi.tv"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.3557692307692308
+        },
+        {
+            "domain": "logly.co.jp",
+            "prevalence": 0.19230769230769232
+        },
+        {
+            "domain": "flux-cdn.com",
+            "prevalence": 0.1346153846153846
+        },
+        {
+            "domain": "geoedge.be",
+            "prevalence": 0.09615384615384616
+        },
+        {
+            "domain": "ravenjs.com",
+            "prevalence": 0.08653846153846154
+        },
+        {
+            "domain": "rubiconproject.com",
+            "prevalence": 0.038461538461538464
+        },
+        {
+            "domain": "anymind360.com",
+            "prevalence": 0.028846153846153848
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.028846153846153848
+        },
+        {
+            "domain": "adlightning.com",
+            "prevalence": 0.019230769230769232
+        },
+        {
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 0.009615384615384616
+        }
+    ],
+    "types": {
+        "Script": 35,
+        "Stylesheet": 18,
+        "XHR": 27,
+        "WebSocket": 22,
+        "Image": 7,
+        "Document": 13
+    },
+    "nameservers": [
+        "ns-690.awsdns-22.net",
+        "ns-1160.awsdns-17.org",
+        "ns-396.awsdns-49.com",
+        "ns-1691.awsdns-19.co.uk"
+    ]
+}

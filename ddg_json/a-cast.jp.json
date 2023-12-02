@@ -1,0 +1,116 @@
+{
+    "domain": "a-cast.jp",
+    "owner": {
+        "name": "activecore, Inc.",
+        "displayName": "activecore"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "tracer21",
+        "tracer31"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "a-cast\\.jp\\/entry\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tracer21",
+                "tracer31"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "Document.cookie getter": 3,
+                "window.localStorage": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "79fbf6175178bd15bf36e5ac6d9716cdf80f0a272a09bcc2a23d3d411c1a1498",
+                "f47a1d8533b502b5912d2b078d9aa13dc1438558341f33e21c190831897feaf9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ac": {
+                    "ttl": 194592368,
+                    "length": 14,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mineo.jp",
+                "shopping.bookoff.co.jp",
+                "www.hankyu-travel.com"
+            ]
+        },
+        {
+            "rule": "a-cast\\.jp\\/actag",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracer21",
+                "tracer31"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "1bd2aa0bb9f0a0fd919c42a18c81645bd6d9601f60086928b05db8a5be978689"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "ac": 0.000020436106512987146
+            },
+            "exampleSites": [
+                "mineo.jp",
+                "shopping.bookoff.co.jp",
+                "www.hankyu-travel.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.4
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.2
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2
+        },
+        {
+            "domain": "bookoffonline.co.jp",
+            "prevalence": 0.2
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "Image": 3
+    },
+    "nameservers": [
+        "03.dnsv.jp",
+        "01.dnsv.jp",
+        "04.dnsv.jp",
+        "02.dnsv.jp"
+    ]
+}

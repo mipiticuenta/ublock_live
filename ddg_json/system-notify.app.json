@@ -1,0 +1,89 @@
+{
+    "domain": "system-notify.app",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "system-notify\\.app\\/f\\/sdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {
+                "window.indexedDB": 6,
+                "NavigatorUAData.prototype.getHighEntropyValues": 6,
+                "Notification.permission": 5,
+                "window.localStorage": 1
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "e8f86ced4bf118125af6d06cda5c251b474bf497c69b807fd01fdf141a34a470",
+                "9ff30919c907c6b2c0822cbae705964554e5a3099da79d976b3ec534163a458e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coolrom.com",
+                "m.soccerstreams100.io",
+                "onlymp3.to",
+                "savefromx.com",
+                "subscene.be",
+                "www.ac24.cz"
+            ]
+        },
+        {
+            "rule": "system-notify\\.app\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coolrom.com",
+                "m.soccerstreams100.io",
+                "onlymp3.to",
+                "savefromx.com",
+                "subscene.be",
+                "www.ac24.cz"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9855072463768116
+        },
+        {
+            "domain": "coolrom.com.au",
+            "prevalence": 0.014492753623188406
+        }
+    ],
+    "types": {
+        "Script": 6,
+        "Ping": 6
+    },
+    "nameservers": [
+        "braden.ns.cloudflare.com",
+        "aspen.ns.cloudflare.com"
+    ]
+}

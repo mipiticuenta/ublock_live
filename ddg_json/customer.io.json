@@ -1,0 +1,478 @@
+{
+    "domain": "customer.io",
+    "owner": {
+        "name": "Peaberry Software Inc.",
+        "displayName": "Peaberry Software"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000777,
+    "sites": 114,
+    "subdomains": [
+        "assets",
+        "track",
+        "track-eu",
+        "cdp"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "customer\\.io\\/assets\\/track\\.js",
+            "cookies": 0.000232,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {
+                "Document.cookie getter": 59,
+                "window.innerWidth": 58,
+                "window.innerHeight": 58,
+                "Document.cookie setter": 34,
+                "Date.prototype.getTime": 58
+            },
+            "sites": 66,
+            "prevalence": 0.00045,
+            "cnames": [],
+            "responseHashes": [
+                "c5dc250228b63ec45ccaf25c7c7b9103a504bd5ebed035e88067475076c4b78d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_cioanonid": {
+                    "ttl": 31536004,
+                    "length": 36,
+                    "prevalence": 0.00020436106512987146,
+                    "uniqueness": 1
+                },
+                "_cioid": {
+                    "ttl": 31536003,
+                    "length": 22,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.playusa.com",
+                "www.cookpolitical.com",
+                "tryfi.com",
+                "arrived.com",
+                "www.mapbox.com",
+                "www.scienceofpeople.com",
+                "www.vinovest.co",
+                "www.hollywood.com",
+                "riverside.fm",
+                "mxtoolbox.com",
+                "www.deepdyve.com",
+                "www.heinz.com",
+                "www.bonus.com",
+                "forums.thebump.com",
+                "www.rokfin.com",
+                "www.salehoo.com",
+                "decrypt.co",
+                "www.thelines.com",
+                "www.kenhub.com",
+                "frameusa.com"
+            ]
+        },
+        {
+            "rule": "customer\\.io\\/events\\/page\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "track",
+                "track-eu"
+            ],
+            "apis": {},
+            "sites": 64,
+            "prevalence": 0.000436,
+            "cnames": [],
+            "responseHashes": [
+                "7fff1569ea68ef52782ba25b0cf3934627f7a4fc1e8e22f4652de959c5f97978",
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_cioanonid": 0.0002724814201731619,
+                "_li_dcdm_c": 0.000006812035504329049,
+                "ajs_anonymous_id": 0.0001294286745822519,
+                "_cioid": 0.000006812035504329049,
+                "referrer66_009": 0.000006812035504329049,
+                "IR_gbd": 0.000027248142017316195
+            },
+            "exampleSites": [
+                "www.pillpack.com",
+                "www.playusa.com",
+                "forums.thebump.com",
+                "www.theinformation.com",
+                "www.bigstockphoto.com",
+                "www.bonus.com",
+                "casinobrango.com",
+                "www.heinz.com",
+                "www.deepdyve.com",
+                "www.kenhub.com",
+                "printify.com",
+                "candor.co",
+                "docs.mapbox.com",
+                "ping.com",
+                "www.claimsjournal.com",
+                "www.webstaurantstore.com",
+                "www.sendoutcards.com",
+                "riverside.fm",
+                "tryfi.com",
+                "www.rushordertees.com"
+            ]
+        },
+        {
+            "rule": "customer\\.io\\/assets\\/in-app\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "9a23e7b8795e9d5e098500a4fe72372bb291d73fa49587be69c506752a6b1603"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eforms.com",
+                "ping.com",
+                "saucey.com",
+                "up.codes",
+                "www.albert.io",
+                "www.expertinstitute.com",
+                "www.salehoo.com"
+            ]
+        },
+        {
+            "rule": "customer\\.io\\/events\\/identify\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "track"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7fff1569ea68ef52782ba25b0cf3934627f7a4fc1e8e22f4652de959c5f97978"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "ajs_anonymous_id": 0.000006812035504329049,
+                "_cioid": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "eforms.com",
+                "frameusa.com"
+            ]
+        },
+        {
+            "rule": "customer\\.io\\/events\\/event\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "track",
+                "track-eu"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "7fff1569ea68ef52782ba25b0cf3934627f7a4fc1e8e22f4652de959c5f97978"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "ajs_anonymous_id": 0.00003406017752164524,
+                "_ga": 0.000020436106512987146,
+                "_cioanonid": 0.000020436106512987146
+            },
+            "exampleSites": [
+                "thebump.com",
+                "municibid.com",
+                "registry.thebump.com",
+                "riverside.fm",
+                "www.kenhub.com",
+                "www.mastersportal.com",
+                "www.thebump.com",
+                "www.webstaurantstore.com"
+            ]
+        },
+        {
+            "rule": "customer\\.io\\/assets\\/track-eu\\.js",
+            "cookies": 0.0000477,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {
+                "Document.cookie getter": 7,
+                "window.innerWidth": 6,
+                "window.innerHeight": 6,
+                "Document.cookie setter": 7,
+                "Date.prototype.getTime": 7
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "d8892eff20b786c85fb27b2abd61206cdda1b75704d112adabe47b0c39313fc6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_cioanonid": {
+                    "ttl": 31536004,
+                    "length": 36,
+                    "prevalence": 0.00004768424853030334,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hvg.hu",
+                "www.bachelorsportal.com",
+                "www.bokadirekt.se",
+                "www.capitoltrades.com",
+                "www.kittl.com",
+                "www.mastersportal.com",
+                "www.yousty.ch"
+            ]
+        },
+        {
+            "rule": "customer\\.io\\/assets\\/in-app-eu\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f0391f4438253db6b5d86856a7fbd0da2a20d310ee9993a8c515673d20eb7ed8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hvg.hu",
+                "www.bokadirekt.se"
+            ]
+        },
+        {
+            "rule": "customer\\.io\\/v1\\/p",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "municibid.com",
+                "www.beehiiv.com",
+                "www.ppatour.com"
+            ]
+        },
+        {
+            "rule": "customer\\.io\\/v1\\/analytics-js\\/actions\\/twitter-pixel\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7d9ef71b7da27af247be29d8b2f5c5d54df1edb9d2a735ad18ff2af8d4fee707"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beehiiv.com",
+                "www.ppatour.com"
+            ]
+        },
+        {
+            "rule": "customer\\.io\\/v1\\/analytics-js\\/snippet\\/ad119cc6a7c5a493ba37\\/analytics\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdp"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.onLine": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "54c8607cca0ecb2effe8a33c016d5de78b34a73cb9d3d7ed55237fcbf312bd02"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ajs_anonymous_id": {
+                    "ttl": 31536003,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ppatour.com",
+                "www.ppatour.com"
+            ]
+        },
+        {
+            "rule": "customer\\.io\\/v1\\/projects\\/ad119cc6a7c5a493ba37\\/settings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6200c5b44ab7f82747721431fde2281e021cb071c0ec4c5ca8727b19202cc4c0"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ppatour.com",
+                "www.ppatour.com"
+            ]
+        },
+        {
+            "rule": "customer\\.io\\/v1\\/analytics-js\\/actions\\/meta-pixel\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1c1cfa309d68b6d6a93c3ad89eb64a02439e905ac968d3fe2ee37b3e6a1678e4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ppatour.com",
+                "www.ppatour.com"
+            ]
+        },
+        {
+            "rule": "customer\\.io\\/v1\\/analytics-js\\/actions\\/google-analytics-4-web\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7c656a251bc498a1001d04210eb1cc1823431b7b4973e9b35854b2c9266431d3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ppatour.com",
+                "www.ppatour.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000443,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.4731182795698925
+        },
+        {
+            "domain": "segment.com",
+            "prevalence": 0.27956989247311825
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.15591397849462366
+        },
+        {
+            "domain": "osano.com",
+            "prevalence": 0.03763440860215054
+        },
+        {
+            "domain": "ubembed.com",
+            "prevalence": 0.016129032258064516
+        },
+        {
+            "domain": "go-mpulse.net",
+            "prevalence": 0.010752688172043012
+        },
+        {
+            "domain": "yottaa.com",
+            "prevalence": 0.010752688172043012
+        },
+        {
+            "domain": "segment.io",
+            "prevalence": 0.010752688172043012
+        },
+        {
+            "domain": "d2zah9y47r7bi2.cloudfront.net",
+            "prevalence": 0.005376344086021506
+        }
+    ],
+    "types": {
+        "Script": 90,
+        "Image": 74,
+        "Fetch": 5
+    },
+    "nameservers": [
+        "ns-1893.awsdns-44.co.uk",
+        "ns-1181.awsdns-19.org",
+        "ns-618.awsdns-13.net",
+        "ns-499.awsdns-62.com"
+    ]
+}

@@ -1,0 +1,199 @@
+{
+    "domain": "bam-x.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000109,
+    "sites": 16,
+    "subdomains": [
+        "static",
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "bam-x\\.com\\/tags\\/bergdorf\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7b540a56b13920df2bfe45bcf94af0e51423b7f2882f83e251be558b7d1ce729"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bergdorfgoodman.com",
+                "www.bergdorfgoodman.com"
+            ]
+        },
+        {
+            "rule": "bam-x\\.com\\/api\\/v0\\/auction\\/",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "d785e70d7e0bec0722e01010515ee5a531624531bdd1bd476b4ae350240df94a",
+                "08220a03fca04af2b8bef7a2a53bae0044ac52cace1634ec3bcd7c94e92e98a0",
+                "89ed5498ef9656f4c5faf85ce13f988f813b489efad3bfd8875fd03407416ec1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kotaku.com",
+                "www.androidauthority.com",
+                "www.insidehook.com",
+                "www.pockettactics.com"
+            ]
+        },
+        {
+            "rule": "bam-x\\.com\\/api\\/v0\\/auction\\/",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kotaku.com",
+                "www.androidauthority.com",
+                "www.insidehook.com",
+                "www.pockettactics.com"
+            ]
+        },
+        {
+            "rule": "bam-x\\.com\\/tags\\/forward\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d650bdf18842019399be76bb3c68b37e4993e60faeb2823c28cb45b018ef6f37"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fwrd.com",
+                "www.fwrd.com"
+            ]
+        },
+        {
+            "rule": "bam-x\\.com\\/tags\\/revolve\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8063f3b4d0c62ff02245fae5c82b3ab048d89f1c18ec510772bbc3859652ec7d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "revolve.com",
+                "www.revolve.com"
+            ]
+        },
+        {
+            "rule": "bam-x\\.com\\/tags\\/shefinds\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d4dd9dbc6099790b3a3807c15f4ef9b8e71cab2a4a646e256b47248a8c430d09"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shefinds.com",
+                "www.shefinds.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000409,
+    "topInitiators": [
+        {
+            "domain": "narrativ.com",
+            "prevalence": 0.375
+        },
+        {
+            "domain": "px-cloud.net",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.1875
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.1875
+        }
+    ],
+    "types": {
+        "Script": 8,
+        "XHR": 4,
+        "Preflight": 4
+    },
+    "nameservers": [
+        "ns-534.awsdns-02.net",
+        "ns-437.awsdns-54.com",
+        "ns-1821.awsdns-35.co.uk",
+        "ns-1225.awsdns-25.org"
+    ]
+}

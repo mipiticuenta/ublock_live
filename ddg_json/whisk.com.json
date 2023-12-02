@@ -1,0 +1,372 @@
+{
+    "domain": "whisk.com",
+    "owner": {
+        "name": "Foodient Ltd.",
+        "displayName": "Foodient"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000817,
+    "sites": 12,
+    "subdomains": [
+        "cdn",
+        "events",
+        "widget"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "whisk\\.com\\/sdk\\/proxy\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "334a594e3309048dd036e7476698a69234d6f80b0145f4eccc69c08fddae58fa"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gimmedelicious.com",
+                "realfood.tesco.com",
+                "usapears.org",
+                "www.delicious.com.au",
+                "www.hiddenvalley.com",
+                "www.jamieoliver.com",
+                "www.nigella.com",
+                "www.oldelpaso.com",
+                "www.pillsbury.com"
+            ]
+        },
+        {
+            "rule": "whisk\\.com\\/sdk\\/proxy\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 4,
+                "window.localStorage": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "4d0f8e88c50c93e69de82e98b6fba86efcacfed0b9f6d79b78a445335bb5ba96"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gimmedelicious.com",
+                "realfood.tesco.com",
+                "usapears.org",
+                "www.delicious.com.au",
+                "www.hiddenvalley.com",
+                "www.jamieoliver.com",
+                "www.nigella.com",
+                "www.oldelpaso.com",
+                "www.pillsbury.com"
+            ]
+        },
+        {
+            "rule": "whisk\\.com\\/v1\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gimmedelicious.com",
+                "realfood.tesco.com",
+                "usapears.org",
+                "www.delicious.com.au",
+                "www.hiddenvalley.com",
+                "www.jamieoliver.com",
+                "www.nigella.com",
+                "www.oldelpaso.com",
+                "www.pillsbury.com"
+            ]
+        },
+        {
+            "rule": "whisk\\.com\\/v1\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gimmedelicious.com",
+                "realfood.tesco.com",
+                "usapears.org",
+                "www.delicious.com.au",
+                "www.hiddenvalley.com",
+                "www.jamieoliver.com",
+                "www.nigella.com",
+                "www.oldelpaso.com",
+                "www.pillsbury.com"
+            ]
+        },
+        {
+            "rule": "whisk\\.com\\/api\\/v2\\/recipes\\/_widget",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "c1061392b46f6ac54b65b54c85877500d3d996b7d60ff109e437b7f178f4973b",
+                "4eeebc491cc60e566397087df142d17f2142e548c14f71f1d3b8f1f799592452",
+                "fe66a782fd3d1a5a3497713bbb43de6e69a7fc554c3eb88de94be8f3d2b844a3",
+                "1011d069af7eda701a65e78d87afde6e61de3b67da4f8f28f3acd551aa779baf",
+                "cbef79e3ba90f18794e4457f4482260457f9cf47884cbda0454827c212f6b45a",
+                "a40e11bed73fb2dbd521e4e25552d67ce9f9654fa7eda7f127853c8e945c6dec",
+                "eccff8658a8fe3988f6a534160e4e3c64f5f5ba5863e8d1f20e5175ce1004e13"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "gimmedelicious.com",
+                "realfood.tesco.com",
+                "usapears.org",
+                "www.delicious.com.au",
+                "www.hiddenvalley.com",
+                "www.nigella.com",
+                "www.oldelpaso.com",
+                "www.pillsbury.com"
+            ]
+        },
+        {
+            "rule": "whisk\\.com\\/api\\/v2\\/recipes\\/_widget",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "gimmedelicious.com",
+                "realfood.tesco.com",
+                "usapears.org",
+                "www.delicious.com.au",
+                "www.hiddenvalley.com",
+                "www.nigella.com",
+                "www.oldelpaso.com",
+                "www.pillsbury.com"
+            ]
+        },
+        {
+            "rule": "whisk\\.com\\/sdk\\/shopping-list\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "window.localStorage": 3,
+                "Screen.prototype.height": 5,
+                "Screen.prototype.width": 5,
+                "window.devicePixelRatio": 5,
+                "Navigator.prototype.connection": 5,
+                "window.innerHeight": 5,
+                "window.innerWidth": 5,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 5,
+                "Navigator.prototype.languages": 3,
+                "Element.prototype.getClientRects": 2
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "f63a2d2396c3a7435d39e56f1d2fe0b5a2ddeb918c2691d6aa05d73a0bc4f314"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usapears.org",
+                "www.hiddenvalley.com",
+                "www.nigella.com",
+                "www.oldelpaso.com",
+                "www.pillsbury.com"
+            ]
+        },
+        {
+            "rule": "whisk\\.com\\/sdk\\/async~sentry-5e9d06b3c74d33aa7828\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1c9d5e29b41828d5cfa3c26b09daccd59525c2352c8824e1e67894996c9bb589"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usapears.org",
+                "www.nigella.com"
+            ]
+        },
+        {
+            "rule": "whisk\\.com\\/sdk\\/shopping-list-sp\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.connection": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Navigator.prototype.languages": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6af1b117f745791b63b6b1f15bf5e5c9f6a00032924fa2d51c2ff404cd3d9edb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "delicious.com.au",
+                "www.jamieoliver.com"
+            ]
+        },
+        {
+            "rule": "whisk\\.com\\/sdk\\/add-to-list-deliciousau-widget\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0b9daceaba132653ca43f0ad9374574ca95c15fb1aace5c1d2122b43bca0122d"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "delicious.com.au",
+                "www.delicious.com.au"
+            ]
+        },
+        {
+            "rule": "whisk\\.com\\/sdk\\/add-to-list-deliciousau-widget\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1b83e080d9ff96420bb2176599365e8e6a417853fc695ebf7320dc8debd9aeac"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "delicious.com.au",
+                "www.delicious.com.au"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000341,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6470588235294118
+        },
+        {
+            "domain": "newrelic.com",
+            "prevalence": 0.17647058823529413
+        },
+        {
+            "domain": "msecnd.net",
+            "prevalence": 0.11764705882352941
+        },
+        {
+            "domain": "cookielaw.org",
+            "prevalence": 0.058823529411764705
+        }
+    ],
+    "types": {
+        "Document": 11,
+        "Script": 20,
+        "Fetch": 17,
+        "Preflight": 17
+    },
+    "nameservers": [
+        "pam.ns.cloudflare.com",
+        "rick.ns.cloudflare.com"
+    ]
+}

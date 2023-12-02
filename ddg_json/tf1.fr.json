@@ -1,0 +1,89 @@
+{
+    "domain": "tf1.fr",
+    "owner": {
+        "name": "TELEVISION FRANCAISE 1",
+        "displayName": "TELEVISION FRANCAISE 1"
+    },
+    "source": [
+        "DuckDuckGo-FR"
+    ],
+    "prevalence": 0.000101,
+    "sites": 1,
+    "subdomains": [
+        "www",
+        "metrics-broker.prod.p"
+    ],
+    "cnames": [],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "tf1\\.fr\\/graphql\\/web",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "3911535d4b10eb9f60b12affa97e341d918c6c25a4dea977dc973f5785497279"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "laurentmariotte.com",
+                "www.laurentmariotte.com"
+            ]
+        },
+        {
+            "rule": "tf1\\.fr\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "metrics-broker.prod.p"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "laurentmariotte.com",
+                "www.laurentmariotte.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000101,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "gigya.com",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "trustcommander.net",
+            "prevalence": 0.3333333333333333
+        }
+    ],
+    "types": {
+        "XHR": 2,
+        "Fetch": 2
+    },
+    "nameservers": [
+        "ns1.nan2.fr.uu.net",
+        "ns1.coltfrance.com"
+    ]
+}

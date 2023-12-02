@@ -1,0 +1,209 @@
+{
+    "domain": "exactag.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000129,
+    "sites": 19,
+    "subdomains": [
+        "cdn",
+        "m"
+    ],
+    "cnames": [
+        {
+            "original": "ce.baur.de",
+            "resolved": "cdn.exactag.com"
+        },
+        {
+            "original": "ctagm.eduscho.at",
+            "resolved": "cdn.exactag.com"
+        },
+        {
+            "original": "ctagm.tchibo.de",
+            "resolved": "cdn.exactag.com"
+        },
+        {
+            "original": "em.baur.de",
+            "resolved": "m.exactag.com"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "exactag\\.com\\/js\\/exactag\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 8,
+                "Document.cookie getter": 7
+            },
+            "sites": 12,
+            "prevalence": 0.0000817,
+            "cnames": [
+                {
+                    "original": "ctagm.tchibo.de",
+                    "resolved": "cdn.exactag.com"
+                },
+                {
+                    "original": "ce.baur.de",
+                    "resolved": "cdn.exactag.com"
+                },
+                {
+                    "original": "ctagm.eduscho.at",
+                    "resolved": "cdn.exactag.com"
+                }
+            ],
+            "responseHashes": [
+                "249b57115bcdf435cca6be3db97cdb35357d472f209c1dbc34c6c9ab840708bd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "meinauto.de",
+                "tchibo.de",
+                "www.baur.de",
+                "www.dyson.de",
+                "www.eduscho.at",
+                "www.jako-o.com",
+                "www.lampenwelt.de",
+                "www.lights.co.uk",
+                "www.meinauto.de",
+                "www.roller.de",
+                "www.tchibo.de",
+                "zattoo.com"
+            ]
+        },
+        {
+            "rule": "exactag\\.com\\/pi\\.aspx",
+            "cookies": 0.0000817,
+            "fingerprinting": 1,
+            "subdomains": [
+                "m"
+            ],
+            "apis": {
+                "Navigator.prototype.appVersion": 11,
+                "Date.prototype.getTime": 11,
+                "Document.cookie setter": 10
+            },
+            "sites": 13,
+            "prevalence": 0.0000886,
+            "cnames": [
+                {
+                    "original": "em.baur.de",
+                    "resolved": "m.exactag.com"
+                }
+            ],
+            "responseHashes": [
+                "a1c553d9311cbfc23ceaef6020cd81c5d8e9aa427b90bd0f68e59bd8283f4330",
+                "b545f6e6650023717b1cf47983382cffc96866cb99f66cd88899808ad8356b62",
+                "db1e7de170e3526a6d851e8f1d65f107ed6c4e0a2f689c388f4f40f7250ac24e",
+                "a14925fdec7b118a365bedf35c33b602021d49ed10dd3dd9cd688b00c07b5f40",
+                "d8efdf70c010d67895418e4577d06e6cca43a08e1e96d2ba8f3e8d0a05282497",
+                "0b0e5387d82a7a0af351f04524cdd04ed1a05eae1d4830d9a98042ac892f061c",
+                "89b4c7b367cf5db6824782ef8a7c0e073c1842ede3ea4366207041f44f4c3902",
+                "4bcb56b450320aac4ece36a97ee9edfe20ce9b35b41026e153590dfe12d0786e",
+                "f8e0634e228f7fbeb4b517e32783c87c7a831510b0fc0c15fe152744ca5efe6c",
+                "45bb629a6f5ecf00ef7fa163f9776ed2c3a9e4f4488bea0fc5245025b371d046",
+                "2503d045d289b937ac83a01dfb7092e05af7ebea40f8b6a3e511bb8210f30036"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "et_uk": {
+                    "ttl": 15552012,
+                    "length": 32,
+                    "prevalence": 0.00006812035504329048,
+                    "uniqueness": 1
+                },
+                "et_gk": {
+                    "ttl": 7776012,
+                    "length": 60,
+                    "prevalence": 0.00006812035504329048,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "meinauto.de",
+                "www.baur.de",
+                "www.dyson.de",
+                "www.jako-o.com",
+                "www.lampenwelt.de",
+                "www.lights.co.uk",
+                "www.meinauto.de",
+                "www.roller.de",
+                "www.sixt.com.au",
+                "www.sixt.com",
+                "www.sixt.co.uk",
+                "www.sixt.de",
+                "www.sixt.fr"
+            ]
+        },
+        {
+            "rule": "exactag\\.com\\/js\\/exactag_sixt\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 5,
+                "Document.cookie getter": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "3c2592647bc2071d89d484ce5894082fbc78ea8f44e71e0461cd779c235be565"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sixt.com.au",
+                "www.sixt.com",
+                "www.sixt.co.uk",
+                "www.sixt.de",
+                "www.sixt.fr"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000954,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.41379310344827586
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.3103448275862069
+        },
+        {
+            "domain": "instana.io",
+            "prevalence": 0.1724137931034483
+        },
+        {
+            "domain": "fraud0.com",
+            "prevalence": 0.06896551724137931
+        },
+        {
+            "domain": "adition.com",
+            "prevalence": 0.034482758620689655
+        }
+    ],
+    "types": {
+        "Script": 30
+    },
+    "nameservers": [
+        "ns-922.awsdns-51.net",
+        "ns-1125.awsdns-12.org",
+        "ns-200.awsdns-25.com",
+        "ns-1881.awsdns-43.co.uk"
+    ]
+}

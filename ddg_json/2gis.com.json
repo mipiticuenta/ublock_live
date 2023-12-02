@@ -1,0 +1,362 @@
+{
+    "domain": "2gis.com",
+    "owner": {
+        "name": "DoubleGIS LLC",
+        "displayName": "DoubleGIS"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "keys.api",
+        "s1.bss",
+        "tile1-cdn.maps",
+        "tile0.maps",
+        "tile3-cdn.maps",
+        "tile2.maps",
+        "tile0-cdn.maps",
+        "disk",
+        "mapgl"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "2gis\\.com\\/public\\/v1\\/keys\\/10153539-2026-4a0c-b7a3-52ddb3fed411\\/services\\/mapgl-js-api",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "keys.api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0ebd4d69c9a3a200849195bed658767fc7853f4064f1cbc8edf01661dea03eaf"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "2gis.ae",
+                "2gis.kz"
+            ]
+        },
+        {
+            "rule": "2gis\\.com\\/bss-ext\\/3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s1.bss"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "2gis.ae",
+                "2gis.kz"
+            ]
+        },
+        {
+            "rule": "2gis\\.com\\/bss-ext\\/3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s1.bss"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "2gis.ae",
+                "2gis.kz"
+            ]
+        },
+        {
+            "rule": "2gis\\.com\\/vt",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tile1-cdn.maps",
+                "tile0.maps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b97533bba9b74a2bd307ffaa1674e849b0a661905b75cf32ac51fd017951fd30"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "2gis.ae",
+                "2gis.kz"
+            ]
+        },
+        {
+            "rule": "2gis\\.com\\/v2\\/ald",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tile3-cdn.maps",
+                "tile2.maps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f55d885a1c4a7d1da9929d67ac56454a357ed5bcaed9cc8bb447eb47927e0742"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "2gis.ae",
+                "2gis.kz"
+            ]
+        },
+        {
+            "rule": "2gis\\.com\\/metafiles\\/h2WDKmPe\\/metatile\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tile0-cdn.maps",
+                "tile0.maps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "87dda3700384b07b2bf0723b2f27794eea236c83c83252446dbcf7e54a13a7e8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "2gis.ae",
+                "2gis.kz"
+            ]
+        },
+        {
+            "rule": "2gis\\.com\\/styles\\/assets\\/icons\\/water-9014c2ef908c9ccdbddb1863a0536164abbaf82b8a458cd9ad5d010b8dfc6edd\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "disk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8e15515fba29b98cc3066be7bc7a465defd17e5e3d9ce86c2955af6959cc31ee"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "2gis.ae",
+                "2gis.kz"
+            ]
+        },
+        {
+            "rule": "2gis\\.com\\/api\\/fonts\\/Noto_Sans_0\\.pbf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mapgl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3f8c21057b347c75cee268409faa53671414aaaf8985df019abe20f743e3d55b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "2gis.ae",
+                "2gis.kz"
+            ]
+        },
+        {
+            "rule": "2gis\\.com\\/api\\/fonts\\/Noto_Sans_Semibold_0\\.pbf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mapgl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "262505ca3178924fdd563c8c92b9d37a5305cffd2f0856bbdc970b32dc766dd3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "2gis.ae",
+                "2gis.kz"
+            ]
+        },
+        {
+            "rule": "2gis\\.com\\/metafiles\\/OhquBaKV\\/metatile\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tile0-cdn.maps",
+                "tile0.maps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6b5152a74e4e25617121afb5bd869d242d86649cddec1142581f8a670114cb2e"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "2gis.ae",
+                "2gis.kz"
+            ]
+        },
+        {
+            "rule": "2gis\\.com\\/styles\\/assets\\/icons\\/forest_texture-da0093b7eb7624ad1690f82bd54a04fcca363112fa3b42d372ec7ddafc2ac7d6\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "disk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "591e28567982e4aa0928a0d0cd98ae051e9c927338ccabfa1c279e5194e7152b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "2gis.ae",
+                "2gis.kz"
+            ]
+        },
+        {
+            "rule": "2gis\\.com\\/api\\/fonts\\/Noto_Sans_Italic_0\\.pbf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mapgl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fa2e64d55a79c7438a3633d645b499af38ad41b5b9b536e9322b5f98f1d87f8e"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "2gis.ae",
+                "2gis.kz"
+            ]
+        },
+        {
+            "rule": "2gis\\.com\\/styles\\/assets\\/icons\\/poi_airport-d0f9ce694b17fcd9b52ab7976e4ab7a1449be0c4fb97d10943c9864e9de48635\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "disk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "21a5400f629faf0a4885c10461a420e96cd7d35fa030dbdca3b155088abf6b85"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "2gis.ae",
+                "2gis.kz"
+            ]
+        },
+        {
+            "rule": "2gis\\.com\\/styles\\/assets\\/icons\\/poi_city_dot-ce38f4b127b1891eee105ee7588cd47fe18984511e0b8218a5dcbc077d384873\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "disk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "53376af676cebe8db42e98133ab4e53af3a6a9749474df48325edd7b18d85fdd"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "2gis.ae",
+                "2gis.kz"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "2gis.ru",
+            "prevalence": 0.76
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.24
+        }
+    ],
+    "types": {
+        "Fetch": 20,
+        "XHR": 6,
+        "Preflight": 2
+    },
+    "nameservers": [
+        "any-ns.urbi.top",
+        "ns.2gis.com",
+        "ns2.2gis.com",
+        "ns3.2gis.com",
+        "ns.2gis.one"
+    ]
+}

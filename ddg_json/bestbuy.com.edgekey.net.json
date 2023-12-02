@@ -1,0 +1,94 @@
+{
+    "domain": "bestbuy.com.edgekey.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "streams"
+    ],
+    "cnames": [
+        {
+            "original": "streams.bestbuy.com",
+            "resolved": "streams.bestbuy.com.edgekey.net"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "bestbuy\\.com\\.edgekey\\.net\\/customer\\/web-streams\\/v1\\/events\\/digital-experience-event",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "streams"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "streams.bestbuy.com",
+                    "resolved": "streams.bestbuy.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bestbuy.com",
+                "stores.bestbuy.com",
+                "www.bestbuy.com",
+                "www.insigniaproducts.com"
+            ]
+        },
+        {
+            "rule": "bestbuy\\.com\\.edgekey\\.net\\/customer\\/web-streams\\/v1\\/events\\/digital-experience-event",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "streams"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "streams.bestbuy.com",
+                    "resolved": "streams.bestbuy.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bestbuy.com",
+                "stores.bestbuy.com",
+                "www.bestbuy.com",
+                "www.insigniaproducts.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000477,
+    "topInitiators": [
+        {
+            "domain": "ensighten.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Preflight": 4,
+        "Fetch": 4
+    },
+    "nameservers": []
+}

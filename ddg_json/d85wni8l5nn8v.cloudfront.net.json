@@ -1,0 +1,85 @@
+{
+    "domain": "d85wni8l5nn8v.cloudfront.net",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "d85wni8l5nn8v\\.cloudfront\\.net\\/website\\/css\\/main\\.6da39aa03f82404072fefd49c6ce1e25\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2814626c7f0af4544758da2512c8f89528d4202ad6b6b39f7e2d4803bb177d83"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atproperties.com",
+                "www.atproperties.com"
+            ]
+        },
+        {
+            "rule": "d85wni8l5nn8v\\.cloudfront\\.net\\/website\\/js\\/app\\.946d5bcdaee1eae2ead38ef513edefbe\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2,
+                "Event.prototype.timeStamp": 2,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9756fbe646990f543c36e01145ec09a5c238a2a6ac73e6bdaa2f6530d46afcd9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atproperties.com",
+                "www.atproperties.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Stylesheet": 2,
+        "Script": 2
+    },
+    "nameservers": [
+        "ns-1251.awsdns-28.org",
+        "ns-554.awsdns-05.net",
+        "ns-198.awsdns-24.com",
+        "ns-1958.awsdns-52.co.uk"
+    ]
+}

@@ -1,0 +1,371 @@
+{
+    "domain": "opentable.com",
+    "owner": {
+        "name": "OpenTable, Inc.",
+        "displayName": "OpenTable"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000102,
+    "sites": 15,
+    "subdomains": [
+        "www",
+        "oc-registry"
+    ],
+    "cnames": [],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "opentable\\.com\\/widget\\/reservation\\/loader",
+            "cookies": 0.0000817,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 12,
+            "prevalence": 0.0000817,
+            "cnames": [],
+            "responseHashes": [
+                "053687028a2fcec993a98e4b07a1a63f61f9bc328a64cda7b131245c3ca95b42",
+                "ab7f5e0effddfe36b93b3130354df2d9d4d4c7118dbce11c45a424626fb5b364",
+                "5faad8b8856625c8e0600cb23f93b34f866a0beaabf1e98a0fdb56a1f29e0f42",
+                "816265bd61c7ce23c7757ba99fbff9cd70cf57598abc1a03961bb72adc3c7b99",
+                "ceba627e4c41ce89f53480cd73dbc1581b85f9951282bc244c253f1430a5c2cc",
+                "7310cccbd321e9764fd6a9d0f7d4c54d2de2d899dffc8ebc378c2243541d65cd",
+                "8c07dfd9d71e67dae29cf00d1f4a5c8a2fbc94c87f397b5ffc8d02ba33933e86",
+                "5b62077f22367876549d22415ecb37d174b51f67810715d9dfc6b59d0c3deefb",
+                "bfdd27c320955024c0e7811366852d18159d5ec9580ab25278e910944d5440ab",
+                "36e0893c76e1e657eb5ee6b7f00a9a496949324c2967582ac9595ec0b9d5f045",
+                "ddb5f6b982a5c7d2657bef2f2a1976bcf10272682ef4384b06a4c936d7701b87"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bernssteakhouse.com",
+                "perryssteakhouse.com",
+                "ruthschris.net",
+                "southpointcasino.com",
+                "www.anthonys.com",
+                "www.benihana.com",
+                "www.hardrockcafe.com",
+                "www.jeffruby.com",
+                "www.leonardo-hotels.de",
+                "www.ocean-prime.com",
+                "www.steak48.com",
+                "www.wearefoundingfarmers.com"
+            ]
+        },
+        {
+            "rule": "opentable\\.com\\/widget\\/reservation\\/canvas",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "4207557b7c58b2b180e2c4803c536fcf35ace77079e8968c09620648eb08f9c6",
+                "1b62ea825f6a7d0043cec81f3e287b2dcae650081819b3b7be99271f63322153",
+                "6ccd047e6b3e5f13a61b05d10104e47c937b301d2b29ffc1190c844c030ded7e"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bernssteakhouse.com",
+                "perryssteakhouse.com",
+                "ruthschris.net",
+                "www.ocean-prime.com",
+                "www.steak48.com"
+            ]
+        },
+        {
+            "rule": "opentable\\.com\\/widget\\/reservation\\/cookie-check\\/set",
+            "cookies": 0.0000613,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "f5248cb4e97af99d67e7975a88b386808a74e2b5c2249bf3320a05512b112b9b",
+                "152f4213d84ecf29cc1920882285a9760d49a22f2c9515c8d108e3dfc260277e",
+                "651e724a1a55c6d925b7703bb3c41f76296eaacc4736908d498c472989cf66d9",
+                "25437e461d983b8f9dbd1ecd838c70434523187b8531e51c1955a9a47329734a",
+                "5b4b2cb3d7ff5cec3c1e34d156dc10565b57047b795d791a8b665384a07c7b50",
+                "148b03b5117914a22a203b67808547b13fbb6478ab0d4e30e73990ac89d4dec1",
+                "04a1331c00cc61062925ed57b2e8db91e46e639528f6d5a6cf30fc0383558a0f",
+                "f10fb2482ece557f496e1a82f6fdf5a57556936881fd527d86d68de882f0c96c"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bernssteakhouse.com",
+                "perryssteakhouse.com",
+                "ruthschris.net",
+                "southpointcasino.com",
+                "www.benihana.com",
+                "www.hardrockcafe.com",
+                "www.leonardo-hotels.de",
+                "www.ocean-prime.com",
+                "www.steak48.com"
+            ]
+        },
+        {
+            "rule": "opentable\\.com\\/widget\\/reservation\\/cookie-check\\/get",
+            "cookies": 0.0000613,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "71567dbb33345b6154210920c2b278f61acab938fd91c35de51173e4c2b17a21",
+                "e1dc5e40ebf1e65b3a05473ff6faaa010986ebdb3ebbc07d291e762ff109c16f",
+                "550a8c4dce81d8537dfecbc629727b1dacfd22d913949e42e98cbc6509ff63c5",
+                "2121be5392ae5f7f3343a6b757f6a1ab8799f587b9967ac3f8d642237b4b79c2",
+                "253793312253a50a4cf1b660f68575c239314de4f9aab188c73a84669a45ad78",
+                "b93617696a01c0c49e8b316a47496883cdc2b535f967ffb109b39ad2351ae888",
+                "67ae932b51a158abbd508111ec1c4afae0100f3b65b54cae15c21d0e10099d4c",
+                "9a8a044046ba3dc197c2e393e14d5d65f15af87c8156dd4b97df39d7bba27fe8"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bernssteakhouse.com",
+                "perryssteakhouse.com",
+                "ruthschris.net",
+                "southpointcasino.com",
+                "www.benihana.com",
+                "www.hardrockcafe.com",
+                "www.leonardo-hotels.de",
+                "www.ocean-prime.com",
+                "www.steak48.com"
+            ]
+        },
+        {
+            "rule": "opentable\\.com\\/widget\\/reservation\\/public\\/js\\/cookiecheck\\.min\\.js",
+            "cookies": 0.0000613,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "dfa7cd0e100b7feda28524bb6ccbd1b4d6a8370f9a7834b22de4645c0ef98edc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bernssteakhouse.com",
+                "perryssteakhouse.com",
+                "ruthschris.net",
+                "southpointcasino.com",
+                "www.benihana.com",
+                "www.hardrockcafe.com",
+                "www.leonardo-hotels.de",
+                "www.ocean-prime.com",
+                "www.steak48.com"
+            ]
+        },
+        {
+            "rule": "opentable\\.com\\/v2\\/reservation-widget-multi\\/5\\.0\\.14",
+            "cookies": 0.0000613,
+            "fingerprinting": 0,
+            "subdomains": [
+                "oc-registry"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "9a99ec1c11331f843ec902d221e84d55a1c29b9e947a9f38e20eb52f191ecbd6",
+                "ae04505640b88315d35814b399e0a305203ad661d7c11a16979b82386fe7ee84",
+                "692b0e295ea382aaf77bc3d0ce02af46c47a4281ff378bc019571ac0283ddba4",
+                "02fad3fabc465803f235c9f4bc583c542d5359ceaef51df377a085182b846215",
+                "0023bd0b9bb4f430361b268ea04e11533a9592504bfb9ce6268be31288706e98",
+                "f8db0655cea9b8604597fa91ef2865375c123480c6aeda807622e36ab1594f7f",
+                "d49b2dc3fe5105ac4cbddcdc97d9daeeb14279c0d8ac365d2ac45fa7285d7c07",
+                "2e5c0a9e1fc78ddc64d23017726ff3fe834a895a7f2ab2fb4f9fee0e35fcf662"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "perryssteakhouse.com",
+                "southpointcasino.com",
+                "www.anthonys.com",
+                "www.benihana.com",
+                "www.hardrockcafe.com",
+                "www.jeffruby.com",
+                "www.ocean-prime.com",
+                "www.steak48.com",
+                "www.wearefoundingfarmers.com"
+            ]
+        },
+        {
+            "rule": "opentable\\.com\\/akam\\/13\\/648244d6",
+            "cookies": 0.0000136,
+            "fingerprinting": 3,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Navigator.prototype.plugins": 2,
+                "window.innerWidth": 2,
+                "window.outerWidth": 2,
+                "window.screenX": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.width": 2,
+                "window.innerHeight": 2,
+                "window.outerHeight": 2,
+                "window.screenY": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "window.indexedDB": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.appCodeName": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.productSub": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.vendorSub": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.languages": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.webdriver": 2,
+                "Navigator.prototype.permissions": 2,
+                "Navigator.prototype.getBattery": 2,
+                "CanvasRenderingContext2D.prototype.getImageData": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2fec09452715851445f961f924572af51c74dacbdbdaa055b6f24b6f782c0372"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ruthschris.net",
+                "www.steak48.com"
+            ]
+        },
+        {
+            "rule": "opentable\\.com\\/akam\\/13\\/pixel_648244d6",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ruthschris.net",
+                "www.steak48.com"
+            ]
+        },
+        {
+            "rule": "opentable\\.com\\/v2\\/reservation-widget-button\\/5\\.0\\.14",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "oc-registry"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f30ab84f7999b4bf5bd5381e6a66c140f2a352140bb1569214beff9399862544"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "leonardo-hotels.de",
+                "www.leonardo-hotels.de"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000102,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5245901639344263
+        },
+        {
+            "domain": "otstatic.com",
+            "prevalence": 0.36065573770491804
+        },
+        {
+            "domain": "jquery.com",
+            "prevalence": 0.04918032786885246
+        },
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.03278688524590164
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.03278688524590164
+        }
+    ],
+    "types": {
+        "Script": 23,
+        "Document": 23,
+        "XHR": 13
+    },
+    "nameservers": [
+        "a11-66.akam.net",
+        "a1-93.akam.net",
+        "a13-64.akam.net",
+        "a12-67.akam.net",
+        "a28-65.akam.net"
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "domain": "dga.jp",
+    "owner": {
+        "name": "Scala Communications, Inc.",
+        "displayName": "Scala Communications"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000225,
+    "sites": 33,
+    "subdomains": [
+        "cache"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "dga\\.jp\\/s\\/sony\\/search_tool_n3\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cache"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8ec49c45233c9a2a017f0225088c05d0b79083d89c16486ce61d5f1bb646170b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sony.jp",
+                "www.sony.jp"
+            ]
+        },
+        {
+            "rule": "dga\\.jp\\/s\\/sony\\/new_i_search_assist\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cache"
+            ],
+            "apis": {
+                "Navigator.prototype.appVersion": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dd1b1dcacb9426c65b4616d940bf2ab55a2ad1ef9ed8fac3b272c5142fea5225"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sony.jp",
+                "www.sony.jp"
+            ]
+        },
+        {
+            "rule": "dga\\.jp\\/s\\/sony\\/new_ac\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cache"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "be0af92e296c26cdc5118e7021e471dc5cc9b9cd2cab86dca4bf81dba6c13bfd"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sony.jp",
+                "www.sony.jp"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.926829268292683
+        },
+        {
+            "domain": "rageagainstthesoap.com",
+            "prevalence": 0.04878048780487805
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.024390243902439025
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "Stylesheet": 2
+    },
+    "nameservers": [
+        "dns3.dga.jp",
+        "dns4.dga.jp",
+        "dns1.scalagrp.com",
+        "dns2.scalagrp.com"
+    ]
+}

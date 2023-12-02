@@ -1,0 +1,377 @@
+{
+    "domain": "notifyvisitors.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "www",
+        "cdn",
+        "cdnp",
+        "pushimages",
+        "push"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "notifyvisitors\\.com\\/ext\\/v1\\/settings",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "window.sessionStorage": 3,
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "3ffa71888da7e757e70cf2fea21412bd81ced55a7b87ae38e7b2196aa274471c",
+                "33efd5213721056c248b52c0539ab37d2af48bc381b9d9865898b3be8f8452a4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_nv_sess": {
+                    "ttl": 1804,
+                    "length": 71,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                },
+                "_nv_uid": {
+                    "ttl": 63060004,
+                    "length": 83,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                },
+                "_nv_utm": {
+                    "ttl": 15768004,
+                    "length": 152,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                },
+                "_nv_hit_uid": {
+                    "ttl": -86396,
+                    "length": 1,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 0.3333333333333333
+                },
+                "_nv_form_x": {
+                    "ttl": -86396,
+                    "length": 1,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 0.3333333333333333
+                },
+                "_nv_banner_x": {
+                    "ttl": 15552007,
+                    "length": 4,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 0.6666666666666666
+                },
+                "_nv_did": {
+                    "ttl": 63060004,
+                    "length": 35,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                },
+                "_nv_hit": {
+                    "ttl": 15768007,
+                    "length": 45,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                },
+                "_nv_push_neg": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {
+                "jarvis-id": 0.000013624071008658098,
+                "_fbp": 0.000013624071008658098,
+                "_uetsid": 0.000013624071008658098,
+                "_uetvid": 0.000013624071008658098,
+                "_gcl_au": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "1mg.com",
+                "www.1mg.com",
+                "www.axisbank.com"
+            ]
+        },
+        {
+            "rule": "notifyvisitors\\.com\\/ext\\/js\\/nv-banner-upl\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "56517c52e9d774e5a7a8b8ed751b0c840bf5fef77a7e4953116bc50520e2cbdc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "shw_13453": {
+                    "ttl": 9461,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "1mg.com",
+                "www.1mg.com"
+            ]
+        },
+        {
+            "rule": "notifyvisitors\\.com\\/user\\/notifications_v2\\/updateViews",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8d470fe946b2b1d5a77531e786f40b5452b334e8314dcbdeec029f96916fd1d6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_nv_sess": 0.000013624071008658098,
+                "_nv_uid": 0.000013624071008658098,
+                "_nv_utm": 0.000013624071008658098,
+                "_nv_did": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "1mg.com",
+                "www.1mg.com"
+            ]
+        },
+        {
+            "rule": "notifyvisitors\\.com\\/ext\\/js\\/nv-anal-upl\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1bbcc5da21c2bbfb20e6e7cf54abc72a949c30762ba045f4a4c617811d821516"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "axisbank.com",
+                "www.axisbank.com"
+            ]
+        },
+        {
+            "rule": "notifyvisitors\\.com\\/ext\\/js\\/nv-push-upl\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Document.cookie getter": 2,
+                "Notification.permission": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0bbfa5070f5ca3517a4af456980eb316621c6e2f15d0fa8695deaf94225a1552"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "axisbank.com",
+                "www.axisbank.com"
+            ]
+        },
+        {
+            "rule": "notifyvisitors\\.com\\/js\\/brand_hosted\\/push-worker\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdnp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "ff90b29eedfb943dda6b25f7e25b352c517e603c8875b40f4a5c551ed1bc37a3"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "axisbank.com",
+                "www.axisbank.com",
+                "www.editage.com"
+            ]
+        },
+        {
+            "rule": "notifyvisitors\\.com\\/js\\/clients\\/axis\\/cache-worker\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdnp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0fdd3e39c054dfc06013cd53019e520d0549270b40c94b45584e987322a9fb32"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "axisbank.com",
+                "www.axisbank.com"
+            ]
+        },
+        {
+            "rule": "notifyvisitors\\.com\\/hosted_push\\/axis-pwa-config\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pushimages"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fecc76039ae08b0f5d019272c6f03ac85289f7f01a41732a9156f124e3c1fd84"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "axisbank.com",
+                "www.axisbank.com"
+            ]
+        },
+        {
+            "rule": "notifyvisitors\\.com\\/static\\/permission_box\\/web\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pushimages"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "df32fc4b49092412467bacd48317a9fa655c92341632893791fd05ae19ab6932"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "axisbank.com",
+                "www.axisbank.com"
+            ]
+        },
+        {
+            "rule": "notifyvisitors\\.com\\/brand\\/t1\\/stats",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "push"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "89c6e48e140b5ff43725922f19bcde73ac8a645664fa23bad8ebb7cfcf6261a0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_nv_sess": 0.000013624071008658098,
+                "_nv_uid": 0.000013624071008658098,
+                "_nv_utm": 0.000013624071008658098,
+                "_nv_did": 0.000013624071008658098,
+                "_nv_hit": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "axisbank.com",
+                "www.axisbank.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.75
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.125
+        },
+        {
+            "domain": "ravenjs.com",
+            "prevalence": 0.125
+        }
+    ],
+    "types": {
+        "Script": 13,
+        "Other": 7,
+        "Image": 2
+    },
+    "nameservers": [
+        "ns-95.awsdns-11.com",
+        "ns-1340.awsdns-39.org",
+        "ns-763.awsdns-31.net",
+        "ns-1951.awsdns-51.co.uk"
+    ]
+}

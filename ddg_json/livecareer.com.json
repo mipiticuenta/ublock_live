@@ -1,0 +1,117 @@
+{
+    "domain": "livecareer.com",
+    "owner": {
+        "name": "BOLD Limited",
+        "displayName": "BOLD"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "api-visitor-server"
+    ],
+    "cnames": [
+        {
+            "original": "api-visitor.flexjobs.com",
+            "resolved": "api-visitor-server.livecareer.com"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "livecareer\\.com\\/tracking-v8\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api-visitor-server"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api-visitor.flexjobs.com",
+                    "resolved": "api-visitor-server.livecareer.com"
+                }
+            ],
+            "responseHashes": [
+                "038b378d51a7dcf2873fb1de87540f28adc17e78ef999eb90aa4bbf9ae1e21cc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flexjobs.com",
+                "www.flexjobs.com"
+            ]
+        },
+        {
+            "rule": "livecareer\\.com\\/v4\\/visits",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-visitor-server"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api-visitor.flexjobs.com",
+                    "resolved": "api-visitor-server.livecareer.com"
+                }
+            ],
+            "responseHashes": [
+                "5c5daa0cf670f457157730896e38f7c1f5ce95a325bd0786538b39f346d67d87"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flexjobs.com",
+                "www.flexjobs.com"
+            ]
+        },
+        {
+            "rule": "livecareer\\.com\\/v4\\/visits",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-visitor-server"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api-visitor.flexjobs.com",
+                    "resolved": "api-visitor-server.livecareer.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flexjobs.com",
+                "www.flexjobs.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "types": {
+        "Script": 2,
+        "XHR": 2,
+        "Preflight": 2
+    },
+    "nameservers": [
+        "dns1.p04.nsone.net",
+        "dns2.p04.nsone.net",
+        "dns3.p04.nsone.net",
+        "dns4.p04.nsone.net"
+    ]
+}

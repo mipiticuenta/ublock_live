@@ -1,0 +1,149 @@
+{
+    "domain": "social.gouv.fr",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-FR"
+    ],
+    "prevalence": 0.000303,
+    "sites": 3,
+    "subdomains": [
+        "sentry.fabrique",
+        "matomo.fabrique"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "social\\.gouv\\.fr\\/api\\/5\\/envelope\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sentry.fabrique"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "travail.gouv.fr",
+                "travail-emploi.gouv.fr"
+            ]
+        },
+        {
+            "rule": "social\\.gouv\\.fr\\/matomo\\.js",
+            "cookies": 0.000202,
+            "fingerprinting": 2,
+            "subdomains": [
+                "matomo.fabrique"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "window.name": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "NavigatorUAData.prototype.brands": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "d7fc375178c93a2fc15fd888e30170eedf4ef3d04497e7f951ab7bfe0c921693"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pk_id.4.ef54": {
+                    "ttl": 33955201,
+                    "length": 28,
+                    "prevalence": 0.00010097950116126426,
+                    "uniqueness": 1
+                },
+                "_pk_ses.4.ef54": {
+                    "ttl": 1801,
+                    "length": 1,
+                    "prevalence": 0.00010097950116126426,
+                    "uniqueness": 1
+                },
+                "_pk_id.59.dc00": {
+                    "ttl": 33955203,
+                    "length": 28,
+                    "prevalence": 0.00010097950116126426,
+                    "uniqueness": 1
+                },
+                "_pk_ses.59.dc00": {
+                    "ttl": 1803,
+                    "length": 1,
+                    "prevalence": 0.00010097950116126426,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "travail.gouv.fr",
+                "monsoutienpsy.sante.gouv.fr",
+                "travail-emploi.gouv.fr"
+            ]
+        },
+        {
+            "rule": "social\\.gouv\\.fr\\/matomo\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "matomo.fabrique"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "travail.gouv.fr",
+                "monsoutienpsy.sante.gouv.fr"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000202,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6
+        },
+        {
+            "domain": "travail.gouv.fr",
+            "prevalence": 0.4
+        }
+    ],
+    "types": {
+        "Fetch": 2,
+        "Script": 3,
+        "Ping": 2
+    },
+    "nameservers": [
+        "b.ns.developpement-durable.gouv.fr",
+        "nsb.perf1.com",
+        "nsa.perf1.fr",
+        "a.ns.developpement-durable.gouv.fr",
+        "nsc.perf1.com"
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "domain": "snans.one",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "api.skynewsarabia"
+    ],
+    "cnames": [
+        {
+            "original": "api.skynewsarabia.com",
+            "resolved": "api.skynewsarabia.snans.one"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "snans\\.one\\/\\/rest\\/v2\\/mostpopular\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.skynewsarabia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.skynewsarabia.com",
+                    "resolved": "api.skynewsarabia.snans.one"
+                }
+            ],
+            "responseHashes": [
+                "244be741df80d7a193c3bb5556dd5218bf6992222e66677e402b3e4c564aaee0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "skynewsarabia.com",
+                "www.skynewsarabia.com"
+            ]
+        },
+        {
+            "rule": "snans\\.one\\/\\/ajax\\/alert\\/ticker\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.skynewsarabia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.skynewsarabia.com",
+                    "resolved": "api.skynewsarabia.snans.one"
+                }
+            ],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "skynewsarabia.com",
+                "www.skynewsarabia.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "types": {
+        "XHR": 4
+    },
+    "nameservers": [
+        "dns1.p07.nsone.net",
+        "dns2.p07.nsone.net",
+        "dns3.p07.nsone.net",
+        "dns4.p07.nsone.net"
+    ]
+}

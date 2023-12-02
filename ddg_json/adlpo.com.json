@@ -1,0 +1,97 @@
+{
+    "domain": "adlpo.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "d",
+        "t"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "adlpo\\.com\\/687\\/2212\\/js\\/smartadlpo\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "d"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.appVersion": 2,
+                "Navigator.prototype.appName": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2f8ebddd05b8026f6ab635c959444d2d45569492791c78df93b180a420f3be5e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "adlpo": {
+                    "ttl": 7776005,
+                    "length": 63,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bookoff.co.jp",
+                "www.bookoff.co.jp"
+            ]
+        },
+        {
+            "rule": "adlpo\\.com\\/script\\/c\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "b27fb6fd9b9fa91bc3f57ea130d503bed45af1cb4754c4d6d03cc465eb8b700e",
+                "7fff8077cb5af6f8a8911d3d1f712de4ac05f0745a215ca7c3d356863672719a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bookoff.co.jp",
+                "www.bookoff.co.jp",
+                "www.suntory-kenko.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000409,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.3333333333333333
+        }
+    ],
+    "types": {
+        "Script": 5
+    },
+    "nameservers": [
+        "ns2.dnsrv.jp",
+        "ns1.dnsrv.jp"
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "domain": "growthhero.io",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "growthhero\\.io\\/sites\\/pixel\\.js",
+            "cookies": 0.0000341,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 5,
+                "Date.prototype.getTime": 5,
+                "Document.cookie setter": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "6c1bdb1a1fac658af7c190c09f52a78161258fd9da9e2fe9408e4b8ac9d7d118",
+                "069181138e05d05bbd32b618d1dbabd3670c30a1043d818909999dc4e5cfe88f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_growthhero_uid": {
+                    "ttl": 86405,
+                    "length": 36,
+                    "prevalence": 0.00003406017752164524,
+                    "uniqueness": 1
+                },
+                "_growthhero_last_visit": {
+                    "ttl": 31536005,
+                    "length": 29,
+                    "prevalence": 0.00003406017752164524,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drtomcowan.com",
+                "kalabrand.com",
+                "moskomoto.com",
+                "oxfordpennant.com",
+                "www.playbetter.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000545,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 5
+    },
+    "nameservers": [
+        "jim.ns.cloudflare.com",
+        "janet.ns.cloudflare.com"
+    ]
+}

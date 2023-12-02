@@ -1,0 +1,121 @@
+{
+    "domain": "independent.co.uk",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "ssc",
+        "static",
+        "m"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "independent\\.co\\.uk\\/id",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ssc"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "a170cc29ca66608886980dcc09da26bad94df0ae15921aef6ed39d8e27f04350",
+                "063e25573acb044e4b1a981e8368684c205b7af9c300e00a4ff91fa5d3de94ad"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indy100.com",
+                "www.indy100.com",
+                "www.the-independent.com"
+            ]
+        },
+        {
+            "rule": "independent\\.co\\.uk\\/iframe\\/native-cookiesync-frames\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7bae6e62dbffa344174f68cbfa4c08947d90b08e5f9366640ded950ca3a06a3e"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "the-independent.com",
+                "www.the-independent.com"
+            ]
+        },
+        {
+            "rule": "independent\\.co\\.uk\\/g\\/collect",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "m"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "the-independent.com",
+                "www.the-independent.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.4375
+        },
+        {
+            "domain": "ampproject.org",
+            "prevalence": 0.2708333333333333
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.16666666666666666
+        },
+        {
+            "domain": "sentry-cdn.com",
+            "prevalence": 0.08333333333333333
+        },
+        {
+            "domain": "tinypass.com",
+            "prevalence": 0.041666666666666664
+        }
+    ],
+    "types": {
+        "XHR": 5,
+        "Document": 2
+    },
+    "nameservers": [
+        "rihana.ns.cloudflare.com",
+        "lars.ns.cloudflare.com"
+    ]
+}

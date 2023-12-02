@@ -1,0 +1,127 @@
+{
+    "domain": "xmplus.cn",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "assets",
+        "g"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "xmplus\\.cn\\/surveylite\\/embed\\/embed\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "067d3e71a6b4fec6a4ba9185a82e7a9309a3aa22587301961871508d434a58a3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trackingmore.com",
+                "www.trackingmore.com"
+            ]
+        },
+        {
+            "rule": "xmplus\\.cn\\/api\\/survey\\/surveys\\/4945065541058560\\/embed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "g"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e976f86a29fb8c22a7dd5c76e0ae14208d5c9b6949d06ecc73a2c90f62d82c84"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trackingmore.com",
+                "www.trackingmore.com"
+            ]
+        },
+        {
+            "rule": "xmplus\\.cn\\/surveylite\\/static\\/icon-hy-questionnaire\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e1c34699945469c1d7b518631cea91af432b8f970a58593573f0230efb28a40b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trackingmore.com",
+                "www.trackingmore.com"
+            ]
+        },
+        {
+            "rule": "xmplus\\.cn\\/surveylite\\/static\\/icon-hy-close\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "79ed1c61aae287cf42ee3c1ce4829d7eca57aaa7f3fa5eb8b48d13b64c6e7e9b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "trackingmore.com",
+                "www.trackingmore.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "XHR": 2,
+        "Image": 4
+    },
+    "nameservers": [
+        "dns16.hichina.com",
+        "dns15.hichina.com"
+    ]
+}

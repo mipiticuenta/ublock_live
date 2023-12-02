@@ -1,0 +1,112 @@
+{
+    "domain": "heureka.cz",
+    "owner": {
+        "name": "Heureka Shopping, s.r.o.",
+        "displayName": "Heureka Shopping"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "serve.affiliate",
+        "www",
+        "ssl"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "heureka\\.cz\\/js\\/trixam\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "serve.affiliate"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.colorDepth": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "642c6620f21d7a8c50c77424fb2456721c8a639e08de032f4f24777aef01c4e5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "arecenze.cz",
+                "zdravi.euro.cz"
+            ]
+        },
+        {
+            "rule": "heureka\\.cz\\/53004\\/1698870439531-74836505632525312065\\.ad",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "serve.affiliate"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "04c719b449d2933d58a50b758dd0c0d7332117f67b856b6a7012b09cdb801093"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "arecenze.cz",
+                "www.arecenze.cz"
+            ]
+        },
+        {
+            "rule": "heureka\\.cz\\/direct\\/i\\/gjs\\.php",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www",
+                "ssl"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e62653f03035db4e00c81fee5d1de53167c700da3e5d01893f76ead0d3235db4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hornbach.cz",
+                "www.lidl.cz"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 6
+    },
+    "nameservers": [
+        "marjory.ns.cloudflare.com",
+        "rajeev.ns.cloudflare.com"
+    ]
+}

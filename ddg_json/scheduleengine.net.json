@@ -1,0 +1,528 @@
+{
+    "domain": "scheduleengine.net",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "embed",
+        "api",
+        "webchat",
+        "amana.widget",
+        "rheem.widget"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "scheduleengine\\.net\\/schedule-engine-v3\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "ab173fbdeb26280b42db9bf82f9bc3f073649f1265a8ab837d87ae974e63b1be"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "happyhiller.com",
+                "indoortemp.com",
+                "www.pvhvac.com",
+                "www.rheem.com"
+            ]
+        },
+        {
+            "rule": "scheduleengine\\.net\\/se-web-api\\/v1\\/config\\/widget\\/embed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "9fb231723c60065366818b5d176753c65dafd6c29e9af3ce79e82272a9a792f6",
+                "bfd7a6bb9263ab0cd933c868a911c47d3179dd8854fbc842c97b4ea6c4d04858",
+                "4faf3524178a0948961ea8b907aad5835432619ec3cf9aea53f712c363a66a06",
+                "7f444b7e180dff2d9d506a0a3ef9fabb8eb80e880d12e543859a9b5c5b61e80f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "happyhiller.com",
+                "indoortemp.com",
+                "www.amana-hac.com",
+                "www.pvhvac.com",
+                "www.rheem.com"
+            ]
+        },
+        {
+            "rule": "scheduleengine\\.net\\/webchat-v1\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "webchat"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fbde780f512b399005fcc20be47562778876e9e5187139578e96ea7c9e287538"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amana-hac.com",
+                "www.rheem.com"
+            ]
+        },
+        {
+            "rule": "scheduleengine\\.net\\/widget\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "webchat"
+            ],
+            "apis": {
+                "window.innerHeight": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "961192d69ceebb3d58660bbad73cc714393473fe3269179b48e445214c04e78f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amana-hac.com",
+                "www.rheem.com"
+            ]
+        },
+        {
+            "rule": "scheduleengine\\.net\\/widget\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webchat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e5674d2510c62acb31c1064157dfaf37cd48a5c5ac1e25fb524e7064c22134b3"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amana-hac.com",
+                "www.rheem.com"
+            ]
+        },
+        {
+            "rule": "scheduleengine\\.net\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "amana.widget",
+                "rheem.widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6d519031b867b76d153c33b3dafe35213473fbbb9f86e9df45f5d36a6b97c771"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amana-hac.com",
+                "www.rheem.com"
+            ]
+        },
+        {
+            "rule": "scheduleengine\\.net\\/static\\/css\\/main\\.e5d4bdba\\.chunk\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "amana.widget",
+                "rheem.widget"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5ef4e47dc4c7ab68a2e3bb7914f353131b8d82ee542b21ede3de0bc1ddec3d07"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amana-hac.com",
+                "www.rheem.com"
+            ]
+        },
+        {
+            "rule": "scheduleengine\\.net\\/static\\/js\\/5\\.eb2268c8\\.chunk\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "amana.widget",
+                "rheem.widget"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Navigator.prototype.language": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e7426d55fac8c586aee081a9684591a08d13e671f05f59124d2e407739d15099"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_sea": {
+                    "ttl": 63072003,
+                    "length": 12,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amana-hac.com",
+                "www.rheem.com"
+            ]
+        },
+        {
+            "rule": "scheduleengine\\.net\\/static\\/js\\/main\\.f89fe29d\\.chunk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "amana.widget",
+                "rheem.widget"
+            ],
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.appVersion": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "18e19ed6aeab8f78e16ee48b52b3fb5b1517275a0f0c3e86861133ef0b68304d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amana-hac.com",
+                "www.rheem.com"
+            ]
+        },
+        {
+            "rule": "scheduleengine\\.net\\/se-web-api\\/v1\\/devices\\/register",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amana-hac.com",
+                "www.rheem.com"
+            ]
+        },
+        {
+            "rule": "scheduleengine\\.net\\/se-web-api\\/v1\\/devices\\/register",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "08a2762a5a07e1867343570aa5ddf6d2e870feb54a4b34c10c8a9a35ff821da7"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amana-hac.com",
+                "www.rheem.com"
+            ]
+        },
+        {
+            "rule": "scheduleengine\\.net\\/se-web-api\\/v1\\/sessions\\/create",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f13ff1ce8b4b83a44dfec653831f319920a754b9d1badd45a2459b4e176798ad"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amana-hac.com",
+                "www.rheem.com"
+            ]
+        },
+        {
+            "rule": "scheduleengine\\.net\\/se-web-api\\/v1\\/sessions\\/create",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amana-hac.com",
+                "www.rheem.com"
+            ]
+        },
+        {
+            "rule": "scheduleengine\\.net\\/se-analytics-service\\/v1\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "a0c3ed30f1548a45c61911851790bcee3befaad97115e52af2096ea3a53d0163",
+                "7c013fe65e35bcb3bd82df6838122a53565786cef484066a2e2fad9aaccb6dad"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amana-hac.com",
+                "www.amana-hac.com",
+                "www.rheem.com"
+            ]
+        },
+        {
+            "rule": "scheduleengine\\.net\\/se-analytics-service\\/v1\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amana-hac.com",
+                "www.amana-hac.com",
+                "www.rheem.com"
+            ]
+        },
+        {
+            "rule": "scheduleengine\\.net\\/se-web-api\\/v1\\/config\\/widget\\/ui",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8d02dafb0ae9758eb4f056c0a9c9c4605a159bc8d9b5adac4fa3e30d4ddf85e9"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amana-hac.com",
+                "www.rheem.com"
+            ]
+        },
+        {
+            "rule": "scheduleengine\\.net\\/se-web-api\\/v1\\/config\\/widget\\/ui",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amana-hac.com",
+                "www.rheem.com"
+            ]
+        },
+        {
+            "rule": "scheduleengine\\.net\\/se-web-api\\/v1\\/subscriptions",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amana-hac.com",
+                "www.amana-hac.com",
+                "www.rheem.com"
+            ]
+        },
+        {
+            "rule": "scheduleengine\\.net\\/se-web-api\\/v1\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amana-hac.com",
+                "www.amana-hac.com",
+                "www.rheem.com"
+            ]
+        },
+        {
+            "rule": "scheduleengine\\.net\\/se-web-api\\/v1\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "69c7a278649bf34c3cc9ec27629414237b6a6213d0b0db46d2b4b580f6b25ced",
+                "4fdf32baf8c695395a5ca1420a0d0d49d519d9a5555c7497a28537bc69b8dde8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amana-hac.com",
+                "www.amana-hac.com",
+                "www.rheem.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8125
+        },
+        {
+            "domain": "cookiebot.com",
+            "prevalence": 0.125
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.0625
+        }
+    ],
+    "types": {
+        "Script": 12,
+        "Fetch": 17,
+        "Stylesheet": 4,
+        "Document": 2,
+        "Preflight": 12,
+        "WebSocket": 3
+    },
+    "nameservers": [
+        "bradley.ns.cloudflare.com",
+        "leah.ns.cloudflare.com"
+    ]
+}

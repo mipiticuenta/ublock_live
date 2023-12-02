@@ -1,0 +1,392 @@
+{
+    "domain": "youplay.se",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "delivery",
+        "player",
+        "cdn-b",
+        "cdn-d",
+        "cdn-a"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "youplay\\.se\\/load\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "delivery"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 7,
+                "Navigator.prototype.platform": 7,
+                "window.innerHeight": 4
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "220268cfa246e1f17001b4c2d2dbf3d6c930e9f62d573b7aac555abf8664b847",
+                "eef91b15a7dfbefa02b772ba012798d30496e519bb1e1187926f8fe89fda1894",
+                "3c41ed421fcce7643bb1d751e05457aa3b71efc2157df823f49f0f8c54ab59e2",
+                "d05e10921892396caa58a1044280c7aa802a929721ab57ee54ef990df201ef88",
+                "a24a6351ff090b105e03997951db59d8909a01a78fdaf96ea89c890d1bba7ca3",
+                "780417db7468ffd23538b717988b64e0337230f5bc2ff83a49e6a00308f6c97e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyheter24.se",
+                "viivilla.se",
+                "www.alltforforaldrar.se",
+                "www.alt.dk",
+                "www.hemtrevligt.se",
+                "www.mestmotor.se",
+                "www.mitti.se"
+            ]
+        },
+        {
+            "rule": "youplay\\.se\\/assets\\/formats\\/0\\.0\\.467\\/css\\/up\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "fee8580a7d83c8f91ee8ebaf1d8bdb85fabd543480cba434ba6e4774ffaa57dc"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyheter24.se",
+                "viivilla.se",
+                "www.alltforforaldrar.se",
+                "www.alt.dk",
+                "www.hemtrevligt.se",
+                "www.mestmotor.se",
+                "www.mitti.se"
+            ]
+        },
+        {
+            "rule": "youplay\\.se\\/assets\\/formats\\/0\\.0\\.467\\/js\\/up\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 6,
+                "Navigator.prototype.userAgent": 7,
+                "Navigator.prototype.connection": 6,
+                "Event.prototype.timeStamp": 6,
+                "Navigator.prototype.maxTouchPoints": 6,
+                "Navigator.prototype.languages": 6,
+                "Document.cookie getter": 4,
+                "HTMLMediaElement.prototype.canPlayType": 1
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "8b72c708925797c960925a849d99172f98d60830cd5cbaefbe6c5764445a54b2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyheter24.se",
+                "viivilla.se",
+                "www.alltforforaldrar.se",
+                "www.alt.dk",
+                "www.hemtrevligt.se",
+                "www.mestmotor.se",
+                "www.mitti.se"
+            ]
+        },
+        {
+            "rule": "youplay\\.se\\/api\\/v2\\/templatedata",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "delivery"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "52d2cf768279bd00e868a60e3895ad6e1e88978094d89fe28a68596da50d6bee",
+                "ddb5d87756fd538451347c861b6baaf759342cb636afc15c97b4e1f1b666c135",
+                "5ddc03e0301b966413d2b8144b816887f90a7e95aa3d67a3d1fac0d8e42bbade",
+                "516c60260a03e1c764c25858d0c14f170bf4512f35138c240faeddc0bae4d30e",
+                "0ffceb88cab8dbff4255c14d3a6220b29dd60b7fa7b8c74935708c497c1a97de",
+                "cdbcf7858dbc5c41ff6ed67c40f46acda1bc2d762326c1f9fd4aa64145d5b6cd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyheter24.se",
+                "viivilla.se",
+                "www.alltforforaldrar.se",
+                "www.alt.dk",
+                "www.hemtrevligt.se",
+                "www.mestmotor.se",
+                "www.mitti.se"
+            ]
+        },
+        {
+            "rule": "youplay\\.se\\/api\\/v2\\/videodata",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "delivery"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "2d5d68cd37f6d7375d99ac1fd0f0cb749a962987160f0fc33866b5377e7b34c5",
+                "504234a9aaec44b7f6484d81c9beb31c492580b3ee044ece519ebc7701708d0d",
+                "1a95c7ce31f7689e6472eb6fcb5c717ecef11322c5cc9980e35cbbfcdbc416b9",
+                "6d61f850fffb3c96e29e7312700066a18444b88cfbaf6d96932c1b45413d1fe9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyheter24.se",
+                "viivilla.se",
+                "www.alltforforaldrar.se",
+                "www.hemtrevligt.se",
+                "www.mitti.se"
+            ]
+        },
+        {
+            "rule": "youplay\\.se\\/assets\\/formats\\/0\\.0\\.467\\/font\\/fontello\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "44812d2c21ac709fd612d183c2eb2ba5f8b35aea04e6112021b70da118692543"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyheter24.se",
+                "viivilla.se",
+                "www.alltforforaldrar.se",
+                "www.mitti.se"
+            ]
+        },
+        {
+            "rule": "youplay\\.se\\/assets\\/formats\\/0\\.0\\.467\\/font\\/OpenSans-Regular\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "a878a8bf30f19fc20740b1951a81b3edf51306363c9f64a6e37c995547dd9934"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyheter24.se",
+                "viivilla.se",
+                "www.alltforforaldrar.se",
+                "www.mitti.se"
+            ]
+        },
+        {
+            "rule": "youplay\\.se\\/report",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "delivery"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyheter24.se",
+                "viivilla.se",
+                "www.alltforforaldrar.se",
+                "www.hemtrevligt.se",
+                "www.mestmotor.se",
+                "www.mitti.se"
+            ]
+        },
+        {
+            "rule": "youplay\\.se\\/assets\\/formats\\/0\\.0\\.467\\/font\\/OpenSans-ExtraBold\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "1be13ab88ab26bbebaee2892cac4c4deb7d9bfebfe5cd50ce0ca12f5f9f4ba0e"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyheter24.se",
+                "www.alltforforaldrar.se",
+                "www.mitti.se"
+            ]
+        },
+        {
+            "rule": "youplay\\.se\\/assets\\/formats\\/0\\.0\\.467\\/font\\/OpenSans-Bold\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "player"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "55def89ca751e5dff13b932e7664668ddae8b783f39a54b15b6cdd58f72b170c"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyheter24.se",
+                "viivilla.se",
+                "www.alltforforaldrar.se",
+                "www.mitti.se"
+            ]
+        },
+        {
+            "rule": "youplay\\.se\\/part\\/partimage\\/536742\\/s_158\\/aea9fc4ac1\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-b"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b00f949f06b7229b0f2c94397cac38fcab6ad95f75221f1308cbbb38cfd8d3b8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "viivilla.se",
+                "www.hemtrevligt.se"
+            ]
+        },
+        {
+            "rule": "youplay\\.se\\/part\\/partimage\\/536807\\/s_158\\/c5f93e780e\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-d"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7d97eb8946fc61574f701b6c8765db31a341e52eead0636d1fe09f6eac27337b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "viivilla.se",
+                "www.hemtrevligt.se"
+            ]
+        },
+        {
+            "rule": "youplay\\.se\\/part\\/partimage\\/634871\\/s_158\\/8130b7cc5d\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-a"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "96037b6d5c9c553d34e529ae5ed1a903f427f2423d4a218dc2f222e1e502eef4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alltforforaldrar.se",
+                "www.mitti.se"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8888888888888888
+        },
+        {
+            "domain": "lifeofsvea.se",
+            "prevalence": 0.1111111111111111
+        }
+    ],
+    "types": {
+        "Script": 14,
+        "Stylesheet": 7,
+        "XHR": 12,
+        "Font": 15,
+        "Image": 12
+    },
+    "nameservers": [
+        "ns-313.awsdns-39.com",
+        "ns-1720.awsdns-23.co.uk",
+        "ns-1027.awsdns-00.org",
+        "ns-943.awsdns-53.net"
+    ]
+}

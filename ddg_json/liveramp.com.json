@@ -1,0 +1,83 @@
+{
+    "domain": "liveramp.com",
+    "owner": {
+        "name": "LiveRamp Holdings, Inc.",
+        "displayName": "LiveRamp"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "dau-prod.launch"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "liveramp\\.com\\/kinesis\\/streams\\/daily-active-users-prod\\/records",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dau-prod.launch"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "ab79590523d886df15b4157c154c3979352d119721bfa9122f2a9cdfc9908989",
+                "823e708c31d4734c2f5489ff29c9439408beb9f51170670424ac31c4f6390213"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jambands.com",
+                "www.aqua-calc.com",
+                "www.realitytvworld.com"
+            ]
+        },
+        {
+            "rule": "liveramp\\.com\\/kinesis\\/streams\\/daily-active-users-prod\\/records",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dau-prod.launch"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jambands.com",
+                "www.aqua-calc.com",
+                "www.realitytvworld.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "privacymanager.io",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Fetch": 3,
+        "Preflight": 3
+    },
+    "nameservers": [
+        "ns-1505.awsdns-60.org",
+        "ns-1875.awsdns-42.co.uk",
+        "ns-112.awsdns-14.com",
+        "ns-733.awsdns-27.net"
+    ]
+}

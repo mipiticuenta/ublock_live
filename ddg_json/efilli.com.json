@@ -1,0 +1,196 @@
+{
+    "domain": "efilli.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "cdn",
+        "riza"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "efilli\\.com\\/efl\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 6
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "fd0d1d6d58ae175d83f9394797b243a895e86742360530b529bedeba0b552d93"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shiftdelete.net",
+                "www.akakce.com",
+                "www.chip.com.tr",
+                "www.kariyer.net",
+                "www.turkcell.com.tr",
+                "www.webtekno.com"
+            ]
+        },
+        {
+            "rule": "efilli\\.com\\/v1\\/banner",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "riza"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shiftdelete.net",
+                "www.akakce.com",
+                "www.chip.com.tr",
+                "www.kariyer.net",
+                "www.turkcell.com.tr",
+                "www.webtekno.com"
+            ]
+        },
+        {
+            "rule": "efilli\\.com\\/v1\\/banner",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "riza"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "1aa0ef568c136e0fbc8955807f59bf706dca46c8a5c6c9397056e7b1a986a074",
+                "ef180857e6c514e109ca92fc7d4821ed91f6e67541913788cf23bc73d0473605",
+                "5fa803f7cd4aa235a48ba2901a252f15c47fb397b3ae67b540a817eb88aadaa6",
+                "53e6605b232a18c5741ca1429c3b955a101e72c16b0b462b060575b8ba83cccd",
+                "93c21d13233a30d5efaf97ec42631444d5f88a2f5acd7008a974cf179e3d2f37"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shiftdelete.net",
+                "www.akakce.com",
+                "www.chip.com.tr",
+                "www.kariyer.net",
+                "www.turkcell.com.tr",
+                "www.webtekno.com"
+            ]
+        },
+        {
+            "rule": "efilli\\.com\\/layouts\\/efilli\\.layouts\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "120af7cd08a2485a3ac1f2901c5bdfa9ec8b151b6c5331a13f3b56cb12b1f6e8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "akakce.com",
+                "www.chip.com.tr",
+                "www.kariyer.net",
+                "www.turkcell.com.tr",
+                "www.webtekno.com"
+            ]
+        },
+        {
+            "rule": "efilli\\.com\\/layouts\\/efilli\\.layouts\\.chunk\\.5d534dca\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "bd7995912dcc65ec99e48dea73c983b3ccdd8d24c963d30ef85884c50af7d3c5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chip.com.tr",
+                "www.turkcell.com.tr",
+                "www.webtekno.com"
+            ]
+        },
+        {
+            "rule": "efilli\\.com\\/layouts\\/assets\\/efilli-logo-animated\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "06e114d9dd823f836aff645b471256d79b047265126825e326f607313259c867"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chip.com.tr",
+                "www.n11.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.3
+        },
+        {
+            "domain": "mncdn.com",
+            "prevalence": 0.1
+        }
+    ],
+    "types": {
+        "Script": 14,
+        "Preflight": 6,
+        "Fetch": 6,
+        "Image": 2
+    },
+    "nameservers": [
+        "marge.ns.cloudflare.com",
+        "dakota.ns.cloudflare.com"
+    ]
+}

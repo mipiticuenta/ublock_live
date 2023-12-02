@@ -1,0 +1,332 @@
+{
+    "domain": "es.edgekey.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000749,
+    "sites": 11,
+    "subdomains": [
+        "web.bbva",
+        "cdn.ing",
+        "resources.ingdirect",
+        "alsa",
+        "mab.mediaset",
+        "grupoeci.elcorteingles"
+    ],
+    "cnames": [
+        {
+            "original": "account.elcorteingles.com",
+            "resolved": "grupoeci.elcorteingles.es.edgekey.net"
+        },
+        {
+            "original": "cdn.ing.es",
+            "resolved": "cdn.ing.es.edgekey.net"
+        },
+        {
+            "original": "conta.elcorteingles.pt",
+            "resolved": "grupoeci.elcorteingles.es.edgekey.net"
+        },
+        {
+            "original": "cookies.resources.ingdirect.es",
+            "resolved": "resources.ingdirect.es.edgekey.net"
+        },
+        {
+            "original": "estaticos.alsa.es",
+            "resolved": "alsa.es.edgekey.net"
+        },
+        {
+            "original": "mab.mediaset.es",
+            "resolved": "mab.mediaset.es.edgekey.net"
+        },
+        {
+            "original": "web.bbva.es",
+            "resolved": "web.bbva.es.edgekey.net"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "es\\.edgekey\\.net\\/login\\/login-public\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web.bbva"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "web.bbva.es",
+                    "resolved": "web.bbva.es.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "fb27ebde2cc18562d98c39bcda93a91ef730e12678bbdf23d6c0031bf2745111"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bbva.es",
+                "www.bbva.es"
+            ]
+        },
+        {
+            "rule": "es\\.edgekey\\.net\\/ing-feat-analytics-libraries-es\\/0\\.5\\.2\\/didomi\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.ing"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cdn.ing.es",
+                    "resolved": "cdn.ing.es.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "85aa6e5d0d06840d0cbff0ff80706ea3b2098764942efd3d5b92ea58e692bb9e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ingdirect.es",
+                "ing.ingdirect.es"
+            ]
+        },
+        {
+            "rule": "es\\.edgekey\\.net\\/11943b53-8d41-4ad5-9f61-4adeb05e5d5f\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "resources.ingdirect"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cookies.resources.ingdirect.es",
+                    "resolved": "resources.ingdirect.es.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f1959be1314dd700ccce76af21145ced99e05cc385bd245c8fa097717bd7b2bd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ingdirect.es",
+                "ing.ingdirect.es"
+            ]
+        },
+        {
+            "rule": "es\\.edgekey\\.net\\/combo",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "alsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "estaticos.alsa.es",
+                    "resolved": "alsa.es.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "b543725cc92ecb685d30cca9f6b99433a36ceebe1517715661e9c14b09ccc16b"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alsa.es",
+                "www.alsa.es"
+            ]
+        },
+        {
+            "rule": "es\\.edgekey\\.net\\/combo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "alsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "estaticos.alsa.es",
+                    "resolved": "alsa.es.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "88f31a98fd31759413a87c4e853f3219b091b126f03b67beee3e90b55094be2f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alsa.es",
+                "www.alsa.es"
+            ]
+        },
+        {
+            "rule": "es\\.edgekey\\.net\\/combo\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "alsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "estaticos.alsa.es",
+                    "resolved": "alsa.es.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "f558df070085883c2e138cf53e51d3e8d3a1f64b1beaea5c4328bcfb598d2171"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alsa.es",
+                "www.alsa.es"
+            ]
+        },
+        {
+            "rule": "es\\.edgekey\\.net\\/combo\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "alsa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "estaticos.alsa.es",
+                    "resolved": "alsa.es.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "18ec36c4c287a9860e6d783c0c145e260a4731f448b510e7bc4f1ec363591026"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alsa.es",
+                "www.alsa.es"
+            ]
+        },
+        {
+            "rule": "es\\.edgekey\\.net\\/1\\.0\\.0\\/get",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mab.mediaset"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "mab.mediaset.es",
+                    "resolved": "mab.mediaset.es.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "b3fe71521f76ef4f74b6da74ef0a8a628ec355ffec036bcd46080ae9723cde08",
+                "89f3b464fce2bd1e2e1cc1cf4197460c7bbc9bc861d1ee31ad2c7c76dac9fa36"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cuatro.com",
+                "www.cuatro.com",
+                "www.telecinco.es"
+            ]
+        },
+        {
+            "rule": "es\\.edgekey\\.net\\/oidc\\/check-session",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "grupoeci.elcorteingles"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "conta.elcorteingles.pt",
+                    "resolved": "grupoeci.elcorteingles.es.edgekey.net"
+                },
+                {
+                    "original": "account.elcorteingles.com",
+                    "resolved": "grupoeci.elcorteingles.es.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "1338b1e9239344dfa37d5a786ec9fb9d6374c0b1a68d974542c97921af90ca49"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elcorteingles.pt",
+                "www.elcorteingles.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000477,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6363636363636364
+        },
+        {
+            "domain": "uicdn.com",
+            "prevalence": 0.22727272727272727
+        },
+        {
+            "domain": "ing.es",
+            "prevalence": 0.09090909090909091
+        },
+        {
+            "domain": "privacy-center.org",
+            "prevalence": 0.045454545454545456
+        }
+    ],
+    "types": {
+        "Script": 10,
+        "Stylesheet": 4,
+        "Fetch": 3,
+        "Document": 2
+    },
+    "nameservers": []
+}

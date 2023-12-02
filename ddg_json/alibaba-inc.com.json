@@ -1,0 +1,357 @@
+{
+    "domain": "alibaba-inc.com",
+    "owner": {
+        "name": "Alibaba Group",
+        "displayName": "Alibaba"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "daraz.wagbridge"
+    ],
+    "cnames": [
+        {
+            "original": "acs-m.daraz.com.bd",
+            "resolved": "daraz.wagbridge.alibaba-inc.com"
+        },
+        {
+            "original": "acs-m.daraz.com.np",
+            "resolved": "daraz.wagbridge.alibaba-inc.com"
+        },
+        {
+            "original": "acs-m.daraz.pk",
+            "resolved": "daraz.wagbridge.alibaba-inc.com"
+        },
+        {
+            "original": "member.daraz.com.bd",
+            "resolved": "daraz.wagbridge.alibaba-inc.com"
+        },
+        {
+            "original": "member.daraz.com.np",
+            "resolved": "daraz.wagbridge.alibaba-inc.com"
+        },
+        {
+            "original": "member.daraz.pk",
+            "resolved": "daraz.wagbridge.alibaba-inc.com"
+        },
+        {
+            "original": "my.daraz.com.bd",
+            "resolved": "daraz.wagbridge.alibaba-inc.com"
+        },
+        {
+            "original": "my.daraz.com.np",
+            "resolved": "daraz.wagbridge.alibaba-inc.com"
+        },
+        {
+            "original": "my.daraz.pk",
+            "resolved": "daraz.wagbridge.alibaba-inc.com"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "alibaba-inc\\.com\\/user\\/api\\/getUser",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "daraz.wagbridge"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "member.daraz.com.bd",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                },
+                {
+                    "original": "member.daraz.pk",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                },
+                {
+                    "original": "member.daraz.com.np",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "daraz.com.bd",
+                "www.daraz.pk",
+                "www.daraz.com.np"
+            ]
+        },
+        {
+            "rule": "alibaba-inc\\.com\\/user\\/api\\/getCsrfToken",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "daraz.wagbridge"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "member.daraz.pk",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                },
+                {
+                    "original": "member.daraz.com.np",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                }
+            ],
+            "responseHashes": [
+                "7b41629e31c56fc63a7cb08551d220060a18b2678077c64b76d982da5933c7a2"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "daraz.pk",
+                "www.daraz.com.np"
+            ]
+        },
+        {
+            "rule": "alibaba-inc\\.com\\/user\\/api\\/getUser",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "daraz.wagbridge"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "member.daraz.com.bd",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                },
+                {
+                    "original": "member.daraz.pk",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                },
+                {
+                    "original": "member.daraz.com.np",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                }
+            ],
+            "responseHashes": [
+                "13fe57ad35c5f16f32aa151b7ac0ce15f83d3457c6526f453cf9d645019c4079"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "daraz.com.bd",
+                "www.daraz.pk",
+                "www.daraz.com.np"
+            ]
+        },
+        {
+            "rule": "alibaba-inc\\.com\\/h5\\/mtop\\.alibaba\\.global\\.holmes\\.customevent\\.upload\\/1\\.0\\/",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "daraz.wagbridge"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "acs-m.daraz.com.bd",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                },
+                {
+                    "original": "acs-m.daraz.pk",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                },
+                {
+                    "original": "acs-m.daraz.com.np",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                }
+            ],
+            "responseHashes": [
+                "78a63c0528a8e252d3cc3eb2f6cb12903aeb6796727ca058ce79ccfa8ab0833c",
+                "9c082c2d6089613d46749a510f4da1a14c1e8d7cd9f59158f24c976c4d5cf329"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "daraz.com.bd",
+                "www.daraz.com.bd",
+                "www.daraz.pk",
+                "www.daraz.com.np"
+            ]
+        },
+        {
+            "rule": "alibaba-inc\\.com\\/api\\/recentOrders\\/",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "daraz.wagbridge"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "my.daraz.com.bd",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                },
+                {
+                    "original": "my.daraz.pk",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                },
+                {
+                    "original": "my.daraz.com.np",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "daraz.com.bd",
+                "www.daraz.pk",
+                "www.daraz.com.np"
+            ]
+        },
+        {
+            "rule": "alibaba-inc\\.com\\/api\\/recentOrders\\/",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "daraz.wagbridge"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "my.daraz.com.bd",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                },
+                {
+                    "original": "my.daraz.pk",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                },
+                {
+                    "original": "my.daraz.com.np",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                }
+            ],
+            "responseHashes": [
+                "8a3355c7ce99854f9874e764f58be8549be02692a66164c30551d3d2f40f650a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "daraz.com.bd",
+                "www.daraz.pk",
+                "www.daraz.com.np"
+            ]
+        },
+        {
+            "rule": "alibaba-inc\\.com\\/h5\\/mtop\\.im\\.use\\.web\\.buyer\\.mtopimaccountservice\\.getloginuserinfo\\/1\\.0\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "daraz.wagbridge"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "acs-m.daraz.com.bd",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                },
+                {
+                    "original": "acs-m.daraz.pk",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                },
+                {
+                    "original": "acs-m.daraz.com.np",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                }
+            ],
+            "responseHashes": [
+                "288df9e4c4252121a118f35be9646de94540de85997db3fd9b753cd3aa958763"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "daraz.com.bd",
+                "www.daraz.pk",
+                "www.daraz.com.np"
+            ]
+        },
+        {
+            "rule": "alibaba-inc\\.com\\/h5\\/mtop\\.common\\.gettimestamp\\/1\\.0\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "daraz.wagbridge"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "acs-m.daraz.pk",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                },
+                {
+                    "original": "acs-m.daraz.com.bd",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                },
+                {
+                    "original": "acs-m.daraz.com.np",
+                    "resolved": "daraz.wagbridge.alibaba-inc.com"
+                }
+            ],
+            "responseHashes": [
+                "ffe5883daf38849ad10e8d7d6c894e0e01f56c5fdc723f5f7b50a3e7c7e0653c",
+                "bf3886e209b153d79f3dd2951333aa8d858ffc25f0bcdfed0ef0a07beca5c41b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "daraz.pk",
+                "www.daraz.com.bd",
+                "www.daraz.com.np"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "alicdn.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Preflight": 6,
+        "Fetch": 2,
+        "XHR": 10,
+        "Script": 6
+    },
+    "nameservers": [
+        "ns2.alibabadns.com",
+        "ns1.alibabadns.com"
+    ]
+}

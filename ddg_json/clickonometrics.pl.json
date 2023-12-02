@@ -1,0 +1,97 @@
+{
+    "domain": "clickonometrics.pl",
+    "owner": {
+        "name": "nazwa.pl sp. z o.o.",
+        "displayName": "nazwa.pl"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000886,
+    "sites": 13,
+    "subdomains": [
+        "static",
+        "delivery"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "clickonometrics\\.pl\\/codeInit\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "794e9efd63d92e9e2abfbe3638e59f1f92cce6946b07caf9661a513fa8a32f16"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "biletyna.pl",
+                "www.swiatksiazki.pl"
+            ]
+        },
+        {
+            "rule": "clickonometrics\\.pl\\/ortb\\/prebid\\/bid",
+            "cookies": 0.0000409,
+            "fingerprinting": 0,
+            "subdomains": [
+                "delivery"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fotka.com",
+                "shinden.pl",
+                "www.msze.info",
+                "www.sadistic.pl",
+                "www.wirtualnemedia.pl",
+                "wykop.pl"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000886,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.4444444444444444
+        },
+        {
+            "domain": "spolecznosci.net",
+            "prevalence": 0.3888888888888889
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.1111111111111111
+        },
+        {
+            "domain": "qwtag.com",
+            "prevalence": 0.05555555555555555
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Fetch": 6
+    },
+    "nameservers": [
+        "ns111.ovh.net",
+        "dns111.ovh.net"
+    ]
+}

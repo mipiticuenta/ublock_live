@@ -1,0 +1,2583 @@
+{
+    "domain": "opecloud.com",
+    "owner": {
+        "name": "TripleLift",
+        "displayName": "TripleLift",
+        "privacyPolicy": "https://triplelift.com/privacy/",
+        "url": "http://triplelift.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0115,
+    "sites": 1695,
+    "subdomains": [
+        "cdn",
+        "pdmp.tagger",
+        "pdmp.profiles.tagger",
+        "lefigaro.profiles.tagger",
+        "adalliance.profiles.tagger",
+        "inquirer.profiles.tagger",
+        "ringierch.profiles.tagger",
+        "scmpmagazine.profiles.tagger",
+        "adweb.profiles.tagger",
+        "tegna.profiles.tagger",
+        "mediaconsortium.tagger",
+        "tagger",
+        "mediaconsortium.profiles.tagger",
+        "lefigaro.tagger",
+        "ringierch.tagger",
+        "raspl.tagger",
+        "tegna.tagger",
+        "italiaonline.profiles.tagger",
+        "gedi.tagger",
+        "foxus.tagger",
+        "fox.tagger",
+        "commonmedia.tagger",
+        "inquirer.tagger",
+        "nextms.tagger",
+        "italiaonline.tagger",
+        "scmpmagazine.tagger",
+        "adweb.tagger",
+        "profiles.tagger",
+        "lagardere.tagger",
+        "tagger-scmp"
+    ],
+    "cnames": [
+        {
+            "original": "tagger.ope.scmp.com",
+            "resolved": "tagger-scmp.opecloud.com"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "opecloud\\.com\\/ope-dmplite\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 494,
+                "Date.prototype.getTimezoneOffset": 494,
+                "Screen.prototype.width": 494,
+                "Screen.prototype.height": 494,
+                "Screen.prototype.colorDepth": 494
+            },
+            "sites": 1095,
+            "prevalence": 0.00746,
+            "cnames": [],
+            "responseHashes": [
+                "7dc4054755cd8ee3b20100bed5e0ae5f06a39081f5d3704604206f37e74dcbd4",
+                "66394d3500ed5cd1752a1799afb1ad15b07e2d27a8e926e47254a20c3f614152"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.ihearteating.com",
+                "handgepaeck-guru.de",
+                "www.mymoneyblog.com",
+                "www.littlebroken.com",
+                "www.thetexastasty.com",
+                "uitpaulineskeuken.nl",
+                "letsdishrecipes.com",
+                "allnutritious.com",
+                "www.theirishroadtrip.com",
+                "www.soocial.com",
+                "rustyautos.com",
+                "urbancowgirllife.com",
+                "www.greenchoicenow.com",
+                "pitchforkfoodie.com",
+                "www.professional-counselling.com",
+                "www.acedarspoon.com",
+                "www.savingadvice.com",
+                "www.delightedcooking.com",
+                "www.someonesentyouagreeting.com",
+                "www.cherishyourcar.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/pdmp\\/b4\\/v2\\/pixel\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pdmp.tagger"
+            ],
+            "apis": {},
+            "sites": 754,
+            "prevalence": 0.00514,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thetouristchecklist.com",
+                "www.xfire.com",
+                "gamerpillar.com",
+                "houseplantcentral.com",
+                "www.thecleverhomeowner.com",
+                "www.thewikifeed.com",
+                "www.scandinaviastandard.com",
+                "www.sonomabirding.com",
+                "kitchensnitches.com",
+                "bicyclevolt.com",
+                "www.deepsouthdish.com",
+                "www.londonxlondon.com",
+                "www.divein.com",
+                "whatscookingamerica.net",
+                "tokenizedhq.com",
+                "bobbyhadz.com",
+                "ostrali.com",
+                "www.dianekochilas.com",
+                "spirituallyhungry.com",
+                "plantophiles.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/v1\\/targeting",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pdmp.profiles.tagger",
+                "lefigaro.profiles.tagger",
+                "adalliance.profiles.tagger",
+                "inquirer.profiles.tagger",
+                "ringierch.profiles.tagger",
+                "scmpmagazine.profiles.tagger",
+                "adweb.profiles.tagger",
+                "tegna.profiles.tagger"
+            ],
+            "apis": {},
+            "sites": 668,
+            "prevalence": 0.00455,
+            "cnames": [],
+            "responseHashes": [
+                "156c7d98a5209fdf745150c662340890a21391b96198c79f9c91585f95396fe4",
+                "14a298b4c371f12493a146b4a1e2b583e165d27933e4ebf0ee908516f8ef9ca2",
+                "9a130e81d2044395c38911a39c30821b83c5d5e9bd14ba70bf096d4c74f27a6e",
+                "2f4a1c0927ea2375363b34aa88135277547965d88ce68cf5d6b0dea3cb41dbd0",
+                "be75f58ac227d7e235ca049263fd5f30af613f732004581c763f2eacacb03c54",
+                "459f4e837f264568c7027735be3397df0d84d5c45f8edce7e55811c5a8bec65f",
+                "cf17c2400970fcfd5f92c1a0f4c8aa8863f1af1dd4c833b45b41ede6a728bfe7",
+                "0285a22d762ac5a8094c654ffbf2ae296894bad916b3d0d1084f9a228fa67162",
+                "9bb3fcb103c402069c6c98749fbcd8b3721fcf80a0abbea3861c04376c525e7f",
+                "03b70b8705b97c252f88198d08e2be7b4cdaea338d2640c6005b8fc2315e8134",
+                "398388d1fc607f1a73a08fc3c987a11c0d8a899e13701542c8724805c9ca672e",
+                "57a2b7376d809fad73030b9ec9a7361aa6cd01f2e55f889179a168a665b24710",
+                "e6ac1a0f8b2b8a4c105e77ea393b8997112022c169ad7f4e079dc8794abde49b",
+                "b73256e60479a7573eec97977f6962b98f3b16d2a6db04139880f40c83c80d11",
+                "4a94a70403dcda6bb2bffaa2eb9ad3e61ebae9930d96680ae639b9a7a699d1e9",
+                "dd6574c9324250bca1a3778e3291a22d1a6817d84cb1d5a00b1e99020ba14ad8",
+                "b8344d6652481d7d9ae4b65e4564a9a06c6df5a613564f124f5ccfc3f570000b",
+                "4f07ddb02842f3ef5e262b4cbc4dc2bf227965ecf0d763f3d4b304b1fc0f956c",
+                "16f5a72c18c2c70465d578ae8c4bb7e8a8a529edd8b1da68dd8940fd77de7a5e",
+                "2258305d8dc8324b78fadef057797a3fb59b4f8c76471d61281ed4b20bcb06de",
+                "741f23398f59b7191ba3052dba998404af39082d1dbf04c2f8f6000d90dc5d27",
+                "88187448ffca2646a3f8cb17f859dbbdc00763f330c103a2fb6c1c54e393d260",
+                "b3d69504d0be4bb580878df7502c1df1ed2e02f285c1d0087666ca30814cb140",
+                "d96626ba31279087951b2370c60ff62f632bb9b13eeb18827e67075448c805b5",
+                "ccb0369130b161213f97ae4d269ae6fe77f6f9d59cb0863c90afe5fde10870ec",
+                "b39787c083cc101ef6266efac28736db44830b0fc8fb50c1eb66ccaf65d6996a",
+                "88fb2f1362659205ed7f55abe32d8a9080c0a022047f9f86b5770753aa28cbde",
+                "c953a0c14ebf5e2cb9ec6b08edf368004eac30198743426273f75d35b0353bf3",
+                "297d81c568337e38da69827468278b2fac67b4be44320d4f8856c69983f4b94f",
+                "9ad49fe0acef950dfe71f01806ab3f96e0972d73d4a0c9a555e04f3dc7b59b8d",
+                "6633356023491385f67166141a2d2624360ec5933119261770f6b829271c9964",
+                "12a407771290dc22e8e9fc461ae2024c3ac8f5d7072bfd8df97041f926ed19cc",
+                "52ee6fde88600634828c1f93858c508db865f370ceb6d8da43f825f168d5353b",
+                "e0342febcd9f32d1e1ec28ac353fd9f0b9d7a8df54730c7657f20ed46692dfe1",
+                "e8166633d80377169e9182a04f3f4296725ccff2c1c289d46104c9271bfc908a",
+                "0ad97c31154399db5173cff18674e09712e967ad11dd89405e6f43f8c54142fa",
+                "049eac7c721acdf44e564e135dd76fce18391c986a055ed5b7d26d3f78fe0473",
+                "b74a24324deabc9bd19cbf329f0b49136d1756c90cfe613dec695764c5d79e79",
+                "9337b92ecd50a3f4b0e12a1703d9d499e41c55b77b3e57730a8dbaefc1171696",
+                "33a908a202af52e0d7c93316b58a1fd201e01b8f07bd10decfb7f695fff9ddca",
+                "999fbc785bb9574b2618f794347995b384e43e6897781f2714aa0069f6e9b257",
+                "addd2d3486ee46265f87179e977a3cdaf16cf15de8c017829c98293011337d46",
+                "a2f2b5ab6d08d627c3df80e3b391003cbb86aeb2b88b07b35391de36d494c884",
+                "f7667facca43c27a02a7bbaa7f8c69ee445041006fb47bca7f1ad7353b5ed0c2",
+                "916e06d8bed7808a8f66c953f684553b5e4cb1da270d31bfa1d1aa5e40521538",
+                "d551387f49c6c64312d8b455834b65e8e7c370d85cfa9c0b66e6c4870aea711e",
+                "ab15d668c36bdce45c48c497e544253802e484312dc6337d0605c06f97b61553",
+                "207e80d9aa9d1dd24910ec8f9419beef7a6d264f532588e9f32c23d1ec160799",
+                "c9cba54e32e5d557486199820904789510685a9a911ae502fe9bfb373d5ab9bf",
+                "252e84ec9356ea72317c0acdb26064637fa82ff51037ddd395fe9a6a65339bf9",
+                "1f5b12a5b558f6e42920f234bfe8ba3e2432b2aae9d1e30f38ecf4794c281307",
+                "372844233de1005b3ed5a79885d5dcae528735da88639510e3697a3b70628c8a",
+                "0f4141fcbd569e732046c4478fad6f5958a8dc94caef90bff2994865b0dd52c1",
+                "9eebaa10e4f6aa50d5dc7dd6a921c80c419e6165ec54821f37a6699d47111ff7",
+                "975c1930ffcf582367ce00b8b4f5288cdb183d3a35d497ed33db8cf496befc77",
+                "68edc1a3ad9c03cc0747653f8a35f2c3019de2ac33256529a0151d28947517bc",
+                "25b034460f8cd6f623b25ecc6b44ca41653c158558cbf8511b3cb116a1763811",
+                "6565b4e02cae079da8e63104bf3d192a8c61f896075fe65f7a213f70a3b18c7f",
+                "a6ed1a662d20599d37d638d33b6f07d89019ae7f14b02d74cd50211101d8111f",
+                "734d7a205be2ba89297ce6626039122903378613f8db6c4559beda868318ef57",
+                "0ca545bc3869cc0bbb39d8556708fe77ff4e3499f64c937242381bf6e04b77fa",
+                "77046594208263c55c5e81da554f81a71c11b7adadb8dfc17cf0645b63dc4f73",
+                "412683b57f13c60ca36b13409cc5b65682da44e648e7511ef047ff2c96c55e76",
+                "78ea79f593ae433c76139325ed6e794666f26357453b8dc761921f507e45ff89",
+                "09a7b3102dbafe4abb436e3267e280e82f9990f3042fcf5626535cb7d40c8c55",
+                "b213ea2b42f7d74c04b22e5dee281aeb2e1dbfb94f12a11903ba02f900d251c9",
+                "af34adbb95b56fe7177e396315bee2add1eb97722dfa18dda10038090ec8dff3",
+                "58be2f1c903cdfc6eb7a06dd536cd3e70db903d7f7cc17e5c9ab1f17e0f3cb31",
+                "0b1fd2d13e68fdde0bbf85381b00c85840a7c633298c7c295e17b812a22ba31c",
+                "5a74cdefc612694374308999b4bdbbeb0b82d36247c4d9d6fa3ef6590fb01427",
+                "6fadca4f5cdfe1c66601088cd3b208492989f110ffc12026c464c1a16fcdb81e",
+                "eaa90c041b0a145b2e6c29409004c03f1a0e82a7fb5d69fd57dd26fa22a994ef",
+                "980d822ecdb4420fc2d9daaccb4d921bcab9deff9eb4efd261970ba7e7d46784",
+                "53c62135fb7accec2e272763ddb8f5aaacd42fb60fc6184b165d36682e11ed42",
+                "d4dcc577a5395e77ad3bd6ffe3df30434f135a59a6d5f395faffa3b51908e056",
+                "4e9c7f99d458f94e1d2840b00fa59e134d972660ba33e7759c98e84dc7d1d1b6",
+                "afc56fd671e305ab83c4fdf26b7196666385aaa461773fd190a70fbceae3ea2b",
+                "e54b15de702bfd7374b39718be3f593f1318fcb736d2bebcf0ad2850f34407aa",
+                "b7569944b678cf8d1b9528cff7c37d0b2cfe6b72d6e9098267a1d69bcf619c81",
+                "1e204cefba6f28d8610180240b55370e58700f6aade61375ac37d9e5d51cf6fe",
+                "fdb23f856aba6a2ca19bbbd24618b15a6d5b0eef8f8f450922536f41ad3fd00a",
+                "b685923c0ba9a32314574c087b5bfdaf8313a69dc2e2327d9f586a18a0f0136f",
+                "37421ed0e84c5684234b1b3f0a92561af561c7a4a9639b997b71a58f4c70d6c3",
+                "a609ef47ff39ac6087c75c42eb8b777d6d309edfecbaaf57c80790f0acf59275",
+                "3ff0f332d6ae9214da5d6cca4d694371b569a7625461f6838ad916883592bf51",
+                "6227f7e2c46d5d6d97e88c05f69e8e99dd7cb5f6dc5910dce522d3591c0759ed",
+                "ec98c80ae96c473a176006b36884e4e8c27f3ee7243dfa8c79afb91c16e116f8",
+                "ed6f53223131558104dc4ea27a1b8bebf74f1429200fde068a2acf718ae10b19",
+                "916f5d39072ba2a2b50b509594ffb8b55ee56acff469e824b7dbc2e37fb6768e",
+                "19d4d7eff82d1a74967176d4e1c31a0cb8e1cdafdc7d267bbad93ce74be8421d",
+                "df02656d33987ec766c9d94ee8c7c8a4722fa1e039830c24f6e576292bcd1166",
+                "e0fbe28c2d78ff050f31f635fea2bc897ceea4296d377239ec50f7bb744f7fa3",
+                "cdb643075923c8bc8cf54c56204e0d2fe32b2f826261bc952de972a80c667f53",
+                "11241774b72335e4be247b9a27410086c88a3441ec2e51550a279d541030a6a5",
+                "0826956103f9d87e3697670560b06d401ee95e3e0982fae55219e8ca608980e1",
+                "7c2a382ca7bfdc88e92f300b4e275a804d29db986a73403322073901e9576095",
+                "204cc6e30653c851370a1238c5dde5e0ab6ce79b5e5fbd9521b5d737a22199ad",
+                "d6cb9dd08d82360d665ec6ed4638189e0e14ba7af17190a01033165de57fbe73",
+                "ebee03b1c7c1cdd996f2146c6f78b32b94b1e30f19546a625d7f2c88ff9587b0",
+                "c1edea92b15f16cca8873079d592160df9900cd8d8e2abd261778f1c4cd9271b",
+                "430f530cebecde95a0145e8c25c77612ac520dfbd76f7bea89f65ddd481004c9",
+                "c1e6a89d57aba9d9bc317344ae621b99409352fb10116ac081ffd001b354bc04",
+                "a9e4aee7ebedfb9b30c51ce7f255a0fde7bb3271bb2dc8972710110462df3088",
+                "dac4e7207655a8fd66ecdcaa00dbefb2a0dd871df5018ea5971e8da633bbd119",
+                "a96ca776ced661f6650bfc2529f78a97e3867a3b768dbaed27a6ed526d104c33",
+                "6d312f4052c42a12e58b4500dca96131fe33986c8b17b82e20ca623973efbfa9",
+                "71fbf07a7ca716fe0a4f9fb46bfb0be0c518ce60ca100f6a8f3075dd92fa797c",
+                "d408df0cd29240edb309cfd7bbfab49fb0e2db525fd2165d39e2fae8d5a01855",
+                "cbf5f761aff8b8a0e0496258ebb1f98418dbd014ec1a06304a25c0ce9e3dd298",
+                "2b60dc18dcc527e28f0d4407959470e16cffbf2475be02a40449b786f716bb21",
+                "330f7d02392523ff39de1adde3d2f668c0908bd4d19170fbe52f0422e0610724",
+                "f7aab894ae5878e85a9b4ceb4b11c5b6b3dc10dd79b19288cc98f1c822967194",
+                "c0da0afe8d20ab63154103cb1fbddd25a36688ad368915efd0c09da73250285e",
+                "2bc02bede04127ee53b713a7e0d8cc2c896e3c2d6fc5805d207cc6743e3adefe",
+                "70b0e8f8b977973db34312fb423b439dbd00c701d778868cb037a4c84e88cf84",
+                "67afc2975ce4d8586af4df88369d4d853677a3c189bef771be2668650263f2a1",
+                "b8398ca55b308e52629c4a2d910481afdec5f10f76efaccb54d632cc7a091280",
+                "0967a43905106d8e5a00db706fc67fad39a5dfd347af523293beb0ee3aa3a724",
+                "c92d9a99b208036d4e4fb977a55100bb0af7820804ed14cca6b247f542d39ae5",
+                "d51630891efb66838eeef90cbc5fedc302a99615f0aa0a4b3b031bd853603fa4",
+                "0f4c19fe94c1366121203f61f924713505b73da46792c8207a48fe32110af9ac",
+                "b59fe6f4b43e7bc9d7e42d015db9d041c089fe6c27b38b2f1bbbf0f39063e711",
+                "71b58b0f5e91fb6d802dcf1a44c186196385d16226f22223a1e68b8aee69df55",
+                "211a7decfad91cb6af95348ac9b5c4cd02e53ca3cefa11ed212891902d81eb0e",
+                "5507dd3678fa467238689ca49047ceb259cfd28abf13e1dd3bc875b3dba5a28a",
+                "8d44ed97daf396ccbf6ee47a12792dbea0fabbab467973cbf3c4e441ebd251fa",
+                "7790eb798bdbdc2f00226bda943c4ed658d30e0af0d56189d8e558fcfe909731",
+                "596a7f26e23b28d0154d0794faba4e2ae8d11b9ce1bc1f0b59e31fa9e0e20252",
+                "38c50d727743189bebaff0cda73e702ede94b3845d374e218c75f08aafb13325",
+                "531f0713aab67be576aa6709f63cb76aaf52276fa0f072472bd176ea068e675d",
+                "3f855d9e1efc2ac8845314a466ab85f7cba9abf9c654bba525373817532c823a",
+                "e65380a16fb037519b6e16b15578122a59cbc5926d62804a7aaf171884ee08b1",
+                "c34752121e46e0b7aa8506675bb6979a1fc00150677e0cf7790144a11879cf7d",
+                "540fdd73f6d469d00a459e944e80966f01a8855f6e0a5f524bd841901a8d1b30",
+                "d16f4a3a3bb83940c5e69337227dd91b7170e2c89a8d1f61360ac562ed7fc3e1",
+                "a761abe2a334d0985819d4616041e43a05186425bc4a3168ea17183b45d1ae1a",
+                "27c729b553049e14f93d8797c9913844b4d0bacb424d399ab8350ba3c8435a12",
+                "3a4cac51c687bb54bd0115ed63a8b2604a4aacaa23252cf8680cc924c394e0d8",
+                "ff6ee93a606c44e82714a98e007535127a27e5beba36b1c31a0d7ee2b3f7b51e",
+                "615a544bd62d91a66e44beb7cae74d5ab647445a3629ef51c49b8a86e0e5132f",
+                "d84dbe75a10197bcbf88eba441eb13f261598edbefbc807fe865cc1e17f7a119",
+                "2ed84009ee7a30866b0b48bf739ca195af2a341996eae0d8d176b1064468ade6",
+                "7de10ae893e8c2ed08d9c7b760d14a4dc3f580aa2154251bf3a32cd7af763447",
+                "b6a8d2a375de64a775b3d0496425fb3bb136e8b97b68a398fee956ef9ef69bfe",
+                "ccdd7f860f974391d075483f375f0b8fab551ed5dfef030920a10734fffc1fa2",
+                "e6f42753e9c8753c67e596271061d4d6d455afe296f655791e611097171a0ed4",
+                "e2ec5f2e91af4876d9ab8fd30c5822e209192c503f82fe83eab19c4718a76882",
+                "f7a87b194a55a596028f991782501a64cc8540be68e77d059a77e346254775d0",
+                "8c4c2975578a5fab08e181276ee913c8503e17878612b55421ff5c9e9a61834b",
+                "4ea2d3c7637baf2da554baf28952202919d780d9b0c422a2ca9a4a023e137ea2",
+                "5a594ea95188c651004c1a647cd7d3ad2e4da492192694217535811e52d56abb",
+                "201b387500eece7dcfef115b14a0e208e55842daa0765b453d6daae7e8541bdb",
+                "a446dd22545445260e58c88728083ce101b0cb0537b05a9469156a3b3ac7f3fd",
+                "1aa52dd7292f656d3c6915523f465164167d9ccb95c6df1e9a5bada6a61ca4be",
+                "46f8c18c609e8c7f1ba9086eb8bd797aa481b6df55cf295701f3b72afc79907c",
+                "ce6ec91058df6120d27b5e674df904ef8533541891c7b05f505babd20195cac6",
+                "5ff9e0f5fd62b1c794b2150b9aca4ca729bcc0de719768c8d558c71f8ad1faf5",
+                "78d21dfad9dd72c15c1ebfe42b3d9f30f887eb2882ea381696db7ef36e5d6d5e",
+                "2087420992c89bd82669999421b8d1983b6e2faf6f94f08c71d608f5a22247be",
+                "bcef65ee48529cbc1913b5808fffbb2d89866c86e4ec9becf1ea8a0be6c358c4",
+                "7e220e59ab32e9fdc99838b662441271ab6f37d38f7169e2f921cfff30e48e35",
+                "eb054735895ffab38e2c4be6f3020f10cefb23c29635e8b94a3d7b583f233e5c",
+                "59aa81709e9eaa5912ef792b1984447c61ca322cb691608cf019e19d1260819a",
+                "a2b62b1dc709746f73e1d122aa34cf9c6000ce5e6f66e294df6d460834846745",
+                "f8bd828ad29e57663b7aaa9a9ebfc04d85d2db2fa03674745d1ad3e93fceda35",
+                "a6cdbccfac4ce82a7569ad21a5031fcf31d6eea1472ce5ef5a5ab7c15e1e6732",
+                "70aad0b13793cda4c45df1a57ec5d1aac4be9fabe8a5f53708cf24a23021fbc4",
+                "b90f3f46c62d9d5ce59e5e132098d89e1401d81ae0653bfdc146358cc6a85f83",
+                "482d88f53a4b4ed5d1e63f819c767777831b2356fe2c499a81fd989f4e0e9133",
+                "8d7181ca04d5660094eebad6c99e496b959330c31f91980cc0d4e037965193ee",
+                "115fc922f842ff981babe4bee53e1f54e594f3ed9964d56288f5bb4d9e0709ae",
+                "b0a99bb652aaabb8ef61e13b958449c609322d997f58437f32dacbc6629a8a15",
+                "64020da4d13b029d742cda5bf2d46e7031f49239fef037e4e3d64baad0531db2",
+                "4db634b457e3df83179b28a6a0c9d35ba672737227ea6489f36888be886b8f1f",
+                "7634427b5423dede0d46a6354ba5e62bc71c7258dfc00d4d43f0b43b71a8cc64",
+                "f9344a6fe161c5601b652016b828299e226d6647c8f1bb223bd7e60349b7b5ac",
+                "09ae2e84249f1a8b0d07ead54fced69393f74441bfda0d8fe1073a5a4450ba52",
+                "8f818ac4fd8b4f7b00c46a392baaaeba6fdac85f38142b1f7d7f423a6492bd70",
+                "b94f6b23e618c9a6d01a7f5979470d6bc250ddaac8280cbc0c25f86c3e11e81a",
+                "5467161a8b4289b0a82fd6af1b31ddace576c1227984f8dbb0ab1be87058d8c1",
+                "9acd9923a97e9c249bfe0ca1e4f4e8891648199d30279123bc5677d2030d3b33",
+                "6a9689845dd2ba7602a56d70ae97ab406e38e612742da9261a7c707fcd6ee4c7",
+                "a0caf50f1a374eb4445f8330919f00b3b46fa74d47adbf39f2fc343c0eee6d24",
+                "2d66cba8585d213fae67eeba27085577ce2e4841929900b28a1248fd471d9ed8",
+                "e7c89dfe71f2d310d3831c3e325e11b6e095fd2cc40abfd862d6ecb7c35fba8b",
+                "ad7df14bff0696b929d123619b25b8364f57f5d550f685e6b629dcc984ea0ee9",
+                "5e7b5ba903ceeefc40ff323f24643119b29ee22f138ddee05e0a95085a1f5a34",
+                "052874e4d2fa0458076388a223ab0df9edab49d9110822c84ccf315fabc17a6e",
+                "45555ad90a6f36e2aa896e1c76291f6dd845e59103fdb6539f566411e0fda445",
+                "29d3258d30142cbdf18c1f90d369810f830a8ed2066d4aab0f050674672ebb5a",
+                "44ca91aa9ae8f1ccd8e5264bf8fa5b538da6ef3cf3bce5144483c68d830b4bab",
+                "92fa2ec104484cb2ae5d76f7a6c84975c37714848196525351630b5ca88028c0",
+                "f68d5f7eccb691d993bff8033a1b4bc9e6d4e111f725ece0afa48a6711697504",
+                "884879b14207d6704443e47d6c199444d6e2dba28a73b6a910ac9582758e999e",
+                "803f019010c9a006c59f2113a55e6f66af0165b2f073f7a27ece014b8d627dec",
+                "73fb14cc7dc326b9e30edc952d32f891448fedd35ee65cfd0f28c40e33428b47",
+                "52bb454f4c9c8a8ae165b7a384bf2ed6b157a93a055cd670ff7d40bef930931c",
+                "ec4d74e10946722bf0c00f89f26c8738061a0731577a124a57b8ee92e63c1a75",
+                "bd0556fa808077cbe579e2d6b7c0eae918e927f6210d2b28e14fd85f1df8d08b",
+                "306d95d1f138e7d6e160ab6e2e45bdafa9d2d0f49c978d6a12cf8d65940726bb",
+                "c9422f42a46d507a444535332ada6f4d0e456eb105dda97350a3bdaf23b30d47",
+                "4e197bef5570056af87e5f4848dbfc8f182628b9658d435fbb739a7ba19421d2",
+                "fb31011c39e15bb874f31f97275777bdf28aca87d40aa2456c5eb28f317cf2ae",
+                "b2a4ec212b95f149ad61ae84dabac43787cb307455dacd1bb4910334f4ae19bc",
+                "43198c1f7388e58bbb9b0c75b951d94dd8182a508e4bfcd7cac35749d790439f",
+                "1ff2831f74ef10d09c35d1f5674f00b8971eac44cc550f10dd554d7d0ef8fe5b",
+                "9b2a13adc716835b04be353b78891c241ff50ba4a5b0c1c790890d9c1e37ba26",
+                "5444fb5b56372f76b1dd6573f85007ee773f60f6434ca0139f899a16166dbf55",
+                "fca07f0ae2b314aa16b986f199b2398a6af10f1cb9d9362d3e73945396c8bb4a",
+                "29a6a5e44203fd81df1c4a1c5fb40d37033ac15cfb3d453dbe757589121479b5",
+                "7f5b1cb757e658f5365147276152bb3dcfc444cdd0f40534deb7886cb03dd910",
+                "5b0d2b9a44f5b0565f57a9d9adcb601225658c0f90b14013d69429c4b01d3981",
+                "5e98242c27746443bbc2a747645bca69df7d98b3e023b1d542fa844fe4f3e2ba",
+                "c674ec7dc0d3d2539e489feabfe4978ca881de7d018df62bdc685d5ddb0b4636",
+                "29abc940f25fecf8713f50e9c62265b519128ce18326d2b669df9c33c5ed2137",
+                "aeadb21fd6690c8eae61b1bcd408073fe1e98270d1cce80b0dfe31bb70f291e0",
+                "ee7580de5b03dc793cafe00d1eea69d84efcaa6a798b4512f564711e66d8ec25",
+                "6f9f2162a7ac013409b393be9b99c8fc3286c98d02b8767fd42d27ce6c891795",
+                "b27eeb70f8f2c1a0a36ffb27b576348df3e33e541069d57df0412413126cbcc4",
+                "761d6826390dbcfa43baa6269dfa5f3b075ee27b8c2580d4276cf6ce1913c859",
+                "20cbaf1b38deaf3857b948aa836ba1480dbbb7cba76e2a7888a86c6881ddacb7",
+                "9fb6b63eb8dacd8ef9f86946c1ca5441853bea172992fc7aa9ed543dacccc579",
+                "367f3c094de11736ec2fd1831212baf69f55b264cd4cff2277a2f955d0b10912",
+                "0e44a6f921b7b7463e3f4d01b56acf05c87ed0fa211adfd5805f435f20400fca",
+                "03d5f900e888e21477af93908cea3e3a30592284c441d7e8352c90d434969ea6",
+                "3b8eea0937fff1bc17f04dfe2320cf453ce43fbebdf608b82bffaae38d70009d",
+                "a93958de498d64b11994f153978d92a74de83ae1b1ed96add54f190179f953ed",
+                "03c91710df53dabfec2021a638bca90f86f461e8ae6c15920301dc38c45d7aef",
+                "a6b800b04c25f3bae5de8de4f94c587715ec16e374ca95c21150abbcf0869b70",
+                "99b214c110ed13eb7e0abe696cdfd606636f198cb96567f56da544939b19ef1b",
+                "0328f88d27b989aaac0323064cc3f89368286d2526aec062efa36985afe188dc",
+                "7064fbdae1279e3f26527ba2afe0ad9d93f97e56a15e72b9aa1b6997a4cf707b",
+                "c7f19ce934c7097caf8bf99b5d1214e1ceb37d8fac565247ea7b519c817003ea",
+                "40f0e85b024c34242606f8c98dcb6fff9c62907fa381f837a4d2205352b4c974",
+                "5bbce8304aea982175a72fc8fde6fe4e29f21432ead42755a651669f413314b6",
+                "f896f2df9113ef62278bd93c456cf42950054c42bbe2f14daede7d0ba05991ec",
+                "01b72e8e1342cbb91fc1663fea8fb2e8364dd66e65ad7af6e6f7fc4687ac06fc",
+                "1919e10f388b7ff59423ec58602739c284ef0562b63469728caf6dfcb6bfc1eb",
+                "ad4b5d857fe718fb347da2416ae36dbf5e2acaff4f375689d4f9d30cbceb2020",
+                "bf3197d5b377779559b54de3e1f8764501b35a23097bc642f6f43c63eff56cd8",
+                "76506a70ac8629cf44cecddb305f75586f4e81f5ec2d7d2567309310950394c7",
+                "1e260d3eb15a838a858fcc4afcaba73a4cfa035dafea2c2bb6989e90fac06c62",
+                "6bd53b4a09ce58730882c3626abe26d8abe7827c875fc61a76e3cfd552b22666",
+                "5403992304cf18430b42d39b678ed01a6c5e4c146dc32e899e441d59e731d1eb",
+                "7d17d40c9b278088f59718d69dc30c7169a1afc3f74d7532bfd868e827c45cd1",
+                "2d202a743d28522efde8e43e40f6feb6d83c809d4bc36d12b338f34100496cbe",
+                "a5cdee33b0f5facdfb6d48055b0e4788a5b9835d62d614d8b00b831205910977",
+                "89095d499650f42811aa4dc0da5edc9fe12c34109971677520e631920cc0aab1",
+                "f093d0254ff8016a4bec293452b5df324b0156cabedce86d3f47c4277e014527",
+                "f69b87ee0ff0c5b495adb3e82f6fbe101e0cb81810ca3ce46cc8815cb8e8059e",
+                "48d742a56f86c3ebd0e3e5cb8004e32d28a603c25300c943808592af293cf260",
+                "928bdc037eae301f1676245231f2e2ab91cd1324f829b9fb0a49e723e913010f",
+                "1707e3ddf562441000752be6ff1dbb819472c360894c2d6574fe0593b536d26a",
+                "e82d267c2083e408ad7f68d5a42041f72404b91995691a06a0621ffc1801e304",
+                "a085d7f10194a567502d6a4bf9addb7fd84c42a4bd10e6222170d7c0843c3fd4",
+                "191f299c9e733349f0787c53dec3020bce7ec4be40c7e90a9de732ee139f67cf",
+                "445ef2edaf5e46e3e754cb81f87f4a99de12b3d346460fa9c9755cab8ef8fc83",
+                "3c14e1d730a00bed7dfe0ce7d9f53c44c48f0e69e71fb36c43554d5be64a4b34",
+                "1d42ae51020c8b52ae0e192c573d61404e5e39963b4b6b950ffe778bcac59e7d",
+                "966cbf97829d842fbeb3e7afb8dd66da78f138afabb7832889e3bb4880908a53",
+                "01f8564f19a167dc68ce0678f7a9a935a433a89c2e8110952c7cfc423ac583a1",
+                "ebc671de9f4a2863fb600df77ddcde78973e27249a238702cbe4828514972cd3",
+                "eb5420fd72c2228b7cbf34c737f2c81fdbf52d5774c166b4fb02e8c0cb9868ed",
+                "a06b7a30e120ce3183ded2447e8f6b6b7af7fd52cb32cea5fcdd3f98990b860e",
+                "3dbb8702d056cf3ce9c4ddc22bbe57b28d992477366a95bccf3561bb267310c1",
+                "a43d9d88279068aa6f03fe773d70c4569fc4b04747c7c3997ba6b26e86c4513c",
+                "816289096de9ff4c5066e3fa5f8d82e7e688e59a74d602c94947e053ed19dba9",
+                "d6fc2c8e8d5f42985963d83a2ac3c9fb336dfb7653e2b3988f0f5523ce7af3e8",
+                "78c093d012f0f49a9c583b07786fdac02ae1f2c9d65fb66d3a105e4901689121",
+                "1fbef7fedf821b3f0dd54fa5e62f43ac3a69f51db81f0ab8d2b67b5b80b4043c",
+                "20e7340e0d082d86ad5d8e9e3f8caddf09f51f1cc365a44c4f01b0821c092d04",
+                "36162ad3ae25e1b3e2422f6dd95119581be3661cc1461716a62abe641842d40e",
+                "83538b0f9eb151c0e5f7da9675f157af07140d34f5bbd1201657a32740c41f72",
+                "0e3b234e807c31e6f99dc6a4e839ee8a977e85b46dc67f450c24178aa48b7655",
+                "44fac38621dd18f2a9cf29b1c5002e614bb4f5b05214d8178a6d447204d5cb46",
+                "32a67f5ddd764210496496706356618cf2d1ac049f6610282d44882db64cc38a",
+                "f914e5fe43ced419b4a5b20efeeec32d584022512d429bcd4e206b1069c4ca33",
+                "38e4e9054e94e0d22e6e1f3d980dde7fd963178b60603935fc61722559436460",
+                "7ec7a18489dd173101eb769b9b47bb8dd6e2731837b78442c5b7cd2bb5439f2b",
+                "f4374ade37ad890cda58589cea11670f9947c0959848136a43f01465b9a15075",
+                "3f864a7e1e55776471662bff3398e80ab235aa3c2c815f1201210bbddd66ff7f",
+                "ae88ff7e1b6c3e1f1d6594339d862495278a9d3804ea94f8e6b80bf815c60038",
+                "18f83db3f782da780ea667ea375398606551d19b9b3a2706eafe7bb000ab9d93",
+                "56842c765ee617be036a2385efc48831e535c562b60ca3cec3192a91a3da2e75",
+                "53a32ab9630f69a6af089573168f6b399f92199db53c676b340b1bda93b07525",
+                "e9d9d6a3dcd182ab6141f90229bfc03b61846572437d1a75ea6a7442f0b4bf1f",
+                "2fbe36ef4c089ad2c3904ecf1f498bf355fbefcf0945e52b79895eeba3eda0c0",
+                "ea9622a969a72acb136fd98cea031a2462971458ce233fdc17ee401400d44a82",
+                "224148787eaff7de5096bfc8be209f7e215234c7a225c2bae8b37e62ed2c353f",
+                "e8799a1639182ae3d77c523a7167f6a50ed22e7e352317611e50811c6677c9af",
+                "715e63a7873dba29dc155f398055f87597ead114b1a0aba292a79a3b21c53746",
+                "ec9a4d908d751c511d1d9e0b5e022277b8f06b66e40accfba67ec7cb8624936a",
+                "734550af04c6d1042a6f5fa64fc7ef4782f334bae39ccd8d76657094d116824b",
+                "2c95731bdc991c13b551c78a07fae806946129e371fe0dd93797efc4d5679768",
+                "3b01c298d53740f4fdd5876c32d867c8c595f906aba3b2a58a07b15387fae0af",
+                "dacb52d46b8d1d23f5b1cbe9f8bfc21fc684ff67db02dd5a1c13502c5d821889",
+                "7ec7912472593fb96187fda97ad9277450932f06f73eef166578dbb881bd2366",
+                "aa89ec2e5a8e80bd5025bb5de049bb0dc30828941034ad334874b3ea2b8cd611",
+                "3586bc8fcbc71815ea56ca562df219f7577e2d371b6737ca5719910beddb6e16",
+                "4bead9cf0034c9f56703bd5a92698e71cf3df0acf76dc713051daf37e609c59c",
+                "64d0e5128f15f8f8af66a5688eaf73827c8d18fe1f83626000873941ce3a54fd",
+                "2a78ed099ba304fe9f61d8987c538385566339ad7c8be3f1d06b04a621ce35d0",
+                "a14fc3af194405165d532a14cb95f6d04f6bcc0f4345ca8eb909962a299e4ed9",
+                "154e677876e75fa52746c739584f239e5b05f9519adc49c8dbf222e1b2b46783",
+                "919df5697fe108a36fde313ad17ff9926b30ebbd6aecd9b48d684ae6b3f6a5cb",
+                "0e2ea942677a793e27fe6a6b08e235dc6f6bc53209f62aac9d5e757938118798",
+                "0f8499670cd48418303308ef883e88648dcd5c67331dcb76cfabb2e9bdbbb493",
+                "6eb52ca1f86686826db195f2fb3567da5ae785c7a480d431605a9231a337c079",
+                "514c10742dc1a9fd5d15ee4438b7086094407273e7181948fb96b9070ef9b6ce",
+                "092d9323c68a3b004b4712f5dc04a2a7bf010ff6fd162a71f802bae352a7d08c",
+                "e9f79f6e5309d31f7386f57d96b32b608154c516b7cf51ae9b43243635d8b2f0",
+                "f20da29e78afcf5aea13c122884a1bbfc441743021f6129c496bc55fd79d1761",
+                "70c4e12e270f6eac930f4e1a550498cbcdec459bfd3b8bd5b0aed08727558ce3",
+                "b5d334ef46f1daa62d26f6f5bd24b33a2c4f3377d9c77b7a61cc30e30836af17",
+                "3af906a0e2eaf08232220fa09097e5c9bc8732056a226929a189b2cb30e44926",
+                "bc72cb5ebe37440db49522f656bee6e15759887943e2f354b91a97a8f8f05866",
+                "b89f0739b2f0c84a247d69eff32b3ef495eb814376231fe2ba896e8ce0a56eb6",
+                "60bb1eebf1a8cc1d13d46cd5ca7d9194003db3a35c48ffd450a438d187c28d3d",
+                "7940a2ab913cc43c083af02ccc6c58eac8703995cd89afccb46fc2a0b12d2ec1",
+                "5a54c95ce9094d75f23ec1d6594c69b4678de88fd913705a1285dbd4be1f2e59",
+                "b5816e1bc70405173e3e55e8199960af1add74bcdebf05d8b91a16950b645f8b",
+                "665a199fef72828756718f2aa6c6105fc65573da40d912649b8c136cfd260044",
+                "d0cba209053969ff8a5582ecca42c6db575b9b98439900336af08a0dd099bbdb",
+                "05bedd49b4f9f0818de2e9dc567da779d3da8ebd2f587637dff9874f8d7d5e6a",
+                "7855274974231da62fcc07db03fc080307394bbad98d8b4afcd533a5bfc60186",
+                "84f6289680d12e894587cf05929939820a5fe151e06a656839697d8c456e0f58",
+                "efa9be158e74869ccdfb3b746db4bf76f78d285e278a1f3c4e8b91162643bd79",
+                "b68c4e596fcb2d564e345ff1a328f77d7afa62eca7803edbc131a0ad1f6c9950",
+                "b1f6e8ed4efaf0b009deb003e3b8af932de507846250818d0facf7a27b659820",
+                "c9978803fc86ab7c4a958be137599f4d7b7c96c60861ad072f71596465defe2f",
+                "768b0aab6c57a8a8fcf2af78423632bd474e17e812bf8fd248a412b699cf4049",
+                "f910c678e0183c3b91f8ca9aaf952512ada9897a4dfe43ec52fa9f79b2a3e910",
+                "e40dd90dd629a0b24c3f41651d52941b321afbfe212d4360241176cd1dfe706f",
+                "a43276b2183394e1ff85fbe605b054e3e00f54ab66f0bd35beed62c10a40830c",
+                "d1e2c66fb5697f7afc956f9cfa8dd22c958bb648c73d611b78ae846ac3c0f54d",
+                "d17da9e2bd9006afe2e70b5a9403f3dfe0eb3a82e3a5ddcdb900e4428bbf9199",
+                "c0189ef14f7b22cbd20a6edcc9374bdabce253d68781547de444308b754fff52",
+                "0470affe938a17b744af0bdb5731d98dac631d4ec1057252285cf9f564d41872",
+                "c5819482a96ba75e202e2c0a15440738c3288339778dd70921d3ccd6ef0af661",
+                "3a8c0c12344471ae4fad8b0c81b3f0b8c0dbd0a37b9a92ca085e93e5792cc7db",
+                "8940c05720fc9125906196055e57018bf6e6f417f83b9dbf5f3476584b8634f4",
+                "f73ea07bab0e7260500a3da0d086d087c1da6c4745694c169cc262596d0c3a43",
+                "73eac7e197df2e2276d0eb3793acd0df218dd68dbb6a37f4691691d4621bde03",
+                "baba2fcb1427aea67445541b1aaaa0c61a6a536fbbe6827c11e7e3ee743d502c",
+                "ac490c2bedcfc5887a038044edeb88797fa3d1b0e7fc38932d138c2f2215b27e",
+                "e5c8cf145520d5fa6d89c4876343f4293e5ec691789d9cac79c842a2749334c7",
+                "a08458bce3a1a0727f1924508bdc87f0c1f2b1273c511b5e41c1deaccacbfa95",
+                "79c19caec14613f01ac6f85e644750d33e7b276efd64890c60f29d1baf6643e5",
+                "490b3df1c6b3cfcdbba4474227b866fa964769e5cb40fe39602a785369f1a603",
+                "f22c57f639daa8e308f6f5fc1980846b4165158849332afee668c4aff8c15f73",
+                "084595d5e7b6a1de4ed89cfc0f5928d30a986674197ff30eeb3d526bf59c680b",
+                "b331be88f8f09e01ea09edb4469ee3c19a8d4ce81579b6c7dc59885318d76bcd",
+                "7a61cf38f08d5a4c5b8ca5c22e4a0c466407e2694b6d2945375bc0112732ff1e",
+                "5c9831aa99725f2c15f1a83c4b489660aad9f2a910b7b7c4456edcbca75d609c",
+                "700ddde1def0f1029dd4194d1c13111876502e275d0de5b5ae84a93062d3431a",
+                "c61e76691cc729595241fe022f72fa3f15d972040a15b8f1bfd2965dc57fb176",
+                "01fdd9e24888acbd5c54689be382c8e406b8a81b36202bf8494cc84001ab14d3",
+                "5c82c15ee401df7e4fd4d6a32b0367dbd3a5301162e25adb662c01495c1c470b",
+                "3dbe21a5951c97b59e82352a34f8664c4755d886e13083d58c38e55551534883",
+                "d6988e391718571e99786dac1354ae3753b6bf32708499e79d1c3bfdc7f0a5fb",
+                "3cee897925dc33e8b96e21f03b008f1f8302137f3f79b0553efd1b5ba3ae9c81",
+                "93478ba37e2d63e31fed4987cb8177db45d31e1e9b9f5556a05521d78c65c68e",
+                "f69c157f85c3d6193ece6d0370fa82e791959c3a46980fd21e79602b45c76964",
+                "20fa2372b045e05239f8c97f1f7129a1c78dd5dbc5c6a4f1eb02cd00486864d7",
+                "585ba23409321c0e45c7a798fb4fc62a24719dfa07d40e5ed18d271cb1ec2344",
+                "ce9810b0cbebd656ffdf23155c308f559174e9785c0eccf9535f94dc47d583b9",
+                "2ecc63412ed48dc61facb7aecfd60cd345e67cee1bd0965facabf1165f9027b1",
+                "bc3b29880dd3ce9487da79cdc4c7573bf0d5c7b4c669c113c9a8c0964ab41de6",
+                "0b69133994b6ff1cbb983371d5bc7f5284bdaf8f44f09a6a8b6fb72f9fa7e606",
+                "cbd18b975526717b2fc57c0f1a6a1f12520e08ed0e9c6906024e9af3d515141f",
+                "7e77ff32bea75e0078500e276bee66fa09dd4f6f42cf4922c97cbe7fc9013192",
+                "59771d05e208571982a7863b396b6bdd4561ff8f16ab053b7e429620312ee74e",
+                "14021ec50a1759e6199ab17a727bc782de90e7fc0164b45203ff6273bc973d59",
+                "58f0e6001c09be08e06cb658a290d3ed97678f90dd2e7aa1509c0efbb193e5f2",
+                "71360965701dc162bfdcc40ee3095ea7d01a186cce6149f981467bb0486ba216",
+                "b12a0e7cecdf75efd564bc3555011f7238952b7e603f3c6fc554ed51094ed4fe",
+                "a5280697ce56ccb40a83b73e9d8a476ae49285e9b503ed8054ed294ce71a6293",
+                "8d531edb8a6cd15ab5da1735953749a6aecf394954f1c91807b72134c451d1e4",
+                "5aee55e1a0070bb95e9df9349597432611ffb6f27aea7f38de66be7940bba6d9",
+                "b8ee0546fca6c05b423736ac436a4851a25d1bd0c6398727606a9a688ed622ef",
+                "53d8f07dffbca14cc6108115390b3fb115a4771587acfab63ff90548bccca66a",
+                "97e5bea8548a9da04b8f6293809435b94ac6350770df06b0f2e146859332f728",
+                "e04cf99bb9e6937eb572db379676c37513d78eba6f0a2df96d9279dbcf88bb49",
+                "d35d1ef64ed4c38f9744171832356821a4cb6ad9eac02fae158ef17c189540b6",
+                "169e889b15e249a7bf6bee60e62fb0e7a89e2ab7ab638b7664a41053763b3ce1",
+                "d281e67d3bf8c4e1e75d5102a3d74b5f76590d8f3c4b5ec4db613bcf4efb15ef",
+                "559d91208e135b015a66c45dac1308b7d302accb5b2396f857ef1a60c6f1e053",
+                "c58b9f233c3b66faeed820d7e0cec396e336ea53ba066be2e0985e7c0c8449f3",
+                "479d0e9812400de7f1322cbc5888e6b855c409c4592d0c2bd3e712ab1119bf9c",
+                "d4527e24ea4e05bf4239e7508ef20511fc8267dad2fbb028e87e2c3aca1cc933",
+                "ecede9a0d06ed1ced75d20dc100eea27d86d4167bac936209b0664df6102efc3",
+                "01c5901a27e49fb6c062bab62e3bf244e307683267e103fc851f2716796173af",
+                "db4c8d9482a15ce241d74af87abafe3eea6a73ed181187dce1496c993fa924fd",
+                "9833b323231321ea597d038834d4cf4f40b13591f1140215aebaad1afcc1186b",
+                "7e0f48bfc2115f87b0852fc1574b9d165a900507ef79b7c3ce306b22e3581b71",
+                "526c1b686b90690fe87a4b40ee83cbd60b469494fb1e94df322e1615e5beb81e",
+                "07dbd2667e87ab335eb395280cb9223c30bd50c2d8bd02904b4ab47c97ee941b",
+                "a87d780490885728aced739eaf8c3bcc729c5fee9cd8df714210dc37a329a041",
+                "1e02bf4fe6cfa6dbc2be3191b0562dc5f682bac611ae9ad7e18db0272c31fd3b",
+                "e7f554be6b5d01bb4856060072631cfba0b1cdd4cd9ca4fffc5fa2c020e12873",
+                "cdae8328611e44913b0621969b04449b9aeebd42bbef74ffca5f72e6876e3c94",
+                "3b58e43bb3ab2aaa774e814001956c0deb9b45e8a11449b44be2c1fe890432df",
+                "cfd0e988d09730b4e1d42b3edd9a2251176032ae5863ca29476935f9e5bc7cdc",
+                "ec3b0eb7ba08622b6f595de4f55764dacefa89bdde499114d44b9f2655e97c7d",
+                "cab6816d8d157ef0ce829e2f2b6ab4cb20ea3ac7fda0851b3d63cd43e01e36df",
+                "2376978cc4609cd44883a58b47b53410627a0373acfe461b4056985c9296f4e8",
+                "5bac4553eaa8c401b6be85c48dd782cb9122af8a6bc5dcf19bdd6c7bcb0d1404",
+                "c3a2269fe74d889d86b01e492870854cecd29a99150a1a75a6d2610d2c561f34",
+                "25b69795d094dfe89c9a2954109d21dbf974d214111e088b7088862f26765a55",
+                "2fd8315ebc10fab7e14328c417e89e5f3ede71cd33a134d44c8a5eeeb5d63aab",
+                "bb0c89996df7e2b900f7f477ab17f200efbfcaaa8de070d34bdcea92ea5dede8",
+                "f2cd472d9f67eb9dbd1001ec2e0ac37098ee5de6bb8a325fd54ec4ef5fa6b805",
+                "79c76dfce7ccbd4772897e5828e881d1e8f0e226339747742d070a632611cb35",
+                "6988e01e00ac0fc5a476bba295ea1d5d7250c8faee1edb4f5b5d8509707de3ca",
+                "b664e4a7ed3e4f649e01239678e8fb2d9e9a745b676259958cc5e8b0b15373ff",
+                "bf4d61949afe111e2f5125ea8f5099c59c5e8a8540cd3c4d7c99401413ff9001",
+                "2f58d7bef1563b9c3ee8ee1f6baf5f50514fb9567fd4ae09ce84cc9def443866",
+                "34b269073b0abed4957a22db83d5eefb66e6349684b3e8a065ac2661087d0b0d",
+                "2d0e47fc1baffecbaf5f3cc2a7c8291d02bbb4e38498fa55cbfc12e5527fea58",
+                "62b66248459a3e6f371659f5d5066d8f13df7731b0787d039e01c7fe47a5e443",
+                "c8d91f7df6174f7d3932a57f63c950d63d96418b2c5791f2c8c02bb866efecc6",
+                "1f1c23aa077054a720f88a6102fa09ef796f609163584cc2a0d8c8dc8f3f3245",
+                "c5fd4c72d01afba4b2419353b7ae549070694c54fc237cc2ab914e4d018e2514",
+                "1c89dcc1121d12cdf32a02cd966f4b0b05167ed1159bd2c136ad1558f9621271",
+                "7ab7bd9435c227f95392c01f6f8bc957a1c6e2bfe5d28d8c804f64df3a6449a1",
+                "7187796ef6c7652da1f38cbc24af73105926decb62ed7a59466d927e261a5620",
+                "f430ce7b0b708e9c67c5b6996d3bf1b21591cdc78c87cae9b60cd9bee4b21452",
+                "2a6b75186cfa2e9d08bd8e7731d918d06ca4811f9b85edc5e4f903c44be722f2",
+                "9102baef207b34b84e1cd5cce53980e1078ed16c2e1d318e34b8f6e94dc55d03",
+                "00fbcd6daa4981bb3f265069daddc2260fd304987e91b82f03750622bfcc8a36",
+                "7f9127233970ccf1fc4e5e21eda43cd7fdf5fa433bb66358ea6091ab1751a68f",
+                "283c0608ef47320c15084d9c4896c6fe7ded5bf94e396aaa2466e6c52e219f1e",
+                "679bc989eb047ece2fedf4ee8eafb2dd896d1cc0141bb61616caa94f555ce05a",
+                "679ddbc24d324c9fdf0331755e3f191fb22b32a20e4246d824503b3b57e806c4",
+                "bf2cc6ed37921c06bcee36899e2c7c8acb673c443a00d74a3e0df0690248c316",
+                "55d0dcff19e766a4cc2ba828eee0e3fee142700ee77710aa454dce76a9c9a93f",
+                "f9f666b1ba5626b386d269f3b1b86ec48f004eb8226da8a3be7860dd99b01d21",
+                "2f6f304268fb14f85fc7f78025d137e3cf8a5830418409941b72217f2110347d",
+                "8ca16edebdc0151a36e9ee0e34e9a3e803d183c53a38202dd46f83e6431066dd",
+                "4bc0b8e2ce4890b5e1e4cc6ef0661568e43203284456d5564c45e9823d6fff1d",
+                "4681f48909063abebf6ebbd58ed6403fca176f2a036c5a8e761e1d95167a27d7",
+                "575ac3565bde99f3d5eb5f755d128b25605288a9c8b53591a3ec6ca5935a4646",
+                "6a2b2e603d2aa6ea0eff5d8e25795d956cad9812d1ddaf78ac5da41e3deb8e3c",
+                "fe0ced1cde8fbae994f884696a4122a99a4d34bf8b9b94b5923738d78866d5fc",
+                "e02cb9691ff9f432c4d3d4520704e7bbd4b1f6c7f0e024ec93633d109be88c24",
+                "4a8040b90882204da0b84a48d24d18ba8f2c3944ef2577a6beb050eca55ddb4c",
+                "7916140a19ae20b26c18f07fd456976cee567a60c8876f24801fcf845925b020",
+                "ff317707bf2dfd33905327a1a65d35269e9b0c9b08e1e852e50aac785d2480cd",
+                "6f98f283606251f9c7f1603aac40b2206b543c7f909ef3764aaa048c5ba59688",
+                "f76f5e24c6f275fae3433e56ab95529173fd4b6593aea59a97fffb93392fd33f",
+                "ff45c3d5a332c7372dd2886b6cc2adfabba407aa5209a1785c244a85e00d96fd",
+                "e2b16651f1264a3e1432f05cf2cfdf47e9805f28e2a663ee9fad75fafd8b17c2",
+                "f2926195fa540270eedff8345d640fe7617c6daee2f27a1aa1efaffd90249c7d",
+                "75bb4fd95d4c8f974be1ada05d5912b1881576e546c8ff716362f8e2ddb7e68b",
+                "bc51457fd78c5d0a8b80980a95d56573951b223c880aada39565a0770487fde1",
+                "52a7db3525b159b87612a1a5b0072d5777f93a68bce5c046c132dbd954987563",
+                "84ec573a03de214a96d2212e7a6b37c7add37d85fb916c55acf09884b97111b8",
+                "a68e4f3c4e814f6c021093c265131bf205b794b5130bf5d877266cdd8a44112d",
+                "ab4d68d4e8f1b0cce2806babc545fbac8c9dd8c5fbdef262134db709dc16c6d7",
+                "632d0c64ee85b752e96fcd73f84a82ba144f23e46c7a687b73bd12c4e657624d",
+                "4430782a8b94d00dcef1b297b690cb756b54aae95f383af2e2c9f01026696fe7",
+                "1fb3a1af76678ac2062ee216b7349aacb98bb69df260408a1738a6e66bfebdbb",
+                "247646de14889865e2381651ca16fd9010373101c5393b2a564b7c0cf68331de",
+                "8d54ceafb5d0e66146bc44902bfb25b1004ca5480b079da08963649f5abaf412",
+                "133a5cdfc44a92939943c68f3cb3fdfe4e4544906753f5dcfca3114dc7a765fd",
+                "69e534b019d2ca07640cc376d9c8ea7e6059c069837b324f794484ccb1577d8d",
+                "da64be95d6c56bb0b9e2f20eac1d42b98641080cacb46ec3cfe03aa917b9e444"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.0005790230178679692
+            },
+            "exampleSites": [
+                "www.chefkoch.de",
+                "mymichiganbeach.com",
+                "nj.milesplit.com",
+                "www.savingsaplenty.com",
+                "gamesual.com",
+                "foodfolksandfun.net",
+                "spirituallyhungry.com",
+                "www.divein.com",
+                "www.shoulder-pain-explained.com",
+                "www.cbs8.com",
+                "www.gamerguides.com",
+                "www.ktvb.com",
+                "thegrocerystoreguy.com",
+                "middermusic.com",
+                "kitchensnitches.com",
+                "tonetopics.com",
+                "pointerclicker.com",
+                "www.thetexastasty.com",
+                "campersmarts.com",
+                "bikexchange.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-mediaconsortium\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 34,
+                "Date.prototype.getTimezoneOffset": 36,
+                "Screen.prototype.width": 34,
+                "Screen.prototype.height": 34,
+                "Screen.prototype.colorDepth": 34
+            },
+            "sites": 36,
+            "prevalence": 0.000245,
+            "cnames": [],
+            "responseHashes": [
+                "155c1dd326004213e335a8cca4e703cd39ee6bd422de82d5203dfdf2f0a068b3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "precious.jp",
+                "k-tai.watch.impress.co.jp",
+                "www.biteki.com",
+                "serai.jp",
+                "oggi.jp",
+                "lee.hpplus.jp",
+                "www.businessinsider.jp",
+                "www.gizmodo.jp",
+                "mainichi.jp",
+                "forbesjapan.com",
+                "gendai.media",
+                "www.jiji.com",
+                "www.vivi.tv",
+                "www.watch.impress.co.jp",
+                "komachi.yomiuri.co.jp",
+                "www.asahi.com",
+                "crea.bunshun.jp",
+                "www.yomiuri.co.jp",
+                "www.nishinippon.co.jp",
+                "number.bunshun.jp"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/mediaconsortium\\/v2\\/pixel\\.gif",
+            "cookies": 0.000279,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mediaconsortium.tagger",
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 41,
+            "prevalence": 0.000279,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00004087221302597429,
+                "krt_oo": 0.000006812035504329049,
+                "cookies.js": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "www.biteki.com",
+                "www.roomie.jp",
+                "yomidr.yomiuri.co.jp",
+                "komachi.yomiuri.co.jp",
+                "jbpress.ismedia.jp",
+                "www.lifehacker.jp",
+                "pc.watch.impress.co.jp",
+                "domani.shogakukan.co.jp",
+                "precious.jp",
+                "president.jp",
+                "bunshun.jp",
+                "eclat.hpplus.jp",
+                "www.gizmodo.jp",
+                "crea.bunshun.jp",
+                "www.businessinsider.jp",
+                "impress.co.jp",
+                "av.watch.impress.co.jp",
+                "www.yomiuri.co.jp",
+                "www.orangepage.net",
+                "courrier.jp"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/api\\/v1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mediaconsortium.profiles.tagger"
+            ],
+            "apis": {},
+            "sites": 19,
+            "prevalence": 0.000129,
+            "cnames": [],
+            "responseHashes": [
+                "17a411f75989c4ed6ba818d4eeccde07c30b9ff61ebc37b2d545454baf5f79dd",
+                "c781a07e19394d08625fe464de45ec5212c5f7b13490260eed34ea273625948f",
+                "c801a2b9b1c91fcc380ec14c1075e47ad1149e6ae1697d9a817f5d64133a367d",
+                "87e4299e1a3433c6cb81ab4ecaaeca8f1256dcfd307f54f27b143df165819f3d",
+                "18dc6d7f9f308a0ed9b08051f44d6e7a0367ad95e7b383a278a6528c78dbfd7b",
+                "e5089d280dc04bbf30a0fbda23344ba0670e7819d4383844f2c5baca00bda30c",
+                "f9ed67ff689fa65ab8801b054715b9dfcf4cc58a2dfaf752919e1938d6f9aa95",
+                "0af8e874dfb8b060333fae4c8e1870847ebaa35ed6ef76003a5d4c6084f81651",
+                "390f63f538573ec6925c8d7bcce9077bbdef08127e97b9e0ef148676e6b4b62c",
+                "cb3ac5df96e5c11cd49bab3faebbdaa41b7433baac9f8e9cadad1bfeb41c5642",
+                "ec37973f0bc5729384b009f721eb086fd7e9805e36e19e8bcf859c51776e18d8",
+                "d234493167fa29effe8b9655cd9760ac46141503b329001a884cd9679324e72c",
+                "6eee2719f1ac00934274d7e9b4f8d10e810a0cd26b8ed725f1d1c8d7c63d8dfa",
+                "35a49bd280175e15ad6641fd18e7e012a1dac09da50ffa876ab925349f6baf22",
+                "2b2e603ac4b4ef64e4015fba6a0e62e4ea7196484cef9d19c877f149af6f1063",
+                "25349d3be3a369916a510705cc6b72461ec4659249de2d55036bd050cc5e7115",
+                "9f8e9d116c1272a465a9e1eaa422560f19095036c65a17bb61f0cf231d21ec01",
+                "00270b8650d7a6e832d36ef335e15fc7f6830a8a27afe971d7b9d4e0b0750d62"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "impress.co.jp",
+                "bunshun.jp",
+                "car.watch.impress.co.jp",
+                "crea.bunshun.jp",
+                "internet.watch.impress.co.jp",
+                "k-tai.watch.impress.co.jp",
+                "mainichi.jp",
+                "number.bunshun.jp",
+                "pc.watch.impress.co.jp",
+                "toyokeizai.net",
+                "www.businessinsider.jp",
+                "www.gizmodo.jp",
+                "www.jiji.com",
+                "www.lifehacker.jp",
+                "www.nishinippon.co.jp",
+                "www.orangepage.net",
+                "www.roomie.jp",
+                "www.sanspo.com",
+                "www.zakzak.co.jp"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/dbm\\/opecs\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 114,
+            "prevalence": 0.000777,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4",
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "maquia.hpplus.jp",
+                "crea.bunshun.jp",
+                "hugolescargot.journaldesfemmes.fr",
+                "www.familienleben.ch",
+                "www.5newsonline.com",
+                "www.inquirer.net",
+                "www.kiiitv.com",
+                "mainichi.jp",
+                "www.thv11.com",
+                "k-tai.watch.impress.co.jp",
+                "www.gaultmillau.ch",
+                "www.linternaute.fr",
+                "gendai.media",
+                "www.wwltv.com",
+                "bricolage.linternaute.com",
+                "www.ariase.com",
+                "www.ksdk.com",
+                "forbesjapan.com",
+                "www.12news.com",
+                "usa.inquirer.net"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/appnexus\\/pbfs\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger",
+                "lefigaro.tagger",
+                "ringierch.tagger"
+            ],
+            "apis": {},
+            "sites": 61,
+            "prevalence": 0.000416,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "leconjugueur.lefigaro.fr",
+                "oggi.jp",
+                "www.lifehacker.jp",
+                "www.gaultmillau.ch",
+                "www.vivi.tv",
+                "pc.watch.impress.co.jp",
+                "immobilier.lefigaro.fr",
+                "k-tai.watch.impress.co.jp",
+                "www.linternaute.com",
+                "www.journaldunet.fr",
+                "bricolage.linternaute.com",
+                "forbesjapan.com",
+                "car.watch.impress.co.jp",
+                "www.chunichi.co.jp",
+                "www.roomie.jp",
+                "www.businessinsider.jp",
+                "hugolescargot.journaldesfemmes.fr",
+                "domani.shogakukan.co.jp",
+                "www.biteki.com",
+                "www.commentcamarche.net"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-lefigaro\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 30,
+                "Date.prototype.getTimezoneOffset": 32,
+                "Screen.prototype.width": 30,
+                "Screen.prototype.height": 30,
+                "Screen.prototype.colorDepth": 30
+            },
+            "sites": 32,
+            "prevalence": 0.000218,
+            "cnames": [],
+            "responseHashes": [
+                "155c1dd326004213e335a8cca4e703cd39ee6bd422de82d5203dfdf2f0a068b3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "madame.lefigaro.fr",
+                "www.linternaute.com",
+                "www.ariase.com",
+                "bricolage.linternaute.com",
+                "www.linternaute.fr",
+                "droit-finances.commentcamarche.com",
+                "cuisine.journaldesfemmes.fr",
+                "entreprises.lefigaro.fr",
+                "www.lachainemeteo.com",
+                "www.journaldunet.fr",
+                "tvmag.lefigaro.fr",
+                "www.jeux-gratuits.com",
+                "forums.commentcamarche.net",
+                "avis-vin.lefigaro.fr",
+                "www.journaldunet.com",
+                "sante.journaldesfemmes.fr",
+                "sante.lefigaro.fr",
+                "marine.meteoconsult.fr",
+                "www.phonandroid.com",
+                "linternaute.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/lefigaro\\/v2\\/uid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 17,
+            "prevalence": 0.000116,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "linternaute.com",
+                "bricolage.linternaute.com",
+                "cuisine.journaldesfemmes.fr",
+                "deco.journaldesfemmes.fr",
+                "droit-finances.commentcamarche.com",
+                "entreprises.lefigaro.fr",
+                "forums.commentcamarche.net",
+                "hugolescargot.journaldesfemmes.fr",
+                "immobilier.lefigaro.fr",
+                "sante-medecine.journaldesfemmes.fr",
+                "sante.journaldesfemmes.fr",
+                "www.commentcamarche.net",
+                "www.journaldesfemmes.fr",
+                "www.journaldunet.com",
+                "www.journaldunet.fr",
+                "www.linternaute.com",
+                "www.linternaute.fr"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/lefigaro\\/v2\\/pixel\\.gif",
+            "cookies": 0.000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lefigaro.tagger"
+            ],
+            "apis": {},
+            "sites": 20,
+            "prevalence": 0.000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00008174442605194859
+            },
+            "exampleSites": [
+                "linternaute.com",
+                "avis-deces.linternaute.com",
+                "bricolage.linternaute.com",
+                "cuisine.journaldesfemmes.fr",
+                "deco.journaldesfemmes.fr",
+                "droit-finances.commentcamarche.com",
+                "entreprises.lefigaro.fr",
+                "forums.commentcamarche.net",
+                "hugolescargot.journaldesfemmes.fr",
+                "immobilier.lefigaro.fr",
+                "leconjugueur.lefigaro.fr",
+                "sante-medecine.journaldesfemmes.fr",
+                "sante.journaldesfemmes.fr",
+                "www.ariase.com",
+                "www.commentcamarche.net",
+                "www.journaldesfemmes.fr",
+                "www.journaldunet.com",
+                "www.journaldunet.fr",
+                "www.linternaute.com",
+                "www.linternaute.fr"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/lefigaro\\/v2\\/metrics\\/sdk-consent-delayed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lefigaro.tagger"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000681,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lefigaro.fr",
+                "copainsdavant.linternaute.com",
+                "cuisine.journaldesfemmes.fr",
+                "madame.lefigaro.fr",
+                "sante.lefigaro.fr",
+                "tvmag.lefigaro.fr",
+                "www.jeux-gratuits.com",
+                "www.lachainemeteo.com",
+                "www.lefigaro.fr",
+                "www.phonandroid.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/weborama\\/pbfs\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 14,
+            "prevalence": 0.0000954,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "linternaute.com",
+                "bricolage.linternaute.com",
+                "droit-finances.commentcamarche.com",
+                "entreprises.lefigaro.fr",
+                "forums.commentcamarche.net",
+                "hugolescargot.journaldesfemmes.fr",
+                "immobilier.lefigaro.fr",
+                "leconjugueur.lefigaro.fr",
+                "sante-medecine.journaldesfemmes.fr",
+                "www.ariase.com",
+                "www.journaldesfemmes.fr",
+                "www.journaldunet.com",
+                "www.linternaute.com",
+                "www.linternaute.fr"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/tradedesk\\/pbfs\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 21,
+            "prevalence": 0.000143,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxnews.com",
+                "www.foxnews.com",
+                "toofab.com",
+                "www.outkick.com",
+                "sante-medecine.journaldesfemmes.fr",
+                "entreprises.lefigaro.fr",
+                "www.journaldunet.com",
+                "immobilier.lefigaro.fr",
+                "nation.foxnews.com",
+                "www.linternaute.com",
+                "www.linternaute.fr",
+                "forums.commentcamarche.net",
+                "bricolage.linternaute.com",
+                "leconjugueur.lefigaro.fr",
+                "hugolescargot.journaldesfemmes.fr",
+                "www.foxsports.com",
+                "droit-finances.commentcamarche.com",
+                "www.fox.com",
+                "www.journaldesfemmes.fr",
+                "linternaute.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-italiaonline\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Screen.prototype.colorDepth": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "155c1dd326004213e335a8cca4e703cd39ee6bd422de82d5203dfdf2f0a068b3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "virgilio.it",
+                "sport.virgilio.it",
+                "www.virgilio.it"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-raspl\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 15,
+                "Date.prototype.getTimezoneOffset": 20,
+                "Screen.prototype.width": 15,
+                "Screen.prototype.height": 15,
+                "Screen.prototype.colorDepth": 15
+            },
+            "sites": 20,
+            "prevalence": 0.000136,
+            "cnames": [],
+            "responseHashes": [
+                "155c1dd326004213e335a8cca4e703cd39ee6bd422de82d5203dfdf2f0a068b3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "businessinsider.com.pl",
+                "jakdojade.pl",
+                "kobieta.onet.pl",
+                "kultura.onet.pl",
+                "plejada.pl",
+                "pogoda.onet.pl",
+                "przegladsportowy.onet.pl",
+                "sympatia.onet.pl",
+                "wiadomosci.onet.pl",
+                "www.auto-swiat.pl",
+                "www.fakt.pl",
+                "www.forbes.pl",
+                "www.komputerswiat.pl",
+                "www.medonet.pl",
+                "www.newsweek.pl",
+                "www.ofeminin.pl",
+                "www.onet.pl",
+                "www.skapiec.pl",
+                "zapytaj.onet.pl",
+                "zywienie.medonet.pl"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/raspl\\/v2\\/metrics\\/sdk-consent-delayed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "raspl.tagger"
+            ],
+            "apis": {},
+            "sites": 19,
+            "prevalence": 0.000129,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "businessinsider.com.pl",
+                "kobieta.onet.pl",
+                "kultura.onet.pl",
+                "plejada.pl",
+                "pogoda.onet.pl",
+                "przegladsportowy.onet.pl",
+                "sympatia.onet.pl",
+                "wiadomosci.onet.pl",
+                "www.auto-swiat.pl",
+                "www.fakt.pl",
+                "www.forbes.pl",
+                "www.komputerswiat.pl",
+                "www.medonet.pl",
+                "www.newsweek.pl",
+                "www.ofeminin.pl",
+                "www.onet.pl",
+                "www.skapiec.pl",
+                "zapytaj.onet.pl",
+                "zywienie.medonet.pl"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-pdmp\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 22,
+                "Date.prototype.getTimezoneOffset": 22,
+                "Screen.prototype.width": 20,
+                "Screen.prototype.height": 20,
+                "Screen.prototype.colorDepth": 20
+            },
+            "sites": 22,
+            "prevalence": 0.00015,
+            "cnames": [],
+            "responseHashes": [
+                "66394d3500ed5cd1752a1799afb1ad15b07e2d27a8e926e47254a20c3f614152",
+                "7dc4054755cd8ee3b20100bed5e0ae5f06a39081f5d3704604206f37e74dcbd4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.trackwrestling.com",
+                "milesplit.com",
+                "www.floracing.com",
+                "pa.milesplit.com",
+                "mn.milesplit.com",
+                "nc.milesplit.com",
+                "fl.milesplit.com",
+                "www.flotrack.org",
+                "www.apartmenttherapy.com",
+                "va.milesplit.com",
+                "tn.milesplit.com",
+                "wi.milesplit.com",
+                "ny.milesplit.com",
+                "nj.milesplit.com",
+                "oh.milesplit.com",
+                "www.flohockey.tv",
+                "il.milesplit.com",
+                "www.flowrestling.org",
+                "www.milesplit.com",
+                "co.milesplit.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/api\\/v1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mediaconsortium.profiles.tagger"
+            ],
+            "apis": {},
+            "sites": 16,
+            "prevalence": 0.000109,
+            "cnames": [],
+            "responseHashes": [
+                "605074680175ded003a2abeac4be109829488ae7628d83061350147f66b72dfc",
+                "6e0f8721e6b53356843034b34e211fdb5a83d5b90125eab7d989fe90345b69fe",
+                "05d4cc39201ec062b1a195b9ad9c79a976abea1998bcbd9e83787c139497476e",
+                "3df25a635e2d552372404ecc160e29631ddb968431c0af0dc4c7bbd33ad99bba",
+                "4a94a70403dcda6bb2bffaa2eb9ad3e61ebae9930d96680ae639b9a7a699d1e9",
+                "8dea3da73751cf3027c30dbec096876a00d7055dae3ce447dbe3fb4c19055f20",
+                "084140ea8fba26b3c5b91566502ab5bdcd4994af41c739bf438ebf36c87c8bcf",
+                "76295aa1329198827c6693a4ef830a66bf87edb32640a9bcdb925f4b36851811",
+                "1040dce615268e2b9e2ece466034ca80a539c1936d4e300c1c623448a4397db7",
+                "3906857a30d38731d6a5b1d1a06fa924bfb0229e5693b0be0dc98fb7f65c1587",
+                "f5753f99f5caeff5e98153c1247a7ab640d687d10b08e0b496ced2a2b771e3cc",
+                "75b50fe84338cce0a6122e6d7d4688c862ea3538055e79470da50b6e12a34fcb",
+                "914abf9d86f2c3ce874a26daf50d09414042e6a038b695c05bbfa02a37f53e69",
+                "fb3500a0d2c748e0fabcbb88481e965865aa603f4c31964a95120ac586549296",
+                "691d0a4b0e02a188a8bc9e9c351572e792419e49ea61200ce72366c9fd0c9a7b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "cancam.jp",
+                "courrier.jp",
+                "domani.shogakukan.co.jp",
+                "gendai.media",
+                "jbpress.ismedia.jp",
+                "komachi.yomiuri.co.jp",
+                "madamefigaro.jp",
+                "oggi.jp",
+                "precious.jp",
+                "president.jp",
+                "serai.jp",
+                "www.biteki.com",
+                "www.chunichi.co.jp",
+                "www.fnn.jp",
+                "www.yomiuri.co.jp",
+                "yomidr.yomiuri.co.jp"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-tegna\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 46,
+                "Date.prototype.getTimezoneOffset": 44,
+                "Screen.prototype.width": 44,
+                "Screen.prototype.height": 44,
+                "Screen.prototype.colorDepth": 44
+            },
+            "sites": 47,
+            "prevalence": 0.00032,
+            "cnames": [],
+            "responseHashes": [
+                "dde3ae6caedd650ac2d0f6c740958cf58f233e2120a014264dbae32fe34be4e9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.fox61.com",
+                "www.localmemphis.com",
+                "www.wcnc.com",
+                "www.abc10.com",
+                "www.thv11.com",
+                "www.5newsonline.com",
+                "www.newscentermaine.com",
+                "www.whas11.com",
+                "www.13wmaz.com",
+                "www.10tv.com",
+                "www.11alive.com",
+                "www.king5.com",
+                "www.kiiitv.com",
+                "www.wfmynews2.com",
+                "www.12news.com",
+                "www.12newsnow.com",
+                "www.wusa9.com",
+                "www.wfaa.com",
+                "www.wkyc.com",
+                "www.firstcoastnews.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/tegna\\/v2\\/metrics\\/sdk-consent-delayed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tegna.tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "childrenshealthdefense.org",
+                "www.kgw.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/pdmp\\/b165\\/v2\\/pixel\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pdmp.tagger"
+            ],
+            "apis": {},
+            "sites": 19,
+            "prevalence": 0.000129,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.00015667681659956812
+            },
+            "exampleSites": [
+                "milesplit.com",
+                "fl.milesplit.com",
+                "il.milesplit.com",
+                "mn.milesplit.com",
+                "nj.milesplit.com",
+                "ny.milesplit.com",
+                "oh.milesplit.com",
+                "pa.milesplit.com",
+                "tn.milesplit.com",
+                "tx.milesplit.com",
+                "va.milesplit.com",
+                "wi.milesplit.com",
+                "www.flograppling.com",
+                "www.flohockey.tv",
+                "www.floracing.com",
+                "www.flotrack.org",
+                "www.flowrestling.org",
+                "www.milesplit.com",
+                "www.trackwrestling.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/mediaconsortium\\/v2\\/tagger\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 2,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Screen.prototype.colorDepth": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "9a30fffde442bbdcc04c67c1c660f055d16736fbe0e4ebb5d00b95c1c77956e7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "courrier.jp",
+                "jbpress.ismedia.jp",
+                "president.jp",
+                "www.fnn.jp"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/v1\\/targeting",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "italiaonline.profiles.tagger",
+                "adweb.profiles.tagger"
+            ],
+            "apis": {},
+            "sites": 17,
+            "prevalence": 0.000116,
+            "cnames": [],
+            "responseHashes": [
+                "53291de4f74ca7e47429bec6759d4ad4ac7c3005558a8895d77bce9f09fdbd65",
+                "80b6c88cb65ddfd5bb21f682c0b966890d914ad604672622080e675b6f5e19f3",
+                "557a465458b2f85b23407e8de530d87b150e025e8fa4ddbdb92f7205780acbb4",
+                "c9ff26805a9c1205dcf49bf13716e9d9a0eacbe3d48279e46c208cd483eacfdb",
+                "ac54eb52825942db187773db55459d05e2a092554ffb35247ce61b25c1da55c0",
+                "acc5cd883e05959a338f072465bbc21eba7150b2d6194ee67fc633f62ce8fd3c",
+                "9c9e67fea2b38193b546be58e43fa858ba9875b7d052d98b0299e6bb476f0860",
+                "eb404ea8efba4e1effb0bdf89f8bab4b12feab18e2b9a90bfc446937c0733a2b",
+                "6c506030ae4a9bab325bbeaeffc67e1db743a554f4972f2dfe9f1cfe3313d347",
+                "41af53aa46628e7d42598379608c8fd30a7aa8b9d6cffa57b54a96cb727891e9",
+                "bf9b38910de3fa627761a19b8a96a149cc1c89408495a9a5aa4e25feaa7c29e5",
+                "fd1fb8ebc8028c0bce2b5c17cc5088231be921b0141b6cd404abcbe5a17d1989",
+                "d3869d74be574b04e504431d3da76b1bd274a711f4490167be46aa58d192c312",
+                "7899c585997f6635a94bcd4ec387327df236cdc2e83f07c31e7d817b049aef6a",
+                "75721e2a070ccf3dc9263abcc3f8bbd1af3730bfb6d9d17e5e85f8e7ab956816"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dilei.it",
+                "login.libero.it",
+                "login.virgilio.it",
+                "m.tuttocitta.it",
+                "mail.virgilio.it",
+                "quifinanza.it",
+                "sapere.virgilio.it",
+                "siviaggia.it",
+                "sport.virgilio.it",
+                "tecnologia.libero.it",
+                "www.blitzquotidiano.it",
+                "www.ilsussidiario.net",
+                "www.libero.it",
+                "www.meteo.gr",
+                "www.paginegialle.it",
+                "www.paginebianche.it",
+                "www.tuttocitta.it"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/v1\\/targeting",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "italiaonline.profiles.tagger"
+            ],
+            "apis": {},
+            "sites": 16,
+            "prevalence": 0.000109,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dilei.it",
+                "login.libero.it",
+                "login.virgilio.it",
+                "m.tuttocitta.it",
+                "mail.virgilio.it",
+                "quifinanza.it",
+                "sapere.virgilio.it",
+                "siviaggia.it",
+                "sport.virgilio.it",
+                "tecnologia.libero.it",
+                "www.blitzquotidiano.it",
+                "www.ilsussidiario.net",
+                "www.libero.it",
+                "www.paginegialle.it",
+                "www.paginebianche.it",
+                "www.tuttocitta.it"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/gedi\\/v2\\/uid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gedi.tagger"
+            ],
+            "apis": {},
+            "sites": 16,
+            "prevalence": 0.000109,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "repubblica.it",
+                "forum.alfemminile.com",
+                "ilpiccolo.gelocal.it",
+                "mattinopadova.gelocal.it",
+                "messaggeroveneto.gelocal.it",
+                "milano.repubblica.it",
+                "nuovavenezia.gelocal.it",
+                "roma.repubblica.it",
+                "www.alfemminile.com",
+                "www.deejay.it",
+                "www.formulapassion.it",
+                "www.huffingtonpost.it",
+                "www.ilsecoloxix.it",
+                "www.lastampa.it",
+                "www.limesonline.com",
+                "www.repubblica.it"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/foxus\\/v2\\/uid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "foxus.tagger"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxnews.com",
+                "toofab.com",
+                "www.foxbusiness.com",
+                "www.foxnews.com",
+                "www.foxweather.com",
+                "www.outkick.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-fox\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 7,
+                "Date.prototype.getTimezoneOffset": 7,
+                "Screen.prototype.width": 7,
+                "Screen.prototype.height": 7,
+                "Screen.prototype.colorDepth": 7
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "c62bace00ab8d24785c0fcbb25578affad239009e4643991c28527a6b0894158"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxnews.com",
+                "nation.foxnews.com",
+                "toofab.com",
+                "www.fox.com",
+                "www.foxnews.com",
+                "www.foxsports.com",
+                "www.outkick.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/fox\\/v2\\/pixel\\.gif",
+            "cookies": 0.0000477,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fox.tagger"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxnews.com",
+                "nation.foxnews.com",
+                "toofab.com",
+                "www.fox.com",
+                "www.foxnews.com",
+                "www.foxsports.com",
+                "www.outkick.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/dbmhm\\/pbfs\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fox.tagger"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxnews.com",
+                "nation.foxnews.com",
+                "toofab.com",
+                "www.fox.com",
+                "www.foxnews.com",
+                "www.foxsports.com",
+                "www.outkick.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-commonmedia\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 5,
+                "window.localStorage": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Screen.prototype.colorDepth": 4
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "155c1dd326004213e335a8cca4e703cd39ee6bd422de82d5203dfdf2f0a068b3",
+                "602ed2c03b3f6f1c6ef2481dc97593aebfefc58164cb14f4fd27e072b7b4e7cd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rund-ums-baby.de",
+                "www.babycenter.de",
+                "www.beliebte-vornamen.de",
+                "www.helles-koepfchen.de",
+                "www.rund-ums-baby.de"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/commonmedia\\/v2\\/metrics\\/sdk-consent-delayed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "commonmedia.tagger"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rund-ums-baby.de",
+                "www.babycenter.de",
+                "www.helles-koepfchen.de",
+                "www.rund-ums-baby.de"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-adweb\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Screen.prototype.colorDepth": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "155c1dd326004213e335a8cca4e703cd39ee6bd422de82d5203dfdf2f0a068b3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "meteo.gr",
+                "www.efsyn.gr",
+                "www.meteo.gr"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-inquirer\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTimezoneOffset": 4,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Screen.prototype.colorDepth": 3
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "155c1dd326004213e335a8cca4e703cd39ee6bd422de82d5203dfdf2f0a068b3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "inquirer.net",
+                "newsinfo.inquirer.net",
+                "usa.inquirer.net",
+                "www.inquirer.net"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/inquirer\\/v2\\/pixel\\.gif",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "inquirer.tagger"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000027248142017316195
+            },
+            "exampleSites": [
+                "inquirer.net",
+                "newsinfo.inquirer.net",
+                "usa.inquirer.net",
+                "www.inquirer.net"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-adalliance\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "155c1dd326004213e335a8cca4e703cd39ee6bd422de82d5203dfdf2f0a068b3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rtl.de",
+                "www.tvnow.de"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-nextms\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 3,
+                "Date.prototype.getTimezoneOffset": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Screen.prototype.colorDepth": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "155c1dd326004213e335a8cca4e703cd39ee6bd422de82d5203dfdf2f0a068b3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bfmtv.com",
+                "rmc.bfmtv.com",
+                "www.bfmtv.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/nextms\\/v2\\/metrics\\/sdk-consent-delayed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nextms.tagger"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bfmtv.com",
+                "rmcsport.bfmtv.com",
+                "www.bfmtv.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-asmi\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bild.de",
+                "www.bild.de"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/italiaonline\\/v2\\/metrics\\/sdk-consent-delayed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "italiaonline.tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "virgilio.it",
+                "www.virgilio.it"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/tegna\\/v2\\/pixel\\.gif",
+            "cookies": 0.00032,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tegna.tagger"
+            ],
+            "apis": {},
+            "sites": 47,
+            "prevalence": 0.00032,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.0003201656687034653
+            },
+            "exampleSites": [
+                "www.wthr.com",
+                "www.wgrz.com",
+                "www.5newsonline.com",
+                "www.wkyc.com",
+                "www.king5.com",
+                "www.localmemphis.com",
+                "www.fox61.com",
+                "www.kvue.com",
+                "www.wwltv.com",
+                "www.weareiowa.com",
+                "www.11alive.com",
+                "www.wcnc.com",
+                "www.wltx.com",
+                "www.12news.com",
+                "www.wfaa.com",
+                "www.cbs8.com",
+                "www.wbir.com",
+                "www.abc10.com",
+                "www.newswest9.com",
+                "www.wfmynews2.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/simplifi\\/pbfs\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger",
+                "tegna.tagger"
+            ],
+            "apis": {},
+            "sites": 47,
+            "prevalence": 0.00032,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.wgrz.com",
+                "www.whas11.com",
+                "www.11alive.com",
+                "www.wzzm13.com",
+                "www.khou.com",
+                "www.king5.com",
+                "www.wfmynews2.com",
+                "www.13newsnow.com",
+                "www.newscentermaine.com",
+                "www.wusa9.com",
+                "www.wcnc.com",
+                "www.kens5.com",
+                "www.wltx.com",
+                "www.wtsp.com",
+                "www.wfaa.com",
+                "www.ktvb.com",
+                "www.abc10.com",
+                "www.newswest9.com",
+                "www.kvue.com",
+                "10tv.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-ringierch\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 4,
+                "Date.prototype.getTimezoneOffset": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Screen.prototype.colorDepth": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "155c1dd326004213e335a8cca4e703cd39ee6bd422de82d5203dfdf2f0a068b3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beobachter.ch",
+                "www.familienleben.ch",
+                "www.gaultmillau.ch",
+                "www.nachhaltigleben.ch"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ringierch\\/v2\\/pixel\\.gif",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ringierch.tagger"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "ea_uuid": 0.000020436106512987146
+            },
+            "exampleSites": [
+                "beobachter.ch",
+                "www.beobachter.ch",
+                "www.familienleben.ch",
+                "www.gaultmillau.ch",
+                "www.nachhaltigleben.ch"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/scmpmagazine\\/v2\\/pixel\\.gif",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "scmpmagazine.tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cosmopolitan.com.hk",
+                "www.cosmopolitan.com.hk"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/scmpmagazine\\/v2\\/uid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cosmopolitan.com.hk",
+                "www.cosmopolitan.com.hk"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/adweb\\/v2\\/pixel\\.gif",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "adweb.tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "efsyn.gr",
+                "www.efsyn.gr"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/api\\/v1\\/raspl\\/profile",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "profiles.tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "deb4ec548fee113690978effaecc989963c3338ef51f1bc7d2171e876161e418"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "forbes.pl",
+                "www.newsweek.pl"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/raspl\\/v1\\/custom-no-tagger",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "forbes.pl",
+                "www.forbes.pl",
+                "www.newsweek.pl"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/raspl\\/v1\\/tagger\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2daff57b55cfe17ad45a879c57114fe42286e5ec5e748d6169ad866d15447b31"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "forbes.pl",
+                "www.newsweek.pl"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/raspl\\/v1\\/pixel\\.gif",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "forbes.pl",
+                "www.newsweek.pl"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/fox\\/v2\\/metrics\\/sdk-consent-error",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fox.tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxnews.com",
+                "www.foxsports.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/fox\\/v2\\/metrics\\/sdk-consent-delayed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fox.tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxnews.com",
+                "www.foxsports.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/freewheel\\/pbfs\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fox.tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxsports.com",
+                "www.foxsports.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/fox\\/v2\\/custom-no-tagger",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fox.tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "597e877da1c5a9e3cf2d84335a1e033b745e83fd44b9f4e6c3fee1b62b606304"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxsports.com",
+                "www.foxsports.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-lagardere\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "565479da568ecbd73955071e68c128b4d15b9470304f316b859fd5107ec0874d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lejdd.fr",
+                "www.parismatch.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/api\\/v1\\/lagardere\\/profile",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "profiles.tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dfe83be57297f9178fa0d5d92fbb14c29e51ead32f0dc77f360fe1dff718a0a1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lejdd.fr",
+                "www.parismatch.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/lagardere\\/v2\\/metrics\\/sdk-consent-delayed",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lagardere.tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lejdd.fr",
+                "www.parismatch.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/pdmp\\/b157\\/v2\\/pixel\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pdmp.tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1ed70d02696722505ec82915a7dd9fbf2c512366d009b74bdbe37c9869c250a4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_li_dcdm_c": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "salon.com",
+                "www.salon.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/scmp\\/v2\\/uid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger-scmp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "tagger.ope.scmp.com",
+                    "resolved": "tagger-scmp.opecloud.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scmp.com",
+                "www.scmp.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/ope-scmp\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTimezoneOffset": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Screen.prototype.colorDepth": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "155c1dd326004213e335a8cca4e703cd39ee6bd422de82d5203dfdf2f0a068b3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scmp.com",
+                "www.scmp.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/scmp\\/v2\\/pixel\\.gif",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger-scmp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "tagger.ope.scmp.com",
+                    "resolved": "tagger-scmp.opecloud.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000027248142017316195
+            },
+            "exampleSites": [
+                "scmp.com",
+                "www.scmp.com"
+            ]
+        },
+        {
+            "rule": "opecloud\\.com\\/scmp\\/pcs\\.gif",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tagger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "scmp.com",
+                "www.scmp.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0012,
+    "topInitiators": [
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.4658886894075404
+        },
+        {
+            "domain": "mediavine.com",
+            "prevalence": 0.39317773788150806
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.049072411729503294
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.021843207660083783
+        },
+        {
+            "domain": "pubnation.com",
+            "prevalence": 0.013464991023339317
+        },
+        {
+            "domain": "osano.com",
+            "prevalence": 0.008378216636744464
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.005685218432076601
+        },
+        {
+            "domain": "iolam.it",
+            "prevalence": 0.004488330341113106
+        },
+        {
+            "domain": "onet.pl",
+            "prevalence": 0.0038898862956313583
+        },
+        {
+            "domain": "ringier-advertising.ch",
+            "prevalence": 0.003590664272890485
+        }
+    ],
+    "types": {
+        "Script": 1293,
+        "Image": 1180,
+        "Fetch": 694,
+        "XHR": 121,
+        "Preflight": 16
+    },
+    "nameservers": [
+        "ns-899.awsdns-48.net",
+        "ns-353.awsdns-44.com",
+        "ns-1454.awsdns-53.org",
+        "ns-1611.awsdns-09.co.uk"
+    ]
+}

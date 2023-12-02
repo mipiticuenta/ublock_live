@@ -1,0 +1,88 @@
+{
+    "domain": "tradelab.fr",
+    "owner": {
+        "name": "TRADEMATIC",
+        "displayName": "TRADEMATIC"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "cdn",
+        "its"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "tradelab\\.fr\\/fseg\\/3307\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2380185be7aa3eac8f53f9e24581fdfb6bcc048f9c8b4a41237b3a0a16358b25"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intelbras.com",
+                "www.intelbras.com"
+            ]
+        },
+        {
+            "rule": "tradelab\\.fr\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "its"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "78a100131e7307c7f41d002b24b358c9ee7f690a16b73938ae787e9769e08ecc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_tli": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "intelbras.com",
+                "www.intelbras.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Image": 2
+    },
+    "nameservers": [
+        "ns4.tradelab.fr",
+        "ns3.tradelab.fr",
+        "ns1.tradelab.fr",
+        "ns2.tradelab.fr"
+    ]
+}

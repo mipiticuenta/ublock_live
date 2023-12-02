@@ -1,0 +1,5530 @@
+{
+    "domain": "cloud.globo",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000123,
+    "sites": 18,
+    "subdomains": [
+        "s3.aws",
+        "s.cache.aws",
+        "horizon-schemas.cache.aws",
+        "rpaas-globo-ab-gcp.rpaasv2-fe.tsuru.gcp",
+        "s-video.cache.aws",
+        "pushstream.bs-push-hdg-prd.gcp",
+        "tealium.cache.aws",
+        "s2.cache.aws"
+    ],
+    "cnames": [
+        {
+            "original": "globo-ab.globo.com",
+            "resolved": "rpaas-globo-ab-gcp.rpaasv2-fe.tsuru.gcp.cloud.globo"
+        },
+        {
+            "original": "horizon-schemas.globo.com",
+            "resolved": "horizon-schemas.cache.aws.cloud.globo"
+        },
+        {
+            "original": "p.glbimg.com",
+            "resolved": "s.cache.aws.cloud.globo"
+        },
+        {
+            "original": "s.glbimg.com",
+            "resolved": "s.cache.aws.cloud.globo"
+        },
+        {
+            "original": "s.sde.globo.com",
+            "resolved": "s.cache.aws.cloud.globo"
+        },
+        {
+            "original": "s01.video.glbimg.com",
+            "resolved": "s-video.cache.aws.cloud.globo"
+        },
+        {
+            "original": "s02.video.glbimg.com",
+            "resolved": "s-video.cache.aws.cloud.globo"
+        },
+        {
+            "original": "s03.video.glbimg.com",
+            "resolved": "s-video.cache.aws.cloud.globo"
+        },
+        {
+            "original": "s04.video.glbimg.com",
+            "resolved": "s-video.cache.aws.cloud.globo"
+        },
+        {
+            "original": "s2-home-globo.glbimg.com",
+            "resolved": "s2.cache.aws.cloud.globo"
+        },
+        {
+            "original": "s3.glbimg.com",
+            "resolved": "s3.aws.cloud.globo"
+        },
+        {
+            "original": "stream.push.globo.com",
+            "resolved": "pushstream.bs-push-hdg-prd.gcp.cloud.globo"
+        },
+        {
+            "original": "tags.globo.com",
+            "resolved": "tealium.cache.aws.cloud.globo"
+        }
+    ],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "cloud\\.globo\\/cdn\\/fonts\\/opensans\\/bold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000681,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "f3951b474032495f49c6ffd60a31d32209adfdacfd2b4ab8aae6c3d09b26caa6"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/cdn\\/fonts\\/opensans\\/semibold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "af54d4dc6cc8f7236d6c4c2dea1abffdc0ce94d2fdf2c999b71dd4867f2d4dd2"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/cdn\\/fonts\\/opensans\\/regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.0000886,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "8afea0eebbebfd019a11474d02d3b035d7dd3ff74396c38b8a2ba270b0af481d"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "globoplay.globo.com",
+                "gshow.globo.com",
+                "m.extra.globo.com",
+                "receitas.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/cdn\\/fonts\\/opensans\\/light\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000681,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "581671ba917c4028afa2f3c18f99a74509e333320f3065f3be6771b438d1da4b"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f7772c2cb2fd4af2bb8929c0ae6fdba7\\/backstage\\/build\\/latest\\/client\\/bastian-202308df6a7b44df8a145ea677f4fe3fa930e1\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "da417b10878ef530228ad8bf0950fbb2cb5471a51aea7491d508af71ba394f09"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "glamour.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/api\\/stable\\/api\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s.cache.aws"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [
+                {
+                    "original": "p.glbimg.com",
+                    "resolved": "s.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "171a128c043d930abdd29b98c54e26baa4c852db3404d78b948fe0ff948a4a19"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "gshow.globo.com",
+                "m.extra.globo.com",
+                "receitas.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_89c6d9f49eec4e768bc6ccddcb31a34b\\/lgpd-lib\\/lgpd-lib\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 12,
+            "prevalence": 0.0000817,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "507acc179bfa7c929b83831d028f83b5fa85a02c9426588657ece1da51ae6b43"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "m.extra.globo.com",
+                "oglobo.globo.com",
+                "receitas.globo.com",
+                "revistagalileu.globo.com",
+                "revistamonet.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_89c6d9f49eec4e768bc6ccddcb31a34b\\/lgpd-lib\\/lgpd-lib\\.min\\.js",
+            "cookies": 0.0000817,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 12,
+            "prevalence": 0.0000817,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "ec0d8435d5d30bc297e0b2db3f87fe8fc998b3440d56f33205e702c57a84443d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookie-banner-consent-accepted": {
+                    "ttl": 31104003,
+                    "length": 5,
+                    "prevalence": 0.00008174442605194859,
+                    "uniqueness": 0.08333333333333333
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "m.extra.globo.com",
+                "oglobo.globo.com",
+                "receitas.globo.com",
+                "revistagalileu.globo.com",
+                "revistamonet.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/cdn\\/libs\\/jquery\\/1\\.8\\.3\\/jquery\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000681,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "61c6caebd23921741fb5ffe6603f16634fca9840c2bf56ac8201e9264d6daccf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/cdn\\/fonts\\/proximanova\\/bold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "e4fbe88fa4617ed3e899f0c6b9dd569d11a8535d335a1a527e7a4e12b17459e2"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/cdn\\/fonts\\/proximanova\\/regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "2f14a7d7579b588807f6c4b4badf8501c6734d9cbe3d51fc7ce608bb2e854754"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "m.extra.globo.com",
+                "revistagalileu.globo.com",
+                "revistamonet.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f7772c2cb2fd4af2bb8929c0ae6fdba7\\/backstage\\/build\\/latest\\/client\\/bastian-20230853106938e97a07e2056f5ffed36520e9\\.rest\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "71c61f2dfa7f304323163478fe9e1bc1cfe3910382a43142b55f61be5af8c670"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "glamour.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_c5e7bdb51ae341ef87ff71259dd7b39f\\/libs\\/lib-pub-core\\/css\\/prod\\/publicidade\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "4e5a8df78e43e83e6ca4b7af38833a508483d29e3c5332b7dc19a0ac9b27c692"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "glamour.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_e1b09a2d222b4900a437a46914be81e5\\/web\\/settings\\/stable\\/settings\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.0000886,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "8e1abad13842cfce1f10ec038a49780b0c8889d90f314fd084e946536e043f1c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "globoplay.globo.com",
+                "gshow.globo.com",
+                "m.extra.globo.com",
+                "receitas.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/gl\\/ba\\/fonts\\/opensans-light-webfont\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s.cache.aws"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [
+                {
+                    "original": "s.glbimg.com",
+                    "resolved": "s.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "63bdf44a181d38ab05c28d44f6fde70ddcd926959314dc37e5d68a3a5a1d075e"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "glamour.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/gl\\/ba\\/js\\/barra-globocom\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s.cache.aws"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [
+                {
+                    "original": "s.glbimg.com",
+                    "resolved": "s.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "b81ad1210bf4276e2651563c487f1116410f97232fcf37a85c09dffa25edda2e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "glamour.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/bu\\/rt\\/js\\/glb-pv-min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s.cache.aws"
+            ],
+            "apis": {},
+            "sites": 16,
+            "prevalence": 0.000109,
+            "cnames": [
+                {
+                    "original": "s.glbimg.com",
+                    "resolved": "s.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "58698b1df5111adb5795526207eb207d993513cf68a9ed94a0507bc7c6958f98"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "globoplay.globo.com",
+                "gshow.globo.com",
+                "m.extra.globo.com",
+                "oglobo.globo.com",
+                "receitas.globo.com",
+                "revistagalileu.globo.com",
+                "revistamonet.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/cdn\\/libs\\/tv4\\/1\\.3\\.0\\/tv4\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 16,
+            "prevalence": 0.000109,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "e95320e2f3a7ed8d307c3730eab9e1072e89a95e19bc48bc412c8dd91f307411"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "globoplay.globo.com",
+                "gshow.globo.com",
+                "m.extra.globo.com",
+                "oglobo.globo.com",
+                "receitas.globo.com",
+                "revistagalileu.globo.com",
+                "revistamonet.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_e1b09a2d222b4900a437a46914be81e5\\/api\\/stable\\/web\\/api\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 12,
+            "prevalence": 0.0000817,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "870d9252784afb443cc7121d7359290e2f2c8b5b7c5d88676bfb4b693246f48b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "globoplay.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/pc\\/ca\\/cadun\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s.cache.aws"
+            ],
+            "apis": {},
+            "sites": 15,
+            "prevalence": 0.000102,
+            "cnames": [
+                {
+                    "original": "s.glbimg.com",
+                    "resolved": "s.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "9f07eb1d3485dabe204a944ab51fd4d7b4f2247c58f170714cfb40ff118af06e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "globoplay.globo.com",
+                "gshow.globo.com",
+                "m.extra.globo.com",
+                "oglobo.globo.com",
+                "receitas.globo.com",
+                "revistagalileu.globo.com",
+                "revistamonet.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_da787d4f4e8d46e3ad76d5fa568fe786\\/globo-ab\\/3\\.4\\.0\\/globo-ab\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "e8bf9ccc765b5576c8b86e1f75a308e112cea4c1ead476dcf94720d10fa6fb0d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_da787d4f4e8d46e3ad76d5fa568fe786\\/globo-ab\\/globo-ab-v2\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "60b0f8f7a630b8cf83d4c29ddd3e6e614b119208fe97a96cae6dc6311541671b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_da787d4f4e8d46e3ad76d5fa568fe786\\/globo-ab\\/3\\.0\\/globo-ab\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "bb396c659a45cda460f579b753cf3a53f83eb8198bd344af0a2e2d9030ef910f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/schemas",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "horizon-schemas.cache.aws"
+            ],
+            "apis": {},
+            "sites": 16,
+            "prevalence": 0.000109,
+            "cnames": [
+                {
+                    "original": "horizon-schemas.globo.com",
+                    "resolved": "horizon-schemas.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "f27df02646b039f3416255bfd9722fc82e64ce1ea9bf34443da85cf4a681d194"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "globoplay.globo.com",
+                "gshow.globo.com",
+                "m.extra.globo.com",
+                "oglobo.globo.com",
+                "receitas.globo.com",
+                "revistagalileu.globo.com",
+                "revistamonet.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v2\\/selected-alternatives",
+            "cookies": 0.0000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rpaas-globo-ab-gcp.rpaasv2-fe.tsuru.gcp"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.0000886,
+            "cnames": [
+                {
+                    "original": "globo-ab.globo.com",
+                    "resolved": "rpaas-globo-ab-gcp.rpaasv2-fe.tsuru.gcp.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "a69cd36a80a9d33220b4584027c34044542cc97120d53ee3843a5ca9a19239de",
+                "adadd92aea7cbc85e1567ce6f970ee2f70f82773eb8e657176dae2c08a3b0231",
+                "f346958804c94bc180d17b3fed9c2f841dbdfca8e1999d5ee1aaad8b8e5d3b26",
+                "1f20885adcace01f99276cbcf6827e627bbbaeba8b464f79bfcaf60a7e254831",
+                "f97965859ca6721d35d61cd199e5382c69647a16628c5ce1ce7386f52c6f2138",
+                "7079b43e1dfc58faff7794ad54f056f8512819845297ef5a12b76822b16c5e08",
+                "1e7f06ae0f052762e70df24e9e1141a832015ad8be8df91bff6f9666cfd835dc",
+                "28af293513454aeada9d775ab0ad5ea63121e2fa2799e8cc8f78e1373d4d98a2",
+                "92c320d9ebb5926d136d6203cb49ca4a6a8e84f8a1f9c9e69f76d7931e886bb6",
+                "7c7ab430a2a7cd4822fc80be36af8575675e000006940ac35cb5267eb866d4e0",
+                "1f21298898833a570cd572a89fd318d25f27f71c2847539139b9e6597c992b1c",
+                "8b198091a1df14ee617c91ce179b3a61698af100938403d9bbe5bb6be4812f5e"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "globoplay.globo.com",
+                "gshow.globo.com",
+                "m.extra.globo.com",
+                "receitas.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_da787d4f4e8d46e3ad76d5fa568fe786\\/horizon-client\\/horizon-client-js\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 16,
+            "prevalence": 0.000109,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "54232b45184e7e23d9fc8f12171e5b1d5db43950b77dee4c19cebecd42d029e4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "globoplay.globo.com",
+                "gshow.globo.com",
+                "m.extra.globo.com",
+                "oglobo.globo.com",
+                "receitas.globo.com",
+                "revistagalileu.globo.com",
+                "revistamonet.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_ba8e460c944543468c3c80cb9675751f\\/logos\\/globoplay\\/logo_globoplay\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 12,
+            "prevalence": 0.0000817,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "c637bc70cc671cda4cc4885f7b5f53537f9ded298f7ddcb6a784ca244606f0ea"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "m.extra.globo.com",
+                "oglobo.globo.com",
+                "revistagalileu.globo.com",
+                "revistamonet.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/pc\\/ca\\/login\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s.cache.aws"
+            ],
+            "apis": {},
+            "sites": 15,
+            "prevalence": 0.000102,
+            "cnames": [
+                {
+                    "original": "s.glbimg.com",
+                    "resolved": "s.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "d3decc75ba01ec53d1204eee13646967c5ec5ae009d0172ff3a06d38e0c8ef44"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "globoplay.globo.com",
+                "gshow.globo.com",
+                "m.extra.globo.com",
+                "oglobo.globo.com",
+                "receitas.globo.com",
+                "revistagalileu.globo.com",
+                "revistamonet.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_acd8438fd650434baa93efc372c066a1\\/libs\\/lib-analytics\\/prod\\/lib-analytics-latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "877c319b8a36e65249be764ce80ef3891edd45848ba3627b95c7499feb0be48d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "glamour.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_da787d4f4e8d46e3ad76d5fa568fe786\\/dmp\\/dmp\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 15,
+            "prevalence": 0.000102,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "188ad1f5f1635b83df77cd27805c09bf37ec353c01f8bd731c8624612f28f353"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "gshow.globo.com",
+                "m.extra.globo.com",
+                "oglobo.globo.com",
+                "receitas.globo.com",
+                "revistagalileu.globo.com",
+                "revistamonet.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_05f06ca986b54d6e9c5df94927ccf7fc\\/libs\\/globoid-js\\/prod\\/callback\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "b9f6160b7ea7d0645d6201d24919b7289061f8d021e3c245ad5dd7b00ec66ff2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "glamour.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_e1b09a2d222b4900a437a46914be81e5\\/web\\/player\\/7\\.78\\.0\\/player\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000681,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "200e4405b301c4cfd5abc9f0984c6379b6a2b42906e2986f01609f8a18cf67b2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "m.extra.globo.com",
+                "receitas.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_da787d4f4e8d46e3ad76d5fa568fe786\\/horizon-client\\/horizon-common-hit\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 16,
+            "prevalence": 0.000109,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "6fc8c519813ae69ffb5c95d87821ffbc940db1a1a2070bdbfed21d0e53fc4991"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "extra.globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "glamour.globo.com",
+                "globoplay.globo.com",
+                "gshow.globo.com",
+                "m.extra.globo.com",
+                "oglobo.globo.com",
+                "receitas.globo.com",
+                "revistagalileu.globo.com",
+                "revistamonet.globo.com",
+                "revistaquem.globo.com",
+                "valor.globo.com",
+                "vogue.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/foundation\\/typefaces\\/opensans-regular-normal\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "8afea0eebbebfd019a11474d02d3b035d7dd3ff74396c38b8a2ba270b0af481d"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/foundation\\/typefaces\\/opensans-semibold-normal\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "af54d4dc6cc8f7236d6c4c2dea1abffdc0ce94d2fdf2c999b71dd4867f2d4dd2"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/foundation\\/typefaces\\/opensans-bold-normal\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "f3951b474032495f49c6ffd60a31d32209adfdacfd2b4ab8aae6c3d09b26caa6"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_da787d4f4e8d46e3ad76d5fa568fe786\\/profiling\\/profiling\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "019ffb4bb89b81b3958d02f645b4290217353e1e3a78e46bc4ed78e4c9431680"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "m.extra.globo.com",
+                "oglobo.globo.com",
+                "revistagalileu.globo.com",
+                "revistamonet.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_acd8438fd650434baa93efc372c066a1\\/libs\\/lib-pub-relay\\/g1\\/prod\\/lib-pub-relay-g1-latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "16476c81938deddcb5ac1a1f39d9743ce5d02a8ed5976d76145c815248de5e6f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/foundation\\/typefaces\\/opensans-light-normal\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "581671ba917c4028afa2f3c18f99a74509e333320f3065f3be6771b438d1da4b"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f7772c2cb2fd4af2bb8929c0ae6fdba7\\/dsframework\\/build\\/mr_256673\\/client\\/bastian-2023090ed68e498c9decfad5d7f52956ec0125\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "183848b2221bf19c5522d1f591869a2c802232d0c21c7849f7aad1ae21b43b01"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_c631e406debd4c4fac98a09d48dc17d1\\/bastian-post\\/prod\\/g1\\/94687c6e-2e1d-4a2f-9ce5-9e20cbd4941e\\/743da5bd-db68-4dd8-af45-b43d47285f69\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "3b6ae0f02f48e3aad3f37f3eb806f139d57d600183b7397b58ab65faa58ed6a1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_c631e406debd4c4fac98a09d48dc17d1\\/bastian-post\\/prod\\/g1\\/94687c6e-2e1d-4a2f-9ce5-9e20cbd4941e\\/743da5bd-db68-4dd8-af45-b43d47285f69\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "ac1c4b3176cc9549bcd4463dc03922514013ef62c8664ce4c4ba382c4df81c19"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f7772c2cb2fd4af2bb8929c0ae6fdba7\\/dsframework\\/build\\/mr_256673\\/client\\/bastian-20230986ff548332fbc1662024436a5c76fe84\\.rest\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "25a5d3500867ed424dfef32beb48bf84f6663b19b5e3a5239205ed37d73bd025"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_acd8438fd650434baa93efc372c066a1\\/libs\\/lib-pub-external-tags\\/g1\\/prod\\/lib-pub-ext-tags-g1-latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "3ae768dadbdcadb249db3ffc92629a0a20396fc3b82ae2a1269ed9348f4e83c9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_da787d4f4e8d46e3ad76d5fa568fe786\\/Delivery\\/lib-analytics%20\\(data%20loader\\)\\/lib-analytics\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "2088b2c5cca092af48ff8008ceb32df2415de5d178d8808835b0774f994f28d2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "globoplay.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_da787d4f4e8d46e3ad76d5fa568fe786\\/Delivery\\/libanalytics\\/prod\\/latest\\/libanalytics\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "9d528722ead26be87e27604ee70b30bfb6c74a72a855714f6e4495b872408798"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "globoplay.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/cdn\\/libs\\/clappr-plugins\\/login-screen\\/1\\.2\\.1-lightbox\\/player-plugin-login-screen\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "b8670e956c4d769406bf5aab1e9af6d59b1ec244ec3f74dc08d56c77584a6d6f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/cdn\\/libs\\/clappr-plugins\\/video-recommendation\\/v1\\.7\\.10\\/video-recommendation-plugin\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "b38106277c21689290ae5cfcd67f0aa7a8deae32ddd924723711aacc17a5c79d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/bu\\/rt\\/js\\/glb-rt\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s.cache.aws"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "s.glbimg.com",
+                    "resolved": "s.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "c10166c581138301ea30df4f3add985ec68146ab26badd455ce9d0e5190e5b86"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/cdn\\/libs\\/gui-lightbox\\/1\\.8\\.1\\/js\\/gui\\.lightbox\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "bfd5c2330741f5a8876668e3438235876b950c041e22c4d2a19e379bcb3924f6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/cdn\\/libs\\/element-tracker\\/1\\.2\\.1\\/element-tracker\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "6b37c75dbc0ad1368622265600d903b3cf22d7dc64e6bdd07959c4a88c0474e6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_ba8e460c944543468c3c80cb9675751f\\/integracoes\\/chartbeat\\/chartbeat\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "2ef71a48bf8407d91bab7ca25c6eb95f2ed116150b2dd22940c33e224a76d5dc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/cdn\\/libs\\/gui-lightbox\\/1\\.8\\.1\\/css\\/gui\\.lightbox\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "13f23173905c116e128a4bcfef2b5d72da330e4657a9c9cf62e3cd5532ae1fa0"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f75bb4776e3c4683acd769d47144995f\\/feature-flag-client\\/2\\.6\\.1\\/featFlagClientInit\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "829921f010edd1c9a321aa3262e9971ee47ce388b1a047ec8777c03298e254d3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f7d75b8ab8c8447292333ff06480419a\\/nav-cdn\\/client\\/1\\.1\\.9\\/fn-cdn-client\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "379d3feeca569fbbae17983fcc9f2d058848efa5b6a1965e9c777b51e4f5c9e6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_acd8438fd650434baa93efc372c066a1\\/g1-prod\\/lib-pub-core\\/lib-pub-core-g1-latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "895d7204e2bad77c847a2835a031f72d36865a965f84c55051cc6a57dde70d45"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_acd8438fd650434baa93efc372c066a1\\/libs\\/lib-topics\\/prod\\/topics\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "303b2e8fdf03c4322848fdbfbdac1cbd49adada52dc8463a93bb1f610a06044d"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_acd8438fd650434baa93efc372c066a1\\/libs\\/lib-double-verify\\/prod\\/lib-double-verify-latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "2242cfc76b87f635f63accdd9a832619e478aa939ed7547ab4eb38761b4a6276"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_acd8438fd650434baa93efc372c066a1\\/libs\\/liveramp\\/ats\\/prod\\/lib-liveramp-ats-latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "8c55ec68fe16312d8692ce60ac47f69d87dd7e28edac837ec22f2f70e0eda3ed"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_3ed1877db4dd4c6b9b8f505e9d4fab03\\/globoid-js\\/v1\\.8\\.0\\/globoid-js\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "a20b2090ec3e36349fecc0ef09dbc8387406b897de8146c365082cc21dc9c266"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_ba8e460c944543468c3c80cb9675751f\\/libs\\/horizon\\/1\\.10\\.0\\/globocom-horizon\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "cc74def6d5272eaaee05c6c9d393282f774ffb09b89c474a8f3077d5510f9b86"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_acd8438fd650434baa93efc372c066a1\\/libs\\/lib-topics\\/prod\\/lib-topics-0\\.0\\.3\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "a939c8679b33e480b74428d7198dae942bd4f10716e9d44a104d34a4544bd2b1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f7d75b8ab8c8447292333ff06480419a\\/nav-cdn\\/config\\/1\\.1\\.9\\/fn-config\\.min\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "e3e446fda8d1490300e8ce56b5dd16bd2a71dd57c60d1b8cff83a9a9e6a19215"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f75bb4776e3c4683acd769d47144995f\\/menu-customizer\\/1\\.0\\.0\\/glbMenuCustomizerRunJogosLabel\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "ddb84e5d3995b20bee0a2696eb995410090d5f352427d0ff87a8309bf29baf8b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f75bb4776e3c4683acd769d47144995f\\/tools\\/widget-launcher\\/1\\.7\\.0\\/widgetLauncherInit\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "e08f143eba71945b2982b7ea2ec9afd6f2f29ebdf1a6889d9bdc86a753dae152"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/cdn\\/libs\\/publicidade\\/1\\.2\\.2\\/publicidade\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "1e095279c2fa9fe4fb378f29b98f96e85eca3d8ca9b2382e0137d280cf473367"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f7d75b8ab8c8447292333ff06480419a\\/nav-cdn\\/common\\/1\\.1\\.0\\/fn-common\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "7c4bce80d6d6519334f8236b1343cc317054b751ad9a540b3ac840f064f7adca"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f7d75b8ab8c8447292333ff06480419a\\/nav-cdn\\/common\\/1\\.1\\.0\\/fn-common-spritesheet-icons\\.min\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "430fb785269052d908a5fb8184d94ba5e047f240a420ce88fc1fb6e74a286a55"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f7d75b8ab8c8447292333ff06480419a\\/nav-cdn\\/search\\/1\\.1\\.0\\/fn-search-desktop\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "1cb5c8c391554c673fe25af67c9d2265b0a357ec8dc74a981dee5d61dfb32906"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f7d75b8ab8c8447292333ff06480419a\\/nav-cdn\\/search\\/1\\.1\\.0\\/fn-search-desktop\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "b46942abb3f27ffb3f342f1f8c1fc61acc3046362e7cc3f0dd9462177258c3e1"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f7d75b8ab8c8447292333ff06480419a\\/nav-cdn\\/menu\\/0\\.5\\.4\\/fn-menu\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "5804ca869a4085ce7e8010df4c465eadada561d257df9a1ddbd63d6d8b507479"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f7d75b8ab8c8447292333ff06480419a\\/nav-cdn\\/menu\\/0\\.5\\.4\\/fn-menu\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "2dd055a45a158881e82d9b2bca48eeca91687ff44b64e70fb176ff1aa7d248b1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f7d75b8ab8c8447292333ff06480419a\\/nav-cdn\\/header\\/1\\.1\\.3\\/fn-header-desktop\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "c5bbd51a4f0135f611f516edc2e193bc8d83be735909697af4791db6d95a1a45"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f7d75b8ab8c8447292333ff06480419a\\/nav-cdn\\/header\\/1\\.1\\.3\\/fn-header-desktop\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "0dc487084d88f0b36f6d01be27e062acec8bc25c11ce70547ba872ae144d77a0"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_448612afd5444aab9ff73ea54413fbd1\\/js\\/home-redirect\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "95531d73603c37832ef08b4e108ab8b9cb180c97f6f82e007fd499bb8966bbbd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "tt_c_c": 0.000020436106512987146,
+                "tt_c_s": 0.000020436106512987146,
+                "tt_c_m": 0.000020436106512987146
+            },
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f75bb4776e3c4683acd769d47144995f\\/menu-customizer\\/1\\.0\\.0\\/jogosLabelV1\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "7d6d86f62ed839fd3d975d4fb486300113f3e906314860c214251f3b2b4887b5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v2\\/selected-alternatives",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rpaas-globo-ab-gcp.rpaasv2-fe.tsuru.gcp"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [
+                {
+                    "original": "globo-ab.globo.com",
+                    "resolved": "rpaas-globo-ab-gcp.rpaasv2-fe.tsuru.gcp.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "9100e45b3bd85e184d418ca74d5049012ed27dd9306c156b943cb278b164c16b",
+                "a9b488f65c68d9197823630232b50d4459c934409ce5fea7eed8b8aac66df897",
+                "67f0ab407cf1105db3117e847227cd23eb1e402946f8ccd5af54ef46c67af3ad",
+                "ec3ce51c1e11dc2381f87eca9e51b0510ea5668d2063987d204e73b801228e37",
+                "632a25b0ccb9b1f55b0b7fd1b7b5545d95edec556d9a4671b40024c80a4084ce"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f75bb4776e3c4683acd769d47144995f\\/img\\/jogos-icons\\/warning\\/v1\\/warning\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "b0497cf41fd96f967e41e8f658a235b055ae36dbb37959f973ae56be4e61fc44"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_e1b09a2d222b4900a437a46914be81e5\\/web\\/player\\/stable\\/player\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "200e4405b301c4cfd5abc9f0984c6379b6a2b42906e2986f01609f8a18cf67b2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "glamour.globo.com",
+                "globoplay.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/cdn\\/fonts\\/opensans\\/bold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "f3951b474032495f49c6ffd60a31d32209adfdacfd2b4ab8aae6c3d09b26caa6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/cdn\\/fonts\\/opensans\\/semibold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "af54d4dc6cc8f7236d6c4c2dea1abffdc0ce94d2fdf2c999b71dd4867f2d4dd2"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/cdn\\/fonts\\/opensans\\/regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "8afea0eebbebfd019a11474d02d3b035d7dd3ff74396c38b8a2ba270b0af481d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/cdn\\/fonts\\/opensans\\/light\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "581671ba917c4028afa2f3c18f99a74509e333320f3065f3be6771b438d1da4b"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/cdn\\/fonts\\/proximanova\\/regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "2f14a7d7579b588807f6c4b4badf8501c6734d9cbe3d51fc7ce608bb2e854754"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/cdn\\/fonts\\/proximanova\\/bold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "e4fbe88fa4617ed3e899f0c6b9dd569d11a8535d335a1a527e7a4e12b17459e2"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/cdn\\/fonts\\/proximanova\\/light\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "045b08074de6b0140efc7b2ceb0371d532cf6e066d9e3fcf41d9188219aeac8b",
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/gl\\/ba\\/fonts\\/proximanova-semibold-limited-webfont\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s.cache.aws"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "s.glbimg.com",
+                    "resolved": "s.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "g1.globo.com",
+                "ge.globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/media\\/organizations\\/2019\\/07\\/16\\/Brasil-65_JpqzQPE\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s.sde.globo.com",
+                    "resolved": "s.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "2340df07a0874780ff23af21d2d8c4a4b735cd1b608534f7244ed3df3a14f199"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/media\\/organizations\\/2022\\/12\\/01\\/Mexico-65\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s.sde.globo.com",
+                    "resolved": "s.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "3833a7a82816a971bd62f09fba830c81ab004d678f3d6f87843a1af1787886dd"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/media\\/organizations\\/2019\\/02\\/04\\/botafogo-30\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s.sde.globo.com",
+                    "resolved": "s.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "ca5bf821a5c01cee6a6a6870724414d2511fb61b2597b9109b6fb924a85338f2"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/media\\/organizations\\/2014\\/04\\/14\\/palmeiras_30x30\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s.sde.globo.com",
+                    "resolved": "s.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "edf59ed8ccccf3e376db651217253aa10e4522d0dd5953c05e32fb852b5d6dd4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/media\\/organizations\\/2014\\/04\\/14\\/gremio_30x30\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s.sde.globo.com",
+                    "resolved": "s.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "924a5448c2d8ebfb67c7391dd547a321ab2d343268b581c65df706637cefbcb3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/media\\/organizations\\/2017\\/11\\/23\\/Atletico-Mineiro-escudo30px\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s.sde.globo.com",
+                    "resolved": "s.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "e13b41d730db6b630ff9b40495c3fa82f39234a06887e26bc3f1db4e3845023b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/media\\/organizations\\/2020\\/01\\/01\\/30\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s.sde.globo.com",
+                    "resolved": "s.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "5f9d5a8d8d23cb201489c51ea4e40cea8ffb635bc0e574d6fea73b81031dd9b5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_acd8438fd650434baa93efc372c066a1\\/libs\\/lib-pub-relay\\/ge\\/prod\\/lib-pub-relay-ge-latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "652ad668a213413309ab45452f11996e3db40c7f12c17fd2cf30a45dee3cb7c9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/es\\/sde\\/f\\/organizacoes\\/escudo_default_65x65\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s.glbimg.com",
+                    "resolved": "s.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "dae202e632122e00a9020fc7237bc46df7aa7bc857df1d24ade840354ce1057f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f7772c2cb2fd4af2bb8929c0ae6fdba7\\/dsframework\\/build\\/mr_240588\\/client\\/bastian-202306515ae5110e462aa9ae560572eed62f1f\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "a5617077e1d76ad0ff4b79908f05be30dbc67d5e5264b9d90f7be0c36f0fd20a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_c631e406debd4c4fac98a09d48dc17d1\\/bastian-post\\/prod\\/ge\\/f12194b4-e608-4241-913f-e5c463320043\\/1bf279ce-bfd5-48af-bc51-c8a80ef91449\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "a91d0024f214260ac5c09272041168fa0c355ea6864e54db8cd9a3dc350d8cfe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_c631e406debd4c4fac98a09d48dc17d1\\/bastian-post\\/prod\\/ge\\/f12194b4-e608-4241-913f-e5c463320043\\/1bf279ce-bfd5-48af-bc51-c8a80ef91449\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "6a5efa5ca908418090aa60977735ab2dd244c8e82d304141c759a5777e142c45"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_f7772c2cb2fd4af2bb8929c0ae6fdba7\\/dsframework\\/build\\/mr_240588\\/client\\/bastian-20230681fb40f941091c603b3e518df8e3f558\\.rest\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "a9905c3a890f50751e1802d0ebb7e54efd94aeff94169d61d28792740b104b61"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_acd8438fd650434baa93efc372c066a1\\/libs\\/lib-pub-external-tags\\/ge\\/prod\\/lib-pub-ext-tags-ge-latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "579c553f6204dee990fcb2b0f97eb4eaad70c78e2863d441cc7ff10cbef2998d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_0941ae8e3ba749dabc67f311ab4545a5\\/cdn\\/growthjs\\/0\\.12\\.0\\/growth\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "8015e91564db76eb0a9e886e40a503e7066f35ba1c5f26ed8b63ff26435fa3dc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_acd8438fd650434baa93efc372c066a1\\/libs\\/lib-pub-protected-audience\\/ge\\/prod\\/lib-pub-protected-audience-ge-latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "fad8b442c484d23fbfd68b677d0ffe889fab912d9b21b1b03e93696f9eaab725"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_acd8438fd650434baa93efc372c066a1\\/ge-prod\\/lib-pub-core\\/lib-pub-core-ge-latest\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "8bf5a72a7e82ed25d92a6c039392594bdbc0530e3a33cad8700b686b93f7ebe3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-overline\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "a45bbdf55a2c594021d2faa355e485242a71c282e06d549ec3efd746a9199673"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-list\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "3d9b24ebf1e1440618066d2eb32b139687abc28010a2d42ffe49c5e465c684e3"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-quote\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "bf7e879b202b19e0dc0d3324c7298259d082e84be7f316607a75b9f43548b7f5"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-caption\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "05f6416b6fcb58461685fa34306415b844c2c96b5c53dc3928e918802fa78808"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-helper-text\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "8454b483ca003c4edc06424838d8157f4ae8f563d560972ca53716c83b329016"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-label\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "a02e8c5a21d97e49d0391f1a498ca802d0c04c2bee9bb50a3633fae1c755cea9"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-subtitle\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "a6f620b5bfb37bd0aee4bd3c3916826a61418f54b2efd4d163070aa532539614"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-footnote\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "9377e9b33b72489df476c5026529524c5c1bf0522d6c054a37eeabf1e6d9bc8e"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-footer\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "42b87f91c4a57aa36b426f365aac5ea6ce83b6c56e3cdebfc844e8a6cbb4380f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-action-list\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "d52f2da87a0f493d4158764603e6c0e14b0fc355b399d06ef064297d4bc66074"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-divider\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "1f31673eb7f4c8ab5bd0080346c1c6bf010a6f5086e20a4c2c740d8946bb5ade"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-card\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "edb43bdff8eaa772af2fe178cd9368de860df60e858a49f32ef067174272df15"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-radio-button\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "ee6786c4e23a87377ca7db3e8c4335eaf5ab334c6ab4a3c25ca9f2b49c28ee10"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-checkbox\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "f73a555af6896e548d074d1e257ade8644e523f560c8605292b69456c14cbb56"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-image\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "c5bc403fff2c528efe71dd9ffcf408058551eec168dc41b741cd7686d831be71"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-content-image\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "826bbf13891662f58b4b697fee8539b38208b49e8ad4b60a78073b6ca8d6c1cd"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-header\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "7d60bd6fc7112c600caeb8103f5812b865acf5a87eef43d727010c6976764e09"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-tag\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "b021e7200efd53a081e90c7d7af625d4980ac42520840b7c38f85f727a9a1eaf"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-dropdown\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "989ed443501c8a93d8c1c891fdbf13c8a02522809205f3a60bcea2711565ce73"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-drawer\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "8d58bd26fba78b11d57dd55643b15dc8d17c25a0f39f9e9e6cd41559bbf11703"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-login\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "19a34fc71f122ec1216c55286369a32280605afef164c52ee99a17e2a779c439"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-chip\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "9f2239dd66687d6e539bd8902faf4d65db2a344c14a47ff8a04214929d5ec878"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-globoid-login-provider\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "3b81086d86e780c0711edae34ae9c7d44b1b17cd7f4d1a8a2749860c4c4c13f7"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-image\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "80ecd4c0f5b7d0c48e5551f35b6c10b3a23049ba8f99b53233010108ae2f75b8"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-drawer\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "b86c2efd6ea96ff4942e63c07e7feb250af9c1ba2ea1cd3d157faf40abeecfdd"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-tag\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "69b639a4cf004bc1efbf7d9c0329ed061390593269c83ab6930dbe8f06a7ff72"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-overline\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "511b0bc9d32da780033612d9a2141082ca35ef3e9d0a1b413ba0d04700f13a35"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-divider\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "c249804017b74220d38424f349cead8190ec6c37e4db76843f83edf7f2c28daf"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-action-list\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "25be1aa1973f659c8326f419b37037ef6a783a5df29edee5362ab40aa2838dc3"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-list\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "92039a309e5eb907e99f1e83b6708b601ec9419e56a30b1d132d435330d7a28c"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-checkbox\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "6cacd0088781052e14b3d1f2f09eb7f46d929b362668b7c96efd116cfaef19b8"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-label\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "f524e3488738d005bb160c6b3d9548be553ee203dddd3ff3ac3eb6e38fe41548"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-dropdown\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "b7eaac300049a5cdfdc2a822125478ffa9e5e9498371bc41f16c4a9eece05d15"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-card\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "80e623f1b04b0fa527e631be10ff0eca19c42227275fb6ff5237fb81ad5ad5ce"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-login\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "4cf7f582345b72c84195b06a822fbde57a2161efa241baa6b7653ae4299c14e8"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-radio-button\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "c24fb58bb0a304c4a1ccd04af1f3dd1e0567d2cc045163f4752677d0df4fe38d"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-footnote\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "a9be6894c16a82d126a1dceed00945b3dad7b42ca6b2151835d699621f797eaf"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-caption\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "f100491b7d7981ddeb342708f91b51c21425be30b8911c7cc871ea1bd5e23fc6"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-chip\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "2eca87768f265cb90a6820bb68742308fdff0b4d2c8bd2594b9e8bcaefc69c2e"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-content-image\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "93593261fb5f21755ee5b0a45f888ee9853b37d70edc3ba6634e92a876df5a85"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-helper-text\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "ffc56b1b42bb1ff5ec3fe5bf46fccaf81fa2396377ae7560c829704889fa2bb7"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-subtitle\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "0f83647432a091ea550dd41c6e132ebe6e70870634d556a9a81c950296cfe897"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-header\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "dc60247e70ccb89f1fd81ec08435384981650f05480bbd3549d180697ea2529d"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-footer\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "bae6869bc32029429b2ea8742557a79977bdb1f51582749a497add9c677eba49"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/codex-component\\/codex-quote\\/standard\\/standard\\/web\\/css\\/tokens\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "1eb478b8203be39dbef4b22c3a45f03eec71ec6bac0c459932d37f0072671f91"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_378ee63fe83141e69caddd838034e850\\/static\\/components\\/escudo-header\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "12e0768bd194671afc2a428bba40be474f14099e2d69cd55f57470daccd1cdd6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/mab\\/live-lazy-load-ads-mab-desktop-ge\\/choose",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rpaas-globo-ab-gcp.rpaasv2-fe.tsuru.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "globo-ab.globo.com",
+                    "resolved": "rpaas-globo-ab-gcp.rpaasv2-fe.tsuru.gcp.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "eeda44982d27f0514ef64b798622f1a8be7e132d0be0536d94d7bf2b4042de9a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/x216\\/11989436\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s-video.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s02.video.glbimg.com",
+                    "resolved": "s-video.cache.aws.cloud.globo"
+                },
+                {
+                    "original": "s01.video.glbimg.com",
+                    "resolved": "s-video.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "b6db7b27a12168abdd8417560207c2495c8a4fb39f7b6cadfbf3674b9df70b91"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/x216\\/11989423\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s-video.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s02.video.glbimg.com",
+                    "resolved": "s-video.cache.aws.cloud.globo"
+                },
+                {
+                    "original": "s04.video.glbimg.com",
+                    "resolved": "s-video.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "848bea52808dd932c73d51398a0ea507728fe660ec95f0aba38bafbfa2a7e84d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/x216\\/11989420\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s-video.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s02.video.glbimg.com",
+                    "resolved": "s-video.cache.aws.cloud.globo"
+                },
+                {
+                    "original": "s01.video.glbimg.com",
+                    "resolved": "s-video.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "1d7476dd77fb74e6e72899c7601dbd6091f16b310410fb749d4a9c5e3013a2d0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/x216\\/11989415\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s-video.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s02.video.glbimg.com",
+                    "resolved": "s-video.cache.aws.cloud.globo"
+                },
+                {
+                    "original": "s04.video.glbimg.com",
+                    "resolved": "s-video.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "3369233e8fce4c2bec3287962fd090f94c34b5cecb5e271f59520bd830441a6e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/x216\\/11989412\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s-video.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s02.video.glbimg.com",
+                    "resolved": "s-video.cache.aws.cloud.globo"
+                },
+                {
+                    "original": "s01.video.glbimg.com",
+                    "resolved": "s-video.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "51072a67eb4224dcdd53cd23585f03a9c28fcf51148ad2031d162716807d84dc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/x216\\/11989399\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s-video.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s02.video.glbimg.com",
+                    "resolved": "s-video.cache.aws.cloud.globo"
+                },
+                {
+                    "original": "s04.video.glbimg.com",
+                    "resolved": "s-video.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "4797592b8e3cb7ca6b1d04e529f50da1dbae35eaf2276cf2c5ecd5ae36c89a5d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/x216\\/11989394\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s-video.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s02.video.glbimg.com",
+                    "resolved": "s-video.cache.aws.cloud.globo"
+                },
+                {
+                    "original": "s03.video.glbimg.com",
+                    "resolved": "s-video.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "c3983c70c15301e8a98358fc0cc0f4e397754bfffca44ddde91c267d58fdb264"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/ev\\/p\\.bslive-318b57d9-e02d-4967-ad1d-7025fbeb669c\\/p\\.bslive-posts-318b57d9-e02d-4967-ad1d-7025fbeb669c",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pushstream.bs-push-hdg-prd.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "stream.push.globo.com",
+                    "resolved": "pushstream.bs-push-hdg-prd.gcp.cloud.globo"
+                }
+            ],
+            "responseHashes": [],
+            "type": "EventSource",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/x216\\/7690141\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s-video.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s01.video.glbimg.com",
+                    "resolved": "s-video.cache.aws.cloud.globo"
+                },
+                {
+                    "original": "s02.video.glbimg.com",
+                    "resolved": "s-video.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "f4f40f62b246f5c79f2f3c4b7823a61e1e1942294f1ba891e32cce212a7aacf3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "ge.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_e1b09a2d222b4900a437a46914be81e5\\/static\\/vendor\\/libs\\/comScore-JS-6\\.3\\.1\\.181004\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "387168815d8e02c9c12a63d98fdceacaea0993c73d9808dba062f1a3e4de84dc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "globoplay.globo.com",
+                "gshow.globo.com",
+                "m.extra.globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/foundation\\/typefaces\\/version\\/6408cb8fc43ff49841e181db\\/globotipo-variable\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "7d6e26df3d15e753be5016edc0b42e0665512f981e0c9c5e7d1b4178c8a20643"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "gshow.globo.com",
+                "receitas.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b922f1376f6c452e9bb337cc7d996a6e\\/codex\\/foundation\\/fonts\\/5462f4c64759cc666538a326be3e6de1\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "1b9c434a0d1961d5e2f29c9592624de0af90db148cd7ef25f61b3961132848df"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "receitas.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_05f06ca986b54d6e9c5df94927ccf7fc\\/libs\\/globoid-js\\/1\\.4\\.1\\/globoid-js\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "ee72a800f0e75a30ba23632ed5689c707913bb9c598e22a825af375d10a2bc75"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "revistagalileu.globo.com",
+                "revistamonet.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/utag\\/tiqapp\\/utag\\.v\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tealium.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "tags.globo.com",
+                    "resolved": "tealium.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "oglobo.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/utag\\/globo\\/editora\\/prod\\/utag\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "tealium.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "tags.globo.com",
+                    "resolved": "tealium.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "f1ffe2dd21aea16992f12394e4ca15733e89dd3bf72dcd3b408f4c15892590e5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "revistamonet.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_6fe2c04fd96b44a3802fd18cbc408596\\/assets\\/base\\/script\\/sw-script_63490e2d5d\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "6f5e0cfc72b7fdeea2a57455b7ce03b1ae06a970f9cf44983304384c92632119"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "revistamonet.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_6fe2c04fd96b44a3802fd18cbc408596\\/assets\\/base\\/script\\/bundle-min_f9e8e1a272\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "f142092e76454ec42a702ac979cbe7a94e1e7cb1cfc2396229d038363c317bae"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_eggalileu_userVisits": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_egmonet_userVisits": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "revistamonet.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_6fe2c04fd96b44a3802fd18cbc408596\\/assets\\/base\\/media\\/ico-search_593c61ae11\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "9173a4efb861aef9c0ca93e52076e2509f8b562f8da539160a7bcfece3a4fc02"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "revistamonet.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_6fe2c04fd96b44a3802fd18cbc408596\\/assets\\/base\\/media\\/ico-reading_d59f6cf61b\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "3618d79ad3db136bc1c3daa92384c7219e84feded9304ecdb84fba359dab15f7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "revistamonet.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_6fe2c04fd96b44a3802fd18cbc408596\\/assets\\/base\\/media\\/ico-link_7387787d1b\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "bf736d156a79d43f474eb27e7c99c2a6ef83f3a0e519ce51fa3669a4aff4eb46"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "revistamonet.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_6fe2c04fd96b44a3802fd18cbc408596\\/assets\\/base\\/media\\/ico-more_6eca821dd3\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "f15dcda3dfb3cb8b5bacc5b7d6e4b14803b22e526b6b4572266b611afae0561a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "revistamonet.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_6fe2c04fd96b44a3802fd18cbc408596\\/assets\\/base\\/media\\/logo-eg_f76de07ff1\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "1ac7e6b68a127fd1254f55a57095c0deefe0f8e971d8a7ce91ee1d9088f24cfa"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "revistamonet.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_6fe2c04fd96b44a3802fd18cbc408596\\/assets\\/base\\/media\\/globocom_f5f8709f96\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "05163eb5b956deaad5a617709f1608bfd2db0b937ae10b43a4419f6c9490af61"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "revistamonet.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_6fe2c04fd96b44a3802fd18cbc408596\\/assets\\/base\\/media\\/bkg-newsletter_d773ce6c90\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "87d9a25588f57aca896616e73b38194bf5f1f20139a1512ed29c11362f42564b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "revistamonet.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_6fe2c04fd96b44a3802fd18cbc408596\\/assets\\/base\\/media\\/ajax-loader_6660c52580\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "95dec75651c2b169407ad38be7773fd5d67c8f26e99703aeeef373052c69551c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "revistamonet.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_b3eff1d540ba48dd8558daf4d094c778\\/assets\\/publicidade\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "4e5a8df78e43e83e6ca4b7af38833a508483d29e3c5332b7dc19a0ac9b27c692"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "revistamonet.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/utag\\/globo\\/editora\\/prod\\/utag\\.25\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tealium.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "tags.globo.com",
+                    "resolved": "tealium.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "26174a8fccfad2d269e0918eb02642ee8a8f27a8d123836b8b0cfe6c343d5fce"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "revistamonet.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/utag\\/globo\\/editora\\/prod\\/utag\\.24\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tealium.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "tags.globo.com",
+                    "resolved": "tealium.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "7cbeb60be19ce98e56ef04c4b1838c00714de2ac83969a7f1652d50084ead181"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "revistamonet.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/v1\\/AUTH_fd78dc4be9404a2e92b908ade306e9e6\\/prod\\/post_base_svgs\\/post-video-duration\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s3.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s3.glbimg.com",
+                    "resolved": "s3.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "6b78eae6c2ad1d8e263bfbe0d2643bf612bc47a042dc604432a82258cffa3777"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/Py8sH_bRBL561vKNrfAlpVXXu6o=\\/278x80:666x513\\/fit-in\\/515x290\\/middle\\/smart\\/filters:strip_icc\\(\\):strip_exif\\(\\):format\\(webp\\)\\/i\\.s3\\.glbimg\\.com\\/v1\\/AUTH_59edd422c0c84a879bd37670ae4f538a\\/internal_photos\\/bs\\/2023\\/n\\/0\\/xEZG1QRyexuSABB3AY1Q\\/jovem-morre-espancado-apos-discussao-no-sul-de-sc-saudades-nao-farao-a-dor-ir-embora-944x531\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s2-home-globo.glbimg.com",
+                    "resolved": "s2.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "ac2d342bb42570a893e2ba6795c8e93a68285167d1c2eb4ec9785234af43e0db"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "www.globo.com"
+            ]
+        },
+        {
+            "rule": "cloud\\.globo\\/3Ule1UElFC--F8_tT-JogSYT95M=\\/85x0:929x476\\/fit-in\\/515x290\\/middle\\/smart\\/filters:strip_icc\\(\\):strip_exif\\(\\):format\\(webp\\)\\/i\\.s3\\.glbimg\\.com\\/v1\\/AUTH_59edd422c0c84a879bd37670ae4f538a\\/internal_photos\\/bs\\/2023\\/Z\\/d\\/16YqlWT8yQAoSgjXFcBA\\/paciente\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "s2.cache.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "s2-home-globo.glbimg.com",
+                    "resolved": "s2.cache.aws.cloud.globo"
+                }
+            ],
+            "responseHashes": [
+                "6435ddeed1d9772eec86b6e4bf1f912c4112da581fd37e55358d69b11a08bb5a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globo.com",
+                "www.globo.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000123,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7412420382165605
+        },
+        {
+            "domain": "glbimg.com",
+            "prevalence": 0.1305732484076433
+        },
+        {
+            "domain": "storage.googleapis.com",
+            "prevalence": 0.06050955414012739
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.04777070063694268
+        },
+        {
+            "domain": "tinypass.com",
+            "prevalence": 0.007961783439490446
+        },
+        {
+            "domain": "ampproject.org",
+            "prevalence": 0.007165605095541401
+        },
+        {
+            "domain": "infoglobo.com.br",
+            "prevalence": 0.0023885350318471337
+        },
+        {
+            "domain": "openxcdn.net",
+            "prevalence": 0.0007961783439490446
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.0007961783439490446
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.0007961783439490446
+        }
+    ],
+    "types": {
+        "Font": 75,
+        "Script": 372,
+        "Stylesheet": 168,
+        "XHR": 24,
+        "Fetch": 55,
+        "Image": 70,
+        "Document": 4,
+        "EventSource": 2
+    },
+    "nameservers": [
+        "ns01.globo.com",
+        "ns02.globo.com",
+        "ns03.globo.com",
+        "ns04.globo.com"
+    ]
+}

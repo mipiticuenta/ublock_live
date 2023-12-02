@@ -1,0 +1,83 @@
+{
+    "domain": "fcc.my.id",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "fcc\\.my\\.id\\/cdn\\/js\\/mv\\/newitem\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "window.sessionStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "84c16376fadd5d2b9b4168bfaa0ae4ddc5b005767e2c28480b316863973df94c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": []
+        },
+        {
+            "rule": "fcc\\.my\\.id\\/cdn\\/js\\/mv\\/protect\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.platform": 3,
+                "Navigator.prototype.maxTouchPoints": 3,
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "66ceed09f740d7a01aa98e3936f3a12735ef0e50da619df06770f6ca0fe75bd1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": []
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "nessandbeauty.xyz",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "tindershots.xyz",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "gamingweb.xyz",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "loneguardian.xyz",
+            "prevalence": 0.25
+        }
+    ],
+    "types": {
+        "Script": 6
+    },
+    "nameservers": [
+        "logan.ns.cloudflare.com",
+        "angelina.ns.cloudflare.com"
+    ]
+}

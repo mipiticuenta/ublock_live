@@ -1,0 +1,221 @@
+{
+    "domain": "financial.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "dory",
+        "refinitiv-widgets",
+        "mwa"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "financial\\.com\\/auth\\/api\\/v1\\/tokens",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dory",
+                "refinitiv-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "483e41623051f2943158cc02bc87af4aeb1b5c911836b2eb2039b44915f5756a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "1822direkt.de",
+                "www.londonstockexchange.com"
+            ]
+        },
+        {
+            "rule": "financial\\.com\\/auth\\/api\\/v1\\/tokens",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dory",
+                "refinitiv-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "1822direkt.de",
+                "www.londonstockexchange.com"
+            ]
+        },
+        {
+            "rule": "financial\\.com\\/matomo\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "mwa"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.name": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.mimeTypes": 1,
+                "Navigator.prototype.javaEnabled": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5951438dd533bfc072aa250205ad3d618ac9add4b8f609a68d4608c7d3282434"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "1822direkt.de",
+                "www.londonstockexchange.com"
+            ]
+        },
+        {
+            "rule": "financial\\.com\\/matomo\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mwa"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "londonstockexchange.com",
+                "www.londonstockexchange.com"
+            ]
+        },
+        {
+            "rule": "financial\\.com\\/auth\\/api\\/v1\\/sessions\\/samllogin",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "refinitiv-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d30f26d1911a334ee5ef487313e2516ceb5a2196f581cbed16c5d39dd178e957"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "londonstockexchange.com",
+                "www.londonstockexchange.com"
+            ]
+        },
+        {
+            "rule": "financial\\.com\\/rest\\/api\\/quote\\/info",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "refinitiv-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "londonstockexchange.com",
+                "www.londonstockexchange.com"
+            ]
+        },
+        {
+            "rule": "financial\\.com\\/rest\\/api\\/quote\\/info",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "refinitiv-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9f38584e2e91edddd3a2a3e9703d6752c0a0914470a7dd88e586a92fa3c30d99"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "londonstockexchange.com",
+                "www.londonstockexchange.com"
+            ]
+        },
+        {
+            "rule": "financial\\.com\\/streaming\\/streams\\/info",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "refinitiv-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b7d6545326f5b9665ef239859e11389aab1e88f4c6a55119e09124fe9c977a33"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "londonstockexchange.com",
+                "www.londonstockexchange.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "XHR": 8,
+        "Preflight": 4,
+        "Script": 2,
+        "Ping": 2
+    },
+    "nameservers": [
+        "ns1.de.colt.net",
+        "ns8.colt.net"
+    ]
+}

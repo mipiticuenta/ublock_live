@@ -1,0 +1,312 @@
+{
+    "domain": "bswsites.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "gtm",
+        "sso"
+    ],
+    "cnames": [
+        {
+            "original": "gtm.bswhealth.com",
+            "resolved": "gtm.bswsites.com"
+        },
+        {
+            "original": "sso.bswhealth.com",
+            "resolved": "sso.bswsites.com"
+        }
+    ],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "bswsites\\.com\\/gtm\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 2,
+            "subdomains": [
+                "gtm"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "gtm.bswhealth.com",
+                    "resolved": "gtm.bswsites.com"
+                }
+            ],
+            "responseHashes": [
+                "463746a9f5828ae617bffed5967c917b6cc1cdcfe9e50cdf1e0389d5f15d74d7",
+                "c6f35104d6e91f1ee256629b12f8a6b3d2c3e8abbb9185b95432a71f5d6b2397"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bswhealth.com",
+                "my.bswhealth.com",
+                "www.bswhealth.com"
+            ]
+        },
+        {
+            "rule": "bswsites\\.com\\/logon\\/IsLoggedInPost2",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sso"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "sso.bswhealth.com",
+                    "resolved": "sso.bswsites.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bswhealth.com",
+                "my.bswhealth.com"
+            ]
+        },
+        {
+            "rule": "bswsites\\.com\\/logon\\/IsLoggedInPost2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sso"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "sso.bswhealth.com",
+                    "resolved": "sso.bswsites.com"
+                }
+            ],
+            "responseHashes": [
+                "064bd166cb193ce907273a0b297418fb11a96632698840542b254d05223cbabd"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bswhealth.com",
+                "my.bswhealth.com"
+            ]
+        },
+        {
+            "rule": "bswsites\\.com\\/Logon\\/LogoutCurrentUser2",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sso"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "sso.bswhealth.com",
+                    "resolved": "sso.bswsites.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bswhealth.com",
+                "my.bswhealth.com"
+            ]
+        },
+        {
+            "rule": "bswsites\\.com\\/Logon\\/LogoutCurrentUser2",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sso"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "sso.bswhealth.com",
+                    "resolved": "sso.bswsites.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bswhealth.com",
+                "my.bswhealth.com"
+            ]
+        },
+        {
+            "rule": "bswsites\\.com\\/gtag\\/js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "gtm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "gtm.bswhealth.com",
+                    "resolved": "gtm.bswsites.com"
+                }
+            ],
+            "responseHashes": [
+                "01b339085db8a0cec200b99cb1780c1d033edadecaa096dba8fb7ef03cde9c3f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bswhealth.com",
+                "www.bswhealth.com"
+            ]
+        },
+        {
+            "rule": "bswsites\\.com\\/3\\.14\\.0\\/sp\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 3,
+            "subdomains": [
+                "gtm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "gtm.bswhealth.com",
+                    "resolved": "gtm.bswsites.com"
+                }
+            ],
+            "responseHashes": [
+                "800dbe862240209aaa6e35a2ff426fec868871c8918a85b11eb9479aadead3e6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bswhealth.com",
+                "www.bswhealth.com"
+            ]
+        },
+        {
+            "rule": "bswsites\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gtm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "gtm.bswhealth.com",
+                    "resolved": "gtm.bswsites.com"
+                }
+            ],
+            "responseHashes": [
+                "2689367b205c16ce32ed4200942b8b8b1e262dfc70d9bc9fbc77c49699a4f1df"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bswhealth.com",
+                "www.bswhealth.com"
+            ]
+        },
+        {
+            "rule": "bswsites\\.com\\/com\\.snowplowanalytics\\.snowplow\\/tp2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gtm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "gtm.bswhealth.com",
+                    "resolved": "gtm.bswsites.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bswhealth.com",
+                "www.bswhealth.com"
+            ]
+        },
+        {
+            "rule": "bswsites\\.com\\/g\\/collect",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gtm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "gtm.bswhealth.com",
+                    "resolved": "gtm.bswsites.com"
+                }
+            ],
+            "responseHashes": [
+                "e64954dc34e12c7190cc2338a54b07644ff0f102aa71cc7209bcbb49c3009f7c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bswhealth.com",
+                "www.bswhealth.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 7,
+        "Preflight": 6,
+        "Fetch": 4,
+        "Ping": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "ns2-08.azure-dns.net",
+        "ns1-08.azure-dns.com",
+        "ns3-08.azure-dns.org",
+        "ns4-08.azure-dns.info"
+    ]
+}

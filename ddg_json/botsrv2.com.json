@@ -1,0 +1,158 @@
+{
+    "domain": "botsrv2.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "static",
+        "media"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "botsrv2\\.com\\/website\\/css\\/widget\\.6b0bf58e\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e81c20daca7f1c4cb549c5c6a809dddb0700ce1e2a401d363931c33c04b44fd4"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "familyassets.com",
+                "www.profesia.sk"
+            ]
+        },
+        {
+            "rule": "botsrv2\\.com\\/control\\/img\\/100x100\\/70\\/abf31322914ace91f3f73372a4f3eb\\/Chatbot-Image\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0fe77dc86184f2a8dc39c6ed92bb3c4043cf5917c8b511ecd1fb2d2354c1c1ce"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "familyassets.com",
+                "www.familyassets.com"
+            ]
+        },
+        {
+            "rule": "botsrv2\\.com\\/website\\/js\\/widget2\\.46196493\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7ea2941b4c8e347b5d5b979463992f9257a29e9ebea63d5b2b8dc4ff6cd766d1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxblocks.com",
+                "www.foxblocks.com"
+            ]
+        },
+        {
+            "rule": "botsrv2\\.com\\/qb\\/data2\\/LO9oPr9AALrpvqRG\\/zo7GdmJK0Xr6yRPM",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7c76795b76a733e984f24a983c7c63a208413d0cf460d346601288452f7d3828"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxblocks.com",
+                "www.foxblocks.com"
+            ]
+        },
+        {
+            "rule": "botsrv2\\.com\\/qb\\/data2\\/LO9oPr9AALrpvqRG\\/zo7GdmJK0Xr6yRPM",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "foxblocks.com",
+                "www.foxblocks.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000341,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.4
+        },
+        {
+            "domain": "botsrv.com",
+            "prevalence": 0.4
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2
+        }
+    ],
+    "types": {
+        "Stylesheet": 2,
+        "Image": 2,
+        "Script": 2,
+        "XHR": 2,
+        "Preflight": 2
+    },
+    "nameservers": [
+        "ns-1421.awsdns-49.org",
+        "ns-860.awsdns-43.net",
+        "ns-1704.awsdns-21.co.uk",
+        "ns-486.awsdns-60.com"
+    ]
+}

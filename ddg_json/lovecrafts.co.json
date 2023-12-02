@@ -1,0 +1,870 @@
+{
+    "domain": "lovecrafts.co",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "assets.prod",
+        "cms.prod",
+        "events-api.prod",
+        "events.prod",
+        "events-sdk.prod"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "lovecrafts\\.co\\/_nuxt\\/fa7b720\\.modern\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ebf26993cd2ef168a77b61db7c5cdf11f90d6a27f3d136a3319951d702ab6576"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/_nuxt\\/ee1eee9\\.modern\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assets.prod"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.product": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "39aa4ea3457b45f921114f6b031bc1dbe4a6d23fa8c8a000886df0ab889b16c4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/_nuxt\\/css\\/904256e\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a6c867edb28d2e0bd58e61ead888dae351b2fd411e83fd72d7a7b0c3e056047c"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/media\\/fonts\\/sofia_pro_regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cms.prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "70fe28d6536f41ab667161aefa0e0630e2922a199bc2914725ab09e2cf707841"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com",
+                "www.yarn.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/media\\/fonts\\/sofia_pro_semi_bold\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cms.prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "8916d1e2ad512c3af9d5e6276a5b71c242380fb6adf7a5fbe7c5945487798ec5"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com",
+                "www.yarn.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/sourceConfig\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events-api.prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "acb0f1c2fb5a85d63c95f20207600d3eff2a42989f67abd79aabdbb17d6c99de",
+                "fbec69409da70e0cde88dd3359e15c8777ea2d5ddeff12b1314a463436846518"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com",
+                "www.yarn.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/sourceConfig\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events-api.prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com",
+                "www.yarn.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/v1\\/identify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com",
+                "www.yarn.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/v1\\/identify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com",
+                "www.yarn.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/v1\\/page",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com",
+                "www.yarn.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/v1\\/page",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com",
+                "www.yarn.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/_nuxt\\/035200e\\.modern\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "73d057a5449972dd240e00aca42fe2a2ed4d1d4234de02d40eca6b67571eebf1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/_nuxt\\/ced54e0\\.modern\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "027ac9f16a0b959ecd6dae4940eb8601e4e81ca5dafe2661653706f42e18f228"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/_nuxt\\/48c0bc7\\.modern\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4cbb1401c6988fbe43c4b6f3cd3531b88d6cb7aa3e8c2a220046178a551696ff"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/_nuxt\\/9ceef8d\\.modern\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f105731e00b22dddb97a442eaf72f14f4b307198b9beb57c2b62b689bce26354"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/_nuxt\\/8a005b3\\.modern\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dac575b1403682e8713f2959daee07e83d4410fa8be96131862e65140c78c1b3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/_nuxt\\/1790cc0\\.modern\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "019c563b48df08b06a344f66830fff21d485a117d0c8418bc17121c0c50c4933"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.yarn.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/_nuxt\\/eb027d2\\.modern\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "371bc27ac178277d2ebbc392a0f79f02ffa33d55ab06113c3f2b1ce310a14d4f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com",
+                "www.yarn.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/_nuxt\\/bd22338\\.modern\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1109b54f92a563c857e706ae6345b80f08bb443148cee2df2954a3057af7ebef"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/_nuxt\\/d1efbb5\\.modern\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b92dc0554fcc3d17f0a722bc9d3bed3feff2943d7237f9ca83d5b32d345795d7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/v1\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com",
+                "www.yarn.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/v1\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events.prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com",
+                "www.yarn.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/_nuxt\\/assets\\/flags\\/US\\.924e9b\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c22e9d71a8a3dca24c40a00f270404f46b32ffe265dd9a108e1c51d3c96d6dce"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/v1\\.1\\/js-integrations\\/GoogleAds\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events-sdk.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "db20fd903c6f2968e49310b791d631ccefb603f082e8645b3cdc5f07cc13e491"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/v1\\.1\\/js-integrations\\/BingAds\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events-sdk.prod"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "69310308fb285f9be2de3fe8cd4672847638fbf98de1b00f0c800c4b3cf8035d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com",
+                "www.yarn.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/v1\\.1\\/js-integrations\\/GoogleOptimize\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events-sdk.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ce6237f7596732188a53f45b5472643bda5df292144de92339e94f69890583f6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/v1\\.1\\/js-integrations\\/GA4\\.min\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "events-sdk.prod"
+            ],
+            "apis": {
+                "window.localStorage": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Document.cookie setter": 3,
+                "Document.cookie getter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "4b9dccf62bcdd19c6ada4ace69441cbec602521bce64913cbff22801af72e0a9",
+                "13cb94022528159557fef7f1d4718f5bcc285e6983c1edf791346f874981fc8b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__tld__": {
+                    "ttl": 5,
+                    "length": 4,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 0.3333333333333333
+                },
+                "test_rudder_cookie": {
+                    "ttl": 5,
+                    "length": 4,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 0.3333333333333333
+                },
+                "rs_ga": {
+                    "ttl": 5,
+                    "length": 4,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 0.3333333333333333
+                },
+                "rs_ga_KPP7QYWC6P": {
+                    "ttl": 5,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "rs_ga_RF7X1NY198": {
+                    "ttl": 5,
+                    "length": 4,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com",
+                "www.yarn.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/v1\\.1\\/js-integrations\\/PinterestTag\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "events-sdk.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9bb39603a7c0e8876146166f5b68dffd617a0ed03db74e15d340bbd8b3793a18"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/v1\\.1\\/js-integrations\\/Amplitude\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "events-sdk.prod"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.appVersion": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "c59afb04f4ce1106b05b05deb8434b31f70c46c280e294443ff5343d598bd857",
+                "d3f3ad4a3ea623ed4c2bcadf86379aff242b0054165e1a7113715c3a3db4c68e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.lovecrafts.com",
+                "www.yarn.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/_nuxt\\/social\\.10eb94\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d574d79443e02d3235838be9329283970acaff7cf10b9ca01981f5febbcc5251"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.yarn.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/_nuxt\\/assets\\/payments\\/logo-cards-visa\\.df6f31\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b32e31d03839a7952283b247133c02ba34a90e12e2a57e5a7b7332041d460910"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.yarn.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/_nuxt\\/assets\\/payments\\/logo-cards-mc\\.135de9\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a7d028a2f2c21015e72cb2d33adb08baf4b30ecde4b5f46fdd846c937e75b949"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.yarn.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/_nuxt\\/assets\\/payments\\/logo-cards-ae\\.27ea63\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0efe434d41515e309c9dc7c8299fc1b94ca6d8e41f1500cd193e73569c554b8c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.yarn.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/_nuxt\\/assets\\/payments\\/logo-paypal\\.f970d0\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6ed1407ae0830d79a13f3f4d60b8e20fbfcd05ee4256fb7dd5319f2df54d104f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovecrafts.com",
+                "www.yarn.com"
+            ]
+        },
+        {
+            "rule": "lovecrafts\\.co\\/_nuxt\\/css\\/d604600\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assets.prod"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "53e4d9ead5707773aee33f57c800724b2c177f93ea950013e27b0c84fa2463ad"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yarn.com",
+                "www.yarn.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9117647058823529
+        },
+        {
+            "domain": "onetrust.com",
+            "prevalence": 0.08823529411764706
+        }
+    ],
+    "types": {
+        "Script": 38,
+        "Stylesheet": 4,
+        "Font": 6,
+        "XHR": 12,
+        "Preflight": 12,
+        "Image": 12
+    },
+    "nameservers": [
+        "ns-281.awsdns-35.com",
+        "ns-1467.awsdns-55.org",
+        "ns-1786.awsdns-31.co.uk",
+        "ns-593.awsdns-10.net"
+    ]
+}

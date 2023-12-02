@@ -1,0 +1,85 @@
+{
+    "domain": "staples.ca",
+    "owner": {
+        "name": "Staples",
+        "displayName": "Staples"
+    },
+    "source": [
+        "DuckDuckGo-CA"
+    ],
+    "prevalence": 0.000302,
+    "sites": 3,
+    "subdomains": [
+        "api.stores",
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "staples\\.ca\\/api\\/locations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.stores"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "264b89727a91dd304bcfd5730a625cdfc3114cf5173a2489a25f2d87650ec8ff"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "staplescopyandprint.ca",
+                "www.staplescopyandprint.ca"
+            ]
+        },
+        {
+            "rule": "staples\\.ca\\/ecommerce\\/inventory\\/v1\\.0\\/request",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "5dcaee5f49cd1cc408d7e718f0c3a24745038aca56e9d07969b99359249f612e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bureauengros.com",
+                "www.bureauengros.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Fetch": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "a1-51.akam.net",
+        "a3-64.akam.net",
+        "a6-66.akam.net",
+        "a12-65.akam.net",
+        "a13-65.akam.net",
+        "a14-66.akam.net"
+    ]
+}

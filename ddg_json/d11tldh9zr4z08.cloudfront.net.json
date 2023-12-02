@@ -1,0 +1,96 @@
+{
+    "domain": "d11tldh9zr4z08.cloudfront.net",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000681,
+    "sites": 10,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "d11tldh9zr4z08\\.cloudfront\\.net\\/Accutrak\\.js",
+            "cookies": 0.0000409,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Document.cookie getter": 7,
+                "Document.cookie setter": 6,
+                "Screen.prototype.width": 7,
+                "Screen.prototype.height": 7,
+                "Navigator.prototype.language": 7,
+                "Navigator.prototype.userAgent": 7
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "5d5f9654fbf38d5d039ba2743bb47a0067a1e020a61ef5b43dd9c3059cd94424"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_first_pageview": {
+                    "ttl": 600,
+                    "length": 1,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 0.16666666666666666
+                },
+                "_jsuid": {
+                    "ttl": 31536000,
+                    "length": 10,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lifevac.net",
+                "www.academyart.edu",
+                "www.choicehomewarranty.com",
+                "www.ethoslife.com",
+                "www.inogen.com",
+                "www.mdvip.com",
+                "www.relaxium.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0.0000613,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.2
+        },
+        {
+            "domain": "transcend.io",
+            "prevalence": 0.1
+        }
+    ],
+    "types": {
+        "Script": 7
+    },
+    "nameservers": [
+        "ns-1359.awsdns-41.org",
+        "ns-25.awsdns-03.com",
+        "ns-564.awsdns-06.net",
+        "ns-1871.awsdns-41.co.uk"
+    ]
+}

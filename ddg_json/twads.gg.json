@@ -1,0 +1,86 @@
+{
+    "domain": "twads.gg",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "go",
+        "app"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "twads\\.gg\\/adsbytwadsgg\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "go"
+            ],
+            "apis": {
+                "Navigator.prototype.languages": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "38271d191fcd47d0dfd6afbae5a3ec3328d226331e6b05fa92ab507b419f6b74"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hearthstone-decks.net",
+                "rpgcodex.net"
+            ]
+        },
+        {
+            "rule": "twads\\.gg\\/api\\/stream\\/show",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "ncmp.domain": 0.000006812035504329049,
+                "lotame_domain_check": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "hearthstone-decks.net",
+                "rpgcodex.net",
+                "www.ghostarrow.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Fetch": 3
+    },
+    "nameservers": [
+        "kurt.ns.cloudflare.com",
+        "tani.ns.cloudflare.com"
+    ]
+}

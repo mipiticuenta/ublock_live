@@ -1,0 +1,103 @@
+{
+    "domain": "dimelochat.com",
+    "owner": {
+        "name": "dimelo sas",
+        "displayName": "dimelo"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "fizz",
+        "support",
+        "richemont"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "dimelochat\\.com\\/assets\\/messaging-a934ff45a1af2df47168bf113d0b265338e322a14722a7753f2bb90ad5a70f34\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "fizz",
+                "support",
+                "richemont"
+            ],
+            "apis": {
+                "CanvasRenderingContext2D.prototype.getImageData": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.platform": 3,
+                "window.localStorage": 3,
+                "Event.prototype.timeStamp": 2,
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "459781bcf29f61126ac20081fd900911b38b49244596fd87d2167f8d4bab7271"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fizz.ca",
+                "support.ringcentral.com",
+                "www.vancleefarpels.com"
+            ]
+        },
+        {
+            "rule": "dimelochat\\.com\\/chat\\/876e7f52acc6e6816acff4e5\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "richemont"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "66ae98586b30ee187f00b23557a4147338658e84c1e91e5270623f903033c2b4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vancleefarpels.com",
+                "www.vancleefarpels.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.375
+        },
+        {
+            "domain": "tagcommander.com",
+            "prevalence": 0.125
+        }
+    ],
+    "types": {
+        "Script": 5
+    },
+    "nameservers": [
+        "ns14.dnsmadeeasy.com",
+        "ns11.dnsmadeeasy.com",
+        "ns15.dnsmadeeasy.com",
+        "ns12.dnsmadeeasy.com",
+        "ns13.dnsmadeeasy.com",
+        "ns10.dnsmadeeasy.com"
+    ]
+}

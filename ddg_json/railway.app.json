@@ -1,0 +1,111 @@
+{
+    "domain": "railway.app",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "d3-umami.up",
+        "redux-docs-umami.up"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "railway\\.app\\/script\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "d3-umami.up",
+                "redux-docs-umami.up"
+            ],
+            "apis": {
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Navigator.prototype.language": 3,
+                "window.localStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "8719d5bd0daee4932c62da73996bbcc8f0d4a35ffe9c00520d58b23dee18d683"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "d3ward.github.io",
+                "redux-toolkit.js.org",
+                "redux.js.org"
+            ]
+        },
+        {
+            "rule": "railway\\.app\\/api\\/send",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d3-umami.up",
+                "redux-docs-umami.up"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "d3ward.github.io",
+                "redux-toolkit.js.org",
+                "redux.js.org"
+            ]
+        },
+        {
+            "rule": "railway\\.app\\/api\\/send",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d3-umami.up",
+                "redux-docs-umami.up"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "67c32de559c5867f7447762662762b7c5997ed46c0dc86bd7656cb9613b2c3a9",
+                "7b989ee51afe4f93f2c22051ab700b7a2c0e258afc452f6475656f7c44c96470"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "d3ward.github.io",
+                "redux-toolkit.js.org",
+                "redux.js.org"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "Preflight": 3,
+        "Fetch": 3
+    },
+    "nameservers": [
+        "roan.ns.cloudflare.com",
+        "lina.ns.cloudflare.com"
+    ]
+}

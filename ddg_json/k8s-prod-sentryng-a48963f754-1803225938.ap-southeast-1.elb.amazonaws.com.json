@@ -1,0 +1,60 @@
+{
+    "domain": "k8s-prod-sentryng-a48963f754-1803225938.ap-southeast-1.elb.amazonaws.com",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "sentry.eks.hoyoverse.com",
+            "resolved": "k8s-prod-sentryng-a48963f754-1803225938.ap-southeast-1.elb.amazonaws.com"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "k8s-prod-sentryng-a48963f754-1803225938\\.ap-southeast-1\\.elb\\.amazonaws\\.com\\/api\\/60\\/envelope\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "sentry.eks.hoyoverse.com",
+                    "resolved": "k8s-prod-sentryng-a48963f754-1803225938.ap-southeast-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "a225a215cc1db952fb627b0c93a7f5b360bd34436eb2d6c6a83f168c638b7fb0",
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hoyoverse.com",
+                "genshin.hoyoverse.com",
+                "hsr.hoyoverse.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "types": {
+        "Fetch": 3
+    },
+    "nameservers": []
+}

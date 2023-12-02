@@ -1,0 +1,89 @@
+{
+    "domain": "mailbluster.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "api",
+        "cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "mailbluster\\.com\\/v1\\/forms\\/4facb81a-898d-45b5-b85b-f3642891b70b\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a7d11f4606f4f5920219772fa5048dcd776f7c4f8d3b69154426b7ed10cf389a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "mb-4facb81a-898d-45b5-b85b-f3642891b70b": {
+                    "ttl": 172819,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fitsri.com",
+                "www.fitsri.com"
+            ]
+        },
+        {
+            "rule": "mailbluster\\.com\\/assets\\/powered-by\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8b3f422898f855dd2b5e8b45d36a911a8a6b2726383aaa91525e7704da42d737"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fitsri.com",
+                "www.fitsri.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Image": 2
+    },
+    "nameservers": [
+        "adi.ns.cloudflare.com",
+        "anuj.ns.cloudflare.com"
+    ]
+}

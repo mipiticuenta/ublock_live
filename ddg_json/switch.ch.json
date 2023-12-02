@@ -1,0 +1,222 @@
+{
+    "domain": "switch.ch",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-CH"
+    ],
+    "prevalence": 0.000503,
+    "sites": 5,
+    "subdomains": [
+        "wayf",
+        "www",
+        "portal"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "switch\\.ch\\/SWITCHaai\\/WAYF\\/embedded-wayf\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "wayf"
+            ],
+            "apis": {
+                "Document.cookie getter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "d5b6f4f5a062bc69158ba65731892c46a6d910074c059389a103c0045e0ea7ab",
+                "57c45ae4cd572376e6a3d0c8345f099ec49dc1e71ef85a04861df7ae1b69ff88"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unibe.ch",
+                "moodle.bfh.ch",
+                "www.olat.uzh.ch"
+            ]
+        },
+        {
+            "rule": "switch\\.ch\\/SWITCHaai\\/css\\/default-ImprovedDropDown\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wayf"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "3ba4cf6c74ef3f08f70e85509e2e476860bdac7441fed57204d36946dc8f99b3"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unibe.ch",
+                "moodle.bfh.ch"
+            ]
+        },
+        {
+            "rule": "switch\\.ch\\/SWITCHaai\\/js\\/improvedDropDown\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wayf"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "ebf81bbd7db30f80c9094e6ec823f7303d8e71420279276ecd8fe75bc09179c6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unibe.ch",
+                "moodle.bfh.ch"
+            ]
+        },
+        {
+            "rule": "switch\\.ch\\/SWITCHaai\\/images\\/switch-aai-transparent-small_hd\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wayf"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "cf28e101990c36c3ea3d337c6891ea6a66c123876120af635f7baa4e5f4a2fc7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unibe.ch",
+                "moodle.bfh.ch"
+            ]
+        },
+        {
+            "rule": "switch\\.ch\\/SWITCHaai\\/images\\/drop_icon\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wayf"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "4deef5ac2534480e7cf55558770c5d07dab05103d62cee98f20c3614d572b6a6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unibe.ch",
+                "moodle.bfh.ch"
+            ]
+        },
+        {
+            "rule": "switch\\.ch\\/tracker\\/piwik\\.js",
+            "cookies": 0.000101,
+            "fingerprinting": 2,
+            "subdomains": [
+                "www",
+                "portal"
+            ],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Navigator.prototype.mimeTypes": 1,
+                "Navigator.prototype.javaEnabled": 1,
+                "Navigator.prototype.cookieEnabled": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.platform": 1,
+                "Document.cookie setter": 1,
+                "window.name": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8b73bdb35d8412d8be46a0046e3da0081ed1169c11d50fcb6bde65b7fb6c5dda"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pk_id.2.ddac": {
+                    "ttl": 33955205,
+                    "length": 52,
+                    "prevalence": 0.00010054293183189222,
+                    "uniqueness": 1
+                },
+                "_pk_ses.2.ddac": {
+                    "ttl": 1804,
+                    "length": 1,
+                    "prevalence": 0.00010054293183189222,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nic.ch",
+                "www.nic.ch"
+            ]
+        },
+        {
+            "rule": "switch\\.ch\\/tracker\\/piwik\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www",
+                "portal"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nic.ch",
+                "www.nic.ch"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000201,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 7,
+        "Stylesheet": 2,
+        "Image": 6
+    },
+    "nameservers": [
+        "ns2.switch.ch",
+        "ns3.switch.ch",
+        "scsnms.switch.ch"
+    ]
+}

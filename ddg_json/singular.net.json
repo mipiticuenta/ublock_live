@@ -1,0 +1,324 @@
+{
+    "domain": "singular.net",
+    "owner": {
+        "name": "Singular Labs, Inc.",
+        "displayName": "Singular"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0003,
+    "sites": 44,
+    "subdomains": [
+        "web-sdk-cdn",
+        "sdk-api-v1"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "singular\\.net\\/singular-gtm-interface\\/latest\\/singular-gtm-interface\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-sdk-cdn"
+            ],
+            "apis": {},
+            "sites": 21,
+            "prevalence": 0.000143,
+            "cnames": [],
+            "responseHashes": [
+                "229b005e2be041608b705607939624dfc0758f970a29d2c766bc53018c1d9fb4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vimeo.com",
+                "www.1mg.com",
+                "home.personalcapital.com",
+                "www.vive.com",
+                "clickup.com",
+                "www.lyft.com",
+                "www.draftkings.com",
+                "sportsbook.draftkings.com",
+                "www.leagueoflegends.com",
+                "astropay.com",
+                "podimo.com",
+                "www.mondly.com",
+                "playvalorant.com",
+                "vimeopro.com",
+                "www.viz.com",
+                "www.getaround.com",
+                "newageproducts.com",
+                "help.clickup.com",
+                "meliopayments.com",
+                "universe.leagueoflegends.com"
+            ]
+        },
+        {
+            "rule": "singular\\.net\\/singular-sdk\\/latest\\/singular-sdk\\.js",
+            "cookies": 0.0000613,
+            "fingerprinting": 2,
+            "subdomains": [
+                "web-sdk-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 23,
+                "window.localStorage": 22,
+                "Date.prototype.getTime": 22,
+                "Document.cookie getter": 10,
+                "Document.cookie setter": 9,
+                "window.sessionStorage": 22,
+                "Screen.prototype.height": 22,
+                "Screen.prototype.width": 22,
+                "Navigator.prototype.platform": 22,
+                "NavigatorUAData.prototype.getHighEntropyValues": 22,
+                "Navigator.prototype.language": 22
+            },
+            "sites": 23,
+            "prevalence": 0.000157,
+            "cnames": [],
+            "responseHashes": [
+                "be5dad83172ac94eb1e01da308293de1166bef945eac37727946d26ba76b9d10"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "singular_device_id": {
+                    "ttl": 31536004,
+                    "length": 36,
+                    "prevalence": 0.00005449628403463239,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vimeo.com",
+                "www.vive.com",
+                "vimeopro.com",
+                "signup.leagueoflegends.com",
+                "help.clickup.com",
+                "www.mondly.com",
+                "clickup.com",
+                "www.draftkings.com",
+                "meliopayments.com",
+                "universe.leagueoflegends.com",
+                "playvalorant.com",
+                "astropay.com",
+                "podimo.com",
+                "www.leagueoflegends.com",
+                "home.personalcapital.com",
+                "newageproducts.com",
+                "www.1mg.com",
+                "www.self.inc",
+                "www.getaround.com",
+                "sportsbook.draftkings.com"
+            ]
+        },
+        {
+            "rule": "singular\\.net\\/api\\/v1\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk-api-v1"
+            ],
+            "apis": {},
+            "sites": 26,
+            "prevalence": 0.000177,
+            "cnames": [],
+            "responseHashes": [
+                "8a49ea5083c8030f058182dcd6ae7da0960e68a0d762f71e8e8375f5732fb2fb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "singular_device_id": 0.00006812035504329048
+            },
+            "exampleSites": [
+                "vimeo.com",
+                "nike.com",
+                "signup.leagueoflegends.com",
+                "www.vive.com",
+                "podimo.com",
+                "www.leagueoflegends.com",
+                "www.mondly.com",
+                "home.personalcapital.com",
+                "www.inkitt.com",
+                "sportsbook.draftkings.com",
+                "www.getaround.com",
+                "astropay.com",
+                "www.nike.com",
+                "www.viz.com",
+                "post.news",
+                "clickup.com",
+                "help.clickup.com",
+                "vimeopro.com",
+                "www.1mg.com",
+                "www.lyft.com"
+            ]
+        },
+        {
+            "rule": "singular\\.net\\/api\\/v1\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk-api-v1"
+            ],
+            "apis": {},
+            "sites": 26,
+            "prevalence": 0.000177,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "singular_device_id": 0.00006812035504329048
+            },
+            "exampleSites": [
+                "vimeo.com",
+                "playvalorant.com",
+                "www.draftkings.com",
+                "post.news",
+                "www.viz.com",
+                "podimo.com",
+                "www.rocketmoney.com",
+                "www.mondly.com",
+                "www.inkitt.com",
+                "www.lyft.com",
+                "www.nike.com",
+                "astropay.com",
+                "meliopayments.com",
+                "signup.leagueoflegends.com",
+                "vimeopro.com",
+                "nike.com",
+                "help.clickup.com",
+                "home.personalcapital.com",
+                "sportsbook.draftkings.com",
+                "www.getaround.com"
+            ]
+        },
+        {
+            "rule": "singular\\.net\\/singular-sdk\\/1\\.2\\.8\\/singular-sdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "web-sdk-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.sessionStorage": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Navigator.prototype.platform": 2,
+                "NavigatorUAData.prototype.getHighEntropyValues": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8b0930c8a9ce89678281293e87176a0d8f491a9d957bb2d5006a2c9d8b3e69cb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "inkitt.com",
+                "www.inkitt.com"
+            ]
+        },
+        {
+            "rule": "singular\\.net\\/api\\/banners",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk-api-v1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nike.com",
+                "www.nike.com"
+            ]
+        },
+        {
+            "rule": "singular\\.net\\/api\\/banners",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk-api-v1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nike.com",
+                "www.nike.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000954,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.4175824175824176
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.26373626373626374
+        },
+        {
+            "domain": "osano.com",
+            "prevalence": 0.17582417582417584
+        },
+        {
+            "domain": "fullstory.com",
+            "prevalence": 0.03296703296703297
+        },
+        {
+            "domain": "vimeo.com",
+            "prevalence": 0.03296703296703297
+        },
+        {
+            "domain": "tatadigital.com",
+            "prevalence": 0.02197802197802198
+        },
+        {
+            "domain": "cookielaw.org",
+            "prevalence": 0.02197802197802198
+        },
+        {
+            "domain": "d1nz7gfob98iaz.cloudfront.net",
+            "prevalence": 0.02197802197802198
+        },
+        {
+            "domain": "web-getaround.web.app",
+            "prevalence": 0.01098901098901099
+        }
+    ],
+    "types": {
+        "Script": 46,
+        "XHR": 28,
+        "Preflight": 28
+    },
+    "nameservers": [
+        "ns-1710.awsdns-21.co.uk",
+        "ns-26.awsdns-03.com",
+        "ns-887.awsdns-46.net",
+        "ns-1422.awsdns-49.org"
+    ]
+}

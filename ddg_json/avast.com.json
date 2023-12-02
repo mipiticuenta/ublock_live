@@ -1,0 +1,95 @@
+{
+    "domain": "avast.com",
+    "owner": {
+        "name": "Avast Software s.r.o.",
+        "displayName": "Avast Software"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "analytics.ff",
+        "my-vcp.ff"
+    ],
+    "cnames": [
+        {
+            "original": "my.hidemyass.com",
+            "resolved": "my-vcp.ff.avast.com"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "avast\\.com\\/v4\\/receive\\/json\\/81",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics.ff"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "a92c5b1252bd5afbc6ba9e5783fcff146188ff715dee96cfe5f437ae7a125cb3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "avg.com",
+                "support.avg.com",
+                "www.avg.com"
+            ]
+        },
+        {
+            "rule": "avast\\.com\\/vpnbackend\\/isInVpnTunnel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "my-vcp.ff"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "my.hidemyass.com",
+                    "resolved": "my-vcp.ff.avast.com"
+                }
+            ],
+            "responseHashes": [
+                "406a47163bae59a6b93eb15526e200e9e59fc2aaa7f43a2f5b9e4984c8db11c4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hidemyass.com",
+                "www.hidemyass.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "XHR": 5
+    },
+    "nameservers": [
+        "a11-66.akam.net",
+        "a6-67.akam.net",
+        "a26-67.akam.net",
+        "a1-182.akam.net",
+        "a13-65.akam.net",
+        "a20-66.akam.net"
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "domain": "grace-prod.azureedge.net",
+    "owner": {
+        "name": "Microsoft Corporation",
+        "displayName": "Microsoft",
+        "privacyPolicy": "https://privacy.microsoft.com/en-us/privacystatement",
+        "url": "http://microsoft.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "grace-prod\\.azureedge\\.net\\/tenantScript\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "window.sessionStorage": 4,
+                "window.localStorage": 4,
+                "Document.cookie getter": 3,
+                "window.innerHeight": 4,
+                "window.innerWidth": 4,
+                "Date.prototype.getTime": 4,
+                "Document.cookie setter": 3
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "2a727c43e9dc6d54a6b9a2aae82ee1668f5e931f6d08234d83cc40b0a10dac38",
+                "6f32b6f96e2cfe94d5e886b78f8d00ba1f43249f070fde9e29220905e06253d9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "corona-chatbot-v2": {
+                    "ttl": 5184003,
+                    "length": 6,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 0.3333333333333333
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "providence.org",
+                "mychartor.providence.org",
+                "mychartwa.providence.org",
+                "www.providence.org",
+                "www.swedish.org"
+            ]
+        },
+        {
+            "rule": "grace-prod\\.azureedge\\.net\\/flags\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "fceeb43e6ef20af0c32c0c60013087a049a25c42a3a37834580d8a8e364eac1c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "providence.org",
+                "mychartor.providence.org",
+                "mychartwa.providence.org",
+                "www.providence.org"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7142857142857143
+        },
+        {
+            "domain": "providence.org",
+            "prevalence": 0.2857142857142857
+        }
+    ],
+    "types": {
+        "Script": 5,
+        "Fetch": 4
+    },
+    "nameservers": []
+}

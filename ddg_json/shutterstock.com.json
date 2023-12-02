@@ -1,0 +1,111 @@
+{
+    "domain": "shutterstock.com",
+    "owner": {
+        "name": "Shutterstock Inc.",
+        "displayName": "Shutterstock"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000749,
+    "sites": 11,
+    "subdomains": [
+        "image",
+        "api-cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "shutterstock\\.com\\/image-vector\\/18-blur-censored-vector-background-260nw-1846563532\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "image"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c3cc5a1d000419d66406c211bbe14672f04e1161a9be9f5e1c3092736cdab458"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hentairead.com",
+                "mangahentai.org"
+            ]
+        },
+        {
+            "rule": "shutterstock\\.com\\/2\\.0\\.2\\/static\\/css\\/sstk-widget\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "97f4e8601cde72df6e44ab6b1dee549da714b1bd13e765898fc500f119cab336"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soyummy.com",
+                "yournews.com"
+            ]
+        },
+        {
+            "rule": "shutterstock\\.com\\/2\\.0\\.2\\/static\\/js\\/sstk-widget\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "922abf9479bfa7e466c6de255919b8207263f338e97500d955737dbf982902b1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "soyummy.com",
+                "yournews.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN",
+        "Embedded Content"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Image": 2,
+        "Stylesheet": 2,
+        "Script": 2
+    },
+    "nameservers": [
+        "ns-2006.awsdns-58.co.uk",
+        "ns-231.awsdns-28.com",
+        "ns-1105.awsdns-10.org",
+        "ns-715.awsdns-25.net"
+    ]
+}

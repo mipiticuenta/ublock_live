@@ -1,0 +1,87 @@
+{
+    "domain": "push-sdk.net",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000613,
+    "sites": 9,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "push-sdk\\.net\\/f\\/sdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "window.indexedDB": 8,
+                "NavigatorUAData.prototype.getHighEntropyValues": 8,
+                "Notification.permission": 8
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "0bf3637d1dd3b7acff96a15a58a4887e3eed934818e54e0aa460a39b8e342ae7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "auralcrave.com",
+                "brokensilenze.one",
+                "filmpalast.to",
+                "getmodsapk.com",
+                "ww2.cuevana3.ch",
+                "ww3.cuevana3.ch",
+                "www.lottopcso.com",
+                "www12.cuevana3.ch"
+            ]
+        },
+        {
+            "rule": "push-sdk\\.net\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "auralcrave.com",
+                "brokensilenze.one",
+                "filmpalast.to",
+                "getmodsapk.com",
+                "ww2.cuevana3.ch",
+                "ww3.cuevana3.ch",
+                "www.lottopcso.com",
+                "www12.cuevana3.ch"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 8,
+        "Ping": 8
+    },
+    "nameservers": [
+        "braden.ns.cloudflare.com",
+        "aspen.ns.cloudflare.com"
+    ]
+}

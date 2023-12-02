@@ -1,0 +1,197 @@
+{
+    "domain": "ciaopeople.it",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "static-cmpv2",
+        "abtest"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "ciaopeople\\.it\\/assets\\/r\\/2\\.0\\.35\\/sdk-gdpr\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cmpv2"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "0887a5b177e3f56f3b4f1edea6653188d6bbe00f4710716f5875ba3bb1f2d6a1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fanpage.it",
+                "www.cookist.com",
+                "www.cookist.it",
+                "www.fanpage.it",
+                "www.geopop.it"
+            ]
+        },
+        {
+            "rule": "ciaopeople\\.it\\/assets\\/geo\\/2\\.0\\.35\\/sdk-gdpr-client\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-cmpv2"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 5,
+                "Navigator.prototype.userAgent": 5,
+                "Date.prototype.getTime": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "ab1bc88561575181886f59464bcef426d060bfd1fa37b63cffd04c6549444de9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fanpage.it",
+                "www.cookist.com",
+                "www.cookist.it",
+                "www.fanpage.it",
+                "www.geopop.it"
+            ]
+        },
+        {
+            "rule": "ciaopeople\\.it\\/gvl\\/2\\.0\\.35\\/vendor-list\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cmpv2"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "3e58612a5d2f0d0933fce993c428077cabbe3dd4193a78fd0074254efd52767c"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fanpage.it",
+                "www.cookist.com",
+                "www.cookist.it",
+                "www.fanpage.it",
+                "www.geopop.it"
+            ]
+        },
+        {
+            "rule": "ciaopeople\\.it\\/tcfac\\/additional-consent-providers\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static-cmpv2"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "245a34ea6c3e02e8d288e64addb05f4bb5690f1214d5926594b077aebcbb6e7a"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fanpage.it",
+                "www.cookist.com",
+                "www.cookist.it",
+                "www.fanpage.it",
+                "www.geopop.it",
+                "www.ohga.it",
+                "youmedia.fanpage.it"
+            ]
+        },
+        {
+            "rule": "ciaopeople\\.it\\/gdpr\\/9064\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "abtest"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "a3c294396b8711ae21bda07d34091322ce8beb72ed3c27c0d847a45d34d03713"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fanpage.it",
+                "www.cookist.com",
+                "www.cookist.it",
+                "www.fanpage.it",
+                "www.geopop.it",
+                "www.ohga.it",
+                "youmedia.fanpage.it"
+            ]
+        },
+        {
+            "rule": "ciaopeople\\.it\\/assets\\/r\\/2\\.0\\.35\\/rmi\\/remote-gdpr\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static-cmpv2"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "4baf358b62dc0218dc7615bf9f6ba721c2e451d6f5aec1c6b63005a6abb5dfdc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fanpage.it",
+                "www.cookist.com",
+                "www.cookist.it",
+                "www.fanpage.it",
+                "www.geopop.it"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 15,
+        "Other": 12,
+        "XHR": 7
+    },
+    "nameservers": [
+        "ns-59.awsdns-07.com",
+        "ns-588.awsdns-09.net",
+        "ns-1183.awsdns-19.org",
+        "ns-1783.awsdns-30.co.uk"
+    ]
+}

@@ -1,0 +1,616 @@
+{
+    "domain": "ccm19.de",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000177,
+    "sites": 26,
+    "subdomains": [
+        "cloud",
+        "5f3c395"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "ccm19\\.de\\/app\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cloud"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 16,
+                "window.sessionStorage": 16,
+                "window.localStorage": 16,
+                "Document.cookie getter": 16,
+                "Navigator.prototype.platform": 15,
+                "Navigator.prototype.language": 15,
+                "Navigator.prototype.doNotTrack": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 16,
+            "prevalence": 0.000109,
+            "cnames": [],
+            "responseHashes": [
+                "0cfe751cfec6edcccfd167a13499b9912414942ea9c8a37c42495f6f8a1a1914",
+                "3263764bfd3f7a666eaf8225ca32814ed0c11c6a4de22d915392b344f53d3bf2",
+                "9b079e458be6110012dd265d49fbad44a64f5b36dec403c3e932f9a3eee6ff4c",
+                "b40bac5dd6496c007fd820cfcae6ff9788723416e8bdd8caa48387aac7117427",
+                "b3f879042e652e71294dd9b742e933824fbf52f8041b40386a01db63c75b93e7",
+                "abcdc347f0c58bcd4bc2a227c0627ba3ae3a4bdd280fe943ae55c8c6bc79d5c4",
+                "7bc1ae499922efca4e01c160b9069214b0024c0eff878e7cca7d7faa9be09d6b",
+                "e9a74f9aec9f1befe7924c85fced26c13ed7ba3b7b202b102ac552a3576c40ab",
+                "49be570d79e04709a324635f9af1b6c3aba61a27dbd51a6f75f0670e79d46d5e",
+                "1603214fb054d03eb9ed3348b395510333eb24f7d461e1bf6e81c7ed86041a97",
+                "a317bb624f2e6606e92407d97bd0ff3d8d4dab287a11669c2dcc2a05d93cf54e",
+                "a4fabca9452ee8bb4a6fe1ecafdd4112ed06b35068f92a814e161ab0abd6d1e1",
+                "8aeef2d26648db97eaf2eb7ce370d161f876d08a392096894e12124fcd62726f",
+                "9b66d1fddb2ce359241a1224d3bcf788eca9c4173992c487699a1cf72bf02927",
+                "e9f3814acb6f23973ccb095899a62dfac97853f3f6b56eff32b287d2504945ab"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alltours.de",
+                "www.bayerischer-wald.de",
+                "www.computerwissen.de",
+                "www.gevestor.de",
+                "www.gvh.de",
+                "www.haushaltstipps.com",
+                "www.in-berlin-brandenburg.com",
+                "www.krankenkasseninfo.de",
+                "www.leguano.eu",
+                "www.lesejury.de",
+                "www.luebbe.de",
+                "www.meinreal.de",
+                "www.mgmotor.de",
+                "www.mgmotor.eu",
+                "www.ofenseite.com",
+                "www.tum.de"
+            ]
+        },
+        {
+            "rule": "ccm19\\.de\\/app\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cloud",
+                "5f3c395"
+            ],
+            "apis": {},
+            "sites": 25,
+            "prevalence": 0.00017,
+            "cnames": [],
+            "responseHashes": [
+                "dda76c23c861cdc9be2f83a93fc1151e06021df4df4e5c288c5cb7f340bcf100",
+                "fc67b06addfd5a7c84feda8ae0fb84438d664f9f9db02d98ede146988cb87199",
+                "c83578d735ebf933a0e5ed840623f12539fedde68b6cbfe0c8a17a67e5e5c021",
+                "a35ebaf23f90af756971a9123c898a2e59f3241098831888c8968369c9d9faef",
+                "bb3da5d700b50d4f8ebfa75402bb6f71ba340e1c302ac3fb1e2891ba4e3c07cd",
+                "8dd6ddd734775c14fa617554539afb7cce9b089652e6c5db437d026f8392a176",
+                "a641ac985a5b92d4e22d04240e00a7ac6e3355fbebc13fb8e976e710172526aa",
+                "295e5fcfbb77c5a97c2ea0386d917fd67b5c1f962cf99836b72fbe852fefa4ea",
+                "d84cc7cfd9fc6180c34ebf249f6b5648eff7903a1b250b9d505a81e5731e2dec",
+                "d6a3b14293361513963780a67a8810dd1f2d11c7c84f424ca3193991e0599b4b",
+                "fe93de261217bb0db279827066aac81ec0233262130c6691e551fe19787dfc0b",
+                "edad1bdc885512463748a09d09ed8ffea5fcc59371b1c72d82f9ac31ca67d68b",
+                "c6eecd9f41525c7d9d5bfd922d5f6fbeb4815d728240b6b66a5b7e4926ceae10",
+                "352bc85806bd52bc1b84343ec85aaa9a3470f79254405b5011d8b76e6e0a9a90",
+                "0964cc95e9de8a1626e5f0dc91130d78dafcbc29f60fc60392e4ba4cf7216212",
+                "85231e50eb52b8a7d6fb87ad3afb8fa075ddf320c36a186dc8f6abd1badb4c03"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.lesejury.de",
+                "www.haushaltstipps.com",
+                "www.leguano.eu",
+                "www.ofenseite.com",
+                "www.wirtschaftswissen.de",
+                "www.tum.de",
+                "www.meinreal.de",
+                "www.elternwissen.com",
+                "www.computerwissen.de",
+                "www.in-berlin-brandenburg.com",
+                "www.suedtirolmobil.info",
+                "www.gvh.de",
+                "www.gesundheitswissen.de",
+                "www.luebbe.de",
+                "www.muenchen.travel",
+                "www.workingoffice.de",
+                "www.personalwissen.de",
+                "www.krankenkasseninfo.de",
+                "alltours.de",
+                "www.gevestor.de"
+            ]
+        },
+        {
+            "rule": "ccm19\\.de\\/plugins\\/Ccm19ScriptPlaceholder\\/module\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cloud",
+                "5f3c395"
+            ],
+            "apis": {
+                "Date.prototype.getTimezoneOffset": 3,
+                "Date.prototype.getTime": 3
+            },
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "0c42b7a59ffaeda9c4794c0a7aeab18c2a968eaead4296813ca9c0d0de70ab0a",
+                "296e6faf8d01ad7584fab72ec636672e435dbb195558cb4e59e6b8ca8b87d538",
+                "ff781a118475e363e569d6488b140d80b6fdca53bfe92725f54103d92cb6ffaa",
+                "12640f4a33de7641357f50bb56dc2b6972018e6d8ac3e3b099dbe9d34623a449"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alltours.de",
+                "www.bayerischer-wald.de",
+                "www.computerwissen.de",
+                "www.gevestor.de",
+                "www.krankenkasseninfo.de",
+                "www.lesejury.de",
+                "www.luebbe.de",
+                "www.mgmotor.de",
+                "www.mgmotor.eu",
+                "www.muenchen.travel",
+                "www.munich.travel"
+            ]
+        },
+        {
+            "rule": "ccm19\\.de\\/widget",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cloud",
+                "5f3c395"
+            ],
+            "apis": {},
+            "sites": 24,
+            "prevalence": 0.000163,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.gesundheitswissen.de",
+                "alltours.de",
+                "www.krankenkasseninfo.de",
+                "www.muenchen.travel",
+                "www.in-berlin-brandenburg.com",
+                "www.gevestor.de",
+                "www.personalwissen.de",
+                "www.munich.travel",
+                "www.meinreal.de",
+                "www.suedtirolmobil.info",
+                "www.wirtschaftswissen.de",
+                "www.elternwissen.com",
+                "www.computerwissen.de",
+                "www.luebbe.de",
+                "www.haushaltstipps.com",
+                "www.mgmotor.de",
+                "www.lesejury.de",
+                "www.ofenseite.com",
+                "www.mgmotor.eu",
+                "www.bayerischer-wald.de"
+            ]
+        },
+        {
+            "rule": "ccm19\\.de\\/widget\\/details",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cloud",
+                "5f3c395"
+            ],
+            "apis": {},
+            "sites": 23,
+            "prevalence": 0.000157,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.ofenseite.com",
+                "www.gevestor.de",
+                "www.gvh.de",
+                "www.munich.travel",
+                "www.luebbe.de",
+                "www.elternwissen.com",
+                "www.haushaltstipps.com",
+                "www.bayerischer-wald.de",
+                "www.wirtschaftswissen.de",
+                "alltours.de",
+                "www.gesundheitswissen.de",
+                "www.meinreal.de",
+                "www.leguano.eu",
+                "www.krankenkasseninfo.de",
+                "www.mgmotor.eu",
+                "www.workingoffice.de",
+                "www.personalwissen.de",
+                "www.mgmotor.de",
+                "www.in-berlin-brandenburg.com",
+                "www.lesejury.de"
+            ]
+        },
+        {
+            "rule": "ccm19\\.de\\/widget",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cloud",
+                "5f3c395"
+            ],
+            "apis": {},
+            "sites": 24,
+            "prevalence": 0.000163,
+            "cnames": [],
+            "responseHashes": [
+                "b6ceb4609a690ba642f98872efa214c6beccf2abb98250ecad6563096ca9735b",
+                "c09182807bb385157ec27882e3da25a66a0dfb410ae4199459185a0adcd3f2b7",
+                "5f5b6ae4d4f5cb3790b74ec817a28e08af195422e89baf8cde2882233c02a2dc",
+                "5921de1114c818532a96958c3458ee4fe5f8e18af9252b692c9fddb249275862",
+                "8a352f9ef0199601094338dbd407f4b6978de75f426baf8c4485ee5092170359",
+                "8123f33608ab7bb103809f15d0b41bb661607fd642c48e00b81b9a2c629a9e93",
+                "2196ed250bbb0a013d6264fe4c9687cf960e2af186e0dcb5ef3618d83988e35e",
+                "76f202112d67aefa20f4d19d50ce2bcf9c6ad68e353bba6e12a38a7652a92141",
+                "c681cebeeb9cc20dc62bb864e7e7e6050a6732848292d8674522e7588b56061a",
+                "abb54e8432382d5f7b8436bf38ea0cac962635b1cc45957f8c6d9efb85209414",
+                "7ec818b7ab461ea4a4d315e7b76842f2acfcd044a0142a24338227770eb98cf1",
+                "ace4474e65d49db0da243f51433c91f39a0e8dd0fa9ba10284ec862af2d5d3d0",
+                "8d50b8e93cbf8dfd7af0f09c95b6d699bd4178f8c8fc329ee784e454d2175610",
+                "5ad2f0a1e0a2ff85348efa304d3ee5136ecb0738c20744aed7c026f0ea39aa28",
+                "f80ff58c739f9e2f26eb1c44a932aee697090f45cf350bce1d6d4670e82a1f8c",
+                "6c3c7f03688ac30a49363739e436dc7147bab044a62287a2069e41805c4e52f8",
+                "044a9bc79a6fe63d345bb4e10ac2c74730d1aa9fb6cd1b8829c063f41dc9e170",
+                "62af7c4fad7fc3aa1b86e9ffdfe9253c1caeea35ca08717a4d310af0e71de05c",
+                "c05f0ac84057f9aa6b93c62ea5abc375af2acfa28c4832b6956379c53407dfd9",
+                "2e8ed3c2909343160a64cd139c8e3c8977170d5165e7e803c113d01ccef398d6",
+                "63fe0a58bf5421e73024a2e510117d1a161b773659a87f531923772227fe29ae",
+                "a89052e05385d4638aeccea22b76f2fdb4369d7a755671810db984efe24fbf95",
+                "8669f69e6ea1484370648972ed96b2cda21309a2cc19559efb5496eb3fba0dd3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alltours.de",
+                "www.leguano.eu",
+                "www.workingoffice.de",
+                "www.bayerischer-wald.de",
+                "www.computerwissen.de",
+                "www.gevestor.de",
+                "www.elternwissen.com",
+                "www.munich.travel",
+                "www.wirtschaftswissen.de",
+                "www.muenchen.travel",
+                "www.vereinswelt.de",
+                "www.personalwissen.de",
+                "www.suedtirolmobil.info",
+                "www.in-berlin-brandenburg.com",
+                "www.mgmotor.eu",
+                "www.meinreal.de",
+                "www.krankenkasseninfo.de",
+                "www.mgmotor.de",
+                "www.gesundheitswissen.de",
+                "www.ofenseite.com"
+            ]
+        },
+        {
+            "rule": "ccm19\\.de\\/statistics\\/consent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cloud",
+                "5f3c395"
+            ],
+            "apis": {},
+            "sites": 23,
+            "prevalence": 0.000157,
+            "cnames": [],
+            "responseHashes": [
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.wirtschaftswissen.de",
+                "www.in-berlin-brandenburg.com",
+                "www.munich.travel",
+                "www.gvh.de",
+                "www.gesundheitswissen.de",
+                "www.meinreal.de",
+                "www.elternwissen.com",
+                "www.workingoffice.de",
+                "www.luebbe.de",
+                "www.mgmotor.eu",
+                "www.haushaltstipps.com",
+                "www.gevestor.de",
+                "www.bayerischer-wald.de",
+                "www.computerwissen.de",
+                "www.personalwissen.de",
+                "www.ofenseite.com",
+                "www.leguano.eu",
+                "www.krankenkasseninfo.de",
+                "alltours.de",
+                "www.vereinswelt.de"
+            ]
+        },
+        {
+            "rule": "ccm19\\.de\\/statistics\\/consent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cloud",
+                "5f3c395"
+            ],
+            "apis": {},
+            "sites": 23,
+            "prevalence": 0.000157,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.gvh.de",
+                "www.bayerischer-wald.de",
+                "www.in-berlin-brandenburg.com",
+                "www.workingoffice.de",
+                "www.mgmotor.eu",
+                "www.elternwissen.com",
+                "www.krankenkasseninfo.de",
+                "www.meinreal.de",
+                "www.computerwissen.de",
+                "www.haushaltstipps.com",
+                "www.muenchen.travel",
+                "www.wirtschaftswissen.de",
+                "www.luebbe.de",
+                "www.personalwissen.de",
+                "www.ofenseite.com",
+                "www.gesundheitswissen.de",
+                "www.gevestor.de",
+                "www.munich.travel",
+                "www.mgmotor.de",
+                "alltours.de"
+            ]
+        },
+        {
+            "rule": "ccm19\\.de\\/page_check\\/report",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cloud",
+                "5f3c395"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alltours.de",
+                "www.computerwissen.de",
+                "www.gesundheitswissen.de",
+                "www.in-berlin-brandenburg.com",
+                "www.krankenkasseninfo.de",
+                "www.meinreal.de",
+                "www.ofenseite.com",
+                "www.suedtirolmobil.info",
+                "www.tum.de"
+            ]
+        },
+        {
+            "rule": "ccm19\\.de\\/page_check\\/report",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cloud",
+                "5f3c395"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alltours.de",
+                "www.computerwissen.de",
+                "www.gesundheitswissen.de",
+                "www.in-berlin-brandenburg.com",
+                "www.krankenkasseninfo.de",
+                "www.meinreal.de",
+                "www.ofenseite.com",
+                "www.suedtirolmobil.info",
+                "www.tum.de"
+            ]
+        },
+        {
+            "rule": "ccm19\\.de\\/app\\/public\\/ccm19\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "5f3c395"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 9,
+                "window.sessionStorage": 9,
+                "window.localStorage": 9,
+                "Document.cookie getter": 9,
+                "Navigator.prototype.platform": 8,
+                "Navigator.prototype.language": 8,
+                "Document.cookie setter": 3
+            },
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "36e3ff397b4b5fe6db8a15cb9f0acf0bd60e3db53d14e372b9e61fba4d7d2dcb",
+                "01f7bb1a4d1cc9c63caa60bf6e7cf0bd29e3e55e4f5f5da8af12e0160f0bb7bf",
+                "95539faee311bd3322f5fa191e740c8d2308e27581572f330976ae530e8e83dd",
+                "9fa1e20e4ecde0801abf3a3c50650ff4e51c10b077f41cbb0f6f9aede5d87920",
+                "a86d8cac4bcf08195ddc95b541c210abba4617f0fff57f46a905743dae3effa0",
+                "e8e73c6c139ad0937ccc1c899bc30f7f887703da7321021d376cf0a2c432ffbd",
+                "5c1b4ce6c05f88acfa42c8c3a3abd789fb8cbab30369aa9fdb9429bed5d75269",
+                "8d3df34e0f5e8aa76080a45517cea08b25b2c38572c4be9a688cbb7701d1dfe5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elternwissen.com",
+                "www.gesundheitswissen.de",
+                "www.muenchen.travel",
+                "www.munich.travel",
+                "www.personalwissen.de",
+                "www.suedtirolmobil.info",
+                "www.vereinswelt.de",
+                "www.wirtschaftswissen.de",
+                "www.workingoffice.de"
+            ]
+        },
+        {
+            "rule": "ccm19\\.de\\/js\\/frontend\\/ccm19\\.components\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "5f3c395",
+                "cloud"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 6
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "958f613aaeca05b0dd7636d6b3b17f37923f39535ca56a86d68e2bce20aae81c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "elternwissen.com",
+                "www.haushaltstipps.com",
+                "www.in-berlin-brandenburg.com",
+                "www.krankenkasseninfo.de",
+                "www.vereinswelt.de",
+                "www.workingoffice.de"
+            ]
+        },
+        {
+            "rule": "ccm19\\.de\\/x-content-blocked\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e6dc86dca869814cbdff43fd84230d1b3d11920dbcde42590bd2113eba0c7edf"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mgmotor.eu",
+                "www.mgmotor.eu"
+            ]
+        },
+        {
+            "rule": "ccm19\\.de\\/x-content-blocked\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cloud"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0b172b3a8622d4c90272847cf62ea6ae179d55f63168395506b36b30600d03d0"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mgmotor.eu",
+                "www.mgmotor.eu"
+            ]
+        },
+        {
+            "rule": "ccm19\\.de\\/logo\\/63ff8ec11f297556000693c9\\/63ff8ec11f29755694752c49\\/63ff8ec31f297556000693f6",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "5f3c395"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "361ab0a66c8d8fd3091f80cbc885d7e76934360797e863ca7731decc66104f1f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "muenchen.travel",
+                "www.munich.travel"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9516129032258065
+        },
+        {
+            "domain": "mgmotor.it",
+            "prevalence": 0.04838709677419355
+        }
+    ],
+    "types": {
+        "Script": 42,
+        "Stylesheet": 27,
+        "Preflight": 56,
+        "Other": 23,
+        "XHR": 56,
+        "Document": 2,
+        "Image": 2
+    },
+    "nameservers": [
+        "ns5.kasserver.com",
+        "ns6.kasserver.com"
+    ]
+}

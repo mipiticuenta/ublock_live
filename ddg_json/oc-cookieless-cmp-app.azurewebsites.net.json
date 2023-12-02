@@ -1,0 +1,83 @@
+{
+    "domain": "oc-cookieless-cmp-app.azurewebsites.net",
+    "owner": {
+        "name": "Microsoft Corporation",
+        "displayName": "Microsoft",
+        "privacyPolicy": "https://privacy.microsoft.com/en-us/privacystatement",
+        "url": "http://microsoft.com"
+    },
+    "source": [
+        "DuckDuckGo-NO"
+    ],
+    "prevalence": 0.000403,
+    "sites": 4,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "oc-cookieless-cmp-app\\.azurewebsites\\.net\\/cmp\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Document.cookie getter": 4
+            },
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [
+                "19904ff2645b2ada1f886d08b13e2416247ba41547ba81b0d1a35d9dc502b85f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sunkost.no",
+                "www.jernia.no",
+                "www.mobelringen.no",
+                "www.njff.no"
+            ]
+        },
+        {
+            "rule": "oc-cookieless-cmp-app\\.azurewebsites\\.net\\/endpoint\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.000403,
+            "cnames": [],
+            "responseHashes": [
+                "19ea693dd9cce5f2f7bb1452cc2ccdfd58e3b69cf6a1eb5230c3b24e6636fb88",
+                "74bbe2e13a5436aa6a3d08e1690740fa77a05036961c94a3e45dafcdfb6f841b",
+                "00eb54d0931320d9496c04718182d9396be56465a2bc025f66eb3041f0b56e78"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sunkost.no",
+                "www.jernia.no",
+                "www.mobelringen.no",
+                "www.njff.no"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "Fetch": 4
+    },
+    "nameservers": []
+}

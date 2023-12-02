@@ -1,0 +1,93 @@
+{
+    "domain": "truste-svc.net",
+    "owner": {
+        "name": "TrustArc Inc.",
+        "displayName": "TrustArc",
+        "privacyPolicy": "https://www.trustarc.com/privacy-policy/",
+        "url": "http://trustarc.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000327,
+    "sites": 48,
+    "subdomains": [
+        "prefmgr-cookie"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "truste-svc\\.net\\/cookie_js\\/cookie_iframe\\.html",
+            "cookies": 0.0000409,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prefmgr-cookie"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 36,
+                "Document.cookie getter": 25,
+                "Navigator.prototype.userAgent": 6,
+                "Document.cookie setter": 6
+            },
+            "sites": 36,
+            "prevalence": 0.000245,
+            "cnames": [],
+            "responseHashes": [
+                "e5356c4d200584b116d9ac14f89d883b120dbe4d7878914a4fa22358074c74f8"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {
+                "cookie_3rdparty": {
+                    "ttl": 37,
+                    "length": 7,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 0.16666666666666666
+                }
+            },
+            "firstPartyCookiesSent": {
+                "prevPageURL": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "www.philips.pl",
+                "www.philips.com",
+                "www.philips.nl",
+                "www.cooperlighting.com",
+                "www.philips.fr",
+                "www.southwesternrailway.com",
+                "www.underarmour.co.uk",
+                "www.avantiwestcoast.co.uk",
+                "www.gwr.com",
+                "www.keysight.com",
+                "www.lighting.philips.com",
+                "www.philips.be",
+                "www.usa.lighting.philips.com",
+                "www.philips.se",
+                "www.starbucks.co.uk",
+                "www.wizconnected.com",
+                "www.ascap.com",
+                "www.underarmour.ca",
+                "www.philips.ch",
+                "support.wacom.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000477,
+    "topInitiators": [
+        {
+            "domain": "trustarc.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Document": 36
+    },
+    "nameservers": [
+        "ns-1783.awsdns-30.co.uk",
+        "ns-200.awsdns-25.com",
+        "ns-678.awsdns-20.net",
+        "ns-1492.awsdns-58.org"
+    ]
+}

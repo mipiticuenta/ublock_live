@@ -1,0 +1,89 @@
+{
+    "domain": "smartframe.io",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "static"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "smartframe\\.io\\/sf\\/c7e27bda853029015720e982f116fa8d\\/smartframe\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.platform": 2,
+                "window.devicePixelRatio": 1,
+                "URL.createObjectURL": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a742cff1c8009c7a98fb25b20bde789e0e46c2eea4701467bfe15c0d0c679255"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "truckspring.com",
+                "www.truckspring.com"
+            ]
+        },
+        {
+            "rule": "smartframe\\.io\\/themes\\/c7e27bda853029015720e982f116fa8d\\/secondary\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ad6ac4dc535972137cdc05be1f8b4d45940fc3b22e2849de2c9993ee74d92d9c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "truckspring.com",
+                "www.truckspring.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.3333333333333333
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Fetch": 2
+    },
+    "nameservers": [
+        "sullivan.ns.cloudflare.com",
+        "heidi.ns.cloudflare.com"
+    ]
+}

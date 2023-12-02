@@ -1,0 +1,78 @@
+{
+    "domain": "continental-tires.com",
+    "owner": {
+        "name": "Continental AG",
+        "displayName": "Continental"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "api.productsearch"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "continental-tires\\.com\\/v1\\/continental\\/de\\/de\\/bc\\/sbs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.productsearch"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "continental-reifen.de",
+                "www.continental-reifen.de"
+            ]
+        },
+        {
+            "rule": "continental-tires\\.com\\/v1\\/continental\\/de\\/de\\/bc\\/sbs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.productsearch"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e6e5d924474bbcae41e581f258f4d68d494ebaeef890c176360480df0c672813"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "continental-reifen.de",
+                "www.continental-reifen.de"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Preflight": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "dns1.cscdns.net",
+        "dns2.cscdns.net"
+    ]
+}

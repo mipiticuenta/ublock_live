@@ -1,0 +1,350 @@
+{
+    "domain": "nytimes.map.fastly.net",
+    "owner": {
+        "name": "Fastly, Inc.",
+        "displayName": "Fastly",
+        "privacyPolicy": "https://www.fastly.com/privacy",
+        "url": "http://fastly.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "csp.dev.nytimes.com",
+            "resolved": "nytimes.map.fastly.net"
+        },
+        {
+            "original": "customerchat.nytimes.com",
+            "resolved": "nytimes.map.fastly.net"
+        },
+        {
+            "original": "mwcm.nytimes.com",
+            "resolved": "nytimes.map.fastly.net"
+        },
+        {
+            "original": "myaccount.nytimes.com",
+            "resolved": "nytimes.map.fastly.net"
+        },
+        {
+            "original": "nytco-assets.nytimes.com",
+            "resolved": "nytimes.map.fastly.net"
+        },
+        {
+            "original": "vp.nyt.com",
+            "resolved": "nytimes.map.fastly.net"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "nytimes\\.map\\.fastly\\.net\\/unified_lire\\/js\\/standalone-client\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "myaccount.nytimes.com",
+                    "resolved": "nytimes.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "b326dbb48946443902518342f7940ec56d13e642c0689ada27261bba0dc357cb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "cooking.nytimes.com"
+            ]
+        },
+        {
+            "rule": "nytimes\\.map\\.fastly\\.net\\/auth\\/iframe\\/check-email",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "myaccount.nytimes.com",
+                    "resolved": "nytimes.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "5f5cd7185bf5ce14fc8779054e3036686b9ee74483ecf71f76b88332a0982258"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "cooking.nytimes.com"
+            ]
+        },
+        {
+            "rule": "nytimes\\.map\\.fastly\\.net\\/lire_ui\\/js\\/check-email\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "myaccount.nytimes.com",
+                    "resolved": "nytimes.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "1c23c31c103bff0a76d3ea8d5187a9b4f7f3dd5b32049c24e88fe54c30fbc871"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "cooking.nytimes.com"
+            ]
+        },
+        {
+            "rule": "nytimes\\.map\\.fastly\\.net\\/report",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "csp.dev.nytimes.com",
+                    "resolved": "nytimes.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "3a25d640553a984fbc219db80126e3fc8416ba5281036bcce1ded282e78cc610"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "cooking.nytimes.com"
+            ]
+        },
+        {
+            "rule": "nytimes\\.map\\.fastly\\.net\\/contact-us-ui\\/bundle\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "customerchat.nytimes.com",
+                    "resolved": "nytimes.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "bcbf54332d6857e090cfe28395ab8587e0f3a0f0e523b42a990f88d872ff0512"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "help.nytimes.com"
+            ]
+        },
+        {
+            "rule": "nytimes\\.map\\.fastly\\.net\\/queuestatus",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "customerchat.nytimes.com",
+                    "resolved": "nytimes.map.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "help.nytimes.com"
+            ]
+        },
+        {
+            "rule": "nytimes\\.map\\.fastly\\.net\\/queuestatus",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "customerchat.nytimes.com",
+                    "resolved": "nytimes.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "b4621275089956350e3eafbd034521072e7755dae7d4aa758f3ad6fdd6acf594"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "help.nytimes.com"
+            ]
+        },
+        {
+            "rule": "nytimes\\.map\\.fastly\\.net\\/video\\/2023\\/11\\/01\\/112812_1_01vid-Carousel-57393_wg_480p\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "vp.nyt.com",
+                    "resolved": "nytimes.map.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "www.nytimes.com"
+            ]
+        },
+        {
+            "rule": "nytimes\\.map\\.fastly\\.net\\/capi\\/metered_assets\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "mwcm.nytimes.com",
+                    "resolved": "nytimes.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "703fa24f16fb9ec0763e3367b177c4d2cff025581a26cc42ac4e1c1b76bf191c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytimes.com",
+                "www.nytimes.com"
+            ]
+        },
+        {
+            "rule": "nytimes\\.map\\.fastly\\.net\\/2018\\/12\\/Office-Romance-10_5_2015-10\\.04am\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "nytco-assets.nytimes.com",
+                    "resolved": "nytimes.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "1302a483fde21a918795d3a89c38c4b9681b3a5a5c6c47e8873d5f341cb0dbb9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytco.com",
+                "www.nytco.com"
+            ]
+        },
+        {
+            "rule": "nytimes\\.map\\.fastly\\.net\\/2018\\/10\\/drone_1-1\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "nytco-assets.nytimes.com",
+                    "resolved": "nytimes.map.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nytco.com",
+                "www.nytco.com"
+            ]
+        }
+    ],
+    "categories": [
+        "Ad Motivated Tracking",
+        "Advertising",
+        "Analytics",
+        "Third-Party Analytics Marketing",
+        "Action Pixels",
+        "CDN",
+        "Embedded Content",
+        "Session Replay"
+    ],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.78125
+        },
+        {
+            "domain": "go-mpulse.net",
+            "prevalence": 0.15625
+        },
+        {
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 0.0625
+        }
+    ],
+    "types": {
+        "Script": 6,
+        "Document": 2,
+        "Other": 2,
+        "Preflight": 2,
+        "XHR": 2,
+        "Media": 4,
+        "Fetch": 2,
+        "Image": 2
+    },
+    "nameservers": []
+}

@@ -1,0 +1,254 @@
+{
+    "domain": "woopic.com",
+    "owner": {
+        "name": "Orange",
+        "displayName": "Orange"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "c",
+        "gp.cdn",
+        "sosh.cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "woopic\\.com\\/libs\\/common\\/o_load_responsive\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3ab8cd5d14ec1125668788f21c9da52d593cb9ec9989b7638ecc36e6962577f3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/magic\\/configuration\\.tgif\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gp.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "110fc0d903269e07466e6046d1133356354f9344421364cf22d04c477785e512"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/libs\\/13j1f4X8V\\/common\\/js\\/common\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "gp.cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "743783d9db6990e6e9fbe495b3f334c88e4c5d42af188fd273948a0071225298"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "userconsent": {
+                    "ttl": 31622412,
+                    "length": 113,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "utag_main": {
+                    "ttl": 31536012,
+                    "length": 141,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "LPVID": {
+                    "ttl": 31536012,
+                    "length": 22,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "LPSID-31127979": {
+                    "ttl": null,
+                    "length": 22,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/libs\\/13j1f4X8V\\/common\\/css\\/common\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gp.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fed3b7b944c81ce60d2add10927814cf11294cae5346f27143be8dfa13c5d11f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/magic\\/o_tealium\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gp.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "391e440da19592cb43b7f68530537735f391374a2a0d977aa14ed0ee13444819"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/elcossosh\\/libs\\/modules\\/sosh\\/o_load_sosh_responsive\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sosh.cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0bfd1f30dd2497fbe13e3425da239571646a330a235a1d9bc92f9eae437556dc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/elcossosh\\/libs\\/\\/1698136798654297252\\/modules\\/sosh\\/dist\\/js\\/sosh2_core\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sosh.cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "90928f467508d21e72b50cb394911c3abbb0568241c3eb67f8602d55df56683a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "www.sosh.fr"
+            ]
+        },
+        {
+            "rule": "woopic\\.com\\/elcossosh\\/libs\\/\\/1698136798654297252\\/modules\\/sosh\\/dist\\/css\\/sosh2_core\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sosh.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fa858d6957a0c617ac3ffde29154d37e39398ab850223f16aa8edafb27028b1b"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sosh.fr",
+                "www.sosh.fr"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 12,
+        "Stylesheet": 4
+    },
+    "nameservers": [
+        "ns5.fti.net",
+        "ns3.fti.net",
+        "ns1.fti.net",
+        "ns4.fti.net",
+        "ns6.fti.net",
+        "ns2.fti.net"
+    ]
+}

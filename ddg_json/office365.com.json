@@ -1,0 +1,96 @@
+{
+    "domain": "office365.com",
+    "owner": {
+        "name": "Microsoft Corporation",
+        "displayName": "Microsoft",
+        "privacyPolicy": "https://privacy.microsoft.com/en-us/privacystatement",
+        "url": "http://microsoft.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "outlook"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "office365\\.com\\/owa\\/calendar\\/BetterMusic3@bettermusic\\.com\\.au\\/bookings\\/",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "outlook"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a1e0d4542e1f03279df685f131ac8af181470ef972654b8585624eaace663cbc"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bettermusic.com.au",
+                "www.bettermusic.com.au"
+            ]
+        },
+        {
+            "rule": "office365\\.com\\/owa\\/calendar\\/0ddf4be5ef624c779d9ec5b0aca45842@gtcountymi\\.gov\\/0debfd222c8344c0b865d8eff103c68316841381106987361482\\/service\\.svc",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "outlook"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6422c315595ee7c8efcbc112f91a80286bb9d475cce763e5c4b5195912b242e1"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gtcountymi.gov",
+                "www.gtcountymi.gov"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5555555555555556
+        },
+        {
+            "domain": "office.net",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "msftauth.net",
+            "prevalence": 0.1111111111111111
+        }
+    ],
+    "types": {
+        "Document": 2,
+        "Fetch": 2
+    },
+    "nameservers": [
+        "nse24.o365filtering.com",
+        "nse21.o365filtering.com",
+        "ns3-38.azure-dns.org",
+        "ns1-38.azure-dns.com",
+        "nse12.o365filtering.com",
+        "ns4-38.azure-dns.info",
+        "ns2-38.azure-dns.net",
+        "nse13.o365filtering.com"
+    ]
+}

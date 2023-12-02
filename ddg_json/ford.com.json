@@ -1,0 +1,242 @@
+{
+    "domain": "ford.com",
+    "owner": {
+        "name": "Ford Motor Company",
+        "displayName": "Ford Motor Company"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "api.pd01e.gcp",
+        "www.account",
+        "www.globalowneraem"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "ford\\.com\\/api\\/fps\\/personalization\\/v1\\/set",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.pd01e.gcp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6a85daa7fcb44447e49380008ba1a67781c99efbfa0768b25082b8ce23e32704"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "5starford.com",
+                "www.5starford.com"
+            ]
+        },
+        {
+            "rule": "ford\\.com\\/etc\\/fd\\/fma\\/bundle\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www.account"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5cd6c794f49bf1dbd3ffd87660411b089bf8f5895c7c6580ec7c75fb0e643756"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "fma_YmFuYW5h": {
+                    "ttl": 86406,
+                    "length": 4,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ford.it",
+                "www.ford.com.au"
+            ]
+        },
+        {
+            "rule": "ford\\.com\\/content\\/dam\\/global-owner\\/ford\\/it\\/it-it\\/content-fragments\\/emplifi\\/experience-notification-banner\\.global-owner-model\\.json",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www.globalowneraem"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2cd8f37b25971d011efad07dfe981d510cc4dc7243251088247080259f914cd8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ford.it",
+                "www.ford.it"
+            ]
+        },
+        {
+            "rule": "ford\\.com\\/content\\/dam\\/global-owner\\/ford\\/it\\/it-it\\/content-fragments\\/vehicles\\.vehicle-data\\.default\\.default\\.search\\.json",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www.globalowneraem"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0284da95d006d142dcf4ae1edd45abf0695d47889929546ee17e380c5cbce613"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ford.it",
+                "www.ford.it"
+            ]
+        },
+        {
+            "rule": "ford\\.com\\/content\\/dam\\/global-owner\\/ford\\/it\\/it-it\\/content-fragments\\/emplifi\\/emplifi-feedback\\.global-owner-model\\.json",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www.globalowneraem"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fdfbd5cee8eabd9ad3eb41f0378c2de571f39b242ef8197408fae2af9bd0c2a7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ford.it",
+                "www.ford.it"
+            ]
+        },
+        {
+            "rule": "ford\\.com\\/content\\/dam\\/global-owner\\/ford\\/it\\/it-it\\/content-fragments\\/vehicles\\.vehicle-data\\.default\\.default\\.help-cards\\.json",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www.globalowneraem"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "86aa7b10a659069911fa8beabf079229101dffe3f52f0251b155d71680cd1746"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ford.it",
+                "www.ford.it"
+            ]
+        },
+        {
+            "rule": "ford\\.com\\/content\\/dam\\/global-owner\\/ford\\/it\\/it-it\\/content-fragments\\/common\\/disclosures\\.global-owner-model\\.json",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www.globalowneraem"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "00fc177a484f8025175f497a4306e7c08099d0f3349945d53da368a3f95ebf81"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ford.it",
+                "www.ford.it"
+            ]
+        },
+        {
+            "rule": "ford\\.com\\/content\\/dam\\/global-owner\\/ford\\/it\\/it-it\\/content-fragments\\/emplifi\\/recalls-search-terms\\.global-owner-model\\.json",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www.globalowneraem"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2cd8f37b25971d011efad07dfe981d510cc4dc7243251088247080259f914cd8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ford.it",
+                "www.ford.it"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9215686274509803
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.058823529411764705
+        },
+        {
+            "domain": "jquery.com",
+            "prevalence": 0.0196078431372549
+        }
+    ],
+    "types": {
+        "XHR": 14,
+        "Script": 2
+    },
+    "nameservers": [
+        "dns005.ford.com",
+        "extdns002.ford.com",
+        "extdns009.ford.com",
+        "dns006.ford.com",
+        "extdns007.ford.com",
+        "extdns001.ford.com",
+        "extdns008.ford.com",
+        "extdns010.ford.com"
+    ]
+}

@@ -1,0 +1,544 @@
+{
+    "domain": "livestream.com",
+    "owner": {
+        "name": "Vimeo, LLC",
+        "displayName": "Vimeo",
+        "privacyPolicy": "https://vimeo.com/privacy",
+        "url": "http://vimeo.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000681,
+    "sites": 10,
+    "subdomains": [
+        "cdn",
+        "api.new",
+        "vpe-cdn",
+        "sio-1",
+        "analytics"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "livestream\\.com\\/assets\\/plugins\\/referrer_tracking\\.js",
+            "cookies": 0.0000477,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "cfab07f17dd8f777fe60f7e2abc45d1e994c78d38ed79447db74af62ac9a05de"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nd.gov",
+                "council.nyc.gov",
+                "www.austinisd.org",
+                "www.golocalprov.com",
+                "www.nd.gov",
+                "www.theyeshivaworld.com",
+                "www.uscg.mil"
+            ]
+        },
+        {
+            "rule": "livestream\\.com\\/deploy\\/apps\\/production\\/events\\/5\\.3\\.1\\/stylesheets\\/embed\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "1ee2137dcfa7e9aef5d1ca5330fac65453814f4beca6bbb43e0d9ec0a602b3e2"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "council.nyc.gov",
+                "www.austinisd.org",
+                "www.golocalprov.com",
+                "www.njlottery.com",
+                "www.theyeshivaworld.com",
+                "www.valottery.com"
+            ]
+        },
+        {
+            "rule": "livestream\\.com\\/deploy\\/apps\\/production\\/events\\/5\\.3\\.1\\/javascripts\\/require\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.platform": 7,
+                "Date.prototype.getTime": 7
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "ea95373bd799c2649b34c4f999a4f60dc709679338fcda126a97f00190ace09a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "council.nyc.gov",
+                "www.austinisd.org",
+                "www.golocalprov.com",
+                "www.njlottery.com",
+                "www.theyeshivaworld.com",
+                "www.valottery.com"
+            ]
+        },
+        {
+            "rule": "livestream\\.com\\/client\\/location",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "f2ebaabcb36d15ffd79a6025db56a3722c45894b5b37ad0193ada913efcbb3a8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "council.nyc.gov",
+                "www.austinisd.org",
+                "www.golocalprov.com",
+                "www.njlottery.com",
+                "www.theyeshivaworld.com",
+                "www.valottery.com"
+            ]
+        },
+        {
+            "rule": "livestream\\.com\\/deploy\\/apps\\/production\\/events\\/5\\.3\\.1\\/javascripts\\/event_embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 7,
+                "Navigator.prototype.platform": 7,
+                "Navigator.prototype.plugins": 7,
+                "window.localStorage": 7,
+                "Screen.prototype.width": 7,
+                "Screen.prototype.height": 7,
+                "window.name": 7,
+                "Date.prototype.getTime": 5,
+                "window.innerWidth": 7,
+                "window.innerHeight": 7,
+                "Navigator.prototype.vendor": 7,
+                "Date.prototype.getTimezoneOffset": 3
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "38480dbe2e9ac7b5288bb7d64bebd48ba135493bd98ac0156bc231fd62b5de76"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "council.nyc.gov",
+                "www.austinisd.org",
+                "www.golocalprov.com",
+                "www.njlottery.com",
+                "www.theyeshivaworld.com",
+                "www.valottery.com"
+            ]
+        },
+        {
+            "rule": "livestream\\.com\\/servers\\/sio\\/leastloaded\\.json",
+            "cookies": 0.0000409,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.new"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "www.austinisd.org",
+                "www.golocalprov.com",
+                "www.njlottery.com",
+                "www.theyeshivaworld.com",
+                "www.valottery.com"
+            ]
+        },
+        {
+            "rule": "livestream\\.com\\/tinsel\\/svg\\/events-1\\.0\\.0\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "170ecca59e8ed0085fd62e84d01f9cb7087e3f51acd852424dd358bbf9f76e86"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "council.nyc.gov",
+                "www.austinisd.org",
+                "www.golocalprov.com",
+                "www.njlottery.com",
+                "www.theyeshivaworld.com",
+                "www.valottery.com"
+            ]
+        },
+        {
+            "rule": "livestream\\.com\\/servers\\/sio\\/leastloaded\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.new"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "e5e0798e10fc4374eb8ed387d53d138f6a6167c985dc208aab24cd5bafc84511"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "council.nyc.gov",
+                "www.austinisd.org",
+                "www.golocalprov.com",
+                "www.njlottery.com",
+                "www.theyeshivaworld.com",
+                "www.valottery.com"
+            ]
+        },
+        {
+            "rule": "livestream\\.com\\/playerjs\\/version\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vpe-cdn"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "c0910b826bdec0e8c83d42dda00c11be6d772dd86557e506aa81c0c119ad42e5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "council.nyc.gov",
+                "www.austinisd.org",
+                "www.golocalprov.com",
+                "www.njlottery.com",
+                "www.theyeshivaworld.com",
+                "www.valottery.com"
+            ]
+        },
+        {
+            "rule": "livestream\\.com\\/playerm\\/version\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vpe-cdn"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "15b0b74c8f577fc68caa6314e48d0b172d24dc387071e2be17a8d16a6bf4a331"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "council.nyc.gov",
+                "www.austinisd.org",
+                "www.golocalprov.com",
+                "www.njlottery.com",
+                "www.theyeshivaworld.com",
+                "www.valottery.com"
+            ]
+        },
+        {
+            "rule": "livestream\\.com\\/socket\\.io\\/1\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sio-1"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "2e39d13cb6cc6b7471b06df0d3b5f8cef5da2cd831f2726229f60f794a1668b0",
+                "d55bd0a983513f980a7f40a351a5ae46a6243692ba34f43a469144ba0e6edefc",
+                "2ece7705c6ab46343182450dc40945ddd275beab541dbfc7e6c94dbbde79fdbf",
+                "1978b79ba1cea4030f9b17341b608e28b12f11eba96949f040cabdba2bfb6e7b",
+                "98cdd0b2189bb69577870a1e48bf20b40e62e657356d0d70ed1f867f4704fb5a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "council.nyc.gov",
+                "www.austinisd.org",
+                "www.golocalprov.com",
+                "www.njlottery.com",
+                "www.theyeshivaworld.com",
+                "www.valottery.com"
+            ]
+        },
+        {
+            "rule": "livestream\\.com\\/playerjs\\/0\\.78\\.0\\/player\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "vpe-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 6,
+                "URL.createObjectURL": 6,
+                "window.localStorage": 6,
+                "Document.cookie getter": 2,
+                "PerformanceTiming.prototype.navigationStart": 6,
+                "MediaSource.isTypeSupported": 2
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "2068c5698b2546881a4c90cd2d7b28192621121d2bf81b62f83176fc34171deb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "council.nyc.gov",
+                "www.austinisd.org",
+                "www.njlottery.com",
+                "www.theyeshivaworld.com",
+                "www.valottery.com"
+            ]
+        },
+        {
+            "rule": "livestream\\.com\\/playerjs\\/0\\.78\\.0\\/player\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vpe-cdn"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "54de12752cc1e946605b015e5877a293356de453aae9bd6c613964a02b248189"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "council.nyc.gov",
+                "www.austinisd.org",
+                "www.njlottery.com",
+                "www.theyeshivaworld.com",
+                "www.valottery.com"
+            ]
+        },
+        {
+            "rule": "livestream\\.com\\/playerm\\/2\\.6\\.0\\/m\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "vpe-cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 6,
+                "window.localStorage": 6,
+                "PerformanceTiming.prototype.navigationStart": 6,
+                "Document.cookie getter": 4,
+                "MediaSource.isTypeSupported": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "4d890e56c7274c71c3247ad654367338e3bcd928714017cdd027664a0b329825"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "council.nyc.gov",
+                "www.austinisd.org",
+                "www.njlottery.com",
+                "www.theyeshivaworld.com",
+                "www.valottery.com"
+            ]
+        },
+        {
+            "rule": "livestream\\.com\\/playerm\\/2\\.6\\.0\\/m\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vpe-cdn"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "0a07ddcb2cf7443cbacab0d5f78b9df743792224339839001007939f8fbe0ca5"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "council.nyc.gov",
+                "www.austinisd.org",
+                "www.njlottery.com",
+                "www.theyeshivaworld.com",
+                "www.valottery.com"
+            ]
+        },
+        {
+            "rule": "livestream\\.com\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "council.nyc.gov",
+                "www.theyeshivaworld.com",
+                "www.valottery.com"
+            ]
+        },
+        {
+            "rule": "livestream\\.com\\/socket\\.io\\/1\\/xhr-polling\\/3T6nHrVnGRnbR0i5tOCB",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sio-1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nyc.gov",
+                "council.nyc.gov"
+            ]
+        },
+        {
+            "rule": "livestream\\.com\\/accounts\\/4608323\\/events\\/5051567\\/player",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Document.cookie getter": 1,
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b89da72fa4b19a52821534a2217d9c43dec715b12767b0ac857fe2dc892c62e3"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "state.pa.us",
+                "www.valottery.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 33,
+        "Stylesheet": 19,
+        "XHR": 48,
+        "Preflight": 6,
+        "Document": 2
+    },
+    "nameservers": [
+        "ns-473.awsdns-59.com",
+        "ns-1313.awsdns-36.org",
+        "ns-795.awsdns-35.net",
+        "ns-2028.awsdns-61.co.uk"
+    ]
+}

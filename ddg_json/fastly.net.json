@@ -1,0 +1,291 @@
+{
+    "domain": "fastly.net",
+    "owner": {
+        "name": "Fastly, Inc.",
+        "displayName": "Fastly",
+        "privacyPolicy": "https://www.fastly.com/privacy",
+        "url": "http://fastly.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "e.sni.us-eu",
+        "d.sni.us-eu"
+    ],
+    "cnames": [
+        {
+            "original": "crunchy-tango.dotabuff.com",
+            "resolved": "d.sni.us-eu.fastly.net"
+        },
+        {
+            "original": "my.cityexperiences.com",
+            "resolved": "e.sni.us-eu.fastly.net"
+        },
+        {
+            "original": "red-shell.speedrun.com",
+            "resolved": "d.sni.us-eu.fastly.net"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "fastly\\.net\\/assets\\/cex_website\\/hbhcco\\/13\\/comboTour\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "e.sni.us-eu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "my.cityexperiences.com",
+                    "resolved": "e.sni.us-eu.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cityexperiences.com",
+                "www.cityexperiences.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/cargo\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "d.sni.us-eu"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "crunchy-tango.dotabuff.com",
+                    "resolved": "d.sni.us-eu.fastly.net"
+                },
+                {
+                    "original": "red-shell.speedrun.com",
+                    "resolved": "d.sni.us-eu.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "91db08ff3be19589c97ad17a295104f43fb7b83f0f4a0b533982aaaa91e932e7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dotabuff.com",
+                "www.dotabuff.com",
+                "www.speedrun.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/v",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d.sni.us-eu"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "crunchy-tango.dotabuff.com",
+                    "resolved": "d.sni.us-eu.fastly.net"
+                },
+                {
+                    "original": "red-shell.speedrun.com",
+                    "resolved": "d.sni.us-eu.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dotabuff.com",
+                "www.dotabuff.com",
+                "www.speedrun.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/d",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d.sni.us-eu"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "crunchy-tango.dotabuff.com",
+                    "resolved": "d.sni.us-eu.fastly.net"
+                },
+                {
+                    "original": "red-shell.speedrun.com",
+                    "resolved": "d.sni.us-eu.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+                "d087985983f96c8b5805301296b79428ffca2035865f31755f67342c8965ea8f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dotabuff.com",
+                "www.dotabuff.com",
+                "www.speedrun.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/d",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d.sni.us-eu"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "crunchy-tango.dotabuff.com",
+                    "resolved": "d.sni.us-eu.fastly.net"
+                },
+                {
+                    "original": "red-shell.speedrun.com",
+                    "resolved": "d.sni.us-eu.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dotabuff.com",
+                "www.dotabuff.com",
+                "www.speedrun.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/pb\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "d.sni.us-eu"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "crunchy-tango.dotabuff.com",
+                    "resolved": "d.sni.us-eu.fastly.net"
+                },
+                {
+                    "original": "red-shell.speedrun.com",
+                    "resolved": "d.sni.us-eu.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "4c5581af037b2103154357728e321f6c0eb67bc0aea42f9f3443963993b19797"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dotabuff.com",
+                "www.dotabuff.com",
+                "www.speedrun.com"
+            ]
+        },
+        {
+            "rule": "fastly\\.net\\/pa",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "d.sni.us-eu"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "crunchy-tango.dotabuff.com",
+                    "resolved": "d.sni.us-eu.fastly.net"
+                },
+                {
+                    "original": "red-shell.speedrun.com",
+                    "resolved": "d.sni.us-eu.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dotabuff.com",
+                "www.dotabuff.com",
+                "www.speedrun.com"
+            ]
+        }
+    ],
+    "categories": [
+        "Ad Motivated Tracking",
+        "Advertising",
+        "Analytics",
+        "Third-Party Analytics Marketing",
+        "Action Pixels",
+        "CDN",
+        "Embedded Content",
+        "Session Replay"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.5384615384615384
+        },
+        {
+            "domain": "pubmatic.com",
+            "prevalence": 0.3076923076923077
+        },
+        {
+            "domain": "hornblower.com",
+            "prevalence": 0.15384615384615385
+        }
+    ],
+    "types": {
+        "Script": 8,
+        "Ping": 6,
+        "Fetch": 3,
+        "Preflight": 3
+    },
+    "nameservers": [
+        "ns1.fastly.net",
+        "ns2.fastly.net",
+        "ns3.fastly.net",
+        "ns4.fastly.net"
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "domain": "qualtrics.com.edgekey.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "cloudenhanced"
+    ],
+    "cnames": [
+        {
+            "original": "co1.qualtrics.com",
+            "resolved": "cloudenhanced.qualtrics.com.edgekey.net"
+        },
+        {
+            "original": "www-api.qualtrics.com",
+            "resolved": "cloudenhanced.qualtrics.com.edgekey.net"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "qualtrics\\.com\\.edgekey\\.net\\/WRQualtricsSiteIntercept\\/Graphic\\.php",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cloudenhanced"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "co1.qualtrics.com",
+                    "resolved": "cloudenhanced.qualtrics.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "bbf5de8e47080d8e9ebcdc4c1ae86c01902324c587ff30c50fd12ab36e37b6af"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qualtrics.com",
+                "community.qualtrics.com"
+            ]
+        },
+        {
+            "rule": "qualtrics\\.com\\.edgekey\\.net\\/www-api\\/geoip",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cloudenhanced"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "www-api.qualtrics.com",
+                    "resolved": "cloudenhanced.qualtrics.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "4d321384b1e7425d3cf9adf9cb7024472df3910adc8cd108d225e3796defded2"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qualtrics.com",
+                "www.qualtrics.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "newrelic.com",
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "driftt.com",
+            "prevalence": 0.3333333333333333
+        }
+    ],
+    "types": {
+        "Image": 2,
+        "Fetch": 2
+    },
+    "nameservers": []
+}

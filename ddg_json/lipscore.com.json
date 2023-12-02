@@ -1,0 +1,164 @@
+{
+    "domain": "lipscore.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "static",
+        "wapi"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "lipscore\\.com\\/assets\\/no\\/lipscore-v1\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "Document.cookie getter": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "5cb53a5cb70530f51250177491904867bcb3fc25ca6dfd58809c186d1de34d97"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apotek1.no",
+                "www.europris.no",
+                "www.monter.no"
+            ]
+        },
+        {
+            "rule": "lipscore\\.com\\/assets\\/lipscore-v1\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "4d59323f74ba999abda5dbd8d321eb3cc4a9de0b4cc466d5e0e2461b83e83622"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apotek1.no",
+                "www.europris.no",
+                "www.monter.no",
+                "www.swixsport.com"
+            ]
+        },
+        {
+            "rule": "lipscore\\.com\\/hit",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wapi"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apotek1.no",
+                "www.europris.no",
+                "www.monter.no",
+                "www.swixsport.com"
+            ]
+        },
+        {
+            "rule": "lipscore\\.com\\/initial_data\\/settings\\/show",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5a7044fc6d6a1f91fc87eaffd6341815d7a0bb9d7b944939aa6b4306c4f71b09"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apotek1.no",
+                "www.monter.no"
+            ]
+        },
+        {
+            "rule": "lipscore\\.com\\/initial_data\\/products\\/show",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wapi"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "2ca9351460498c9743c64a4b6a6299fdd939141d7231c9e20966da7aae6024af",
+                "ca7b4d59baf9f1b8fb63a9fd3aa2c9141cabdfac0b714fb19e04f99a6b5a9d3f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apotek1.no",
+                "www.apotek1.no",
+                "www.monter.no"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "azure.com",
+            "prevalence": 0.71875
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "msecnd.net",
+            "prevalence": 0.03125
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "Stylesheet": 4,
+        "XHR": 9
+    },
+    "nameservers": [
+        "ns1.hyp.net",
+        "ns3.hyp.net",
+        "ns2.hyp.net"
+    ]
+}

@@ -1,0 +1,145 @@
+{
+    "domain": "audiencemanager.de",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "cdn",
+        "prf",
+        "www"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "audiencemanager\\.de\\/propixel\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7dfc0200a3d149d4ab831f8e2ac4839cde1cc0636c38397ea01235e7a4c8b84a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jellycat.com",
+                "www.woodlandtrust.org.uk"
+            ]
+        },
+        {
+            "rule": "audiencemanager\\.de\\/log\\/profile\\/user-match",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prf"
+            ],
+            "apis": {
+                "window.localStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "7a3d7b6aa280754aa806e9072e38828f16f7908ed397953fda7cc55182d0e4b1",
+                "51ebc239cbe392371c77db2dca06aeadeb21c488abaf5da74f48d12a2bc0df62"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jellycat.com",
+                "www.onitsukatiger.com",
+                "www.woodlandtrust.org.uk"
+            ]
+        },
+        {
+            "rule": "audiencemanager\\.de\\/log\\/profile\\/get-piggybacks",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "89ae71d1bccc525f5272bf840010db5d76966f98d6113845530581234606cc60",
+                "8adccda839d1fc33f364a0ae020f57adc7a1d44cbfbdcd22293eb28005920906"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jellycat.com",
+                "www.onitsukatiger.com",
+                "www.woodlandtrust.org.uk"
+            ]
+        },
+        {
+            "rule": "audiencemanager\\.de\\/ppixel\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "88a1c5cfe4d2263fae3edeb701a3e75ff553562abab36c42241173e2c3d43c71"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "onitsukatiger.com",
+                "www.onitsukatiger.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.4444444444444444
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "adnxs.com",
+            "prevalence": 0.1111111111111111
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.1111111111111111
+        }
+    ],
+    "types": {
+        "Script": 7,
+        "Document": 3
+    },
+    "nameservers": [
+        "ns48.domaincontrol.com",
+        "ns47.domaincontrol.com"
+    ]
+}

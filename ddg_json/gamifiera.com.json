@@ -1,0 +1,151 @@
+{
+    "domain": "gamifiera.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "cdn",
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "gamifiera\\.com\\/static\\/gmf\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "14d21fcf7c8b694e7e3bec8e02215d3f04e9547485a082e46251ff0dbbdad9c9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apohem.se",
+                "www.jollyroom.se"
+            ]
+        },
+        {
+            "rule": "gamifiera\\.com\\/v1\\/merchant-config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d288111007c1fef0b0cb8e843618aa43c2bf9d7669875ba645884ae4b3e338b7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apohem.se",
+                "www.jollyroom.se"
+            ]
+        },
+        {
+            "rule": "gamifiera\\.com\\/v1\\/merchant-config",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apohem.se",
+                "www.jollyroom.se"
+            ]
+        },
+        {
+            "rule": "gamifiera\\.com\\/static\\/gmf\\/3\\.4\\.30\\/gmf\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9a8b78169f6ce5673e13df9b916b9e038250950f4afec0bf9044cab5de7eaa56"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apohem.se",
+                "www.jollyroom.se"
+            ]
+        },
+        {
+            "rule": "gamifiera\\.com\\/static\\/gmf\\/3\\.4\\.30\\/base\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "718c4f48faad20b29ee5a11c91952f152c49b9a887bdd983f42eacac7b19ce35"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apohem.se",
+                "www.jollyroom.se"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "XHR": 2,
+        "Preflight": 2,
+        "Stylesheet": 2
+    },
+    "nameservers": [
+        "pdns2.registrar-servers.com",
+        "pdns1.registrar-servers.com"
+    ]
+}

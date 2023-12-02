@@ -1,0 +1,113 @@
+{
+    "domain": "amap.com",
+    "owner": {
+        "name": "Alibaba Group",
+        "displayName": "Alibaba"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "webapi",
+        "restapi"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "amap\\.com\\/maps",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "webapi"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.devicePixelRatio": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.maxTouchPoints": 1,
+                "window.indexedDB": 1,
+                "URL.createObjectURL": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "67a019ac6e490473d779bc04c44c8d4779d61d04acde1ef48ce8d8e0cfc6cb8b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cgtn.com",
+                "www.chinadiscovery.com"
+            ]
+        },
+        {
+            "rule": "amap\\.com\\/v3\\/log\\/init",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "restapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8bf7a1dae06c6091136621c477e16915b092895ad28dc0b6739ee19b18dcec6a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cgtn.com",
+                "www.chinadiscovery.com"
+            ]
+        },
+        {
+            "rule": "amap\\.com\\/maps\\/modules",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8bdbd06e4e1640c22a3fe1a02ac003775a688770fc38816dc8fb72d895a82efa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chinadiscovery.com",
+                "www.chinadiscovery.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 6
+    },
+    "nameservers": [
+        "ns3.aliyun.com",
+        "ns4.aliyun.com",
+        "ns5.aliyun.com"
+    ]
+}

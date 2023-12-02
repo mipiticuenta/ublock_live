@@ -1,0 +1,60 @@
+{
+    "domain": "bart.gov",
+    "owner": {
+        "name": "Bay Area Rapid Transit District (BART)",
+        "displayName": "Bay Area Rapid Transit District (BART)"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "bart\\.gov\\/api\\/etd\\.aspx",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7854babcdc370c0655932a39c38dc6c23b94c333d13c6b07f5cf953d95871487"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flysfo.com",
+                "www.flysfo.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Fetch": 2
+    },
+    "nameservers": [
+        "ns3.level3.net",
+        "ns4.level3.net",
+        "resolver1.level3.net",
+        "ns.bart.gov",
+        "resolver2.level3.net"
+    ]
+}

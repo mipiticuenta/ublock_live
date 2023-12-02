@@ -1,0 +1,92 @@
+{
+    "domain": "events.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "cw",
+        "discover"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "events\\.com\\/edc-calendar\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cw"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.product": 3,
+                "Navigator.prototype.language": 3,
+                "Navigator.prototype.platform": 3,
+                "window.devicePixelRatio": 3,
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "228571549c244b933a4a97a404e7069110829dca892b37acf19dccd85c8fa323"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "berkeleyside.org",
+                "www.berkeleyside.org",
+                "www.unionleader.com"
+            ]
+        },
+        {
+            "rule": "events\\.com\\/services\\/osm\\/staticmap\\.php",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "discover"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "042e8538271d022ebcde5b369e5fc51e04a513e84d9e917f08be03cfb6fd2573"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "unionleader.com",
+                "www.unionleader.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "unpkg.com",
+            "prevalence": 0.5714285714285714
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.42857142857142855
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "Image": 2
+    },
+    "nameservers": [
+        "ns-285.awsdns-35.com",
+        "ns-621.awsdns-13.net",
+        "ns-1187.awsdns-20.org",
+        "ns-1928.awsdns-49.co.uk"
+    ]
+}

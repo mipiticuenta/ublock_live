@@ -1,0 +1,213 @@
+{
+    "domain": "bloomerang.co",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000116,
+    "sites": 17,
+    "subdomains": [
+        "api",
+        "crm"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "bloomerang\\.co\\/v1\\/WebsiteVisit",
+            "cookies": 0.0000545,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "Document.cookie setter": 8
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "b9a1994deb32bb6af6b50769f2e0c90ef349ec35fa2bc118c024e23cd5c8f9be",
+                "ae22b782941fb5e7877a4c2193d170fc4905663c68705026677166ea6eddae0d",
+                "c34c4309b7088592e17e4c98f714527c79690729c2685c3daa1993600e127a1f",
+                "86c0f8aebcde5d66d2e6dd7a3610fca624dca0b949500b308a0a5267c2592977",
+                "de776249419635ce7da8a5e9e6d86cc7de5a25df2d46c01cef8108283b3bc305",
+                "d228c023eefa5c55a7432f794f46d65239adf555968b27fb914fa7488d1342f7",
+                "827dcc5503be14806c538dba1c6c29c95bd94ccfd6c8b8a4a0d60a058cc94562"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "bloomerangConstituent": {
+                    "ttl": 447036175,
+                    "length": 36,
+                    "prevalence": 0.00005449628403463239,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buckslib.org",
+                "capitalresearch.org",
+                "discovergoodwill.org",
+                "electronicintifada.net",
+                "torah.org",
+                "www.foundationforpn.org",
+                "www.monroeinstitute.org",
+                "www.strongtowns.org"
+            ]
+        },
+        {
+            "rule": "bloomerang\\.co\\/Content\\/Scripts\\/Api\\/Bloomerang-v2\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "crm"
+            ],
+            "apis": {
+                "Document.cookie getter": 8,
+                "Navigator.prototype.userAgent": 10
+            },
+            "sites": 12,
+            "prevalence": 0.0000817,
+            "cnames": [],
+            "responseHashes": [
+                "3be67212ed76e46c29795e87708fff0d2f4b08f11eb04b6ab290e80b811cb229"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buckslib.org",
+                "capitalresearch.org",
+                "discovergoodwill.org",
+                "electronicintifada.net",
+                "llli.org",
+                "maritime.org",
+                "mountwashington.org",
+                "torah.org",
+                "www.foundationforpn.org",
+                "www.monroeinstitute.org",
+                "www.mountwashington.org",
+                "www.strongtowns.org"
+            ]
+        },
+        {
+            "rule": "bloomerang\\.co\\/Content\\/Scripts\\/Lib\\/accounting\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "crm"
+            ],
+            "apis": {},
+            "sites": 12,
+            "prevalence": 0.0000817,
+            "cnames": [],
+            "responseHashes": [
+                "ec8e2929277658d918b53d1d03853d33efa78dbd89f3e4f2e08d7dfe0d330555"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buckslib.org",
+                "capitalresearch.org",
+                "discovergoodwill.org",
+                "electronicintifada.net",
+                "llli.org",
+                "maritime.org",
+                "mountwashington.org",
+                "torah.org",
+                "www.foundationforpn.org",
+                "www.monroeinstitute.org",
+                "www.mountwashington.org",
+                "www.strongtowns.org"
+            ]
+        },
+        {
+            "rule": "bloomerang\\.co\\/v1\\/WebsiteVisit\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "14253483d0436aabeb12b0aac04518ab04d6333c1fd0aa93ea65fc8b66d742c9",
+                "56fd8d9064d909d699cda6efe5c02dbb74e37e1ef6bb7afc3f1a1f7f38d1c24c",
+                "3cf61df2d9476e7f543783ad6e6eedd7da9fd0245b309a87fe1f9f23289ca366",
+                "4c8112830e1254b49723e8ce3d905dd2208c4f7b3637d256d14f2d256cf2947f",
+                "fc1698396edb0352f5b3ccdd21d15cc57b80dfac81fe5c58a3c6bc6704f50a52",
+                "feedee372dccbea8dc02aaab042f765dd42d8d346f99f4cc4625698568e6b20f",
+                "ac787edb2a09b36bc9d1b09ccf9104d2fa29af00c928c170b9b9a7cd56bb2d8f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buckslib.org",
+                "capitalresearch.org",
+                "discovergoodwill.org",
+                "electronicintifada.net",
+                "torah.org",
+                "www.foundationforpn.org",
+                "www.monroeinstitute.org",
+                "www.strongtowns.org"
+            ]
+        },
+        {
+            "rule": "bloomerang\\.co\\/v1\\/WebsiteVisit\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "buckslib.org",
+                "capitalresearch.org",
+                "discovergoodwill.org",
+                "electronicintifada.net",
+                "torah.org",
+                "www.foundationforpn.org",
+                "www.monroeinstitute.org",
+                "www.strongtowns.org"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000886,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8709677419354839
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.06451612903225806
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.06451612903225806
+        }
+    ],
+    "types": {
+        "Script": 32,
+        "XHR": 8,
+        "Preflight": 8
+    },
+    "nameservers": [
+        "ns12.domaincontrol.com",
+        "ns11.domaincontrol.com"
+    ]
+}

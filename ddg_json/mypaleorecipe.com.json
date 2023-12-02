@@ -1,0 +1,159 @@
+{
+    "domain": "mypaleorecipe.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "track"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "mypaleorecipe\\.com\\/js\\/jquery-3\\.5\\.1\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "track"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f36844906ad2309877aae3121b87fb15b9e09803cb4c333adc7e1e35ac92e14b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paleohacks.com",
+                "blog.paleohacks.com"
+            ]
+        },
+        {
+            "rule": "mypaleorecipe\\.com\\/js\\/jquery\\.cookie\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "track"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dde3261ae85ead281a4f3120a5c4cee3bc7a1874c284c4a23874af1ada1f08ec"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "phvid": {
+                    "ttl": null,
+                    "length": 9,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paleohacks.com",
+                "blog.paleohacks.com"
+            ]
+        },
+        {
+            "rule": "mypaleorecipe\\.com\\/js\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "track"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6ae0b0e74edee33dd3e9d91c15b595508fc05e1ced11a15dbe787d0f9862dfc2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paleohacks.com",
+                "blog.paleohacks.com"
+            ]
+        },
+        {
+            "rule": "mypaleorecipe\\.com\\/api\\/createVisitor",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "track"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "952dcab6d2642a65a010e1c946bd55f9eec80ef3071a314047e7588aa6ae037c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paleohacks.com",
+                "blog.paleohacks.com"
+            ]
+        },
+        {
+            "rule": "mypaleorecipe\\.com\\/api\\/createActivityLog",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "track"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "574fe99b70313d016f8a3e071eb6b010b9bd5788b657c59cbba19db67b9ccd97"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.000027248142017316195,
+                "_fbp": 0.000013624071008658098,
+                "phvid": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "paleohacks.com",
+                "blog.paleohacks.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 6,
+        "XHR": 4
+    },
+    "nameservers": [
+        "isla.ns.cloudflare.com",
+        "arch.ns.cloudflare.com"
+    ]
+}

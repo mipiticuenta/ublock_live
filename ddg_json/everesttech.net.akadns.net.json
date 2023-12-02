@@ -1,0 +1,126 @@
+{
+    "domain": "everesttech.net.akadns.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00017,
+    "sites": 25,
+    "subdomains": [
+        "cm",
+        "tp00"
+    ],
+    "cnames": [
+        {
+            "original": "cm.everesttech.net",
+            "resolved": "cm.everesttech.net.akadns.net"
+        },
+        {
+            "original": "pixel.everesttech.net",
+            "resolved": "tp00.everesttech.net.akadns.net"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "everesttech\\.net\\.akadns\\.net\\/cm\\/dd",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cm"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [
+                {
+                    "original": "cm.everesttech.net",
+                    "resolved": "cm.everesttech.net.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "aam_uuid": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "acrobatusers.com",
+                "acrobat.adobe.com",
+                "answers.acrobatusers.com",
+                "color.adobe.com",
+                "creativecloud.adobe.com",
+                "express.adobe.com",
+                "stock.adobe.com"
+            ]
+        },
+        {
+            "rule": "everesttech\\.net\\.akadns\\.net\\/rlsa\\/3085",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tp00"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [
+                {
+                    "original": "pixel.everesttech.net",
+                    "resolved": "tp00.everesttech.net.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "dbd691e310f82b7eac1b2f321109b0590ca65034fab27948277e399f77bad29f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adobe.com",
+                "blog.adobe.com",
+                "business.adobe.com",
+                "community.adobe.com",
+                "creativecloud.adobe.com",
+                "elearning.adobe.com",
+                "get.adobe.com",
+                "help.adobe.com",
+                "substance3d.adobe.com",
+                "www.adobe.com",
+                "www.photoshop.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0.0000477,
+    "topInitiators": [
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.78125
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.1875
+        },
+        {
+            "domain": "ftcdn.net",
+            "prevalence": 0.03125
+        }
+    ],
+    "types": {
+        "Image": 7,
+        "Script": 11
+    },
+    "nameservers": []
+}

@@ -1,0 +1,82 @@
+{
+    "domain": "qualifywizard.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "plugin"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "qualifywizard\\.com\\/lib\\/qw-plugin\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "plugin"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "787a18ef1d87a24160f506378651d4960d5d9cd5a6af656e56e7d73e466f890c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "campersinn.com",
+                "www.campersinn.com",
+                "www.pplmotorhomes.com",
+                "www.rvcountry.com"
+            ]
+        },
+        {
+            "rule": "qualifywizard\\.com\\/client\\/18007\\/config\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "plugin"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "86be2a2f5d9d654b024ccf3e4336ee90d2a501fa273f696a62893abf7103c209"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pplmotorhomes.com",
+                "www.pplmotorhomes.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "Fetch": 2
+    },
+    "nameservers": [
+        "ns19.domaincontrol.com",
+        "ns20.domaincontrol.com"
+    ]
+}

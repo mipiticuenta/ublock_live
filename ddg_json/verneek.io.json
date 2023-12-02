@@ -1,0 +1,212 @@
+{
+    "domain": "verneek.io",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "quin",
+        "mulberry"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "verneek\\.io\\/assets\\/sdk\\/stable\\/quin\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "quin"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.onLine": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "window.innerHeight": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a7b857021eb53ae86caa6f1c60cc18b28c0ab76259b35d31050a9eca1767b351"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ph_phc_BbVKXSj7rma9iE6aRavhL2JBbnIyt5SxWIBvOUbwat0_posthog": {
+                    "ttl": 31536005,
+                    "length": 168,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "__ph_opt_in_out_phc_BbVKXSj7rma9iE6aRavhL2JBbnIyt5SxWIBvOUbwat0": {
+                    "ttl": -86397,
+                    "length": 6,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mother.ly",
+                "www.mother.ly"
+            ]
+        },
+        {
+            "rule": "verneek\\.io\\/console\\/v1\\/end-users\\/signInAnonymously",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mulberry"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0b1d019a1618edd2e82b6fd454b273090a89502e2fc11478df762521fb1e1d79"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mother.ly",
+                "www.mother.ly"
+            ]
+        },
+        {
+            "rule": "verneek\\.io\\/console\\/v1\\/end-users\\/signInAnonymously",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mulberry"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mother.ly",
+                "www.mother.ly"
+            ]
+        },
+        {
+            "rule": "verneek\\.io\\/console\\/v1\\/chat\\/session",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mulberry"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mother.ly",
+                "www.mother.ly"
+            ]
+        },
+        {
+            "rule": "verneek\\.io\\/console\\/v1\\/chat\\/session",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mulberry"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0e649b12f91dc58e4bd212fc524bcc99944e506889544490842b9d393a0f4361"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mother.ly",
+                "www.mother.ly"
+            ]
+        },
+        {
+            "rule": "verneek\\.io\\/console\\/v1\\/analytics",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mulberry"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mother.ly",
+                "www.mother.ly"
+            ]
+        },
+        {
+            "rule": "verneek\\.io\\/console\\/v1\\/analytics",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mulberry"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mother.ly",
+                "www.mother.ly"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Fetch": 6,
+        "Preflight": 6
+    },
+    "nameservers": [
+        "ns-cloud-c3.googledomains.com",
+        "ns-cloud-c1.googledomains.com",
+        "ns-cloud-c4.googledomains.com",
+        "ns-cloud-c2.googledomains.com"
+    ]
+}

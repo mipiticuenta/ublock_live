@@ -1,0 +1,93 @@
+{
+    "domain": "collection-filter-www.herokuapp.com",
+    "owner": {
+        "name": "Salesforce.com, Inc.",
+        "displayName": "Salesforce.com",
+        "privacyPolicy": "https://www.salesforce.com/company/privacy/",
+        "url": "http://salesforce.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000681,
+    "sites": 10,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "collection-filter-www\\.herokuapp\\.com\\/api\\/v1\\/filters",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "darkestfox.com",
+                "stcroixrods.com",
+                "www.garagegrowngear.com",
+                "www.marinelayer.com",
+                "www.originalsoegear.com",
+                "www.pjsalvage.com",
+                "zacbrownband.com"
+            ]
+        },
+        {
+            "rule": "collection-filter-www\\.herokuapp\\.com\\/api\\/v1\\/filters",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "dcf5bb2237231cb39df950393689086b402cbae4319f8088f9de3b61630a172f",
+                "afc20e0cb1df85df5cb48ecfc95c2097322567b0033587a20586ea62229af713",
+                "325019e1f116f87c75e319f775195649b15afe3e194611ff8ebc08b78fc23728"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "darkestfox.com",
+                "stcroixrods.com",
+                "www.garagegrowngear.com",
+                "www.marinelayer.com",
+                "www.originalsoegear.com",
+                "www.pjsalvage.com",
+                "zacbrownband.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8
+        },
+        {
+            "domain": "jquery.com",
+            "prevalence": 0.1
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.1
+        }
+    ],
+    "types": {
+        "Preflight": 7,
+        "XHR": 7
+    },
+    "nameservers": []
+}

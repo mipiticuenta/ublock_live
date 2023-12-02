@@ -1,0 +1,680 @@
+{
+    "domain": "presspage.com",
+    "owner": {
+        "name": "PressPage",
+        "displayName": "PressPage"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000749,
+    "sites": 11,
+    "subdomains": [
+        "content",
+        "manager",
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "presspage\\.com\\/assets\\/9ae1ddda484273baea628744b43b98f24cd0b52a\\/css\\/min\\/modules\\.min_v21\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "f78c7626604489e3903f09dc9b2856a523958fc980677adcc606321fe7b8a9ee"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu",
+                "www.manchester.ac.uk"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/assets\\/9ae1ddda484273baea628744b43b98f24cd0b52a\\/js\\/jquery-min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {
+                "Element.prototype.getClientRects": 2,
+                "Event.prototype.timeStamp": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "f7f6a5894f1d19ddad6fa392b2ece2c5e578cbf7da4ea805b6885eb6985b6e3d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu",
+                "www.manchester.ac.uk"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/assets\\/9ae1ddda484273baea628744b43b98f24cd0b52a\\/js\\/min\\/plugins_v4\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "b293e74fd6926a7ad90640ac1a8371fcf94421971969028a6bda7ff8959d15cb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookie_control": {
+                    "ttl": 31536004,
+                    "length": 8,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu",
+                "www.manchester.ac.uk"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/templates\\/702\\/2170\\/474534\\/ppc-ohio-state-university\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fcd402a747d19d95cddc031239a6df95ca9d9b57681eab6045e1d103383a3afd"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/templates\\/702\\/2170\\/474534\\/ppc-ohio-state-university\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "df57821133c285da749a978ae47bdeb81e028f3a815c219eac6a99229d237375"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/templates\\/702\\/2170\\/472998\\/buckeye-alert-resp\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "86cb888398ae3af2456224a42f2dfb086492830c820b0a99ed30ff3fba1b98c0"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/templates\\/702\\/2170\\/472998\\/buckeye-alert\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2c5e1551faa730391e4152f54033b43e8f24ed1985dc196778734d18680f0d95"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/images\\/blank\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "manager"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2e977bdccc768f21f5e6e93aa077f55edb9a01c32429d8ac18752fd59fe30f1c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/templates\\/702\\/2170\\/474534\\/osn_horizontal_digital_logo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ade49f6348853851f2235e757a12768066b760680545c50e65d090b97f0af135"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/templates\\/50\\/1274\\/osu-footer-wordmark-white\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6202e2b95da367f923a64e9b3876ce91e5f3c843adf44a2c799ef177f68312ef"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/templates\\/702\\/2170\\/472998\\/stickysidebar\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {
+                "window.innerWidth": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e4c88cade7fb85dc38369320157a2434b439caddbc273798b48c342342ab83b4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/assets\\/9ae1ddda484273baea628744b43b98f24cd0b52a\\/js\\/min\\/modules\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "0ff205898d3b7aca7a028bb0f41c78c3bb73d68efbdceebe675d6b9573cd3aaa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu",
+                "www.manchester.ac.uk"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/templates\\/50\\/1274\\/bg-navbar_red\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "988eccbe4db1e727cdbb63506c4992d8a1ea1b86105403fac741d44a7e6383a9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/templates\\/50\\/1274\\/osu_name\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "186a0546ea9016a6d6634f62b72e473fea85422db23024ca0128f95d32a81578"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/templates\\/50\\/1274\\/proximanova-reg\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9be2dc27dbd8b77394abadf062d067cbbab64d08c1244dd2ab56412af66c1e59"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/templates\\/50\\/1274\\/proximanova-regit\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "626a8012af4f1778ee25acc951551deb8fc37e0a47a77726368dd8aa1480fbb6"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/templates\\/50\\/1274\\/proximanova-bold\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c98a9b10d6353e35c04ea5d412602f3d06136107dae98be18366c75036194148"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/templates\\/50\\/1274\\/capitaligita\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ed9019a0e3b436a59d94c34487d22dd4d9a49c3986b2cf7296ca6a47e9729b32"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/uploads\\/2170\\/e6b8db55-8a27-4392-85f0-1858f0037c4b\\/800_g077-47-1\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c400d4829612afa9809f1a2efe860b4421e9686bd4f485586ada70bf573885d1"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/uploads\\/2170\\/803d0c18-172a-4fcf-b2f3-872ab119f847\\/800_conversation-foodbank\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "711436743330756066789a107e0875775359bd3a69b6706ca59153bdd3f678e3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/templates\\/50\\/1274\\/proximanova-sbold\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0868adff4ad5d742dc8db9f3f969864397a8f57a64f038332684f44361d90ff3"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/templates\\/50\\/1274\\/proximanova-light\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ce47de7de2c0be21f151ebe32206711a13e6519e428680e91357d63aba8e2860"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/statistics\\/v0\\/track-visits",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "658dcf097cb005f827fdb5c0813ebd21deed4578bef5b587d56585fa5a9ba8cc"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu",
+                "www.manchester.ac.uk"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/templates\\/702\\/2170\\/474534\\/osn_primary_digital_logo\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5dfd9dc721c7ab7187286948f3cc7367013c5b0daa3674dfefa21d3e252ab7c6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/assets\\/9ae1ddda484273baea628744b43b98f24cd0b52a\\/css\\/fonts\\/pp_iconfont\\/fonts\\/pp_iconfont\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "32432088242474c7f81ceb46a215245c80810b2b7d80974fc65a272b225cf4c1"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "news.osu.edu"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/js\\/jquery\\.cycle_v2\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "manager"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "af3f8f374f3dad0002846c0d8088e1a7af5c5074d90922cd62cd68d28b5c34c8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "www.manchester.ac.uk"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/assets\\/9ae1ddda484273baea628744b43b98f24cd0b52a\\/js\\/quickshare_text\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "84f3ab57fad53ffa0a59e7228ac2a93858a0104c68066823e983be07e1be0f0a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "osu.edu",
+                "www.manchester.ac.uk"
+            ]
+        },
+        {
+            "rule": "presspage\\.com\\/uploads\\/2478\\/2030dbc8-6342-46ce-8277-fe258bb4c3ac\\/500_longcovidclinicaltrialmainphoto\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "553bb0398f2ac324dd09d3a069290bb3552eefd03cea3279ab5cb8c6086bdfc6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "keckmedicine.org",
+                "www.keckmedicine.org"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Stylesheet": 7,
+        "Script": 19,
+        "Image": 18,
+        "Font": 14,
+        "XHR": 3
+    },
+    "nameservers": [
+        "ns-1603.awsdns-08.co.uk",
+        "ns-991.awsdns-59.net",
+        "ns-1384.awsdns-45.org",
+        "ns-237.awsdns-29.com"
+    ]
+}

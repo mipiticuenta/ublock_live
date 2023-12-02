@@ -1,0 +1,657 @@
+{
+    "domain": "revampcdn.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000102,
+    "sites": 15,
+    "subdomains": [
+        "spn-v1"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "revampcdn\\.com\\/prebid\\/prebid\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "spn-v1"
+            ],
+            "apis": {
+                "NavigatorUAData.prototype.brands": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "20c7d56e52d271fb0ad5e8a42e2d3015e3dfeb1c741535e6306b1d2586187e29"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ghacks.net",
+                "www.ghacks.net"
+            ]
+        },
+        {
+            "rule": "revampcdn\\.com\\/publishers\\/ghacks\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "spn-v1"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bdd2fd22dae9412b7faf9700880817291daa33bd61bf1648dd39d5e9148d1f8b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "rv_prebid_position": {
+                    "ttl": 1800,
+                    "length": 3,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_test_position": {
+                    "ttl": 1800,
+                    "length": 3,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_fp_ad_session_id": {
+                    "ttl": 1800,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_fp_pv": {
+                    "ttl": 1800,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "rv_google_ppid": {
+                    "ttl": 31536000,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ghacks.net",
+                "www.ghacks.net"
+            ]
+        },
+        {
+            "rule": "revampcdn\\.com\\/publishers\\/ghacks\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "spn-v1"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {
+                "rv_prebid_position": {
+                    "ttl": 1800,
+                    "length": 3,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_test_position": {
+                    "ttl": 1800,
+                    "length": 3,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_fp_ad_session_id": {
+                    "ttl": 1800,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_fp_pv": {
+                    "ttl": 1800,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "rv_google_ppid": {
+                    "ttl": 31536000,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ghacks.net",
+                "www.ghacks.net"
+            ]
+        },
+        {
+            "rule": "revampcdn\\.com\\/contextual\\/ghacks\\/https%3A%2F%2Fghacks\\.net%2F",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "spn-v1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "46cda95079b974b7a605716b0e20c7abf95d7cddaaa79e6b09ef13302df33886"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ghacks.net",
+                "www.ghacks.net"
+            ]
+        },
+        {
+            "rule": "revampcdn\\.com\\/policyshield\\/ghacks\\/https%3A%2F%2Fghacks\\.net%2F",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "spn-v1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d19b3b2f14d8ac64b436e80f5f393ee1b061b5a2eb631a4913ffebb0aae0cf17"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ghacks.net",
+                "www.ghacks.net"
+            ]
+        },
+        {
+            "rule": "revampcdn\\.com\\/prebid\\/filehorse\\/prebid-client\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "spn-v1"
+            ],
+            "apis": {
+                "NavigatorUAData.prototype.brands": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6cb8d09f5fd6438bdba0ffcc8758f06d2ea88d59d516b288fe5e74600af3fbd3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "filehorse.com",
+                "www.filehorse.com"
+            ]
+        },
+        {
+            "rule": "revampcdn\\.com\\/publishers\\/filehorse\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "spn-v1"
+            ],
+            "apis": {
+                "window.innerHeight": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "94c5520ca936a932066f771057f6e921512e2c2d6371e2a671776456925963c2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "rv_google_ppid": {
+                    "ttl": 31536000,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_prebid_position": {
+                    "ttl": 1800,
+                    "length": 3,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "rv_test_position": {
+                    "ttl": 1800,
+                    "length": 3,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "rv_fp_ad_session_id": {
+                    "ttl": 1800,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "rv_fp_pv": {
+                    "ttl": 1800,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "filehorse.com",
+                "www.filehorse.com"
+            ]
+        },
+        {
+            "rule": "revampcdn\\.com\\/publishers\\/filehorse\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "spn-v1"
+            ],
+            "apis": {
+                "window.innerHeight": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {
+                "rv_google_ppid": {
+                    "ttl": 31536000,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_prebid_position": {
+                    "ttl": 1800,
+                    "length": 3,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "rv_test_position": {
+                    "ttl": 1800,
+                    "length": 3,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "rv_fp_ad_session_id": {
+                    "ttl": 1800,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "rv_fp_pv": {
+                    "ttl": 1800,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "filehorse.com",
+                "www.filehorse.com"
+            ]
+        },
+        {
+            "rule": "revampcdn\\.com\\/prebid\\/img2go\\/prebid-client\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "spn-v1"
+            ],
+            "apis": {
+                "NavigatorUAData.prototype.brands": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bdca4daac9ba75c26ae6348c213603105a2a147612265d9de68259b0c10029b6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "img2go.com",
+                "www.img2go.com"
+            ]
+        },
+        {
+            "rule": "revampcdn\\.com\\/publishers\\/img2go\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "spn-v1"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1b7c098c7794ba140baa71880fc6e43161285b98a199e0889085b84debae81fb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "rv_prebid_position": {
+                    "ttl": 1800,
+                    "length": 3,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_test_position": {
+                    "ttl": 1800,
+                    "length": 3,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_fp_ad_session_id": {
+                    "ttl": 1800,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_fp_pv": {
+                    "ttl": 1800,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "rv_google_ppid": {
+                    "ttl": 31536000,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_test_variant": {
+                    "ttl": 1800,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "img2go.com",
+                "www.img2go.com"
+            ]
+        },
+        {
+            "rule": "revampcdn\\.com\\/publishers\\/img2go\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "spn-v1"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {
+                "rv_prebid_position": {
+                    "ttl": 1800,
+                    "length": 3,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_test_position": {
+                    "ttl": 1800,
+                    "length": 3,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_fp_ad_session_id": {
+                    "ttl": 1800,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_fp_pv": {
+                    "ttl": 1800,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "rv_google_ppid": {
+                    "ttl": 31536000,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_test_variant": {
+                    "ttl": 1800,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "img2go.com",
+                "www.img2go.com"
+            ]
+        },
+        {
+            "rule": "revampcdn\\.com\\/publishers\\/romsgames\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "spn-v1"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "16fa305618c042a31d70ecddc0955a69a1bb4b53efe3cc2156498178b0b54007"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "rv_prebid_position": {
+                    "ttl": 1800,
+                    "length": 3,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_test_position": {
+                    "ttl": 1800,
+                    "length": 3,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_fp_ad_session_id": {
+                    "ttl": 1800,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_fp_pv": {
+                    "ttl": 1800,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "rv_google_ppid": {
+                    "ttl": 31536000,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "romsgames.net",
+                "www.romsgames.net"
+            ]
+        },
+        {
+            "rule": "revampcdn\\.com\\/prebid\\/romsgames\\/prebid-client\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "spn-v1"
+            ],
+            "apis": {
+                "NavigatorUAData.prototype.brands": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b5229fbbb39ab14413d4e9512c85c1f043f16d662b9e347b24fea2597d9d16a9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "romsgames.net",
+                "www.romsgames.net"
+            ]
+        },
+        {
+            "rule": "revampcdn\\.com\\/publishers\\/romsgames\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "spn-v1"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {
+                "rv_prebid_position": {
+                    "ttl": 1800,
+                    "length": 3,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_test_position": {
+                    "ttl": 1800,
+                    "length": 3,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_fp_ad_session_id": {
+                    "ttl": 1800,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "rv_fp_pv": {
+                    "ttl": 1800,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "rv_google_ppid": {
+                    "ttl": 31536000,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "romsgames.net",
+                "www.romsgames.net"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000954,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8709677419354839
+        },
+        {
+            "domain": "coolrom.com.au",
+            "prevalence": 0.12903225806451613
+        }
+    ],
+    "types": {
+        "Script": 16,
+        "Fetch": 12
+    },
+    "nameservers": [
+        "ns-cloud-e1.googledomains.com",
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e4.googledomains.com"
+    ]
+}

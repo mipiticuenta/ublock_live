@@ -1,0 +1,106 @@
+{
+    "domain": "blis.com",
+    "owner": {
+        "name": "Blis Global Ltd",
+        "displayName": "Blis"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000102,
+    "sites": 15,
+    "subdomains": [
+        "sitepixel"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "blis\\.com\\/BlisEvent\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sitepixel"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "37796955adaf2017f6da3338836fff46934a551964cd07ca89cbafc82b6f61eb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "diamondsdirect.com",
+                "login.mailchimp.com",
+                "mailchimp.com",
+                "www.92ny.org",
+                "www.athenahealth.com",
+                "www.daveandbusters.com",
+                "www.mudbay.com",
+                "www.sciencemuseum.org.uk",
+                "www.zipcar.com"
+            ]
+        },
+        {
+            "rule": "blis\\.com\\/BlisPixel\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sitepixel"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "eeceb773eff2194db4265b94e331a28e75e40955901ff4a70f8b4bb3b7821273"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "blis_ctid": {
+                    "ttl": 2592000,
+                    "length": 10,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yamahamotorsports.com",
+                "www.yamahamotorsports.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.8
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.13333333333333333
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.06666666666666667
+        }
+    ],
+    "types": {
+        "Script": 11
+    },
+    "nameservers": [
+        "ns-246.awsdns-30.com",
+        "ns-930.awsdns-52.net",
+        "ns-1290.awsdns-33.org",
+        "ns-1577.awsdns-05.co.uk"
+    ]
+}

@@ -1,0 +1,165 @@
+{
+    "domain": "eyeblaster.akadns.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000163,
+    "sites": 24,
+    "subdomains": [
+        "bs",
+        "lm"
+    ],
+    "cnames": [
+        {
+            "original": "bs.serving-sys.com",
+            "resolved": "bs.eyeblaster.akadns.net"
+        },
+        {
+            "original": "lm.serving-sys.com",
+            "resolved": "lm.eyeblaster.akadns.net"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "eyeblaster\\.akadns\\.net\\/Serving",
+            "cookies": 0.0000477,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bs"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [
+                {
+                    "original": "bs.serving-sys.com",
+                    "resolved": "bs.eyeblaster.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "8f6974082d5f04171e03c86b8db5bafe81b9ed489e1d3cc775fe965bc183f8ef",
+                "63ee8175c67f63c253fe29a17842ff274d7d60269e790c77015d2b295bd2d044",
+                "d6cd0dc4383dac7fe75123a62e0238f9e3af9cd64c9fa03965167dcfc6263ffb",
+                "278ff8471d720abc168f7d7c8ce6facf552ccd939d86e62c3479ec95b6fd87f7",
+                "639875ddf8a89dd9070b1df63072c807c201f07bb1ffaa7ae332914272fee27f",
+                "ce1e5a4cd1ace432c2b9e660f1c3f2b60d7930de31cf296e6833bcb290b0bdd4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "SZMKuid": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "amazon.com",
+                "advertising.amazon.com",
+                "de.twitch.tv",
+                "en-gb.twitch.tv",
+                "fr.twitch.tv",
+                "hiring.amazon.com",
+                "www.twitch.tv"
+            ]
+        },
+        {
+            "rule": "eyeblaster\\.akadns\\.net\\/Serving",
+            "cookies": 0.0000749,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bs"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [
+                {
+                    "original": "bs.serving-sys.com",
+                    "resolved": "bs.eyeblaster.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "2fce2feb1cb59a8c53b5b46d1d758949090324d34b2a941a972240d6ccf63db6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amazon.ca",
+                "arcus-www.amazon.com",
+                "business.amazon.com",
+                "hiring.amazon.com",
+                "pay.amazon.com",
+                "www.amazon.com.au",
+                "www.amazon.com.br",
+                "www.amazon.in",
+                "www.amazon.sa",
+                "www.amazon.sg",
+                "www.audible.com"
+            ]
+        },
+        {
+            "rule": "eyeblaster\\.akadns\\.net\\/lm\\/acs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lm"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000681,
+            "cnames": [
+                {
+                    "original": "lm.serving-sys.com",
+                    "resolved": "lm.eyeblaster.akadns.net"
+                }
+            ],
+            "responseHashes": [
+                "2fce2feb1cb59a8c53b5b46d1d758949090324d34b2a941a972240d6ccf63db6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amazon.ca",
+                "arcus-www.amazon.com",
+                "business.amazon.com",
+                "pay.amazon.com",
+                "www.amazon.com.au",
+                "www.amazon.com.br",
+                "www.amazon.in",
+                "www.amazon.sa",
+                "www.amazon.sg",
+                "www.audible.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0.000163,
+    "topInitiators": [
+        {
+            "domain": "amazon-adsystem.com",
+            "prevalence": 0.868421052631579
+        },
+        {
+            "domain": "media-amazon.com",
+            "prevalence": 0.10526315789473684
+        },
+        {
+            "domain": "d1g3myji5lplsh.cloudfront.net",
+            "prevalence": 0.02631578947368421
+        }
+    ],
+    "types": {
+        "Script": 7,
+        "Image": 21
+    },
+    "nameservers": []
+}

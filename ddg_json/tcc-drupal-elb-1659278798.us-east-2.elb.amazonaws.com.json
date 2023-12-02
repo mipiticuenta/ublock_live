@@ -1,0 +1,64 @@
+{
+    "domain": "tcc-drupal-elb-1659278798.us-east-2.elb.amazonaws.com",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "data.crn.com",
+            "resolved": "tcc-drupal-elb-1659278798.us-east-2.elb.amazonaws.com"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "tcc-drupal-elb-1659278798\\.us-east-2\\.elb\\.amazonaws\\.com\\/trending\\/chartbeat-output\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "data.crn.com",
+                    "resolved": "tcc-drupal-elb-1659278798.us-east-2.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "bd92e211538a8d18cc97f59a93b352c22cab0257e469b148fe690ab207073972"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "crn.com",
+                "www.crn.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "XHR": 2
+    },
+    "nameservers": []
+}

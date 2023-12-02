@@ -1,0 +1,61 @@
+{
+    "domain": "toyota-europe.com",
+    "owner": {
+        "name": "Toyota Motor Corporation",
+        "displayName": "Toyota Motor"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "cp-common"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "toyota-europe\\.com\\/cp-ui-sso\\/configuration\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cp-common"
+            ],
+            "apis": {
+                "window.localStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "81eb924723bc85ef05a4819fcd9460827d223f707ff3c859e857b4929444e1ea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lexus.co.uk",
+                "www.toyota.es",
+                "www.toyota.it"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 3
+    },
+    "nameservers": [
+        "pdns2.cscdns.net",
+        "pdns1.cscdns.net",
+        "ns1.toyota-europe.com"
+    ]
+}

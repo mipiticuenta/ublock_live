@@ -1,0 +1,587 @@
+{
+    "domain": "frontapp.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000136,
+    "sites": 20,
+    "subdomains": [
+        "chat-assets",
+        "us-west-1-chat-server",
+        "us-west-2-chat-server",
+        "eu-west-1-chat-server",
+        "chat"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "frontapp\\.com\\/v1\\/chat\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat-assets"
+            ],
+            "apis": {},
+            "sites": 18,
+            "prevalence": 0.000123,
+            "cnames": [],
+            "responseHashes": [
+                "513040db4c1592a3b9b1adaccf83ad523b2a14d0c5476dce91296a0b16d67732"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "better.com",
+                "getaway.house",
+                "landmarktools.com",
+                "mybluepeak.com",
+                "support.berkeywater.com",
+                "www.bbr.com",
+                "www.berkeywater.com",
+                "www.duetdisplay.com",
+                "www.foredom.net",
+                "www.life.church",
+                "www.marshalls.co.uk",
+                "www.naturesflavors.com",
+                "www.nudiejeans.com",
+                "www.point-broadband.com",
+                "www.sudowrite.com",
+                "www.usplastic.com",
+                "www.vanbeekart.nl",
+                "www.vexusfiber.com"
+            ]
+        },
+        {
+            "rule": "frontapp\\.com\\/v1\\/app\\.bundle\\.js",
+            "cookies": 0.000102,
+            "fingerprinting": 2,
+            "subdomains": [
+                "chat-assets"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 14,
+                "Navigator.prototype.product": 14,
+                "Navigator.prototype.platform": 12,
+                "Navigator.prototype.mimeTypes": 12,
+                "Navigator.prototype.language": 14,
+                "Date.prototype.getTime": 15,
+                "Document.cookie getter": 15,
+                "Document.cookie setter": 15,
+                "window.localStorage": 12,
+                "URL.createObjectURL": 7,
+                "window.sessionStorage": 9,
+                "Screen.prototype.orientation": 12,
+                "PerformanceTiming.prototype.navigationStart": 12,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 9,
+                "Date.prototype.getTimezoneOffset": 9
+            },
+            "sites": 15,
+            "prevalence": 0.000102,
+            "cnames": [],
+            "responseHashes": [
+                "d71cf49754d0b32b7b05c92bf7eaf7aea01f485e963188e679fd611c89295c76"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "fcaid": {
+                    "ttl": null,
+                    "length": 64,
+                    "prevalence": 0.00008855646155627764,
+                    "uniqueness": 0.9230769230769231
+                },
+                "fcuid": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.00008855646155627764,
+                    "uniqueness": 1
+                },
+                "fccid": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.00008855646155627764,
+                    "uniqueness": 1
+                },
+                "_dd_s": {
+                    "ttl": 910,
+                    "length": 4,
+                    "prevalence": 0.00010218053256493573,
+                    "uniqueness": 0.06666666666666667
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "better.com",
+                "landmarktools.com",
+                "support.berkeywater.com",
+                "www.bbr.com",
+                "www.berkeywater.com",
+                "www.duetdisplay.com",
+                "www.foredom.net",
+                "www.life.church",
+                "www.marshalls.co.uk",
+                "www.naturesflavors.com",
+                "www.nudiejeans.com",
+                "www.point-broadband.com",
+                "www.sudowrite.com",
+                "www.usplastic.com",
+                "www.vanbeekart.nl"
+            ]
+        },
+        {
+            "rule": "frontapp\\.com\\/initialize",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "us-west-1-chat-server",
+                "us-west-2-chat-server",
+                "eu-west-1-chat-server"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.0000886,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "better.com",
+                "landmarktools.com",
+                "support.berkeywater.com",
+                "www.bbr.com",
+                "www.berkeywater.com",
+                "www.duetdisplay.com",
+                "www.foredom.net",
+                "www.life.church",
+                "www.marshalls.co.uk",
+                "www.naturesflavors.com",
+                "www.point-broadband.com",
+                "www.sudowrite.com",
+                "www.usplastic.com"
+            ]
+        },
+        {
+            "rule": "frontapp\\.com\\/initialize",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "us-west-1-chat-server",
+                "us-west-2-chat-server",
+                "eu-west-1-chat-server"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.0000886,
+            "cnames": [],
+            "responseHashes": [
+                "48f32be1b07507ce089cfb0106f895a670217a6989fa854eaec31ae936b74065",
+                "ebf32db37848c8d38da6fd2c69ab20383baf9511ef4e597230742455a0349b75",
+                "9cd49609cc13b4c38aa3ce3786e698c932dce6fee3dc1ba066425af281c731a0",
+                "76c1b8eeff23075629358db8e3dcf11136f4880cd226441ba00310fa68a45387",
+                "277dcd01ab61bf9b0d298879fd28624d5e5ea3aabbbe3b15780c8aab190a1a50",
+                "fc34124a42fd329be673df9847f9f02aaca3e712e1597862189b27dd2e2cdaed",
+                "a99081f0742915fd05be885442518c80f11fa2b8e8717f20eed8b5120890c8b8",
+                "de05beac07db07e2ac61b40231815d9d0f586bcad25d568b77369111ac81aa40",
+                "fa2030de0f4643b33304fa7702e290fd9ea627dd3cf1638a57d63f86350a8ddf",
+                "946d6d4cd8d15003dea7b2dc6727fbd3dac43aabb70ce645bc0e4e2e025d895c",
+                "1ca4fb820884b159fddb8b81ec7ad7711883de453606e562ee7610d725effd7c",
+                "5b246342227121629cabfea49a1f305b642441f7cd4f649cd65e74a1a6102224"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "better.com",
+                "landmarktools.com",
+                "support.berkeywater.com",
+                "www.bbr.com",
+                "www.berkeywater.com",
+                "www.duetdisplay.com",
+                "www.foredom.net",
+                "www.life.church",
+                "www.marshalls.co.uk",
+                "www.naturesflavors.com",
+                "www.point-broadband.com",
+                "www.sudowrite.com",
+                "www.usplastic.com"
+            ]
+        },
+        {
+            "rule": "frontapp\\.com\\/flags",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "us-west-1-chat-server",
+                "us-west-2-chat-server",
+                "eu-west-1-chat-server"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.0000886,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "better.com",
+                "landmarktools.com",
+                "support.berkeywater.com",
+                "www.bbr.com",
+                "www.berkeywater.com",
+                "www.duetdisplay.com",
+                "www.foredom.net",
+                "www.life.church",
+                "www.marshalls.co.uk",
+                "www.naturesflavors.com",
+                "www.point-broadband.com",
+                "www.sudowrite.com",
+                "www.usplastic.com"
+            ]
+        },
+        {
+            "rule": "frontapp\\.com\\/flags",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "us-west-1-chat-server",
+                "us-west-2-chat-server",
+                "eu-west-1-chat-server"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.0000886,
+            "cnames": [],
+            "responseHashes": [
+                "7a1c60b46a5263282f022cadd9ce660d41bcc888217d8c620d364aac57615c49"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "better.com",
+                "landmarktools.com",
+                "support.berkeywater.com",
+                "www.bbr.com",
+                "www.berkeywater.com",
+                "www.duetdisplay.com",
+                "www.foredom.net",
+                "www.life.church",
+                "www.marshalls.co.uk",
+                "www.naturesflavors.com",
+                "www.point-broadband.com",
+                "www.sudowrite.com",
+                "www.usplastic.com"
+            ]
+        },
+        {
+            "rule": "frontapp\\.com\\/6d51d6332cb72bfcc7ec1b4d2ce957b0\\/settings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "38c1df74da1ca211b60f8ffe1f5bf287494c81c1ea5e5b2bef91674389c47435"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "berkeywater.com",
+                "www.berkeywater.com"
+            ]
+        },
+        {
+            "rule": "frontapp\\.com\\/billing_settings\\/1febffde4e43b95e2a57cc97b244a52c627fcd684be5ecf4a3c1d2f8bc8d09db",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "us-west-2-chat-server"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "fcaid": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "berkeywater.com",
+                "www.berkeywater.com"
+            ]
+        },
+        {
+            "rule": "frontapp\\.com\\/billing_settings\\/1febffde4e43b95e2a57cc97b244a52c627fcd684be5ecf4a3c1d2f8bc8d09db",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "us-west-2-chat-server"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6358d3ae4612e0a378fa09b4a970a4d030f67ea81bec335940c2ce46b2aaf810"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "fcaid": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "berkeywater.com",
+                "www.berkeywater.com"
+            ]
+        },
+        {
+            "rule": "frontapp\\.com\\/6d51d6332cb72bfcc7ec1b4d2ce957b0\\/logo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "berkeywater.com",
+                "www.berkeywater.com"
+            ]
+        },
+        {
+            "rule": "frontapp\\.com\\/1dc74230c51c0a46a87c879d0c31f25b\\/settings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e20cb5e4e8e426a0a8ad8946da962a1b5e09338d86dc6d9e944a683317b5e9e5"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "life.church",
+                "www.life.church"
+            ]
+        },
+        {
+            "rule": "frontapp\\.com\\/billing_settings\\/7909d9d634f85375f24d3c0314f47b29251c0ed47eccbc1324f94afcf1792e4e",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "us-west-1-chat-server"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "fcaid": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "life.church",
+                "www.life.church"
+            ]
+        },
+        {
+            "rule": "frontapp\\.com\\/billing_settings\\/7909d9d634f85375f24d3c0314f47b29251c0ed47eccbc1324f94afcf1792e4e",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "us-west-1-chat-server"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0601a1585cea0ce6d699b25c68ac38f09fd7c942701ab2f87c96cf0ffd6edfad"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "fcaid": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "life.church",
+                "www.life.church"
+            ]
+        },
+        {
+            "rule": "frontapp\\.com\\/1dc74230c51c0a46a87c879d0c31f25b\\/logo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "life.church",
+                "www.life.church"
+            ]
+        },
+        {
+            "rule": "frontapp\\.com\\/33f079fe0303ee7095606f75a09cd428\\/settings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a332a328b5a4c1ba16185d3cd3eefd4f4b7ee4e4a6d0f56b0537c7bc379841a0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usplastic.com",
+                "www.usplastic.com"
+            ]
+        },
+        {
+            "rule": "frontapp\\.com\\/billing_settings\\/e1e42bc8ad73444edde795f52775ff7fa9935d4340927ba7a50ec3b9df75278d",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "us-west-1-chat-server"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "fcaid": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "usplastic.com",
+                "www.usplastic.com"
+            ]
+        },
+        {
+            "rule": "frontapp\\.com\\/billing_settings\\/e1e42bc8ad73444edde795f52775ff7fa9935d4340927ba7a50ec3b9df75278d",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "us-west-1-chat-server"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6358d3ae4612e0a378fa09b4a970a4d030f67ea81bec335940c2ce46b2aaf810"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "fcaid": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "usplastic.com",
+                "www.usplastic.com"
+            ]
+        },
+        {
+            "rule": "frontapp\\.com\\/33f079fe0303ee7095606f75a09cd428\\/logo",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "usplastic.com",
+                "www.usplastic.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000116,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7777777777777778
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.1574074074074074
+        },
+        {
+            "domain": "fullstory.com",
+            "prevalence": 0.037037037037037035
+        },
+        {
+            "domain": "nuteqsolutions.com",
+            "prevalence": 0.018518518518518517
+        },
+        {
+            "domain": "dx1wqezomiae6.cloudfront.net",
+            "prevalence": 0.009259259259259259
+        }
+    ],
+    "types": {
+        "Script": 33,
+        "Preflight": 32,
+        "XHR": 44
+    },
+    "nameservers": [
+        "ns-430.awsdns-53.com",
+        "ns-1695.awsdns-19.co.uk",
+        "ns-625.awsdns-14.net",
+        "ns-1335.awsdns-38.org"
+    ]
+}

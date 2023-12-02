@@ -1,0 +1,705 @@
+{
+    "domain": "mediaset.es",
+    "owner": {
+        "name": "MEDIASET ESPANA COMUNICACION SA",
+        "displayName": "MEDIASET ESPANA COMUNICACION"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "baul",
+        "mab",
+        "medicion",
+        "album"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "mediaset\\.es\\/dist\\/MSPlayerWrapper\\.bundle\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "9c8ece79811cb5b63efb37c365f4bde8a5e8d5ba48346fc5ec58d3c19b54a20e"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "divinity.es",
+                "www.eldesmarque.com",
+                "www.mitele.es"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/dist\\/runtime\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "807de8f5a350fff72f4c992565cd79d1e5b13d9f03ad315e75090635800fd64e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "divinity.es",
+                "www.eldesmarque.com",
+                "www.mitele.es"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/dist\\/dryPageMultisite\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "34ecc8587c076fb913c3a48989f3844bb7a1f7945c068bfbf2ee8b227c0f8699"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "divinity.es",
+                "www.eldesmarque.com"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/dist\\/assets\\/js\\/polyfill\\/encoding\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "6c9839d1c8c864bcb0e7b9bac20496e8f87860093e1b9da38a30dfcae04ab806"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "divinity.es",
+                "www.eldesmarque.com",
+                "www.mitele.es"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/dist\\/assets\\/nonAdBlock\\/adjs\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4cae93d6f559b180d0893ed0b4d5ddda68014b238d692bfaacbf72d429c77a52"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "divinity.es",
+                "www.mitele.es"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/dist\\/assets\\/nonAdBlock\\/adframe\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5e653e0f5c93caf4ad8556ef8d47389f0628cb8f910a6ecf215dcc95c94477fa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "divinity.es",
+                "www.mitele.es"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/dist\\/vendor\\.bundle\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {
+                "window.localStorage": 3,
+                "Navigator.prototype.userAgent": 3,
+                "Date.prototype.getTime": 3,
+                "Navigator.prototype.product": 1,
+                "Event.prototype.timeStamp": 3,
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "a98b816b2fcfce02c89bc2c10c4bbef422ac3487ecab8294b07c6c51e978a66f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "57af196ac715da0d6e8b4da87cb6": {
+                    "ttl": null,
+                    "length": 36,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "divinity.es",
+                "www.eldesmarque.com",
+                "www.mitele.es"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/dist\\/commons\\.bundle\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "URL.createObjectURL": 1,
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
+                "window.localStorage": 1,
+                "Date.prototype.getTime": 1,
+                "NavigatorUAData.prototype.platform": 1,
+                "Navigator.prototype.platform": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "753c80177a99003e0e0bb733e73e10851fede43f7f885f28be9e86b2d5d85198"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ms_session_start": {
+                    "ttl": null,
+                    "length": 13,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "divinity.es",
+                "www.eldesmarque.com",
+                "www.mitele.es"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/dist\\/pageMultisite\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 1,
+                "window.localStorage": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8ac07ffdc3712cc2f9022e2f779e7d95ba881d79eb7840d5ce3bd3070621c9ea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "divinity.es",
+                "www.eldesmarque.com"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/dist\\/MSPlayerWrapper\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.innerWidth": 1,
+                "Navigator.prototype.storage": 1,
+                "Document.cookie getter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "997da1981ddb72d4f37e5cdbe1263afb942211732a949ada51a3f97391cc6ecb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "divinity.es",
+                "www.eldesmarque.com",
+                "www.mitele.es"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/1\\.0\\.0\\/get",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mab"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "b02e954645115047881bc3abbd8217a2bfb8f3b7729379f66ddd0a70ba41b1ad",
+                "89f3b464fce2bd1e2e1cc1cf4197460c7bbc9bc861d1ee31ad2c7c76dac9fa36",
+                "22490ff9b5ff7f49c50e8b894a3b1d8fd1707dd1fb5d6abad4f3f2812fc11a82"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "divinity.es",
+                "www.divinity.es",
+                "www.eldesmarque.com",
+                "www.mitele.es"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/js\\/lib\\/visitorapi\\.min\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "medicion"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 3,
+                "Document.cookie getter": 3,
+                "Navigator.prototype.appName": 3,
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "eac8b0feab2039b053341f8feef2791814456f8f9ee559451a2811374803bcd5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "AMCV_2A150C0F53DB12860A490D45%40AdobeOrg": {
+                    "ttl": 63158409,
+                    "length": 250,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "AMCVS_2A150C0F53DB12860A490D45%40AdobeOrg": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "divinity.es",
+                "www.eldesmarque.com",
+                "www.mitele.es"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/dist\\/assets\\/js\\/indigitall\\/sdk\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.indexedDB": 2,
+                "Navigator.prototype.permissions": 2,
+                "Navigator.prototype.language": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Date.prototype.getTimezoneOffset": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3c0ad4cca4eec7efee437f8f2a51776d2aa5ff835fac61822c58fa901d030d6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "divinity.es",
+                "www.mitele.es"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/js\\/modern\\/s_code\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "medicion"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.appName": 3,
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "650cc15461fad148923f7543540abd8019ecd5fb583d95bdb40ad80260b8533e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "divinity.es",
+                "www.eldesmarque.com",
+                "www.mitele.es"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/dist\\/assets\\/web-workers\\/checkRun\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "aa57cc0bd4faf7ea513491c907bc57e223e054ea9bcebb1365cb0155cede7959"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "divinity.es",
+                "www.mitele.es"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/defaultview\\/adjs\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "divinity.es",
+                "www.mitele.es"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/dist\\/videoEmbedMultisite\\.bundle\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "81e80a5f309e147c4c5963ac9a21b0891b8d5248b0d2919f33276702110aa1e5"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldesmarque.com",
+                "www.eldesmarque.com"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/dist\\/assets\\/google\\/shaka\\/shaka-player\\.compiled\\.debug\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "7398755e217129329872fbb03a2e5ecf348fd982b9d4ad3a5fc13ed0afbf2e14"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldesmarque.com",
+                "www.eldesmarque.com",
+                "www.mitele.es"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/dist\\/assets\\/dash\\/dash-4\\.4\\.1\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {
+                "window.localStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "70429d7c064e15df8854b816ee0a887f10a1e49bee3a1b9a7ec71abb7d2a6977"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldesmarque.com",
+                "www.eldesmarque.com",
+                "www.mitele.es"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/dist\\/assets\\/hls\\/hls-1\\.2\\.3\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "56795dcb0394776edd535ffad8be6b349d861d31fda57ae8348812971d5e0eeb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldesmarque.com",
+                "www.eldesmarque.com",
+                "www.mitele.es"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/dist\\/assets\\/omniture\\/videoheartbeat\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "f437a7b8f1a008da45a85c1671e0b5468078428052b67f0f08a3440f595219b2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldesmarque.com",
+                "www.eldesmarque.com",
+                "www.mitele.es"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/dist\\/assets\\/conviva\\/conviva-core-sdk\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "bdf15ac91ce3e1719d27dd465caec5caf614e2778182d3ce206aa2453182a83c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldesmarque.com",
+                "www.eldesmarque.com",
+                "www.mitele.es"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/dist\\/assets\\/js\\/sibbo\\/prebid_eldesmarque_video\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4dbd817f05c5caf3f84fa3048ac208c9803b48127953223501b2bb35b5866891"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldesmarque.com",
+                "www.eldesmarque.com"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/dist\\/videoEmbedMultisite\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "baul"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0a59eae335f5ab401236af9b8355c098c91b571e95cda718668c4f47cfdb45b7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldesmarque.com",
+                "www.eldesmarque.com"
+            ]
+        },
+        {
+            "rule": "mediaset\\.es\\/cimg\\/2022\\/07\\/11\\/masthead-1800x596-jpg_bf9d\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "album"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5e1e15ab3ba5f6021a2142255c53e59d371cac7270b96b46ff9b310a9e0e3acf"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mitele.es",
+                "www.mitele.es"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7109375
+        },
+        {
+            "domain": "telecinco.es",
+            "prevalence": 0.28125
+        },
+        {
+            "domain": "gigya.com",
+            "prevalence": 0.0078125
+        }
+    ],
+    "types": {
+        "Stylesheet": 5,
+        "Script": 50,
+        "Fetch": 6,
+        "Other": 2,
+        "Image": 2
+    },
+    "nameservers": [
+        "ns-309.awsdns-38.com",
+        "ns-1193.awsdns-21.org",
+        "a5-65.akam.net",
+        "a1-15.akam.net",
+        "a9-66.akam.net",
+        "ns-849.awsdns-42.net"
+    ]
+}

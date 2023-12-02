@@ -1,0 +1,82 @@
+{
+    "domain": "paymonix.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "paymonix\\.com\\/js\\/cdn\\/identity\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ff20488a5007430ee7444be551a131fcdee5396c6e1df17cdde56f7d0206cfd5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_identity-customer-email": {
+                    "ttl": 1802,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "homegrowncannabisco.com",
+                "seedsupreme.com"
+            ]
+        },
+        {
+            "rule": "paymonix\\.com\\/callback\\/customer-identity\\/identify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "edc21022448647481e81a9755bbc724bf33de33af3a42a34f5382b8b02a75def"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "homegrowncannabisco.com",
+                "seedsupreme.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Fetch": 2
+    },
+    "nameservers": [
+        "hugh.ns.cloudflare.com",
+        "lucy.ns.cloudflare.com"
+    ]
+}

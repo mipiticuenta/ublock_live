@@ -1,0 +1,103 @@
+{
+    "domain": "radio.co",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "mercure",
+        "embed"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "radio\\.co\\/\\.well-known\\/mercure",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mercure"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "EventSource",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "groundzeromedia.org",
+                "nostalgiacentral.com"
+            ]
+        },
+        {
+            "rule": "radio\\.co\\/cdn-cgi\\/scripts\\/7d0fa10a\\/cloudflare-static\\/rocket-loader\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ccf00d1923b0131a10e0c6d26f95e5dee6ebf8621a27e83c5a2f68a2e0093142"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "groundzeromedia.org",
+                "nostalgiacentral.com"
+            ]
+        },
+        {
+            "rule": "radio\\.co\\/fonts\\/lineto-brown\\/lineto-brown-light\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "68f02f1a1c9752bd4abd3c08b3e2d4283211603ba63aa67a9ca30d99a5df2e12"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "groundzeromedia.org",
+                "nostalgiacentral.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "EventSource": 2,
+        "Script": 2,
+        "Font": 2
+    },
+    "nameservers": [
+        "ns1.radio.co",
+        "ns2.radio.co",
+        "ns3.radio.co"
+    ]
+}

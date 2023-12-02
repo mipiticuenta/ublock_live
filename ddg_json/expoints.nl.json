@@ -1,0 +1,210 @@
+{
+    "domain": "expoints.nl",
+    "owner": {
+        "name": "Trust Provider B.V.",
+        "displayName": "Trust Provider"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "dela1",
+        "gemeentedenhaag1",
+        "veh1",
+        "enexis1",
+        "gdl1",
+        "stedin1"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "expoints\\.nl\\/m\\/Scripts\\/dist\\/expoints-external-loader\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dela1",
+                "gemeentedenhaag1",
+                "veh1",
+                "enexis1",
+                "gdl1",
+                "stedin1"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 7
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "32380c39d984e84f85bdb04cafa61819606739a81b74b3d66aae43b82fd7bbb9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dela.nl",
+                "www.denhaag.nl",
+                "www.eigenhuis.nl",
+                "www.enexis.nl",
+                "www.postcodeloterij.nl",
+                "www.stedin.net",
+                "www.vriendenloterij.nl"
+            ]
+        },
+        {
+            "rule": "expoints\\.nl\\/m\\/Scripts\\/dist\\/expoints-external\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "dela1",
+                "gemeentedenhaag1",
+                "veh1",
+                "enexis1",
+                "gdl1",
+                "stedin1"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 7,
+                "window.localStorage": 7
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "75e9ab4191c7486a17e511d23be04ae7f625f3b956bf3fb1b01f16eb2585ef11"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dela.nl",
+                "www.denhaag.nl",
+                "www.eigenhuis.nl",
+                "www.enexis.nl",
+                "www.postcodeloterij.nl",
+                "www.stedin.net",
+                "www.vriendenloterij.nl"
+            ]
+        },
+        {
+            "rule": "expoints\\.nl\\/m\\/api\\/ClientApplicationLog\\/Aanmaken",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gemeentedenhaag1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ca83ca7660f0c6b3ab79edc44c8e08cd7ace23bcfb1880ea7a1305bd273018b0"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "denhaag.nl",
+                "www.denhaag.nl"
+            ]
+        },
+        {
+            "rule": "expoints\\.nl\\/m\\/api\\/ClientApplicationLog\\/Aanmaken",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gemeentedenhaag1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "denhaag.nl",
+                "www.denhaag.nl"
+            ]
+        },
+        {
+            "rule": "expoints\\.nl\\/m\\/external-configs\\/4004f8a2-4a87-42f3-9f97-98204e64d004\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gdl1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2673853e9e7077a9b16abe3d72199f77c76d4d936b7feb5b57be58a52d45205d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "postcodeloterij.nl",
+                "www.vriendenloterij.nl"
+            ]
+        },
+        {
+            "rule": "expoints\\.nl\\/m\\/api\\/File",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gdl1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "postcodeloterij.nl",
+                "www.vriendenloterij.nl"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.42857142857142855
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2857142857142857
+        },
+        {
+            "domain": "piwik.pro",
+            "prevalence": 0.14285714285714285
+        },
+        {
+            "domain": "postcodeloterij.nl",
+            "prevalence": 0.14285714285714285
+        }
+    ],
+    "types": {
+        "Script": 14,
+        "Fetch": 4,
+        "Preflight": 2,
+        "Font": 2
+    },
+    "nameservers": [
+        "ns-cloud-e4.googledomains.com",
+        "ns-cloud-e3.googledomains.com",
+        "ns-cloud-e2.googledomains.com",
+        "ns-cloud-e1.googledomains.com"
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "domain": "delight-magento.fly.dev",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "delight-magento\\.fly\\.dev\\/web\\/js\\/delight_plugin\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4b52ca52702e3b7a06151e212354e74fe3da00717560d012c8d43ef529ce1bd2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cdkeys.com",
+                "www.cdkeys.com"
+            ]
+        },
+        {
+            "rule": "delight-magento\\.fly\\.dev\\/web\\/js\\/delight-widget\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "eaf6b68cfb42522ed9af043d1e2025e814070dae5a48311701e3881706d98f01"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cdkeys.com",
+                "www.cdkeys.com"
+            ]
+        },
+        {
+            "rule": "delight-magento\\.fly\\.dev\\/web\\/css\\/delight_widget\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cdd0148eebe42c32b8ebd50237560eb146939583ff53b6d66466e0b7e8ea7775"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cdkeys.com",
+                "www.cdkeys.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "Stylesheet": 2
+    },
+    "nameservers": []
+}

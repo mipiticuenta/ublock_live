@@ -1,0 +1,223 @@
+{
+    "domain": "glb.network",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "bvd",
+        "cfc",
+        "igc"
+    ],
+    "cnames": [
+        {
+            "original": "nchat2.bovada.lv",
+            "resolved": "bvd.glb.network"
+        },
+        {
+            "original": "nchat2.cafecasino.lv",
+            "resolved": "cfc.glb.network"
+        },
+        {
+            "original": "services.bovada.lv",
+            "resolved": "bvd.glb.network"
+        },
+        {
+            "original": "services.cafecasino.lv",
+            "resolved": "cfc.glb.network"
+        },
+        {
+            "original": "services.ignitioncasino.eu",
+            "resolved": "igc.glb.network"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "glb\\.network\\/assets\\/apps\\/cross-messaging-app\\/receiver\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bvd",
+                "cfc",
+                "igc"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "services.bovada.lv",
+                    "resolved": "bvd.glb.network"
+                },
+                {
+                    "original": "services.cafecasino.lv",
+                    "resolved": "cfc.glb.network"
+                },
+                {
+                    "original": "services.ignitioncasino.eu",
+                    "resolved": "igc.glb.network"
+                }
+            ],
+            "responseHashes": [
+                "69ff16aec9c542a373c29e1a033d31a9ec0acd0125448dc699783eeb47e013a8"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bovada.lv",
+                "www.bovada.lv",
+                "www.cafecasino.lv",
+                "www.ignitioncasino.eu"
+            ]
+        },
+        {
+            "rule": "glb\\.network\\/services\\/jurisdiction\\/v2\\/access",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bvd",
+                "cfc",
+                "igc"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "services.bovada.lv",
+                    "resolved": "bvd.glb.network"
+                },
+                {
+                    "original": "services.cafecasino.lv",
+                    "resolved": "cfc.glb.network"
+                },
+                {
+                    "original": "services.ignitioncasino.eu",
+                    "resolved": "igc.glb.network"
+                }
+            ],
+            "responseHashes": [
+                "62d576336261964b5f83bba4e19769ddae522407855b9f5b709aab5fd6dfb442"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bovada.lv",
+                "www.bovada.lv",
+                "www.cafecasino.lv",
+                "www.ignitioncasino.eu"
+            ]
+        },
+        {
+            "rule": "glb\\.network\\/services\\/site-config\\/v1\\/signupform",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bvd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "services.bovada.lv",
+                    "resolved": "bvd.glb.network"
+                }
+            ],
+            "responseHashes": [
+                "f44e5898d867b72846f7264b0ea95aa00254bba652f020f3362e2f2e64f2f8a1"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bovada.lv",
+                "www.bovada.lv"
+            ]
+        },
+        {
+            "rule": "glb\\.network\\/rules\\/la\\/nm\\.rules\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "bvd",
+                "cfc"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "nchat2.bovada.lv",
+                    "resolved": "bvd.glb.network"
+                },
+                {
+                    "original": "nchat2.cafecasino.lv",
+                    "resolved": "cfc.glb.network"
+                }
+            ],
+            "responseHashes": [
+                "bf37aeb0f3dfb6af907550daf6c2f9bb70160ac6fecd57cd95a42d26afcd6e54"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bovada.lv",
+                "www.bovada.lv",
+                "www.cafecasino.lv"
+            ]
+        },
+        {
+            "rule": "glb\\.network\\/iChatClient\\/JSPClient\\.jsp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bvd",
+                "cfc"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "nchat2.bovada.lv",
+                    "resolved": "bvd.glb.network"
+                },
+                {
+                    "original": "nchat2.cafecasino.lv",
+                    "resolved": "cfc.glb.network"
+                }
+            ],
+            "responseHashes": [
+                "8eb665a05562110b74f856735b9ae24867016b3b8a5216f0162179a23913d1f3",
+                "6671f084eecd8a7afd380ae524c91354420502736b5ce494caca77a2aea48c2e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bovada.lv",
+                "www.bovada.lv",
+                "www.cafecasino.lv"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000341,
+    "types": {
+        "Document": 4,
+        "Fetch": 6,
+        "Script": 6
+    },
+    "nameservers": [
+        "ns2.cdnetdns.net",
+        "ns1.cdnetdns.net"
+    ]
+}

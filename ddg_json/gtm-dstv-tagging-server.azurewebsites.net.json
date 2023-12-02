@@ -1,0 +1,70 @@
+{
+    "domain": "gtm-dstv-tagging-server.azurewebsites.net",
+    "owner": {
+        "name": "Microsoft Corporation",
+        "displayName": "Microsoft",
+        "privacyPolicy": "https://privacy.microsoft.com/en-us/privacystatement",
+        "url": "http://microsoft.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "tag.dstv.com",
+            "resolved": "gtm-dstv-tagging-server.azurewebsites.net"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "gtm-dstv-tagging-server\\.azurewebsites\\.net\\/g\\/collect",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "tag.dstv.com",
+                    "resolved": "gtm-dstv-tagging-server.azurewebsites.net"
+                }
+            ],
+            "responseHashes": [
+                "24a18192c88cdcc7679b0104d1605941d51b9fb4e1b8f1cc65961c4a6029e2e3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ga": 0.00004087221302597429
+            },
+            "exampleSites": [
+                "dstv.com",
+                "www.dstv.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "dyrzq6hwtywh8.cloudfront.net",
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.3333333333333333
+        }
+    ],
+    "types": {
+        "XHR": 2
+    },
+    "nameservers": []
+}

@@ -1,0 +1,286 @@
+{
+    "domain": "sailthru.com",
+    "owner": {
+        "name": "CM Group",
+        "displayName": "CM Group"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000232,
+    "sites": 34,
+    "subdomains": [
+        "sailthru-marketing-automation-app-webhooks-prod",
+        "horizon",
+        "cb",
+        "media"
+    ],
+    "cnames": [
+        {
+            "original": "link.edenbrothers.com",
+            "resolved": "cb.sailthru.com"
+        },
+        {
+            "original": "link.theblaze.com",
+            "resolved": "cb.sailthru.com"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "sailthru\\.com\\/shopify\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sailthru-marketing-automation-app-webhooks-prod"
+            ],
+            "apis": {
+                "Document.cookie setter": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b399aa23b1d80a8d9b146ced03002329fdd7ce63f3a2ab79cba5e375cb9d2ca2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookies.js": {
+                    "ttl": 3,
+                    "length": 9,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flaviar.com",
+                "www.myfonts.com"
+            ]
+        },
+        {
+            "rule": "sailthru\\.com\\/horizon\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "horizon"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_li_dcdm_c": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "nymag.com",
+                "www.grubstreet.com",
+                "www.thecut.com"
+            ]
+        },
+        {
+            "rule": "sailthru\\.com\\/join\\/6yw\\/signup-ebf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "link.edenbrothers.com",
+                    "resolved": "cb.sailthru.com"
+                }
+            ],
+            "responseHashes": [
+                "88465312780df5189717cbd4e42e9305bc543e9d5e278ee33a49d87ebcca5cbf"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "edenbrothers.com",
+                "www.edenbrothers.com"
+            ]
+        },
+        {
+            "rule": "sailthru\\.com\\/composer\\/images\\/sailthru-prod-6jb\\/overlay\\/bp-logo-lightdark\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "01312acfeaabe437248c870700240fda6ab0d5d5e4f3cdbc22de184c1efc59c8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "harpercollins.com",
+                "www.harpercollins.com"
+            ]
+        },
+        {
+            "rule": "sailthru\\.com\\/6jb\\/1k6\\/5\\/c\\/627da4267d5d6\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "57d86a0f41c01114699be15594d355798199c0b793892ac7b43f5c56c7b48d13"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "harpercollins.com",
+                "www.harpercollins.com"
+            ]
+        },
+        {
+            "rule": "sailthru\\.com\\/4rc\\/1k3\\/9\\/3\\/5d6e836007c05\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nationalreview.com",
+                "www.nationalreview.com"
+            ]
+        },
+        {
+            "rule": "sailthru\\.com\\/join\\/3ia\\/blazemedia-rm-footer",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "link.theblaze.com",
+                    "resolved": "cb.sailthru.com"
+                }
+            ],
+            "responseHashes": [
+                "d98a38216871bc34d4e04287bb9df695acc467623593e69aa017a19fa5bc0d7e"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "theblaze.com",
+                "www.theblaze.com"
+            ]
+        },
+        {
+            "rule": "sailthru\\.com\\/join\\/3ia\\/blazemedia-rm-inner-post-default",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "link.theblaze.com",
+                    "resolved": "cb.sailthru.com"
+                }
+            ],
+            "responseHashes": [
+                "51a92bfb7f7dbac12b344fc5449a6a647c60ece840bd5e0df01fb462f9bc39d7"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "theblaze.com",
+                "www.theblaze.com"
+            ]
+        },
+        {
+            "rule": "sailthru\\.com\\/composer\\/images\\/sailthru-prod-6dc\\/VOGUE%20LOGO%20FRANCE%20%281%29\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4eff4b0b8c9cc432d9f9d9590f0b3e7e15d0dc280bf6188939d5958bb9fafa42"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vogue.fr",
+                "www.vogue.fr"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7407407407407407
+        },
+        {
+            "domain": "sail-horizon.com",
+            "prevalence": 0.18518518518518517
+        },
+        {
+            "domain": "tinypass.com",
+            "prevalence": 0.07407407407407407
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Image": 9,
+        "Document": 6,
+        "Font": 2
+    },
+    "nameservers": [
+        "ns1.dnsmadeeasy.com",
+        "ns4.dnsmadeeasy.com",
+        "ns2.dnsmadeeasy.com",
+        "ns0.dnsmadeeasy.com",
+        "ns3.dnsmadeeasy.com"
+    ]
+}

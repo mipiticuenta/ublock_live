@@ -1,0 +1,359 @@
+{
+    "domain": "smart-bdash.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000681,
+    "sites": 10,
+    "subdomains": [
+        "cdn.activity",
+        "tracker",
+        "receptions",
+        "recommendserveweb",
+        "tracker-rec"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "smart-bdash\\.com\\/tracking-script\\/bdash_log\\.js",
+            "cookies": 0.0000477,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.activity"
+            ],
+            "apis": {
+                "Document.cookie getter": 7,
+                "Date.prototype.getTime": 7,
+                "Document.cookie setter": 7,
+                "Navigator.prototype.userAgent": 7
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "3a28646c3df8221a34c3bc1b9d9e6456a502e790a8b10677aeb2bee4e730290e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_bd_prev_page": {
+                    "ttl": 1807,
+                    "length": 84,
+                    "prevalence": 0.00004768424853030334,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nurse-senka.jp",
+                "shop.newbalance.jp",
+                "www.agaroot.jp",
+                "www.cdjapan.co.jp",
+                "www.dospara.co.jp",
+                "www.e-earphone.jp",
+                "www.ozmall.co.jp"
+            ]
+        },
+        {
+            "rule": "smart-bdash\\.com\\/reception-script\\/reception\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.activity"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "Document.cookie getter": 4,
+                "Document.cookie setter": 4,
+                "window.innerHeight": 3,
+                "window.innerWidth": 2
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "15e051deb35374b15f4ac4dc57f500891688464a5ab57f94a96a6e0050a207c1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_bd_reception_request_timestamp": {
+                    "ttl": null,
+                    "length": 26,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nurse-senka.jp",
+                "www.agaroot.jp",
+                "www.e-earphone.jp",
+                "www.ozmall.co.jp"
+            ]
+        },
+        {
+            "rule": "smart-bdash\\.com\\/tracking",
+            "cookies": 0.0000477,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracker"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "e75d749c15ba3e63721b8d5840faf7e2e651f6f7c747c7cd0fe670436a2975de",
+                "39575c86270e8f2b950f1a1be04a6d424cbc601ffdb80aa77df9e0a9b80a63a1",
+                "988ee650cd6357a7452e8a11b504d632c9ecd0720f80f62ea2adbdbbaa498b40",
+                "856d0aa53f1d66ae551e5dcf6fa11f296fa266f47f3493bb2af43a73fa3bd04f",
+                "6fc8b1f9bdb604671d7ead4aa4ca4b707921bbedf4f4cd9c031efe97e05e596c",
+                "30c1cf0ebce43e9b85ab7dd7065b339fe2cccfe72729498991ddcee1ee7e9d80"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nurse-senka.jp",
+                "shop.newbalance.jp",
+                "www.agaroot.jp",
+                "www.cdjapan.co.jp",
+                "www.dospara.co.jp",
+                "www.e-earphone.jp",
+                "www.ozmall.co.jp"
+            ]
+        },
+        {
+            "rule": "smart-bdash\\.com\\/receptions",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "receptions"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e2219a353e05865fadae43a89f237c9a5354edf11dc53e80933f2bd79fa7732f",
+                "d0a1a87746f1811782d6f54b2cab041269815c366fa766f4c0170f039f3d3b1e",
+                "d155949bf770fcb24c91f8afcf1e4d75d853ef86e6cb38c62fc9bd9183fa8f4b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nurse-senka.jp",
+                "www.agaroot.jp",
+                "www.e-earphone.jp",
+                "www.ozmall.co.jp"
+            ]
+        },
+        {
+            "rule": "smart-bdash\\.com\\/receptions",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "receptions"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nurse-senka.jp",
+                "www.agaroot.jp",
+                "www.e-earphone.jp",
+                "www.ozmall.co.jp"
+            ]
+        },
+        {
+            "rule": "smart-bdash\\.com\\/receptions\\/action\\/impression",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "receptions"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "agaroot.jp",
+                "www.ozmall.co.jp"
+            ]
+        },
+        {
+            "rule": "smart-bdash\\.com\\/receptions\\/action\\/impression",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "receptions"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "agaroot.jp",
+                "www.ozmall.co.jp"
+            ]
+        },
+        {
+            "rule": "smart-bdash\\.com\\/tag-manager\\/bd-e4x2cu\\/btm\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.activity"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dfe7687b92b2be2e5c07da5252ce1b241bfc66b3fded59b58904014c26217d50"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_bdck": {
+                    "ttl": 63072001,
+                    "length": 19,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_bdsid": {
+                    "ttl": 1801,
+                    "length": 33,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_bdnvf": {
+                    "ttl": 63072001,
+                    "length": 52,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_bd_prev_page_ex": {
+                    "ttl": 1803,
+                    "length": 74,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cdjapan.co.jp",
+                "www.cdjapan.co.jp"
+            ]
+        },
+        {
+            "rule": "smart-bdash\\.com\\/out\\/getRecs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "recommendserveweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bac4c4d4fe066ae3d281c05ade06649b54745db52309933b9f4176337e02cabd"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "e-earphone.jp",
+                "www.ozmall.co.jp"
+            ]
+        },
+        {
+            "rule": "smart-bdash\\.com\\/out\\/multi_recommendations",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "recommendserveweb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0dd5be9844ae2e62b172a8cda4a260f67d19ac43535bf9d78d99c0ef55deaf01"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "e-earphone.jp",
+                "www.ozmall.co.jp"
+            ]
+        },
+        {
+            "rule": "smart-bdash\\.com\\/activity",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracker-rec"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "e-earphone.jp",
+                "www.e-earphone.jp"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000681,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.8
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2
+        }
+    ],
+    "types": {
+        "Script": 13,
+        "XHR": 19,
+        "Preflight": 6
+    },
+    "nameservers": [
+        "ns-260.awsdns-32.com",
+        "ns-864.awsdns-44.net",
+        "ns-1069.awsdns-05.org",
+        "ns-1638.awsdns-12.co.uk"
+    ]
+}

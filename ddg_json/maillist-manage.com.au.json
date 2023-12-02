@@ -1,0 +1,106 @@
+{
+    "domain": "maillist-manage.com.au",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-AU"
+    ],
+    "prevalence": 0.000302,
+    "sites": 3,
+    "subdomains": [
+        "nepy-zc1",
+        "gysu-hgp"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "maillist-manage\\.com\\.au\\/ua\\/TrailEvent",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nepy-zc1",
+                "gysu-hgp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "174c219b0f5f2208c7e491dc9d8efa6fc64eb1f6d9b3c2a646fc74f85930083d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "australiaoneparty.com",
+                "www.foodlandsa.com.au"
+            ]
+        },
+        {
+            "rule": "maillist-manage\\.com\\.au\\/js\\/dig\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 2,
+            "subdomains": [
+                "nepy-zc1",
+                "gysu-hgp"
+            ],
+            "apis": {
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.language": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.pixelDepth": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "fb3659a13df58bc8b7a438cd96ef5a29219153afe02fe5f443b1c222cabaa31a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "australiaoneparty.com",
+                "www.foodlandsa.com.au"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000302,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "zohostatic.com.au",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "zoho.com.au",
+            "prevalence": 0.25
+        }
+    ],
+    "types": {
+        "Script": 4
+    },
+    "nameservers": [
+        "NS11.ZNS-53.COM",
+        "NS21.ZNS-53.NET",
+        "NS31.ZNS-53.COM",
+        "NS41.ZNS-53.NET",
+        "NS1.ZOHOCORP.COM",
+        "PDNS90.ULTRADNS.COM",
+        "PDNS90.ULTRADNS.NET",
+        "PDNS90.ULTRADNS.BIZ"
+    ]
+}

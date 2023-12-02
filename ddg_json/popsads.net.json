@@ -1,0 +1,88 @@
+{
+    "domain": "popsads.net",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "c"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "popsads\\.net\\/pop",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6af4d96eddc5e396cafc30c8a44ec34dbd77515eafafbce35d8c3e1444770379"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "olweb.tv",
+                "www.olweb.tv"
+            ]
+        },
+        {
+            "rule": "popsads\\.net\\/load",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {
+                "Navigator.prototype.language": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "64734f53df5e05416f7a0da18109ccd1948d86e1ace1652681c89e667f697e33"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "overlayClient1Writed9989eb791ee084f075f": {
+                    "ttl": 26,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "olweb.tv",
+                "www.olweb.tv"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "ustream.to",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 4
+    },
+    "nameservers": [
+        "tegan.ns.cloudflare.com",
+        "matt.ns.cloudflare.com"
+    ]
+}

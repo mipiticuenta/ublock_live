@@ -1,0 +1,84 @@
+{
+    "domain": "zeiss.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "images",
+        "locator"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "zeiss\\.com\\/consumer-products\\/images\\/nature-observation\\/products\\/binoculars\\/specials\\/monoculars\\/stage\\/zeiss-monoculars-stage-01\\.ts-1610710002399\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a27fb1547a030a444233e462fa320a8254dd4d789261bc7e2fae95f5d2af464a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zeiss.de",
+                "www.zeiss.de"
+            ]
+        },
+        {
+            "rule": "zeiss\\.com\\/core_functions\\/cop-ajaxdata\\.php",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "locator"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dbb92920cace6367ca935d5a3d4d75dc6bbf2c98540c2bcf74fddafd8478b0a0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zeiss.de",
+                "www.zeiss.de"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7777777777777778
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.2222222222222222
+        }
+    ],
+    "types": {
+        "Image": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "auth05.ns.de.uu.net",
+        "auth40.ns.uu.net",
+        "auth55.ns.de.uu.net",
+        "auth20.ns.wcom.com"
+    ]
+}

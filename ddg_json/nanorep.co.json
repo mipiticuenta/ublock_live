@@ -1,0 +1,587 @@
+{
+    "domain": "nanorep.co",
+    "owner": {
+        "name": "LogMeIn, Inc.",
+        "displayName": "LogMeIn",
+        "privacyPolicy": "https://secure.logmein.com/policies/privacy.aspx",
+        "url": "http://logmein.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000143,
+    "sites": 21,
+    "subdomains": [
+        "steiner-cv19",
+        "iowadepartment",
+        "iowalottery",
+        "abbott",
+        "lifeisgood-cv19",
+        "northpointebank-cv19",
+        "toastmasters-cv19",
+        "yad2",
+        "fanniemae",
+        "hyperx",
+        "nordvpn",
+        "vodafoneuk",
+        "eaton"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "nanorep\\.co\\/web\\/floating-widget\\.js",
+            "cookies": 0.0000749,
+            "fingerprinting": 1,
+            "subdomains": [
+                "steiner-cv19",
+                "iowadepartment",
+                "iowalottery",
+                "abbott",
+                "lifeisgood-cv19",
+                "northpointebank-cv19",
+                "toastmasters-cv19",
+                "yad2"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 11,
+                "window.localStorage": 11,
+                "Document.cookie getter": 11,
+                "Document.cookie setter": 11,
+                "Date.prototype.getTime": 5,
+                "Navigator.prototype.languages": 5,
+                "window.sessionStorage": 1
+            },
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "fba29cd07c24c4ef39e9f8d31501b823d28a45c5317deafd1a813769bd875879"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "bc.visitor_token": {
+                    "ttl": 31622404,
+                    "length": 19,
+                    "prevalence": 0.00007493239054761953,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "steinertractor.com",
+                "antique-tractor-parts.steinertractor.com",
+                "dps.iowa.gov",
+                "history.iowa.gov",
+                "ialottery.com",
+                "www.abbott.com",
+                "www.iowa.gov",
+                "www.lifeisgood.com",
+                "www.northpointe.com",
+                "www.toastmasters.org",
+                "www.yad2.co.il"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/api\\/widget\\/v1\\/cnf",
+            "cookies": 0.0000886,
+            "fingerprinting": 0,
+            "subdomains": [
+                "steiner-cv19",
+                "iowadepartment",
+                "iowalottery",
+                "fanniemae",
+                "hyperx",
+                "abbott",
+                "lifeisgood-cv19",
+                "northpointebank-cv19",
+                "toastmasters-cv19",
+                "yad2"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.0000886,
+            "cnames": [],
+            "responseHashes": [
+                "c20a00bc8a274138a7467e39440549a8cd7c6a0619cbbcddf3dd9ac624295329",
+                "93a9f1df67b6e20e31b8fb6db79dc0962151d839c9dd28a6e69bf61bdbb0b0a0",
+                "402ab967d9c793ed01ec46987a83b401fc4eb8ae3199532bdefd50852d2b54c2",
+                "322211b70a57da5fe2d0642af25b4c505493a71d7111457dd774df6954ee22bb",
+                "d91d673a7f75ff1e33a7f026bdf7c8077621abac167676003740e8e090ca731b",
+                "f362cb6f211dca551652973ca962876624546845f399ecffa0b701a7b8cf42da",
+                "fa9dae3ff2950876ce085080c0afd4594f72a5d24ae7fe6d7f19b9aaf0c3057a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "steinertractor.com",
+                "antique-tractor-parts.steinertractor.com",
+                "dps.iowa.gov",
+                "history.iowa.gov",
+                "ialottery.com",
+                "selling-guide.fanniemae.com",
+                "support.hyperx.com",
+                "www.abbott.com",
+                "www.iowa.gov",
+                "www.lifeisgood.com",
+                "www.northpointe.com",
+                "www.toastmasters.org",
+                "www.yad2.co.il"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/api\\/visitorTokenConfig",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "steiner-cv19",
+                "iowadepartment",
+                "iowalottery",
+                "nordvpn",
+                "vodafoneuk",
+                "eaton",
+                "abbott",
+                "lifeisgood-cv19",
+                "northpointebank-cv19",
+                "toastmasters-cv19",
+                "yad2"
+            ],
+            "apis": {},
+            "sites": 14,
+            "prevalence": 0.0000954,
+            "cnames": [],
+            "responseHashes": [
+                "086891f96cf54a0938281ebdc52edbfa58291be32b592dd792d7dbd2e4cf8e00"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "steinertractor.com",
+                "antique-tractor-parts.steinertractor.com",
+                "dps.iowa.gov",
+                "history.iowa.gov",
+                "ialottery.com",
+                "support.nordvpn.com",
+                "support.vodafone.co.uk",
+                "trcsupport.eaton.com",
+                "www.abbott.com",
+                "www.iowa.gov",
+                "www.lifeisgood.com",
+                "www.northpointe.com",
+                "www.toastmasters.org",
+                "www.yad2.co.il"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/api\\/widget\\/v1\\/faqs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "iowadepartment",
+                "abbott"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "c930a124741a8d6935f49c48e1d2d80d54e557b009c2f9841cc7eca96efdcfa6",
+                "9b0d8542b966750bfc26295bf5d21fc8245f19880410dd387cd01124cb581d31"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "bc.visitor_token": 0.000027248142017316195
+            },
+            "exampleSites": [
+                "iowa.gov",
+                "history.iowa.gov",
+                "www.abbott.com",
+                "www.iowa.gov"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/web\\/embedded-widget\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "fanniemae",
+                "hyperx"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 3,
+                "Document.cookie getter": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "56c530de5711d31fe424550ae9879b2eba694683c4b1604b093581880da13bf7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fanniemae.com",
+                "selling-guide.fanniemae.com",
+                "support.hyperx.com"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/common\\/api\\/trackSupportCenter\\.gif",
+            "cookies": 0.0000409,
+            "fingerprinting": 0,
+            "subdomains": [
+                "fanniemae",
+                "hyperx",
+                "nordvpn",
+                "vodafoneuk",
+                "eaton"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "568ab454c055f7876b08365cdc44d018d982a890eda07a1df058e337ea45e257"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "bc.visitor_token": 0.00003406017752164524
+            },
+            "exampleSites": [
+                "fanniemae.com",
+                "selling-guide.fanniemae.com",
+                "support.hyperx.com",
+                "support.nordvpn.com",
+                "support.vodafone.co.uk",
+                "trcsupport.eaton.com"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/web\\/include\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "hyperx",
+                "nordvpn",
+                "vodafoneuk"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "be05b4100562f1ab00d420ee35dfdbc4342e3e3d13fe75eddc7568b05d883392"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "bc.visitor_token": {
+                    "ttl": 31622404,
+                    "length": 19,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hyperx.com",
+                "support.nordvpn.com",
+                "support.vodafone.co.uk"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/~nordvpn\\/api\\/widget\\/v1\\/cnf",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nordvpn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0766888d9a437b172151f9f780cf1de269c733e6329ff2d41e93c10bb8fd5b9f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nordvpn.com",
+                "support.nordvpn.com"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/~nordvpn\\/api\\/widget\\/getLocalization",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "nordvpn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ff4c529277da0d35637bdfe7b8499620945d212c604679e058b81e586c899794"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "bc.visitor_token": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "nordvpn.com",
+                "support.nordvpn.com"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/~vodafoneuk\\/api\\/widget\\/v1\\/cnf",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vodafoneuk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7abd8d2a03f0c9ea5db5ebb454c3f193f3cb86535465d0dfad8a0daaa8459858"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vodafone.co.uk",
+                "support.vodafone.co.uk"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/~vodafoneuk\\/api\\/analytics\\/v1\\/track\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vodafoneuk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "bc.visitor_token": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "vodafone.co.uk",
+                "support.vodafone.co.uk"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/api\\/channeling\\/v1\\/get",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eaton"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "38f7eeddbdf7a19ffde5b1b4d474a55eae285e280247c0812328c1595349fa99"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eaton.com",
+                "trcsupport.eaton.com"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/api\\/conversation\\/v3\\/create",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "abbott"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b9a5667777091986c33691c9adce5428763a922f0d78db89917cafe46a3d029e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "bc.visitor_token": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "abbott.com",
+                "www.abbott.com"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/api\\/conversation\\/v2\\/statement",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "abbott"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "bc.visitor_token": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "abbott.com",
+                "www.abbott.com"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/api\\/conversation\\/v2\\/statement",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "abbott"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1f53b618441bb965c0873849bc21a43a30bf16847f26a3b2188c9c81b1fed9fa"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "bc.visitor_token": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "abbott.com",
+                "www.abbott.com"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/api\\/widget\\/v1\\/hello",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lifeisgood-cv19",
+                "northpointebank-cv19",
+                "toastmasters-cv19"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "c02497d1cb2c6c613f34d6eb3ec1728f3055290676e0c1ebce782ad15bf4f245",
+                "02068dfe27535e7c4b3ca89b23fffe5ab14dedfa34ce0506997b112c152ddff7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.000006812035504329049,
+                "bc.visitor_token": 0.000020436106512987146
+            },
+            "exampleSites": [
+                "lifeisgood.com",
+                "www.northpointe.com",
+                "www.toastmasters.org"
+            ]
+        },
+        {
+            "rule": "nanorep\\.co\\/api\\/kb\\/v1\\/getArticle",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lifeisgood-cv19",
+                "northpointebank-cv19",
+                "toastmasters-cv19"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "9f94699276e9582027a55e9fc2cd0f8b91c12fe5aa9367c254b569b3b52a3bd6",
+                "48059729105bc4398a52f55c53b33e13ab7594d1787e2c23be4d4eb9a5465dc9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "bc.visitor_token": 0.000020436106512987146
+            },
+            "exampleSites": [
+                "lifeisgood.com",
+                "www.northpointe.com",
+                "www.toastmasters.org"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6373626373626373
+        },
+        {
+            "domain": "nanorep.com",
+            "prevalence": 0.2087912087912088
+        },
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.06593406593406594
+        },
+        {
+            "domain": "noibu.com",
+            "prevalence": 0.054945054945054944
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.02197802197802198
+        },
+        {
+            "domain": "boldchat.com",
+            "prevalence": 0.01098901098901099
+        }
+    ],
+    "types": {
+        "Script": 19,
+        "XHR": 49,
+        "Image": 6,
+        "Preflight": 2
+    },
+    "nameservers": [
+        "ns-1044.awsdns-02.org",
+        "ns-124.awsdns-15.com",
+        "ns-1693.awsdns-19.co.uk",
+        "ns-572.awsdns-07.net"
+    ]
+}

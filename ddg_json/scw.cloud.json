@@ -1,0 +1,70 @@
+{
+    "domain": "scw.cloud",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "googletagmanagerzdbspxag-tagging.functions.fnc.nl-ams"
+    ],
+    "cnames": [
+        {
+            "original": "data.taschen.com",
+            "resolved": "googletagmanagerzdbspxag-tagging.functions.fnc.nl-ams.scw.cloud"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "scw\\.cloud\\/gtm\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "googletagmanagerzdbspxag-tagging.functions.fnc.nl-ams"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "data.taschen.com",
+                    "resolved": "googletagmanagerzdbspxag-tagging.functions.fnc.nl-ams.scw.cloud"
+                }
+            ],
+            "responseHashes": [
+                "457584ca2daf21a0e7c602d000ecd8bbf1b374dbd13918cad6e7bc9a30b4181a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "taschen.com",
+                "www.taschen.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.875
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.125
+        }
+    ],
+    "types": {
+        "Script": 2
+    },
+    "nameservers": [
+        "nsb.scaleway.com",
+        "nsc.scaleway.com",
+        "nsa.scaleway.com",
+        "nsd.scaleway.com"
+    ]
+}

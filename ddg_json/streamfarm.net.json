@@ -1,0 +1,90 @@
+{
+    "domain": "streamfarm.net",
+    "owner": {
+        "name": "Netlantic GmbH",
+        "displayName": "Netlantic"
+    },
+    "source": [
+        "DuckDuckGo-DE"
+    ],
+    "prevalence": 0.000202,
+    "sites": 2,
+    "subdomains": [
+        "portal.bttv.cdn"
+    ],
+    "cnames": [
+        {
+            "original": "webtv.bundestag.de",
+            "resolved": "portal.bttv.cdn.streamfarm.net"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "streamfarm\\.net\\/statics\\/tplayer\\/latest\\/production\\/lib\\/tv1hlsplayer\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "portal.bttv.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "webtv.bundestag.de",
+                    "resolved": "portal.bttv.cdn.streamfarm.net"
+                }
+            ],
+            "responseHashes": [
+                "267fdf9dd1127f17505ea5bcd47d5cbb7ddc38e254447943ae815c0ab1f54a61"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bundestag.de",
+                "www.bundestag.de"
+            ]
+        },
+        {
+            "rule": "streamfarm\\.net\\/statics\\/tplayer\\/latest\\/production\\/lib\\/app-proxy\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "portal.bttv.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [
+                {
+                    "original": "webtv.bundestag.de",
+                    "resolved": "portal.bttv.cdn.streamfarm.net"
+                }
+            ],
+            "responseHashes": [
+                "9ac91bc0da45ad9737e63dac8eaef1b398afbec63a0a2f2f0860a924dc0a7011"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bundestag.de",
+                "www.bundestag.de"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "types": {
+        "Script": 4
+    },
+    "nameservers": [
+        "ns-159.awsdns-19.com",
+        "ns-883.awsdns-46.net",
+        "ns-1856.awsdns-40.co.uk",
+        "ns-1367.awsdns-42.org"
+    ]
+}

@@ -1,0 +1,223 @@
+{
+    "domain": "fqtag.com",
+    "owner": {
+        "name": "Forensiq",
+        "displayName": "Forensiq"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000613,
+    "sites": 9,
+    "subdomains": [
+        "cdn",
+        "query",
+        "c",
+        "aux"
+    ],
+    "cnames": [],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "fqtag\\.com\\/1\\.27\\.339-ccfb11a\\/pixel\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Navigator.prototype.plugins": 3,
+                "Navigator.prototype.vendor": 3,
+                "Navigator.prototype.platform": 3,
+                "Navigator.prototype.cookieEnabled": 3,
+                "WebGLRenderingContext.prototype.getParameter": 2,
+                "WebGLRenderingContext.prototype.getSupportedExtensions": 3,
+                "WebGLRenderingContext.prototype.getExtension": 3,
+                "Navigator.prototype.hardwareConcurrency": 3,
+                "Navigator.prototype.getBattery": 3,
+                "Screen.prototype.pixelDepth": 3,
+                "Navigator.prototype.mimeTypes": 3,
+                "Navigator.prototype.javaEnabled": 3,
+                "Navigator.prototype.appVersion": 3,
+                "window.innerWidth": 3,
+                "window.innerHeight": 3,
+                "Screen.prototype.orientation": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3,
+                "Screen.prototype.availWidth": 3,
+                "Screen.prototype.availHeight": 3,
+                "window.devicePixelRatio": 3,
+                "CanvasRenderingContext2D.prototype.getImageData": 3,
+                "window.outerWidth": 3,
+                "window.outerHeight": 3,
+                "BarProp.prototype.visible": 3,
+                "PerformanceTiming.prototype.navigationStart": 3,
+                "Navigator.prototype.permissions": 3,
+                "Notification.permission": 3,
+                "RTCPeerConnection.prototype.constructor": 1,
+                "RTCPeerConnectionIceEvent.prototype.candidate": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e70a34c5f232fa80328a361630a994cf847c54deb926f13d40be4807291b657b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnn.com",
+                "www.mdedge.com",
+                "www.newsweek.com"
+            ]
+        },
+        {
+            "rule": "fqtag\\.com\\/pixel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnn.com",
+                "www.mdedge.com",
+                "www.newsweek.com"
+            ]
+        },
+        {
+            "rule": "fqtag\\.com\\/b",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "query"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "6731a6048e018ef982e308a389fd3b02ddbcab1d71b364259c5ce4097cbb8287",
+                "b896263dd16c4f5f4009a72b04489499dcd90ce9658086dcb3eb4b01409f088b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dpreview.com",
+                "www.informador.mx",
+                "www.newsweek.com"
+            ]
+        },
+        {
+            "rule": "fqtag\\.com\\/tag\\/implement-r\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "c"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "cfac47e27ab0f1c5949a2d237e203f134bfb34e6bb5b0b6a147637a5fc4af3de",
+                "076f9d035967fb6db0ec1144c0a937be55da953e4d92c656d1f341afc783db40",
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "lotame_domain_check": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "mdedge.com",
+                "www.mdedge.com",
+                "www.newsweek.com",
+                "www.refinery29.com"
+            ]
+        },
+        {
+            "rule": "fqtag\\.com\\/aux\\/i",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aux"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mdedge.com",
+                "www.mdedge.com"
+            ]
+        },
+        {
+            "rule": "fqtag\\.com\\/aux\\/p",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aux"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mdedge.com",
+                "www.mdedge.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.47619047619047616
+        },
+        {
+            "domain": "script.ac",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.14285714285714285
+        },
+        {
+            "domain": "outbrain.com",
+            "prevalence": 0.047619047619047616
+        }
+    ],
+    "types": {
+        "Script": 10,
+        "XHR": 7
+    },
+    "nameservers": [
+        "ns-2022.awsdns-60.co.uk",
+        "ns-476.awsdns-59.com",
+        "ns-920.awsdns-51.net",
+        "ns-1179.awsdns-19.org"
+    ]
+}

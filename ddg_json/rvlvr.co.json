@@ -1,0 +1,116 @@
+{
+    "domain": "rvlvr.co",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "acs01"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "rvlvr\\.co\\/piwik\\/piwik\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "acs01"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2,
+                "window.name": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "43af579102b8c4adff968a3a00280fc2061cc33538c7bbad1d8d6ec775f0807b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pk_id.173.0f01": {
+                    "ttl": 33955205,
+                    "length": 28,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_pk_ses.173.0f01": {
+                    "ttl": 1804,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_pk_id.428.0f01": {
+                    "ttl": 33955205,
+                    "length": 28,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_pk_ses.428.0f01": {
+                    "ttl": 1804,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "front-row.jp",
+                "www.autoby.jp"
+            ]
+        },
+        {
+            "rule": "rvlvr\\.co\\/piwik\\/piwik\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "acs01"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "front-row.jp",
+                "www.autoby.jp"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Ping": 2
+    },
+    "nameservers": [
+        "ns-1848.awsdns-39.co.uk",
+        "ns-900.awsdns-48.net",
+        "ns-36.awsdns-04.com",
+        "ns-1209.awsdns-23.org"
+    ]
+}

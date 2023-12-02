@@ -1,0 +1,130 @@
+{
+    "domain": "pressherald.com",
+    "owner": {
+        "name": "MaineToday Media, Inc.",
+        "displayName": "MaineToday Media"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "talk",
+        "multifiles"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "pressherald\\.com\\/api\\/v1\\/graph\\/ql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "talk"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "21284aaa4d8c2902d02d6633006f5eaa8767225b5dee3f0ac74f916b0704f331",
+                "8ae5d0a943856a7ec3698951c72f74842aa5ac81b2c6067186b05c1dc39082cb"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "centralmaine.com",
+                "www.centralmaine.com",
+                "www.sunjournal.com"
+            ]
+        },
+        {
+            "rule": "pressherald\\.com\\/api\\/v1\\/graph\\/ql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "talk"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "centralmaine.com",
+                "www.centralmaine.com",
+                "www.sunjournal.com"
+            ]
+        },
+        {
+            "rule": "pressherald\\.com\\/static\\/embed\\/count\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "talk"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "b5348bce27dd30c92e52147a01a1b7473835f757de5ac4159b6e103c87afa1c1",
+                "9bb59b3638982cf397c28c0bcfff02bac7f2dbeb42cf130a87c9be6e1a94196f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "centralmaine.com",
+                "www.centralmaine.com",
+                "www.sunjournal.com"
+            ]
+        },
+        {
+            "rule": "pressherald\\.com\\/uploads\\/sites\\/2\\/2014\\/06\\/apple-touch-icon-iphone-retina-display\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "multifiles"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "centralmaine.com",
+                "www.centralmaine.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "XHR": 3,
+        "Preflight": 3,
+        "Script": 3,
+        "Image": 2
+    },
+    "nameservers": [
+        "amber.ns.cloudflare.com",
+        "rocky.ns.cloudflare.com"
+    ]
+}

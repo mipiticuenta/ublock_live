@@ -1,0 +1,62 @@
+{
+    "domain": "startappservice.com",
+    "owner": {
+        "name": "Start.io Inc.",
+        "displayName": "Start.io"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "funnel-assets"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "startappservice\\.com\\/tr\\/sio\\.gtm\\.wrapper\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "funnel-assets"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c367e2b3cc091feafde4a7eb14a69a9aefe86789def55d1c0569bada6149394d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "heydude.com",
+                "www.heydude.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2
+    },
+    "nameservers": [
+        "dns2.p05.nsone.net",
+        "dns4.p05.nsone.net",
+        "dns1.p05.nsone.net",
+        "dns3.p05.nsone.net"
+    ]
+}

@@ -1,0 +1,123 @@
+{
+    "domain": "canalplustech.pro",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "ltv.slc-app-aka.prod.bo.canal",
+        "dtd-pfsbo-slc-acm-api-eu-west-1.prod.bo.canal"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "canalplustech\\.pro\\/api\\/V4\\/zones\\/cpfra\\/devices\\/3\\/apps\\/1\\/jobs\\/InitLiveTV",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ltv.slc-app-aka.prod.bo.canal"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5765f55793bb1d2e1f6fb9b59a226b2c168cbf95651cf9e38d8885a78729f177"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canalplus.com",
+                "www.mycanal.fr"
+            ]
+        },
+        {
+            "rule": "canalplustech\\.pro\\/api\\/V4\\/zones\\/cpfra\\/devices\\/3\\/apps\\/1\\/jobs\\/InitLiveTV",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ltv.slc-app-aka.prod.bo.canal"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canalplus.com",
+                "www.mycanal.fr"
+            ]
+        },
+        {
+            "rule": "canalplustech\\.pro\\/api\\/v2\\/offerZones\\/cpfra\\/offerLocation\\/fr\\/parentalCode\\/exists",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dtd-pfsbo-slc-acm-api-eu-west-1.prod.bo.canal"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canalplus.com",
+                "www.mycanal.fr"
+            ]
+        },
+        {
+            "rule": "canalplustech\\.pro\\/api\\/v2\\/offerZones\\/cpfra\\/offerLocation\\/fr\\/parentalCode\\/exists",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "dtd-pfsbo-slc-acm-api-eu-west-1.prod.bo.canal"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9c566c1f251604269713f137c7bb324b0277288425c5a8f93ea068f1baca00ee"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "canalplus.com",
+                "www.mycanal.fr"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "canalplus.com",
+            "prevalence": 0.5
+        }
+    ],
+    "types": {
+        "XHR": 4,
+        "Preflight": 4
+    },
+    "nameservers": [
+        "nsa.perf1.fr",
+        "nsb.perf1.com",
+        "nsc.perf1.com"
+    ]
+}

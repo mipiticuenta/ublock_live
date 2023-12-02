@@ -1,0 +1,66 @@
+{
+    "domain": "pzz.io",
+    "owner": {
+        "name": "Kizitos Holding B.V.",
+        "displayName": "Kizitos Holding"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "pzz\\.io\\/pzz\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6eb222cefaa95951c377d5be4821577fe3b85de2f5e745b83181cfd960c80a0b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "pzz_session_id": {
+                    "ttl": 31536000,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "huisvlijt.com",
+                "www.mamsatwork.nl"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2
+    },
+    "nameservers": [
+        "ns-cloud-d3.googledomains.com",
+        "ns-cloud-d1.googledomains.com",
+        "ns-cloud-d4.googledomains.com",
+        "ns-cloud-d2.googledomains.com"
+    ]
+}

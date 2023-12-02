@@ -1,0 +1,89 @@
+{
+    "domain": "webads.eu",
+    "owner": {
+        "name": "WebAds B.V.",
+        "displayName": "WebAds"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "analytics",
+        "tools"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "webads\\.eu\\/pixel\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "isgeschiedenis.nl",
+                "www.teleborsa.it",
+                "www.zoover.nl"
+            ]
+        },
+        {
+            "rule": "webads\\.eu\\/headerBidding\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tools"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "songteksten.net",
+                "www.cyclingstage.com",
+                "www.vandale.nl",
+                "www.woordenboek.nl"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "biddercore.io",
+            "prevalence": 0.5588235294117647
+        },
+        {
+            "domain": "nojazz.eu",
+            "prevalence": 0.4411764705882353
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "Ping": 4
+    },
+    "nameservers": [
+        "ns0.transip.net",
+        "ns1.transip.nl",
+        "ns2.transip.eu"
+    ]
+}

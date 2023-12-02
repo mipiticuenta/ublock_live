@@ -1,0 +1,76 @@
+{
+    "domain": "likr.com.tw",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "auto-load-balancer"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "likr\\.com\\.tw\\/pushEndPoint\\/uuid_gen\\/uuid_iframe\\.php",
+            "cookies": 0.0000272,
+            "fingerprinting": 1,
+            "subdomains": [
+                "auto-load-balancer"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 4,
+                "Document.cookie setter": 4
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "294b0c2e3ec3edc89ec51dcef5ef2e099b3111a0634b2e7121cd249744d39b3a"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {
+                "AviviD_uuid": {
+                    "ttl": 315360016,
+                    "length": 36,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                },
+                "AviviD_refresh_uuid_status": {
+                    "ttl": 315360017,
+                    "length": 1,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 0.3333333333333333
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jalantikus.com",
+                "thanhnien.vn",
+                "www.insertlive.com",
+                "www.islampos.com",
+                "www.setn.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Document": 5
+    },
+    "nameservers": [
+        "ns-cloud-b3.googledomains.com",
+        "ns-cloud-b4.googledomains.com",
+        "ns-cloud-b1.googledomains.com",
+        "ns-cloud-b2.googledomains.com"
+    ]
+}

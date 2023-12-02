@@ -1,0 +1,157 @@
+{
+    "domain": "subscriptiongenius.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "paywall"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "subscriptiongenius\\.com\\/load\\.js",
+            "cookies": 0.0000341,
+            "fingerprinting": 1,
+            "subdomains": [
+                "paywall"
+            ],
+            "apis": {
+                "Document.cookie getter": 5,
+                "Date.prototype.getTime": 5,
+                "Document.cookie setter": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "162b9adcdb856d5fe981a1229abeb6d8dce2be69227f2746bd59f723c533504a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "subscriptiongenius_api": {
+                    "ttl": 8640005,
+                    "length": 26,
+                    "prevalence": 0.00003406017752164524,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "christianstandard.com",
+                "dragillustrated.com",
+                "www.easthamptonstar.com",
+                "www.reformedworship.org",
+                "www.vintageguitar.com"
+            ]
+        },
+        {
+            "rule": "subscriptiongenius\\.com\\/media\\/paywall\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "paywall"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "f992e4b1c435137aa063c33544f66e97a4e2056d3a46b5084d5cc3a0f75e1ebc"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "christianstandard.com",
+                "dragillustrated.com",
+                "www.easthamptonstar.com",
+                "www.reformedworship.org",
+                "www.vintageguitar.com"
+            ]
+        },
+        {
+            "rule": "subscriptiongenius\\.com\\/index\\.php",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "paywall"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "3625e7e3c5cef2237c098ae1e87eafccb4267fb6088e77385e0cbf6803453eb6",
+                "a41c58536506a13d57c7c49ce2c8b89dfaf40b1c4c945a3aabce9bc56d4d776f",
+                "39cf2527f66158d730e3f6e6ad7636f6fbdf69668d46ad490931b66820c63fc9",
+                "da55d19c9cbf492c76adb92e2dc7cbc3a5d76a426fb119b2aaa8712276d203f6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "christianstandard.com",
+                "dragillustrated.com",
+                "www.easthamptonstar.com",
+                "www.reformedworship.org",
+                "www.vintageguitar.com"
+            ]
+        },
+        {
+            "rule": "subscriptiongenius\\.com\\/blank\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "paywall"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "christianstandard.com",
+                "dragillustrated.com",
+                "www.easthamptonstar.com",
+                "www.reformedworship.org",
+                "www.vintageguitar.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000477,
+    "topInitiators": [
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.7142857142857143
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.03571428571428571
+        }
+    ],
+    "types": {
+        "Script": 5,
+        "Stylesheet": 5,
+        "XHR": 5,
+        "Document": 5
+    },
+    "nameservers": [
+        "desi.ns.cloudflare.com",
+        "ernest.ns.cloudflare.com"
+    ]
+}

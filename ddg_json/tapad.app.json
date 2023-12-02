@@ -1,0 +1,100 @@
+{
+    "domain": "tapad.app",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000681,
+    "sites": 10,
+    "subdomains": [
+        "cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "tapad\\.app\\/js\\/pixel\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "saveandtravel.in",
+                "www.ericpetersautos.com",
+                "www.ftvlive.com",
+                "www.signingsavvy.com",
+                "www.trekbbs.com"
+            ]
+        },
+        {
+            "rule": "tapad\\.app\\/js\\/dcs-xhr\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 4,
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "7bd890aed51b4eb9dac1c069b3558a8b7f20845885af4d502aa9b2a04be0aa10"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "TAPAD": {
+                    "ttl": null,
+                    "length": 59,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "corepoweryoga.com",
+                "www.nassauparadiseisland.com",
+                "www.rockettes.com",
+                "www.trivago.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "lijit.com",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.3
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.2
+        }
+    ],
+    "types": {
+        "Script": 9
+    },
+    "nameservers": [
+        "ns-cloud-d1.googledomains.com",
+        "ns-cloud-d4.googledomains.com",
+        "ns-cloud-d2.googledomains.com",
+        "ns-cloud-d3.googledomains.com"
+    ]
+}

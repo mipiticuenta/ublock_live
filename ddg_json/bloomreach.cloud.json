@@ -1,0 +1,102 @@
+{
+    "domain": "bloomreach.cloud",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000613,
+    "sites": 9,
+    "subdomains": [
+        "prod.dart",
+        "production-cms.ravensburger",
+        "prod.globalindustrial"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "bloomreach\\.cloud\\/servlets\\/products\\/hst%3Aroot\\/results",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.dart"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "11dbe679b8bc7a0ff66ad95f63f055f4434eebe14a0a85917b66d6b638ffead8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dartcontainer.com",
+                "www.dartcontainer.com"
+            ]
+        },
+        {
+            "rule": "bloomreach\\.cloud\\/site\\/binaries\\/content\\/gallery\\/lorcana-web\\/landing\\/mickey-full\\.jpg",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-cms.ravensburger"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "617a7c5aa30058286a83b4ac52ceb6769ef8f9c183a7f341f5c5b48e1715e726"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "disneylorcana.com",
+                "www.disneylorcana.com"
+            ]
+        },
+        {
+            "rule": "bloomreach\\.cloud\\/gicweb\\/content\\/categoryBanner\\/searchByKeyword",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod.globalindustrial"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "globalindustrial.com",
+                "www.globalindustrial.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000613,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Fetch": 2,
+        "Image": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "rachel.ns.cloudflare.com",
+        "alexis.ns.cloudflare.com"
+    ]
+}

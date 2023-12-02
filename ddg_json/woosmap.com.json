@@ -1,0 +1,417 @@
+{
+    "domain": "woosmap.com",
+    "owner": {
+        "name": "Web Geo Services",
+        "displayName": "Web Geo Services"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000204,
+    "sites": 30,
+    "subdomains": [
+        "sdk",
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "woosmap\\.com\\/localities\\/localitieswidget\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a17b13ecbbb5d47d4eca9db9f6e822ef0f2d94890312a1eb009f34b8833c37ca"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atu.de",
+                "www.asianpaints.com"
+            ]
+        },
+        {
+            "rule": "woosmap\\.com\\/locator\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "ed1a68dc30e66bb6f98ed54b6ab14be859f833d6ca3e6cbd589f20a52aff8a0c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "asianpaints.com",
+                "www.burgerking.fr",
+                "www.howdens.com",
+                "www.location.leclerc"
+            ]
+        },
+        {
+            "rule": "woosmap\\.com\\/localities\\/style\\.2\\.0\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "f96fa9ed7a9c2111534a987b5272315363f250aa5dc7b3fc9c61d7303022b9b0"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "burgerking.fr",
+                "www.halfords.com",
+                "www.halfords.ie",
+                "www.hss.com",
+                "www.nocibe.fr",
+                "www.toolstation.nl"
+            ]
+        },
+        {
+            "rule": "woosmap\\.com\\/localities\\/localitieswidget\\.2\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 7
+            },
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "bb0caf68d16d4a6a5ad5524a52b75b99638bb9b981d9b9c45b3e27b6e51080d9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "burgerking.fr",
+                "www.calzedonia.com",
+                "www.halfords.com",
+                "www.halfords.ie",
+                "www.hss.com",
+                "www.intimissimi.com",
+                "www.spoticar.fr",
+                "www.tezenis.com",
+                "www.toolstation.nl"
+            ]
+        },
+        {
+            "rule": "woosmap\\.com\\/map\\/map\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {
+                "Navigator.prototype.hardwareConcurrency": 4,
+                "URL.createObjectURL": 3,
+                "Navigator.prototype.languages": 4,
+                "window.devicePixelRatio": 4,
+                "WebGLRenderingContext.prototype.getExtension": 4,
+                "WebGLRenderingContext.prototype.getParameter": 4,
+                "Navigator.prototype.userAgent": 4,
+                "CanvasRenderingContext2D.prototype.getImageData": 4,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "bd7e8a38bb6479c693ce0ed75bbb97b56b78d27c7239a4bf9f345bf1a0074007"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "burgerking.fr",
+                "www.c-and-a.com",
+                "www.royalmail.com",
+                "www.yves-rocher.fr"
+            ]
+        },
+        {
+            "rule": "woosmap\\.com\\/stores\\/search\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "046882752f595609cebcd28774bf16269d00ebf1825363e555ceb39fb910fe5e",
+                "6a5f4b860e2d356eb2397fa694c397e16ef8f467a38a68c000d434ed70a27af3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "burgerking.fr",
+                "www.burgerking.fr",
+                "www.location.leclerc"
+            ]
+        },
+        {
+            "rule": "woosmap\\.com\\/maps\\/style\\/streets\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "a0168867180d4087dd2511855ecaa79ec6ad9b7d02096808ba0eeecbd14c0eb5",
+                "10588daa87c1e8131208afbcb531a4614392430353488550c32c00cfb10c5150",
+                "75e29bb06f220c28e8503185bf305b943782bf59f330ae6aa3e4e4ec54970b44"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "burgerking.fr",
+                "www.c-and-a.com",
+                "www.royalmail.com",
+                "www.yves-rocher.fr"
+            ]
+        },
+        {
+            "rule": "woosmap\\.com\\/maps\\/tiles\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "9880bb781ee579aa8d9644d691d328d274447b4dad974a36a9d404ff92ae181d",
+                "7e2cb82fc0a2cb91a59003975a6278d7c0c271ebf4b26f960d86d3ce64e1b46a",
+                "edfd3d5a0fd06cb64c7489bdcf4c2ae23fcd01d6dc9dd4c6e2b299bf21742bdb"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "burgerking.fr",
+                "www.c-and-a.com",
+                "www.royalmail.com",
+                "www.yves-rocher.fr"
+            ]
+        },
+        {
+            "rule": "woosmap\\.com\\/map\\/assets\\/sprite\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "044f4e438e6ae56d9caa5cce117f9c946684a6e5d2fc89096d23b6f6fbe7ab19"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "burgerking.fr",
+                "www.c-and-a.com",
+                "www.royalmail.com",
+                "www.yves-rocher.fr"
+            ]
+        },
+        {
+            "rule": "woosmap\\.com\\/map\\/assets\\/sprite\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "22f2d1035e8a9633c553724e2047e77ae9b4e5dcdf56ace15adda68d08ff29ea"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "burgerking.fr",
+                "www.c-and-a.com",
+                "www.royalmail.com",
+                "www.yves-rocher.fr"
+            ]
+        },
+        {
+            "rule": "woosmap\\.com\\/map\\/assets\\/Noto%20Sans%20Regular\\/0-255\\.pbf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "85557d431cb8216685904d321d20dac8cec7ca9ecb0da38a44cc0a0c75bcf188"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "burgerking.fr",
+                "www.yves-rocher.fr"
+            ]
+        },
+        {
+            "rule": "woosmap\\.com\\/map\\/assets\\/Noto%20Sans%20Bold\\/0-255\\.pbf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8dd4667cc5e54595c82cf010e0c7955085b8df1d93f080f45c22603b03b1985e"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "burgerking.fr",
+                "www.yves-rocher.fr"
+            ]
+        },
+        {
+            "rule": "woosmap\\.com\\/geolocation\\/position\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "103c3a6710c4c902151eebaaa136d830407cdbc21706058ab6c9140d074a42d3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "castorama.fr",
+                "www.diy.com",
+                "www.diy.ie",
+                "www.trade-point.co.uk"
+            ]
+        },
+        {
+            "rule": "woosmap\\.com\\/localities\\/autocomplete\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0f7ff619deacef14b541367ea3e04ba7fb775553f7c3839ade3c20d825498257"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "halfords.com",
+                "www.halfords.ie"
+            ]
+        },
+        {
+            "rule": "woosmap\\.com\\/localities\\/localities\\.2\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "sdk"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "7f6190369c27ce2c898e47f3e8c9973411fc69d3f15f8960f77fec1dc6a3a56b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "howdens.com",
+                "www.sephora.de",
+                "www.sephora.it",
+                "www.sephora.fr",
+                "www.toolstation.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 24,
+        "Stylesheet": 6,
+        "XHR": 13,
+        "Fetch": 16
+    },
+    "nameservers": [
+        "chad.ns.cloudflare.com",
+        "jasmine.ns.cloudflare.com"
+    ]
+}

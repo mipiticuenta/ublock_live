@@ -1,0 +1,102 @@
+{
+    "domain": "adscale.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "cdn",
+        "ecommerce-events"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "adscale\\.com\\/static\\/ecom_js\\/atomic-defense\\/add_item_to_cart\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1652f357a5d8b4e9860921a377f50be0ded9e38e92e384641db218c5f1f3da64"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atomicdefense.com",
+                "www.atomicdefense.com"
+            ]
+        },
+        {
+            "rule": "adscale\\.com\\/ecommerce\\/atomic-defense\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ecommerce-events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atomicdefense.com",
+                "www.atomicdefense.com"
+            ]
+        },
+        {
+            "rule": "adscale\\.com\\/ecommerce\\/atomic-defense\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ecommerce-events"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "46dd1322653311d8433f33a03f0fa3d245c637eb90455d9f6e08dc2e09f6ffe7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atomicdefense.com",
+                "www.atomicdefense.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Preflight": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "lisa.ns.cloudflare.com",
+        "hayes.ns.cloudflare.com"
+    ]
+}

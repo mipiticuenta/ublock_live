@@ -1,0 +1,177 @@
+{
+    "domain": "exchangesolutions.com",
+    "owner": {
+        "name": "Exchange Solutions Inc.",
+        "displayName": "Exchange Solutions"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "kent-esengage.live",
+        "lowes-esengage.live",
+        "tscweb-esengage.live",
+        "indo-esengage.live",
+        "indo-ca-api.live"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "exchangesolutions\\.com\\/v4\\/esRd-min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "kent-esengage.live",
+                "lowes-esengage.live",
+                "tscweb-esengage.live"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 1,
+                "Screen.prototype.width": 1,
+                "window.devicePixelRatio": 1,
+                "Screen.prototype.height": 1,
+                "Date.prototype.getTimezoneOffset": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "45202d4e71701f18e7bf1248ab84a22b3472b9c29ff0315f16fc7f3cdb2fe7ab"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kent.ca",
+                "www.lowes.ca",
+                "www.tsc.ca"
+            ]
+        },
+        {
+            "rule": "exchangesolutions\\.com\\/esRd-min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "indo-esengage.live"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Screen.prototype.width": 2,
+                "window.devicePixelRatio": 2,
+                "Screen.prototype.height": 2,
+                "Date.prototype.getTimezoneOffset": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c55c1092a4c7819758309a06a715b235959c361152324d0e8b42712896b518f7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indochino.com",
+                "www.indochino.com"
+            ]
+        },
+        {
+            "rule": "exchangesolutions\\.com\\/esStyles-min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "indo-esengage.live"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "65289763e740c0987910edfd81c80c2b0ee081e232d78de5296ffb23092ab973"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indochino.com",
+                "www.indochino.com"
+            ]
+        },
+        {
+            "rule": "exchangesolutions\\.com\\/indoprod-engage\\/api\\/client\\/indo\\.web\\.indoca\\/sessions\\/current",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "indo-ca-api.live"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indochino.com",
+                "www.indochino.com"
+            ]
+        },
+        {
+            "rule": "exchangesolutions\\.com\\/indoprod-engage\\/api\\/client\\/indo\\.web\\.indoca\\/sessions\\/current",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "indo-ca-api.live"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "383931754be164824e2f5eb28cd0dcf1e344d3d3ed249f17bbcbc95e345a84ce"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "indochino.com",
+                "www.indochino.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8333333333333334
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.16666666666666666
+        }
+    ],
+    "types": {
+        "Script": 5,
+        "Stylesheet": 2,
+        "Preflight": 2,
+        "Fetch": 2
+    },
+    "nameservers": [
+        "ns-6.awsdns-00.com",
+        "ns-1746.awsdns-26.co.uk",
+        "ns-1251.awsdns-28.org",
+        "ns-536.awsdns-03.net"
+    ]
+}

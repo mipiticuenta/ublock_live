@@ -1,0 +1,219 @@
+{
+    "domain": "motorsport.com",
+    "owner": {
+        "name": "Green Venture LLC",
+        "displayName": "Green Venture"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "cdn-1",
+        "cdn-2",
+        "cdn-5",
+        "cdn-6",
+        "cdn-0",
+        "cdn-9",
+        "cdn-8",
+        "mstm"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "motorsport\\.com\\/images\\/mrtp\\/gp2w8YQM\\/s4\\/img2063947532-3-3\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-1",
+                "cdn-2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "05eea7115a9bc474db7cc78a3ccf4c8cdf5638051830c8d135829f76c3a9acaf"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autosport.com",
+                "www.autosport.com"
+            ]
+        },
+        {
+            "rule": "motorsport\\.com\\/images\\/amp\\/0rGDyKJ2\\/s300\\/fans-of-sergio-perez-red-bull-\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-5",
+                "cdn-6"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a8b9a8de4cd941b3ffe86e2ab20bdd4fbd72c86c92ebcf4a1eb51498de933a55"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autosport.com",
+                "www.autosport.com"
+            ]
+        },
+        {
+            "rule": "motorsport\\.com\\/images\\/dsa\\/B2GOjl29\\/s4\\/img393001271-3-3\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-0",
+                "cdn-2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4f1c930d9bf69f2d9c390a7bb78f48bb0efc15d2c7330ec906fe723bbc59cb22"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autosport.com",
+                "www.autosport.com"
+            ]
+        },
+        {
+            "rule": "motorsport\\.com\\/images\\/dsa\\/R56lWDYN\\/s4\\/img1104445706-4-4\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn-9",
+                "cdn-8"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d5c1b37d78523b882ca6e070c85f56fae5e0de2d8e9036b25e1cb88cf793a150"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autosport.com",
+                "www.autosport.com"
+            ]
+        },
+        {
+            "rule": "motorsport\\.com\\/chart834t\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "mstm"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.plugins": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "window.innerHeight": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2241d391f10f461a915b6ef47bc0c8103bf0e7289aff47e1bcfed5ff2a84d119"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_cb": {
+                    "ttl": 34128002,
+                    "length": 18,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_chartbeat2": {
+                    "ttl": 34128002,
+                    "length": 63,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_cb_svref": {
+                    "ttl": 1802,
+                    "length": 4,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autosport.com",
+                "www.autosport.com"
+            ]
+        },
+        {
+            "rule": "motorsport\\.com\\/chart834t_mab\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "mstm"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cb83af0eec1fb71fb35196225c4a4a8964b7e47b52f9a85679c808907abd2b09"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "autosport.com",
+                "www.autosport.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Image": 8,
+        "Script": 4
+    },
+    "nameservers": [
+        "ns-1244.awsdns-27.org",
+        "ns-336.awsdns-42.com",
+        "ns-1966.awsdns-53.co.uk",
+        "ns-633.awsdns-15.net"
+    ]
+}

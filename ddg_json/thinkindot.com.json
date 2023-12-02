@@ -1,0 +1,173 @@
+{
+    "domain": "thinkindot.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "media.ambito",
+        "cdn",
+        "tracker",
+        "media.diariouno"
+    ],
+    "cnames": [
+        {
+            "original": "media.ambito.com",
+            "resolved": "media.ambito.thinkindot.com"
+        },
+        {
+            "original": "media.diariouno.com.ar",
+            "resolved": "media.diariouno.thinkindot.com"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "thinkindot\\.com\\/p\\/33a7b648705f8f1705a889da31ddeb38\\/adjuntos\\/239\\/imagenes\\/040\\/872\\/0040872928\\/anses-oficinajpg\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media.ambito"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "media.ambito.com",
+                    "resolved": "media.ambito.thinkindot.com"
+                }
+            ],
+            "responseHashes": [
+                "5f32e3cac271fe985e4d64b9d471dc25a52cd8f01fba81284db3ea90182481cc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ambito.com",
+                "www.ambito.com"
+            ]
+        },
+        {
+            "rule": "thinkindot\\.com\\/tracker\\/tracker-1\\.4\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.sessionStorage": 2,
+                "window.localStorage": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "02e8ea348f45c2d4380a5e8827a10b255cedee96d6eba417e5bb09c892568ab4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ambito.com",
+                "www.c5n.com",
+                "www.diariouno.com.ar"
+            ]
+        },
+        {
+            "rule": "thinkindot\\.com\\/ingest\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracker"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "0ec14c19bec9cdd6d6863682b6a23b4e9d816546eef9a0b2d48949bbd36bac16"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ambito.com",
+                "www.c5n.com",
+                "www.diariouno.com.ar"
+            ]
+        },
+        {
+            "rule": "thinkindot\\.com\\/ingest\\/event",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracker"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ambito.com",
+                "www.c5n.com",
+                "www.diariouno.com.ar"
+            ]
+        },
+        {
+            "rule": "thinkindot\\.com\\/p\\/f799ff00cc81d9ad2bf5ead137ed854f\\/adjuntos\\/298\\/imagenes\\/005\\/866\\/0005866477\\/jubilacion-amas-casa-anses-moratoria-1jpg\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media.diariouno"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "media.diariouno.com.ar",
+                    "resolved": "media.diariouno.thinkindot.com"
+                }
+            ],
+            "responseHashes": [
+                "a71e55859c41a99579a2b0f48ddc21b6e5511231afbc7fc2593b323e4664f671"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "diariouno.com.ar",
+                "www.diariouno.com.ar"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Image": 4,
+        "Script": 3,
+        "XHR": 3,
+        "Preflight": 3
+    },
+    "nameservers": [
+        "ns-479.awsdns-59.com",
+        "ns-1826.awsdns-36.co.uk",
+        "ns-1074.awsdns-06.org",
+        "ns-677.awsdns-20.net"
+    ]
+}

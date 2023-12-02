@@ -1,0 +1,94 @@
+{
+    "domain": "hotpkg.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "hotpkg\\.com\\/@goodgamestudios\\/cxf-runtime@production\\/dist\\/cxf\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d1215c6ee577b9938cff7c20ed0f08d205c6813bb6a7c187c22ae300f74d9b9c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goodgamestudios.com",
+                "empire.goodgamestudios.com"
+            ]
+        },
+        {
+            "rule": "hotpkg\\.com\\/@goodgamestudios\\/cxf-plugins@production\\/dist\\/empire\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goodgamestudios.com",
+                "empire.goodgamestudios.com"
+            ]
+        },
+        {
+            "rule": "hotpkg\\.com\\/@lemonstand\\.org\\/config-goodgamestudios\\/dist\\/goodgamestudios-em\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "goodgamestudios.com",
+                "empire.goodgamestudios.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "jsdelivr.net",
+            "prevalence": 0.5
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Fetch": 4
+    },
+    "nameservers": [
+        "jay.ns.cloudflare.com",
+        "isla.ns.cloudflare.com"
+    ]
+}

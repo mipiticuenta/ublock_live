@@ -1,0 +1,138 @@
+{
+    "domain": "pirsch.io",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000116,
+    "sites": 17,
+    "subdomains": [
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "pirsch\\.io\\/pirsch\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "Navigator.prototype.doNotTrack": 4,
+                "window.localStorage": 4,
+                "Date.prototype.getTime": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "9b77df02a210b287eee33a9cb084bd122f8d7c3ad0638cc48bc1332dc061c550"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bt-usa.com",
+                "guidestrats.com",
+                "www.mapchart.net",
+                "www.unimib.it"
+            ]
+        },
+        {
+            "rule": "pirsch\\.io\\/hit",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "bt-usa.com",
+                "faithandvalues.com",
+                "guidestrats.com",
+                "www.fandomspot.com",
+                "www.globalxetfs.com",
+                "www.goldsmiths.co.uk",
+                "www.history.co.uk",
+                "www.in-muenchen.de",
+                "www.mapchart.net",
+                "www.trunews.com",
+                "www.unimib.it"
+            ]
+        },
+        {
+            "rule": "pirsch\\.io\\/pirsch-extended\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "Navigator.prototype.doNotTrack": 7,
+                "window.localStorage": 7,
+                "Date.prototype.getTime": 7,
+                "Screen.prototype.width": 7,
+                "Screen.prototype.height": 7
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "7959c65c1f79696846b082a150fc41623b7da11240fdd4ac493943b1b76b8094"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "faithandvalues.com",
+                "www.fandomspot.com",
+                "www.goldsmiths.co.uk",
+                "www.history.co.uk",
+                "www.in-muenchen.de",
+                "www.trunews.com",
+                "www.unimib.it"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9
+        },
+        {
+            "domain": "gocertify.me",
+            "prevalence": 0.05
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.05
+        }
+    ],
+    "types": {
+        "Script": 11,
+        "XHR": 11
+    },
+    "nameservers": [
+        "helium.ns.hetzner.de",
+        "oxygen.ns.hetzner.com",
+        "hydrogen.ns.hetzner.com"
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "domain": "71i.de",
+    "owner": {
+        "name": "SevenOne Media GmbH",
+        "displayName": "SevenOne Media"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "ad"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "71i\\.de\\/somtag\\/loader\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ad"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "window.localStorage": 5,
+                "Document.cookie getter": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "12544303e042676c2e2717eae8cb341fb43ead5882ba593814af9e5b6eff26af"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "atv.at",
+                "www.prosiebenmaxx.de",
+                "www.puls24.at",
+                "www.sat1.ch",
+                "www.spox.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 5
+    },
+    "nameservers": [
+        "ns2.p7s1ns.net",
+        "ns1.p7s1ns.de"
+    ]
+}

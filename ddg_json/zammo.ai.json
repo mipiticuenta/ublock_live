@@ -1,0 +1,106 @@
+{
+    "domain": "zammo.ai",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "cdn",
+        "app"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "zammo\\.ai\\/zammo-bot-ui-kit\\/zammo-bot-ui-kit-latest\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3,
+                "window.localStorage": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "932e2a65090792155f5d4dc3027f2eec5d19661e3488619486a302821cfea3c3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wa.gov",
+                "secureaccess.wa.gov",
+                "www.yvr.ca"
+            ]
+        },
+        {
+            "rule": "zammo\\.ai\\/zammo-bot-ui-kit\\/zammo-bot-ui-kit-latest\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "03f67dfa26ca0eb5a24a49a8a7599ba390861101b1f169cc44c46aadb4987dc2"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wa.gov",
+                "secureaccess.wa.gov",
+                "www.yvr.ca"
+            ]
+        },
+        {
+            "rule": "zammo\\.ai\\/api\\/webchat\\/c7398815-b747-45a5-b078-c7f72b4fff43\\/extension\\/live",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3ae3ea4309d763e0dc1513e1441fc89267a6fbdf4cd0343c951bbf6377e5ef76"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wa.gov",
+                "secureaccess.wa.gov"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "Stylesheet": 3,
+        "XHR": 2
+    },
+    "nameservers": [
+        "dns1.registrar-servers.com",
+        "dns2.registrar-servers.com"
+    ]
+}

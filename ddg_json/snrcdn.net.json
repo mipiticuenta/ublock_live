@@ -1,0 +1,146 @@
+{
+    "domain": "snrcdn.net",
+    "owner": {
+        "name": "Synerise SA",
+        "displayName": "Synerise"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "www"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "snrcdn\\.net\\/sdk\\/3\\.0\\/synerise-javascript-sdk\\.min\\.js",
+            "cookies": 0.0000341,
+            "fingerprinting": 2,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 5,
+                "Document.cookie getter": 5,
+                "window.localStorage": 5,
+                "Screen.prototype.width": 5,
+                "Screen.prototype.height": 5,
+                "Screen.prototype.colorDepth": 5,
+                "Navigator.prototype.language": 5,
+                "Navigator.prototype.languages": 5,
+                "Navigator.prototype.userAgent": 5,
+                "window.innerHeight": 5,
+                "Navigator.prototype.appVersion": 5,
+                "Navigator.prototype.appName": 5,
+                "Navigator.prototype.cookieEnabled": 5,
+                "Document.cookie setter": 5,
+                "window.innerWidth": 1,
+                "window.sessionStorage": 1,
+                "Notification.permission": 1
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "963a62dce185aef02deab45a1bbbad53e8b9c8f83e1b81998b7896b3b5b79e59"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_snrs_sa": {
+                    "ttl": 1806,
+                    "length": 76,
+                    "prevalence": 0.00003406017752164524,
+                    "uniqueness": 1
+                },
+                "_snrs_sb": {
+                    "ttl": 1806,
+                    "length": 60,
+                    "prevalence": 0.00003406017752164524,
+                    "uniqueness": 1
+                },
+                "_snrs_p": {
+                    "ttl": 946080006,
+                    "length": 210,
+                    "prevalence": 0.00003406017752164524,
+                    "uniqueness": 1
+                },
+                "_snrs_uuid": {
+                    "ttl": 946080006,
+                    "length": 36,
+                    "prevalence": 0.00003406017752164524,
+                    "uniqueness": 1
+                },
+                "_snrs_puuid": {
+                    "ttl": 946080006,
+                    "length": 36,
+                    "prevalence": 0.00003406017752164524,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beesafe.pl",
+                "encyklopedia.pwn.pl",
+                "ksiegarnia.pwn.pl",
+                "sjp.pwn.pl",
+                "uae.sharafdg.com"
+            ]
+        },
+        {
+            "rule": "snrcdn\\.net\\/sdk\\/3\\.0\\/synerise-javascript-sdk\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "01ec9ab6099cfddc7689f268525c9fc942310e2070796ce16f3f502e23477ad7"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beesafe.pl",
+                "encyklopedia.pwn.pl",
+                "ksiegarnia.pwn.pl",
+                "sjp.pwn.pl",
+                "uae.sharafdg.com",
+                "www.carrefour.pl"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000409,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8125
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.125
+        },
+        {
+            "domain": "military.pl",
+            "prevalence": 0.0625
+        }
+    ],
+    "types": {
+        "Script": 5,
+        "Stylesheet": 6
+    },
+    "nameservers": [
+        "ns1-03.azure-dns.com",
+        "ns3-03.azure-dns.org",
+        "ns4-03.azure-dns.info",
+        "ns2-03.azure-dns.net"
+    ]
+}

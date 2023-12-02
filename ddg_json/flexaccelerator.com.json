@@ -1,0 +1,77 @@
+{
+    "domain": "flexaccelerator.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "seattlesymphony-prod-cd"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "flexaccelerator\\.com\\/sitecore\\/api\\/graph\\/items\\/web",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "seattlesymphony-prod-cd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "seattlesymphony.org",
+                "www.seattlesymphony.org"
+            ]
+        },
+        {
+            "rule": "flexaccelerator\\.com\\/sitecore\\/api\\/graph\\/items\\/web",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "seattlesymphony-prod-cd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "45904049978aa1e2c5d53b261dc719def1c62f2277715bc63bb97d6bd1103632"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "seattlesymphony.org",
+                "www.seattlesymphony.org"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Preflight": 2,
+        "Fetch": 2
+    },
+    "nameservers": [
+        "ns4-03.azure-dns.info",
+        "ns1-03.azure-dns.com",
+        "ns2-03.azure-dns.net",
+        "ns3-03.azure-dns.org"
+    ]
+}

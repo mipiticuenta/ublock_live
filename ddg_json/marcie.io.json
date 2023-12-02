@@ -1,0 +1,97 @@
+{
+    "domain": "marcie.io",
+    "owner": {
+        "name": "Customer Portfolios",
+        "displayName": "Customer Portfolios"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "pp",
+        "journeys.pp"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "marcie\\.io\\/library\\.js\\.gz",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "pp"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3cc48d283a6f5f423b5fad2b3a7f5cfb8f74c5f3427fe1e643fe4b77ca5dc828"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cpdc_session_id": {
+                    "ttl": 15552013,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "journeys.com",
+                "www.journeys.com"
+            ]
+        },
+        {
+            "rule": "marcie\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "journeys.pp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "cpdc_session_id": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "journeys.com",
+                "www.journeys.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Image": 2
+    },
+    "nameservers": [
+        "ns-769.awsdns-32.net",
+        "ns-97.awsdns-12.com",
+        "ns-1663.awsdns-15.co.uk",
+        "ns-1384.awsdns-45.org"
+    ]
+}

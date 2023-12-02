@@ -1,0 +1,83 @@
+{
+    "domain": "promptsgod.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "promptsgod\\.com\\/api\\/v1\\/cool\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "window.innerWidth": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "0c6743c9a440f3f4316426982a309afeb5c9cf265cb536e3ec8cd3fbc59bd1ac"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "freejavbt.com",
+                "javmenu.com",
+                "missav.app"
+            ]
+        },
+        {
+            "rule": "promptsgod\\.com\\/api\\/v1\\/pub\\/get",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "eed2a75f7ec5be9d9dbc5cd0d5604a6c2edb1ced138c089e1eed78c94c5e9146",
+                "a1e798f201ba793fb047ead38778f33060a6e8a6d8b909097f1a8fba57f8ce2e"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "freejavbt.com",
+                "javmenu.com",
+                "missav.app"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "Fetch": 3
+    },
+    "nameservers": [
+        "june.ns.cloudflare.com",
+        "rajeev.ns.cloudflare.com"
+    ]
+}

@@ -1,0 +1,303 @@
+{
+    "domain": "luigisbox.com",
+    "owner": {
+        "name": "Luigi's Box, s.r.o.",
+        "displayName": "Luigi's Box"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000102,
+    "sites": 15,
+    "subdomains": [
+        "api",
+        "cdn",
+        "scripts"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "luigisbox\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.0000886,
+            "cnames": [],
+            "responseHashes": [
+                "7d357b0ef1f85ba71c5ccebb6671b0c34f4b3950f5b21d2af7b4a3d4e9dcd570"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aukro.cz",
+                "pepita.hu",
+                "pittsburghsprayequip.com",
+                "www.apetitonline.cz",
+                "www.benu.cz",
+                "www.brw.pl",
+                "www.czub.cz",
+                "www.epey.com",
+                "www.hrvatskitelekom.hr",
+                "www.kik.de",
+                "www.nay.sk",
+                "www.whiskyshop.com",
+                "zegarownia.pl"
+            ]
+        },
+        {
+            "rule": "luigisbox\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.0000886,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aukro.cz",
+                "pepita.hu",
+                "pittsburghsprayequip.com",
+                "www.apetitonline.cz",
+                "www.benu.cz",
+                "www.brw.pl",
+                "www.czub.cz",
+                "www.epey.com",
+                "www.hrvatskitelekom.hr",
+                "www.kik.de",
+                "www.nay.sk",
+                "www.whiskyshop.com",
+                "zegarownia.pl"
+            ]
+        },
+        {
+            "rule": "luigisbox\\.com\\/autocomplete\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "96bda1f21ab8eaaeadeacd43e02b5fc08ed70a94fab6f1518e4aa79fe15b6363"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apetitonline.cz",
+                "www.hrvatskitelekom.hr",
+                "www.kik.de",
+                "www.martinus.sk",
+                "www.whiskyshop.com"
+            ]
+        },
+        {
+            "rule": "luigisbox\\.com\\/autocomplete\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.sessionStorage": 6,
+                "Date.prototype.getTime": 6,
+                "window.innerHeight": 6,
+                "window.innerWidth": 4
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "ecb15ad65c4917d3441c71c032faf4f4fa95dd43dd078f8d5a5f6d52b00397eb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "apetitonline.cz",
+                "www.benu.cz",
+                "www.hrvatskitelekom.hr",
+                "www.kik.de",
+                "www.martinus.sk",
+                "www.whiskyshop.com"
+            ]
+        },
+        {
+            "rule": "luigisbox\\.com\\/LBX-366244\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "scripts"
+            ],
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "60e346ffa9d8d74214c12d1cb6d5518c289a365a974abeff48e29b636fb7ad4c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "czub.cz",
+                "www.czub.cz"
+            ]
+        },
+        {
+            "rule": "luigisbox\\.com\\/czub\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6b7f9f4bf43c41032b6aae59357450e10f4f3d3112f155b1caf847fbbc225d40"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_lb": {
+                    "ttl": null,
+                    "length": 19,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "czub.cz",
+                "www.czub.cz"
+            ]
+        },
+        {
+            "rule": "luigisbox\\.com\\/search\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Event.prototype.timeStamp": 2,
+                "Navigator.prototype.product": 2,
+                "window.innerHeight": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dbb39e5b444ea4c441d2f7359207de4d379b5b44f4846ca1cc8aa1bbebc140fa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kik.de",
+                "www.whiskyshop.com"
+            ]
+        },
+        {
+            "rule": "luigisbox\\.com\\/theme\\/boo\\/app\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "181740e03fb7d6ffc690753acfd36cb70a5b435b78de96ac5820c13d381a05de"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kik.de",
+                "www.whiskyshop.com"
+            ]
+        },
+        {
+            "rule": "luigisbox\\.com\\/theme\\/boo\\/app\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.platform": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "30522b7bf62227731ba5f885f08ab96470099fce13dcf6268dcd13c6aa1dbfa2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kik.de",
+                "www.whiskyshop.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000886,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8666666666666667
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.1
+        },
+        {
+            "domain": "usercentrics.eu",
+            "prevalence": 0.03333333333333333
+        }
+    ],
+    "types": {
+        "XHR": 13,
+        "Preflight": 13,
+        "Stylesheet": 7,
+        "Script": 14
+    },
+    "nameservers": [
+        "ns-1212.awsdns-23.org",
+        "ns-72.awsdns-09.com",
+        "ns-1856.awsdns-40.co.uk",
+        "ns-649.awsdns-17.net"
+    ]
+}

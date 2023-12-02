@@ -1,0 +1,179 @@
+{
+    "domain": "index.hu",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "indexstat",
+        "kep",
+        "cdn.contrec"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "index\\.hu\\/stat\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "indexstat"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9219ee69c53438b3386666d1104565cadea194b2e309528fe5f254a1ffc47518"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "femina.hu",
+                "sobors.hu"
+            ]
+        },
+        {
+            "rule": "index\\.hu\\/1\\/0\\/5152\\/51521\\/515219\\/51521951_3926837_262b4b4dd09db2c38382a4e5267d01c7_wm\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "kep"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "912a31fac248e5eaa3e30c733ee46e3e77c1e78746156f8df5194e5569cd0d30"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "femina.hu",
+                "sobors.hu"
+            ]
+        },
+        {
+            "rule": "index\\.hu\\/icwsMin2\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.contrec"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.innerHeight": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6fdbc04d3fbb5aa3de54ba34cf86900752a03de98fac22983e55db917de6f90a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "femina.hu",
+                "sobors.hu"
+            ]
+        },
+        {
+            "rule": "index\\.hu\\/f\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn.contrec"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dc2091e8465444b187392c7cfad15a5ec44eb121469095ebe73ec845c1b3a831"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "femina.hu",
+                "sobors.hu"
+            ]
+        },
+        {
+            "rule": "index\\.hu\\/pixel\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "indexstat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1866961a029c65376fefb7f2ba1e6187e09ff50ea58d97dedfd72c197947d002"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "ident": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "femina.hu",
+                "sobors.hu"
+            ]
+        },
+        {
+            "rule": "index\\.hu\\/1\\/0\\/5152\\/51523\\/515238\\/51523821_867f278d87d662f11f74e7813d182bd4_wm\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "kep"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5d45ec6d8f0c223e8e475da253ce206b608a19f048738f8b22b894b614fed5ff"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "femina.hu",
+                "sobors.hu"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "Image": 6,
+        "Document": 2
+    },
+    "nameservers": [
+        "ns2.index.hu",
+        "ns.index.hu"
+    ]
+}

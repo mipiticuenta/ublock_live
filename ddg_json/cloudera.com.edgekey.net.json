@@ -1,0 +1,126 @@
+{
+    "domain": "cloudera.com.edgekey.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "www"
+    ],
+    "cnames": [
+        {
+            "original": "my.cloudera.com",
+            "resolved": "www.cloudera.com.edgekey.net"
+        },
+        {
+            "original": "sso.cloudera.com",
+            "resolved": "www.cloudera.com.edgekey.net"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "cloudera\\.com\\.edgekey\\.net\\/content\\/dam\\/dcxa\\/common\\/global-nav-my-cloudera-logo\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "sso.cloudera.com",
+                    "resolved": "www.cloudera.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "8cd9dabb91852d34f607a3400d7975c6a178699d3a07991f9008115e2360b8aa"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cloudera.com",
+                "community.cloudera.com"
+            ]
+        },
+        {
+            "rule": "cloudera\\.com\\.edgekey\\.net\\/apps\\/settings\\/wcm\\/designs\\/support\\/clientlibs\\/analytics\\/requestDescriptorBuilder\\/clientlibs\\/dist\\/bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "my.cloudera.com",
+                    "resolved": "www.cloudera.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "b4a9d382295b23a8c4b8ffdb2c959b431f5ea4ae1828e2aa3751531725409a73"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cloudera.com",
+                "community.cloudera.com"
+            ]
+        },
+        {
+            "rule": "cloudera\\.com\\.edgekey\\.net\\/bin\\/services\\/support\\/ui\\/request\\/descriptor",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "sso.cloudera.com",
+                    "resolved": "www.cloudera.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "9e807e805ccb9850aab3144bd3f15d99ba8cc54e049542410a22cc6fe1f63fa2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cloudera.com",
+                "community.cloudera.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Image": 2,
+        "Script": 2,
+        "XHR": 2
+    },
+    "nameservers": []
+}

@@ -1,0 +1,663 @@
+{
+    "domain": "innity.net",
+    "owner": {
+        "name": "Innity Sdn Bhd",
+        "displayName": "Innity Sdn"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000266,
+    "sites": 39,
+    "subdomains": [
+        "cdn",
+        "media",
+        "avd",
+        "ssl-avd"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "innity\\.net\\/admanager-async\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 16,
+            "prevalence": 0.000109,
+            "cnames": [],
+            "responseHashes": [
+                "46f9b04f6c87499a597dc076f2d7c1be7e05f0a892a5f7d68c5119ed2af91561"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hellodoktor.com",
+                "hellodoctor.com.ph",
+                "katadata.co.id",
+                "m.penana.com",
+                "mojok.co",
+                "www.ayobandung.com",
+                "www.clickthecity.com",
+                "www.cnnphilippines.com",
+                "www.cosmo.ph",
+                "www.dailysia.com",
+                "www.orami.co.id",
+                "www.penana.com",
+                "www.philstar.com",
+                "www.sewaktu.com",
+                "www.spot.ph",
+                "www.yummy.ph"
+            ]
+        },
+        {
+            "rule": "innity\\.net\\/admanager\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 13,
+                "Date.prototype.getTime": 15,
+                "Navigator.prototype.plugins": 13,
+                "Navigator.prototype.userAgent": 14,
+                "window.localStorage": 13,
+                "Document.cookie setter": 1
+            },
+            "sites": 18,
+            "prevalence": 0.000123,
+            "cnames": [],
+            "responseHashes": [
+                "e5fdcb3ad3efab0d8678817b02ad5ae82c2199420dec06e01b33a8999f3283ea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "iUUID": {
+                    "ttl": 63072005,
+                    "length": 32,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hellodoktor.com",
+                "hellodoctor.com.ph",
+                "mojok.co",
+                "soyacincau.com",
+                "worldofbuzz.com",
+                "www.ayobandung.com",
+                "www.clickthecity.com",
+                "www.cnnphilippines.com",
+                "www.cosmo.ph",
+                "www.dailysia.com",
+                "www.hottg.com",
+                "www.malaymail.com",
+                "www.orami.co.id",
+                "www.penana.com",
+                "www.sewaktu.com",
+                "www.spot.ph",
+                "www.tg-me.com",
+                "www.yummy.ph"
+            ]
+        },
+        {
+            "rule": "innity\\.net\\/global\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "dbae926e137826db2872fb3395b97511dbda8eae59ae39683c1cd64a86c033b8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hellodoktor.com",
+                "hellodoctor.com.ph",
+                "www.cnnphilippines.com",
+                "www.hottg.com",
+                "www.yummy.ph"
+            ]
+        },
+        {
+            "rule": "innity\\.net\\/lib\\/innity\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "media"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "cea68197ad58b6802f8a1735646931eda8e76702b12d90f7df88d537f62b987a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hellodoktor.com",
+                "hellodoctor.com.ph",
+                "www.cnnphilippines.com",
+                "www.hottg.com",
+                "www.yummy.ph"
+            ]
+        },
+        {
+            "rule": "innity\\.net\\/lib\\/dc\\.js",
+            "cookies": 0.0000545,
+            "fingerprinting": 1,
+            "subdomains": [
+                "avd"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 8,
+                "Document.cookie setter": 8,
+                "Document.cookie getter": 8,
+                "Screen.prototype.width": 8,
+                "Screen.prototype.height": 8,
+                "Navigator.prototype.language": 8,
+                "window.localStorage": 8
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "0014ffccade01ae1ab385b85433decef0f11f26cbe25721faa0d13bb5c0badda"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "iUUID": {
+                    "ttl": 63072010,
+                    "length": 32,
+                    "prevalence": 0.00004768424853030334,
+                    "uniqueness": 1
+                },
+                "innity.dmp.6.sess": {
+                    "ttl": 1806,
+                    "length": 43,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "innity.dmp.6.sess.id": {
+                    "ttl": 1806,
+                    "length": 25,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "innity.dmp.cks.innity": {
+                    "ttl": 86413,
+                    "length": 1,
+                    "prevalence": 0.00005449628403463239,
+                    "uniqueness": 0.125
+                },
+                "innity.dmp.254.sess": {
+                    "ttl": 1810,
+                    "length": 43,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "innity.dmp.254.sess.id": {
+                    "ttl": 1810,
+                    "length": 26,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "innity.dmp.206.sess": {
+                    "ttl": 1810,
+                    "length": 43,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "innity.dmp.206.sess.id": {
+                    "ttl": 1810,
+                    "length": 26,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "innity.dmp.1.sess": {
+                    "ttl": 1823,
+                    "length": 43,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "innity.dmp.1.sess.id": {
+                    "ttl": 1823,
+                    "length": 24,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "innity.dmp.126.sess": {
+                    "ttl": 1813,
+                    "length": 43,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "innity.dmp.126.sess.id": {
+                    "ttl": 1813,
+                    "length": 27,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "innity.dmp.68.sess": {
+                    "ttl": 1809,
+                    "length": 43,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "innity.dmp.68.sess.id": {
+                    "ttl": 1809,
+                    "length": 26,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "innity.dmp.0.sess": {
+                    "ttl": 1813,
+                    "length": 43,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "innity.dmp.0.sess.id": {
+                    "ttl": 1813,
+                    "length": 25,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "innity.dmp.225.sess": {
+                    "ttl": 1813,
+                    "length": 43,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "innity.dmp.225.sess.id": {
+                    "ttl": 1813,
+                    "length": 27,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "malaysiakini.com",
+                "pantip.com",
+                "worldofbuzz.com",
+                "www.cnnphilippines.com",
+                "www.globe.com.ph",
+                "www.hkexpress.com",
+                "www.lottopcso.com",
+                "www.sanook.com"
+            ]
+        },
+        {
+            "rule": "innity\\.net\\/31\\/container_550679d71c51b10f2b0a9188\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "avd"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "5a0c64baac61a29b69c6abcf38d3c47f2fd4428a056b1369810cb6312a58c27d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "inquirer.net",
+                "newsinfo.inquirer.net",
+                "usa.inquirer.net",
+                "www.inquirer.net"
+            ]
+        },
+        {
+            "rule": "innity\\.net\\/dc\\.js",
+            "cookies": 0.0000341,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ssl-avd"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 5,
+                "Document.cookie setter": 5,
+                "Document.cookie getter": 5,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Navigator.prototype.language": 4,
+                "window.localStorage": 4
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "0014ffccade01ae1ab385b85433decef0f11f26cbe25721faa0d13bb5c0badda"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "iUUID": {
+                    "ttl": 63072018,
+                    "length": 32,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 1
+                },
+                "innity.dmp.0.sess": {
+                    "ttl": 1818,
+                    "length": 43,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 1
+                },
+                "innity.dmp.0.sess.id": {
+                    "ttl": 1818,
+                    "length": 25,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 1
+                },
+                "innity.dmp.cks.innity": {
+                    "ttl": 86418,
+                    "length": 1,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 0.25
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "inquirer.net",
+                "newsinfo.inquirer.net",
+                "usa.inquirer.net",
+                "www.cnnphilippines.com",
+                "www.inquirer.net"
+            ]
+        },
+        {
+            "rule": "innity\\.net\\/261\\/container_5f47736a47e7049801000002\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "avd"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2c3282f6361e85f669bc3d248b8693c53dd22f8f06488c99beb57258e6e00f87"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "freq.5f73e63e47e7040e00000000": {
+                    "ttl": 86408,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pantip.com",
+                "www.sanook.com"
+            ]
+        },
+        {
+            "rule": "innity\\.net\\/1\\/container_576b5a051c51b1c0244bca09\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ssl-avd"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 3,
+                "Document.cookie setter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "fcbfe3701531c9c0a1cdf0f9adaf43370498a8a46185ec0639f844a14f1f5541"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "freq.5e661e8b47e7043d03000003": {
+                    "ttl": 86416,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "freq.5f462d2c47e7044a01000002": {
+                    "ttl": 86416,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "freq.65279e2647e7041906000000": {
+                    "ttl": 86416,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "worldofbuzz.com",
+                "www.cnnphilippines.com",
+                "www.lottopcso.com"
+            ]
+        },
+        {
+            "rule": "innity\\.net\\/1\\/container_549927e79bd1fa1a040041a9\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ssl-avd"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "6d82e21331aeb7b154ce45f18bc4a76893c17b1e2db85c4b40397fabfc0b023e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "worldofbuzz.com",
+                "www.cnnphilippines.com",
+                "www.lottopcso.com"
+            ]
+        },
+        {
+            "rule": "innity\\.net\\/analytics\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 7
+            },
+            "sites": 10,
+            "prevalence": 0.0000681,
+            "cnames": [],
+            "responseHashes": [
+                "03d0e8a81b76b97330c387401f890774b9d88750ea2d7b7d85da4851ca2ef3ac"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "worldofbuzz.com",
+                "www.ayobandung.com",
+                "www.clickthecity.com",
+                "www.cnnphilippines.com",
+                "www.dailysia.com",
+                "www.hottg.com",
+                "www.lottopcso.com",
+                "www.orami.co.id",
+                "www.spot.ph",
+                "www.tg-me.com"
+            ]
+        },
+        {
+            "rule": "innity\\.net\\/synd\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "db709f52af86c6fbda493636bfad0f1dc37f01f8d884744f909514a0ff6031d5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnnphilippines.com",
+                "www.cnnphilippines.com"
+            ]
+        },
+        {
+            "rule": "innity\\.net\\/32\\/container_5507a34f1c51b169300a9188\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ssl-avd"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3f2efd9fe76fbab23a1f85380ac56a6d0fa049c1bb360ba004c18ffcb56bb9e2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnnphilippines.com",
+                "www.cnnphilippines.com"
+            ]
+        },
+        {
+            "rule": "innity\\.net\\/adnetwork\\/house\\/pub_3686\\/proxy_109431\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "media"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.appVersion": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fc3caaff8595203db3eb0c2b3d595b5387ec295f9c697eec03ae390cf8410010"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hottg.com",
+                "www.hottg.com"
+            ]
+        },
+        {
+            "rule": "innity\\.net\\/225\\/container_57b51f2f1c51b15b6d1e8553\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "avd"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "79e294a7071dc71eebe41f088919fd137441a80f5ba5bd2765b978726ec5ee9d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sanook.com",
+                "www.sanook.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000116,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5543478260869565
+        },
+        {
+            "domain": "innity.com",
+            "prevalence": 0.1956521739130435
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.15217391304347827
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.03260869565217391
+        },
+        {
+            "domain": "isanook.com",
+            "prevalence": 0.03260869565217391
+        },
+        {
+            "domain": "geoedge.be",
+            "prevalence": 0.021739130434782608
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.010869565217391304
+        }
+    ],
+    "types": {
+        "Script": 87
+    },
+    "nameservers": [
+        "ns1.cdnetdns.net",
+        "ns2.cdnetdns.net"
+    ]
+}

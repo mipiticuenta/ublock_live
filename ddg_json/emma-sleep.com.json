@@ -1,0 +1,75 @@
+{
+    "domain": "emma-sleep.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "api.ecom"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "emma-sleep\\.com\\/ecommerce-api-gateway\\/auth\\/login",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.ecom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "emma-matratze.de",
+                "www.emma.fr"
+            ]
+        },
+        {
+            "rule": "emma-sleep\\.com\\/ecommerce-api-gateway\\/auth\\/login",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.ecom"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e6c8ca51ff8260832b895038ede5f2c7fc3cde79f7fa68ef8ceb65a6df9e9899"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "emma-matratze.de",
+                "www.emma.fr"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Preflight": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "owen.ns.cloudflare.com",
+        "daisy.ns.cloudflare.com"
+    ]
+}

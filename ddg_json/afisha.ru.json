@@ -1,0 +1,108 @@
+{
+    "domain": "afisha.ru",
+    "owner": {
+        "name": "Rambler Internet Holding, LLC",
+        "displayName": "Rambler Internet Holding"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "www",
+        "wapi"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "afisha\\.ru\\/w\\/ticketmanager\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "137e42b2d264ad408d33e3d7fdbf9c106c87530e1ebda908883715ba62e1791d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mail.ru",
+                "www.timeout.ru"
+            ]
+        },
+        {
+            "rule": "afisha\\.ru\\/widget\\/methodstatistics",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mail.ru",
+                "www.timeout.ru"
+            ]
+        },
+        {
+            "rule": "afisha\\.ru\\/widget\\/methodstatistics",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mail.ru",
+                "www.timeout.ru"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "rambler.ru",
+            "prevalence": 0.6
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.4
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "XHR": 2,
+        "Preflight": 2
+    },
+    "nameservers": [
+        "ns4.rambler.ru",
+        "ns5.rambler.ru",
+        "ns3.rambler.ru",
+        "ns2.rambler.ru"
+    ]
+}

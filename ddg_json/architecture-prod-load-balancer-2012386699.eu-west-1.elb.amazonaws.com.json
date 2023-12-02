@@ -1,0 +1,82 @@
+{
+    "domain": "architecture-prod-load-balancer-2012386699.eu-west-1.elb.amazonaws.com",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "api.bnnvara.nl",
+            "resolved": "architecture-prod-load-balancer-2012386699.eu-west-1.elb.amazonaws.com"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "architecture-prod-load-balancer-2012386699\\.eu-west-1\\.elb\\.amazonaws\\.com\\/bff\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.bnnvara.nl",
+                    "resolved": "architecture-prod-load-balancer-2012386699.eu-west-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bnnvara.nl",
+                "www.bnnvara.nl"
+            ]
+        },
+        {
+            "rule": "architecture-prod-load-balancer-2012386699\\.eu-west-1\\.elb\\.amazonaws\\.com\\/bff\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.bnnvara.nl",
+                    "resolved": "architecture-prod-load-balancer-2012386699.eu-west-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "048dc80433a7665a8b456c7b9a9e7d8a8dee3ad15bf65b0987bb473cae6ba3d6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bnnvara.nl",
+                "www.bnnvara.nl"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "types": {
+        "Preflight": 2,
+        "Fetch": 2
+    },
+    "nameservers": []
+}

@@ -1,0 +1,68 @@
+{
+    "domain": "postmedia.digital",
+    "owner": {
+        "name": "Postmedia Network Inc.",
+        "displayName": "Postmedia Network"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "analytics-assets.gprod"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "postmedia\\.digital\\/assets\\/js\\/vendorhosted\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "analytics-assets.gprod"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 7,
+                "Date.prototype.getTimezoneOffset": 7,
+                "window.localStorage": 6
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "965c9f7dc427fcfc81620f12737c97f867fe72aad953c003390524606dab17b4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "remembering.ca",
+                "edmontonjournal.remembering.ca",
+                "leaderpost.remembering.ca",
+                "lfpress.remembering.ca",
+                "ottawacitizen.remembering.ca",
+                "thestarphoenix.remembering.ca",
+                "windsorstar.remembering.ca"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 7
+    },
+    "nameservers": [
+        "ns-1746.awsdns-26.co.uk",
+        "ns-1025.awsdns-00.org",
+        "ns-215.awsdns-26.com",
+        "ns-585.awsdns-09.net"
+    ]
+}

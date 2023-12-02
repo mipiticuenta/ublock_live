@@ -1,0 +1,146 @@
+{
+    "domain": "eggplant.cloud",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "sdk.real-user-data",
+        "event.real-user-data"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "eggplant\\.cloud\\/latest\\/rci\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "sdk.real-user-data"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 3,
+                "PerformanceTiming.prototype.navigationStart": 3,
+                "Date.prototype.getTime": 3,
+                "window.innerHeight": 3,
+                "window.innerWidth": 3,
+                "Screen.prototype.colorDepth": 3,
+                "Screen.prototype.width": 3,
+                "Screen.prototype.height": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "90562b9870fc0407e72235b06265fb1a7f91438b1c57083cad4201229fc57539"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "keysight.com",
+                "www.keysight.com",
+                "www.nisbets.co.uk"
+            ]
+        },
+        {
+            "rule": "eggplant\\.cloud\\/keysight-web\\/rci\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "sdk.real-user-data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e4931b8e743fdb2e3f5993953383b87d89b57b8621473c27034bd9b11598c1e1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "keysight.com",
+                "www.keysight.com"
+            ]
+        },
+        {
+            "rule": "eggplant\\.cloud\\/v1\\/d8260822-33aa-4cc8-a579-28458124f429\\/stream",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "event.real-user-data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8eb95bcbc154530931e15fc418c8b1fe991095671409552099ea1aa596999ede"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "keysight.com",
+                "www.keysight.com"
+            ]
+        },
+        {
+            "rule": "eggplant\\.cloud\\/v1\\/d8260822-33aa-4cc8-a579-28458124f429\\/stream",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "event.real-user-data"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "keysight.com",
+                "www.keysight.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.125
+        },
+        {
+            "domain": "gbqofs.com",
+            "prevalence": 0.125
+        }
+    ],
+    "types": {
+        "Script": 5,
+        "XHR": 2,
+        "Preflight": 2
+    },
+    "nameservers": [
+        "ns-1859.awsdns-40.co.uk",
+        "ns-408.awsdns-51.com",
+        "ns-971.awsdns-57.net",
+        "ns-1033.awsdns-01.org"
+    ]
+}

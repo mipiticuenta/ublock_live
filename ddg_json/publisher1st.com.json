@@ -1,0 +1,114 @@
+{
+    "domain": "publisher1st.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "publisher1st\\.com\\/ads_prebid\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "NavigatorUAData.prototype.brands": 4,
+                "NavigatorUAData.prototype.platform": 4,
+                "window.sessionStorage": 4,
+                "Navigator.prototype.appName": 4,
+                "Date.prototype.getTime": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "68ba956a0640baf265af02cd038cc2e207945a04db2316ebbeb4b6ccc966889d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "m4sport.hu",
+                "www.idokep.hu",
+                "www.mafab.hu",
+                "www.nemzetisport.hu"
+            ]
+        },
+        {
+            "rule": "publisher1st\\.com\\/p1st_ms_18_dyn\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.innerWidth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fd92c25db2c36cacfabe555b1e2d7163b4a0aeeb4fdf325896c6258fdc8c29e2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "idokep.hu",
+                "www.nemzetisport.hu"
+            ]
+        },
+        {
+            "rule": "publisher1st\\.com\\/main_script_v2\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "39c63e71ce4cb390784a409ec6ace3dec25de3d38ac0589cf6117ca5a91c5e2d"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "idokep.hu",
+                "www.mafab.hu",
+                "www.nemzetisport.hu"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "atmedia.hu",
+            "prevalence": 0.75
+        },
+        {
+            "domain": "kxcdn.com",
+            "prevalence": 0.25
+        }
+    ],
+    "types": {
+        "Script": 6,
+        "Stylesheet": 3
+    },
+    "nameservers": [
+        "ns1.dns23.hu",
+        "ns2.dns23.hu"
+    ]
+}

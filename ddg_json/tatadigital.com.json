@@ -1,0 +1,261 @@
+{
+    "domain": "tatadigital.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "accounts",
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "tatadigital\\.com\\/v2\\/tdl-sso-auth\\.js",
+            "cookies": 0.0000409,
+            "fingerprinting": 1,
+            "subdomains": [
+                "accounts"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 7,
+                "window.localStorage": 7,
+                "Document.cookie getter": 6,
+                "window.sessionStorage": 7,
+                "Document.cookie setter": 6,
+                "Navigator.prototype.connection": 7
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "5f4a82449ffe4a6a3dfa26e45aeb28308bec96fe4f2918d2acd803b9f1f520e2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "jarvis-id": {
+                    "ttl": 34560000,
+                    "length": 36,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "1mg.com",
+                "www.1mg.com",
+                "www.airindiaexpress.com",
+                "www.bigbasket.com",
+                "www.croma.com",
+                "www.tajhotels.com",
+                "www.tanishq.co.in"
+            ]
+        },
+        {
+            "rule": "tatadigital\\.com\\/analytics-engine\\/config\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "1mg.com",
+                "www.1mg.com",
+                "www.airindiaexpress.com",
+                "www.bigbasket.com",
+                "www.croma.com",
+                "www.tajhotels.com",
+                "www.tanishq.co.in"
+            ]
+        },
+        {
+            "rule": "tatadigital\\.com\\/analytics-engine\\/config\\/v2",
+            "cookies": 0.0000477,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "358b219e9f3f396906c64b2e10f4bcff8f5335d73dbd4e09b8397b8a36909bba",
+                "9b86e0cf8830ee776803b11b33f86e0dd622276b4e565abee88bdb7d27b1f583",
+                "a0aa5c0f99724f6173dce637d1322bc8c2dff0080db9ceca6904bab2bc0aeadb",
+                "4f961f37725e9fa3d4d89131a3d41e9245d4ef8dbd94b531888f5a1fba58b48d",
+                "15b577694127070013887c66e7e02d7fdf7f25aa9727a182b2cd38bdd918c8f9",
+                "0bf6e9545f94027501aa3b0c318cc1ad9b51930f82b060278660ee4964e57ac1"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "1mg.com",
+                "www.1mg.com",
+                "www.airindiaexpress.com",
+                "www.bigbasket.com",
+                "www.croma.com",
+                "www.tajhotels.com",
+                "www.tanishq.co.in"
+            ]
+        },
+        {
+            "rule": "tatadigital\\.com\\/api\\/v2\\/sso\\/check-session",
+            "cookies": 0.0000409,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "b6194ed770d42d3ef9908e0f78ea33fc24d292ddcb58ef663fbe6f5cb9220708",
+                "ba4349fb29509ad7b19298f96435c33762290ee749f4370dee1f695f9b5584e9",
+                "d288a2c71e819baed681e39a0493aa6784653fc71daa7bf880dee243990818dd",
+                "5a4566700ae6f390798deba4a77a94a2b3acd1939f02f832c59ce90615292f4f",
+                "a743149cda77b77858287081f1de61122dd2447b3c2832de59c89c9ec8b5b6ac"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "1mg.com",
+                "www.1mg.com",
+                "www.airindiaexpress.com",
+                "www.bigbasket.com",
+                "www.croma.com",
+                "www.tajhotels.com"
+            ]
+        },
+        {
+            "rule": "tatadigital\\.com\\/api\\/v2\\/sso\\/check-session",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "1mg.com",
+                "www.1mg.com",
+                "www.airindiaexpress.com",
+                "www.bigbasket.com",
+                "www.croma.com",
+                "www.tajhotels.com"
+            ]
+        },
+        {
+            "rule": "tatadigital\\.com\\/analytics-engine\\/events\\/v1",
+            "cookies": 0.0000477,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "fa5c91905c6fea2b045d5009bb3a06ad63ab76ff1effb6e3bf5064879bd7c1fd"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "1mg.com",
+                "www.1mg.com",
+                "www.airindiaexpress.com",
+                "www.bigbasket.com",
+                "www.croma.com",
+                "www.tajhotels.com",
+                "www.tanishq.co.in"
+            ]
+        },
+        {
+            "rule": "tatadigital\\.com\\/analytics-engine\\/events\\/v1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "1mg.com",
+                "www.1mg.com",
+                "www.airindiaexpress.com",
+                "www.bigbasket.com",
+                "www.croma.com",
+                "www.tajhotels.com",
+                "www.tanishq.co.in"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000545,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6388888888888888
+        },
+        {
+            "domain": "rudderlabs.com",
+            "prevalence": 0.16666666666666666
+        },
+        {
+            "domain": "ravenjs.com",
+            "prevalence": 0.1111111111111111
+        },
+        {
+            "domain": "bbassets.com",
+            "prevalence": 0.05555555555555555
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.027777777777777776
+        }
+    ],
+    "types": {
+        "Script": 7,
+        "Preflight": 20,
+        "Fetch": 20
+    },
+    "nameservers": [
+        "ns18.hiya.digital",
+        "ns12.hiya.digital",
+        "ns13.hiya.digital",
+        "ns15.hiya.digital",
+        "ns11.hiya.digital",
+        "ns14.hiya.digital",
+        "ns17.hiya.digital",
+        "ns16.hiya.digital"
+    ]
+}

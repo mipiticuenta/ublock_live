@@ -1,0 +1,123 @@
+{
+    "domain": "yawave.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-CH"
+    ],
+    "prevalence": 0.000302,
+    "sites": 3,
+    "subdomains": [
+        "api",
+        "track"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "yawave\\.com\\/core\\/yawave-tenant\\/open\\/sdk\\/init",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fcl.ch",
+                "www.zsclions.ch"
+            ]
+        },
+        {
+            "rule": "yawave\\.com\\/public\\/v1\\/open\\/sdk\\/init",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "e46396af3d45049a36954821b7c69b63a56a12ebf08569c8c33b33be8aaa144d",
+                "f80ab9d12762ea0a0243490f239b0ecb0cf67c04e04c8f622c431e1ae4671d1d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fcl.ch",
+                "www.titlis.ch",
+                "www.zsclions.ch"
+            ]
+        },
+        {
+            "rule": "yawave\\.com\\/v1\\/identify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "track"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fcl.ch",
+                "www.titlis.ch",
+                "www.zsclions.ch"
+            ]
+        },
+        {
+            "rule": "yawave\\.com\\/v1\\/identify",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "track"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "565339bc4d33d72817b583024112eb7f5cdf3e5eef0252d6ec1b9c9a94e12bb3"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fcl.ch",
+                "www.titlis.ch",
+                "www.zsclions.ch"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 5,
+        "Preflight": 3,
+        "XHR": 3
+    },
+    "nameservers": [
+        "donna.ns.cloudflare.com",
+        "logan.ns.cloudflare.com"
+    ]
+}

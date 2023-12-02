@@ -1,0 +1,84 @@
+{
+    "domain": "wiremo.co",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "wapi"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "wiremo\\.co\\/v2\\/script",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "wapi"
+            ],
+            "apis": {
+                "window.sessionStorage": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "582fe803111a9eac07bccb8c7b0fc529f153d894d1f37885c4b6dc92cbedba01",
+                "e89c5337e01edec79d4edfde8e041ba45d3d5dc62346f21423ecafe80f43cfad"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hairguard.com",
+                "www.optimallivingdynamics.com",
+                "www.trulydivine.com"
+            ]
+        },
+        {
+            "rule": "wiremo\\.co\\/v1\\/attach\\/carousel\\/5ce6d57e57339c33bd83c718",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "08c4d8162b91439a23ad2781ec850082937afc5667b8e37f49f8812e89cea0cb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "optimallivingdynamics.com",
+                "www.optimallivingdynamics.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "storage.googleapis.com",
+            "prevalence": 0.5714285714285714
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.42857142857142855
+        }
+    ],
+    "types": {
+        "Script": 5
+    },
+    "nameservers": [
+        "marge.ns.cloudflare.com",
+        "art.ns.cloudflare.com"
+    ]
+}

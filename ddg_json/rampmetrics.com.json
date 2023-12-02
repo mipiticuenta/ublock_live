@@ -1,0 +1,97 @@
+{
+    "domain": "rampmetrics.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "assets"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "rampmetrics\\.com\\/code\\/rm_analytics\\.min\\.js",
+            "cookies": 0.0000341,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {
+                "Document.cookie getter": 5,
+                "Document.cookie setter": 5,
+                "Navigator.prototype.userAgent": 5,
+                "Date.prototype.getTime": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "d8cf2e751b5deca9139e25ef5795c4dd1e71dbbff3642485a3586602fc0c0aa9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "rm_cjHBjMKysnLAmxNxd8am": {
+                    "ttl": 31536005,
+                    "length": 67,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_rm_dr": {
+                    "ttl": 86405,
+                    "length": 100,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 1
+                },
+                "rm_sLqSAErKFkmmugkG9Fxg": {
+                    "ttl": 31536008,
+                    "length": 67,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "rm_9CP9831YJPFn2Q26Has3": {
+                    "ttl": 31536005,
+                    "length": 67,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alight.com",
+                "www.alight.com",
+                "www.hackerone.com",
+                "www.sumologic.com",
+                "www.yourbenefitsresources.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000545,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.625
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "alight.com",
+            "prevalence": 0.125
+        }
+    ],
+    "types": {
+        "Script": 5
+    },
+    "nameservers": [
+        "ns3.dnsimple.com",
+        "ns4.dnsimple.com",
+        "ns1.dnsimple.com",
+        "ns2.dnsimple.com"
+    ]
+}

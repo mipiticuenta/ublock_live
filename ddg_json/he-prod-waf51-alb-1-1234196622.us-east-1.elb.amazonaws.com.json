@@ -1,0 +1,137 @@
+{
+    "domain": "he-prod-waf51-alb-1-1234196622.us-east-1.elb.amazonaws.com",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "services.hbsp.harvard.edu",
+            "resolved": "he-prod-waf51-alb-1-1234196622.us-east-1.elb.amazonaws.com"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "he-prod-waf51-alb-1-1234196622\\.us-east-1\\.elb\\.amazonaws\\.com\\/api\\/cms\\/content\\/spaces\\/pdakd7vx2wgl\\/environments\\/master\\/entries",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "services.hbsp.harvard.edu",
+                    "resolved": "he-prod-waf51-alb-1-1234196622.us-east-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "harvard.edu",
+                "hbsp.harvard.edu"
+            ]
+        },
+        {
+            "rule": "he-prod-waf51-alb-1-1234196622\\.us-east-1\\.elb\\.amazonaws\\.com\\/api\\/cms\\/content\\/spaces\\/pdakd7vx2wgl\\/environments\\/master\\/entries",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "services.hbsp.harvard.edu",
+                    "resolved": "he-prod-waf51-alb-1-1234196622.us-east-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "52bf502ad15331309fd0cef09fe8231aa97ec62ddca06cc07dcd764456dab117"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "harvard.edu",
+                "hbsp.harvard.edu"
+            ]
+        },
+        {
+            "rule": "he-prod-waf51-alb-1-1234196622\\.us-east-1\\.elb\\.amazonaws\\.com\\/api\\/cms\\/graph-content\\/spaces\\/pdakd7vx2wgl\\/environments\\/master",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "services.hbsp.harvard.edu",
+                    "resolved": "he-prod-waf51-alb-1-1234196622.us-east-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "harvard.edu",
+                "hbsp.harvard.edu"
+            ]
+        },
+        {
+            "rule": "he-prod-waf51-alb-1-1234196622\\.us-east-1\\.elb\\.amazonaws\\.com\\/api\\/cms\\/graph-content\\/spaces\\/pdakd7vx2wgl\\/environments\\/master",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "services.hbsp.harvard.edu",
+                    "resolved": "he-prod-waf51-alb-1-1234196622.us-east-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "a387df34ddeeb73723497ab1095442f0b7da641641311642516bc49befa20bba"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "harvard.edu",
+                "hbsp.harvard.edu"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Preflight": 4,
+        "XHR": 2,
+        "Fetch": 2
+    },
+    "nameservers": []
+}

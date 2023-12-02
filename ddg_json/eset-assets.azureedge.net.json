@@ -1,0 +1,90 @@
+{
+    "domain": "eset-assets.azureedge.net",
+    "owner": {
+        "name": "Microsoft Corporation",
+        "displayName": "Microsoft",
+        "privacyPolicy": "https://privacy.microsoft.com/en-us/privacystatement",
+        "url": "http://microsoft.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "assets.esetstatic.com",
+            "resolved": "eset-assets.azureedge.net"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "eset-assets\\.azureedge\\.net\\/3Ta\\/app\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets.esetstatic.com",
+                    "resolved": "eset-assets.azureedge.net"
+                }
+            ],
+            "responseHashes": [
+                "8ba0d3b8e855fd852bda7e4f91b576c44ab148865c2481355f8f1029453e85f3"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eset.com",
+                "support.eset.com"
+            ]
+        },
+        {
+            "rule": "eset-assets\\.azureedge\\.net\\/3TZ\\/app\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "assets.esetstatic.com",
+                    "resolved": "eset-assets.azureedge.net"
+                }
+            ],
+            "responseHashes": [
+                "e3136ed18810649908a21e1af3d5ed10eb6f0b06f8e7653362e2303870aaf8b8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eset.com",
+                "support.eset.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Stylesheet": 2,
+        "Script": 2
+    },
+    "nameservers": []
+}

@@ -1,0 +1,90 @@
+{
+    "domain": "sci-direct.net",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "www"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "sci-direct\\.net\\/tracking\\/sci_track\\.min\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Document.cookie getter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "4a5a623a291b8eba14357b7d522dd42b008fe6a951f6e4b1211f7af8629317bf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "neptunesociety.com",
+                "obituaries.neptunesociety.com",
+                "www.neptunesociety.com"
+            ]
+        },
+        {
+            "rule": "sci-direct\\.net\\/form\\/main-form\\.php",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "window.innerWidth": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ed72b12baaf4fd976b3fb845df73d1280fc53d24f77180639a4b09e1fa53d3b6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "neptunesociety.com",
+                "www.neptunesociety.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "dignitymemorial.com",
+            "prevalence": 0.16666666666666666
+        }
+    ],
+    "types": {
+        "Script": 5
+    },
+    "nameservers": [
+        "ns-504.awsdns-63.com",
+        "ns-1002.awsdns-61.net",
+        "ns-1363.awsdns-42.org",
+        "ns-1808.awsdns-34.co.uk"
+    ]
+}

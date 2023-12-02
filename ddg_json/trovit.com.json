@@ -1,0 +1,92 @@
+{
+    "domain": "trovit.com",
+    "owner": {
+        "name": "TROVIT",
+        "displayName": "TROVIT"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000749,
+    "sites": 11,
+    "subdomains": [
+        "analytics"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "trovit\\.com\\/trovit-analytics\\.js",
+            "cookies": 0.0000545,
+            "fingerprinting": 1,
+            "subdomains": [
+                "analytics"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 9,
+                "Document.cookie getter": 8,
+                "Document.cookie setter": 8
+            },
+            "sites": 10,
+            "prevalence": 0.0000681,
+            "cnames": [],
+            "responseHashes": [
+                "3b551cc9abce86cba93074d539abb87331aef10b40e3163c643c14bf39ff6daa"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_tac": {
+                    "ttl": 604805,
+                    "length": 24,
+                    "prevalence": 0.00005449628403463239,
+                    "uniqueness": 0.125
+                },
+                "_ta": {
+                    "ttl": 604805,
+                    "length": 37,
+                    "prevalence": 0.00005449628403463239,
+                    "uniqueness": 1
+                },
+                "_tas": {
+                    "ttl": 905,
+                    "length": 11,
+                    "prevalence": 0.00005449628403463239,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rentals.ca",
+                "www.gumtree.co.za",
+                "www.immobiliare.it",
+                "www.motor.es",
+                "www.mudah.my",
+                "www.properstar.com",
+                "www.properstar.de",
+                "www.rentboard.ca",
+                "www.rentfaster.ca",
+                "www.squareyards.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000613,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.5454545454545454
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.45454545454545453
+        }
+    ],
+    "types": {
+        "Script": 10
+    },
+    "nameservers": [
+        "kobe.ns.cloudflare.com",
+        "celeste.ns.cloudflare.com"
+    ]
+}

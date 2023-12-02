@@ -1,0 +1,95 @@
+{
+    "domain": "amazonbusiness.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "assets"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "amazonbusiness\\.com\\/libs\\/demandbase\\/e2c92d28\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.prototype.interestCohort": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8c81454df5cc7acdd83e6ac04fbb0fb2642268475d7af9a38fe733114edeba28"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amazon.com",
+                "business.amazon.com"
+            ]
+        },
+        {
+            "rule": "amazonbusiness\\.com\\/libs\\/adcloud\\/last-event-tag-latest\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "assets"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "55b84a29e9e7af4178c55c680bc855777b8ac216bdc554989d16b3584a4c71be"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "adcloud": {
+                    "ttl": 63158404,
+                    "length": 48,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "amazon.com",
+                "business.amazon.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 4
+    },
+    "nameservers": [
+        "ns1.amzndns.co.uk",
+        "ns1.amzndns.com",
+        "ns2.amzndns.org",
+        "ns2.amzndns.com",
+        "ns2.amzndns.net",
+        "ns1.amzndns.org",
+        "ns2.amzndns.co.uk",
+        "ns1.amzndns.net"
+    ]
+}

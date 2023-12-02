@@ -1,0 +1,219 @@
+{
+    "domain": "ujet.co",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000954,
+    "sites": 14,
+    "subdomains": [
+        "websdk",
+        "turo.api",
+        "nxlink.api",
+        "parkmobile.api",
+        "izettle.api",
+        "assaabloy1",
+        "jsx.api",
+        "outdoorsy.api"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "ujet\\.co\\/v2\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "websdk"
+            ],
+            "apis": {
+                "window.localStorage": 5
+            },
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "be8a2950e128186e6217eaa949f677b20f79f0a039e21a1f065a3970c7a4f7d2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "turo.com",
+                "help.turo.com",
+                "nextlinkinternet.com",
+                "parkmobile.io",
+                "www.blendtec.com",
+                "www.hesinnovations.com",
+                "www.jsx.com",
+                "www.medeco.com",
+                "www.outdoorsy.com",
+                "www.sargentlock.com",
+                "www.yalecommercial.com"
+            ]
+        },
+        {
+            "rule": "ujet\\.co\\/v2\\/proactive\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "websdk"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "a1465276eeb92547bb7fc8c1d4ff0e5cf9eeb58879e2920aede9caf3a6791829"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "turo.com",
+                "help.turo.com",
+                "nextlinkinternet.com",
+                "parkmobile.io",
+                "www.hesinnovations.com",
+                "www.jsx.com",
+                "www.outdoorsy.com"
+            ]
+        },
+        {
+            "rule": "ujet\\.co\\/api\\/v2\\/proactive_chat_triggers",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "turo.api",
+                "nxlink.api",
+                "parkmobile.api",
+                "izettle.api"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "fb05791bd4ed23ee0aed121700abc5a1e2dd3a2253a6abe74cba76fc1d13357f",
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "turo.com",
+                "help.turo.com",
+                "nextlinkinternet.com",
+                "parkmobile.io",
+                "www.zettle.com"
+            ]
+        },
+        {
+            "rule": "ujet\\.co\\/api\\/v2\\/proactive_chat_triggers",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "turo.api",
+                "nxlink.api",
+                "parkmobile.api",
+                "izettle.api"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "turo.com",
+                "help.turo.com",
+                "nextlinkinternet.com",
+                "parkmobile.io",
+                "www.zettle.com"
+            ]
+        },
+        {
+            "rule": "ujet\\.co\\/\\/api\\/v2\\/proactive_chat_triggers",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assaabloy1",
+                "jsx.api",
+                "outdoorsy.api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hesinnovations.com",
+                "www.jsx.com",
+                "www.outdoorsy.com"
+            ]
+        },
+        {
+            "rule": "ujet\\.co\\/\\/api\\/v2\\/proactive_chat_triggers",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "assaabloy1",
+                "jsx.api",
+                "outdoorsy.api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hesinnovations.com",
+                "www.jsx.com",
+                "www.outdoorsy.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.65625
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.1875
+        },
+        {
+            "domain": "osano.com",
+            "prevalence": 0.125
+        },
+        {
+            "domain": "ujetqa.co",
+            "prevalence": 0.03125
+        }
+    ],
+    "types": {
+        "Script": 11,
+        "Document": 7,
+        "Fetch": 8,
+        "Preflight": 8
+    },
+    "nameservers": [
+        "ns-506.awsdns-63.com",
+        "ns-1246.awsdns-27.org",
+        "ns-893.awsdns-47.net",
+        "ns-1550.awsdns-01.co.uk"
+    ]
+}

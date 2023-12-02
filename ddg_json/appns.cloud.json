@@ -1,0 +1,64 @@
+{
+    "domain": "appns.cloud",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "subdominio.s.lb"
+    ],
+    "cnames": [
+        {
+            "original": "rrss.abc.es",
+            "resolved": "subdominio.s.lb.appns.cloud"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "appns\\.cloud\\/pixel\\/js\\/ABCES",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "subdominio.s.lb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rrss.abc.es",
+                    "resolved": "subdominio.s.lb.appns.cloud"
+                }
+            ],
+            "responseHashes": [
+                "9cb36c3745dc87f3bcb08a4ca9f873a67877fae9b7711e1c9db7dffa2f767bf1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abc.es",
+                "www.abc.es"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "vocstatic.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2
+    },
+    "nameservers": [
+        "ns2.dondominio.com",
+        "ns1.dondominio.com"
+    ]
+}

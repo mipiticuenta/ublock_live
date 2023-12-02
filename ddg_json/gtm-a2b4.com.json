@@ -1,0 +1,145 @@
+{
+    "domain": "gtm-a2b4.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000681,
+    "sites": 10,
+    "subdomains": [
+        "gtm-cn-tl32pap9m04",
+        "gtm-cn-tl32nemt203",
+        "gtm-cn-4590x3tmp04"
+    ],
+    "cnames": [
+        {
+            "original": "accounts.wondershare.com",
+            "resolved": "gtm-cn-tl32nemt203.gtm-a2b4.com"
+        },
+        {
+            "original": "crm.wondershare.com",
+            "resolved": "gtm-cn-tl32pap9m04.gtm-a2b4.com"
+        },
+        {
+            "original": "i.wondershare.com",
+            "resolved": "gtm-cn-4590x3tmp04.gtm-a2b4.com"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "gtm-a2b4\\.com\\/api\\/v1\\/chatbot\\/zendesk\\/bot-key",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gtm-cn-tl32pap9m04"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "crm.wondershare.com",
+                    "resolved": "gtm-cn-tl32pap9m04.gtm-a2b4.com"
+                }
+            ],
+            "responseHashes": [
+                "002b8acea9ad6e295c39bb960ae634285f63a82d9411f9c071f634e7483823e6",
+                "3c1b6dd2fc31235af8daba754394f40b1f2f2a1f178925b4fd5c7a96ad15b28a",
+                "247f138d0910f40140c53abfc2ee68c41541f1f92f11b7eecea49a77bd83af8d"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "srcSite": 0.00003406017752164524,
+                "IR_gbd": 0.000020436106512987146
+            },
+            "exampleSites": [
+                "wondershare.com",
+                "drfone.wondershare.com",
+                "filmora.wondershare.com",
+                "recoverit.wondershare.com",
+                "videoconverter.wondershare.com"
+            ]
+        },
+        {
+            "rule": "gtm-a2b4\\.com\\/api\\/v3\\/account",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gtm-cn-tl32nemt203"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "accounts.wondershare.com",
+                    "resolved": "gtm-cn-tl32nemt203.gtm-a2b4.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wondershare.com",
+                "filmora.wondershare.com",
+                "recoverit.wondershare.com",
+                "videoconverter.wondershare.com"
+            ]
+        },
+        {
+            "rule": "gtm-a2b4\\.com\\/api\\/v1\\/geoip\\/country",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "gtm-cn-4590x3tmp04"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "i.wondershare.com",
+                    "resolved": "gtm-cn-4590x3tmp04.gtm-a2b4.com"
+                }
+            ],
+            "responseHashes": [
+                "a8e77c89dad76da7efb70c33c89e99bcb0fb91c3ce512fb7964e16738d8f5198"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wondershare.com",
+                "filmora.wondershare.com",
+                "www.wondershare.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000477,
+    "topInitiators": [
+        {
+            "domain": "wondershare.cc",
+            "prevalence": 0.5882352941176471
+        },
+        {
+            "domain": "allstatics.com",
+            "prevalence": 0.4117647058823529
+        }
+    ],
+    "types": {
+        "Fetch": 5,
+        "Script": 4,
+        "XHR": 3
+    },
+    "nameservers": [
+        "vip1.alidns.com",
+        "vip2.alidns.com"
+    ]
+}

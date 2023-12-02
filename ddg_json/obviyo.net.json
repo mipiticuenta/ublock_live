@@ -1,0 +1,327 @@
+{
+    "domain": "obviyo.net",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000129,
+    "sites": 19,
+    "subdomains": [
+        "api",
+        "h30-deploy",
+        "cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "obviyo\\.net\\/edge",
+            "cookies": 0.0000954,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 14,
+            "prevalence": 0.0000954,
+            "cnames": [],
+            "responseHashes": [
+                "9725193456b5904de45f0df3259465e627e5212b1f7734904315a89aec40107f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "briantooleyracing.com",
+                "chefschoice.com",
+                "sdparts.com",
+                "treperformance.com",
+                "westbend.com",
+                "www.alphaindustries.com",
+                "www.arhaus.com",
+                "www.autonationusa.com",
+                "www.medalsofamerica.com",
+                "www.republicoftea.com",
+                "www.ruohonjuuri.fi",
+                "www.strandbags.com.au",
+                "www.toolbarn.com",
+                "www.uptontea.com"
+            ]
+        },
+        {
+            "rule": "obviyo\\.net\\/origin\\/__hic_post",
+            "cookies": 0.0000545,
+            "fingerprinting": 0,
+            "subdomains": [
+                "h30-deploy"
+            ],
+            "apis": {},
+            "sites": 14,
+            "prevalence": 0.0000954,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_obv_a_vid": 0.00004087221302597429,
+                "IR_gbd": 0.000006812035504329049,
+                "_li_dcdm_c": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "briantooleyracing.com",
+                "chefschoice.com",
+                "sdparts.com",
+                "treperformance.com",
+                "westbend.com",
+                "www.alphaindustries.com",
+                "www.arhaus.com",
+                "www.autonationusa.com",
+                "www.medalsofamerica.com",
+                "www.republicoftea.com",
+                "www.ruohonjuuri.fi",
+                "www.strandbags.com.au",
+                "www.toolbarn.com",
+                "www.uptontea.com"
+            ]
+        },
+        {
+            "rule": "obviyo\\.net\\/origin\\/personalize\\/static\\/core\\.js",
+            "cookies": 0.0000409,
+            "fingerprinting": 1,
+            "subdomains": [
+                "h30-deploy"
+            ],
+            "apis": {
+                "window.localStorage": 6,
+                "Navigator.prototype.userAgent": 6,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "05800a6707d409627d2a513b4644736fec34d0eb9a436240d91c0b6a03318243"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chefschoice.com",
+                "westbend.com",
+                "www.arhaus.com",
+                "www.ruohonjuuri.fi",
+                "www.strandbags.com.au",
+                "www.toolbarn.com"
+            ]
+        },
+        {
+            "rule": "obviyo\\.net\\/lib\\/hyper\\/obv-components\\.esm\\.js",
+            "cookies": 0.0000409,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 6,
+                "window.indexedDB": 6,
+                "Date.prototype.getTime": 6,
+                "Document.cookie getter": 5,
+                "Document.cookie setter": 5,
+                "Screen.prototype.height": 5,
+                "Screen.prototype.width": 5
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "8471d11e50b789c60798024d9c3977142f2c1d62b301c39cb642a3942c387eff"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_obv_a_vid": {
+                    "ttl": 31536005,
+                    "length": 36,
+                    "prevalence": 0.00003406017752164524,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chefschoice.com",
+                "westbend.com",
+                "www.arhaus.com",
+                "www.ruohonjuuri.fi",
+                "www.strandbags.com.au",
+                "www.toolbarn.com"
+            ]
+        },
+        {
+            "rule": "obviyo\\.net\\/origin\\/personalize\\/static\\/swiper-bundle\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "h30-deploy"
+            ],
+            "apis": {
+                "Navigator.prototype.maxTouchPoints": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "fb40e9e8d491646064c4daf7e5e57d9e3bf35c239348ecfeb68623559fe00f67"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chefschoice.com",
+                "westbend.com",
+                "www.arhaus.com",
+                "www.ruohonjuuri.fi",
+                "www.strandbags.com.au",
+                "www.toolbarn.com"
+            ]
+        },
+        {
+            "rule": "obviyo\\.net\\/origin\\/personalize\\/static\\/core\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "h30-deploy"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "32f5d57e79d382c40f1b4605e565e0fb9eb21bdfe7c9a01e8c8554e4f950d19f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chefschoice.com",
+                "westbend.com",
+                "www.arhaus.com",
+                "www.ruohonjuuri.fi",
+                "www.strandbags.com.au",
+                "www.toolbarn.com"
+            ]
+        },
+        {
+            "rule": "obviyo\\.net\\/lib\\/hyper\\/obv-components\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "24414f40efeb345c6e9e65cd68229b8daff39710a759340298ad51122a8dd2bb"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chefschoice.com",
+                "westbend.com",
+                "www.arhaus.com",
+                "www.ruohonjuuri.fi",
+                "www.strandbags.com.au",
+                "www.toolbarn.com"
+            ]
+        },
+        {
+            "rule": "obviyo\\.net\\/dynamic\\/loader\\/prod\\/giERjeOM",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ce1bba77d21bc60dd581c4a20ceb2012842c604526e714994a8e400da203094c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "arhaus.com",
+                "www.arhaus.com"
+            ]
+        },
+        {
+            "rule": "obviyo\\.net\\/origin\\/personalize\\/prod\\/giERjeOM",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "h30-deploy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "arhaus.com",
+                "www.arhaus.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000129,
+    "topInitiators": [
+        {
+            "domain": "hiconversion.com",
+            "prevalence": 0.6024096385542169
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2891566265060241
+        },
+        {
+            "domain": "yottaa.com",
+            "prevalence": 0.07228915662650602
+        },
+        {
+            "domain": "shopifyorderlimits.s3.amazonaws.com",
+            "prevalence": 0.024096385542168676
+        },
+        {
+            "domain": "facebook.net",
+            "prevalence": 0.012048192771084338
+        }
+    ],
+    "types": {
+        "Fetch": 16,
+        "Ping": 14,
+        "Script": 20,
+        "Stylesheet": 12
+    },
+    "nameservers": [
+        "virginia.ns.cloudflare.com",
+        "damian.ns.cloudflare.com"
+    ]
+}

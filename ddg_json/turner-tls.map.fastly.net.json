@@ -1,0 +1,104 @@
+{
+    "domain": "turner-tls.map.fastly.net",
+    "owner": {
+        "name": "Fastly, Inc.",
+        "displayName": "Fastly",
+        "privacyPolicy": "https://www.fastly.com/privacy",
+        "url": "http://fastly.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000749,
+    "sites": 11,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "z.cdp-dev.cnn.com",
+            "resolved": "turner-tls.map.fastly.net"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "turner-tls\\.map\\.fastly\\.net\\/zion-web-client\\/3\\.0\\/zion-web-client\\.min\\.js",
+            "cookies": 0.0000409,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [
+                {
+                    "original": "z.cdp-dev.cnn.com",
+                    "resolved": "turner-tls.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "099abcdb5d2c64ac98f2d3db4785ab8772783330b53f5d9f075deb3de7ea4158"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnn.com",
+                "cnnespanol.cnn.com",
+                "edition.cnn.com",
+                "money.cnn.com",
+                "us.cnn.com",
+                "www.cnn.com"
+            ]
+        },
+        {
+            "rule": "turner-tls\\.map\\.fastly\\.net\\/zfm\\/zfh-3\\.js",
+            "cookies": 0.0000409,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [
+                {
+                    "original": "z.cdp-dev.cnn.com",
+                    "resolved": "turner-tls.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "84841ae2d4dd04ff59ce302baa5421b478dc2f26d092ffb3f9bcadc13c6ca64e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnn.com",
+                "cnnespanol.cnn.com",
+                "edition.cnn.com",
+                "money.cnn.com",
+                "us.cnn.com",
+                "www.cnn.com"
+            ]
+        }
+    ],
+    "categories": [
+        "Ad Motivated Tracking",
+        "Advertising",
+        "Analytics",
+        "Third-Party Analytics Marketing",
+        "Action Pixels",
+        "CDN",
+        "Embedded Content",
+        "Session Replay"
+    ],
+    "performance": {},
+    "cookies": 0.0000749,
+    "topInitiators": [
+        {
+            "domain": "d9esmwyn3ffr1.cloudfront.net",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 12
+    },
+    "nameservers": []
+}

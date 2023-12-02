@@ -1,0 +1,82 @@
+{
+    "domain": "aab12edbfa1854c5ca5147f376235eea-791100624.ap-south-1.elb.amazonaws.com",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "cms-one-backend.upgrad.com",
+            "resolved": "aab12edbfa1854c5ca5147f376235eea-791100624.ap-south-1.elb.amazonaws.com"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "aab12edbfa1854c5ca5147f376235eea-791100624\\.ap-south-1\\.elb\\.amazonaws\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cms-one-backend.upgrad.com",
+                    "resolved": "aab12edbfa1854c5ca5147f376235eea-791100624.ap-south-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "upgrad.com",
+                "www.upgrad.com"
+            ]
+        },
+        {
+            "rule": "aab12edbfa1854c5ca5147f376235eea-791100624\\.ap-south-1\\.elb\\.amazonaws\\.com\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "cms-one-backend.upgrad.com",
+                    "resolved": "aab12edbfa1854c5ca5147f376235eea-791100624.ap-south-1.elb.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "edad906982c3f5475b4e1322f3ba346144efd82483e4078f910363455f2a55e2"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "upgrad.com",
+                "www.upgrad.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "types": {
+        "Preflight": 2,
+        "Fetch": 2
+    },
+    "nameservers": []
+}

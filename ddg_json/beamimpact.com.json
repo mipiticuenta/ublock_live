@@ -1,0 +1,1771 @@
+{
+    "domain": "beamimpact.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000143,
+    "sites": 21,
+    "subdomains": [
+        "production-beam-widgets",
+        "production-central-backend-ne",
+        "production-central-backend"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.24\\.0\\/dist\\/integrations\\/utils\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "faaf9605435bfd66de84481f80b782ae33de79799e33ff394f9b04bbc2320fca"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clearlyfiltered.com",
+                "magicspoon.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.24\\.0\\/dist\\/cookies-ef026d2b\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 1,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {
+                "CookieStore.prototype.get": 1,
+                "CookieStore.prototype.set": 1,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0565654c7e797e9b0cde66e7afb3b58d1469a6a23fa4ccef63b1a6f3c46e0184"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_ju_dm": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "clearlyfiltered.com",
+                "magicspoon.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.24\\.0\\/dist\\/remote-session-ae02eca7\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "40a06acad04396d9843f6ac0b3fcd1cf4c267aa830cc73b12b15a777de10b1f6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clearlyfiltered.com",
+                "magicspoon.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/api\\/v3\\/experimentSession",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-central-backend-ne"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cozyearth.com",
+                "magicspoon.com",
+                "www.manitobah.com",
+                "www.toadandco.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/api\\/v3\\/experimentSession",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-central-backend-ne"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cozyearth.com",
+                "magicspoon.com",
+                "www.manitobah.com",
+                "www.toadandco.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/api\\/v3\\/cart",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-central-backend-ne",
+                "production-central-backend"
+            ],
+            "apis": {},
+            "sites": 12,
+            "prevalence": 0.0000817,
+            "cnames": [],
+            "responseHashes": [
+                "45b5f533d80de77ffcde5982a436facd82fffa12f48c5c6f7763634ca385de5c",
+                "de0895f7dfea10b74fbef45165076c17661ccff5fdc7f94b8057b7d7e982146b",
+                "cc6a8a011f39efe071fe2f3ba2759c964f0d71d730f2a9abc2f67da7835a7254",
+                "97a24590857924c434a99a7776ef5b8576b5da51a105b20353dfc438e1095b39",
+                "900c0726c29f8b5c814e0776ef35b9cd66e3967f431513dd693b4413ce7a4310",
+                "e239c50a6f1870ca45c984549796e1f677ccce239195999b3cae1c24caa398fb",
+                "896edf28efb9aaf00c2f5fa1549a6838fba2e8068c135c6c47c024a6aa04fa5d",
+                "d5195bf95993a9be216b2f0cfb95f9bd5dac4fed2aa502139bd642b968951cd7",
+                "9c8d4ff90123b069c742d3400e31440d647ddcf2ffdc21dfd112b355dc18a811",
+                "93d3d2a4d3cdbd8ba5e809188d4084c2c67a54148e8f078a391a124c705f81ee",
+                "a48603e1b4c7d91674518c8ae4ca173b7211dc7603b1ea8e146783b2935413d3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cozyearth.com",
+                "magicspoon.com",
+                "nuunlife.com",
+                "passionplanner.com",
+                "theoodie.co.uk",
+                "wearwellow.com",
+                "www.baffin.com",
+                "www.beckettsimonon.com",
+                "www.coyuchi.com",
+                "www.drsquatch.com",
+                "www.manitobah.com",
+                "www.stumptowncoffee.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/api\\/v3\\/cart",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-central-backend-ne",
+                "production-central-backend"
+            ],
+            "apis": {},
+            "sites": 12,
+            "prevalence": 0.0000817,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cozyearth.com",
+                "magicspoon.com",
+                "nuunlife.com",
+                "passionplanner.com",
+                "theoodie.co.uk",
+                "wearwellow.com",
+                "www.baffin.com",
+                "www.beckettsimonon.com",
+                "www.coyuchi.com",
+                "www.drsquatch.com",
+                "www.manitobah.com",
+                "www.stumptowncoffee.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.0\\/dist\\/components\\/select-nonprofit\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "f14c93ead8461bc46eab301b1c0a450bda6f66ea267c5017e78e9804d898f65c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "passionplanner.com",
+                "www.manitobah.com",
+                "www.roots.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.0\\/dist\\/lit-9ba4068d\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "ff0bbc9cf0a2340c5ce73abf1068eae10db8899cc605f3d54a2a2a28469aec2c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "passionplanner.com",
+                "www.manitobah.com",
+                "www.roots.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.0\\/dist\\/localize-fe5b006f\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "b95a377750b86f68fd6a29929d639e9d348122578a79d94d3ff4159ac72cc56a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "passionplanner.com",
+                "www.manitobah.com",
+                "www.roots.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.0\\/dist\\/constants-f170f516\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "369b52005063e5a325d1e81b628120307313e13df0b3092a058c85bd45756404"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "passionplanner.com",
+                "www.manitobah.com",
+                "www.roots.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.0\\/dist\\/events-f129b85c\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "348017f658f8c2701701512c3759c08db508fed68fc50fad99d1940a3343ac84"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "passionplanner.com",
+                "www.manitobah.com",
+                "www.roots.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.0\\/dist\\/cookies-ecdf5531\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "cb1a10db43f7fb504f40a78b2b637f49abebcfec6330117282eda8361315ed6f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "passionplanner.com",
+                "www.manitobah.com",
+                "www.roots.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.0\\/dist\\/components\\/post-purchase\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1b3eb47d15b2a67e7e50a7832c70b99344661aaa40cff5c2fd3e1067c5d1bfaf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "passionplanner.com",
+                "www.roots.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.0\\/dist\\/components\\/redeem-transaction\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cc3a68948b6a6bebd7cabad6f10d42e3d9ef8d31777ce40c398aee532f0ba89e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "passionplanner.com",
+                "www.roots.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.0\\/dist\\/components\\/beam-partner-logos\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0dcd01c2f9e1367089bce3cddacc91ece1d209e9492727de11f0e431d51a9290"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "passionplanner.com",
+                "www.roots.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.0\\/dist\\/css-card-grid-4e659026\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d1d2009a6da285d219025bda62da33939dc58ef27bb953a1741f2115d91b260b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "passionplanner.com",
+                "www.roots.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.0\\/dist\\/components\\/impact-overview\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1661d261b4a1be2d38fcba01e82f55e7463433b7d38d8f190ce47c48ca1ef423"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "passionplanner.com",
+                "www.roots.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.0\\/dist\\/lodash-32b9773e\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a5af8a4f21c54d0b816988d2c51b3d78d98e4afd38aba41722a1d84eeb269d90"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "passionplanner.com",
+                "www.roots.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.23\\.0\\/dist\\/components\\/select-nonprofit\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fe7d0f8384178af66fe29374962b42a6c79bf47e8633d0d5a7124ab907bff742"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baffin.com",
+                "www.baffin.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.23\\.0\\/dist\\/integrations\\/shopify\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "61aad827368287732007c1b142af90e82be379fb5d22ff43534a557b3699538e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baffin.com",
+                "www.baffin.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.23\\.0\\/dist\\/integrations\\/utils\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1ddc348455196fc0c568870595a4d1d7b05b8119a529c4aa2450411a376238a3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baffin.com",
+                "www.baffin.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.23\\.0\\/dist\\/lit-927e8c15\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b39f45a33d7b835fe44810479451bc9ff41549d30b690a378f2a2a22c0e5fb85"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baffin.com",
+                "www.baffin.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.23\\.0\\/dist\\/localize-08e556da\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7bda5d33bce73f1ace15f388fa8b25f577cde51358ed728b72c6cbb73d665b45"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baffin.com",
+                "www.baffin.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.23\\.0\\/dist\\/progress-bar-8b72768d\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dcc3319f9ec64e847792361514ad4a7e72d1a5f5f16ccdbf835cb808a50d7b94"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baffin.com",
+                "www.baffin.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.23\\.0\\/dist\\/events-3201bf2b\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0bdb400a1c10a6abbfabc0b5b6bafb28e1ce1d2590a3c03aab6921780ad80f66"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baffin.com",
+                "www.baffin.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.23\\.0\\/dist\\/cookies-ecdf5531\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cb1a10db43f7fb504f40a78b2b637f49abebcfec6330117282eda8361315ed6f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baffin.com",
+                "www.baffin.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.23\\.0\\/dist\\/order-page-7011c851\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8aa827cb7fcc555203467e01f7c6fff3b850dbb9d9be9b56fbe76ae0f8b978f2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baffin.com",
+                "www.baffin.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.23\\.0\\/dist\\/cookies-ef026d2b\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0565654c7e797e9b0cde66e7afb3b58d1469a6a23fa4ccef63b1a6f3c46e0184"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baffin.com",
+                "www.baffin.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.23\\.0\\/dist\\/wait-for-element-bd62d52e\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a99c1cdfc2657cd6d185a44d73e9b0c790e7dbdaa76d1e7ff9bb57851a6caa5a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baffin.com",
+                "www.baffin.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.23\\.0\\/dist\\/lit-c5229410\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4ca726c1afef2f8a2d817cbc75d21bc7472312c729916ea308f797863792a928"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baffin.com",
+                "www.baffin.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.23\\.0\\/dist\\/lodash-32b9773e\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a5af8a4f21c54d0b816988d2c51b3d78d98e4afd38aba41722a1d84eeb269d90"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "baffin.com",
+                "www.baffin.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.16\\.0\\/dist\\/components\\/select-nonprofit\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bd033259bff8aad70b0fbfd03449d074d267be25e0fc24adee7d98f512c710a0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beckettsimonon.com",
+                "www.beckettsimonon.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.16\\.0\\/dist\\/lit-9ba4068d\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ff0bbc9cf0a2340c5ce73abf1068eae10db8899cc605f3d54a2a2a28469aec2c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beckettsimonon.com",
+                "www.beckettsimonon.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.16\\.0\\/dist\\/localize-0283c1bd\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c764d375e350b435c8fb506031d302c260ac0ad3c6b032469f75e5c360429d9a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beckettsimonon.com",
+                "www.beckettsimonon.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.16\\.0\\/dist\\/constants-e827785a\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "23b93d05a2f10ed9c3cc843717ce2516a059970107dd152830dc8214861f1d99"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beckettsimonon.com",
+                "www.beckettsimonon.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.16\\.0\\/dist\\/events-604a5f6c\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b9406db4e546b7ae03213f5475678ecdd7b547da5bf4aadf0b0914fc9691558d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beckettsimonon.com",
+                "www.beckettsimonon.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.16\\.0\\/dist\\/cookies-ecdf5531\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cb1a10db43f7fb504f40a78b2b637f49abebcfec6330117282eda8361315ed6f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beckettsimonon.com",
+                "www.beckettsimonon.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.16\\.0\\/dist\\/components\\/shopify\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b4da4951aa2d3e9e186cc9f61e69193c30df49480c7e782d27added283481d92"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beckettsimonon.com",
+                "www.beckettsimonon.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.16\\.0\\/dist\\/components\\/post-purchase\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2025f673092519be853d452c1982dbfdf9c01e31d539fde9f63e3a82fd96b58e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beckettsimonon.com",
+                "www.beckettsimonon.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.16\\.0\\/dist\\/components\\/redeem-transaction\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "031de3fab3740eed206845f7d130b2b4dd86653ba9e419542ce901b9f45bdfbf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beckettsimonon.com",
+                "www.beckettsimonon.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.16\\.0\\/dist\\/components\\/beam-partner-logos\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0dcd01c2f9e1367089bce3cddacc91ece1d209e9492727de11f0e431d51a9290"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beckettsimonon.com",
+                "www.beckettsimonon.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.16\\.0\\/dist\\/css-card-grid-4e659026\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d1d2009a6da285d219025bda62da33939dc58ef27bb953a1741f2115d91b260b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beckettsimonon.com",
+                "www.beckettsimonon.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.16\\.0\\/dist\\/components\\/impact-overview\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "901b0ae85f687bdbe66326118b8a2a1a968596e43fdcbd529de5c744a5abcf42"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beckettsimonon.com",
+                "www.beckettsimonon.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.16\\.0\\/dist\\/lodash-32b9773e\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a5af8a4f21c54d0b816988d2c51b3d78d98e4afd38aba41722a1d84eeb269d90"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "beckettsimonon.com",
+                "www.beckettsimonon.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/api\\/v3\\/chain\\/findEligibleNonprofitsForCart",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-central-backend-ne"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coyuchi.com",
+                "www.manitobah.com",
+                "www.stumptowncoffee.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/api\\/v3\\/chain\\/findEligibleNonprofitsForCart",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-central-backend-ne"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "b4f0790f0512c6141086a5521b944f6e9eb669d5deb501fb2b9f423b80135ee2",
+                "f57f028601ad66bc7a2f56a98c118ba11ad16ae13d0a954d5836fcff3a60c8d7",
+                "b62e713dae6eade5f9d54a41638afbb1da59f90e71e00f228e23b980c7e88f60"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "coyuchi.com",
+                "www.coyuchi.com",
+                "www.manitobah.com",
+                "www.stumptowncoffee.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.20\\.0\\/dist\\/components\\/shopify\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fd4c1df2da6f0e51f4b412c450006841abde22107dbdbd1936bc11de8ddc190c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drsquatch.com",
+                "www.drsquatch.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.20\\.0\\/dist\\/components\\/select-nonprofit\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "469c227fcc02a9ba8fe77186ea791943d48177eb868a1551a90acce2f821850b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drsquatch.com",
+                "www.drsquatch.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.20\\.0\\/dist\\/integrations\\/utils\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1ddc348455196fc0c568870595a4d1d7b05b8119a529c4aa2450411a376238a3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drsquatch.com",
+                "www.drsquatch.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.20\\.0\\/dist\\/localize-199b4ed1\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b3cb6014263ae06cff7a579a55088979f3aee7c20867cd29421dbd0490006105"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drsquatch.com",
+                "www.drsquatch.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.20\\.0\\/dist\\/cookies-ecdf5531\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cb1a10db43f7fb504f40a78b2b637f49abebcfec6330117282eda8361315ed6f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drsquatch.com",
+                "www.drsquatch.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.20\\.0\\/dist\\/events-6b9b733b\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dfb9a11f39dd4250f46065a242c510fb6c5d7cb2bf757118b9f8529770b6f6cb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drsquatch.com",
+                "www.drsquatch.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.20\\.0\\/dist\\/constants-9226fe4a\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d3ed256041dd9fceeef559d168ceadbbd1c289f5fbe945014310e890c0925db0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drsquatch.com",
+                "www.drsquatch.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.20\\.0\\/dist\\/components\\/post-purchase\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1806e6d3c0a40e5607c2e56333fd374b4f56114dfc211fb2f6f353a050d95fdf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drsquatch.com",
+                "www.drsquatch.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.20\\.0\\/dist\\/lit-9ba4068d\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ff0bbc9cf0a2340c5ce73abf1068eae10db8899cc605f3d54a2a2a28469aec2c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drsquatch.com",
+                "www.drsquatch.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.20\\.0\\/dist\\/components\\/redeem-transaction\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9fa0731baafc17020fadda5189628ff8e69cf2ce3c99c2994ef1fa225c36bab0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drsquatch.com",
+                "www.drsquatch.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.20\\.0\\/dist\\/components\\/beam-partner-logos\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0dcd01c2f9e1367089bce3cddacc91ece1d209e9492727de11f0e431d51a9290"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drsquatch.com",
+                "www.drsquatch.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.20\\.0\\/dist\\/css-card-grid-4e659026\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d1d2009a6da285d219025bda62da33939dc58ef27bb953a1741f2115d91b260b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drsquatch.com",
+                "www.drsquatch.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.20\\.0\\/dist\\/components\\/impact-overview\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d093e3e38d8af0cbbbee7ef8d400a7d95c7fc04dd6f49fd6736d0297791f4eda"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drsquatch.com",
+                "www.drsquatch.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.20\\.0\\/dist\\/lodash-32b9773e\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a5af8a4f21c54d0b816988d2c51b3d78d98e4afd38aba41722a1d84eeb269d90"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drsquatch.com",
+                "www.drsquatch.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.20\\.0\\/dist\\/cookies-ef026d2b\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0565654c7e797e9b0cde66e7afb3b58d1469a6a23fa4ccef63b1a6f3c46e0184"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drsquatch.com",
+                "www.drsquatch.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.20\\.0\\/dist\\/wait-for-element-bd62d52e\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a99c1cdfc2657cd6d185a44d73e9b0c790e7dbdaa76d1e7ff9bb57851a6caa5a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "drsquatch.com",
+                "www.drsquatch.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.1\\/dist\\/integrations\\/shopify\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6c3fda4e5859b6c7fd2ab2542511046775148fe89af30ec0450b54cf43aa45a0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toadandco.com",
+                "www.toadandco.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.1\\/dist\\/integrations\\/utils\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1ddc348455196fc0c568870595a4d1d7b05b8119a529c4aa2450411a376238a3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toadandco.com",
+                "www.toadandco.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.1\\/dist\\/components\\/select-nonprofit\\.esm\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0d7caeca78755e72d0c4b7ecf04f6fc8c41827a1a2181f6d5a9e8c3877befa49"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toadandco.com",
+                "www.toadandco.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.1\\/dist\\/cookies-ef026d2b\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0565654c7e797e9b0cde66e7afb3b58d1469a6a23fa4ccef63b1a6f3c46e0184"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toadandco.com",
+                "www.toadandco.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.1\\/dist\\/wait-for-element-bd62d52e\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a99c1cdfc2657cd6d185a44d73e9b0c790e7dbdaa76d1e7ff9bb57851a6caa5a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toadandco.com",
+                "www.toadandco.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.1\\/dist\\/order-page-07f2a730\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dbdfccb96934a4d6bebfc87c43f106673eb34f62bf1037294c9aafb09d86ee3d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toadandco.com",
+                "www.toadandco.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.1\\/dist\\/lit-c5229410\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4ca726c1afef2f8a2d817cbc75d21bc7472312c729916ea308f797863792a928"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toadandco.com",
+                "www.toadandco.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.1\\/dist\\/lodash-32b9773e\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a5af8a4f21c54d0b816988d2c51b3d78d98e4afd38aba41722a1d84eeb269d90"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toadandco.com",
+                "www.toadandco.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.1\\/dist\\/lit-9ba4068d\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ff0bbc9cf0a2340c5ce73abf1068eae10db8899cc605f3d54a2a2a28469aec2c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toadandco.com",
+                "www.toadandco.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.1\\/dist\\/localize-e9b79a78\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "041d7fb39c524d6a40b42913a8ad6424dbd8fd5df7db18902a43725ba3937104"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toadandco.com",
+                "www.toadandco.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.1\\/dist\\/constants-f170f516\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "369b52005063e5a325d1e81b628120307313e13df0b3092a058c85bd45756404"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toadandco.com",
+                "www.toadandco.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.1\\/dist\\/events-52aa91f4\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "08ff488185c2e2421a2d26bea3abcc2088ed3a0c61cca8507b42ea978d4068b9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toadandco.com",
+                "www.toadandco.com"
+            ]
+        },
+        {
+            "rule": "beamimpact\\.com\\/web-sdk\\/v1\\.17\\.1\\/dist\\/cookies-ecdf5531\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "production-beam-widgets"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cb1a10db43f7fb504f40a78b2b637f49abebcfec6330117282eda8361315ed6f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toadandco.com",
+                "www.toadandco.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9711538461538461
+        },
+        {
+            "domain": "rollbar.com",
+            "prevalence": 0.019230769230769232
+        },
+        {
+            "domain": "loomi-prod.xyz",
+            "prevalence": 0.009615384615384616
+        }
+    ],
+    "types": {
+        "Script": 146,
+        "Fetch": 20,
+        "Preflight": 19
+    },
+    "nameservers": [
+        "ns-cloud-d1.googledomains.com",
+        "ns-cloud-d2.googledomains.com",
+        "ns-cloud-d3.googledomains.com",
+        "ns-cloud-d4.googledomains.com"
+    ]
+}

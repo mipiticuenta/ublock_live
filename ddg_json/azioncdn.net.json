@@ -1,0 +1,109 @@
+{
+    "domain": "azioncdn.net",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000613,
+    "sites": 9,
+    "subdomains": [
+        "1692747t.ha",
+        "4a5dea4f-9793-49a6-a325-4ca773e8ce6e.rsv",
+        "530001a.ha"
+    ],
+    "cnames": [
+        {
+            "original": "ad.clicrbs.com.br",
+            "resolved": "1692747t.ha.azioncdn.net"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "azioncdn\\.net\\/zm\\/zem-metrics\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "1692747t.ha"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "ad.clicrbs.com.br",
+                    "resolved": "1692747t.ha.azioncdn.net"
+                }
+            ],
+            "responseHashes": [
+                "51ad2898e51aeb4b3bb9a563d3c51f29bcd95d37be16d5e7d3d628fb89e0407f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clicrbs.com.br",
+                "gauchazh.clicrbs.com.br"
+            ]
+        },
+        {
+            "rule": "azioncdn\\.net\\/probes",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "4a5dea4f-9793-49a6-a325-4ca773e8ce6e.rsv",
+                "530001a.ha"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lojadomecanico.com.br",
+                "www.lojadomecanico.com.br"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000341,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8245614035087719
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.07017543859649122
+        },
+        {
+            "domain": "googlesyndication.com",
+            "prevalence": 0.03508771929824561
+        },
+        {
+            "domain": "azionrum.net",
+            "prevalence": 0.03508771929824561
+        },
+        {
+            "domain": "dynamicyield.com",
+            "prevalence": 0.017543859649122806
+        },
+        {
+            "domain": "instana.io",
+            "prevalence": 0.017543859649122806
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Fetch": 2
+    },
+    "nameservers": [
+        "ns3.azioncdn.net",
+        "ns2.azioncdn.net",
+        "ns1.azioncdn.net"
+    ]
+}

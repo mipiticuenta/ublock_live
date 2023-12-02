@@ -1,0 +1,252 @@
+{
+    "domain": "gist.build",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000749,
+    "sites": 11,
+    "subdomains": [
+        "code",
+        "renderer",
+        "engine-consumer-api.cloud"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "gist\\.build\\/web\\/latest\\/gist\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "code"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 8,
+                "Navigator.prototype.userAgent": 8,
+                "window.localStorage": 8,
+                "Date.prototype.getTime": 4
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "3c6f2b080cc0ce93ab2c7c31650f11c362977e4af4119642d35f8e788bfc1ffd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eforms.com",
+                "hvg.hu",
+                "saucey.com",
+                "up.codes",
+                "www.albert.io",
+                "www.bokadirekt.se",
+                "www.expertinstitute.com",
+                "www.salehoo.com"
+            ]
+        },
+        {
+            "rule": "gist\\.build\\/web\\/3\\.4\\.4\\/gist\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "code"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "3c6f2b080cc0ce93ab2c7c31650f11c362977e4af4119642d35f8e788bfc1ffd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eforms.com",
+                "hvg.hu",
+                "saucey.com",
+                "up.codes",
+                "www.albert.io",
+                "www.bokadirekt.se",
+                "www.expertinstitute.com",
+                "www.salehoo.com"
+            ]
+        },
+        {
+            "rule": "gist\\.build\\/2\\.0\\/index\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "renderer"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "62ffc5b1e0972c97ec2d31338179fafc14a70d77a53007ad088d6b5ed9408327"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eforms.com",
+                "hvg.hu",
+                "saucey.com",
+                "up.codes",
+                "www.bokadirekt.se",
+                "www.salehoo.com"
+            ]
+        },
+        {
+            "rule": "gist\\.build\\/renderer\\/0\\.1\\.12\\/index\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "code"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "62ffc5b1e0972c97ec2d31338179fafc14a70d77a53007ad088d6b5ed9408327"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eforms.com",
+                "hvg.hu",
+                "saucey.com",
+                "up.codes",
+                "www.bokadirekt.se"
+            ]
+        },
+        {
+            "rule": "gist\\.build\\/renderer\\/0\\.1\\.12\\/main\\.dart\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "code"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 1,
+                "Navigator.prototype.appVersion": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.languages": 1,
+                "window.matchMedia(\"prefers-color-scheme\")": 1,
+                "window.devicePixelRatio": 1,
+                "window.localStorage": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "bd942babdb06ea7666389d13a16c20b1d506a98d4234172d8d83025643a415a0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eforms.com",
+                "hvg.hu",
+                "saucey.com",
+                "up.codes",
+                "www.bokadirekt.se"
+            ]
+        },
+        {
+            "rule": "gist\\.build\\/renderer\\/0\\.1\\.12\\/assets\\/FontManifest\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "code"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eforms.com",
+                "hvg.hu",
+                "up.codes"
+            ]
+        },
+        {
+            "rule": "gist\\.build\\/api\\/v2\\/configuration",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "engine-consumer-api.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "87feb23724c613ef97e01b42bc8195b66158fd5924a51b94384dd26d42c06e4f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eforms.com",
+                "hvg.hu",
+                "up.codes"
+            ]
+        },
+        {
+            "rule": "gist\\.build\\/api\\/v2\\/configuration",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "engine-consumer-api.cloud"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eforms.com",
+                "hvg.hu",
+                "up.codes"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "customer.io",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 21,
+        "Document": 11,
+        "XHR": 6,
+        "Preflight": 3
+    },
+    "nameservers": [
+        "uma.ns.cloudflare.com",
+        "brett.ns.cloudflare.com"
+    ]
+}

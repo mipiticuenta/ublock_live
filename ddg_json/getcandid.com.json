@@ -1,0 +1,355 @@
+{
+    "domain": "getcandid.com",
+    "owner": {
+        "name": "FIVEACES INC",
+        "displayName": "FIVEACES"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000749,
+    "sites": 11,
+    "subdomains": [
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "getcandid\\.com\\/scripts\\/wall-isotope\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4f7c2abc865c6d565811eaf06e18a60b57b5eeb8e0689912ce0b01ca1c1fe102"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hubbardtonforge.com",
+                "www.thermatru.com"
+            ]
+        },
+        {
+            "rule": "getcandid\\.com\\/scripts\\/widget\\.js",
+            "cookies": 0.0000545,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "Document.cookie getter": 8,
+                "Date.prototype.getTime": 8,
+                "Document.cookie setter": 8,
+                "Navigator.prototype.userAgent": 8
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "f21fba94de57ab3d6d2e657731f2127b3bead42829f5ae3749935746f501df3f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "candid_userid": {
+                    "ttl": 31536002,
+                    "length": 36,
+                    "prevalence": 0.00005449628403463239,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hubbardtonforge.com",
+                "www.bruce.com",
+                "www.curreyandcompany.com",
+                "www.halloweencostumes.com",
+                "www.kelty.com",
+                "www.larsondoors.com",
+                "www.thermatru.com",
+                "www.uttermost.com"
+            ]
+        },
+        {
+            "rule": "getcandid\\.com\\/scripts\\/keen-tracker\\.3\\.0\\.7\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 1
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "2fea746535da5c2b49962de51d3cc58076fc1b0b6b30fea75dbf23b799d5acdd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hubbardtonforge.com",
+                "www.bruce.com",
+                "www.curreyandcompany.com",
+                "www.halloweencostumes.com",
+                "www.kelty.com",
+                "www.larsondoors.com",
+                "www.thermatru.com",
+                "www.uttermost.com"
+            ]
+        },
+        {
+            "rule": "getcandid\\.com\\/content\\/widget\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "eb9c4556633ba913fec65370fc8d73cfe0716aa6093bb2108b188c70537765fc"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hubbardtonforge.com",
+                "www.bruce.com",
+                "www.curreyandcompany.com",
+                "www.halloweencostumes.com",
+                "www.kelty.com",
+                "www.larsondoors.com",
+                "www.thermatru.com",
+                "www.uttermost.com"
+            ]
+        },
+        {
+            "rule": "getcandid\\.com\\/stream\\/css\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "36a253b85954d53c41779ca4e7ce17d1e2063fb7beefdd00e6bb3d6d8c774449",
+                "d42dfe768b1edc0df9562761a15303802251c7f2cdbb8b448e432c885e9a8b5e",
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "1c1d1894f38c036f13f90ae257035da2480f10e7660ca0216ec7d96ab3eb1872",
+                "38fa29d9c88fd32d61cd7240bc9010f19b0c6b37e9dd45e0254b75d00491ebfc",
+                "123b9bebc6662d29256b87aacf92fb17ccea71c2a65d28acf68ae3cd64402dad"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hubbardtonforge.com",
+                "www.bruce.com",
+                "www.curreyandcompany.com",
+                "www.halloweencostumes.com",
+                "www.kelty.com",
+                "www.larsondoors.com",
+                "www.thermatru.com",
+                "www.uttermost.com"
+            ]
+        },
+        {
+            "rule": "getcandid\\.com\\/images\\/blank\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "3ee040b7d8cdab93f7861803c95222296770dd1e31033f80fc9d03028f09387e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hubbardtonforge.com",
+                "www.bruce.com",
+                "www.curreyandcompany.com",
+                "www.kelty.com",
+                "www.larsondoors.com",
+                "www.thermatru.com",
+                "www.uttermost.com"
+            ]
+        },
+        {
+            "rule": "getcandid\\.com\\/stream\\/frame\\/",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 6
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "92725db57f74e6b334fd1cce11603ed6fd110a49d92a317cd9c62f2a584f0ca8",
+                "7aca895baffba02680598edf82774035f74fd8b3bc15bf2d041cfa215c1881f9",
+                "2bf449b514b6be8a4e617081686b0fd830cc9d3ea648051e3de8844364aca9e6",
+                "b1d8aff55429ce1c71114035a8a282532d016ef413cc4a407c312806351aaffb",
+                "c4b059e7f24c48eb7880ae3a95e7b17daa44859c109865117773d64af0d40735",
+                "4fed5c0e23d5037adf888512640461d4efd88c8c2280926cd9eb0a2aeda7caa6",
+                "5245c202a00afbfbf31ed93296ce35edb63a4c253dd5711ec40a78be1301e752"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hubbardtonforge.com",
+                "www.bruce.com",
+                "www.curreyandcompany.com",
+                "www.halloweencostumes.com",
+                "www.kelty.com",
+                "www.larsondoors.com",
+                "www.thermatru.com",
+                "www.uttermost.com"
+            ]
+        },
+        {
+            "rule": "getcandid\\.com\\/scripts\\/widget\\.frame\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 6
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "18528d0b511e777346ea84e27ab52427091b56f52df6ce96028dc404593a799d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hubbardtonforge.com",
+                "www.bruce.com",
+                "www.curreyandcompany.com",
+                "www.halloweencostumes.com",
+                "www.kelty.com",
+                "www.larsondoors.com",
+                "www.thermatru.com",
+                "www.uttermost.com"
+            ]
+        },
+        {
+            "rule": "getcandid\\.com\\/stream\\/page\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "b82d8ce8b19b8b093f926cb0def536f8fea0f6441cdccbe4095a9f2047210a39",
+                "6a739057ce4053a6806bb980b24cd370373ee26a22faeb7e7c5dac2692912a5c",
+                "b9865e46277badb72efd5d48816df8ba053a68d6490d885aa00c64559f1013e6",
+                "bca65d1cd0bd971cca2d632a4c21c370ff9c63f7d489a81e277315cef07a4e9f",
+                "d3638001fadc4fb0130d7091abd103f0092a146ac5274b7522d6721ee176c648",
+                "451316b3efd1b2c85703a8c02b9dc7fbe7aceb80a52a6ab25bf28bbe49f9e82b",
+                "02f4dd46cbcf2bb9116bdaaeb9a27a3ddc2768f42b9b7d74cf1637aaadd28c2c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hubbardtonforge.com",
+                "www.bruce.com",
+                "www.curreyandcompany.com",
+                "www.halloweencostumes.com",
+                "www.kelty.com",
+                "www.larsondoors.com",
+                "www.thermatru.com",
+                "www.uttermost.com"
+            ]
+        },
+        {
+            "rule": "getcandid\\.com\\/stream\\/tags\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "7553c6ee1c1a1c95422010bee9b44b7df7aebbdea82017811ec04715c5473a0d",
+                "a3ee97a65e031611ffa8c296a0068a1b1806363b67f30e5193a9fa1c7aec4aaa",
+                "8aba276d48f1228d2710d549907c626f022c5d91447de9c548fe30dac11c509e",
+                "1b10a76a955d353e7a99a3584c66b9045ef3c4e285b1059e2362b503c3d81337",
+                "2d329f182c58b953d8bfb4809ed02fef610180e8fd4fd5a67c0d561d28fa935e",
+                "6e85d8e8d3d15bd66da40e3ab6536fca37c5fffa82d3b5fb3c77937bd51536a8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hubbardtonforge.com",
+                "www.bruce.com",
+                "www.curreyandcompany.com",
+                "www.kelty.com",
+                "www.larsondoors.com",
+                "www.thermatru.com",
+                "www.uttermost.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000749,
+    "topInitiators": [
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.6078431372549019
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.39215686274509803
+        }
+    ],
+    "types": {
+        "Script": 26,
+        "Stylesheet": 16,
+        "Image": 7,
+        "Document": 8,
+        "XHR": 15
+    },
+    "nameservers": [
+        "maya.ns.cloudflare.com",
+        "yichun.ns.cloudflare.com"
+    ]
+}

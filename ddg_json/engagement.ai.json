@@ -1,0 +1,111 @@
+{
+    "domain": "engagement.ai",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "cdn",
+        "chat"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "engagement\\.ai\\/production\\/static\\/js\\/loader\\/chatLoader\\.v3\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a7d17fb2f486d05873860e3e873bd48ef015d63f9b6732f92ee98110dafeba20"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "namecheap.com",
+                "www.namecheap.com"
+            ]
+        },
+        {
+            "rule": "engagement\\.ai\\/api\\/v2\\/widget\\/discover",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "chat"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "917a31b2574d6ab6a0ba8399dce5a836ccbc35897152668cc45faf63689f2ba4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "namecheap.com",
+                "www.namecheap.com"
+            ]
+        },
+        {
+            "rule": "engagement\\.ai\\/production\\/static\\/js\\/sdk\\/chatSDK\\.8f3042f77a4c6edfe22c\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.name": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c70436ed022bc0dac177edaed41e6766cf141b212fe40f6d51f42a5a4dd5e30e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "namecheap.com",
+                "www.namecheap.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "d1dijnkjnmzy2z.cloudfront.net",
+            "prevalence": 0.5
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "XHR": 2
+    },
+    "nameservers": [
+        "edns2.registrar-servers.com",
+        "edns4.ultradns.com",
+        "edns1.registrar-servers.com",
+        "edns4.ultradns.org",
+        "edns4.ultradns.biz",
+        "edns4.ultradns.net"
+    ]
+}

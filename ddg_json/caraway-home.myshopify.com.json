@@ -1,0 +1,107 @@
+{
+    "domain": "caraway-home.myshopify.com",
+    "owner": {
+        "name": "Shopify Inc.",
+        "displayName": "Shopify",
+        "privacyPolicy": "https://www.shopify.com/legal/privacy",
+        "url": "http://shopify.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "shop.carawayhome.com",
+            "resolved": "caraway-home.myshopify.com"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "caraway-home\\.myshopify\\.com\\/api\\/2022-10\\/graphql\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "carawayhome.com",
+                "www.carawayhome.com"
+            ]
+        },
+        {
+            "rule": "caraway-home\\.myshopify\\.com\\/api\\/2022-10\\/graphql\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c090ed82bd5115912f632232944d87cd7683c50a79c5cc1257f264ea6c1c62e5"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "carawayhome.com",
+                "www.carawayhome.com"
+            ]
+        },
+        {
+            "rule": "caraway-home\\.myshopify\\.com\\/api\\/2022-07\\/graphql\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "shop.carawayhome.com",
+                    "resolved": "caraway-home.myshopify.com"
+                }
+            ],
+            "responseHashes": [
+                "e277d058ef8afcd92bdafb95590fb8d26190cf31d028bfa292fe0b14194bc469"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "carawayhome.com",
+                "www.carawayhome.com"
+            ]
+        }
+    ],
+    "categories": [
+        "Analytics",
+        "Online Payment",
+        "CDN",
+        "Embedded Content"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Preflight": 2,
+        "Fetch": 2,
+        "XHR": 2
+    },
+    "nameservers": []
+}

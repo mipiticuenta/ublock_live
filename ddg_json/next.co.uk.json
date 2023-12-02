@@ -1,0 +1,108 @@
+{
+    "domain": "next.co.uk",
+    "owner": {
+        "name": "Next PLC",
+        "displayName": "Next"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000681,
+    "sites": 10,
+    "subdomains": [
+        "www",
+        "xcdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "next\\.co\\.uk\\/geolocation-svc\\/NX\\/CountryRedirect",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gap.co.uk",
+                "www.next.ie"
+            ]
+        },
+        {
+            "rule": "next\\.co\\.uk\\/geolocation-svc\\/NX\\/CountryRedirect",
+            "cookies": 0.0000545,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "419c5911157ac66e8c5b191505579aa3ebbdbe5b4bd513ec64711cd97200fa25"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gap.co.uk",
+                "www.joules.com",
+                "www.next.de",
+                "www.next.ie",
+                "www.next.us",
+                "www.nextdirect.com",
+                "www.reiss.com",
+                "www.victoriassecret.co.uk"
+            ]
+        },
+        {
+            "rule": "next\\.co\\.uk\\/COMMON\\/Items\\/Default\\/Default\\/Reiss\\/Videos\\/MOB_VIDEO\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "xcdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "409501905cd8f752f6b5ea46375c192a171bce22b422753619961fc24d614f89"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "reiss.com",
+                "www.reiss.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Preflight": 2,
+        "XHR": 8,
+        "Media": 2
+    },
+    "nameservers": [
+        "udns2.cscdns.uk",
+        "udns1.cscdns.net"
+    ]
+}

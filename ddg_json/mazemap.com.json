@@ -1,0 +1,78 @@
+{
+    "domain": "mazemap.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-NO"
+    ],
+    "prevalence": 0.000101,
+    "sites": 1,
+    "subdomains": [
+        "api",
+        "use"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "mazemap\\.com\\/api\\/campuscollection\\/default\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "b949905a3c0e5a8093d5f0cb345565b7ddb045e0e80ed882313c84eac32e38a4"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "himolde.no",
+                "www.himolde.no"
+            ]
+        },
+        {
+            "rule": "mazemap\\.com\\/95d0cf6b-2c10-43ce-8bf8-b367b29a921a",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "use"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "1f917ebcc206d2669107796033c9c6b48611b8048d30eda018b7b6ba682116af"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "himolde.no",
+                "www.himolde.no"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000101,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Fetch": 2,
+        "Other": 2
+    },
+    "nameservers": [
+        "barbara.ns.cloudflare.com",
+        "fred.ns.cloudflare.com"
+    ]
+}

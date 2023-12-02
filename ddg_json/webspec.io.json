@@ -1,0 +1,106 @@
+{
+    "domain": "webspec.io",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-NO"
+    ],
+    "prevalence": 0.000302,
+    "sites": 3,
+    "subdomains": [
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "webspec\\.io\\/static\\/js\\/app-script\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "cf2622e8f8bff933908bcadf4ae1d9647ff8b83d7ee581ff9505923428bda255"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "antonsport.no",
+                "www.gartnergrossisten.no",
+                "www.sportsnett.no"
+            ]
+        },
+        {
+            "rule": "webspec\\.io\\/api\\/v1\\/verify\\/page",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "antonsport.no",
+                "www.gartnergrossisten.no",
+                "www.sportsnett.no"
+            ]
+        },
+        {
+            "rule": "webspec\\.io\\/api\\/v1\\/verify\\/page",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000302,
+            "cnames": [],
+            "responseHashes": [
+                "85bb0a6542a385f45d1701d8db1f641c06e5dc159646a5da9dd6977f1365e237",
+                "225d996842b3bcc9743024e3b3470880a54bfb1fafadb4752ea4bcf2586ee688"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "antonsport.no",
+                "www.gartnergrossisten.no",
+                "www.sportsnett.no"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.6
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.4
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "Preflight": 3,
+        "XHR": 3
+    },
+    "nameservers": [
+        "ns01.one.com",
+        "ns02.one.com"
+    ]
+}

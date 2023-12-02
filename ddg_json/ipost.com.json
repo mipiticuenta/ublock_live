@@ -1,0 +1,165 @@
+{
+    "domain": "ipost.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000954,
+    "sites": 14,
+    "subdomains": [
+        "g003.enterprise",
+        "g001.enterprise",
+        "js.g001.enterprise",
+        "js.g003.enterprise"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "ipost\\.com\\/weh\\/handler\\/event_data\\/save\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "g003.enterprise",
+                "g001.enterprise"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "204b46822ac81dda3c9c98eb7e0c38efe0a99b4bceef579b69f533e920cb626c",
+                "66fd19d0bfd046106b12deb8621a91abef47cb551963fd0a683fb1a83f3bb830"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "territorialseed.com",
+                "www.mdlinx.com",
+                "www.republicoftea.com",
+                "www.sema.org",
+                "www.semashow.com",
+                "www.uptontea.com"
+            ]
+        },
+        {
+            "rule": "ipost\\.com\\/static\\/pref\\/img\\/client\\/m\\/m3usainc\\/WEH\\/iPost-Web-Tracking-mr6atjk6iprcd32c5g-V1\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "js.g001.enterprise"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "833be18dc80c3a6acc4d5bcae48d910e2398f28a0e26d776e5b0bef97e501e1f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mdlinx.com",
+                "www.mdlinx.com"
+            ]
+        },
+        {
+            "rule": "ipost\\.com\\/static\\/pref\\/img\\/client\\/t\\/therepublicoft\\/WEH\\/iPost-Web-Tracking-5obacjl61qn4cdkmorr6cbnclg-V1\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "js.g001.enterprise"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "842602b0f2eee505eae4e84f1891d8be8fd2be067fe47e689dcedecff1d1be0b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "republicoftea.com",
+                "www.republicoftea.com"
+            ]
+        },
+        {
+            "rule": "ipost\\.com\\/static\\/pref\\/img\\/client\\/s\\/sema\\/WEH\\/iPost-Web-Tracking-pqjbd1hc9g-V1\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "js.g003.enterprise"
+            ],
+            "apis": {
+                "Document.cookie getter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "7df4512de68ceb4828ce9ae78dcb871ad1393cd914f4d7688834ebaeeba15eb7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sema.org",
+                "www.sema.org",
+                "www.semashow.com"
+            ]
+        },
+        {
+            "rule": "ipost\\.com\\/static\\/pref\\/img\\/client\\/t\\/thehenryford\\/WEH\\/iPost-Web-Tracking-5obac5l6ep79spnm9oj9pj0-V1\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "js.g001.enterprise"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "04236f011b2769758a672d3f0f7dac9fb2839e18ee8b8ae4f24a9b8d942d4b0e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thehenryford.org",
+                "www.thehenryford.org"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.625
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.375
+        }
+    ],
+    "types": {
+        "XHR": 6,
+        "Script": 9
+    },
+    "nameservers": [
+        "dns01.ipost.com",
+        "dns01.smf.ipost.com"
+    ]
+}

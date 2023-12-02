@@ -1,0 +1,98 @@
+{
+    "domain": "e.global-ssl.fastly.net",
+    "owner": {
+        "name": "Fastly, Inc.",
+        "displayName": "Fastly",
+        "privacyPolicy": "https://www.fastly.com/privacy",
+        "url": "http://fastly.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "api.livenation.com",
+            "resolved": "e.global-ssl.fastly.net"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "e\\.global-ssl\\.fastly\\.net\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "api.livenation.com",
+                    "resolved": "e.global-ssl.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "749d0d4e2f8463661a12a1567e7e18bf4b816652561457596cfb630d50c90e4d",
+                "e01a448081e230f319bb0ad9560b32bd7df6a61c0630c013e799b7b619b4534d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "livenation.com",
+                "concerts.livenation.com",
+                "www.livenation.com"
+            ]
+        },
+        {
+            "rule": "e\\.global-ssl\\.fastly\\.net\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "api.livenation.com",
+                    "resolved": "e.global-ssl.fastly.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "livenation.com",
+                "concerts.livenation.com",
+                "www.livenation.com"
+            ]
+        }
+    ],
+    "categories": [
+        "Ad Motivated Tracking",
+        "Advertising",
+        "Analytics",
+        "Third-Party Analytics Marketing",
+        "Action Pixels",
+        "CDN",
+        "Embedded Content",
+        "Session Replay"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "livenationcdn.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "XHR": 3,
+        "Preflight": 3
+    },
+    "nameservers": []
+}

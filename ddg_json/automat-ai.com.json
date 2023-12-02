@@ -1,0 +1,330 @@
+{
+    "domain": "automat-ai.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "cdn",
+        "cda",
+        "saas"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "automat-ai\\.com\\/ash-telemetry\\/v2\\/snippet\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7bc07df878a280573bf74c1e3d4954de98763940e2d3477917b9feedd492dd69"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ash_automat_ai": {
+                    "ttl": 157852805,
+                    "length": 57,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eltamd.com",
+                "tartecosmetics.com"
+            ]
+        },
+        {
+            "rule": "automat-ai\\.com\\/ash-telemetry\\/api\\/v2\\/beacon",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cda"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eltamd.com",
+                "tartecosmetics.com"
+            ]
+        },
+        {
+            "rule": "automat-ai\\.com\\/webchat-connect-2\\/prd\\/latest\\/chat\\.defaults\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2,
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "window.indexedDB": 2,
+                "Document.cookie getter": 2,
+                "BroadcastChannel.prototype.constructor": 2,
+                "Date.prototype.getTime": 2,
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b82209000e140e6bac9550731d10c465338abc062462f56be3a91eb1a8eecdfe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allenedmonds.com",
+                "www.allenedmonds.com"
+            ]
+        },
+        {
+            "rule": "automat-ai\\.com\\/webchat-connect-2\\/prd\\/latest\\/sentry\\.c09a5819c869d997a20a-defaults\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "25fda4a945f81fd136434c599d3ff4e35381911d75feaa70e34f634e49719da3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allenedmonds.com",
+                "www.allenedmonds.com"
+            ]
+        },
+        {
+            "rule": "automat-ai\\.com\\/saas\\/BBMHV6Z130LgSZvhQjHP\\/UpXMj7G7pLpAOP5mrrNw\\/deployments\\/lure\\/production\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c5391234adcb0f61835e8d6c7d92d319915b2176d660decfcfe6b25b88c4c6c2"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allenedmonds.com",
+                "www.allenedmonds.com"
+            ]
+        },
+        {
+            "rule": "automat-ai\\.com\\/webchat-connect-2\\/prd\\/latest\\/148\\.10c62a1b2ed3a7b9df29-defaults\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0f2052c358322f7906707e1870f504267f7e5b443da846ecee37f0d8af39b8d5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allenedmonds.com",
+                "www.allenedmonds.com"
+            ]
+        },
+        {
+            "rule": "automat-ai\\.com\\/webchat-connect-2\\/prd\\/latest\\/PopUp\\.4777d925369c62b03226-defaults\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b10cefa76a18211e7679d33f83212df8f675ce025a8f22f55f6c8c78cb0e1ab3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allenedmonds.com",
+                "www.allenedmonds.com"
+            ]
+        },
+        {
+            "rule": "automat-ai\\.com\\/webchat-connect-2\\/prd\\/latest\\/716\\.6bf07fdd201be9b6d384-defaults\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a2ad699264ebc100bae7331953fc571ce98ca30c96acac100609c4158a071ac8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allenedmonds.com",
+                "www.allenedmonds.com"
+            ]
+        },
+        {
+            "rule": "automat-ai\\.com\\/webchat-connect-2\\/prd\\/latest\\/373\\.41d7b394d822bff775a1-defaults\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allenedmonds.com",
+                "www.allenedmonds.com"
+            ]
+        },
+        {
+            "rule": "automat-ai\\.com\\/webchat-connect-2\\/prd\\/latest\\/662\\.09501df5e3e537ee0ba1-defaults\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allenedmonds.com",
+                "www.allenedmonds.com"
+            ]
+        },
+        {
+            "rule": "automat-ai\\.com\\/webchat-connect-2\\/prd\\/latest\\/SendMessageForm\\.3e526db16d6f82aab950-defaults\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allenedmonds.com",
+                "www.allenedmonds.com"
+            ]
+        },
+        {
+            "rule": "automat-ai\\.com\\/BBMHV6Z130LgSZvhQjHP\\/UpXMj7G7pLpAOP5mrrNw\\/GeSLvfT1aMLrd7vEdZFG",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "saas"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "43177d764e1c4f0fd5135a5bf72a02e4e020f6566e11b0d36a006f0055a6d298"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allenedmonds.com",
+                "www.allenedmonds.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "yottaa.com",
+            "prevalence": 0.3333333333333333
+        }
+    ],
+    "types": {
+        "Script": 12,
+        "Ping": 2,
+        "Fetch": 2,
+        "Other": 6,
+        "Image": 2
+    },
+    "nameservers": [
+        "trey.ns.cloudflare.com",
+        "rosa.ns.cloudflare.com"
+    ]
+}

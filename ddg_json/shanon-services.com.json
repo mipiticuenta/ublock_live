@@ -1,0 +1,136 @@
+{
+    "domain": "shanon-services.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "tracker"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "shanon-services\\.com\\/tracker\\/create_new_id",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracker"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "51089c17b72210a510f9e3a286ae20d477e94b76fffbf456ee24a86c9a3ae9dc",
+                "0fa715b2178342c4274f69beaba211eba62ba9c0c0ea3e9e048b0dc40df1d7e9",
+                "f869d837a857d8c3b744478f62fbcb6faf07600986758803c03226c6824053ce"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gentosha-go.com",
+                "www.brother.co.jp",
+                "www.rehouse.co.jp",
+                "www.zeiri4.com"
+            ]
+        },
+        {
+            "rule": "shanon-services\\.com\\/tracker2\\/register",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracker"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "__CAMVID": 0.000020436106512987146,
+                "__CAMSID": 0.000020436106512987146,
+                "__CAMINFO": 0.000020436106512987146
+            },
+            "exampleSites": [
+                "brother.co.jp",
+                "www.rehouse.co.jp",
+                "www.zeiri4.com"
+            ]
+        },
+        {
+            "rule": "shanon-services\\.com\\/static\\/js\\/cam3\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tracker"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b00d3cff0f9a9463c17075bcc29b9808101597167e5db40d310efcfc451539fb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__CAMVID": {
+                    "ttl": 31536006,
+                    "length": 12,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "__CAMSID": {
+                    "ttl": 1806,
+                    "length": 15,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "__CAMINFO": {
+                    "ttl": 31536006,
+                    "length": 35,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rehouse.co.jp",
+                "www.zeiri4.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "smartseminar.jp",
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.3333333333333333
+        }
+    ],
+    "types": {
+        "Script": 9
+    },
+    "nameservers": [
+        "ns-508.awsdns-63.com",
+        "ns-668.awsdns-19.net",
+        "ns-1613.awsdns-09.co.uk",
+        "ns-1500.awsdns-59.org"
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "domain": "weather.com.edgesuite.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "api0",
+        "api1"
+    ],
+    "cnames": [
+        {
+            "original": "api0.weather.com",
+            "resolved": "api0.weather.com.edgesuite.net"
+        },
+        {
+            "original": "api1.weather.com",
+            "resolved": "api1.weather.com.edgesuite.net"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "weather\\.com\\.edgesuite\\.net\\/v2\\/vector-api\\/products\\/614\\/features",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api0",
+                "api1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api0.weather.com",
+                    "resolved": "api0.weather.com.edgesuite.net"
+                },
+                {
+                    "original": "api1.weather.com",
+                    "resolved": "api1.weather.com.edgesuite.net"
+                }
+            ],
+            "responseHashes": [
+                "f572c4216302700f00ab41498f93a78092332ab2c9a4b5439a9f1e1ce9a05eca"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "intellicast.com",
+                "www.intellicast.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "instana.io",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "XHR": 2
+    },
+    "nameservers": []
+}

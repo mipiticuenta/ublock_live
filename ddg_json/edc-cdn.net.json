@@ -1,0 +1,108 @@
+{
+    "domain": "edc-cdn.net",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "components-stage",
+        "components"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "edc-cdn\\.net\\/sidebar\\/edc-sidebar\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "components-stage",
+                "components"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.innerWidth": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "05b1d3a7ba61ea8d0c83acd9c3bb5fb2a6c66fff3d2a13d116b06d5c455b4572"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "epicgames.com",
+                "forums.unrealengine.com"
+            ]
+        },
+        {
+            "rule": "edc-cdn\\.net\\/public\\/images\\/default-user-bg\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "components"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f1c1a27986e16c7539758ea1a7a346099a969a4f5730363e17de9f16987067cd"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "epicgames.com",
+                "forums.unrealengine.com"
+            ]
+        },
+        {
+            "rule": "edc-cdn\\.net\\/public\\/images\\/logo-creator-portal\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "components"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ef995ab4d18035171d7fa0929fc32a7959156444bfca7987a95b3868608918ed"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "epicgames.com",
+                "forums.unrealengine.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "d1ap1mz92jnks1.cloudfront.net",
+            "prevalence": 0.3333333333333333
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Image": 4
+    },
+    "nameservers": [
+        "dom.ns.cloudflare.com",
+        "chin.ns.cloudflare.com"
+    ]
+}

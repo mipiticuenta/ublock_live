@@ -1,0 +1,91 @@
+{
+    "domain": "preezie.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "widget-cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "preezie\\.com\\/production\\/preguide\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget-cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5a8c0b09da6666dd5aed65e7525b45a67012eae4c5666dee7f7048b8d36f7794"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pickleballcentral.com",
+                "www.chemistdirect.com.au"
+            ]
+        },
+        {
+            "rule": "preezie\\.com\\/production\\/prz_pixel\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget-cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c13470dc2bbc6714976469c1aae939ff5ef63d404e5d63a43bbdfbb4816af941"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__prz_uid": {
+                    "ttl": 2592004,
+                    "length": 36,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "purple.com",
+                "www.babybunting.com.au"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.3333333333333333
+        }
+    ],
+    "types": {
+        "Script": 4
+    },
+    "nameservers": [
+        "pablo.ns.cloudflare.com",
+        "fay.ns.cloudflare.com"
+    ]
+}

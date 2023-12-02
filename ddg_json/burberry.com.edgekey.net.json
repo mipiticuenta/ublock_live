@@ -1,0 +1,124 @@
+{
+    "domain": "burberry.com.edgekey.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "www",
+        "wildcard.apps"
+    ],
+    "cnames": [
+        {
+            "original": "api.burberry.com",
+            "resolved": "www.burberry.com.edgekey.net"
+        },
+        {
+            "original": "meta.apps.burberry.com",
+            "resolved": "wildcard.apps.burberry.com.edgekey.net"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "burberry\\.com\\.edgekey\\.net\\/web-api-proxy\\/user-session",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.burberry.com",
+                    "resolved": "www.burberry.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "burberry.com",
+                "us.burberry.com"
+            ]
+        },
+        {
+            "rule": "burberry\\.com\\.edgekey\\.net\\/web-api-proxy\\/user-session",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.burberry.com",
+                    "resolved": "www.burberry.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "4e225e4cc0168d3e3ad247dbc05d0a8459d81d4ac8b51642e9f57e7d97abc00e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "burberry.com",
+                "us.burberry.com"
+            ]
+        },
+        {
+            "rule": "burberry\\.com\\.edgekey\\.net\\/events\\/7b4a9bdd57aa82b9026aad7790de8126ead5d36d878fb502162e7bd184da3c92",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wildcard.apps"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "meta.apps.burberry.com",
+                    "resolved": "wildcard.apps.burberry.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "burberry.com",
+                "us.burberry.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "facebook.net",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Preflight": 2,
+        "XHR": 4
+    },
+    "nameservers": []
+}

@@ -1,0 +1,334 @@
+{
+    "domain": "askmonastudio.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-FR"
+    ],
+    "prevalence": 0.000606,
+    "sites": 6,
+    "subdomains": [
+        "cdn",
+        "api",
+        "apiv3-chat-api"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "askmonastudio\\.com\\/webchat\\/askmona\\.js",
+            "cookies": 0.000505,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.language": 5,
+                "Document.cookie setter": 5,
+                "Document.cookie getter": 5,
+                "Event.prototype.timeStamp": 5
+            },
+            "sites": 5,
+            "prevalence": 0.000505,
+            "cnames": [],
+            "responseHashes": [
+                "58adba4a01c76f7dbda2250f449aaa67e1c4f4cb4f5e2a40a5244698061265a1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "isClosed": {
+                    "ttl": null,
+                    "length": 5,
+                    "prevalence": 0.0005048975058063213,
+                    "uniqueness": 0.4
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paris.fr",
+                "www.guimet.fr",
+                "www.parismuseescollections.paris.fr",
+                "www.parismusees.paris.fr",
+                "www.petitpalais.paris.fr"
+            ]
+        },
+        {
+            "rule": "askmonastudio\\.com\\/rest\\/webchat\\/endpoint",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000606,
+            "cnames": [],
+            "responseHashes": [
+                "9a1a3691f15b5ee8eae8f127eb0ebd17c143215078e0ef2b3b8f5cf77923e697",
+                "c5647b104abd6236c4aa7aae28aaad7fd4820e04498b061f4354efe7d0d0cd27",
+                "2c7d88e71afb1e273a73af164fe91d370e1685e3fff4ab24b2b34e174cbdae98",
+                "15dfd49e2b9b9564f0051293b849e23ec5e3abf505596ea9949eff1c1ae32704"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paris.fr",
+                "www.chatelet.com",
+                "www.guimet.fr",
+                "www.parismuseescollections.paris.fr",
+                "www.parismusees.paris.fr",
+                "www.petitpalais.paris.fr"
+            ]
+        },
+        {
+            "rule": "askmonastudio\\.com\\/rest\\/webchat\\/endpoint",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000606,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paris.fr",
+                "www.chatelet.com",
+                "www.guimet.fr",
+                "www.parismuseescollections.paris.fr",
+                "www.parismusees.paris.fr",
+                "www.petitpalais.paris.fr"
+            ]
+        },
+        {
+            "rule": "askmonastudio\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv3-chat-api"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000606,
+            "cnames": [],
+            "responseHashes": [
+                "d90d1517ab54c8c2db0876f3bfabbaf30faa02d910dbf2838b6184691882d2ef"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paris.fr",
+                "www.chatelet.com",
+                "www.guimet.fr",
+                "www.parismuseescollections.paris.fr",
+                "www.parismusees.paris.fr",
+                "www.petitpalais.paris.fr"
+            ]
+        },
+        {
+            "rule": "askmonastudio\\.com\\/hub\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "apiv3-chat-api"
+            ],
+            "apis": {
+                "window.localStorage": 6
+            },
+            "sites": 6,
+            "prevalence": 0.000606,
+            "cnames": [],
+            "responseHashes": [
+                "76181750bb2a824cc79d1c940b9e14a3e393ae1efc93965117e3965c136acaa6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paris.fr",
+                "www.chatelet.com",
+                "www.guimet.fr",
+                "www.parismuseescollections.paris.fr",
+                "www.parismusees.paris.fr",
+                "www.petitpalais.paris.fr"
+            ]
+        },
+        {
+            "rule": "askmonastudio\\.com\\/rest\\/webchat\\/subscribe",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000606,
+            "cnames": [],
+            "responseHashes": [
+                "c2356a3f1bdfc675d008e8ae62c4a6aadc1b1ed918ffcffc0715fe8f8a4bed8c",
+                "13c8d232fff718c356e1e3ba2a13ef9dbba3ce4288e5ddca65e16f9a6fa5eba2",
+                "12eec6c280c14d1fe39d945ce27e9d24b00394451836c2e96ddd0b74c2ae6143",
+                "da37c09b7586ee7e91cd2b31d014f9691b6d5451326d37e76cef09ec214d357d",
+                "5b10b8ef3d8737485a6ef28873d3d31d701fbe2e46d58f0c95f7d6ae65f09705"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paris.fr",
+                "www.chatelet.com",
+                "www.guimet.fr",
+                "www.parismuseescollections.paris.fr",
+                "www.parismusees.paris.fr",
+                "www.petitpalais.paris.fr"
+            ]
+        },
+        {
+            "rule": "askmonastudio\\.com\\/rest\\/webchat\\/subscribe",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000606,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paris.fr",
+                "www.chatelet.com",
+                "www.guimet.fr",
+                "www.parismuseescollections.paris.fr",
+                "www.parismusees.paris.fr",
+                "www.petitpalais.paris.fr"
+            ]
+        },
+        {
+            "rule": "askmonastudio\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv3-chat-api"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000606,
+            "cnames": [],
+            "responseHashes": [
+                "d90d1517ab54c8c2db0876f3bfabbaf30faa02d910dbf2838b6184691882d2ef"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paris.fr",
+                "www.chatelet.com",
+                "www.guimet.fr",
+                "www.parismuseescollections.paris.fr",
+                "www.parismusees.paris.fr",
+                "www.petitpalais.paris.fr"
+            ]
+        },
+        {
+            "rule": "askmonastudio\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv3-chat-api"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.000606,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paris.fr",
+                "www.chatelet.com",
+                "www.guimet.fr",
+                "www.parismuseescollections.paris.fr",
+                "www.parismusees.paris.fr",
+                "www.petitpalais.paris.fr"
+            ]
+        },
+        {
+            "rule": "askmonastudio\\.com\\/webchat\\/fonts\\/Roboto-Regular\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "4800cb3cdaed240af90e90c92e2448f7d358a8fc762ea31017a5a0aab4c7bce6"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paris.fr",
+                "www.parismuseescollections.paris.fr",
+                "www.parismusees.paris.fr"
+            ]
+        },
+        {
+            "rule": "askmonastudio\\.com\\/170\\/sev4ba\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "bb324581bc7d5136ac8e2cb17bf39e9891ca48384b1184afff01812452024150"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paris.fr",
+                "www.parismusees.paris.fr"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000606,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 11,
+        "Fetch": 18,
+        "Preflight": 18,
+        "Document": 6,
+        "Font": 3,
+        "Image": 2
+    },
+    "nameservers": [
+        "ns-704.awsdns-24.net",
+        "ns-299.awsdns-37.com",
+        "ns-1574.awsdns-04.co.uk",
+        "ns-1126.awsdns-12.org"
+    ]
+}

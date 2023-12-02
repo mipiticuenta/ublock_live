@@ -1,0 +1,491 @@
+{
+    "domain": "trustedsite.com",
+    "owner": {
+        "name": "PathDefender",
+        "displayName": "PathDefender"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00219,
+    "sites": 322,
+    "subdomains": [
+        "www",
+        "cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "trustedsite\\.com\\/rpc\\/ajax",
+            "cookies": 0.00156,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 234,
+            "prevalence": 0.00159,
+            "cnames": [],
+            "responseHashes": [
+                "a4aa9f775af34f63386d8b4d8a14fce2225c317c3f93cbafdeb5a8524eb542a1",
+                "88da477191e26afbe570694f6c00006298aff480c4231b7dec015a512a2b095c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.00004087221302597429
+            },
+            "exampleSites": [
+                "www.theplancollection.com",
+                "govplus.com",
+                "www.assignmentexpert.com",
+                "www.pexuniverse.com",
+                "vitacost.com",
+                "www.puritan.com",
+                "www.calculatorology.com",
+                "www.afrointroductions.com",
+                "www.farmtirewarehouse.com",
+                "dartagnan.com",
+                "www.ereplacementparts.com",
+                "www.progressivehealth.com",
+                "www.nbsmokehouse.com",
+                "www.magellans.com",
+                "www.cuddledown.com",
+                "www.americanfloormats.com",
+                "www.stuller.com",
+                "mobilehomepartsstore.com",
+                "hctra.org",
+                "www.bbq-brethren.com"
+            ]
+        },
+        {
+            "rule": "trustedsite\\.com\\/widget\\/tm-1001\\/",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "527c7a1247126a2ec66c4b4dc4aaf3e205866b31f43179293346045f4a8deb49",
+                "50d7c1a0002a459447b633d951f4d8cc6fc87069dfa8cf3119f51737f8e91c19"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bulletproofzone.com",
+                "wheelsasap.com",
+                "www.shedsforlessdirect.com"
+            ]
+        },
+        {
+            "rule": "trustedsite\\.com\\/static\\/jquery\\/3\\.5\\.1\\/jquery-3\\.5\\.1\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Event.prototype.timeStamp": 4,
+                "Element.prototype.getClientRects": 2
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "f7f6a5894f1d19ddad6fa392b2ece2c5e578cbf7da4ea805b6885eb6985b6e3d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bulletproofzone.com",
+                "txpowersports.com",
+                "wheelsasap.com",
+                "www.shedsforlessdirect.com"
+            ]
+        },
+        {
+            "rule": "trustedsite\\.com\\/static\\/jqueryui\\/1\\.13\\.2\\/jquery-ui\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 4,
+                "Navigator.prototype.userAgent": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "9528ca634fecad433d044ddd3e6f9ce1f068d5d932dafdbb19d8e6daea1968bd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bulletproofzone.com",
+                "txpowersports.com",
+                "wheelsasap.com",
+                "www.shedsforlessdirect.com"
+            ]
+        },
+        {
+            "rule": "trustedsite\\.com\\/static\\/jqueryui\\/1\\.13\\.2\\/jquery-ui\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "125b3486817afe5d56c5c6440e1e2542ca7b12ac9e7985cc1c25b2bfa49d997d"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bulletproofzone.com",
+                "txpowersports.com",
+                "wheelsasap.com",
+                "www.shedsforlessdirect.com"
+            ]
+        },
+        {
+            "rule": "trustedsite\\.com\\/static\\/js\\/common\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 4,
+                "window.matchMedia(\"prefers-color-scheme\")": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e6788ca705381349bd1c7cd33343d139a6e4e3978f006613f26eb39269222c03"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bulletproofzone.com",
+                "txpowersports.com",
+                "wheelsasap.com",
+                "www.shedsforlessdirect.com"
+            ]
+        },
+        {
+            "rule": "trustedsite\\.com\\/static\\/css\\/common\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "024302b36d25c55c79585c72d9e0077093ba0dd99eb637d6f49b67481ae7c01f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bulletproofzone.com",
+                "txpowersports.com",
+                "wheelsasap.com",
+                "www.shedsforlessdirect.com"
+            ]
+        },
+        {
+            "rule": "trustedsite\\.com\\/static\\/css\\/ts-jqueryui\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "d08edb9bc4916c3e173c0df83fda70571804b03ba7ed118a35f664a121738f80"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bulletproofzone.com",
+                "txpowersports.com",
+                "wheelsasap.com",
+                "www.shedsforlessdirect.com"
+            ]
+        },
+        {
+            "rule": "trustedsite\\.com\\/static\\/js\\/jquery\\.simplemodal\\.1\\.4\\.4\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "09f9af47165559da56a211a832992861bf0057de1830c718c7a1a94e1cd0921a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bulletproofzone.com",
+                "txpowersports.com",
+                "wheelsasap.com",
+                "www.shedsforlessdirect.com"
+            ]
+        },
+        {
+            "rule": "trustedsite\\.com\\/static\\/chosen\\/chosen\\.ts\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "9c0e1813df11e6bcef85da15900304426ac229aef91b1cd235bdb73322b519f0"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bulletproofzone.com",
+                "txpowersports.com",
+                "wheelsasap.com",
+                "www.shedsforlessdirect.com"
+            ]
+        },
+        {
+            "rule": "trustedsite\\.com\\/static\\/chosen\\/chosen\\.jquery\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 4,
+                "Navigator.prototype.userAgent": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "c95e88039d26063f3d8fc527cfdc168f62212f5dd445607d1561b24d4ab54f75"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bulletproofzone.com",
+                "txpowersports.com",
+                "wheelsasap.com",
+                "www.shedsforlessdirect.com"
+            ]
+        },
+        {
+            "rule": "trustedsite\\.com\\/js\\/partner-shopify\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.innerWidth": 3,
+                "window.innerHeight": 3,
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 3,
+                "Date.prototype.getTime": 3,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 12,
+            "prevalence": 0.0000817,
+            "cnames": [],
+            "responseHashes": [
+                "dafb7a1d19f3808ca6ae05540e31c44e837ed661ac85ca20002b8e1b5619d0bd",
+                "5efddc400c3c12fab9610151114521d85071e5e45114ece939be7985c7d88566",
+                "92c083d38f03bc95d60fb7dbf68c55b688c5c9e34c925eb032bdc6adbd7b08b4",
+                "64c88ad511f294deb7f4441b48bab9b3d235cd79e10181e9e94ba755108cf6a1",
+                "cdb2c8c66bcf3bbccfd728844cd480554d3c7644b599ea6eb22af3820aaec924",
+                "a1f1df08944ad52155e5e7976505d3142d16576c90f642128976eb6c332670ed",
+                "64887e719eea6ca3747257c9e4b70bf589583cda637bcc76a395c11ad3bc163d",
+                "991a574c4ebb0d728b29aaee2ffe039016d6d2a20b9deca53204bc97db4ce2dd",
+                "638c3b40d74e0475a51969524aa99c7d9479efe796f7543e9ff3723c998012b4",
+                "7ebcbc7f22c599e731601ff48f552bc0dd867ff18b8858cd5202ddc23e17f0c7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "trustedsite_visit": {
+                    "ttl": 86407,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "trustedsite_tm_float_seen": {
+                    "ttl": 307,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bulletproofzone.com",
+                "mysaunaworld.com",
+                "www.alaskankingcrab.com",
+                "www.aneros.com",
+                "www.bulbamerica.com",
+                "www.diamondtoolstore.com",
+                "www.hingeoutlet.com",
+                "www.isotoner.com",
+                "www.thephotostick.com",
+                "www.tidewe.com",
+                "www.truecable.com",
+                "www.znaturalfoods.com"
+            ]
+        },
+        {
+            "rule": "trustedsite\\.com\\/widget\\/tm-1002\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c0e59595e3c2f2fabbc47346fcf12da38b082adcbb89559afed80f24a7400430"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "txpowersports.com",
+                "wheelsasap.com"
+            ]
+        },
+        {
+            "rule": "trustedsite\\.com\\/static\\/font-awesome\\/6\\.4\\.0\\/css\\/all\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "723d6f1f9312feb9dd46ebc2fe69f187f8933491f560dc3a01e8e74e4f06c9e2"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "txpowersports.com",
+                "wheelsasap.com"
+            ]
+        },
+        {
+            "rule": "trustedsite\\.com\\/static\\/img\\/trustedsite\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "6c385c74eedf5b9b183b3416fc5848b81163b61cd1d2d400e8127fe2b4cac7d5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "txpowersports.com",
+                "wheelsasap.com",
+                "www.shedsforlessdirect.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00214,
+    "topInitiators": [
+        {
+            "domain": "ywxi.net",
+            "prevalence": 0.8454810495626822
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.11370262390670553
+        },
+        {
+            "domain": "yottaa.com",
+            "prevalence": 0.02040816326530612
+        },
+        {
+            "domain": "osano.com",
+            "prevalence": 0.0058309037900874635
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.0058309037900874635
+        },
+        {
+            "domain": "d3gxe0jmvtuxbc.cloudfront.net",
+            "prevalence": 0.0058309037900874635
+        },
+        {
+            "domain": "d5zu2f4xvqanl.cloudfront.net",
+            "prevalence": 0.0029154518950437317
+        }
+    ],
+    "types": {
+        "Script": 266,
+        "Document": 5,
+        "Stylesheet": 18,
+        "Image": 3
+    },
+    "nameservers": [
+        "ns-1410.awsdns-48.org",
+        "ns-1810.awsdns-34.co.uk",
+        "ns-551.awsdns-04.net",
+        "ns-183.awsdns-22.com"
+    ]
+}

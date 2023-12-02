@@ -1,0 +1,135 @@
+{
+    "domain": "mytoll.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-AU"
+    ],
+    "prevalence": 0.000101,
+    "sites": 1,
+    "subdomains": [
+        "www"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "mytoll\\.com\\/combo",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "7038355ee127fbb4d8a97d9faffbe3afabd742c2e255c91ac4a661ff857d1ed5"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toll.com.au",
+                "online.toll.com.au"
+            ]
+        },
+        {
+            "rule": "mytoll\\.com\\/combo\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "29a3a1ee95b1ea69b719e65c58ac8d198a53fdbc08db610e0d43722465ba5a8a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toll.com.au",
+                "online.toll.com.au"
+            ]
+        },
+        {
+            "rule": "mytoll\\.com\\/o\\/js_resolve_modules",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "6648be29684ad158e8577d60f26244d338dc49433a905dd45c2d4bc558b39958"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "toll.com.au",
+                "online.toll.com.au"
+            ]
+        },
+        {
+            "rule": "mytoll\\.com\\/rb_bf55647mxv",
+            "cookies": 0.000201,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "9ed642344a3a1f90136796faf684f774b85951a7012eb26a9df56c7d42211d83"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "dtCookie": 0.0002010454362685967
+            },
+            "exampleSites": [
+                "toll.com.au",
+                "online.toll.com.au"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000101,
+    "topInitiators": [
+        {
+            "domain": "facebook.net",
+            "prevalence": 0.6666666666666666
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.3333333333333333
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "Fetch": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "a13-66.akam.net",
+        "a2-66.akam.net",
+        "a5-65.akam.net",
+        "a1-33.akam.net",
+        "a24-66.akam.net",
+        "a22-65.akam.net"
+    ]
+}

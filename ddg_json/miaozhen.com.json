@@ -1,0 +1,158 @@
+{
+    "domain": "miaozhen.com",
+    "owner": {
+        "name": "Miaozhen Systems",
+        "displayName": "Miaozhen Systems"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "g.cn",
+        "stm-cdn.cn",
+        "stm-collect.cn"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "miaozhen\\.com\\/x\\/k=2384355&p=8UVEj&dx=__IPDX__&rt=2&pro=s&ns=__IP__&ni=__IESID__&v=__LOC__&xa=__ADPLATFORM__&tr=__REQUESTID__&vg=__AUTOPLAY__&nh=__AUTOREFRESH__&mo=__OS__&m0=__OPENUDID__&m0a=__DUID__&m1=__ANDROIDID1__&m1a=__ANDROIDID__&m2=__IMEI__&m4=__AAID__&m5=__IDFA__&m6=__MAC1__&m6a=__MAC__&m11=__OAID__&m14=__CAID__&m5a=__IDFV__&mn=__ANAME__&m5b=__IDFA1__&m11a=__OAID1__&m14a=__CAID1__&o=",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "g.cn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7fff1569ea68ef52782ba25b0cf3934627f7a4fc1e8e22f4652de959c5f97978"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sina.com.cn",
+                "finance.sina.com.cn"
+            ]
+        },
+        {
+            "rule": "miaozhen\\.com\\/x\\/k=2383734&p=8UUkN&dx=__IPDX__&rt=2&pro=s&ns=__IP__&ni=__IESID__&v=__LOC__&xa=__ADPLATFORM__&tr=__REQUESTID__&vg=__AUTOPLAY__&nh=__AUTOREFRESH__&mo=__OS__&m0=__OPENUDID__&m0a=__DUID__&m1=__ANDROIDID1__&m1a=__ANDROIDID__&m2=__IMEI__&m4=__AAID__&m5=__IDFA__&m6=__MAC1__&m6a=__MAC__&m11=__OAID__&m14=__CAID__&m5a=__IDFV__&mn=__ANAME__&m5b=__IDFA1__&m11a=__OAID1__&m14a=__CAID1__&o=",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "g.cn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7fff1569ea68ef52782ba25b0cf3934627f7a4fc1e8e22f4652de959c5f97978"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sina.com.cn",
+                "finance.sina.com.cn"
+            ]
+        },
+        {
+            "rule": "miaozhen\\.com\\/clicki\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "stm-cdn.cn"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.appName": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie setter": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.plugins": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Navigator.prototype.language": 2,
+                "PerformanceTiming.prototype.navigationStart": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d075a5db8ded7a67dd76324ec4203fd9f3639a024cdeeb1ce4ec8f9411b8b7bd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__clickidc": {
+                    "ttl": 315360023,
+                    "length": 18,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flyscoot.com",
+                "www.flyscoot.com"
+            ]
+        },
+        {
+            "rule": "miaozhen\\.com\\/track_proxy",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "stm-collect.cn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "78a100131e7307c7f41d002b24b358c9ee7f690a16b73938ae787e9769e08ecc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "__clickidc": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "flyscoot.com",
+                "www.flyscoot.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "it168.com",
+            "prevalence": 0.4
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.4
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2
+        }
+    ],
+    "types": {
+        "Script": 6,
+        "Image": 2
+    },
+    "nameservers": [
+        "ns2.dnsv5.com",
+        "ns1.dnsv5.com"
+    ]
+}

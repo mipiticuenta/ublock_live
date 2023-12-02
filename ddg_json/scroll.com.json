@@ -1,0 +1,78 @@
+{
+    "domain": "scroll.com",
+    "owner": {
+        "name": "Twitter, Inc.",
+        "displayName": "Twitter",
+        "privacyPolicy": "https://twitter.com/en/privacy",
+        "url": "http://twitter.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000116,
+    "sites": 17,
+    "subdomains": [
+        "static"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "scroll\\.com\\/js\\/scroll\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "window.localStorage": 8,
+                "Document.cookie getter": 8
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "d7685d961a175a9df933dc1ecc9bb703db5496c5c442961232c2c204b126fcb3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "abc-7.com",
+                "i-d.vice.com",
+                "www.boredpanda.com",
+                "www.huffingtonpost.co.uk",
+                "www.huffingtonpost.com",
+                "www.huffpost.com",
+                "www.motherjones.com",
+                "www.neowin.net"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6842105263157895
+        },
+        {
+            "domain": "ampproject.org",
+            "prevalence": 0.21052631578947367
+        },
+        {
+            "domain": "huffpost.com",
+            "prevalence": 0.10526315789473684
+        }
+    ],
+    "types": {
+        "Script": 8
+    },
+    "nameservers": [
+        "ns-cloud-c1.googledomains.com",
+        "ns-cloud-c2.googledomains.com",
+        "ns-cloud-c3.googledomains.com",
+        "ns-cloud-c4.googledomains.com"
+    ]
+}

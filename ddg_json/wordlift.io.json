@@ -1,0 +1,109 @@
+{
+    "domain": "wordlift.io",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000198,
+    "sites": 29,
+    "subdomains": [
+        "cloud",
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "wordlift\\.io\\/app\\/bootstrap\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cloud"
+            ],
+            "apis": {
+                "window.sessionStorage": 13
+            },
+            "sites": 19,
+            "prevalence": 0.000129,
+            "cnames": [],
+            "responseHashes": [
+                "77e81a24ab7f538957b44d4aed04b62635c114215dbe915ebd8d67819cf4c1ea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lenscrafters.com",
+                "meliopayments.com",
+                "monovm.com",
+                "www.contactsdirect.com",
+                "www.costadelmar.com",
+                "www.dolcegabbana.com",
+                "www.enelxway.com",
+                "www.financestrategists.com",
+                "www.fostergrant.com",
+                "www.glasses.com",
+                "www.golfcarttiresupply.com",
+                "www.lenscrafters.ca",
+                "www.lenscrafters.com",
+                "www.oliverpeoples.com",
+                "www.persol.com",
+                "www.ray-ban.com",
+                "www.readers.com",
+                "www.sunglasshut.com",
+                "www.targetoptical.com"
+            ]
+        },
+        {
+            "rule": "wordlift\\.io\\/data\\/https\\/www\\.lenscrafters\\.com\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "87bd1e78060d44c9ea53a53f2b2785712ea29bfb6db738bc037824b98cac9bfa"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lenscrafters.com",
+                "www.lenscrafters.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8484848484848485
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.09090909090909091
+        },
+        {
+            "domain": "fullstory.com",
+            "prevalence": 0.030303030303030304
+        },
+        {
+            "domain": "bigcommerce.com",
+            "prevalence": 0.030303030303030304
+        }
+    ],
+    "types": {
+        "Script": 19,
+        "Fetch": 2
+    },
+    "nameservers": [
+        "matt.ns.cloudflare.com",
+        "dora.ns.cloudflare.com"
+    ]
+}

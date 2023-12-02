@@ -1,0 +1,138 @@
+{
+    "domain": "journalmedia.ie",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "pool"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "journalmedia\\.ie\\/js\\/lscache\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "pool"
+            ],
+            "apis": {
+                "window.localStorage": 3,
+                "Date.prototype.getTime": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "9b13eeede5060575741f493d2b9650a39732571d241a607fda25fb9d986c7323"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thejournal.ie",
+                "www.the42.ie",
+                "www.thejournal.ie"
+            ]
+        },
+        {
+            "rule": "journalmedia\\.ie\\/js\\/pool\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pool"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "da3d69d38d160a80c5a6102b723fccf75a6adafe31cb7f36475a0dd854c8c18b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thejournal.ie",
+                "www.the42.ie",
+                "www.thejournal.ie"
+            ]
+        },
+        {
+            "rule": "journalmedia\\.ie\\/js\\/easyXDM\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "pool"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "7649b8f8356990c87ac541dbe4c7994c0fd51fd124738ba07781a4caeb5d002f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thejournal.ie",
+                "www.the42.ie",
+                "www.thejournal.ie"
+            ]
+        },
+        {
+            "rule": "journalmedia\\.ie\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "pool"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "dff57c6454633a38aa46b4cf7918cfb1c64a19678975034a622590abd36ee80f"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "thejournal.ie",
+                "www.the42.ie",
+                "www.thejournal.ie"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "d2wy8f7a9ursnm.cloudfront.net",
+            "prevalence": 0.25
+        }
+    ],
+    "types": {
+        "Script": 9,
+        "Document": 3
+    },
+    "nameservers": [
+        "ivan.ns.cloudflare.com",
+        "anna.ns.cloudflare.com"
+    ]
+}

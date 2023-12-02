@@ -1,0 +1,789 @@
+{
+    "domain": "3ds.com",
+    "owner": {
+        "name": "DASSAULT SYSTEMES SE",
+        "displayName": "DASSAULT SYSTEMES"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000886,
+    "sites": 13,
+    "subdomains": [
+        "tracking",
+        "www",
+        "static-analytics.3dexperience",
+        "analytics.3dexperience",
+        "ui",
+        "eu1.iam.3dexperience"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "3ds\\.com\\/stat\\/init\\/ds_init_global\\.js",
+            "cookies": 0.0000613,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 7,
+                "Date.prototype.getTime": 9,
+                "Document.cookie setter": 9,
+                "Document.cookie getter": 9
+            },
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "b8d723d9dd88a7ae3909a51216b680c5fab4375ada1ca835193ee754fc12d5fe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "tCdebugLib": {
+                    "ttl": null,
+                    "length": 1,
+                    "prevalence": 0.00005449628403463239,
+                    "uniqueness": 0.125
+                },
+                "AB": {
+                    "ttl": 15552004,
+                    "length": 1,
+                    "prevalence": 0.00004768424853030334,
+                    "uniqueness": 0.2857142857142857
+                },
+                "previousPageName": {
+                    "ttl": null,
+                    "length": 21,
+                    "prevalence": 0.00004768424853030334,
+                    "uniqueness": 1
+                },
+                "TCPID": {
+                    "ttl": 33955204,
+                    "length": 22,
+                    "prevalence": 0.00004768424853030334,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "forum.solidworks.com",
+                "help.solidworks.com",
+                "home.by.me",
+                "my.solidworks.com",
+                "www.3dcontentcentral.com",
+                "www.draftsight.com",
+                "www.edrawingsviewer.com",
+                "www.solidworks.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/statics\\/menu\\/2\\/assets\\/css\\/header-footer\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "6fd3f4e599bb0178d32d7e3e1cf21076c9a197083b844569883d849d7fcb7bf7"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "www.draftsight.com",
+                "www.edrawingsviewer.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/statics\\/menu\\/2\\/assets\\/js\\/header-footer\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "9210c5de8276b5929967d71b61db89b79e83a8e6eed9475fdb2516a100b9f905"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "www.draftsight.com",
+                "www.edrawingsviewer.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/stat\\/tc_global3ds\\.js",
+            "cookies": 0.0000477,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 9,
+                "Navigator.prototype.userAgent": 8,
+                "Navigator.prototype.cookieEnabled": 8,
+                "Document.cookie setter": 7,
+                "Document.cookie getter": 7
+            },
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "6e877bf904a9cf555dcb6bbf76e036e61a33c97b3f169ff0ffe73a836f290355"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "forum.solidworks.com",
+                "help.solidworks.com",
+                "home.by.me",
+                "my.solidworks.com",
+                "www.3dcontentcentral.com",
+                "www.draftsight.com",
+                "www.edrawingsviewer.com",
+                "www.solidworks.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/stat\\/cmn\\/ds-init\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {
+                "Document.cookie getter": 8
+            },
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "4a6f69c7ccb84c2608a1a12958c462c63917a7086ef4a131a0645a1f5094b1a4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "forum.solidworks.com",
+                "help.solidworks.com",
+                "home.by.me",
+                "my.solidworks.com",
+                "www.3dcontentcentral.com",
+                "www.draftsight.com",
+                "www.edrawingsviewer.com",
+                "www.solidworks.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/statics\\/fonts\\/3ds\\/3ds-Regular-v2\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "8d5c5f801ff69541a640d7b8f7eb3dfb81cced5044e8649e78bbc241e8681cff"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "www.3dcontentcentral.com",
+                "www.draftsight.com",
+                "www.edrawingsviewer.com",
+                "www.solidworks.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/statics\\/fonts\\/3ds\\/3ds-Bold-v2\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "16b2fc455ec1fa16a7335f1779af7f6c0421036d08e8b8c9a07a08ccbdab33e1"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "www.3dcontentcentral.com",
+                "www.draftsight.com",
+                "www.edrawingsviewer.com",
+                "www.solidworks.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/ad-lib\\/isadblocker\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "855790aa6f853d27bab9e0ee7ae2927ac2154c0b5a0c0cd7ac19b16c89d04a8d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "forum.solidworks.com",
+                "help.solidworks.com",
+                "home.by.me",
+                "my.solidworks.com",
+                "www.3dcontentcentral.com",
+                "www.draftsight.com",
+                "www.edrawingsviewer.com",
+                "www.solidworks.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/stat\\/tc_global3ds_adv\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 8,
+                "Navigator.prototype.userAgent": 8
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "cc631dfba787a3c0208e2cc11795e23b4e5593165617c80a26919e96b2361bae"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "forum.solidworks.com",
+                "home.by.me",
+                "my.solidworks.com",
+                "www.3dcontentcentral.com",
+                "www.draftsight.com",
+                "www.edrawingsviewer.com",
+                "www.solidworks.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/resource\\/ds-analytics\\.js",
+            "cookies": 0.0000341,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static-analytics.3dexperience"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "Navigator.prototype.platform": 5,
+                "Screen.prototype.height": 5,
+                "Screen.prototype.width": 5,
+                "PerformanceTiming.prototype.navigationStart": 5,
+                "Document.cookie getter": 5,
+                "Document.cookie setter": 5,
+                "Navigator.prototype.language": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "a3dfc1d9e3a7535d490a643598cbb2079f5024a2c3bd879cb0925398d38de73e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_dss": {
+                    "ttl": 1805,
+                    "length": 36,
+                    "prevalence": 0.00003406017752164524,
+                    "uniqueness": 1
+                },
+                "_dsu": {
+                    "ttl": 31622405,
+                    "length": 36,
+                    "prevalence": 0.00003406017752164524,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "forum.solidworks.com",
+                "help.solidworks.com",
+                "www.draftsight.com",
+                "www.solidworks.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/stat\\/local\\/tc_solidworks_local\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "33c22e9a065565a9c95f29da0cb82c9cf5585ce5e4cac9c9422858a56fefa5e0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "forum.solidworks.com",
+                "help.solidworks.com",
+                "www.solidworks.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/histo\\/index\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "825da5eeb3de51a9ad1d5711be6f7801e493300f5bf3820e70ecd7b1c5289c85"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "forum.solidworks.com",
+                "help.solidworks.com",
+                "home.by.me",
+                "my.solidworks.com",
+                "www.3dcontentcentral.com",
+                "www.draftsight.com",
+                "www.edrawingsviewer.com",
+                "www.solidworks.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/statics\\/ui-kit\\/2\\/fonts\\/3ds\\/ui-kit-icons\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "467c094d449e6e740613feb08d9c4d630b7757326f6af63598ba6636a5f18f7e"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "www.draftsight.com",
+                "www.edrawingsviewer.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/statics\\/fonts\\/3ds\\/3ds-Light-v2\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "44aa636617447579a60eef46d24bcf73b67dad61cc9227d1c47e0b5b14320a3d"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "forum.solidworks.com",
+                "home.by.me",
+                "my.solidworks.com",
+                "www.3dcontentcentral.com",
+                "www.draftsight.com",
+                "www.edrawingsviewer.com",
+                "www.solidworks.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/statics\\/fonts\\/3ds\\/3ds-SemiBold-v2\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "3b3a197afbf35ef2ff6fb4b4872488b288f15685d9fe4dd00b867f516a5a4be2"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "forum.solidworks.com",
+                "help.solidworks.com",
+                "home.by.me",
+                "my.solidworks.com",
+                "www.3dcontentcentral.com",
+                "www.draftsight.com",
+                "www.edrawingsviewer.com",
+                "www.solidworks.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/histo\\/histo\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "00f2a5960cfce52b5ae3053d2c795aa5d487a50e30d0907b356b445842dde452"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "forum.solidworks.com",
+                "help.solidworks.com",
+                "home.by.me",
+                "my.solidworks.com",
+                "www.3dcontentcentral.com",
+                "www.draftsight.com",
+                "www.edrawingsviewer.com",
+                "www.solidworks.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/upload",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics.3dexperience"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "blogs.solidworks.com",
+                "forum.solidworks.com",
+                "help.solidworks.com",
+                "www.draftsight.com",
+                "www.solidworks.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/stat\\/local\\/tc_homebyme_local\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tracking"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "56b92d4ead28e6866db0a99b0741841b299cf6d8c0f569df782e04f2d76baf71"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "by.me",
+                "home.by.me"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/statics\\/fonts\\/3ds\\/3ds-SemiBold-v2\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "by.me",
+                "home.by.me",
+                "www.3dcontentcentral.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/statics\\/fonts\\/3ds\\/3ds-Light-v2\\.woff",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "by.me",
+                "home.by.me",
+                "www.3dcontentcentral.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/statics\\/fonts\\/3ds\\/3ds-SemiBold-v2\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "by.me",
+                "home.by.me",
+                "www.3dcontentcentral.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/statics\\/fonts\\/3ds\\/3ds-Light-v2\\.ttf",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "by.me",
+                "home.by.me",
+                "www.3dcontentcentral.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/fonts\\/3ds\\/3ds-Regular-v2\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ui"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8d5c5f801ff69541a640d7b8f7eb3dfb81cced5044e8649e78bbc241e8681cff"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "draftsight.com",
+                "www.edrawingsviewer.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/assets\\/3ds-navigation\\/3DS_corporate-logo_solidworks_white\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e9722631bfcf7c3dc3c57060a8f756ff354271163b5e77c3551ea3f624bdb50b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "www.solidworks.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/api\\/authenticated\\/user\\/me",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu1.iam.3dexperience"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d561bc2e0e6e3345548fcaa840ec2939eba0e0e1fe3bb2a509de5da06e2181de"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "www.solidworks.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/assets\\/3ds-navigation\\/Solidworks-logo_red\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "567085b3c65813f35446e17f9bf3079c0a567900580a9fb0a0be67489b86d25b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "www.solidworks.com"
+            ]
+        },
+        {
+            "rule": "3ds\\.com\\/login",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu1.iam.3dexperience"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d561bc2e0e6e3345548fcaa840ec2939eba0e0e1fe3bb2a509de5da06e2181de"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "solidworks.com",
+                "www.solidworks.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000886,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9736842105263158
+        },
+        {
+            "domain": "solidworks.com",
+            "prevalence": 0.02631578947368421
+        }
+    ],
+    "types": {
+        "Script": 67,
+        "Stylesheet": 3,
+        "Font": 44,
+        "Document": 9,
+        "XHR": 10,
+        "Image": 4
+    },
+    "nameservers": [
+        "ns-566.awsdns-06.net",
+        "ns-138.awsdns-17.com",
+        "ns-1407.awsdns-47.org",
+        "ns-2041.awsdns-63.co.uk"
+    ]
+}

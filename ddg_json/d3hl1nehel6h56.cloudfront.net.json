@@ -1,0 +1,87 @@
+{
+    "domain": "d3hl1nehel6h56.cloudfront.net",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "d3hl1nehel6h56\\.cloudfront\\.net\\/widget\\/app\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e5ae26c4d963460a4403549463788b112307a1d8d745bd3747ef97ae8b00114b"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flymsy.com",
+                "slcairport.com",
+                "www.grr.org"
+            ]
+        },
+        {
+            "rule": "d3hl1nehel6h56\\.cloudfront\\.net\\/widget\\/app\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 3,
+                "Event.prototype.timeStamp": 3,
+                "Navigator.prototype.product": 3,
+                "Date.prototype.getTime": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "7f234d2b291d224b2fc503aeb415fcbcc87018651a5911bdc05b3601c9f5f9d7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "flymsy.com",
+                "slcairport.com",
+                "www.grr.org"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Stylesheet": 3,
+        "Script": 3
+    },
+    "nameservers": [
+        "ns-1095.awsdns-08.org",
+        "ns-1820.awsdns-35.co.uk",
+        "ns-678.awsdns-20.net",
+        "ns-92.awsdns-11.com"
+    ]
+}

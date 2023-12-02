@@ -1,0 +1,82 @@
+{
+    "domain": "sensorsdata.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "abtest-aws-us-east-01.saas"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "sensorsdata\\.com\\/api\\/v2\\/abtest\\/online\\/results",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "abtest-aws-us-east-01.saas"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "olightstore.com",
+                "www.olightstore.com",
+                "www.xtool.com"
+            ]
+        },
+        {
+            "rule": "sensorsdata\\.com\\/api\\/v2\\/abtest\\/online\\/results",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "abtest-aws-us-east-01.saas"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "6fd7662db85feb581d587e40b730e23ded49e1b02d98f235485f6eb756acd268",
+                "14357f1da683007d1e517968a810be98bc828fd68fa330fb1d0d6890eea55995"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "olightstore.com",
+                "www.olightstore.com",
+                "www.xtool.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "olicdn.com",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.5
+        }
+    ],
+    "types": {
+        "Preflight": 3,
+        "XHR": 3
+    },
+    "nameservers": [
+        "dns23.hichina.com",
+        "dns24.hichina.com"
+    ]
+}

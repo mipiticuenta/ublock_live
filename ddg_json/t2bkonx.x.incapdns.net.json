@@ -1,0 +1,116 @@
+{
+    "domain": "t2bkonx.x.incapdns.net",
+    "owner": {
+        "name": "Imperva Inc.",
+        "displayName": "Imperva"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "api.airtransat.com",
+            "resolved": "t2bkonx.x.incapdns.net"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "t2bkonx\\.x\\.incapdns\\.net\\/fr-CA\\/Services\\/FlightRoutes\\/GetAirports",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.airtransat.com",
+                    "resolved": "t2bkonx.x.incapdns.net"
+                }
+            ],
+            "responseHashes": [
+                "7c245e05a0fc98b8bc1f91ce385c5089423bbe02f32891ac055eb22cc48a39a1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "airtransat.com",
+                "www.airtransat.com"
+            ]
+        },
+        {
+            "rule": "t2bkonx\\.x\\.incapdns\\.net\\/fr-CA\\/Services\\/BestPrice\\/GetBestPricePerMonth",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.airtransat.com",
+                    "resolved": "t2bkonx.x.incapdns.net"
+                }
+            ],
+            "responseHashes": [
+                "054f5c4f130e263e47f76dde4161a94603f38f640ef720aee50f09cb8b66aaf7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "airtransat.com",
+                "www.airtransat.com"
+            ]
+        },
+        {
+            "rule": "t2bkonx\\.x\\.incapdns\\.net\\/fr-CA\\/Services\\/FlightCalendar\\/GetDatesByType",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "api.airtransat.com",
+                    "resolved": "t2bkonx.x.incapdns.net"
+                }
+            ],
+            "responseHashes": [
+                "967a943a4248f4b8af55ec5dc3531f14c38b252b338f9a1d660dcfd968e9a40c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "airtransat.com",
+                "www.airtransat.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.8
+        },
+        {
+            "domain": "noibu.com",
+            "prevalence": 0.2
+        }
+    ],
+    "types": {
+        "XHR": 6
+    },
+    "nameservers": []
+}

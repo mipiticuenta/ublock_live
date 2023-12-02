@@ -1,0 +1,129 @@
+{
+    "domain": "opendesktop.org",
+    "owner": {
+        "name": "hive01 gmbh",
+        "displayName": "hive01"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "www",
+        "piwik"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "opendesktop\\.org\\/theme\\/react\\/assets\\/img\\/chat\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "99b541987cbb794a59447bedba0b925a882600e1a94127a8e21d3ef409988828"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kde.org",
+                "store.kde.org"
+            ]
+        },
+        {
+            "rule": "opendesktop\\.org\\/matomo\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "piwik"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.name": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0995371a359a4a701d66f8b183de6144de9a042e5bac84b6f920968f51567742"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pk_id.32.3083": {
+                    "ttl": 33955204,
+                    "length": 52,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_pk_ses.32.3083": {
+                    "ttl": 1803,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kde.org",
+                "store.kde.org"
+            ]
+        },
+        {
+            "rule": "opendesktop\\.org\\/matomo\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "piwik"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d346801abbf9bb4e9e9a055239053d4ab5596514304f601a6c70604187acb744"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "kde.org",
+                "store.kde.org"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Image": 4,
+        "Script": 2
+    },
+    "nameservers": [
+        "ns.inwx.de",
+        "ns2.inwx.de",
+        "ns3.inwx.de"
+    ]
+}

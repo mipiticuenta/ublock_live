@@ -1,0 +1,57 @@
+{
+    "domain": "wikitide.org",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "meta"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "wikitide\\.org\\/wiki\\/Special:CentralAutoLogin\\/checkLoggedIn",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "meta"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bc441a4fafa53c64a6185be680f0984e84dd267b828db215b258bfadff43a366"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lgbtqia.wiki",
+                "www.lgbtqia.wiki"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2
+    },
+    "nameservers": [
+        "ns2.wikiforge.net",
+        "ns1.wikiforge.net"
+    ]
+}

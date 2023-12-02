@@ -1,0 +1,82 @@
+{
+    "domain": "tui.co.uk",
+    "owner": {
+        "name": "TUI AG",
+        "displayName": "TUI"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "www"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "tui\\.co\\.uk\\/social-proofing-mfe\\/runtime\\/track",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "firstchoice.co.uk",
+                "www.firstchoice.co.uk"
+            ]
+        },
+        {
+            "rule": "tui\\.co\\.uk\\/social-proofing-mfe\\/runtime\\/track",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b4c9135cc2fa0257da88399e971f37b87264c4cd97406dbe9484b5a8a64ea4f0"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "firstchoice.co.uk",
+                "www.firstchoice.co.uk"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6
+        },
+        {
+            "domain": "holidayhype.co.uk",
+            "prevalence": 0.4
+        }
+    ],
+    "types": {
+        "Preflight": 2,
+        "Fetch": 2
+    },
+    "nameservers": [
+        "udns2.cscdns.uk",
+        "udns1.cscdns.net"
+    ]
+}

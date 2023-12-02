@@ -1,0 +1,178 @@
+{
+    "domain": "sendsay.ru",
+    "owner": {
+        "name": "JSC \"Internet Projects\"",
+        "displayName": "Internet Projects"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "image"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "sendsay\\.ru\\/app\\/js\\/forms\\/forms\\.min\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "image"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "6ff35a6f3759e96f1db53dd315d0cc8c8c3049c7a43a5269990cc301e93a9f7d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__sendsay_forms_count_ppt-1": {
+                    "ttl": 94608000,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "__sendsay_forms_count_talantiuspeh-3": {
+                    "ttl": 94608000,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "__sendsay_forms_mediopro-2": {
+                    "ttl": 3600,
+                    "length": 4,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "__sendsay_forms_count_mediopro-2": {
+                    "ttl": 94608000,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ppt.ru",
+                "siriusolymp.ru",
+                "www.calend.ru"
+            ]
+        },
+        {
+            "rule": "sendsay\\.ru\\/app\\/js\\/forms\\/forms\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "image"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "e4dda9298b251c4a0b2ac8191753bd3db7dcff8bde75cafc779a2e72fe51c174"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ppt.ru",
+                "siriusolymp.ru",
+                "www.calend.ru"
+            ]
+        },
+        {
+            "rule": "sendsay\\.ru\\/app\\/js\\/sdk\\/sdk\\.min\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 2,
+            "subdomains": [
+                "image"
+            ],
+            "apis": {
+                "Document.cookie getter": 4,
+                "Date.prototype.getTime": 4,
+                "Document.cookie setter": 4,
+                "window.localStorage": 2,
+                "Notification.permission": 2,
+                "window.innerWidth": 2,
+                "URL.createObjectURL": 2,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "c862f365a998649a07109e35e53bc427d7e837e8c5eff4f3ad857945e1d00c4e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "sndsy_dvc_id": {
+                    "ttl": 7,
+                    "length": 11,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "svpressa.ru",
+                "www.gastronom.ru",
+                "www.kp.ru",
+                "www.reg.ru"
+            ]
+        },
+        {
+            "rule": "sendsay\\.ru\\/js\\/push\\/sendsay_sw\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "image"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "502c37968cb649b7e22e8470224991d720a982c51e60c12ecdfcb31f290c0c30"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "svpressa.ru",
+                "www.gastronom.ru",
+                "www.kp.ru"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000477,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 7,
+        "Stylesheet": 3,
+        "Other": 3
+    },
+    "nameservers": [
+        "ns8-cloud.nic.ru",
+        "ns8-l2.nic.ru",
+        "ns4-l2.nic.ru",
+        "ns3-l2.nic.ru",
+        "ns4-cloud.nic.ru"
+    ]
+}

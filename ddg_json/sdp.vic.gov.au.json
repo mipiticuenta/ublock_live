@@ -1,0 +1,80 @@
+{
+    "domain": "sdp.vic.gov.au",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-AU"
+    ],
+    "prevalence": 0.000201,
+    "sites": 2,
+    "subdomains": [
+        "82fd82a8a6a68c599eb4e2cc2d6c49a5.sdp1-b.elastic",
+        "70a9ae2679d731ae30ca5f7b206a27b8.sdp1-b.elastic"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "sdp\\.vic\\.gov\\.au\\/elasticsearch_index_production_node\\/_search",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "82fd82a8a6a68c599eb4e2cc2d6c49a5.sdp1-b.elastic",
+                "70a9ae2679d731ae30ca5f7b206a27b8.sdp1-b.elastic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "636ddf5e90142112f44d38f422ec49b09151d42574cc8f4fed47fe73c140bcd7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "betterhealth.vic.gov.au",
+                "www.premier.vic.gov.au"
+            ]
+        },
+        {
+            "rule": "sdp\\.vic\\.gov\\.au\\/elasticsearch_index_production_node\\/_search",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "82fd82a8a6a68c599eb4e2cc2d6c49a5.sdp1-b.elastic",
+                "70a9ae2679d731ae30ca5f7b206a27b8.sdp1-b.elastic"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "betterhealth.vic.gov.au",
+                "www.premier.vic.gov.au"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "XHR": 2,
+        "Preflight": 2
+    },
+    "nameservers": [
+        "ns-385.awsdns-48.com",
+        "ns-564.awsdns-06.net",
+        "ns-1117.awsdns-11.org",
+        "ns-2021.awsdns-60.co.uk"
+    ]
+}

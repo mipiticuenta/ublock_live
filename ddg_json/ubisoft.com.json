@@ -1,0 +1,161 @@
+{
+    "domain": "ubisoft.com",
+    "owner": {
+        "name": "UbiSoft Entertainment",
+        "displayName": "UbiSoft Entertainment"
+    },
+    "source": [
+        "DuckDuckGo-DE"
+    ],
+    "prevalence": 0.000202,
+    "sites": 2,
+    "subdomains": [
+        "connect",
+        "ubistatic2-a"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "ubisoft\\.com\\/sdk\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "connect"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "e64e3dac097c51d483d8465321eddf873a6023fb6a10154bf4e7490e8d8c6005"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ubisoftconnect.com",
+                "www.diesiedleronline.de"
+            ]
+        },
+        {
+            "rule": "ubisoft\\.com\\/uplay-connect\\/v3\\/prod\\/default\\/sdk\\/main8672ee6353c88a054b68\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ubistatic2-a"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.vendor": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "a6dc749fb45922a87dd08dd764c0d30e7046f44e7b2de45bd32954ee28cd913a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ubisoftconnect.com",
+                "www.diesiedleronline.de"
+            ]
+        },
+        {
+            "rule": "ubisoft\\.com\\/v2\\/webauth\\/public\\/config\\/cors",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "connect"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [
+                "31331cd2f0606b3716bc9c4529251488e60a33ab83fa6144b3c54ef2cdbcaa77"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ubisoftconnect.com",
+                "www.diesiedleronline.de"
+            ]
+        },
+        {
+            "rule": "ubisoft\\.com\\/refresh\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "connect"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ubisoftconnect.com",
+                "www.diesiedleronline.de"
+            ]
+        },
+        {
+            "rule": "ubisoft\\.com\\/v2\\/webauth\\/public\\/webauth\\/validateGuid",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "connect"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000202,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "diesiedleronline.de",
+                "www.diesiedleronline.de"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000101,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.925
+        },
+        {
+            "domain": "akamaihd.net",
+            "prevalence": 0.05
+        },
+        {
+            "domain": "ubi.com",
+            "prevalence": 0.025
+        }
+    ],
+    "types": {
+        "Document": 4,
+        "Script": 2,
+        "XHR": 4
+    },
+    "nameservers": [
+        "nic7.ubisoft.com",
+        "nic8.ubisoft.com",
+        "nic9.ubisoft.com",
+        "nic11.ubisoft.com",
+        "nic10.ubisoft.com",
+        "nic12.ubisoft.com"
+    ]
+}

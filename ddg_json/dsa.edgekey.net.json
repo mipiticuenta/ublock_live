@@ -1,0 +1,86 @@
+{
+    "domain": "dsa.edgekey.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "eprice"
+    ],
+    "cnames": [
+        {
+            "original": "apif.eprice.it",
+            "resolved": "eprice.dsa.edgekey.net"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "dsa\\.edgekey\\.net\\/mngt\\/v1\\/products",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eprice"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "apif.eprice.it",
+                    "resolved": "eprice.dsa.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eprice.it",
+                "www.eprice.it"
+            ]
+        },
+        {
+            "rule": "dsa\\.edgekey\\.net\\/mngt\\/v1\\/products",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eprice"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "apif.eprice.it",
+                    "resolved": "eprice.dsa.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "23d33c0e76b71d86ba4f19098dae5ead22d295489bb07f7ef8b595fe8c0b14b1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eprice.it",
+                "www.eprice.it"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "types": {
+        "Preflight": 2,
+        "XHR": 2
+    },
+    "nameservers": []
+}

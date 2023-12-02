@@ -1,0 +1,106 @@
+{
+    "domain": "cda.pl",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "www",
+        "g"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "cda\\.pl\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d202259c4a19467fd93b26bf931e7abdaa2bdfdc07fe010ccb7b91ee02988979"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "salon24.pl",
+                "www.salon24.pl"
+            ]
+        },
+        {
+            "rule": "cda\\.pl\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "salon24.pl",
+                "www.salon24.pl"
+            ]
+        },
+        {
+            "rule": "cda\\.pl\\/player\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "g"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c9788e15c43a147338c3844ccc19d64291e526a33115c530eeae0d2bd29a65dc"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "salon24.pl",
+                "www.salon24.pl"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "2cda.pl",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "cda.pl",
+            "prevalence": 0.16666666666666666
+        }
+    ],
+    "types": {
+        "XHR": 4,
+        "Preflight": 2
+    },
+    "nameservers": [
+        "thomas.ns.cloudflare.com",
+        "kristin.ns.cloudflare.com"
+    ]
+}

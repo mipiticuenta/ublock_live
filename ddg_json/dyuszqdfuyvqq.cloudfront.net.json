@@ -1,0 +1,83 @@
+{
+    "domain": "dyuszqdfuyvqq.cloudfront.net",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "dyuszqdfuyvqq\\.cloudfront\\.net\\/packs\\/mf_embed_v8\\.js",
+            "cookies": 0.0000272,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {
+                "Document.cookie getter": 4,
+                "Navigator.prototype.mimeTypes": 4,
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.product": 4,
+                "Navigator.prototype.cookieEnabled": 4,
+                "Document.cookie setter": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "4f61ecff4e54418ef50b0bbb4064204c287e65da020a63de801967e1609a9258"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "production_mf_tkn": {
+                    "ttl": 604805,
+                    "length": 36,
+                    "prevalence": 0.000027248142017316195,
+                    "uniqueness": 1
+                },
+                "mf_cart_token": {
+                    "ttl": null,
+                    "length": 32,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {
+                "production_mf_tkn": 0.000027248142017316195
+            },
+            "exampleSites": [
+                "camolots.com",
+                "gritrsports.com",
+                "www.chesshouse.com",
+                "www.chicagomusicexchange.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0.0000409,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 4
+    },
+    "nameservers": [
+        "ns-816.awsdns-38.net",
+        "ns-1677.awsdns-17.co.uk",
+        "ns-1495.awsdns-58.org",
+        "ns-58.awsdns-07.com"
+    ]
+}

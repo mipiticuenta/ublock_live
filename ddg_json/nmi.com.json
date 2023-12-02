@@ -1,0 +1,107 @@
+{
+    "domain": "nmi.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "secure"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "nmi\\.com\\/token\\/Collect\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "secure"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.product": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dbde5e9148a0556f19e92aa5b1e159e54d6d869b2a151db46c2bd6f030dc19eb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "subscribestar.com",
+                "www.subscribestar.com"
+            ]
+        },
+        {
+            "rule": "nmi\\.com\\/token\\/api\\/create",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "secure"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d09ae96994ed1b65f51f511c016a96b5a67ea1992fbf891a010c6b81327d8f60"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "subscribestar.com",
+                "www.subscribestar.com"
+            ]
+        },
+        {
+            "rule": "nmi\\.com\\/token\\/styles\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "secure"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "89bb95574bb591c8ec6e822c04fb80c4f736c8660457490007b302bbda6af46b"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "subscribestar.com",
+                "www.subscribestar.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "XHR": 2,
+        "Stylesheet": 2
+    },
+    "nameservers": [
+        "udns1.ultradns.net",
+        "dns2.p01.nsone.net",
+        "dns3.p01.nsone.net",
+        "udns2.ultradns.net",
+        "dns1.p01.nsone.net",
+        "dns4.p01.nsone.net"
+    ]
+}

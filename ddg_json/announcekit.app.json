@@ -1,0 +1,148 @@
+{
+    "domain": "announcekit.app",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "cdn",
+        "t"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "announcekit\\.app\\/widget-v2\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.platform": 4,
+                "Screen.prototype.width": 4,
+                "window.localStorage": 4,
+                "Date.prototype.getTime": 1,
+                "HTMLCanvasElement.prototype.toDataURL": 1
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "07c3b6658b31c038049da7693965f977d8d83c4e116bb45a4caa3f3736b30a8d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "botach.com",
+                "chartable.com",
+                "www.cheathappens.com",
+                "www.machinelearningplus.com"
+            ]
+        },
+        {
+            "rule": "announcekit\\.app\\/bef5ff1bb254d5ce126a\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "ef875d87f255392957e9deefc9e8b4a760d86afcba4fe3995751ea46643ab7f9"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "botach.com",
+                "chartable.com",
+                "www.cheathappens.com",
+                "www.machinelearningplus.com"
+            ]
+        },
+        {
+            "rule": "announcekit\\.app\\/bef5ff1bb254d5ce126a\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "window.localStorage": 2
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "750217ee3779ed349df12416bdd41b676a155878e02355beb20ddad148ba504b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "botach.com",
+                "chartable.com",
+                "www.cheathappens.com",
+                "www.machinelearningplus.com"
+            ]
+        },
+        {
+            "rule": "announcekit\\.app\\/collect\\/client",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "t"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "b5bea41b6c623f7c09f1bf24dcae58ebab3c0cdd90ad966bc43a45b44867e12b"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "botach.com",
+                "chartable.com",
+                "www.cheathappens.com",
+                "www.machinelearningplus.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "announcekit.co",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.4375
+        },
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.0625
+        }
+    ],
+    "types": {
+        "Script": 8,
+        "Stylesheet": 4,
+        "Ping": 4
+    },
+    "nameservers": [
+        "bill.ns.cloudflare.com",
+        "dina.ns.cloudflare.com"
+    ]
+}

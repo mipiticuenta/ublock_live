@@ -1,0 +1,77 @@
+{
+    "domain": "happyfoxchat.com",
+    "owner": {
+        "name": "HappyFox Inc",
+        "displayName": "HappyFox"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000136,
+    "sites": 20,
+    "subdomains": [
+        "widget"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "happyfoxchat\\.com\\/v2\\/visitor\\/js\\/widget-loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 15,
+            "prevalence": 0.000102,
+            "cnames": [],
+            "responseHashes": [
+                "7732aafd3f491caa59d3e7dfa4894ac642e3a0eaacb0329034bae8186124a57f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "j5create.com",
+                "privadovpn.com",
+                "serverspace.io",
+                "skytrakgolf.com",
+                "wcginc.com",
+                "www.aquariumofpacific.org",
+                "www.boldpreciousmetals.com",
+                "www.cdata.com",
+                "www.htcinc.net",
+                "www.huellendirekt.de",
+                "www.keh.com",
+                "www.lindedirect.com",
+                "www.marinalife.com",
+                "www.mowersatjacks.com",
+                "www.puzzlewarehouse.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.75
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.25
+        }
+    ],
+    "types": {
+        "Script": 15
+    },
+    "nameservers": [
+        "sterling.ns.cloudflare.com",
+        "lisa.ns.cloudflare.com"
+    ]
+}

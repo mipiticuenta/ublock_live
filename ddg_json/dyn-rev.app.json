@@ -1,0 +1,154 @@
+{
+    "domain": "dyn-rev.app",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000954,
+    "sites": 14,
+    "subdomains": [
+        "bundle",
+        "e"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "dyn-rev\\.app\\/loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "bundle"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "f1426afee5e03ec76835c08cba94875685a2f755d0787ab8484f20714ff5fa33"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "freecountry.com",
+                "hellotushy.com",
+                "www.aviatornation.com",
+                "www.bareminerals.com",
+                "www.burkedecor.com",
+                "www.chicagomusicexchange.com",
+                "www.ekster.com",
+                "www.lauramercier.com"
+            ]
+        },
+        {
+            "rule": "dyn-rev\\.app\\/script\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "bundle"
+            ],
+            "apis": {
+                "window.localStorage": 6,
+                "window.sessionStorage": 6
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "46e6841737c8fafa795aca1cb3049ffb9fe926db34823e8b27a7f5e59af12976"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "freecountry.com",
+                "hellotushy.com",
+                "www.aviatornation.com",
+                "www.bareminerals.com",
+                "www.burkedecor.com",
+                "www.chicagomusicexchange.com",
+                "www.ekster.com",
+                "www.lauramercier.com"
+            ]
+        },
+        {
+            "rule": "dyn-rev\\.app\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "e"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "c955e57777ec0d73639dca6748560d00aa5eb8e12f13ebb2ed9656add3908f97"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hellotushy.com",
+                "iliabeauty.com",
+                "www.bareminerals.com",
+                "www.burkedecor.com",
+                "www.chicagomusicexchange.com",
+                "www.frankandeileen.com",
+                "www.lauramercier.com"
+            ]
+        },
+        {
+            "rule": "dyn-rev\\.app\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "e"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hellotushy.com",
+                "iliabeauty.com",
+                "www.bareminerals.com",
+                "www.burkedecor.com",
+                "www.chicagomusicexchange.com",
+                "www.frankandeileen.com",
+                "www.lauramercier.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.896551724137931
+        },
+        {
+            "domain": "renderbetter.com",
+            "prevalence": 0.06896551724137931
+        },
+        {
+            "domain": "gorgias.chat",
+            "prevalence": 0.034482758620689655
+        }
+    ],
+    "types": {
+        "Script": 16,
+        "XHR": 7,
+        "Preflight": 7
+    },
+    "nameservers": [
+        "aitana.ns.cloudflare.com",
+        "jose.ns.cloudflare.com"
+    ]
+}

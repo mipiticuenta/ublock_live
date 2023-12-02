@@ -1,0 +1,95 @@
+{
+    "domain": "stackblitz.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "stackblitz\\.com\\/headless",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d85123c5914e8290d51f473ebcc0de80804aab748efe1c4fc31464bc17392561"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "svelte.dev",
+                "learn.svelte.dev"
+            ]
+        },
+        {
+            "rule": "stackblitz\\.com\\/js\\/engineworker\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d04630c5d1f06e2650e56839807abb47b7f01c5d64327741c6f641cdeeb65184"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nestjs.com",
+                "trpc.io"
+            ]
+        },
+        {
+            "rule": "stackblitz\\.com\\/sw\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8613318e868b3cede02595bd2f5f96ab178e130972b9fd359ff3ccda9aca4219"
+            ],
+            "type": "Other",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "nestjs.com",
+                "trpc.io"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "stackblitz.com",
+            "prevalence": 0.8
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2
+        }
+    ],
+    "types": {
+        "Document": 2,
+        "Other": 4
+    },
+    "nameservers": [
+        "zoe.ns.cloudflare.com",
+        "igor.ns.cloudflare.com"
+    ]
+}

@@ -1,0 +1,187 @@
+{
+    "domain": "populo-services.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "populo",
+        "cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "populo-services\\.com\\/api\\/contacts\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "populo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0a5e8fe5d4d5b2dc08712a0d90ce8d21b5d0c2d3d8dec12f498b5c98a9010ed5"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "revitive.com",
+                "www.revitive.com"
+            ]
+        },
+        {
+            "rule": "populo-services\\.com\\/api\\/contacts\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "populo"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "revitive.com",
+                "www.revitive.com"
+            ]
+        },
+        {
+            "rule": "populo-services\\.com\\/api\\/contacts\\/tracking\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "populo"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "revitive.com",
+                "www.revitive.com",
+                "www.staffordshire.gov.uk",
+                "www.twi-global.com"
+            ]
+        },
+        {
+            "rule": "populo-services\\.com\\/Scripts\\/contacts\\/contacts\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.devicePixelRatio": 2,
+                "Navigator.prototype.mimeTypes": 2,
+                "Navigator.prototype.javaEnabled": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.platform": 2,
+                "Document.cookie setter": 2,
+                "window.name": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "214a3ed26c445f98aefd257070a15cd23a2bc34cbaedba3229272f07db366f2d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_pk_id.1.b166": {
+                    "ttl": 33955206,
+                    "length": 52,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_pk_ses.1.b166": {
+                    "ttl": 1806,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_pk_id.1.27b9": {
+                    "ttl": 33955204,
+                    "length": 52,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_pk_ses.1.27b9": {
+                    "ttl": 1804,
+                    "length": 1,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "staffordshire.gov.uk",
+                "www.twi-global.com"
+            ]
+        },
+        {
+            "rule": "populo-services\\.com\\/tags\\/1206",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ffcb900a0ce80b0e79ab62d478609e901bb74f9b72e523bdba3207785e534af1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "twi-global.com",
+                "www.twi-global.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Fetch": 2,
+        "Preflight": 2,
+        "Image": 4,
+        "Script": 4
+    },
+    "nameservers": [
+        "ns0.zengenti.com",
+        "ns1.zengenti.com",
+        "ns2.zengenti.com"
+    ]
+}

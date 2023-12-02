@@ -1,0 +1,466 @@
+{
+    "domain": "pixad.com.tr",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000613,
+    "sites": 9,
+    "subdomains": [
+        "medyanet.rtb",
+        "mynet.rtb",
+        "melon.rtb",
+        "admatic.rtb",
+        "static.cdn",
+        "rtb.impression",
+        "static",
+        "user.service",
+        "prebid"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "pixad\\.com\\.tr\\/pb",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medyanet.rtb",
+                "mynet.rtb"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnnturk.com",
+                "www.hurriyet.com.tr",
+                "www.kanald.com.tr",
+                "www.mynet.com"
+            ]
+        },
+        {
+            "rule": "pixad\\.com\\.tr\\/pb",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "medyanet.rtb",
+                "melon.rtb",
+                "admatic.rtb",
+                "mynet.rtb"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cnnturk.com",
+                "www.haberler.com",
+                "www.hurriyet.com.tr",
+                "www.kanald.com.tr",
+                "www.karar.com",
+                "www.mynet.com",
+                "www.sondakika.com",
+                "www.yenicaggazetesi.com.tr"
+            ]
+        },
+        {
+            "rule": "pixad\\.com\\.tr\\/dist\\/adsbypixad\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static.cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.language": 2,
+                "Date.prototype.getTime": 2,
+                "Date.prototype.getTimezoneOffset": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "056c7062d261f95273610e01a899b9210da7ed739c3e8e2f9296469930aff328"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haberler.com",
+                "www.yenicaggazetesi.com.tr"
+            ]
+        },
+        {
+            "rule": "pixad\\.com\\.tr\\/f\\/4327716010\\/i",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8f742757bb1871a4595881daf0e4862a678f39d5e534d87ca62ad599fd5bebc7"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haberler.com",
+                "www.haberler.com"
+            ]
+        },
+        {
+            "rule": "pixad\\.com\\.tr\\/f\\/4327716010\\/haberler-com",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c1c45f1cf408dc8cdb98a08cedecb28e6c5e684a4fb821da42e9ee7f1fe4e1d4"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haberler.com",
+                "www.haberler.com"
+            ]
+        },
+        {
+            "rule": "pixad\\.com\\.tr\\/dist\\/prebid8\\.19\\.0\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static.cdn"
+            ],
+            "apis": {
+                "NavigatorUAData.prototype.brands": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.localStorage": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Document.cookie getter": 1,
+                "Document.cookie setter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "30bf8e6b2808f9c9296ec183950aa7d5dd76574220ada060b8fd2afee21380d3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haberler.com",
+                "www.yenicaggazetesi.com.tr"
+            ]
+        },
+        {
+            "rule": "pixad\\.com\\.tr\\/pb",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "melon.rtb",
+                "admatic.rtb"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haberler.com",
+                "www.haberler.com",
+                "www.karar.com",
+                "www.sondakika.com",
+                "www.yenicaggazetesi.com.tr"
+            ]
+        },
+        {
+            "rule": "pixad\\.com\\.tr\\/all",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rtb.impression"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haberler.com",
+                "www.haberler.com",
+                "www.yenicaggazetesi.com.tr"
+            ]
+        },
+        {
+            "rule": "pixad\\.com\\.tr\\/imp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rtb.impression"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haberler.com",
+                "www.haberler.com"
+            ]
+        },
+        {
+            "rule": "pixad\\.com\\.tr\\/sync\\.html",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "2b0d379cca7e01553e5abc97a0476c01bf35fad7e99a7b06981a59d2184b3af0"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haberler.com",
+                "www.karar.com",
+                "www.yenicaggazetesi.com.tr"
+            ]
+        },
+        {
+            "rule": "pixad\\.com\\.tr\\/sync\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "user.service"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haberler.com",
+                "www.karar.com"
+            ]
+        },
+        {
+            "rule": "pixad\\.com\\.tr\\/setuid",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prebid"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "c956a8bbf43bb56f60d1beefcc5a70f2cb0725083a00e8a0daf423176509fd18",
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haberler.com",
+                "www.haberler.com",
+                "www.karar.com"
+            ]
+        },
+        {
+            "rule": "pixad\\.com\\.tr\\/cdn-cgi\\/rum",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haberler.com",
+                "www.karar.com"
+            ]
+        },
+        {
+            "rule": "pixad\\.com\\.tr\\/setuid",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prebid"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "c956a8bbf43bb56f60d1beefcc5a70f2cb0725083a00e8a0daf423176509fd18"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "haberler.com",
+                "www.haberler.com",
+                "www.karar.com"
+            ]
+        },
+        {
+            "rule": "pixad\\.com\\.tr\\/f\\/6570221384\\/i",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0942b5c321090f66ec124c86b84a874ad42882aecf6d1c73f168637f40df5c05"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yenicaggazetesi.com.tr",
+                "www.yenicaggazetesi.com.tr"
+            ]
+        },
+        {
+            "rule": "pixad\\.com\\.tr\\/f\\/6570221384\\/yenicaggazetesi-com-tr",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static.cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "376b484ffa58491a76adbe5d8bcaae68900f37325e2e3308551350d7251a95fe"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "yenicaggazetesi.com.tr",
+                "www.yenicaggazetesi.com.tr"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "admatic.com.tr",
+            "prevalence": 0.23076923076923078
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.19230769230769232
+        },
+        {
+            "domain": "doubleclick.net",
+            "prevalence": 0.15384615384615385
+        },
+        {
+            "domain": "medyanetads.com",
+            "prevalence": 0.11538461538461539
+        },
+        {
+            "domain": "hbrcdn.com",
+            "prevalence": 0.07692307692307693
+        },
+        {
+            "domain": "cloudflareinsights.com",
+            "prevalence": 0.07692307692307693
+        },
+        {
+            "domain": "adscale.de",
+            "prevalence": 0.07692307692307693
+        },
+        {
+            "domain": "mynetreklam.com",
+            "prevalence": 0.07692307692307693
+        }
+    ],
+    "types": {
+        "XHR": 9,
+        "Preflight": 8,
+        "Script": 4,
+        "Fetch": 13,
+        "Document": 10,
+        "Image": 3
+    },
+    "nameservers": [
+        "ursula.ns.cloudflare.com",
+        "porter.ns.cloudflare.com"
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "domain": "bonial.global",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "web-user-sdk"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "bonial\\.global\\/web-user-sdk-loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-user-sdk"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "fd4eb5b6c5de2a7bb402f39006dfac992d8c4407d116bcd0537c58fa3f0945cf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bonial.fr",
+                "www.kaufda.de",
+                "www.meinprospekt.de"
+            ]
+        },
+        {
+            "rule": "bonial\\.global\\/web-user-sdk-module\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "web-user-sdk"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 3,
+                "Date.prototype.getTimezoneOffset": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "5c6a286d80d5307611ad4655cfd29d7da3a87e4c605d2d8fbce1a1ea9fb9dafc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bonial.fr",
+                "www.kaufda.de",
+                "www.meinprospekt.de"
+            ]
+        },
+        {
+            "rule": "bonial\\.global\\/vendor-18299c85\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-user-sdk"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "b35909b5b6697c207a1a2cb7158280bb0f12bce7944301ed7e0932c10253aa94"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bonial.fr",
+                "www.kaufda.de",
+                "www.meinprospekt.de"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 9
+    },
+    "nameservers": [
+        "ns-138.awsdns-17.com",
+        "ns-1087.awsdns-07.org",
+        "ns-1795.awsdns-32.co.uk",
+        "ns-647.awsdns-16.net"
+    ]
+}

@@ -1,0 +1,146 @@
+{
+    "domain": "withcabin.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "scripts",
+        "custom",
+        "ping"
+    ],
+    "cnames": [
+        {
+            "original": "cabin.thestoryshack.com",
+            "resolved": "custom.withcabin.com"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "withcabin\\.com\\/hello\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "scripts",
+                "custom"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "PerformanceTiming.prototype.navigationStart": 4,
+                "Screen.prototype.width": 4,
+                "window.localStorage": 4
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "cabin.thestoryshack.com",
+                    "resolved": "custom.withcabin.com"
+                }
+            ],
+            "responseHashes": [
+                "916170d9a87953871622309ac4d37dd7e3ed2c38c06ae89ea315e1812a99de37",
+                "32f077c67922120f800a935e2777c11a4a6d7f4ff0405b7e5687efdc7ca6dacc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "va.gov",
+                "news.va.gov",
+                "thestoryshack.com",
+                "www.lrb.co.uk",
+                "www.oit.va.gov"
+            ]
+        },
+        {
+            "rule": "withcabin\\.com\\/cache",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ping",
+                "custom"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [
+                {
+                    "original": "cabin.thestoryshack.com",
+                    "resolved": "custom.withcabin.com"
+                }
+            ],
+            "responseHashes": [
+                "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "va.gov",
+                "department.va.gov",
+                "news.va.gov",
+                "thestoryshack.com",
+                "www.lrb.co.uk",
+                "www.oit.va.gov"
+            ]
+        },
+        {
+            "rule": "withcabin\\.com\\/hello",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ping",
+                "custom"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "cabin.thestoryshack.com",
+                    "resolved": "custom.withcabin.com"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "va.gov",
+                "news.va.gov",
+                "thestoryshack.com",
+                "www.lrb.co.uk",
+                "www.oit.va.gov"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.625
+        },
+        {
+            "domain": "sentry-cdn.com",
+            "prevalence": 0.375
+        }
+    ],
+    "types": {
+        "Script": 5,
+        "XHR": 11
+    },
+    "nameservers": [
+        "ns-3.awsdns-00.com",
+        "ns-681.awsdns-21.net",
+        "ns-1170.awsdns-18.org",
+        "ns-1809.awsdns-34.co.uk"
+    ]
+}

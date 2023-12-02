@@ -1,0 +1,112 @@
+{
+    "domain": "wondering.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "app",
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "wondering\\.com\\/p\\/js\\/ribbon\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "app"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "2ac2f91a6a2769ab08134d08c125b48baaf4d7c429d4bf9264a5539c736b87d8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "sagepub.com",
+                "streamelements.com",
+                "www.dyson.com.au",
+                "www.dyson.co.uk",
+                "www.dyson.com",
+                "www.dyson.de",
+                "www.dyson.nl"
+            ]
+        },
+        {
+            "rule": "wondering\\.com\\/api\\/recruit\\/v2\\/b69874c015aa482b99a89abf10d7c0e0\\/r\\/global",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dyson.com",
+                "www.dyson.com"
+            ]
+        },
+        {
+            "rule": "wondering\\.com\\/api\\/recruit\\/v2\\/b69874c015aa482b99a89abf10d7c0e0\\/r\\/global",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "10531b58af1c45c88a4db4fc1a65c1f046c6f478b7cd97495e4945ab077497f3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dyson.com",
+                "www.dyson.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6842105263157895
+        },
+        {
+            "domain": "ribbonapp.com",
+            "prevalence": 0.2631578947368421
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.05263157894736842
+        }
+    ],
+    "types": {
+        "Script": 7,
+        "Preflight": 2,
+        "Fetch": 2
+    },
+    "nameservers": [
+        "carrera.ns.cloudflare.com",
+        "chase.ns.cloudflare.com"
+    ]
+}

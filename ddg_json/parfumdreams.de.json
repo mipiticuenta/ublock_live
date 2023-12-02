@@ -1,0 +1,66 @@
+{
+    "domain": "parfumdreams.de",
+    "owner": {
+        "name": "Parfümerie Akzente GmbH",
+        "displayName": "Parfümerie Akzente"
+    },
+    "source": [
+        "DuckDuckGo-CH"
+    ],
+    "prevalence": 0.000101,
+    "sites": 1,
+    "subdomains": [
+        "pvn"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "parfumdreams\\.de\\/trck\\/etms\\/eatms\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "pvn"
+            ],
+            "apis": {
+                "window.localStorage": 1,
+                "window.sessionStorage": 1,
+                "Document.cookie getter": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "8958451eee28e635ac827eb241cafe48ba7c609301e642274d8d610d2f0c2fd7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "parfumdreams.ch",
+                "www.parfumdreams.ch"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9513888888888888
+        },
+        {
+            "domain": "jsdelivr.net",
+            "prevalence": 0.04861111111111111
+        }
+    ],
+    "types": {
+        "Script": 2
+    },
+    "nameservers": [
+        "ns.udag.de",
+        "ns.udag.net",
+        "ns.udag.org"
+    ]
+}

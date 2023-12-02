@@ -1,0 +1,97 @@
+{
+    "domain": "aller.se",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "aller\\.se\\/login-idjs\\/id\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "bd16f04757c50a94cc629b750d15d766f1a8a93ba4789923c6e5bc2910093c17"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "recept.se",
+                "www.allas.se",
+                "www.elle.se"
+            ]
+        },
+        {
+            "rule": "aller\\.se\\/dfp\\/1\\.13\\.32\\/aller-ads\\.bundle\\.min\\.js",
+            "cookies": 0.0000409,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "window.innerWidth": 5,
+                "window.sessionStorage": 3,
+                "Document.cookie getter": 6,
+                "Date.prototype.getTime": 6,
+                "Document.cookie setter": 6
+            },
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "af1812d2402997b259f719ce5f9bf97f79efa18108ca414a474186ed64e8d59f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "aapp": {
+                    "ttl": 34560005,
+                    "length": 21,
+                    "prevalence": 0.00004087221302597429,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "allas.se",
+                "www.elle.se",
+                "www.femina.se",
+                "www.hant.se",
+                "www.mabra.com",
+                "www.svenskdam.se"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000477,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 9
+    },
+    "nameservers": [
+        "alexis.ns.cloudflare.com",
+        "naya.ns.cloudflare.com"
+    ]
+}

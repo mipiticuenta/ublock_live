@@ -1,0 +1,91 @@
+{
+    "domain": "apps4bigcommerce.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "admin-webapp.reccommerce",
+        "api.reccommerce"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "apps4bigcommerce\\.com\\/js\\/app\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "admin-webapp.reccommerce"
+            ],
+            "apis": {
+                "Navigator.prototype.languages": 1,
+                "window.innerWidth": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.userAgent": 1,
+                "Screen.prototype.width": 1,
+                "Screen.prototype.height": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "caa8425e9c64ff502667906f41254b0704f8829c55e5f4e0385c6b9b5875e172"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hkparts.net",
+                "www.raneystruckparts.com"
+            ]
+        },
+        {
+            "rule": "apps4bigcommerce\\.com\\/api\\/90959D91-D7EB-6067-8681-5D216257D93C\\/recommendations\\/personalized",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api.reccommerce"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "60166bf5767d76861d48fdab9c25b66cb93ff053b65ef8f5251fd898b5ce62ba"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "raneystruckparts.com",
+                "www.raneystruckparts.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7142857142857143
+        },
+        {
+            "domain": "bigcommerce.com",
+            "prevalence": 0.2857142857142857
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Fetch": 2
+    },
+    "nameservers": [
+        "ns1045.ui-dns.org",
+        "ns1045.ui-dns.com",
+        "ns1045.ui-dns.biz",
+        "ns1045.ui-dns.de"
+    ]
+}

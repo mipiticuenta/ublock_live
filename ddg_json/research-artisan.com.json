@@ -1,0 +1,88 @@
+{
+    "domain": "research-artisan.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "analyze.pro"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "research-artisan\\.com\\/track\\/script\\.php",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "analyze.pro"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0422066582bc2a0273c0b22d1e85e8a603401c7d5044871bad8555cc0d352d98"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "downtownreport.net",
+                "goiryoku.com"
+            ]
+        },
+        {
+            "rule": "research-artisan\\.com\\/track\\/tracker\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analyze.pro"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0dbd3d0bb072164eb7baf6c9db3c042b5eba7d4a443380bcbd04e59c304df0fb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "downtownreport.net",
+                "goiryoku.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 4
+    },
+    "nameservers": [
+        "ns-1513.awsdns-61.org",
+        "ns-1571.awsdns-04.co.uk",
+        "ns-878.awsdns-45.net",
+        "ns-275.awsdns-34.com"
+    ]
+}

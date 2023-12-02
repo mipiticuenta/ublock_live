@@ -1,0 +1,563 @@
+{
+    "domain": "tencent-cloud.net",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "ins-3rwdn7ul.ias",
+        "ins-u4xprfqu.ias",
+        "ins-gwqy79ih.ias",
+        "ins-w34olsuu.ias",
+        "ins-mbckwsy9.ias",
+        "ins-diu1q33u.ias",
+        "ins-q151rkuz.ias",
+        "ins-snfr50tq.ias",
+        "ins-2768eays.ias"
+    ],
+    "cnames": [
+        {
+            "original": "h.trace.qq.com",
+            "resolved": "ins-diu1q33u.ias.tencent-cloud.net"
+        },
+        {
+            "original": "op.ssp.qq.com",
+            "resolved": "ins-w34olsuu.ias.tencent-cloud.net"
+        },
+        {
+            "original": "oth.str.beacon.qq.com",
+            "resolved": "ins-3rwdn7ul.ias.tencent-cloud.net"
+        },
+        {
+            "original": "otheve.beacon.qq.com",
+            "resolved": "ins-u4xprfqu.ias.tencent-cloud.net"
+        },
+        {
+            "original": "pacaio.match.qq.com",
+            "resolved": "ins-gwqy79ih.ias.tencent-cloud.net"
+        },
+        {
+            "original": "pbaccess.video.qq.com",
+            "resolved": "ins-snfr50tq.ias.tencent-cloud.net"
+        },
+        {
+            "original": "snowflake.qq.com",
+            "resolved": "ins-mbckwsy9.ias.tencent-cloud.net"
+        },
+        {
+            "original": "unifiedaccess.gameloop.com",
+            "resolved": "ins-2768eays.ias.tencent-cloud.net"
+        },
+        {
+            "original": "video.qq.com",
+            "resolved": "ins-q151rkuz.ias.tencent-cloud.net"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "tencent-cloud\\.net\\/trpc\\.beacon\\.configserver\\.BeaconConfigService\\/QueryConfig",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ins-3rwdn7ul.ias"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "oth.str.beacon.qq.com",
+                    "resolved": "ins-3rwdn7ul.ias.tencent-cloud.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tencent.com",
+                "cloud.tencent.com",
+                "new.qq.com"
+            ]
+        },
+        {
+            "rule": "tencent-cloud\\.net\\/analytics\\/v2_upload",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ins-u4xprfqu.ias"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "otheve.beacon.qq.com",
+                    "resolved": "ins-u4xprfqu.ias.tencent-cloud.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tencent.com",
+                "cloud.tencent.com",
+                "new.qq.com",
+                "v.qq.com",
+                "wetv.vip"
+            ]
+        },
+        {
+            "rule": "tencent-cloud\\.net\\/trpc\\.beacon\\.configserver\\.BeaconConfigService\\/QueryConfig",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ins-3rwdn7ul.ias"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "oth.str.beacon.qq.com",
+                    "resolved": "ins-3rwdn7ul.ias.tencent-cloud.net"
+                }
+            ],
+            "responseHashes": [
+                "5efc3d1f42732ca848b1aa00ad1ac40041129477e8b004f7566b484fa39d332d",
+                "ce62c896a33d2d1a9300fb3bfc507e60958c2131d81b0defd0160743fd11f03a"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tencent.com",
+                "cloud.tencent.com",
+                "new.qq.com"
+            ]
+        },
+        {
+            "rule": "tencent-cloud\\.net\\/analytics\\/v2_upload",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ins-u4xprfqu.ias"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "otheve.beacon.qq.com",
+                    "resolved": "ins-u4xprfqu.ias.tencent-cloud.net"
+                }
+            ],
+            "responseHashes": [
+                "c66d60a0d7559f9ef0ea8fc5e311fa4f9ddf8876653a837aa546166e947dc845",
+                "cc00969e1d65e4f3f51fca0c08d5c8162c88a0178835134d7fdb06d8646088ce",
+                "eeb1922f59785f13f7eda571cfb4b9f6c50e59452f4f5bf92d4390f6e1064112",
+                "8645dbeef3721daeca5ff31f641b0a5e7d18ca74c0e58d614defdbcaab4e0918"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tencent.com",
+                "cloud.tencent.com",
+                "new.qq.com",
+                "v.qq.com",
+                "wetv.vip"
+            ]
+        },
+        {
+            "rule": "tencent-cloud\\.net\\/stat\\/only",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ins-gwqy79ih.ias"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "pacaio.match.qq.com",
+                    "resolved": "ins-gwqy79ih.ias.tencent-cloud.net"
+                }
+            ],
+            "responseHashes": [
+                "0ed1ee7d4376cf9a47375f7666bf5506e855dd03ca7f8c8d62cacacfc8be3fc4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "new.qq.com"
+            ]
+        },
+        {
+            "rule": "tencent-cloud\\.net\\/newsplugin",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ins-w34olsuu.ias"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "op.ssp.qq.com",
+                    "resolved": "ins-w34olsuu.ias.tencent-cloud.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "new.qq.com"
+            ]
+        },
+        {
+            "rule": "tencent-cloud\\.net\\/ola\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ins-mbckwsy9.ias"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "snowflake.qq.com",
+                    "resolved": "ins-mbckwsy9.ias.tencent-cloud.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "new.qq.com",
+                "v.qq.com",
+                "wetv.vip"
+            ]
+        },
+        {
+            "rule": "tencent-cloud\\.net\\/ola\\/v2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ins-mbckwsy9.ias"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "snowflake.qq.com",
+                    "resolved": "ins-mbckwsy9.ias.tencent-cloud.net"
+                }
+            ],
+            "responseHashes": [
+                "6c0a4e6176ddd15f8ecc7ed3bb088ef07d94d5b1f1bcfce9223a1cb412143e40",
+                "526996fc94ff5c39ee3409d66f377e766fdca6682a74c7d86eba6d95db847196"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "new.qq.com",
+                "v.qq.com",
+                "wetv.vip"
+            ]
+        },
+        {
+            "rule": "tencent-cloud\\.net\\/kv",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ins-diu1q33u.ias"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [
+                {
+                    "original": "h.trace.qq.com",
+                    "resolved": "ins-diu1q33u.ias.tencent-cloud.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "video_omgid": 0.000006812035504329049,
+                "ts_last": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "qq.com",
+                "new.qq.com",
+                "v.qq.com",
+                "wetv.vip"
+            ]
+        },
+        {
+            "rule": "tencent-cloud\\.net\\/bosskv",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ins-diu1q33u.ias"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "h.trace.qq.com",
+                    "resolved": "ins-diu1q33u.ias.tencent-cloud.net"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "new.qq.com",
+                "wetv.vip"
+            ]
+        },
+        {
+            "rule": "tencent-cloud\\.net\\/getcookie\\/1\\.0\\.6\\/cookie\\.html",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "ins-q151rkuz.ias"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "video.qq.com",
+                    "resolved": "ins-q151rkuz.ias.tencent-cloud.net"
+                }
+            ],
+            "responseHashes": [
+                "4a0cf3eca9f8b641656b0fc8f8c1948cae18e9eb41896b36bcbc24ff02b9dba2"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "v.qq.com"
+            ]
+        },
+        {
+            "rule": "tencent-cloud\\.net\\/trpc\\.universal_backend_service\\.page_server_rpc\\.PageServer\\/GetPageData",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ins-snfr50tq.ias"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "pbaccess.video.qq.com",
+                    "resolved": "ins-snfr50tq.ias.tencent-cloud.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "v.qq.com"
+            ]
+        },
+        {
+            "rule": "tencent-cloud\\.net\\/trpc\\.universal_backend_service\\.page_server_rpc\\.PageServer\\/GetPageData",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ins-snfr50tq.ias"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "pbaccess.video.qq.com",
+                    "resolved": "ins-snfr50tq.ias.tencent-cloud.net"
+                }
+            ],
+            "responseHashes": [
+                "9cc4d18ca57b0c5d84870a87c3738ac358c7c05237b32a2206c4d90c16417375"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "v.qq.com"
+            ]
+        },
+        {
+            "rule": "tencent-cloud\\.net\\/bosskv",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ins-diu1q33u.ias"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "h.trace.qq.com",
+                    "resolved": "ins-diu1q33u.ias.tencent-cloud.net"
+                }
+            ],
+            "responseHashes": [
+                "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "v.qq.com"
+            ]
+        },
+        {
+            "rule": "tencent-cloud\\.net\\/trpc\\.message\\.danmu_richdata\\.Richdata\\/GetRichData",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ins-snfr50tq.ias"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "pbaccess.video.qq.com",
+                    "resolved": "ins-snfr50tq.ias.tencent-cloud.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "v.qq.com"
+            ]
+        },
+        {
+            "rule": "tencent-cloud\\.net\\/trpc\\.message\\.danmu_richdata\\.Richdata\\/GetRichData",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ins-snfr50tq.ias"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "pbaccess.video.qq.com",
+                    "resolved": "ins-snfr50tq.ias.tencent-cloud.net"
+                }
+            ],
+            "responseHashes": [
+                "53a33b1d9ae85829b4b218551f5f03bcdd44e4a3af1b53af439bcdd315ba6a1f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qq.com",
+                "v.qq.com"
+            ]
+        },
+        {
+            "rule": "tencent-cloud\\.net\\/v2\\/dynamicard2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ins-2768eays.ias"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "unifiedaccess.gameloop.com",
+                    "resolved": "ins-2768eays.ias.tencent-cloud.net"
+                }
+            ],
+            "responseHashes": [
+                "fb843b25a3dc1a26a42fcdc8103e564301a0ed9d4f5ce7b7540ad176d9a90b31"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gameloop.com",
+                "www.gameloop.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000409,
+    "topInitiators": [
+        {
+            "domain": "gtimg.com",
+            "prevalence": 0.46987951807228917
+        },
+        {
+            "domain": "gtimg.cn",
+            "prevalence": 0.3132530120481928
+        },
+        {
+            "domain": "cdn-go.cn",
+            "prevalence": 0.1686746987951807
+        },
+        {
+            "domain": "wetvinfo.com",
+            "prevalence": 0.04819277108433735
+        }
+    ],
+    "types": {
+        "Preflight": 16,
+        "Fetch": 12,
+        "Script": 2,
+        "XHR": 10,
+        "Image": 7,
+        "Document": 2
+    },
+    "nameservers": []
+}

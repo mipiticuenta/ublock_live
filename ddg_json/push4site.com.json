@@ -1,0 +1,96 @@
+{
+    "domain": "push4site.com",
+    "owner": {
+        "name": "LLC LOOK GIFT",
+        "displayName": "LOOK GIFT"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "iz",
+        "cybersport",
+        "kasperskyru"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "push4site\\.com\\/sdk",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "iz",
+                "cybersport",
+                "kasperskyru"
+            ],
+            "apis": {
+                "Navigator.prototype.language": 3,
+                "Navigator.prototype.userAgent": 3,
+                "window.localStorage": 3,
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "Notification.permission": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "65baa38f8d0f1e6e9f0e689324d1ed34b9763d03ed4ac4d5e97c9e4dac2255fe"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "iz.ru",
+                "www.cybersport.ru",
+                "www.kaspersky.ru"
+            ]
+        },
+        {
+            "rule": "push4site\\.com\\/Content\\/WidgetsStyles\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "iz"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "091e562f358de470b7845dee8dc548b36a6219b97daf3587e051ac4d9a7a299b"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "iz.ru",
+                "www.kaspersky.ru"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8181818181818182
+        },
+        {
+            "domain": "kaspersky.de",
+            "prevalence": 0.18181818181818182
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "Stylesheet": 2
+    },
+    "nameservers": [
+        "gene.ns.cloudflare.com",
+        "scott.ns.cloudflare.com"
+    ]
+}

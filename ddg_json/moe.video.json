@@ -1,0 +1,184 @@
+{
+    "domain": "moe.video",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000681,
+    "sites": 10,
+    "subdomains": [
+        "cdn1",
+        "aog79z",
+        "9n9p66",
+        "w1cugy",
+        "b5iaxq",
+        "kfh5lw",
+        "odtbh7",
+        "rtb"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "moe\\.video\\/player\\/mvplayer\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn1"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "c46dfa3c8c3f1278b76dafc32c854b45acbb63a271c901745cc23914d896baa0",
+                "7886f4f1c2cbb592223bd830106114cbe2ed878fb0e7701228114280b5811a52"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "9sam.ru",
+                "base.garant.ru",
+                "muzrecord.com",
+                "russkiiyazyk.ru",
+                "studme.org",
+                "www.garant.ru"
+            ]
+        },
+        {
+            "rule": "moe\\.video\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "aog79z",
+                "9n9p66",
+                "w1cugy",
+                "b5iaxq",
+                "kfh5lw",
+                "odtbh7"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "9sam.ru",
+                "base.garant.ru",
+                "muzrecord.com",
+                "russkiiyazyk.ru",
+                "studme.org",
+                "www.garant.ru"
+            ]
+        },
+        {
+            "rule": "moe\\.video\\/integration\\/yandex\\.rtb\\.vpaid\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn1"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "fc4e9144586265c61b47b3d39cd3bd357d485b885accc64c72c0a14fcefd47b8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "garant.ru",
+                "muzrecord.com",
+                "russkiiyazyk.ru",
+                "studme.org",
+                "www.garant.ru"
+            ]
+        },
+        {
+            "rule": "moe\\.video\\/integration\\/sj\\.vpaid\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "bb9ce5d06779d30dc42b66c2ef0b245d598972bea97f08a2ae88556fbc6225a0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "garant.ru",
+                "base.garant.ru"
+            ]
+        },
+        {
+            "rule": "moe\\.video\\/cs",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "rtb"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "eldorado.ru",
+                "msk.tele2.ru",
+                "ntvplus.tv",
+                "www.lamoda.ru"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "yastatic.net",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "adhigh.net",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.25
+        },
+        {
+            "domain": "adfinity.pro",
+            "prevalence": 0.125
+        },
+        {
+            "domain": "advmusic.com",
+            "prevalence": 0.125
+        }
+    ],
+    "types": {
+        "Script": 13,
+        "WebSocket": 6,
+        "Image": 4
+    },
+    "nameservers": [
+        "ns4.moe.video",
+        "ns5.moe.video"
+    ]
+}

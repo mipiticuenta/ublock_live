@@ -1,0 +1,458 @@
+{
+    "domain": "ziffstatic.com",
+    "owner": {
+        "name": "Ziff Davis LLC",
+        "displayName": "Ziff Davis"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0003,
+    "sites": 44,
+    "subdomains": [
+        "cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "ziffstatic\\.com\\/jst\\/zdconsent\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 19,
+                "Screen.prototype.width": 16,
+                "Screen.prototype.height": 16,
+                "Navigator.prototype.userAgent": 20
+            },
+            "sites": 25,
+            "prevalence": 0.00017,
+            "cnames": [],
+            "responseHashes": [
+                "43ac97e8bd5da869bbab8787445f857eb03780dce85657495e6976909d9966d9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lifehacker.com",
+                "www.theblackfriday.com",
+                "www.extremetech.com",
+                "allestoringen.nl",
+                "howlongtobeat.com",
+                "www.ma-reduc.com",
+                "www.babycenter.de",
+                "community.babycentre.co.uk",
+                "downdetector.co.uk",
+                "www.humblebundle.com",
+                "downdetector.it",
+                "www.spiceworks.com",
+                "www.offers.com",
+                "brasil.babycenter.com",
+                "downdetector.com.au",
+                "www.familiesonline.co.uk",
+                "moz.com",
+                "www.babycenter.com.au",
+                "www.babycenter.com",
+                "espanol.babycenter.com"
+            ]
+        },
+        {
+            "rule": "ziffstatic\\.com\\/zdconsentlite\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "860afb895351fc624dec92d656d2fccf900caa8c6577b35b17676d71e918fe23"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cureus.com",
+                "www.cureus.com",
+                "www.kevinmd.com"
+            ]
+        },
+        {
+            "rule": "ziffstatic\\.com\\/pg\\/extremetech\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "Screen.prototype.width": 1,
+                "window.innerWidth": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b97b51e76f46c9d192395fd983a865dbfae33f1f47f91f34e793df34ede3dfb3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "extremetech.com",
+                "www.extremetech.com"
+            ]
+        },
+        {
+            "rule": "ziffstatic\\.com\\/pg\\/extremetech\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "db00e0a1801e8cb34074873347bff413c39501a53b7e3de08306b4cc6ab11373"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "extremetech.com",
+                "www.extremetech.com"
+            ]
+        },
+        {
+            "rule": "ziffstatic\\.com\\/pg\\/extremetech\\.prebid\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "window.localStorage": 2,
+                "Screen.prototype.width": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "NavigatorUAData.prototype.brands": 1,
+                "NavigatorUAData.prototype.platform": 1,
+                "window.sessionStorage": 1,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
+                "Screen.prototype.height": 1,
+                "PerformanceTiming.prototype.navigationStart": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fa94147d4fbd9b34354cbbd5b64c19f45d59aac6fbc7517be51dd5c9ffc0586a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "__li_idex_cache_e30": {
+                    "ttl": 3614,
+                    "length": 6,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "cto_bundle": {
+                    "ttl": 33696003,
+                    "length": 219,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "cto_bidid": {
+                    "ttl": 33696003,
+                    "length": 156,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "_li_dcdm_c": {
+                    "ttl": null,
+                    "length": 16,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                },
+                "_lc2_fpi": {
+                    "ttl": 63072003,
+                    "length": 40,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "extremetech.com",
+                "www.extremetech.com"
+            ]
+        },
+        {
+            "rule": "ziffstatic\\.com\\/pub\\/icong1\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4113d279946438b4918c84bbe33d1441ce810ffa0df8c30787a83f977a28b980"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "familiesonline.co.uk",
+                "www.humblebundle.com"
+            ]
+        },
+        {
+            "rule": "ziffstatic\\.com\\/pg\\/toolbox\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Screen.prototype.width": 2,
+                "window.innerWidth": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Element.prototype.getClientRects": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b09528c43227461fe3f145ab55fe174bd65f804fc4c5658b21455cf6ec40788d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spiceworks.com",
+                "www.spiceworks.com"
+            ]
+        },
+        {
+            "rule": "ziffstatic\\.com\\/pg\\/toolbox\\.prebid\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "NavigatorUAData.prototype.brands": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "PerformanceTiming.prototype.navigationStart": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "89551b2b4e9832f93d412c7c3913190abc10c46778b4bb76bfd6ae0fb5ca8d0f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cto_bundle": {
+                    "ttl": 33696006,
+                    "length": 256,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "cto_bidid": {
+                    "ttl": 33696006,
+                    "length": 191,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spiceworks.com",
+                "www.spiceworks.com"
+            ]
+        },
+        {
+            "rule": "ziffstatic\\.com\\/pg\\/toolbox\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4feb9101c02f845b2224d6145df90fdc1dbc97c20d4ae65c553409695df69a44"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "spiceworks.com",
+                "www.spiceworks.com"
+            ]
+        },
+        {
+            "rule": "ziffstatic\\.com\\/pg\\/theblackfriday\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Screen.prototype.width": 2,
+                "window.innerWidth": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f6dc2af9a75a4d5d3ae1cb63dc52fc20804bc73b75ac0aa91d26ba91b0b38492"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "theblackfriday.com",
+                "www.theblackfriday.com"
+            ]
+        },
+        {
+            "rule": "ziffstatic\\.com\\/pg\\/theblackfriday\\.prebid\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "NavigatorUAData.prototype.brands": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.appName": 2,
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Document.cookie getter": 2,
+                "Document.cookie setter": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Navigator.prototype.doNotTrack": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "PerformanceTiming.prototype.navigationStart": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "853024b30744656dc8f8201039fb208c840dbe50eb7c73b4d38043b2319cdbd9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_li_dcdm_c": {
+                    "ttl": null,
+                    "length": 19,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "_lc2_fpi": {
+                    "ttl": 63072001,
+                    "length": 40,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "cto_bundle": {
+                    "ttl": 33696001,
+                    "length": 247,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "cto_bidid": {
+                    "ttl": 33696001,
+                    "length": 190,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "__li_idex_cache_e30": {
+                    "ttl": 3615,
+                    "length": 6,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "theblackfriday.com",
+                "www.theblackfriday.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000886,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.987012987012987
+        },
+        {
+            "domain": "nsstatic.net",
+            "prevalence": 0.012987012987012988
+        }
+    ],
+    "types": {
+        "Script": 40,
+        "Stylesheet": 4,
+        "Image": 2
+    },
+    "nameservers": [
+        "ns-1007.awsdns-61.net",
+        "ns-1581.awsdns-05.co.uk",
+        "ns-1372.awsdns-43.org",
+        "ns-129.awsdns-16.com"
+    ]
+}

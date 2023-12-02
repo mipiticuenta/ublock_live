@@ -1,0 +1,382 @@
+{
+    "domain": "playbuzz.com",
+    "owner": {
+        "name": "Playbuzz LTD",
+        "displayName": "Playbuzz"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000327,
+    "sites": 48,
+    "subdomains": [
+        "stream",
+        "mcd-sdk",
+        "cdn",
+        "embed",
+        "ads",
+        "prd-collector-anon",
+        "vid1"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "playbuzz\\.com\\/embed\\/sdk\\.js",
+            "cookies": 0.0000477,
+            "fingerprinting": 1,
+            "subdomains": [
+                "stream",
+                "mcd-sdk"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 8,
+                "window.sessionStorage": 8,
+                "Document.cookie getter": 7,
+                "Document.cookie setter": 7,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "8c7abc700900374e6ce982603338fe072b30413846a754eab088c9bb1f4c864b",
+                "9e530cb541e0f93edb28b69d8ee97339129366cbd94bc9d2c116076730d4e607",
+                "f6173d6a713859d97ffe29e6bc72513e96e17c34cf5f25f86fa94a9d947623f1",
+                "de582cde01036f04cdcdd688947af9860a8bcc292a685975561d6ecd05d06720",
+                "0d1e609bc6958fd347d0ea790d62b6e9492c62e58b67ae1455d2cfdf09b6616c",
+                "43a4d125e7dab108aca5771ef365264a8d0ec363df379fb665c4749fcda4f3f3",
+                "3471da82db40d9c15e388a2173803e42041919e523a8bde737197c015d973137"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "exco-uid": {
+                    "ttl": 2592000,
+                    "length": 16,
+                    "prevalence": 0.00004768424853030334,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cafepharma.com",
+                "instinctmagazine.com",
+                "perezhilton.com",
+                "www.cafepharma.com",
+                "www.cinconoticias.com",
+                "www.droidviews.com",
+                "www.golfwrx.com",
+                "www.wordunscrambler.net"
+            ]
+        },
+        {
+            "rule": "playbuzz\\.com\\/logos\\/exco\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "28571b070f1f3e7d68901e4c44a2ed61d1d04d80af680468d62d0f27092eef6b"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cartermatt.com",
+                "www.sonomanews.com"
+            ]
+        },
+        {
+            "rule": "playbuzz\\.com\\/sdk\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {
+                "PerformanceTiming.prototype.navigationStart": 8
+            },
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "cc4ac67ce73afa5c451da91a810141b264e80ad994245f86fdf0e01fdaf0b5ea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rbth.com",
+                "fr.rbth.com",
+                "havenly.com",
+                "www.dxzone.com",
+                "www.epicreads.com",
+                "www.radiohrn.hn",
+                "www.rbth.com",
+                "www.readersdigest.co.uk",
+                "www.tunota.com"
+            ]
+        },
+        {
+            "rule": "playbuzz\\.com\\/widget\\/feed\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "a09fd12d5d56c4ad210c4906de667ad4b2723c4e9d4390d8ae5d32b0460ae786"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "havenly.com",
+                "www.epicreads.com",
+                "www.readersdigest.co.uk"
+            ]
+        },
+        {
+            "rule": "playbuzz\\.com\\/html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "embed"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0da25fff4775dca920ea80bb0c663039d1c59bd6941bad36a1f5faaec90074b7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "havenly.com",
+                "www.dxzone.com"
+            ]
+        },
+        {
+            "rule": "playbuzz\\.com\\/adwords\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mcd-sdk"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "havenly.com",
+                "www.dxzone.com"
+            ]
+        },
+        {
+            "rule": "playbuzz\\.com\\/api\\/v1\\/template",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ads"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "250fb3906cec2e4a2ccf60ab37b91d8db9f694ff108d135a983db9f42ac68292"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.000006812035504329049
+            },
+            "exampleSites": [
+                "havenly.com",
+                "www.dxzone.com"
+            ]
+        },
+        {
+            "rule": "playbuzz\\.com\\/main\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prd-collector-anon"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "havenly.com",
+                "www.dxzone.com"
+            ]
+        },
+        {
+            "rule": "playbuzz\\.com\\/video\\/upload\\/w_800,so_1\\/v1689627142\\/gt63ch0jdezejqcnhine\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vid1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e92d1afd9d04f30e68880de7d65f8558c68ede9db1edc015e72907365c97bab3"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chron.com",
+                "work.chron.com"
+            ]
+        },
+        {
+            "rule": "playbuzz\\.com\\/logos\\/d4dbb2d2-057c-4ad9-ba3c-4ac5a6d223f8_1601477355252\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2cd4825c32f0ff5ec9a966851aad26c2bc9e5dc73794109d38c0991cb37ba066"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chron.com",
+                "work.chron.com"
+            ]
+        },
+        {
+            "rule": "playbuzz\\.com\\/video\\/upload\\/w_600,so_1\\/v1690306956\\/saemixslkrroebcwxns6\\.webp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vid1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "11260b36940fc2f4f582cb65ce64b1dd5cd8f29966b2d7d104c358c99bdcb521"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fark.com",
+                "www.fark.com"
+            ]
+        },
+        {
+            "rule": "playbuzz\\.com\\/logos\\/2457db69-e339-4768-a8cb-1bed01aed9ca_1608643985374\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "701478d783e89a4b20b04ab6f4eb500bbca32173b50958f9cc218a267dc3822f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lovefood.com",
+                "www.lovefood.com"
+            ]
+        },
+        {
+            "rule": "playbuzz\\.com\\/logos\\/e833dfea-898e-4d67-afa0-11bbb415bbd6_1608645436601\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e77930df4289f73e752c62b73ee4ccf7e4229edd39d8675ccbd76e03f18219e6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loveproperty.com",
+                "www.loveproperty.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000749,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.47761194029850745
+        },
+        {
+            "domain": "ex.co",
+            "prevalence": 0.44776119402985076
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.05970149253731343
+        },
+        {
+            "domain": "script.ac",
+            "prevalence": 0.014925373134328358
+        }
+    ],
+    "types": {
+        "Script": 22,
+        "Image": 12,
+        "XHR": 2,
+        "Fetch": 4
+    },
+    "nameservers": [
+        "ns-64.awsdns-08.com",
+        "ns-683.awsdns-21.net",
+        "ns-1802.awsdns-33.co.uk",
+        "ns-1493.awsdns-58.org"
+    ]
+}

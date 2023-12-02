@@ -1,0 +1,398 @@
+{
+    "domain": "aptrinsic.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000954,
+    "sites": 14,
+    "subdomains": [
+        "esp",
+        "esp-m",
+        "esp-us2",
+        "web-sdk",
+        "web-sdk-us2"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "aptrinsic\\.com\\/rte\\/v1\\/command",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "esp",
+                "esp-m",
+                "esp-us2"
+            ],
+            "apis": {},
+            "sites": 10,
+            "prevalence": 0.0000681,
+            "cnames": [],
+            "responseHashes": [
+                "00bdcc5dae7fc02788d2eabffeb2405812270c37f4dc90922e41bd1fa21fe007",
+                "6e898abba4ba88c4296f33f1b1cf88403ef52eedcdfdce352de81d749b046b6b",
+                "817eafd713cc77feca83dfda2d0293460a10362aa2ef5cbc3eace17390b68a52",
+                "4dbdec799f1600f051dbfc5bf782a73e7fdf8f98c5faed5f9229a9ad88c935cb",
+                "5068d48db887decc30fb1f14fe597b8d85bfeca702180525b03f83f8b8ec724f",
+                "38c2dfcd1bfbfeb72a84e99d3d910bc8c8801a839378df2668b30e37de6221d2",
+                "6bcce6639c3b421b41a7aa675d07dc86c0efee4d0fd8f239bf80f508836c12a0",
+                "b3d3c4be74c2778d0a88cc25926dc741b34f11f511c5905c8d7c7e341bf099f7"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "apt.sid": 0.000027248142017316195
+            },
+            "exampleSites": [
+                "availity.com",
+                "apps.availity.com",
+                "community.f5.com",
+                "experienceleague.adobe.com",
+                "experienceleaguecommunities.adobe.com",
+                "my.f5.com",
+                "student.naviance.com",
+                "techdocs.f5.com",
+                "www.gradescope.com",
+                "www.helgesonfuneralhome.com"
+            ]
+        },
+        {
+            "rule": "aptrinsic\\.com\\/rte\\/api\\/v1\\/feature\\/client",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "esp",
+                "esp-m",
+                "esp-us2"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "2c4052e503e1debfe3797244ef4c1b31284cdf802db66046df839b9b935f37f8",
+                "e9f645c1e7c56a66097a90f93741a571c19feecf3be43324a13dcdf66b5bf77e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "apt.sid": 0.000027248142017316195
+            },
+            "exampleSites": [
+                "availity.com",
+                "community.f5.com",
+                "experienceleague.adobe.com",
+                "experienceleaguecommunities.adobe.com",
+                "my.f5.com",
+                "student.naviance.com",
+                "techdocs.f5.com",
+                "www.gradescope.com",
+                "www.helgesonfuneralhome.com"
+            ]
+        },
+        {
+            "rule": "aptrinsic\\.com\\/rte\\/v1\\/inapp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "esp",
+                "esp-m",
+                "esp-us2"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "ca47e86237a0b7cb1cb90d67e6810774a0405542d5d8adb65d25edea9e284af9",
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "apt.sid": 0.00003406017752164524
+            },
+            "exampleSites": [
+                "availity.com",
+                "community.f5.com",
+                "experienceleague.adobe.com",
+                "experienceleaguecommunities.adobe.com",
+                "my.f5.com",
+                "student.naviance.com",
+                "techdocs.f5.com",
+                "www.gradescope.com",
+                "www.helgesonfuneralhome.com"
+            ]
+        },
+        {
+            "rule": "aptrinsic\\.com\\/api\\/aptrinsic\\.js",
+            "cookies": 0.0000477,
+            "fingerprinting": 2,
+            "subdomains": [
+                "web-sdk",
+                "web-sdk-us2"
+            ],
+            "apis": {
+                "window.localStorage": 7,
+                "Document.cookie getter": 7,
+                "Navigator.prototype.userAgent": 7,
+                "window.sessionStorage": 7,
+                "Navigator.prototype.platform": 7,
+                "Date.prototype.getTime": 7,
+                "Document.cookie setter": 7,
+                "window.innerHeight": 7,
+                "window.innerWidth": 7
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "3db865a151c422f27628d310c7637b039d264aa6ca74c7e8997a72fefc463fcc",
+                "7c50dfc67d3914a0cdf231c56c3f34080a18388cf27640016e3258847de6d5af"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "apt.uid": {
+                    "ttl": 31536004,
+                    "length": 55,
+                    "prevalence": 0.00004768424853030334,
+                    "uniqueness": 1
+                },
+                "apt.sid": {
+                    "ttl": 1805,
+                    "length": 41,
+                    "prevalence": 0.00004768424853030334,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "f5.com",
+                "community.f5.com",
+                "experienceleague.adobe.com",
+                "experienceleaguecommunities.adobe.com",
+                "student.naviance.com",
+                "www.gradescope.com",
+                "www.helgesonfuneralhome.com"
+            ]
+        },
+        {
+            "rule": "aptrinsic\\.com\\/rte\\/v1\\/configuration\\/AP-HJIJYYOATP2Q-2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "esp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ea52543efb482fc699fdc89c398ce6995ec7672ddbc74434e5904b5d4be5dace"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "f5.com",
+                "community.f5.com"
+            ]
+        },
+        {
+            "rule": "aptrinsic\\.com\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "web-sdk",
+                "web-sdk-us2"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "d1f9afcb9238e7baf51edd32eac9d9b44f870ab5d59382b30b8b115040435363"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "f5.com",
+                "community.f5.com",
+                "experienceleague.adobe.com",
+                "experienceleaguecommunities.adobe.com",
+                "my.f5.com",
+                "student.naviance.com",
+                "techdocs.f5.com",
+                "www.gradescope.com",
+                "www.helgesonfuneralhome.com"
+            ]
+        },
+        {
+            "rule": "aptrinsic\\.com\\/rte\\/v2\\/kc",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "esp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "apt.sid": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "f5.com",
+                "community.f5.com"
+            ]
+        },
+        {
+            "rule": "aptrinsic\\.com\\/rte\\/v1\\/engagement\\/multistep\\/step\\/track",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "esp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "apt.sid": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "f5.com",
+                "community.f5.com"
+            ]
+        },
+        {
+            "rule": "aptrinsic\\.com\\/rte\\/v1\\/configuration\\/AP-PCBATQJJQHRG-2-1",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "esp-m"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "52d27b91a104050b29e43cb5421ce8769457886ba9ee82da8b9c159aed1f6c9f"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "adobe.com",
+                "experienceleague.adobe.com",
+                "experienceleaguecommunities.adobe.com"
+            ]
+        },
+        {
+            "rule": "aptrinsic\\.com\\/rte\\/v1\\/configuration\\/AP-NITRFA1GYZ8C-2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "esp"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "b1897d974e0f9c161a2310117b5d91cf39e61753eb3a8479a4a5017f6b0c8a33"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "f5.com",
+                "my.f5.com",
+                "techdocs.f5.com"
+            ]
+        },
+        {
+            "rule": "aptrinsic\\.com\\/rte\\/v1\\/configuration\\/AP-Y78DN676O0RN-2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "esp-us2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4a41037b69ffd86ee90ad5e7ed6d60c0d315e978e0789ef49780d896c3d987f8"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "naviance.com",
+                "student.naviance.com"
+            ]
+        },
+        {
+            "rule": "aptrinsic\\.com\\/rte\\/v1\\/configuration\\/AP-1BQVLBSZC216-2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "esp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d37dba3784b4963612034ebc7fd847d326ed54139d355a1ecaeb0aaadfdfcd57"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gradescope.com",
+                "www.gradescope.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7547169811320755
+        },
+        {
+            "domain": "sentry-cdn.com",
+            "prevalence": 0.22641509433962265
+        },
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 0.018867924528301886
+        }
+    ],
+    "types": {
+        "XHR": 44,
+        "Script": 7,
+        "Stylesheet": 9
+    },
+    "nameservers": [
+        "ns34.domaincontrol.com",
+        "ns33.domaincontrol.com"
+    ]
+}

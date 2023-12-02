@@ -1,0 +1,188 @@
+{
+    "domain": "resi.io",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "control",
+        "analytics-broker"
+    ],
+    "cnames": [],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "resi\\.io\\/webplayer\\/video\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "control"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "cf073a24717625a2e7ec0239f37ae0379482fcd4f87a37cb65e480e837e1cb06"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "churchint.org",
+                "robindbullock.com",
+                "www.redvoicemedia.com"
+            ]
+        },
+        {
+            "rule": "resi\\.io\\/webplayer\\/loader\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "control"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "8786415934fb3a61baa0f921eeed43190aded90f73fd87be2aebb2aecfb30bc8"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "churchint.org",
+                "robindbullock.com",
+                "www.redvoicemedia.com"
+            ]
+        },
+        {
+            "rule": "resi\\.io\\/webplayer\\/css\\/webplayer-v3\\.1410\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "control"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "7375f4343f868a36d2854599b6b3bb3120f970091a003e166237afc977607f57"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "churchint.org",
+                "robindbullock.com",
+                "www.redvoicemedia.com"
+            ]
+        },
+        {
+            "rule": "resi\\.io\\/webplayer\\/webplayer-v3\\.1410\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "control"
+            ],
+            "apis": {
+                "Navigator.prototype.vendor": 3,
+                "Navigator.prototype.userAgent": 3,
+                "MediaSource.isTypeSupported": 3,
+                "Screen.prototype.orientation": 3,
+                "Event.prototype.timeStamp": 3,
+                "Navigator.prototype.connection": 3,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "window.localStorage": 3,
+                "Navigator.prototype.product": 3,
+                "URL.createObjectURL": 2,
+                "window.devicePixelRatio": 2,
+                "HTMLMediaElement.prototype.canPlayType": 2,
+                "Navigator.prototype.mediaCapabilities": 3,
+                "Navigator.prototype.storage": 2,
+                "Navigator.prototype.language": 1,
+                "Navigator.prototype.deviceMemory": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "c03096c19cea6eddaa5090868d5c6a32cda0e266321262215c50b4ab0f71797f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "churchint.org",
+                "robindbullock.com",
+                "www.redvoicemedia.com"
+            ]
+        },
+        {
+            "rule": "resi\\.io\\/api\\/v1\\/publish\\/webEvents",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics-broker"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "churchint.org",
+                "www.redvoicemedia.com"
+            ]
+        },
+        {
+            "rule": "resi\\.io\\/api\\/v1\\/publish\\/webEvents",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "analytics-broker"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "churchint.org",
+                "www.redvoicemedia.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Document": 3,
+        "Script": 6,
+        "Stylesheet": 3,
+        "Preflight": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "treasure.ns.cloudflare.com",
+        "remy.ns.cloudflare.com"
+    ]
+}

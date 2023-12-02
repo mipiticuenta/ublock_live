@@ -1,0 +1,67 @@
+{
+    "domain": "pmnts.io",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-AU"
+    ],
+    "prevalence": 0.000402,
+    "sites": 4,
+    "subdomains": [
+        "gateway"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "pmnts\\.io\\/fraud\\/fingerprint\\/readingcinemas\\.js",
+            "cookies": 0.000201,
+            "fingerprinting": 1,
+            "subdomains": [
+                "gateway"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "25192e954f900f6d19ec009408f5670dd9f78e6f2441911612efc2d0a2650b04"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "forterToken": {
+                    "ttl": 157680005,
+                    "length": 57,
+                    "prevalence": 0.0002010454362685967,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "readingcinemas.com.au",
+                "www.readingcinemas.com.au"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000402,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2
+    },
+    "nameservers": [
+        "ns-440.awsdns-55.com",
+        "ns-577.awsdns-08.net",
+        "ns-1254.awsdns-28.org",
+        "ns-1884.awsdns-43.co.uk"
+    ]
+}

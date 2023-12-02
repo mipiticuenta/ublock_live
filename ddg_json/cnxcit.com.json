@@ -1,0 +1,178 @@
+{
+    "domain": "cnxcit.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "partycity.svcs",
+        "uscellular.svcs"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "cnxcit\\.com\\/v2\\/bootloader\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "partycity.svcs"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie setter": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "10dafaa245606b8e0aea2c4b6f1b4e8e96a8a2da85f175f5a242794732f3781f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "firstEntry": {
+                    "ttl": 14400,
+                    "length": 45,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                },
+                "chatMuted": {
+                    "ttl": 14400,
+                    "length": 5,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "chatOpened": {
+                    "ttl": 14400,
+                    "length": 5,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "partycity.com",
+                "www.partycity.com"
+            ]
+        },
+        {
+            "rule": "cnxcit\\.com\\/v2\\/assets\\/chat\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "partycity.svcs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3eb66add4b1d245d568ddd207619aa8953c94d3b9deb6e4953acbaa27a9ac918"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "partycity.com",
+                "www.partycity.com"
+            ]
+        },
+        {
+            "rule": "cnxcit\\.com\\/v2\\/assets\\/ding\\.mp3",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "partycity.svcs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c25e51feb681e5b8575f517f0bba96ab3af7a441a9acfa4d617de54a156982b3"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "partycity.com",
+                "www.partycity.com"
+            ]
+        },
+        {
+            "rule": "cnxcit\\.com\\/v2\\/styling\\.min\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "partycity.svcs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ff31db93fe4cee90f2baecd0c3abced8ba3baef88b183db2e0587947a79be5dd"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "partycity.com",
+                "www.partycity.com"
+            ]
+        },
+        {
+            "rule": "cnxcit\\.com\\/webchat\\/site\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "uscellular.svcs"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b574b85d54e506e7ffc7a5ff3fbead840f1aadc71ead92a959bd0f9a03fb7b5d"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "uscellular.com",
+                "www.uscellular.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7142857142857143
+        },
+        {
+            "domain": "quiq-cdn.com",
+            "prevalence": 0.2857142857142857
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Image": 2,
+        "Media": 2,
+        "Stylesheet": 4
+    },
+    "nameservers": [
+        "ns-1120.awsdns-12.org",
+        "ns-1885.awsdns-43.co.uk",
+        "ns-466.awsdns-58.com",
+        "ns-852.awsdns-42.net"
+    ]
+}

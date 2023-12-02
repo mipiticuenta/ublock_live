@@ -1,0 +1,1283 @@
+{
+    "domain": "s3.us-east-1.amazonaws.com",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000879,
+    "sites": 129,
+    "subdomains": [
+        "navidium-static-assets",
+        "ballotpedia",
+        "wtwh-marketing",
+        "forum-snapcraft-io",
+        "rheemparts",
+        "video-streams-crc",
+        "hot-town-images",
+        "tgo-s3-storage",
+        "vistana-web-static"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/navidium-widgets\\/css\\/index\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "navidium-static-assets"
+            ],
+            "apis": {},
+            "sites": 17,
+            "prevalence": 0.000116,
+            "cnames": [],
+            "responseHashes": [
+                "6bec639ff79c0564a6ccf2ae26fa039c3412019f1d33335c2e4dc8cb07afa551"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "4patriots.com",
+                "airguntactical.com",
+                "buildasoil.com",
+                "cruisercorps.com",
+                "designeroptics.com",
+                "exomtngear.com",
+                "farandaway.co",
+                "fashionablecanes.com",
+                "lavinialingerie.com",
+                "tactical.dev",
+                "wiredebikes.com",
+                "www.gunskins.com",
+                "www.hcctac.com",
+                "www.nomatic.com",
+                "www.retromanufacturing.com",
+                "www.stio.com",
+                "www.youngla.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/mkt-www\\.aws\\.org\\/banner_ads\\/ABICOR-202305-980x250\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7042e9f2ff56f49e3289070a0a0996583f1b85c3f0c90c892827dc9b49a0ec51"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aws.org",
+                "app.aws.org"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/images\\/bp-logo-sm\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ballotpedia"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "193ae0ab70c774c9be63668c3f8a86ac375de30b21e765c68e55fd55d0647ed0"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ballotpedia.org",
+                "www.ballotpedia.org"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/lytics\\/wtwh-lytics-custom\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wtwh-marketing"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "dc84c3b51304f97206543f0d76b1c59ae5f3e24e0cdc1c0083b7998e272bb90c"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clubandresortbusiness.com",
+                "www.edaboard.com",
+                "www.electro-tech-online.com",
+                "www.engineersgarage.com",
+                "www.fsrmagazine.com",
+                "www.massdevice.com",
+                "www.qsrmagazine.com",
+                "www.solarpowerworldonline.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/assets\\/start-discourse-330ecabb99d562b3be656b4bfb638312addb2e0ee5f5780aa47d519efd0b53f4\\.br\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "forum-snapcraft-io"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9d8ed6633f39595f2c3e353f96ddd5262f4ae11311d80de8bbad7d17eb4dc261"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snapcraft.io",
+                "forum.snapcraft.io"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/assets\\/browser-update-eec13eb6f8386f18f10b5dd6ebb7a3598d28421bb796e539b91a7e4a4c5d4c08\\.br\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "forum-snapcraft-io"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a933fa87d48ac7c2f381036d364fa92767c5dae738491b16aa668671abc23442"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snapcraft.io",
+                "forum.snapcraft.io"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/assets\\/browser-detect-16ca87077aead9f656700e192992122d3a7eee8c1bb76da992127945464d4777\\.br\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "forum-snapcraft-io"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "20ec9f960e177cdd0ab1fbb1c3e2721a9ee1f2dccf21b0f242f15e92d3360d08"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snapcraft.io",
+                "forum.snapcraft.io"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/assets\\/locales\\/en-4d63e59bb6320558a4e1dc777c5030d1a58deed1c5babe08ca81595b56d9c349\\.br\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "forum-snapcraft-io"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a1302ac1988fcedbe740f6e1813f788b5adc151afd824d85e3690575877da9ec"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snapcraft.io",
+                "forum.snapcraft.io"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/assets\\/vendor-e356674b67559130cbeca4530a0a5a00e71144f5e7556902f8a5efc8ac3f2282\\.br\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "forum-snapcraft-io"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.product": 2,
+                "Event.prototype.timeStamp": 1,
+                "Element.prototype.getClientRects": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f115e93883a752b57c1828c84d6734bd6d9f7b7b2b7834be5f5bddc4d25399ce"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snapcraft.io",
+                "forum.snapcraft.io"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/assets\\/application-ccdd35a46751678463501129567d9e62ea704970be68037477838853eb80b1e2\\.br\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "forum-snapcraft-io"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.platform": 2,
+                "NavigatorUAData.prototype.platform": 2,
+                "window.sessionStorage": 2,
+                "Notification.permission": 2,
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "window.innerWidth": 1,
+                "window.innerHeight": 1,
+                "window.devicePixelRatio": 2,
+                "window.name": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "336776a77c80170acb0954304ec285259d1beee188c249da8a37f30604807424"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snapcraft.io",
+                "forum.snapcraft.io"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/assets\\/plugins\\/discourse-data-explorer-e7f0c1731bba7c26d4b357bb96d4559a576ae4aeca8c94ed7747d7bb526cfd21\\.br\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "forum-snapcraft-io"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "41f293b87e7dbc57379c1a45be9b90f487e6c6a37740ecc275ebb57fea281ff9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snapcraft.io",
+                "forum.snapcraft.io"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/assets\\/plugins\\/discourse-details-a5c71c75398c735e851440262e3c9ba43f9d8a2a7d81d8ecec16c8b2dbf452c3\\.br\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "forum-snapcraft-io"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1d4a605cb261ecd589679cc0cf166f73216953dbae4b98aa285f18c71c9ee639"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snapcraft.io",
+                "forum.snapcraft.io"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/assets\\/plugins\\/discourse-local-dates-1174dd8ec34df1ac87004a7699b363e4bca1e3acae8e1bf5133051ab4956fea5\\.br\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "forum-snapcraft-io"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f932ef7cde0f0d92b0a556528905c78c48de99d80194978f967f60193f37a7af"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snapcraft.io",
+                "forum.snapcraft.io"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/assets\\/plugins\\/discourse-markdown-note-8bc0643d7ca54246d27b7464c5e08b951f89dc019749aece441bc1526d67643a\\.br\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "forum-snapcraft-io"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ec0a0b897a73d13e10877a1f6963591fe8fad8868d6eeaf49389ced1b75676dc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snapcraft.io",
+                "forum.snapcraft.io"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/assets\\/plugins\\/discourse-mermaid-c19f53bd79c4fec16946e674aeb5bd8927760c0be85e0eca562f77a196575213\\.br\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "forum-snapcraft-io"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2c5f38b7ae7b9f87116231e9ffb67520491a0421d24f497c1c2b42a5a5942a07"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snapcraft.io",
+                "forum.snapcraft.io"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/assets\\/plugins\\/discourse-narrative-bot-7648c8e9699610bc9a41dc34d627f0227a7501feb863a8d84ec0ab1bdc745e3d\\.br\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "forum-snapcraft-io"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c452ceb2217e87e2d6c231e6d986a9cb3e6b96b7ed69ce0feb8cab444a3efcb2"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snapcraft.io",
+                "forum.snapcraft.io"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/assets\\/plugins\\/discourse-presence-bc826a395189b32e4676ad0c4414f821f9bab8245747789b6d555fc16581dacd\\.br\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "forum-snapcraft-io"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "fd902a800d127e06a76421a0114c8da995e186646ca546a9f230c98dc175e97d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snapcraft.io",
+                "forum.snapcraft.io"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/assets\\/plugins\\/discourse-solved-25fb8a39a7251e3f126bff6e87bc94d7183343a78ad8ad33636762e80c493b17\\.br\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "forum-snapcraft-io"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6307fadcee52fb12d39ce301f911fc9d3530da6d95cacef04f0cfd840253e35c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snapcraft.io",
+                "forum.snapcraft.io"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/assets\\/plugins\\/lazy-yt-362fd991a752ebdc53b9b3b70aea43cb46676f634c323d6c79c0bef4c6bebad3\\.br\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "forum-snapcraft-io"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "085453d90220cde66ef999b84db6272099dc84cde4498793c5f02961da1955b6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snapcraft.io",
+                "forum.snapcraft.io"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/assets\\/plugins\\/poll-3dc2e1034f464aa9411181503b8e1d9c52d1a76a8e70e93aaf1c4bdf320b3409\\.br\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "forum-snapcraft-io"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "efc57f0a96827ff753e54560529acfbf10d7a7a7a55c96bdcdf4dc05196112e3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snapcraft.io",
+                "forum.snapcraft.io"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/assets\\/google-tag-manager-207e4e7db708ead224f0e2ee6d92492abfe9a29e717480b6f6f2614fa7873019\\.br\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "forum-snapcraft-io"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7f6b790c7860a6e591fecfd068eaaef7acd49cb95fcf860e1e5f9e83126e7adf"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snapcraft.io",
+                "forum.snapcraft.io"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/original\\/2X\\/8\\/806c9f41d79091555b4fc09f8719c13514479a33\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "forum-snapcraft-io"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "41ebcee1b230d7071ad747e23193f4a2ada006686d7be7b1a4b8d66c5b04b842"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "snapcraft.io",
+                "forum.snapcraft.io"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/navidium-widgets\\/js\\/nvd-widget-v-n-1\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "navidium-static-assets"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0603a6636fc278b86c95d3b7d769fbb28010c32d8c4dbded7ffb013c1dfdd901"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lavinialingerie.com",
+                "tactical.dev"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/parts\\/js\\/IBMTealeafUIC-Rheem-6\\.4\\.20\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "rheemparts"
+            ],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.sessionStorage": 2,
+                "Date.prototype.getTimezoneOffset": 2,
+                "window.devicePixelRatio": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.orientation": 2,
+                "Screen.prototype.availHeight": 2,
+                "window.innerWidth": 2,
+                "window.innerHeight": 2,
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Document.cookie setter": 2,
+                "window.name": 2,
+                "PerformanceTiming.prototype.navigationStart": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "51900e7a8143ee298f0d006e260c1748a15fb62dac0195199e7973682ec93d3b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "TLTSID": {
+                    "ttl": null,
+                    "length": 32,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rheem.com",
+                "parts.rheem.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/crc-home-vid-v2\\.mp4",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "video-streams-crc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f14c96d887ff9f8b8654cfe5d5d5668acf3fc3a4ec5d3ab22d8f0771ca32059f"
+            ],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "crcindustries.com",
+                "www.crcindustries.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/static\\.getsnworks\\.com\\/js\\/lighbox\\/lightbox-1\\.0\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d5901934e9908d4ea736c7ceb5faeed96ee886c02a00738dad03b22c7a857840"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailyprincetonian.com",
+                "www.statepress.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/static\\.getsnworks\\.com\\/js\\/lighbox\\/lightbox-1\\.0\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b5bfa1a5ac4ce1c68ada78b268c63ed800621f48553df5bd012181c1d3312749"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailyprincetonian.com",
+                "www.statepress.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/lancaster-2019\\/images\\/icons\\/accessibility\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0fcd48bc34830af23c4b312f2947814caac46c50750c188ae7acad0f232f3ab4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "discoverlancaster.com",
+                "www.discoverlancaster.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/zaius-content\\/web\\/poq8BrMsEgHKZ3ObaSZ0vA\\/_rules\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0574ef67b7d3699d5ba3e46715a13e547b1a8ea47a9b39c11a37dc4355e0b3c2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "golfdiscount.com",
+                "www.golfdiscount.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/zaius-content\\/web\\/poq8BrMsEgHKZ3ObaSZ0vA\\/_rules\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "golfdiscount.com",
+                "www.golfdiscount.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/zaius-content\\/web\\/poq8BrMsEgHKZ3ObaSZ0vA\\/giveaway231030_form_giveaway-231030_web_modal\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d02265ecba5db037f370a92bc2d2ac21c561bc75f5ee1b620afe0ca259b7dd2e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "golfdiscount.com",
+                "www.golfdiscount.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/zaius-content\\/web\\/poq8BrMsEgHKZ3ObaSZ0vA\\/giveaway231030_form_giveaway-231030_web_modal\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "golfdiscount.com",
+                "www.golfdiscount.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/zaius-images\\/poq8BrMsEgHKZ3ObaSZ0vA\\/_\\/6m9tkxw1j8bltJ5tyod1PVcYdWQTrukLAd7NOChIPpl\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e2fd90af062524b5eb6c7f3e1980287899a96eaaaeda768701bcff04f4a4b1e4"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "golfdiscount.com",
+                "www.golfdiscount.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/dive_static\\/divesite\\/responsive_ad_assets\\/alternative_products_ads\\/icons\\/marketplace\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "884b4173614a8d3eae8c22a16c0e6947e354de3bea60911a768407947ea33fd7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "highereddive.com",
+                "www.smartcitiesdive.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/dive_static\\/divesite\\/responsive_ad_assets\\/alternative_products_ads\\/backgrounds\\/alternative_products_ads_background_homepage\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d22991bda6eeedc907073ee0b37851710f905806b1e530d505ec0aa385a5e145"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "highereddive.com",
+                "www.smartcitiesdive.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/lpress-craft\\/images\\/Social-Images\\/facebook\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "03a96c7376c19479aafdd4a2d3490ce3fdb883017153ff958a121bd6b8df2b10"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loyolapress.com",
+                "www.loyolapress.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/lpress-craft\\/images\\/Social-Images\\/twitter\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "9ed8e3f31005e086ceb5e144c7810e31d087d74a984a2cb46a0e3362605dcc3c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loyolapress.com",
+                "www.loyolapress.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/lpress-craft\\/images\\/Social-Images\\/instagram\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cf728cdde905084454117a307665286f3d678c931f26c807902c0105c73664dc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loyolapress.com",
+                "www.loyolapress.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/lpress-craft\\/images\\/Social-Images\\/youtube\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "52daf6e7f7d77567c172d1748adf7039287ba2a95871c3c7c060741752a9160c"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loyolapress.com",
+                "www.loyolapress.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/lpress-craft\\/images\\/Social-Images\\/email\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3c9693eb7825dc647148709fb3405e181223bd3b82537023d8796aec193be2f8"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "loyolapress.com",
+                "www.loyolapress.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/ClubExpressWebFiles\\/script\\/jquery-ui\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f429052510ca73c97c26f9953b62d1c5d6807ed04ba1350de056b35e506cd23c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lwvtexas.org",
+                "www.lwvtexas.org"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/mt-website-prod-contentbucket-1tg1jr7b5zn9a\\/images\\/promotions\\/864-trolls-events_logo\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b4f06e9c6aa5e31e31a0818676b300a993513159d752051c6bae0eaabe78f94f"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marcustheatres.com",
+                "www.marcustheatres.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/mt-website-prod-contentbucket-1tg1jr7b5zn9a\\/images\\/promotions\\/863-seasons-screenings-2023_logo\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "05ce1b80caa17e7099556db99f6734c65611d0741482c39936e01e7edf793a35"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marcustheatres.com",
+                "www.marcustheatres.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/mt-website-prod-contentbucket-1tg1jr7b5zn9a\\/ads\\/theatres-rotator\\/P_2040x800_DATE\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d450a190cdc9c4fdead22e01198ed2c4a3ba75fa656ca707776d44675ae5b6a5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marcustheatres.com",
+                "www.marcustheatres.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/craft-marinbikes\\/images\\/2020\\/language-switcher\\/_flagIcon1x\\/us-2x\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6629a165eaa92c57b4a6dbd814641a5eb8144814ef002f7f1c93a48eebed37c9"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "marinbikes.com",
+                "www.marinbikes.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/kwtv\\/production\\/2015\\/December\\/2\\/edmond-soccer-coach-remembers-teenager-killed-in-crash\\.1449104817000\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "hot-town-images"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f9863c1ee3887560b611e427e827adce3f72d294529bc40d36d49a6e920e7d0d"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "news9.com",
+                "www.news9.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/pem-org\\/video\\/modules\\/webm\\/joingivekidsAA\\.webm",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Media",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pem.org",
+                "www.pem.org"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/monthly_2019_01\\/imported-photo-660\\.thumb\\.jpeg\\.cd5958608adafd456c07aea7951c8a11\\.jpeg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tgo-s3-storage"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "23710ad0cb435e7631148355e82d76032bf6672a73e734689931aeb2e5c4dcbc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tngunowners.com",
+                "www.tngunowners.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/profile\\/photo-thumb-22416\\.jpg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tgo-s3-storage"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5560e4f5bc0ca69001004b7510911238b77cb9620b1c9c60bc454f7a58a7ebe7"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tngunowners.com",
+                "www.tngunowners.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/profile\\/photo-thumb-5880\\.gif",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tgo-s3-storage"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8184ff9f691b9e199faf2aa407d08c9ecee72740744241e5d529f6b361bf29cc"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tngunowners.com",
+                "www.tngunowners.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/fontbox\\.scmmesh\\.com\\/fontbox\\.v2\\.1\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "80954a2000d1b90b19ff19a33ea067bf911ea3eab1d339361cb0d91a985862b5"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "truenudists.com",
+                "www.trueswingers.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/fontbox\\.scmmesh\\.com\\/FontAwesome\\/fontawesome-webfont\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d792afdac7f7ae5de7c6964950c6c61dc6e3f3813180a59e141c7cb4ac4364dc"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "truenudists.com",
+                "www.trueswingers.com"
+            ]
+        },
+        {
+            "rule": "s3\\.us-east-1\\.amazonaws\\.com\\/vistana-web\\/consumable\\/staging\\/footer\\/images\\/english-ea-icon\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "vistana-web-static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "957fa61ecd8b65bbba7df0ab3e5f9f10385fdd9a772dd30aef6fab71777b00fb"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "vistana.com",
+                "www.vistana.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9190839694656489
+        },
+        {
+            "domain": "lytics.io",
+            "prevalence": 0.016793893129770993
+        },
+        {
+            "domain": "navidium-static-assets.s3.amazonaws.com",
+            "prevalence": 0.015267175572519083
+        },
+        {
+            "domain": "d1igp3oop3iho5.cloudfront.net",
+            "prevalence": 0.013740458015267175
+        },
+        {
+            "domain": "yottaa.com",
+            "prevalence": 0.007633587786259542
+        },
+        {
+            "domain": "servedbyadbutler.com",
+            "prevalence": 0.0061068702290076335
+        },
+        {
+            "domain": "trackjs.com",
+            "prevalence": 0.0061068702290076335
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.0030534351145038168
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.0030534351145038168
+        },
+        {
+            "domain": "osano.com",
+            "prevalence": 0.0030534351145038168
+        }
+    ],
+    "types": {
+        "Stylesheet": 29,
+        "Image": 42,
+        "Script": 42,
+        "Media": 4,
+        "XHR": 4,
+        "Preflight": 4,
+        "Font": 2
+    },
+    "nameservers": [
+        "ns-2021.awsdns-60.co.uk",
+        "ns-689.awsdns-22.net",
+        "ns-193.awsdns-24.com",
+        "ns-1184.awsdns-20.org"
+    ]
+}

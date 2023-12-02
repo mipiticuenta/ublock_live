@@ -1,0 +1,104 @@
+{
+    "domain": "coinbase.com",
+    "owner": {
+        "name": "Coinbase, Inc.",
+        "displayName": "Coinbase"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [
+        "commerce",
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "coinbase\\.com\\/v1\\/checkout\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "commerce"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "97c4981ae4b6030db93faa36406b89fe1243fb1294392ab938d3a727b8a5a594"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "starsessions.info",
+                "xgore.net"
+            ]
+        },
+        {
+            "rule": "coinbase\\.com\\/v1\\/button\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "commerce"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "44d4cd96eb596c29f1b475c5e3007d603fd08d9dd2d2db9d05a0d43c8e47d341"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "starsessions.info",
+                "xgore.net"
+            ]
+        },
+        {
+            "rule": "coinbase\\.com\\/v2\\/exchange-rates",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8df28b7f504cc2a76711cfadb4ca53f33cb6f26518745dbb44ea59c5482337a2"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "orbiter.finance",
+                "www.orbiter.finance"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000341,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Stylesheet": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "sam.ns.cloudflare.com",
+        "sue.ns.cloudflare.com"
+    ]
+}

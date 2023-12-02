@@ -1,0 +1,97 @@
+{
+    "domain": "boston-globe.map.fastly.net",
+    "owner": {
+        "name": "Fastly, Inc.",
+        "displayName": "Fastly",
+        "privacyPolicy": "https://www.fastly.com/privacy",
+        "url": "http://fastly.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [],
+    "cnames": [
+        {
+            "original": "meter.bostonglobe.com",
+            "resolved": "boston-globe.map.fastly.net"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "boston-globe\\.map\\.fastly\\.net\\/js\\/meter\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "meter.bostonglobe.com",
+                    "resolved": "boston-globe.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "01447f2e7585ebbdae17e79163ca373c5e9dbffe4e2ad45789a6e2d309786ff9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bostonglobe.com",
+                "www.bostonglobe.com"
+            ]
+        },
+        {
+            "rule": "boston-globe\\.map\\.fastly\\.net\\/css\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "meter.bostonglobe.com",
+                    "resolved": "boston-globe.map.fastly.net"
+                }
+            ],
+            "responseHashes": [
+                "3627dc6cd56f1d2a07fa919026dcfee569735e4af248ab2544861676cf182f91"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bostonglobe.com",
+                "www.bostonglobe.com"
+            ]
+        }
+    ],
+    "categories": [
+        "Ad Motivated Tracking",
+        "Advertising",
+        "Analytics",
+        "Third-Party Analytics Marketing",
+        "Action Pixels",
+        "CDN",
+        "Embedded Content",
+        "Session Replay"
+    ],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "script.ac",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Stylesheet": 2
+    },
+    "nameservers": []
+}

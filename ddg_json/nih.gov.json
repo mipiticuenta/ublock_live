@@ -1,0 +1,85 @@
+{
+    "domain": "nih.gov",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000613,
+    "sites": 9,
+    "subdomains": [
+        "www.ncbi.nlm"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "nih\\.gov\\/core\\/alerts\\/alerts\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www.ncbi.nlm"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "30d7bdee5ff851ec50b4d495bc830c4db21cda724e1ba56a8118c152c8a38d70"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clinicaltrials.gov",
+                "classic.clinicaltrials.gov"
+            ]
+        },
+        {
+            "rule": "nih\\.gov\\/stat",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www.ncbi.nlm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "55c9d2f019f9d7ddfd69b2ad0351c5617338a222362aebb02b3b98a4dbc18486"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "clinicaltrials.gov",
+                "classic.clinicaltrials.gov"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.967741935483871
+        },
+        {
+            "domain": "jquery.com",
+            "prevalence": 0.03225806451612903
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Image": 2
+    },
+    "nameservers": [
+        "ns3.nih.gov",
+        "ns.nih.gov",
+        "ns2.nih.gov"
+    ]
+}

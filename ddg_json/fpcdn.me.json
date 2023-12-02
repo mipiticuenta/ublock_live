@@ -1,0 +1,163 @@
+{
+    "domain": "fpcdn.me",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000613,
+    "sites": 9,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "fpcdn\\.me\\/sdk\\/common\\/js\\/firebase-edited2\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [],
+            "apis": {
+                "Navigator.prototype.userAgent": 5,
+                "window.localStorage": 5,
+                "window.sessionStorage": 5,
+                "Notification.permission": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "da48e0aeecefe64e5d782e2cfb221501cf94babe30ab42e257a436491d23a95d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "caskcartel.com",
+                "lavinialingerie.com",
+                "mcsus.com",
+                "www.puravidabracelets.com",
+                "www.volcom.com"
+            ]
+        },
+        {
+            "rule": "fpcdn\\.me\\/sdk\\/shopify\\/puravidabracelets\\.myshopify\\.com\\/shopify\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "window.localStorage": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Notification.permission": 2,
+                "window.indexedDB": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "293866cae691ccc53f8436e4306ea491252e66c0614a28129468b0aa69cd5604"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "puravidabracelets.com",
+                "www.puravidabracelets.com"
+            ]
+        },
+        {
+            "rule": "fpcdn\\.me\\/sdk\\/shopify\\/puravidabracelets\\.myshopify\\.com\\/manifest\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1467fbcfb81778fa597c544382b257148d57fd0c62e20036a8def3e3cb048c28"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "puravidabracelets.com",
+                "www.puravidabracelets.com"
+            ]
+        },
+        {
+            "rule": "fpcdn\\.me\\/sdk\\/shopify\\/volcom-us\\.myshopify\\.com\\/shopify\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {
+                "Date.prototype.getTime": 2,
+                "Navigator.prototype.userAgent": 2,
+                "window.localStorage": 2,
+                "Notification.permission": 2,
+                "window.indexedDB": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c522193750abc2d3fa304d67a1c7fb186b5a33280a0bba4cdcc9dad181dd219b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "volcom.com",
+                "www.volcom.com"
+            ]
+        },
+        {
+            "rule": "fpcdn\\.me\\/sdk\\/shopify\\/volcom-us\\.myshopify\\.com\\/manifest\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1467fbcfb81778fa597c544382b257148d57fd0c62e20036a8def3e3cb048c28"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "volcom.com",
+                "www.volcom.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.75
+        },
+        {
+            "domain": "firepush.io",
+            "prevalence": 0.1
+        },
+        {
+            "domain": "appsolve.io",
+            "prevalence": 0.1
+        },
+        {
+            "domain": "lablpx.com",
+            "prevalence": 0.05
+        }
+    ],
+    "types": {
+        "Script": 9,
+        "Fetch": 4
+    },
+    "nameservers": [
+        "grant.ns.cloudflare.com",
+        "mariah.ns.cloudflare.com"
+    ]
+}

@@ -1,0 +1,141 @@
+{
+    "domain": "omacro.com",
+    "owner": {
+        "name": "Omacro LLC",
+        "displayName": "Omacro"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000749,
+    "sites": 11,
+    "subdomains": [
+        "buynow",
+        "services-v2"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "omacro\\.com\\/embedded\\/bn\\.loader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "buynow"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 8,
+                "Date.prototype.getTime": 8
+            },
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "7a706b474874d883246b7ce9f615a5aaaa4ca22278308e821955bb581b13ad30"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gatorco.com",
+                "mackie.com",
+                "www.chauvetdj.com",
+                "www.presonus.com",
+                "www.qsc.com",
+                "www.qsys.com",
+                "www.radialeng.com",
+                "www.solidstatelogic.com"
+            ]
+        },
+        {
+            "rule": "omacro\\.com\\/buynow\\/dealertransactionsimple",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "services-v2"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "7574df7474b5d2cc87cd9de04682da18206e7ba3abf926c2f423a9e904c92487"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gatorco.com",
+                "mackie.com",
+                "www.chauvetdj.com",
+                "www.presonus.com",
+                "www.qsc.com",
+                "www.qsys.com",
+                "www.radialeng.com",
+                "www.solidstatelogic.com"
+            ]
+        },
+        {
+            "rule": "omacro\\.com\\/assets\\/images\\/logo-v2\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "buynow"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "3eda9fb2476fda58c54fce4bcb7f3aa9d75e30ec27ba789110021ee1e83ed7aa"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gatorco.com",
+                "mackie.com",
+                "www.chauvetdj.com",
+                "www.presonus.com",
+                "www.qsc.com",
+                "www.qsys.com",
+                "www.radialeng.com",
+                "www.solidstatelogic.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.44
+        },
+        {
+            "domain": "maps.googleapis.com",
+            "prevalence": 0.4
+        },
+        {
+            "domain": "d2wy8f7a9ursnm.cloudfront.net",
+            "prevalence": 0.08
+        },
+        {
+            "domain": "datadoghq-browser-agent.com",
+            "prevalence": 0.04
+        },
+        {
+            "domain": "cookiebot.com",
+            "prevalence": 0.04
+        }
+    ],
+    "types": {
+        "Script": 8,
+        "XHR": 8,
+        "Image": 8
+    },
+    "nameservers": [
+        "rajeev.ns.cloudflare.com",
+        "adi.ns.cloudflare.com"
+    ]
+}

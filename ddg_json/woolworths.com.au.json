@@ -1,0 +1,68 @@
+{
+    "domain": "woolworths.com.au",
+    "owner": {
+        "name": "Woolworths Group Limited",
+        "displayName": "Woolworths Group"
+    },
+    "source": [
+        "DuckDuckGo-AU"
+    ],
+    "prevalence": 0.000302,
+    "sites": 3,
+    "subdomains": [
+        "chatwidget"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "woolworths\\.com\\.au\\/bootstrap\\/chatWidgetBootstrap\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "chatwidget"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "window.innerHeight": 1,
+                "window.innerWidth": 1,
+                "Navigator.prototype.platform": 1,
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [],
+            "responseHashes": [
+                "0b4fb09dcd628c47597fa3b72f49ee438097e05aa1b032abf24e84649cf146dd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "woolworthsrewards.com.au",
+                "www.wowcareers.com.au"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000101,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2
+    },
+    "nameservers": [
+        "a1-30.akam.net",
+        "a5-65.akam.net",
+        "a10-67.akam.net",
+        "a7-67.akam.net",
+        "a4-64.akam.net",
+        "a6-66.akam.net"
+    ]
+}

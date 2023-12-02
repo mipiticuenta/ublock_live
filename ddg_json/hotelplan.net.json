@@ -1,0 +1,85 @@
+{
+    "domain": "hotelplan.net",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-CH"
+    ],
+    "prevalence": 0.000101,
+    "sites": 1,
+    "subdomains": [
+        "webhp"
+    ],
+    "cnames": [
+        {
+            "original": "api.hotelplan.ch",
+            "resolved": "webhp.hotelplan.net"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "hotelplan\\.net\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webhp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.hotelplan.ch",
+                    "resolved": "webhp.hotelplan.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hotelplan.ch",
+                "www.hotelplan.ch"
+            ]
+        },
+        {
+            "rule": "hotelplan\\.net\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "webhp"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.000201,
+            "cnames": [
+                {
+                    "original": "api.hotelplan.ch",
+                    "resolved": "webhp.hotelplan.net"
+                }
+            ],
+            "responseHashes": [
+                "db250b84d197b9bb288ac83e602ff89841718e599cc837be26c4e8394be5854e"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hotelplan.ch",
+                "www.hotelplan.ch"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "types": {
+        "Preflight": 2,
+        "Fetch": 2
+    },
+    "nameservers": [
+        "migze100.migros.ch",
+        "ns3.migros.ch",
+        "migze104.migros.ch"
+    ]
+}

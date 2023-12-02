@@ -1,0 +1,82 @@
+{
+    "domain": "servicedesk.net",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "benu"
+    ],
+    "cnames": [],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "servicedesk\\.net\\/Scripts\\/chat\\/functions-ChatUtils\\.js",
+            "cookies": 0,
+            "fingerprinting": 3,
+            "subdomains": [
+                "benu"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.sessionStorage": 2,
+                "Navigator.prototype.mediaDevices": 2,
+                "MediaDevices.prototype.enumerateDevices": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4ec26c27138b2aa4d0b3ca95b50f15bb7d7fbd2b3c88b1b6e14b5cc626343166"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "benu.cz",
+                "www.benu.cz"
+            ]
+        },
+        {
+            "rule": "servicedesk\\.net\\/Content\\/chat-widget\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "benu"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b063ecfae78a5756fc2502ee8751b606f980451b4a0e651d1016778fc6a93846"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "benu.cz",
+                "www.benu.cz"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Stylesheet": 2
+    },
+    "nameservers": [
+        "maleah.ns.cloudflare.com",
+        "elias.ns.cloudflare.com"
+    ]
+}

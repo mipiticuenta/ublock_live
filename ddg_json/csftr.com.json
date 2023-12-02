@@ -1,0 +1,89 @@
+{
+    "domain": "csftr.com",
+    "owner": {
+        "name": "Cashshield Pte Ltd",
+        "displayName": "Cashshield"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "us",
+        "191b34da0641b26a5f352ee7cfc311cd9c129475",
+        "766083810c34bd3b4fadd22c06a4125c8c2536ac"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "csftr\\.com\\/wfp\\/fp_core\\.php",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "us",
+                "191b34da0641b26a5f352ee7cfc311cd9c129475"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "5cde8e1e6115ae841c78ad2bc879738519bdd8310365a011f69423bd4df3c3a8",
+                "3c09a139fa83f4762f502e2125684774b7f6dcfcf3c2ad1de6b4562e06da013e"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wizards.com",
+                "secretlair.wizards.com",
+                "www.yamibuy.com"
+            ]
+        },
+        {
+            "rule": "csftr\\.com\\/shield-fp\\/v1\\/api\\/web",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "766083810c34bd3b4fadd22c06a4125c8c2536ac",
+                "191b34da0641b26a5f352ee7cfc311cd9c129475"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5d73de35433260532880d9797a08aeb08416c050318b9d7802db30d7f0933d6d"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "midasbuy.com",
+                "www.yamibuy.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "d1cr9zxt7u0sgu.cloudfront.net",
+            "prevalence": 0.8
+        },
+        {
+            "domain": "cdn-go.cn",
+            "prevalence": 0.2
+        }
+    ],
+    "types": {
+        "XHR": 5
+    },
+    "nameservers": [
+        "cheryl.ns.cloudflare.com",
+        "james.ns.cloudflare.com"
+    ]
+}

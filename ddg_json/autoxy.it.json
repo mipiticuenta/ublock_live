@@ -1,0 +1,172 @@
+{
+    "domain": "autoxy.it",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "lba",
+        "storage"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "autoxy\\.it\\/external\\/bannerlead\\/",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lba"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c39947486214655a1ec47af1f6661003f9ea69d2de073386edc72a76dfb85a22"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "patentati.it",
+                "www.patentati.it"
+            ]
+        },
+        {
+            "rule": "autoxy\\.it\\/v1\\/web\\/layout\\/css\\/compress\\/lba_search_css_60\\.09\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "storage"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b4ef92471e02a8a51580a03067ba9735a4e38ddc622da314cdb043656420f39f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "patentati.it",
+                "www.patentati.it"
+            ]
+        },
+        {
+            "rule": "autoxy\\.it\\/v1\\/js\\/30\\.14\\/www\\/combine\\/combined_jquery\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "storage"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3dbb05e668fb5d3bad47511a1c49cb71e689ba9b6fa686e60cbecf7fee8a718c"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "patentati.it",
+                "www.patentati.it"
+            ]
+        },
+        {
+            "rule": "autoxy\\.it\\/v1\\/js\\/30\\.14\\/www\\/autoxy\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "storage"
+            ],
+            "apis": {
+                "Navigator.prototype.cookieEnabled": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d23468aaf04093838a7e522290bc0c364b8609771b0475d02ef8b34b25a8d288"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "patentati.it",
+                "www.patentati.it"
+            ]
+        },
+        {
+            "rule": "autoxy\\.it\\/v1\\/js\\/30\\.14\\/www\\/combine\\/combined_search\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "storage"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6e8ea748a2e80a9a41ce47fd8c23e77713bf722e98b1b007c8e8232aa277162a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "patentati.it",
+                "www.patentati.it"
+            ]
+        },
+        {
+            "rule": "autoxy\\.it\\/v1\\/js\\/30\\.14\\/www\\/search\\/lead_web_service\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "storage"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dcf21f29799d37c0ecb97539f4b0ca3d1514c22a0e84121e2a779b18379fd432"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "patentati.it",
+                "www.patentati.it"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Document": 2,
+        "Stylesheet": 2,
+        "Script": 8
+    },
+    "nameservers": [
+        "ns1.register.it",
+        "ns2.register.it"
+    ]
+}

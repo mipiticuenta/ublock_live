@@ -1,0 +1,173 @@
+{
+    "domain": "hsn.com",
+    "owner": {
+        "name": "HSN Interactive LLC",
+        "displayName": "HSN Interactive"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000613,
+    "sites": 9,
+    "subdomains": [
+        "egain",
+        "qxhgql"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "hsn\\.com\\/system\\/cb\\/admin\\/js\\/allow_cobrowse\\.js",
+            "cookies": 0.0000341,
+            "fingerprinting": 1,
+            "subdomains": [
+                "egain"
+            ],
+            "apis": {
+                "window.sessionStorage": 5,
+                "Navigator.prototype.userAgent": 5
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "af86457f8cebd5a76309d4689cbbdf67726d5d5d281a4c6dccda5058f6a17f85"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "garnethill.com",
+                "www.ballarddesigns.com",
+                "www.frontgate.com",
+                "www.garnethill.com",
+                "www.grandinroad.com"
+            ]
+        },
+        {
+            "rule": "hsn\\.com\\/system\\/Offers\\.egain",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "egain"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "bf7156c9e6cd66141b8013787c2c57bb4ffa22419e954839484d731e048d30b0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "garnethill.com",
+                "www.ballarddesigns.com",
+                "www.frontgate.com",
+                "www.garnethill.com",
+                "www.grandinroad.com"
+            ]
+        },
+        {
+            "rule": "hsn\\.com\\/system\\/cb\\/admin\\/getCBHostName\\.jsp",
+            "cookies": 0.0000341,
+            "fingerprinting": 0,
+            "subdomains": [
+                "egain"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "843d4c26ab79b8ea04917549dc85d3126cd2e1c972377182e009b8ebf25a3e07"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "garnethill.com",
+                "www.ballarddesigns.com",
+                "www.frontgate.com",
+                "www.garnethill.com",
+                "www.grandinroad.com"
+            ]
+        },
+        {
+            "rule": "hsn\\.com\\/system\\/cb\\/cs\\/checkSession\\.html",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "egain"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "garnethill.com",
+                "www.ballarddesigns.com",
+                "www.frontgate.com",
+                "www.garnethill.com",
+                "www.grandinroad.com"
+            ]
+        },
+        {
+            "rule": "hsn\\.com\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "qxhgql"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2051884bbcefd226f9027ccf9e317ee87b2b65855af3cdb561ca3ce3acb9d7a8"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "qvc.com",
+                "plus.qvc.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000613,
+    "topInitiators": [
+        {
+            "domain": "analytics-egain.com",
+            "prevalence": 0.8421052631578947
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.15789473684210525
+        }
+    ],
+    "types": {
+        "Script": 15,
+        "Document": 5,
+        "Fetch": 2
+    },
+    "nameservers": [
+        "a3-64.akam.net",
+        "a11-66.akam.net",
+        "a1-21.akam.net",
+        "a6-65.akam.net",
+        "a26-67.akam.net",
+        "a8-66.akam.net"
+    ]
+}

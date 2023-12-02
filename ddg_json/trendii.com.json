@@ -1,0 +1,130 @@
+{
+    "domain": "trendii.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "ingress",
+        "cdn",
+        "assets"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "trendii\\.com\\/ZXZlbnRz",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ingress"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "39f94024cbcf740958d8bb6e25095e33ee260776744698ff4e0d43a4454bf72f"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chipandco.com",
+                "www.bigw.com.au",
+                "www.elle.com.au",
+                "www.pillowtalk.com.au"
+            ]
+        },
+        {
+            "rule": "trendii\\.com\\/ZXZlbnRz",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ingress"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "chipandco.com",
+                "www.bigw.com.au",
+                "www.elle.com.au",
+                "www.pillowtalk.com.au"
+            ]
+        },
+        {
+            "rule": "trendii\\.com\\/pixel\\/main\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "cdn",
+                "assets"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.webkitTemporaryStorage": 2,
+                "window.sessionStorage": 1,
+                "window.localStorage": 1,
+                "URL.createObjectURL": 2,
+                "Performance.prototype.memory": 2,
+                "Navigator.prototype.language": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "Screen.prototype.availHeight": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.width": 2,
+                "Navigator.prototype.connection": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "917833c33d6426c8dda8326b826f426a92e67b7bd6a5c5c197e688a4b653b7a6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bigw.com.au",
+                "www.pillowtalk.com.au"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.4444444444444444
+        },
+        {
+            "domain": "appdynamics.com",
+            "prevalence": 0.3333333333333333
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2222222222222222
+        }
+    ],
+    "types": {
+        "Fetch": 4,
+        "Preflight": 4,
+        "Script": 2
+    },
+    "nameservers": [
+        "ns-1245.awsdns-27.org",
+        "ns-871.awsdns-44.net",
+        "ns-293.awsdns-36.com",
+        "ns-1856.awsdns-40.co.uk"
+    ]
+}

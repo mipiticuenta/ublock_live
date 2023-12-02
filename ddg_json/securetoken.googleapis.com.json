@@ -1,0 +1,101 @@
+{
+    "domain": "securetoken.googleapis.com",
+    "owner": {
+        "name": "Google LLC",
+        "displayName": "Google",
+        "privacyPolicy": "https://policies.google.com/privacy?hl=en&gl=us",
+        "url": "http://google.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000341,
+    "sites": 5,
+    "subdomains": [],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "securetoken\\.googleapis\\.com\\/v1\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cleanup.pictures",
+                "www.alarabiya.net",
+                "www.mage.space",
+                "www.newworld-map.com"
+            ]
+        },
+        {
+            "rule": "securetoken\\.googleapis\\.com\\/v1\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "30ca70a3e510dc983833dbc32ac589c1a2bdaf49b5585ee7acfcc3e6216e93b3"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cleanup.pictures",
+                "www.mage.space"
+            ]
+        },
+        {
+            "rule": "securetoken\\.googleapis\\.com\\/v1\\/token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "37ce20e62cd68402bf5cec061c32f8fa794c4baa1f0bc2a8f6cc0674897edb90"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "alarabiya.net",
+                "www.newworld-map.com"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN",
+        "Embedded Content"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9
+        },
+        {
+            "domain": "rollbar.com",
+            "prevalence": 0.1
+        }
+    ],
+    "types": {
+        "Preflight": 4,
+        "Fetch": 2,
+        "XHR": 2
+    },
+    "nameservers": []
+}

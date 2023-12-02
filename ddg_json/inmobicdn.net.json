@@ -1,0 +1,72 @@
+{
+    "domain": "inmobicdn.net",
+    "owner": {
+        "name": "InMobi Pte Ltd",
+        "displayName": "InMobi"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "i.l-dsp"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "inmobicdn\\.net\\/helix-cors\\/custom\\/js\\/idspPixel\\/v6\\/min\\.pixel\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 1,
+            "subdomains": [
+                "i.l-dsp"
+            ],
+            "apis": {
+                "Document.cookie getter": 3,
+                "Date.prototype.getTime": 3,
+                "URL.createObjectURL": 3,
+                "Document.cookie setter": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "289381acfcd1c9a0f23612d53ccad69713daa1f20a6bab88c0a41c496ca048d7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "iDSP_Cookie": {
+                    "ttl": 7776002,
+                    "length": 84,
+                    "prevalence": 0.000020436106512987146,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "zyn.com",
+                "us.zyn.com",
+                "www.betika.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000204,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 3
+    },
+    "nameservers": [
+        "ns1-05.azure-dns.com",
+        "ns2-05.azure-dns.net",
+        "ns3-05.azure-dns.org",
+        "ns4-05.azure-dns.info"
+    ]
+}

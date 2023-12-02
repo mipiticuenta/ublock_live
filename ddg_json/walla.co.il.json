@@ -1,0 +1,121 @@
+{
+    "domain": "walla.co.il",
+    "owner": {
+        "name": "Walla Communication Ltd.",
+        "displayName": "Walla Communication"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "partners"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "walla\\.co\\.il\\/public\\/6950_1ee1e84a2c2bf62f2adf_1ee1e84a2c2bf62f2adf_walla\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "partners"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f20aa3c1f32442a08428b3f922e78848c790294e3acb607322a235c1ad7fc9c6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "9tv.co.il",
+                "www.9tv.co.il"
+            ]
+        },
+        {
+            "rule": "walla\\.co\\.il\\/public\\/5785_6990edb44130741d99e1_6990edb44130741d99e1_walla\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 2,
+            "subdomains": [
+                "partners"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "window.innerHeight": 2,
+                "Document.cookie setter": 2,
+                "Event.prototype.timeStamp": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d8f67c15ef1136522d80b265ec52d3eea969960885ff6a99d40ccef0e3809c5e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "strip_step": {
+                    "ttl": 40959,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "9tv.co.il",
+                "www.9tv.co.il"
+            ]
+        },
+        {
+            "rule": "walla\\.co\\.il\\/public\\/main_05985e7677cdc8db0b21_05985e7677cdc8db0b21_walla\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "partners"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "window.innerHeight": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "292b4a78b4543296464f8ef93f60884150952ccdc3226502731eb9925a90030a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "9tv.co.il",
+                "www.9tv.co.il"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 6
+    },
+    "nameservers": [
+        "ns-1086.awsdns-07.org",
+        "ns-104.awsdns-13.com",
+        "ns-992.awsdns-60.net",
+        "ns-1595.awsdns-07.co.uk"
+    ]
+}

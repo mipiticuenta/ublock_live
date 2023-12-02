@@ -1,0 +1,101 @@
+{
+    "domain": "hpcnt.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "ingest.sentry.svc",
+        "event-gateway.platform-uw1"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "hpcnt\\.com\\/api\\/74\\/envelope\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ingest.sentry.svc"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b2901550ed955ff573aa181e1aff24d99cc8da025dc2cfead3fb9d854fb87721"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "azarlive.com",
+                "web.azarlive.com"
+            ]
+        },
+        {
+            "rule": "hpcnt\\.com\\/event-gateway\\/api\\/v1\\/event",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "event-gateway.platform-uw1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "azarlive.com",
+                "web.azarlive.com"
+            ]
+        },
+        {
+            "rule": "hpcnt\\.com\\/event-gateway\\/api\\/v1\\/event",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "event-gateway.platform-uw1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "azarlive.com",
+                "web.azarlive.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Fetch": 2,
+        "XHR": 2,
+        "Preflight": 2
+    },
+    "nameservers": [
+        "ns-807.awsdns-36.net",
+        "ns-1726.awsdns-23.co.uk",
+        "ns-28.awsdns-03.com",
+        "ns-1432.awsdns-51.org"
+    ]
+}

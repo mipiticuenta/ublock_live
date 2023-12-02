@@ -1,0 +1,90 @@
+{
+    "domain": "aircanada.com",
+    "owner": {
+        "name": "Air Canada",
+        "displayName": "Air Canada"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "www"
+    ],
+    "cnames": [],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "aircanada\\.com\\/&kp=1",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "window.localStorage": 2,
+                "Date.prototype.getTime": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dc7e85ee2e342eb094f65e1442d89b31159e07167d4c8e0d70f247615e68fbbc"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "aircanada.ca",
+                "www.aircanada.ca"
+            ]
+        },
+        {
+            "rule": "aircanada\\.com\\/rb_bf84021mlt",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "www"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "11ad891a1725864f25815345d801ddfc6d9e432f364c425618456cccc5335c12"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "gpuv": 0.000013624071008658098,
+                "dtCookie": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "aircanada.ca",
+                "www.aircanada.ca"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "adobedtm.com",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "XHR": 4
+    },
+    "nameservers": [
+        "a3-64.akam.net",
+        "a1-4.akam.net",
+        "a11-65.akam.net",
+        "a8-65.akam.net",
+        "a12-66.akam.net",
+        "a20-67.akam.net"
+    ]
+}

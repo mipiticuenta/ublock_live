@@ -1,0 +1,146 @@
+{
+    "domain": "open-analytics.se",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000409,
+    "sites": 6,
+    "subdomains": [
+        "tracker.hsb",
+        "tracker.msb",
+        "tracker.oph"
+    ],
+    "cnames": [
+        {
+            "original": "open-analytics.hrw.org",
+            "resolved": "open-analytics.se"
+        },
+        {
+            "original": "tracking.oph.fi",
+            "resolved": "tracker.oph.open-analytics.se"
+        },
+        {
+            "original": "tracking.webbanalys.msb.se",
+            "resolved": "tracker.msb.open-analytics.se"
+        }
+    ],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "open-analytics\\.se\\/js\\/container_MOFt5fSb\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "open-analytics.hrw.org",
+                    "resolved": "open-analytics.se"
+                }
+            ],
+            "responseHashes": [
+                "d1fc20bfa8dadc046b12e1a84fc51e982ad17ddc53222926b5d661e7e3a8746d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hrw.org",
+                "www.hrw.org"
+            ]
+        },
+        {
+            "rule": "open-analytics\\.se\\/matomo\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracker.hsb",
+                "tracker.msb",
+                "tracker.oph"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [
+                {
+                    "original": "open-analytics.hrw.org",
+                    "resolved": "open-analytics.se"
+                },
+                {
+                    "original": "tracking.webbanalys.msb.se",
+                    "resolved": "tracker.msb.open-analytics.se"
+                },
+                {
+                    "original": "tracking.oph.fi",
+                    "resolved": "tracker.oph.open-analytics.se"
+                }
+            ],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hrw.org",
+                "www.hrw.org",
+                "www.hsb.se",
+                "www.msb.se",
+                "www.oph.fi"
+            ]
+        },
+        {
+            "rule": "open-analytics\\.se\\/plugins\\/HeatmapSessionRecording\\/configs\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tracker.msb"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [
+                {
+                    "original": "open-analytics.hrw.org",
+                    "resolved": "open-analytics.se"
+                },
+                {
+                    "original": "tracking.webbanalys.msb.se",
+                    "resolved": "tracker.msb.open-analytics.se"
+                }
+            ],
+            "responseHashes": [
+                "3f2d1d78ad4a8cded61a9e4df52ddda19e07042ba1b92b1ff2cbc21fa0179476",
+                "a2db203572e166c0ea93bd52e0febc74045bd04242b83ccd669f50fb9593039a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hrw.org",
+                "www.hrw.org",
+                "www.msb.se"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 5,
+        "Ping": 5
+    },
+    "nameservers": [
+        "ns2.dnshost.net",
+        "ns1.dnshost.net"
+    ]
+}

@@ -1,0 +1,959 @@
+{
+    "domain": "bambuser.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000504,
+    "sites": 74,
+    "subdomains": [
+        "lcx-embed",
+        "lcx-embed-eu",
+        "lcx-widgets",
+        "lcx-widgets-eu",
+        "charlesandcolvard.one-to-one",
+        "svc-prod-us.liveshopping",
+        "cdn.liveshopping",
+        "f.liveshopping"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "bambuser\\.com\\/default\\/embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "lcx-embed",
+                "lcx-embed-eu"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "window.localStorage": 1
+            },
+            "sites": 17,
+            "prevalence": 0.000116,
+            "cnames": [],
+            "responseHashes": [
+                "c480a77c2bebbeb2febf1a4a781a75bc0160c8dc62a444edd74648309e0690fb",
+                "054e09af17d3ea9fa7565ebf8afd75b8087fb2edc848fcfa7981f16833f4aabd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "annagriffin.com",
+                "macys.com",
+                "www.baby-walz.de",
+                "www.bulova.com",
+                "www.charlesandcolvard.com",
+                "www.citizenwatch.com",
+                "www.gemstones.com",
+                "www.macys.com",
+                "www.narscosmetics.com",
+                "www.nestnewyork.com",
+                "www.net-a-porter.com",
+                "www.notino.co.uk",
+                "www.notino.de",
+                "www.notino.pl",
+                "www.pacsun.com",
+                "www.shiseido.com",
+                "www.theoutnet.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/embed\\.js",
+            "cookies": 0.000218,
+            "fingerprinting": 1,
+            "subdomains": [
+                "lcx-widgets",
+                "lcx-widgets-eu",
+                "charlesandcolvard.one-to-one"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 39,
+                "window.innerWidth": 40,
+                "PerformanceTiming.prototype.navigationStart": 38,
+                "window.sessionStorage": 36,
+                "Document.cookie getter": 34,
+                "Document.cookie setter": 32
+            },
+            "sites": 41,
+            "prevalence": 0.000279,
+            "cnames": [],
+            "responseHashes": [
+                "107d256b9977554737ffd3d492e6318b383fff7118fc18c243c68bb64685eb1f",
+                "ba28df7e8153e2159ad14151639ab9150e876b1187aa499d56f29e7b3820e821",
+                "9d1de750e8ab23897cf5817aa5dc352e788ef71f288fe2e914c44f70468e0f92"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "_bamls_usid": {
+                    "ttl": 31536005,
+                    "length": 36,
+                    "prevalence": 0.00021798513613852956,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "macys.com",
+                "www.macys.com",
+                "www.nestnewyork.com",
+                "cozyearth.com",
+                "www.shiseido.co.jp",
+                "eltamd.com",
+                "www.theoutnet.com",
+                "www.laithwaites.co.uk",
+                "www.calpaktravel.com",
+                "ba-sh.com",
+                "www.wildling.shoes",
+                "locations.bloomingdales.com",
+                "www.gemstones.com",
+                "www.cybex-online.com",
+                "www.hyundai.com",
+                "www.bosch-diy.com",
+                "www.qvc.com",
+                "www.wigs.com",
+                "www.outerknown.com",
+                "www.carlyjeanlosangeles.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/widget\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lcx-widgets",
+                "lcx-widgets-eu"
+            ],
+            "apis": {},
+            "sites": 39,
+            "prevalence": 0.000266,
+            "cnames": [],
+            "responseHashes": [
+                "bf193fd735060c73d669c920f410b3aa5a0c930b4fedb1eaee8f758115711fb3",
+                "be7fbbae4d2bc676ad2fceef0baa5e91233a24969079bd6f10e0d7df604b76b4"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_bamls_usid": 0.00021798513613852956
+            },
+            "exampleSites": [
+                "macys.com",
+                "www.macys.com",
+                "www.bloomingdales.com",
+                "www.pacsun.com",
+                "leroymerlin.co.za",
+                "www.gemstones.com",
+                "www.bosch-diy.com",
+                "www.hyundai.com",
+                "www.outerknown.com",
+                "ba-sh.com",
+                "www.carlyjeanlosangeles.com",
+                "longaberger.com",
+                "www.citizenwatch.com",
+                "locations.bloomingdales.com",
+                "shoppremiumoutlets.com",
+                "artbeads.com",
+                "www.toa.st",
+                "www.clarinsusa.com",
+                "www.net-a-porter.com",
+                "www.wildling.shoes"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/widgets\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "lcx-widgets",
+                "lcx-widgets-eu"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 32,
+                "window.innerWidth": 29,
+                "Navigator.prototype.vendor": 35
+            },
+            "sites": 39,
+            "prevalence": 0.000266,
+            "cnames": [],
+            "responseHashes": [
+                "791761ba6c06166b78aaf369f4625acdceb10b2e8dacb3c56d36c9f3072ce373",
+                "b1e782b67cb93e9437ea0e78fac07139eee8a9e7e8df7d6ca75f6f7c80c39331"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "macys.com",
+                "www.macys.com",
+                "www.wildling.shoes",
+                "www.express.com",
+                "www.bosch-diy.com",
+                "www.clarinsusa.com",
+                "cozyearth.com",
+                "www.laithwaites.co.uk",
+                "www.fossil.com",
+                "bloomingdales.com",
+                "www.net-a-porter.com",
+                "www.bulova.com",
+                "shoppremiumoutlets.com",
+                "www.windsorstore.com",
+                "www.shiseido.com",
+                "www.hyundai.com",
+                "www.galeria.de",
+                "www.hyundaiusa.com",
+                "www.premiumoutlets.com",
+                "www.calpaktravel.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/7004fe14\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lcx-widgets",
+                "lcx-widgets-eu"
+            ],
+            "apis": {},
+            "sites": 38,
+            "prevalence": 0.000259,
+            "cnames": [],
+            "responseHashes": [
+                "5cd87d4b3f829cc8a95eab28737afc1b7d626600e06e6772a91dc967f6577433"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.macys.com",
+                "ba-sh.com",
+                "www.wigs.com",
+                "www.gemstones.com",
+                "www.theoutnet.com",
+                "www.hyundaiusa.com",
+                "shoppremiumoutlets.com",
+                "www.outerknown.com",
+                "www.qvc.com",
+                "www.shiseido.com",
+                "www.express.com",
+                "www.wildling.shoes",
+                "www.fossil.com",
+                "www.premiumoutlets.com",
+                "artbeads.com",
+                "www.shiseido.co.jp",
+                "www.cybex-online.com",
+                "www.laithwaites.co.uk",
+                "leroymerlin.co.za",
+                "www.clarinsusa.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/5f1da2ba\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "lcx-widgets",
+                "lcx-widgets-eu"
+            ],
+            "apis": {
+                "window.innerWidth": 33
+            },
+            "sites": 38,
+            "prevalence": 0.000259,
+            "cnames": [],
+            "responseHashes": [
+                "922082bfc728630c5220413f5c3f362ed7c45e321260411c2fe2cd21ff0879d3"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.macys.com",
+                "www.pacsun.com",
+                "shoppremiumoutlets.com",
+                "www.citizenwatch.com",
+                "www.galeria.de",
+                "www.net-a-porter.com",
+                "leroymerlin.co.za",
+                "www.clarinsusa.com",
+                "www.calpaktravel.com",
+                "bloomingdales.com",
+                "www.bulova.com",
+                "www.express.com",
+                "ba-sh.com",
+                "www.windsorstore.com",
+                "eltamd.com",
+                "www.hyundaiusa.com",
+                "www.premiumoutlets.com",
+                "www.wildling.shoes",
+                "www.bloomingdales.com",
+                "www.theoutnet.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/b1684578\\.bundle\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lcx-widgets",
+                "lcx-widgets-eu"
+            ],
+            "apis": {},
+            "sites": 37,
+            "prevalence": 0.000252,
+            "cnames": [],
+            "responseHashes": [
+                "3df3c5e83c1d9f689f73d4ef41b17aeb87a5a74b06f7b5a75ce3712b7ca72394"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.macys.com",
+                "www.laithwaites.co.uk",
+                "www.wigs.com",
+                "bloomingdales.com",
+                "leroymerlin.co.za",
+                "eltamd.com",
+                "www.windsorstore.com",
+                "www.calpaktravel.com",
+                "www.wildling.shoes",
+                "cozyearth.com",
+                "www.shiseido.com",
+                "www.premiumoutlets.com",
+                "www.hyundaiusa.com",
+                "www.shiseido.co.jp",
+                "www.hyundai.com",
+                "www.bloomingdales.com",
+                "www.cybex-online.com",
+                "shoppremiumoutlets.com",
+                "www.express.com",
+                "ba-sh.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/aae01ce5e85559210f1db97609d411ea\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lcx-widgets",
+                "lcx-widgets-eu"
+            ],
+            "apis": {},
+            "sites": 32,
+            "prevalence": 0.000218,
+            "cnames": [],
+            "responseHashes": [
+                "e458fde2b6bca16ceea6c719dde735764efaadfc9a5c526febd0658b3394ea6e"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "www.macys.com",
+                "www.windsorstore.com",
+                "www.fossil.com",
+                "www.cybex-online.com",
+                "www.carlyjeanlosangeles.com",
+                "www.shiseido.com",
+                "www.bloomingdales.com",
+                "www.hyundai.com",
+                "leroymerlin.co.za",
+                "www.citizenwatch.com",
+                "www.premiumoutlets.com",
+                "www.theoutnet.com",
+                "www.shiseido.co.jp",
+                "longaberger.com",
+                "www.express.com",
+                "www.bulova.com",
+                "www.hyundaiusa.com",
+                "www.calpaktravel.com",
+                "www.laithwaites.co.uk",
+                "www.nestnewyork.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/widgets\\/floating\\/VapIwLr7PJNplZ2vr6L6",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "svc-prod-us.liveshopping"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "ec21961be36ac0f52f0e0ef8cd6521c5e21af514348e30f9b8f2a56ef4b52047"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bloomingdales.com",
+                "locations.bloomingdales.com",
+                "www.bloomingdales.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/27cf00f8a548649918a59037231567a2\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lcx-widgets"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "fba2b70864e74ac1f2e803757e0929ee17dd249976cdb26cf80e3eafd36955a5"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "leroymerlin.co.za",
+                "longaberger.com",
+                "shoppremiumoutlets.com",
+                "www.laithwaites.co.uk",
+                "www.nestnewyork.com",
+                "www.premiumoutlets.com",
+                "www.shiseido.com",
+                "www.wigs.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/macys\\/embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "lcx-embed"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 1
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c480a77c2bebbeb2febf1a4a781a75bc0160c8dc62a444edd74648309e0690fb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "macys.com",
+                "www.macys.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/widgets\\/floating\\/M9fhe0O9LG9O7Rh6VSAp",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "svc-prod-us.liveshopping"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f744e1a9ba52d8df8b827f3543f8ec794a06fd4c9cf8432395ee5096d8d24442"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shoppremiumoutlets.com",
+                "www.premiumoutlets.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/widgets\\/floating\\/48w6z0Zxwzs0tUqmjhiv",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "svc-prod-us.liveshopping"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "5666fbfac44db4b4af0db22969d1013fd13a7b10b12b77d570ef5135224363dc"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bulova.com",
+                "www.bulova.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/charles-and-colvard\\/embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "lcx-embed"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "charlesandcolvard.com",
+                "www.charlesandcolvard.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/widgets\\/floating\\/OTAD1992SkH2e9OGkY9N",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "svc-prod-us.liveshopping"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "b0cb955af9798ceae66564724ba7f59e3bc28d86f2b2abcb83ac01cbf293f3aa"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "citizenwatch.com",
+                "www.citizenwatch.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/widgets\\/floating\\/roEBqqzacv9ycnzCMafz",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "svc-prod-us.liveshopping"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "49f7e5cd39c8e6b13197b406a27921c7e1e5494a6ca618db22ab124dd5226d45"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "express.com",
+                "www.express.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/metrics\\/bambuser\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn.liveshopping"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "44e12c6c7765053530e424581c240a562f79c2195e263566458973c434877f6a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fendi.com",
+                "www.fendi.com",
+                "www.guerlain.com",
+                "www.guess.com",
+                "www.ikea.gr",
+                "www.net-a-porter.com",
+                "www.notino.co.uk",
+                "www.notino.de",
+                "www.notino.pl",
+                "www.swedol.se",
+                "www.thebodyshop.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/google\\.firestore\\.v1\\.Firestore\\/Listen\\/channel",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "f.liveshopping"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gemstones.com",
+                "www.gemstones.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/widgets\\/floating\\/xZmrc8e05zJHzE1klpok",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "svc-prod-us.liveshopping"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "dd78cb05fdd0506f78e7a5060edf434d213f18c4b4dd12ea1618d226c6f10252"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "hyundai.com",
+                "www.hyundaiusa.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/nars\\/embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "lcx-embed"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "narscosmetics.com",
+                "www.narscosmetics.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/net-a-porter\\/embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "lcx-embed"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c480a77c2bebbeb2febf1a4a781a75bc0160c8dc62a444edd74648309e0690fb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "net-a-porter.com",
+                "www.net-a-porter.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/widgets\\/floating\\/07Bqk0DKsHmwg7JKAvmv",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "svc-prod-us.liveshopping"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "126a53c812ba030c59b20f0305f7bf91ff05c6b773df93d64f898906078ccac7"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "net-a-porter.com",
+                "www.net-a-porter.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/notino\\/embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "lcx-embed"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 3
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "c480a77c2bebbeb2febf1a4a781a75bc0160c8dc62a444edd74648309e0690fb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "notino.co.uk",
+                "www.notino.de",
+                "www.notino.pl"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/widgets\\/floating\\/9pFNlJxm9vy9FKGL0lOE",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "svc-prod-us.liveshopping"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "outerknown.com",
+                "www.outerknown.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/pacsun\\/embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "lcx-embed"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pacsun.com",
+                "www.pacsun.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/widgets\\/floating\\/EW6O4US7PnnSgQyks7gn",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "svc-prod-us.liveshopping"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a617d24d9662595df169acbdf6fd917a5704d01e987e20cb6d2d9c974be145a6"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "pacsun.com",
+                "www.pacsun.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/shiseido\\/embed\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "lcx-embed"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c480a77c2bebbeb2febf1a4a781a75bc0160c8dc62a444edd74648309e0690fb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shiseido.com",
+                "www.shiseido.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/widgets\\/floating\\/i9qrH0o7b2oFVvCcDBrU",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "svc-prod-us.liveshopping"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "32e218ff5bd1ebeeff4ed5212d1533d8563761843e6dd50f0504d870c3b12bba"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "shiseido.com",
+                "www.shiseido.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/widgets\\/floating\\/cz9wZp1biZ5kdPWOxepv",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "svc-prod-us.liveshopping"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "theoutnet.com",
+                "www.theoutnet.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/widgets\\/floating\\/vZiIcL2ZsFMvsxrAN5n5",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "svc-prod-us.liveshopping"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e82d2478a87215e980ca708539b9395c0b43f99063311a068d5e424787f01058"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "wigs.com",
+                "www.wigs.com"
+            ]
+        },
+        {
+            "rule": "bambuser\\.com\\/widgets\\/floating\\/A3IxltQgQ2N5OyIEFv3M",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "svc-prod-us.liveshopping"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a593f1b9678cb839906741f84488f1a933dbea60a9c695c2cca0ddddee7648b4"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "windsorstore.com",
+                "www.windsorstore.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0003,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6964285714285714
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.10714285714285714
+        },
+        {
+            "domain": "tiqcdn.com",
+            "prevalence": 0.05357142857142857
+        },
+        {
+            "domain": "notinoimg.com",
+            "prevalence": 0.05357142857142857
+        },
+        {
+            "domain": "yottaa.com",
+            "prevalence": 0.03571428571428571
+        },
+        {
+            "domain": "macysassets.com",
+            "prevalence": 0.023809523809523808
+        },
+        {
+            "domain": "hyundaiusa.com",
+            "prevalence": 0.011904761904761904
+        },
+        {
+            "domain": "cookielaw.org",
+            "prevalence": 0.011904761904761904
+        },
+        {
+            "domain": "tagcommander.com",
+            "prevalence": 0.005952380952380952
+        }
+    ],
+    "types": {
+        "Script": 236,
+        "Document": 39,
+        "Image": 40,
+        "Fetch": 29
+    },
+    "nameservers": [
+        "ns-1187.awsdns-20.org",
+        "ns-1541.awsdns-00.co.uk",
+        "ns-81.awsdns-10.com",
+        "ns-860.awsdns-43.net"
+    ]
+}

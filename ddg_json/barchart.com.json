@@ -1,0 +1,221 @@
+{
+    "domain": "barchart.com",
+    "owner": {
+        "name": "Barchart.com Inc",
+        "displayName": "Barchart.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000749,
+    "sites": 11,
+    "subdomains": [
+        "leeagrimedia.websol",
+        "valueline-dev.websol",
+        "agweek.websol",
+        "cattlerange.websol",
+        "ondemand.websol",
+        "farmjournal.websol",
+        "shared.websol",
+        "globeandmail.pl",
+        "alerts-management-tgam.aws",
+        "jerq-aggregator-tgam.aws"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "barchart\\.com\\/",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "leeagrimedia.websol",
+                "valueline-dev.websol",
+                "agweek.websol",
+                "cattlerange.websol"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "f35519c6c7edd491c46312d6f3b50fce1ab14b31fc28608ced125aaf85bb4d05",
+                "0800973f549bfe12782ac0bfced4f14f3136b3a5e3a7a87dfdf40be0be678f10"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "agupdate.com",
+                "valueline.com",
+                "www.agweek.com",
+                "www.cattlerange.com"
+            ]
+        },
+        {
+            "rule": "barchart\\.com\\/getQuote\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ondemand.websol"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "8f48bb3bd0211916cd85bf66416c58913637533f3a80f722acac55f08cfb8d26"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "tradingcharts.com",
+                "futures.tradingcharts.com"
+            ]
+        },
+        {
+            "rule": "barchart\\.com\\/",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "farmjournal.websol"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "36ffcb5b817b5adafa8c8a5c293c073533059a45a75d3b394d9fc4adf2232d48"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "agweb.com",
+                "www.drovers.com"
+            ]
+        },
+        {
+            "rule": "barchart\\.com\\/images\\/sm_up\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "shared.websol"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4ea90cece4bd9acbf304a5e04ff6dcd58b2cc10422a257ea8a433e9fc5a94843"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "agweb.com",
+                "www.drovers.com"
+            ]
+        },
+        {
+            "rule": "barchart\\.com\\/css\\/barchart-bootstrap\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "shared.websol"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d49c41e8084b9ffc5866aaf137edda1a9c9115524913133346076b6075bd8e9f"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "agweek.com",
+                "www.cattlerange.com"
+            ]
+        },
+        {
+            "rule": "barchart\\.com\\/module\\/dataTable\\.json",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "globeandmail.pl"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "719a9e3e3abdfbe7763091c5791cbcba35a2698b29c3b1a4c20b138a36e39fb1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "theglobeandmail.com",
+                "www.theglobeandmail.com"
+            ]
+        },
+        {
+            "rule": "barchart\\.com\\/socket\\.io\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "alerts-management-tgam.aws",
+                "jerq-aggregator-tgam.aws"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "WebSocket",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "theglobeandmail.com",
+                "www.theglobeandmail.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000477,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6
+        },
+        {
+            "domain": "db5t31uruoasx.cloudfront.net",
+            "prevalence": 0.24
+        },
+        {
+            "domain": "cloudflare.com",
+            "prevalence": 0.12
+        },
+        {
+            "domain": "osano.com",
+            "prevalence": 0.04
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "XHR": 6,
+        "Image": 2,
+        "Stylesheet": 2,
+        "WebSocket": 2
+    },
+    "nameservers": [
+        "ns-1489.awsdns-58.org",
+        "ns-171.awsdns-21.com",
+        "ns-886.awsdns-46.net",
+        "ns-1993.awsdns-57.co.uk"
+    ]
+}

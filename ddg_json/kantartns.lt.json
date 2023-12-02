@@ -1,0 +1,107 @@
+{
+    "domain": "kantartns.lt",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "lijuke.panel",
+        "lisslpagestat.panel"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "kantartns\\.lt\\/bug\\/pic\\.gif",
+            "cookies": 0.00000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lijuke.panel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "70b0d9c921b2a53556b56c289104d937fb34f23ab6827ad295ce22e1674cf51a"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lrytas.lt",
+                "www.lrytas.lt"
+            ]
+        },
+        {
+            "rule": "kantartns\\.lt\\/viewability\\/cm\\.html",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "lijuke.panel"
+            ],
+            "apis": {
+                "window.localStorage": 2,
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "baaeffa2122732851a41ef5026d0ddba838815504eddac190408247f46201325"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lrytas.lt",
+                "www.lrytas.lt"
+            ]
+        },
+        {
+            "rule": "kantartns\\.lt\\/pagestat\\/PageStatEntry",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "lisslpagestat.panel"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "147b1111edda7e2c2f9d672b5649de2f2dc5d5cb9dda7905198aa883a4273013"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "lrytas.lt",
+                "www.lrytas.lt"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Image": 2,
+        "Document": 2,
+        "XHR": 2
+    },
+    "nameservers": [
+        "u3.domains.lt",
+        "u2.domains.lt",
+        "u1.domains.lt",
+        "u4.domains.lt",
+        "ns2.domreg.lt"
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "domain": "rakuten-it.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "tag-server.cais.public",
+        "media.cais.public"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "rakuten-it\\.com\\/chatskins\\/launch\\/inqChatLaunch10007358\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "tag-server.cais.public"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "1308aa2db9854f1848e93dc7af479dd09c5eddea5f5d0c66a61cf81e86b142c4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "network.mobile.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten-it\\.com\\/media\\/launch\\/chatLoader\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "media.cais.public"
+            ],
+            "apis": {
+                "window.name": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7a7f05da70c7d8718a7414231c9ba49e58938d87e12dd4a4f12ebe6f7f143b5b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "network.mobile.rakuten.co.jp"
+            ]
+        },
+        {
+            "rule": "rakuten-it\\.com\\/tagserver\\/incrementality\\/onEvent",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "tag-server.cais.public"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "rakuten.co.jp",
+                "network.mobile.rakuten.co.jp"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.5
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.5
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "XHR": 2
+    },
+    "nameservers": [
+        "ns02.rakuten.co.jp",
+        "ns01.rakuten.co.jp",
+        "ns06.rakuten.co.jp",
+        "ns05.rakuten.co.jp",
+        "ns04.rakuten.co.jp",
+        "ns03.rakuten.co.jp"
+    ]
+}

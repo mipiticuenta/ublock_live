@@ -1,0 +1,182 @@
+{
+    "domain": "gsitrix.com",
+    "owner": {
+        "name": "GP One GmbH",
+        "displayName": "GP One"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "p",
+        "o"
+    ],
+    "cnames": [],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "gsitrix\\.com\\/page\\/",
+            "cookies": 0.0000272,
+            "fingerprinting": 3,
+            "subdomains": [
+                "p"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.hardwareConcurrency": 4,
+                "Navigator.prototype.platform": 4,
+                "Navigator.prototype.mediaDevices": 4,
+                "Date.prototype.getTime": 4,
+                "Screen.prototype.pixelDepth": 4,
+                "Screen.prototype.colorDepth": 4,
+                "Screen.prototype.width": 4,
+                "Screen.prototype.height": 4,
+                "Screen.prototype.availWidth": 4,
+                "Screen.prototype.availHeight": 4,
+                "Navigator.prototype.cookieEnabled": 4,
+                "Navigator.prototype.appName": 4,
+                "Navigator.prototype.appCodeName": 4,
+                "Navigator.prototype.appVersion": 4,
+                "Navigator.prototype.language": 4,
+                "Navigator.prototype.javaEnabled": 4,
+                "Navigator.prototype.plugins": 4,
+                "Navigator.prototype.mimeTypes": 4,
+                "window.innerWidth": 4,
+                "window.innerHeight": 4,
+                "window.sessionStorage": 4,
+                "MediaDevices.prototype.enumerateDevices": 4,
+                "RTCPeerConnection.prototype.constructor": 4,
+                "WebGLRenderingContext.prototype.getExtension": 4,
+                "WebGLRenderingContext.prototype.getParameter": 4,
+                "Navigator.prototype.webdriver": 4,
+                "window.outerHeight": 4,
+                "window.outerWidth": 4,
+                "Document.cookie getter": 4,
+                "window.localStorage": 4,
+                "RTCPeerConnectionIceEvent.prototype.candidate": 4
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "0a419a9566f0f3bc5d1a49646d3a9845c55dc6cc1f471ed47621d8282ba31431",
+                "3e56a9bdbcc4b133dddb890c8d1ca0f608456b926fd335bfbe508168f682f971",
+                "779d21840440ebddf0d70cd3e6612bbd727e50c63dd26cfe141698009df37e28",
+                "d064e768abc87670dc24306cf73bee95591b407ab94d8abebdd35dc522379729"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "france-mineraux.fr",
+                "www.france-mineraux.fr",
+                "www.gartentraum.de",
+                "www.mirapodo.de",
+                "www.mytoys.de"
+            ]
+        },
+        {
+            "rule": "gsitrix\\.com\\/sys\\.php",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "o"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 4,
+                "Navigator.prototype.vendor": 4,
+                "Navigator.prototype.platform": 4
+            },
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "150c271bc18110a455847c8a1a9977d49c500e5303bc63ed79af11ef688ad1c6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "france-mineraux.fr",
+                "www.gartentraum.de",
+                "www.mirapodo.de",
+                "www.mytoys.de"
+            ]
+        },
+        {
+            "rule": "gsitrix\\.com\\/js\\/ax\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "p"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "france-mineraux.fr",
+                "www.france-mineraux.fr",
+                "www.gartentraum.de",
+                "www.mirapodo.de",
+                "www.mytoys.de"
+            ]
+        },
+        {
+            "rule": "gsitrix\\.com\\/tk\\/pet\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "p"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "b731e14ae370f741f28bcd548a3a97fc200a57edbde28b3b75855b73782d18f4",
+                "91e7a51c51e6c5645fd92e989b14d915b58c6e7d0d4e670f7aef7b55c0391162",
+                "f21953a4963ffe96e6be5c9a14c43eeb2809f4e475f88afe5e0356b262ec3b49"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "france-mineraux.fr",
+                "www.gartentraum.de",
+                "www.mirapodo.de",
+                "www.mytoys.de"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.75
+        },
+        {
+            "domain": "dwin1.com",
+            "prevalence": 0.25
+        }
+    ],
+    "types": {
+        "Script": 13,
+        "XHR": 5
+    },
+    "nameservers": [
+        "ns2.ntdns.de",
+        "ns3.ntdns.de",
+        "ns1.ntdns.de"
+    ]
+}

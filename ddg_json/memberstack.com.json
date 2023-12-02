@@ -1,0 +1,167 @@
+{
+    "domain": "memberstack.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000613,
+    "sites": 9,
+    "subdomains": [
+        "static",
+        "client"
+    ],
+    "cnames": [],
+    "fingerprinting": 2,
+    "resources": [
+        {
+            "rule": "memberstack\\.com\\/scripts\\/v1\\/memberstack\\.js",
+            "cookies": 0.0000204,
+            "fingerprinting": 2,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 6,
+                "Navigator.prototype.userAgent": 6,
+                "window.localStorage": 7,
+                "Document.cookie getter": 6,
+                "window.sessionStorage": 6,
+                "Document.cookie setter": 3
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "74e388e82463d47364a5e771afd7f5e05fabe2085015cada1994082fec5a28ef"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dimensions.com",
+                "www.dimensions.com",
+                "www.gardenista.com",
+                "www.marinalife.com",
+                "www.mtlblog.com",
+                "www.prizepicks.com",
+                "www.welltheory.com"
+            ]
+        },
+        {
+            "rule": "memberstack\\.com\\/app-member",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "905665f16460630c888105a3605accc81d4b97cdb5943beb7b30b8821a139910",
+                "370bd9095c38cd2541035c7bef8daf4d554b91fe1e247a52b90f4957a7d61d2e",
+                "00b8a807bc0b85d42ee8c2d2780ed6f178655160d766be0bc6b92c5e6b3ab36a",
+                "399596a87a4d33fed12555e71465a22c8c5ae6086ed8d9e549d67b3326f2fbac",
+                "d8892762824f0d027fedc79996d46090bc0c6942325a96c87722d6bf19a2677c"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dimensions.com",
+                "www.dimensions.com",
+                "www.gardenista.com",
+                "www.marinalife.com",
+                "www.prizepicks.com",
+                "www.welltheory.com"
+            ]
+        },
+        {
+            "rule": "memberstack\\.com\\/app-member",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dimensions.com",
+                "www.dimensions.com",
+                "www.gardenista.com",
+                "www.marinalife.com",
+                "www.prizepicks.com",
+                "www.welltheory.com"
+            ]
+        },
+        {
+            "rule": "memberstack\\.com\\/member",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "ba5f3ea40e95f49bce11942f375ebd3882eb837976eda5c0cb78b9b99ca7b485"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gardenista.com",
+                "www.gardenista.com",
+                "www.welltheory.com"
+            ]
+        },
+        {
+            "rule": "memberstack\\.com\\/member",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "client"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "gardenista.com",
+                "www.gardenista.com",
+                "www.welltheory.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000272,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 7,
+        "XHR": 9,
+        "Preflight": 9
+    },
+    "nameservers": [
+        "nick.ns.cloudflare.com",
+        "beth.ns.cloudflare.com"
+    ]
+}

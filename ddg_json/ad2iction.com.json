@@ -1,0 +1,264 @@
+{
+    "domain": "ad2iction.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "content",
+        "cm",
+        "ads",
+        "openapi"
+    ],
+    "cnames": [],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "ad2iction\\.com\\/lo\\/cdp\\/ad2tracker\\.min\\.js",
+            "cookies": 0.00000681,
+            "fingerprinting": 2,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 1,
+                "Navigator.prototype.userAgent": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "Navigator.prototype.platform": 2,
+                "Navigator.prototype.cookieEnabled": 2,
+                "Navigator.prototype.vendor": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Screen.prototype.pixelDepth": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "048059195e6ff6bf18175dc652e07cc61b8b0b02194af51b41fad16ed7eb8f65"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "ad2session": {
+                    "ttl": 1801,
+                    "length": 36,
+                    "prevalence": 0.000006812035504329049,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "icook.tw",
+                "www.lifehacker.jp"
+            ]
+        },
+        {
+            "rule": "ad2iction\\.com\\/lo\\/cdp\\/ad2tracker\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3ad9b5c624fa3adf9afadd5a9fa032edbecdedeae8d4fab54f1955965f853802"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "icook.tw",
+                "www.lifehacker.jp"
+            ]
+        },
+        {
+            "rule": "ad2iction\\.com\\/fj\\/ad2fp\\.esm\\.min\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 3,
+            "subdomains": [
+                "content"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.vendor": 2,
+                "OfflineAudioContext.prototype.constructor": 2,
+                "Screen.prototype.availTop": 2,
+                "Screen.prototype.width": 2,
+                "Screen.prototype.availWidth": 2,
+                "Screen.prototype.availLeft": 2,
+                "Screen.prototype.height": 2,
+                "Screen.prototype.availHeight": 2,
+                "Navigator.prototype.language": 2,
+                "Navigator.prototype.languages": 2,
+                "Screen.prototype.colorDepth": 2,
+                "Navigator.prototype.deviceMemory": 2,
+                "Navigator.prototype.hardwareConcurrency": 2,
+                "Intl.DateTimeFormat.prototype.resolvedOptions": 2,
+                "window.sessionStorage": 2,
+                "window.localStorage": 2,
+                "window.indexedDB": 2,
+                "Navigator.prototype.platform": 2,
+                "AudioBuffer.prototype.getChannelData": 2,
+                "Navigator.prototype.plugins": 2,
+                "CanvasRenderingContext2D.prototype.isPointInPath": 2,
+                "HTMLCanvasElement.prototype.toDataURL": 2,
+                "Navigator.prototype.maxTouchPoints": 2,
+                "Document.cookie setter": 2,
+                "WebGLRenderingContext.prototype.getExtension": 2,
+                "WebGLRenderingContext.prototype.getParameter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3567cd4eec6d4bf00bec65b85c291084a6361ad4a13dfc7509673f22f7071292"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "cookietest": {
+                    "ttl": -1698844434,
+                    "length": 1,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                },
+                "ad2udid": {
+                    "ttl": 8639913622,
+                    "length": 55,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 0.5
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "icook.tw",
+                "www.lifehacker.jp"
+            ]
+        },
+        {
+            "rule": "ad2iction\\.com\\/api\\/getID\\.php",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "3908c695fb96e27988d14718dba2d4454f81b5f55292cec1c32e94482baa6551"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "icook.tw",
+                "www.lifehacker.jp"
+            ]
+        },
+        {
+            "rule": "ad2iction\\.com\\/html\\/cookit\\.php",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "ads"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "25b4ecfd3a740f29d76fe930a4cec9d41afa0cfd2bafa70ca4051bd3d5395d74"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "ad2udid": 0.000020436106512987146
+            },
+            "exampleSites": [
+                "icook.tw",
+                "www.lifehacker.jp"
+            ]
+        },
+        {
+            "rule": "ad2iction\\.com\\/ipLocation\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "openapi"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d60c30bef166d3974072dc5c0a7569f50fcb8b622ee344bc1c72e67fe868a792"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "icook.tw",
+                "www.lifehacker.jp"
+            ]
+        },
+        {
+            "rule": "ad2iction\\.com\\/api\\/log\\.php",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cm"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Ping",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "icook.tw",
+                "www.lifehacker.jp"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "icook.network",
+            "prevalence": 0.625
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.375
+        }
+    ],
+    "types": {
+        "Script": 4,
+        "Document": 2,
+        "Fetch": 2,
+        "Image": 2,
+        "XHR": 2,
+        "Ping": 2
+    },
+    "nameservers": [
+        "matt.ns.cloudflare.com",
+        "ruth.ns.cloudflare.com"
+    ]
+}

@@ -1,0 +1,166 @@
+{
+    "domain": "orderprotection.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000545,
+    "sites": 8,
+    "subdomains": [
+        "back",
+        "cdn"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "orderprotection\\.com\\/insurance",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "back"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7b955ef4879c5d2e8b8c87be372db26c1e05cf651cc4a24632cdab4f36da0e5c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "arielrider.com",
+                "www.hurley.com"
+            ]
+        },
+        {
+            "rule": "orderprotection\\.com\\/insurance",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "back"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "arielrider.com",
+                "floydhome.com",
+                "mountaincrestgardens.com",
+                "tryarmra.com",
+                "us.ohpolly.com",
+                "www.hurley.com"
+            ]
+        },
+        {
+            "rule": "orderprotection\\.com\\/insurance",
+            "cookies": 0.0000272,
+            "fingerprinting": 0,
+            "subdomains": [
+                "back"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "87c34ec5c9a4a6a229eeaec36f78b88ac99559e447e15fca7487b01cfe86d5a7",
+                "ee3ec3fbe9052beb1f8edbc1407675e50585d74e384ab76b6f8ddd37e851ab8c",
+                "1a24f3f838bfb652b74460fd37328f7484cbe0e0f990e25df6e1550e718e95a4"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "floydhome.com",
+                "mountaincrestgardens.com",
+                "tryarmra.com",
+                "us.ohpolly.com"
+            ]
+        },
+        {
+            "rule": "orderprotection\\.com\\/widget\\/shopify\\/5\\.3\\.4\\/style\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "144b48ab527fa19f5f59465d65116e8746f4061dbbbed6a7e926be0f72cad3e8"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ohpolly.com",
+                "us.ohpolly.com"
+            ]
+        },
+        {
+            "rule": "orderprotection\\.com\\/widget\\/shopify\\/5\\.3\\.4\\/orderprotection\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Navigator.prototype.product": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Document.cookie getter": 2,
+                "window.sessionStorage": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a51f8b3892e1f95e9ae37015cce892c7c9d12e8913adc7cc9e45e280cf787cfd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ohpolly.com",
+                "us.ohpolly.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000545,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.65
+        },
+        {
+            "domain": "skio.com",
+            "prevalence": 0.3
+        },
+        {
+            "domain": "bigcommerce.com",
+            "prevalence": 0.05
+        }
+    ],
+    "types": {
+        "Fetch": 2,
+        "Preflight": 6,
+        "XHR": 4,
+        "Stylesheet": 2,
+        "Script": 2
+    },
+    "nameservers": [
+        "houston.ns.cloudflare.com",
+        "teagan.ns.cloudflare.com"
+    ]
+}

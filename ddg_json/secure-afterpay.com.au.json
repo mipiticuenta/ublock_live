@@ -1,0 +1,81 @@
+{
+    "domain": "secure-afterpay.com.au",
+    "owner": {
+        "name": "Touch Networks Pty Ltd",
+        "displayName": "Touch Networks"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "static"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "secure-afterpay\\.com\\.au\\/shopify-afterpay-javascript\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "a06905bcc91c33afe691adba14c247b39974fb233f71c1e7d7e36d884696c592"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "100percentpure.com",
+                "www.100percentpure.com",
+                "www.freebirdstores.com"
+            ]
+        },
+        {
+            "rule": "secure-afterpay\\.com\\.au\\/banner-large\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "static"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "2a958682f6abb13e9483a50a4734781679695b9ee81c0a33cd8c16ed1a69c4c6"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dymocks.com.au",
+                "www.macpac.com.au"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.00000681,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 3,
+        "Image": 2
+    },
+    "nameservers": [
+        "logan.ns.cloudflare.com",
+        "pat.ns.cloudflare.com"
+    ]
+}

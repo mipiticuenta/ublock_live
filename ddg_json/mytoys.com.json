@@ -1,0 +1,58 @@
+{
+    "domain": "mytoys.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000136,
+    "sites": 2,
+    "subdomains": [
+        "session-service.pftwo-prod.aws"
+    ],
+    "cnames": [],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "mytoys\\.com\\/session\\/preparecookies",
+            "cookies": 0.0000204,
+            "fingerprinting": 0,
+            "subdomains": [
+                "session-service.pftwo-prod.aws"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "45ee8bb0d2591e7a8b532f75fb58a1dd5353be17843e816ca9bcdb913a9e70d0",
+                "dbd47f6749a4f3b20123e06143d5a0727c9c501a74da9b9484cd8ea0660cabb0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mirapodo.de",
+                "www.mirapodo.de",
+                "www.mytoys.de"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 3
+    },
+    "nameservers": [
+        "ns9.managed-ip.com",
+        "ns10.managed-ip.com",
+        "ns11.managed-ip.info",
+        "ns12.managed-ip.info"
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "domain": "smpl.services",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.00000681,
+    "sites": 1,
+    "subdomains": [
+        "netzkino.eu1"
+    ],
+    "cnames": [
+        {
+            "original": "data.netzkino.de",
+            "resolved": "netzkino.eu1.smpl.services"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "smpl\\.services\\/netzkino\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "netzkino.eu1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "data.netzkino.de",
+                    "resolved": "netzkino.eu1.smpl.services"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "netzkino.de",
+                "www.netzkino.de"
+            ]
+        },
+        {
+            "rule": "smpl\\.services\\/netzkino\\/graphql",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "netzkino.eu1"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "data.netzkino.de",
+                    "resolved": "netzkino.eu1.smpl.services"
+                }
+            ],
+            "responseHashes": [
+                "95d75e729939a415793a0476794bd495d70bfbc788a80fda0836bb1af6b49650"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "netzkino.de",
+                "www.netzkino.de"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "d3owf1x34yi7gd.cloudfront.net",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Preflight": 2,
+        "Fetch": 2
+    },
+    "nameservers": [
+        "edna.ns.cloudflare.com",
+        "walt.ns.cloudflare.com"
+    ]
+}

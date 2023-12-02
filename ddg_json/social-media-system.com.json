@@ -1,0 +1,125 @@
+{
+    "domain": "social-media-system.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-FR"
+    ],
+    "prevalence": 0.000505,
+    "sites": 5,
+    "subdomains": [
+        "pixel",
+        "mon",
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "social-media-system\\.com\\/script\\/home",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "pixel"
+            ],
+            "apis": {
+                "Document.cookie getter": 3
+            },
+            "sites": 5,
+            "prevalence": 0.000505,
+            "cnames": [],
+            "responseHashes": [
+                "6ec86b28983ec29b099fa371f057bee5de14aef7b3409e28051347b6c82b07bc",
+                "aae5bc85680f645216ac67edfeee1c04dc718b91f67572110ece7850cc963c6d",
+                "2150139c3958561066baa76c3086516e777743985d199698c0152054a0605574",
+                "5bdf234fbe9ba3fc7d726326183909c2b17d99847d379d0462de6ddcd244ebd9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "1001hobbies.fr",
+                "www.cartegrise.com",
+                "www.creavea.com",
+                "www.poulpeo.com",
+                "www.rougier-ple.fr"
+            ]
+        },
+        {
+            "rule": "social-media-system\\.com\\/moning\\/request\\/",
+            "cookies": 0.000505,
+            "fingerprinting": 0,
+            "subdomains": [
+                "mon"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.000505,
+            "cnames": [],
+            "responseHashes": [
+                "6d5209054cabc1f6ea6500eaf0bfceb9ae8c1e6447dd926db252c7143f6c7275"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "1001hobbies.fr",
+                "www.cartegrise.com",
+                "www.creavea.com",
+                "www.poulpeo.com",
+                "www.rougier-ple.fr"
+            ]
+        },
+        {
+            "rule": "social-media-system\\.com\\/latest\\/track\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.000303,
+            "cnames": [],
+            "responseHashes": [
+                "03e726df61f5fba2789aabe536616ed355e3b0a3e596ca487a58aa67ce1266d0"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "_fbp": 0.00010097950116126426
+            },
+            "exampleSites": [
+                "cartegrise.com",
+                "www.poulpeo.com",
+                "www.rougier-ple.fr"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.000505,
+    "topInitiators": [
+        {
+            "domain": "metaffiliation.com",
+            "prevalence": 0.4
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.4
+        },
+        {
+            "domain": "first party",
+            "prevalence": 0.2
+        }
+    ],
+    "types": {
+        "Script": 10,
+        "XHR": 3
+    },
+    "nameservers": [
+        "ns4.dnsimple-edge.org",
+        "ns1.dnsimple.com",
+        "ns2.dnsimple.com",
+        "ns3.dnsimple.com"
+    ]
+}

@@ -1,0 +1,601 @@
+{
+    "domain": "ap-south-1.amazonaws.com",
+    "owner": {
+        "name": "Amazon Technologies, Inc.",
+        "displayName": "Amazon.com",
+        "privacyPolicy": "https://www.amazon.com/gp/help/customer/display.html?nodeId=468496",
+        "url": "http://amazon.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000477,
+    "sites": 7,
+    "subdomains": [
+        "03nwj0csy5.execute-api",
+        "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb"
+    ],
+    "cnames": [
+        {
+            "original": "rules.myscheme.gov.in",
+            "resolved": "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb.ap-south-1.amazonaws.com"
+        }
+    ],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/prod\\/cf-token",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "03nwj0csy5.execute-api"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "3e2d3897644a9d1c19b43be73950d6900e2f99e08c0719558737c9d263e49d8a",
+                "5fba9c9afa418f62075e5fe11a37c29929f992f4acf0bf38f133a1f06492f1c1"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dnaindia.com",
+                "www.zeebiz.com",
+                "zeenews.india.com"
+            ]
+        },
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/en\\/check-eligibility\\/pm-svanidhi\\/",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rules.myscheme.gov.in",
+                    "resolved": "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb.ap-south-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myscheme.gov.in",
+                "www.myscheme.gov.in"
+            ]
+        },
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/en\\/check-eligibility\\/pm-svanidhi",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rules.myscheme.gov.in",
+                    "resolved": "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb.ap-south-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "c076fac49db75fd941c92d02baa5c9a2ef90a5b33ae9e57a49e1af9b61f15a3c"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myscheme.gov.in",
+                "www.myscheme.gov.in"
+            ]
+        },
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/_next\\/static\\/css\\/85aeb66778f8ac7c\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rules.myscheme.gov.in",
+                    "resolved": "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb.ap-south-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "0692d6b444d54eff236a42a69bce67c08684e7b5f04932b48bfa58b3a028e604"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myscheme.gov.in",
+                "www.myscheme.gov.in"
+            ]
+        },
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/_next\\/static\\/chunks\\/webpack-cb7634a8b6194820\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rules.myscheme.gov.in",
+                    "resolved": "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb.ap-south-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "3b54dffddaa2eac539bd5b13d6f80c38da6076ce740db0c587a68e7e4f25c5b6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myscheme.gov.in",
+                "www.myscheme.gov.in"
+            ]
+        },
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/_next\\/static\\/chunks\\/framework-481a236180612f85\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rules.myscheme.gov.in",
+                    "resolved": "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb.ap-south-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "40b797eb36a83cbc8f7cc528739b1039cb3611d96db6ccb1185e66c7c10d9039"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myscheme.gov.in",
+                "www.myscheme.gov.in"
+            ]
+        },
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/_next\\/static\\/chunks\\/main-5fc330e0aeb81663\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rules.myscheme.gov.in",
+                    "resolved": "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb.ap-south-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "e1faa35f544c77d4074c172512d80c347c8df55b15bcf0733aed5ba1c0a47767"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myscheme.gov.in",
+                "www.myscheme.gov.in"
+            ]
+        },
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/_next\\/static\\/chunks\\/pages\\/_app-6430226a029e3354\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rules.myscheme.gov.in",
+                    "resolved": "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb.ap-south-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "9d48ae46d2ec8ac69f011771b4de7da1d798144f2e9cb07814facb295186692a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myscheme.gov.in",
+                "www.myscheme.gov.in"
+            ]
+        },
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/_next\\/static\\/chunks\\/1a48c3c1-9f7f1291fe6e4506\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rules.myscheme.gov.in",
+                    "resolved": "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb.ap-south-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "05c0ee0e18d708de987f80c45abdf81980c580807c9c5f3d4275b21bc83548fd"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myscheme.gov.in",
+                "www.myscheme.gov.in"
+            ]
+        },
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/_next\\/static\\/chunks\\/7eb806d7-2e54959ea13987a2\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rules.myscheme.gov.in",
+                    "resolved": "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb.ap-south-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "f8e9416857fa30d28d72fc5d6c0f817db8ed051cfeb1ea7e2fcfca6b984e5fea"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myscheme.gov.in",
+                "www.myscheme.gov.in"
+            ]
+        },
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/_next\\/static\\/chunks\\/d7b66bc4-6edeca7d33786376\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rules.myscheme.gov.in",
+                    "resolved": "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb.ap-south-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "f30f88b99f4a7501593062c6f93b1847a7fdd47633f83d929c04c6fcb4b7fd64"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myscheme.gov.in",
+                "www.myscheme.gov.in"
+            ]
+        },
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/_next\\/static\\/chunks\\/dd4b0de2-addfcc956c895c8c\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rules.myscheme.gov.in",
+                    "resolved": "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb.ap-south-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "e082683482f9a5f5c27637da7e7675e52782360bd03530f319bcf16b00d08ae9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myscheme.gov.in",
+                "www.myscheme.gov.in"
+            ]
+        },
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/_next\\/static\\/chunks\\/002b6361-0c6f4af8389f1250\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rules.myscheme.gov.in",
+                    "resolved": "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb.ap-south-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "75c951db6278c6ec71503195a5e77f2bdf66a65329193632087c2f41fe520529"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myscheme.gov.in",
+                "www.myscheme.gov.in"
+            ]
+        },
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/_next\\/static\\/chunks\\/b9f93c64-12eee7c33296ecd3\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rules.myscheme.gov.in",
+                    "resolved": "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb.ap-south-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "aa2295e7fe3c6a9ebd7ea2c1cc566d6464a54200425a2fdfc90514677ec33b10"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myscheme.gov.in",
+                "www.myscheme.gov.in"
+            ]
+        },
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/_next\\/static\\/chunks\\/761-f2742522ee1ca5e3\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rules.myscheme.gov.in",
+                    "resolved": "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb.ap-south-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "cfe165ea9cb2310225e7e6a660d9d79d54a4c740e363fa05fce9c0d908311c08"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myscheme.gov.in",
+                "www.myscheme.gov.in"
+            ]
+        },
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/_next\\/static\\/chunks\\/904-bbc0f7cf40f6dbfe\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rules.myscheme.gov.in",
+                    "resolved": "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb.ap-south-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "13e35874eab59895a4ecffb9b7dd6ca34d43d1f9e4603f06a84fd45721309fc9"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myscheme.gov.in",
+                "www.myscheme.gov.in"
+            ]
+        },
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/_next\\/static\\/chunks\\/pages\\/check-eligibility\\/%5Bslug%5D-13f08afdd5253f14\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rules.myscheme.gov.in",
+                    "resolved": "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb.ap-south-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "0717d9602cea2c34d49e30bf5b2f247721741d8e178522ffdd4bfb769a071aa6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myscheme.gov.in",
+                "www.myscheme.gov.in"
+            ]
+        },
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/_next\\/static\\/sKFN1KYE1YE-aUTytkLe3\\/_buildManifest\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rules.myscheme.gov.in",
+                    "resolved": "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb.ap-south-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "84e5cc418abf0e011fc6cb6a28045f0c4ec3da6389f12b06ae17f4de7cbec0a1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myscheme.gov.in",
+                "www.myscheme.gov.in"
+            ]
+        },
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/_next\\/static\\/sKFN1KYE1YE-aUTytkLe3\\/_ssgManifest\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rules.myscheme.gov.in",
+                    "resolved": "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb.ap-south-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "c9118841894aa876610f55d5d393ec2a494215454e8adcf1d93002e3e575acde"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myscheme.gov.in",
+                "www.myscheme.gov.in"
+            ]
+        },
+        {
+            "rule": "ap-south-1\\.amazonaws\\.com\\/_next\\/static\\/sKFN1KYE1YE-aUTytkLe3\\/_middlewareManifest\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "rules.myscheme.gov.in",
+                    "resolved": "prod-uttara-nlb-pub-ccc624bcf69ad63f.elb.ap-south-1.amazonaws.com"
+                }
+            ],
+            "responseHashes": [
+                "de5341313a4dc5d982ca50ae4a491e84bc5e80b0f439d87f05fc3973c1b7e59a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "myscheme.gov.in",
+                "www.myscheme.gov.in"
+            ]
+        }
+    ],
+    "categories": [
+        "CDN"
+    ],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.6190476190476191
+        },
+        {
+            "domain": "myscheme.in",
+            "prevalence": 0.19047619047619047
+        },
+        {
+            "domain": "vidgyor.com",
+            "prevalence": 0.14285714285714285
+        },
+        {
+            "domain": "amplifyapp.com",
+            "prevalence": 0.047619047619047616
+        }
+    ],
+    "types": {
+        "XHR": 3,
+        "Document": 4,
+        "Stylesheet": 2,
+        "Script": 32
+    },
+    "nameservers": [
+        "ns1.amzndns.co.uk",
+        "ns1.amzndns.com",
+        "ns2.amzndns.co.uk",
+        "ns2.amzndns.com",
+        "ns2.amzndns.net",
+        "ns1.amzndns.net",
+        "ns1.amzndns.org",
+        "ns2.amzndns.org"
+    ]
+}

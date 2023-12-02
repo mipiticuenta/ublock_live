@@ -1,0 +1,86 @@
+{
+    "domain": "cars.com.edgekey.net",
+    "owner": {
+        "name": "Akamai Technologies",
+        "displayName": "Akamai",
+        "privacyPolicy": "https://www.akamai.com/us/en/privacy-policies/",
+        "url": "http://akamai.com"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "graph"
+    ],
+    "cnames": [
+        {
+            "original": "graph.cars.com",
+            "resolved": "graph.cars.com.edgekey.net"
+        }
+    ],
+    "fingerprinting": 0,
+    "resources": [
+        {
+            "rule": "cars\\.com\\.edgekey\\.net\\/graphql\\/api",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "graph"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "graph.cars.com",
+                    "resolved": "graph.cars.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cars.com",
+                "www.cars.com"
+            ]
+        },
+        {
+            "rule": "cars\\.com\\.edgekey\\.net\\/graphql\\/api",
+            "cookies": 0.0000136,
+            "fingerprinting": 0,
+            "subdomains": [
+                "graph"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [
+                {
+                    "original": "graph.cars.com",
+                    "resolved": "graph.cars.com.edgekey.net"
+                }
+            ],
+            "responseHashes": [
+                "dc4a791a0dbdbde1244665e4d1a965dd0e28de142e9c0496796bc8ed7e4f1f91"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "cars.com",
+                "www.cars.com"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "types": {
+        "Preflight": 2,
+        "XHR": 2
+    },
+    "nameservers": []
+}

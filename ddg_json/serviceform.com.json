@@ -1,0 +1,141 @@
+{
+    "domain": "serviceform.com",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "cdn",
+        "eu"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "serviceform\\.com\\/serviceform-tools\\/pixel\\/sf-pixel\\.js",
+            "cookies": 0.0000136,
+            "fingerprinting": 1,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {
+                "Document.cookie getter": 2,
+                "Navigator.prototype.userAgent": 2,
+                "Date.prototype.getTime": 2,
+                "Document.cookie setter": 2,
+                "Navigator.prototype.language": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d61bca9f96f1d4fb8250a980a1856a548dff3e9effdeab3e8b52679bdeb0dd3a"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "sfpxs": {
+                    "ttl": 1209608,
+                    "length": 20,
+                    "prevalence": 0.000013624071008658098,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "euroinnova.edu.es",
+                "www.realestateone.com"
+            ]
+        },
+        {
+            "rule": "serviceform\\.com\\/statistics-endpoint",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "27badc983df1780b60c2b3fa9d3a19a00e46aac798451f0febdca52920faaddf"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "euroinnova.edu.es",
+                "www.euroinnova.edu.es",
+                "www.realestateone.com"
+            ]
+        },
+        {
+            "rule": "serviceform\\.com\\/statistics-endpoint",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "eu"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "euroinnova.edu.es",
+                "www.euroinnova.edu.es",
+                "www.realestateone.com"
+            ]
+        },
+        {
+            "rule": "serviceform\\.com\\/serviceform-tools\\/privacy\\/privacy-by-sf\\.png",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "69e64ac247fd150b5e08cbefd3ac92aff81e4ce13455713a13c41a95a8ad7d70"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "stockmann.com",
+                "www.tuontitukku.fi"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000136,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.8
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.2
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "XHR": 3,
+        "Preflight": 3,
+        "Image": 2
+    },
+    "nameservers": [
+        "mia.ns.cloudflare.com",
+        "guy.ns.cloudflare.com"
+    ]
+}

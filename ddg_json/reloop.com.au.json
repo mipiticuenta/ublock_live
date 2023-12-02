@@ -1,0 +1,82 @@
+{
+    "domain": "reloop.com.au",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000204,
+    "sites": 3,
+    "subdomains": [
+        "widget"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "reloop\\.com\\.au\\/widget\\/davidjones\\/reloop\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "d1ab36e96a4a9a60fde3f56ee0626b3df88233865a3a799be950a46b4e1db6a6"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "davidjones.com",
+                "www.davidjones.com"
+            ]
+        },
+        {
+            "rule": "reloop\\.com\\.au\\/dist\\/storage-frame\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {
+                "IR_gbd": 0.000013624071008658098
+            },
+            "exampleSites": [
+                "davidjones.com",
+                "www.davidjones.com",
+                "www.sussan.com.au"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 1
+        }
+    ],
+    "types": {
+        "Script": 2,
+        "Document": 3
+    },
+    "nameservers": [
+        "ns-1614.awsdns-09.co.uk",
+        "ns-548.awsdns-04.net",
+        "ns-1351.awsdns-40.org",
+        "ns-270.awsdns-33.com"
+    ]
+}

@@ -1,0 +1,655 @@
+{
+    "domain": "imbox.io",
+    "owner": {
+        "name": "ImBox Sweden AB",
+        "displayName": "ImBox Sweden"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000817,
+    "sites": 12,
+    "subdomains": [
+        "files",
+        "widget",
+        "widget-launcher",
+        "triggers-v3",
+        "cdn",
+        "wss",
+        "apiv2"
+    ],
+    "cnames": [],
+    "fingerprinting": 3,
+    "resources": [
+        {
+            "rule": "imbox\\.io\\/app\\/dist\\/initWidget\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "files"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 8
+            },
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "11fc18ce8c840fcb236d817854c3ae328e69febe25c22554ac3ce263c8b8a645"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ledigajobb.se",
+                "nordicwellness.se",
+                "www.av-cables.dk",
+                "www.blomsterlandet.se",
+                "www.cancerfonden.se",
+                "www.ctek.com",
+                "www.elon.se",
+                "www.fastighetsbyran.com",
+                "www.outnorth.com",
+                "www.outnorth.se",
+                "www.willys.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/widget-v2\\/prod\\/widget\\.js",
+            "cookies": 0.0000477,
+            "fingerprinting": 1,
+            "subdomains": [
+                "files"
+            ],
+            "apis": {
+                "Navigator.prototype.vendor": 11,
+                "Navigator.prototype.userAgent": 11,
+                "window.name": 11,
+                "Document.cookie getter": 8,
+                "window.sessionStorage": 11,
+                "Navigator.prototype.language": 11,
+                "window.localStorage": 10,
+                "Date.prototype.getTime": 10,
+                "Document.cookie setter": 7
+            },
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "505fb910c9ddd772d8b06ccfe33e6bb0896406ae620fec4b7c118b3e34eb8591",
+                "77ff25d0629368d3ee8cfb20bda1f5ee51b241a312402f019c806c5b82a0ac60"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {
+                "imbox": {
+                    "ttl": 2592016,
+                    "length": 50,
+                    "prevalence": 0.00004768424853030334,
+                    "uniqueness": 1
+                }
+            },
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ledigajobb.se",
+                "nordicwellness.se",
+                "www.av-cables.dk",
+                "www.blomsterlandet.se",
+                "www.cancerfonden.se",
+                "www.ctek.com",
+                "www.elon.se",
+                "www.fastighetsbyran.com",
+                "www.outnorth.com",
+                "www.outnorth.se",
+                "www.willys.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/index\\.2970a4e\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "5223ad85f0d0f12dbc4faa2c5d467153ff6a7f841f279fc1441601e6adadd78c"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ledigajobb.se",
+                "nordicwellness.se",
+                "www.av-cables.dk",
+                "www.blomsterlandet.se",
+                "www.cancerfonden.se",
+                "www.ctek.com",
+                "www.elon.se",
+                "www.fastighetsbyran.com",
+                "www.outnorth.com",
+                "www.outnorth.se",
+                "www.willys.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/client\\.564a5b1979641e750abd\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "f9ca7a01dd095ee64fbac2b12c0a1e16fcabed4fea25982ef7446013d319c82b"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ledigajobb.se",
+                "nordicwellness.se",
+                "www.av-cables.dk",
+                "www.blomsterlandet.se",
+                "www.cancerfonden.se",
+                "www.ctek.com",
+                "www.elon.se",
+                "www.fastighetsbyran.com",
+                "www.outnorth.com",
+                "www.outnorth.se",
+                "www.willys.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/client\\.bundle\\.84b906680f20f14ef6eb\\.js",
+            "cookies": 0,
+            "fingerprinting": 2,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 11,
+                "window.name": 8,
+                "Navigator.prototype.product": 11,
+                "Navigator.prototype.appVersion": 10,
+                "Navigator.prototype.mediaDevices": 8,
+                "Navigator.prototype.appName": 10,
+                "Screen.prototype.width": 8,
+                "Screen.prototype.height": 8,
+                "window.localStorage": 8,
+                "Navigator.prototype.language": 10,
+                "HTMLMediaElement.prototype.canPlayType": 1,
+                "MediaDevices.prototype.enumerateDevices": 1
+            },
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "0401b0cbfaddb00530492c54f70afe1889b96c5e9f98100439987481252518bb"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ledigajobb.se",
+                "nordicwellness.se",
+                "www.av-cables.dk",
+                "www.blomsterlandet.se",
+                "www.cancerfonden.se",
+                "www.ctek.com",
+                "www.elon.se",
+                "www.fastighetsbyran.com",
+                "www.outnorth.com",
+                "www.outnorth.se",
+                "www.willys.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/client\\.2af333443952280e1672\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget-launcher"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "5506cb1fb8069aed21858d8d0264da111c2edabf72b980b9271bb8611fa9c326"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ledigajobb.se",
+                "nordicwellness.se",
+                "www.av-cables.dk",
+                "www.blomsterlandet.se",
+                "www.cancerfonden.se",
+                "www.ctek.com",
+                "www.elon.se",
+                "www.fastighetsbyran.com",
+                "www.outnorth.com",
+                "www.outnorth.se",
+                "www.willys.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/bundle\\.2af333443952280e1672\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget-launcher"
+            ],
+            "apis": {
+                "Navigator.prototype.language": 10,
+                "Navigator.prototype.userAgent": 11,
+                "window.name": 9
+            },
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "c0c44e066be6a05ba02d1b6df9103909d7773abd326630cd1e4ea0b2834374dc"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ledigajobb.se",
+                "nordicwellness.se",
+                "www.av-cables.dk",
+                "www.blomsterlandet.se",
+                "www.cancerfonden.se",
+                "www.ctek.com",
+                "www.elon.se",
+                "www.fastighetsbyran.com",
+                "www.outnorth.com",
+                "www.outnorth.se",
+                "www.willys.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/localization-en\\.7c456fd5b15ebf3f8acf\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "f415719bb20eda44764b64f968035e4bcd57deecf11bd1b8aa3fc8c9613b3683"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ledigajobb.se",
+                "nordicwellness.se",
+                "www.av-cables.dk",
+                "www.blomsterlandet.se",
+                "www.cancerfonden.se",
+                "www.ctek.com",
+                "www.elon.se",
+                "www.fastighetsbyran.com",
+                "www.outnorth.com",
+                "www.outnorth.se",
+                "www.willys.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/app\\/static\\/roboto\\.css",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "files"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "5429e91ea07e0bc81e9923d2bf4b8478632e76d335a0942d091bc128388201d7"
+            ],
+            "type": "Stylesheet",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ledigajobb.se",
+                "nordicwellness.se",
+                "www.av-cables.dk",
+                "www.blomsterlandet.se",
+                "www.cancerfonden.se",
+                "www.ctek.com",
+                "www.elon.se",
+                "www.fastighetsbyran.com",
+                "www.outnorth.com",
+                "www.outnorth.se",
+                "www.willys.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/fonts\\/launcher-icon\\.590c11f49c524500c3023d7f1ccfb147\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget-launcher"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "7d1e758f217dc92b6d4d2a593c823b938ff44f9b88b837e941605197c1972e72"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ledigajobb.se",
+                "nordicwellness.se",
+                "www.av-cables.dk",
+                "www.blomsterlandet.se",
+                "www.cancerfonden.se",
+                "www.ctek.com",
+                "www.elon.se",
+                "www.fastighetsbyran.com",
+                "www.outnorth.com",
+                "www.outnorth.se",
+                "www.willys.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/trigger",
+            "cookies": 0.0000681,
+            "fingerprinting": 0,
+            "subdomains": [
+                "triggers-v3"
+            ],
+            "apis": {},
+            "sites": 11,
+            "prevalence": 0.0000749,
+            "cnames": [],
+            "responseHashes": [
+                "6ce9449807c1015b555d5cdf33953a662d30ede5952209180677cca07181e330",
+                "f1fe421681fc3809569b60081c7cffb13f196f29453e29d8647a1accc1c33ed5",
+                "6a33e02455a1d6ddea92aa11b65222fed734cbfb4fdc27bbb5d25a9b5dfc9225",
+                "c62cb16461112863bb1d2cc2aa2fa7cf23ce15711e107cdcb05054a351e9352e",
+                "0a29b862daa65cab949843f88b7ce298bad054a7fd472417d269bb6e43a3fac7",
+                "31a2b08fdb128ff8e67af45d182b3e46d273d62dca5f3a7d807698223b51ffa4",
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+                "94b989a1e62e9f5f6363022ccd45de7be9dd3b1912154c1da4d2925117eacbcd",
+                "28098a2c56d8a2949fce68fe3297d15371f4e625c59e851a42998737dcadfa06",
+                "d8ed1959e948f10ef603b47765992ed22b5e2a3be64b08ed6f64fd808905cc41"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ledigajobb.se",
+                "nordicwellness.se",
+                "www.av-cables.dk",
+                "www.blomsterlandet.se",
+                "www.cancerfonden.se",
+                "www.ctek.com",
+                "www.elon.se",
+                "www.fastighetsbyran.com",
+                "www.outnorth.com",
+                "www.outnorth.se",
+                "www.willys.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/localization-sv\\.6fa5336ae387700f0a71\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {},
+            "sites": 6,
+            "prevalence": 0.0000409,
+            "cnames": [],
+            "responseHashes": [
+                "81fd46a672a1da415652d2fa569d05aecd9a9cf1603fa7effe380e7d3b86109e"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ledigajobb.se",
+                "www.blomsterlandet.se",
+                "www.ctek.com",
+                "www.elon.se",
+                "www.outnorth.se",
+                "www.willys.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/flow\\/default\\/images\\/launcher-icon\\.svg",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "cdn"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "7d1e758f217dc92b6d4d2a593c823b938ff44f9b88b837e941605197c1972e72"
+            ],
+            "type": "Image",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ledigajobb.se",
+                "www.av-cables.dk",
+                "www.cancerfonden.se",
+                "www.elon.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/app\\/static\\/fonts\\/roboto\\/roboto-v27-latin-regular\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "files"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [
+                "81d931a8c973b5bc8f9ded86a3440bd247a58e592b3897bf755c1a5d8390d763"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ledigajobb.se",
+                "nordicwellness.se",
+                "www.av-cables.dk",
+                "www.blomsterlandet.se",
+                "www.cancerfonden.se",
+                "www.elon.se",
+                "www.outnorth.com",
+                "www.outnorth.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/primus\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "widget"
+            ],
+            "apis": {
+                "Navigator.prototype.onLine": 2,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "02a9aa0d18fef1c1a97f77991d12434215c8e97cb3382c412f5b6b8648c2b3b1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blomsterlandet.se",
+                "www.elon.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/primus\\/info",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "wss"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "35a9ca7a801fef22fa275fea89bc2901c32383e75b5ca8b945c12a3027ccc511"
+            ],
+            "type": "XHR",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "blomsterlandet.se",
+                "www.elon.se"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/2217",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0e5125a12ffc2a2ada905a5b7fa9f508d106aeb21f9ccc849076148fe222018b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "ctek.com",
+                "www.ctek.com"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/api\\/widgeturl\\/1893",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "apiv2"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0e5125a12ffc2a2ada905a5b7fa9f508d106aeb21f9ccc849076148fe222018b"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "outnorth.com",
+                "www.outnorth.com"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/index\\.c9a8cac\\.html",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "widget",
+                "widget-launcher"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "4ade49dad10cb1956c05bfa185b08a9bb7f87edbb73e351445c735abc8031a1c"
+            ],
+            "type": "Document",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "outnorth.com",
+                "www.outnorth.com"
+            ]
+        },
+        {
+            "rule": "imbox\\.io\\/app\\/static\\/fonts\\/roboto\\/roboto-v27-latin-700\\.woff2",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "files"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "c039da2477a00e6c4f4f94be655f95caea42d00a877cb37ca92546253c7ed3fc"
+            ],
+            "type": "Font",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "outnorth.com",
+                "www.outnorth.se"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0.0000749,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.7948717948717948
+        },
+        {
+            "domain": "imbox.se",
+            "prevalence": 0.10256410256410256
+        },
+        {
+            "domain": "googletagmanager.com",
+            "prevalence": 0.10256410256410256
+        }
+    ],
+    "types": {
+        "Script": 67,
+        "Document": 13,
+        "Stylesheet": 33,
+        "Image": 15,
+        "XHR": 13,
+        "Font": 10
+    },
+    "nameservers": [
+        "sue.ns.cloudflare.com",
+        "tim.ns.cloudflare.com"
+    ]
+}

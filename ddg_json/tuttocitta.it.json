@@ -1,0 +1,106 @@
+{
+    "domain": "tuttocitta.it",
+    "owner": {},
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.0000272,
+    "sites": 4,
+    "subdomains": [
+        "services"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "tuttocitta\\.it\\/tcolnew\\/mapsapi\\/pgMap5\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "cccb859d545db223734c8d1c1cc9924fcf8ac9d02aaafe9616003699d1fd2851"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "virgilio.it",
+                "www.virgilio.it"
+            ]
+        },
+        {
+            "rule": "tuttocitta\\.it\\/tcolnew\\/mapsapi\\/mapsapi5\\/pgMappy-5\\.0\\.0\\.min\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {
+                "Document.cookie getter": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "88492e66c79993e50ec5c4ecdb6499c1c371ab8727cc35a240ce837d2fa2cd8f"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "virgilio.it",
+                "www.virgilio.it"
+            ]
+        },
+        {
+            "rule": "tuttocitta\\.it\\/lbs",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "services"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "f3176c891252bcde2a5185276932fe9a2a12d088b8b9366c293defa2c4549ea4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "paginegialle.it",
+                "www.paginebianche.it"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.75
+        },
+        {
+            "domain": "ajax.googleapis.com",
+            "prevalence": 0.25
+        }
+    ],
+    "types": {
+        "Script": 6
+    },
+    "nameservers": [
+        "ns1.italiaonline.it",
+        "ns2.iol.it"
+    ]
+}

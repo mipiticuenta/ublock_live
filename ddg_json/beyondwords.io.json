@@ -1,0 +1,602 @@
+{
+    "domain": "beyondwords.io",
+    "owner": {
+        "name": "BeyondWords",
+        "displayName": "BeyondWords",
+        "privacyPolicy": "https://beyondwords.io/privacy/",
+        "url": "http://beyondwords.io"
+    },
+    "source": [
+        "DuckDuckGo-US"
+    ],
+    "prevalence": 0.000191,
+    "sites": 28,
+    "subdomains": [
+        "proxy",
+        "audio",
+        "metrics",
+        "api"
+    ],
+    "cnames": [],
+    "fingerprinting": 1,
+    "resources": [
+        {
+            "rule": "beyondwords\\.io\\/npm\\/@beyondwords\\/audio-player@latest\\/dist\\/module\\/ghost-helper\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "proxy"
+            ],
+            "apis": {
+                "window.innerWidth": 1,
+                "window.innerHeight": 1
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "b7146bf4de0eda9aee3f6f449c2ec7a1fbf5563086a418672d60c3af23cb0ef1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "empuls.io",
+                "blog.empuls.io",
+                "kyivindependent.com"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/npm\\/@beyondwords\\/audio-player@latest\\/dist\\/module\\/index\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxy"
+            ],
+            "apis": {},
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "a90427c8992e6626d14db09a01435a584c0c9fe3e2e53f1994abac83b2bb2c16"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "empuls.io",
+                "kyivindependent.com",
+                "rvlove.com",
+                "www.dailymaverick.co.za",
+                "www.elespectador.com",
+                "www.lifesitenews.com",
+                "www.mainpost.de"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/npm\\/@beyondwords\\/audio-player@latest\\/dist\\/module\\/sdk-dc8082ab\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "proxy"
+            ],
+            "apis": {
+                "HTMLMediaElement.prototype.canPlayType": 7,
+                "window.localStorage": 7,
+                "window.matchMedia(\"prefers-color-scheme\")": 4,
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 7,
+            "prevalence": 0.0000477,
+            "cnames": [],
+            "responseHashes": [
+                "12934d871546759ad77a6bb3c20508d1213d685ae8b1d79ef735834c09eae9b4"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "empuls.io",
+                "kyivindependent.com",
+                "rvlove.com",
+                "www.dailymaverick.co.za",
+                "www.elespectador.com",
+                "www.lifesitenews.com",
+                "www.mainpost.de"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/npm\\/@beyondwords\\/audio-player@latest\\/dist\\/module\\/index-9f9e85c3\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxy"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "999e4294a1cab6dd16b928ea5c741c557353b5a7878e676e880e6b7505eaf7a1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "empuls.io",
+                "kyivindependent.com",
+                "rvlove.com",
+                "www.dailymaverick.co.za",
+                "www.mainpost.de"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/api\\/v1\\/settings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "audio"
+            ],
+            "apis": {},
+            "sites": 9,
+            "prevalence": 0.0000613,
+            "cnames": [],
+            "responseHashes": [
+                "deaf9ba27c7b99b481dde42f5bd30904b642a646036ff99a927c4b3e97d4db06"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "empuls.io",
+                "jv.dk",
+                "kyivindependent.com",
+                "rvlove.com",
+                "www.bain.com",
+                "www.berliner-kurier.de",
+                "www.bt.dk",
+                "www.dailymaverick.co.za",
+                "www.mainpost.de"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/api\\/v1\\/settings",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "audio"
+            ],
+            "apis": {},
+            "sites": 8,
+            "prevalence": 0.0000545,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "empuls.io",
+                "kyivindependent.com",
+                "rvlove.com",
+                "www.bain.com",
+                "www.berliner-kurier.de",
+                "www.bt.dk",
+                "www.dailymaverick.co.za",
+                "www.mainpost.de"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/npm\\/@beyondwords\\/audio-player@latest\\/dist\\/module\\/app-ui-5d06c28c\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxy"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "6609faeac4b0ecb1c097af0898766deb62e678cb3d627da8e35c350ed919b097"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "empuls.io",
+                "kyivindependent.com",
+                "rvlove.com",
+                "www.dailymaverick.co.za",
+                "www.mainpost.de"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/npm\\/@beyondwords\\/audio-player@latest\\/dist\\/module\\/helpers-dca35624\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxy"
+            ],
+            "apis": {},
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "5a0fcb0e005cb4ec2c9a21e4899e226b3f2e9464d27e4c70b989426cc36fa3b7"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "empuls.io",
+                "kyivindependent.com",
+                "rvlove.com",
+                "www.dailymaverick.co.za",
+                "www.mainpost.de"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/npm\\/@beyondwords\\/player@latest\\/dist\\/umd\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "proxy"
+            ],
+            "apis": {
+                "Navigator.prototype.languages": 4,
+                "window.localStorage": 4
+            },
+            "sites": 5,
+            "prevalence": 0.0000341,
+            "cnames": [],
+            "responseHashes": [
+                "f572f177fdf2974451b37a9f375722b0e86f031f96bae7ec9b9f31bd74994a35"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "childmind.org",
+                "spacenews.com",
+                "www.elespectador.com",
+                "www.freightwaves.com",
+                "www.thecatholicthing.org"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/npm\\/@beyondwords\\/player@0\\.1\\.39\\/dist\\/style\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxy"
+            ],
+            "apis": {},
+            "sites": 4,
+            "prevalence": 0.0000272,
+            "cnames": [],
+            "responseHashes": [
+                "8441c3fc96a134feea6e4a174747e03b4a636626fdf51e660eb317be54048aa1"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "childmind.org",
+                "spacenews.com",
+                "www.freightwaves.com",
+                "www.thecatholicthing.org"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "metrics"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.0000886,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "childmind.org",
+                "cnalifestyle.channelnewsasia.com",
+                "spacenews.com",
+                "www.bain.com",
+                "www.berliner-kurier.de",
+                "www.bt.dk",
+                "www.dailymaverick.co.za",
+                "www.elespectador.com",
+                "www.freightwaves.com",
+                "www.mainpost.de",
+                "www.theage.com.au",
+                "www.thecatholicthing.org",
+                "www.thefire.org"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/events",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "metrics"
+            ],
+            "apis": {},
+            "sites": 13,
+            "prevalence": 0.0000886,
+            "cnames": [],
+            "responseHashes": [
+                "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "childmind.org",
+                "cnalifestyle.channelnewsasia.com",
+                "spacenews.com",
+                "www.bain.com",
+                "www.berliner-kurier.de",
+                "www.bt.dk",
+                "www.dailymaverick.co.za",
+                "www.elespectador.com",
+                "www.freightwaves.com",
+                "www.mainpost.de",
+                "www.theage.com.au",
+                "www.thecatholicthing.org",
+                "www.thefire.org"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/npm\\/@beyondwords\\/audio-player@latest\\/dist\\/module\\/iframe-helper\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "proxy"
+            ],
+            "apis": {
+                "Navigator.prototype.userAgent": 2
+            },
+            "sites": 3,
+            "prevalence": 0.0000204,
+            "cnames": [],
+            "responseHashes": [
+                "dd38d7b694de010a0e55d9f13740b3a726aeaa2c980290a9d6fcd995f713cee0"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "fyens.dk",
+                "jv.dk",
+                "www.timeslive.co.za"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/npm\\/@beyondwords\\/audio-player@0\\.0\\.20\\/dist\\/module\\/index\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "a90427c8992e6626d14db09a01435a584c0c9fe3e2e53f1994abac83b2bb2c16"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "jv.dk",
+                "www.japantimes.co.jp"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/cf\\/12618",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "audio"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bt.dk",
+                "www.bt.dk"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/cf\\/12618",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "audio"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "7589ba78f75a95d67a04814d5538703bf93df1b5ae262440d1c8a51da44b798c"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "bt.dk",
+                "www.bt.dk"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/cf\\/62",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "audio"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [],
+            "type": "Preflight",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailymaverick.co.za",
+                "www.dailymaverick.co.za"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/cf\\/62",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "audio"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "081b49499f919d8ef71080278b3f4c134091d91d7f00888f4dbccd1e7215fce2"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailymaverick.co.za",
+                "www.dailymaverick.co.za"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/npm\\/@beyondwords\\/audio-player@latest\\/dist\\/module\\/hls-626f9ecf\\.js",
+            "cookies": 0,
+            "fingerprinting": 1,
+            "subdomains": [
+                "proxy"
+            ],
+            "apis": {
+                "MediaSource.isTypeSupported": 2
+            },
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "ac39dfcaa8cab19e38cfe5cadb37db9907be7cd9abd36ae7c8f1a2cb49cfe042"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailymaverick.co.za",
+                "www.mainpost.de"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/npm\\/@beyondwords\\/audio-player@latest\\/dist\\/module\\/_commonjsHelpers-c9abed0e\\.js",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "proxy"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "6cd2c233f27a479e0b4edf3b28e6d92bacb174e2bc93adb6891848256df8502d"
+            ],
+            "type": "Script",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "dailymaverick.co.za",
+                "www.mainpost.de"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/cf\\/15717",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "audio"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "66598d4da67fea4cb98be79408e97a0ee02849cfaa5ab1c6eb1601ab782caf72"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "mainpost.de",
+                "www.mainpost.de"
+            ]
+        },
+        {
+            "rule": "beyondwords\\.io\\/v1\\/projects\\/34967\\/player\\/by_source_id\\/p5e9eu",
+            "cookies": 0,
+            "fingerprinting": 0,
+            "subdomains": [
+                "api"
+            ],
+            "apis": {},
+            "sites": 2,
+            "prevalence": 0.0000136,
+            "cnames": [],
+            "responseHashes": [
+                "0d702affeed7a10ccc424d33f8a4fd5f24b8a03c0bab8f4e89e92823a7557fa5"
+            ],
+            "type": "Fetch",
+            "firstPartyCookies": {},
+            "firstPartyCookiesSent": {},
+            "exampleSites": [
+                "theage.com.au",
+                "www.theage.com.au"
+            ]
+        }
+    ],
+    "categories": [],
+    "performance": {},
+    "cookies": 0,
+    "topInitiators": [
+        {
+            "domain": "first party",
+            "prevalence": 0.9743589743589743
+        },
+        {
+            "domain": "sentry-cdn.com",
+            "prevalence": 0.01282051282051282
+        },
+        {
+            "domain": "spkt.io",
+            "prevalence": 0.01282051282051282
+        }
+    ],
+    "types": {
+        "Script": 50,
+        "Fetch": 30,
+        "Preflight": 25
+    },
+    "nameservers": [
+        "kate.ns.cloudflare.com",
+        "lee.ns.cloudflare.com"
+    ]
+}
