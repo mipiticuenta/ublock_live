@@ -50,7 +50,7 @@ dom_sw = input('Enter <y> to include domain deflation : ')
 # <test direct connection to internet>
 
 try:
-    r = requests.get('https://google.com', timeout = 5, proxies=proxy_servers)
+    r = requests.get('https://google.com', timeout = 5, proxies = proxy_servers)
 except:
     print('\nUsing alt proxy servers.')
     proxy_servers  = proxy_servers_alt
