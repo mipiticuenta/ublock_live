@@ -1,5 +1,5 @@
 '''
-List files from url
+Read json from url
 '''
 
 # <product backlog>
@@ -13,11 +13,11 @@ import os                                                                       
 import re                                                                       # <regular expression operations />
 import requests                                                                 # <get files using url />
 import tqdm                                                                     # <progress bar />
-from bs4 import BeautifulSoup                                                   # <handling for urls/>
+import json                                                                     # <json handling/>
 
 # <settings>
 
-file1_out_name = 'hrefs_found'
+file1_out_name = 'ddg_rules'
 proxy_servers  = {'https': '', 'http': ''}
 proxy_servers_alt  = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
 
@@ -26,47 +26,44 @@ proxy_servers_alt  = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
 print(
                                                                   '\n',
     '# ============================================================\n',
-    '# List links from url                                         \n',
+    '# Read json from url                                          \n',
     '# ============================================================\n',
     '# input : url                                                 \n',
-    '# output: <hrefs found> file                                  \n',
+    '# output: <ddg_rules> file                                    \n',
     '# ============================================================\n',
 )
 
 # <test direct connection to internet>
 
 try:
-    r = requests.get('https://google.com', timeout = 3, proxies=proxy_servers)
+    r = requests.get('https://google.com', timeout = 2, proxies=proxy_servers)
 except:
     print('\nUsing alt proxy servers.')
     proxy_servers  = proxy_servers_alt
 
 # </test direct connection to internet>
 
-htmlpage = input('Enter url to examine : ')
-response = requests.get(htmlpage, proxies=proxy_servers)
-soup = BeautifulSoup(response.text, 'html.parser')
+url = input('Enter url to examine : ')
+response = requests.get(url, proxies=proxy_servers)
+json_data = json.loads(response.text)
 
-# links = [url + '/' + node.get('href') for node in soup.find_all('a') if node.get('href').endswith('nc')]
-
-links = [soup.find_all('a')]
-
-links = sorted(set(links))
+list2 = [resources['rule'].replace('\\', '') for resources in json_data['resources']]
+list2 = sorted(set(list2))
 
 # <open file1_out file and write header and data>
 
 file1_out = open(file1_out_name, 'w', encoding='UTF-8')
 
 file1_out.write(
-      '! hrefs found in ' + htmlpage + '\n'
+      '! ddg rules found in ' + url + '\n'
 )
 
-file1_out.writelines(line + '\n' for line in links)
+file1_out.writelines(line + '\n' for line in list2)
 file1_out.close()
 
 print(
     '\n',
-    '{:,}'.format(len(links)),
+    '{:,}'.format(len(list2)),
     ' lines written to ',
     file1_out_name,
     '\n',
