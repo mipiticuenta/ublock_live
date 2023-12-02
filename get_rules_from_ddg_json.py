@@ -33,30 +33,34 @@ print(
 
 
 list1 = os.listdir(path)
-print(list1[3])
+list2 = []
 
+for json_file in tqdm.tqdm(list1) :
+    list2.append(re.sub(r'\.json$', '', json_file))
+    with open(path + '/' + json_file) as json_data :
+        json_data = json.load(json_data)
+    list2 = list2 + [resources['rule'].replace('\\', '') for resources in json_data['resources']]
 
-#list2 = [resources['rule'].replace('\\', '') for resources in json_data['resources']]
-#list2 = sorted(set(list2))
+list2 = sorted(set(list2))
 
-## <open file1_out file and write header and data>
+# <open file1_out file and write header and data>
 
-#file1_out = open(file1_out_name, 'w', encoding='UTF-8')
+file1_out = open(file1_out_name, 'w', encoding='UTF-8')
 
-#file1_out.write(
-#      '! ddg rules found in ' + url + '\n'
-#)
+file1_out.write(
+      '! ddg rules found in ' + path + '\n'
+)
 
-#file1_out.writelines(line + '\n' for line in list2)
-#file1_out.close()
+file1_out.writelines(line + '\n' for line in list2)
+file1_out.close()
 
-#print(
-#    '\n',
-#    '{:,}'.format(len(list2)),
-#    ' lines written to ',
-#    file1_out_name,
-#    '\n',
-#    sep = ''
-#)
+print(
+    '\n',
+    '{:,}'.format(len(list2)),
+    ' lines written to ',
+    file1_out_name,
+    '\n',
+    sep = ''
+)
 
-## </open file1_out file and write header and data>
+# </open file1_out file and write header and data>
