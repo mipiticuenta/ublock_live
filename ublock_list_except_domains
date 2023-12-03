@@ -2,41 +2,9 @@
 ! expires: 1 day
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ublock_list_except_domains
 ! title: ublock list except domains
-*$beacon
-*$csp=all
-*$inline-font
-*$inline-script
-*$object
-*$other
-*$ping
-*$popunder
-*$websocket
-*$xhr
-/^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/
-/abc/
-@@/[_\W]adunits?[_\W]/$domain=youtube.com
-@@||accounts.google.com$domain=youtube.com
-@@||amazon.com^$inline-script,1p
-@@||amazon.es^$inline-script,1p
-@@||backmarket.es^$inline-script,1p
-@@||bbc.com^$inline-script,1p
-@@||cloudfront.net^$script,domain=backmarket.es
-@@||gitlab.com^$inline-script,xhr,1p
-@@||google.com^$inline-script,1p
+
 @@||googlevideo.com^$removeparam=/mgte/
-@@||googlevideo.com^$xhr
-@@||gstatic.com^$xhr,domain=youtube.com
-@@||ikea.com/*/header-footer/menu-products.html$xhr,1p
-@@||ikea.com^$inline-script,1p
-@@||ikea.es^$inline-script,1p
-@@||licdn.com^$xhr,domain=linkedin.com
-@@||linkedin.com^$inline-script,1p
 @@||linkedin.com^$removeparam=/redir/
 @@||mail.google.com^$removeparam=view
-@@||mail.google.com^$xhr,1p
-@@||meteoblue.com^$inline-script,xhr,1p
 @@||meteoblue.com^$removeparam=/callback/i
 @@||meteoblue.com^$removeparam=/metric/i
-@@||worldbank.org^$inline-script,1p
-@@||www.linkedin.com^$inline-script,xhr,1p
-@@||youtube.com^$inline-script,xhr,1p
