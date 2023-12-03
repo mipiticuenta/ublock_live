@@ -104,35 +104,6 @@ list2  = set(list2) - set(list5)
 
 # <segregate regex filters>
 
-# <write extracted regex type filters>
-
-# <open file5_out file and write header>
-
-file5_out = open(file5_out_name, 'w', encoding='UTF-8')
-
-file5_out.write(
-      '! description: personal regex filters for ipfire and ublock_origin\n'
-    + '! expires: 1 day\n'
-    + '! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list\n'
-    + '! title: regex block list\n'
-)
-
-# </open file5_out file and write header>
-
-list5 = sorted(list5)
-file5_out.writelines('.*' + re.sub(r'\$important$', '', line)[1:-1] + '.*' + '\n' for line in list5)
-file5_out.close()
-
-print(
-    '\n',
-    '{:,}'.format(len(list5)),
-    ' regex filters written to ',
-    file5_out_name,
-    sep = ''
-)
-
-# </write extracted regex type filters>
-
 # <process filter list>
 
 print(
@@ -527,6 +498,35 @@ list2 = [line for line in list2 if len(line) > 1]                               
 list2 = sorted(list2)
 list5 = sorted(list5)
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
+
+# <write extracted regex type filters>
+
+# <open file5_out file and write header>
+
+file5_out = open(file5_out_name, 'w', encoding='UTF-8')
+
+file5_out.write(
+      '! description: personal regex filters for ipfire and ublock_origin\n'
+    + '! expires: 1 day\n'
+    + '! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list\n'
+    + '! title: regex block list\n'
+)
+
+# </open file5_out file and write header>
+
+list5 = sorted(list5)
+file5_out.writelines('.*' + re.sub(r'\$important$', '', line)[1:-1] + '.*' + '\n' for line in list5)
+file5_out.close()
+
+print(
+    '\n',
+    '{:,}'.format(len(list5)),
+    ' regex filters written to ',
+    file5_out_name,
+    sep = ''
+)
+
+# </write extracted regex type filters>
 
 print('19/20 : add filter to block numerical domains #.@(.@) filters')
 
