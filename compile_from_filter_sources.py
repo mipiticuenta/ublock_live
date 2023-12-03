@@ -95,6 +95,8 @@ for line in list1 :
 
 # </dump sources to list>
 
+list2 = [re.sub(r'^/([-\.\w]+/[-\./\w]+)/$', r'/\1/*', line) for line in list2]    # <add * at the end of /@/@/ url filter />
+
 # <segregate regex filters>
 
 list5 = [line for line in list2 if re.search(r'^/.+/(\$[,a-z]+)?$', line)]
