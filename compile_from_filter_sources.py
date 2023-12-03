@@ -498,7 +498,6 @@ print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
 print('19/20 : remove spurious url filters ')
 
-
 list2 = [re.sub(r'^[_\W]?abc[_\W]*$', '', line) for line in list2]              # <remove spurious abc filter />
 list2 = [re.sub(r'^[_\W]?about[_\W]*$', '', line) for line in list2]            # <remove spurious about filter />
 list2 = [re.sub(r'^[_\W]?account[_\W]*$', '', line) for line in list2]          # <remove spurious account filter />
@@ -567,6 +566,7 @@ list2 = [re.sub(r'^[_\W]?candy[_\W]*$', '', line) for line in list2]            
 list2 = [re.sub(r'^[_\W]?can[_\W]*$', '', line) for line in list2]              # <remove spurious can filter />
 list2 = [re.sub(r'^[_\W]?caos[_\W]*$', '', line) for line in list2]             # <remove spurious caos filter />
 list2 = [re.sub(r'^[_\W]?capture[_\W]*$', '', line) for line in list2]          # <remove spurious capture filter />
+list2 = [re.sub(r'^[_\W]?cash[_\W]*$', '', line) for line in list2]             # <remove spurious cash filter />
 list2 = [re.sub(r'^[_\W]?cdn[_\W]*$', '', line) for line in list2]              # <remove spurious cdn filter />
 list2 = [re.sub(r'^[_\W]?center[_\W]*$', '', line) for line in list2]           # <remove spurious center filter />
 list2 = [re.sub(r'^[_\W]?c_fill[_\W]*$', '', line) for line in list2]           # <remove spurious c_fill filter />
@@ -644,6 +644,7 @@ list2 = [re.sub(r'^[_\W]?extras?[_\W]*$', '', line) for line in list2]          
 list2 = [re.sub(r'^[_\W]?fab[_\W]*$', '', line) for line in list2]              # <remove spurious fab filter />
 list2 = [re.sub(r'^[_\W]?fancybox[_\W]*$', '', line) for line in list2]         # <remove spurious fancybox filter />
 list2 = [re.sub(r'^[_\W]?favicon(\.ico)?[_\W]*$', '', line) for line in list2]  # <remove spurious favicon(.ico) filter />
+list2 = [re.sub(r'^[_\W]?features?[_\W]*$', '', line) for line in list2]        # <remove spurious feature(s) filter />
 list2 = [re.sub(r'^[_\W]?feed(back)[_\W]*$', '', line) for line in list2]       # <remove spurious feed(back) filter />
 list2 = [re.sub(r'^[_\W]?feed[_\W]*$', '', line) for line in list2]             # <remove spurious feed filter />
 list2 = [re.sub(r'^[_\W]?files?[_\W]*$', '', line) for line in list2]           # <remove spurious file(s) filter />
@@ -716,7 +717,7 @@ list2 = [re.sub(r'^[_\W]?js(on)?[_\W]*$', '', line) for line in list2]          
 list2 = [re.sub(r'^[_\W]?keyboard[_\W]*$', '', line) for line in list2]         # <remove spurious keyboard filter />
 list2 = [re.sub(r'^[_\W]?labels?[_\W]*$', '', line) for line in list2]          # <remove spurious label(s) filter />
 list2 = [re.sub(r'^[_\W]?landing(.?page)?[_\W]*$', '', line) for line in list2] # <remove spurious landing(page) filter />
-list2 = [re.sub(r'^[_\W]?languages?[_\W]*$', '', line) for line in list2]       # <remove spurious language(s) filter />
+list2 = [re.sub(r'^[_\W]?lang(uage)s?[_\W]*$', '', line) for line in list2]     # <remove spurious lang(uage)(s) filter />
 list2 = [re.sub(r'^[_\W]?large[_\W]*$', '', line) for line in list2]            # <remove spurious large filter />
 list2 = [re.sub(r'^[_\W]?latest[_\W]*$', '', line) for line in list2]           # <remove spurious latest filter />
 list2 = [re.sub(r'^[_\W]?launch[_\W]*$', '', line) for line in list2]           # <remove spurious launch filter />
