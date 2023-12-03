@@ -491,7 +491,6 @@ print(list2)
 print(list5)
 
 for pattern in tqdm.tqdm(list9) :
-    pattern = r'^[_\W/]*abc[_\W/]*$'
     list2 = [re.sub(pattern, '', line) for line in list2]                       # <remove spurious filter from main list based on regex-white_list/>
     list5 = [re.sub(pattern, '', line) for line in list5]                       # <remove spurious filter from regex list based on regex-white_list />
 
@@ -503,6 +502,7 @@ print(list5)
 
 list2 = [line for line in list2 if len(line) > 1]                               # <remove items if length < 2 />
 list2 = sorted(list2)
+list5 = [line for line in list5 if len(line) > 1]                               # <remove items if length < 2 />
 list5 = sorted(list5)
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
