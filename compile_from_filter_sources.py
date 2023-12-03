@@ -485,6 +485,7 @@ print('18/20 : remove spurious url filters ')
 # <get regex white list from file, dedup, sort and clean up filters>
 
 list9 = [line.strip() for line in open(file9_in_name, encoding='UTF-8')]        # <populate list; remove leading/trailing spaces />
+list9 = [line for line in list9 if line != '']                                  # <discard empty lines />
 
 print(list2)
 print(list5)
