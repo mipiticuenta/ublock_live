@@ -491,9 +491,9 @@ list9 = [line for line in list9 if line.strip() != '']                          
 print(list2)
 print(list5)
 
-for item in tqdm.tqdm(list9) :
-    list2 = [re.sub(item, '', line) for line in list2]                          # <remove spurious filter from main list based on regex-white_list/>
-    list5 = [re.sub(item, '', line) for line in list5]                          # <remove spurious filter from regex list based on regex-white_list />
+for pattern in tqdm.tqdm(list9) :
+    list2 = [re.sub(pattern, '', line) for line in list2]                       # <remove spurious filter from main list based on regex-white_list/>
+    list5 = [re.sub(pattern, '', line) for line in list5]                       # <remove spurious filter from regex list based on regex-white_list />
 
 print(list2)
 print(list5)
