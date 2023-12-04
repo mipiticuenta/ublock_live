@@ -99,7 +99,7 @@ for line in list1 :
 # <fix /@/@/ url filters adding trailing * (prevents unnecessary regex) >
 
 list2 = [re.sub(r'^/([-\.\w]+/[-\./\w]+)/$', r'/\1/*', line) for line in list2]
-list2 = [re.sub(r'^/([-\.\w]+)/$', r'/\1/*', line) if len(line) > 35 else line for line in list2]
+list2 = [re.sub(r'^/([-\.\w]+)/$', r'/\1/*', line) if len(line) > 30 else line for line in list2]
 
 # </fix /@/@/ url filters adding trailing * (prevents unnecessary regex) >
 
