@@ -487,10 +487,13 @@ print('18/20 : remove spurious url filters ')
 list9 = [line.strip() for line in open(file9_in_name, encoding='UTF-8')]        # <populate list; remove leading/trailing spaces />
 list9 = [line for line in list9 if line != '']                                  # <discard empty lines />
 
+print(list2)
 for pattern in tqdm.tqdm(list9) :
+    print(pattern)
     pattern = re.compile(pattern)
     list2 = [pattern.sub('', line) for line in list2]                       # <remove spurious filter from main list based on regex-white_list/>
     list5 = [pattern.sub('', line) for line in list5]                       # <remove spurious filter from regex list based on regex-white_list />
+    print(list2)
 
 # </get regex white list from file, dedup, sort and clean up filters>
 
