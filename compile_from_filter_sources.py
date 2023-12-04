@@ -491,8 +491,8 @@ print(list2)
 for pattern in tqdm.tqdm(list9) :
     print(pattern)
     pattern = re.compile(pattern)
-    list2 = [pattern.sub('', line) for line in list2]                       # <remove spurious filter from main list based on regex-white_list/>
-    list5 = [pattern.sub('', line) for line in list5]                       # <remove spurious filter from regex list based on regex-white_list />
+    list2 = [pattern.sub(r'', line) for line in list2]                       # <remove spurious filter from main list based on regex-white_list/>
+    list5 = [pattern.sub(r'', line) for line in list5]                       # <remove spurious filter from regex list based on regex-white_list />
     print(list2)
 
 # </get regex white list from file, dedup, sort and clean up filters>
