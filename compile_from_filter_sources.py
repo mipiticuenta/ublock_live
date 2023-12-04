@@ -490,8 +490,8 @@ list9 = [line for line in list9 if line != '']                                  
 print(list2)
 for pattern in tqdm.tqdm(list9) :
     pattern = r'' + pattern
+    pattern = re.compile(pattern)
     print(pattern)
-    pattern = re.compile(r'' + pattern)
     list2 = [pattern.sub(r'', line) for line in list2]                       # <remove spurious filter from main list based on regex-white_list/>
     list5 = [pattern.sub(r'', line) for line in list5]                       # <remove spurious filter from regex list based on regex-white_list />
     print(list2)
