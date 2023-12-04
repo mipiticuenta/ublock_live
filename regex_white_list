@@ -1,3 +1,4 @@
+! url and regex white-listing based in regex; do not enclose regex in '' nor r''
 ^[_\W]*abc[_\W]*$
 ^[_\W]*about[_\W]*$
 ^[_\W]*account[_\W]*$
@@ -16,10 +17,10 @@
 ^[_\W]*all[_\W]*$
 ^[_\W]*amazon[_\W]*$
 ^[_\W]*anchor[_\W]*$
+^[_\W]?api\.js$
 ^[_\W]*apis?[0-9]?[_\W]*$
 ^[_\W]*app(?:le)?[_\W]*$
-^[_\W]*archi(?:ve)[_\W]*$
-^[_\W]*archivo[_\W]*$
+^[_\W]*archi(?:v[eo])[_\W]*$
 ^[_\W]*arriba[_\W]*$
 ^[_\W]*art(?:icle)?s?[_\W]*$
 ^[_\W]*assets?[_\W]*$
@@ -34,6 +35,7 @@
 ^[_\W]*back(?:grounds?)?[_\W]*$
 ^[_\W]*bank[_\W]*$
 ^[_\W]*bar[_\W]*$
+^[_\W]?base\.js$
 ^[_\W]*base[_\W]*$
 ^[_\W]*basic[_\W]*$
 ^[_\W]*batch[_\W]*$
@@ -53,10 +55,10 @@
 ^[_\W]*bmw[_\W]*$
 ^[_\W]*bnn[_\W]*$
 ^[_\W]*body[_\W]*$
+^[_\W]?(bootstrap\.)?min\.js
 ^[_\W]*bootstrap(?:\.min)?[_\W]*$
 ^[_\W]*bottom[_\W]*$
-^[_\W]*bot[_\W]*$
-^[_\W]*box[_\W]*$
+^[_\W]*bo[tx][_\W]*$
 ^[_\W]*brand(?:ing)?[_\W]*$
 ^[_\W]*braze[_\W]*$
 ^[_\W]*bridge[_\W]*$
@@ -71,6 +73,7 @@
 ^[_\W]*can[_\W]*$
 ^[_\W]*caos[_\W]*$
 ^[_\W]*capture[_\W]*$
+^[_\W]*carte[_\W]*$
 ^[_\W]*cash[_\W]*$
 ^[_\W]*cdn[_\W]*$
 ^[_\W]*center[_\W]*$
@@ -98,6 +101,7 @@
 ^[_\W]*connect[_\W]*$
 ^[_\W]*conte[nx]t[_\W]*$
 ^[_\W]*control[_\W]*$
+^[_\W]*conv[_\W]*$
 ^[_\W]*copy(?:right)[_\W]*$
 ^[_\W]*core[_\W]*$
 ^[_\W]*count[_\W]*$
@@ -123,8 +127,7 @@
 ^[_\W]*digital(?:ocean)[_\W]*$
 ^[_\W]*direct[_\W]*$
 ^[_\W]*(?:dis)?play[_\W]*$
-^[_\W]*do[ct][_\W]*$
-^[_\W]*doc?[_\W]*$
+^[_\W]*do[clt]?[_\W]*$
 ^[_\W]*dollar[_\W]*$
 ^[_\W]*domains?[_\W]*$
 ^[_\W]*(?:down|up)?load(?:er|s)?[_\W]*$
@@ -140,8 +143,7 @@
 ^[_\W]*entry[_\W]*$
 ^[_\W]*en.?us[_\W]*$
 ^[_\W]*error[_\W]*$
-^[_\W]*europa[_\W]*$
-^[_\W]*euro[_\W]*$
+^[_\W]*euro(?:pa)?[_\W]*$
 ^[_\W]*(?:ex)?changes?[_\W]*$
 ^[_\W]*exe[_\W]*$
 ^[_\W]*export[_\W]*$
@@ -154,8 +156,7 @@
 ^[_\W]*favicon(?:\.ico)?[_\W]*$
 ^[_\W]*fbc[_\W]*$
 ^[_\W]*features?[_\W]*$
-^[_\W]*feed(?:back)[_\W]*$
-^[_\W]*feed[_\W]*$
+^[_\W]*feed(?:back)?[_\W]*$
 ^[_\W]*fetch[_\W]*$
 ^[_\W]*files?[_\W]*$
 ^[_\W]*film[_\W]*$
@@ -195,8 +196,7 @@
 ^[_\W]*help[_\W]*$
 ^[_\W]*hero[_\W]*$
 ^[_\W]*history[_\W]*$
-^[_\W]*homepage[_\W]*$
-^[_\W]*home[_\W]*$
+^[_\W]*home(?:page)?[_\W]*$
 ^[_\W]*hospital[_\W]*$
 ^[_\W]*html[_\W]*$
 ^[_\W]*huffingtonpost[_\W]*$
@@ -237,6 +237,7 @@
 ^[_\W]*large[_\W]*$
 ^[_\W]*latest[_\W]*$
 ^[_\W]*launch[_\W]*$
+^[_\W]?(lazyload\.)?min\.js$
 ^[_\W]*leaderboard[_\W]*$
 ^[_\W]*leon?[_\W]*$
 ^[_\W]*libraries[_\W]*$
@@ -255,8 +256,10 @@
 ^[_\W]*lookup[_\W]*$
 ^[_\W]*lotus[_\W]*$
 ^[_\W]*l?ubuntu[_\W]*$
+^[_\W]*l[_\W]*$
 ^[_\W]*magazin[_\W]*$
 ^[_\W]*main(?:\.css)?[_\W]*$
+^[_\W]?main\.js$
 ^[_\W]*manifest[_\W]*$
 ^[_\W]*maps?[_\W]*$
 ^[_\W]*mark(?:et(?:ing)?)?[_\W]*$
@@ -284,7 +287,7 @@
 ^[_\W]*native[_\W]*$
 ^[_\W]*nav[_\W]*$
 ^[_\W]*net(?:work)?[_\W]*$
-^[_\W]*news?letter[_\W]*$
+^[_\W]*news?(?:letter)?[_\W]*$
 ^[_\W]*next[_\W]*$
 ^[_\W]*nodes?[_\W]*$
 ^[_\W]*normal[_\W]*$
@@ -364,11 +367,9 @@
 ^[_\W]*safari[_\W]*$
 ^[_\W]*samsung[_\W]*$
 ^[_\W]*screens?[_\W]*$
-^[_\W]*screen[_\W]*$
 ^[_\W]*scripts?[_\W]*$
 ^[_\W]*sdk[_\W]*$
-^[_\W]*searchresults?[_\W]*$
-^[_\W]*search[_\W]*$
+^[_\W]*search(?:results?)?[_\W]*$
 ^[_\W]*section[_\W]*$
 ^[_\W]*server?[_\W]*$
 ^[_\W]*services?[_\W]*$
@@ -377,6 +378,7 @@
 ^[_\W]*shared?[_\W]*$
 ^[_\W]*show[_\W]*$
 ^[_\W]*side(?:bar)[_\W]*$
+^[_\W]*si[eo][_\W]*$
 ^[_\W]*simple[_\W]*$
 ^[_\W]*si[tz]es?[_\W]*$
 ^[_\W]*skins?[_\W]*$
@@ -394,10 +396,8 @@
 ^[_\W]*sports?[_\W]*$
 ^[_\W]*spotify(?:cdn)?[_\W]*$
 ^[_\W]*sprites?[_\W]*$
-^[_\W]*sprite[_\W]*$
 ^[_\W]*square[_\W]*$
-^[_\W]*src[_\W]*$
-^[_\W]*srv[_\W]*$
+^[_\W]*sr[cv][_\W]*$
 ^[_\W]*ssl[_\W]*$
 ^[_\W]*start[_\W]*$
 ^[_\W]*static[_\W]*$
@@ -448,6 +448,7 @@
 ^[_\W]*vendors?[_\W]*$
 ^[_\W]*video(?:js)?(?:playblack)?[_\W]*$
 ^[_\W]*video(?:player)?s?[_\W]*$
+^[_\W]*vid[_\W]*$
 ^[_\W]*views?[_\W]*$
 ^[_\W]*vimeo(?:cdn)?[_\W]*$
 ^[_\W]*vinted[_\W]*$
@@ -471,4 +472,5 @@
 ^[_\W]*youtube[_\W]*$
 ^[_\W]*zaf[_\W]*$
 ^[_\W]*zalando[_\W]*$
+^[_\W]*metric[_\W]*$
 

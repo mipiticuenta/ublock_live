@@ -11,7 +11,7 @@ Compile a single deduplicated block list from url sources
 
 import math                                                                     # <math functions />
 import os                                                                       # <operating system interfaces />
-import re                                                                       # <regular expression operations />
+import re                                                                       # <regex cpapbilities />
 import requests                                                                 # <get files using url />
 import tqdm                                                                     # <progress bar />
 
@@ -37,6 +37,7 @@ print(
     '# ============================================================\n',
     '# input : <filter_sources> textfile                           \n',
     '# input : <domains_white_list> textfile                       \n',
+    '# input : <regex white list> textfile                         \n',
     '# output: <compiled_block_list_old> textfile                  \n',
     '# output: <compiled_block_list> textfile                      \n',
     '# output: <ipfire_domains_block_list> textfile                \n',
@@ -61,8 +62,8 @@ except:
 # <get filter url sources from file, dedup and sort>
 
 list1 = [line.strip() for line in open(file1_in_name, encoding='UTF-8')]        # <populate source lists; remove leading/trailing spaces />
-list1 = [re.sub(r'(^| +)!.*', '', line) for line in list1]                      # <remove comments' />
-list1 = [line for line in list1 if line.strip() != '']                          # <discard empty lines />
+list1 = [re.sub(r'^ *!.*', '', line) for line in list1]                         # <remove ! comments' />
+list1 = [line for line in list1 if line.strip() != '']                          # <remove empty lines />
 
 list1 = sorted(list1)
 
@@ -95,7 +96,7 @@ for line in list1 :
 
 # </dump sources to list>
 
-list2 = [re.sub(r'^/([-\.\w]+/[-\./\w]+)/$', r'/\1/*', line) for line in list2]    # <fix /@/@/ url filters adding trailing * />
+list2 = [re.sub(r'^/[-\.\w]+/[-\./\w]+/$', r'/\1/*', line) for line in list2]   # <fix /@/@/ url filters adding trailing * (prevents unnecessary regex) />
 
 # <segregate regex filters>
 
@@ -119,19 +120,19 @@ print(' 1/20 : remove leading/trailing/dup spaces ')
 list2 = [re.sub(r'\t', ' ', line).strip() for line in list2]                    # <replace tab with space  />
 list2 = [re.sub(r' +', ' ', line).strip() for line in list2]                    # <dedup spaces and remove leading/trailing spaces />
 
-list2 = [line for line in list2 if len(line) > 1]                               # <remove items if length < 2 />
+list2 = [line for line in list2 if len(line) > 1]                               # <remove line if length < 2 />
 list2 = sorted(list2)
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
 print(' 2/20 : remove comments ')
 
-list2 = [re.sub(r'(^| +)!+.*', '', line) for line in list2]                     # <remove ! comment />
-list2 = [re.sub(r'(^| +)#(?!(\?|@|#\:|#\.|##|#\[)).*', '', line) for line in list2]     # <remove # comment; preserve cosmetics and exceptions />
-list2 = [re.sub(r'^\[.*', '', line) for line in list2]                          # <remove [comment] line />
-list2 = [re.sub(r'^\{.*', '', line) for line in list2]                          # <remove {comment} line />
+list2 = [re.sub(r'^ *!+.*', '', line) for line in list2]                        # <remove ! comment />
+list2 = [re.sub(r'^ *\[.*', '', line) for line in list2]                        # <remove [comment] />
+list2 = [re.sub(r' *^\{.*', '', line) for line in list2]                        # <remove {comment} />
+list2 = [re.sub(r'^ *#(?!(\?|@|#\:|#\.|##|#\[)).*', '', line) for line in list2]     # <remove # comment; preserve cosmetics and exceptions />
 list2 = [re.sub(r'^[^a-z0-9]+$', '', line) for line in list2]                   # <remove lines comprised only by simbols />
 
-list2 = [line for line in list2 if len(line) > 1]                               # <remove items if length < 2 />
+list2 = [line for line in list2 if len(line) > 1]                               # <remove line if length < 2 />
 list2 = sorted(list2)
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
@@ -160,14 +161,14 @@ list2 = [line for line in list2 if not(re.search(r'localhost', line))]          
 list2 = [re.sub(r'^.*/wp\-content/uploads/?.*', '', line) for line in list2]    # <remove items containing /wp-content/uploads/' />
 list2 = [re.sub(r'(?<=[a-z])\^\*', '/*', line) for line in list2]               # <replace ^* with / />
 
-list2 = [line for line in list2 if len(line) > 1]                               # <remove items if length < 2 />
+list2 = [line for line in list2 if len(line) > 1]                               # <remove line if length < 2 />
 list2 = sorted(list2)
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
 print(' 5/20 : keep case for cosmetic filters; apply lower case for the remaining ')
 list2 = (
     [line         for line in list2 if     re.search(r'[#\\]', line) ] + 
-    [line.lower() for line in list2 if not(re.search(r'[#\\]', line))]          # <lower case for all except cosmetics and regex />
+    [line.lower() for line in list2 if not(re.search(r'[#\\]', line))]          # <apply lower case except cosmetics and regex />
 )
 list2 = sorted(list2)
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
@@ -185,7 +186,7 @@ list2 = [re.sub(r'^\*?\#\@.*', '', line) for line in list2]                     
 list2 = [re.sub(r'^\*?\#\?.*', '', line) for line in list2]                     # <remove #? exceptions />
 list2 = [re.sub(r'^\*?\@\@.*', '', line) for line in list2]                     # <remove @@ exceptions />
 
-list2 = [line for line in list2 if len(line) > 1]                               # <remove items if length < 2 />
+list2 = [line for line in list2 if len(line) > 1]                               # <remove line if length < 2 />
 list2 = sorted(list2)
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
@@ -204,7 +205,7 @@ list2s = [line.split('|') for line in list2s]                                   
 list2s = [item for line in list2s for item in line if line !=[''] and item != '']   # <flatten list'/>
 
 list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
-list2 = [line for line in list2 if len(line) > 1]                               # <remove items if length < 2 />
+list2 = [line for line in list2 if len(line) > 1]                               # <remove line if length < 2 />
 del(list2s)
 list2 = sorted(list2)
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
@@ -226,7 +227,7 @@ list2s = [line.split('|') for line in list2s if len(line) > 0]                  
 list2s = [item for line in list2s for item in line if line !=[''] and item != '']   # <flatten list'/>
 
 list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
-list2 = [line for line in list2 if len(line) > 1]                               # <remove items if length < 2 />
+list2 = [line for line in list2 if len(line) > 1]                               # <remove line if length < 2 />
 del(list2s)
 list2 = sorted(list2)
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
@@ -339,7 +340,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^\.?png\??(?![a-z0-9])', '*', line).strip() for line in list2]    # <replace leading png with * >
     list2 = [re.sub(r'^\.?tiff\??(?![a-z0-9])', '*', line).strip() for line in list2]   # <replace leading tiff with * >
 
-    list2 = [line for line in list2 if len(line) > 1]                           # <remove items if length < 2 />
+    list2 = [line for line in list2 if len(line) > 1]                           # <remove line if length < 2 />
     list2 = sorted(list2)
     print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
@@ -362,7 +363,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'(^[^#]{2,})\$[-~,=a-z0-9]*$(?<!/)(?<!important)', r'\1', line) for line in list2]    # <remove specific trailing $ filters except *$ or ending with important />
     list2 = [re.sub(r'\??\*\=.*(^/)$', '', line).strip() for line in list2]     # <remove trailing ?*=... />
 
-    list2 = [line for line in list2 if len(line) > 1]                           # <remove items if length < 2 />
+    list2 = [line for line in list2 if len(line) > 1]                           # <remove line if length < 2 />
     list2 = sorted(list2)
     print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
@@ -378,7 +379,7 @@ while n_1 > len(list2):                                                         
     )
 
     list2 = sorted(set(list2) | set(list2s))                                    # <join retrieved domains to main list'/>
-    list2 = [line for line in list2 if len(line) > 1]                           # <remove items if length < 2 />
+    list2 = [line for line in list2 if len(line) > 1]                           # <remove line if length < 2 />
     del(list2s)
     list2 = sorted(list2)
     print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
@@ -403,7 +404,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[-/\.\w]*(\*[-/\.\w]*)+/\*$', '', line).strip() for line in list2]         # <remove //* url filters using * wildcard />
     list2 = [re.sub(r'^\.(?=[a-z]*\.(com|edu|gob|gou?v|net|org))', '', line).strip() for line in list2]     # <remove leading . preceded by domain com edu gob go(u)v net org />
 
-    list2 = [line for line in list2 if len(line) > 1]                           # <remove items if length < 2 />
+    list2 = [line for line in list2 if len(line) > 1]                           # <remove line if length < 2 />
     list2 = sorted(list2)
     print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
@@ -438,7 +439,7 @@ list2 = [re.sub(r'^.*\.gif$', '.gif', line) for line in list2]                  
 list2 = [re.sub(r'^.*\.rar$', '', line) for line in list2]                      # <remove @.rar filters />
 list2 = [re.sub(r'^.*\.zip$', '', line) for line in list2]                      # <remove @.zip filters />
 
-list2 = [line for line in list2 if len(line) > 1]                               # <remove items if length < 2 />
+list2 = [line for line in list2 if len(line) > 1]                               # <remove line if length < 2 />
 list2 = sorted(list2)
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
@@ -470,13 +471,8 @@ list2 = [re.sub(r'^\*\$\~?xhr.*', '*$xhr', line) for line in list2]             
 list2 = [re.sub(r'^\*\$\~?xmlhttprequest.*', '', line) for line in list2]       # <enforce *$xhr />
 list2 = [re.sub(r'^\*\$important.*', '', line) for line in list2]               # <remove *$important filters />
 list2 = [re.sub(r'^\*\$.*\.js$', '', line) for line in list2]                   # <remove *$...js filters />
-list2 = [re.sub(r'^[_\W]?api\.js$', '', line) for line in list2]                # <remove api.js filter />
-list2 = [re.sub(r'^[_\W]?base\.js$', '', line) for line in list2]               # <remove base.js filter />
-list2 = [re.sub(r'^[_\W]?main\.js$', '', line) for line in list2]               # <remove main.js filter />
-list2 = [re.sub(r'^[_\W]?(bootstrap\.)?min\.js$', '', line) for line in list2]  # <remove bootstrap.min.js filter />
-list2 = [re.sub(r'^[_\W]?(lazyload\.)?min\.js$', '', line) for line in list2]   # <remove lazyload.min.js filter />
 
-list2 = [line for line in list2 if len(line) > 1]                               # <remove items if length < 2 />
+list2 = [line for line in list2 if len(line) > 1]                               # <remove line if length < 2 />
 list2 = sorted(list2)
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
@@ -485,7 +481,8 @@ print('18/20 : remove spurious url filters ')
 # <get regex white list from file, dedup, sort and clean up filters>
 
 list9 = [line.strip() for line in open(file9_in_name, encoding='UTF-8')]        # <populate list; remove leading/trailing spaces />
-list9 = [line for line in list9 if line != '']                                  # <discard empty lines />
+list9 = [re.sub(r'^ *!.*', '', line) for line in list9]                         # <remove ! comments' />
+list9 = [line for line in list9 if line != '']                                  # <remove empty lines />
 
 for pattern in tqdm.tqdm(list9) :
     pattern = re.compile(r'' + pattern)
@@ -494,9 +491,9 @@ for pattern in tqdm.tqdm(list9) :
 
 # </get regex white list from file, dedup, sort and clean up filters>
 
-list2 = [line for line in list2 if len(line) > 1]                               # <remove items if length < 2 />
+list2 = [line for line in list2 if len(line) > 1]                               # <remove line if length < 2 />
 list2 = sorted(list2)
-list5 = [line for line in list5 if len(line) > 1]                               # <remove items if length < 2 />
+list5 = [line for line in list5 if len(line) > 1]                               # <remove line if length < 2 />
 list5 = sorted(list5)
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
@@ -524,6 +521,7 @@ print(
     '{:,}'.format(len(list5)),
     ' regex filters written to ',
     file5_out_name,
+    '/n',
     sep = ''
 )
 
@@ -582,8 +580,11 @@ print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
 print('\n', 'Deflating url filters redundant with regex filters', sep = '')
 
-for string in tqdm.tqdm(list5):
-    list2 = [line for line in list2 if (re.search(r'(\#|removeparam)', line) or not(re.search(re.sub(r'^/', '', re.sub(r'/(\$important)?$', '', string)), ' ' + line + ' ')))]
+for pattern in tqdm.tqdm(list5):
+    pattern = re.compile(r'' + re.sub(r'/(?:\$important)?$', '', pattern)[1:])  # < create regex pattern for faster processing />
+    list2 = [line for line in list2 if (re.search(r'(?:\#|removeparam)', line) or not(pattern.search(' ' + line + ' ')))]
+
+#    list2 = [line for line in list2 if (re.search(r'(\#|removeparam)', line) or not(re.search(re.sub(r'^/', '', re.sub(r'/(\$important)?$', '', string)), ' ' + line + ' ')))]
 
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
@@ -618,8 +619,8 @@ list3 = [line for line in list3 if not(re.search(r'^(com|edu|gob|gou?v|net|org|[
 # <get domains white list from file, dedup and sort>
 
 list8 = [line.strip() for line in open(file8_in_name, encoding='UTF-8')]        # <populate list; remove leading/trailing spaces />
-list8 = [re.sub(r'(^| +)!.*', '', line) for line in list8]                      # <remove comments' />
-list8 = [line for line in list8 if line.strip() != '']                          # <discard empty lines />
+list8 = [re.sub(r'^ *!.*', '', line) for line in list8]                         # <remove ! comments' />
+list8 = [line for line in list8 if line.strip() != '']                          # <remove empty lines />
 
 list3 = sorted(set(list3) - set(list8))
 
