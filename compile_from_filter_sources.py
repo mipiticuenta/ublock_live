@@ -488,14 +488,9 @@ list9 = [line.strip() for line in open(file9_in_name, encoding='UTF-8')]        
 list9 = [line for line in list9 if line != '']                                  # <discard empty lines />
 
 for pattern in tqdm.tqdm(list9) :
-    list2 = [re.sub(pattern, '', line) for line in list2]                       # <remove spurious filter from main list based on regex-white_list/>
-    list5 = [re.sub(pattern, '', line) for line in list5]                       # <remove spurious filter from regex list based on regex-white_list />
-
-for pattern in tqdm.tqdm(list9) :
-    for line in list2 :
-        print(pattern)
-        print(line)
-        print(re.sub(pattern, '', line))
+    pattern = re.compile(pattern)
+    list2 = [pattern.sub('', line) for line in list2]                       # <remove spurious filter from main list based on regex-white_list/>
+    list5 = [pattern.sub('', line) for line in list5]                       # <remove spurious filter from regex list based on regex-white_list />
 
 # </get regex white list from file, dedup, sort and clean up filters>
 
