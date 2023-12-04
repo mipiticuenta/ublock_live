@@ -28,7 +28,6 @@
 *$websocket
 *$xhr
 /^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/
-/abc
 @@/[_\W]adunits?[_\W]/$domain=youtube.com
 @@||accounts.google.com$domain=youtube.com
 @@||amazon.com^$inline-script,1p
@@ -55,4 +54,3 @@
 @@||worldbank.org^$inline-script,1p
 @@||www.linkedin.com^$inline-script,xhr,1p
 @@||youtube.com^$inline-script,xhr,1p
-abc.
