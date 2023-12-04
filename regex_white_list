@@ -1,7 +1,15 @@
+! aaa- url and regex white-listing based in regex; do not enclose regex in '' nor r''
 ^.*agriculture.*$
 ^.*aviation.*$
+^.*climate.*$
+^.*destination.*$
+^.*document.*$
 ^.*forecast.*$
-! url and regex white-listing based in regex; do not enclose regex in '' nor r''
+^.*formula.*$
+^.*hospital.*$
+^.*independent.*$
+^.*isobars.*$
+^.*outdoor.*$
 ^[_\W]*abc[_\W]*$
 ^[_\W]*about[_\W]*$
 ^[_\W]*account[_\W]*$
@@ -20,6 +28,7 @@
 ^[_\W]*all[_\W]*$
 ^[_\W]*amazon[_\W]*$
 ^[_\W]*anchor[_\W]*$
+^[_\W]*angular[_\W]*$
 ^[_\W]?api\.js$
 ^[_\W]*apis?[0-9]?[_\W]*$
 ^[_\W]*app(?:le)?[_\W]*$
@@ -102,6 +111,7 @@
 ^[_\W]*compress[_\W]*$
 ^[_\W]*com[_\W]*$
 ^[_\W]*config[_\W]*$
+^[_\W]*conf[_\W]*$
 ^[_\W]*connect[_\W]*$
 ^[_\W]*conte[nx]t[_\W]*$
 ^[_\W]*control[_\W]*$
@@ -204,8 +214,9 @@
 ^[_\W]*help[_\W]*$
 ^[_\W]*hero[_\W]*$
 ^[_\W]*history[_\W]*$
+^[_\W]*homepage\.css[_\W]*$
 ^[_\W]*home(?:page)?[_\W]*$
-^[_\W]*hospital[_\W]*$
+^[_\W]*hotel[_\W]*$
 ^[_\W]*html[_\W]*$
 ^[_\W]*huffingtonpost[_\W]*$
 ^[_\W]*hum[_\W]*$
@@ -278,7 +289,6 @@
 ^[_\W]*measure(?:ments?)?[_\W]*$
 ^[_\W]*menu[_\W]*$
 ^[_\W]*message[_\W]*$
-^[_\W]*meteoblue[_\W]*$
 ^[_\W]*metric[_\W]*$
 ^[_\W]*microsoft[_\W]*$
 ^[_\W]*middle[_\W]*$
@@ -312,7 +322,6 @@
 ^[_\W]*org[_\W]*$
 ^[_\W]*original[_\W]*$
 ^[_\W]*orion[_\W]*$
-^[_\W]*outdoor[_\W]*$
 ^[_\W]*overlay[_\W]*$
 ^[_\W]*owa[_\W]*$
 ^[_\W]*panels?[_\W]*$
@@ -321,6 +330,7 @@
 ^[_\W]*pause[_\W]*$
 ^[_\W]*pdp[_\W]*$
 ^[_\W]*perform[_\W]*$
+^[_\W]*perf[_\W]*$
 ^[_\W]*per[_\W]*$
 ^[_\W]*photos?[_\W]*$
 ^[_\W]*pic(?:ture)?s?[_\W]*$
@@ -448,6 +458,7 @@
 ^[_\W]*tree[_\W]*$
 ^[_\W]*ttf[_\W]*$
 ^[_\W]*twitter[_\W]*$
+^[_\W]*uds[_\W]*$
 ^[_\W]*unblock[_\W]*$
 ^[_\W]*une[_\W]*$
 ^[_\W]*unique[_\W]*$

@@ -97,6 +97,7 @@ for line in list1 :
 # </dump sources to list>
 
 list2 = [re.sub(r'^/([-\.\w]+/[-\./\w]+)/$', r'/\1/*', line) for line in list2] # <fix /@/@/ url filters adding trailing * (prevents unnecessary regex) />
+list2 = [re.sub(r'^/([-\.\w]+)/$', r'/\1/*', line) for line in list2 if len(line) > 40]  # <fix /@/@/ url filters adding trailing * (prevents unnecessary regex) />
 
 # <segregate regex filters>
 
