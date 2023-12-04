@@ -1,3 +1,6 @@
+^.*agriculture.*$
+^.*aviation.*$
+^.*forecast.*$
 ! url and regex white-listing based in regex; do not enclose regex in '' nor r''
 ^[_\W]*abc[_\W]*$
 ^[_\W]*about[_\W]*$
@@ -11,7 +14,6 @@
 ^[_\W]*adp[_\W]*$
 ^[_\W]*afr[_\W]*$
 ^[_\W]*agent[_\W]*$
-^[_\W]*agriculture[_\W]*$
 ^[_\W]*airbnb[_\W]*$
 ^[_\W]*ajax[_\W]*$
 ^[_\W]*akamai(?:hd|zed)?[_\W]*$
@@ -32,7 +34,6 @@
 ^[_\W]*auto[_\W]*$
 ^[_\W]*availability[_\W]*$
 ^[_\W]*avatar[_\W]*$
-^[_\W]*aviation[_\W]*$
 ^[_\W]*axd[_\W]*$
 ^[_\W]*back(?:grounds?)?[_\W]*$
 ^[_\W]*bank[_\W]*$
@@ -139,6 +140,7 @@
 ^[_\W]*down[_\W]*$
 ^[_\W]*duckduckgo[_\W]*$
 ^[_\W]*dynamic[_\W]*$
+^.*weather.*$
 ^[_\W]*ebay[_\W]*$
 ^[_\W]*editorial[_\W]*$
 ^[_\W]*elm[_\W]*$
@@ -175,7 +177,6 @@
 ^[_\W]*font.?awesome[_\W]*$
 ^[_\W]*fonts?[_\W]*$
 ^[_\W]*foot(?:er)?[_\W]*$
-^[_\W]*forecast[_\W]*$
 ^[_\W]*forms?[_\W]*$
 ^[_\W]*forum[_\W]*$
 ^[_\W]*fotos?[_\W]*$
@@ -465,7 +466,6 @@
 ^[_\W]*vinted[_\W]*$
 ^[_\W]*wait[_\W]*$
 ^[_\W]*wall[_\W]*$
-^[_\W]*weather[_\W]*$
 ^[_\W]*webp[_\W]*$
 ^[_\W]*webresource[_\W]*$
 ^[_\W]*web(?:site)?[_\W]*$
