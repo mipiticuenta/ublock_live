@@ -30,6 +30,7 @@
 ^[_\W]*airbnb[_\W]*$
 ^[_\W]*ajax[_\W]*$
 ^[_\W]*akamai(?:hd|zed)?[_\W]*$
+^[_\W]*alert[_\W]*$
 ^[_\W]*allareas\.css[_\W]*$
 ^[_\W]*allbocks\.css[_\W]*$
 ^[_\W]*alltemplates\.css[_\W]*$
@@ -45,10 +46,14 @@
 ^[_\W]*app(?:le)?[_\W]*$
 ^[_\W]*archi(?:v[eo])[_\W]*$
 ^[_\W]*arriba[_\W]*$
+^[_\W]*article\.css[_\W]*$
+^[_\W]*article\.js[_\W]*$
 ^[_\W]*art(?:icle)?s?[_\W]*$
 ^[_\W]*assets?[_\W]*$
 ^[_\W]*(?:a)?sync[_\W]*$
 ^[_\W]*atc[_\W]*$
+^[_\W]*ats[_\W]*$
+^[_\W]*attach(?:ment)?[_\W]*$
 ^[_\W]*audience[_\W]*$
 ^[_\W]*audio[_\W]*$
 ^[_\W]*auth[_\W]*$
@@ -157,6 +162,7 @@
 ^[_\W]*dc3[_\W]*$
 ^[_\W]*deb[_\W]*$
 ^[_\W]*default[_\W]*$
+^[_\W]*deliver[_\W]*$
 ^[_\W]*delivery[_\W]*$
 ^[_\W]*delo[_\W]*$
 ^[_\W]*design[_\W]*$
@@ -178,10 +184,13 @@
 ^[_\W]*ebay[_\W]*$
 ^[_\W]*echo[_\W]*$
 ^[_\W]*editorial[_\W]*$
+^[_\W]*elements?[_\W]*$
 ^[_\W]*elm[_\W]*$
 ^[_\W]*e?mail[_\W]*$
 ^[_\W]*embed[_\W]*$
 ^[_\W]*encart[_\W]*$
+^[_\W]*encrypt[_\W]*$
+^[_\W]*engine[_\W]*$
 ^[_\W]*entry[_\W]*$
 ^[_\W]*en.?us[_\W]*$
 ^[_\W]*error[_\W]*$
@@ -199,6 +208,7 @@
 ^[_\W]*fastly[_\W]*$
 ^[_\W]*favicon(?:\.ico)?[_\W]*$
 ^[_\W]*fbc[_\W]*$
+^[_\W]*featured?[_\W]*$
 ^[_\W]*features?[_\W]*$
 ^[_\W]*feed(?:back)?[_\W]*$
 ^[_\W]*fetch[_\W]*$
@@ -210,6 +220,7 @@
 ^[_\W]*flags?[_\W]*$
 ^[_\W]*flash[_\W]*$
 ^[_\W]*flipboard[_\W]*$
+^[_\W]*floating[_\W]*$
 ^[_\W]*follow[_\W]*$
 ^[_\W]*fond[_\W]*$
 ^[_\W]*font.?awesome[_\W]*$
@@ -241,7 +252,9 @@
 ^[_\W]*groups?[_\W]*$
 ^[_\W]*grupos?[_\W]*$
 ^[_\W]*gstatic[_\W]*$
+^[_\W]*hamburguer[_\W]*$
 ^[_\W]*head(?:er)?[_\W]*$
+^[_\W]*height[_\W]*$
 ^[_\W]*help[_\W]*$
 ^[_\W]*hero[_\W]*$
 ^[_\W]*history[_\W]*$
@@ -257,6 +270,7 @@
 ^[_\W]*icp[_\W]*$
 ^[_\W]*idg[_\W]*$
 ^[_\W]*iframe[_\W]*$
+^[_\W]*ifr[_\W]*$
 ^[_\W]*ima?ge?(?:ne)?s?[_\W]*$
 ^[_\W]*imp[_\W]*$
 ^[_\W]*inbox[_\W]*$
@@ -264,6 +278,7 @@
 ^[_\W]*(?:inc?|out|left|right)[_\W]*$
 ^[_\W]*index[_\W]*$
 ^[_\W]*infinity[_\W]*$
+^[_\W]*infobae[_\W]*$
 ^[_\W]*info[_\W]*$
 ^[_\W]*init[_\W]*$
 ^[_\W]*inline[_\W]*$
@@ -287,11 +302,13 @@
 ^[_\W]*jquery[-_\.0-9]*\.min\.js[_\W]*$
 ^[_\W]*jquery(?:\.min)?(?:\.js)?[_\W]*$
 ^[_\W]*js(?:on)?[_\W]*$
+^[_\W]*jwt[_\W]*$
 ^[_\W]*keyboard[_\W]*$
 ^[_\W]*labels?[_\W]*$
 ^[_\W]*landing(?:.?page)?[_\W]*$
 ^[_\W]*lang(?:uage)s?[_\W]*$
 ^[_\W]*large[_\W]*$
+^[_\W]*latest.?news?[_\W]*$
 ^[_\W]*latest[_\W]*$
 ^[_\W]*lato[_\W]*$
 ^[_\W]*launchpad[_\W]*$
@@ -335,6 +352,7 @@
 ^[_\W]*menu[_\W]*$
 ^[_\W]*message[_\W]*$
 ^[_\W]*metric[_\W]*$
+^[_\W]*metropolis[_\W]*$
 ^[_\W]*microsoft[_\W]*$
 ^[_\W]*middle[_\W]*$
 ^[_\W]*mini?[_\W]*$
@@ -343,17 +361,20 @@
 ^[_\W]*modal[_\W]*$
 ^[_\W]*modules?[_\W]*$
 ^[_\W]*money[_\W]*$
+^[_\W]*monserrat\.css[_\W]*$
 ^[_\W]*mon[_\W]*$
 ^[_\W]*more[_\W]*$
 ^[_\W]*mozilla[_\W]*$
 ^[_\W]*mp[0-9[_\W]*$
 ^[_\W]*(?:multi)?media[_\W]*$
+^[_\W]*mx[_\W]*$
 ^[_\W]*names?[_\W]*$
 ^[_\W]*national[_\W]*$
 ^[_\W]*native[_\W]*$
 ^[_\W]*nav[_\W]*$
 ^[_\W]*net(?:work)?[_\W]*$
 ^[_\W]*news?(?:letter)?[_\W]*$
+^[_\W]*news.?paper[_\W]*$
 ^[_\W]*next[_\W]*$
 ^[_\W]*nodes?[_\W]*$
 ^[_\W]*normal[_\W]*$
@@ -373,6 +394,7 @@
 ^[_\W]*owa[_\W]*$
 ^[_\W]*panels?[_\W]*$
 ^[_\W]*parse[_\W]*$
+^[_\W]*partial[_\W]*$
 ^[_\W]*particles?[_\W]*$
 ^[_\W]*pause[_\W]*$
 ^[_\W]*pdp[_\W]*$
@@ -419,6 +441,7 @@
 ^[_\W]*rainspot\[-\w]*[_\W]*$
 ^[_\W]*random[_\W]*$
 ^[_\W]*raw(?:github)?[_\W]*$
+^[_\W]*rbc[_\W]*$
 ^[_\W]*react[_\W]*$
 ^[_\W]*reader[_\W]*$
 ^[_\W]*rea?d[_\W]*$
@@ -446,6 +469,7 @@
 ^[_\W]*safari[_\W]*$
 ^[_\W]*salt[_\W]*$
 ^[_\W]*samsung[_\W]*$
+^[_\W]*schedule[_\W]*$
 ^[_\W]*screens?[_\W]*$
 ^[_\W]*scripts?[_\W]*$
 ^[_\W]*sdk[_\W]*$
@@ -455,6 +479,7 @@
 ^[_\W]*server?[_\W]*$
 ^[_\W]*services?[_\W]*$
 ^[_\W]*session[_\W]*$
+^[_\W]*setting[_\W]*$
 ^[_\W]*set[_\W]*$
 ^[_\W]*shared?[_\W]*$
 ^[_\W]*shop[_\W]*$
@@ -462,12 +487,14 @@
 ^[_\W]*side(?:bar)[_\W]*$
 ^[_\W]*si[eo][_\W]*$
 ^[_\W]*simple[_\W]*$
+^[_\W]*single[_\W]*$
 ^[_\W]*si[tz]es?[_\W]*$
 ^[_\W]*skins?[_\W]*$
 ^[_\W]*sky[_\W]*$
 ^[_\W]*slick[_\W]*$
 ^[_\W]*slider[_\W]*$
 ^[_\W]*smart[_\W]*$
+^[_\W]*smile[_\W]*$
 ^[_\W]*snippets?[_\W]*$
 ^[_\W]*social[_\W]*$
 ^[_\W]*soft?[_\W]*$
@@ -491,6 +518,7 @@
 ^[_\W]*stock[_\W]*$
 ^[_\W]*storage[_\W]*$
 ^[_\W]*store[_\W]*$
+^[_\W]*story[_\W]*$
 ^[_\W]*stream[_\W]*$
 ^[_\W]*stripe[_\W]*$
 ^[_\W]*studio[_\W]*$
@@ -509,12 +537,14 @@
 ^[_\W]*tcf[_\W]*$
 ^[_\W]*teams?[_\W]*$
 ^[_\W]*teaser[_\W]*$
+^[_\W]*tech[_\W]*$
 ^[_\W]*templates?[_\W]*$
 ^[_\W]*texas[_\W]*$
 ^[_\W]*te?xt[_\W]*$
 ^[_\W]*themes?[_\W]*$
 ^[_\W]*third[_\W]*$
 ^[_\W]*thumb(?:nails?)?[_\W]*$
+^[_\W]*ticker[_\W]*$
 ^[_\W]*timeline[_\W]*$
 ^[_\W]*timer?[_\W]*$
 ^[_\W]*tiny[_\W]*$
@@ -536,6 +566,7 @@
 ^[_\W]*une[_\W]*$
 ^[_\W]*unique[_\W]*$
 ^[_\W]*units?[_\W]*$
+^[_\W]*upi[_\W]*$
 ^[_\W]*url[_\W]*$
 ^[_\W]*users?[_\W]*$
 ^[_\W]*vam[_\W]*$
@@ -563,6 +594,7 @@
 ^[_\W]*world[_\W]*$
 ^[_\W]*wp(?:\-content)?[_\W]*$
 ^[_\W]*wpp[_\W]*$
+^[_\W]*wrap(?:per)?[_\W]*$
 ^[_\W]*wwhp\.min\.css[_\W]*$
 ^[_\W]*www[_\W]*$
 ^[_\W]*xml[_\W]*$
