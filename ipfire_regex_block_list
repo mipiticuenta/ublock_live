@@ -379,7 +379,18 @@
 .*[_\W]xn\-\-.*
 .*[_\W]zephr[-~\w\.]*\.js(on)?.*
 .*[_\W]zepto[-~\w\.]*\.js(on)?.*
+.*\.com\/proc\.php\?[0-9a-f]{40}$/$do.*
+.*\/(?:[0-9a-z]{7,25}-){9,13}[0-9a-z]{10,15}\/(?:[0-9a-z]+\/)+index\.php/$do.*
+.*\/[0-9a-z]{8,10}\?shu=[0-9a-z]{150,}/$do.*
+.*\/t\/[0-9]{3}\/[0-9]{3}\/a[0-9]{4,9}\.js$/$scrip.*
 .*^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?.*
+.*^https:\/\/(?:black|white)\d{1,2}\.zzz\.com\.ua\/(?:win|mac)\//$al.*
+.*^https:\/\/([a-z]+\.)?sythe\.org\/[\w\W]{30,}/$imag.*
+.*^https:\/\/[0-9a-z]{14,16}\.azureedge\.net\/\d{4}\//$do.*
+.*^https:\/\/[a-z]+\.com\/away\.php\?url=[%0-9A-z]{100,}$/$do.*
+.*^https?:\/\/(?:ak\.)?[a-z]{6,12}\.(?:com|net)\/4\/\d{7}/$doc,frame,popu.*
+.*^https?:\/\/.*\/easylist\/[0-9]{5}.*
+.*_dating\d\/index\.html\?aref=/$do.*
 .*_jb_static.*
 .*a14404ebc4ea86ccca.*
 .*abta.*
@@ -407,6 +418,7 @@
 .*adobe-initiated.*
 .*adobe.?target.*
 .*adq.*
+.*adsanity.*
 .*adslot.*
 .*adsonar.*
 .*adspace.*
@@ -422,7 +434,6 @@
 .*akismet.*
 .*akkurier.*
 .*aleph.*
-.*alert.*
 .*alert[-~\w\.]*\.js(on)?.*
 .*algolia.*
 .*alilog.*
@@ -436,7 +447,6 @@
 .*aq-dial-widget.*
 .*asn.*
 .*assetto_hub.*
-.*attach.*
 .*auction.*
 .*audiencescience.*
 .*audiencesegment.*
@@ -539,7 +549,6 @@
 .*debug_dl.*
 .*decide.*
 .*decision.*
-.*deliver.*
 .*demand.*
 .*demdex.*
 .*detected-cities.*
@@ -1087,7 +1096,6 @@
 .*identity.*
 .*idn.*
 .*idsync.*
-.*ifr.*
 .*iframe-scco.*
 .*iframely.*
 .*iipodredirection.*
@@ -1126,7 +1134,6 @@
 .*kcsteaks.*
 .*keyword.*
 .*klinik.*
-.*latestnews.*
 .*lctm.*
 .*lead-revenue.*
 .*leadforensics.*
@@ -1163,6 +1170,7 @@
 .*medias.*
 .*messaging.*
 .*metadata.*
+.*metrika.*
 .*metrix.*
 .*mev.*
 .*migrate_et3.*
@@ -1370,7 +1378,6 @@
 .*uniques.*
 .*universal_backup.*
 .*update-timezone.*
-.*upi.*
 .*urls.*
 .*usabilla.*
 .*user-chatping.*
