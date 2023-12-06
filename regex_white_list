@@ -1,4 +1,5 @@
 ! aaa- url and regex white-listing based in regex; do not enclose regex in '' nor r''
+! aaa- white-listing shall not be applied to cosmetic nor removeparam filters 
 ^.*agriculture.*$
 ^.*aviation.*$
 ^.*climate.*$
@@ -423,8 +424,7 @@
 ^[_\W]*pre[_\W]*$
 ^[_\W]*price[_\W]*$
 ^[_\W]*primary[_\W]*$
-^[_\W]*print\.css[_\W]*$
-^[_\W]*print[_\W]*$
+^[_\W]*print(?:\.css)?[_\W]*$
 ^[_\W]*process(?:or)?[_\W]*$
 ^[_\W]*prod(?:uct(?:ion)?s?)?[_\W]*$
 ^[_\W]*profile[_\W]*$
@@ -436,9 +436,8 @@
 ^[_\W]*public[_\W]*$
 ^[_\W]*publisher[_\W]*$
 ^[_\W]*pulse[_\W]*$
-^[_\W]*pum[_\W]*$
+^[_\W]*pu[mt][_\W]*$
 ^[_\W]*pure[_\W]*$
-^[_\W]*put[_\W]*$
 ^[_\W]*q_d[_\W]*$
 ^[_\W]*quality[_\W0-9]*$
 ^[_\W]*quote[_\W]*$
@@ -487,8 +486,7 @@
 ^[_\W]*setting[_\W]*$
 ^[_\W]*set[_\W]*$
 ^[_\W]*shared?[_\W]*$
-^[_\W]*shop[_\W]*$
-^[_\W]*show[_\W]*$
+^[_\W]*sho[pw][_\W]*$
 ^[_\W]*side(?:bar)[_\W]*$
 ^[_\W]*si[eo][_\W]*$
 ^[_\W]*simple[_\W]*$
@@ -552,10 +550,8 @@
 ^[_\W]*timer?[_\W]*$
 ^[_\W]*tiny[_\W]*$
 ^[_\W]*token[_\W]*$
-^[_\W]*tools?[_\W]*$
-^[_\W]*tooltips?[_\W]*$
+^[_\W]*tool(?:tip)?s?[_\W]*$
 ^[_\W]*tops?[_\W]*$
-^[_\W]*top[_\W]*$
 ^[_\W]*touch[_\W]*$
 ^[_\W]*traffic[_\W]*$
 ^[_\W]*tr(?:ai)?[_\W]*$
@@ -570,7 +566,7 @@
 ^[_\W]*unique[_\W]*$
 ^[_\W]*units?[_\W]*$
 ^[_\W]*upi[_\W]*$
-^[_\W]*url[_\W]*$
+^[_\W]*urls?[_\W]*$
 ^[_\W]*users?[_\W]*$
 ^[_\W]*vam[_\W]*$
 ^[_\W]*variations?[_\W]*$
@@ -579,12 +575,12 @@
 ^[_\W]*version[_\W]*$
 ^[_\W]*video(?:js)?(?:playblack)?[_\W]*$
 ^[_\W]*video(?:player)?s?[_\W]*$
-^[_\W]*vid[_\W]*$
+^[_\W]*vids?[_\W]*$
 ^[_\W]*vimeo(?:cdn)?[_\W]*$
 ^[_\W]*vinted[_\W]*$
 ^[_\W]*wait[_\W]*$
 ^[_\W]*wall[_\W]*$
-^[_\W]*webresource[_\W]*$
+^[_\W]*webresources?[_\W]*$
 ^[_\W]*web(?:site)?[_\W]*$
 ^[_\W]*whatsapp[_\W]*$
 ^[_\W]*widgets?[_\W]*$
@@ -604,4 +600,3 @@
 ^[_\W]*youtube[_\W]*$
 ^[_\W]*zaf[_\W]*$
 ^[_\W]*zalando[_\W]*$
-

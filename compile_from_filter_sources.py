@@ -6,6 +6,7 @@ Compile a single deduplicated block list from url sources
 
 # <sprint #1: dedup urls/>
 # <sprint #2: apply multicore/>
+# <sprint #3: apply whitelisting to cosmetic filters/>
 
 # </product backlog>
 
@@ -585,12 +586,18 @@ print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
 print('\n', 'Deflating url filters redundant with regex filters', sep = '')
 
+list2s = [line for line in list2 if re.search(r'(?:\#|removeparam)', line)]     # <segregate cosmetics a removeparam filters/>
+list2  = set(list2) - set(list2s)
+
 for pattern in tqdm.tqdm(list5):
     try :
         pattern = re.compile(r'' + re.sub(r'/(?:\$important)?$', '', pattern)[1:])  # < create regex pattern for faster processing />
-        list2 = [line for line in list2 if (re.search(r'(?:\#|removeparam)', line) or not(pattern.search(' ' + line + ' ')))]
+        # list2 = [line for line in list2 if (re.search(r'(?:\#|removeparam)', line) or not(pattern.search(' ' + line + ' ')))]
+        list2 = [line for line in list2 if not(pattern.search(' ' + line + ' '))]
     except :
         print('Regex error found; check for ' + pattern)
+
+list2 = sorted(set(list2) | set(list2s))                                        # <join lists'/>
 
 #    list2 = [line for line in list2 if (re.search(r'(\#|removeparam)', line) or not(re.search(re.sub(r'^/', '', re.sub(r'/(\$important)?$', '', string)), ' ' + line + ' ')))]
 
