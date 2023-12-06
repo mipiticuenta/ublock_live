@@ -97,12 +97,12 @@ for line in list1 :
 
 # </dump sources to list>
 
-# <fix /@/@/ url filters adding trailing * (prevents unnecessary regex) >
+# <fix /@/@/ url filters adding trailing * (prevents false regex) >
 
 list2 = [re.sub(r'^/([-\.\w]+/[-\./\w]+)/$', r'/\1/*', line) for line in list2]
 list2 = [re.sub(r'^/([-\.\w]+)/$', r'/\1/*', line) if len(line) > 30 else line for line in list2]
 
-# </fix /@/@/ url filters adding trailing * (prevents unnecessary regex) >
+# </fix /@/@/ url filters adding trailing * (prevents false regex) >
 
 # <segregate regex filters>
 
@@ -483,6 +483,13 @@ list2 = sorted(list2)
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
 print('18/20 : remove spurious url filters ')
+
+# <fix /@/@/ url filters adding trailing * (prevents false regex) >
+
+list2 = [re.sub(r'^/([-\.\w]+/[-\./\w]+)/$', r'/\1/*', line) for line in list2]
+list2 = [re.sub(r'^/([-\.\w]+)/$', r'/\1/*', line) if len(line) > 30 else line for line in list2]
+
+# </fix /@/@/ url filters adding trailing * (prevents false regex) >
 
 # <get regex white list from file, dedup, sort and clean up filters>
 
