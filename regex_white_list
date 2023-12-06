@@ -11,7 +11,7 @@
 ^.*independent.*$
 ^.*isobars.*$
 ^.*outdoor.*$
-^[_\W]*02_inight[_\W]*$
+^[_\W]*[_0-9]*inight[_\W]*$
 ^[_\W]*14_iday[_\W]*$
 ^[_\W]*abc[_\W]*$
 ^[_\W]*about[_\W]*$
@@ -172,6 +172,7 @@
 ^[_\W]*desktop[_\W]*$
 ^[_\W]*detail[_\W]*$
 ^[_\W]*dev(?:ices?)?[_\W]*$
+^[_\W]*dialogs?[_\W]*$
 ^[_\W]*digital(?:ocean)[_\W]*$
 ^[_\W]*direct[_\W]*$
 ^[_\W]*(?:dis)?play[_\W]*$
@@ -181,6 +182,7 @@
 ^[_\W]*domains?[_\W]*$
 ^[_\W]*(?:down|up)?load(?:er|s)?[_\W]*$
 ^[_\W]*down[_\W]*$
+^[_\W]*dsp[_\W]*$
 ^[_\W]*duckduckgo[_\W]*$
 ^[_\W]*dynamic[_\W]*$
 ^[_\W]*easy[_\W]*$
@@ -308,7 +310,6 @@
 ^[_\W]*js(?:on)?[_\W]*$
 ^[_\W]*jwt[_\W]*$
 ^[_\W]*keyboard[_\W]*$
-^[_\W]*koupe[_\W]*$
 ^[_\W]*labels?[_\W]*$
 ^[_\W]*landing(?:.?page)?[_\W]*$
 ^[_\W]*lang(?:uage)s?[_\W]*$
@@ -339,6 +340,7 @@
 ^[_\W]*logo[s0-9]?[_\W]*$
 ^[_\W]*lookup[_\W]*$
 ^[_\W]*lotus[_\W]*$
+^[_\W]*loupe[_\W]*$
 ^[_\W]*l?ubuntu[_\W]*$
 ^[_\W]*l[_\W]*$
 ^[_\W]*magazin[_\W]*$
@@ -355,6 +357,7 @@
 ^[_\W]*medias?[_\W]*$
 ^[_\W]*menu[_\W]*$
 ^[_\W]*message[_\W]*$
+^[_\W]*meteoblue.*pictofont[\w]*[_\W]*$
 ^[_\W]*metric[_\W]*$
 ^[_\W]*metropolis[_\W]*$
 ^[_\W]*microsoft[_\W]*$
@@ -464,6 +467,7 @@
 ^[_\W]*resizer?[_\W]*$
 ^[_\W]*resources?[_\W]*$
 ^[_\W]*rest[_\W]*$
+^[_\W]*reviews?[_\W]*$
 ^[_\W]*right[_\W]*$
 ^[_\W]*rokbox[_\W]*$
 ^[_\W]*root[_\W]*$
@@ -604,5 +608,4 @@
 ^[_\W]*youtube[_\W]*$
 ^[_\W]*zaf[_\W]*$
 ^[_\W]*zalando[_\W]*$
-
 
