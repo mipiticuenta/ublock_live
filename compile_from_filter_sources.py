@@ -555,8 +555,6 @@ list2.append('*$popunder')
 list2.append('*$websocket')
 list2.append('*$xhr')
 
-list2.append('.gif')
-
 print('20/20 : add exceptions')
 
 list2.append('@@||accounts.google.com$domain=youtube.com')
