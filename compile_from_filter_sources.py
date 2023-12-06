@@ -586,8 +586,11 @@ print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 print('\n', 'Deflating url filters redundant with regex filters', sep = '')
 
 for pattern in tqdm.tqdm(list5):
-    pattern = re.compile(r'' + re.sub(r'/(?:\$important)?$', '', pattern)[1:])  # < create regex pattern for faster processing />
-    list2 = [line for line in list2 if (re.search(r'(?:\#|removeparam)', line) or not(pattern.search(' ' + line + ' ')))]
+    try :
+        pattern = re.compile(r'' + re.sub(r'/(?:\$important)?$', '', pattern)[1:])  # < create regex pattern for faster processing />
+        list2 = [line for line in list2 if (re.search(r'(?:\#|removeparam)', line) or not(pattern.search(' ' + line + ' ')))]
+    except :
+        print('Regex error found; check for ' + pattern)
 
 #    list2 = [line for line in list2 if (re.search(r'(\#|removeparam)', line) or not(re.search(re.sub(r'^/', '', re.sub(r'/(\$important)?$', '', string)), ' ' + line + ' ')))]
 
