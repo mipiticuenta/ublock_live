@@ -534,7 +534,7 @@ print(
     '{:,}'.format(len(list5)),
     ' regex filters written to ',
     file5_out_name,
-    '/n',
+    '\n',
     sep = ''
 )
 
