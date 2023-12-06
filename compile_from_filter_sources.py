@@ -100,7 +100,7 @@ for line in list1 :
 # <fix /@/@/ url filters adding trailing * (prevents false regex) >
 
 list2 = [re.sub(r'^/([-\.\w]+/[-\./\w]+)/$', r'/\1/*', line) for line in list2]
-list2 = [re.sub(r'^/([-\.\w]+)/$', r'/\1/*', line) if len(line) > 30 else line for line in list2]
+list2 = [re.sub(r'^/([-=\.\+\!\w]+)/$', r'/\1/*', line) if len(line) > 25 else line for line in list2]
 
 # </fix /@/@/ url filters adding trailing * (prevents false regex) >
 
@@ -526,7 +526,7 @@ file5_out.write(
 # </open file5_out file and write header>
 
 list5 = sorted(list5)
-file5_out.writelines('.*' + re.sub(r'\$important$', '', line)[1:-1] + '.*' + '\n' for line in list5)
+file5_out.writelines(re.sub(r'\$important$', '', line)[1:-1] + '\n' for line in list5)
 file5_out.close()
 
 print(
