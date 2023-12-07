@@ -491,7 +491,7 @@ list2 = [re.sub(r'^/([-=\.\+\!\w]+)/$', r'/\1/*', line) if len(line) > 25 else l
 
 # </fix /@/@/ url filters adding trailing * (prevents false regex) >
 
-list2 = [line for line in list2 if not(re.search(r'^[^\(\)\~]', line))]         # <remove broken filters />
+list2 = [line for line in list2 if re.search(r'^[^\(\)\~]', line)]              # <remove broken filters />
 
 
 # <get regex white list from file, dedup, sort and clean up filters>
