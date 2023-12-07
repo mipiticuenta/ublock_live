@@ -491,6 +491,9 @@ list2 = [re.sub(r'^/([-=\.\+\!\w]+)/$', r'/\1/*', line) if len(line) > 25 else l
 
 # </fix /@/@/ url filters adding trailing * (prevents false regex) >
 
+list2 = [line for line in list2 if not(re.search(r'[^\(\)\~]', line))]          # <remove broken filters />
+
+
 # <get regex white list from file, dedup, sort and clean up filters>
 
 list9 = [line.strip() for line in open(file9_in_name, encoding='UTF-8')]        # <populate list; remove leading/trailing spaces />
