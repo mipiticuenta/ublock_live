@@ -1,3 +1,9 @@
+^.*\((?!.*\).*)$
+^.*\[(?!.*\].*)$
+^.*\{(?!.*\}.*)$
+^\*\$rpc.*$
+^\*\$size.*$
+^\*\$web.*$
 ! aaa- url and regex white-listing based in regex; do not enclose regex in '' nor r''
 ! aaa- white-listing shall not be applied to cosmetic nor removeparam filters 
 ^.*agriculture.*$
@@ -10,6 +16,7 @@
 ^.*hospital.*$
 ^.*independent.*$
 ^.*isobars.*$
+^\*#@#\:not\(input\)\:not\(textarea\)$
 ^.*outdoor.*$
 ^[_\W]*[_0-9]*inight[_\W]*$
 ^[_\W]*14_iday[_\W]*$
@@ -562,4 +569,5 @@
 ^[_\W]*year[_\W]*$
 ^[_\W]*youtube[_\W]*$
 ^[_\W]*zalando[_\W]*$
+^.*\:xpath.*$
 
