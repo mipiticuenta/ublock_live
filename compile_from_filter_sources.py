@@ -478,9 +478,9 @@ list2 = [re.sub(r'^/([-=\.\+\!\w]+)/$', r'/\1/*', line) if len(line) > 25 else l
 # </fix /@/@/ url filters adding trailing * (prevents false regex) >
 
 list2 = [line for line in list2 if re.search(r'^[^\(\)\[\]\{\}\~]', line)]      # <remove broken filters />
-list2 = [line for line in list2 if not(re.search(r'^.*\((?!.*\).*)$', line))]   # <remove broken filters />
-list2 = [line for line in list2 if not(re.search(r'^.*\[(?!.*\].*)$', line))]   # <remove broken filters />
-list2 = [line for line in list2 if not(re.search(r'^.*\{(?!.*\}.*)$', line))]   # <remove broken filters />
+list2 = [line for line in list2 if not(re.search(r'^.*\([^\)]*$', line))]       # <remove broken filters />
+list2 = [line for line in list2 if not(re.search(r'^.*\[[^\]]*$', line))]       # <remove broken filters />
+list2 = [line for line in list2 if not(re.search(r'^.*\{[^\}]*$', line))]       # <remove broken filters />
 
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
