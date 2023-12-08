@@ -468,7 +468,7 @@ list2 = [re.sub(r'^\*\$.*\.js$', '', line) for line in list2]                   
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
-print('18/20 : remove spurious url filters ')
+print('18/20 : remove broken filters and fix false regex ')
 
 # <fix /@/@/ url filters adding trailing * (prevents false regex) >
 
@@ -477,7 +477,12 @@ list2 = [re.sub(r'^/([-=\.\+\!\w]+)/$', r'/\1/*', line) if len(line) > 25 else l
 
 # </fix /@/@/ url filters adding trailing * (prevents false regex) >
 
-list2 = [line for line in list2 if re.search(r'^[^\(\)\[\~]', line)]            # <remove broken filters />
+list2 = [line for line in list2 if re.search(r'^[^\(\)\[\]\{\}\~]', line)]      # <remove broken filters />
+list2 = [line for line in list2 if not(re.search(^.*\((?!.*\).*)$, line))]      # <remove broken filters />
+list2 = [line for line in list2 if not(re.search(^.*\[(?!.*\].*)$, line))]      # <remove broken filters />
+list2 = [line for line in list2 if not(re.search(^.*\{(?!.*\}.*)$, line))]      # <remove broken filters />
+
+print('19/20 : remove spurious url filters ')
 
 # <get regex white list from file, dedup, sort and clean up filters>
 
@@ -526,7 +531,7 @@ print(
 
 # </write extracted regex type filters>
 
-print('19/20 : add filter to block numerical domains #.@(.@) filters')
+print('20/20 : add filter to block numerical domains #.@(.@) filters and add exceptions')
 
 list2.append('/^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/')                     # <add filter to block [-_/\.0-9]+\.[a-z]+ domains />
 
@@ -540,8 +545,6 @@ list2.append('*$ping')
 list2.append('*$popunder')
 list2.append('*$websocket')
 list2.append('*$xhr')
-
-print('20/20 : add exceptions')
 
 list2.append('@@||accounts.google.com$domain=youtube.com')
 list2.append('@@||amazon.com^$inline-script,1p')

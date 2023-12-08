@@ -1,11 +1,11 @@
+!! url and regex white-listing based in regex; do not enclose regex in '' nor r''
+!! white-listing shall not be applied to cosmetic nor removeparam filters 
 ^.*\((?!.*\).*)$
 ^.*\[(?!.*\].*)$
 ^.*\{(?!.*\}.*)$
 ^\*\$rpc.*$
 ^\*\$size.*$
 ^\*\$web.*$
-! aaa- url and regex white-listing based in regex; do not enclose regex in '' nor r''
-! aaa- white-listing shall not be applied to cosmetic nor removeparam filters 
 ^.*agriculture.*$
 ^.*aviation.*$
 ^.*climate.*$
