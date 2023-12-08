@@ -482,6 +482,9 @@ list2 = [line for line in list2 if not(re.search(r'^.*\((?!.*\).*)$', line))]   
 list2 = [line for line in list2 if not(re.search(r'^.*\[(?!.*\].*)$', line))]   # <remove broken filters />
 list2 = [line for line in list2 if not(re.search(r'^.*\{(?!.*\}.*)$', line))]   # <remove broken filters />
 
+list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
+print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
+
 print('19/20 : remove spurious url filters ')
 
 # <get regex white list from file, dedup, sort and clean up filters>
