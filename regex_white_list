@@ -1,3 +1,5 @@
+!$$ url and regex white-listing based in regex; do not enclose regex in '' nor r''
+!$$ white-listing shall not be applied to cosmetic nor removeparam filters 
 ^\*\$rpc.*$
 ^\*\$size.*$
 ^\*\$web.*$
@@ -11,9 +13,9 @@
 ^.*hospital.*$
 ^.*independent.*$
 ^.*isobars.*$
+^.*maps.*$
 ^.*\:not\(input\)\:not\(textarea\)$
 ^.*outdoor.*$
-!! url and regex white-listing based in regex; do not enclose regex in '' nor r''
 ^[_\W]*[_0-9]*inight[_\W]*$
 ^[_\W]*14_iday[_\W]*$
 ^[_\W]*about[_\W]*$
@@ -264,7 +266,6 @@
 ^[_\W]*help[_\W]*$
 ^[_\W]*hero[_\W]*$
 ^[_\W]*history[_\W]*$
-!! white-listing shall not be applied to cosmetic nor removeparam filters 
 ^[_\W]*holidays?[_\W]*$
 ^[_\W]*homepage\.css[_\W]*$
 ^[_\W]*home(?:page)?[_\W]*$
