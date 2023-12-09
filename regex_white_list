@@ -1,3 +1,4 @@
+!$$ important: use always the following syntax: ^....$
 !$$ url and regex white-listing based in regex; do not enclose regex in '' nor r''
 !$$ white-listing shall not be applied to cosmetic nor removeparam filters 
 ^\*\$rpc.*$
@@ -87,6 +88,7 @@
 ^[_\W]?(bootstrap\.)?min\.js
 ^[_\W]*bootstrap(?:\.min)?[_\W]*$
 ^[_\W]*boot[_\W]*$
+^[_\W]*border[_\W]*$
 ^[_\W]*bottom[_\W]*$
 ^[_\W]*box\.css[_\W]*$
 ^[_\W]*brand(?:ing)?[_\W]*$
@@ -164,6 +166,7 @@
 ^[_\W]*current[_\W]*$
 ^[_\W]*custom(?:er)?[_\W]*$
 ^[_\W]*daily[_\W]*$
+^[_\W]*dark[_\W]*$
 ^[_\W]*data[_\W]*$
 ^[_\W]*default[_\W]*$
 ^[_\W]*deliver[_\W]*$
@@ -496,7 +499,9 @@
 ^[_\W]*session[_\W]*$
 ^[_\W]*settings?[_\W]*$
 ^[_\W]*setting[_\W]*$
+^[_\W]*shadow[_\W]*$
 ^[_\W]*shared?[_\W]*$
+^[_\W]*shield[_\W]*$
 ^[_\W]*sho[pw][_\W]*$
 ^[_\W]*side(?:bar)[_\W]*$
 ^[_\W]*simple[_\W]*$
@@ -586,7 +591,7 @@
 ^[_\W]*web(?:site)?[_\W]*$
 ^[_\W]*whatsapp[_\W]*$
 ^[_\W]*widgets?[_\W]*$
-^[_\W]*wiki[pm]edia[_\W]*$
+^[_\W]*wiki(?:[pm]edia)?[_\W]*$
 ^[_\W]*windows?[_\W]*$
 ^[_\W]*woff[0-9[?_\W]*$
 ^[_\W]*word(?:press)?[_\W]*$
