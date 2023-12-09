@@ -62,11 +62,15 @@ except:
 
 # <get filter url sources from file, dedup and sort>
 
-list1 = [line.strip() for line in open(file1_in_name, encoding='UTF-8')]        # <populate source lists; remove leading/trailing spaces />
+list1 = [line.strip() for line in open(file1_in_name, encoding='UTF-8')]        # <populate source lists />
 list1 = [re.sub(r'^ *!.*', '', line) for line in list1]                         # <remove ! comments' />
 list1 = sorted([line for line in list1 if line.strip() != ''])                  # <remove empty lines />
 
 # </get filter url sources from file, dedup and sort>
+
+iana_domains = [line.strip() for line in open('https://data.iana.org/TLD/tlds-alpha-by-domain.txt', encoding='UTF-8')]        # <populate IANA domains lists />
+iana_domains = [re.sub(r'^#.*', '', line) for line in iana_domains]             # <remove # comments' />
+iana_domains = sorted([line for line in iana_domains if line.strip() != ''])    # <remove empty lines />
 
 # <dump sources to list>
 
