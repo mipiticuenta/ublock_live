@@ -265,7 +265,7 @@ while n_1 > len(list2):                                                         
 
     print('11/20 : clean up leading symbols numbers prefix etc')
 
-    list2 = [re.sub(r'^[_\W0-9]+[/\.\$]', '', line) for line in list2]          # <remove leading symbols and numbers preceding / . $ />
+    list2 = [re.sub(r'^[_\W0-9]*[/\.\$]', '', line) for line in list2]          # <remove leading symbols and numbers preceding / . $ />
     list2 = [re.sub(r'^[/\.]?[-\*\w](?=[/\.])', '', line).strip() for line in list2]    # <remove leading single -_* a-z0-9 preceding / . />
     list2 = [re.sub(r'^[/\.]\*', '*', line).strip() for line in list2]          # <remove leading / . if followed by * />
     list2 = [re.sub(r'^/\.', '/', line) for line in list2]                      # <remove leading /. with / />
