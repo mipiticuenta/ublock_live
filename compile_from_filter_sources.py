@@ -545,7 +545,7 @@ list2 = [line for line in list2 if (re.search(r'[^\[\]\{\}\\]', line))]         
 
 for pattern in tqdm.tqdm(list5):
     try :
-        pattern = re.compile(r'' + re.sub(r'/(?:\$important)?$', '', pattern)[1:])  # < create regex pattern for faster processing />
+        pattern = re.compile(r'' + pattern[: -1] + r'(?:\$important)?$')        # < create regex pattern for faster processing />
         # list2 = [line for line in list2 if (re.search(r'(?:\#|removeparam)', line) or not(pattern.search(' ' + line + ' ')))]
         list2 = [line for line in list2 if not(pattern.search(' ' + line + ' '))]
     except :
@@ -576,6 +576,7 @@ list3 = [line for line in list3 if not(re.search(r'^.*\.webp(\$important)?$', li
 list3 = [line for line in list3 if not(re.search(r'^.*\.bin(\$important)?$', line))]        # <remove @.bin from domains list />
 list3 = [line for line in list3 if not(re.search(r'^.*\.woff[0-9]?(\$important)?$', line))]     # <remove @.woff# from domains list />
 list3 = [line for line in list3 if not(re.search(r'^.*\.link(\$important)?$', line))]       # <remove @.link from domains list />
+list3 = [line for line in list3 if not(re.search(r'^.*\.ttf(\$important)?$', line))]        # <remove @.ttf from domains list />
 list3 = [line for line in list3 if line[0] != '-']                              # <remove -@.@ from domains list />
 list2 = set(list2) - set(list3)                                                 # <only domains part are processed in this section; @.js are kept in list2 />
 
