@@ -535,58 +535,11 @@ print(
 
 # </write extracted regex type filters>
 
-print('20/20 : add filter to block numerical domains #.@(.@) filters and add exceptions')
-
-#list2 = sorted(set(list2) | set(list2cer))                                      # <join retrieved cosmetics, exceptions and removeparams to main list'/>
-
-list2.append('/^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/')                     # <add filter to block [-_/\.0-9]+\.[a-z]+ domains />
-
-list2.append('*$beacon')
-list2.append('*$csp=all')
-list2.append('*$inline-font')
-list2.append('*$inline-script')
-list2.append('*$object')
-list2.append('*$other')
-list2.append('*$ping')
-list2.append('*$popunder')
-list2.append('*$websocket')
-list2.append('*$xhr')
-
-list2.append('@@||accounts.google.com$domain=youtube.com')
-list2.append('@@||amazon.com^$inline-script,1p')
-list2.append('@@||amazon.es^$inline-script,1p')
-list2.append('@@||backmarket.es^$inline-script,1p')
-list2.append('@@||bbc.com^$inline-script,1p')
-list2.append('@@||cloudfront.net^$script,domain=backmarket.es')
-list2.append('@@||gitlab.com^$inline-script,xhr,1p')
-list2.append('@@||google.com^$inline-script,1p')
-list2.append('@@||googlevideo.com^$removeparam=/mgte/')
-list2.append('@@||googlevideo.com^$xhr')
-list2.append('@@||gstatic.com^$xhr,domain=youtube.com')
-list2.append('@@||ikea.com^$inline-script,1p')
-list2.append('@@||ikea.com/*/header-footer/menu-products.html$xhr,1p')
-list2.append('@@||ikea.es^$inline-script,1p')
-list2.append('@@||licdn.com^$xhr,domain=linkedin.com')
-list2.append('@@||linkedin.com^$inline-script,1p')
-list2.append('@@||linkedin.com^$removeparam=/redir/')
-list2.append('@@||mail.google.com^$removeparam=view')
-list2.append('@@||mail.google.com^$xhr,1p')
-list2.append('@@||meteoblue.com^$inline-script,xhr,1p')
-list2.append('@@||meteoblue.com^$removeparam=/callback/i')
-list2.append('@@||meteoblue.com^$removeparam=/metric/i')
-list2.append('@@/[_\W]adunits?[_\W]/$domain=youtube.com')
-list2.append('@@||worldbank.org^$inline-script,1p')
-list2.append('@@||www.linkedin.com^$inline-script,xhr,1p')
-list2.append('@@||youtube.com^$inline-script,xhr,1p')
-
-list2 = sorted(list2)
-print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
-
 # <transforming loop/>
 
 # <remove url filters covered by regex filters>
 
-print('\n', 'Deflating url filters redundant with regex filters', sep = '')
+print('\n', '20/20 : Deflating url filters redundant with regex filters', sep = '')
 
 list2s = [line for line in list2 if re.search(r'(?:\#|\@|removeparam)', line)]  # <segregate cosmetics, exceptions and removeparam filters/>
 list2  = set(list2) - set(list2s)
@@ -757,6 +710,50 @@ print(
 # </save a backup renamed *_old; overwrite if exists>
 
 # <write main output>
+
+print('added filter to block numerical domains #.@(.@) filters and exceptions')
+
+list2.append('/^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/')                     # <add filter to block [-_/\.0-9]+\.[a-z]+ domains />
+
+list2.append('*$beacon')
+list2.append('*$csp=all')
+list2.append('*$inline-font')
+list2.append('*$inline-script')
+list2.append('*$object')
+list2.append('*$other')
+list2.append('*$ping')
+list2.append('*$popunder')
+list2.append('*$websocket')
+list2.append('*$xhr')
+
+list2.append('@@||accounts.google.com$domain=youtube.com')
+list2.append('@@||amazon.com^$inline-script,1p')
+list2.append('@@||amazon.es^$inline-script,1p')
+list2.append('@@||backmarket.es^$inline-script,1p')
+list2.append('@@||bbc.com^$inline-script,1p')
+list2.append('@@||cloudfront.net^$script,domain=backmarket.es')
+list2.append('@@||gitlab.com^$inline-script,xhr,1p')
+list2.append('@@||google.com^$inline-script,1p')
+list2.append('@@||googlevideo.com^$removeparam=/mgte/')
+list2.append('@@||googlevideo.com^$xhr')
+list2.append('@@||gstatic.com^$xhr,domain=youtube.com')
+list2.append('@@||ikea.com^$inline-script,1p')
+list2.append('@@||ikea.com/*/header-footer/menu-products.html$xhr,1p')
+list2.append('@@||ikea.es^$inline-script,1p')
+list2.append('@@||licdn.com^$xhr,domain=linkedin.com')
+list2.append('@@||linkedin.com^$inline-script,1p')
+list2.append('@@||linkedin.com^$removeparam=/redir/')
+list2.append('@@||mail.google.com^$removeparam=view')
+list2.append('@@||mail.google.com^$xhr,1p')
+list2.append('@@||meteoblue.com^$inline-script,xhr,1p')
+list2.append('@@||meteoblue.com^$removeparam=/callback/i')
+list2.append('@@||meteoblue.com^$removeparam=/metric/i')
+list2.append('@@/[_\W]adunits?[_\W]/$domain=youtube.com')
+list2.append('@@||worldbank.org^$inline-script,1p')
+list2.append('@@||www.linkedin.com^$inline-script,xhr,1p')
+list2.append('@@||youtube.com^$inline-script,xhr,1p')
+
+list2 = sorted(list2)
 
 file2_out = open(file2_out_name, 'w')
 
