@@ -104,7 +104,7 @@ if (response.status_code) :
 iana_tld = [re.sub(r'^#.*', '', line).strip() for line in iana_tld]             # <remove # comments' />
 iana_tld = sorted([line for line in iana_tld if line != ''])                    # <remove empty lines />
 
-print('\nIANA top level domains (TLD) list loaded\n')
+print('\n IANA top level domains (TLD) list loaded')
 
 # <fix /@/@/ url filters adding trailing * (prevents false regex) >
 
@@ -552,7 +552,7 @@ list2  = set(list2) - set(list2s)
 
 list2 = [re.sub(r'^.+(?=/[^/]+$)', '', line) for line in list2]                 # <simplify urls keeping last /* part />
 list2 = [line for line in list2 if len(line) > 3]                               # <keep filters with len > 3 />
-list2 = [line for line in list2 if (re.search(r'[^\[\]\{\}\\]', line))]         # <remove broken regex filters />
+list2 = [line for line in list2 if (re.search(r'[^\[\]\{\}\;\,\\]', line))]     # <remove broken regex filters />
 
 for pattern in tqdm.tqdm(list5):
     try :
