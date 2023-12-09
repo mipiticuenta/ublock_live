@@ -574,7 +574,7 @@ list3 = [line for line in list3 if not(re.search(r'^.*\.js(?:on)?(\$important)?$
 list3 = [line for line in list3 if not(re.search(r'^.*\.css(\$important)?$', line))]        # <remove @.css from domains list />
 list3 = [line for line in list3 if not(re.search(r'^.*\.webp(\$important)?$', line))]       # <remove @.webp from domains list />
 list3 = [line for line in list3 if not(re.search(r'^.*\.bin(\$important)?$', line))]        # <remove @.bin from domains list />
-list3 = [line for line in list3 if not(re.search(r'^.*\.woff[0-9]?(\$important)?$', line))]     # <remove @.woff# from domains list />
+list3 = [line for line in list3 if not(re.search(r'^.*\.woff[0-9]?(\$important)?$', line))] # <remove @.woff# from domains list />
 list3 = [line for line in list3 if not(re.search(r'^.*\.link(\$important)?$', line))]       # <remove @.link from domains list />
 list3 = [line for line in list3 if not(re.search(r'^.*\.ttf(\$important)?$', line))]        # <remove @.ttf from domains list />
 list3 = [line for line in list3 if line[0] != '-']                              # <remove -@.@ from domains list />
