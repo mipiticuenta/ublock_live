@@ -547,7 +547,7 @@ for pattern in tqdm.tqdm(list5):
     try :
         pattern = re.compile(r'' + pattern[: -1] + r'(?:\$important)?$')        # < create regex pattern for faster processing />
         # list2 = [line for line in list2 if (re.search(r'(?:\#|removeparam)', line) or not(pattern.search(' ' + line + ' ')))]
-        list2 = [line for line in list2 if not(pattern.search(' ' + line + ' '))]
+        list2 = [line for line in list2 if not(pattern.search(line))]
     except :
         print('Regex error found; check for ' + pattern)
 
