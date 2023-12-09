@@ -130,10 +130,8 @@ print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 print(' 2/20 : remove comments ')
 
 list2 = [re.sub(r'^ *!+.*', '', line) for line in list2]                        # <remove ! comment />
-list2 = [re.sub(r'^ *\[.*', '', line) for line in list2]                        # <remove [comment] />
-list2 = [re.sub(r' *^\{.*', '', line) for line in list2]                        # <remove {comment} />
+list2 = [re.sub(r'^ *[\[\{].*', '', line) for line in list2]                    # <remove [comment] {comment} />
 list2 = [re.sub(r'^ *#(?!(\?|@|#\:|#\.|##|#\[)).*', '', line) for line in list2]     # <remove # comment; preserve cosmetics and exceptions />
-list2 = [re.sub(r'^[^a-z0-9]+$', '', line) for line in list2]                   # <remove lines comprised only by simbols />
 
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
@@ -150,7 +148,6 @@ print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
 print(' 4/20 : remove items containing % about: $badfilter localhost /wp-content/uploads/; remove http: IP4 IP6 :port/ www')
 
-list2 = [re.sub(r'^[^a-z]+$', '', line) for line in list2]                      # <remove lines comprised only by simbols and numbers />
 list2 = [line for line in list2 if not(re.search(r'[,\$]badfilter', line))]     # <remove items comprising $badfilter />
 list2 = [line for line in list2 if not(re.search(r'about\:', line))]            # <remove items comprising about: >
 list2 = [line for line in list2 if not(re.search(r'\%', line))]                 # <remove items comprising % >
@@ -380,21 +377,19 @@ while n_1 > len(list2):                                                         
     del(list2s)
     print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
-    print('14/20 : simplify urls; keep just last /* part ')
+    print('14/20 : simplify urls')
 
     list2 = [re.sub(r'\*+', '*', line).strip() for line in list2]               # <dedup * />
     list2 = [re.sub(r'\.+', '.', line).strip() for line in list2]               # <dedup . />
     list2 = [re.sub(r'/+', '/', line).strip() for line in list2]                # <dedup / />
     list2 = [re.sub(r'^[^a-z]+$', '', line).strip() for line in list2]          # <remove lines comprised only by simbols and numbers />
     list2 = [re.sub(r'^[^a-z]+x[^a-z]+$', '', line) for line in list2]          # <remove lines comrpised by [^a-z]+x[^a-z]+ combinations />
-    list2 = [line for line in list2 if len(line) > 3]                           # <keep filters with len > 3 />
     list2 = [re.sub(r'^[_\W]?[^ap]?[^dx]?[_\W]?\*?$', '', line) for line in list2]       # <remove 2 chars max [a-z][0-9] sequence filter excluding ad px />
     list2 = [re.sub(r'^[_\W]?a?[^d]?[_\W]?\*?$', '', line) for line in list2]   # <remove 2 ax pd sequence filter />
     list2 = [re.sub(r'^[_\W]?p?[^x]?[_\W]?\*?$', '', line) for line in list2]   # <remove 2 ax pd sequence filter />
     list2 = [re.sub(r'^[_\W]?[^a]?d?[_\W]?\*?$', '', line) for line in list2]   # <remove 2 ax pd sequence filter />
     list2 = [re.sub(r'^[_\W]?[^p]?x?\*?$', '', line) for line in list2]         # <remove 2 ax pd sequence filter />
     list2 = [re.sub(r'^[^a-z]+x[^a-z]+[/\.](?!(com|net))', '', line) for line in list2]  # <remove leading [^a-z]+x[^a-z]+ combinations />
-    list2 = [re.sub(r'^[-/\.\w]+(?=/[-\.\w]+$)', '', line) for line in list2]   # <simplify urls keeping last /* part />
     list2 = [re.sub(r'^.*/\*/', '/', line) for line in list2]                   # <replace any url preceded by /*/ (included) with / />
     list2 = [re.sub(r'^[-/\.\w]*(\*[-/\.\w]*)+$(?<!/\*)', '', line).strip() for line in list2]    # <remove url filters using * wildcard except ending with /* />
     list2 = [re.sub(r'^[-/\.\w]*(\*[-/\.\w]*)+/\*$', '', line).strip() for line in list2]         # <remove //* url filters using * wildcard />
@@ -539,12 +534,13 @@ print(
 
 # <remove url filters covered by regex filters>
 
-print('\n', '20/20 : Deflating url filters redundant with regex filters', sep = '')
+print('\n', '20/20 : simplify urls keeping last /* part and deflat url filters redundant with regex filters', sep = '')
 
 list2s = [line for line in list2 if re.search(r'(?:\#|\@|removeparam)', line)]  # <segregate cosmetics, exceptions and removeparam filters/>
 list2  = set(list2) - set(list2s)
 
 list2 = [re.sub(r'^.+(?=/[^/]+$)', '', line) for line in list2]                 # <simplify urls keeping last /* part />
+list2 = [line for line in list2 if len(line) > 3]                               # <keep filters with len > 3 />
 
 for pattern in tqdm.tqdm(list5):
     try :
