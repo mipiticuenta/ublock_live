@@ -573,15 +573,21 @@ list2 = sorted(set(list2) | set(list5))
 
 print('\n', 'Listing domain filters; ', end = '', sep = '')
 
-list3 = [line for line in list2 if re.search(r'^[-\.\w]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
-list3 = [line for line in list3 if not(re.search(r'^.*\.js(?:on)?(\$important)?$', line))]  # <remove @.js from domains list />
-list3 = [line for line in list3 if not(re.search(r'^.*\.css(\$important)?$', line))]        # <remove @.css from domains list />
-list3 = [line for line in list3 if not(re.search(r'^.*\.webp(\$important)?$', line))]       # <remove @.webp from domains list />
-list3 = [line for line in list3 if not(re.search(r'^.*\.bin(\$important)?$', line))]        # <remove @.bin from domains list />
-list3 = [line for line in list3 if not(re.search(r'^.*\.woff[0-9]?(\$important)?$', line))] # <remove @.woff# from domains list />
-list3 = [line for line in list3 if not(re.search(r'^.*\.link(\$important)?$', line))]       # <remove @.link from domains list />
-list3 = [line for line in list3 if not(re.search(r'^.*\.ttf(\$important)?$', line))]        # <remove @.ttf from domains list />
-list3 = [line for line in list3 if line[0] != '-']                              # <remove -@.@ from domains list />
+list3 = []
+
+for tld in iana_domains :
+    pattern = re.pattern(r'' + ('^[a-z0-9][-\.\w]+\.' + tld + '(\$important)?$'))
+    list3 = list3 + [line for line in list2 if pattern.search(line)]
+
+#list3 = [line for line in list2 if re.search(r'^[-\.\w]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
+#list3 = [line for line in list3 if not(re.search(r'^.*\.js(?:on)?(\$important)?$', line))]  # <remove @.js from domains list />
+#list3 = [line for line in list3 if not(re.search(r'^.*\.css(\$important)?$', line))]        # <remove @.css from domains list />
+#list3 = [line for line in list3 if not(re.search(r'^.*\.webp(\$important)?$', line))]       # <remove @.webp from domains list />
+#list3 = [line for line in list3 if not(re.search(r'^.*\.bin(\$important)?$', line))]        # <remove @.bin from domains list />
+#list3 = [line for line in list3 if not(re.search(r'^.*\.woff[0-9]?(\$important)?$', line))] # <remove @.woff# from domains list />
+#list3 = [line for line in list3 if not(re.search(r'^.*\.link(\$important)?$', line))]       # <remove @.link from domains list />
+#list3 = [line for line in list3 if not(re.search(r'^.*\.ttf(\$important)?$', line))]        # <remove @.ttf from domains list />
+#list3 = [line for line in list3 if line[0] != '-']                              # <remove -@.@ from domains list />
 list2 = set(list2) - set(list3)                                                 # <only domains part are processed in this section; @.js are kept in list2 />
 
 # </extract domains from list>
