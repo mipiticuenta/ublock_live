@@ -265,10 +265,8 @@ while n_1 > len(list2):                                                         
 
     print('11/20 : clean up leading symbols numbers prefix etc')
 
-    list2 = [re.sub(r'^[_\W0-9]+[/\.]', '', line) for line in list2]            # <remove leading symbols and numbers preceding / . />
-    list2 = [re.sub(r'^[_\W0-9]+(?=\$)', '', line) for line in list2]           # <remove leading symbols and numbers preceding $ />
-    list2 = [re.sub(r'^[/\.]?[-\w\*](?=[/\.])', '', line).strip() for line in list2]    # <remove leading single -_a-z0-9\* preceding / . />
-    list2 = [re.sub(r'^[/\.]?[a-z][0-9](?=[/\.])', '', line).strip() for line in list2] # <remove leading single char number preceding / . />
+    list2 = [re.sub(r'^[_\W0-9]+[/\.\$]', '', line) for line in list2]          # <remove leading symbols and numbers preceding / . $ />
+    list2 = [re.sub(r'^[/\.]?[-\*\w](?=[/\.])', '', line).strip() for line in list2]    # <remove leading single -_* a-z0-9 preceding / . />
     list2 = [re.sub(r'^[/\.]\*', '*', line).strip() for line in list2]          # <remove leading / . if followed by * />
     list2 = [re.sub(r'^/\.', '/', line) for line in list2]                      # <remove leading /. with / />
     list2 = [re.sub(r'^\$', '*$', line).strip() for line in list2]              # <fix leading $ with *$ />
@@ -390,7 +388,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'/+', '/', line).strip() for line in list2]                # <dedup / />
     list2 = [re.sub(r'^[^a-z]+$', '', line).strip() for line in list2]          # <remove lines comprised only by simbols and numbers />
     list2 = [re.sub(r'^[^a-z]+x[^a-z]+$', '', line) for line in list2]          # <remove lines comrpised by [^a-z]+x[^a-z]+ combinations />
-    list2 = [line for line in list2 in len(line) > 3]                           # <keep filters with len > 3 />
+    list2 = [line for line in list2 if len(line) > 3]                           # <keep filters with len > 3 />
     list2 = [re.sub(r'^[_\W]?[^ap]?[^dx]?[_\W]?\*?$', '', line) for line in list2]       # <remove 2 chars max [a-z][0-9] sequence filter excluding ad px />
     list2 = [re.sub(r'^[_\W]?a?[^d]?[_\W]?\*?$', '', line) for line in list2]   # <remove 2 ax pd sequence filter />
     list2 = [re.sub(r'^[_\W]?p?[^x]?[_\W]?\*?$', '', line) for line in list2]   # <remove 2 ax pd sequence filter />
