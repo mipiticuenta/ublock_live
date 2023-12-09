@@ -68,15 +68,6 @@ list1 = sorted([line for line in list1 if line.strip() != ''])                  
 
 # </get filter url sources from file, dedup and sort>
 
-iana_domains = []
-
-response = requests.get('https://data.iana.org/TLD/tlds-alpha-by-domain.txt', proxies=proxy_servers)
-if (response.status_code) :
-    iana_domains.update(response.text.split('\n'))
-
-iana_domains = [re.sub(r'^#.*', '', line).strip() for line in iana_domains]     # <remove # comments' />
-iana_domains = sorted([line for line in iana_domains if line.strip() != ''])    # <remove empty lines />
-
 # <dump sources to list>
 
 list2 = set()                                                                   # <set() type ensures no elements' duplication />
@@ -103,6 +94,15 @@ for line in list1 :
         )
 
 # </dump sources to list>
+
+iana_domains = set()
+
+response = requests.get('https://data.iana.org/TLD/tlds-alpha-by-domain.txt', proxies=proxy_servers)
+if (response.status_code) :
+    iana_domains.update(response.text.split('\n'))
+
+iana_domains = [re.sub(r'^#.*', '', line).strip() for line in iana_domains]     # <remove # comments' />
+iana_domains = sorted([line for line in iana_domains if line.strip() != ''])    # <remove empty lines />
 
 # <fix /@/@/ url filters adding trailing * (prevents false regex) >
 
