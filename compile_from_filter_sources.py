@@ -104,6 +104,8 @@ if (response.status_code) :
 iana_domains = [re.sub(r'^#.*', '', line).strip() for line in iana_domains]     # <remove # comments' />
 iana_domains = sorted([line for line in iana_domains if line.strip() != ''])    # <remove empty lines />
 
+print('IANA top level domains list loaded\n')
+
 # <fix /@/@/ url filters adding trailing * (prevents false regex) >
 
 list2 = [re.sub(r'^/([-=\.\+\!\w]+/[-=\.\+\!/\w]+)/$', r'/\1/*', line) for line in list2]
