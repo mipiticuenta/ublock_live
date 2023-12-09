@@ -269,9 +269,8 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.]?[-\*\w](?=[/\.])', '', line).strip() for line in list2]    # <remove leading single -_* a-z0-9 preceding / . />
     list2 = [re.sub(r'^[/\.]\*', '*', line).strip() for line in list2]          # <remove leading / . if followed by * />
     list2 = [re.sub(r'^/\.', '/', line) for line in list2]                      # <remove leading /. with / />
-    list2 = [re.sub(r'^\$', '*$', line).strip() for line in list2]              # <fix leading $ with *$ />
     list2 = [re.sub(r'^[/\.\=\?]\$', '*$', line).strip() for line in list2]     # <fix leading /$ .$ =$ ?$ with *$ />
-    list2 = [re.sub(r'^\.?[-_a-z0-9\*]+/', '/', line) for line in list2]        # <replace leading @/ with / />
+    list2 = [re.sub(r'^\.?[-\*\w]+/', '/', line) for line in list2]             # <replace leading @/ with / />
     list2 = [re.sub(r'^[/\.]?ajax\*?(?=[/\.])', '', line) for line in list2]    # <remove leading ajax />
     list2 = [re.sub(r'^[/\.]?api\*?(?=[/\.])', '', line) for line in list2]     # <remove leading api />
     list2 = [re.sub(r'^[/\.]?apple\*?(?=[/\.])', '', line) for line in list2]   # <remove leading apple />
