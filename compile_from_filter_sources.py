@@ -545,7 +545,7 @@ list2 = [line for line in list2 if (re.search(r'[^\[\]\{\}\\]', line))]         
 
 for pattern in tqdm.tqdm(list5):
     try :
-        pattern = re.compile(r'' + pattern[: -1] + r'(?:\$important)?$')        # < create regex pattern for faster processing />
+        pattern = re.compile(r'' + pattern[: -1] + '(?:\$important)?$')        # < create regex pattern for faster processing />
         # list2 = [line for line in list2 if (re.search(r'(?:\#|removeparam)', line) or not(pattern.search(' ' + line + ' ')))]
         list2 = [line for line in list2 if not(pattern.search(line))]
     except :
