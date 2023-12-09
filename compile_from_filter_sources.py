@@ -541,6 +541,7 @@ list2  = set(list2) - set(list2s)
 
 list2 = [re.sub(r'^.+(?=/[^/]+$)', '', line) for line in list2]                 # <simplify urls keeping last /* part />
 list2 = [line for line in list2 if len(line) > 3]                               # <keep filters with len > 3 />
+list2 = [line for line in list2 if (re.search(r'[^\[\]\{\}\\]', line))]         # <remove broken regex filters />
 
 for pattern in tqdm.tqdm(list5):
     try :
