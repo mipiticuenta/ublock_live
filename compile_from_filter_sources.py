@@ -103,7 +103,7 @@ if (response.status_code) :
     iana_tld.update(response.text.split('\n'))
 
 iana_tld = [re.sub(r'^#.*', '', line).strip() for line in iana_tld]             # <remove # comments' />
-iana_tld = sorted([line.lower() for line in iana_tld if line != ''])            # <remove empty lines />
+iana_tld = [line.lower() for line in iana_tld if line != '']                    # <remove empty lines />
 
 print('\n IANA top level domains (TLD) list loaded')
 
@@ -479,7 +479,7 @@ list2 = [line for line in list2 if not(re.search(r'^.*\{[^\}]*$', line))]       
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
-print('19/20 : remove spurious url filters ')
+print('19/20 : apply regex_whitle_list rules')
 
 # <get regex white list from file, dedup, sort and clean up filters>
 
@@ -565,9 +565,11 @@ list2 = sorted(set(list2) | set(list5))
 
 # <extract domains from list >
 
-print('\n', 'Listing domain filters; ', end = '', sep = '')
+print('Listing domain filters', sep = '')
 
 list3 = []
+
+list2 = sorted(set(list2) - set(iana_tld))                                      # <remove IANA tld root domains from main list />
 
 for tld in tqdm.tqdm(iana_tld):
     pattern = re.compile(r'' + ('^[-\.\w]+\.' + tld + '(?:\$important)?$'))
@@ -578,7 +580,7 @@ list2 = set(list2) - set(list3)                                                 
 
 # </extract domains from list >
 
-print('removing #.@(.@) numerical domain filters, IANA tld root domains and applying domains white list', end = '')
+print('removing #.@(.@) numerical domain filters, IANA tld root domains and applying domains white list', sep = '')
 
 list3 = [re.sub(r'^\.', '', line)  for line in list3]                           # <remove leading . preceding domain />
 list3 = [re.sub('r\$important$', '', line) for line in list3]                   # <remove trailing $important from domains/>

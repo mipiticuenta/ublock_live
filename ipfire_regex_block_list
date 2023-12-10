@@ -3,6 +3,8 @@
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list
 ! title: regex block list
 (?<!b)logg
+[0-9a-f]{32}\/invoke\.js
+[0-9a-f]{32}\/maq\
 [_\W](de)?collect(or)?[_\W]
 [_\W](fast)?cli?cks?[_\W]
 [_\W](web)?worker[-~\w\.]*\.js(on)?
@@ -368,6 +370,7 @@
 [_\W]xn\-\-
 [_\W]zephr[-~\w\.]*\.js(on)?
 [_\W]zepto[-~\w\.]*\.js(on)?
+[a-z0-9]{12}\/[a-zA-Z0-9\/\+\-]{97,106}$
 \.com\/proc\.php\?[0-9a-f]{40}$/$do
 \/[0-9a-z]{8,10}\?shu=[0-9a-z]{150,}/$do
 \/t\/[0-9]{3}\/[0-9]{3}\/a[0-9]{4,9}\.js$/$scrip
@@ -430,6 +433,7 @@ header.?bidding
 helper[-~\w\.]*\.js(on)?
 hover.?intent
 im\.chip\.de\/ii\/[0-9\/]{14,17}\/[a-zA-Z0-9]{2,13}[\-_][a-zA-Z0-9]{3,11}[\-_]([a-zA-Z0-9]{3,11}[\-_])?([a-zA-Z0-9]{3,8}[\-_])?([a-zA-Z0-9]{3,6}[\-_])?[a-zA-Z0-9]{16}\.*\?im=Resize.*&hash=[a-z0-9]{64}
+img\/(?!new).+\.gif
 incapsula
 jquery.?migrate
 leadforensics
@@ -438,6 +442,7 @@ linktrack
 log.?impression
 mailchimp
 marfeel
+media*=rotten_tomatoes_video$xhr,removeparam=/((?!smilformats).)*$
 media*=rotten_tomatoes_video$xhr,removeparam=/^((?!smil|formats).)*$
 metrix
 monetate[-~\w\.]*\.js(on)?
@@ -469,6 +474,7 @@ pre.?fetch
 pre.?roll
 privacy
 queryly
+ref/$doc,urltransform=/\/ref\/[\/]+
 ref/$doc,urltransform=/^\/ref\/[^\/]+
 ruxitagentjs
 sentry
@@ -506,5 +512,6 @@ webstatsutil
 webtrack
 webtrend
 wp-json/wp-statistics/$xhr,importan
+yuicombo?$script,removeparam=/\/_ui\/desktop\/common\/js\/uiAnalytics\
 yuicombo?$script,removeparam=/^\/_ui\/desktop\/common\/js\/uiAnalytics\
 zeotap
