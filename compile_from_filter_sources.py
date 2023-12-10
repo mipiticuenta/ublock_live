@@ -546,7 +546,7 @@ list2 = [line for line in list2 if len(line) > 3]                               
 list2 = [line for line in list2 if (re.search(r'[^\[\]\{\}\;\,\\]', line))]     # <remove broken regex filters />
 
 for pattern in tqdm.tqdm(list5):
-    pattern = re.sub(r'/$important$', '', pattern)[1: -1]
+    pattern = re.sub(r'\$important$', '', pattern)[1: -1]
     try :
         pattern = re.compile(r'' + pattern)                                     # < create regex pattern for faster processing />
         list2 = [line for line in list2 if not(pattern.search(' ' + line + ' '))]
