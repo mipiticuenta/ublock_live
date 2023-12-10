@@ -132,7 +132,7 @@ print(
 
 print(' 1/20 : remove leading/trailing/dup spaces ')
 
-list2 = [re.sub(r'\t', ' ', line).strip() for line in list2]                    # <replace tab with space  />
+list2 = [re.sub(r'\t', ' ', line) for line in list2]                            # <replace tab with space  />
 list2 = [re.sub(r' +', ' ', line).strip() for line in list2]                    # <dedup spaces and remove leading/trailing spaces />
 
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
@@ -153,6 +153,7 @@ list2 = [re.sub(r'^0\.0\.0\.0 ', '', line) for line in list2]                   
 list2 = [re.sub(r'^127\.0\.0\.1 ', '', line) for line in list2]                 # <remove leading 127.0.0.1 (dns style filter) />
 list2 = [re.sub(r'^\:\:1 ', '', line) for line in list2]                        # <remove leading ::1 (dns style filter) />
 list2 = [re.sub(r'^\|+', '', line) for line in list2]                           # <remove leading domain mark (||) />
+list2 = [line for line in list2 if not(re.search(r'localhost', line))]          # <remove items containing localhost />
 
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
@@ -167,7 +168,6 @@ list2 = [re.sub(r'^/?(?:[0-9]+\.)+(?:[0-9]+)?', '', line).strip() for line in li
 list2 = [line for line in list2 if not(re.search(r'\:+', line))]                # <remove IP6 addresses :: />
 list2 = [re.sub(r'^\:[0-9]+/', '', line) for line in list2]                     # <remove leading :port/ />
 list2 = [re.sub(r'www[0-9]*\.', '', line) for line in list2]                    # <remove www. />
-list2 = [line for line in list2 if not(re.search(r'localhost', line))]          # <remove items containing localhost />
 list2 = [re.sub(r'^.*/wp\-content/uploads/?.*', '', line) for line in list2]    # <remove items containing /wp-content/uploads/' />
 list2 = [re.sub(r'(?<=[a-z])\^\*', '/*', line) for line in list2]               # <replace ^* with / />
 
@@ -331,7 +331,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.]?uploads?.?\*?(?=[/\.])', '', line) for line in list2]      # <remove leading uploads />
     list2 = [re.sub(r'^[/\.]?videos?\*?(?=[/\.])', '', line) for line in list2] # <remove leading video(s) />
     list2 = [re.sub(r'^[/\.]?v.?\*?(?=[/\.])', '', line) for line in list2]     # <remove leading v />
-    list2 = [re.sub(r'^[/\.]?web(resource)?\*?(?=[/\.])', '', line) for line in list2]  # <remove leading web(resource) />
+    list2 = [re.sub(r'^[/\.]?web(resources?)?\*?(?=[/\.])', '', line) for line in list2]    # <remove leading web(resource(s)) />
     list2 = [re.sub(r'^[/\.]?wp\-content\*?(?=[/\.])', '', line) for line in list2]     # <remove leading wp-content />
     list2 = [re.sub(r'^[/\.]?www\*?(?=[/\.])', '', line) for line in list2]     # <remove leading www />
     list2 = [re.sub(r'^\.?aspx?\??(?![a-z0-9])', '*', line).strip() for line in list2]  # <replace leading asp with * >
@@ -547,7 +547,7 @@ print(
 
 print('\n', '20/20 : simplify urls keeping last /* part and deflat url filters redundant with regex filters', sep = '')
 
-list2s = [line for line in list2 if re.search(r'(?:\#|\@|removeparam)', line)]  # <segregate cosmetics, exceptions and removeparam filters/>
+list2s = [line for line in list2 if re.search(r'(?:\#|\@|\$|removeparam)', line)]   # <segregate cosmetics, exceptions, removeparam, $ filters/>
 list2  = set(list2) - set(list2s)
 
 list2 = [re.sub(r'^.+(?=/[^/]+$)', '', line) for line in list2]                 # <simplify urls keeping last /* part />
@@ -581,7 +581,7 @@ print('\n', 'Listing domain filters; ', end = '', sep = '')
 
 list3 = []
 
-for tld in iana_tld :
+for tld in tqdm.tqdm(iana_tld):
     pattern = re.compile(r'' + ('^[a-z0-9][-\.\w]+\.' + tld + '(?:\$important)?$'))
     list3 = list3 + [line for line in list2 if pattern.search(line)]
 
