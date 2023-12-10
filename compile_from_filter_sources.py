@@ -154,7 +154,6 @@ list2 = [re.sub(r'^[^a-z]+$', '', line) for line in list2]                      
 list2 = [line for line in list2 if not(re.search(r'\:+', line))]                # <remove IP6 addresses :: />
 list2 = [re.sub(r'^\:[0-9]+/', '/', line) for line in list2]                    # <replace leading :port/ with / />
 list2 = [re.sub(r'https?\:/*', '', line) for line in list2]                     # <remove http:/* />
-list2 = [re.sub(r'www[0-9]*\.', '', line) for line in list2]                    # <remove www#. />
 list2 = (
     [re.sub(r'[\|\^]', '', line) if re.search(r'^\|+.*\^.*$', line)             # <remove || ^ from ||domain.tld^ />
     else line
@@ -276,6 +275,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^[/\.\=\?]?\$', '*$', line) for line in list2]            # <replace leading $ /$ .$ =$ ?$ with *$ />
     list2 = [re.sub(r'^\.?[-\*\w]+/', '/', line) for line in list2]             # <replace leading @/ with / />
     list2 = [re.sub(r'^/([-\.\+\!\~/\w]+)/$', r'/\1/*', line) for line in list2]    # <add trailing * for /@/ url filters (false regex) />
+    list2 = [re.sub(r'www[0-9]*\.', '', line) for line in list2]                # <remove www#. />
 
 #    list2 = [re.sub(r'^[/\.]?ajax\*?(?=[/\.])', '', line) for line in list2]    # <remove leading ajax />
 #    list2 = [re.sub(r'^[/\.]?api\*?(?=[/\.])', '', line) for line in list2]     # <remove leading api />
@@ -366,7 +366,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'\.svg\??$', '.', line) for line in list2]                 # <remove trailing .svg? />
     list2 = [re.sub(r'\.js\??[^\./]*$', '.js', line) for line in list2]         # <clean up trailing .js />
     list2 = [re.sub(r'(^[^#]{2,})\$[-~,=a-z0-9]*$(?<!/)(?<!important)', r'\1', line) for line in list2]    # <remove specific trailing $ filters except *$ or ending with important />
-    list2 = [re.sub(r'\??\*\=.*(^/)$', '', line).strip() for line in list2]     # <remove trailing ?*=... />
+    list2 = [re.sub(r'\??\*\=.*$', '', line).strip() for line in list2]         # <remove trailing ?*=... />
 
     list2 = sorted([line for line in list2 if len(line) > 1])                   # <remove line if length < 2 />
     print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
@@ -476,7 +476,7 @@ list2 = [line for line in list2 if re.search(r'^[^\(\)\[\]\{\}\~]', line)]      
 list2 = [line for line in list2 if not(re.search(r'^.*\([^\)]*$', line))]       # <remove broken filters; improve this filter for multiple () />
 list2 = [line for line in list2 if not(re.search(r'^.*\[[^\]]*$', line))]       # <remove broken filters; improve this filter for multiple [] />
 list2 = [line for line in list2 if not(re.search(r'^.*\{[^\}]*$', line))]       # <remove broken filters; improve this filter for multiple {} />
-list2 = [line for line in list2 if not(re.search(r'^/\[.*[^/]$', line))]        # <remove broken filters (unterminated regex) />
+list2 = [line for line in list2 if not(re.search(r'^/.*[\[\\].*[^/]$', line))]  # <remove broken filters (unterminated regex) />
 
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
@@ -489,6 +489,9 @@ list9 = [line.strip() for line in open(file9_in_name, encoding='UTF-8')]        
 list9 = [re.sub(r'^ *!.*', '', line) for line in list9]                         # <remove ! comments' />
 list9 = [line for line in list9 if line != '']                                  # <remove empty lines />
 list9 = list9 + ['/[_\W]*' + tld + '[_\W]*/' for tld in iana_tld]               # <enforce tld whitelisting />
+
+list2s = [line for line in list2 if re.search(r'^.*[\#|\@|\$].*$', line)]       # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
+list2  = set(list2) - set(list2s)
 
 for pattern in tqdm.tqdm(list9) :
     try :
@@ -504,7 +507,7 @@ print()
 
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
 list5 = sorted([line for line in list5 if len(line) > 1])                       # <remove line if length < 2 />
-print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
+print('       ', '{:,}'.format(len(list2) + len(list2s) + len(list5)), 'filters kept')
 
 # <write extracted regex type filters>
 
@@ -527,7 +530,7 @@ file5_out.close()
 
 print(
     '\n',
-    '       ',
+    '        ',
     '{:,}'.format(len(list5)),
     ' regex filters written to ',
     file5_out_name,
@@ -540,9 +543,6 @@ print(
 # <remove url filters covered by regex filters>
 
 print('20/20 : simplify urls keeping last /* part and deflat url filters redundant with regex filters', sep = '')
-
-list2s = [line for line in list2 if re.search(r'^.*[\#|\@|\$].*$', line)]       # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
-list2  = set(list2) - set(list2s)
 
 list2 = [re.sub(r'^.+(?=/[^/]+$)', '', line) for line in list2]                 # <simplify urls keeping last /* part />
 list2 = [line for line in list2 if len(line) > 3]                               # <keep filters with len > 3 />
@@ -557,8 +557,6 @@ for pattern in tqdm.tqdm(list5):
         print('Error found; check for ' + pattern + ' regex pattern in url sources')
 
 list2 = sorted(set(list2) | set(list2s))                                        # <join lists'/>
-
-#    list2 = [line for line in list2 if (re.search(r'(\#|removeparam)', line) or not(re.search(re.sub(r'^/', '', re.sub(r'/(\$important)?$', '', string)), ' ' + line + ' ')))]
 
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept', '\n')
 
