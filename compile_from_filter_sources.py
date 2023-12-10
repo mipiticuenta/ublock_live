@@ -172,7 +172,7 @@ list2 = sorted([line for line in list2 if len(line) > 1])                       
 
 list2 = [re.sub(r'^/([-\.\+\!\~/\w]+)/$', r'/\1/*', line) for line in list2]    # <add trailing * for /@/ url filters (false regex) />
 
-list5 = [line for line in list2 if re.search(r'^/.+/(?:\$[,a-z]+)?$', line)]
+list5 = [line for line in list2 if re.search(r'^/.+/(?:\$important?$', line)]
 list2  = set(list2) - set(list5)
 
 # </segregate regex filters >
@@ -517,11 +517,12 @@ file5_out.write(
 # </open file5_out file and write header>
 
 list5 = sorted(list5)
-file5_out.writelines(re.sub(r'\$important$', '', line)[1:-1] + '\n' for line in list5)
+file5_out.writelines(re.sub(r'\$important$', '', line)[1: -1] + '\n' for line in list5)
 file5_out.close()
 
 print(
     '\n',
+    '       ',
     '{:,}'.format(len(list5)),
     ' regex filters written to ',
     file5_out_name,
@@ -535,7 +536,7 @@ print(
 
 print('20/20 : simplify urls keeping last /* part and deflat url filters redundant with regex filters', sep = '')
 
-list2s = [line for line in list2 if re.search(r'(?:\#|\@|\$)', line)]           # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
+list2s = [line for line in list2 if re.search(r'^.*[\#|\@|\$].*$', line)]       # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
 list2  = set(list2) - set(list2s)
 
 list2 = [re.sub(r'^.+(?=/[^/]+$)', '', line) for line in list2]                 # <simplify urls keeping last /* part />
@@ -543,6 +544,7 @@ list2 = [line for line in list2 if len(line) > 3]                               
 list2 = [line for line in list2 if (re.search(r'[^\[\]\{\}\;\,\\]', line))]     # <remove broken regex filters />
 
 for pattern in tqdm.tqdm(list5):
+    pattern = re.sub(r'/$important$', '', pattern)[1: -1]
     try :
         pattern = re.compile(r'' + pattern)                                     # < create regex pattern for faster processing />
         list2 = [line for line in list2 if not(pattern.search(' ' + line + ' '))]
@@ -553,7 +555,7 @@ list2 = sorted(set(list2) | set(list2s))                                        
 
 #    list2 = [line for line in list2 if (re.search(r'(\#|removeparam)', line) or not(re.search(re.sub(r'^/', '', re.sub(r'/(\$important)?$', '', string)), ' ' + line + ' ')))]
 
-print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
+print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept', '\n')
 
 # </remove url filters covered by regex filters>
 
@@ -565,7 +567,7 @@ list2 = sorted(set(list2) | set(list5))
 
 # <extract domains from list >
 
-print('Listing domain filters', sep = '')
+print('Listing domain filters : ', sep = '', end = '')
 
 list3 = []
 
@@ -573,6 +575,7 @@ list2 = sorted(set(list2) - set(iana_tld))                                      
 
 for tld in tqdm.tqdm(iana_tld):
     pattern = re.compile(r'' + ('^[-\.\w]+\.' + tld + '(?:\$important)?$'))
+    print(pattern, end = '')
     list3 = list3 + [line for line in list2 if pattern.search(line)]
 
 list3 = [line for line in list3 if line[0] != '-']                              # <remove -@.@ from domains list />
