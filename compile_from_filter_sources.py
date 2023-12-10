@@ -494,7 +494,7 @@ list9 = list9 + ['/[_\W]*' + tld + '[_\W]*/' for tld in iana_tld]               
 for pattern in tqdm.tqdm(list9) :
     try :
         pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
-        print(pattern.pattern + '\r', end = '')
+        tqdm.write(pattern.pattern + '\r')
         list2 = [pattern.sub(r'', line) for line in list2]                          # <remove spurious filter from main list based on regex-white_list/>
         list5 = [pattern.sub(r'', line) for line in list5]                          # <remove spurious filter from regex list based on regex-white_list />
     except :
