@@ -130,7 +130,7 @@ print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 print(' 2/20 : remove comments ')
 
 list2 = [re.sub(r'^ *[!\[\{].*', '', line) for line in list2]                   # <remove !comment [comment] {comment} />
-#list2 = [re.sub(r'^ *#(?![\?|@|#]).*', '', line) for line in list2]             # <remove #comment; preserve cosmetics and exceptions />
+list2 = [re.sub(r'^ *#(?![\?|@|#]).*', '', line) for line in list2]             # <remove #comment; preserve cosmetics and exceptions />
 
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
@@ -476,6 +476,7 @@ list2 = [line for line in list2 if not(re.search(r'^.*\([^\)]*$', line))]       
 list2 = [line for line in list2 if not(re.search(r'^.*\[[^\]]*$', line))]       # <remove broken filters; improve this filter for multiple [] />
 list2 = [line for line in list2 if not(re.search(r'^.*\{[^\}]*$', line))]       # <remove broken filters; improve this filter for multiple {} />
 list2 = [line for line in list2 if not(re.search(r'^.*\\/$', line))]            # <remove broken filters (bad regex termination);
+list2 = [line for line in list2 if not(re.search(r'^/\[.*[^/]$', line))]        # <remove broken filters (bad regex termination);
 
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
@@ -576,7 +577,7 @@ list2 = sorted(set(list2) - set(iana_tld))                                      
 
 for tld in tqdm.tqdm(iana_tld):
     pattern = re.compile(r'' + ('^[-\.\w]+\.' + tld + '(?:\$important)?$'))
-    print(pattern, end = '')
+    print(pattern + '\r', end = '')
     list3 = list3 + [line for line in list2 if pattern.search(line)]
 
 list3 = [line for line in list3 if line[0] != '-']                              # <remove -@.@ from domains list />
