@@ -486,8 +486,8 @@ list9 = [re.sub(r'^ *!.*', '', line) for line in list9]                         
 list9 = [line for line in list9 if line != '']                                  # <remove empty lines />
 
 for pattern in tqdm.tqdm(list9) :
-    pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
     try :
+        pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
         list2 = [pattern.sub(r'', line) for line in list2]                          # <remove spurious filter from main list based on regex-white_list/>
         list5 = [pattern.sub(r'', line) for line in list5]                          # <remove spurious filter from regex list based on regex-white_list />
     except :
