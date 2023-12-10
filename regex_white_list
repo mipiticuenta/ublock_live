@@ -6,6 +6,7 @@
 ^\*\$web.*$
 ^.*agriculture.*$
 ^.*aviation.*$
+^[^a-z]+(?:x[^a-z](?:[/\.](?!(com|net)))?)?+$
 ^.*climate.*$
 ^.*destination.*$
 ^.*document.*$
@@ -44,6 +45,7 @@
 ^[_\W]*angular[_\W]*$
 ^[_\W]*animations?[_\W]*$
 ^[_\W]*anim[_\W]*$
+^[_\W]*[^ap]?[^dx]?[_\W]*$
 ^[_\W]?api\.js$
 ^[_\W]*apis?[0-9]?[_\W]*$
 ^[_\W]*app(?:le)?[_\W]*$
@@ -65,6 +67,7 @@
 ^[_\W]*availability[_\W]*$
 ^[_\W]*avatar[_\W]*$
 ^[_\W]*[a-z0-9]{1,3}[_\W]*$
+^[_\W]*[a-z]{2}[-_][a-z]{2}[_\W]*$
 ^[_\W]*back(?:grounds?)?[_\W]*$
 ^[_\W]*bank[_\W]*$
 ^[_\W]*base(?:\.css)?[_\W]*$
@@ -195,12 +198,10 @@
 ^[_\W]*embed[_\W]*$
 ^[_\W]*emojis?[_\W]*$
 ^[_\W]*encart[_\W]*$
-^[_\W]*en[-_]?ca[_\W]*$
 ^[_\W]*encrypt[_\W]*$
 ^[_\W]*engine[_\W]*$
 ^[_\W]*enhanced\.css[_\W]*$
 ^[_\W]*entry[_\W]*$
-^[_\W]*en[-_]?us[_\W]*$
 ^[_\W]*error[_\W]*$
 ^[_\W]*euro(?:pa)?[_\W]*$
 ^[_\W]*europe[_\W]*$
@@ -208,6 +209,7 @@
 ^[_\W]*export[_\W]*$
 ^[_\W]*express[_\W]*$
 ^[_\W]*extend(?:ed)?[_\W]*$
+^[_\W]*extension[_\W]*$
 ^[_\W]*ext(?:ernal)?[_\W]*$
 ^[_\W]*extras?[_\W]*$
 ^[_\W]*ex[_\W]*$
@@ -348,6 +350,7 @@
 ^[_\W]*l?ubuntu[_\W]*$
 ^[_\W]*magazin[_\W]*$
 ^[_\W]*main(?:\.css|\.js)?[_\W]*$
+^[_\W]*malaysia[_\W]*$
 ^[_\W]*manifest[_\W]*$
 ^[_\W]*mapbox[-\.\w]*[_\W]*$
 ^[_\W]*maps?[_\W]*$
@@ -410,6 +413,7 @@
 ^[_\W]*pic(?:ture)?s?[_\W]*$
 ^[_\W]*pinterest[_\W]*$
 ^[_\W]*place(?:holder)?[_\W]*$
+^[_\W]*places[_\W]*$
 ^[_\W]*plan[_\W]*$
 ^[_\W]*platform[_\W]*$
 ^[_\W]*playas?[_\W]*$
@@ -418,6 +422,7 @@
 ^[_\W]*popular[_\W]*$
 ^[_\W]*popu[_\W]*$
 ^[_\W]*portal[_\W]*$
+^[_\W]*portugal[_\W]*$
 ^[_\W]*positions?[_\W]*$
 ^[_\W]*post?[_\W]*$
 ^[_\W]*premium[_\W]*$
@@ -449,6 +454,7 @@
 ^[_\W]*react[_\W]*$
 ^[_\W]*reader[_\W]*$
 ^[_\W]*rea?d[_\W]*$
+^[_\W]*real[_\W]*$
 ^[_\W]*re[cfsv][_\W]*$
 ^[_\W]*recommend[_\W]*$
 ^[_\W]*refresh[_\W]*$
@@ -576,9 +582,11 @@
 ^[_\W]*vids?[_\W]*$
 ^[_\W]*vimeo(?:cdn)?[_\W]*$
 ^[_\W]*vinted[_\W]*$
+^[-/\.\w]+\*[-/\.\w]+$
 ^[_\W]*W=[0-9]*[_\W]*$
 ^[_\W]*wait[_\W]*$
 ^[_\W]*wall[_\W]*$
+^[_\W]*\w*\.(?:com|edu|gob|gou?v|net|org)(/.*)?$
 ^[_\W]*webresources?[_\W]*$
 ^[_\W]*web(?:site)?[_\W]*$
 ^[_\W]*whatsapp[_\W]*$
@@ -590,6 +598,7 @@
 ^[_\W]*word(?:press)?[_\W]*$
 ^[_\W]*work(?:er)?[_\W]*$
 ^[_\W]*world[_\W]*$
+^[_\W]wp\-content/uploads[_\W]*$
 ^[_\W]*wp(?:\-content)?[_\W]*$
 ^[_\W]*wrap(?:per)?[_\W]*$
 ^[_\W]*wwhp\.min\.css[_\W]*$
