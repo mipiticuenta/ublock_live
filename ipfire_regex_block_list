@@ -5,6 +5,7 @@
 (?<!b)logg
 [0-9a-f]{32}\/invoke\.js
 [0-9a-f]{32}\/maq\
+[0-9a-z]{8,10}\?shu=[0-9a-z]{150,}
 [_\W](de)?collect(or)?[_\W]
 [_\W](fast)?cli?cks?[_\W]
 [_\W](web)?worker[-~\w\.]*\.js(on)?
@@ -373,6 +374,7 @@
 [a-z0-9]{12}\/[a-zA-Z0-9\/\+\-]{97,106}$
 ^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?
 ^ennovelas.com\/[a-z0-9]{10}$
+_dating\d\/index\.html\?aref=
 adfuel
 adobe.?target
 adsutils
@@ -485,6 +487,7 @@ streamsense
 stub[-~\w\.]*\.js(on)?
 stub[_\W]
 sunmedia
+t\/[0-9]{3}\/[0-9]{3}\/a[0-9]{4,9}\.js$
 taboola
 tarteaucitron
 tealium
@@ -508,6 +511,4 @@ visitor[-~\w\.]*\.js(on)?
 webstatsutil
 webtrack
 webtrend
-yuicombo?$script,removeparam=/\/_ui\/desktop\/common\/js\/uiAnalytics\
-yuicombo?$script,removeparam=/^\/_ui\/desktop\/common\/js\/uiAnalytics\
 zeotap

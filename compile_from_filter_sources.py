@@ -171,6 +171,7 @@ list2 = sorted([line for line in list2 if len(line) > 1])                       
 # <segregate regex filters >
 
 list2 = [re.sub(r'^/([-\.\+\!\~/\w]+)/$', r'/\1/*', line) for line in list2]    # <add trailing * for /@/ url filters (false regex) />
+list2 = [line for line in list2 if not(re.search(r'^.*\\/$', line))]            # <remove broken regex (bad termination) />
 
 list5 = [line for line in list2 if re.search(r'^/.+/(?:\$important)?$', line)]
 list2  = set(list2) - set(list5)
@@ -475,8 +476,7 @@ list2 = [line for line in list2 if re.search(r'^[^\(\)\[\]\{\}\~]', line)]      
 list2 = [line for line in list2 if not(re.search(r'^.*\([^\)]*$', line))]       # <remove broken filters; improve this filter for multiple () />
 list2 = [line for line in list2 if not(re.search(r'^.*\[[^\]]*$', line))]       # <remove broken filters; improve this filter for multiple [] />
 list2 = [line for line in list2 if not(re.search(r'^.*\{[^\}]*$', line))]       # <remove broken filters; improve this filter for multiple {} />
-list2 = [line for line in list2 if not(re.search(r'^.*\\/$', line))]            # <remove broken filters (bad regex termination);
-list2 = [line for line in list2 if not(re.search(r'^/\[.*[^/]$', line))]        # <remove broken filters (bad regex termination);
+list2 = [line for line in list2 if not(re.search(r'^/\[.*[^/]$', line))]        # <remove broken filters (unterminated regex) />
 
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
@@ -489,13 +489,18 @@ list9 = [line.strip() for line in open(file9_in_name, encoding='UTF-8')]        
 list9 = [re.sub(r'^ *!.*', '', line) for line in list9]                         # <remove ! comments' />
 list9 = [line for line in list9 if line != '']                                  # <remove empty lines />
 
+list9 = list9 + ['/[_\W]*' + tld + '[_\W]*/' for tld in iana_tld]               # <enforce tld whitelisting />
+
 for pattern in tqdm.tqdm(list9) :
     try :
         pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
+        print(pattern.pattern + '\r', end = '')
         list2 = [pattern.sub(r'', line) for line in list2]                          # <remove spurious filter from main list based on regex-white_list/>
         list5 = [pattern.sub(r'', line) for line in list5]                          # <remove spurious filter from regex list based on regex-white_list />
     except :
         print('Error found; check for ' + pattern + ' pattern in regex_white_list')
+
+print()
 
 # </get regex white list from file, dedup, sort and clean up filters>
 
@@ -569,7 +574,7 @@ list2 = sorted(set(list2) | set(list5))
 
 # <extract domains from list >
 
-print('Listing domain filters : ', sep = '', end = '')
+print('Listing domain filters : ', sep = '')
 
 list3 = []
 
@@ -577,7 +582,7 @@ list2 = sorted(set(list2) - set(iana_tld))                                      
 
 for tld in tqdm.tqdm(iana_tld):
     pattern = re.compile(r'' + ('^[-\.\w]+\.' + tld + '(?:\$important)?$'))
-    print(pattern + '\r', end = '')
+    print(pattern.pattern + '\r', end = '')
     list3 = list3 + [line for line in list2 if pattern.search(line)]
 
 list3 = [line for line in list3 if line[0] != '-']                              # <remove -@.@ from domains list />
