@@ -488,13 +488,11 @@ print('19/20 : apply regex_white_list rules')
 list9 = [line.strip() for line in open(file9_in_name, encoding='UTF-8')]        # <populate list; remove leading/trailing spaces />
 list9 = [re.sub(r'^ *!.*', '', line) for line in list9]                         # <remove ! comments' />
 list9 = [line for line in list9 if line != '']                                  # <remove empty lines />
-
 list9 = list9 + ['/[_\W]*' + tld + '[_\W]*/' for tld in iana_tld]               # <enforce tld whitelisting />
 
 for pattern in tqdm.tqdm(list9) :
     try :
         pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
-        tqdm.write(pattern.pattern + '\r')
         list2 = [pattern.sub(r'', line) for line in list2]                          # <remove spurious filter from main list based on regex-white_list/>
         list5 = [pattern.sub(r'', line) for line in list5]                          # <remove spurious filter from regex list based on regex-white_list />
     except :
@@ -582,7 +580,6 @@ list2 = sorted(set(list2) - set(iana_tld))                                      
 
 for tld in tqdm.tqdm(iana_tld):
     pattern = re.compile(r'' + ('^[-\.\w]+\.' + tld + '(?:\$important)?$'))
-    print(pattern.pattern + '\r', end = '')
     list3 = list3 + [line for line in list2 if pattern.search(line)]
 
 list3 = [line for line in list3 if line[0] != '-']                              # <remove -@.@ from domains list />
@@ -668,8 +665,8 @@ if dom_sw == 'y' :
         'domains kept'
     )
     list3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3r))) == 0) else '', tqdm.tqdm(list3)))
-    list3 = [line for line in list3 if len(line) > 0]                           # <cleanup empty lines/>
     list3 = sorted(set(list3r) | set(list3))                                    # <compile deflated domains up to current stage/>
+    list3 = [line for line in list3 if len(line) > 0]                           # <cleanup empty lines/>
     del(list3r)                                                                 # <clean up; make sure list3r is not used anymore hereafter/>
 
     #list3_filter = list3
@@ -703,7 +700,6 @@ if dom_sw == 'y' :
     # </remove redundant domains from list>
 
 list2 = sorted(set(list2) | set(list3))                                         # <rebuild full list with elemetal domains and shrinked domains part/>
-del(list3)                                                                      # <clean up; make sure list3 is not used anymore hereafter/>
 
 print(
     '\n',
@@ -825,10 +821,6 @@ file3_out.write(
 
 # <\open file3_out file and write header />
 
-list3 = [line for line in list2 if re.search(r'^[-_\.a-z0-9]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
-list3 = [re.sub('r\$important$', '', line) for line in list3]                   # <remove trailing $important from domain list/>
-list3 = [line for line in list3 if not(re.search(r'.*\.js$', line))]            # <remove .*\.js$ from domain list />
-list3 = [line for line in list3 if line[0] != '-']                              # <remove -@.@ from domains list />
 list3 = set(list3)
 list3 = sorted(list3, key = lambda x: (re.sub(r'^.*\.(?=[^\.]+\.[^\.]+\Z)', '', x)))    # <sort by a-z @(.@) />
 file3_out.writelines(line + '\n' for line in list3)
