@@ -6,7 +6,7 @@
 ^\*\$web.*$
 ^.*agriculture.*$
 ^.*aviation.*$
-^[^a-z]+(?:x[^a-z](?:[/\.](?!(com|net)))?)?+$
+^[^a-z]+(?:x[^a-z])?$
 ^.*climate.*$
 ^.*destination.*$
 ^.*document.*$
@@ -25,6 +25,7 @@
 ^[_\W]*(?:accu)weather[_\W]*$
 ^[_\W]*ac[sw][_\W]*$
 ^[_\W]*action[_\W]*$
+^[_\W]*active[_\W]*$
 ^[_\W]*activity[_\W]*$
 ^[_\W]*add(?:ons?)?[_\W]*$
 ^[_\W]*admin[_\W]*$
@@ -133,7 +134,7 @@
 ^[_\W]*coco[_\W]*$
 ^[_\W]*code[_\W]*$
 ^[_\W]*cog.?light[_\W]*$
-^[_\W]*cols?[_\W]*$
+^[_\W]*col(?:umns?)?[_\W]*$
 ^[_\W]*combined[_\W]*$
 ^[_\W]*common[_\W]*$
 ^[_\W]*community[_\W]*$
@@ -586,9 +587,9 @@
 ^[_\W]*W=[0-9]*[_\W]*$
 ^[_\W]*wait[_\W]*$
 ^[_\W]*wall[_\W]*$
-^[_\W]*\w*\.(?:edu|gob|gou?v)$
 ^[_\W]*webresources?[_\W]*$
 ^[_\W]*web(?:site)?[_\W]*$
+^[_\W]*\w*\.(?:edu|gob|gou?v)$
 ^[_\W]*whatsapp[_\W]*$
 ^[_\W]*wide[_\W]*$
 ^[_\W]*widgets?[_\W]*$

@@ -401,6 +401,8 @@ while n_1 > len(list2):                                                         
     list2 = sorted([line for line in list2 if len(line) > 1])                   # <remove line if length < 2 />
     print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
+# <transforming loop/>
+
 print('15/20 : split space separated domains ')
 
 list2s = [line for line in list2 if re.search(r' ', line) and not(re.search(r'[\$\&\#]', line))]    # <remove space separated domains />
@@ -491,7 +493,7 @@ for pattern in tqdm.tqdm(list9) :
         list2 = [pattern.sub(r'', line) for line in list2]                          # <remove spurious filter from main list based on regex-white_list/>
         list5 = [pattern.sub(r'', line) for line in list5]                          # <remove spurious filter from regex list based on regex-white_list />
     except :
-        print('Regex error found; check for ' + pattern)
+        print('Error found; check for ' + pattern + ' pattern in regex_white_list')
 
 # </get regex white list from file, dedup, sort and clean up filters>
 
@@ -529,11 +531,9 @@ print(
 
 # </write extracted regex type filters>
 
-# <transforming loop/>
-
 # <remove url filters covered by regex filters>
 
-print('\n', '20/20 : simplify urls keeping last /* part and deflat url filters redundant with regex filters', sep = '')
+print('20/20 : simplify urls keeping last /* part and deflat url filters redundant with regex filters', sep = '')
 
 list2s = [line for line in list2 if re.search(r'(?:\#|\@|\$)', line)]           # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
 list2  = set(list2) - set(list2s)
@@ -547,7 +547,7 @@ for pattern in tqdm.tqdm(list5):
         pattern = re.compile(r'' + pattern)                                     # < create regex pattern for faster processing />
         list2 = [line for line in list2 if not(pattern.search(' ' + line + ' '))]
     except :
-        print('Regex error found; check for ' + pattern)
+        print('Error found; check for ' + pattern + ' regex pattern in url sources')
 
 list2 = sorted(set(list2) | set(list2s))                                        # <join lists'/>
 
