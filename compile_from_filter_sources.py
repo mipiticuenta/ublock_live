@@ -115,6 +115,8 @@ print(
     '-----------------------------\n'
 )
 
+list5 = []
+
 # <transforming loop>
 
 print(' 1/20 : remove leading/trailing/dup spaces ')
