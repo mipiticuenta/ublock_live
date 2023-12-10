@@ -102,7 +102,7 @@ if (response.status_code) :
     iana_tld.update(response.text.split('\n'))
 
 iana_tld = [re.sub(r'^#.*', '', line).strip() for line in iana_tld]             # <remove # comments' />
-iana_tld = sorted([line for line in iana_tld if line != ''])                    # <remove empty lines />
+iana_tld = sorted([line.lower() for line in iana_tld if line != ''])            # <remove empty lines />
 
 print('\n IANA top level domains (TLD) list loaded')
 
@@ -557,7 +557,7 @@ list2 = [line for line in list2 if (re.search(r'[^\[\]\{\}\;\,\\]', line))]     
 for pattern in tqdm.tqdm(list5):
     try :
         pattern = re.compile(r'' + pattern)                                     # < create regex pattern for faster processing />
-        list2 = [line for line in list2 if not(pattern.search('.' + line + '.'))]
+        list2 = [line for line in list2 if not(pattern.search(' ' + line + ' '))]
     except :
         print('Regex error found; check for ' + pattern)
 
@@ -582,7 +582,7 @@ print('\n', 'Listing domain filters; ', end = '', sep = '')
 list3 = []
 
 for tld in iana_tld :
-    pattern = re.compile(r'' + ('^[a-z0-9][-\.\w]+\.' + tld + '(\$important)?$'))
+    pattern = re.compile(r'' + ('^[a-z0-9][-\.\w]+\.' + tld + '(?:\$important)?$'))
     list3 = list3 + [line for line in list2 if pattern.search(line)]
 
 #list3 = [line for line in list2 if re.search(r'^[-\.\w]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
@@ -593,7 +593,8 @@ for tld in iana_tld :
 #list3 = [line for line in list3 if not(re.search(r'^.*\.woff[0-9]?(\$important)?$', line))] # <remove @.woff# from domains list />
 #list3 = [line for line in list3 if not(re.search(r'^.*\.link(\$important)?$', line))]       # <remove @.link from domains list />
 #list3 = [line for line in list3 if not(re.search(r'^.*\.ttf(\$important)?$', line))]        # <remove @.ttf from domains list />
-#list3 = [line for line in list3 if line[0] != '-']                              # <remove -@.@ from domains list />
+
+list3 = [line for line in list3 if line[0] != '-']                              # <remove -@.@ from domains list />
 list2 = set(list2) - set(list3)                                                 # <only domains part are processed in this section; @.js are kept in list2 />
 
 # </extract domains from list>
