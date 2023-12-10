@@ -89,7 +89,7 @@ for line in list1 :
     if (response.status_code) :
         list2.update(response.text.split('\n'))
         print(
-            '                         ',
+            '                          ',
             '{:,}'.format(len(list2)),
             'cumulated filters'
         )
@@ -487,8 +487,11 @@ list9 = [line for line in list9 if line != '']                                  
 
 for pattern in tqdm.tqdm(list9) :
     pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
-    list2 = [pattern.sub(r'', line) for line in list2]                          # <remove spurious filter from main list based on regex-white_list/>
-    list5 = [pattern.sub(r'', line) for line in list5]                          # <remove spurious filter from regex list based on regex-white_list />
+    try :
+        list2 = [pattern.sub(r'', line) for line in list2]                          # <remove spurious filter from main list based on regex-white_list/>
+        list5 = [pattern.sub(r'', line) for line in list5]                          # <remove spurious filter from regex list based on regex-white_list />
+    except :
+        print('Regex error found; check for ' + pattern)
 
 # </get regex white list from file, dedup, sort and clean up filters>
 
