@@ -130,7 +130,7 @@ print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 print(' 2/20 : remove comments ')
 
 list2 = [re.sub(r'^ *[!\[\{].*', '', line) for line in list2]                   # <remove !comment [comment] {comment} />
-list2 = [re.sub(r'^ *#(?![\?|@|#]).*', '', line) for line in list2]             # <remove #comment; preserve cosmetics and exceptions />
+#list2 = [re.sub(r'^ *#(?![\?|@|#]).*', '', line) for line in list2]             # <remove #comment; preserve cosmetics and exceptions />
 
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
@@ -557,21 +557,33 @@ print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
 # </remove url filters covered by regex filters>
 
-# <aggregate regex filters>
+# <aggregate regex filters >
 
 list2 = sorted(set(list2) | set(list5))
 
-# </aggregate regex filters>
+# </aggregate regex filters >
 
-# <extract domains from list>
+# <extract domains from list >
 
 print('\n', 'Listing domain filters; ', end = '', sep = '')
 
 list3 = []
 
 for tld in tqdm.tqdm(iana_tld):
-    pattern = re.compile(r'' + ('^[a-z0-9][-\.\w]+\.' + tld + '(?:\$important)?$'))
+    pattern = re.compile(r'' + ('^[-\.\w]+\.' + tld + '(?:\$important)?$'))
     list3 = list3 + [line for line in list2 if pattern.search(line)]
+
+list3 = [line for line in list3 if line[0] != '-']                              # <remove -@.@ from domains list />
+list2 = set(list2) - set(list3)                                                 # <only domains part are processed in this section; @.js are kept in list2 />
+
+# </extract domains from list >
+
+print('removing #.@(.@) numerical domain filters, IANA tld root domains and applying domains white list', end = '')
+
+list3 = [re.sub(r'^\.', '', line)  for line in list3]                           # <remove leading . preceding domain />
+list3 = [re.sub('r\$important$', '', line) for line in list3]                   # <remove trailing $important from domains/>
+list3 = [re.sub(r'^[-_\.0-9]+\.', '', line)) for line in list3]                 # <remove #.@(.@) numerical domains/>
+list3 = sorted(set(list3) - set(iana_tld))                                      # <remove IANA tld root domains />
 
 #list3 = [line for line in list2 if re.search(r'^[-\.\w]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
 #list3 = [line for line in list3 if not(re.search(r'^.*\.js(?:on)?(\$important)?$', line))]  # <remove @.js from domains list />
@@ -581,20 +593,6 @@ for tld in tqdm.tqdm(iana_tld):
 #list3 = [line for line in list3 if not(re.search(r'^.*\.woff[0-9]?(\$important)?$', line))] # <remove @.woff# from domains list />
 #list3 = [line for line in list3 if not(re.search(r'^.*\.link(\$important)?$', line))]       # <remove @.link from domains list />
 #list3 = [line for line in list3 if not(re.search(r'^.*\.ttf(\$important)?$', line))]        # <remove @.ttf from domains list />
-
-list3 = [line for line in list3 if line[0] != '-']                              # <remove -@.@ from domains list />
-list2 = set(list2) - set(list3)                                                 # <only domains part are processed in this section; @.js are kept in list2 />
-
-# </extract domains from list>
-
-# <remove #.@(.@) (numerical domains) and @.@ root domains from list>
-
-print('removing #.@(.@) numerical domain filters, root @.@ and key domains (google.com etc) domains: ', end = '')
-
-list3 = [re.sub(r'^\.', '', line)  for line in list3]                           # <remove leading . preceding domain />
-list3 = [re.sub('r\$important$', '', line) for line in list3]                   # <remove trailing $important from domains/>
-list3 = [line for line in list3 if not(re.search(r'^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?$', line))]    # <remove #.@(.@) numerical domains/>
-list3 = [line for line in list3 if not(re.search(r'^(com|edu|gob|gou?v|net|org|[a-z]{2})\.(com|edu|gob|gou?v|net|org|[a-z]{2})$', line))]   # <remove @.@ root domains />
 
 # <get domains white list from file, dedup and sort>
 
@@ -761,7 +759,7 @@ list2.append('@@||worldbank.org^$inline-script,1p')
 list2.append('@@||www.linkedin.com^$inline-script,xhr,1p')
 list2.append('@@||youtube.com^$inline-script,xhr,1p')
 
-list2 = sorted(list2)
+list2 = sorted(set(list2))
 
 file2_out = open(file2_out_name, 'w')
 
