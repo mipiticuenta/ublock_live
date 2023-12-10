@@ -583,7 +583,7 @@ list2 = set(list2) - set(list3)                                                 
 
 # </extract domains from list >
 
-print('removing #.@(.@) numerical domain filters, IANA tld root domains and applying domains white list', sep = '')
+print('\nRemoving #.@(.@) numerical domain filters, IANA tld root domains and applying domains white list', sep = '')
 
 list3 = [re.sub(r'^\.', '', line)  for line in list3]                           # <remove leading . preceding domain />
 list3 = [re.sub('r\$important$', '', line) for line in list3]                   # <remove trailing $important from domains/>
