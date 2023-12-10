@@ -582,7 +582,7 @@ print('removing #.@(.@) numerical domain filters, IANA tld root domains and appl
 
 list3 = [re.sub(r'^\.', '', line)  for line in list3]                           # <remove leading . preceding domain />
 list3 = [re.sub('r\$important$', '', line) for line in list3]                   # <remove trailing $important from domains/>
-list3 = [re.sub(r'^[-_\.0-9]+\.', '', line)) for line in list3]                 # <remove #.@(.@) numerical domains/>
+list3 = [re.sub(r'^[-_\.0-9]+\.', '', line) for line in list3]                  # <remove #.@(.@) numerical domains/>
 list3 = sorted(set(list3) - set(iana_tld))                                      # <remove IANA tld root domains />
 
 #list3 = [line for line in list2 if re.search(r'^[-\.\w]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
