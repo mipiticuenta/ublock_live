@@ -269,13 +269,13 @@ while n_1 > len(list2):                                                         
 
     print('11/20 : clean up leading symbols numbers prefix etc')
 
-    list2 = [re.sub(r'^[_\W0-9]*(?=[/\.\$])', '', line) for line in list2]      # <remove leading symbols and numbers preceding / . $ />
-    list2 = [re.sub(r'^[/\.]?[-\*\w](?=[/\.\$])', '', line) for line in list2]  # <remove leading single -_* a-z0-9 char preceding / . $ />
-    list2 = [re.sub(r'^\.(?=\*)', '', line) for line in list2]                  # <remove leading . if followed by * />
-    list2 = [re.sub(r'^[/\.\=\?]?\$', '*$', line) for line in list2]            # <replace leading $ /$ .$ =$ ?$ with *$ />
-    list2 = [re.sub(r'^\.?[-\*\w]+/', '/', line) for line in list2]             # <replace leading @/ with / />
-    list2 = [re.sub(r'^/([-\.\+\!\~/\w]+)/$', r'/\1/*', line) for line in list2]    # <add trailing * for /@/ url filters (false regex) />
     list2 = [re.sub(r'www[0-9]*\.', '', line) for line in list2]                # <remove www#. />
+    list2 = [re.sub(r'^[_\W0-9]*(?=[/\.\$])', '', line) for line in list2]      # <remove leading symbols and numbers preceding / . $ />
+    list2 = [re.sub(r'^[/\.]?\w(?=[/\.\$])', '', line) for line in list2]       # <remove leading single a-z0-9 char preceding / . $ />
+    list2 = [re.sub(r'^\.(?=\*)', '', line) for line in list2]                  # <remove leading . if followed by * />
+    list2 = [re.sub(r'^\W*(?=\$)', '*', line) for line in list2]                # <replace symbol/none replace leading $ /$ .$ =$ ?$ with *$ />
+    list2 = [re.sub(r'^\.?[-\*\w]+/', '/', line) for line in list2]             # <replace leading (.)@/ with / />
+    list2 = [re.sub(r'^/([-\.\+\!\~/\w]+)/$', r'/\1/*', line) for line in list2]    # <add trailing * for /@/ url filters (false regex) />
 
 #    list2 = [re.sub(r'^[/\.]?ajax\*?(?=[/\.])', '', line) for line in list2]    # <remove leading ajax />
 #    list2 = [re.sub(r'^[/\.]?api\*?(?=[/\.])', '', line) for line in list2]     # <remove leading api />
@@ -407,7 +407,7 @@ while n_1 > len(list2):                                                         
 
 print('15/20 : split space separated domains ')
 
-list2s = [line for line in list2 if re.search(r' ', line) and not(re.search(r'[\$\&\#]', line))]    # <remove space separated domains />
+list2s = [line for line in list2 if re.search(r' ', line) and not(re.search(r'[\$\@\#]', line))]    # <remove space separated domains />
 
 list2 = set(list2) - set(list2s)                                                # <segregate removed filters'/>
 
@@ -491,14 +491,14 @@ list9 = [re.sub(r'^ *!.*', '', line) for line in list9]                         
 list9 = [line for line in list9 if line != '']                                  # <remove empty lines />
 list9 = list9 + ['^[_\W]*' + tld + '[_\W]*$' for tld in iana_tld]               # <enforce tld whitelisting />
 
-list2s = [line for line in list2 if re.search(r'^.*[\#|\@|\$].*$', line)]       # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
+list2s = [line for line in list2 if re.search(r'[\#\@\$]', line)]               # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
 list2  = set(list2) - set(list2s)
 
 for pattern in tqdm.tqdm(list9) :
     try :
         pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
-        list2 = [pattern.sub(r'', line) for line in list2]                          # <remove spurious filter from main list based on regex-white_list/>
-        list5 = [pattern.sub(r'', line) for line in list5]                          # <remove spurious filter from regex list based on regex-white_list />
+        list2 = [line for line in list2 if not(pattern.search(' ' + line + ''))]    # <remove spurious filter from main list based on regex-white_list />
+        list5 = [line for line in list5 if not(pattern.search(' ' + line + ''))]    # <remove spurious filter from regex list based on regex-white_list />
     except :
         print('Error found; check for ' + pattern + ' pattern in regex_white_list')
 
