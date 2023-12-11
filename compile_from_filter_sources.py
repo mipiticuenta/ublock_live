@@ -8,6 +8,7 @@ Compile a single deduplicated block list from url sources
 # <sprint #2: apply multicore/>
 # <sprint #3: apply whitelisting to cosmetic filters/>
 # <sprint #4: check for mismatching () [] {} />
+# <sprint #5: dedup filter and filter$important versions />
 
 # </product backlog>
 
@@ -394,7 +395,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'/+', '/', line).strip() for line in list2]                # <dedup / />
     list2 = [re.sub(r'^.*/\*/', '/', line) for line in list2]                   # <replace any url preceded by /*/ (included) with / />
     list2 = [re.sub(r'^.*removeparam=', '*$removeparam=', line) for line in list2]    # <fix removeparam />
-    list2 = [re.sub(r'([-\./\w]+)\$[-\,\=\.\w]*$', r'\1', line) for line in list2]    # <remove $* tail except for *$ />
+    list2 = [re.sub(r'([-\./\w]+)\$(?!important)[-\,\=\.\w]*$', r'\1', line) for line in list2]    # <remove $* tail except for *$ />
 
 #    list2 = [re.sub(r'^[_\W]?a?[^d]?[_\W]?\*?$', '', line) for line in list2]   # <remove 2 ax pd sequence filter />
 #    list2 = [re.sub(r'^[_\W]?p?[^x]?[_\W]?\*?$', '', line) for line in list2]   # <remove 2 ax pd sequence filter />
@@ -706,6 +707,22 @@ print(
     '{:,}'.format(len(list2)),
     'filters remaining after compilation\n'
 )
+
+# <remove filter if filter$important is present >
+
+print('\nRemove filter if filter$important is present', sep = '')
+
+list2s = [line for line in list2 if re.search(r'\$important', line)]            # <segregate $important filters />
+list2  = set(list2) - set(list2s)
+
+for item in tqdm.tqdm(list2s) :
+    list2 = [line for line in list2 if item != (line + '$important')]
+
+list2 = sorted(set(list2) | set(list2s))                                        # <aggregate lists />
+
+print()
+
+# </remove filter if filter$important is present >
 
 # <process filter list>
 
