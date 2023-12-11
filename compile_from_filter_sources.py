@@ -13,7 +13,7 @@ Compile a single deduplicated block list from url sources
 
 import math                                                                     # <math functions />
 import os                                                                       # <operating system interfaces />
-import re                                                                       # <regex cpapbilities />
+import re                                                                       # <regex capabilities />
 import requests                                                                 # <get files using url />
 import tqdm                                                                     # <progress bar />
 
@@ -130,7 +130,7 @@ print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 print(' 2/20 : remove comments ')
 
 list2 = [re.sub(r'^ *[!\[\{].*', '', line) for line in list2]                   # <remove !comment [comment] {comment} />
-list2 = [re.sub(r'^ *#(?![\?|@|#]).*', '', line) for line in list2]             # <remove #comment; preserve cosmetics and exceptions />
+list2 = [re.sub(r'^ *#(?![\?\@\#]).*', '', line) for line in list2]             # <remove #comment; preserve cosmetics and exceptions />
 
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
@@ -394,7 +394,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'/+', '/', line).strip() for line in list2]                # <dedup / />
     list2 = [re.sub(r'^.*/\*/', '/', line) for line in list2]                   # <replace any url preceded by /*/ (included) with / />
     list2 = [re.sub(r'^.*removeparam=', '*$removeparam=', line) for line in list2]    # <fix removeparam />
-    list2 = [re.sub(r'([-\./\w]+)\$[-\,\=\w]*$', r'\1', line) for line in list2]      # <remove $* tail except for *$ />
+    list2 = [re.sub(r'([-\./\w]+)\$[-\,\=\.\w]*$', r'\1', line) for line in list2]    # <remove $* tail except for *$ />
 
 #    list2 = [re.sub(r'^[_\W]?a?[^d]?[_\W]?\*?$', '', line) for line in list2]   # <remove 2 ax pd sequence filter />
 #    list2 = [re.sub(r'^[_\W]?p?[^x]?[_\W]?\*?$', '', line) for line in list2]   # <remove 2 ax pd sequence filter />
