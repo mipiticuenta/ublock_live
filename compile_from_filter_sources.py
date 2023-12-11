@@ -144,7 +144,7 @@ list2 = [re.sub(r'^\:+1 ', '', line) for line in list2]                         
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
-print(' 4/20 : remove items containing % about: $badfilter localhost; remove http: IP4 IP6 :port/ www ||')
+print(' 4/20 : remove items containing % about: $badfilter localhost; remove http: IP4 IP6 :port/ ')
 
 list2 = [line for line in list2 if not(re.search(r'\%', line))]                 # <remove items comprising % >
 list2 = [line for line in list2 if not(re.search(r'about\:', line))]            # <remove items comprising about: >
@@ -498,8 +498,8 @@ list2  = set(list2) - set(list2s)
 for pattern in tqdm.tqdm(list9) :
     try :
         pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
-        list2 = [line for line in list2 if not(pattern.search(' ' + line + ''))]    # <remove spurious filter from main list based on regex-white_list />
-        list5 = [line for line in list5 if not(pattern.search(' ' + line + ''))]    # <remove spurious filter from regex list based on regex-white_list />
+        list2 = [line for line in list2 if not(pattern.search(' ' + line + ' '))]    # <remove spurious filter from main list based on regex-white_list />
+        list5 = [line for line in list5 if not(pattern.search(line))]           # <remove spurious filter from regex list based on regex-white_list />
     except :
         print('Error found; check for ' + pattern + ' pattern in regex_white_list')
 
