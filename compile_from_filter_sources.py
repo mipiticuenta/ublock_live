@@ -393,6 +393,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'\.+', '.', line).strip() for line in list2]               # <dedup . />
     list2 = [re.sub(r'/+', '/', line).strip() for line in list2]                # <dedup / />
     list2 = [re.sub(r'^.*/\*/', '/', line) for line in list2]                   # <replace any url preceded by /*/ (included) with / />
+    list2 = [re.sub(r'^.*removeparam=', '*$removeparam=', line) for line in list2]    # <fix removeparam />
 
 #    list2 = [re.sub(r'^[_\W]?a?[^d]?[_\W]?\*?$', '', line) for line in list2]   # <remove 2 ax pd sequence filter />
 #    list2 = [re.sub(r'^[_\W]?p?[^x]?[_\W]?\*?$', '', line) for line in list2]   # <remove 2 ax pd sequence filter />
@@ -488,7 +489,7 @@ print('19/20 : apply regex_white_list rules')
 list9 = [line.strip() for line in open(file9_in_name, encoding='UTF-8')]        # <populate list; remove leading/trailing spaces />
 list9 = [re.sub(r'^ *!.*', '', line) for line in list9]                         # <remove ! comments' />
 list9 = [line for line in list9 if line != '']                                  # <remove empty lines />
-list9 = list9 + ['^/[_\W]*' + tld + '[_\W]*/$' for tld in iana_tld]             # <enforce tld whitelisting />
+list9 = list9 + ['^[_\W]*' + tld + '[_\W]*$' for tld in iana_tld]               # <enforce tld whitelisting />
 
 list2s = [line for line in list2 if re.search(r'^.*[\#|\@|\$].*$', line)]       # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
 list2  = set(list2) - set(list2s)
