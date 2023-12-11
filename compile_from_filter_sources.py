@@ -394,6 +394,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'/+', '/', line).strip() for line in list2]                # <dedup / />
     list2 = [re.sub(r'^.*/\*/', '/', line) for line in list2]                   # <replace any url preceded by /*/ (included) with / />
     list2 = [re.sub(r'^.*removeparam=', '*$removeparam=', line) for line in list2]    # <fix removeparam />
+    list2 = [re.sub(r'(?<!\*)\$.*$', '', line) for line in list2]               # <remove $* tail except for *$ />
 
 #    list2 = [re.sub(r'^[_\W]?a?[^d]?[_\W]?\*?$', '', line) for line in list2]   # <remove 2 ax pd sequence filter />
 #    list2 = [re.sub(r'^[_\W]?p?[^x]?[_\W]?\*?$', '', line) for line in list2]   # <remove 2 ax pd sequence filter />
