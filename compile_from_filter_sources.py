@@ -499,7 +499,7 @@ list2  = set(list2) - set(list2s)
 for pattern in tqdm.tqdm(list9) :
     try :
         pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
-        list2 = [line for line in list2 if not(pattern.search(' ' + line + ' '))]    # <remove spurious filter from main list based on regex-white_list />
+        list2 = [line for line in list2 if not(pattern.search(line))]           # <remove spurious filter from main list based on regex-white_list />
         list5 = [line for line in list5 if not(pattern.search(line))]           # <remove spurious filter from regex list based on regex-white_list />
     except :
         print('Error found; check for ' + pattern + ' pattern in regex_white_list')
@@ -527,8 +527,8 @@ file5_out.write(
 
 # </open file5_out file and write header>
 
-list5 = sorted(list5)
-file5_out.writelines(re.sub(r'\$important$', '', line)[1: -1] + '\n' for line in list5)
+list5s = sorted[re.sub(r'\$important$', '', line)[1: -1] for line in list5]     # <remove trailing $important, dedup and sort />
+file5_out.writelines(line + '\n' for line in list5s)
 file5_out.close()
 
 print(
@@ -559,17 +559,16 @@ for pattern in tqdm.tqdm(list5):
     except :
         print('Error found; check for ' + pattern + ' regex pattern in url sources')
 
-list2 = sorted(set(list2) | set(list2s))                                        # <join lists'/>
-
-print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept', '\n')
+print('       ', '{:,}'.format(len(list2) + len(list2s) + len(list5)), 'filters kept', '\n')
 
 # </remove url filters covered by regex filters>
 
-# <aggregate regex filters >
+# <aggregate filters >
 
-list2 = sorted(set(list2) | set(list5))
+list2 = sorted(set(list2) | set(list2s) | set(list5))                           # <join lists2, list2s, list5' />
+del(list2s)                                                                     # <discard list2s, keep list5/>
 
-# </aggregate regex filters >
+# </aggregate filters >
 
 # <extract domains from list >
 
@@ -595,24 +594,15 @@ list3 = [re.sub('r\$important$', '', line) for line in list3]                   
 list3 = [re.sub(r'^[-_\.0-9]+\.', '', line) for line in list3]                  # <remove #.@(.@) numerical domains/>
 list3 = sorted(set(list3) - set(iana_tld))                                      # <remove IANA tld root domains />
 
-#list3 = [line for line in list2 if re.search(r'^[-\.\w]+\.[a-z]+(\.[a-z]+)?(\$important)?$', line)]
-#list3 = [line for line in list3 if not(re.search(r'^.*\.js(?:on)?(\$important)?$', line))]  # <remove @.js from domains list />
-#list3 = [line for line in list3 if not(re.search(r'^.*\.css(\$important)?$', line))]        # <remove @.css from domains list />
-#list3 = [line for line in list3 if not(re.search(r'^.*\.webp(\$important)?$', line))]       # <remove @.webp from domains list />
-#list3 = [line for line in list3 if not(re.search(r'^.*\.bin(\$important)?$', line))]        # <remove @.bin from domains list />
-#list3 = [line for line in list3 if not(re.search(r'^.*\.woff[0-9]?(\$important)?$', line))] # <remove @.woff# from domains list />
-#list3 = [line for line in list3 if not(re.search(r'^.*\.link(\$important)?$', line))]       # <remove @.link from domains list />
-#list3 = [line for line in list3 if not(re.search(r'^.*\.ttf(\$important)?$', line))]        # <remove @.ttf from domains list />
-
 # <get domains white list from file, dedup and sort>
 
 list8 = [line.strip() for line in open(file8_in_name, encoding='UTF-8')]        # <populate list; remove leading/trailing spaces />
 list8 = [re.sub(r'^ *!.*', '', line) for line in list8]                         # <remove ! comments' />
 list8 = [line for line in list8 if line.strip() != '']                          # <remove empty lines />
 
-list3 = sorted(set(list3) - set(list8))
-
 # </get domains white list from file, dedup and sort>
+
+list3 = sorted(set(list3) - set(list8))
 
 print(
     '{:,}'.format(len(list3)),
@@ -708,21 +698,22 @@ print(
     'filters remaining after compilation\n'
 )
 
-# <remove filter if filter$important is present >
+# <dedup filter if filter$important is present >
 
-print('\nRemove filter if filter$important is present', sep = '')
+print('\nDedup filter if filter$important is present', sep = '')
 
-list2s = [line for line in list2 if re.search(r'\[\$\,]important', line)]       # <segregate ($|,)important filters />
+list2s = [line for line in list2 if re.search(r'[\$\,]important$', line)]       # <segregate ($|,)important filters />
 list2  = set(list2) - set(list2s)
 
 for item in tqdm.tqdm(list2s) :
     list2 = [line for line in list2 if item != (line + '[\$\,]important')]
 
 list2 = sorted(set(list2) | set(list2s))                                        # <aggregate lists />
+del(list2s)
 
 print()
 
-# </remove filter if filter$important is present >
+# </dedup filter if filter$important is present >
 
 # <process filter list>
 
