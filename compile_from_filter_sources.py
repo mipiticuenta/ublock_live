@@ -184,6 +184,7 @@ print(' 6/20 : generalize cosmetic filters (*##) and exceptions (*#@ *#? *@@) ')
 
 list2 = [re.sub(r'^.*(?=\#[\#\?])', '*', line) for line in list2]               # <generalize *## *#? />
 list2 = [re.sub(r'^.*(?=[\#\@]\@)', '*', line) for line in list2]               # <generalize *#@ *@@ />
+list2 = [re.sub(r'^.*removeparam\=', '*$removeparam=', line) for line in list2] # <generalize *$removeparam />
 
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
@@ -394,7 +395,6 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'\.+', '.', line).strip() for line in list2]               # <dedup . />
     list2 = [re.sub(r'/+', '/', line).strip() for line in list2]                # <dedup / />
     list2 = [re.sub(r'^.*/\*/', '/', line) for line in list2]                   # <replace any url preceded by /*/ (included) with / />
-    list2 = [re.sub(r'^.*removeparam=', '*$removeparam=', line) for line in list2]    # <fix removeparam />
     list2 = [re.sub(r'([-\./\w]+)\$(?!important)[-\,\=\.\w]*$', r'\1', line) for line in list2]    # <remove $* tail except for *$ />
 
 #    list2 = [re.sub(r'^[_\W]?a?[^d]?[_\W]?\*?$', '', line) for line in list2]   # <remove 2 ax pd sequence filter />
@@ -712,11 +712,11 @@ print(
 
 print('\nRemove filter if filter$important is present', sep = '')
 
-list2s = [line for line in list2 if re.search(r'\$important', line)]            # <segregate $important filters />
+list2s = [line for line in list2 if re.search(r'\[\$\,]important', line)]       # <segregate ($|,)important filters />
 list2  = set(list2) - set(list2s)
 
 for item in tqdm.tqdm(list2s) :
-    list2 = [line for line in list2 if item != (line + '$important')]
+    list2 = [line for line in list2 if item != (line + '[\$\,]important')]
 
 list2 = sorted(set(list2) | set(list2s))                                        # <aggregate lists />
 
