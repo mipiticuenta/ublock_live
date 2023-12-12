@@ -8,7 +8,6 @@ Compile a single deduplicated block list from url sources
 # <sprint #2: apply multicore/>
 # <sprint #3: apply whitelisting to cosmetic filters/>
 # <sprint #4: check for mismatching () [] {} />
-# <sprint #5: dedup filter and filter$important versions />
 
 # </product backlog>
 
@@ -494,7 +493,7 @@ list2 = [line for line in list2 if len(line) > 3]                               
 list2 = [line for line in list2 if (re.search(r'[^\[\]\{\}\;\,\\]', line))]     # <remove broken regex filters />
 
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
-print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
+print('       ', '{:,}'.format(len(list2) + len(list2s) + len(list5)), 'filters kept')
 
 print('20a/20 : apply regex_white_list rules', sep = '')
 
@@ -700,7 +699,7 @@ print(
 
 # <dedup filter if filter$important is present >
 
-print('\nDedup filter if filter$important is present', sep = '')
+print('\nDedup filter if filter($|,)important is present', sep = '')
 
 list2s = [line for line in list2 if re.search(r'[\$\,]important$', line)]       # <segregate ($|,)important filters />
 list2  = set(list2) - set(list2s)
