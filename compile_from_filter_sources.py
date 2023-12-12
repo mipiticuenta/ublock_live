@@ -486,6 +486,9 @@ print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
 print('19/20 : simplify urls keeping last /* part')
 
+list2s = [line for line in list2 if re.search(r'[\#\@\$]', line)]               # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
+list2  = set(list2) - set(list2s)
+
 list2 = [re.sub(r'^.+(?=/[^/]+$)', '', line) for line in list2]                 # <simplify urls keeping last /* part />
 list2 = [line for line in list2 if len(line) > 3]                               # <keep filters with len > 3 />
 list2 = [line for line in list2 if (re.search(r'[^\[\]\{\}\;\,\\]', line))]     # <remove broken regex filters />
@@ -501,9 +504,6 @@ list9 = [line.strip() for line in open(file9_in_name, encoding='UTF-8')]        
 list9 = [re.sub(r'^ *!.*', '', line) for line in list9]                         # <remove ! comments' />
 list9 = [line for line in list9 if line != '']                                  # <remove empty lines />
 list9 = list9 + [('^[_\W]*' + tld + '[_\W]*$') for tld in iana_tld]             # <enforce tld whitelisting />
-
-list2s = [line for line in list2 if re.search(r'[\#\@\$]', line)]               # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
-list2  = set(list2) - set(list2s)
 
 for pattern in tqdm.tqdm(list9) :
     try :
@@ -533,6 +533,7 @@ file5_out.write(
 list5s = sorted([re.sub(r'\$important$', '', line)[1: -1] for line in list5])   # <remove trailing $important, dedup and sort />
 file5_out.writelines(line + '\n' for line in list5s)
 file5_out.close()
+del(list5s)
 
 print(
     '\n',
