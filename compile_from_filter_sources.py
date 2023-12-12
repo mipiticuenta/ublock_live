@@ -527,7 +527,7 @@ file5_out.write(
 
 # </open file5_out file and write header>
 
-list5s = sorted[re.sub(r'\$important$', '', line)[1: -1] for line in list5]     # <remove trailing $important, dedup and sort />
+list5s = sorted([re.sub(r'\$important$', '', line)[1: -1] for line in list5])   # <remove trailing $important, dedup and sort />
 file5_out.writelines(line + '\n' for line in list5s)
 file5_out.close()
 
