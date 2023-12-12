@@ -484,14 +484,23 @@ list2 = [line for line in list2 if not(re.search(r'^/.*[\[\\].*[^/]$', line))]  
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
-print('19/20 : apply regex_white_list rules')
+print('19/20 : simplify urls keeping last /* part')
+
+list2 = [re.sub(r'^.+(?=/[^/]+$)', '', line) for line in list2]                 # <simplify urls keeping last /* part />
+list2 = [line for line in list2 if len(line) > 3]                               # <keep filters with len > 3 />
+list2 = [line for line in list2 if (re.search(r'[^\[\]\{\}\;\,\\]', line))]     # <remove broken regex filters />
+
+list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
+print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
+
+print('20a/20 : apply regex_white_list rules', sep = '')
 
 # <get regex white list from file, dedup, sort and clean up filters>
 
 list9 = [line.strip() for line in open(file9_in_name, encoding='UTF-8')]        # <populate list; remove leading/trailing spaces />
 list9 = [re.sub(r'^ *!.*', '', line) for line in list9]                         # <remove ! comments' />
 list9 = [line for line in list9 if line != '']                                  # <remove empty lines />
-list9 = list9 + ['^[_\W]*' + tld + '[_\W]*$' for tld in iana_tld]               # <enforce tld whitelisting />
+list9 = list9 + [('^[_\W]*' + tld + '[_\W]*$') for tld in iana_tld]             # <enforce tld whitelisting />
 
 list2s = [line for line in list2 if re.search(r'[\#\@\$]', line)]               # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
 list2  = set(list2) - set(list2s)
@@ -499,18 +508,12 @@ list2  = set(list2) - set(list2s)
 for pattern in tqdm.tqdm(list9) :
     try :
         pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
-        list2 = [line for line in list2 if not(pattern.search(line))]           # <remove spurious filter from main list based on regex-white_list />
-        list5 = [line for line in list5 if not(pattern.search(line))]           # <remove spurious filter from regex list based on regex-white_list />
+        list2 = [line for line in list2 if not(pattern.search(line))]           # <remove filter from main list based on regex-white_list />
+        list5 = [line for line in list5 if not(pattern.search(line))]           # <remove filter from regex list based on regex-white_list />
     except :
         print('Error found; check for ' + pattern + ' pattern in regex_white_list')
 
-print()
-
 # </get regex white list from file, dedup, sort and clean up filters>
-
-list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
-list5 = sorted([line for line in list5 if len(line) > 1])                       # <remove line if length < 2 />
-print('       ', '{:,}'.format(len(list2) + len(list2s) + len(list5)), 'filters kept')
 
 # <write extracted regex type filters>
 
@@ -543,13 +546,9 @@ print(
 
 # </write extracted regex type filters>
 
+print('20b/20 : deflat url filters redundant with regex filters', sep = '')
+
 # <remove url filters covered by regex filters>
-
-print('20/20 : simplify urls keeping last /* part and deflat url filters redundant with regex filters', sep = '')
-
-list2 = [re.sub(r'^.+(?=/[^/]+$)', '', line) for line in list2]                 # <simplify urls keeping last /* part />
-list2 = [line for line in list2 if len(line) > 3]                               # <keep filters with len > 3 />
-list2 = [line for line in list2 if (re.search(r'[^\[\]\{\}\;\,\\]', line))]     # <remove broken regex filters />
 
 for pattern in tqdm.tqdm(list5):
     pattern = re.sub(r'\$important$', '', pattern)[1: -1]
