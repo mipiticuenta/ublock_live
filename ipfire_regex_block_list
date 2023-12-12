@@ -45,7 +45,6 @@
 [_\W]ad.?script[-~\w\.]*\.js(on)?
 [_\W]adb(lock(er)?)?.?detect[-~\w\.]
 [_\W]adblock[-~\w\.]*\.js(on)?
-[_\W]addressdotnet[_\W]
 [_\W]adops?[_\W]
 [_\W]adrum[-~\w\.]*\.js(on)?
 [_\W]ads?[_\W]
@@ -151,7 +150,6 @@
 [_\W]ebx[-~\w\.]*\.js(on)?
 [_\W]email.?decode[_\W]
 [_\W]embed[-~\w\.]*\.js(on)?
-[_\W]eumodaldialog[-~\w\.]*\.js(on)?
 [_\W]ev.?em[-~\w\.]*\.js(on)?
 [_\W]eventlog[_\W]
 [_\W]events?[_\W]
@@ -160,7 +158,6 @@
 [_\W]fb[_\W]
 [_\W]feedback[-~\w\.]*\.js(on)?
 [_\W]flash[-~\w\.]*\.js(on)?
-[_\W]flickity[-~\w\.]*\.js(on)?
 [_\W]form[-~\w\.]*\.js(on)?
 [_\W]fpr[-~\w\.]*\.js(on)?
 [_\W]freyr[-~\w\.]*\.js(on)?
@@ -272,12 +269,10 @@
 [_\W]privacy[-~\w\.]*\.js(on)?
 [_\W]privacy[_\W]
 [_\W]processecm[-~\w\.]*\.js(on)?
-[_\W]processmktchannel[-~\w\.]*\.js(on)?
 [_\W]promos?[_\W]
 [_\W]pub(?!l)[-~\w\.]*\.js(on)?
 [_\W]pub[_\W]
 [_\W]publi[_\W]
-[_\W]punycode[-~\w\.]*\.js(on)?
 [_\W]purch[_\W]
 [_\W]push[-~\w\.]*\.js(on)?
 [_\W]push[_\W]
@@ -332,7 +327,6 @@
 [_\W]stocky[-~\w\.]*\.js(on)?
 [_\W]storage[-~\w\.]*\.js(on)?
 [_\W]store[-~\w\.]*\.js(on)?
-[_\W]streamsense[-~\w\.]*\.js(on)?
 [_\W]stub
 [_\W]subscr[-~\w\.]*\.js(on)?
 [_\W]subscribe[_\W]
@@ -456,6 +450,7 @@
 ^https?:\/\/s3\.us-east-1\.amazonaws\.com\/[0-9a-f]{50,}\/[0-9a-f]{10}$
 ^https?:\/\/www\.ebay-kleinanzeigen\.de\/[a-z0-9]{8}\-[0-9a-f]{4}\-
 _dating\d\/index\.html\?aref=
+addressdotnet
 adfuel
 adobe.?target
 adsutils
@@ -497,10 +492,12 @@ downfile.asp?sid=276663
 dynamicad
 dynamicgafunctions
 eloqua
+eumodaldialog
 eventtrack
 faceboo?k
 fbevent
 firebase
+flickity
 fuckfuckadblock
 gen(erate)?.?204
 gh/sensitiveio/sbtracker@master
@@ -554,6 +551,8 @@ pre.?bid
 pre.?fetch
 pre.?roll
 privacy
+processmktchannel
+punycode
 queryly
 ref/$doc,urltransform=/\/ref\/[\/]+
 ref/$doc,urltransform=/^\/ref\/[^\/]+
@@ -566,6 +565,7 @@ sharing[-~\w\.]*\.js(on)?
 smarttag
 sourcepoint
 storage[-~\w\.]*\.js(on)?
+streamsense
 streamsense
 stub[-~\w\.]*\.js(on)?
 stub[_\W]

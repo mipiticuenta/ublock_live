@@ -2,8 +2,8 @@
 !$$ url and regex white-listing based in regex; do not enclose regex in '' nor r''
 !$$ white-listing shall not be applied to cosmetic nor removeparam filters 
 ^\*\$rpc[_\W]*$
-^\*\$size[_\W]*$
 ^\*\$script[_\W]*$
+^\*\$size[_\W]*$
 ^\*\$web[_\W]*$
 ^[^a-z]+(?:x[^a-z]+)?$
 ^[_\W]*$
@@ -19,17 +19,14 @@
 ^[_\W]*accl[_\W]*$
 ^[_\W]*accommodations?[_\W]*$
 ^[_\W]*accor[_\W]*$
-^[_\W]*accountaction[_\W]*$
 ^[_\W]*accountdata[_\W]*$
 ^[_\W]*accountimage[_\W]*$
 ^[_\W]*account[_\W]*$
 ^[_\W]*accountwithtoken[_\W]*$
-^[_\W]*acctid[_\W]*$
 ^[_\W]*(?:accu)weather[_\W]*$
 ^[_\W]*aclk[_\W]*$
 ^[_\W]*acquire[_\W]*$
 ^[_\W]*across[_\W]*$
-^[_\W]*acsettings[_\W]*$
 ^[_\W]*ac[sw][_\W]*$
 ^[_\W]*actag[_\W]*$
 ^[_\W]*actions?[_\W]*$
@@ -48,7 +45,6 @@
 ^[_\W]*agencies[_\W]*$
 ^[_\W]*agenda[_\W]*$
 ^[_\W]*agent[_\W]*$
-^[_\W]*aggregateconfig[_\W]*$
 ^[_\W]*aggregate[_\W]*$
 ^[_\W]*agriculture[_\W]*$
 ^[_\W]*airbnb[_\W]*$
@@ -67,7 +63,6 @@
 ^[_\W]*allow[_\W]*$
 ^[_\W]*allpages[_\W]*$
 ^[_\W]*allproducts[_\W]*$
-^[_\W]*alltemplates\.css[_\W]*$
 ^[_\W]*alphamedical[_\W]*$
 ^[_\W]*alpha[_\W]*$
 ^[_\W]*alternate[_\W]*$
@@ -129,7 +124,6 @@
 ^[_\W]*(?:auto)?optimize[_\W]*$
 ^[_\W]*autoplay[_\W]*$
 ^[_\W]*autosignin[_\W]*$
-^[_\W]*autosmarketplace[_\W]*$
 ^[_\W]*autostart[_\W]*$
 ^[_\W]*auto[_\W]*$
 ^[_\W]*availability[_\W]*$
@@ -290,7 +284,7 @@
 ^[_\W]*collections?[_\W]*$
 ^[_\W]*color[_\W]*$
 ^[_\W]*col(?:umns?)?[_\W]*$
-^[_\W]*combined[_\W]*$
+^[_\W]*combined?[_\W]*$
 ^[_\W]*command[_\W]*$
 ^[_\W]*commercial[_\W]*$
 ^[_\W]*commits?[_\W]*$
@@ -377,7 +371,6 @@
 ^[_\W]*datatables?[_\W]*$
 ^[_\W]*datatest[_\W]*$
 ^[_\W]*datatypes?[_\W]*$
-^[_\W]*dataunlocker[_\W]*$
 ^[_\W]*dataupload[_\W]*$
 ^[_\W]*data[_\W]*$
 ^[_\W]*dates?[_\W]*$
@@ -386,7 +379,6 @@
 ^[_\W]*deco[_\W]*$
 ^[_\W]*decrypt[_\W]*$
 ^[_\W]*dedupe[_\W]*$
-^[_\W]*defaultstring[_\W]*$
 ^[_\W]*defaults?[_\W]*$
 ^[_\W]*definitions?[_\W]*$
 ^[_\W]*deflate[_\W]*$
@@ -415,7 +407,6 @@
 ^[_\W]*directoalpaladar[_\W]*$
 ^[_\W]*direct[_\W]*$
 ^[_\W]*disclaimers?[_\W]*$
-^[_\W]*disclaimer[_\W]*$
 ^[_\W]*discord[_\W]*$
 ^[_\W]*discounts?[_\W]*$
 ^[_\W]*disco[_\W]*$
@@ -509,7 +500,7 @@
 ^[_\W]*experimentation[_\W]*$
 ^[_\W]*experiments?[_\W]*$
 ^[_\W]*expertise[_\W]*$
-^[_\W]*expire[_\W]*$
+^[_\W]*expires?[_\W]*$
 ^[_\W]*explore[_\W]*$
 ^[_\W]*export[_\W]*$
 ^[_\W]*expose[_\W]*$
@@ -686,8 +677,7 @@
 ^[_\W]*icons?[_\W]*$
 ^[_\W]*identification[_\W]*$
 ^[_\W]*identifiers?[_\W]*$
-^[_\W]*identify[_\W]*$
-^[_\W]*identity[_\W]*$
+^[_\W]*identi[ft]y[_\W]*$
 ^[_\W]*ifr(?:ame)?[_\W]*$
 ^[_\W]*ima?ge?(?:ne)?s?[_\W]*$
 ^[_\W]*imagine[_\W]*$
@@ -746,8 +736,6 @@
 ^[_\W]*interfere[_\W]*$
 ^[_\W]*intermediate[_\W]*$
 ^[_\W]*inter(?:nal)?[_\W]*$
-^[_\W]*interstital[_\W]*$
-^[_\W]*interstitial[_\W]*$
 ^[_\W]*intro[_\W]*$
 ^[_\W]*invalidate[_\W]*$
 ^[_\W]*invalid[_\W]*$
@@ -791,6 +779,7 @@
 ^[_\W]*layouts?[_\W]*$
 ^[_\W]*(lazyload\.)?min\.js$
 ^[_\W]*lazyload[_\W]*$
+^[_\W]*lazysizes\.min\.js[_\W]*$
 ^[_\W]*leaderboard[_\W]*$
 ^[_\W]*lead[_\W]*$
 ^[_\W]*leaf[_\W]*$
@@ -831,11 +820,6 @@
 ^[_\W]*loaded[_\W]*$
 ^[_\W]*loc(?:al(?:es)?)?[_\W]*$
 ^[_\W]*locale[_\W]*$
-^[_\W]*localisation[_\W]*$
-^[_\W]*localization[_\W]*$
-^[_\W]*localize[_\W]*$
-^[_\W]*localnavigation[_\W]*$
-^[_\W]*localstorage[_\W]*$
 ^[_\W]*localtime[_\W]*$
 ^[_\W]*location[_\W]*$
 ^[_\W]*locs?[_\W]*$
@@ -919,10 +903,7 @@
 ^[_\W]*mozilla[_\W]*$
 ^[_\W]*mp[0-9[_\W]*$
 ^[_\W]*(?:multi)?media[_\W]*$
-^[_\W]*multiplequeries[_\W]*$
 ^[_\W]*multiple[_\W]*$
-^[_\W]*multirequest[_\W]*$
-^[_\W]*multisimulation[_\W]*$
 ^[_\W]*multi[_\W]*$
 ^[_\W]*mundial[_\W]*$
 ^[_\W]*muni[_\W]*$
@@ -1018,7 +999,6 @@
 ^[_\W]*parse[_\W]*$
 ^[_\W]*partenaires?[_\W]*$
 ^[_\W]*partenariat[_\W]*$
-^[_\W]*partenaria[_\W]*$
 ^[_\W]*partial[_\W]*$
 ^[_\W]*participants?[_\W]*$
 ^[_\W]*particles?[_\W]*$
@@ -1037,8 +1017,7 @@
 ^[_\W]*permalink[_\W]*$
 ^[_\W]*persist[_\W]*$
 ^[_\W]*personalization[_\W]*$
-^[_\W]*personalized[_\W]*$
-^[_\W]*personalize[_\W]*$
+^[_\W]*personalized?[_\W]*$
 ^[_\W]*personal[_\W]*$
 ^[_\W]*persons?[_\W]*$
 ^[_\W]*pets?[_\W]*$
@@ -1121,8 +1100,6 @@
 ^[_\W]*protector[_\W]*$
 ^[_\W]*provinces?[_\W]*$
 ^[_\W]*proxy[_\W]*$
-^[_\W]*publicidad[_\W]*$
-^[_\W]*publicitat[_\W]*$
 ^[_\W]*publicity[_\W]*$
 ^[_\W]*publickey[_\W]*$
 ^[_\W]*public[_\W]*$
@@ -1135,8 +1112,6 @@
 ^[_\W]*pure[_\W]*$
 ^[_\W]*purge[_\W]*$
 ^[_\W]*purst[_\W]*$
-^[_\W]*pusher[_\W]*$
-^[_\W]*pushevent[_\W]*$
 ^[_\W]*pushpull[_\W]*$
 ^[_\W]*q_d[_\W]*$
 ^[_\W]*quality[_\W0-9]*$
@@ -1399,6 +1374,8 @@
 ^[_\W]*strip[_\W]*$
 ^[_\W]*studios?[_\W]*$
 ^[_\W]*stuf[_\W]*$
+^[_\W]*style\.css[_\W]*$
+^[_\W]*(?:style\.)?min\.css[_\W]*$
 ^[_\W]*stylesheet[_\W]*$
 ^[_\W]*styles?[_\W]*$
 ^[_\W]*submit[_\W]*$
@@ -1558,7 +1535,7 @@
 ^[_\W]*vortex[_\W]*$
 ^[_\W]*vudu[_\W]*$
 ^[-/\.\w]+\*[-/\.\w]+$
-^[_\W]*[_\W]*$
+^[_\W]*$
 ^[_\W]*W=[0-9]*[_\W]*$
 ^[_\W]*waitlists?[_\W]*$
 ^[_\W]*waits?[_\W]*$
