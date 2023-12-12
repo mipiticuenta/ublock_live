@@ -169,8 +169,8 @@ list2 = sorted([line for line in list2 if len(line) > 1])                       
 
 # <segregate regex filters >
 
-list2 = [re.sub(r'^/([-\.\+\!\~/\w]+)/$', r'/\1/*', line) for line in list2]    # <add trailing * for /@/ url filters (false regex) />
-list2 = [line for line in list2 if not(re.search(r'^.*\\/$', line))]            # <remove broken regex (bad termination) />
+list2 = [re.sub(r'^/(-\[\.\+\!\~/\w]+)/$', r'/\1/*', line) for line in list2]   # <add trailing * for /@/ url filters (false regex) />
+list2 = [line for line in list2 if not(re.search(r'^/.*\\/$', line))]           # <remove broken regex (bad termination) />
 
 list5 = [line for line in list2 if re.search(r'^/.+/(?:\$important)?$', line)]
 list2  = set(list2) - set(list5)
@@ -188,7 +188,7 @@ list2 = [re.sub(r'^.*removeparam\=', '*$removeparam=', line) for line in list2] 
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
-print(' 7/21 : remove cosmetic filters (##) and exceptions (@@) except *##:')   # <currently discarded; consider processing (future sprints?)/>
+print(' 7/21 : remove cosmetic filters (## #?) and exceptions (@@ #@) except *##:')   # <currently discarded; consider processing (future sprints?)/>
 
 list2 = [re.sub(r'^\*?\#\#(?!\:).*', '', line) for line in list2]               # <remove cosmetic filters except ##: />
 list2 = [re.sub(r'^\*?\#[\@|\?].*', '', line) for line in list2]                # <remove #@ #? exceptions />
@@ -393,7 +393,7 @@ list2 = [re.sub(r'^\*\$\~?other.*', '*$other', line) for line in list2]         
 list2 = [re.sub(r'^\*\$\~?ping.*', '*$ping', line) for line in list2]           # <enforce *$ping />
 list2 = [re.sub(r'^\*\$\~?popup.*', '', line) for line in list2]                # <remove *$popup />
 list2 = [re.sub(r'^\*\$\~?popunder.*', '*$popunder', line) for line in list2]   # <enforce *$popunder />
-list2 = [re.sub(r'^\*\$\~?script.*', '*$script', line) for line in list2]       # <enforce *$script />
+list2 = [re.sub(r'^\*\$\~?script.*', '', line) for line in list2]               # <remove *$script />
 list2 = [re.sub(r'^\*\$\~?rewrite.*', '', line) for line in list2]              # <remove *$rewrite />
 list2 = [re.sub(r'^\*\$\~?websocket.*', '*$websocket', line) for line in list2] # <enforce *$websocket />
 list2 = [re.sub(r'^\*\$\~?xhr.*', '*$xhr', line) for line in list2]             # <enforce *$xhr />
@@ -411,6 +411,7 @@ list2 = [line for line in list2 if not(re.search(r'^.*\([^\)]*$', line))]       
 list2 = [line for line in list2 if not(re.search(r'^.*\[[^\]]*$', line))]       # <remove broken filters; improve this filter for multiple [] />
 list2 = [line for line in list2 if not(re.search(r'^.*\{[^\}]*$', line))]       # <remove broken filters; improve this filter for multiple {} />
 list2 = [line for line in list2 if not(re.search(r'^/.*[\[\\].*[^/]$', line))]  # <remove broken filters (unterminated regex) />
+list2 = [line for line in list2 if not(re.search(r'^/.*\\/$', line))]           # <remove broken regex (bad termination) />
 
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
