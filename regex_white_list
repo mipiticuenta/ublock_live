@@ -1,23 +1,10 @@
 !$$ important: use always the following syntax: ^....$
 !$$ url and regex white-listing based in regex; do not enclose regex in '' nor r''
 !$$ white-listing shall not be applied to cosmetic nor removeparam filters 
-^\*\$rpc.*$
-^\*\$size.*$
-^\*\$web.*$
-^.*agriculture.*$
-^.*aviation.*$
+^\*\$rpc[_\W]*$
+^\*\$size[_\W]*$
+^\*\$web[_\W]*$
 ^[^a-z]+(?:x[^a-z]+)?$
-^.*climate.*$
-^.*destination.*$
-^.*document.*$
-^.*forecast.*$
-^.*formula.*$
-^.*hospital.*$
-^.*independent.*$
-^.*isobars.*$
-^.*maps.*$
-^.*\:not\(input\)\:not\(textarea\)$
-^.*outdoor.*$
 ^[_\W]*$
 ^[_\W]*[_0-9]*inight[_\W]*$
 ^[_\W]*14_iday[_\W]*$
@@ -62,6 +49,7 @@
 ^[_\W]*agent[_\W]*$
 ^[_\W]*aggregateconfig[_\W]*$
 ^[_\W]*aggregate[_\W]*$
+^[_\W]*agriculture[_\W]*$
 ^[_\W]*airbnb[_\W]*$
 ^[_\W]*airline[_\W]*$
 ^[_\W]*airportinfo[_\W]*$
@@ -147,6 +135,7 @@
 ^[_\W]*available[_\W]*$
 ^[_\W]*avatar[_\W]*$
 ^[_\W]*avenir[_\W]*$
+^[_\W]*aviation[_\W]*$
 ^[_\W]*avisos?[_\W]*$
 ^[_\W]*awards?[_\W]*$
 ^[_\W]*away[_\W]*$
@@ -287,6 +276,7 @@
 ^[_\W]*class[_\W]*$
 ^[_\W]*clea[nr][_\W]*$
 ^[_\W]*client[_\W]*$
+^[_\W]*climate[_\W]*$
 ^[_\W]*clinics?[_\W]*$
 ^[_\W]*clock[_\W]*$
 ^[_\W]*close[_\W]*$
@@ -409,6 +399,7 @@
 ^[_\W]*descriptor[_\W]*$
 ^[_\W]*design[_\W]*$
 ^[_\W]*desktop[_\W]*$
+^[_\W]*destination[_\W]*$
 ^[_\W]*details?[_\W]*$
 ^[_\W]*detect[_\W]*$
 ^[_\W]*deviantart[_\W]*$
@@ -434,6 +425,7 @@
 ^[_\W]*dist[_\W]*$
 ^[_\W]*docs?[_\W]*$
 ^[_\W]*doctors?[_\W]*$
+^[_\W]*document[_\W]*$
 ^[_\W]*dollar[_\W]*$
 ^[_\W]*do[lt]?[_\W]*$
 ^[_\W]*domains?[_\W]*$
@@ -450,7 +442,6 @@
 ^[_\W]*dust[_\W]*$
 ^[_\W]*dynamic[_\W]*$
 ^[_\W]*easy[_\W]*$
-^.*weather.*$
 ^[_\W]*ebay[_\W]*$
 ^[_\W]*echo[_\W]*$
 ^[_\W]*edge[_\W]*$
@@ -587,8 +578,10 @@
 ^[_\W]*foobar[_\W]*$
 ^[_\W]*foot(?:er)?[_\W]*$
 ^[_\W]*footprint[_\W]*$
+^[_\W]*forecast[_\W]*$
 ^[_\W]*formats?[_\W]*$
 ^[_\W]*forms?[_\W]*$
+^[_\W]*formula[_\W]*$
 ^[_\W]*fortuna[_\W]*$
 ^[_\W]*forums?[_\W]*$
 ^[_\W]*forwarding[_\W]*$
@@ -677,6 +670,7 @@
 ^[_\W]*homepage\.css[_\W]*$
 ^[_\W]*home(?:page)?[_\W]*$
 ^[_\W]*horizon[_\W]*$
+^[_\W]*hospital[_\W]*$
 ^[_\W]*hotel[_\W]*$
 ^[_\W]*hours?[_\W]*$
 ^[_\W]*html[_\W]*$
@@ -705,6 +699,7 @@
 ^[_\W]*(?:inc?|out|left|right)[_\W]*$
 ^[_\W]*increment[_\W]*$
 ^[_\W]*indeed[_\W]*$
+^[_\W]*independent[_\W]*$
 ^[_\W]*inde[_\W]*$
 ^[_\W]*indexes[_\W]*$
 ^[_\W]*indexexchange[_\W]*$
@@ -759,6 +754,7 @@
 ^[_\W]*invites?[_\W]*$
 ^[_\W]*i?phone[_\W]*$
 ^[_\W]*island[_\W]*$
+^[_\W]*isobars[_\W]*$
 ^[_\W]*issue[_\W]*$
 ^[_\W]*i?tag[_\W]*$
 ^[_\W]*items?[_\W]*$
@@ -859,6 +855,7 @@
 ^[_\W]*manifest[_\W]*$
 ^[_\W]*mapbox[-\.\w]*[_\W]*$
 ^[_\W]*maps?[_\W]*$
+^[_\W]*maps[_\W]*$
 ^[_\W]*mark(?:et(?:ing)?)?[_\W]*$
 ^[_\W]*marketplace?[_\W]*$
 ^[_\W]*marking[_\W]*$
@@ -957,6 +954,7 @@
 ^[_\W]*noticias?[_\W]*$
 ^[_\W]*notifier[_\W]*$
 ^[_\W]*notify[_\W]*$
+^[_\W]*\:not\(input\)\:not\(textarea\)$
 ^[_\W]*nude[_\W]*$
 ^[_\W]*null[_\W]*$
 ^[_\W]*numbers?[_\W]*$
@@ -1000,6 +998,7 @@
 ^[_\W]*other[_\W]*$
 ^[_\W]*ottomans?[_\W]*$
 ^[_\W]*otto[_\W]*$
+^[_\W]*outdoor[_\W]*$
 ^[_\W]*outfits?[_\W]*$
 ^[_\W]*overall[_\W]*$
 ^[_\W]*overlay[_\W]*$
@@ -1571,6 +1570,7 @@
 ^[_\W]*wave[_\W]*$
 ^[_\W]*waypoints?[_\W]*$
 ^[_\W]*waze[_\W]*$
+^[_\W]*weather[_\W]*$
 ^[_\W]*webp[_\W]*$
 ^[_\W]*webresources?[_\W]*$
 ^[_\W]*web(?:site)?[_\W]*$
@@ -1595,12 +1595,12 @@
 ^[_\W]*write[_\W]*$
 ^[_\W]*wwhp\.min\.css[_\W]*$
 ^[_\W]*xataka[_\W]*$
+^[_\W]*\:xpath[_\W]*$
 ^[_\W]*year[_\W]*$
 ^[_\W]*young[_\W]*$
 ^[_\W]*your[_\W]*$
 ^[_\W]*youtube[_\W]*$
 ^[_\W]*ytimg[_\W]*$
+^[_\W]*yuicombo[_\W]*$
 ^[_\W]*zalando[_\W]*$
-^.*\:xpath.*$
-^.*yuicombo.*$
 
