@@ -705,7 +705,7 @@ list2s = [line for line in list2 if re.search(r'[\$\,]important$', line)]       
 list2  = set(list2) - set(list2s)
 
 for item in tqdm.tqdm(list2s) :
-    list2 = [line for line in list2 if item != (line + '[\$\,]important')]
+    list2 = [line for line in list2 if (item != (line + '$important') and (item != (line + ',important')))]
 
 list2 = sorted(set(list2) | set(list2s))                                        # <aggregate lists />
 del(list2s)
