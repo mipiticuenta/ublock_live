@@ -427,6 +427,8 @@ list2s = [line for line in list2s if not(re.search(r'^[_\W]*\:is', line))]      
 list2s = [line for line in list2s if not(re.search(r'^[_\W]*\:matches', line))] # <remove *##:matches filters />
 list2s = [line for line in list2s if not(re.search(r'^[_\W]*\:xpath', line))]   # <remove *##:xpath filters />
 list2s = [line for line in list2s if not(re.search(r'^[_\W]*\:not\(input\)\:not\(textarea\)', line))]
+list2s = [line for line in list2s if not(re.search(r'removeparam.*smilformats', line))]
+list2s = [line for line in list2s if not(re.search(r'removeparam.*formatsprofile', line))]
 
 # </cleaunp cosmetic filters >
 
@@ -546,6 +548,7 @@ list8 = [line for line in list8 if line.strip() != '']                          
 list3 = sorted(set(list3) - set(list8))
 
 print(
+    '       ',
     '{:,}'.format(len(list3)),
     'domains kept\n'
     )
@@ -635,6 +638,7 @@ list2 = sorted(set(list2) | set(list3))                                         
 
 print(
     '\n',
+    '       ',
     '{:,}'.format(len(list2)),
     'filters remaining after compilation\n'
 )
@@ -674,7 +678,7 @@ print(
 
 # <write main output>
 
-print('added filter to block numerical domains #.@(.@) filters and exceptions')
+print('Added filter to block numerical domains #.@(.@) filters and exceptions\n')
 
 list2.append('/^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/')                     # <add filter to block [-_/\.0-9]+\.[a-z]+ domains />
 
@@ -776,6 +780,7 @@ file3_out.writelines(line + '\n' for line in list3)
 file3_out.close()
 
 print(
+    '       ',
     '{:,}'.format(len(list3)),
     ' domain filters written to '
     + file3_out_name +
