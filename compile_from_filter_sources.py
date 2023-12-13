@@ -425,6 +425,7 @@ list2  = set(list2) - set(list2s)
 
 list2s = [line for line in list2s if not(re.search(r'^[_\W]*\:is', line))]      # <remove *##:is filters />
 list2s = [line for line in list2s if not(re.search(r'^[_\W]*\:matches', line))] # <remove *##:matches filters />
+list2s = [line for line in list2s if not(re.search(r'^[_\W]*\:root', line))]    # <remove *##:root filters />
 list2s = [line for line in list2s if not(re.search(r'^[_\W]*\:xpath', line))]   # <remove *##:xpath filters />
 list2s = [line for line in list2s if not(re.search(r'^[_\W]*\:not\(input\)\:not\(textarea\)', line))]
 list2s = [line for line in list2s if not(re.search(r'removeparam.*smilformats', line))]
