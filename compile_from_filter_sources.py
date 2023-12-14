@@ -393,7 +393,7 @@ list2 = [re.sub(r'^\*\$\~?other.*', '*$other', line) for line in list2]         
 list2 = [re.sub(r'^\*\$\~?ping.*', '*$ping', line) for line in list2]           # <enforce *$ping />
 list2 = [re.sub(r'^\*\$\~?popup.*', '', line) for line in list2]                # <remove *$popup />
 list2 = [re.sub(r'^\*\$\~?popunder.*', '*$popunder', line) for line in list2]   # <enforce *$popunder />
-list2 = [re.sub(r'^\*\$\~?script.*', '', line) for line in list2]               # <remove *$script />
+list2 = [re.sub(r'^([^\*]+)\$\~?script.*', r'\1', line) for line in list2]      # <remove *$script />
 list2 = [re.sub(r'^\*\$\~?rewrite.*', '', line) for line in list2]              # <remove *$rewrite />
 list2 = [re.sub(r'^\*\$\~?websocket.*', '*$websocket', line) for line in list2] # <enforce *$websocket />
 list2 = [re.sub(r'^\*\$\~?xhr.*', '*$xhr', line) for line in list2]             # <enforce *$xhr />
@@ -427,6 +427,12 @@ list2s = [line for line in list2s if not(re.search(r'^[_\W]*\:is', line))]      
 list2s = [line for line in list2s if not(re.search(r'^[_\W]*\:matches', line))] # <remove *##:matches filters />
 list2s = [line for line in list2s if not(re.search(r'^[_\W]*\:root', line))]    # <remove *##:root filters />
 list2s = [line for line in list2s if not(re.search(r'^[_\W]*\:xpath', line))]   # <remove *##:xpath filters />
+
+list2s = [line for line in list2s if not(re.search(r'not\(this\-site\-promotes\-malware\)', line))]    # <remove spurious filters />
+list2s = [line for line in list2s if not(re.search(r'not\(obhod\-adblocka\)', line))]                  # <remove spurious filters />
+list2s = [line for line in list2s if not(re.search(r'not\(my\-obnaruzhili\-blokirovshchik\)', line))]  # <remove spurious filters />
+
+
 list2s = [line for line in list2s if not(re.search(r'^[_\W]*\:not\(input\)\:not\(textarea\)', line))]
 list2s = [line for line in list2s if not(re.search(r'removeparam.*smilformats', line))]
 list2s = [line for line in list2s if not(re.search(r'removeparam.*formatsprofile', line))]
