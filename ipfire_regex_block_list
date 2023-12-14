@@ -19,6 +19,7 @@
 (https?:\/\/)217\.182\.11\..{100,}
 (https?:\/\/)51\.195\.31\..{100,}
 (https?:\/\/)\w{30,}\.me\/\w{30,}\.
+*20*a
 20\d\d\d\d\d\d\.*\.html
 999pc
 999pc
@@ -27,6 +28,7 @@
 [-a-z]{8,15}\.(?:com|net)\/500\/\d{7}\?
 [0-9a-f]{10}\.[0-9a-f]{10}\.com\/[0-9a-f]{32}\.js$
 [0-9a-f]{32}\/invoke\.js
+[0-9a-z]+\.cloudfront\.net\/([a-z]\/)?[0-9a-f]{6,}-[-0-9a-f]+\.js$
 [0-9a-z]{7,25}\.com\/(?:build|bundles|chunks|dist|j|public|scripts|static)\/[0-9a-f]{6,15}\/?[0-9a-f]{21,36}(?:[-.](?:ma?in|prod|index))?(?:\.js)?$
 [0-9a-z]{7,25}\.com\/v2(?:\/0\/)?(?=[-_0-9a-z]{0,84}[A-Z])(?=[-_a-zA-Z]{0,84}[0-9])[-_0-9a-zA-Z]{54,85}(#\?v=[0-9a-f]{32})?$
 [0-9a-z]{8,10}\?shu=[0-9a-z]{150,}
@@ -515,6 +517,7 @@ downfile.asp?sid=276663
 dynamicad
 dynamicgafunctions
 eloqua
+enter/?url=dont_go_away
 eumodaldialog
 eventtrack
 faceboo?k
@@ -532,6 +535,8 @@ header.?bidding
 helper[-~\w\.]*\.js(on)?
 hover.?intent
 im\.chip\.de\/ii\/[0-9\/]{14,17}\/[a-zA-Z0-9]{2,13}[\-_][a-zA-Z0-9]{3,11}[\-_]([a-zA-Z0-9]{3,11}[\-_])?([a-zA-Z0-9]{3,8}[\-_])?([a-zA-Z0-9]{3,6}[\-_])?[a-zA-Z0-9]{16}\.*\?im=Resize.*&hash=[a-z0-9]{64}
+image.php?src=*:
+images/cms/_*0*_
 img\/(?!new).+\.gif
 incapsula
 jquery.?migrate
@@ -593,11 +598,13 @@ sentry
 serch\d{2}\.biz\/\?p=
 service.?worker
 service\-bar
+sharebar
 sharing[-~\w\.]*\.js(on)?
 smarttag
 sourcepoint
 ssgmanifest
 storage[-~\w\.]*\.js(on)?
+store_file_download?*&dir_path=/admin/swf
 streamsense
 stub[-~\w\.]*\.js(on)?
 stub[_\W]
