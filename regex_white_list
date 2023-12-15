@@ -5,7 +5,7 @@
 ^\*\$script[_\W]*$
 ^\*\$size[_\W]*$
 ^\*\$web[_\W]*$
-^\*20\*a$
+^/\*20\*a/$
 ^[^a-z]+(?:x[^a-z]+)?$
 ^/\*bg\*jpg$
 ^/.*\.gif/$
@@ -238,6 +238,7 @@
 ^[_\W]*capture[_\W]*$
 ^[_\W]*carbon[_\W]*$
 ^[_\W]*cards?[_\W]*$
+^[_\W]*caret[_\W]*$
 ^[_\W]*caribbean[_\W]*$
 ^[_\W]*carousels?[_\W]*$
 ^[_\W]*carters?[_\W]*$
@@ -620,6 +621,7 @@
 ^[_\W]*gateway[_\W]*$
 ^[_\W]*gazette[_\W]*$
 ^[_\W]*gemini[_\W]*$
+^[_\W]*general[_\W]*$
 ^[_\W]*generate[_\W]*$
 ^[_\W]*gen(?:eric)?[_\W]*$
 ^[_\W]*genome[_\W]*$
@@ -693,6 +695,7 @@
 ^[_\W]*iana[_\W]*$
 ^[_\W]*icann[_\W]*$
 ^[_\W]*icons?[_\W]*$
+^[_\W]*ideal[_\W]*$
 ^[_\W]*identification[_\W]*$
 ^[_\W]*identifiers?[_\W]*$
 ^[_\W]*identi[ft]y[_\W]*$
@@ -798,6 +801,7 @@
 ^[_\W]*(lazyload\.)?min\.js$
 ^[_\W]*lazyload[_\W]*$
 ^[_\W]*lazysizes\.min\.js[_\W]*$
+^[_\W]*lazy[_\W]*$
 ^[_\W]*leaderboard[_\W]*$
 ^[_\W]*lead[_\W]*$
 ^[_\W]*leaf[_\W]*$
@@ -845,12 +849,14 @@
 ^[_\W]*logon[_\W]*$
 ^[_\W]*logo[s0-9]?[_\W]*$
 ^[_\W]*lookup[_\W]*$
+^[_\W]*loop[_\W]*$
 ^[_\W]*lotus[_\W]*$
 ^[_\W]*loupe[_\W]*$
 ^[_\W]*l?ubuntu[_\W]*$
 ^[_\W]*macro[_\W]*$
 ^[_\W]*magazin[_\W]*$
 ^[_\W]*magnifier[_\W]*$
+^[_\W]*magnify[_\W]*$
 ^[_\W]*main(?:\.css|\.js)?[_\W]*$
 ^[_\W]*mainstream[_\W]*$
 ^[_\W]*makes?[_\W]*$
@@ -958,6 +964,7 @@
 ^[_\W]*notifier[_\W]*$
 ^[_\W]*notify[_\W]*$
 ^[_\W]*\:not\(input\)\:not\(textarea\)$
+^[_\W]*nova[_\W]*$
 ^[_\W]*nude[_\W]*$
 ^[_\W]*null[_\W]*$
 ^[_\W]*numbers?[_\W]*$
@@ -1030,6 +1037,7 @@
 ^[_\W]*patt[_\W]*$
 ^[_\W]*pause[_\W]*$
 ^[_\W]*payload[_\W]*$
+^[_\W]*payment[_\W]*$
 ^[_\W]*paypal[_\W]*$
 ^[_\W]*pebble[_\W]*$
 ^[_\W]*peel[_\W]*$
@@ -1064,6 +1072,7 @@
 ^[_\W]*placements?[_\W]*$
 ^[_\W]*places?[_\W]*$
 ^[_\W]*plaid[_\W]*$
+^[_\W]*plain[_\W]*$
 ^[_\W]*plans?[_\W]*$
 ^[_\W]*platforms?[_\W]*$
 ^[_\W]*playas?[_\W]*$
@@ -1074,6 +1083,7 @@
 ^[_\W]*playlists?[_\W]*$
 ^[_\W]*plugins?[_\W]*$
 ^[_\W]*plugs?[_\W]*$
+^[_\W]*podcast[_\W]*$
 ^[_\W]*points?[_\W]*$
 ^[_\W]*policies?[_\W]*$
 ^[_\W]*polls?[_\W]*$
@@ -1584,7 +1594,7 @@
 ^[_\W]*whatsapp[_\W]*$
 ^[_\W]*wide[_\W]*$
 ^[_\W]*widgets?[_\W]*$
-^[_\W]*w(?:idht)?[=0-9]*[_\W]*$
+^[_\W]*w(?:idth)?[=0-9]*[_\W]*$
 ^[_\W]*wikileaks?[_\W]*$
 ^[_\W]*wiki(?:[pm]edia)?[_\W]*$
 ^[_\W]*windows?[_\W]*$
