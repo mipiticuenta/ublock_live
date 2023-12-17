@@ -742,13 +742,6 @@ file2_out.write(
     '! regex only when efficient\n' +
     '! exceptions only if no better choice\n' +
     '! ===========================================================================================\n' +
-    '! *$popup,3p avoided (impedes ctrl&click open in another tab)\n' +
-    '! attribute css selector : ##[]\n' +
-    '! class css selector     : ##.\n' +
-    '! id css selector        : ###\n' +
-    '! \w = [a-zA-Z0-9_]      : ###\n' +
-    '! \W = [^a-zA-Z0-9_]     : ###\n' +
-    '! ===========================================================================================\n' +
     '! sources:\n'
 )
 
