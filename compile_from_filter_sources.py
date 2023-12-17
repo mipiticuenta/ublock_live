@@ -277,7 +277,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'^\W*(?=\$)', '*', line) for line in list2]                # <replace symbol/none replace leading $ /$ .$ =$ ?$ with *$ />
     list2 = [re.sub(r'^\.?[-\*\w]+/', '/', line) for line in list2]             # <replace leading (.)@/ with / />
     list2 = [re.sub(r'^/\*.*[^/]', '', line) for line in list2]                 # <remove leading /* except for regex filters />
-    list2 = [re.sub(r'^\*(?![^\$\#])', '', line) for line in list2]             # <remove leading /* except for regex filters />
+    list2 = [re.sub(r'^\*(?=[^\$\#])', '', line) for line in list2]             # <remove leading /* except for regex filters />
     list2 = [re.sub(r'^/([-\.\+\!\~/\w]+)/$', r'/\1/*', line) for line in list2]    # <add trailing * for /@/ url filters (false regex) />
 
     list2 = sorted([line for line in list2 if len(line) > 1])                   # <remove line if length < 2 />
