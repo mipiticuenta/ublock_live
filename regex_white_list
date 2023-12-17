@@ -146,6 +146,7 @@
 ^[_\W]*[a-z0-9]{1,3}[_\W]*$
 ^[_\W]*[a-z]{2}[-_][a-z]{2}[_\W]*$
 ^[_\W][a-z][_\W]*$
+^[_\W]*[a-z][_\W]+[a-z][_\W]*$
 ^[_\W]*backfill[_\W]*$
 ^[_\W]*back(?:grounds?)?[_\W]*$
 ^[_\W]*bacon[_\W]*$
@@ -507,6 +508,7 @@
 ^[_\W]*exchangerate[_\W]*$
 ^[_\W]*(?:ex)?changes?[_\W]*$
 ^[_\W]*exchg[_\W]*$
+^[_\W]*excm\=.*[_\W]*$
 ^[_\W]*execute[_\W]*$
 ^[_\W]*execution[_\W]*$
 ^[_\W]*exec[_\W]*$
@@ -1619,5 +1621,4 @@
 ^[_\W]*ytimg[_\W]*$
 ^[_\W]*yuicombo[_\W]*$
 ^[_\W]*zalando[_\W]*$
-^[_\W]*excm\=.*[_\W]*$
 
