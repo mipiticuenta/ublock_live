@@ -14,6 +14,7 @@
 ^/\*_\*_u\*js$
 ^[_\W]*$
 ^[_\W]*[_0-9]*inight[_\W]*$
+^[_\W]*123\*\.js[_\W]*$
 ^[_\W]*14_iday[_\W]*$
 ^/\\w\{8\}\\/\\w\{10\}\\\./$
 ^[_\W]*abcd[_\W]*$
@@ -45,6 +46,7 @@
 ^[_\W]*activities[_\W]*$
 ^[_\W]*activity[_\W]*$
 ^[_\W]*actualizar[_\W]*$
+^[_\W]*adapter[_\W]*$
 ^[_\W]*add(?:ons?)?[_\W]*$
 ^[_\W]*admin[_\W]*$
 ^[_\W]*adobe[_\W]*$
@@ -144,7 +146,8 @@
 ^[_\W]*awards?[_\W]*$
 ^[_\W]*away[_\W]*$
 ^[_\W]*[a-z0-9]{1,3}[_\W]*$
-^[_\W]*[a-z]{2}[-_][a-z]{2}[_\W]*$
+^[_\W]*[a-z][-_][0-9]+[_\W]*$
+^[_\W]*[a-z]{,2}[-_][a-z]{,2}[_\W]*$
 ^[_\W][a-z][_\W]*$
 ^[_\W]*[a-z][_\W]+[a-z][_\W]*$
 ^[_\W]*backfill[_\W]*$
@@ -677,6 +680,7 @@
 ^[_\W]*hours?[_\W]*$
 ^[_\W]*html[_\W]*$
 ^[_\W]*https?[_\W]*$
+^[_\W]*https\?\:.*[_\W]*$
 ^[_\W]*hubspot[_\W]*$
 ^[_\W]*hubs?[_\W]*$
 ^[_\W]*huffingtonpost[_\W]*$
@@ -842,6 +846,7 @@
 ^[_\W]*lotus[_\W]*$
 ^[_\W]*loupe[_\W]*$
 ^[_\W]*l?ubuntu[_\W]*$
+^[_\W]*lupa[_\W]*$
 ^[_\W]*macro[_\W]*$
 ^[_\W]*magazin[_\W]*$
 ^[_\W]*magnifier[_\W]*$
@@ -894,6 +899,7 @@
 ^[_\W]*minify[_\W]*$
 ^[_\W]*minimap[_\W]*$
 ^[_\W]*mini?[_\W]*$
+^[_\W]*miro[_\W]*$
 ^[_\W]*misc[_\W]*$
 ^[_\W]*missing[_\W]*$
 ^[_\W]*miss[_\W]*$
@@ -1129,6 +1135,7 @@
 ^[_\W]*purst[_\W]*$
 ^[_\W]*pushpull[_\W]*$
 ^[_\W]*q\=[0-9]+[_\W]*$
+^[_\W]*q_dnp[_\W]*$
 ^[_\W]*q_d[_\W]*$
 ^[_\W]*quality[_\W0-9]*$
 ^[_\W]*queries[_\W]*$
@@ -1454,8 +1461,8 @@
 ^[_\W]*topten[_\W]*$
 ^[_\W]*touch(?:es)?[_\W]*$
 ^[_\W]*tour[_\W]*$
-^[_\W]*tracing[_\W]*$
 ^[_\W]*tra[cd]es?[_\W]*$
+^[_\W]*tracing[_\W]*$
 ^[_\W]*traffics?[_\W]*$
 ^[_\W]*tr(?:ai)?[_\W]*$
 ^[_\W]*transaction[_\W]*$
