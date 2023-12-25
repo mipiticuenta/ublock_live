@@ -70,7 +70,6 @@
 [_\W]audience[-~\w\.]*\.js(on)?
 [_\W]auto.?optimize[-~\w\.]*\.js(on)?
 [_\W]aweber[-~\w\.]*\.js(on)?
-[_\W]ban+i?ere?s?
 [_\W]beacons?[_\W]
 [_\W]beam[-~\w\.]*\.js(on)?
 [_\W]bibblio[-~\w\.]*\.js(on)?
@@ -186,7 +185,6 @@
 [_\W]image.?load[-~\w\.]*\.js(on)?
 [_\W]impress(ions?)?[_\W]
 [_\W]inbenta[-~\w\.]*\.js(on)?
-[_\W]index[-~\w\.]*\.js(on)?
 [_\W]inf.?scroll[-~\w\.]*\.js(on)?
 [_\W]infinite[-~\w\.]*\.js(on)?
 [_\W]inline[-~\w\.]*\.js(on)?
@@ -213,6 +211,7 @@
 [_\W]lux[-~\w\.]*\.js(on)?
 [_\W]mailcheck[-~\w\.]*\.js(on)?
 [_\W]mast.?head[-~\w\.]*\.js(on)?
+[_\W]matomo[-~\w\.]*\.js(on)?
 [_\W]measure[-~\w\.]*\.js(on)?
 [_\W]metadata[-~\w\.]*\.js(on)?
 [_\W]metrics[_\W]
@@ -431,7 +430,7 @@ attachment/js
 attachment/js
 audiencet
 az/shwbnnr.php?*&bild=b/notesafloat
-banners?
+ban+i?ere?s?
 bazaarvoice
 bidbarrel
 bingimpression
@@ -464,8 +463,7 @@ comscore
 connatix
 consensu
 consent
-coocki
-cooki
+cooc?ki
 coretrack
 cquotient
 crazyegg
@@ -508,6 +506,7 @@ fuckadb
 fuckfuckadblock
 gemius
 gen(erate)?.?204
+getads
 gh/sensitiveio/sbtracker@master
 googleads
 googleanalytics
@@ -570,12 +569,14 @@ pingdom
 piwik
 polarbyte
 polyfill
+poplink
 post.?scribe
 pre.?bid
 pre.?fetch
 pre.?roll
 privacy
 processmktchannel
+propellerad
 pubdirect
 punycode
 pushads
@@ -624,6 +625,7 @@ v13b*idsh_vid/ru/cp1251/tmsec=idsh_sid116854-dis
 v13b*odnoklassniki_ru/ru/utf-8/tmsec=odnoklassniki_mobile
 visit[-~\w\.]*\.js(on)?
 visitor[-~\w\.]*\.js(on)?
+webads
 webstatsutil
 webtrack
 webtrend

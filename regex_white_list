@@ -1,3 +1,4 @@
+
 !$$ important: use always the following syntax: ^....$
 !$$ url and regex white-listing based in regex; do not enclose regex in '' nor r''
 !$$ white-listing shall not be applied to cosmetic nor removeparam filters 
@@ -10,6 +11,7 @@
 ^/\*bg\*jpg$
 ^/.*\.gif/$
 ^/\*head\*\.js$
+/lodash.min.js
 ^/\*sw\*\.js$
 ^/\*_\*_u\*js$
 ^[_\W]*$
@@ -248,6 +250,7 @@
 ^[_\W]*categorylist[_\W]*$
 ^[_\W]*categorypages?[_\W]*$
 ^[_\W]*category[_\W]*$
+^[_\W]*cdn.?cgi[_\W]*$
 ^[_\W]*cdn[_\W]*$
 ^[_\W]*celebs?[_\W]*$
 ^[_\W]*center[_\W]*$
@@ -562,6 +565,7 @@
 ^[_\W]*fi[tx][_\W]*$
 ^[_\W]*fixed[_\W]*$
 ^[_\W]*fixtures?[_\W]*$
+^[_\W]*flag[-_][a-z]{2}[_\W]*$
 ^[_\W]*flags?[_\W]*$
 ^[_\W]*flash[_\W]*$
 ^[_\W]*flatsome\.css[_\W]*$
@@ -843,6 +847,7 @@
 ^[_\W]*localtime[_\W]*$
 ^[_\W]*location[_\W]*$
 ^[_\W]*loc[ks]?[_\W]*$
+^[_\W]*lodash\.min\.js[_\W]*$
 ^[_\W]*log[io]n[_\W]*$
 ^[_\W]*logo[s0-9]?[_\W]*$
 ^[_\W]*lookup[_\W]*$
@@ -877,6 +882,7 @@
 ^[_\W]*match[_\W]*$
 ^[_\W]*materials?[_\W]*$
 ^[_\W]*mathjax[_\W]*$
+^[_\W]*matomo[_\W]*$
 ^[_\W]*maxymiser[_\W]*$
 ^[_\W]*mbox[_\W]*$
 ^[_\W]*measure(?:ments?)?[_\W]*$
@@ -1506,6 +1512,7 @@
 ^[_\W]*unblock[_\W]*$
 ^[_\W]*uncacheable[_\W]*$
 ^[_\W]*undefined[_\W]*$
+^[_\W]*underscore\.min\.js[_\W]*$
 ^[_\W]*unfilled[_\W]*$
 ^[_\W]*ungrabber[_\W]*$
 ^[_\W]*unicast[_\W]*$

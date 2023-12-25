@@ -1,27 +1,34 @@
-comktkkt.com
-/[a-z0-9]{80,}/
+*$removeparam=/adblock/,important
 /adobe.?target/$important
+/[a-z0-9]{80,}/
+/ban+i?ere?s?/$important
 beetor.org
+comktkkt.com
 erevan-online.ru
+/getads/
 gold-liter.org.ua
 hentaichan.ru
 hentaiz.org
 hottrash.ru
+megatrack.org
 payforpic.ru
 picforall.ru
-megatrack.org
 picmani.ru
+/poplink/
 porno4you.org
 ppronpic.org
 prons.org
+/propellerad/
 ruspicbox.ru
 santikov.net
 videotuts.ru
-x-uboino.net
-/getads/
-/poplink/
-/propellerad/
 /webads/
-*$removeparam=/adblock/,important
 /[_\W]matomo[-~\w\.]*\.js(on)?/
-/ban+i?ere?s?/$important
+x-uboino.net
+
+! replace [-~\w\.] with [^/]
+! replace /at.js with /at.js$important
+! to be removed     /[_\W]umd[-~\w\.]*\.js(on)?/
+! to be removed     /[_\W]store[-~\w\.]*\.js(on)?/
+
+xp.apple.com
