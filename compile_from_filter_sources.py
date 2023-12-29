@@ -169,7 +169,7 @@ list2 = sorted([line for line in list2 if len(line) > 1])                       
 
 # <segregate regex filters >
 
-list2 = [re.sub(r'^/([-\.\+\~\!\[\(\{/\w]+)/$', r'/\1/*', line) for line in list2]   # <add trailing * for /@/ url filters (false regex) />
+list2 = [re.sub(r'^/([-\.\+\~\!/\w]+)/$', r'/\1/*', line) for line in list2]    # <add trailing * for /@/ url filters (false regex) />
 list2 = [line for line in list2 if not(re.search(r'^/.*\\/$', line))]           # <remove broken regex (bad termination) />
 
 list5 = [line for line in list2 if re.search(r'^/.+/(?:\$important)?$', line)]
@@ -318,7 +318,7 @@ while n_1 > len(list2):                                                         
     )
 
     list2 = sorted(set(list2) | set(list2s))                                    # <join retrieved domains to main list'/>
-    list2 = [re.sub(r'^/([-\.\+\~\!\[\(\{/\w]+)/$', r'/\1/*', line) for line in list2]   # <add trailing * for /@/ url filters (false regex) />
+    list2 = [re.sub(r'^/([-\.\+\~\!/\w]+)/$', r'/\1/*', line) for line in list2]    # <add trailing * for /@/ url filters (false regex) />
     list2 = sorted([line for line in list2 if len(line) > 1])                   # <remove line if length < 2 />
     del(list2s)
     print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
