@@ -381,6 +381,7 @@
 [_\W]xn\-\-
 [_\W]zephr[^/]*\.js(on)?
 [_\W]zepto[^/]*\.js(on)?
+[_\W]zutils[^/]*\.js(on)?
 [a-z0-9]{110,}
 [a-z0-9]{12}\/[a-zA-Z0-9\/\+\-]{97,106}$
 [a-z]{1,3}\?zoneId\=\d{7}\-\d{7}$
@@ -547,6 +548,8 @@ webpush
 webstatsutil
 webtrack
 webtrend
+www\.(?!exploretock)[a-z]{8,14}\.com\/[a-z]{1,4}\.js$
+www\.[a-z]{8,16}\.com\/(?:images\/)?(?:static\/)?(?:common\/)?(?:assets\/)?(?:scripts\/)?(?:api\/)?(?:js\/)?(?:[a-z]{3})?(?:dotdotdot|editor|firebase|leaflet\.toolbar|mijs|proj4|sext-all|sha|viz)\.js$
 www\.[a-z]{8,16}\.com\/(?:static\/)?(?:common\/)?(?:assets\/)?(?:scripts\/)?(?:api\/)?(?:js\/)?(?:[_0-9A-Za-z]{1,20}[-.])*[_0-9A-Za-z]{1,20}[-.]min\.js$
 www\.[a-z]{8,16}\.com\/(?:static\/)?(?:common\/)?(?:assets\/)?(?:scripts\/)?(?:api\/)?(?:js\/)?(?:[_0-9A-Za-z]{1,20}[-.])*[_0-9A-Za-z]{1,20}\.min\.js$
 www\.[a-z]{8,16}\.com\/(?:static\/)?(?:common\/)?(?:assets\/)?(?:scripts\/)?(?:api\/)?(?:js\/)?(?:[a-z]{3})?(?:dotdotdot|editor|firebase|leaflet\.toolbar|mijs|proj4|sha|viz)\.js$
