@@ -300,6 +300,7 @@ while n_1 > len(list2):                                                         
     list2 = [re.sub(r'\.png\??$', '.', line) for line in list2]                 # <remove trailing .png? />
     list2 = [re.sub(r'\.svg\??$', '.', line) for line in list2]                 # <remove trailing .svg? />
     list2 = [re.sub(r'\.js\??[^\./]*$', '.js', line) for line in list2]         # <clean up trailing .js />
+    list2 = [re.sub(r'^([-\w]+)=.*$', r'\1', line) for line in list2]           # <remove trailing .=.* />
     list2 = [re.sub(r'(^[^#]{2,})\$[-~,=a-z0-9]*$(?<!/)(?<!important)', r'\1', line) for line in list2]    # <remove specific trailing $ filters except *$ or ending with important />
     list2 = [re.sub(r'\??\*\=.*$', '', line).strip() for line in list2]         # <remove trailing ?*=... />
 

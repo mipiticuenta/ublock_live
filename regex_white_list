@@ -1,4 +1,3 @@
-
 !$$ important: use always the following syntax: ^....$
 !$$ url and regex white-listing based in regex; do not enclose regex in '' nor r''
 !$$ white-listing shall not be applied to cosmetic nor removeparam filters 
@@ -552,6 +551,7 @@
 ^[_\W]*foobar[_\W]*$
 ^[_\W]*foot(?:er)?[_\W]*$
 ^[_\W]*footprint[_\W]*$
+^[_\W]*forbes[_\W]*$
 ^[_\W]*forecast[_\W]*$
 ^[_\W]*formats?[_\W]*$
 ^[_\W]*forms?[_\W]*$
@@ -844,6 +844,7 @@
 ^[_\W]*matomo[_\W]*$
 ^[_\W]*maxymiser[_\W]*$
 ^[_\W]*mbox[_\W]*$
+^[_\W]*m=[-\.\w]+[_\W]*$
 ^[_\W]*measure(?:ments?)?[_\W]*$
 ^[_\W]*medias?[_\W]*$
 ^[_\W]*medium[_\W]*$
@@ -873,8 +874,7 @@
 ^[_\W]*mini?[_\W]*$
 ^[_\W]*miro[_\W]*$
 ^[_\W]*misc[_\W]*$
-^[_\W]*missing[_\W]*$
-^[_\W]*miss[_\W]*$
+^[_\W]*miss(?:ing)?[_\W]*$
 ^[_\W]*mixer[_\W]*$
 ^[_\W]*mobile[_\W]*$
 ^[_\W]*mod[ae]ls?[_\W]*$
@@ -1001,6 +1001,7 @@
 ^[_\W]*paypal[_\W]*$
 ^[_\W]*pebble[_\W]*$
 ^[_\W]*peel[_\W]*$
+^[_\W]*people[_\W]*$
 ^[_\W]*perf(?:orm(?:ance)?)?[_\W]*$
 ^[_\W]*periodico[_\W]*$
 ^[_\W]*permalink[_\W]*$
@@ -1174,6 +1175,7 @@
 ^[_\W]*respons(?:iv)?es?[_\W]*$
 ^[_\W]*rest[_\W]*$
 ^[_\W]*results?[_\W]*$
+^[_\W]*retina[_\W]*$
 ^[_\W]*return[_\W]*$
 ^[_\W]*reveal[_\W]*$
 ^[_\W]*reverse[_\W]*$
@@ -1513,6 +1515,7 @@
 ^[_\W]*waitlists?[_\W]*$
 ^[_\W]*waits?[_\W]*$
 ^[_\W]*wall(?:paper)?s?[_\W]*$
+^[_\W]*warning[_\W]*$
 ^[_\W]*waterfall[_\W]*$
 ^[_\W]*watermark[_\W]*$
 ^[_\W]*watson[_\W]*$
