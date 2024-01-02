@@ -135,7 +135,7 @@ list2 = [re.sub(r'^ *#(?![\?\@\#]).*', '', line) for line in list2]             
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
-print(' 3/21 : clean dns filters ')
+print(' 3/21 : clean dns/domain filters ')
 
 list2 = [re.sub(r'^0\.0\.0\.0 ', '', line) for line in list2]                   # <remove leading 0.0.0.0 (dns style filter) />
 list2 = [re.sub(r'^127\.0\.0\.1 ', '', line) for line in list2]                 # <remove leading 127.0.0.1 (dns style filter) />
