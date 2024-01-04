@@ -179,6 +179,8 @@ list2  = set(list2) - set(list5)
 
 # <extract domains from list >
 
+list3 = []
+
 for tld in tqdm.tqdm(iana_tld):
     pattern = re.compile(r'' + ('^[-\.\w]+\.' + tld + '(?:\$important)?$'))
     list3 = list3 + [line for line in list2 if pattern.search(line)]
@@ -365,7 +367,7 @@ print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters k
 print('16/21 : remove lines leaded by ! # + & ? ^ : ; @ and @.exe @.gif @.rar @.zip')
 
 list2 = [re.sub(r'^\*?\^.*', '', line) for line in list2]                       # <remove ^ leaded lines />
-list2 = [re.sub(r'^\|\|', '', line) for line in list2]                          # <remove leading || />
+list2 = [re.sub(r'^\|+', '', line) for line in list2]                           # <remove leading | />
 list2 = [re.sub(r'^\!.*', '', line) for line in list2]                          # <remove ! leaded lines />
 list2 = [re.sub(r'^#.*', '', line) for line in list2]                           # <remove # leaded lines />
 list2 = [re.sub(r'^[/\*]?\+.*', '', line) for line in list2]                    # <remove + leaded lines />
