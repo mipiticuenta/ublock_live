@@ -163,6 +163,7 @@ list2 = sorted([line for line in list2 if len(line) > 1])                       
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
 print(' 5/21 : apply lower case except for cosmetics and regex')
+
 list2 = [line if re.search(r'[#\\]', line) else line.lower() for line in list2] # <apply lower case except cosmetics and regex />
 
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
@@ -177,18 +178,22 @@ list2  = set(list2) - set(list5)
 
 # </segregate regex filters >
 
-# <extract domains from list >
+# <segregate domains from list >
+
+print('\nsegregating domains')
 
 list3 = []
 
+temp = [line for line in list2 if re.search(r'^[-\.\w]+$', line)]
+
 for tld in tqdm.tqdm(iana_tld):
     pattern = re.compile(r'' + ('^[-\.\w]+\.' + tld + '(?:\$important)?$'))
-    list3 = list3 + [line for line in list2 if pattern.search(line)]
+    list3 = list3 + [line for line in temp if pattern.search(line)]
 
 list3 = [line for line in list3 if line[0] != '-']                              # <remove -@.@ from domains list />
 list2 = set(list2) - set(list3)                                                 # <only domains part are processed in this section; @.js are kept in list2 />
 
-# </extract domains from list >
+# </segregate domains from list >
 
 print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
 
@@ -533,7 +538,7 @@ del(list2s)                                                                     
 
 # </aggregate filters >
 
-# <extract domains from list >
+# <segregate domains from list >
 
 print('Listing domain filters : ', sep = '')
 
@@ -545,7 +550,7 @@ list3 = sorted(set(list3) | set(list3s))                                        
 list3 = [line for line in list3 if line[0] != '-']                              # <remove -@.@ from domains list />
 list2 = set(list2) - set(list3)                                                 # <only domains part are processed in this section; @.js are kept in list2 />
 
-# </extract domains from list >
+# </segregate domains from list >
 
 print('\nRemoving #.@(.@) numerical domain filters, IANA tld root domains and applying domains white list', sep = '')
 
