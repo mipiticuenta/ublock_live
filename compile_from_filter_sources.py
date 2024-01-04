@@ -178,22 +178,7 @@ list2  = set(list2) - set(list5)
 
 # </segregate regex filters >
 
-# <segregate domains from list >
-
-print('\nsegregating domains')
-
 list3 = []
-
-temp = [line for line in list2 if re.search(r'^[-\.\w]+$', line)]
-
-for tld in tqdm.tqdm(iana_tld):
-    pattern = re.compile(r'' + ('^[-\.\w]+\.' + tld + '(?:\$important)?$'))
-    list3 = list3 + [line for line in temp if pattern.search(line)]
-
-list3 = [line for line in list3 if line[0] != '-']                              # <remove -@.@ from domains list />
-list2 = set(list2) - set(list3)                                                 # <only domains part are processed in this section; @.js are kept in list2 />
-
-# </segregate domains from list >
 
 print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
 
