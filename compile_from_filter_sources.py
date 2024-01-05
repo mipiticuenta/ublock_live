@@ -527,7 +527,7 @@ del(list2s)                                                                     
 
 print('Listing domain filters : ', sep = '')
 
-List3s = []
+list3s = []
 
 for tld in tqdm.tqdm(iana_tld):
     pattern = re.compile(r'' + ('^[-\.\w]+\.' + tld + '(?:\$important)?$'))
