@@ -535,7 +535,7 @@ for tld in tqdm.tqdm(iana_tld):
 
 list3 = sorted(set(list3) | set(list3s))                                        # <join lists3, list3s />
 list3 = [line for line in list3 if line[0] != '-']                              # <remove -@.@ from domains list />
-list2 = set(list2) - set(list3)                                                 # <only domains part are processed in this section; @.js are kept in list2 />
+list2 = sorted(set(list2) - set(list3))                                         # <only domains part are processed in this section; @.js are kept in list2 />
 
 # </segregate domains from list >
 
