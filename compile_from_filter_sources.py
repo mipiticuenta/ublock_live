@@ -546,7 +546,7 @@ list3 = [re.sub(r'^([-_\.0-9]+\.)+', '', line) for line in list3]               
 list3 = [re.sub(r'^go\.(?!com$)(?!net$)', '', line) for line in list3]          # <remove go. prefix from domains />
 list2.append('/^go\./$important')
 list3 = [re.sub(r'^s?metrics?\.(?!com$)(?!net$)', '', line) for line in list3]  # <remove (s)metric(s). prefix from domains />
-list2.append('/^smetrics\./$important')
+list2.append('/^s?metrics?\./$important')
 list3 = [re.sub(r'^\.', '', line)  for line in list3]                           # <remove leading . preceding domain />
 list3 = sorted(set(list3) - set(iana_tld))                                      # <remove IANA tld root domains />
 
