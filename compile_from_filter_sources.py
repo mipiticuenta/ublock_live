@@ -140,6 +140,12 @@ list3 = [
     if (re.sub(r'^([-\w]+\.)*', '', re.sub(r'\$important$', '', line)) in iana_tld)
 ]                                                                               # <get (@.)+tld domains, removing trailing $important />
 
+print(
+    'Listed domain filters: '
+    '{:,}'.format(len(list3)),
+    'domains kept\n'
+    )
+
 # test
 
 # <process filter list>
