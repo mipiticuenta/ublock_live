@@ -555,8 +555,8 @@ list8 = [re.sub(r'^ *!.*', '', line) for line in list8]                         
 list8 = [line for line in list8 if line.strip() != '']                          # <remove empty lines />
 list3 = sorted(set(list3) - set(list8))                                         # <remove whitelisted domains />
 
-# list3 = [re.sub(r'^(?:[-\w]+\.)+(?=([-\w]+\.){2}[\w]+$)', '', line) for line in list3]  # <remove L4+ domains />
-# list3 = sorted(set(list3))
+list3 = [re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line) for line in list3]  # <remove L5+ domains />
+list3 = sorted(set(list3))
 
 # list3 = list(map(lambda line: re.sub(r'^(?:[-\w]+\.)+(?=([-\w]+\.){1}[\w]+$)', '', line) if (len(list(filter(lambda substring: re.search(r'\.substring$', line), list8))) == 0) else line, tqdm.tqdm(list3)))
 
