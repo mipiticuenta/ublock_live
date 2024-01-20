@@ -555,6 +555,8 @@ list8 = [re.sub(r'^ *!.*', '', line) for line in list8]                         
 list8 = [line for line in list8 if line.strip() != '']                          # <remove empty lines />
 list3 = sorted(set(list3) - set(list8))                                         # <remove whitelisted domains />
 
+# </get domains white list from file, dedup, sort and substract from domains filters>
+
 list3 = [re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line) for line in list3]  # <remove L5+ domains />
 list3 = sorted(set(list3))
 
@@ -565,8 +567,6 @@ print(
     '{:,}'.format(len(list3)),
     'domains kept\n'
     )
-
-# </get domains white list from file, dedup, sort and substract from domains filters>
 
 # </remove #.@(.@) (numerical domains) and @.@ root domains from list>
 
