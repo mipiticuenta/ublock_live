@@ -1174,7 +1174,7 @@ del(list2s)                                                                     
 list3 = [
     re.sub(r'\$important$', '', line)
     for line in list3
-    if (re.sub(r'^(?:[-\w]*\.)*', '', re.sub(r'\$important$', '', line)) in iana_tld)
+    if (re.sub(r'^(?:[-\w]+\.)*', '', re.sub(r'\$important$', '', line)) in iana_tld)
 ]                                                                               # <get (@.)+tld domains, removing trailing $important />
 
 list3 = [
