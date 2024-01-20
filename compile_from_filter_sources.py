@@ -1162,11 +1162,15 @@ del(list2s)                                                                     
 
 # <segregate domains from list >
 
-print('Listing domain filters : ', sep = '')
+#for tld in tqdm.tqdm(iana_tld):
+#    pattern_3 = re.compile(r'' + ('^[-\.\w]+\.' + tld + '(?:\$important)?$'))
+#    list3 = list3 + [line for line in list2 if pattern_3.search(line)]          # <get (@.)+tld domains />
 
-for tld in tqdm.tqdm(iana_tld):
-    pattern_3 = re.compile(r'' + ('^[-\.\w]+\.' + tld + '(?:\$important)?$'))
-    list3 = list3 + [line for line in list2 if pattern_3.search(line)]          # <get (@.)+tld domains />
+list3 = [
+    re.sub(r'\$important$', '', line)
+    for line in list3
+    if (re.sub(r'^(?:[-\w]*\.)*', '', re.sub(r'\$important$', '', line)) in iana_tld)
+]                                                                               # <get (@.)+tld domains, removing trailing $important />
 
 list3 = [
     line
@@ -1177,36 +1181,22 @@ list3 = [
 list3 = sorted(set(list3))
 list2 = sorted(set(list2) - set(list3))                                         # <only domains part are processed in this section; @.js are kept in list2 />
 
-# </segregate domains from list >
-
-print('\nRemoving numerical low domain levels, IANA tld', sep = '')
-
 list3 = [
-    re.sub('r\$important$', '', line)
+    re.sub(r'^[-_\.0-9]*\.', '', line)
     for line in list3
-]                                                                               # <remove trailing $important from domains/>
-
-list3 = [
-    re.sub(r'^([-_\.0-9]+\.)+', '', line)
-    for line in list3
-]                                                                               # <remove numerical #. prefix from domains/>
-
-list3 = [
-    re.sub(r'^\.', '', line)
-    for line in list3
-]                                                                               # <remove leading . preceding domain />
+]                                                                               # <remove numerical low levels from domains and preceding . />
 
 list3 = sorted(set(list3) - set(iana_tld))                                      # <remove IANA tld root domains />
 
 print(
-    '       ',
+    'Listed domain filters: '
     '{:,}'.format(len(list3)),
     'domains kept\n'
     )
 
-# <get domains white list from file, dedup, sort and substract from domains filters>
+# </segregate domains from list >
 
-print('Applying domains white list', sep = '')
+# <get domains white list from file, dedup, sort and substract from domains filters>
 
 list8 = [
     re.sub(r'^ *!.*', '', line.strip())
@@ -1225,7 +1215,7 @@ list8 = sorted(
 list3 = sorted(set(list3) - set(list8))                                         # <remove whitelisted domains />
 
 print(
-    '       ',
+    'Applied domains white list: '
     '{:,}'.format(len(list3)),
     'domains kept\n'
     )
@@ -1233,8 +1223,6 @@ print(
 # </get domains white list from file, dedup, sort and substract from domains filters>
 
 # <remove L5+ domains >
-
-print('Removing L5+ domains', sep = '')
 
 list3 = [
     re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line)
@@ -1244,7 +1232,7 @@ list3 = [
 list3 = sorted(set(list3))
 
 print(
-    '       ',
+    'Removed L5+ domains: ',
     '{:,}'.format(len(list3)),
     'domains kept\n'
     )
@@ -1255,15 +1243,21 @@ print(
 
 print('Preserving low level filters of white listed domains', sep = '')
 
-list3s = []
+#list3s = []
 
-for white_listed in tqdm.tqdm(list8):
-    pattern_wl = re.compile(r'' + ('^[-\.\w]+\.' + white_listed + '$'))
-    list3s = list3s + [
-        line
-        for line in list3
-        if pattern_wl.search(line)
-    ]
+#for white_listed in tqdm.tqdm(list8):
+#    pattern_wl = re.compile(r'' + ('^[-\.\w]+\.' + white_listed + '$'))
+#    list3s = list3s + [
+#        line
+#        for line in list3
+#        if pattern_wl.search(line)
+#    ]
+
+list3s = [
+    line
+    for line in list3
+    if (re.sub(r'^(?:[-\w]+\.)+', '', line) in list8)
+]                                                                               # <get (@.)+tld domains, removing trailing $important />
 
 list3 = sorted(set(list3) - set(list3s))
 
@@ -1271,34 +1265,30 @@ list3 = sorted(set(list3) - set(list3s))
 
 # </remove #.@(.@) (numerical domains) and @.@ root domains from list>
 
-print('Deflating domains list, pass 1 / 2', sep = '')
-
 list3 = [
     re.sub(r'^[-\w]+\.', '', line) if (re.sub(r'^[-\w]+\.', '', line) not in iana_tld)
     else line
-    for line in tqdm.tqdm(list3)
+    for line in list3
 ]
 
 list3 = sorted(set(list3))
 
 print(
-    '       ',
+    'Deflated domains list, pass 1 / 2: '
     '{:,}'.format(len(list3) + len(list3s)),
     'domains kept\n'
     )
 
-print('Deflating domains list, pass 2 / 2', sep = '')
-
 list3 = [
     re.sub(r'^[-\w]+\.', '', line) if (re.sub(r'^[-\w]+\.', '', line) not in iana_tld)
     else line
-    for line in tqdm.tqdm(list3)
+    for line in list3
 ]
 
 list3 = sorted(set(list3))
 
 print(
-    '       ',
+    'Deflated domains list, pass 2 / 2: '
     '{:,}'.format(len(list3) + len(list3s)),
     'domains kept\n'
     )
@@ -1392,8 +1382,6 @@ del(list3s)                                                                     
 list2 = sorted(set(list2) | set(list3))                                         # <joint list2, list3 />
 
 print(
-    '\n',
-    '       ',
     '{:,}'.format(len(list2)),
     'filters remaining after compilation\n'
 )
