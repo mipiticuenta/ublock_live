@@ -847,7 +847,6 @@ file3_out.writelines(line + '\n' for line in list3)
 file3_out.close()
 
 print(
-    '       ',
     '{:,}'.format(len(list3)),
     ' domain filters written to '
     + file3_out_name +
