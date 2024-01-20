@@ -740,6 +740,8 @@ print(
 print('Added generic filters and exceptions\n')
 
 list2.append('/^([-\w]+\.)*[-_0-9]+\.[a-z]+(\.[a-z]+)?//')    # <add filter to block [-_/\.0-9]+\.[a-z]+ domains />
+list2.append('/^go\./$important')
+list2.append('/^s?metrics?\./$important')
 
 list2.append('*$beacon')
 list2.append('*$csp=all')
@@ -751,9 +753,6 @@ list2.append('*$ping')
 list2.append('*$popunder')
 list2.append('*$websocket')
 list2.append('*$xhr')
-
-list2.append('/^go\./$important')
-list2.append('/^s?metrics?\./$important')
 
 list2.append('@@||accounts.google.com$domain=youtube.com')
 list2.append('@@||amazon.com^$inline-script,1p')
