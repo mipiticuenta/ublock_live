@@ -1059,14 +1059,9 @@ print('20/21 : apply regex_white_list rules', sep = '')
 # <get regex white list from file, dedup, sort and clean up filters>
 
 list9 = [
-    line.strip()
+    re.sub(r'^ *!.*', '', line).strip()
     for line in open(file9_in_name, encoding='UTF-8')
-]                                                                               # <populate list; remove leading/trailing spaces />
-
-list9 = [
-    re.sub(r'^ *!.*', '', line)
-    for line in list9
-]                                                                               # <remove ! comments' />
+]                                                                               # <populate list removeing ! comments />
 
 list9 = [
     line
@@ -1074,11 +1069,10 @@ list9 = [
     if line != ''
 ]                                                                               # <remove empty lines />
 
-list9 = list9 +
-    [
-        ('^[_\W]*' + re.sub(r'\.', '\.', tld) + '[_\W]*$')
-        for tld in iana_tld
-    ]                                                                           # <enforce tld whitelisting />
+list9 = list9 + [
+    ('^[_\W]*' + re.sub(r'\.', '\.', tld) + '[_\W]*$')
+    for tld in iana_tld
+]                                                                               # <enforce tld whitelisting />
 
 for pattern in tqdm.tqdm(list9) :
     try :
