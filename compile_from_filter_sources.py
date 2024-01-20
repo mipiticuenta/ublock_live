@@ -211,7 +211,7 @@ list2s = (
     [re.sub(r'\$.*', '', line) for line in list2s]                              # <isolate url part/>
 )
 
-list2s = [line.split('|') for line in list2s]                                   # <flatten list'/>
+list2s = [line.split('|') for line in list2s]                                       # <flatten list'/>
 list2s = [item for line in list2s for item in line if line !=[''] and item != '']   # <flatten list'/>
 
 list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
@@ -223,7 +223,9 @@ print(' 9/21 : remove domain= denyallow= and keep the related domains')
 
 list2s = (
     [line for line in list2 if re.search(r'.*domain=', line)] +                 # <select *$ filters />
-    [line for line in list2 if re.search(r'.*denyallow=', line)]                # <select denyallow filters />
+    [line for line in list2 if re.search(r'.*denyallow=', line)] +              # <select denyallow filters />
+    [line for line in list2 if re.search(r'.*replace=', line)] +                # <select replace filters />
+    [line for line in list2 if re.search(r'.*path=', line)]                     # <select path filters />
 )
 
 list2 = set(list2) - set(list2s)                                                # <segregate selected filters'/>
@@ -232,7 +234,7 @@ list2s = [re.sub(r'.*domain=', '', line).strip() for line in list2s]            
 list2s = [re.sub(r'.*denyallow=', '', line).strip() for line in list2s]         # <remove leading .*denyallow=/>
 list2s = [re.sub(r',.*$', '', line).strip() for line in list2s]                 # <remove trailing .*,.*/>
 
-list2s = [line.split('|') for line in list2s if len(line) > 0]                  # <flatten list'/>
+list2s = [line.split('|') for line in list2s if len(line) > 0]                      # <flatten list'/>
 list2s = [item for line in list2s for item in line if line !=[''] and item != '']   # <flatten list'/>
 
 list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
@@ -556,6 +558,8 @@ list8 = [line.strip() for line in open(file8_in_name, encoding='UTF-8')]        
 list8 = [re.sub(r'^ *!.*', '', line) for line in list8]                         # <remove ! comments' />
 list8 = [line for line in list8 if line.strip() != '']                          # <remove empty lines />
 list3 = sorted(set(list3) - set(list8))
+
+
 
 print(
     '       ',
