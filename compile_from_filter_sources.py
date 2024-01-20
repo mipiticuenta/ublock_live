@@ -108,6 +108,8 @@ for line in list1 :
 
 # </dump sources to list>
 
+# <load iana tld >
+
 iana_tld = set()
 
 response = requests.get('https://data.iana.org/TLD/tlds-alpha-by-domain.txt', proxies=proxy_servers)
@@ -128,11 +130,12 @@ iana_tld = sorted(
 
 print('\n IANA top level domains (TLD) list loaded')
 
+# </load iana tld >
+
 # <process filter list>
 
 print(
-    '\n',
-    'Applying transforming filters\n',
+    '\nApplying transforming filters\n',
     '-----------------------------\n'
 )
 
@@ -150,7 +153,8 @@ list2 = [
     for line in list2
 ]                                                                               # <dedup spaces and remove leading/trailing spaces />
 
-list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
+list2 = list(filter(None, list2))                                               # <remove empty elements />
+
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
 print(' 2/21 : remove comments ')
@@ -162,7 +166,7 @@ list2 = [re.sub(r'^ *#(?![\?\@\#]).*', '', line)
     for line in list2
 ]                                                                               # <remove #comment; preserve cosmetics and exceptions />
 
-list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
+list2 = list(filter(None, list2))                                               # <remove empty elements />
 
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
@@ -186,7 +190,8 @@ list2 = [
     for line in list2
 ]                                                                               # cleanup abp style domains />
 
-list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
+list2 = list(filter(None, list2))                                               # <remove empty elements />
+
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
 print(' 4/21 : remove items containing % about: $badfilter localhost; remove http: IP4 IP6 :port/ ')
@@ -241,7 +246,7 @@ list2 = [
     for line in list2
 ]                                                                               # <remove || ^ from ||domain.tld^ />
 
-list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
+list2 = list(filter(None, list2))                                               # <remove empty elements />
 
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
@@ -318,7 +323,7 @@ list2 = [
     for line in list2
 ]                                                                               # <remove @@ exceptions />
 
-list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
+list2 = list(filter(None, list2))                                               # <remove empty elements />
 
 print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
 
@@ -357,7 +362,8 @@ list2s = [
 
 list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
 
-list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
+list2 = list(filter(None, list2))                                               # <remove empty elements />
+
 del(list2s)
 
 print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
@@ -402,7 +408,8 @@ list2s = [
 
 list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
 
-list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
+list2 = list(filter(None, list2))                                               # <remove empty elements />
+
 del(list2s)
 
 print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
@@ -447,7 +454,8 @@ list2s = [
 
 list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
 
-list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
+list2 = list(filter(None, list2))                                               # <remove empty elements />
+
 del(list2s)
 
 print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
@@ -513,7 +521,7 @@ while n_1 > len(list2):                                                         
         for line in list2
     ]                                                                           # <add trailing * for /@/ url filters (false regex) />
 
-    list2 = sorted([line for line in list2 if len(line) > 1])                   # <remove line if length < 2 />
+    list2 = list(filter(None, list2))                                           # <remove empty elements />
 
     print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
 
@@ -609,7 +617,8 @@ while n_1 > len(list2):                                                         
         for line in list2
     ]                                                                           # <remove trailing ?*=... />
 
-    list2 = sorted([line for line in list2 if len(line) > 1])                   # <remove line if length < 2 />
+    list2 = list(filter(None, list2))                                           # <remove empty elements />
+
     print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
 
     print('13/21 : split domain and url ')
@@ -640,7 +649,8 @@ while n_1 > len(list2):                                                         
         for line in list2
     ]                                                                           # <add trailing * for /@/ url filters (false regex) />
     
-    list2 = sorted([line for line in list2 if len(line) > 1])                   # <remove line if length < 2 />
+    list2 = list(filter(None, list2))                                           # <remove empty elements />
+
     del(list2s)
     
     print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
@@ -672,7 +682,7 @@ while n_1 > len(list2):                                                         
         for line in list2
     ]                                                                           # <remove $* tail except for *$ />
 
-    list2 = sorted([line for line in list2 if len(line) > 1])                   # <remove line if length < 2 />
+    list2 = list(filter(None, list2))                                           # <remove empty elements />
 
     print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
 
@@ -702,7 +712,8 @@ list2s = [
 
 list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
 
-list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
+list2 = list(filter(None, list2))                                               # <remove empty elements />
+
 del(list2s)
 
 print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
@@ -779,7 +790,7 @@ list2 = [
     for line in list2
 ]                                                                               # <remove @.zip filters />
 
-list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
+list2 = list(filter(None, list2))                                               # <remove empty elements />
 
 print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
 
@@ -915,7 +926,7 @@ list2 = [
     for line in list2
 ]                                                                               # <remove *$...js filters />
 
-list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
+list2 = list(filter(None, list2))                                               # <remove empty elements />
 
 print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
 
@@ -957,7 +968,7 @@ list2 = [
     if not(re.search(r'^/.*\\/$', line))
 ]                                                                               # <remove broken regex (bad termination) />
 
-list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
+list2 = list(filter(None, list2))                                               # <remove empty elements />
 
 print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
 
@@ -1052,7 +1063,7 @@ list2 = [
     if (re.search(r'[^\[\]\{\}\;\,\\]', line))
 ]                                                                               # <remove broken regex filters />
 
-list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
+list2 = list(filter(None, list2))                                               # <remove empty elements />
 
 print('       ', '{:,}'.format(len(list2) + len(list2s) + len(list3) + len(list5)), 'filters kept')
 
@@ -1060,16 +1071,15 @@ print('20/21 : apply regex_white_list rules', sep = '')
 
 # <get regex white list from file, dedup, sort and clean up filters>
 
-list9 = [
-    re.sub(r'^ *!.*', '', line).strip()
-    for line in open(file9_in_name, encoding='UTF-8')
-]                                                                               # <populate list removeing ! comments />
-
-list9 = [
-    line
-    for line in list9
-    if line != ''
-]                                                                               # <remove empty lines />
+list9 = list(
+    filter(
+        None,
+        [
+            re.sub(r'^ *!.*', '', line).strip()
+            for line in open(file9_in_name, encoding='UTF-8')
+        ]                                                                       # <populate list removing ! comments />
+    )                                                                           # <remove empty elements />
+)
 
 list9 = list9 + [
     ('^[_\W]*' + re.sub(r'\.', '\.', tld) + '[_\W]*$')
@@ -1193,19 +1203,18 @@ print(
 
 # <get domains white list from file, dedup, sort and substract from domains filters>
 
-list8 = [
-    re.sub(r'^ *!.*', '', line.strip())
-    for line in open(file8_in_name, encoding='UTF-8')
-    if re.sub(r'^ *!.*', '', line.strip()) != ''
-]                                                                               # <populate list; remove leading/trailing spaces and ! comments />
-
 list8 = sorted(
-    [
-        line
-        for line in list8
-        if line.strip() != ''
-    ]
-)                                                                               # <remove empty lines />
+    list(
+        filter(
+            None,
+            [
+                re.sub(r'^ *!.*', '', line.strip())
+                for line in open(file8_in_name, encoding='UTF-8')
+                if re.sub(r'^ *!.*', '', line.strip()) != ''
+            ]                                                                   # <populate list removing ! comments />
+        )                                                                       # <remove empty elements />
+    )
+)
 
 list3 = sorted(set(list3) - set(list8))                                         # <remove whitelisted domains />
 
