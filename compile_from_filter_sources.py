@@ -56,25 +56,26 @@ print(
 try:
     r = requests.get('https://google.com', timeout = 5, proxies = proxy_servers)
 except:
-    print('\nUsing alt proxy servers.')
+    print('Using alt proxy servers.')
     proxy_servers  = proxy_servers_alt
 
 # </test direct connection to internet>
 
 # <get filter url sources from file, dedup and sort>
 
-list1 = [
-    re.sub(r'^ *!.*', '', line.strip())
-    for line in open(file1_in_name, encoding='UTF-8')
-]                                                                               # <populate source lists and remove ! comments />
-
 list1 = sorted(
-    [
-        line
-        for line in list1
-        if line.strip() != ''
-    ]
-)                                                                               # <remove empty lines />
+    list(
+        filter(
+            None, 
+            [
+                re.sub(r'^ *!.*', '', line.strip())
+                for line in open(file1_in_name, encoding='UTF-8')
+            ]                                                                           # <populate source lists and remove ! comments />
+        )
+    )
+)
+
+list1 = [line for line in list1 if line]                                        # <remove empty lines />
 
 # </get filter url sources from file, dedup and sort>
 
@@ -113,16 +114,17 @@ response = requests.get('https://data.iana.org/TLD/tlds-alpha-by-domain.txt', pr
 if (response.status_code) :
     iana_tld.update(response.text.split('\n'))
 
-iana_tld = [
-    re.sub(r'^#.*', '', line).strip().lower()
-    for line in iana_tld
-]                                                                               # <remove # comments' />
-
-iana_tld = [
-    line
-    for line in iana_tld
-    if line != ''
-]                                                                               # <remove empty lines />
+iana_tld = sorted(
+    list(
+        filter(
+            None,
+            [
+                re.sub(r'^#.*', '', line).strip().lower()
+                for line in iana_tld
+            ]                                                                               # <remove # comments' />
+        )
+    )
+)
 
 print('\n IANA top level domains (TLD) list loaded')
 
