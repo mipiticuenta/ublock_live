@@ -568,7 +568,7 @@ list3 = sorted(set(list3))
 
 # </remove L5+ domains >
 
-# <list low level filters of white listed domains >
+# <preserve low level filters of white listed domains >
 
 list3s = []
 
@@ -578,7 +578,7 @@ for white_listed in tqdm.tqdm(list8):
 
 list3 = sorted(set(list3) - set(list3s))
 
-# </list low level filters of white listed domains >
+# </preserve low level filters of white listed domains >
 
 print(
     '       ',
@@ -633,7 +633,7 @@ if dom_sw == 'y' :
         '/',
         '2',
         ';',
-        '{:,}'.format(len(list3) + len(list3r)),
+        '{:,}'.format(len(list3) + len(list3r) + len(list3s)),
         'domains kept'
     )
     list3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3r))) == 0) else '', tqdm.tqdm(list3)))
@@ -642,6 +642,7 @@ if dom_sw == 'y' :
     del(list3r)                                                                 # <clean up; make sure list3r is not used anymore hereafter/>
 
     list3 = sorted(set(list3) | set(list3s))                                    # <join list3, list3s />
+    del(list3s)                                                                 # <clean up; make sure list3s is not used anymore hereafter/>
 
         #list3_filter = list3
         #print(
