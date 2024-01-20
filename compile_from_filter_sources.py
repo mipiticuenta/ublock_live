@@ -67,7 +67,7 @@ list1 = [line.strip()
     for line in open(file1_in_name, encoding='UTF-8')]                          # <populate source lists />
 list1 = [re.sub(r'^ *!.*', '', line)
     for line in list1]                                                          # <remove ! comments' />
-list1 = sorted([line if line.strip() != '' for line in list1])                  # <remove empty lines />
+list1 = sorted([line for line in list1 if line.strip() != ''])                  # <remove empty lines />
 
 # </get filter url sources from file, dedup and sort>
 
