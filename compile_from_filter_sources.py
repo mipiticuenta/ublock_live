@@ -544,20 +544,17 @@ print('\nRemoving #.@(.@) numerical domain filters, IANA tld root domains and ap
 list3 = [re.sub('r\$important$', '', line) for line in list3]                   # <remove trailing $important from domains/>
 list3 = [re.sub(r'^([-_\.0-9]+\.)+', '', line) for line in list3]               # <remove numerical #. prefix from domains/>
 list3 = [re.sub(r'^go\.(?!com$)(?!net$)', '', line) for line in list3]          # <remove go. prefix from domains />
-list2.append('/^go\./$important')
+list2.append('/^go\./$important')                                               # <add filter for leading go. />
 list3 = [re.sub(r'^s?metrics?\.(?!com$)(?!net$)', '', line) for line in list3]  # <remove (s)metric(s). prefix from domains />
-list2.append('/^s?metrics?\./$important')
+list2.append('/^s?metrics?\./$important')                                       # <add filter for leading (s)metric(s). />
 list3 = [re.sub(r'^\.', '', line)  for line in list3]                           # <remove leading . preceding domain />
 list3 = sorted(set(list3) - set(iana_tld))                                      # <remove IANA tld root domains />
 
-# <get domains white list from file, dedup and sort>
+# <get domains white list from file, dedup, sort and drop from domains filters>
 
 list8 = [line.strip() for line in open(file8_in_name, encoding='UTF-8')]        # <populate list; remove leading/trailing spaces />
 list8 = [re.sub(r'^ *!.*', '', line) for line in list8]                         # <remove ! comments' />
 list8 = [line for line in list8 if line.strip() != '']                          # <remove empty lines />
-
-# </get domains white list from file, dedup and sort>
-
 list3 = sorted(set(list3) - set(list8))
 
 print(
@@ -565,6 +562,8 @@ print(
     '{:,}'.format(len(list3)),
     'domains kept\n'
     )
+
+# </get domains white list from file, dedup and sort>
 
 # </remove #.@(.@) (numerical domains) and @.@ root domains from list>
 
@@ -643,7 +642,7 @@ if dom_sw == 'y' :
     #    '\n'
     #)
     #list2 = list(map(lambda line: line if (line[1:] not in list3) else '', tqdm.tqdm(list2)))   # <remove urls redundant with domains/>
-#list2 = [line for line in list2 if len(line) > 0]                              # <cleanup empty lines/>
+    #list2 = [line for line in list2 if len(line) > 0]                              # <cleanup empty lines/>
 
     # </remove redundant domains from list>
 
