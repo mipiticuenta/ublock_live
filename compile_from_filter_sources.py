@@ -559,6 +559,7 @@ list8 = [re.sub(r'^ *!.*', '', line) for line in list8]                         
 list8 = [line for line in list8 if line.strip() != '']                          # <remove empty lines />
 list3 = sorted(set(list3) - set(list8))
 
+list3 = [re.sub(r'^(?:[-\w]+\.)+(?=([-\w]+\.){2}[\w]+$)', '', line) for line in list3]  # <remove L4+ domains />
 
 
 print(
