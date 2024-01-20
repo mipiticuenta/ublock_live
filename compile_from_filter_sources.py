@@ -559,8 +559,14 @@ list3 = sorted(set(list3) - set(list8))                                         
 
 # </get domains white list from file, dedup, sort and substract from domains filters>
 
-list3 = [re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line) for line in list3]  # <remove L5+ domains />
+# <remove L5+ domains >
+
+print('\nApplying domains white list', sep = '')
+
+list3 = [re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line) for line in list3]
 list3 = sorted(set(list3))
+
+# </remove L5+ domains >
 
 # <list low level filters of white listed domains >
 
