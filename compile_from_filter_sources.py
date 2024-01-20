@@ -49,7 +49,7 @@ print(
     '# ============================================================\n',
 )
 
-dom_sw = input('Enter <y> to include domain deflation : ')
+#dom_sw = input('Enter <y> to include domain deflation : ')
 
 # <test direct connection to internet>
 
