@@ -537,7 +537,7 @@ list2 = sorted(set(list2) - set(list3))                                         
 
 # </segregate domains from list >
 
-print('\nRemoving #.@(.@) numerical domain filters, IANA tld root domains and applying domains white list', sep = '')
+print('\nRemoving #.@(.@) numerical domain filters, IANA tld', sep = '')
 
 list3 = [re.sub('r\$important$', '', line) for line in list3]                   # <remove trailing $important from domains/>
 list3 = [re.sub(r'^([-_\.0-9]+\.)+', '', line) for line in list3]               # <remove numerical #. prefix from domains/>
@@ -549,6 +549,8 @@ list3 = [re.sub(r'^\.', '', line)  for line in list3]                           
 list3 = sorted(set(list3) - set(iana_tld))                                      # <remove IANA tld root domains />
 
 # <get domains white list from file, dedup, sort and substract from domains filters>
+
+print('\nApplying domains white list', sep = '')
 
 list8 = [line.strip() for line in open(file8_in_name, encoding='UTF-8')]        # <populate list; remove leading/trailing spaces />
 list8 = [re.sub(r'^ *!.*', '', line) for line in list8]                         # <remove ! comments' />
