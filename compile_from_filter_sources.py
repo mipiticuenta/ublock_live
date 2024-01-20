@@ -72,6 +72,8 @@ list1 = sorted([line for line in list1 if line.strip() != ''])                  
 # <dump sources to list>
 
 list2 = set()                                                                   # <set() type ensures no elements' duplication />
+list3 = []                                                                      # <intialize list3 />
+list5 = []                                                                      # <intialize list5 />
 i     = 1                                                                       # <counter for uncommented sources />
 
 for line in list1 :
@@ -114,8 +116,6 @@ print(
     'Applying transforming filters\n',
     '-----------------------------\n'
 )
-
-list5 = []
 
 # <transforming loop>
 
@@ -177,8 +177,6 @@ list5 = [line for line in list2 if re.search(r'^/.+/(?:\$important)?$', line)]
 list2  = set(list2) - set(list5)
 
 # </segregate regex filters >
-
-list3 = []
 
 print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
 
@@ -529,14 +527,12 @@ del(list2s)                                                                     
 
 print('Listing domain filters : ', sep = '')
 
-list3s = []
-
 for tld in tqdm.tqdm(iana_tld):
     pattern = re.compile(r'' + ('^[-\.\w]+\.' + tld + '(?:\$important)?$'))
-    list3s = list3s + [line for line in list2 if pattern.search(line)]
+    list3 = list3 + [line for line in list2 if pattern.search(line)]
 
-list3 = sorted(set(list3) | set(list3s))                                        # <join lists3, list3s />
 list3 = [line for line in list3 if line[0] != '-']                              # <remove -@.@ from domains list />
+list3 = sorted(set(list3))
 list2 = sorted(set(list2) - set(list3))                                         # <only domains part are processed in this section; @.js are kept in list2 />
 
 # </segregate domains from list >
@@ -552,15 +548,17 @@ list2.append('/^s?metrics?\./$important')                                       
 list3 = [re.sub(r'^\.', '', line)  for line in list3]                           # <remove leading . preceding domain />
 list3 = sorted(set(list3) - set(iana_tld))                                      # <remove IANA tld root domains />
 
-# <get domains white list from file, dedup, sort and drop from domains filters>
+# <get domains white list from file, dedup, sort and substract from domains filters>
 
 list8 = [line.strip() for line in open(file8_in_name, encoding='UTF-8')]        # <populate list; remove leading/trailing spaces />
 list8 = [re.sub(r'^ *!.*', '', line) for line in list8]                         # <remove ! comments' />
 list8 = [line for line in list8 if line.strip() != '']                          # <remove empty lines />
-list3 = sorted(set(list3) - set(list8))
+list3 = sorted(set(list3) - set(list8))                                         # <remove whitelisted domains />
 
-list3 = [re.sub(r'^(?:[-\w]+\.)+(?=([-\w]+\.){2}[\w]+$)', '', line) for line in list3]  # <remove L4+ domains />
+# list3 = [re.sub(r'^(?:[-\w]+\.)+(?=([-\w]+\.){2}[\w]+$)', '', line) for line in list3]  # <remove L4+ domains />
+# list3 = sorted(set(list3))
 
+# list3 = list(map(lambda line: re.sub(r'^(?:[-\w]+\.)+(?=([-\w]+\.){1}[\w]+$)', '', line) if (len(list(filter(lambda substring: re.search(r'\.substring$', line), list8))) == 0) else line, tqdm.tqdm(list3)))
 
 print(
     '       ',
@@ -568,7 +566,7 @@ print(
     'domains kept\n'
     )
 
-# </get domains white list from file, dedup and sort>
+# </get domains white list from file, dedup, sort and substract from domains filters>
 
 # </remove #.@(.@) (numerical domains) and @.@ root domains from list>
 
@@ -582,14 +580,18 @@ if dom_sw == 'y' :
         sep = ''
     )
 
-    list3r = [line for line in list3 if re.search(r'^[-_a-z0-9]+\.[a-z]+$', line)]  # <get @.@ domains />
+    list3r = []
+
+    for tld in tqdm.tqdm(iana_tld):
+        pattern = re.compile(r'' + ('^[-\w]+\.' + tld))
+        list3r = list3r + [line for line in list3 if pattern.search(line)]    # <get @.tld domains />
 
     print(
         '{:,}'.format(len(list3r)),
-        'elemental @.@ domains found; excluded from recursive domain deflating'
+        'elemental @.tld domains found; excluded from recursive domain deflating'
     )
 
-    list3r3 = [line for line in list3 if re.search(r'^[-_a-z0-9]+\.[a-z0-9][-_a-z0-9]+\.[a-z]+$', line)]    # <@.@.@ domains items/>
+    list3r3 = [line for line in list3 if re.search(r'^(?:[-\w]+\.){2}[a-z]+$', line)]    # <@.@.@ domains items/>
     list3   = set(list3) - set(list3r) - set(list3r3)                           # < @.@ and @.@.@ domains removed for faster deflation; then added to final result />
     list3   = sorted(list3, key = lambda x: -len(x))                            # <sort by decreasing length for faster size reduction/>
 
