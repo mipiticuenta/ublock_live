@@ -560,13 +560,17 @@ list3 = sorted(set(list3) - set(list8))                                         
 list3 = [re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line) for line in list3]  # <remove L5+ domains />
 list3 = sorted(set(list3))
 
+# <list low level filters of white listed domains >
+
 list3s = []
 
 for white_listed in tqdm.tqdm(list8):
     pattern_wl = re.compile(r'' + ('^[-\.\w]+\.' + white_listed + '$'))
-    list3s = list3s + [line for line in list3 if pattern_wl.search(line)]       # <list low levels of white listed domains />
+    list3s = list3s + [line for line in list3 if pattern_wl.search(line)]
 
-list3 = sorted(set(list3) - set(list3s)) 
+list3 = sorted(set(list3) - set(list3s))
+
+# </list low level filters of white listed domains >
 
 print(
     '       ',
