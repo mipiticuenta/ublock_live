@@ -544,6 +544,12 @@ list3 = [re.sub(r'^([-_\.0-9]+\.)+', '', line) for line in list3]               
 list3 = [re.sub(r'^\.', '', line)  for line in list3]                           # <remove leading . preceding domain />
 list3 = sorted(set(list3) - set(iana_tld))                                      # <remove IANA tld root domains />
 
+print(
+    '       ',
+    '{:,}'.format(len(list3)),
+    'domains kept\n'
+    )
+
 # <get domains white list from file, dedup, sort and substract from domains filters>
 
 print('\nApplying domains white list', sep = '')
@@ -552,6 +558,12 @@ list8 = [line.strip() for line in open(file8_in_name, encoding='UTF-8')]        
 list8 = [re.sub(r'^ *!.*', '', line) for line in list8]                         # <remove ! comments' />
 list8 = [line for line in list8 if line.strip() != '']                          # <remove empty lines />
 list3 = sorted(set(list3) - set(list8))                                         # <remove whitelisted domains />
+
+print(
+    '       ',
+    '{:,}'.format(len(list3)),
+    'domains kept\n'
+    )
 
 # </get domains white list from file, dedup, sort and substract from domains filters>
 
@@ -562,13 +574,13 @@ print('\nRemoving L5+ domains', sep = '')
 list3 = [re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line) for line in list3]
 list3 = sorted(set(list3))
 
-# </remove L5+ domains >
-
 print(
     '       ',
-    '{:,}'.format(len(list3) + len(list3s)),
+    '{:,}'.format(len(list3)),
     'domains kept\n'
     )
+
+# </remove L5+ domains >
 
 # <preserve low level filters of white listed domains >
 
