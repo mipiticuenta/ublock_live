@@ -527,8 +527,6 @@ del(list2s)                                                                     
 
 print('Listing domain filters : ', sep = '')
 
-list3r = []
-
 for tld in tqdm.tqdm(iana_tld):
     pattern_3 = re.compile(r'' + ('^[-\.\w]+\.' + tld + '(?:\$important)?$'))
     list3 = list3 + [line for line in list2 if pattern_3.search(line)]          # <get (@.)+tld domains />
@@ -562,9 +560,17 @@ list3 = sorted(set(list3) - set(list8))                                         
 list3 = [re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line) for line in list3]  # <remove L5+ domains />
 list3 = sorted(set(list3))
 
+list3s = []
+
+for white_listed in tqdm.tqdm(list8):
+    pattern_wl = re.compile(r'' + ('^[-\.\w]+\.' + white_listed + '$'))
+    list3s = list3s + [line for line in list3 if pattern_wl.search(line)]       # <list low levels of white listed domains />
+
+list3 = sorted(set(list3) - set(list3s)) 
+
 print(
     '       ',
-    '{:,}'.format(len(list3)),
+    '{:,}'.format(len(list3) + len(list3s)),
     'domains kept\n'
     )
 
@@ -580,6 +586,8 @@ if dom_sw == 'y' :
         sep = ''
     )
 
+    list3r = []
+
     for tld in tqdm.tqdm(iana_tld):
         pattern_3r = re.compile(r'' + ('^[-\w]+\.' + tld))
         list3r = list3r + [line for line in list3 if pattern_3r.search(line)]       # <get @.tld domains />
@@ -589,26 +597,26 @@ if dom_sw == 'y' :
         'elemental @.tld domains found; excluded from recursive domain deflating'
     )
 
-    list3r3 = [line for line in list3 if re.search(r'^(?:[-\w]+\.){2}[a-z]+$', line)]    # <@.@.@ domains items/>
-    list3   = set(list3) - set(list3r) - set(list3r3)                           # < @.@ and @.@.@ domains removed for faster deflation; then added to final result />
-    list3   = sorted(list3, key = lambda x: -len(x))                            # <sort by decreasing length for faster size reduction/>
+    # list3r3 = [line for line in list3 if re.search(r'^(?:[-\w]+\.){2}[a-z]+$', line)]    # <@.@.@ domains items/>
+    # list3   = set(list3) - set(list3r) - set(list3r3)                           # < @.@ and @.@.@ domains removed for faster deflation; then added to final result />
+    # list3   = sorted(list3, key = lambda x: -len(x))                            # <sort by decreasing length for faster size reduction/>
+
+    # print(
+    #     'recursive domain deflating (@.@.@ vs @.tld)',
+    #     '{:2.0f}'.format(1),
+    #     '/',
+    #     '2',
+    #     ';',
+    #     '{:,}'.format(len(list3) + len(list3r) + len(list3r3)),
+    #     'domains kept'
+    # )
+    # list3r3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3r))) == 0) else '', tqdm.tqdm(list3r3)))
+    # list3r3 = [line for line in list3r3 if len(line) > 0]                       # <cleanup empty lines/>
+    # list3r  = sorted(set(list3r) | set(list3r3))                                # <compile deflated domains up to current stage/>
+    # del(list3r3)                                                                # <clean up; make sure list3r3 is not used anymore hereafter/>
 
     print(
-        'recursive domain deflating (@.@.@ vs @.tld)',
-        '{:2.0f}'.format(1),
-        '/',
-        '2',
-        ';',
-        '{:,}'.format(len(list3) + len(list3r) + len(list3r3)),
-        'domains kept'
-    )
-    list3r3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3r))) == 0) else '', tqdm.tqdm(list3r3)))
-    list3r3 = [line for line in list3r3 if len(line) > 0]                       # <cleanup empty lines/>
-    list3r  = sorted(set(list3r) | set(list3r3))                                # <compile deflated domains up to current stage/>
-    del(list3r3)                                                                # <clean up; make sure list3r3 is not used anymore hereafter/>
-
-    print(
-        'recursive domain deflating (@.@.@.@+ vs @.@.@)',
+        'recursive domain deflating (domains vs @.tld)',
         '{:2.0f}'.format(2),
         '/',
         '2',
@@ -620,6 +628,8 @@ if dom_sw == 'y' :
     list3 = sorted(set(list3r) | set(list3))                                    # <compile deflated domains up to current stage/>
     list3 = [line for line in list3 if len(line) > 0]                           # <cleanup empty lines/>
     del(list3r)                                                                 # <clean up; make sure list3r is not used anymore hereafter/>
+
+    list3 = sorted(set(list3) | set(list3s))                                    # <join list3, list3s />
 
         #list3_filter = list3
         #print(
