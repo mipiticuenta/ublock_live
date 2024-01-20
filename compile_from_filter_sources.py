@@ -63,9 +63,13 @@ except:
 
 # <get filter url sources from file, dedup and sort>
 
-list1 = [line.strip() for line in open(file1_in_name, encoding='UTF-8')]        # <populate source lists />
-list1 = [re.sub(r'^ *!.*', '', line) for line in list1]                         # <remove ! comments' />
-list1 = sorted([line for line in list1 if line.strip() != ''])                  # <remove empty lines />
+list1 = [line.strip()
+    for line in open(file1_in_name, encoding='UTF-8')]                          # <populate source lists />
+list1 = [re.sub(r'^ *!.*', '', line)
+    for line in list1]                                                          # <remove ! comments' />
+list1 = sorted(
+    [line if line.strip() != '']
+    for line in list1)                                                          # <remove empty lines />
 
 # </get filter url sources from file, dedup and sort>
 
@@ -105,7 +109,7 @@ if (response.status_code) :
     iana_tld.update(response.text.split('\n'))
 
 iana_tld = [re.sub(r'^#.*', '', line).strip() for line in iana_tld]             # <remove # comments' />
-iana_tld = [line.lower() for line in iana_tld if line != '']                    # <remove empty lines />
+iana_tld = [line.lower() if line != '' for line in iana_tld]                    # <remove empty lines />
 
 print('\n IANA top level domains (TLD) list loaded')
 
@@ -140,7 +144,10 @@ print(' 3/21 : clean dns/domain filters ')
 list2 = [re.sub(r'^0\.0\.0\.0 ', '', line) for line in list2]                   # <remove leading 0.0.0.0 (dns style filter) />
 list2 = [re.sub(r'^127\.0\.0\.1 ', '', line) for line in list2]                 # <remove leading 127.0.0.1 (dns style filter) />
 list2 = [re.sub(r'^\:+1 ', '', line) for line in list2]                         # <remove leading ::1 (dns style filter) />
-list2 = [line[2:-1] if re.search(r'^\|\|[-\.\w]+\^$', line) else line for line in list2]    # cleanup abp style domains />
+list2 = [line[2:-1] if re.search(r'^\|\|[-\.\w]+\^$', line)
+    else line
+    for line in list2
+]                                                                               # cleanup abp style domains />
 list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
 print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
 
