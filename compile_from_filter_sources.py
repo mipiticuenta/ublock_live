@@ -557,7 +557,7 @@ list3 = sorted(set(list3) - set(list8))                                         
 
 # <remove L5+ domains >
 
-print('\nApplying domains white list', sep = '')
+print('\nRemoving L5+ domains', sep = '')
 
 list3 = [re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line) for line in list3]
 list3 = sorted(set(list3))
