@@ -600,7 +600,11 @@ list3 = sorted(set(list3) - set(list3s))
 
 print('\nDeflating domains list, pass 1 / 2', sep = '')
 
-list3 = [re.sub(r'^[-\w]+\.', '', line) for line in tqdm.tqdm(list3) if (re.sub(r'^[-\w]+\.', '', line) not in iana_tld) else line]
+list3 = [
+    re.sub(r'^[-\w]+\.', '', line) if (re.sub(r'^[-\w]+\.', '', line) not in iana_tld)
+    else line
+    for line in tqdm.tqdm(list3)
+]
 list3 = sorted(set(list3))
 
 print(
@@ -611,7 +615,11 @@ print(
 
 print('\nDeflating domains list, pass 2 / 2', sep = '')
 
-list3 = [re.sub(r'^[-\w]+\.', '', line) for line in tqdm.tqdm(list3) if (re.sub(r'^[-\w]+\.', '', line) not in iana_tld) else line]
+list3 = [
+    re.sub(r'^[-\w]+\.', '', line) if (re.sub(r'^[-\w]+\.', '', line) not in iana_tld)
+    else line
+    for line in tqdm.tqdm(list3)
+]
 list3 = sorted(set(list3))
 
 print(
