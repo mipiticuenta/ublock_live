@@ -106,8 +106,13 @@ response = requests.get('https://data.iana.org/TLD/tlds-alpha-by-domain.txt', pr
 if (response.status_code) :
     iana_tld.update(response.text.split('\n'))
 
-iana_tld = [re.sub(r'^#.*', '', line).strip() for line in iana_tld]             # <remove # comments' />
-iana_tld = [line.lower() if line != '' for line in iana_tld]                    # <remove empty lines />
+iana_tld = [re.sub(r'^#.*', '', line).strip()
+    for line in iana_tld
+]                                                                               # <remove # comments' />
+iana_tld = [line.lower()
+    for line in iana_tld
+    if line != ''
+]                                                                               # <remove empty lines />
 
 print('\n IANA top level domains (TLD) list loaded')
 
