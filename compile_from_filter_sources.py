@@ -645,8 +645,8 @@ while n_1 > len(list2):                                                         
 
     print('14/21 : clean up urls')
 
-    list2 = 
-        [re.sub(r'\*+', '*', line).strip()
+    list2 = [
+        re.sub(r'\*+', '*', line).strip()
         for line in list2
     ]                                                                           # <dedup * />
 
