@@ -70,8 +70,8 @@ list1 = sorted(
             [
                 re.sub(r'^ *!.*', '', line.strip())
                 for line in open(file1_in_name, encoding='UTF-8')
-            ]                                                                           # <populate source lists and remove ! comments />
-        )
+            ]                                                                   # <populate source lists and remove ! comments />
+        )                                                                       # <remove empty elements />
     )
 )
 
@@ -131,6 +131,16 @@ iana_tld = sorted(
 print('\n IANA top level domains (TLD) list loaded')
 
 # </load iana tld >
+
+# test
+
+list3 = [
+    re.sub(r'\$important$', '', line)
+    for line in list3
+    if (re.sub(r'^([-\w]+\.)*', '', re.sub(r'\$important$', '', line)) in iana_tld)
+]                                                                               # <get (@.)+tld domains, removing trailing $important />
+
+# test
 
 # <process filter list>
 
@@ -370,10 +380,11 @@ print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters k
 
 print(' 9/21 : remove domain= denyallow= and keep the related domains')
 
+
 list2s = [
     line
     for line in list2
-    if re.search(r'.*(domain|denyallow|replace|path)=', line)
+    if re.search(r'.*(domain|denyallow)=', line)
 ]                                                                               # <select *$ filters />
 
 list2 = set(list2) - set(list2s)                                                # <segregate selected filters'/>
