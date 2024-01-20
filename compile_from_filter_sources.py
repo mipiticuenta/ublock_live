@@ -608,8 +608,7 @@ while n_1 > len(list2):                                                         
     ]                                                                           # <remove trailing ?*=... />
 
     list2 = sorted([line for line in list2 if len(line) > 1])                   # <remove line if length < 2 />
-    print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filte
-    rs kept')
+    print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
 
     print('13/21 : split domain and url ')
 
