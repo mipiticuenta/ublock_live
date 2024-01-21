@@ -1175,19 +1175,13 @@ list9 = list(
 
 # test
 
-#list2 = [
-#    line
-#    for pattern in tqdm.tqdm(list9)
-#    for line in list2
-#    if not re.search(r'' + pattern[: -1] + '(?:\$important)?$', line)
-#]                                                                               # <remove filters based on <regex-white_list> />
-
 list2 = list(
     map(
         lambda pattern: line if (
             len(list(filter(
-                lambda line: re.search(r'' + pattern[: -1] + '(?:\$important)?$', line), list2
-                ))) == 0
+                lambda line: re.search(re.compile(r'' + (pattern[: -1] + '(?:\$important)?$')), line),
+                list2
+            ))) == 0
         ) 
         else '',
         tqdm.tqdm(list9)
