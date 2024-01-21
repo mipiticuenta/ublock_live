@@ -1359,7 +1359,7 @@ list3 = sorted(set(list3) - set(list3s))
 # </remove #.@(.@) (numerical domains) and @.@ root domains from list>
 
 list3 = [
-    re.sub(r'^[-\w]+\.', '', line) if ()
+    re.sub(r'^[-\w]+\.', '', line) if (
         (re.sub(r'^[-\w]+\.', '', line) not in iana_tld)
         and
         (re.sub(r'^[-\w]+\.', '', line) not in list8)
