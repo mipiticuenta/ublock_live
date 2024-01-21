@@ -130,7 +130,7 @@ iana_tld = sorted(
             [
                 re.sub(r'^#.*', '', line).strip().lower()
                 for line in iana_tld
-            ]                                                                               # <remove # comments' />
+            ]                                                                   # <remove # comments' />
         )
     )
 )
@@ -261,10 +261,20 @@ list2 = [
 ]                                                                               # <remove http:/* />
 
 list2 = [
-    re.sub(r'[\|\^]', '', line) if re.search(r'^\|+.*\^.*$', line)
+    re.sub(r',?path=.*', '', line)
+    for line in list2
+]                                                                               # <remove (,)path=.* />
+
+list2 = [
+    re.sub(r',?replace=.*', '', line)
+    for line in list2
+]                                                                               # <remove (,)replace=.* />
+
+list2 = [
+    re.sub(r'[\\^]', '', line) if re.search(r'^\|{1, 2}[-\w]+\^.*$', line)
     else line
     for line in list2
-]                                                                               # <remove || ^ from ||domain.tld^ />
+]                                                                               # <remove || ^ from ||domain^ />
 
 list2 = list(filter(None, list2))                                               # <remove empty elements />
 
@@ -1171,7 +1181,7 @@ list9 = list(
             for line in open(
                 file9_in_name,
                 encoding='UTF-8'
-            )                                                                   # <populate regex white list />
+            )                                                                   # <populate <regex_white_list> />
         ] + [
             ('^[_\W]*' + re.sub(r'\.', '\.', tld) + '[_\W]*$')
             for tld in iana_tld
@@ -1186,7 +1196,7 @@ for pattern in tqdm.tqdm(list9) :
             line
             for line in list2
             if not(pattern.search(line))
-        ]                                                                       # <remove filter from main list based on regex-white_list />
+        ]                                                                       # <remove filters based on <regex-white_list> />
         list5 = [
             line
             for line in list5
