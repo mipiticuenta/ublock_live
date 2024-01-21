@@ -49,12 +49,14 @@ print(
     '# ============================================================\n',
 )
 
-#dom_sw = input('Enter <y> to include domain deflation : ')
-
 # <test direct connection to internet>
 
 try:
-    r = requests.get('https://google.com', timeout = 5, proxies = proxy_servers)
+    r = requests.get(
+        'https://google.com',
+        timeout = 5,
+        proxies = proxy_servers
+    )
 except:
     print('Using alt proxy servers.')
     proxy_servers  = proxy_servers_alt
@@ -75,21 +77,17 @@ list1 = sorted(
     )
 )
 
-list1 = [line for line in list1 if line]                                        # <remove empty lines />
-
 # </get filter url sources from file, dedup and sort>
 
 # <dump sources to list>
 
 list2 = set()                                                                   # <set() type ensures no elements' duplication />
-list3 = []                                                                      # <intialize list3 />
-list5 = []                                                                      # <intialize list5 />
+list5 = []                                                                      # <intialize list5 ()regex) />
 i     = 1                                                                       # <counter for uncommented sources />
 
 for line in list1 :
     print(
-        '\n',
-        'reading source',
+        '\nreading source',
         '{:3.0f}'.format(i),
         '/',
         len(list1),
@@ -97,7 +95,10 @@ for line in list1 :
         line
     )
     i += 1
-    response = requests.get(line, proxies=proxy_servers)
+    response = requests.get(
+        line,
+        proxies = proxy_servers
+    )
     if (response.status_code) :
         list2.update(response.text.split('\n'))
         print(
@@ -112,7 +113,11 @@ for line in list1 :
 
 iana_tld = set()
 
-response = requests.get('https://data.iana.org/TLD/tlds-alpha-by-domain.txt', proxies=proxy_servers)
+response = requests.get(
+    'https://data.iana.org/TLD/tlds-alpha-by-domain.txt',
+    proxies = proxy_servers
+)
+
 if (response.status_code) :
     iana_tld.update(response.text.split('\n'))
 
@@ -155,7 +160,11 @@ list2 = [
 
 list2 = list(filter(None, list2))                                               # <remove empty elements />
 
-print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
 print(' 2/21 : remove comments ')
 
@@ -168,7 +177,11 @@ list2 = [re.sub(r'^ *#(?![\?\@\#]).*', '', line)
 
 list2 = list(filter(None, list2))                                               # <remove empty elements />
 
-print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
 print(' 3/21 : clean dns/domain filters ')
 
@@ -192,7 +205,11 @@ list2 = [
 
 list2 = list(filter(None, list2))                                               # <remove empty elements />
 
-print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
 print(' 4/21 : remove items containing % about: $badfilter localhost; remove http: IP4 IP6 :port/ ')
 
@@ -248,7 +265,11 @@ list2 = [
 
 list2 = list(filter(None, list2))                                               # <remove empty elements />
 
-print('       ', '{:,}'.format(len(list2) + len(list5)), 'filters kept')
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
 print(' 5/21 : apply lower case except for cosmetics and regex')
 
@@ -258,14 +279,14 @@ list2 = [
     for line in list2
 ]                                                                               # <apply lower case except cosmetics and regex />
 
-list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
+list2 = list(filter(None, list2))                                               # <remove empty elements />
 
 # <segregate regex filters >
 
 list2 = [
     re.sub(r'^/([-\.\+\~\!/\w]+)/$', r'/\1/*', line)
     for line in list2
-]                                                                              # <add trailing * for /@/ url filters (false regex) />
+]                                                                               # <add trailing * for /@/ url filters (false regex) />
 
 list2 = [
     line
@@ -283,7 +304,11 @@ list2  = set(list2) - set(list5)
 
 # </segregate regex filters >
 
-print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
 print(' 6/21 : generalize cosmetic filters (*##) and exceptions (*#@ *#? *@@) ')
 
@@ -302,9 +327,13 @@ list2 = [
     for line in list2
 ]                                                                               # <generalize *$removeparam />
 
-list2 = sorted([line for line in list2 if len(line) > 1])                       # <remove line if length < 2 />
+list2 = list(filter(None, list2))                                               # <remove empty elements />
 
-print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
 print(' 7/21 : remove cosmetic filters (## #?) and exceptions (@@ #@) except *##:')   # <currently discarded; consider processing (future sprints?)/>
 
@@ -325,7 +354,11 @@ list2 = [
 
 list2 = list(filter(None, list2))                                               # <remove empty elements />
 
-print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
 print(' 8/21 : split urls with $ domain= ')
 
@@ -366,7 +399,11 @@ list2 = list(filter(None, list2))                                               
 
 del(list2s)
 
-print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
 print(' 9/21 : remove domain= denyallow= and keep the related domains')
 
@@ -413,7 +450,11 @@ list2 = list(filter(None, list2))                                               
 
 del(list2s)
 
-print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
 print('10/21 : split , separated domains ')
 
@@ -459,7 +500,11 @@ list2 = list(filter(None, list2))                                               
 
 del(list2s)
 
-print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
 n_1 = len(list2) + 1
 i   = 0
@@ -524,7 +569,11 @@ while n_1 > len(list2):                                                         
 
     list2 = list(filter(None, list2))                                           # <remove empty elements />
 
-    print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
+    print(
+        '       ',
+        '{:,}'.format(len(list2) + len(list5)),
+        'filters kept'
+    )
 
     print('12/21 : clean up trailing symbols numbers suffix $filters etc')
 
@@ -620,7 +669,11 @@ while n_1 > len(list2):                                                         
 
     list2 = list(filter(None, list2))                                           # <remove empty elements />
 
-    print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
+    print(
+        '       ',
+        '{:,}'.format(len(list2) + len(list5)),
+        'filters kept'
+    )
 
     print('13/21 : split domain and url ')
 
@@ -653,8 +706,12 @@ while n_1 > len(list2):                                                         
     list2 = list(filter(None, list2))                                           # <remove empty elements />
 
     del(list2s)
-    
-    print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
+
+    print(
+        '       ',
+        '{:,}'.format(len(list2) + len(list5)),
+        'filters kept'
+    )
 
     print('14/21 : clean up urls')
 
@@ -685,7 +742,11 @@ while n_1 > len(list2):                                                         
 
     list2 = list(filter(None, list2))                                           # <remove empty elements />
 
-    print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
+    print(
+        '       ',
+        '{:,}'.format(len(list2) + len(list5)),
+        'filters kept'
+    )
 
 # <transforming loop/>
 
@@ -717,7 +778,11 @@ list2 = list(filter(None, list2))                                               
 
 del(list2s)
 
-print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
 print('16/21 : remove lines leaded by ! # + & ? ^ : ; @ and @.exe @.gif @.rar @.zip')
 
@@ -793,7 +858,11 @@ list2 = [
 
 list2 = list(filter(None, list2))                                               # <remove empty elements />
 
-print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
 print('17/21 : arrange *$ filters; keep beacon csp inline-font inline-script object other ping popunder script websocket xhr ')
 
@@ -929,7 +998,11 @@ list2 = [
 
 list2 = list(filter(None, list2))                                               # <remove empty elements />
 
-print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
 print('18/21 : remove broken filters and fix false regex ')
 
@@ -971,7 +1044,11 @@ list2 = [
 
 list2 = list(filter(None, list2))                                               # <remove empty elements />
 
-print('       ', '{:,}'.format(len(list2) + len(list3) + len(list5)), 'filters kept')
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
 print('19/21 : simplify urls keeping last /* part')
 
@@ -1066,7 +1143,11 @@ list2 = [
 
 list2 = list(filter(None, list2))                                               # <remove empty elements />
 
-print('       ', '{:,}'.format(len(list2) + len(list2s) + len(list3) + len(list5)), 'filters kept')
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
 print('20/21 : apply regex_white_list rules', sep = '')
 
@@ -1105,13 +1186,21 @@ for pattern in tqdm.tqdm(list9) :
 
 # </get regex white list from file, dedup, sort and clean up filters>
 
-print('       ', '{:,}'.format(len(list2) + len(list2s) + len(list3) + len(list5)), 'filters kept')
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
 # <write extracted regex type filters>
 
 # <open file5_out file and write header>
 
-file5_out = open(file5_out_name, 'w', encoding='UTF-8')
+file5_out = open(
+    file5_out_name,
+    'w',
+    encoding='UTF-8'
+)
 
 file5_out.write(
       '! description: personal regex filters for ipfire and ublock_origin\n'
@@ -1122,7 +1211,13 @@ file5_out.write(
 
 # </open file5_out file and write header>
 
-list5s = sorted([re.sub(r'\$important$', '', line)[1: -1] for line in list5])   # <remove trailing $important, dedup and sort />
+list5s = sorted(
+    [
+        re.sub(r'\$important$', '', line)[1: -1]
+        for line in list5
+    ]
+)                                                                               # <remove trailing $important, dedup and sort />
+
 file5_out.writelines(line + '\n' for line in list5s)
 file5_out.close()
 del(list5s)
@@ -1155,8 +1250,6 @@ for pattern in tqdm.tqdm(list5):
     except :
         print('Error found; check for ' + pattern + ' regex pattern in url sources')
 
-print('       ', '{:,}'.format(len(list2) + len(list2s) + len(list3) + len(list5)), 'filters kept', '\n')
-
 # </remove url filters covered by regex filters>
 
 # <aggregate filters >
@@ -1165,6 +1258,12 @@ list2 = sorted(set(list2) | set(list2s) | set(list5))                           
 del(list2s)                                                                     # <discard list2s, keep list5/>
 
 # </aggregate filters >
+
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
 # <segregate domains from list >
 
@@ -1261,7 +1360,7 @@ print('Preserving low level filters of white listed domains', sep = '')
 list3s = [
     line
     for line in list3
-    if (re.sub(r'^(?:[-\w]+\.)+', '', line) in list8)
+    if (re.sub(r'^(?:[-\w]+\.)+', '', line) in tqdm.tqdm(list8))
 ]                                                                               # <get (@.)+tld domains, removing trailing $important />
 
 list3 = sorted(set(list3) - set(list3s))
@@ -1403,8 +1502,12 @@ list2s = [
 
 list2  = set(list2) - set(list2s)
 
-for item in tqdm.tqdm(list2s) :
-    list2 = [line for line in list2 if (item != (line + '$important') and (item != (line + ',important')))]
+list2 = [
+    line
+    for line in list2
+    for item in tqdm.tqdm(list2s)
+    if (item != (line + '$important') and (item != (line + ',important')))
+]
 
 list2 = sorted(set(list2) | set(list2s))                                        # <aggregate lists />
 del(list2s)
@@ -1478,7 +1581,11 @@ list2.append('@@||youtube.com^$inline-script,xhr,1p')
 
 list2 = sorted(set(list2))
 
-file2_out = open(file2_out_name, 'w')
+file2_out = open(
+    file2_out_name,
+    'w',
+    encoding='UTF-8'
+)
 
 file2_out.write(
     '! description: personal filters for uBO; yet under heavy debugging\n' +
@@ -1512,7 +1619,11 @@ print(
 
 # <open file3_out file and write header >
 
-file3_out = open(file3_out_name, 'w', encoding='UTF-8')
+file3_out = open(
+    file3_out_name,
+    'w',
+    encoding='UTF-8'
+)
 
 file3_out.write(
       '! description: personal domain filters for ipfire and ublock_origin\n'
@@ -1524,7 +1635,10 @@ file3_out.write(
 # <\open file3_out file and write header />
 
 list3 = set(list3)
-list3 = sorted(list3, key = lambda x: (re.sub(r'^.*\.(?=[^\.]+\.[^\.]+\Z)', '', x)))    # <sort by a-z @(.@) />
+list3 = sorted(
+    list3,
+    key = lambda x: (re.sub(r'^.*\.(?=[^\.]+\.[^\.]+\Z)', '', x))
+)                                                                               # <sort by a-z @(.@) />
 
 file3_out.writelines(line + '\n' for line in list3)
 file3_out.close()
@@ -1537,14 +1651,17 @@ print(
     sep = ''
 )
 
-
 # </write domain type filters />
 
 # <write extracted url type filters>
 
 # <open file4_out file and write header>
 
-file4_out = open(file4_out_name, 'w', encoding='UTF-8')
+file4_out = open(
+    file4_out_name,
+    'w',
+    encoding='UTF-8'
+)
 
 file4_out.write(
       '! description: personal url filters for ipfire and ublock_origin\n'
@@ -1587,7 +1704,11 @@ print(
 
 # <open file7_out file and write header>
 
-file7_out = open(file7_out_name, 'w', encoding='UTF-8')
+file7_out = open(
+    file7_out_name,
+    'w',
+    encoding='UTF-8'
+)
 
 file7_out.write(
       '! description: personal filters for ublock_origin (excepting domains)\n'
