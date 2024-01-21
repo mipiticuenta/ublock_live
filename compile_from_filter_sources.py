@@ -61,7 +61,7 @@ try:
         proxies = proxy_servers
     )                                                                           # <test direct connection to internet />
 except:
-    print('Using local proxy')
+    print('Using local proxy\n')
     proxy_servers  = local_proxy                                                # <switch to local proxy />
 
 # </test direct connection to internet>
@@ -90,7 +90,7 @@ i     = 1                                                                       
 
 for line in list1 :
     print(
-        '\nreading source',
+        'reading source',
         '{:3.0f}'.format(i),
         '/',
         len(list1),
@@ -1153,7 +1153,7 @@ print(
     'filters kept'
 )
 
-print('20/21 : apply regex_white_list rules', sep = '')
+print('20/21 : apply <regex_white_list> rules', sep = '')
 
 # <get regex white list from file, dedup, sort and clean up filters>
 
@@ -1162,15 +1162,21 @@ list9 = list(
         None,
         [
             re.sub(r'^ *!.*', '', line).strip()                                 # <remove ! comments />
-            for line in open(file9_in_name, encoding='UTF-8')
-        ]                                                                       # <populate list />
+            for line in open(
+                file9_in_name,
+                encoding='UTF-8'
+            )                                                                   # <populate list />
+        ] + [
+            ('^[_\W]*' + re.sub(r'\.', '\.', tld) + '[_\W]*$')
+            for tld in iana_tld
+        ]                                                                       # <add regex rules to enforce tld whitelisting />
     )                                                                           # <remove empty elements />
 )
 
-list9 = list9 + [
-    ('^[_\W]*' + re.sub(r'\.', '\.', tld) + '[_\W]*$')
-    for tld in iana_tld
-]                                                                               # <enforce tld whitelisting />
+#list9 = list9 + [
+#    ('^[_\W]*' + re.sub(r'\.', '\.', tld) + '[_\W]*$')
+#    for tld in iana_tld
+#]                                                                               # <generate regex rules to enforce tld whitelisting />
 
 # test
 
@@ -1178,8 +1184,14 @@ list2 = [
     line
     for pattern in tqdm.tqdm(list9)
     for line in list2
-    if not re.search(re.compile(r'' + (pattern[: -1] + '(?:\$important)?$')), line)
+    if not re.search(r'' + (pattern[: -1] + '(?:\$important)?$'), line)
 ]                                                                       # <remove filter from main list based on regex-white_list />
+
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
 # test
 
