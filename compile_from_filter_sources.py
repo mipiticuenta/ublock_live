@@ -1453,8 +1453,8 @@ list2  = set(list2) - set(list2s)
 
 list2 = [
     line
-    for line in list2
     for item in tqdm.tqdm(list2s)
+    for line in list2
     if (item != (line + '$important') and (item != (line + ',important')))
 ]
 
