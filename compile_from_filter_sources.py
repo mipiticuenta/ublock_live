@@ -4,20 +4,21 @@ Compile a single deduplicated block list from url sources
 
 # <product backlog>
 
-# <sprint #1: dedup urls/>
-# <sprint #2: apply multicore/>
-# <sprint #3: apply whitelisting to cosmetic filters/>
-# <sprint #4: check for mismatching () [] {} />
+# <sprint #1: speed up 20/21 with 2 levels list comprehension
+# <sprint #2: dedup urls/>
+# <sprint #3: apply multicore/>
+# <sprint #4: apply whitelisting to cosmetic filters/>
+# <sprint #5: check for mismatching () [] {} />
 
 # </product backlog>
+
+# <libs & settings>
 
 import math                                                                     # <math functions />
 import os                                                                       # <operating system interfaces />
 import re                                                                       # <regex capabilities />
-import requests                                                                 # <get files using url />
+import requests                                                                 # <fetch urls />
 import tqdm                                                                     # <progress bar />
-
-# <settings>
 
 file1_in_name  = 'filter_sources'
 file2_out_name = 'compiled_block_list'
@@ -27,10 +28,10 @@ file5_out_name = 'ipfire_regex_block_list'
 file7_out_name = 'ublock_list_except_domains'
 file8_in_name  = 'domains_white_list'
 file9_in_name  = 'regex_white_list'
-proxy_servers  = {'https': '', 'http': ''}
-proxy_servers_alt  = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
+no_proxy       = {'https': '', 'http': ''}
+local_proxy    = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
 
-# </settings>
+# </ libs & settings>
 
 print(
                                                                   '\n',
@@ -51,38 +52,40 @@ print(
 
 # <test direct connection to internet>
 
+proxy_servers = no_proxy                                                          # initialize to direct connection to internet
+
 try:
     r = requests.get(
         'https://google.com',
         timeout = 5,
         proxies = proxy_servers
-    )
+    )                                                                           # <test direct connection to internet />
 except:
-    print('Using alt proxy servers.')
-    proxy_servers  = proxy_servers_alt
+    print('Using local proxy')
+    proxy_servers  = local_proxy                                                # <switch to local proxy />
 
 # </test direct connection to internet>
 
-# <get filter url sources from file, dedup and sort>
+# <get filter url sources, dedup and sort>
 
 list1 = sorted(
     list(
         filter(
             None, 
             [
-                re.sub(r'^ *!.*', '', line.strip())
+                re.sub(r'^ *!.*', '', line.strip())                             # <remove ! comments />
                 for line in open(file1_in_name, encoding='UTF-8')
-            ]                                                                   # <populate source lists and remove ! comments />
+            ]                                                                   # <populate source lists />
         )                                                                       # <remove empty elements />
     )
 )
 
-# </get filter url sources from file, dedup and sort>
+# </get filter url sources, dedup and sort>
 
 # <dump sources to list>
 
-list2 = set()                                                                   # <set() type ensures no elements' duplication />
-list5 = []                                                                      # <intialize list5 ()regex) />
+list2 = set()                                                                   # <set() type ensures deduplication />
+list5 = []                                                                      # <intialize list5 (regex) />
 i     = 1                                                                       # <counter for uncommented sources />
 
 for line in list1 :
@@ -171,6 +174,7 @@ print(' 2/21 : remove comments ')
 list2 = [re.sub(r'^ *[!\[\{].*', '', line)
     for line in list2
 ]                                                                               # <remove !comment [comment] {comment} />
+
 list2 = [re.sub(r'^ *#(?![\?\@\#]).*', '', line)
     for line in list2
 ]                                                                               # <remove #comment; preserve cosmetics and exceptions />
@@ -284,7 +288,7 @@ list2 = list(filter(None, list2))                                               
 # <segregate regex filters >
 
 list2 = [
-    re.sub(r'^/([-\.\+\~\!/\w]+)/$', r'/\1/*', line)
+    re.sub(r'^/([-\.\+\~\!\=/\w]+)/$', r'/\1/*', line)
     for line in list2
 ]                                                                               # <add trailing * for /@/ url filters (false regex) />
 
@@ -335,7 +339,7 @@ print(
     'filters kept'
 )
 
-print(' 7/21 : remove cosmetic filters (## #?) and exceptions (@@ #@) except *##:')   # <currently discarded; consider processing (future sprints?)/>
+print(' 7/21 : remove cosmetic filters (## #?) and exceptions (@@ #@) except *##:')
 
 list2 = [
     re.sub(r'^\*?\#\#(?!\:).*', '', line)
@@ -1157,9 +1161,9 @@ list9 = list(
     filter(
         None,
         [
-            re.sub(r'^ *!.*', '', line).strip()
+            re.sub(r'^ *!.*', '', line).strip()                                 # <remove ! comments />
             for line in open(file9_in_name, encoding='UTF-8')
-        ]                                                                       # <populate list removing ! comments />
+        ]                                                                       # <populate list />
     )                                                                           # <remove empty elements />
 )
 
@@ -1167,6 +1171,17 @@ list9 = list9 + [
     ('^[_\W]*' + re.sub(r'\.', '\.', tld) + '[_\W]*$')
     for tld in iana_tld
 ]                                                                               # <enforce tld whitelisting />
+
+# test
+
+list2 = [
+    line
+    for pattern in tqdm.tqdm(list9)
+    for line in list2
+    if not re.search(re.compile(r'' + (pattern[: -1] + '(?:\$important)?$')), line)
+]                                                                       # <remove filter from main list based on regex-white_list />
+
+# test
 
 for pattern in tqdm.tqdm(list9) :
     try :
@@ -1356,7 +1371,9 @@ list3 = sorted(set(list3) - set(list3s))
 
 # </preserve low level filters of white listed domains >
 
-# </remove #.@(.@) (numerical domains) and @.@ root domains from list>
+# <deflat domain filters >
+
+print('deflating domain filters, pass 1 / 2:')
 
 list3 = [
     re.sub(r'^[-\w]+\.', '', line) if (
@@ -1371,11 +1388,12 @@ list3 = [
 list3 = sorted(set(list3))
 
 print(
-    'domains list deflated, pass 1 / 2:\n'
     '       ',
     '{:,}'.format(len(list3) + len(list3s)),
-    'domains kept\n'
+    'domains kept'
     )
+
+print('deflating domain filters, pass 2 / 2:')
 
 list3 = [
     re.sub(r'^[-\w]+\.', '', line) if (
@@ -1390,12 +1408,12 @@ list3 = [
 list3 = sorted(set(list3))
 
 print(
-    'domains list deflated, pass 2 / 2:\n'
     '       ',
     '{:,}'.format(len(list3) + len(list3s)),
-    'domains kept\n'
+    'domains kept'
     )
 
+# </deflat domain filters >
 
 #         ## <filter() + map() option>
 #         #list3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3_filter))) == 0) else '', tqdm.tqdm(list3)))
@@ -1464,7 +1482,7 @@ print(
 
 print('Added generic filters and exceptions\n')
 
-list2.append('/^([-\w]+\.)*[-_0-9]+\.[a-z]+(\.[a-z]+)?//')    # <add filter to block [-_/\.0-9]+\.[a-z]+ domains />
+list2.append('/^(?:[-\w]+\.)*[-_0-9]+\.[a-z]+(\.[a-z]+)?//')    # <add filter to block [-_/\.0-9]+\.[a-z]+ domains />
 list2.append('/^go\./$important')
 list2.append('/^s?metrics?\./$important')
 
