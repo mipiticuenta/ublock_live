@@ -145,7 +145,8 @@ print(
                         '\n',
     '--------------------\n',
     'Transforming filters\n',
-    '--------------------\n'
+    '--------------------\n',
+    sep = ''
 )
 
 # <transforming loop>
@@ -1238,7 +1239,6 @@ file5_out.write(
 
 file5_out.writelines(line + '\n' for line in list5)
 file5_out.close()
-del(list5)
 
 print(
     '\n',
