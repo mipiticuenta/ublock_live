@@ -1267,10 +1267,6 @@ print(
 
 # <segregate domains from list >
 
-#for tld in tqdm.tqdm(iana_tld):
-#    pattern_3 = re.compile(r'' + ('^[-\.\w]+\.' + tld + '(?:\$important)?$'))
-#    list3 = list3 + [line for line in list2 if pattern_3.search(line)]          # <get (@.)+tld domains />
-
 list3 = [
     re.sub(r'\$important$', '', line)
     for line in list2
@@ -1331,7 +1327,7 @@ print(
 # <remove L5+ domains >
 
 list3 = [
-    re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line)
+    re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line)                # <remove L5+ domains />
     for line in list3
 ]
 
@@ -1350,20 +1346,10 @@ print(
 
 print('Preserving low level filters of white listed domains\n', sep = '')
 
-#list3s = []
-
-#for white_listed in tqdm.tqdm(list8):
-#    pattern_wl = re.compile(r'' + ('^[-\.\w]+\.' + white_listed + '$'))
-#    list3s = list3s + [
-#        line
-#        for line in list3
-#        if pattern_wl.search(line)
-#    ]
-
 list3s = [
     line
     for line in list3
-    if (re.sub(r'^(?:[-\w]+\.)+', '', line) in tqdm.tqdm(list8))
+    if (re.sub(r'^([-\w]+\.)+', '', line) in tqdm.tqdm(list8))
 ]                                                                               # <get (@.)+tld domains, removing trailing $important />
 
 list3 = sorted(set(list3) - set(list3s))
@@ -1373,7 +1359,11 @@ list3 = sorted(set(list3) - set(list3s))
 # </remove #.@(.@) (numerical domains) and @.@ root domains from list>
 
 list3 = [
-    re.sub(r'^[-\w]+\.', '', line) if (re.sub(r'^[-\w]+\.', '', line) not in iana_tld)
+    re.sub(r'^[-\w]+\.', '', line) if ()
+        (re.sub(r'^[-\w]+\.', '', line) not in iana_tld)
+        and
+        (re.sub(r'^[-\w]+\.', '', line) not in list8)
+    )
     else line
     for line in list3
 ]
@@ -1388,7 +1378,11 @@ print(
     )
 
 list3 = [
-    re.sub(r'^[-\w]+\.', '', line) if (re.sub(r'^[-\w]+\.', '', line) not in iana_tld)
+    re.sub(r'^[-\w]+\.', '', line) if (
+        (re.sub(r'^[-\w]+\.', '', line) not in iana_tld)
+        and
+        (re.sub(r'^[-\w]+\.', '', line) not in list8)
+    )
     else line
     for line in list3
 ]
