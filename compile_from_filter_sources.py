@@ -305,6 +305,13 @@ list5 = [
 
 list2  = set(list2) - set(list5)
 
+list5 = sorted(
+    [
+        re.sub(r'\$important$', '', line)[1: -1]                                # <remove / markers used by ublock syntax for regex />
+        for line in list5
+    ]
+)                                                                               # <remove trailing $important, dedup and sort />
+
 # </segregate regex filters >
 
 print(
@@ -1217,16 +1224,9 @@ file5_out.write(
 
 # </open file5_out file and write header>
 
-list5s = sorted(
-    [
-        re.sub(r'\$important$', '', line)[1: -1]                                # <remove / markers used bu ublock syntax for regex />
-        for line in list5
-    ]
-)                                                                               # <remove trailing $important, dedup and sort />
-
-file5_out.writelines(line + '\n' for line in list5s)
+file5_out.writelines(line + '\n' for line in list5)
 file5_out.close()
-del(list5s)
+del(list5)
 
 print(
     '\n',
@@ -1245,7 +1245,6 @@ print('21/21 : deflat url filters redundant with regex filters', sep = '')
 # <remove url filters covered by regex filters>
 
 for pattern in tqdm.tqdm(list5):
-    pattern = re.sub(r'\$important$', '', pattern)[1: -1]
     try :
         pattern = re.compile(r'' + pattern)                                     # < create regex pattern for faster processing />
         list2 = [
