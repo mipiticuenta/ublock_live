@@ -1165,7 +1165,7 @@ list9 = list(
             for line in open(
                 file9_in_name,
                 encoding='UTF-8'
-            )                                                                   # <populate list />
+            )                                                                   # <populate regex white list />
         ] + [
             ('^[_\W]*' + re.sub(r'\.', '\.', tld) + '[_\W]*$')
             for tld in iana_tld
@@ -1173,19 +1173,26 @@ list9 = list(
     )                                                                           # <remove empty elements />
 )
 
-#list9 = list9 + [
-#    ('^[_\W]*' + re.sub(r'\.', '\.', tld) + '[_\W]*$')
-#    for tld in iana_tld
-#]                                                                               # <generate regex rules to enforce tld whitelisting />
-
 # test
 
-list2 = [
-    line
-    for pattern in tqdm.tqdm(list9)
-    for line in list2
-    if not re.search(r'' + (pattern[: -1] + '(?:\$important)?$'), line)
-]                                                                       # <remove filter from main list based on regex-white_list />
+#list2 = [
+#    line
+#    for pattern in tqdm.tqdm(list9)
+#    for line in list2
+#    if not re.search(r'' + pattern[: -1] + '(?:\$important)?$', line)
+#]                                                                               # <remove filters based on <regex-white_list> />
+
+list3 = list(
+    map(
+        lambda line: line if (
+            len(list(filter(
+                lambda pattern: re.search(r'' + pattern[: -1] + '(?:\$important)?$', line), list9
+                ))) == 0
+        ) 
+        else '',
+        tqdm.tqdm(list2)
+    )
+)
 
 print(
     '       ',
@@ -1194,6 +1201,7 @@ print(
 )
 
 # test
+
 
 for pattern in tqdm.tqdm(list9) :
     try :
@@ -1429,7 +1437,7 @@ print(
 
 #         ## <filter() + map() option>
 #         #list3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3_filter))) == 0) else '', tqdm.tqdm(list3)))
-#         #list3 = [line for line in list3 if len(line) > 0]    # <cleanup empty lines/>
+#         #list3 = [line for line in list3 if line]    # <cleanup empty lines/>
 #         ## </filter() + map() option>
 
 #         ## <filter() + list comprehension option; may worth it a benchmark vs map()?>
