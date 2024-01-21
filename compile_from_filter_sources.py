@@ -264,16 +264,6 @@ list2 = [
 ]                                                                               # <remove http:/* />
 
 list2 = [
-    re.sub(r',?path=.*', '', line)
-    for line in list2
-]                                                                               # <remove (,)path=.* />
-
-list2 = [
-    re.sub(r',?replace=.*', '', line)
-    for line in list2
-]                                                                               # <remove (,)replace=.* />
-
-list2 = [
     re.sub(r'[\\^]', '', line) if re.search(r'^\|{1, 2}[-\w]+\^.*$', line)
     else line
     for line in list2
@@ -421,8 +411,17 @@ print(
     'filters kept'
 )
 
-print(' 9/21 : remove domain= denyallow= and keep the related domains')
+print(' 9/21 : clean path=, replace=; remove domain= denyallow= and keep the related domains')
 
+list2 = [
+    re.sub(r',?path=.*', '', line)
+    for line in list2
+]                                                                               # <remove (,)path=.* />
+
+list2 = [
+    re.sub(r',?replace=.*', '', line)
+    for line in list2
+]                                                                               # <remove (,)replace=.* />
 
 list2s = [
     line
