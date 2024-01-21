@@ -318,13 +318,6 @@ list5 = [
 
 list2  = set(list2) - set(list5)
 
-list5 = sorted(
-    [
-        re.sub(r'\$important$', '', line)[1: -1]                                # <remove / markers used by ublock syntax for regex />
-        for line in list5
-    ]
-)                                                                               # <remove trailing $important, dedup and sort />
-
 # </segregate regex filters >
 
 print(
@@ -1203,7 +1196,11 @@ for pattern in tqdm.tqdm(list9) :
         list5 = [
             line
             for line in list5
-            if (not(pattern.search(line)) and re.search(r'\w+', line))
+            if (
+                not(pattern.search(re.sub(r'\$important$', '', line)[1: -1])) 
+                and 
+                re.search(r'\w+', re.sub(r'\$important$', '', line)[1: -1])
+            )
         ]                                                                       # <remove text-only regex filters based on <regex-white_list> />
     except :
         print('Error: check for ' + pattern + ' pattern in regex_white_list')
@@ -1258,7 +1255,7 @@ print('21/21 : deflat url filters redundant with regex filters', sep = '')
 
 for pattern in tqdm.tqdm(list5):
     try :
-        pattern = re.compile(r'' + pattern)                                     # < create regex pattern for faster processing />
+        pattern = re.compile(r'' + re.sub(r'\$important$', '', pattern)[1: -1]) # < create regex pattern for faster processing />
         list2 = [
             line
             for line in list2
