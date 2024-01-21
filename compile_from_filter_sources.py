@@ -1431,9 +1431,10 @@ del(list3s)                                                                     
 list2 = sorted(set(list2) | set(list3))                                         # <joint list2, list3 />
 
 print(
+    '       ',
     '{:,}'.format(len(list2)),
-    'filters remaining after compilation'
-)
+    'filters kept'
+    )
 
 # <dedup filter if filter$important is present >
 
@@ -1457,7 +1458,10 @@ list2 = [
 list2 = sorted(set(list2) | set(list2s))                                        # <aggregate lists />
 del(list2s)
 
-print()
+print(
+    '{:,}'.format(len(list2)),
+    'filters remaining after compilation'
+)
 
 # </dedup filter if filter$important is present >
 
