@@ -104,7 +104,7 @@ for line in list1 :
     if (response.status_code) :
         list2.update(response.text.split('\n'))
         print(
-            '                          ',
+            '                         ',
             '{:,}'.format(len(list2)),
             'cumulated filters'
         )
@@ -135,15 +135,17 @@ iana_tld = sorted(
     )
 )
 
-print('\n IANA top level domains (TLD) list loaded')
+print('\nIANA top level domains (TLD) list loaded')
 
 # </load iana tld >
 
 # <process filter list>
 
 print(
-    '\nApplying transforming filters\n',
-    '-----------------------------\n'
+                        '\n',
+    '--------------------\n',
+    'Transforming filters\n',
+    '--------------------\n'
 )
 
 # <transforming loop>
@@ -1201,9 +1203,9 @@ for pattern in tqdm.tqdm(list9) :
             line
             for line in list5
             if (not(pattern.search(line)) and re.search(r'\w+', line))
-        ]                                                                       # <remove only regex filters based on <regex-white_list> />
+        ]                                                                       # <remove text-only regex filters based on <regex-white_list> />
     except :
-        print('Error found; check for ' + pattern + ' pattern in regex_white_list')
+        print('Error: check for ' + pattern + ' pattern in regex_white_list')
 
 list2 = list(filter(None, list2))                                               # <remove empty elements />
 
@@ -1282,6 +1284,8 @@ print(
 
 # <segregate domains from list >
 
+print('listing domain filters :'
+
 list3 = [
     re.sub(r'\$important$', '', line)
     for line in list2
@@ -1305,7 +1309,6 @@ list3 = [
 list3 = sorted(set(list3) - set(iana_tld))                                      # <remove IANA tld root domains />
 
 print(
-    'domain filters listed:\n'
     '       ',
     '{:,}'.format(len(list3)),
     'domains kept\n'
@@ -1363,8 +1366,8 @@ print('Preserving low level filters of white listed domains\n', sep = '')
 
 list3s = [
     line
-    for line in list3
-    if (re.sub(r'^([-\w]+\.)+', '', line) in tqdm.tqdm(list8))
+    for line in tqdm.tqdm(list3)
+    if (re.sub(r'^([-\w]+\.)+', '', line) in list8)
 ]                                                                               # <get (@.)+tld domains, removing trailing $important />
 
 list3 = sorted(set(list3) - set(list3s))
