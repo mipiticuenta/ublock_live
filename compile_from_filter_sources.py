@@ -135,6 +135,13 @@ iana_tld = sorted(
     )
 )
 
+iana_sld = iana_tld + [
+    (sld + '.' + tld)
+    for sld in ['ac' ,'co', 'com', 'edu', 'net', 'org']
+    for tld in iana_tld
+    if len(tld) == 2
+]                                                                               # <frequent slds combined with tlds />
+
 print('\nIANA top level domains (TLD) list loaded')
 
 # </load iana tld >
@@ -217,7 +224,7 @@ print(
     'filters kept'
 )
 
-print(' 4/21 : remove items containing % about: $badfilter localhost; remove http: IP4 IP6 :port/ ')
+print(' 4/21 : remove items containing % about: $badfilter localhost; remove http: IP4 IP6 :port/; clean replace=, path= ')
 
 list2 = [
     line
@@ -268,6 +275,16 @@ list2 = [
     else line
     for line in list2
 ]                                                                               # <remove || ^ from abp syntax ||domain^ />
+
+list2 = [
+    re.sub(r',?path=.*$', '', line)
+    for line in list2
+]                                                                               # <remove (,)path=.* />
+
+list2 = [
+    re.sub(r',?replace=.*$', '', line)
+    for line in list2
+]                                                                               # <remove (,)replace=.* />
 
 list2 = list(filter(None, list2))                                               # <remove empty elements />
 
@@ -411,17 +428,7 @@ print(
     'filters kept'
 )
 
-print(' 9/21 : clean path=, replace=; remove domain= denyallow= and keep the related domains')
-
-list2 = [
-    re.sub(r',?path=.*$', '', line)
-    for line in list2
-]                                                                               # <remove (,)path=.* />
-
-list2 = [
-    re.sub(r',?replace=.*$', '', line)
-    for line in list2
-]                                                                               # <remove (,)replace=.* />
+print(' 9/21 : remove domain= denyallow= and keep the related domains')
 
 list2s = [
     line
@@ -1179,8 +1186,8 @@ list9 = list(
             )                                                                   # <populate <regex_white_list> />
         ] + [
             ('^[_\W]*' + re.sub(r'\.', '\.', tld) + '[_\W]*$')
-            for tld in iana_tld
-        ]                                                                       # <add regex rules to enforce tld whitelisting />
+            for tld in iana_sld
+        ]                                                                       # <add regex rules to enforce sld whitelisting />
     )                                                                           # <remove empty elements />
 )
 
@@ -1302,7 +1309,7 @@ list3 = [
     for line in list3
 ]                                                                               # <remove numerical low levels from domains and preceding . />
 
-list3 = sorted(set(list3) - set(iana_tld))                                      # <remove IANA tld root domains />
+list3 = sorted(set(list3) - set(iana_sld))                                      # <remove IANA sld root domains />
 
 print(
     '       ',
@@ -1376,7 +1383,7 @@ print('\ndeflating domain filters, pass 1 / 2:')
 
 list3 = [
     re.sub(r'^[-\w]+\.', '', line) if (
-        (re.sub(r'^[-\w]+\.', '', line) not in iana_tld)
+        (re.sub(r'^[-\w]+\.', '', line) not in iana_sld)
         and
         (re.sub(r'^[-\w]+\.', '', line) not in list8)
     )
@@ -1396,7 +1403,7 @@ print('deflating domain filters, pass 2 / 2:')
 
 list3 = [
     re.sub(r'^[-\w]+\.', '', line) if (
-        (re.sub(r'^[-\w]+\.', '', line) not in iana_tld)
+        (re.sub(r'^[-\w]+\.', '', line) not in iana_sld)
         and
         (re.sub(r'^[-\w]+\.', '', line) not in list8)
     )

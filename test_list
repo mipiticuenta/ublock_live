@@ -1,2 +1,6 @@
 hits.ondacero.es
 sibbo.net
+
+! next batch
+*$removeparam=/^((?!formats|profile).)*$/,badfilter
+*$removeparam=/^((?!smil|formats).)*$/,badfilter
