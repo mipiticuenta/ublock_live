@@ -4,7 +4,6 @@ Compile a single deduplicated block list from url sources
 
 # <product backlog>
 
-# <sprint #1: speed up 20/21 with 2 levels list comprehension
 # <sprint #2: dedup urls/>
 # <sprint #3: apply multicore/>
 # <sprint #4: apply whitelisting to cosmetic filters/>
@@ -1173,30 +1172,6 @@ list9 = list(
     )                                                                           # <remove empty elements />
 )
 
-# test
-
-list2 = list(
-    map(
-        lambda pattern: line if (
-            len(list(filter(
-                lambda line: re.search(re.compile(r'' + (pattern[: -1] + '(?:\$important)?$')), line),
-                list2
-            ))) == 0
-        ) 
-        else '',
-        tqdm.tqdm(list9)
-    )
-)
-
-print(
-    '       ',
-    '{:,}'.format(len(list2) + len(list5)),
-    'filters kept'
-)
-
-# test
-
-
 for pattern in tqdm.tqdm(list9) :
     try :
         pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
@@ -1208,10 +1183,12 @@ for pattern in tqdm.tqdm(list9) :
         list5 = [
             line
             for line in list5
-            if not(pattern.search(line))
-        ]                                                                       # <remove filter from regex list based on regex-white_list />
+            if (not(pattern.search(line)) and re.search(r'\w+', line))
+        ]                                                                       # <remove only regex filters based on <regex-white_list> />
     except :
         print('Error found; check for ' + pattern + ' pattern in regex_white_list')
+
+list2 = list(filter(None, list2))                                               # <remove empty elements />
 
 # </get regex white list from file, dedup, sort and clean up filters>
 
@@ -1242,7 +1219,7 @@ file5_out.write(
 
 list5s = sorted(
     [
-        re.sub(r'\$important$', '', line)[1: -1]
+        re.sub(r'\$important$', '', line)[1: -1]                                # <remove / markers used bu ublock syntax for regex />
         for line in list5
     ]
 )                                                                               # <remove trailing $important, dedup and sort />
