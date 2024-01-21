@@ -4,10 +4,10 @@ Compile a single deduplicated block list from url sources
 
 # <product backlog>
 
-# <sprint #2: dedup urls/>
-# <sprint #3: apply multicore/>
-# <sprint #4: apply whitelisting to cosmetic filters/>
-# <sprint #5: check for mismatching () [] {} />
+    # <sprint #2: dedup urls/>
+    # <sprint #3: apply multicore/>
+    # <sprint #4: apply whitelisting to cosmetic filters/>
+    # <sprint #5: check for mismatching () [] {} />
 
 # </product backlog>
 
@@ -204,10 +204,10 @@ list2 = [re.sub(r'^\:+1 ', '', line)
 ]                                                                               # <remove leading ::1 (dns style filter) />
 
 list2 = [
-    line[2:-1] if re.search(r'^\|\|[-\.\w]+\^$', line)
+    re.sub(r'[\|\^]', '', line) if re.search(r'^\|{1, 2}[-\.\w]+\^$', line)
     else line
     for line in list2
-]                                                                               # cleanup abp style domains />
+]                                                                               # <remove || ^ from abp syntax ||domain^ />
 
 list2 = list(filter(None, list2))                                               # <remove empty elements />
 
@@ -264,10 +264,10 @@ list2 = [
 ]                                                                               # <remove http:/* />
 
 list2 = [
-    re.sub(r'[\\^]', '', line) if re.search(r'^\|{1, 2}[-\w]+\^.*$', line)
+    re.sub(r'[\|\^]', '', line) if re.search(r'^\|{1, 2}[-\.\w]+\^.*$', line)
     else line
     for line in list2
-]                                                                               # <remove || ^ from ||domain^ />
+]                                                                               # <remove || ^ from abp syntax ||domain^ />
 
 list2 = list(filter(None, list2))                                               # <remove empty elements />
 
@@ -414,12 +414,12 @@ print(
 print(' 9/21 : clean path=, replace=; remove domain= denyallow= and keep the related domains')
 
 list2 = [
-    re.sub(r',?path=.*', '', line)
+    re.sub(r',?path=.*$', '', line)
     for line in list2
 ]                                                                               # <remove (,)path=.* />
 
 list2 = [
-    re.sub(r',?replace=.*', '', line)
+    re.sub(r',?replace=.*$', '', line)
     for line in list2
 ]                                                                               # <remove (,)replace=.* />
 
@@ -1261,7 +1261,7 @@ for pattern in tqdm.tqdm(list5):
             if not(pattern.search(' ' + line + ' '))
         ]
     except :
-        print('Error found; check for ' + pattern + ' regex pattern in url sources')
+        print('Error: check for ' + pattern + ' regex pattern in url sources')
 
 # </remove url filters covered by regex filters>
 
@@ -1280,7 +1280,7 @@ print(
 
 # <segregate domains from list >
 
-print('listing domain filters :')
+print('\nListing domain filters :')
 
 list3 = [
     re.sub(r'\$important$', '', line)
@@ -1307,7 +1307,7 @@ list3 = sorted(set(list3) - set(iana_tld))                                      
 print(
     '       ',
     '{:,}'.format(len(list3)),
-    'domains kept\n'
+    'domains kept'
     )
 
 # </segregate domains from list >
@@ -1333,7 +1333,7 @@ print(
     'domains white list applied:\n'
     '       ',
     '{:,}'.format(len(list3)),
-    'domains kept\n'
+    'domains kept'
     )
 
 # </get domains white list from file, dedup, sort and substract from domains filters>
@@ -1351,14 +1351,14 @@ print(
     'L5+ domains removed:\n',
     '       ',
     '{:,}'.format(len(list3)),
-    'domains kept\n'
+    'domains kept'
     )
 
 # </remove L5+ domains >
 
 # <preserve low level filters of white listed domains >
 
-print('Preserving low level filters of white listed domains\n', sep = '')
+print('\npreserving low level filters of white listed domains', sep = '')
 
 list3s = [
     line
@@ -1372,7 +1372,7 @@ list3 = sorted(set(list3) - set(list3s))
 
 # <deflat domain filters >
 
-print('deflating domain filters, pass 1 / 2:')
+print('\ndeflating domain filters, pass 1 / 2:')
 
 list3 = [
     re.sub(r'^[-\w]+\.', '', line) if (
@@ -1432,12 +1432,12 @@ list2 = sorted(set(list2) | set(list3))                                         
 
 print(
     '{:,}'.format(len(list2)),
-    'filters remaining after compilation\n'
+    'filters remaining after compilation'
 )
 
 # <dedup filter if filter$important is present >
 
-print('\nDedup filter if filter($|,)important is present', sep = '')
+print('dedup filter if filter($|,)important present', sep = '')
 
 list2s = [
     line
