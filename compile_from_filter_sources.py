@@ -138,9 +138,9 @@ list3 = [
     re.sub(r'\$important$', '', line)
     for line in list3
     if
-        (re.sub(r'^([-\w]+\.(?=\w+$))*', '', re.sub(r'\$important$', '', line)) in iana_tld) 
+        (re.sub(r'^([-\w]*\.)*(?=\w+$)', '', re.sub(r'\$important$', '', line)) in iana_tld) 
     or
-        (re.sub(r'^([-\w]+\.(?=\w+\.\w+$))*', '', re.sub(r'\$important$', '', line)) in iana_tld)
+        (re.sub(r'^([-\w]*\.)*(?=\w+\.\w+$)', '', re.sub(r'\$important$', '', line)) in iana_tld)
 ]                                                                               # <get (@.)+tld domains, removing trailing $important />
 
 print(
