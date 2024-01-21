@@ -1182,15 +1182,15 @@ list9 = list(
 #    if not re.search(r'' + pattern[: -1] + '(?:\$important)?$', line)
 #]                                                                               # <remove filters based on <regex-white_list> />
 
-list3 = list(
+list2 = list(
     map(
-        lambda line: line if (
+        lambda pattern: line if (
             len(list(filter(
-                lambda pattern: re.search(r'' + pattern[: -1] + '(?:\$important)?$', line), list9
+                lambda line: re.search(r'' + pattern[: -1] + '(?:\$important)?$', line), list2
                 ))) == 0
         ) 
         else '',
-        tqdm.tqdm(list2)
+        tqdm.tqdm(list9)
     )
 )
 
