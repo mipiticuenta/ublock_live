@@ -1284,7 +1284,7 @@ print(
 
 # <segregate domains from list >
 
-print('listing domain filters :'
+print('listing domain filters :')
 
 list3 = [
     re.sub(r'\$important$', '', line)
