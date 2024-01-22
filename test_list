@@ -1,6 +1,7 @@
-hits.ondacero.es
-sibbo.net
-
-! next batch
-*$removeparam=/^((?!formats|profile).)*$/,badfilter
-*$removeparam=/^((?!smil|formats).)*$/,badfilter
+/.*removeparam=.*formats.*/
+/ue-lives-summary.js
+/ue-utils.js
+/ue-ajax.js
+only=script
+/wp-rocket/
+/pb.min.js
