@@ -190,9 +190,10 @@ def f_01_21(list_):
     return list_
 
 pool = ThreadPool(4)                                                            # <make the pool of workers />
-list2 = pool.map(f_01_21, list2)                                                # <execute function by multithreading />
+list__ = pool.map(f_01_21, list2)                                                # <execute function by multithreading />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
+list2 = list__
 
 print(
     '       ',
