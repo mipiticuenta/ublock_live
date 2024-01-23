@@ -18,7 +18,7 @@ import os                                                                       
 import re                                                                       # <regex capabilities />
 import requests                                                                 # <fetch urls />
 import tqdm                                                                     # <progress bar />
-from multiprocessing.dummy import Pool as ThreadPool                            # <multithreading function/>
+from multiprocessing import Pool as ThreadPool                                  # <multithreading function/>
 
 file1_in_name  = 'filter_sources'
 file2_out_name = 'compiled_block_list'
@@ -189,11 +189,11 @@ def f_01_21(list_):
 
     return list_
 
-pool = ThreadPool(4)                                                            # <make the pool of workers />
-list__ = pool.map(f_01_21, list2)                                                # <execute function by multithreading />
+pool = ThreadPool()                                                            # <make the pool of workers />
+list2 = pool.map(f_01_21, list2)                                                # <execute function by multithreading />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
-list2 = list__
+
 
 print(
     '       ',
