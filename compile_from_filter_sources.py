@@ -18,6 +18,7 @@ import os                                                                       
 import re                                                                       # <regex capabilities />
 import requests                                                                 # <fetch urls />
 import tqdm                                                                     # <progress bar />
+from multiprocessing.dummy import Pool as ThreadPool                            # <multithreading function/>
 
 file1_in_name  = 'filter_sources'
 file2_out_name = 'compiled_block_list'
@@ -160,17 +161,28 @@ print(
 
 print(' 1/21 : remove leading/trailing/dup spaces ')
 
-list2 = [
-    re.sub(r'\t', ' ', line)
-    for line in list2
-]                                                                               # <replace tab with space  />
+pool = ThreadPool(4)                                                            # <make the pool of workers />
 
-list2 = [
-    re.sub(r' +', ' ', line).strip()
-    for line in list2
-]                                                                               # <dedup spaces and remove leading/trailing spaces />
+def 01_21(list2):
 
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+    list2 = [
+        re.sub(r'\t', ' ', line)
+        for line in list2
+    ]                                                                               # <replace tab with space  />
+
+    list2 = [
+        re.sub(r' +', ' ', line).strip()
+        for line in list2
+    ]                                                                               # <dedup spaces and remove leading/trailing spaces />
+
+    list2 = list(filter(None, list2))                                               # <remove empty elements />
+    
+    return list2
+
+list2 = pool.map(01_21, list2)                                                  # <execute function by multithreading />
+
+pool.close()                                                                    # <#close the pool and wait for the work to finish />
+pool.join()
 
 print(
     '       ',
@@ -224,7 +236,7 @@ print(
     'filters kept'
 )
 
-print(' 4/21 : remove items containing % about: $badfilter localhost; remove http: IP4 IP6 :port/; clean replace=, transform=, path= ')
+print(' 4/21 : remove items containing % about: $badfilter localhost; remove http: IP4 IP6 :port/; clean from=, path=, replace=, transform=')
 
 list2 = [
     line
