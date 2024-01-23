@@ -173,24 +173,15 @@ print(' 1/21 : remove leading/trailing/dup spaces ')
 
 #list2 = list(filter(None, list2))                                               # <remove empty elements />
 
-def f_01_21(list_):
+def f_01_21(line):
 
-    list_ = [
-        re.sub(r'\t', ' ', line)
-        for line in list_
-    ]                                                                               # <replace tab with space  />
+    line = re.sub(r'\t', ' ', line)
+    line = re.sub(r' +', ' ', line).strip()
+    return line
 
-    list_ = [
-        re.sub(r' +', ' ', line).strip()
-        for line in list_
-    ]                                                                               # <dedup spaces and remove leading/trailing spaces />
-
-    list_ = list(filter(None, list_))                                               # <remove empty elements />
-
-    return list_
-
-pool = ThreadPool()                                                            # <make the pool of workers />
+pool = ThreadPool(4)                                                            # <make the pool of workers />
 list2 = list(pool.map(f_01_21, list2))                                                # <execute function by multithreading />
+list_ = list(filter(None, list_))                                               # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
