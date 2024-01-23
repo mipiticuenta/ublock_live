@@ -224,7 +224,7 @@ print(
     'filters kept'
 )
 
-print(' 4/21 : remove items containing % about: $badfilter localhost; remove http: IP4 IP6 :port/; clean replace=, path= ')
+print(' 4/21 : remove items containing % about: $badfilter localhost; remove http: IP4 IP6 :port/; clean replace=, transform=, path= ')
 
 list2 = [
     line
@@ -277,6 +277,11 @@ list2 = [
 ]                                                                               # <remove || ^ from abp syntax ||domain^ />
 
 list2 = [
+    re.sub(r',?from=.*$', '', line)
+    for line in list2
+]                                                                               # <remove (,)from=.* />
+
+list2 = [
     re.sub(r',?path=.*$', '', line)
     for line in list2
 ]                                                                               # <remove (,)path=.* />
@@ -285,6 +290,11 @@ list2 = [
     re.sub(r',?replace=.*$', '', line)
     for line in list2
 ]                                                                               # <remove (,)replace=.* />
+
+list2 = [
+    re.sub(r',?transform=.*$', '', line)
+    for line in list2
+]                                                                               # <remove (,)transform=.* />
 
 list2 = list(filter(None, list2))                                               # <remove empty elements />
 
