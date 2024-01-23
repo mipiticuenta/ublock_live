@@ -331,6 +331,18 @@ list5 = [
     line
     for line in list2
     if re.search(r'^/.+/(?:\$important)?$', line)
+]                                                                               # <populate regex filters/>
+
+list5 = [
+    line
+    for line in list5
+    if not(re.search(r'^/.*[\^\?]\*.*/$', line))                                # <remove wrong regex filters/>
+]
+
+list5 = [
+    line
+    for line in list5
+    if not(re.search(r'^/.*\/\$.*/$', line))                                    # <remove wrong regex filters/>
 ]
 
 list2  = set(list2) - set(list5)
