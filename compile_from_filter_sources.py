@@ -187,7 +187,7 @@ def f_01_21(list):
 
     list = list(filter(None, list))                                               # <remove empty elements />
 
-    return list2
+    return list
 
 pool = ThreadPool(4)                                                            # <make the pool of workers />
 list2 = pool.map(f_01_21, list2)                                                # <execute function by multithreading />
