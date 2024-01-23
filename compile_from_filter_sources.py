@@ -163,7 +163,7 @@ print(' 1/21 : remove leading/trailing/dup spaces ')
 
 pool = ThreadPool(4)                                                            # <make the pool of workers />
 
-def 01_21(list2):
+def f_01_21(list2):
 
     list2 = [
         re.sub(r'\t', ' ', line)
@@ -179,7 +179,7 @@ def 01_21(list2):
     
     return list2
 
-list2 = pool.map(01_21, list2)                                                  # <execute function by multithreading />
+list2 = pool.map(f_01_21, list2)                                                  # <execute function by multithreading />
 
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
