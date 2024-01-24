@@ -388,12 +388,12 @@ print(' 8/21 : split urls with $ domain=, denyallow= ')
 
 def f08(line):
 
-if re.search(r'\$.*(domain|denyallow)=', line):
-    line = re.sub(r',.*$', '', line)
-    line = (
-        re.sub(r'^.*(domain|denyallow)=', '', line).split('|') +            # <domain list part split />
-        [re.sub(r'\$.*', '', line)]                                         # <url part />
-    )
+    if re.search(r'\$.*(domain|denyallow)=', line):
+        line = re.sub(r',.*$', '', line)
+        line = (
+            re.sub(r'^.*(domain|denyallow)=', '', line).split('|') +            # <domain list part split />
+            [re.sub(r'\$.*', '', line)]                                         # <url part />
+        )
 
     return line
 
