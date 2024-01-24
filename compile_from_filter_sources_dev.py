@@ -387,9 +387,10 @@ print(' 8/21 : split urls with $ domain=, denyallow= ')
 #]                                                                               # <flatten list'/>
 
 def f08(line):
+
     if re.search(r'\$.*(domain|denyallow)=', line):
-        line = re.sub(r',.*$', '', line)
         line = re.sub(r'^.*(domain|denyallow)=', '', line).split('|') + [re.sub(r'\$.*', '', line)]     # <split domains and  url part />
+
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
