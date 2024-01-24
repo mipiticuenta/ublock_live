@@ -351,7 +351,7 @@ def f04(line):
         line = ''                                                               # <remove items containing localhost />
     if re.search(r'\:\:', line):
         line = ''                                                               # <remove IP6 addresses :: />
-    if re.search(r'^[^a-z]+$', '', line):
+    if re.search(r'^[^a-z]+$', line):
         line = ''                                                               # <remove filters comprised only by simbols and numbers (includes IP4 addresses) />
     if re.search(r'^\|{1, 2}[-\.\w]+\^.*$', line):
         line = re.sub(r'[\|\^]', '', line)                                      # <remove || ^ from abp syntax ||domain^ />
