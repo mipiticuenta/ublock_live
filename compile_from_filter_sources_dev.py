@@ -401,7 +401,6 @@ def f08(line):
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = list(pool.map(f08, list2))                                              # <execute function by multithreading />
-list2 = list(filter(None, list2))                                               # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
@@ -411,6 +410,8 @@ list2 = [
     for item in line
     if line !=[''] and item != ''
 ]                                                                               # <flatten list'/>
+
+list2 = list(filter(None, list2))                                               # <remove empty elements />
 
 list2 = sorted(set(list2))
 
