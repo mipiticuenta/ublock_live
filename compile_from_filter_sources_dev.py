@@ -408,7 +408,7 @@ list2 = [
     item
     for line in list2
     for item in line
-    if line !=[''] and item != ''
+#    if line != [''] and item != ''
 ]                                                                               # <flatten list'/>
 
 list2 = list(filter(None, list2))                                               # <remove empty elements />
