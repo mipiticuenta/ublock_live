@@ -404,8 +404,8 @@ print(' 5/21 : apply lower case except for cosmetics and regex')
 
 def f05(line):
 
-    if not(re.search(r'[#\\]', line))
-        : line = line.lower()                                                   # <apply lower case except cosmetics and regex />
+    if not(re.search(r'[#\\]', line)):
+        line = line.lower()                                                     # <apply lower case except cosmetics and regex />
     if re.search(r'^/.*\\/$', line):
         line = ''                                                               # <remove broken regex (bad termination) />
     line = re.sub(r'^/([-\.\+\~\!\=/\w]+)/$', r'/\1/*', line)                   # <add trailing * for /@/ url filters (false regex) />
