@@ -178,6 +178,7 @@ def f01(line):
 
     line = re.sub(r'\t', ' ', line)                                             # <replace tab with space  />
     line = re.sub(r' +', ' ', line).strip()                                     # <dedup spaces and remove leading/trailing spaces />
+
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -208,6 +209,7 @@ def f02(line):
 
     line = re.sub(r'^ *[!\[\{].*', '', line)                                    # <remove !comment [comment] {comment} />
     line = re.sub(r'^ *#(?![\?\@\#]).*', '', line)                              # <remove #comment; preserve cosmetics and exceptions />
+
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -251,6 +253,7 @@ def f03(line):
     line = re.sub(r'^\:+1 ', '', line)                                          # <remove leading ::1 (dns style filter) />
     if re.search(r'^\|{1, 2}[-\.\w]+\^$', line):
         line = re.sub(r'[\|\^]', '', line)                                      # <remove || ^ from abp syntax ||domain^ />
+
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -378,26 +381,48 @@ print(
 
 print(' 5/21 : apply lower case except for cosmetics and regex')
 
-list2 = [
-    line if re.search(r'[#\\]', line)
-    else line.lower()
-    for line in list2
-]                                                                               # <apply lower case except cosmetics and regex />
+#list2 = [
+#    line if re.search(r'[#\\]', line)
+#    else line.lower()
+#    for line in list2
+#]                                                                               # <apply lower case except cosmetics and regex />
 
+#list2 = list(filter(None, list2))                                               # <remove empty elements />
+
+## <segregate regex filters >
+
+#list2 = [
+#    re.sub(r'^/([-\.\+\~\!\=/\w]+)/$', r'/\1/*', line)
+#    for line in list2
+#]                                                                               # <add trailing * for /@/ url filters (false regex) />
+
+#list2 = [
+#    line
+#    for line in list2
+#    if not(re.search(r'^/.*\\/$', line))
+#]                                                                               # <remove broken regex (bad termination) />
+
+def f05(line):
+
+    if not(re.search(r'[#\\]', line))
+        : line = line.lower()                                                   # <apply lower case except cosmetics and regex />
+    if re.search(r'^/.*\\/$', line):
+        line = ''                                                               # <remove broken regex (bad termination) />
+    line = re.sub(r'^/([-\.\+\~\!\=/\w]+)/$', r'/\1/*', line)                   # <add trailing * for /@/ url filters (false regex) />
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = list(pool.map(f05, list2))                                              # <execute function by multithreading />
 list2 = list(filter(None, list2))                                               # <remove empty elements />
+pool.close()                                                                    # <#close the pool and wait for the work to finish />
+pool.join()
 
-# <segregate regex filters >
-
-list2 = [
-    re.sub(r'^/([-\.\+\~\!\=/\w]+)/$', r'/\1/*', line)
-    for line in list2
-]                                                                               # <add trailing * for /@/ url filters (false regex) />
-
-list2 = [
-    line
-    for line in list2
-    if not(re.search(r'^/.*\\/$', line))
-]                                                                               # <remove broken regex (bad termination) />
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
 list5 = [
     line
@@ -429,22 +454,36 @@ print(
 
 print(' 6/21 : generalize cosmetic filters (*##) and exceptions (*#@ *#? *@@) ')
 
-list2 = [
-    re.sub(r'^.*(?=\#[\#\?])', '*', line)
-    for line in list2
-]                                                                               # <generalize *## *#? />
+#list2 = [
+#    re.sub(r'^.*(?=\#[\#\?])', '*', line)
+#    for line in list2
+#]                                                                               # <generalize *## *#? />
 
-list2 = [
-    re.sub(r'^.*(?=[\#\@]\@)', '*', line)
-    for line in list2
-]                                                                               # <generalize *#@ *@@ />
+#list2 = [
+#    re.sub(r'^.*(?=[\#\@]\@)', '*', line)
+#    for line in list2
+#]                                                                               # <generalize *#@ *@@ />
 
-list2 = [
-    re.sub(r'^.*removeparam\=', '*$removeparam=', line)
-    for line in list2
-]                                                                               # <generalize *$removeparam />
+#list2 = [
+#    re.sub(r'^.*removeparam\=', '*$removeparam=', line)
+#    for line in list2
+#]                                                                               # <generalize *$removeparam />
 
+#list2 = list(filter(None, list2))                                               # <remove empty elements />
+
+def f06(line):
+
+    line = re.sub(r'^.*(?=\#[\#\?])', '*', line)                                # <generalize *## *#? />
+    line = re.sub(r'^.*(?=[\#\@]\@)', '*', line)                                # <generalize *#@ *@@ />
+    line = re.sub(r'^.*removeparam\=', '*$removeparam=', line)                  # <generalize *$removeparam />
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = list(pool.map(f06, list2))                                              # <execute function by multithreading />
 list2 = list(filter(None, list2))                                               # <remove empty elements />
+pool.close()                                                                    # <#close the pool and wait for the work to finish />
+pool.join()
 
 print(
     '       ',
@@ -454,22 +493,36 @@ print(
 
 print(' 7/21 : remove cosmetic filters (## #?) and exceptions (@@ #@) except *##:')
 
-list2 = [
-    re.sub(r'^\*?\#\#(?!\:).*', '', line)
-    for line in list2
-]                                                                               # <remove cosmetic filters except ##: />
+#list2 = [
+#    re.sub(r'^\*?\#\#(?!\:).*', '', line)
+#    for line in list2
+#]                                                                               # <remove cosmetic filters except ##: />
 
-list2 = [
-    re.sub(r'^\*?\#[\@|\?].*', '', line)
-    for line in list2
-]                                                                               # <remove #@ #? exceptions />
+#list2 = [
+#    re.sub(r'^\*?\#[\@|\?].*', '', line)
+#    for line in list2
+#]                                                                               # <remove #@ #? exceptions />
 
-list2 = [
-    re.sub(r'^\*?\@\@.*', '', line)
-    for line in list2
-]                                                                               # <remove @@ exceptions />
+#list2 = [
+#    re.sub(r'^\*?\@\@.*', '', line)
+#    for line in list2
+#]                                                                               # <remove @@ exceptions />
 
+#list2 = list(filter(None, list2))                                               # <remove empty elements />
+
+def f07(line):
+
+    line = re.sub(r'^\*?\#\#(?!\:).*', '', line)                                # <remove cosmetic filters except ##: />
+    line = re.sub(r'^\*?\#[\@|\?].*', '', line)                                 # <remove #@ #? exceptions />
+    line = re.sub(r'^\*?\@\@.*', '', line)                                      # <remove @@ exceptions />
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = list(pool.map(f07, list2))                                              # <execute function by multithreading />
 list2 = list(filter(None, list2))                                               # <remove empty elements />
+pool.close()                                                                    # <#close the pool and wait for the work to finish />
+pool.join()
 
 print(
     '       ',
