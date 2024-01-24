@@ -394,6 +394,8 @@ def f08(line):
             re.sub(r'^.*(domain|denyallow)=', '', line).split('|') +            # <domain list part split />
             [re.sub(r'\$.*', '', line)]                                         # <url part />
         )
+    else:
+        line
 
     return line
 
