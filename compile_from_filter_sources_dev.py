@@ -30,6 +30,7 @@ file8_in_name  = 'domains_white_list'
 file9_in_name  = 'regex_white_list'
 no_proxy       = {'https': '', 'http': ''}
 local_proxy    = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
+thr            = 4
 
 # </ libs & settings>
 
@@ -173,18 +174,17 @@ print(' 1/21 : remove leading/trailing/dup spaces ')
 
 #list2 = list(filter(None, list2))                                               # <remove empty elements />
 
-def f_01_21(line):
+def f01(line):
 
-    line = re.sub(r'\t', ' ', line)
-    line = re.sub(r' +', ' ', line).strip()
+    line = re.sub(r'\t', ' ', line)                                             # <replace tab with space  />
+    line = re.sub(r' +', ' ', line).strip()                                     # <dedup spaces and remove leading/trailing spaces />
     return line
 
-pool = ThreadPool(4)                                                            # <make the pool of workers />
-list2 = list(pool.map(f_01_21, list2))                                                # <execute function by multithreading />
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = list(pool.map(f01, list2))                                              # <execute function by multithreading />
 list2 = list(filter(None, list2))                                               # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
-
 
 print(
     '       ',
@@ -194,15 +194,27 @@ print(
 
 print(' 2/21 : remove comments ')
 
-list2 = [re.sub(r'^ *[!\[\{].*', '', line)
-    for line in list2
-]                                                                               # <remove !comment [comment] {comment} />
+#list2 = [re.sub(r'^ *[!\[\{].*', '', line)
+#    for line in list2
+#]                                                                               # <remove !comment [comment] {comment} />
 
-list2 = [re.sub(r'^ *#(?![\?\@\#]).*', '', line)
-    for line in list2
-]                                                                               # <remove #comment; preserve cosmetics and exceptions />
+#list2 = [re.sub(r'^ *#(?![\?\@\#]).*', '', line)
+#    for line in list2
+#]                                                                               # <remove #comment; preserve cosmetics and exceptions />
 
+#list2 = list(filter(None, list2))                                               # <remove empty elements />
+
+def f02(line):
+
+    line = re.sub(r'^ *[!\[\{].*', '', line)                                    # <remove !comment [comment] {comment} />
+    line = re.sub(r'^ *#(?![\?\@\#]).*', '', line)                              # <remove #comment; preserve cosmetics and exceptions />
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = list(pool.map(f02, list2))                                              # <execute function by multithreading />
 list2 = list(filter(None, list2))                                               # <remove empty elements />
+pool.close()                                                                    # <#close the pool and wait for the work to finish />
+pool.join()
 
 print(
     '       ',
@@ -212,25 +224,40 @@ print(
 
 print(' 3/21 : clean dns/domain filters ')
 
-list2 = [re.sub(r'^0\.0\.0\.0 ', '', line)
-    for line in list2
-]                                                                               # <remove leading 0.0.0.0 (dns style filter) />
+#list2 = [re.sub(r'^0\.0\.0\.0 ', '', line)
+#    for line in list2
+#]                                                                               # <remove leading 0.0.0.0 (dns style filter) />
 
-list2 = [re.sub(r'^127\.0\.0\.1 ', '', line)
-    for line in list2
-]                                                                               # <remove leading 127.0.0.1 (dns style filter) />
+#list2 = [re.sub(r'^127\.0\.0\.1 ', '', line)
+#    for line in list2
+#]                                                                               # <remove leading 127.0.0.1 (dns style filter) />
 
-list2 = [re.sub(r'^\:+1 ', '', line)
-    for line in list2
-]                                                                               # <remove leading ::1 (dns style filter) />
+#list2 = [re.sub(r'^\:+1 ', '', line)
+#    for line in list2
+#]                                                                               # <remove leading ::1 (dns style filter) />
 
-list2 = [
-    re.sub(r'[\|\^]', '', line) if re.search(r'^\|{1, 2}[-\.\w]+\^$', line)
-    else line
-    for line in list2
-]                                                                               # <remove || ^ from abp syntax ||domain^ />
+#list2 = [
+#    re.sub(r'[\|\^]', '', line) if re.search(r'^\|{1, 2}[-\.\w]+\^$', line)
+#    else line
+#    for line in list2
+#]                                                                               # <remove || ^ from abp syntax ||domain^ />
 
+#list2 = list(filter(None, list2))                                               # <remove empty elements />
+
+def f03(line):
+
+    line = re.sub(r'^0\.0\.0\.0 ', '', line)                                    # <remove leading 0.0.0.0 (dns style filter) />
+    line = re.sub(r'^127\.0\.0\.1 ', '', line)                                  # <remove leading 127.0.0.1 (dns style filter) />
+    line = re.sub(r'^\:+1 ', '', line)                                          # <remove leading ::1 (dns style filter) />
+    if re.search(r'^\|{1, 2}[-\.\w]+\^$', line):
+        line = re.sub(r'[\|\^]', '', line)                                      # <remove || ^ from abp syntax ||domain^ />
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = list(pool.map(f03, list2))                                              # <execute function by multithreading />
 list2 = list(filter(None, list2))                                               # <remove empty elements />
+pool.close()                                                                    # <#close the pool and wait for the work to finish />
+pool.join()
 
 print(
     '       ',
@@ -240,77 +267,108 @@ print(
 
 print(' 4/21 : remove items containing % about: $badfilter localhost; remove http: IP4 IP6 :port/; clean from=, path=, replace=, transform=')
 
-list2 = [
-    line
-    for line in list2
-    if not(re.search(r'\%', line))
-]                                                                               # <remove items comprising % >
+#list2 = [
+#    line
+#    for line in list2
+#    if not(re.search(r'\%', line))
+#]                                                                               # <remove items comprising % >
 
-list2 = [
-    line
-    for line in list2
-    if not(re.search(r'about\:', line))
-]                                                                               # <remove items comprising about: >
+#list2 = [
+#    line
+#    for line in list2
+#    if not(re.search(r'about\:', line))
+#]                                                                               # <remove items comprising about: >
 
-list2 = [
-    line
-    for line in list2
-    if not(re.search(r'[,\$]badfilter', line))
-]                                                                               # <remove items comprising $badfilter />
+#list2 = [
+#    line
+#    for line in list2
+#    if not(re.search(r'[,\$]badfilter', line))
+#]                                                                               # <remove items comprising $badfilter />
 
-list2 = [
-    line
-    for line in list2
-    if not(re.search(r'localhost', line))
-]                                                                               # <remove items containing localhost />
+#list2 = [
+#    line
+#    for line in list2
+#    if not(re.search(r'localhost', line))
+#]                                                                               # <remove items containing localhost />
 
-list2 = [
-    re.sub(r'^[^a-z]+$', '', line)
-    for line in list2
-]                                                                               # <remove filters comprised only by simbols and numbers (includes IP4 addresses) />
+#list2 = [
+#    re.sub(r'^[^a-z]+$', '', line)
+#    for line in list2
+#]                                                                               # <remove filters comprised only by simbols and numbers (includes IP4 addresses) />
 
-list2 = [
-    line for line in list2
-    if not(re.search(r'\:\:', line))
-]                                                                               # <remove IP6 addresses :: />
+#list2 = [
+#    line for line in list2
+#    if not(re.search(r'\:\:', line))
+#]                                                                               # <remove IP6 addresses :: />
 
-list2 = [
-    re.sub(r'^\:[0-9]+/', '/', line)
-    for line in list2
-]                                                                               # <replace leading :port/ with / />
+#list2 = [
+#    re.sub(r'^\:[0-9]+/', '/', line)
+#    for line in list2
+#]                                                                               # <replace leading :port/ with / />
 
-list2 = [
-    re.sub(r'https?\:/*', '', line)
-    for line in list2
-]                                                                               # <remove http:/* />
+#list2 = [
+#    re.sub(r'https?\:/*', '', line)
+#    for line in list2
+#]                                                                               # <remove http:/* />
 
-list2 = [
-    re.sub(r'[\|\^]', '', line) if re.search(r'^\|{1, 2}[-\.\w]+\^.*$', line)
-    else line
-    for line in list2
-]                                                                               # <remove || ^ from abp syntax ||domain^ />
+#list2 = [
+#    re.sub(r'[\|\^]', '', line) if re.search(r'^\|{1, 2}[-\.\w]+\^.*$', line)
+#    else line
+#    for line in list2
+#]                                                                               # <remove || ^ from abp syntax ||domain^ />
 
-list2 = [
-    re.sub(r',?from=.*$', '', line)
-    for line in list2
-]                                                                               # <remove (,)from=.* />
+#list2 = [
+#    re.sub(r',?from=.*$', '', line)
+#    for line in list2
+#]                                                                               # <remove (,)from=.* />
 
-list2 = [
-    re.sub(r',?path=.*$', '', line)
-    for line in list2
-]                                                                               # <remove (,)path=.* />
+#list2 = [
+#    re.sub(r',?path=.*$', '', line)
+#    for line in list2
+#]                                                                               # <remove (,)path=.* />
 
-list2 = [
-    re.sub(r',?replace=.*$', '', line)
-    for line in list2
-]                                                                               # <remove (,)replace=.* />
+#list2 = [
+#    re.sub(r',?replace=.*$', '', line)
+#    for line in list2
+#]                                                                               # <remove (,)replace=.* />
 
-list2 = [
-    re.sub(r',?transform=.*$', '', line)
-    for line in list2
-]                                                                               # <remove (,)transform=.* />
+#list2 = [
+#    re.sub(r',?transform=.*$', '', line)
+#    for line in list2
+#]                                                                               # <remove (,)transform=.* />
 
+#list2 = list(filter(None, list2))                                               # <remove empty elements />
+
+def f04(line):
+
+    if re.search(r'\%', line):
+        line = ''                                                               # <remove items comprising % >
+    if re.search(r'about\:', line):
+        line = ''                                                               # <remove items comprising about: >
+    if re.search(r'[,\$]badfilter', line):
+        line = ''                                                               # <remove items comprising $badfilter />
+    if re.search(r'localhost', line):
+        line = ''                                                               # <remove items containing localhost />
+    if re.search(r'\:\:', line):
+        line = ''                                                               # <remove IP6 addresses :: />
+    if re.search(r'^[^a-z]+$', '', line):
+        line = ''                                                               # <remove filters comprised only by simbols and numbers (includes IP4 addresses) />
+    if re.search(r'^\|{1, 2}[-\.\w]+\^.*$', line):
+        line = re.sub(r'[\|\^]', '', line)                                      # <remove || ^ from abp syntax ||domain^ />
+    line = re.sub(r'^\:[0-9]+/', '/', line)                                     # <replace leading :port/ with / />
+    line = re.sub(r'https?\:/*', '', line)                                      # <remove http(s):/* />
+    line = re.sub(r',?from=.*$', '', line)                                      # <remove (,)from=.* />
+    line = re.sub(r',?path=.*$', '', line)                                      # <remove (,)path=.* />
+    line = re.sub(r',?replace=.*$', '', line)                                   # <remove (,)replace=.* />
+    line = re.sub(r',?transform=.*$', '', line)                                 # <remove (,)transform=.* />
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = list(pool.map(f04, list2))                                              # <execute function by multithreading />
 list2 = list(filter(None, list2))                                               # <remove empty elements />
+pool.close()                                                                    # <#close the pool and wait for the work to finish />
+pool.join()
 
 print(
     '       ',
