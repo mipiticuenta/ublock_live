@@ -162,18 +162,6 @@ print(
 
 print(' 1/21 : remove leading/trailing/dup spaces ')
 
-#list2 = [
-#    re.sub(r'\t', ' ', line)
-#    for line in list2
-#]                                                                               # <replace tab with space  />
-
-#list2 = [
-#    re.sub(r' +', ' ', line).strip()
-#    for line in list2
-#]                                                                               # <dedup spaces and remove leading/trailing spaces />
-
-#list2 = list(filter(None, list2))                                               # <remove empty elements />
-
 def f01(line):
 
     line = re.sub(r'\t', ' ', line)                                             # <replace tab with space  />
@@ -195,16 +183,6 @@ print(
 
 print(' 2/21 : remove comments ')
 
-#list2 = [re.sub(r'^ *[!\[\{].*', '', line)
-#    for line in list2
-#]                                                                               # <remove !comment [comment] {comment} />
-
-#list2 = [re.sub(r'^ *#(?![\?\@\#]).*', '', line)
-#    for line in list2
-#]                                                                               # <remove #comment; preserve cosmetics and exceptions />
-
-#list2 = list(filter(None, list2))                                               # <remove empty elements />
-
 def f02(line):
 
     line = re.sub(r'^ *[!\[\{].*', '', line)                                    # <remove !comment [comment] {comment} />
@@ -225,26 +203,6 @@ print(
 )
 
 print(' 3/21 : clean dns/domain filters ')
-
-#list2 = [re.sub(r'^0\.0\.0\.0 ', '', line)
-#    for line in list2
-#]                                                                               # <remove leading 0.0.0.0 (dns style filter) />
-
-#list2 = [re.sub(r'^127\.0\.0\.1 ', '', line)
-#    for line in list2
-#]                                                                               # <remove leading 127.0.0.1 (dns style filter) />
-
-#list2 = [re.sub(r'^\:+1 ', '', line)
-#    for line in list2
-#]                                                                               # <remove leading ::1 (dns style filter) />
-
-#list2 = [
-#    re.sub(r'[\|\^]', '', line) if re.search(r'^\|{1, 2}[-\.\w]+\^$', line)
-#    else line
-#    for line in list2
-#]                                                                               # <remove || ^ from abp syntax ||domain^ />
-
-#list2 = list(filter(None, list2))                                               # <remove empty elements />
 
 def f03(line):
 
@@ -269,78 +227,6 @@ print(
 )
 
 print(' 4/21 : remove items containing % about: $badfilter localhost; remove http: IP4 IP6 :port/; clean from=, path=, replace=, transform=')
-
-#list2 = [
-#    line
-#    for line in list2
-#    if not(re.search(r'\%', line))
-#]                                                                               # <remove items comprising % >
-
-#list2 = [
-#    line
-#    for line in list2
-#    if not(re.search(r'about\:', line))
-#]                                                                               # <remove items comprising about: >
-
-#list2 = [
-#    line
-#    for line in list2
-#    if not(re.search(r'[,\$]badfilter', line))
-#]                                                                               # <remove items comprising $badfilter />
-
-#list2 = [
-#    line
-#    for line in list2
-#    if not(re.search(r'localhost', line))
-#]                                                                               # <remove items containing localhost />
-
-#list2 = [
-#    re.sub(r'^[^a-z]+$', '', line)
-#    for line in list2
-#]                                                                               # <remove filters comprised only by simbols and numbers (includes IP4 addresses) />
-
-#list2 = [
-#    line for line in list2
-#    if not(re.search(r'\:\:', line))
-#]                                                                               # <remove IP6 addresses :: />
-
-#list2 = [
-#    re.sub(r'^\:[0-9]+/', '/', line)
-#    for line in list2
-#]                                                                               # <replace leading :port/ with / />
-
-#list2 = [
-#    re.sub(r'https?\:/*', '', line)
-#    for line in list2
-#]                                                                               # <remove http:/* />
-
-#list2 = [
-#    re.sub(r'[\|\^]', '', line) if re.search(r'^\|{1, 2}[-\.\w]+\^.*$', line)
-#    else line
-#    for line in list2
-#]                                                                               # <remove || ^ from abp syntax ||domain^ />
-
-#list2 = [
-#    re.sub(r',?from=.*$', '', line)
-#    for line in list2
-#]                                                                               # <remove (,)from=.* />
-
-#list2 = [
-#    re.sub(r',?path=.*$', '', line)
-#    for line in list2
-#]                                                                               # <remove (,)path=.* />
-
-#list2 = [
-#    re.sub(r',?replace=.*$', '', line)
-#    for line in list2
-#]                                                                               # <remove (,)replace=.* />
-
-#list2 = [
-#    re.sub(r',?transform=.*$', '', line)
-#    for line in list2
-#]                                                                               # <remove (,)transform=.* />
-
-#list2 = list(filter(None, list2))                                               # <remove empty elements />
 
 def f04(line):
 
@@ -380,27 +266,6 @@ print(
 )
 
 print(' 5/21 : apply lower case except for cosmetics and regex')
-
-#list2 = [
-#    line if re.search(r'[#\\]', line)
-#    else line.lower()
-#    for line in list2
-#]                                                                               # <apply lower case except cosmetics and regex />
-
-#list2 = list(filter(None, list2))                                               # <remove empty elements />
-
-## <segregate regex filters >
-
-#list2 = [
-#    re.sub(r'^/([-\.\+\~\!\=/\w]+)/$', r'/\1/*', line)
-#    for line in list2
-#]                                                                               # <add trailing * for /@/ url filters (false regex) />
-
-#list2 = [
-#    line
-#    for line in list2
-#    if not(re.search(r'^/.*\\/$', line))
-#]                                                                               # <remove broken regex (bad termination) />
 
 def f05(line):
 
@@ -448,23 +313,6 @@ print(
 
 print(' 6/21 : generalize cosmetic filters (*##) and exceptions (*#@ *#? *@@) ')
 
-#list2 = [
-#    re.sub(r'^.*(?=\#[\#\?])', '*', line)
-#    for line in list2
-#]                                                                               # <generalize *## *#? />
-
-#list2 = [
-#    re.sub(r'^.*(?=[\#\@]\@)', '*', line)
-#    for line in list2
-#]                                                                               # <generalize *#@ *@@ />
-
-#list2 = [
-#    re.sub(r'^.*removeparam\=', '*$removeparam=', line)
-#    for line in list2
-#]                                                                               # <generalize *$removeparam />
-
-#list2 = list(filter(None, list2))                                               # <remove empty elements />
-
 def f06(line):
 
     line = re.sub(r'^.*(?=\#[\#\?])', '*', line)                                # <generalize *## *#? />
@@ -486,23 +334,6 @@ print(
 )
 
 print(' 7/21 : remove cosmetic filters (## #?) and exceptions (@@ #@) except *##:')
-
-#list2 = [
-#    re.sub(r'^\*?\#\#(?!\:).*', '', line)
-#    for line in list2
-#]                                                                               # <remove cosmetic filters except ##: />
-
-#list2 = [
-#    re.sub(r'^\*?\#[\@|\?].*', '', line)
-#    for line in list2
-#]                                                                               # <remove #@ #? exceptions />
-
-#list2 = [
-#    re.sub(r'^\*?\@\@.*', '', line)
-#    for line in list2
-#]                                                                               # <remove @@ exceptions />
-
-#list2 = list(filter(None, list2))                                               # <remove empty elements />
 
 def f07(line):
 
@@ -557,12 +388,12 @@ print(' 8/21 : split urls with $ domain=, denyallow= ')
 
 def f08(line):
 
-    if re.search(r'\$.*(domain|denyallow)=', line):
-        line = re.sub(r',.*$', '', line)
-        line = (
-            re.sub(r'^.*(domain|denyallow)=', '', line).split('|') +            # <domain list part split />
-            [re.sub(r'\$.*', '', line)]                                         # <url part />
-        )
+if re.search(r'\$.*(domain|denyallow)=', line):
+    line = re.sub(r',.*$', '', line)
+    line = (
+        re.sub(r'^.*(domain|denyallow)=', '', line).split('|') +            # <domain list part split />
+        [re.sub(r'\$.*', '', line)]                                         # <url part />
+    )
 
     return line
 
@@ -578,6 +409,8 @@ list2 = [
     for item in line
     if line !=[''] and item != ''
 ]                                                                               # <flatten list'/>
+
+list2 = sorted(set(list2))
 
 print(
     '       ',
