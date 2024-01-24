@@ -559,9 +559,10 @@ def f08(line):
 
     if re.search(r'\$.*domain=', line):
         line = re.sub(r',.*$', '', line)
-        line = 
+        line = (
             re.sub(r'^.*(domain|denyallow)=', '', line).split('|') +            # <domain list part split />
             [re.sub(r'\$.*', '', line)]                                         # <url part />
+        )
 
     return line
 
