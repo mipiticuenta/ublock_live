@@ -572,18 +572,12 @@ list2 = list(filter(None, list2))                                               
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
-list2s = [
+list2 = [
     item
-    for line in list2s
+    for line in list2
     for item in line
     if line !=[''] and item != ''
 ]                                                                               # <flatten list'/>
-
-list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
-
-list2 = list(filter(None, list2))                                               # <remove empty elements />
-
-del(list2s)
 
 print(
     '       ',
