@@ -413,6 +413,14 @@ list2 = sorted(
 )
 list2 = list(filter(None, list2))                                               # <remove empty elements />
 
+filetest2_out = open(
+    'test2',
+    'w',
+    encoding='UTF-8'
+)
+filetest2_out.writelines(line + '\n' for line in list2)
+filetest2_out.close()
+
 print(
     '       ',
     '{:,}'.format(len(list2) + len(list5)),
