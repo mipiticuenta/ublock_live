@@ -464,7 +464,7 @@ def f10(line):
     line = re.sub(r'^,', '', line)                                              # <remove leading , />
     line = re.sub(r',$', '', line)                                              # <remove trailing , />
 
-    if re.search(r'^[\w\,]*\,[\w\,]*$', line)):
+    if re.search(r'^[\w\,]*\,[\w\,]*$', line):
         line = line.split(',')                                                  # <split domains />
     else:
         [line]
