@@ -411,54 +411,6 @@ print(
 
 print('10/21 : split , separated domains ')
 
-#list2   = [
-#    re.sub(r'^,', '', line).strip()
-#    for line in list2
-#]                                                                               # <remove leading , />
-
-#list2   = [
-#    re.sub(r',$', '', line).strip()
-#    for line in list2
-#    ]                                                                           # <remove trailing , />
-
-#list2s = [
-#    line
-#    for line in list2
-#    if re.search(r'\,', line)
-#]                                                                               # <remove , separated domains />
-
-#list2s = [
-#    line
-#    for line in list2s
-#    if not(re.search(r'[\$\&]', line))
-#]                                                                               # <exclude $ & filters />
-
-#list2 = set(list2) - set(list2s)                                                # <segregate removed filters'/>
-
-#list2s = [
-#    line.split(',')
-#    for line in list2s
-#]
-
-#list2s = [
-#    item
-#    for line in list2s
-#    for item in line
-#    if line !=[''] and item != ''
-#]                                                                               # <flatten list'/>
-
-#list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
-
-#list2 = list(filter(None, list2))                                               # <remove empty elements />
-
-#del(list2s)
-
-#print(
-#    '       ',
-#    '{:,}'.format(len(list2) + len(list5)),
-#    'filters kept'
-#)
-
 def f10(line):
 
     line = re.sub(r'^,', '', line)                                              # <remove leading , />
@@ -510,52 +462,78 @@ while n_1 > len(list2):                                                         
 
     print('11/21 : clean up leading symbols numbers prefix etc')
 
-    list2 = [
-        re.sub(r'www[0-9]*\.', '', line)
-        for line in list2
-    ]                                                                           # <remove www#. />
+#    list2 = [
+#        re.sub(r'www[0-9]*\.', '', line)
+#        for line in list2
+#    ]                                                                           # <remove www#. />
 
-    list2 = [
-        re.sub(r'^[_\W0-9]*(?=[/\.\$])', '', line)
-        for line in list2
-    ]                                                                           # <remove leading symbols and numbers preceding / . $ />
+#    list2 = [
+#        re.sub(r'^[_\W0-9]*(?=[/\.\$])', '', line)
+#        for line in list2
+#    ]                                                                           # <remove leading symbols and numbers preceding / . $ />
 
-    list2 = [
-        re.sub(r'^[/\.]?\w(?=[/\.\$])', '', line)
-        for line in list2
-    ]                                                                           # <remove leading single a-z0-9 char preceding / . $ />
+#    list2 = [
+#        re.sub(r'^[/\.]?\w(?=[/\.\$])', '', line)
+#        for line in list2
+#    ]                                                                           # <remove leading single a-z0-9 char preceding / . $ />
 
-    list2 = [
-        re.sub(r'^\.(?=\*)', '', line)
-        for line in list2
-    ]                                                                           # <remove leading . if followed by * />
+#    list2 = [
+#        re.sub(r'^\.(?=\*)', '', line)
+#        for line in list2
+#    ]                                                                           # <remove leading . if followed by * />
 
-    list2 = [re.sub(
-        r'^\W*(?=\$)', '*', line)
-        for line in list2
-    ]                                                                           # <replace symbol/none replace leading $ /$ .$ =$ ?$ with *$ />
+#    list2 = [re.sub(
+#        r'^\W*(?=\$)', '*', line)
+#        for line in list2
+#    ]                                                                           # <replace symbol/none replace leading $ /$ .$ =$ ?$ with *$ />
 
-    list2 = [
-        re.sub(r'^\.?[-\*\w]+/', '/', line)
-        for line in list2
-    ]                                                                           # <replace leading (.)@/ with / />
+#    list2 = [
+#        re.sub(r'^\.?[-\*\w]+/', '/', line)
+#        for line in list2
+#    ]                                                                           # <replace leading (.)@/ with / />
 
-    list2 = [
-        re.sub(r'^/\*.*[^/]', '', line)
-        for line in list2
-    ]                                                                           # <remove leading /* except for regex filters />
+#    list2 = [
+#        re.sub(r'^/\*.*[^/]', '', line)
+#        for line in list2
+#    ]                                                                           # <remove leading /* except for regex filters />
 
-    list2 = [
-        re.sub(r'^\*(?=[^\$\#])', '', line)
-        for line in list2
-    ]                                                                           # <remove leading /* except for regex filters />
+#    list2 = [
+#        re.sub(r'^\*(?=[^\$\#])', '', line)
+#        for line in list2
+#    ]                                                                           # <remove leading /* except for regex filters />
 
-    list2 = [
-        re.sub(r'^/([-\.\+\!\~/\w]+)/$', r'/\1/*', line)
-        for line in list2
-    ]                                                                           # <add trailing * for /@/ url filters (false regex) />
+#    list2 = [
+#        re.sub(r'^/([-\.\+\!\~/\w]+)/$', r'/\1/*', line)
+#        for line in list2
+#    ]                                                                           # <add trailing * for /@/ url filters (false regex) />
 
+#    list2 = list(filter(None, list2))                                           # <remove empty elements />
+
+#    print(
+#        '       ',
+#        '{:,}'.format(len(list2) + len(list5)),
+#        'filters kept'
+#    )
+
+    def f11(line):
+
+        line = re.sub(r'www[0-9]*\.', '', line)                                 # <remove www#. />
+        line = re.sub(r'^[_\W0-9]*(?=[/\.\$])', '', line)                       # <remove leading symbols and numbers preceding / . $ />
+        line = re.sub(r'^[/\.]?\w(?=[/\.\$])', '', line)                        # <remove leading single a-z0-9 char preceding / . $ />
+        line = re.sub(r'^\.(?=\*)', '', line)                                   # <remove leading . if followed by * />
+        line = re.sub(r'^\W*(?=\$)', '*', line)                                 # <replace leading symbols followed by $ (/$ .$ =$ ?$ etc) with *$ />
+        line = re.sub(r'^\.?[-\*\w]+/', '/', line)                              # <replace leading (.)@/ with / />
+        line = re.sub(r'^/\*.*[^/]', '', line)                                  # <remove leading /* except for regex filters />
+        line = re.sub(r'^\*(?=[^\$\#])', '', line)                              # <remove leading * generic $ # filters />
+        line = re.sub(r'^/([-\.\+\!\~/\w]+)/$', r'/\1/*', line)                 # <add trailing * for /@/ url filters (false regex) />
+
+        return line
+
+    pool = ThreadPool(thr)                                                      # <make the pool of workers />
+    list2 = list(pool.map(f11, list2))                                          # <execute function by multithreading />
     list2 = list(filter(None, list2))                                           # <remove empty elements />
+    pool.close()                                                                # <#close the pool and wait for the work to finish />
+    pool.join()
 
     print(
         '       ',
