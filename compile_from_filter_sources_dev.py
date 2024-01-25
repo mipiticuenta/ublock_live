@@ -361,6 +361,7 @@ def f08(line):
         line = domains_part + url_part
     else:
         [line]
+
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -490,104 +491,6 @@ while n_1 > len(list2):                                                         
 
     print('12/21 : clean up trailing symbols numbers suffix $filters etc')
 
-#    list2 = [
-#        re.sub(r'[\^\|\=]\$', '$', line).strip()
-#        for line in list2
-#    ]                                                                           # <replace ^$ |$ =$ with $ />
-
-#    list2 = [
-#        re.sub(r'\|+\$', '$', line).strip()
-#        for line in list2
-#    ]                                                                           # <replace |$ with $ />
-
-#    list2 = [
-#        re.sub(r'[#,\~\|\^\?\=\&]+$', '', line).strip()
-#        for line in list2
-#    ]                                                                           # <remove trailing # , ~ | ^ ? = & />
-
-#    list2 = [
-#        re.sub(r'(?<!/)\*$', '', line).strip()
-#        for line in list2
-#    ]                                                                           # <remove trailing * except /url/* />
-
-#    list2 = [
-#        re.sub(r'\.\*$', '.', line).strip()
-#        for line in list2
-#    ]                                                                           # <replace trailing .* with . />
-
-#    list2 = [
-#        re.sub(r'\*\.$', '', line).strip()
-#        for line in list2
-#    ]                                                                           # <remove trailing *. />
-
-#    list2 = [
-#        re.sub(r'\.cgi\??$', '.', line)
-#        for line in list2
-#    ]                                                                           # <remove trailing .cgi? />
-
-#    list2 = [
-#        re.sub(r'\.ashx\??$', '.', line)
-#        for line in list2
-#    ]                                                                           # <remove trailing .ashx? />
-
-#    list2 = [
-#        re.sub(r'\.asp\??$', '.', line)
-#        for line in list2
-#    ]                                                                           # <remove trailing .asp? />
-
-#    list2 = [
-#        re.sub(r'\.?html?\??$', '.', line)
-#        for line in list2
-#    ]                                                                           # <remove trailing .html? />
-
-#    list2 = [
-#        re.sub(r'\.jpe?g\??$', '.', line)
-#        for line in list2
-#    ]                                                                           # <remove trailing .jp(e)g? />
-
-#    list2 = [
-#        re.sub(r'\.php\??$', '.', line)
-#        for line in list2
-#    ]                                                                           # <remove trailing .php? />
-
-#    list2 = [
-#        re.sub(r'\.png\??$', '.', line)
-#        for line in list2
-#    ]                                                                           # <remove trailing .png? />
-
-#    list2 = [
-#        re.sub(r'\.svg\??$', '.', line)
-#        for line in list2
-#    ]                                                                           # <remove trailing .svg? />
-
-#    list2 = [
-#        re.sub(r'\.js\??[^\./]*$', '.js', line)
-#        for line in list2
-#    ]                                                                           # <clean up trailing .js />
-
-#    list2 = [
-#        re.sub(r'^([-\w]+)=.*$', r'\1', line)
-#        for line in list2
-#    ]                                                                           # <remove trailing .=.* />
-
-#    list2 = [
-#        re.sub(r'(^[^#]{2,})\$[-~,=a-z0-9]*$(?<!/)(?<!important)', r'\1', line)
-#        for line in list2
-#    ]                                                                           # <remove specific trailing $ filters except *$ or ending with important />
-
-#    list2 = [
-#        re.sub(r'\??\*\=.*$', '', line).strip()
-#        for line in list2
-#    ]                                                                           # <remove trailing ?*=... />
-
-#    list2 = list(filter(None, list2))                                           # <remove empty elements />
-
-#    print(
-#        '       ',
-#        '{:,}'.format(len(list2) + len(list5)),
-#        'filters kept'
-#    )
-
     def f12(line):
 
         line = re.sub(r'[\^\|\=]\$', '$', line)                                 # <replace ^$ |$ =$ with $ />
@@ -623,35 +526,69 @@ while n_1 > len(list2):                                                         
 
     print('13/21 : split domain and url ')
 
-    list2s = [
-        line
-        for line in list2
-        if re.search(r'^[-\.\w]+\.[a-z]+/.*', line)
-    ]                                                                           # <get domains with url'/>
+#    list2s = [
+#        line
+#        for line in list2
+#        if re.search(r'^[-\.\w]+\.[a-z]+/.*', line)
+#    ]                                                                           # <get domains with url'/>
 
-    list2 = set(list2) - set(list2s)                                            # <segregate removed filters'/>
+#    list2 = set(list2) - set(list2s)                                            # <segregate removed filters'/>
 
-    list2s = (
-        [
-            re.sub(r'^[-\.\w]+/', '/', line)
-            for line in list2s
-        ] +                                                                     # <isolate url part/>
-        [
-            re.sub(r'/.*$', '', line)
-            for line in list2s
-        ]                                                                       # <isolate domains part/>
+#    list2s = (
+#        [
+#            re.sub(r'^[-\.\w]+/', '/', line)
+#            for line in list2s
+#        ] +                                                                     # <isolate url part/>
+#        [
+#            re.sub(r'/.*$', '', line)
+#            for line in list2s
+#        ]                                                                       # <isolate domains part/>
+#    )
+
+#    list2 = sorted(set(list2) | set(list2s))                                    # <join retrieved domains to main list'/>
+#    
+#    list2 = [
+#        re.sub(r'^/([-\.\+\~\!/\w]+)/$', r'/\1/*', line)
+#        for line in list2
+#    ]                                                                           # <add trailing * for /@/ url filters (false regex) />
+#    
+#    list2 = list(filter(None, list2))                                           # <remove empty elements />
+
+#    del(list2s)
+
+#    print(
+#        '       ',
+#        '{:,}'.format(len(list2) + len(list5)),
+#        'filters kept'
+#    )
+
+    def f13(line):
+
+        if re.search(r'^[-\.\w]+\.[a-z]+/.*', line):
+            domain_part = [re.sub(r'/.*$', '', line)]                           # <add domain part />
+            url_part     = [re.sub(r'^[-\.\w]+/', '/', line)]                   # <add url part/>
+            line = domain_part + url_part
+        else:
+            [line]
+        
+        return line
+
+    pool = ThreadPool(thr)                                                      # <make the pool of workers />
+    list2 = list(pool.map(f13, list2))                                          # <execute function by multithreading />
+    pool.close()                                                                # <#close the pool and wait for the work to finish />
+    pool.join()
+
+    list2 = sorted(
+        set(
+            [
+                line if (type(line) == str)                                     # <prevents string atomization into chars is string type />
+                else item
+                for line in list2
+                for item in line
+            ]                                                                   # <flatten list />
+        )                                                                       # <dedup list />
     )
-
-    list2 = sorted(set(list2) | set(list2s))                                    # <join retrieved domains to main list'/>
-    
-    list2 = [
-        re.sub(r'^/([-\.\+\~\!/\w]+)/$', r'/\1/*', line)
-        for line in list2
-    ]                                                                           # <add trailing * for /@/ url filters (false regex) />
-    
     list2 = list(filter(None, list2))                                           # <remove empty elements />
-
-    del(list2s)
 
     print(
         '       ',
@@ -660,39 +597,6 @@ while n_1 > len(list2):                                                         
     )
 
     print('14/21 : clean up urls')
-
-#    list2 = [
-#        re.sub(r'\*+', '*', line).strip()
-#        for line in list2
-#    ]                                                                           # <dedup * />
-
-#    list2 = [
-#        re.sub(r'\.+', '.', line).strip()
-#        for line in list2
-#    ]                                                                           # <dedup . />
-
-#    list2 = [
-#        re.sub(r'/+', '/', line).strip()
-#        for line in list2
-#    ]                                                                           # <dedup / />
-
-#    list2 = [
-#        re.sub(r'^.*/\*/', '/', line)
-#        for line in list2
-#    ]                                                                           # <replace any url preceded by /*/ (included) with / />
-
-#    list2 = [
-#        re.sub(r'([-\./\w]+)\$(?!important)[-\,\=\.\w]*$', r'\1', line)
-#        for line in list2
-#    ]                                                                           # <remove $* tail except for *$ />
-
-#    list2 = list(filter(None, list2))                                           # <remove empty elements />
-
-#    print(
-#        '       ',
-#        '{:,}'.format(len(list2) + len(list5)),
-#        'filters kept'
-#    )
 
     def f14(line):
 
