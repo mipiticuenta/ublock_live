@@ -606,7 +606,6 @@ while n_1 > len(list2):                                                         
         line = re.sub(r'\.svg\??$', '.', line)                                  # <remove trailing .svg(?) />
         line = re.sub(r'\.js\??[^\./]*$', '.js', line)                          # <clean up trailing .js />
         line = re.sub(r'^([-\w]+)=.*$', r'\1', line)                            # <remove trailing .=.* />
-        line = re.sub(r'(^[^#]{2,})\$[-~=\,\w]*$(?<!/)(?<!important)', r'\1', line) # <remove specific trailing $ filters except *$ or ending with important />
 
         return line
 
@@ -662,32 +661,54 @@ while n_1 > len(list2):                                                         
 
     print('14/21 : clean up urls')
 
-    list2 = [
-        re.sub(r'\*+', '*', line).strip()
-        for line in list2
-    ]                                                                           # <dedup * />
+#    list2 = [
+#        re.sub(r'\*+', '*', line).strip()
+#        for line in list2
+#    ]                                                                           # <dedup * />
 
-    list2 = [
-        re.sub(r'\.+', '.', line).strip()
-        for line in list2
-    ]                                                                           # <dedup . />
+#    list2 = [
+#        re.sub(r'\.+', '.', line).strip()
+#        for line in list2
+#    ]                                                                           # <dedup . />
 
-    list2 = [
-        re.sub(r'/+', '/', line).strip()
-        for line in list2
-    ]                                                                           # <dedup / />
+#    list2 = [
+#        re.sub(r'/+', '/', line).strip()
+#        for line in list2
+#    ]                                                                           # <dedup / />
 
-    list2 = [
-        re.sub(r'^.*/\*/', '/', line)
-        for line in list2
-    ]                                                                           # <replace any url preceded by /*/ (included) with / />
+#    list2 = [
+#        re.sub(r'^.*/\*/', '/', line)
+#        for line in list2
+#    ]                                                                           # <replace any url preceded by /*/ (included) with / />
 
-    list2 = [
-        re.sub(r'([-\./\w]+)\$(?!important)[-\,\=\.\w]*$', r'\1', line)
-        for line in list2
-    ]                                                                           # <remove $* tail except for *$ />
+#    list2 = [
+#        re.sub(r'([-\./\w]+)\$(?!important)[-\,\=\.\w]*$', r'\1', line)
+#        for line in list2
+#    ]                                                                           # <remove $* tail except for *$ />
 
+#    list2 = list(filter(None, list2))                                           # <remove empty elements />
+
+#    print(
+#        '       ',
+#        '{:,}'.format(len(list2) + len(list5)),
+#        'filters kept'
+#    )
+
+    def f14(line):
+
+        line = re.sub(r'\*+', '*', line)                                        # <dedup * />
+        line = re.sub(r'\.+', '.', line)                                        # <dedup . />
+        line = re.sub(r'/+', '/', line)                                         # <dedup / />
+        line = re.sub(r'^.*/\*/', '/', line)                                    # <replace url_part/*/ with / />
+        line = re.sub(r'([-\./\w]+)\$(?!important)[-\,\=\.\w]*$', r'\1', line)  # <remove $* tail except for *$ />
+        
+        return line
+
+    pool = ThreadPool(thr)                                                      # <make the pool of workers />
+    list2 = list(pool.map(f14, list2))                                          # <execute function by multithreading />
     list2 = list(filter(None, list2))                                           # <remove empty elements />
+    pool.close()                                                                # <#close the pool and wait for the work to finish />
+    pool.join()
 
     print(
         '       ',
