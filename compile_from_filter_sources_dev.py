@@ -404,7 +404,7 @@ filetest1_out = open(
     'w',
     encoding='UTF-8'
 )
-filetest1_out.writelines(line + '\n' for line in list2)
+filetest1_out.writelines(item + '\n' for line in list2 for item in line)
 file7_out.close()
 
 list2 = [
