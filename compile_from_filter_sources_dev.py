@@ -401,22 +401,17 @@ list2 = list(pool.map(f08, list2))                                              
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
-list2 = sorted(set([
-    line if (type(line) == str)
-    else item
-    for line in list2
-    for item in line
-#    if line != [''] and item != ''
-]                                                                               # <flatten list'/>
-))
-
-filetest2_out = open(
-    'test2',
-    'w',
-    encoding='UTF-8'
+list2 = sorted(
+    set(
+        [
+            line if (type(line) == str)
+            else item
+            for line in list2
+            for item in line
+        ]                                                                       # <flatten list />
+    )                                                                           # <dedup list />
 )
-filetest2_out.writelines(line + '\n' for line in list2)
-filetest2_out.close()
+list2 = list(filter(None, list2))                                               # <remove empty elements />
 
 print(
     '       ',
