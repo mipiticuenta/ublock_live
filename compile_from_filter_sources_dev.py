@@ -390,7 +390,7 @@ def f08(line):
 
     if re.search(r'\$.*(domain|denyallow)=', line):
 #        line = re.sub(r'^.*(domain|denyallow)=', '', line).split('|') + [re.sub(r'\$.*$', '', line)]     # <split domains and  url part />
-        line = re.sub(r'^.*(domain|denyallow)=', '', line).split('|')
+        line = [re.sub(r'\$.*$', '', line)]
     else:
         line
     return line
