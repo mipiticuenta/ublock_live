@@ -402,7 +402,7 @@ pool.close()                                                                    
 pool.join()
 
 list2 = [
-    if type(line) == str:
+    if (type(line) == str):
         line
     else:
         item
