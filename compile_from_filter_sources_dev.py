@@ -401,20 +401,17 @@ list2 = list(pool.map(f08, list2))                                              
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
-filetest1_out = open(
-    'test1',
-    'w',
-    encoding='UTF-8'
-)
-filetest1_out.writelines(item + '\n' for line in list2 for item in line)
-filetest1_out.close()
-
 list2 = [
-    item
+    if type(line) == str:
+        line
+    else:
+        item
     for line in list2
     for item in line
     if line != [''] and item != ''
 ]                                                                               # <flatten list'/>
+
+list2 = sorted(set(list2))
 
 filetest2_out = open(
     'test2',
