@@ -590,39 +590,7 @@ while n_1 > len(list2):                                                         
 
 print('15/21 : split space separated domains ')
 
-#list2s = [
-#    line
-#    for line in list2
-#    if re.search(r' ', line) and not(re.search(r'[\$\@\#]', line))
-#]                                                                               # <remove space separated domains />
-
-#list2 = set(list2) - set(list2s)                                                # <segregate removed filters'/>
-
-#list2s = [
-#    line.split(' ')
-#    for line in list2s
-#]                                                                               # <flatten list'/>
-
-#list2s = [
-#    item
-#    for line in list2s
-#    for item in line
-#    if line !=[''] and item != ''
-#]                                                                               # <flatten list'/>
-
-#list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
-
-#list2 = list(filter(None, list2))                                               # <remove empty elements />
-
-#del(list2s)
-
-#print(
-#    '       ',
-#    '{:,}'.format(len(list2) + len(list5)),
-#    'filters kept'
-#)
-
-def f10(line):
+def f15(line):
 
     line = re.sub(r'^,', '', line)                                              # <remove leading , />
     line = re.sub(r',$', '', line)                                              # <remove trailing , />
@@ -635,7 +603,7 @@ def f10(line):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2 = list(pool.map(f10, list2))                                              # <execute function by multithreading />
+list2 = list(pool.map(f15, list2))                                              # <execute function by multithreading />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
@@ -660,77 +628,108 @@ print(
 
 print('16/21 : remove lines leaded by ! # + & ? ^ : ; @ and @.exe @.gif @.rar @.zip')
 
-list2 = [
-    re.sub(r'^\*?\^.*', '', line)
-    for line in list2
-]                                                                               # <remove ^ leaded lines />
+#list2 = [
+#    re.sub(r'^\*?\^.*', '', line)
+#    for line in list2
+#]                                                                               # <remove ^ leaded lines />
 
-list2 = [
-    re.sub(r'^\|+', '', line)
-    for line in list2
-]                                                                               # <remove leading | />
+#list2 = [
+#    re.sub(r'^\|+', '', line)
+#    for line in list2
+#]                                                                               # <remove leading | />
 
-list2 = [
-    re.sub(r'^\!.*', '', line)
-    for line in list2
-]                                                                               # <remove ! leaded lines />
+#list2 = [
+#    re.sub(r'^\!.*', '', line)
+#    for line in list2
+#]                                                                               # <remove ! leaded lines />
 
-list2 = [
-    re.sub(r'^#.*', '', line)
-    for line in list2
-]                                                                               # <remove # leaded lines />
+#list2 = [
+#    re.sub(r'^#.*', '', line)
+#    for line in list2
+#]                                                                               # <remove # leaded lines />
 
-list2 = [
-    re.sub(r'^[/\*]?\+.*', '', line)
-    for line in list2
-]                                                                               # <remove + leaded lines />
+#list2 = [
+#    re.sub(r'^[/\*]?\+.*', '', line)
+#    for line in list2
+#]                                                                               # <remove + leaded lines />
 
-list2 = [
-    re.sub(r'^\*?\&.*', '', line)
-    for line in list2
-]                                                                               # <remove & leaded lines />
+#list2 = [
+#    re.sub(r'^\*?\&.*', '', line)
+#    for line in list2
+#]                                                                               # <remove & leaded lines />
 
-list2 = [
-    re.sub(r'^\*?\?.*', '', line)
-    for line in list2
-]                                                                               # <remove ? leaded lines />
+#list2 = [
+#    re.sub(r'^\*?\?.*', '', line)
+#    for line in list2
+#]                                                                               # <remove ? leaded lines />
 
-list2 = [
-    re.sub(r'^\*?\:.*', '', line)
-    for line in list2
-]                                                                               # <remove : leaded lines />
+#list2 = [
+#    re.sub(r'^\*?\:.*', '', line)
+#    for line in list2
+#]                                                                               # <remove : leaded lines />
 
-list2 = [
-    re.sub(r'^\*?\;.*', '', line)
-    for line in list2
-]                                                                               # <remove ; leaded lines />
+#list2 = [
+#    re.sub(r'^\*?\;.*', '', line)
+#    for line in list2
+#]                                                                               # <remove ; leaded lines />
 
-list2 = [
-    re.sub(r'^\*?\".*', '', line)
-    for line in list2
-]                                                                               # <remove " leaded lines />
+#list2 = [
+#    re.sub(r'^\*?\".*', '', line)
+#    for line in list2
+#]                                                                               # <remove " leaded lines />
 
-list2 = [
-    re.sub(r'^[/\*]?\@.*', '', line)
-    for line in list2
-]                                                                               # <remove @ leaded lines />
+#list2 = [
+#    re.sub(r'^[/\*]?\@.*', '', line)
+#    for line in list2
+#]                                                                               # <remove @ leaded lines />
 
-list2 = [
-    re.sub(r'^.*\.gif$', '.gif', line)
-    for line in list2
-]                                                                               # <enforce .gif filter />
+#list2 = [
+#    re.sub(r'^.*\.gif$', '.gif', line)
+#    for line in list2
+#]                                                                               # <enforce .gif filter />
 
-list2 = [
-    re.sub(r'^.*\.rar$', '', line)
-    for line in list2
-]                                                                               # <remove @.rar filters />
+#list2 = [
+#    re.sub(r'^.*\.rar$', '', line)
+#    for line in list2
+#]                                                                               # <remove @.rar filters />
 
-list2 = [
-    re.sub(r'^.*\.zip$', '', line)
-    for line in list2
-]                                                                               # <remove @.zip filters />
+#list2 = [
+#    re.sub(r'^.*\.zip$', '', line)
+#    for line in list2
+#]                                                                               # <remove @.zip filters />
 
+#list2 = list(filter(None, list2))                                               # <remove empty elements />
+
+#print(
+#    '       ',
+#    '{:,}'.format(len(list2) + len(list5)),
+#    'filters kept'
+#)
+
+def f16(line):
+
+    line = re.sub(r'^\*?\^.*', '', line)                                        # <remove ^ leaded lines />
+    line = re.sub(r'^\|+', '', line)                                            # <remove leading | />
+    line = re.sub(r'^\!.*', '', line)                                           # <remove ! leaded lines />
+    line = re.sub(r'^#.*', '', line)                                            # <remove # leaded lines />
+    line = re.sub(r'^[/\*]?\+.*', '', line)                                     # <remove + leaded lines />
+    line = re.sub(r'^\*?\&.*', '', line)                                        # <remove & leaded lines />
+    line = re.sub(r'^\*?\?.*', '', line)                                        # <remove ? leaded lines />
+    line = re.sub(r'^\*?\:.*', '', line)                                        # <remove : leaded lines />
+    line = re.sub(r'^\*?\;.*', '', line)                                        # <remove ; leaded lines />
+    line = re.sub(r'^\*?\".*', '', line)                                        # <remove " leaded lines />
+    line = re.sub(r'^[/\*]?\@.*', '', line)                                     # <remove @ leaded lines />
+    line = re.sub(r'^.*\.gif$', '.gif', line)                                   # <enforce .gif filter />
+    line = re.sub(r'^.*\.rar$', '', line)                                       # <remove @.rar filters />
+    line = re.sub(r'^.*\.zip$', '', line)                                       # <remove @.zip filters />
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = list(pool.map(f16, list2))                                              # <execute function by multithreading />
 list2 = list(filter(None, list2))                                               # <remove empty elements />
+pool.close()                                                                    # <#close the pool and wait for the work to finish />
+pool.join()
 
 print(
     '       ',
