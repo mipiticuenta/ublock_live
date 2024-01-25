@@ -400,7 +400,7 @@ pool.close()                                                                    
 pool.join()
 
 filetest1_out = open(
-    'test1,
+    'test1',
     'w',
     encoding='UTF-8'
 )
@@ -415,7 +415,7 @@ list2 = [
 ]                                                                               # <flatten list'/>
 
 filetest2_out = open(
-    'test2,
+    'test2',
     'w',
     encoding='UTF-8'
 )
