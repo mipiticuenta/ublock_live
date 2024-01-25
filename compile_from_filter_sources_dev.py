@@ -462,59 +462,6 @@ while n_1 > len(list2):                                                         
 
     print('11/21 : clean up leading symbols numbers prefix etc')
 
-#    list2 = [
-#        re.sub(r'www[0-9]*\.', '', line)
-#        for line in list2
-#    ]                                                                           # <remove www#. />
-
-#    list2 = [
-#        re.sub(r'^[_\W0-9]*(?=[/\.\$])', '', line)
-#        for line in list2
-#    ]                                                                           # <remove leading symbols and numbers preceding / . $ />
-
-#    list2 = [
-#        re.sub(r'^[/\.]?\w(?=[/\.\$])', '', line)
-#        for line in list2
-#    ]                                                                           # <remove leading single a-z0-9 char preceding / . $ />
-
-#    list2 = [
-#        re.sub(r'^\.(?=\*)', '', line)
-#        for line in list2
-#    ]                                                                           # <remove leading . if followed by * />
-
-#    list2 = [re.sub(
-#        r'^\W*(?=\$)', '*', line)
-#        for line in list2
-#    ]                                                                           # <replace symbol/none replace leading $ /$ .$ =$ ?$ with *$ />
-
-#    list2 = [
-#        re.sub(r'^\.?[-\*\w]+/', '/', line)
-#        for line in list2
-#    ]                                                                           # <replace leading (.)@/ with / />
-
-#    list2 = [
-#        re.sub(r'^/\*.*[^/]', '', line)
-#        for line in list2
-#    ]                                                                           # <remove leading /* except for regex filters />
-
-#    list2 = [
-#        re.sub(r'^\*(?=[^\$\#])', '', line)
-#        for line in list2
-#    ]                                                                           # <remove leading /* except for regex filters />
-
-#    list2 = [
-#        re.sub(r'^/([-\.\+\!\~/\w]+)/$', r'/\1/*', line)
-#        for line in list2
-#    ]                                                                           # <add trailing * for /@/ url filters (false regex) />
-
-#    list2 = list(filter(None, list2))                                           # <remove empty elements />
-
-#    print(
-#        '       ',
-#        '{:,}'.format(len(list2) + len(list5)),
-#        'filters kept'
-#    )
-
     def f11(line):
 
         line = re.sub(r'www[0-9]*\.', '', line)                                 # <remove www#. />
@@ -543,97 +490,131 @@ while n_1 > len(list2):                                                         
 
     print('12/21 : clean up trailing symbols numbers suffix $filters etc')
 
-    list2 = [
-        re.sub(r'[\^\|\=]\$', '$', line).strip()
-        for line in list2
-    ]                                                                           # <replace ^$ |$ =$ with $ />
+#    list2 = [
+#        re.sub(r'[\^\|\=]\$', '$', line).strip()
+#        for line in list2
+#    ]                                                                           # <replace ^$ |$ =$ with $ />
 
-    list2 = [
-        re.sub(r'\|+\$', '$', line).strip()
-        for line in list2
-    ]                                                                           # <replace |$ with $ />
+#    list2 = [
+#        re.sub(r'\|+\$', '$', line).strip()
+#        for line in list2
+#    ]                                                                           # <replace |$ with $ />
 
-    list2 = [
-        re.sub(r'[#,\~\|\^\?\=\&]+$', '', line).strip()
-        for line in list2
-    ]                                                                           # <remove trailing # , ~ | ^ ? = & />
+#    list2 = [
+#        re.sub(r'[#,\~\|\^\?\=\&]+$', '', line).strip()
+#        for line in list2
+#    ]                                                                           # <remove trailing # , ~ | ^ ? = & />
 
-    list2 = [
-        re.sub(r'(?<!/)\*$', '', line).strip()
-        for line in list2
-    ]                                                                           # <remove trailing * except /url/* />
+#    list2 = [
+#        re.sub(r'(?<!/)\*$', '', line).strip()
+#        for line in list2
+#    ]                                                                           # <remove trailing * except /url/* />
 
-    list2 = [
-        re.sub(r'\.\*$', '.', line).strip()
-        for line in list2
-    ]                                                                           # <replace trailing .* with . />
+#    list2 = [
+#        re.sub(r'\.\*$', '.', line).strip()
+#        for line in list2
+#    ]                                                                           # <replace trailing .* with . />
 
-    list2 = [
-        re.sub(r'\*\.$', '', line).strip()
-        for line in list2
-    ]                                                                           # <remove trailing *. />
+#    list2 = [
+#        re.sub(r'\*\.$', '', line).strip()
+#        for line in list2
+#    ]                                                                           # <remove trailing *. />
 
-    list2 = [
-        re.sub(r'\.cgi\??$', '.', line)
-        for line in list2
-    ]                                                                           # <remove trailing .cgi? />
+#    list2 = [
+#        re.sub(r'\.cgi\??$', '.', line)
+#        for line in list2
+#    ]                                                                           # <remove trailing .cgi? />
 
-    list2 = [
-        re.sub(r'\.ashx\??$', '.', line)
-        for line in list2
-    ]                                                                           # <remove trailing .ashx? />
+#    list2 = [
+#        re.sub(r'\.ashx\??$', '.', line)
+#        for line in list2
+#    ]                                                                           # <remove trailing .ashx? />
 
-    list2 = [
-        re.sub(r'\.asp\??$', '.', line)
-        for line in list2
-    ]                                                                           # <remove trailing .asp? />
+#    list2 = [
+#        re.sub(r'\.asp\??$', '.', line)
+#        for line in list2
+#    ]                                                                           # <remove trailing .asp? />
 
-    list2 = [
-        re.sub(r'\.?html?\??$', '.', line)
-        for line in list2
-    ]                                                                           # <remove trailing .html? />
+#    list2 = [
+#        re.sub(r'\.?html?\??$', '.', line)
+#        for line in list2
+#    ]                                                                           # <remove trailing .html? />
 
-    list2 = [
-        re.sub(r'\.jpe?g\??$', '.', line)
-        for line in list2
-    ]                                                                           # <remove trailing .jp(e)g? />
+#    list2 = [
+#        re.sub(r'\.jpe?g\??$', '.', line)
+#        for line in list2
+#    ]                                                                           # <remove trailing .jp(e)g? />
 
-    list2 = [
-        re.sub(r'\.php\??$', '.', line)
-        for line in list2
-    ]                                                                           # <remove trailing .php? />
+#    list2 = [
+#        re.sub(r'\.php\??$', '.', line)
+#        for line in list2
+#    ]                                                                           # <remove trailing .php? />
 
-    list2 = [
-        re.sub(r'\.png\??$', '.', line)
-        for line in list2
-    ]                                                                           # <remove trailing .png? />
+#    list2 = [
+#        re.sub(r'\.png\??$', '.', line)
+#        for line in list2
+#    ]                                                                           # <remove trailing .png? />
 
-    list2 = [
-        re.sub(r'\.svg\??$', '.', line)
-        for line in list2
-    ]                                                                           # <remove trailing .svg? />
+#    list2 = [
+#        re.sub(r'\.svg\??$', '.', line)
+#        for line in list2
+#    ]                                                                           # <remove trailing .svg? />
 
-    list2 = [
-        re.sub(r'\.js\??[^\./]*$', '.js', line)
-        for line in list2
-    ]                                                                           # <clean up trailing .js />
+#    list2 = [
+#        re.sub(r'\.js\??[^\./]*$', '.js', line)
+#        for line in list2
+#    ]                                                                           # <clean up trailing .js />
 
-    list2 = [
-        re.sub(r'^([-\w]+)=.*$', r'\1', line)
-        for line in list2
-    ]                                                                           # <remove trailing .=.* />
+#    list2 = [
+#        re.sub(r'^([-\w]+)=.*$', r'\1', line)
+#        for line in list2
+#    ]                                                                           # <remove trailing .=.* />
 
-    list2 = [
-        re.sub(r'(^[^#]{2,})\$[-~,=a-z0-9]*$(?<!/)(?<!important)', r'\1', line)
-        for line in list2
-    ]                                                                           # <remove specific trailing $ filters except *$ or ending with important />
+#    list2 = [
+#        re.sub(r'(^[^#]{2,})\$[-~,=a-z0-9]*$(?<!/)(?<!important)', r'\1', line)
+#        for line in list2
+#    ]                                                                           # <remove specific trailing $ filters except *$ or ending with important />
 
-    list2 = [
-        re.sub(r'\??\*\=.*$', '', line).strip()
-        for line in list2
-    ]                                                                           # <remove trailing ?*=... />
+#    list2 = [
+#        re.sub(r'\??\*\=.*$', '', line).strip()
+#        for line in list2
+#    ]                                                                           # <remove trailing ?*=... />
 
+#    list2 = list(filter(None, list2))                                           # <remove empty elements />
+
+#    print(
+#        '       ',
+#        '{:,}'.format(len(list2) + len(list5)),
+#        'filters kept'
+#    )
+
+    def f12(line):
+
+        line = re.sub(r'[\^\|\=]\$', '$', line)                                 # <replace ^$ |$ =$ with $ />
+        line = re.sub(r'[#,\~\|\^\?\=\&]+$', '', line)                          # <remove trailing # , ~ | ^ ? = & />
+        line = re.sub(r'(?<!/)\*$', '', line)                                   # <remove trailing * except /url/* />
+        line = re.sub(r'\.\*$', '.', line)                                      # <replace trailing .* with . />
+        line = re.sub(r'\*\.$', '', line)                                       # <remove trailing *. />
+        line = re.sub(r'\??\*\=.*$', '', line)                                  # <remove trailing (?)*=... />
+        line = re.sub(r'\.cgi\??$', '.', line)                                  # <remove trailing .cgi(?) />
+        line = re.sub(r'\.ashx\??$', '.', line)                                 # <remove trailing .ashx(?) />
+        line = re.sub(r'\.asp\??$', '.', line)                                  # <remove trailing .asp(?) />
+        line = re.sub(r'\.?html?\??$', '.', line)                               # <remove trailing .html(?) />
+        line = re.sub(r'\.jpe?g\??$', '.', line)                                # <remove trailing .jp(e)g(?) />
+        line = re.sub(r'\.php\??$', '.', line)                                  # <remove trailing .php(?) />
+        line = re.sub(r'\.png\??$', '.', line)                                  # <remove trailing .png(?) />
+        line = re.sub(r'\.svg\??$', '.', line)                                  # <remove trailing .svg(?) />
+        line = re.sub(r'\.js\??[^\./]*$', '.js', line)                          # <clean up trailing .js />
+        line = re.sub(r'^([-\w]+)=.*$', r'\1', line)                            # <remove trailing .=.* />
+        line = re.sub(r'(^[^#]{2,})\$[-~=\,\w]*$(?<!/)(?<!important)', r'\1', line) # <remove specific trailing $ filters except *$ or ending with important />
+
+        return line
+
+    pool = ThreadPool(thr)                                                      # <make the pool of workers />
+    list2 = list(pool.map(f12, list2))                                          # <execute function by multithreading />
     list2 = list(filter(None, list2))                                           # <remove empty elements />
+    pool.close()                                                                # <#close the pool and wait for the work to finish />
+    pool.join()
 
     print(
         '       ',
