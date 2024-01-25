@@ -226,7 +226,7 @@ print(
     'filters kept'
 )
 
-print(' 4/21 : remove items containing % about: $badfilter localhost; remove http: IP4 IP6 :port/; clean from=, path=, replace=, transform=')
+print(' 4/21 : remove items containing % about: $badfilter localhost; remove http: IP4 IP6 :port/')
 
 def f04(line):
 
@@ -246,10 +246,6 @@ def f04(line):
         line = re.sub(r'[\|\^]', '', line)                                      # <remove || ^ from abp syntax ||domain^ />
     line = re.sub(r'^\:[0-9]+/', '/', line)                                     # <replace leading :port/ with / />
     line = re.sub(r'https?\:/*', '', line)                                      # <remove http(s):/* />
-    line = re.sub(r',?from=.*$', '', line)                                      # <remove (,)from=.* />
-    line = re.sub(r',?path=.*$', '', line)                                      # <remove (,)path=.* />
-    line = re.sub(r',?replace=.*$', '', line)                                   # <remove (,)replace=.* />
-    line = re.sub(r',?transform=.*$', '', line)                                 # <remove (,)transform=.* />
 
     return line
 
@@ -357,35 +353,6 @@ print(
 
 print(' 8/21 : split urls with $ domain=, denyallow= ')
 
-#list2s = [
-#    line
-#    for line in list2
-#    if re.search(r'\$.*domain=', line)
-#]                                                                               # <get urls with $ domain= '/>
-
-#list2 = set(list2) - set(list2s)                                                # <segregate removed filters'/>
-
-#list2s = (
-#    [
-#        re.sub(r',.*', '', re.sub(r'^.*(domain|denyallow)=', '', line))
-#        for line in list2s
-#    ] +                                                                         # <isolate domain list part/>
-#    [
-#        re.sub(r'\$.*', '', line)
-#        for line in list2s
-#    ]                                                                           # <isolate url part/>
-#)
-
-#list2s = [
-#    re.sub(r',.*$', '', line).strip()
-#    for line in list2s
-#]                                                                               # <remove trailing .*,.*/>
-
-#list2s = [
-#    line.split('|')
-#    for line in list2s
-#]                                                                               # <flatten list'/>
-
 def f08(line):
 
     if re.search(r'\$.*(domain|denyallow)=', line):
@@ -404,7 +371,7 @@ pool.join()
 list2 = sorted(
     set(
         [
-            line if (type(line) == str)
+            line if (type(line) == str)                                         # <prevents string atomization into chars is string type />
             else item
             for line in list2
             for item in line
@@ -413,13 +380,28 @@ list2 = sorted(
 )
 list2 = list(filter(None, list2))                                               # <remove empty elements />
 
-filetest2_out = open(
-    'test2',
-    'w',
-    encoding='UTF-8'
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
 )
-filetest2_out.writelines(line + '\n' for line in list2)
-filetest2_out.close()
+
+print(' 9/21 : clean from=, path=, replace=, transform=')
+
+def f09(line):
+
+    line = re.sub(r',?from=.*$', '', line)                                      # <remove (,)from=.* />
+    line = re.sub(r',?path=.*$', '', line)                                      # <remove (,)path=.* />
+    line = re.sub(r',?replace=.*$', '', line)                                   # <remove (,)replace=.* />
+    line = re.sub(r',?transform=.*$', '', line)                                 # <remove (,)transform=.* />
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = list(pool.map(f09, list2))                                              # <execute function by multithreading />
+list2 = list(filter(None, list2))                                               # <remove empty elements />
+pool.close()                                                                    # <#close the pool and wait for the work to finish />
+pool.join()
 
 print(
     '       ',
@@ -427,36 +409,36 @@ print(
     'filters kept'
 )
 
-#print(' 9/21 : remove domain= denyallow= and keep the related domains')
+print('10/21 : split , separated domains ')
+
+#list2   = [
+#    re.sub(r'^,', '', line).strip()
+#    for line in list2
+#]                                                                               # <remove leading , />
+
+#list2   = [
+#    re.sub(r',$', '', line).strip()
+#    for line in list2
+#    ]                                                                           # <remove trailing , />
 
 #list2s = [
 #    line
 #    for line in list2
-#    if re.search(r'.*(domain|denyallow)=', line)
-#]                                                                               # <select *$ filters />
-
-#list2 = set(list2) - set(list2s)                                                # <segregate selected filters'/>
+#    if re.search(r'\,', line)
+#]                                                                               # <remove , separated domains />
 
 #list2s = [
-#    re.sub(r'.*domain=', '', line).strip()
+#    line
 #    for line in list2s
-#]                                                                               # <remove leading .*domain=/>
+#    if not(re.search(r'[\$\&]', line))
+#]                                                                               # <exclude $ & filters />
+
+#list2 = set(list2) - set(list2s)                                                # <segregate removed filters'/>
 
 #list2s = [
-#    re.sub(r'.*denyallow=', '', line).strip()
+#    line.split(',')
 #    for line in list2s
-#]                                                                               # <remove leading .*denyallow=/>
-
-#list2s = [
-#    re.sub(r',.*$', '', line).strip()
-#    for line in list2s
-#]                                                                               # <remove trailing .*,.*/>
-
-#list2s = [
-#    line.split('|')
-#    for line in list2s
-#    if len(line) > 0
-#]                                                                               # <flatten list'/>
+#]
 
 #list2s = [
 #    item
@@ -477,49 +459,34 @@ print(
 #    'filters kept'
 #)
 
-print('10/21 : split , separated domains ')
+def f10(line):
 
-list2   = [
-    re.sub(r'^,', '', line).strip()
-    for line in list2
-]                                                                               # <remove leading , />
+    line = re.sub(r'^,', '', line)                                              # <remove leading , />
+    line = re.sub(r',$', '', line)                                              # <remove trailing , />
 
-list2   = [
-    re.sub(r',$', '', line).strip()
-    for line in list2
-    ]                                                                           # <remove trailing , />
+    if re.search(r'^[\w\,]*\,[\w\,]*$', line)):
+        line = line.split(',')                                                  # <split domains />
+    else:
+        [line]
 
-list2s = [
-    line
-    for line in list2
-    if re.search(r'\,', line)
-]                                                                               # <remove , separated domains />
+    return line
 
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'[\$\&]', line))
-]                                                                               # <exclude $ & filters />
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = list(pool.map(f10, list2))                                              # <execute function by multithreading />
+pool.close()                                                                    # <#close the pool and wait for the work to finish />
+pool.join()
 
-list2 = set(list2) - set(list2s)                                                # <segregate removed filters'/>
-
-list2s = [
-    line.split(',')
-    for line in list2s
-]
-
-list2s = [
-    item
-    for line in list2s
-    for item in line
-    if line !=[''] and item != ''
-]                                                                               # <flatten list'/>
-
-list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
-
+list2 = sorted(
+    set(
+        [
+            line if (type(line) == str)                                         # <prevents string atomization into chars is string type />
+            else item
+            for line in list2
+            for item in line
+        ]                                                                       # <flatten list />
+    )                                                                           # <dedup list />
+)
 list2 = list(filter(None, list2))                                               # <remove empty elements />
-
-del(list2s)
 
 print(
     '       ',
