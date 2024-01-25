@@ -171,7 +171,7 @@ def f01(line):
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = list(pool.map(f01, list2))                                              # <execute function by multithreading />
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
@@ -192,7 +192,7 @@ def f02(line):
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = list(pool.map(f02, list2))                                              # <execute function by multithreading />
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
@@ -216,7 +216,7 @@ def f03(line):
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = list(pool.map(f03, list2))                                              # <execute function by multithreading />
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
@@ -251,7 +251,7 @@ def f04(line):
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = list(pool.map(f04, list2))                                              # <execute function by multithreading />
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
@@ -275,7 +275,7 @@ def f05(line):
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = list(pool.map(f05, list2))                                              # <execute function by multithreading />
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
@@ -319,7 +319,7 @@ def f06(line):
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = list(pool.map(f06, list2))                                              # <execute function by multithreading />
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
@@ -341,7 +341,7 @@ def f07(line):
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = list(pool.map(f07, list2))                                              # <execute function by multithreading />
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
@@ -379,7 +379,7 @@ list2 = sorted(
         ]                                                                       # <flatten list />
     )                                                                           # <dedup list />
 )
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
@@ -400,7 +400,7 @@ def f09(line):
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = list(pool.map(f09, list2))                                              # <execute function by multithreading />
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
@@ -439,7 +439,7 @@ list2 = sorted(
         ]                                                                       # <flatten list />
     )                                                                           # <dedup list />
 )
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
@@ -479,7 +479,7 @@ while n_1 > len(list2):                                                         
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />
     list2 = list(pool.map(f11, list2))                                          # <execute function by multithreading />
-    list2 = list(filter(None, list2))                                           # <remove empty elements />
+    list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
     pool.close()                                                                # <#close the pool and wait for the work to finish />
     pool.join()
 
@@ -514,7 +514,7 @@ while n_1 > len(list2):                                                         
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />
     list2 = list(pool.map(f12, list2))                                          # <execute function by multithreading />
-    list2 = list(filter(None, list2))                                           # <remove empty elements />
+    list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
     pool.close()                                                                # <#close the pool and wait for the work to finish />
     pool.join()
 
@@ -554,7 +554,7 @@ while n_1 > len(list2):                                                         
             ]                                                                   # <flatten list />
         )                                                                       # <dedup list />
     )
-    list2 = list(filter(None, list2))                                           # <remove empty elements />
+    list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
 
     print(
         '       ',
@@ -576,7 +576,7 @@ while n_1 > len(list2):                                                         
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />
     list2 = list(pool.map(f14, list2))                                          # <execute function by multithreading />
-    list2 = list(filter(None, list2))                                           # <remove empty elements />
+    list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
     pool.close()                                                                # <#close the pool and wait for the work to finish />
     pool.join()
 
@@ -617,7 +617,7 @@ list2 = sorted(
         ]                                                                       # <flatten list />
     )                                                                           # <dedup list />
 )
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
@@ -649,9 +649,11 @@ def f16(line):
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = list(pool.map(f16, list2))                                              # <execute function by multithreading />
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
+
+list2 = sorted(set(list2))
 
 print(
     '       ',
@@ -660,144 +662,6 @@ print(
 )
 
 print('17/21 : arrange *$ filters; keep beacon csp inline-font inline-script object other ping popunder script websocket xhr ')
-
-#list2 = [
-#    re.sub(r'^\*\$\~?1p.*', '', line)
-#    for line in list2
-#]                                                                               # <remove *$1p />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?3p.*', '', line)
-#    for line in list2
-#]                                                                               # <remove *$3p />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?third\-party.*', '', line)
-#    for line in list2
-#]                                                                               # <remove *$3p />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?all.*', '', line)
-#    for line in list2
-#]                                                                               # <remove *$all />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?beacon.*', '*$beacon', line)
-#    for line in list2
-#]                                                                               # <enforce *$beacon />
-
-#list2 = [
-#    re.sub(r'.*\$csp.*', '*$csp=all', line)
-#    for line in list2
-#]                                                                               # <enforce *$csp=all />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?css.*', '', line)
-#    for line in list2
-#]                                                                               # <remove *$css />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?stylesheet.*', '', line)
-#    for line in list2
-#]                                                                               # <remove *$css />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?(sub)?doc(ument)?.*', '', line)
-#    for line in list2
-#]                                                                               # <remove *$(sub)doc />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?from.*', '', line)
-#    for line in list2
-#]                                                                               # <remove *$from />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?image.*', '', line)
-#    for line in list2
-#]                                                                               # <remove *$image />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?inline\-font.*', '*$inline-font', line)
-#    for line in list2
-#]                                                                               # <enforce *$inline-font />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?inline\-script.*', '*$inline-script', line)
-#    for line in list2
-#]                                                                               # <enforce *$inline-script />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?media.*', '', line)
-#    for line in list2
-#]                                                                               # <remove *$media />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?object.*', '*$object', line)
-#    for line in list2
-#]                                                                               # <enforce *$object />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?other.*', '*$other', line)
-#    for line in list2
-#]                                                                               # <enforce *$other />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?ping.*', '*$ping', line)
-#    for line in list2
-#]                                                                               # <enforce *$ping />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?popup.*', '', line)
-#    for line in list2
-#]                                                                               # <remove *$popup />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?popunder.*', '*$popunder', line)
-#    for line in list2
-#]                                                                               # <enforce *$popunder />
-
-#list2 = [re.sub(
-#    r'^(.*)\$\~?script.*', r'\1', line)
-#    for line in list2
-#]                                                                               # <remove *$script />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?rewrite.*', '', line)
-#    for line in list2
-#]                                                                               # <remove *$rewrite />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?websocket.*', '*$websocket', line)
-#    for line in list2
-#]                                                                               # <enforce *$websocket />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?xhr.*', '*$xhr', line)
-#    for line in list2
-#]                                                                               # <enforce *$xhr />
-
-#list2 = [
-#    re.sub(r'^\*\$\~?xmlhttprequest.*', '*$xhr', line)
-#    for line in list2
-#]                                                                               # <enforce *$xhr />
-
-#list2 = [
-#    re.sub(r'^\*\$important.*', '', line)
-#    for line in list2
-#]                                                                               # <remove *$important filters />
-
-#list2 = [
-#    re.sub(r'^\*\$.*\.js$', '', line)
-#    for line in list2
-#]                                                                               # <remove *$...js filters />
-
-#list2 = list(filter(None, list2))                                               # <remove empty elements />
-
-#print(
-#    '       ',
-#    '{:,}'.format(len(list2) + len(list5)),
-#    'filters kept'
-#)
 
 def f17(line):
 
@@ -832,9 +696,11 @@ def f17(line):
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = list(pool.map(f17, list2))                                              # <execute function by multithreading />
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
+
+list2 = sorted(set(list2))
 
 print(
     '       ',
