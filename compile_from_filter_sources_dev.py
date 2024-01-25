@@ -181,6 +181,19 @@ print(
     'filters kept'
 )
 
+list2 = [
+    item
+    for line in list2
+    for item in line
+    if line != [''] and item != ''
+]                                                                               # <flatten list'/>
+
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
+
 print(' 2/21 : remove comments ')
 
 def f02(line):
