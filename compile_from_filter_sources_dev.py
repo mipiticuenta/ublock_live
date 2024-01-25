@@ -417,7 +417,7 @@ def f10(line):
     line = re.sub(r'^,', '', line)                                              # <remove leading , />
     line = re.sub(r',$', '', line)                                              # <remove trailing , />
 
-    if re.search(r'^[\w\,]*\,[\w\,]*$', line):
+    if re.search(r'^[\w\,]*\,[\w\,]*$', line) and not(re.search(r'[\$\@\#]', line):
         line = line.split(',')                                                  # <split domains />
     else:
         [line]
@@ -526,43 +526,9 @@ while n_1 > len(list2):                                                         
 
     print('13/21 : split domain and url ')
 
-#    list2s = [
-#        line
-#        for line in list2
-#        if re.search(r'^[-\.\w]+\.[a-z]+/.*', line)
-#    ]                                                                           # <get domains with url'/>
-
-#    list2 = set(list2) - set(list2s)                                            # <segregate removed filters'/>
-
-#    list2s = (
-#        [
-#            re.sub(r'^[-\.\w]+/', '/', line)
-#            for line in list2s
-#        ] +                                                                     # <isolate url part/>
-#        [
-#            re.sub(r'/.*$', '', line)
-#            for line in list2s
-#        ]                                                                       # <isolate domains part/>
-#    )
-
-#    list2 = sorted(set(list2) | set(list2s))                                    # <join retrieved domains to main list'/>
-#    
-#    list2 = [
-#        re.sub(r'^/([-\.\+\~\!/\w]+)/$', r'/\1/*', line)
-#        for line in list2
-#    ]                                                                           # <add trailing * for /@/ url filters (false regex) />
-#    
-#    list2 = list(filter(None, list2))                                           # <remove empty elements />
-
-#    del(list2s)
-
-#    print(
-#        '       ',
-#        '{:,}'.format(len(list2) + len(list5)),
-#        'filters kept'
-#    )
-
     def f13(line):
+
+        line = line.strip()
 
         if re.search(r'^[-\.\w]+\.[a-z]+/.*', line):
             domain_part = [re.sub(r'/.*$', '', line)]                           # <add domain part />
@@ -624,37 +590,73 @@ while n_1 > len(list2):                                                         
 
 print('15/21 : split space separated domains ')
 
-list2s = [
-    line
-    for line in list2
-    if re.search(r' ', line) and not(re.search(r'[\$\@\#]', line))
-]                                                                               # <remove space separated domains />
+#list2s = [
+#    line
+#    for line in list2
+#    if re.search(r' ', line) and not(re.search(r'[\$\@\#]', line))
+#]                                                                               # <remove space separated domains />
 
-list2 = set(list2) - set(list2s)                                                # <segregate removed filters'/>
+#list2 = set(list2) - set(list2s)                                                # <segregate removed filters'/>
 
-list2s = [
-    line.split(' ')
-    for line in list2s
-]                                                                               # <flatten list'/>
+#list2s = [
+#    line.split(' ')
+#    for line in list2s
+#]                                                                               # <flatten list'/>
 
-list2s = [
-    item
-    for line in list2s
-    for item in line
-    if line !=[''] and item != ''
-]                                                                               # <flatten list'/>
+#list2s = [
+#    item
+#    for line in list2s
+#    for item in line
+#    if line !=[''] and item != ''
+#]                                                                               # <flatten list'/>
 
-list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
+#list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
 
+#list2 = list(filter(None, list2))                                               # <remove empty elements />
+
+#del(list2s)
+
+#print(
+#    '       ',
+#    '{:,}'.format(len(list2) + len(list5)),
+#    'filters kept'
+#)
+
+def f10(line):
+
+    line = re.sub(r'^,', '', line)                                              # <remove leading , />
+    line = re.sub(r',$', '', line)                                              # <remove trailing , />
+
+    if re.search(r'^[\w\,]* [\w\,]*$', line) and not(re.search(r'[\$\@\#]', line):
+        line = line.split(',')                                                  # <split domains />
+    else:
+        [line]
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = list(pool.map(f10, list2))                                              # <execute function by multithreading />
+pool.close()                                                                    # <#close the pool and wait for the work to finish />
+pool.join()
+
+list2 = sorted(
+    set(
+        [
+            line if (type(line) == str)                                         # <prevents string atomization into chars is string type />
+            else item
+            for line in list2
+            for item in line
+        ]                                                                       # <flatten list />
+    )                                                                           # <dedup list />
+)
 list2 = list(filter(None, list2))                                               # <remove empty elements />
-
-del(list2s)
 
 print(
     '       ',
     '{:,}'.format(len(list2) + len(list5)),
     'filters kept'
 )
+
 
 print('16/21 : remove lines leaded by ! # + & ? ^ : ; @ and @.exe @.gif @.rar @.zip')
 
