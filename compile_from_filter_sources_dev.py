@@ -405,7 +405,7 @@ filetest1_out = open(
     encoding='UTF-8'
 )
 filetest1_out.writelines(item + '\n' for line in list2 for item in line)
-file7_out.close()
+filetest1_out.close()
 
 list2 = [
     item
@@ -420,7 +420,7 @@ filetest2_out = open(
     encoding='UTF-8'
 )
 filetest2_out.writelines(line + '\n' for line in list2)
-file7_out.close()
+filetest2_out.close()
 
 print(
     '       ',
