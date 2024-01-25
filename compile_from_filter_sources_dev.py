@@ -628,84 +628,6 @@ print(
 
 print('16/21 : remove lines leaded by ! # + & ? ^ : ; @ and @.exe @.gif @.rar @.zip')
 
-#list2 = [
-#    re.sub(r'^\*?\^.*', '', line)
-#    for line in list2
-#]                                                                               # <remove ^ leaded lines />
-
-#list2 = [
-#    re.sub(r'^\|+', '', line)
-#    for line in list2
-#]                                                                               # <remove leading | />
-
-#list2 = [
-#    re.sub(r'^\!.*', '', line)
-#    for line in list2
-#]                                                                               # <remove ! leaded lines />
-
-#list2 = [
-#    re.sub(r'^#.*', '', line)
-#    for line in list2
-#]                                                                               # <remove # leaded lines />
-
-#list2 = [
-#    re.sub(r'^[/\*]?\+.*', '', line)
-#    for line in list2
-#]                                                                               # <remove + leaded lines />
-
-#list2 = [
-#    re.sub(r'^\*?\&.*', '', line)
-#    for line in list2
-#]                                                                               # <remove & leaded lines />
-
-#list2 = [
-#    re.sub(r'^\*?\?.*', '', line)
-#    for line in list2
-#]                                                                               # <remove ? leaded lines />
-
-#list2 = [
-#    re.sub(r'^\*?\:.*', '', line)
-#    for line in list2
-#]                                                                               # <remove : leaded lines />
-
-#list2 = [
-#    re.sub(r'^\*?\;.*', '', line)
-#    for line in list2
-#]                                                                               # <remove ; leaded lines />
-
-#list2 = [
-#    re.sub(r'^\*?\".*', '', line)
-#    for line in list2
-#]                                                                               # <remove " leaded lines />
-
-#list2 = [
-#    re.sub(r'^[/\*]?\@.*', '', line)
-#    for line in list2
-#]                                                                               # <remove @ leaded lines />
-
-#list2 = [
-#    re.sub(r'^.*\.gif$', '.gif', line)
-#    for line in list2
-#]                                                                               # <enforce .gif filter />
-
-#list2 = [
-#    re.sub(r'^.*\.rar$', '', line)
-#    for line in list2
-#]                                                                               # <remove @.rar filters />
-
-#list2 = [
-#    re.sub(r'^.*\.zip$', '', line)
-#    for line in list2
-#]                                                                               # <remove @.zip filters />
-
-#list2 = list(filter(None, list2))                                               # <remove empty elements />
-
-#print(
-#    '       ',
-#    '{:,}'.format(len(list2) + len(list5)),
-#    'filters kept'
-#)
-
 def f16(line):
 
     line = re.sub(r'^\*?\^.*', '', line)                                        # <remove ^ leaded lines />
@@ -739,137 +661,180 @@ print(
 
 print('17/21 : arrange *$ filters; keep beacon csp inline-font inline-script object other ping popunder script websocket xhr ')
 
-list2 = [
-    re.sub(r'^\*\$\~?1p.*', '', line)
-    for line in list2
-]                                                                               # <remove *$1p />
+#list2 = [
+#    re.sub(r'^\*\$\~?1p.*', '', line)
+#    for line in list2
+#]                                                                               # <remove *$1p />
 
-list2 = [
-    re.sub(r'^\*\$\~?3p.*', '', line)
-    for line in list2
-]                                                                               # <remove *$3p />
+#list2 = [
+#    re.sub(r'^\*\$\~?3p.*', '', line)
+#    for line in list2
+#]                                                                               # <remove *$3p />
 
-list2 = [
-    re.sub(r'^\*\$\~?third\-party.*', '', line)
-    for line in list2
-]                                                                               # <remove *$3p />
+#list2 = [
+#    re.sub(r'^\*\$\~?third\-party.*', '', line)
+#    for line in list2
+#]                                                                               # <remove *$3p />
 
-list2 = [
-    re.sub(r'^\*\$\~?all.*', '', line)
-    for line in list2
-]                                                                               # <remove *$all />
+#list2 = [
+#    re.sub(r'^\*\$\~?all.*', '', line)
+#    for line in list2
+#]                                                                               # <remove *$all />
 
-list2 = [
-    re.sub(r'^\*\$\~?beacon.*', '*$beacon', line)
-    for line in list2
-]                                                                               # <enforce *$beacon />
+#list2 = [
+#    re.sub(r'^\*\$\~?beacon.*', '*$beacon', line)
+#    for line in list2
+#]                                                                               # <enforce *$beacon />
 
-list2 = [
-    re.sub(r'.*\$csp.*', '*$csp=all', line)
-    for line in list2
-]                                                                               # <enforce *$csp=all />
+#list2 = [
+#    re.sub(r'.*\$csp.*', '*$csp=all', line)
+#    for line in list2
+#]                                                                               # <enforce *$csp=all />
 
-list2 = [
-    re.sub(r'^\*\$\~?css.*', '', line)
-    for line in list2
-]                                                                               # <remove *$css />
+#list2 = [
+#    re.sub(r'^\*\$\~?css.*', '', line)
+#    for line in list2
+#]                                                                               # <remove *$css />
 
-list2 = [
-    re.sub(r'^\*\$\~?stylesheet.*', '', line)
-    for line in list2
-]                                                                               # <remove *$css />
+#list2 = [
+#    re.sub(r'^\*\$\~?stylesheet.*', '', line)
+#    for line in list2
+#]                                                                               # <remove *$css />
 
-list2 = [
-    re.sub(r'^\*\$\~?(sub)?doc(ument)?.*', '', line)
-    for line in list2
-]                                                                               # <remove *$(sub)doc />
+#list2 = [
+#    re.sub(r'^\*\$\~?(sub)?doc(ument)?.*', '', line)
+#    for line in list2
+#]                                                                               # <remove *$(sub)doc />
 
-list2 = [
-    re.sub(r'^\*\$\~?from.*', '', line)
-    for line in list2
-]                                                                               # <remove *$from />
+#list2 = [
+#    re.sub(r'^\*\$\~?from.*', '', line)
+#    for line in list2
+#]                                                                               # <remove *$from />
 
-list2 = [
-    re.sub(r'^\*\$\~?image.*', '', line)
-    for line in list2
-]                                                                               # <remove *$image />
+#list2 = [
+#    re.sub(r'^\*\$\~?image.*', '', line)
+#    for line in list2
+#]                                                                               # <remove *$image />
 
-list2 = [
-    re.sub(r'^\*\$\~?inline\-font.*', '*$inline-font', line)
-    for line in list2
-]                                                                               # <enforce *$inline-font />
+#list2 = [
+#    re.sub(r'^\*\$\~?inline\-font.*', '*$inline-font', line)
+#    for line in list2
+#]                                                                               # <enforce *$inline-font />
 
-list2 = [
-    re.sub(r'^\*\$\~?inline\-script.*', '*$inline-script', line)
-    for line in list2
-]                                                                               # <enforce *$inline-script />
+#list2 = [
+#    re.sub(r'^\*\$\~?inline\-script.*', '*$inline-script', line)
+#    for line in list2
+#]                                                                               # <enforce *$inline-script />
 
-list2 = [
-    re.sub(r'^\*\$\~?media.*', '', line)
-    for line in list2
-]                                                                               # <remove *$media />
+#list2 = [
+#    re.sub(r'^\*\$\~?media.*', '', line)
+#    for line in list2
+#]                                                                               # <remove *$media />
 
-list2 = [
-    re.sub(r'^\*\$\~?object.*', '*$object', line)
-    for line in list2
-]                                                                               # <enforce *$object />
+#list2 = [
+#    re.sub(r'^\*\$\~?object.*', '*$object', line)
+#    for line in list2
+#]                                                                               # <enforce *$object />
 
-list2 = [
-    re.sub(r'^\*\$\~?other.*', '*$other', line)
-    for line in list2
-]                                                                               # <enforce *$other />
+#list2 = [
+#    re.sub(r'^\*\$\~?other.*', '*$other', line)
+#    for line in list2
+#]                                                                               # <enforce *$other />
 
-list2 = [
-    re.sub(r'^\*\$\~?ping.*', '*$ping', line)
-    for line in list2
-]                                                                               # <enforce *$ping />
+#list2 = [
+#    re.sub(r'^\*\$\~?ping.*', '*$ping', line)
+#    for line in list2
+#]                                                                               # <enforce *$ping />
 
-list2 = [
-    re.sub(r'^\*\$\~?popup.*', '', line)
-    for line in list2
-]                                                                               # <remove *$popup />
+#list2 = [
+#    re.sub(r'^\*\$\~?popup.*', '', line)
+#    for line in list2
+#]                                                                               # <remove *$popup />
 
-list2 = [
-    re.sub(r'^\*\$\~?popunder.*', '*$popunder', line)
-    for line in list2
-]                                                                               # <enforce *$popunder />
+#list2 = [
+#    re.sub(r'^\*\$\~?popunder.*', '*$popunder', line)
+#    for line in list2
+#]                                                                               # <enforce *$popunder />
 
-list2 = [re.sub(
-    r'^(.*)\$\~?script.*', r'\1', line)
-    for line in list2
-]                                                                               # <remove *$script />
+#list2 = [re.sub(
+#    r'^(.*)\$\~?script.*', r'\1', line)
+#    for line in list2
+#]                                                                               # <remove *$script />
 
-list2 = [
-    re.sub(r'^\*\$\~?rewrite.*', '', line)
-    for line in list2
-]                                                                               # <remove *$rewrite />
+#list2 = [
+#    re.sub(r'^\*\$\~?rewrite.*', '', line)
+#    for line in list2
+#]                                                                               # <remove *$rewrite />
 
-list2 = [
-    re.sub(r'^\*\$\~?websocket.*', '*$websocket', line)
-    for line in list2
-]                                                                               # <enforce *$websocket />
+#list2 = [
+#    re.sub(r'^\*\$\~?websocket.*', '*$websocket', line)
+#    for line in list2
+#]                                                                               # <enforce *$websocket />
 
-list2 = [
-    re.sub(r'^\*\$\~?xhr.*', '*$xhr', line)
-    for line in list2
-]                                                                               # <enforce *$xhr />
+#list2 = [
+#    re.sub(r'^\*\$\~?xhr.*', '*$xhr', line)
+#    for line in list2
+#]                                                                               # <enforce *$xhr />
 
-list2 = [
-    re.sub(r'^\*\$\~?xmlhttprequest.*', '*$xhr', line)
-    for line in list2
-]                                                                               # <enforce *$xhr />
+#list2 = [
+#    re.sub(r'^\*\$\~?xmlhttprequest.*', '*$xhr', line)
+#    for line in list2
+#]                                                                               # <enforce *$xhr />
 
-list2 = [
-    re.sub(r'^\*\$important.*', '', line)
-    for line in list2
-]                                                                               # <remove *$important filters />
+#list2 = [
+#    re.sub(r'^\*\$important.*', '', line)
+#    for line in list2
+#]                                                                               # <remove *$important filters />
 
-list2 = [
-    re.sub(r'^\*\$.*\.js$', '', line)
-    for line in list2
-]                                                                               # <remove *$...js filters />
+#list2 = [
+#    re.sub(r'^\*\$.*\.js$', '', line)
+#    for line in list2
+#]                                                                               # <remove *$...js filters />
 
+#list2 = list(filter(None, list2))                                               # <remove empty elements />
+
+#print(
+#    '       ',
+#    '{:,}'.format(len(list2) + len(list5)),
+#    'filters kept'
+#)
+
+def f17(line):
+
+    line = re.sub(r'^\*\$\~?1p.*', '', line)                                    # <remove *$1p />
+    line = re.sub(r'^\*\$\~?3p.*', '', line)                                    # <remove *$3p />
+    line = re.sub(r'^\*\$\~?third\-party.*', '', line)                          # <remove *$3p />
+    line = re.sub(r'^\*\$\~?all.*', '', line)                                   # <remove *$all />
+    line = re.sub(r'^\*\$\~?beacon.*', '*$beacon', line)                        # <enforce *$beacon />
+    line = re.sub(r'.*\$csp.*', '*$csp=all', line)                              # <enforce *$csp=all />
+    line = re.sub(r'^\*\$\~?css.*', '', line)                                   # <remove *$css />
+    line = re.sub(r'^\*\$\~?stylesheet.*', '', line)                            # <remove *$css />
+    line = re.sub(r'^\*\$\~?(sub)?doc(ument)?.*', '', line)                     # <remove *$(sub)doc />
+    line = re.sub(r'^\*\$\~?from.*', '', line)                                  # <remove *$from />
+    line = re.sub(r'^\*\$\~?image.*', '', line)                                 # <remove *$image />
+    line = re.sub(r'^\*\$\~?inline\-font.*', '*$inline-font', line)             # <enforce *$inline-font />
+    line = re.sub(r'^\*\$\~?inline\-script.*', '*$inline-script', line)         # <enforce *$inline-script />
+    line = re.sub(r'^\*\$\~?media.*', '', line)                                 # <remove *$media />
+    line = re.sub(r'^\*\$\~?object.*', '*$object', line)                        # <enforce *$object />
+    line = re.sub(r'^\*\$\~?other.*', '*$other', line)                          # <enforce *$other />
+    line = re.sub(r'^\*\$\~?ping.*', '*$ping', line)                            # <enforce *$ping />
+    line = re.sub(r'^\*\$\~?popup.*', '', line)                                 # <remove *$popup />
+    line = re.sub(r'^\*\$\~?popunder.*', '*$popunder', line)                    # <enforce *$popunder />
+    line = re.sub(r'^(.*)\$\~?script.*', r'\1', line)                           # <remove *$script />
+    line = re.sub(r'^\*\$\~?rewrite.*', '', line)                               # <remove *$rewrite />
+    line = re.sub(r'^\*\$\~?websocket.*', '*$websocket', line)                  # <enforce *$websocket />
+    line = re.sub(r'^\*\$\~?xhr.*', '*$xhr', line)                              # <enforce *$xhr />
+    line = re.sub(r'^\*\$\~?xmlhttprequest.*', '*$xhr', line)                   # <enforce *$xhr />
+    line = re.sub(r'^\*\$important.*', '', line)                                # <remove *$important filters />
+    line = re.sub(r'^\*\$.*\.js$', '', line)                                    # <remove *$...js filters />
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = list(pool.map(f17, list2))                                              # <execute function by multithreading />
 list2 = list(filter(None, list2))                                               # <remove empty elements />
+pool.close()                                                                    # <#close the pool and wait for the work to finish />
+pool.join()
 
 print(
     '       ',
