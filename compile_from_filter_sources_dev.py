@@ -181,19 +181,6 @@ print(
     'filters kept'
 )
 
-list2 = [
-    item
-    for line in list2
-    for item in line
-    if line != [''] and item != ''
-]                                                                               # <flatten list'/>
-
-print(
-    '       ',
-    '{:,}'.format(len(list2) + len(list5)),
-    'filters kept'
-)
-
 print(' 2/21 : remove comments ')
 
 def f02(line):
@@ -401,18 +388,24 @@ print(' 8/21 : split urls with $ domain=, denyallow= ')
 
 def f08(line):
 
-    line = [line]
-
-#    if re.search(r'\$.*(domain|denyallow)=', line):
-#        line = re.sub(r'^.*(domain|denyallow)=', '', line).split('|') + [re.sub(r'\$.*$', '', line)]     # <split domains and  url part />
-#    else:
-#        [line]
+    if re.search(r'\$.*(domain|denyallow)=', line):
+        line = re.sub(r'^.*(domain|denyallow)=', '', line).split('|') + [re.sub(r'\$.*$', '', line)]     # <split domains and  url part />
+    else:
+        [line]
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = list(pool.map(f08, list2))                                              # <execute function by multithreading />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
+
+filetest1_out = open(
+    'test1,
+    'w',
+    encoding='UTF-8'
+)
+filetest1_out.writelines(line + '\n' for line in list2)
+file7_out.close()
 
 list2 = [
     item
@@ -421,9 +414,13 @@ list2 = [
     if line != [''] and item != ''
 ]                                                                               # <flatten list'/>
 
-list2 = list(filter(None, list2))                                               # <remove empty elements />
-
-list2 = sorted(set(list2))
+filetest2_out = open(
+    'test2,
+    'w',
+    encoding='UTF-8'
+)
+filetest2_out.writelines(line + '\n' for line in list2)
+file7_out.close()
 
 print(
     '       ',
