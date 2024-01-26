@@ -869,7 +869,7 @@ def f19(line):
 
     re.sub(r'^.+(?=/[^/]+$)', '', line)                                         # <simplify urls keeping last /* part />
 
-    if len(line) <= 3
+    if len(line) <= 3 :
         line = ''                                                               # <keep filters with len > 3 />
 
     return line
