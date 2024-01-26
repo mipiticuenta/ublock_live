@@ -849,8 +849,8 @@ def f20(pattern):
                 re.search(r'\w+', re.sub(r'\$important$', '', line)[1: -1])
             )
         ]                                                                       # <remove text-only regex filters based on <regex-white_list> />for pattern in tqdm.tqdm(list9) :
-
-    return line
+    except :
+        print('Error: check for ' + pattern + ' pattern in regex_white_list')
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 pool.map(f20, tqdm.tqdm(list9))                                                 # <execute function by multithreading />
