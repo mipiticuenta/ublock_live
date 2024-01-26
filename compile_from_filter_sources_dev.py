@@ -30,7 +30,7 @@ file8_in_name  = 'domains_white_list'
 file9_in_name  = 'regex_white_list'
 no_proxy       = {'https': '', 'http': ''}
 local_proxy    = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
-thr            = 4
+thr            = multiprocessing.cpu_count()
 
 # </ libs & settings>
 
@@ -282,19 +282,9 @@ pool.join()
 list5 = [
     line
     for line in list2
-    if re.search(r'^/.+/(?:\$important)?$', line)
-]                                                                               # <populate regex filters/>
-
-list5 = [
-    line
-    for line in list5
-    if not(re.search(r'^/.*[\^\?]\*.*/$', line))                                # <remove wrong regex filters/>
-]
-
-list5 = [
-    line
-    for line in list5
-    if not(re.search(r'^/.*\/\$.*/$', line))                                    # <remove wrong regex filters/>
+    if re.search(r'^/.+/(?:\$important)?$', line)                               # <match regex filter syntax />
+    if not(re.search(r'^/.*[\^\?]\*.*/$', line))                                # <remove wrong regex filter />
+    if not(re.search(r'^/.*\/\$.*/$', line))                                    # <remove wrong regex filter />
 ]
 
 list2  = set(list2) - set(list5)
@@ -653,8 +643,6 @@ list2 = list(filter(None, sorted(set(list2))))                                  
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
-list2 = sorted(set(list2))
-
 print(
     '       ',
     '{:,}'.format(len(list2) + len(list5)),
@@ -745,103 +733,6 @@ print(
 
 print('19/21 : simplify urls keeping last /* part')
 
-#list2s = [
-#    line
-#    for line in list2
-#    if re.search(r'[\#\@\$]', line)
-#]                                                                               # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
-
-#list2  = set(list2) - set(list2s)
-
-## <cleaunp cosmetic filters >
-
-#list2s = [
-#    line
-#    for line in list2s
-#    if not(re.search(r'^[_\W]*\:is', line))
-#]                                                                               # <remove *##:is filters />
-
-#list2s = [
-#    line
-#    for line in list2s
-#    if not(re.search(r'^[_\W]*\:matches', line))
-#]                                                                               # <remove *##:matches filters />
-
-#list2s = [
-#    line
-#    for line in list2s
-#    if not(re.search(r'^[_\W]*\:root', line))
-#]                                                                               # <remove *##:root filters />
-
-#list2s = [
-#    line
-#    for line in list2s
-#    if not(re.search(r'^[_\W]*\:xpath', line))
-#]                                                                               # <remove *##:xpath filters />
-
-#list2s = [
-#    line
-#    for line in list2s
-#    if not(re.search(r'not\(this\-site\-promotes\-malware\)', line))
-#]                                                                               # <remove spurious filters />
-
-#list2s = [
-#    line
-#    for line in list2s
-#    if not(re.search(r'not\(obhod\-adblocka\)', line))
-#]                                                                               # <remove spurious filters />
-
-#list2s = [
-#    line
-#    for line in list2s
-#    if not(re.search(r'not\(my\-obnaruzhili\-blokirovshchik\)', line))
-#]                                                                               # <remove spurious filters />
-
-#list2s = [
-#    line
-#    for line in list2s
-#    if not(re.search(r'^[_\W]*\:not\(input\)\:not\(textarea\)', line))
-#]
-
-#list2s = [
-#    line
-#    for line in list2s
-#    if not(re.search(r'removeparam.*smilformats', line))
-#]
-
-#list2s = [
-#    line
-#    for line in list2s
-#    if not(re.search(r'removeparam.*formatsprofile', line))
-#]
-
-## </cleaunp cosmetic filters >
-
-#list2 = [
-#    re.sub(r'^.+(?=/[^/]+$)', '', line)
-#    for line in list2
-#]                                                                               # <simplify urls keeping last /* part />
-
-#list2 = [
-#    line
-#    for line in list2
-#    if len(line) > 3
-#]                                                                               # <keep filters with len > 3 />
-
-#list2 = [
-#    line
-#    for line in list2
-#    if (re.search(r'[^\[\]\{\}\;\,\\]', line))
-#]                                                                               # <remove broken regex filters />
-
-#list2 = list(filter(None, list2))                                               # <remove empty elements />
-
-#print(
-#    '       ',
-#    '{:,}'.format(len(list2) + len(list5)),
-#    'filters kept'
-#)
-
 def f19(line):
 
     if re.search(r'[\#\@\$]', line) :                                           # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
@@ -908,7 +799,40 @@ list9 = list(
     )                                                                           # <remove empty elements />
 )
 
-for pattern in tqdm.tqdm(list9) :
+print('\nRegex white list loaded')
+
+#for pattern in tqdm.tqdm(list9) :
+#    try :
+#        pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
+#        list2 = [
+#            line
+#            for line in list2
+#            if not(pattern.search(line))
+#        ]                                                                       # <remove filters based on <regex-white_list> />
+#        list5 = [
+#            line
+#            for line in list5
+#            if (
+#                not(pattern.search(re.sub(r'\$important$', '', line)[1: -1])) 
+#                and 
+#                re.search(r'\w+', re.sub(r'\$important$', '', line)[1: -1])
+#            )
+#        ]                                                                       # <remove text-only regex filters based on <regex-white_list> />
+#    except :
+#        print('Error: check for ' + pattern + ' pattern in regex_white_list')
+
+#list2 = list(filter(None, list2))                                               # <remove empty elements />
+
+## </get regex white list from file, dedup, sort and clean up filters>
+
+#print(
+#    '       ',
+#    '{:,}'.format(len(list2) + len(list5)),
+#    'filters kept'
+#)
+
+def f20(pattern):
+
     try :
         pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
         list2 = [
@@ -924,19 +848,15 @@ for pattern in tqdm.tqdm(list9) :
                 and 
                 re.search(r'\w+', re.sub(r'\$important$', '', line)[1: -1])
             )
-        ]                                                                       # <remove text-only regex filters based on <regex-white_list> />
-    except :
-        print('Error: check for ' + pattern + ' pattern in regex_white_list')
+        ]                                                                       # <remove text-only regex filters based on <regex-white_list> />for pattern in tqdm.tqdm(list9) :
 
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+    return line
 
-# </get regex white list from file, dedup, sort and clean up filters>
-
-print(
-    '       ',
-    '{:,}'.format(len(list2) + len(list5)),
-    'filters kept'
-)
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+pool.map(f20, tqdm.tqdm(list9)))                                              # <execute function by multithreading />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
+pool.close()                                                                    # <#close the pool and wait for the work to finish />
+pool.join()
 
 # <write extracted regex type filters>
 
