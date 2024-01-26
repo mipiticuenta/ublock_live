@@ -831,33 +831,48 @@ print('\nRegex white list loaded')
 #    'filters kept'
 #)
 
-def f20(pattern):
+print('removing filters based on <regex-white_list>')
 
-    global list2
-    global list5
-    
-    try :
-        c_pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
-        list2 = [
-            line
-            for line in list2
-            if not(c_pattern.search(line))
-        ]                                                                       # <remove filters based on <regex-white_list> />
-        list5 = [
-            line
-            for line in list5
-            if (
-                not(c_pattern.search(re.sub(r'\$important$', '', line)[1: -1])) 
-                and 
-                re.search(r'\w+', re.sub(r'\$important$', '', line)[1: -1])
-            )
-        ]                                                                       # <remove text-only regex filters based on <regex-white_list> />for pattern in tqdm.tqdm(list9) :
-    except :
-        print('Error: check for ' + pattern + ' pattern in regex_white_list')
+def f20_2(line):
+
+    global list9
+
+    for pattern in list9 :
+        try :
+            pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
+            if pattern.search(line) :
+                line = ''                                                       # <remove filter based on <regex-white_list> />
+
+        except :
+            print('Error: check for ' + pattern + ' pattern in regex_white_list')
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-pool.map_async(f20, tqdm.tqdm(list9))                                           # <execute function by multithreading />
+list2 = list(pool.map(f20_2, tqdm.tqdm(list2)))                                 # <execute function by multithreading />
 list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
+pool.close()                                                                    # <#close the pool and wait for the work to finish />
+pool.join()
+
+print('removing text-only regex filters based on <regex-white_list>')
+
+def f20_5(line):
+
+    global list9
+
+    for pattern in list9 :
+        try :
+            pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
+            if (
+                pattern.search(re.sub(r'\$important$', '', line)[1: -1])
+                and 
+                not(re.search(r'\w+', re.sub(r'\$important$', '', line)[1: -1]))
+            ) :
+                line = ''                                                       # <remove text-only regex filters based on <regex-white_list> />
+        except :
+            print('Error: check for ' + pattern + ' pattern in regex_white_list')
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list5 = list(pool.map(f20_5, list5))                                            # <execute function by multithreading />
+list5 = list(filter(None, sorted(set(list5))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
