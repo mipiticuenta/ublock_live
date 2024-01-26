@@ -853,7 +853,7 @@ def f20(pattern):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-pool.map(f20, tqdm.tqdm(list9)))                                              # <execute function by multithreading />
+pool.map(f20, tqdm.tqdm(list9))                                                 # <execute function by multithreading />
 list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
