@@ -710,50 +710,6 @@ print(
 
 print('18/21 : remove broken filters and fix false regex ')
 
-#list2 = [
-#    line
-#    for line in list2
-#    if re.search(r'^[^\(\)\[\]\{\}\~]', line)
-#]                                                                               # <remove broken filters; improve this filter />
-
-#list2 = [
-#    line
-#    for line in list2
-#    if not(re.search(r'^.*\([^\)]*$', line))
-#]                                                                               # <remove broken filters; improve this filter for multiple () />
-
-#list2 = [
-#    line
-#    for line in list2
-#    if not(re.search(r'^.*\[[^\]]*$', line))
-#]                                                                               # <remove broken filters; improve this filter for multiple [] />
-
-#list2 = [
-#    line
-#    for line in list2
-#    if not(re.search(r'^.*\{[^\}]*$', line))
-#]                                                                               # <remove broken filters; improve this filter for multiple {} />
-
-#list2 = [
-#    line
-#    for line in list2
-#    if not(re.search(r'^/.*[\[\\].*[^/]$', line))
-#]                                                                               # <remove broken filters (unterminated regex) />
-
-#list2 = [
-#    line
-#    for line in list2
-#    if not(re.search(r'^/.*\\/$', line))
-#]                                                                               # <remove broken regex (bad termination) />
-
-#list2 = list(filter(None, list2))                                               # <remove empty elements />
-
-#print(
-#    '       ',
-#    '{:,}'.format(len(list2) + len(list5)),
-#    'filters kept'
-#)
-
 def f18(line):
 
     if not(re.search(r'^[^\(\)\[\]\{\}\~]', line)) :
@@ -768,6 +724,8 @@ def f18(line):
         line = ''                                                               # <remove broken filters (unterminated regex) />
     if re.search(r'^/.*\\/$', line) :
         line = ''                                                               # <remove broken regex (bad termination) />
+    if not(re.search(r'[^\[\]\{\}\;\,\\]', line)) :
+        line = ''                                                               # <remove broken regex filters />
 
     return line
 
@@ -787,96 +745,142 @@ print(
 
 print('19/21 : simplify urls keeping last /* part')
 
-list2s = [
-    line
-    for line in list2
-    if re.search(r'[\#\@\$]', line)
-]                                                                               # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
+#list2s = [
+#    line
+#    for line in list2
+#    if re.search(r'[\#\@\$]', line)
+#]                                                                               # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
 
-list2  = set(list2) - set(list2s)
+#list2  = set(list2) - set(list2s)
 
-# <cleaunp cosmetic filters >
+## <cleaunp cosmetic filters >
 
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'^[_\W]*\:is', line))
-]                                                                               # <remove *##:is filters />
+#list2s = [
+#    line
+#    for line in list2s
+#    if not(re.search(r'^[_\W]*\:is', line))
+#]                                                                               # <remove *##:is filters />
 
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'^[_\W]*\:matches', line))
-]                                                                               # <remove *##:matches filters />
+#list2s = [
+#    line
+#    for line in list2s
+#    if not(re.search(r'^[_\W]*\:matches', line))
+#]                                                                               # <remove *##:matches filters />
 
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'^[_\W]*\:root', line))
-]                                                                               # <remove *##:root filters />
+#list2s = [
+#    line
+#    for line in list2s
+#    if not(re.search(r'^[_\W]*\:root', line))
+#]                                                                               # <remove *##:root filters />
 
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'^[_\W]*\:xpath', line))
-]                                                                               # <remove *##:xpath filters />
+#list2s = [
+#    line
+#    for line in list2s
+#    if not(re.search(r'^[_\W]*\:xpath', line))
+#]                                                                               # <remove *##:xpath filters />
 
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'not\(this\-site\-promotes\-malware\)', line))
-]                                                                               # <remove spurious filters />
+#list2s = [
+#    line
+#    for line in list2s
+#    if not(re.search(r'not\(this\-site\-promotes\-malware\)', line))
+#]                                                                               # <remove spurious filters />
 
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'not\(obhod\-adblocka\)', line))
-]                                                                               # <remove spurious filters />
+#list2s = [
+#    line
+#    for line in list2s
+#    if not(re.search(r'not\(obhod\-adblocka\)', line))
+#]                                                                               # <remove spurious filters />
 
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'not\(my\-obnaruzhili\-blokirovshchik\)', line))
-]                                                                               # <remove spurious filters />
+#list2s = [
+#    line
+#    for line in list2s
+#    if not(re.search(r'not\(my\-obnaruzhili\-blokirovshchik\)', line))
+#]                                                                               # <remove spurious filters />
 
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'^[_\W]*\:not\(input\)\:not\(textarea\)', line))
-]
+#list2s = [
+#    line
+#    for line in list2s
+#    if not(re.search(r'^[_\W]*\:not\(input\)\:not\(textarea\)', line))
+#]
 
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'removeparam.*smilformats', line))
-]
+#list2s = [
+#    line
+#    for line in list2s
+#    if not(re.search(r'removeparam.*smilformats', line))
+#]
 
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'removeparam.*formatsprofile', line))
-]
+#list2s = [
+#    line
+#    for line in list2s
+#    if not(re.search(r'removeparam.*formatsprofile', line))
+#]
 
-# </cleaunp cosmetic filters >
+## </cleaunp cosmetic filters >
 
-list2 = [
-    re.sub(r'^.+(?=/[^/]+$)', '', line)
-    for line in list2
-]                                                                               # <simplify urls keeping last /* part />
+#list2 = [
+#    re.sub(r'^.+(?=/[^/]+$)', '', line)
+#    for line in list2
+#]                                                                               # <simplify urls keeping last /* part />
 
-list2 = [
-    line
-    for line in list2
-    if len(line) > 3
-]                                                                               # <keep filters with len > 3 />
+#list2 = [
+#    line
+#    for line in list2
+#    if len(line) > 3
+#]                                                                               # <keep filters with len > 3 />
 
-list2 = [
-    line
-    for line in list2
-    if (re.search(r'[^\[\]\{\}\;\,\\]', line))
-]                                                                               # <remove broken regex filters />
+#list2 = [
+#    line
+#    for line in list2
+#    if (re.search(r'[^\[\]\{\}\;\,\\]', line))
+#]                                                                               # <remove broken regex filters />
 
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+#list2 = list(filter(None, list2))                                               # <remove empty elements />
+
+#print(
+#    '       ',
+#    '{:,}'.format(len(list2) + len(list5)),
+#    'filters kept'
+#)
+
+def f19(line):
+
+    if re.search(r'[\#\@\$]', line) :                                           # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
+    
+        if re.search(r'^[_\W]*\:is', line) :
+            line = ''                                                           # <remove *##:is filters />
+        if re.search(r'^[_\W]*\:matches', line) :
+            line = ''                                                           # <remove *##:matches filters />
+        if re.search(r'^[_\W]*\:root', line) :
+            line = ''                                                           # <remove *##:root filters />
+        if re.search(r'^[_\W]*\:xpath', line) :
+            line = ''                                                           # <remove *##:xpath filters />
+        if re.search(r'not\(this\-site\-promotes\-malware\)', line) :
+            line = ''                                                           # <remove spurious filters />
+        if re.search(r'not\(obhod\-adblocka\)', line) :
+            line = ''                                                           # <remove spurious filters />
+        if re.search(r'not\(my\-obnaruzhili\-blokirovshchik\)', line) :
+            line = ''                                                           # <remove spurious filters />
+        if re.search(r'^[_\W]*\:not\(input\)\:not\(textarea\)', line) :
+            line = ''
+        if re.search(r'removeparam.*smilformats', line) :
+            line = ''
+        if re.search(r'removeparam.*formatsprofile', line) :
+            line = ''
+
+    re.sub(r'^.+(?=/[^/]+$)', '', line)                                         # <simplify urls keeping last /* part />
+
+    if len(line) <= 3
+        line = ''                                                               # <keep filters with len > 3 />
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = list(pool.map(f19, list2))                                              # <execute function by multithreading />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
+pool.close()                                                                    # <#close the pool and wait for the work to finish />
+pool.join()
+
+list2 = sorted(set(list2))
 
 print(
     '       ',
