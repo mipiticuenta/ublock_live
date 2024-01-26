@@ -833,21 +833,21 @@ print('\nRegex white list loaded')
 
 def f20(pattern):
 
-    global = list2
-    global = list5
+    global list2
+    global list5
     
     try :
-        pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
+        c_pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
         list2_local = [
             line
             for line in list2_local
-            if not(pattern.search(line))
+            if not(c_pattern.search(line))
         ]                                                                       # <remove filters based on <regex-white_list> />
         list5_local = [
             line
             for line in list5_local
             if (
-                not(pattern.search(re.sub(r'\$important$', '', line)[1: -1])) 
+                not(c_pattern.search(re.sub(r'\$important$', '', line)[1: -1])) 
                 and 
                 re.search(r'\w+', re.sub(r'\$important$', '', line)[1: -1])
             )
