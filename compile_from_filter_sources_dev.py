@@ -710,43 +710,74 @@ print(
 
 print('18/21 : remove broken filters and fix false regex ')
 
-list2 = [
-    line
-    for line in list2
-    if re.search(r'^[^\(\)\[\]\{\}\~]', line)
-]                                                                               # <remove broken filters; improve this filter />
+#list2 = [
+#    line
+#    for line in list2
+#    if re.search(r'^[^\(\)\[\]\{\}\~]', line)
+#]                                                                               # <remove broken filters; improve this filter />
 
-list2 = [
-    line
-    for line in list2
-    if not(re.search(r'^.*\([^\)]*$', line))
-]                                                                               # <remove broken filters; improve this filter for multiple () />
+#list2 = [
+#    line
+#    for line in list2
+#    if not(re.search(r'^.*\([^\)]*$', line))
+#]                                                                               # <remove broken filters; improve this filter for multiple () />
 
-list2 = [
-    line
-    for line in list2
-    if not(re.search(r'^.*\[[^\]]*$', line))
-]                                                                               # <remove broken filters; improve this filter for multiple [] />
+#list2 = [
+#    line
+#    for line in list2
+#    if not(re.search(r'^.*\[[^\]]*$', line))
+#]                                                                               # <remove broken filters; improve this filter for multiple [] />
 
-list2 = [
-    line
-    for line in list2
-    if not(re.search(r'^.*\{[^\}]*$', line))
-]                                                                               # <remove broken filters; improve this filter for multiple {} />
+#list2 = [
+#    line
+#    for line in list2
+#    if not(re.search(r'^.*\{[^\}]*$', line))
+#]                                                                               # <remove broken filters; improve this filter for multiple {} />
 
-list2 = [
-    line
-    for line in list2
-    if not(re.search(r'^/.*[\[\\].*[^/]$', line))
-]                                                                               # <remove broken filters (unterminated regex) />
+#list2 = [
+#    line
+#    for line in list2
+#    if not(re.search(r'^/.*[\[\\].*[^/]$', line))
+#]                                                                               # <remove broken filters (unterminated regex) />
 
-list2 = [
-    line
-    for line in list2
-    if not(re.search(r'^/.*\\/$', line))
-]                                                                               # <remove broken regex (bad termination) />
+#list2 = [
+#    line
+#    for line in list2
+#    if not(re.search(r'^/.*\\/$', line))
+#]                                                                               # <remove broken regex (bad termination) />
 
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+#list2 = list(filter(None, list2))                                               # <remove empty elements />
+
+#print(
+#    '       ',
+#    '{:,}'.format(len(list2) + len(list5)),
+#    'filters kept'
+#)
+
+def f18(line):
+
+    if not(re.search(r'^[^\(\)\[\]\{\}\~]', line)) :
+        line = ''                                                               # <remove broken filters; improve this filter />
+    if re.search(r'^.*\([^\)]*$', line) :
+        line = ''                                                               # <remove broken filters (unterminated ( ); improve this filter for multiple () />
+    if re.search(r'^.*\[[^\]]*$', line) :
+        line = ''                                                               # <remove broken filters (unterminated [ ]); improve this filter for multiple [] />
+    if re.search(r'^.*\{[^\}]*$', line) :
+        line = ''                                                               # <remove broken filters (unterminated { ); improve this filter for multiple {} />
+    if re.search(r'^/.*[\[\\].*[^/]$', line) :
+        line = ''                                                               # <remove broken filters (unterminated regex) />
+    if re.search(r'^/.*\\/$', line) :
+        line = ''                                                               # <remove broken regex (bad termination) />
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = list(pool.map(f18, list2))                                              # <execute function by multithreading />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
+pool.close()                                                                    # <#close the pool and wait for the work to finish />
+pool.join()
+
+list2 = sorted(set(list2))
 
 print(
     '       ',
