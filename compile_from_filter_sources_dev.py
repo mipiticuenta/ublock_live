@@ -30,7 +30,7 @@ file8_in_name  = 'domains_white_list'
 file9_in_name  = 'regex_white_list'
 no_proxy       = {'https': '', 'http': ''}
 local_proxy    = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
-thr            = multiprocessing.cpu_count()
+thr            = os.cpu_count()
 
 # </ libs & settings>
 
