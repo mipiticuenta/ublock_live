@@ -835,8 +835,7 @@ print('\n<regex white list> loaded\n')
 tqdm._instances.clear()
 pbar = tqdm(
     desc = 'removing filters based on <regex-white_list>',
-    total = len(list9),
-    ncols = 20
+    total = len(list9)
 )
 
 def f20_2(pattern):
