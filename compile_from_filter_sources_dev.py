@@ -17,7 +17,7 @@ import math                                                                     
 import os                                                                       # <operating system interfaces />
 import re                                                                       # <regex capabilities />
 import requests                                                                 # <fetch urls />
-import tqdm                                                                     # <progress bar />
+from tqdm import tqdm                                                           # <progress bar />
 from multiprocessing import Pool as ThreadPool                                  # <multithreading function/>
 
 file1_in_name  = 'filter_sources'
@@ -800,7 +800,7 @@ list9 = list(filter(None, sorted(set(list9))))                                  
 
 print('\n<regex white list> loaded\n')
 
-#for pattern in tqdm.tqdm(list9) :
+#for pattern in tqdm(list9) :
 #    try :
 #        pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
 #        list2 = [
@@ -832,9 +832,11 @@ print('\n<regex white list> loaded\n')
 
 #print('removing filters based on <regex-white_list>')
 
-pbar = tqdm.tqdm(
+tqdm._instances.clear()
+pbar = tqdm(
     desc = 'removing filters based on <regex-white_list>',
-    total = len(list9)
+    total = len(list9),
+    ncols = 20
 )
 
 def f20_2(pattern):
@@ -855,12 +857,6 @@ def f20_2(pattern):
     pbar.update(1)
 
     return list2wl
-
-tqdm._instances.clear()
-pbar = tqdm.tqdm(
-    desc = 'removing filters based on <regex-white_list>',
-    total = len(list9)
-)
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2wl = pool.map(f20_2, list9)                                                # <execute function by multithreading />
@@ -954,7 +950,7 @@ print('21/21 : deflat url filters redundant with regex filters', sep = '')
 
 # <remove url filters covered by regex filters>
 
-#for pattern in tqdm.tqdm(list5):
+#for pattern in tqdm(list5):
 #    try :
 #        pattern = re.compile(r'' + re.sub(r'\$important$', '', pattern)[1: -1]) # < create regex pattern for faster processing />
 #        list2 = [
@@ -1083,7 +1079,7 @@ print('\npreserving low level filters of white listed domains', sep = '')
 
 list3s = [
     line
-    for line in tqdm.tqdm(list3)
+    for line in tqdm(list3)
     if (re.sub(r'^([-\w]+\.)+', '', line) in list8)
 ]                                                                               # <get (@.)+tld domains, removing trailing $important />
 
@@ -1136,12 +1132,12 @@ print(
 # </deflat domain filters >
 
 #         ## <filter() + map() option>
-#         #list3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3_filter))) == 0) else '', tqdm.tqdm(list3)))
+#         #list3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3_filter))) == 0) else '', tqdm(list3)))
 #         #list3 = [line for line in list3 if line]    # <cleanup empty lines/>
 #         ## </filter() + map() option>
 
 #         ## <filter() + list comprehension option; may worth it a benchmark vs map()?>
-#         ##list3 = [line for line in list3 if len(list(filter(lambda substring: ('.' + substring) in line, tqdm.tqdm(list3_filter[:n])))) == 0]
+#         ##list3 = [line for line in list3 if len(list(filter(lambda substring: ('.' + substring) in line, tqdm(list3_filter[:n])))) == 0]
 #         ## </filter() + list comprehension option>
 
 #         # </remove redundant domains from list>
@@ -1171,7 +1167,7 @@ list2  = set(list2) - set(list2s)
 
 list2 = [
     line
-    for item in tqdm.tqdm(list2s)
+    for item in tqdm(list2s)
     for line in list2
     if (item != (line + '$important') and (item != (line + ',important')))
 ]
