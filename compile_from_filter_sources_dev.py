@@ -843,11 +843,11 @@ def f20_2(pattern):
     global list2
 
     try :
-        c_pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
+        pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
         list2wl = [
             line
             for line in list2
-            if c_pattern.search(line)
+            if pattern.search(line)
         ]                                                                       # <remove filters based on <regex-white_list> />
     except :
         print('Error: check for ' + pattern + ' pattern in regex_white_list')
@@ -855,6 +855,9 @@ def f20_2(pattern):
     return list2wl
 
 def update(*arg):
+
+    global pbar
+
     pbar.update(1)
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
