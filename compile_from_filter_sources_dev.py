@@ -30,7 +30,7 @@ file8_in_name  = 'domains_white_list'
 file9_in_name  = 'regex_white_list'
 no_proxy       = {'https': '', 'http': ''}
 local_proxy    = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
-thr            = min(1, os.cpu_count() - 1)
+thr            = max(1, os.cpu_count() - 1)
 
 # </ libs & settings>
 
@@ -831,7 +831,12 @@ print('\n<regex white list> loaded\n')
 #    'filters kept'
 #)
 
-print('removing filters based on <regex-white_list>')
+#print('removing filters based on <regex-white_list>')
+
+pbar = tqdm.tqdm(
+    desc = 'removing filters based on <regex-white_list>',
+    total = len(list9)
+)
 
 def f20_2(pattern):
 
@@ -849,7 +854,7 @@ def f20_2(pattern):
 
     return list2wl
 
-def update(*a):
+def update(*arg):
     pbar.update(1)
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
