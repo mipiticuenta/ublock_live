@@ -771,8 +771,6 @@ list2 = list(filter(None, sorted(set(list2))))                                  
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
-list2 = sorted(set(list2))
-
 print(
     '       ',
     '{:,}'.format(len(list2) + len(list5)),
@@ -798,6 +796,7 @@ list9 = list(
         ]                                                                       # <add regex rules to enforce sld whitelisting />
     )                                                                           # <remove empty elements />
 )
+list9 = list(filter(None, sorted(set(list9))))                                  # <remove empty elements />
 
 print('\n<regex white list> loaded\n')
 
@@ -857,13 +856,14 @@ def f20_2(pattern):
 
     return list2wl
 
+tqdm._instances.clear()
 pbar = tqdm.tqdm(
     desc = 'removing filters based on <regex-white_list>',
     total = len(list9)
 )
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2wl = pool.map_async(f20_2, list9).get()                 # <execute function by multithreading />
+list2wl = pool.map_async(f20_2, list9).get()                                    # <execute function by multithreading />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
