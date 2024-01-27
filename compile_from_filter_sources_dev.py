@@ -841,6 +841,7 @@ pbar = tqdm.tqdm(
 def f20_2(pattern):
 
     global list2
+    global pbar
 
     try :
         pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
@@ -852,6 +853,8 @@ def f20_2(pattern):
     except :
         print('Error: check for ' + pattern + ' pattern in regex_white_list')
 
+    pbar.update(1)
+
     return list2wl
 
 pbar = tqdm.tqdm(
@@ -859,15 +862,8 @@ pbar = tqdm.tqdm(
     total = len(list9)
 )
 
-def update(*arg):
-
-    global pbar
-
-    pbar.update(1)
-
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-
-list2wl = pool.map_async(f20_2, list9, callback = update).get()                 # <execute function by multithreading />
+list2wl = pool.map_async(f20_2, list9).get()                 # <execute function by multithreading />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
