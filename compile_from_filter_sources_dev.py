@@ -191,7 +191,7 @@ def f02(line):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2 = list(pool.map(f02, list2))                                              # <execute function by multithreading />
+list2 = pool.map(f02, list2)                                                    # <execute function by multithreading />
 list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
@@ -215,7 +215,7 @@ def f03(line):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2 = list(pool.map(f03, list2))                                              # <execute function by multithreading />
+list2 = pool.map(f03, list2)                                                    # <execute function by multithreading />
 list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
@@ -250,7 +250,7 @@ def f04(line):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2 = list(pool.map(f04, list2))                                              # <execute function by multithreading />
+list2 = pool.map(f04, list2)                                                    # <execute function by multithreading />
 list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
@@ -274,7 +274,7 @@ def f05(line):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2 = list(pool.map(f05, list2))                                              # <execute function by multithreading />
+list2 = pool.map(f05, list2)                                                    # <execute function by multithreading />
 list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
@@ -308,7 +308,7 @@ def f06(line):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2 = list(pool.map(f06, list2))                                              # <execute function by multithreading />
+list2 = pool.map(f06, list2)                                                    # <execute function by multithreading />
 list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
@@ -330,7 +330,7 @@ def f07(line):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2 = list(pool.map(f07, list2))                                              # <execute function by multithreading />
+list2 = pool.map(f07, list2)                                                    # <execute function by multithreading />
 list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
@@ -355,7 +355,7 @@ def f08(line):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2 = list(pool.map(f08, list2))                                              # <execute function by multithreading />
+list2 = pool.map(f08, list2)                                                    # <execute function by multithreading />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
@@ -389,7 +389,7 @@ def f09(line):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2 = list(pool.map(f09, list2))                                              # <execute function by multithreading />
+list2 = pool.map(f09, list2)                                                    # <execute function by multithreading />
 list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
@@ -415,7 +415,7 @@ def f10(line):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2 = list(pool.map(f10, list2))                                              # <execute function by multithreading />
+list2 = pool.map(f10, list2)                                                    # <execute function by multithreading />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
@@ -468,7 +468,7 @@ while n_1 > len(list2):                                                         
         return line
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />
-    list2 = list(pool.map(f11, list2))                                          # <execute function by multithreading />
+    list2 = pool.map(f11, list2)                                                # <execute function by multithreading />
     list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
     pool.close()                                                                # <#close the pool and wait for the work to finish />
     pool.join()
@@ -503,7 +503,7 @@ while n_1 > len(list2):                                                         
         return line
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />
-    list2 = list(pool.map(f12, list2))                                          # <execute function by multithreading />
+    list2 = pool.map(f12, list2)                                                # <execute function by multithreading />
     list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
     pool.close()                                                                # <#close the pool and wait for the work to finish />
     pool.join()
@@ -530,7 +530,7 @@ while n_1 > len(list2):                                                         
         return line
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />
-    list2 = list(pool.map(f13, list2))                                          # <execute function by multithreading />
+    list2 = pool.map(f13, list2)                                                # <execute function by multithreading />
     pool.close()                                                                # <#close the pool and wait for the work to finish />
     pool.join()
 
@@ -565,7 +565,7 @@ while n_1 > len(list2):                                                         
         return line
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />
-    list2 = list(pool.map(f14, list2))                                          # <execute function by multithreading />
+    list2 = pool.map(f14, list2)                                                # <execute function by multithreading />
     list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
     pool.close()                                                                # <#close the pool and wait for the work to finish />
     pool.join()
@@ -593,7 +593,7 @@ def f15(line):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2 = list(pool.map(f15, list2))                                              # <execute function by multithreading />
+list2 = pool.map(f15, list2)                                                    # <execute function by multithreading />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
@@ -638,7 +638,7 @@ def f16(line):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2 = list(pool.map(f16, list2))                                              # <execute function by multithreading />
+list2 = pool.map(f16, list2)                                                    # <execute function by multithreading />
 list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
@@ -683,7 +683,7 @@ def f17(line):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2 = list(pool.map(f17, list2))                                              # <execute function by multithreading />
+list2 = pool.map(f17, list2)                                                    # <execute function by multithreading />
 list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
@@ -718,7 +718,7 @@ def f18(line):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2 = list(pool.map(f18, list2))                                              # <execute function by multithreading />
+list2 = pool.map(f18, list2)                                                    # <execute function by multithreading />
 list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
@@ -766,7 +766,7 @@ def f19(line):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2 = list(pool.map(f19, list2))                                              # <execute function by multithreading />
+list2 = pool.map(f19, list2)                                                    # <execute function by multithreading />
 list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
@@ -862,7 +862,7 @@ pbar = tqdm.tqdm(
     desc = 'removing filters based on <regex-white_list>',
     total = len(list9)
 )
-list2wl = pool.map(f20_2, list9, callback = update).get()                       # <execute function by multithreading />
+list2wl = pool.map_async(f20_2, list9, callback = update).get()                 # <execute function by multithreading />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
