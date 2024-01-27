@@ -30,7 +30,7 @@ file8_in_name  = 'domains_white_list'
 file9_in_name  = 'regex_white_list'
 no_proxy       = {'https': '', 'http': ''}
 local_proxy    = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
-thr            = os.cpu_count()
+thr            = min(1, os.cpu_count() - 1)
 
 # </ libs & settings>
 
@@ -799,7 +799,7 @@ list9 = list(
     )                                                                           # <remove empty elements />
 )
 
-print('\nRegex white list loaded')
+print('\n<regex white list> loaded\n')
 
 #for pattern in tqdm.tqdm(list9) :
 #    try :
@@ -833,48 +833,73 @@ print('\nRegex white list loaded')
 
 print('removing filters based on <regex-white_list>')
 
-def f20_2(line):
+def f20_2(pattern):
 
-    global list9
+    global list2
 
-    for pattern in list9 :
-        try :
-            pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
-            if pattern.search(line) :
-                line = ''                                                       # <remove filter based on <regex-white_list> />
+    try :
+        c_pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
+        list2wl = [
+            line
+            for line in list2
+            if c_pattern.search(line)
+        ]                                                                       # <remove filters based on <regex-white_list> />
+    except :
+        print('Error: check for ' + pattern + ' pattern in regex_white_list')
 
-        except :
-            print('Error: check for ' + pattern + ' pattern in regex_white_list')
+    return list2wl
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2 = list(pool.map(f20_2, list2))                                            # <execute function by multithreading />
-list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
+list2wl = list(tqdm.tqdm(pool.map_async(f20_2, list9)))                         # <execute function by multithreading />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
+
+list2wl = sorted(
+    set(
+        [
+            line if (type(line) == str)                                         # <prevents string atomization into chars is string type />
+            else item
+            for line in list2wl
+            for item in line
+        ]                                                                       # <flatten list />
+    )                                                                           # <dedup list />
+)
+list2 = list(filter(None, sorted(set(list2) - set(list2wl))))                   # <remove empty elements />
 
 print('removing text-only regex filters based on <regex-white_list>')
 
-def f20_5(line):
+def f20_5(pattern):
 
-    global list9
+    global list2
 
-    for pattern in list9 :
-        try :
-            pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
+    try :
+        c_pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
+        list5wl = [
+            line
+            for line in list5
             if (
-                pattern.search(re.sub(r'\$important$', '', line)[1: -1])
+                c_pattern.search(re.sub(r'\$important$', '', line)[1: -1])
                 and 
                 not(re.search(r'\w+', re.sub(r'\$important$', '', line)[1: -1]))
-            ) :
-                line = ''                                                       # <remove text-only regex filters based on <regex-white_list> />
-        except :
-            print('Error: check for ' + pattern + ' pattern in regex_white_list')
+            )
+        ]                                                                       # <remove text-only regex filters based on <regex-white_list> />
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list5 = list(pool.map(f20_5, list5))                                            # <execute function by multithreading />
-list5 = list(filter(None, sorted(set(list5))))                                  # <remove empty elements />
+list5wl = list(pool.map(f20_5, list5))                                          # <execute function by multithreading />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
+
+list5wl = sorted(
+    set(
+        [
+            line if (type(line) == str)                                         # <prevents string atomization into chars is string type />
+            else item
+            for line in list5wl
+            for item in line
+        ]                                                                       # <flatten list />
+    )                                                                           # <dedup list />
+)
+list5 = list(filter(None, sorted(set(list5) - set(list5wl))))                   # <remove empty elements />
 
 # <write extracted regex type filters>
 
@@ -914,22 +939,41 @@ print('21/21 : deflat url filters redundant with regex filters', sep = '')
 
 # <remove url filters covered by regex filters>
 
-for pattern in tqdm.tqdm(list5):
-    try :
-        pattern = re.compile(r'' + re.sub(r'\$important$', '', pattern)[1: -1]) # < create regex pattern for faster processing />
-        list2 = [
-            line
-            for line in list2
-            if not(pattern.search(' ' + line + ' '))
-        ]
-    except :
-        print('Error: check for ' + pattern + ' regex pattern in url sources')
+#for pattern in tqdm.tqdm(list5):
+#    try :
+#        pattern = re.compile(r'' + re.sub(r'\$important$', '', pattern)[1: -1]) # < create regex pattern for faster processing />
+#        list2 = [
+#            line
+#            for line in list2
+#            if not(pattern.search(' ' + line + ' '))
+#        ]
+#    except :
+#        print('Error: check for ' + pattern + ' regex pattern in url sources')
 
 # </remove url filters covered by regex filters>
+
+def f21(line):
+
+    global list5
+
+    for pattern in list5 :
+        try :
+            pattern = re.compile(r'' + re.sub(r'\$important$', '', pattern)[1: -1]) # < create regex pattern for faster processing />
+            if pattern.search(' ' + line + ' ') :
+                line = ''
+        except :
+            print('Error: check for ' + pattern + ' pattern in regex_white_list')
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = list(pool.map(f21, list2))                                              # <execute function by multithreading />
+
+pool.close()                                                                    # <#close the pool and wait for the work to finish />
+pool.join()
 
 # <aggregate filters >
 
 list2 = sorted(set(list2) | set(list2s) | set(list5))                           # <join lists2, list2s, list5' />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 del(list2s)                                                                     # <discard list2s, keep list5/>
 
 # </aggregate filters >
