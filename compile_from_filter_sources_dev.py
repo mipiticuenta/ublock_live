@@ -796,7 +796,6 @@ list9 = list(
         ]                                                                       # <add regex rules to enforce sld whitelisting />
     )                                                                           # <remove empty elements />
 )
-list9 = list(filter(None, sorted(set(list9))))                                  # <remove empty elements />
 
 print('\n<regex white list> loaded\n')
 
@@ -830,7 +829,7 @@ print('\n<regex white list> loaded\n')
 #    'filters kept'
 #)
 
-#print('removing filters based on <regex-white_list>')
+list9 = list(filter(None, sorted(set(list9))))                                  # <remove empty elements />
 
 tqdm._instances.clear()
 pbar = tqdm(
@@ -874,25 +873,35 @@ list2wl = sorted(
 )
 list2 = list(filter(None, sorted(set(list2) - set(list2wl))))                   # <remove empty elements />
 
-print('removing text-only regex filters based on <regex-white_list>')
+list5 = list(filter(None, sorted(set(list5))))                                  # <remove empty elements />
+
+tqdm._instances.clear()
+pbar = tqdm(
+    desc = 'removing filters based on <regex-white_list>',
+    total = len(list5)
+)
 
 def f20_5(pattern):
 
     global list5
 
     try :
-        c_pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
+        pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
         list5wl = [
             line
             for line in list5
             if (
-                c_pattern.search(re.sub(r'\$important$', '', line)[1: -1])
+                pattern.search(re.sub(r'\$important$', '', line)[1: -1])
                 and 
                 not(re.search(r'\w+', re.sub(r'\$important$', '', line)[1: -1]))
             )
         ]                                                                       # <remove text-only regex filters based on <regex-white_list> />
     except :
         print('Error: check for ' + pattern + ' pattern in regex_white_list')
+
+    pbar.update(1)
+
+    return list5wl
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list5wl = list(pool.map(f20_5, list5))                                          # <execute function by multithreading />
