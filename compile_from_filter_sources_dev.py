@@ -170,7 +170,7 @@ def f01(line):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2 = list(pool.map(f01, list2))                                              # <execute function by multithreading />
+list2 = pool.map(f01, list2)                                                    # <execute function by multithreading />
 list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
@@ -862,7 +862,7 @@ pbar = tqdm.tqdm(
     desc = 'removing filters based on <regex-white_list>',
     total = len(list9)
 )
-list2wl = list(pool.map(f20_2, list9, callback = update))                       # <execute function by multithreading />
+list2wl = pool.map(f20_2, list9, callback = update).get()                       # <execute function by multithreading />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
