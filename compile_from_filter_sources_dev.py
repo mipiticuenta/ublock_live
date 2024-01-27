@@ -849,7 +849,7 @@ def f20_2(pattern):
 
     return list2wl
 
-def update():
+def update(*a):
     pbar.update(1)
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -877,7 +877,7 @@ print('removing text-only regex filters based on <regex-white_list>')
 
 def f20_5(pattern):
 
-    global list2
+    global list5
 
     try :
         c_pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
