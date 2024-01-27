@@ -799,36 +799,6 @@ list9 = list(
 
 print('\n<regex white list> loaded\n')
 
-#for pattern in tqdm(list9) :
-#    try :
-#        pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
-#        list2 = [
-#            line
-#            for line in list2
-#            if not(pattern.search(line))
-#        ]                                                                       # <remove filters based on <regex-white_list> />
-#        list5 = [
-#            line
-#            for line in list5
-#            if (
-#                not(pattern.search(re.sub(r'\$important$', '', line)[1: -1])) 
-#                and 
-#                re.search(r'\w+', re.sub(r'\$important$', '', line)[1: -1])
-#            )
-#        ]                                                                       # <remove text-only regex filters based on <regex-white_list> />
-#    except :
-#        print('Error: check for ' + pattern + ' pattern in regex_white_list')
-
-#list2 = list(filter(None, list2))                                               # <remove empty elements />
-
-## </get regex white list from file, dedup, sort and clean up filters>
-
-#print(
-#    '       ',
-#    '{:,}'.format(len(list2) + len(list5)),
-#    'filters kept'
-#)
-
 list9 = list(filter(None, sorted(set(list9))))                                  # <remove empty elements />
 
 tqdm._instances.clear()
@@ -851,7 +821,10 @@ def f20_2(pattern):
             if pattern.search(line)
         ]                                                                       # <remove filters based on <regex-white_list> />
     except :
-        print('Error: check for ' + pattern + ' pattern in regex_white_list')
+        print(
+            'Error: check for ' + pattern + ' pattern in regex_white_list',
+            flush=True
+        )
 
     pbar.update(1)
 
@@ -905,7 +878,10 @@ def f20_5(pattern):
             )
         ]                                                                       # <remove text-only regex filters based on <regex-white_list> />
     except :
-        print('Error: check for ' + pattern + ' pattern in regex_white_list')
+        print(
+            'Error: check for ' + pattern + ' pattern in regex_white_list',
+            flush=True
+        )
 
     pbar.update(1)
 
@@ -979,21 +955,36 @@ print('21/21 : deflat url filters redundant with regex filters', sep = '')
 
 # </remove url filters covered by regex filters>
 
-def f21(line):
+list5 = list(filter(None, sorted(set(list5))))                                  # <remove empty elements />
 
-    global list5
+tqdm._instances.clear()
+pbar = tqdm(
+    desc = '21/21 : deflat url filters redundant with regex filters',
+    total = len(list5),
+    ncols = 132
+)
 
-    for pattern in list5 :
-        try :
-            pattern = re.compile(r'' + re.sub(r'\$important$', '', pattern)[1: -1]) # < create regex pattern for faster processing />
-            if pattern.search(' ' + line + ' ') :
-                line = ''
-        except :
-            print('Error: check for ' + pattern + ' pattern in regex_white_list')
+def f21(pattern):
+
+    global list2
+
+    try :
+        pattern = re.compile(r'' + re.sub(r'\$important$', '', pattern)[1: -1]) # < create regex pattern for faster processing />
+        list2 = [
+            line
+            for line in list2
+            if not(pattern.search(' ' + line + ' '))
+        ]
+    except :
+        print(
+            'Error: check for ' + pattern + ' pattern in regex_white_list',
+            flush=True
+        )
+
+    pbar.update(1)
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2 = list(pool.map(f21, list2))                                              # <execute function by multithreading />
-
+pool.map(f21, list5)                                                            # <execute function by multithreading />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
