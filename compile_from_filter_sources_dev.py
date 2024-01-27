@@ -862,7 +862,7 @@ pbar = tqdm.tqdm(
     desc = 'removing filters based on <regex-white_list>',
     total = len(list9)
 )
-list2wl = list(pool.map_async(f20_2, list9, callback = update))                 # <execute function by multithreading />
+list2wl = list(pool.map(f20_2, list9, callback = update))                       # <execute function by multithreading />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
