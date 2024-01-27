@@ -849,8 +849,15 @@ def f20_2(pattern):
 
     return list2wl
 
+def update():
+    pbar.update(1)
+
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2wl = list(tqdm.tqdm(pool.map_async(f20_2, list9)))                         # <execute function by multithreading />
+pbar = tqdm.tqdm(
+    desc = 'removing filters based on <regex-white_list>',
+    total = len(list9)
+)
+list2wl = list(pool.map_async(f20_2, list9, callback = update))                 # <execute function by multithreading />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
