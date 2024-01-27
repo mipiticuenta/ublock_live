@@ -834,7 +834,8 @@ list9 = list(filter(None, sorted(set(list9))))                                  
 tqdm._instances.clear()
 pbar = tqdm(
     desc = 'removing filters based on <regex-white_list>',
-    total = len(list9)
+    total = len(list9),
+    ncols = 132
 )
 
 def f20_2(pattern):
@@ -873,12 +874,19 @@ list2wl = sorted(
 )
 list2 = list(filter(None, sorted(set(list2) - set(list2wl))))                   # <remove empty elements />
 
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
+
 list5 = list(filter(None, sorted(set(list5))))                                  # <remove empty elements />
 
 tqdm._instances.clear()
 pbar = tqdm(
     desc = 'removing filters based on <regex-white_list>',
-    total = len(list5)
+    total = len(list5),
+    ncols = 132
 )
 
 def f20_5(pattern):
