@@ -1100,7 +1100,7 @@ def f_list_domains(line):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list3 = pool.map(f_list_domains, list3)                                         # <execute function by multithreading />
+list3 = pool.map(f_list_domains, list2)                                         # <execute function by multithreading />
 pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()
 
