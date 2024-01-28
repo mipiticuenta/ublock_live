@@ -143,7 +143,7 @@ list2 = list(filter(None, sorted(set(list2))))                                  
 
 print(
     '       ',
-    '{:,}'.format(len(list2) + len(list5)),
+    '{:,}'.format(len(list2)),
     'filters kept'
 )
 
@@ -213,7 +213,7 @@ pool.join()
 
 print(
     '       ',
-    '{:,}'.format(len(list2) + len(list5)),
+    '{:,}'.format(len(list2)),
     'filters kept'
 )
 
@@ -234,7 +234,7 @@ pool.join()
 
 print(
     '       ',
-    '{:,}'.format(len(list2) + len(list5)),
+    '{:,}'.format(len(list2)),
     'filters kept'
 )
 
@@ -258,7 +258,7 @@ pool.join()
 
 print(
     '       ',
-    '{:,}'.format(len(list2) + len(list5)),
+    '{:,}'.format(len(list2)),
     'filters kept'
 )
 
@@ -293,7 +293,7 @@ pool.join()
 
 print(
     '       ',
-    '{:,}'.format(len(list2) + len(list5)),
+    '{:,}'.format(len(list2)),
     'filters kept'
 )
 
