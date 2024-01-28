@@ -5,7 +5,6 @@ Compile a single deduplicated block list from url sources
 # <product backlog>
 
     # <sprint #2: dedup urls/>
-    # <sprint #3: apply multicore/>
     # <sprint #4: apply whitelisting to cosmetic filters/>
     # <sprint #5: check for mismatching () [] {} />
 
@@ -85,32 +84,6 @@ list1 = sorted(
 
 # <dump sources to list>
 
-list2 = []                                                                      # <initialize list2 (main list) />
-list5 = []                                                                      # <intialize list5 (regex) />
-i     = 1                                                                       # <counter for uncommented sources />
-
-#for line in list1 :
-#    print(
-#        'reading source',
-#        '{:3.0f}'.format(i),
-#        '/',
-#        len(list1),
-#        ':',
-#        line
-#    )
-#    i += 1
-#    response = requests.get(
-#        line,
-#        proxies = proxy_servers
-#    )
-#    if (response.status_code) :
-#        list2.update(response.text.split('\n'))
-#        print(
-#            '                         ',
-#            '{:,}'.format(len(list2)),
-#            'cumulated filters'
-#        )
-
 print(
     'reading sources (',
     len(list1),
@@ -167,6 +140,12 @@ list2 = sorted(
     )                                                                           # <dedup list />
 )
 list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
+
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
 # </dump sources to list>
 
