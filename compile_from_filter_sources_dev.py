@@ -120,6 +120,7 @@ print(
 def f00(line):
 
     global proxy_servers
+    list2 = set()
 
     try :
         response = requests.get(
