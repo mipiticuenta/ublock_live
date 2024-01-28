@@ -158,7 +158,7 @@ pool.join()
 
 list2 = [
     line
-    for lin in list2
+    for line in list2
     if line[0] != "[" and line[-1] != "]"
 ]
 
