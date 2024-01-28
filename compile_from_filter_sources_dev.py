@@ -119,15 +119,9 @@ print(
 
 def f00(line):
 
-    global list2
     global proxy_servers
 
     print(
-        'reading source',
-        '{:3.0f}'.format(i),
-        '/',
-        len(list1),
-        ':',
         line,
         flush = True
     )
@@ -136,11 +130,11 @@ def f00(line):
         proxies = proxy_servers
     )
     if (response.status_code) :
-        list2.update(response.text.split('\n'))
+        list2 = response.text.split('\n')
         print(
-            '                         ',
+            '    ',
             '{:,}'.format(len(list2)),
-            'cumulated filters'
+            'filters read'
         )
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
