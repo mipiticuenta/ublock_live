@@ -156,11 +156,17 @@ list2 = pool.map(f00, list1)                                                    
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
-list2 = [
-    line
-    for line in list2
-    if line[0] != "[" and line[-1] != "]"
-]
+list2 = sorted(
+    set(
+        [
+            line if (type(line) == str)                                         # <prevents string atomization into chars is string type />
+            else item
+            for line in list2
+            for item in line
+        ]                                                                       # <flatten list />
+    )                                                                           # <dedup list />
+)
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 # </dump sources to list>
 
