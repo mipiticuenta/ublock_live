@@ -114,28 +114,41 @@ i     = 1                                                                       
 print(
     'reading sources (',
     len(list1),
-    ')',
+    ')\n',
 )
 
 def f00(line):
 
     global proxy_servers
 
-    print(
-        line,
-        flush = True
-    )
-    response = requests.get(
-        line,
-        proxies = proxy_servers
-    )
-    if (response.status_code) :
-        list2 = response.text.split('\n')
-        print(
-            '    ',
-            '{:,}'.format(len(list2)),
-            'filters read'
+    try :
+        response = requests.get(
+            line,
+            proxies = proxy_servers
         )
+        if (response.status_code) :
+            list2 = response.text.split('\n')
+            print(
+                line,
+                '\n',
+                '    ',
+                '{:,}'.format(len(list2)),
+                'filters read',
+                flush = True
+            )
+        else :
+                print(
+            'Error: could not load ' + line,
+            flush = True
+        )
+
+    except :
+        print(
+            'Error: could not load ' + line,
+            flush = True
+        )
+
+    return list2
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = pool.map(f00, list1)                                                    # <execute function by multithreading />
