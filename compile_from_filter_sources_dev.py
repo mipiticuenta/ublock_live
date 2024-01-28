@@ -1108,11 +1108,17 @@ list2 = list(filter(None, sorted(set(list2) - set(list3))))                     
 
 # <remove leading . , L5+ domains and numerial low levels >
 
-list3 = [
-    re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line)                # <remove L5+ domains />
-    re.sub(r'^[-_\.0-9]*\.', '', line)                                          # <remove numerical low levels from domains and preceding . />
-    for line in list3
-]
+def f_clean_domains(line):
+
+    line = re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line)         # <remove L5+ domains />
+    line = re.sub(r'^[-_\.0-9]*\.', '', line)                                   # <remove numerical low levels from domains and preceding . />
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list3 = pool.map(f_clean_domains, list3)                                         # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
 
 list3 = list(filter(None, sorted(set(list3) - set(iana_sld))))                  # <remove IANA sld root domains />
 
