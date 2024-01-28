@@ -148,7 +148,7 @@ def f00(line):
             flush = True
         )
 
-    return list2
+    return sorted(set(list2))
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = pool.map(f00, list1)                                                    # <execute function by multithreading />
