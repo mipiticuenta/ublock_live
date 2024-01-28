@@ -85,9 +85,9 @@ list1 = sorted(
 # <populate main list (list2) >
 
 print(
-    'reading sources (',
+    'reading ',
     len(list1),
-    ')\n',
+    ' sources\n',
     sep = ''
 )
 
@@ -1011,6 +1011,7 @@ file5_out.writelines(line + '\n' for line in list5)
 file5_out.close()
 
 print(
+    '\n',
     '{:,}'.format(len(list5)),
     ' regex filters written to ',
     file5_out_name,
@@ -1075,24 +1076,22 @@ print('\nListing domain filters :')
 list3 = [
     re.sub(r'\$important$', '', line)
     for line in list2
-    if (re.sub(r'^(?:[-\w]*\.)*', '', re.sub(r'\$important$', '', line)) in iana_tld)
+    if (
+        re.sub(r'^(?:[-\w]*\.)*',
+        '',
+        re.sub(r'\$important$', '', line)
+    ) in iana_tld)                                                              # <domain detector />
+    if line[0] != '-'                                                           # <remove -@.@ from domains list />
 ]                                                                               # <get (@.)+tld domains, removing trailing $important />
 
-list3 = [
-    line
-    for line in list3
-    if line[0] != '-'
-]                                                                               # <remove -@.@ from domains list />
-
-list3 = sorted(set(list3))
-list2 = sorted(set(list2) - set(list3))                                         # <only domains part are processed in this section; @.js are kept in list2 />
+list2 = list(filter(None, sorted(set(list2) - set(list3)))                      # <only domains part are processed in this section; @.js are kept in list2 />
 
 list3 = [
     re.sub(r'^[-_\.0-9]*\.', '', line)
     for line in list3
 ]                                                                               # <remove numerical low levels from domains and preceding . />
 
-list3 = sorted(set(list3) - set(iana_sld))                                      # <remove IANA sld root domains />
+list3 = list(filter(None, sorted(set(list3) - set(iana_sld))))                  # <remove IANA sld root domains />
 
 print(
     '       ',
