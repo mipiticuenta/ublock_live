@@ -845,7 +845,7 @@ list2wl = sorted(
         ]                                                                       # <flatten list />
     )                                                                           # <dedup list />
 )
-list2 = list(filter(None, sorted(set(list2) - set(list2wl))))                   # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2) - set(list2wl))))                   # <remove elements in list2wl and empty elements />
 
 print()
 
@@ -867,6 +867,7 @@ pbar = tqdm(
 def f20_5(pattern):
 
     global list5
+    global pbar
 
     try :
         pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
@@ -992,8 +993,8 @@ pool.join()
 
 # <aggregate filters >
 
-list2 = sorted(set(list2) | set(list5))                                         # <join lists2, list5' />
-list2 = list(filter(None, sorted(set(list2 | set(list5)))))                     # <join lists2, list5 and remove empty elements />
+list2 = sorted(set(list2 | set(list5))                                          # <join lists2, list5 />
+list2 = list(filter(None, list2))                                               # <remove empty elements />
 
 # </aggregate filters >
 
