@@ -149,13 +149,13 @@ def f00(line):
             flush = True
         )
 
-    list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
+    list2 = sorted(set(list2))
 
     return list2
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = pool.map(f00, list1)                                                    # <execute function by multithreading />
-list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
+list2 = sorted(set(list2))
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
