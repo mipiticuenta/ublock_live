@@ -847,6 +847,8 @@ list2wl = sorted(
 )
 list2 = list(filter(None, sorted(set(list2) - set(list2wl))))                   # <remove empty elements />
 
+print()
+
 print(
     '       ',
     '{:,}'.format(len(list2) + len(list5)),
@@ -990,9 +992,8 @@ pool.join()
 
 # <aggregate filters >
 
-list2 = sorted(set(list2) | set(list2s) | set(list5))                           # <join lists2, list2s, list5' />
-list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
-del(list2s)                                                                     # <discard list2s, keep list5/>
+list2 = sorted(set(list2) | set(list5))                                         # <join lists2, list5' />
+list2 = list(filter(None, sorted(set(list2 | set(list5)))))                     # <join lists2, list5 and remove empty elements />
 
 # </aggregate filters >
 
