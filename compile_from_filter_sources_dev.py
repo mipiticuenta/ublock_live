@@ -371,7 +371,7 @@ def f07(line):
 
     if re.search(r'^\*?\#\#(?!\:).*$', '', line) :
         line = ''                                                               # <remove cosmetic filters except ##: />
-    elif re.search(r'^\*?\#[\@|\?].*', '', line) :
+    elif re.search(r'^\*?\#[\@|\?].*$', '', line) :
         line = ''                                                               # <remove #@ #? exceptions />
     elif re.search(r'^\*?\@\@.*$', '', line) :
         line = ''                                                               # <remove @@ exceptions />
