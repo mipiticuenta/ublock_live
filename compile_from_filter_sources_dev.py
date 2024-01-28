@@ -940,10 +940,11 @@ print()
 print(
     '       ',
     '{:,}'.format(len(list2) + len(list5)),
-    'filters kept'
+    'filters kept',
+    flush = True
 )
 
-print('\n<removing regex filters based on <regex-white_list>')
+print('\nremoving regex filters based on <regex-white_list>')
 
 list5 = list(filter(None, sorted(set(list5))))                                  # <remove empty elements />
 
@@ -1027,7 +1028,7 @@ list5 = list(filter(None, sorted(set(list5))))                                  
 
 tqdm._instances.clear()
 pbar = tqdm(
-    desc = '21/21 : deflat url filters redundant with regex filters',
+    desc = '21/21 : remove url filters redundant with regex filters',
     total = len(list5),
     ncols = 132
 )
@@ -1073,16 +1074,35 @@ print(
 
 print('\nListing domain filters :')
 
-list3 = [
-    re.sub(r'\$important$', '', line)
-    for line in list2
-    if (
-        re.sub(r'^(?:[-\w]*\.)*',
-        '',
-        re.sub(r'\$important$', '', line)
-    ) in iana_tld)                                                              # <domain detector />
-    if line[0] != '-'                                                           # <remove -@.@ from domains list />
-]                                                                               # <get (@.)+tld domains, removing trailing $important />
+#list3 = [
+#    re.sub(r'\$important$', '', line)
+#    for line in list2
+#    if (
+#        re.sub(r'^(?:[-\w]*\.)*',
+#        '',
+#        re.sub(r'\$important$', '', line)
+#    ) in iana_tld)                                                              # <domain detector />
+#    if line[0] != '-'                                                           # <remove -@.@ from domains list />
+#]                                                                               # <get (@.)+tld domains, removing trailing $important />
+
+def f_get_domains(line):
+
+    global iana_tld
+
+    line = re.sub(r'\$important$', '', line)                                    # <discard trailing $important for domain detection />
+    if not(
+        re.sub(r'^([-\w]*\.)*', '', line) in iana_tld                           # < check for a match with (@.)+tld />
+        and
+        line[0] == '-'                                                          # < -@.@ to be excluded from domains list />
+    ) :
+        line = ''                                                               # <exclude -@.@ from domains list />
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list3 = pool.map(f_get_domains, list3)                                          # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
 
 list2 = list(filter(None, sorted(set(list2) - set(list3)))                      # <only domains part are processed in this section; @.js are kept in list2 />
 
@@ -1115,6 +1135,8 @@ list8 = sorted(
         )                                                                       # <remove empty elements />
     )
 )
+
+print('\n<domain white list> loaded\n')
 
 list3 = sorted(set(list3) - set(list8))                                         # <remove whitelisted domains />
 
