@@ -89,16 +89,48 @@ list2 = set()                                                                   
 list5 = []                                                                      # <intialize list5 (regex) />
 i     = 1                                                                       # <counter for uncommented sources />
 
-for line in list1 :
+#for line in list1 :
+#    print(
+#        'reading source',
+#        '{:3.0f}'.format(i),
+#        '/',
+#        len(list1),
+#        ':',
+#        line
+#    )
+#    i += 1
+#    response = requests.get(
+#        line,
+#        proxies = proxy_servers
+#    )
+#    if (response.status_code) :
+#        list2.update(response.text.split('\n'))
+#        print(
+#            '                         ',
+#            '{:,}'.format(len(list2)),
+#            'cumulated filters'
+#        )
+
+print(
+    'reading sources (',
+    len(list1),
+    ')',
+)
+
+def f00(line):
+
+    global list2
+    global proxy_servers
+
     print(
         'reading source',
         '{:3.0f}'.format(i),
         '/',
         len(list1),
         ':',
-        line
+        line,
+        flush = True
     )
-    i += 1
     response = requests.get(
         line,
         proxies = proxy_servers
@@ -110,6 +142,12 @@ for line in list1 :
             '{:,}'.format(len(list2)),
             'cumulated filters'
         )
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = pool.map(f00, list1)                                                    # <execute function by multithreading />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
+pool.close()                                                                    # <#close the pool and wait for the work to finish />
+pool.join()
 
 # </dump sources to list>
 
