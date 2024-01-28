@@ -128,7 +128,7 @@ def f00(line):
             proxies = proxy_servers
         )
         if (response.status_code) :
-            list2 = response.text.split('\n')
+            list2.update(response.text.split('\n'))
             print(
                 line,
                 '\n',
