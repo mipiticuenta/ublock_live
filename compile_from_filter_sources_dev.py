@@ -66,7 +66,7 @@ except:
 
 # </test direct connection to internet>
 
-# <get filter url sources, dedup and sort>
+# <get filter url sources >
 
 list1 = sorted(
     list(
@@ -80,9 +80,9 @@ list1 = sorted(
     )
 )
 
-# </get filter url sources, dedup and sort>
+# </get filter url sources >
 
-# <dump sources to list>
+# <populate main list (list2) >
 
 print(
     'reading sources (',
@@ -142,12 +142,12 @@ list2 = sorted(
 list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
-    '       ',
+    '\n',
     '{:,}'.format(len(list2)),
-    'filters kept'
+    'filters gathered'
 )
 
-# </dump sources to list>
+# </populate main list (list2) >
 
 # <load iana tld >
 
@@ -180,14 +180,13 @@ iana_sld = iana_tld + [
     if len(tld) == 2
 ]                                                                               # <frequent slds combined with tlds />
 
-print('\nIANA top level domains (TLD) list loaded')
+print('\nIANA top level domains (TLD) list loaded\n')
 
 # </load iana tld >
 
 # <process filter list>
 
 print(
-                        '\n',
     '--------------------\n',
     'Transforming filters\n',
     '--------------------\n',
@@ -196,7 +195,7 @@ print(
 
 # <transforming loop>
 
-print(' 1/21 : remove leading/trailing/dup spaces ')
+print(' 1/21 : remove leading / trailing / dup spaces ')
 
 def f01(line):
 
@@ -207,9 +206,10 @@ def f01(line):
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = pool.map(f01, list2)                                                    # <execute function by multithreading />
-list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
+
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
@@ -228,9 +228,10 @@ def f02(line):
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = pool.map(f02, list2)                                                    # <execute function by multithreading />
-list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
+
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
@@ -238,7 +239,7 @@ print(
     'filters kept'
 )
 
-print(' 3/21 : clean dns/domain filters ')
+print(' 3/21 : clean dns, domain filters ')
 
 def f03(line):
 
@@ -252,9 +253,10 @@ def f03(line):
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = pool.map(f03, list2)                                                    # <execute function by multithreading />
-list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
+
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
@@ -268,16 +270,17 @@ def f04(line):
 
     if re.search(r'\%', line):
         line = ''                                                               # <remove items comprising % >
-    if re.search(r'about\:', line):
+    elif re.search(r'about\:', line):
         line = ''                                                               # <remove items comprising about: >
-    if re.search(r'[,\$]badfilter', line):
+    elif re.search(r'[,\$]badfilter', line):
         line = ''                                                               # <remove items comprising $badfilter />
-    if re.search(r'localhost', line):
+    elif re.search(r'localhost', line):
         line = ''                                                               # <remove items containing localhost />
-    if re.search(r'\:\:', line):
+    elif re.search(r'\:\:', line):
         line = ''                                                               # <remove IP6 addresses :: />
-    if re.search(r'^[^a-z]+$', line):
+    elif re.search(r'^[^a-z]+$', line):
         line = ''                                                               # <remove filters comprised only by simbols and numbers (includes IP4 addresses) />
+
     if re.search(r'^\|{1, 2}[-\.\w]+\^.*$', line):
         line = re.sub(r'[\|\^]', '', line)                                      # <remove || ^ from abp syntax ||domain^ />
     line = re.sub(r'^\:[0-9]+/', '/', line)                                     # <replace leading :port/ with / />
@@ -287,9 +290,10 @@ def f04(line):
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = pool.map(f04, list2)                                                    # <execute function by multithreading />
-list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
+
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
@@ -303,6 +307,7 @@ def f05(line):
 
     if not(re.search(r'[#\\]', line)):
         line = line.lower()                                                     # <apply lower case except cosmetics and regex />
+
     if re.search(r'^/.*\\/$', line):
         line = ''                                                               # <remove broken regex (bad termination) />
     line = re.sub(r'^/([-\.\+\~\!\=/\w]+)/$', r'/\1/*', line)                   # <add trailing * for /@/ url filters (false regex) />
@@ -311,9 +316,12 @@ def f05(line):
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = pool.map(f05, list2)                                                    # <execute function by multithreading />
-list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
+
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
+
+# <segregate regex filters >
 
 list5 = [
     line
@@ -345,9 +353,10 @@ def f06(line):
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = pool.map(f06, list2)                                                    # <execute function by multithreading />
-list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
+
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
@@ -359,17 +368,21 @@ print(' 7/21 : remove cosmetic filters (## #?) and exceptions (@@ #@) except *##
 
 def f07(line):
 
-    line = re.sub(r'^\*?\#\#(?!\:).*', '', line)                                # <remove cosmetic filters except ##: />
-    line = re.sub(r'^\*?\#[\@|\?].*', '', line)                                 # <remove #@ #? exceptions />
-    line = re.sub(r'^\*?\@\@.*', '', line)                                      # <remove @@ exceptions />
+    if re.search(r'^\*?\#\#(?!\:).*$', '', line) :
+        line = ''                                                               # <remove cosmetic filters except ##: />
+    elif re.search(r'^\*?\#[\@|\?].*', '', line) :
+        line = ''                                                               # <remove #@ #? exceptions />
+    elif re.search(r'^\*?\@\@.*$', '', line) :
+        line = ''                                                               # <remove @@ exceptions />
 
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = pool.map(f07, list2)                                                    # <execute function by multithreading />
-list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
+
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
@@ -891,7 +904,7 @@ print(
     'filters kept'
 )
 
-print('\n<removing regex filters based on <regex-white_list>\n')
+print('\n<removing regex filters based on <regex-white_list>')
 
 list5 = list(filter(None, sorted(set(list5))))                                  # <remove empty elements />
 
@@ -960,7 +973,6 @@ file5_out.close()
 print()
 
 print(
-    '\n',
     '        ',
     '{:,}'.format(len(list5)),
     ' regex filters written to ',
