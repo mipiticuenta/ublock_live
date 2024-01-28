@@ -138,18 +138,16 @@ def f00(line):
                 flush = True
             )
         else :
-                print(
-            'Error: could not load ' + line,
-            flush = True
-        )
-
+            print(
+                'Error: could not load ' + line,
+                flush = True
+            )
+        list2 = sorted(list2)
     except :
         print(
             'Error: could not load ' + line,
             flush = True
         )
-
-    list2 = sorted(list2)
 
     return list2
 
