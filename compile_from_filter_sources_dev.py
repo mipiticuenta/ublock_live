@@ -1085,7 +1085,7 @@ print('\nListing domain filters :')
 #    if line[0] != '-'                                                           # <remove -@.@ from domains list />
 #]                                                                               # <get (@.)+tld domains, removing trailing $important />
 
-def f_get_domains(line):
+def f_list_domains(line):
 
     global iana_tld
 
@@ -1100,24 +1100,30 @@ def f_get_domains(line):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list3 = pool.map(f_get_domains, list3)                                          # <execute function by multithreading />
+list3 = pool.map(f_list_domains, list3)                                         # <execute function by multithreading />
 pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()
 
 list2 = list(filter(None, sorted(set(list2) - set(list3))))                     # <only domains part are processed in this section; @.js are kept in list2 />
 
+# <remove leading . , L5+ domains and numerial low levels >
+
 list3 = [
-    re.sub(r'^[-_\.0-9]*\.', '', line)
+    re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line)                # <remove L5+ domains />
+    re.sub(r'^[-_\.0-9]*\.', '', line)                                          # <remove numerical low levels from domains and preceding . />
     for line in list3
-]                                                                               # <remove numerical low levels from domains and preceding . />
+]
 
 list3 = list(filter(None, sorted(set(list3) - set(iana_sld))))                  # <remove IANA sld root domains />
 
 print(
+    'leading . , L5+ domains and numerial low levels removed:\n',
     '       ',
     '{:,}'.format(len(list3)),
     'domains kept'
     )
+
+# </remove leading . , L5+ domains and numerial low levels >
 
 # </segregate domains from list >
 
@@ -1148,24 +1154,6 @@ print(
     )
 
 # </get domains white list from file, dedup, sort and substract from domains filters>
-
-# <remove L5+ domains >
-
-list3 = [
-    re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line)                # <remove L5+ domains />
-    for line in list3
-]
-
-list3 = sorted(set(list3))
-
-print(
-    'L5+ domains removed:\n',
-    '       ',
-    '{:,}'.format(len(list3)),
-    'domains kept'
-    )
-
-# </remove L5+ domains >
 
 # <preserve low level filters of white listed domains >
 
