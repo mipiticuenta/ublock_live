@@ -85,7 +85,7 @@ list1 = sorted(
 
 # <dump sources to list>
 
-list2 = set()                                                                   # <set() type ensures deduplication />
+list2 = []                                                                      # <initialize list2 (main list) />
 list5 = []                                                                      # <intialize list5 (regex) />
 i     = 1                                                                       # <counter for uncommented sources />
 
