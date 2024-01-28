@@ -1104,7 +1104,7 @@ list3 = pool.map(f_get_domains, list3)                                          
 pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()
 
-list2 = list(filter(None, sorted(set(list2) - set(list3)))                      # <only domains part are processed in this section; @.js are kept in list2 />
+list2 = list(filter(None, sorted(set(list2) - set(list3))))                     # <only domains part are processed in this section; @.js are kept in list2 />
 
 list3 = [
     re.sub(r'^[-_\.0-9]*\.', '', line)
