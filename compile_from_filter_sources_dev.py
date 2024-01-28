@@ -156,6 +156,12 @@ list2 = pool.map(f00, list1)                                                    
 pool.close()                                                                    # <#close the pool and wait for the work to finish />
 pool.join()
 
+list2 = [
+    line
+    for lin in list2
+    if line[0] != "[" and line[-1] != "]"
+]
+
 # </dump sources to list>
 
 # <load iana tld >
