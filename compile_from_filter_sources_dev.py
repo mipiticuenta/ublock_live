@@ -855,19 +855,13 @@ print(
     'filters kept'
 )
 
-list5 = list(filter(None, sorted(set(list5))))                                  # <remove empty elements />
+print('\n<removing regex filters based on <regex-white_list>\n')
 
-tqdm._instances.clear()
-pbar = tqdm(
-    desc = 'removing filters based on <regex-white_list>',
-    total = len(list5),
-    ncols = 132
-)
+list5 = list(filter(None, sorted(set(list5))))                                  # <remove empty elements />
 
 def f20_5(pattern):
 
     global list5
-    global pbar
 
     try :
         pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
@@ -885,8 +879,6 @@ def f20_5(pattern):
             'Error: check for ' + pattern + ' pattern in regex_white_list',
             flush=True
         )
-
-    pbar.update(1)
 
     return list5wl
 
@@ -928,6 +920,8 @@ file5_out.write(
 
 file5_out.writelines(line + '\n' for line in list5)
 file5_out.close()
+
+print()
 
 print(
     '\n',
