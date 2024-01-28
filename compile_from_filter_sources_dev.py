@@ -222,8 +222,10 @@ print(' 2/21 : remove comments ')
 
 def f02(line):
 
-    line = re.sub(r'^ *[!\[\{].*', '', line)                                    # <remove !comment [comment] {comment} />
-    line = re.sub(r'^ *#(?![\?\@\#]).*', '', line)                              # <remove #comment; preserve cosmetics and exceptions />
+    if re.search(r'^ *[!\[\{].*$', line) :
+        line = ''                                                               # <remove !comment [comment] {comment} />
+    elif re.search(r'^ *#(?![\?\@\#]).*$', line) :
+        line = ''                                                               # <remove #comment; preserve cosmetics and exceptions />
 
     return line
 
@@ -332,7 +334,7 @@ list5 = [
     if not(re.search(r'^/.*\/\$.*/$', line))                                    # <remove wrong regex filter />
 ]
 
-list2  = set(list2) - set(list5)
+list2  = sorted(set(list2) - set(list5))
 
 # </segregate regex filters >
 
@@ -419,6 +421,7 @@ list2 = sorted(
         ]                                                                       # <flatten list />
     )                                                                           # <dedup list />
 )
+
 list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
@@ -431,18 +434,16 @@ print(' 9/21 : clean from=, path=, replace=, transform=')
 
 def f09(line):
 
-    line = re.sub(r',?from=.*$', '', line)                                      # <remove (,)from=.* />
-    line = re.sub(r',?path=.*$', '', line)                                      # <remove (,)path=.* />
-    line = re.sub(r',?replace=.*$', '', line)                                   # <remove (,)replace=.* />
-    line = re.sub(r',?transform=.*$', '', line)                                 # <remove (,)transform=.* />
+    line = re.sub(r',?(from|path|replace|transform)=.*$', '', line)             # <remove (,)from=.* , (,)path=.* , (,)replace=.* , (,)transform=.* />
 
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2 = pool.map(f09, list2)                                                    # <execute function by multithreading />
-list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()
+
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
@@ -479,6 +480,7 @@ list2 = sorted(
         ]                                                                       # <flatten list />
     )                                                                           # <dedup list />
 )
+
 list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
@@ -487,10 +489,10 @@ print(
     'filters kept'
 )
 
-n_1 = len(list2) + 1
+n_1 = len(list2) + 1                                                            # <initialization of list2 length obsservation />
 i   = 0
 
-while n_1 > len(list2):                                                         # <recursive loops up to no further length reduction for list2 />
+while n_1 > len(list2):                                                         # <recursive loops until steady list2 length />
 
     i   = i + 1
     n_1 = len(list2)
@@ -519,9 +521,10 @@ while n_1 > len(list2):                                                         
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />
     list2 = pool.map(f11, list2)                                                # <execute function by multithreading />
-    list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
     pool.close()                                                                # <close the pool and wait for the work to finish />
     pool.join()
+
+    list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
 
     print(
         '       ',
@@ -554,9 +557,10 @@ while n_1 > len(list2):                                                         
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />
     list2 = pool.map(f12, list2)                                                # <execute function by multithreading />
-    list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
     pool.close()                                                                # <close the pool and wait for the work to finish />
     pool.join()
+
+    list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
 
     print(
         '       ',
@@ -594,6 +598,7 @@ while n_1 > len(list2):                                                         
             ]                                                                   # <flatten list />
         )                                                                       # <dedup list />
     )
+
     list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
 
     print(
@@ -616,9 +621,10 @@ while n_1 > len(list2):                                                         
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />
     list2 = pool.map(f14, list2)                                                # <execute function by multithreading />
-    list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
     pool.close()                                                                # <close the pool and wait for the work to finish />
     pool.join()
+
+    list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
 
     print(
         '       ',
@@ -657,6 +663,7 @@ list2 = sorted(
         ]                                                                       # <flatten list />
     )                                                                           # <dedup list />
 )
+
 list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
