@@ -88,6 +88,7 @@ print(
     'reading sources (',
     len(list1),
     ')\n',
+    sep = ''
 )
 
 def f00(line):
@@ -741,7 +742,7 @@ def f17(line):
         line = ''                                                               # <remove *$(sub)doc />
     elif re.search(r'^\*\$\~?from.*$', line) :
         line = ''                                                               # <remove *$from />
-    elif re.searh(r'^\*\$\~?image.*$', line) :
+    elif re.search(r'^\*\$\~?image.*$', line) :
         line = ''                                                               # <remove *$image />
     elif re.search(r'^\*\$\~?media.*$', line) :
         line = ''                                                               # <remove *$media />
