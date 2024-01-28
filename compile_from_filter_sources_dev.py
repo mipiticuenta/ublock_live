@@ -149,7 +149,7 @@ def f00(line):
             flush = True
         )
 
-    list2 = sorted(set(list2))
+    list2 = sorted(list2)
 
     return list2
 
