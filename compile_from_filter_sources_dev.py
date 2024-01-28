@@ -993,8 +993,7 @@ pool.join()
 
 # <aggregate filters >
 
-list2 = sorted(set(list2 | set(list5))                                          # <join lists2, list5 />
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2) | set(list5))))                     # <join lists2, list5 and remove empty elements />
 
 # </aggregate filters >
 
