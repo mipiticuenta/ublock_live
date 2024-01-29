@@ -911,6 +911,26 @@ print(
 
 print('20/21 : apply <regex_white_list> rules', sep = '')
 
+# <segregate regex filters >
+
+list5 = list5 + [
+    line
+    for line in list2
+    if re.search(r'^/.+/(?:\$important)?$', line)                               # <match regex filter syntax />
+]
+
+list2  = sorted(set(list2) - set(list5))
+
+list5 = [
+    line
+    for line in list5
+    if not re.search(r'^/.*[\^\?]\*.*/$', line)                                  # <remove wrong regex filter />
+    if not re.search(r'^/.*\/\$.*/$', line)                                      # <remove wrong regex filter />
+    if not re.search(r'^/\^http', line)                                          # <remove ^http regex filter />
+]
+
+# </segregate regex filters >
+
 # <get regex white list from file, dedup, sort and clean up filters>
 
 list9 = list(
@@ -1261,7 +1281,7 @@ list2s = [
     if re.search(r'[\$\,]important$', line)
 ]                                                                               # <segregate ($|,)important filters />
 
-list2  = set(list2) - set(list2s)
+list2  = sorted(set(list2) - set(list2s))
 
 list2 = [
     line
