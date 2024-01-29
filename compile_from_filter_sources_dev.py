@@ -378,7 +378,8 @@ list5 = [
     for line in list5
     if not re.search(r'^/.*[\^\?]\*.*/$', line)                                 # <remove wrong regex filter />
     if not re.search(r'^/.*\/\$.*/$', line)                                     # <remove wrong regex filter />
-    if not re.search(r'^/[\^\(]http', line)                                     # <remove ^http regex filter />
+    if not re.search(r'^/[\^\(]http', line)                                     # <remove [^(]http regex filter />
+    if len(line) > 4
 ]
 
 # </segregate regex filters >
@@ -926,7 +927,7 @@ list5 = [
     for line in list5
     if not re.search(r'^/.*[\^\?]\*.*/$', line)                                  # <remove wrong regex filter />
     if not re.search(r'^/.*\/\$.*/$', line)                                      # <remove wrong regex filter />
-    if not re.search(r'^/[\^\(]http', line)                                     # <remove ^http regex filter />
+    if not re.search(r'^/[\^\(]http', line)                                     # <remove [^(]http regex filter />
     if len(line) > 4
 ]
 
