@@ -1090,11 +1090,10 @@ def f_list_domains(line):
     global iana_tld
 
     line = re.sub(r'\$important$', '', line)                                    # <discard trailing $important for domain detection />
-    if not(
-        re.sub(r'^([-\w]*\.)*', '', line) in iana_tld                           # < check for a match with (@.)+tld />
-        and
-        line[0] == '-'                                                          # < -@.@ to be excluded from domains list />
-    ) :
+    if re.sub(r'^([-\w]*\.)*', '', line) in iana_tld :                          # < check for a match with (@.)+tld />
+        if line[0] == '-' :
+            line = ''                                                           # < -@.@ to be excluded from domains list />
+    else :
         line = ''                                                               # <exclude -@.@ from domains list />
 
     return line
