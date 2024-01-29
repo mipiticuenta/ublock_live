@@ -885,11 +885,11 @@ list9 = list(
     )                                                                           # <remove empty elements />
 )
 
-print('\n<regex_white_list> loaded\n')
+print(
+    '       ',
+    '<regex_white_list> loaded'
+)
 
-list9 = list(filter(None, sorted(set(list9))))                                  # <remove empty elements />
-
-tqdm._instances.clear()
 pbar = tqdm(
     desc = 'removing filters based on <regex-white_list>',
     total = len(list9),
@@ -944,7 +944,9 @@ print(
     flush = True
 )
 
-print('\nremoving regex filters based on <regex-white_list>')
+print(
+    '       ',
+    'removing regex filters based on <regex-white_list>')
 
 list5 = list(filter(None, sorted(set(list5))))                                  # <remove empty elements />
 
@@ -1026,7 +1028,6 @@ print(
 
 list5 = list(filter(None, sorted(set(list5))))                                  # <remove empty elements />
 
-tqdm._instances.clear()
 pbar = tqdm(
     desc = '21/21 : remove url filters redundant with regex filters',
     total = len(list5),
@@ -1072,7 +1073,7 @@ print(
 
 # <segregate domains from list >
 
-print('\nListing domain filters :')
+print('\nListing domain filters')
 
 def f_list_domains(line):
 
@@ -1094,6 +1095,8 @@ pool.join()
 
 list2 = list(filter(None, sorted(set(list2) - set(list3))))                     # <only domains part are processed in this section; @.js are kept in list2 />
 
+# </segregate domains from list >
+
 # <remove leading . , L5+ domains and numerial low levels >
 
 def f_clean_domains(line):
@@ -1111,15 +1114,13 @@ pool.join()
 list3 = list(filter(None, sorted(set(list3) - set(iana_sld))))                  # <remove IANA sld root domains />
 
 print(
-    'leading . , L5+ domains and numerial low levels removed:\n',
+    'leading . , L5+ domains and numerical low levels removed:\n',
     '       ',
     '{:,}'.format(len(list3)),
     'domains kept'
     )
 
 # </remove leading . , L5+ domains and numerial low levels >
-
-# </segregate domains from list >
 
 # <get domains white list from file, dedup, sort and substract from domains filters>
 
@@ -1136,32 +1137,17 @@ list8 = sorted(
     )
 )
 
-print('\n<domains_white_list> loaded\n')
+print('\n<domains_white_list> loaded')
 
 list3 = sorted(set(list3) - set(list8))                                         # <remove whitelisted domains />
 
 print(
-    'domains white list applied:\n'
     '       ',
     '{:,}'.format(len(list3)),
     'domains kept'
     )
 
 # </get domains white list from file, dedup, sort and substract from domains filters>
-
-# <preserve low level filters of white listed domains >
-
-print('\npreserving low level filters of white listed domains', sep = '')
-
-list3s = [
-    line
-    for line in tqdm(list3)
-    if (re.sub(r'^([-\w]+\.)+', '', line) in list8)
-]                                                                               # <get (@.)+tld domains, removing trailing $important />
-
-list3 = sorted(set(list3) - set(list3s))
-
-# </preserve low level filters of white listed domains >
 
 # <deflat domain filters >
 
