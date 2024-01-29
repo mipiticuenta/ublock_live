@@ -340,6 +340,7 @@ list5 = [
     for line in list5
     if not(re.search(r'^/.*[\^\?]\*.*/$', line))                                # <remove wrong regex filter />
     if not(re.search(r'^/.*\/\$.*/$', line))                                    # <remove wrong regex filter />
+    if not(re.search(r'^/\^http', line))                                        # <remove ^http regex filter />
 ]
 
 # </segregate regex filters >
@@ -1158,7 +1159,7 @@ print(
 
 print('\ndeflating domain filters, pass 1 / 2:')
 
-def f_deflat_domains(line):
+def f_deflat_domain(line):
 
     global iana_sld
     global list8
@@ -1170,7 +1171,7 @@ def f_deflat_domains(line):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list3 = pool.map(f_deflat_domains, list3)                                       # <execute function by multithreading />
+list3 = pool.map(f_deflat_domain, list3)                                        # <execute function by multithreading />
 pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()
 
@@ -1182,7 +1183,7 @@ print(
 print('deflating domain filters, pass 2 / 2:')
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list3 = pool.map(f_deflat_domains, list3)                                       # <execute function by multithreading />
+list3 = pool.map(f_deflat_domain, list3)                                        # <execute function by multithreading />
 pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()
 
