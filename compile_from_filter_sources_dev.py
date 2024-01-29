@@ -149,6 +149,44 @@ print(
     'filters gathered'
 )
 
+
+
+file2_out = open(
+    'compiled_block_list_raw',
+    'w',
+    encoding='UTF-8'
+)
+
+file2_out.write(
+    '! description: personal filters for uBO; yet under heavy debugging\n' +
+    '! expires: 1 day\n' +
+    '! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/' + file2_out_name + '\n' +
+    '! title:' + file2_out_name + '\n' +
+    '! ===========================================================================================\n' +
+    '! simple, general filters preferred rather than complicated, specific ones\n' +
+    '! regex only when efficient\n' +
+    '! exceptions only if no better choice\n' +
+    '! ===========================================================================================\n' +
+    '! sources:\n'
+)
+
+file2_out.writelines('! ' + line + '\n' for line in list1)
+
+file2_out.write(
+    '! ===========================================================================================\n'
+)
+
+file2_out.writelines(line + '\n' for line in list2)
+file2_out.close()
+
+print(
+    'Results saved to textfile <' + file2_out_name + '>\n'
+)
+
+# </write main output>
+
+
+
 # </populate main list (list2) >
 
 # <load iana tld >
