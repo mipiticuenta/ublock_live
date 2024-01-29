@@ -919,7 +919,7 @@ def f20_2(pattern):
     return list2wl
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2wl = pool.map_async(f20_2, list9).get()                                   # <execute function by multithreading />
+list2wl = pool.map(f20_2, list9)                                                # <execute function by multithreading />
 pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()
 
