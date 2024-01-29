@@ -1158,12 +1158,9 @@ def f_deflat_domains(line):
     global iana_sld
     global list8
 
-    if (
-        re.sub(r'^[-\w]+\.', '', line) not in iana_sld
-        and
-        re.sub(r'^[-\w]+\.', '', line) not in list8
-        ):
-        line = re.sub(r'^[-\w]+\.', '', line)
+    if re.sub(r'^[-\w]+\.', '', line) not in iana_sld :
+        if re.sub(r'^[-\w]+\.', '', line) not in list8 :
+            line = re.sub(r'^[-\w]+\.', '', line)
 
     return line
 
