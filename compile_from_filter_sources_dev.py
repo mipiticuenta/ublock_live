@@ -1153,43 +1153,43 @@ print(
 
 print('\ndeflating domain filters, pass 1 / 2:')
 
-list3 = [
-    re.sub(r'^[-\w]+\.', '', line) if (
-        (re.sub(r'^[-\w]+\.', '', line) not in iana_sld)
-        and
-        (re.sub(r'^[-\w]+\.', '', line) not in list8)
-    )
-    else line
-    for line in list3
-]
+def f_deflat_domains(line):
 
-list3 = sorted(set(list3))
+    global iana_sld
+    global list8
+
+    if (
+        re.sub(r'^[-\w]+\.', '', line) not in iana_sld
+        and
+        re.sub(r'^[-\w]+\.', '', line) not in list8
+        ):
+        line = re.sub(r'^[-\w]+\.', '', line)
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list3 = pool.map(f_deflat_domains, list3)                                       # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
 
 print(
-    '       ',
-    '{:,}'.format(len(list3) + len(list3s)),
+    '{:,}'.format(len(list3)),
     'domains kept'
     )
 
 print('deflating domain filters, pass 2 / 2:')
 
-list3 = [
-    re.sub(r'^[-\w]+\.', '', line) if (
-        (re.sub(r'^[-\w]+\.', '', line) not in iana_sld)
-        and
-        (re.sub(r'^[-\w]+\.', '', line) not in list8)
-    )
-    else line
-    for line in list3
-]
-
-list3 = sorted(set(list3))
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list3 = pool.map(f_deflat_domains, list3)                                       # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
 
 print(
-    '       ',
-    '{:,}'.format(len(list3) + len(list3s)),
+    '{:,}'.format(len(list3)),
     'domains kept'
     )
+
+list3 = sorted(set(list3))
 
 # </deflat domain filters >
 
@@ -1201,11 +1201,6 @@ print(
 #         ## <filter() + list comprehension option; may worth it a benchmark vs map()?>
 #         ##list3 = [line for line in list3 if len(list(filter(lambda substring: ('.' + substring) in line, tqdm(list3_filter[:n])))) == 0]
 #         ## </filter() + list comprehension option>
-
-#         # </remove redundant domains from list>
-
-list3 = sorted(set(list3) | set(list3s))                                        # <join list3, list3s />
-del(list3s)                                                                     # <clean up; make sure list3s is not used anymore hereafter/>
 
 list2 = sorted(set(list2) | set(list3))                                         # <joint list2, list3 />
 
@@ -1235,6 +1230,27 @@ list2 = [
 ]
 
 list2 = sorted(set(list2) | set(list2s))                                        # <aggregate lists />
+del(list2s)
+
+
+def f_dedup_important(line):
+
+    global list2
+
+    if re.search(r'[\$\,]important$', line) :
+        line = re.sub(r'[\$\,]important$', '', line)
+    else :
+        line = ''
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2s = pool.map(f_dedup_important, list2)                                     # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
+
+
+list2 = list(filter(None, sorted(set(list2) | set(list2s))))                    # <remove redundant filters />
 del(list2s)
 
 print(
