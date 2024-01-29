@@ -1089,6 +1089,17 @@ list2du = pool.map(f21, list5)                                                  
 pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()
 
+list2du = sorted(
+    set(
+        [
+            line if (type(line) == str)                                         # <prevents string atomization into chars is string type />
+            else item
+            for line in list2du
+            for item in line
+        ]                                                                       # <flatten list />
+    )                                                                           # <dedup list />
+)
+
 # <aggregate filters >
 
 list2 = list(filter(None, sorted((set(list2) - set(list2du))| set(list5))))     # <join lists2, list5 and remove empty elements />
