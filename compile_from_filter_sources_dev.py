@@ -331,11 +331,16 @@ list5 = [
     line
     for line in list2
     if re.search(r'^/.+/(?:\$important)?$', line)                               # <match regex filter syntax />
-    if not(re.search(r'^/.*[\^\?]\*.*/$', line))                                # <remove wrong regex filter />
-    if not(re.search(r'^/.*\/\$.*/$', line))                                    # <remove wrong regex filter />
 ]
 
 list2  = sorted(set(list2) - set(list5))
+
+list5 = [
+    line
+    for line in list5
+    if not(re.search(r'^/.*[\^\?]\*.*/$', line))                                # <remove wrong regex filter />
+    if not(re.search(r'^/.*\/\$.*/$', line))                                    # <remove wrong regex filter />
+]
 
 # </segregate regex filters >
 
