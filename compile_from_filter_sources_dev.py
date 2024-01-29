@@ -885,7 +885,7 @@ list9 = list(
     )                                                                           # <remove empty elements />
 )
 
-print('\n<regex white list> loaded\n')
+print('\n<regex_white_list> loaded\n')
 
 list9 = list(filter(None, sorted(set(list9))))                                  # <remove empty elements />
 
@@ -1074,17 +1074,6 @@ print(
 
 print('\nListing domain filters :')
 
-#list3 = [
-#    re.sub(r'\$important$', '', line)
-#    for line in list2
-#    if (
-#        re.sub(r'^(?:[-\w]*\.)*',
-#        '',
-#        re.sub(r'\$important$', '', line)
-#    ) in iana_tld)                                                              # <domain detector />
-#    if line[0] != '-'                                                           # <remove -@.@ from domains list />
-#]                                                                               # <get (@.)+tld domains, removing trailing $important />
-
 def f_list_domains(line):
 
     global iana_tld
@@ -1115,7 +1104,7 @@ def f_clean_domains(line):
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list3 = pool.map(f_clean_domains, list3)                                         # <execute function by multithreading />
+list3 = pool.map(f_clean_domains, list3)                                        # <execute function by multithreading />
 pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()
 
@@ -1147,7 +1136,7 @@ list8 = sorted(
     )
 )
 
-print('\n<domain white list> loaded\n')
+print('\n<domains_white_list> loaded\n')
 
 list3 = sorted(set(list3) - set(list8))                                         # <remove whitelisted domains />
 
