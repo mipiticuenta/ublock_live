@@ -29,7 +29,7 @@ file8_in_name  = 'domains_white_list'
 file9_in_name  = 'regex_white_list'
 no_proxy       = {'https': '', 'http': ''}
 local_proxy    = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
-thr            = max(1, os.cpu_count() - 1)
+thr            = os.cpu_count()
 
 # </ libs & settings>
 
