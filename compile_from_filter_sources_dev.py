@@ -1069,10 +1069,10 @@ def f21(pattern):
 
     try :
         pattern = re.compile(r'' + re.sub(r'\$important$', '', pattern)[1: -1]) # < create regex pattern for faster processing />
-        list2 = [
+        list2du = [
             line
             for line in list2
-            if not(pattern.search(' ' + line + ' '))
+            if pattern.search(' ' + line + ' ')
         ]
     except :
         print(
@@ -1082,14 +1082,16 @@ def f21(pattern):
 
     pbar.update(1)
 
+    return list2du
+
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-pool.map(f21, list5)                                                            # <execute function by multithreading />
+list2du = pool.map(f21, list5)                                                  # <execute function by multithreading />
 pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()
 
 # <aggregate filters >
 
-list2 = list(filter(None, sorted(set(list2) | set(list5))))                     # <join lists2, list5 and remove empty elements />
+list2 = list(filter(None, sorted((set(list2) - set(list2du))| set(list5))))     # <join lists2, list5 and remove empty elements />
 
 # </aggregate filters >
 
