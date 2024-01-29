@@ -1275,23 +1275,23 @@ print(
 
 print('dedup filter if filter($|,)important present', sep = '')
 
-list2s = [
-    line
-    for line in list2
-    if re.search(r'[\$\,]important$', line)
-]                                                                               # <segregate ($|,)important filters />
+#list2s = [
+#    line
+#    for line in list2
+#    if re.search(r'[\$\,]important$', line)
+#]                                                                               # <segregate ($|,)important filters />
 
-list2  = sorted(set(list2) - set(list2s))
+#list2  = sorted(set(list2) - set(list2s))
 
-list2 = [
-    line
-    for item in tqdm(list2s, ncols = 132)
-    for line in list2
-    if (item != (line + '$important') and (item != (line + ',important')))
-]
+#list2 = [
+#    line
+#    for item in tqdm(list2s, ncols = 132)
+#    for line in list2
+#    if (item != (line + '$important') and (item != (line + ',important')))
+#]
 
-list2 = sorted(set(list2) | set(list2s))                                        # <aggregate lists />
-del(list2s)
+#list2 = sorted(set(list2) | set(list2s))                                        # <aggregate lists />
+#del(list2s)
 
 
 def f_dedup_important(line):
