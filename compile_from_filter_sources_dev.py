@@ -180,7 +180,7 @@ file2_out.writelines(line + '\n' for line in list2)
 file2_out.close()
 
 print(
-    'Results saved to textfile <' + file2_out_name + '>\n'
+    'Results saved to textfile <' + 'compiled_block_list_raw' + '>'
 )
 
 # </write main output>
@@ -1311,7 +1311,7 @@ pool.close()                                                                    
 pool.join()
 
 
-list2 = list(filter(None, sorted(set(list2) | set(list2s))))                    # <remove redundant filters />
+list2 = list(filter(None, sorted(set(list2) - set(list2s))))                    # <remove redundant filters />
 del(list2s)
 
 print(
