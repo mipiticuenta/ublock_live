@@ -1072,7 +1072,7 @@ list2 = list(filter(None, sorted(set(list2) | set(list5))))                     
 # </aggregate filters >
 
 print(
-    '       ',
+    '\n       ',
     '{:,}'.format(len(list2) + len(list5)),
     'filters kept'
 )
