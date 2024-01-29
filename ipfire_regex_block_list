@@ -22,6 +22,7 @@
 /(https?:\/\/)\w{30,}\.me\/\w{30,}\./
 /.*removeparam=.*formats.*/
 /20\d\d\d\d\d\d\.*\.html/
+/2ip.*/member_photo/
 /[-a-z]{8,15}\.(?:com|net)\/400\/\d{7}$/
 /[-a-z]{8,15}\.(?:com|net)\/401\/\d{7}$/
 /[-a-z]{8,15}\.(?:com|net)\/500\/\d{7}\?/
@@ -442,6 +443,7 @@
 /[a-z]{7}\.com\/sub\/(?=[a-z]{0,9}[0-9A-Z])[0-9A-Za-z]{10}$/
 /[a-z]{8}\.xyz\/main\.js$/
 /\/[0-9]+\.js/
+/\w{8}\/\w{10}\./
 /^(?:[-\w]+\.)*[-_0-9]+\.[a-z]+(\.[a-z]+)?//
 /^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/
 /^([-\w]+\.)*[-_0-9]+\.[a-z]+(\.[a-z]+)?//
@@ -453,7 +455,11 @@
 /^smetrics\./
 /^smetrics\./$important
 /_dating\d\/index\.html\?aref=/
+/ad.*/adx/
+/ad.*/uri/
 /adfuel/$important
+/adg.*/pub/
+/adn.*/zone/
 /adnxs/$important
 /adobe.?target/
 /adobe.?target/$important
@@ -466,6 +472,9 @@
 /akismet/$important
 /alert[^/]*\.js(on)?/
 /algolia/$important
+/analytics.*/hits/
+/analytics.*/pageview/
+/analytics.*/ping/
 /anuncy/*/ads/
 /appmeasurement/$important
 /assets\/jquery\/jquery-\d\.\d\.(?:\d\.)?min\.js\?(?:v=2)?&?type=(?:adult|mainstream)$/
@@ -504,6 +513,8 @@
 /dynamicad/$important
 /dynamicgafunctions/$important
 /eloqua/$important
+/email.*/e/o/
+/email.*/o/
 /enter/?url=dont_go_away/
 /eventtrack/$important
 /faceboo?k/
@@ -529,6 +540,7 @@
 /images/*_ads/
 /images/cms/_*0*_/
 /images\/(?:Banner\d{1,2}\.|[a-z]{3}\/)/
+/img\/(?!new).+\.gif/
 /incapsula/$important
 /index.php?/ajax/get_adv/
 /index/index.php?/ajax/get_adv/
@@ -536,6 +548,7 @@
 /js*.*.com/js/customs/
 /kick\.com\/[0-9A-z]{16}\/[0-9A-z]{16}\?apiKey=/
 /leadforensics/$important
+/lightning.*/launch/
 /linktrack/$important
 /loader.min.js$xhr,script,domain=loawa.com|ygosu.com|sportalkorea.com|algumon.com|hancinema.net|enetnews.co.kr|edaily.co.kr|economist.co.kr|etoday.co.kr|hankyung.com|isplus.com|hometownstation.com|kagit.kr|inven.co.kr|honkailab.com|warcraftrumbledeck.com|genshinlab.com|thestockmarketwatch.com|thephoblographer.com,replace=/[a-zA-Z]{2}=function\([a-zA-Z]{2}\)\{var [a-zA-Z0-9]{2}=[a-zA-Z0-9]{2};try\{Array/neuralized=function(){var c5=u4;try{Array/
 /log.?impression/
@@ -548,6 +561,7 @@
 /moatads/$important
 /monetate/$important
 /mpuad/$important
+/msk.*/redir/
 /muge\.eu\/wp-content\/uploads\/20\d{2}\/\d{2}\/thumbnail.*/
 /newrelic/$important
 /npm/@jenkinsci/jenkins-io-components/
@@ -565,6 +579,7 @@
 /pagead/$important
 /pageparams[^/]*\.js(on)?/
 /pageview/$important
+/parcel-api.delivery-status.*/open/
 /parsely/$important
 /pcs/click?adurl=/churchinmanila.org/
 /pcs/click?adurl=/deltabehavioralhealth.org/
@@ -589,6 +604,7 @@
 /pre.?roll/
 /pre.?roll/$important
 /privacy/$important
+/pu.*/click/
 /queryly/$important
 /ruxitagentjs/$important
 /sentry/$important
@@ -602,6 +618,7 @@
 /smarttag/$important
 /smetrics./$important
 /sourcepoint/$important
+/special/*_960/
 /static/*/ads/
 /storage[^/]*\.js(on)?/
 /streamsense/$important
@@ -621,8 +638,12 @@
 /timedtext\?/
 /timedtext\?/$important
 /to\ds\.biz\/\?p=/
+/tool.*/banner/
+/tools.*/ban/
+/track.*/visitor/
 /track.?data/
 /track.?data/$important
+/tracking.*/beacon/
 /trackvisit/$important
 /tradedoubler/$important
 /uc\?export=/
@@ -632,6 +653,7 @@
 /usabilla/$important
 /user.?profile/
 /user.?profile/$important
+/v*/
 /v13a*idsh_vid/ru/cp1251/tmsec=idsh_sid116854-dis/
 /v13a*odnoklassniki_ru/ru/utf-8/tmsec=odnoklassniki_mobile/
 /v13b*idsh_vid/ru/cp1251/tmsec=idsh_sid116854-dis/

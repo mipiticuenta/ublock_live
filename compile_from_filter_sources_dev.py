@@ -1310,7 +1310,6 @@ list2s = pool.map(f_dedup_important, list2)                                     
 pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()
 
-
 list2 = list(filter(None, sorted(set(list2) - set(list2s))))                    # <remove redundant filters />
 del(list2s)
 
