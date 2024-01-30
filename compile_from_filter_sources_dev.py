@@ -926,12 +926,6 @@ print(
     '<regex_white_list> loaded'
 )
 
-#pbar = tqdm(
-#    desc = 'removing filters based on <regex-white_list>',
-#    total = len(list9),
-#    ncols = 132
-#)
-
 counter = Value('d', 0)
 t0 = time()
 counter_max = len(list2)
@@ -954,10 +948,11 @@ def f20_2(pattern):
             flush=True
         )
 
-#    pbar.update()
     counter.value += 1
     print(
-        (counter.value / counter_max) * 100, "% ", (time() - t0) / counter.value * (counter_max - counter.value),
+        '       ',
+        '{:d}'.format((counter.value / counter_max) * 100), "% ",
+        '{:d}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), " minutes remaining",
         end = '\r',
         flush = True
     )
@@ -968,7 +963,6 @@ pool = ThreadPool(thr)                                                          
 list2wl = pool.map(f20_2, list9)                                                # <execute function by multithreading />
 pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()                                                                     # <wait for all threads in the pool to be shutdown />
-del(pbar)                                                                       # <destroy progress bar />
 
 list2wl = sorted(
     set(
