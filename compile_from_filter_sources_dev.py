@@ -949,8 +949,8 @@ def f20_2(pattern):
     counter.value += 1
     print(
         '       ',
-        '{1:.0f}'.format((counter.value / counter_max) * 100), "% ",
-        '{1:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), " minutes remaining",
+        '{:.0f}'.format((counter.value / counter_max) * 100), "% ",
+        '{:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), " minutes remaining",
         end = '\r',
         flush = True
     )
@@ -1091,8 +1091,8 @@ def f21(pattern):
     counter.value += 1
     print(
         '       ',
-        '{1:.0f}'.format((counter.value / counter_max) * 100), "% ",
-        '{1:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), " minutes remaining",
+        '{:.0f}'.format((counter.value / counter_max) * 100), "% ",
+        '{:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), " minutes remaining",
         end = '\r',
         flush = True
     )
