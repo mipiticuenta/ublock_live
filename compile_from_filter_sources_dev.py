@@ -926,6 +926,8 @@ print(
 
 def pbarupdate():
 
+    global pbar
+
     pbar.update(1)
 
 pbar = tqdm(
@@ -960,7 +962,8 @@ def f20_2(pattern):
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list2wl = pool.map(f20_2, list9)                                                # <execute function by multithreading />
 pool.close()                                                                    # <close the pool and wait for the work to finish />
-pool.join()
+pool.join()                                                                     # <wait for all threads in the pool to be shutdown />
+del(pbar)                                                                       # <destroy progress bar />
 
 list2wl = sorted(
     set(
