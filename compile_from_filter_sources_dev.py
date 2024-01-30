@@ -925,7 +925,7 @@ print(
     '<regex_white_list> loaded'
 )
 
-Def pu():
+Def pbarupdate():
 
     pbar.update(1)
 
@@ -934,9 +934,6 @@ pbar = tqdm(
     total = len(list9),
     ncols = 132
 )
-
-Def pbar_update()
-    pbar.update(1)
 
 def f20_2(pattern):
 
@@ -957,7 +954,7 @@ def f20_2(pattern):
             flush=True
         )
 
-    pu()
+    pbarupdate()
 
     return list2wl
 
