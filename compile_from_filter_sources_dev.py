@@ -937,7 +937,6 @@ def f20_2(pattern):
 
     global list2
     global pbar
-    global q
 
     try :
         pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
@@ -954,7 +953,7 @@ def f20_2(pattern):
 
     pbar.update()
     counter.value += 1
-    print(counter + '\r')
+    print(counter.value + '\r')
 
     return list2wl
 
