@@ -624,7 +624,10 @@ while n_1 > len(list2):                                                         
         line = re.sub(r'/+', '/', line)                                         # <dedup / />
         line = re.sub(r'^.*/\*/', '/', line)                                    # <replace url_part/*/ with / />
         line = re.sub(r'([-\./\w]+)\$(?!important)[-\,\=\.\w]*$', r'\1', line)  # <remove $* tail except for *$ />
-        
+
+        if re.search(r'^[-\w]+\\\.[-\w]+', line):
+            line re.sub(r'\\\.', '.', line)
+
         return line
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />

@@ -11,7 +11,8 @@
 ^/.*\.gif/$
 ^/\*head\*\.js$
 ^io\$important$
-/lodash.min.js
+^/lodash.min.js$
+^/menu\.js$
 ^/\*sw\*\.js$
 ^/\*_\*_u\*js$
 ^[_\W]*$
@@ -1044,8 +1045,7 @@
 ^[_\W]*re[ck]lam[ae][_\W]*$
 ^[_\W]*recom(?:mend)?[_\W]*$
 ^[_\W]*record(?:ing)?s?[_\W]*$
-^[_\W]*reddit(?:media)?[_\W]*$
-^[_\W]*redditstatic[_\W]*$
+^[_\W]*reddit(?:media|static)?[_\W]*$
 ^[_\W]*references?[_\W]*$
 ^[_\W]*referer[_\W]*$
 ^[_\W]*refill[_\W]*$
@@ -1236,7 +1236,7 @@
 ^[_\W]*star.?\w*[_\W]*$
 ^[_\W]*statement[_\W]*$
 ^[_\W]*states?[_\W]*$
-^[_\W]*static/media[_\W]*$
+^[_\W]*static/(?:images|media)[_\W]*$
 ^[_\W]*statics?[_\W]*$
 ^[_\W]*stats?(?:istics?)?[_\W]*$
 ^[_\W]*statsmodels[_\W]*$
@@ -1423,6 +1423,7 @@
 ^[_\W]*word(?:press)?[_\W]*$
 ^[_\W]*work(?:er)?[_\W]*$
 ^[_\W]*world[_\W]*$
+^[_\W]*wp\-content/themes[_\W]*$
 ^[_\W]wp\-content/uploads?[_\W]*$
 ^[_\W]*wp(?:\-content)?[_\W]*$
 ^[_\W]*wrap(?:per)?[_\W]*$
