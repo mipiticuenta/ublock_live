@@ -925,7 +925,7 @@ print(
     '<regex_white_list> loaded'
 )
 
-Def pbarupdate():
+Def pu():
 
     pbar.update(1)
 
@@ -957,7 +957,7 @@ def f20_2(pattern):
             flush=True
         )
 
-    pbarupdate()
+    pu()
 
     return list2wl
 
