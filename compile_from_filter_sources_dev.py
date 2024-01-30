@@ -925,11 +925,11 @@ print(
     '<regex_white_list> loaded'
 )
 
-pbar = tqdm(
-    desc = 'removing filters based on <regex-white_list>',
-    total = len(list9),
-    ncols = 132
-)
+#pbar = tqdm(
+#    desc = 'removing filters based on <regex-white_list>',
+#    total = len(list9),
+#    ncols = 132
+#)
 
 counter = Value('d', 0)
 
@@ -951,9 +951,13 @@ def f20_2(pattern):
             flush=True
         )
 
-    pbar.update()
+#    pbar.update()
     counter.value += 1
-    print(counter.value + '\r')
+    print(
+        counter.value,
+        end = '\r',
+        flush = True
+    )
 
     return list2wl
 
