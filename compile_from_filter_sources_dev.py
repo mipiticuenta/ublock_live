@@ -30,7 +30,6 @@ file9_in_name  = 'regex_white_list'
 no_proxy       = {'https': '', 'http': ''}
 local_proxy    = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
 thr            = os.cpu_count()
-q              = Queue()
 
 # </ libs & settings>
 
