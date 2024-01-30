@@ -928,7 +928,7 @@ print(
 
 counter = Value('d', 0)
 t0 = time()
-counter_max = len(list2)
+counter_max = len(list9)
 
 def f20_2(pattern):
 
@@ -951,7 +951,7 @@ def f20_2(pattern):
     counter.value += 1
     print(
         '       ',
-        '{:d}'.format((counter.value / counter_max) * 100), "% ",
+        '{:3d}'.format((counter.value / counter_max) * 100), "% ",
         '{:d}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), " minutes remaining",
         end = '\r',
         flush = True
