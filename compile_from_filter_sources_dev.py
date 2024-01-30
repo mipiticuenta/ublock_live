@@ -30,6 +30,7 @@ file9_in_name  = 'regex_white_list'
 no_proxy       = {'https': '', 'http': ''}
 local_proxy    = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
 thr            = os.cpu_count()
+q              = Queue()
 
 # </ libs & settings>
 
@@ -924,16 +925,23 @@ print(
     '<regex_white_list> loaded'
 )
 
+Def pbarupdate():
+    pbar.update(1)
+
 pbar = tqdm(
     desc = 'removing filters based on <regex-white_list>',
     total = len(list9),
     ncols = 132
 )
 
+Def pbar_update()
+    pbar.update(1)
+
 def f20_2(pattern):
 
     global list2
     global pbar
+    global q
 
     try :
         pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
@@ -948,7 +956,7 @@ def f20_2(pattern):
             flush=True
         )
 
-    pbar.update(1)
+    pbarupdate()
 
     return list2wl
 
