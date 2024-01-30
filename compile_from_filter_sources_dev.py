@@ -16,7 +16,6 @@ import math                                                                     
 import os                                                                       # <operating system interfaces />
 import re                                                                       # <regex capabilities />
 import requests                                                                 # <fetch urls />
-from tqdm import tqdm                                                           # <progress bar />
 from multiprocessing import Pool as ThreadPool                                  # <multithreading function/>
 from multiprocessing import Value                                               # <multithreading function/>
 from time import time
@@ -933,7 +932,6 @@ counter_max = len(list9)
 def f20_2(pattern):
 
     global list2
-    global pbar
 
     try :
         pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
@@ -951,8 +949,8 @@ def f20_2(pattern):
     counter.value += 1
     print(
         '       ',
-        '{:3d}'.format((counter.value / counter_max) * 100), "% ",
-        '{:d}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), " minutes remaining",
+        '{1:.0f}'.format((counter.value / counter_max) * 100), "% ",
+        '{1:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), " minutes remaining",
         end = '\r',
         flush = True
     )
@@ -1069,16 +1067,13 @@ print(
 
 list5 = list(filter(None, sorted(set(list5))))                                  # <remove empty elements />
 
-pbar = tqdm(
-    desc = '21/21 : remove url filters redundant with regex filters',
-    total = len(list5),
-    ncols = 132
-)
+counter = Value('d', 0)
+t0 = time()
+counter_max = len(list5)
 
 def f21(pattern):
 
     global list2
-    global pbar
 
     try :
         pattern = re.compile(r'' + re.sub(r'\$important$', '', pattern)[1: -1]) # < create regex pattern for faster processing />
@@ -1093,7 +1088,14 @@ def f21(pattern):
             flush=True
         )
 
-    pbar.update(1)
+    counter.value += 1
+    print(
+        '       ',
+        '{1:.0f}'.format((counter.value / counter_max) * 100), "% ",
+        '{1:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), " minutes remaining",
+        end = '\r',
+        flush = True
+    )
 
     return list2du
 
