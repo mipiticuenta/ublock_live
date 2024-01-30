@@ -18,6 +18,7 @@ import re                                                                       
 import requests                                                                 # <fetch urls />
 from tqdm import tqdm                                                           # <progress bar />
 from multiprocessing import Pool as ThreadPool                                  # <multithreading function/>
+from multiprocessing import Value                                               # <multithreading function/>
 
 file1_in_name  = 'filter_sources'
 file2_out_name = 'compiled_block_list'
@@ -924,17 +925,13 @@ print(
     '<regex_white_list> loaded'
 )
 
-def pbarupdate():
-
-    global pbar
-
-    pbar.update(1)
-
 pbar = tqdm(
     desc = 'removing filters based on <regex-white_list>',
     total = len(list9),
     ncols = 132
 )
+
+counter = Value('d', 0)
 
 def f20_2(pattern):
 
@@ -955,7 +952,9 @@ def f20_2(pattern):
             flush=True
         )
 
-    pbarupdate()
+    pbar.update()
+    counter += 1
+    print(counter)
 
     return list2wl
 
