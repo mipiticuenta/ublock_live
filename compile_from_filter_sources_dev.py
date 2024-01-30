@@ -19,6 +19,7 @@ import requests                                                                 
 from tqdm import tqdm                                                           # <progress bar />
 from multiprocessing import Pool as ThreadPool                                  # <multithreading function/>
 from multiprocessing import Value                                               # <multithreading function/>
+from time import time
 
 file1_in_name  = 'filter_sources'
 file2_out_name = 'compiled_block_list'
@@ -932,6 +933,8 @@ print(
 #)
 
 counter = Value('d', 0)
+t0 = time()
+counter_max = len(list2)
 
 def f20_2(pattern):
 
@@ -954,7 +957,7 @@ def f20_2(pattern):
 #    pbar.update()
     counter.value += 1
     print(
-        counter.value,
+        (counter.value / counter_max) * 100, "% ", (time() - t0) / counter.value * (counter_max - counter.value),
         end = '\r',
         flush = True
     )
