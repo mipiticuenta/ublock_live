@@ -626,10 +626,10 @@ while n_1 > len(list2):                                                         
         line = re.sub(r'([-\./\w]+)\$(?!important)[-\,\=\.\w]*$', r'\1', line)  # <remove $* tail except for *$ />
 
         if re.search(r'^[-\w]+\\\.[-\w]+', line) :
-            line = re.sub(r'\\\.', '.', line)
+            line = re.sub(r'\\\.', '.', line)                                   # <remove faulty \. />
 
         if re.search(r'^[-\.\w]+\^\*[-/\.\w]+', line) :
-            line = re.sub(r'\^\*', '', line)
+            line = re.sub(r'\^\*', '', line)                                    # <remove spurious ^*/>
 
         return line
 
