@@ -925,7 +925,7 @@ print(
     '<regex_white_list> loaded'
 )
 
-Def pbarupdate():
+def pbarupdate():
 
     pbar.update(1)
 
