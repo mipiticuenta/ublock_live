@@ -953,8 +953,8 @@ def f20_2(pattern):
         )
 
     pbar.update()
-    counter += 1
-    print(counter)
+    counter.value += 1
+    print(counter + '\r')
 
     return list2wl
 
