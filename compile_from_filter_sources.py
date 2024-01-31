@@ -5,7 +5,6 @@ Compile a single deduplicated block list from url sources
 # <product backlog>
 
     # <sprint #2: dedup urls/>
-    # <sprint #3: apply multicore/>
     # <sprint #4: apply whitelisting to cosmetic filters/>
     # <sprint #5: check for mismatching () [] {} />
 
@@ -17,8 +16,9 @@ import math                                                                     
 import os                                                                       # <operating system interfaces />
 import re                                                                       # <regex capabilities />
 import requests                                                                 # <fetch urls />
-import tqdm                                                                     # <progress bar />
 from multiprocessing import Pool as ThreadPool                                  # <multithreading function/>
+from multiprocessing import Value                                               # <multithreading function/>
+from time import time
 
 file1_in_name  = 'filter_sources'
 file2_out_name = 'compiled_block_list'
@@ -30,6 +30,7 @@ file8_in_name  = 'domains_white_list'
 file9_in_name  = 'regex_white_list'
 no_proxy       = {'https': '', 'http': ''}
 local_proxy    = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
+thr            = os.cpu_count()
 
 # </ libs & settings>
 
@@ -66,7 +67,7 @@ except:
 
 # </test direct connection to internet>
 
-# <get filter url sources, dedup and sort>
+# <get filter url sources >
 
 list1 = sorted(
     list(
@@ -80,37 +81,76 @@ list1 = sorted(
     )
 )
 
-# </get filter url sources, dedup and sort>
+# </get filter url sources >
 
-# <dump sources to list>
+# <populate main list (list2) >
 
-list2 = set()                                                                   # <set() type ensures deduplication />
-list5 = []                                                                      # <intialize list5 (regex) />
-i     = 1                                                                       # <counter for uncommented sources />
+print(
+    'reading ',
+    len(list1),
+    ' sources\n',
+    sep = ''
+)
 
-for line in list1 :
-    print(
-        'reading source',
-        '{:3.0f}'.format(i),
-        '/',
-        len(list1),
-        ':',
-        line
-    )
-    i += 1
-    response = requests.get(
-        line,
-        proxies = proxy_servers
-    )
-    if (response.status_code) :
-        list2.update(response.text.split('\n'))
+def f00(line) :
+
+    global proxy_servers
+    list2 = set()
+
+    try :
+        response = requests.get(
+            line,
+            proxies = proxy_servers
+        )
+        if (response.status_code) :
+            list2.update(response.text.split('\n'))
+            print(
+                line,
+                '\n',
+                '    ',
+                '{:,}'.format(len(list2)),
+                'filters read',
+                flush = True
+            )
+        else :
+            print(
+                'Error: could not load ' + line,
+                flush = True
+            )
+        list2 = sorted(list2)
+    except :
         print(
-            '                         ',
-            '{:,}'.format(len(list2)),
-            'cumulated filters'
+            'Error: could not load ' + line,
+            flush = True
         )
 
-# </dump sources to list>
+    return list2
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = pool.map(f00, list1)                                                    # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
+
+list2 = sorted(
+    set(
+        [
+            line if (type(line) == str)                                         # <prevents string atomization into chars is string type />
+            else item
+            for line in list2
+            for item in line
+        ]                                                                       # <flatten list />
+    )                                                                           # <dedup list />
+)
+
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
+
+print(
+    '\n',
+    '{:,}'.format(len(list2)),
+    'filters gathered'
+)
+
+# </populate main list (list2) >
 
 # <load iana tld >
 
@@ -143,14 +183,13 @@ iana_sld = iana_tld + [
     if len(tld) == 2
 ]                                                                               # <frequent slds combined with tlds />
 
-print('\nIANA top level domains (TLD) list loaded')
+print('\nIANA top level domains (TLD) list loaded\n')
 
 # </load iana tld >
 
 # <process filter list>
 
 print(
-                        '\n',
     '--------------------\n',
     'Transforming filters\n',
     '--------------------\n',
@@ -159,194 +198,152 @@ print(
 
 # <transforming loop>
 
-print(' 1/21 : remove leading/trailing/dup spaces ')
+print(' 1/21 : remove leading / trailing / dup spaces ')
 
-list2 = [
-    re.sub(r'\t', ' ', line)
-    for line in list2
-]                                                                               # <replace tab with space  />
+def f01(line) :
 
-list2 = [
-    re.sub(r' +', ' ', line).strip()
-    for line in list2
-]                                                                               # <dedup spaces and remove leading/trailing spaces />
+    line = re.sub(r'\t', ' ', line)                                             # <replace tab with space  />
+    line = re.sub(r' +', ' ', line).strip()                                     # <dedup spaces and remove leading/trailing spaces />
 
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = pool.map(f01, list2)                                                    # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
+
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
-    '{:,}'.format(len(list2) + len(list5)),
+    '{:,}'.format(len(list2)),
     'filters kept'
 )
 
 print(' 2/21 : remove comments ')
 
-list2 = [re.sub(r'^ *[!\[\{].*', '', line)
-    for line in list2
-]                                                                               # <remove !comment [comment] {comment} />
+def f02(line) :
 
-list2 = [re.sub(r'^ *#(?![\?\@\#]).*', '', line)
-    for line in list2
-]                                                                               # <remove #comment; preserve cosmetics and exceptions />
+    if re.search(r'^ *[!\[\{].*$', line) :
+        line = ''                                                               # <remove !comment [comment] {comment} />
+    elif re.search(r'^ *#(?![\?\@\#]).*$', line) :
+        line = ''                                                               # <remove #comment; preserve cosmetics and exceptions />
 
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = pool.map(f02, list2)                                                    # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
+
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
-    '{:,}'.format(len(list2) + len(list5)),
+    '{:,}'.format(len(list2)),
     'filters kept'
 )
 
-print(' 3/21 : clean dns/domain filters ')
+print(' 3/21 : clean dns, domain filters ')
 
-list2 = [re.sub(r'^0\.0\.0\.0 ', '', line)
-    for line in list2
-]                                                                               # <remove leading 0.0.0.0 (dns style filter) />
+def f03(line) :
 
-list2 = [re.sub(r'^127\.0\.0\.1 ', '', line)
-    for line in list2
-]                                                                               # <remove leading 127.0.0.1 (dns style filter) />
+    line = re.sub(r'^0\.0\.0\.0 ', '', line)                                    # <remove leading 0.0.0.0 (dns style filter) />
+    line = re.sub(r'^127\.0\.0\.1 ', '', line)                                  # <remove leading 127.0.0.1 (dns style filter) />
+    line = re.sub(r'^\:+1 ', '', line)                                          # <remove leading ::1 (dns style filter) />
+    if re.search(r'^\|{1, 2}[-\.\w]+\^$', line) :
+        line = re.sub(r'[\|\^]', '', line)                                      # <remove || ^ from abp syntax ||domain^ />
 
-list2 = [re.sub(r'^\:+1 ', '', line)
-    for line in list2
-]                                                                               # <remove leading ::1 (dns style filter) />
+    return line
 
-list2 = [
-    re.sub(r'[\|\^]', '', line) if re.search(r'^\|{1, 2}[-\.\w]+\^$', line)
-    else line
-    for line in list2
-]                                                                               # <remove || ^ from abp syntax ||domain^ />
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = pool.map(f03, list2)                                                    # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
 
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
-    '{:,}'.format(len(list2) + len(list5)),
+    '{:,}'.format(len(list2)),
     'filters kept'
 )
 
-print(' 4/21 : remove items containing % about: $badfilter localhost; remove http: IP4 IP6 :port/; clean from=, path=, replace=, transform=')
+print(' 4/21 : remove items containing % about: $badfilter localhost; remove http: IP4 IP6 :port/')
 
-list2 = [
-    line
-    for line in list2
-    if not(re.search(r'\%', line))
-]                                                                               # <remove items comprising % >
+def f04(line) :
 
-list2 = [
-    line
-    for line in list2
-    if not(re.search(r'about\:', line))
-]                                                                               # <remove items comprising about: >
+    if re.search(r'\%', line) :
+        line = ''                                                               # <remove items comprising % >
+    elif re.search(r'about\:', line) :
+        line = ''                                                               # <remove items comprising about: >
+    elif re.search(r'[,\$]badfilter', line) :
+        line = ''                                                               # <remove items comprising $badfilter />
+    elif re.search(r'localhost', line) :
+        line = ''                                                               # <remove items containing localhost />
+    elif re.search(r'\:\:', line) :
+        line = ''                                                               # <remove IP6 addresses :: />
+    elif re.search(r'^[^a-z]+$', line) :
+        line = ''                                                               # <remove filters comprised only by simbols and numbers (includes IP4 addresses) />
 
-list2 = [
-    line
-    for line in list2
-    if not(re.search(r'[,\$]badfilter', line))
-]                                                                               # <remove items comprising $badfilter />
+    if re.search(r'^\|{1, 2}[-\.\w]+\^.*$', line) :
+        line = re.sub(r'[\|\^]', '', line)                                      # <remove || ^ from abp syntax ||domain^ />
+    line = re.sub(r'^\:[0-9]+/', '/', line)                                     # <replace leading :port/ with / />
+    line = re.sub(r'https?\:/*', '', line)                                      # <remove http(s):/* />
 
-list2 = [
-    line
-    for line in list2
-    if not(re.search(r'localhost', line))
-]                                                                               # <remove items containing localhost />
+    return line
 
-list2 = [
-    re.sub(r'^[^a-z]+$', '', line)
-    for line in list2
-]                                                                               # <remove filters comprised only by simbols and numbers (includes IP4 addresses) />
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = pool.map(f04, list2)                                                    # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
 
-list2 = [
-    line for line in list2
-    if not(re.search(r'\:\:', line))
-]                                                                               # <remove IP6 addresses :: />
-
-list2 = [
-    re.sub(r'^\:[0-9]+/', '/', line)
-    for line in list2
-]                                                                               # <replace leading :port/ with / />
-
-list2 = [
-    re.sub(r'https?\:/*', '', line)
-    for line in list2
-]                                                                               # <remove http:/* />
-
-list2 = [
-    re.sub(r'[\|\^]', '', line) if re.search(r'^\|{1, 2}[-\.\w]+\^.*$', line)
-    else line
-    for line in list2
-]                                                                               # <remove || ^ from abp syntax ||domain^ />
-
-list2 = [
-    re.sub(r',?from=.*$', '', line)
-    for line in list2
-]                                                                               # <remove (,)from=.* />
-
-list2 = [
-    re.sub(r',?path=.*$', '', line)
-    for line in list2
-]                                                                               # <remove (,)path=.* />
-
-list2 = [
-    re.sub(r',?replace=.*$', '', line)
-    for line in list2
-]                                                                               # <remove (,)replace=.* />
-
-list2 = [
-    re.sub(r',?transform=.*$', '', line)
-    for line in list2
-]                                                                               # <remove (,)transform=.* />
-
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
-    '{:,}'.format(len(list2) + len(list5)),
+    '{:,}'.format(len(list2)),
     'filters kept'
 )
 
 print(' 5/21 : apply lower case except for cosmetics and regex')
 
-list2 = [
-    line if re.search(r'[#\\]', line)
-    else line.lower()
-    for line in list2
-]                                                                               # <apply lower case except cosmetics and regex />
+def f05(line) :
 
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+    if not(re.search(r'[#\\]', line)) :
+        line = line.lower()                                                     # <apply lower case except cosmetics and regex />
+
+    if re.search(r'^/.*\\/$', line) :
+        line = ''                                                               # <remove broken regex (bad termination) />
+    line = re.sub(r'^/([-\.\+\~\!\=/\w]+)/$', r'/\1/*', line)                   # <add trailing * for /@/ url filters (false regex) />
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = pool.map(f05, list2)                                                    # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
+
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 # <segregate regex filters >
 
-list2 = [
-    re.sub(r'^/([-\.\+\~\!\=/\w]+)/$', r'/\1/*', line)
-    for line in list2
-]                                                                               # <add trailing * for /@/ url filters (false regex) />
-
-list2 = [
-    line
-    for line in list2
-    if not(re.search(r'^/.*\\/$', line))
-]                                                                               # <remove broken regex (bad termination) />
-
 list5 = [
     line
     for line in list2
-    if re.search(r'^/.+/(?:\$important)?$', line)
-]                                                                               # <populate regex filters/>
+    if re.search(r'^/.+/(?:\$important)?$', line)                               # <match regex filter syntax />
+]
+
+list2  = sorted(set(list2) - set(list5))
 
 list5 = [
     line
     for line in list5
-    if not(re.search(r'^/.*[\^\?]\*.*/$', line))                                # <remove wrong regex filters/>
+    if not re.search(r'^/.*[\^\?]\*.*/$', line)                                 # <remove wrong regex filter />
+    if not re.search(r'^/.*\/\$.*/$', line)                                     # <remove wrong regex filter />
+    if not re.search(r'^/[\^\(]http', line)                                     # <remove [^(]http regex filter />
+    if len(line) > 4
 ]
-
-list5 = [
-    line
-    for line in list5
-    if not(re.search(r'^/.*\/\$.*/$', line))                                    # <remove wrong regex filters/>
-]
-
-list2  = set(list2) - set(list5)
 
 # </segregate regex filters >
 
@@ -358,22 +355,20 @@ print(
 
 print(' 6/21 : generalize cosmetic filters (*##) and exceptions (*#@ *#? *@@) ')
 
-list2 = [
-    re.sub(r'^.*(?=\#[\#\?])', '*', line)
-    for line in list2
-]                                                                               # <generalize *## *#? />
+def f06(line) :
 
-list2 = [
-    re.sub(r'^.*(?=[\#\@]\@)', '*', line)
-    for line in list2
-]                                                                               # <generalize *#@ *@@ />
+    line = re.sub(r'^.*(?=\#[\#\?])', '*', line)                                # <generalize *## *#? />
+    line = re.sub(r'^.*(?=[\#\@]\@)', '*', line)                                # <generalize *#@ *@@ />
+    line = re.sub(r'^.*removeparam\=', '*$removeparam=', line)                  # <generalize *$removeparam />
 
-list2 = [
-    re.sub(r'^.*removeparam\=', '*$removeparam=', line)
-    for line in list2
-]                                                                               # <generalize *$removeparam />
+    return line
 
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = pool.map(f06, list2)                                                    # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
+
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
@@ -383,67 +378,23 @@ print(
 
 print(' 7/21 : remove cosmetic filters (## #?) and exceptions (@@ #@) except *##:')
 
-list2 = [
-    re.sub(r'^\*?\#\#(?!\:).*', '', line)
-    for line in list2
-]                                                                               # <remove cosmetic filters except ##: />
+def f07(line) :
 
-list2 = [
-    re.sub(r'^\*?\#[\@|\?].*', '', line)
-    for line in list2
-]                                                                               # <remove #@ #? exceptions />
+    if re.search(r'^\*?\#\#(?!\:).*$', line) :
+        line = ''                                                               # <remove cosmetic filters except ##: />
+    elif re.search(r'^\*?\#[\@|\?].*$', line) :
+        line = ''                                                               # <remove #@ #? exceptions />
+    elif re.search(r'^\*?\@\@.*$', line) :
+        line = ''                                                               # <remove @@ exceptions />
 
-list2 = [
-    re.sub(r'^\*?\@\@.*', '', line)
-    for line in list2
-]                                                                               # <remove @@ exceptions />
+    return line
 
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = pool.map(f07, list2)                                                    # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
 
-print(
-    '       ',
-    '{:,}'.format(len(list2) + len(list5)),
-    'filters kept'
-)
-
-print(' 8/21 : split urls with $ domain= ')
-
-list2s = [
-    line
-    for line in list2
-    if re.search(r'\$.*domain=', line)
-]                                                                               # <get urls with $ domain= '/>
-
-list2 = set(list2) - set(list2s)                                                # <segregate removed filters'/>
-
-list2s = (
-    [
-        re.sub(r',.*', '', re.sub(r'^.*domain=', '', line))
-        for line in list2s
-    ] +                                                                         # <isolate domain list part/>
-    [
-        re.sub(r'\$.*', '', line)
-        for line in list2s
-    ]                                                                           # <isolate url part/>
-)
-
-list2s = [
-    line.split('|')
-    for line in list2s
-]                                                                               # <flatten list'/>
-
-list2s = [
-    item
-    for line in list2s
-    for item in line
-    if line !=[''] and item != ''
-]                                                                               # <flatten list'/>
-
-list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
-
-list2 = list(filter(None, list2))                                               # <remove empty elements />
-
-del(list2s)
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
@@ -451,49 +402,64 @@ print(
     'filters kept'
 )
 
-print(' 9/21 : remove domain= denyallow= and keep the related domains')
+print(' 8/21 : split urls with $ domain=, denyallow= ')
 
-list2s = [
-    line
-    for line in list2
-    if re.search(r'.*(domain|denyallow)=', line)
-]                                                                               # <select *$ filters />
+def f08(line) :
 
-list2 = set(list2) - set(list2s)                                                # <segregate selected filters'/>
+    if re.search(r'\$.*(domain|denyallow)=', line) :
+        domains_part = re.sub(r'^.*(domain|denyallow)=', '', line).split('|')   # <split domains and  url part />
+        url_part     = [re.sub(r'\$.*$', '', line)]                             # <add url part/>
+        line = domains_part + url_part
+    else:
+        [line]
 
-list2s = [
-    re.sub(r'.*domain=', '', line).strip()
-    for line in list2s
-]                                                                               # <remove leading .*domain=/>
+    return line
 
-list2s = [
-    re.sub(r'.*denyallow=', '', line).strip()
-    for line in list2s
-]                                                                               # <remove leading .*denyallow=/>
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = pool.map(f08, list2)                                                    # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
 
-list2s = [
-    re.sub(r',.*$', '', line).strip()
-    for line in list2s
-]                                                                               # <remove trailing .*,.*/>
+list2 = sorted(
+    set(
+        [
+            line if (type(line) == str)                                         # <prevents string atomization into chars is string type />
+            else item
+            for line in list2
+            for item in line
+        ]                                                                       # <flatten list />
+    )                                                                           # <dedup list />
+)
 
-list2s = [
-    line.split('|')
-    for line in list2s
-    if len(line) > 0
-]                                                                               # <flatten list'/>
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
-list2s = [
-    item
-    for line in list2s
-    for item in line
-    if line !=[''] and item != ''
-]                                                                               # <flatten list'/>
+print(
+    '       ',
+    '{:,}'.format(len(list2) + len(list5)),
+    'filters kept'
+)
 
-list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
+print(' 9/21 : clean from=, path=, replace=, transform=')
 
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+def f09(line) :
 
-del(list2s)
+    line = re.sub(r',?(from|path|replace|transform)=.*$', '', line)             # <remove (,)from=.* , (,)path=.* , (,)replace=.* , (,)transform=.* />
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = pool.map(f09, list2)                                                    # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
+
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list5 = pool.map(f09, list5)                                                    # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
+
+list5 = list(filter(None, sorted(set(list5))))                                  # <remove empty elements />
 
 print(
     '       ',
@@ -503,47 +469,35 @@ print(
 
 print('10/21 : split , separated domains ')
 
-list2   = [
-    re.sub(r'^,', '', line).strip()
-    for line in list2
-]                                                                               # <remove leading , />
+def f10(line) :
 
-list2   = [
-    re.sub(r',$', '', line).strip()
-    for line in list2
-    ]                                                                           # <remove trailing , />
+    line = re.sub(r'^,', '', line)                                              # <remove leading , />
+    line = re.sub(r',$', '', line)                                              # <remove trailing , />
 
-list2s = [
-    line
-    for line in list2
-    if re.search(r'\,', line)
-]                                                                               # <remove , separated domains />
+    if re.search(r'^[\w\,]*\,[\w\,]*$', line) and not(re.search(r'[\$\@\#]', line)) :
+        line = line.split(',')                                                  # <split domains />
+    else:
+        [line]
 
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'[\$\&]', line))
-]                                                                               # <exclude $ & filters />
+    return line
 
-list2 = set(list2) - set(list2s)                                                # <segregate removed filters'/>
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = pool.map(f10, list2)                                                    # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
 
-list2s = [
-    line.split(',')
-    for line in list2s
-]
+list2 = sorted(
+    set(
+        [
+            line if (type(line) == str)                                         # <prevents string atomization into chars is string type />
+            else item
+            for line in list2
+            for item in line
+        ]                                                                       # <flatten list />
+    )                                                                           # <dedup list />
+)
 
-list2s = [
-    item
-    for line in list2s
-    for item in line
-    if line !=[''] and item != ''
-]                                                                               # <flatten list'/>
-
-list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
-
-list2 = list(filter(None, list2))                                               # <remove empty elements />
-
-del(list2s)
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
@@ -551,10 +505,10 @@ print(
     'filters kept'
 )
 
-n_1 = len(list2) + 1
+n_1 = len(list2) + 1                                                            # <initialization of list2 length obsservation />
 i   = 0
 
-while n_1 > len(list2):                                                         # <recursive loops up to no further length reduction for list2 />
+while n_1 > len(list2) :                                                         # <recursive loops until steady list2 length />
 
     i   = i + 1
     n_1 = len(list2)
@@ -567,52 +521,26 @@ while n_1 > len(list2):                                                         
 
     print('11/21 : clean up leading symbols numbers prefix etc')
 
-    list2 = [
-        re.sub(r'www[0-9]*\.', '', line)
-        for line in list2
-    ]                                                                           # <remove www#. />
+    def f11(line) :
 
-    list2 = [
-        re.sub(r'^[_\W0-9]*(?=[/\.\$])', '', line)
-        for line in list2
-    ]                                                                           # <remove leading symbols and numbers preceding / . $ />
+        line = re.sub(r'www[0-9]*\.', '', line)                                 # <remove www#. />
+        line = re.sub(r'^[_\W0-9]*(?=[/\.\$])', '', line)                       # <remove leading symbols and numbers preceding / . $ />
+        line = re.sub(r'^[/\.]?\w(?=[/\.\$])', '', line)                        # <remove leading single a-z0-9 char preceding / . $ />
+        line = re.sub(r'^\.(?=\*)', '', line)                                   # <remove leading . if followed by * />
+        line = re.sub(r'^\W*(?=\$)', '*', line)                                 # <replace leading symbols followed by $ (/$ .$ =$ ?$ etc) with *$ />
+        line = re.sub(r'^\.?[-\*\w]+/', '/', line)                              # <replace leading (.)@/ with / />
+        line = re.sub(r'^/\*.*[^/]', '', line)                                  # <remove leading /* except for regex filters />
+        line = re.sub(r'^\*(?=[^\$\#])', '', line)                              # <remove leading * generic $ # filters />
+        line = re.sub(r'^/([-\.\+\!\~/\w]+)/$', r'/\1/*', line)                 # <add trailing * for /@/ url filters (false regex) />
 
-    list2 = [
-        re.sub(r'^[/\.]?\w(?=[/\.\$])', '', line)
-        for line in list2
-    ]                                                                           # <remove leading single a-z0-9 char preceding / . $ />
+        return line
 
-    list2 = [
-        re.sub(r'^\.(?=\*)', '', line)
-        for line in list2
-    ]                                                                           # <remove leading . if followed by * />
+    pool = ThreadPool(thr)                                                      # <make the pool of workers />
+    list2 = pool.map(f11, list2)                                                # <execute function by multithreading />
+    pool.close()                                                                # <close the pool and wait for the work to finish />
+    pool.join()
 
-    list2 = [re.sub(
-        r'^\W*(?=\$)', '*', line)
-        for line in list2
-    ]                                                                           # <replace symbol/none replace leading $ /$ .$ =$ ?$ with *$ />
-
-    list2 = [
-        re.sub(r'^\.?[-\*\w]+/', '/', line)
-        for line in list2
-    ]                                                                           # <replace leading (.)@/ with / />
-
-    list2 = [
-        re.sub(r'^/\*.*[^/]', '', line)
-        for line in list2
-    ]                                                                           # <remove leading /* except for regex filters />
-
-    list2 = [
-        re.sub(r'^\*(?=[^\$\#])', '', line)
-        for line in list2
-    ]                                                                           # <remove leading /* except for regex filters />
-
-    list2 = [
-        re.sub(r'^/([-\.\+\!\~/\w]+)/$', r'/\1/*', line)
-        for line in list2
-    ]                                                                           # <add trailing * for /@/ url filters (false regex) />
-
-    list2 = list(filter(None, list2))                                           # <remove empty elements />
+    list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
 
     print(
         '       ',
@@ -622,97 +550,33 @@ while n_1 > len(list2):                                                         
 
     print('12/21 : clean up trailing symbols numbers suffix $filters etc')
 
-    list2 = [
-        re.sub(r'[\^\|\=]\$', '$', line).strip()
-        for line in list2
-    ]                                                                           # <replace ^$ |$ =$ with $ />
+    def f12(line) :
 
-    list2 = [
-        re.sub(r'\|+\$', '$', line).strip()
-        for line in list2
-    ]                                                                           # <replace |$ with $ />
+        line = re.sub(r'[\^\|\=]\$', '$', line)                                 # <replace ^$ |$ =$ with $ />
+        line = re.sub(r'[#,\~\|\^\?\=\&]+$', '', line)                          # <remove trailing # , ~ | ^ ? = & />
+        line = re.sub(r'(?<!/)\*$', '', line)                                   # <remove trailing * except /url/* />
+        line = re.sub(r'\.\*$', '.', line)                                      # <replace trailing .* with . />
+        line = re.sub(r'\*\.$', '', line)                                       # <remove trailing *. />
+        line = re.sub(r'\??\*\=.*$', '', line)                                  # <remove trailing (?)*=... />
+        line = re.sub(r'\.cgi\??$', '.', line)                                  # <remove trailing .cgi(?) />
+        line = re.sub(r'\.ashx\??$', '.', line)                                 # <remove trailing .ashx(?) />
+        line = re.sub(r'\.asp\??$', '.', line)                                  # <remove trailing .asp(?) />
+        line = re.sub(r'\.?html?\??$', '.', line)                               # <remove trailing .html(?) />
+        line = re.sub(r'\.jpe?g\??$', '.', line)                                # <remove trailing .jp(e)g(?) />
+        line = re.sub(r'\.php\??$', '.', line)                                  # <remove trailing .php(?) />
+        line = re.sub(r'\.png\??$', '.', line)                                  # <remove trailing .png(?) />
+        line = re.sub(r'\.svg\??$', '.', line)                                  # <remove trailing .svg(?) />
+        line = re.sub(r'\.js\??[^\./]*$', '.js', line)                          # <clean up trailing .js />
+        line = re.sub(r'^([-\w]+)=.*$', r'\1', line)                            # <remove trailing .=.* />
 
-    list2 = [
-        re.sub(r'[#,\~\|\^\?\=\&]+$', '', line).strip()
-        for line in list2
-    ]                                                                           # <remove trailing # , ~ | ^ ? = & />
+        return line
 
-    list2 = [
-        re.sub(r'(?<!/)\*$', '', line).strip()
-        for line in list2
-    ]                                                                           # <remove trailing * except /url/* />
+    pool = ThreadPool(thr)                                                      # <make the pool of workers />
+    list2 = pool.map(f12, list2)                                                # <execute function by multithreading />
+    pool.close()                                                                # <close the pool and wait for the work to finish />
+    pool.join()
 
-    list2 = [
-        re.sub(r'\.\*$', '.', line).strip()
-        for line in list2
-    ]                                                                           # <replace trailing .* with . />
-
-    list2 = [
-        re.sub(r'\*\.$', '', line).strip()
-        for line in list2
-    ]                                                                           # <remove trailing *. />
-
-    list2 = [
-        re.sub(r'\.cgi\??$', '.', line)
-        for line in list2
-    ]                                                                           # <remove trailing .cgi? />
-
-    list2 = [
-        re.sub(r'\.ashx\??$', '.', line)
-        for line in list2
-    ]                                                                           # <remove trailing .ashx? />
-
-    list2 = [
-        re.sub(r'\.asp\??$', '.', line)
-        for line in list2
-    ]                                                                           # <remove trailing .asp? />
-
-    list2 = [
-        re.sub(r'\.?html?\??$', '.', line)
-        for line in list2
-    ]                                                                           # <remove trailing .html? />
-
-    list2 = [
-        re.sub(r'\.jpe?g\??$', '.', line)
-        for line in list2
-    ]                                                                           # <remove trailing .jp(e)g? />
-
-    list2 = [
-        re.sub(r'\.php\??$', '.', line)
-        for line in list2
-    ]                                                                           # <remove trailing .php? />
-
-    list2 = [
-        re.sub(r'\.png\??$', '.', line)
-        for line in list2
-    ]                                                                           # <remove trailing .png? />
-
-    list2 = [
-        re.sub(r'\.svg\??$', '.', line)
-        for line in list2
-    ]                                                                           # <remove trailing .svg? />
-
-    list2 = [
-        re.sub(r'\.js\??[^\./]*$', '.js', line)
-        for line in list2
-    ]                                                                           # <clean up trailing .js />
-
-    list2 = [
-        re.sub(r'^([-\w]+)=.*$', r'\1', line)
-        for line in list2
-    ]                                                                           # <remove trailing .=.* />
-
-    list2 = [
-        re.sub(r'(^[^#]{2,})\$[-~,=a-z0-9]*$(?<!/)(?<!important)', r'\1', line)
-        for line in list2
-    ]                                                                           # <remove specific trailing $ filters except *$ or ending with important />
-
-    list2 = [
-        re.sub(r'\??\*\=.*$', '', line).strip()
-        for line in list2
-    ]                                                                           # <remove trailing ?*=... />
-
-    list2 = list(filter(None, list2))                                           # <remove empty elements />
+    list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
 
     print(
         '       ',
@@ -722,35 +586,36 @@ while n_1 > len(list2):                                                         
 
     print('13/21 : split domain and url ')
 
-    list2s = [
-        line
-        for line in list2
-        if re.search(r'^[-\.\w]+\.[a-z]+/.*', line)
-    ]                                                                           # <get domains with url'/>
+    def f13(line) :
 
-    list2 = set(list2) - set(list2s)                                            # <segregate removed filters'/>
+        line = line.strip()
 
-    list2s = (
-        [
-            re.sub(r'^[-\.\w]+/', '/', line)
-            for line in list2s
-        ] +                                                                     # <isolate url part/>
-        [
-            re.sub(r'/.*$', '', line)
-            for line in list2s
-        ]                                                                       # <isolate domains part/>
+        if re.search(r'^[-\.\w]+\.[a-z]+/.*', line) :
+            domain_part = [re.sub(r'/.*$', '', line)]                           # <add domain part />
+            url_part     = [re.sub(r'^[-\.\w]+/', '/', line)]                   # <add url part/>
+            line = domain_part + url_part
+        else:
+            [line]
+        
+        return line
+
+    pool = ThreadPool(thr)                                                      # <make the pool of workers />
+    list2 = pool.map(f13, list2)                                                # <execute function by multithreading />
+    pool.close()                                                                # <close the pool and wait for the work to finish />
+    pool.join()
+
+    list2 = sorted(
+        set(
+            [
+                line if (type(line) == str)                                     # <prevents string atomization into chars is string type />
+                else item
+                for line in list2
+                for item in line
+            ]                                                                   # <flatten list />
+        )                                                                       # <dedup list />
     )
 
-    list2 = sorted(set(list2) | set(list2s))                                    # <join retrieved domains to main list'/>
-    
-    list2 = [
-        re.sub(r'^/([-\.\+\~\!/\w]+)/$', r'/\1/*', line)
-        for line in list2
-    ]                                                                           # <add trailing * for /@/ url filters (false regex) />
-    
-    list2 = list(filter(None, list2))                                           # <remove empty elements />
-
-    del(list2s)
+    list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
 
     print(
         '       ',
@@ -760,32 +625,34 @@ while n_1 > len(list2):                                                         
 
     print('14/21 : clean up urls')
 
-    list2 = [
-        re.sub(r'\*+', '*', line).strip()
-        for line in list2
-    ]                                                                           # <dedup * />
+    def f14(line) :
 
-    list2 = [
-        re.sub(r'\.+', '.', line).strip()
-        for line in list2
-    ]                                                                           # <dedup . />
+        line = re.sub(r'\*+', '*', line)                                        # <dedup * />
+        line = re.sub(r'\.+', '.', line)                                        # <dedup . />
+        line = re.sub(r'/+', '/', line)                                         # <dedup / />
+        line = re.sub(r'^.*/\*/', '/', line)                                    # <replace url_part/*/ with / />
+        line = re.sub(r'([-\./\w]+)\$(?!important)[-\,\=\.\w]*$', r'\1', line)  # <remove $* tail except for *$ />
 
-    list2 = [
-        re.sub(r'/+', '/', line).strip()
-        for line in list2
-    ]                                                                           # <dedup / />
+        if re.search(r'^[-\w]+\\\.[-\w]+', line) :
+            line = re.sub(r'\\\.', '.', line)                                   # <remove faulty \. />
 
-    list2 = [
-        re.sub(r'^.*/\*/', '/', line)
-        for line in list2
-    ]                                                                           # <replace any url preceded by /*/ (included) with / />
+        if re.search(r'^[-\.\w]+\^\*[-/\.\w]+', line) :
+            line = re.sub(r'\^\*', '', line)                                    # <remove spurious ^*/>
 
-    list2 = [
-        re.sub(r'([-\./\w]+)\$(?!important)[-\,\=\.\w]*$', r'\1', line)
-        for line in list2
-    ]                                                                           # <remove $* tail except for *$ />
+        return line
 
-    list2 = list(filter(None, list2))                                           # <remove empty elements />
+    pool = ThreadPool(thr)                                                      # <make the pool of workers />
+    list2 = pool.map(f14, list2)                                                # <execute function by multithreading />
+    pool.close()                                                                # <close the pool and wait for the work to finish />
+    pool.join()
+
+    list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
+
+    list5 = [
+        line
+        for line in list5
+        if not re.search(r'\/\\w\{8\}\\/\\w\{10\}\\\./', line)
+    ]
 
     print(
         '       ',
@@ -797,31 +664,35 @@ while n_1 > len(list2):                                                         
 
 print('15/21 : split space separated domains ')
 
-list2s = [
-    line
-    for line in list2
-    if re.search(r' ', line) and not(re.search(r'[\$\@\#]', line))
-]                                                                               # <remove space separated domains />
+def f15(line) :
 
-list2 = set(list2) - set(list2s)                                                # <segregate removed filters'/>
+    line = re.sub(r'^,', '', line)                                              # <remove leading , />
+    line = re.sub(r',$', '', line)                                              # <remove trailing , />
 
-list2s = [
-    line.split(' ')
-    for line in list2s
-]                                                                               # <flatten list'/>
+    if re.search(r'^[\w\,]* [\w\,]*$', line) and not(re.search(r'[\$\@\#]', line)) :
+        line = line.split(',')                                                  # <split domains />
+    else:
+        [line]
 
-list2s = [
-    item
-    for line in list2s
-    for item in line
-    if line !=[''] and item != ''
-]                                                                               # <flatten list'/>
+    return line
 
-list2 = sorted(set(list2) | set(list2s))                                        # <join retrieved domains to main list'/>
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = pool.map(f15, list2)                                                    # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
 
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = sorted(
+    set(
+        [
+            line if (type(line) == str)                                         # <prevents string atomization into chars is string type />
+            else item
+            for line in list2
+            for item in line
+        ]                                                                       # <flatten list />
+    )                                                                           # <dedup list />
+)
 
-del(list2s)
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
@@ -829,79 +700,48 @@ print(
     'filters kept'
 )
 
-print('16/21 : remove lines leaded by ! # + & ? ^ : ; @ and @.exe @.gif @.rar @.zip')
 
-list2 = [
-    re.sub(r'^\*?\^.*', '', line)
-    for line in list2
-]                                                                               # <remove ^ leaded lines />
+print('16/21 : remove leading ! # + & ? ^ : ; @ and @.exe @.gif @.rar @.zip')
 
-list2 = [
-    re.sub(r'^\|+', '', line)
-    for line in list2
-]                                                                               # <remove leading | />
+def f16(line) :
 
-list2 = [
-    re.sub(r'^\!.*', '', line)
-    for line in list2
-]                                                                               # <remove ! leaded lines />
+    line = re.sub(r'^\|+', '', line)                                            # <remove leading | />
 
-list2 = [
-    re.sub(r'^#.*', '', line)
-    for line in list2
-]                                                                               # <remove # leaded lines />
+    if re.search(r'^\*?\^.*$', line) :
+        line = ''                                                               # <remove ^ leaded lines />
+    elif re.search(r'^\!.*$', line) :
+        line = ''                                                               # <remove ! leaded lines />
+    elif re.search(r'^#.*$', line) :
+        line = ''                                                               # <remove # leaded lines />
+    elif re.search(r'^[/\*]?\+.*$', line) :
+        line = ''                                                               # <remove + leaded lines />
+    elif re.search(r'^\*?\&.*$', line) :
+        line = ''                                                               # <remove & leaded lines />
+    elif re.search(r'^\*?\?.*$', line) :
+        line = ''                                                               # <remove ? leaded lines />
+    elif re.search(r'^\*?\:.*$', line) :
+        line = ''                                                               # <remove : leaded lines />
+    elif re.search(r'^\*?\;.*$', line) :
+        line = ''                                                               # <remove ; leaded lines />
+    elif re.search(r'^\*?\".*$', line) :
+        line = ''                                                               # <remove " leaded lines />
+    elif re.search(r'^[/\*]?\@.*$', line) :
+        line = ''                                                               # <remove @ leaded lines />
+    elif re.search(r'^.*\.rar$', line) :
+        line = ''                                                               # <remove @.rar filters />
+    elif re.search(r'^.*\.zip$', line) :
+        line = ''                                                               # <remove @.zip filters />
 
-list2 = [
-    re.sub(r'^[/\*]?\+.*', '', line)
-    for line in list2
-]                                                                               # <remove + leaded lines />
+    line = re.sub(r'^.*\.gif$', '.gif', line)                                   # <enforce .gif filter />
 
-list2 = [
-    re.sub(r'^\*?\&.*', '', line)
-    for line in list2
-]                                                                               # <remove & leaded lines />
+    return line
 
-list2 = [
-    re.sub(r'^\*?\?.*', '', line)
-    for line in list2
-]                                                                               # <remove ? leaded lines />
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = pool.map(f16, list2)                                                    # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
 
-list2 = [
-    re.sub(r'^\*?\:.*', '', line)
-    for line in list2
-]                                                                               # <remove : leaded lines />
-
-list2 = [
-    re.sub(r'^\*?\;.*', '', line)
-    for line in list2
-]                                                                               # <remove ; leaded lines />
-
-list2 = [
-    re.sub(r'^\*?\".*', '', line)
-    for line in list2
-]                                                                               # <remove " leaded lines />
-
-list2 = [
-    re.sub(r'^[/\*]?\@.*', '', line)
-    for line in list2
-]                                                                               # <remove @ leaded lines />
-
-list2 = [
-    re.sub(r'^.*\.gif$', '.gif', line)
-    for line in list2
-]                                                                               # <enforce .gif filter />
-
-list2 = [
-    re.sub(r'^.*\.rar$', '', line)
-    for line in list2
-]                                                                               # <remove @.rar filters />
-
-list2 = [
-    re.sub(r'^.*\.zip$', '', line)
-    for line in list2
-]                                                                               # <remove @.zip filters />
-
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
@@ -911,137 +751,59 @@ print(
 
 print('17/21 : arrange *$ filters; keep beacon csp inline-font inline-script object other ping popunder script websocket xhr ')
 
-list2 = [
-    re.sub(r'^\*\$\~?1p.*', '', line)
-    for line in list2
-]                                                                               # <remove *$1p />
+def f17(line) :
 
-list2 = [
-    re.sub(r'^\*\$\~?3p.*', '', line)
-    for line in list2
-]                                                                               # <remove *$3p />
+    if re.search(r'^\*\$\~?1p.*$', line) :
+        line = ''                                                               # <remove *$1p />
+    elif re.search(r'^\*\$\~?3p.*$', line) :
+        line = ''                                                               # <remove *$3p />
+    elif re.search(r'^\*\$\~?third\-party.*$', line) :
+        line = ''                                                               # <remove *$3p />
+    elif re.search(r'^\*\$\~?all.*$', line) :
+        line = ''                                                               # <remove *$all />
+    elif re.search(r'^\*\$\~?css.*$', line) :
+        line = ''                                                               # <remove *$css />
+    elif re.search(r'^\*\$\~?stylesheet.*$', line) :
+        line = ''                                                               # <remove *$css />
+    elif re.search(r'^\*\$\~?(sub)?doc(ument)?.*$', line) :
+        line = ''                                                               # <remove *$(sub)doc />
+    elif re.search(r'^\*\$\~?from.*$', line) :
+        line = ''                                                               # <remove *$from />
+    elif re.search(r'^\*\$\~?image.*$', line) :
+        line = ''                                                               # <remove *$image />
+    elif re.search(r'^\*\$\~?media.*$', line) :
+        line = ''                                                               # <remove *$media />
+    elif re.search(r'^\*\$\~?popup.*$', line) :
+        line = ''                                                               # <remove *$popup />
+    elif re.search(r'^\*\$\~?rewrite.*$', line) :
+        line = ''                                                               # <remove *$rewrite />
+    elif re.search(r'^\*\$important.*$', line) :
+        line = ''                                                               # <remove *$important filters />
+    elif re.search(r'^\*\$.*\.js$', line) :
+        line = ''                                                               # <remove *$...js filters />
 
-list2 = [
-    re.sub(r'^\*\$\~?third\-party.*', '', line)
-    for line in list2
-]                                                                               # <remove *$3p />
+    line = re.sub(r'^(.*)\$\~?script.*', r'\1', line)                           # <remove trailing $script />
 
-list2 = [
-    re.sub(r'^\*\$\~?all.*', '', line)
-    for line in list2
-]                                                                               # <remove *$all />
+    line = re.sub(r'^\*\$\~?beacon.*', '*$beacon', line)                        # <enforce *$beacon />
+    line = re.sub(r'.*\$csp.*', '*$csp=all', line)                              # <enforce *$csp=all />
+    line = re.sub(r'^\*\$\~?inline\-font.*', '*$inline-font', line)             # <enforce *$inline-font />
+    line = re.sub(r'^\*\$\~?inline\-script.*', '*$inline-script', line)         # <enforce *$inline-script />
+    line = re.sub(r'^\*\$\~?object.*', '*$object', line)                        # <enforce *$object />
+    line = re.sub(r'^\*\$\~?other.*', '*$other', line)                          # <enforce *$other />
+    line = re.sub(r'^\*\$\~?ping.*', '*$ping', line)                            # <enforce *$ping />
+    line = re.sub(r'^\*\$\~?popunder.*', '*$popunder', line)                    # <enforce *$popunder />
+    line = re.sub(r'^\*\$\~?websocket.*', '*$websocket', line)                  # <enforce *$websocket />
+    line = re.sub(r'^\*\$\~?xhr.*', '*$xhr', line)                              # <enforce *$xhr />
+    line = re.sub(r'^\*\$\~?xmlhttprequest.*', '*$xhr', line)                   # <enforce *$xhr />
 
-list2 = [
-    re.sub(r'^\*\$\~?beacon.*', '*$beacon', line)
-    for line in list2
-]                                                                               # <enforce *$beacon />
+    return line
 
-list2 = [
-    re.sub(r'.*\$csp.*', '*$csp=all', line)
-    for line in list2
-]                                                                               # <enforce *$csp=all />
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = pool.map(f17, list2)                                                    # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
 
-list2 = [
-    re.sub(r'^\*\$\~?css.*', '', line)
-    for line in list2
-]                                                                               # <remove *$css />
-
-list2 = [
-    re.sub(r'^\*\$\~?stylesheet.*', '', line)
-    for line in list2
-]                                                                               # <remove *$css />
-
-list2 = [
-    re.sub(r'^\*\$\~?(sub)?doc(ument)?.*', '', line)
-    for line in list2
-]                                                                               # <remove *$(sub)doc />
-
-list2 = [
-    re.sub(r'^\*\$\~?from.*', '', line)
-    for line in list2
-]                                                                               # <remove *$from />
-
-list2 = [
-    re.sub(r'^\*\$\~?image.*', '', line)
-    for line in list2
-]                                                                               # <remove *$image />
-
-list2 = [
-    re.sub(r'^\*\$\~?inline\-font.*', '*$inline-font', line)
-    for line in list2
-]                                                                               # <enforce *$inline-font />
-
-list2 = [
-    re.sub(r'^\*\$\~?inline\-script.*', '*$inline-script', line)
-    for line in list2
-]                                                                               # <enforce *$inline-script />
-
-list2 = [
-    re.sub(r'^\*\$\~?media.*', '', line)
-    for line in list2
-]                                                                               # <remove *$media />
-
-list2 = [
-    re.sub(r'^\*\$\~?object.*', '*$object', line)
-    for line in list2
-]                                                                               # <enforce *$object />
-
-list2 = [
-    re.sub(r'^\*\$\~?other.*', '*$other', line)
-    for line in list2
-]                                                                               # <enforce *$other />
-
-list2 = [
-    re.sub(r'^\*\$\~?ping.*', '*$ping', line)
-    for line in list2
-]                                                                               # <enforce *$ping />
-
-list2 = [
-    re.sub(r'^\*\$\~?popup.*', '', line)
-    for line in list2
-]                                                                               # <remove *$popup />
-
-list2 = [
-    re.sub(r'^\*\$\~?popunder.*', '*$popunder', line)
-    for line in list2
-]                                                                               # <enforce *$popunder />
-
-list2 = [re.sub(
-    r'^(.*)\$\~?script.*', r'\1', line)
-    for line in list2
-]                                                                               # <remove *$script />
-
-list2 = [
-    re.sub(r'^\*\$\~?rewrite.*', '', line)
-    for line in list2
-]                                                                               # <remove *$rewrite />
-
-list2 = [
-    re.sub(r'^\*\$\~?websocket.*', '*$websocket', line)
-    for line in list2
-]                                                                               # <enforce *$websocket />
-
-list2 = [
-    re.sub(r'^\*\$\~?xhr.*', '*$xhr', line)
-    for line in list2
-]                                                                               # <enforce *$xhr />
-
-list2 = [
-    re.sub(r'^\*\$\~?xmlhttprequest.*', '*$xhr', line)
-    for line in list2
-]                                                                               # <enforce *$xhr />
-
-list2 = [
-    re.sub(r'^\*\$important.*', '', line)
-    for line in list2
-]                                                                               # <remove *$important filters />
-
-list2 = [
-    re.sub(r'^\*\$.*\.js$', '', line)
-    for line in list2
-]                                                                               # <remove *$...js filters />
-
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
@@ -1051,43 +813,31 @@ print(
 
 print('18/21 : remove broken filters and fix false regex ')
 
-list2 = [
-    line
-    for line in list2
-    if re.search(r'^[^\(\)\[\]\{\}\~]', line)
-]                                                                               # <remove broken filters; improve this filter />
+def f18(line) :
 
-list2 = [
-    line
-    for line in list2
-    if not(re.search(r'^.*\([^\)]*$', line))
-]                                                                               # <remove broken filters; improve this filter for multiple () />
+    if not(re.search(r'^[^\(\)\[\]\{\}\~]', line)) :
+        line = ''                                                               # <remove broken filters; improve this filter />
+    elif re.search(r'^.*\([^\)]*$', line) :
+        line = ''                                                               # <remove broken filters (unterminated ( ); improve this filter for multiple () />
+    elif re.search(r'^.*\[[^\]]*$', line) :
+        line = ''                                                               # <remove broken filters (unterminated [ ]); improve this filter for multiple [] />
+    elif re.search(r'^.*\{[^\}]*$', line) :
+        line = ''                                                               # <remove broken filters (unterminated { ); improve this filter for multiple {} />
+    elif re.search(r'^/.*[\[\\].*[^/]$', line) :
+        line = ''                                                               # <remove broken filters (unterminated regex) />
+    elif re.search(r'^/.*\\/$', line) :
+        line = ''                                                               # <remove broken regex (bad termination) />
+    elif not(re.search(r'[^\[\]\{\}\;\,\\]', line)) :
+        line = ''                                                               # <remove broken regex filters />
 
-list2 = [
-    line
-    for line in list2
-    if not(re.search(r'^.*\[[^\]]*$', line))
-]                                                                               # <remove broken filters; improve this filter for multiple [] />
+    return line
 
-list2 = [
-    line
-    for line in list2
-    if not(re.search(r'^.*\{[^\}]*$', line))
-]                                                                               # <remove broken filters; improve this filter for multiple {} />
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = pool.map(f18, list2)                                                    # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
 
-list2 = [
-    line
-    for line in list2
-    if not(re.search(r'^/.*[\[\\].*[^/]$', line))
-]                                                                               # <remove broken filters (unterminated regex) />
-
-list2 = [
-    line
-    for line in list2
-    if not(re.search(r'^/.*\\/$', line))
-]                                                                               # <remove broken regex (bad termination) />
-
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
@@ -1097,96 +847,44 @@ print(
 
 print('19/21 : simplify urls keeping last /* part')
 
-list2s = [
-    line
-    for line in list2
-    if re.search(r'[\#\@\$]', line)
-]                                                                               # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
+def f19(line) :
 
-list2  = set(list2) - set(list2s)
+    if re.search(r'[\#\@\$]', line) :                                           # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
+    
+        if re.search(r'^[_\W]*\:is', line) :
+            line = ''                                                           # <remove *##:is filters />
+        elif re.search(r'^[_\W]*\:matches', line) :
+            line = ''                                                           # <remove *##:matches filters />
+        elif re.search(r'^[_\W]*\:root', line) :
+            line = ''                                                           # <remove *##:root filters />
+        elif re.search(r'^[_\W]*\:xpath', line) :
+            line = ''                                                           # <remove *##:xpath filters />
+        elif re.search(r'not\(this\-site\-promotes\-malware\)', line) :
+            line = ''                                                           # <remove spurious filters />
+        elif re.search(r'not\(obhod\-adblocka\)', line) :
+            line = ''                                                           # <remove spurious filters />
+        elif re.search(r'not\(my\-obnaruzhili\-blokirovshchik\)', line) :
+            line = ''                                                           # <remove spurious filters />
+        elif re.search(r'^[_\W]*\:not\(input\)\:not\(textarea\)', line) :
+            line = ''
+        elif re.search(r'removeparam.*smilformats', line) :
+            line = ''
+        elif re.search(r'removeparam.*formatsprofile', line) :
+            line = ''
 
-# <cleaunp cosmetic filters >
+    re.sub(r'^.+(?=/[^/]+$)', '', line)                                         # <simplify urls keeping last /* part />
 
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'^[_\W]*\:is', line))
-]                                                                               # <remove *##:is filters />
+    if len(line) <= 3 :
+        line = ''                                                               # <keep filters with len > 3 />
 
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'^[_\W]*\:matches', line))
-]                                                                               # <remove *##:matches filters />
+    return line
 
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'^[_\W]*\:root', line))
-]                                                                               # <remove *##:root filters />
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = pool.map(f19, list2)                                                    # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
 
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'^[_\W]*\:xpath', line))
-]                                                                               # <remove *##:xpath filters />
-
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'not\(this\-site\-promotes\-malware\)', line))
-]                                                                               # <remove spurious filters />
-
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'not\(obhod\-adblocka\)', line))
-]                                                                               # <remove spurious filters />
-
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'not\(my\-obnaruzhili\-blokirovshchik\)', line))
-]                                                                               # <remove spurious filters />
-
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'^[_\W]*\:not\(input\)\:not\(textarea\)', line))
-]
-
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'removeparam.*smilformats', line))
-]
-
-list2s = [
-    line
-    for line in list2s
-    if not(re.search(r'removeparam.*formatsprofile', line))
-]
-
-# </cleaunp cosmetic filters >
-
-list2 = [
-    re.sub(r'^.+(?=/[^/]+$)', '', line)
-    for line in list2
-]                                                                               # <simplify urls keeping last /* part />
-
-list2 = [
-    line
-    for line in list2
-    if len(line) > 3
-]                                                                               # <keep filters with len > 3 />
-
-list2 = [
-    line
-    for line in list2
-    if (re.search(r'[^\[\]\{\}\;\,\\]', line))
-]                                                                               # <remove broken regex filters />
-
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
 
 print(
     '       ',
@@ -1195,6 +893,27 @@ print(
 )
 
 print('20/21 : apply <regex_white_list> rules', sep = '')
+
+# <segregate regex filters >
+
+list5 = list5 + [
+    line
+    for line in list2
+    if re.search(r'^/.+/(?:\$important)?$', line)                               # <match regex filter syntax />
+]
+
+list2  = sorted(set(list2) - set(list5))
+
+list5 = [
+    line
+    for line in list5
+    if not re.search(r'^/.*[\^\?]\*.*/$', line)                                  # <remove wrong regex filter />
+    if not re.search(r'^/.*\/\$.*/$', line)                                      # <remove wrong regex filter />
+    if not re.search(r'^/[\^\(]http', line)                                     # <remove [^(]http regex filter />
+    if len(line) > 4
+]
+
+# </segregate regex filters >
 
 # <get regex white list from file, dedup, sort and clean up filters>
 
@@ -1214,35 +933,120 @@ list9 = list(
     )                                                                           # <remove empty elements />
 )
 
-for pattern in tqdm.tqdm(list9) :
+print(
+    '       ',
+    '<regex_white_list> loaded'
+)
+
+counter = Value('d', 0)
+t0 = time()
+counter_max = len(list9)
+
+def f20_2(pattern) :
+
+    global list2
+    list2wl = []
+
     try :
         pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
-        list2 = [
+        list2wl = [
             line
             for line in list2
-            if not(pattern.search(line))
+            if pattern.search(line)
         ]                                                                       # <remove filters based on <regex-white_list> />
-        list5 = [
-            line
-            for line in list5
-            if (
-                not(pattern.search(re.sub(r'\$important$', '', line)[1: -1])) 
-                and 
-                re.search(r'\w+', re.sub(r'\$important$', '', line)[1: -1])
-            )
-        ]                                                                       # <remove text-only regex filters based on <regex-white_list> />
     except :
-        print('Error: check for ' + pattern + ' pattern in regex_white_list')
+        print(
+            'Error: check for ' + pattern + ' pattern in regex_white_list',
+            flush=True
+        )
 
-list2 = list(filter(None, list2))                                               # <remove empty elements />
+    counter.value += 1
+    print(
+        '        ',
+        '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
+        '(', '{:.0f}'.format(counter.value), '/', counter_max, ') ',
+        '{:.0f}'.format((time() - t0) / 60), '\' elapsed | ',
+        '{:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), '\' remaining',
+        end = '\r',
+        sep = '',
+        flush = True
+    )
 
-# </get regex white list from file, dedup, sort and clean up filters>
+    return list2wl
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2wl = pool.map(f20_2, list9)                                                # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()                                                                     # <wait for all threads in the pool to be shutdown />
+
+list2wl = sorted(
+    set(
+        [
+            line if (type(line) == str)                                         # <prevents string atomization into chars is string type />
+            else item
+            for line in list2wl
+            for item in line
+        ]                                                                       # <flatten list />
+    )                                                                           # <dedup list />
+)
+list2 = list(filter(None, sorted(set(list2) - set(list2wl))))                   # <remove elements in list2wl and empty elements />
+
+print()
 
 print(
     '       ',
     '{:,}'.format(len(list2) + len(list5)),
-    'filters kept'
+    'filters kept',
+    flush = True
 )
+
+print(
+    '       ',
+    'removing regex filters based on <regex-white_list>')
+
+list5 = list(filter(None, sorted(set(list5))))                                  # <remove empty elements />
+
+def f20_5(pattern) :
+
+    global list5
+    list5wl = []
+
+    try :
+        pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
+        list5wl = [
+            line
+            for line in list5
+            if (
+                pattern.search(re.sub(r'\$important$', '', line)[1: -1])
+                and 
+                not(re.search(r'\w+', re.sub(r'\$important$', '', line)[1: -1]))
+            )
+        ]                                                                       # <remove text-only regex filters based on <regex-white_list> />
+    except :
+        print(
+            'Error: check for ' + pattern + ' pattern in regex_white_list',
+            flush = True
+        )
+
+    return list5wl
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list5wl = list(pool.map(f20_5, list5))                                          # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
+
+list5wl = sorted(
+    set(
+        [
+            line if (type(line) == str)                                         # <prevents string atomization into chars is string type />
+            else item
+            for line in list5wl
+            for item in line
+        ]                                                                       # <flatten list />
+    )                                                                           # <dedup list />
+)
+
+list5 = list(filter(None, sorted(set(list5) - set(list5wl))))                   # <remove empty elements />
 
 # <write extracted regex type filters>
 
@@ -1268,7 +1072,6 @@ file5_out.close()
 
 print(
     '\n',
-    '        ',
     '{:,}'.format(len(list5)),
     ' regex filters written to ',
     file5_out_name,
@@ -1280,67 +1083,122 @@ print(
 
 print('21/21 : deflat url filters redundant with regex filters', sep = '')
 
-# <remove url filters covered by regex filters>
+list5 = list(filter(None, sorted(set(list5))))                                  # <remove empty elements />
 
-for pattern in tqdm.tqdm(list5):
+counter = Value('d', 0)
+t0 = time()
+counter_max = len(list5)
+
+def f21(pattern) :
+
+    global list2
+    list2du = []
+
     try :
         pattern = re.compile(r'' + re.sub(r'\$important$', '', pattern)[1: -1]) # < create regex pattern for faster processing />
-        list2 = [
+        list2du = [
             line
             for line in list2
-            if not(pattern.search(' ' + line + ' '))
+            if pattern.search(' ' + line + ' ')
         ]
     except :
-        print('Error: check for ' + pattern + ' regex pattern in url sources')
+        print(
+            'Error: check for ' + pattern + ' pattern in regex_white_list',
+            flush=True
+        )
 
-# </remove url filters covered by regex filters>
+    counter.value += 1
+    print(
+        '        ',
+        '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
+        '(', '{:.0f}'.format(counter.value), '/', counter_max, ') ',
+        '{:.0f}'.format((time() - t0) / 60), '\' elapsed | ',
+        '{:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), '\' remaining',
+        end = '\r',
+        sep = '',
+        flush = True
+    )
+
+    return list2du
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2du = pool.map(f21, list5)                                                  # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
+
+list2du = sorted(
+    set(
+        [
+            line if (type(line) == str)                                         # <prevents string atomization into chars is string type />
+            else item
+            for line in list2du
+            for item in line
+        ]                                                                       # <flatten list />
+    )                                                                           # <dedup list />
+)
 
 # <aggregate filters >
 
-list2 = sorted(set(list2) | set(list2s) | set(list5))                           # <join lists2, list2s, list5' />
-del(list2s)                                                                     # <discard list2s, keep list5/>
+list2 = list(filter(None, sorted((set(list2) - set(list2du))| set(list5))))     # <join lists2, list5 and remove empty elements />
 
 # </aggregate filters >
 
 print(
-    '       ',
+    '\n       ',
     '{:,}'.format(len(list2) + len(list5)),
     'filters kept'
 )
 
 # <segregate domains from list >
 
-print('\nListing domain filters :')
+print('\nListing domain filters')
 
-list3 = [
-    re.sub(r'\$important$', '', line)
-    for line in list2
-    if (re.sub(r'^(?:[-\w]*\.)*', '', re.sub(r'\$important$', '', line)) in iana_tld)
-]                                                                               # <get (@.)+tld domains, removing trailing $important />
+def f_list_domains(line) :
 
-list3 = [
-    line
-    for line in list3
-    if line[0] != '-'
-]                                                                               # <remove -@.@ from domains list />
+    global iana_tld
 
-list3 = sorted(set(list3))
-list2 = sorted(set(list2) - set(list3))                                         # <only domains part are processed in this section; @.js are kept in list2 />
+    line = re.sub(r'\$important$', '', line)                                    # <discard trailing $important for domain detection />
+    if re.sub(r'^([-\w]*\.)*', '', line) in iana_tld :                          # < check for a match with (@.)+tld />
+        if line[0] == '-' :
+            line = ''                                                           # < -@.@ to be excluded from domains list />
+    else :
+        line = ''                                                               # <exclude -@.@ from domains list />
 
-list3 = [
-    re.sub(r'^[-_\.0-9]*\.', '', line)
-    for line in list3
-]                                                                               # <remove numerical low levels from domains and preceding . />
+    return line
 
-list3 = sorted(set(list3) - set(iana_sld))                                      # <remove IANA sld root domains />
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list3 = pool.map(f_list_domains, list2)                                         # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
+
+list2 = list(filter(None, sorted(set(list2) - set(list3))))                     # <only domains part are processed in this section; @.js are kept in list2 />
+
+# </segregate domains from list >
+
+# <remove leading . , L5+ domains and numerial low levels >
+
+def f_clean_domains(line) :
+
+    line = re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line)         # <remove L5+ domains />
+    line = re.sub(r'^[-_\.0-9]*\.', '', line)                                   # <remove numerical low levels from domains and preceding . />
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list3 = pool.map(f_clean_domains, list3)                                        # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
+
+list3 = list(filter(None, sorted(set(list3) - set(iana_sld))))                  # <remove IANA sld root domains />
 
 print(
+    'leading . , L5+ domains and numerical low levels removed:\n',
     '       ',
     '{:,}'.format(len(list3)),
     'domains kept'
     )
 
-# </segregate domains from list >
+# </remove leading . , L5+ domains and numerial low levels >
 
 # <get domains white list from file, dedup, sort and substract from domains filters>
 
@@ -1357,10 +1215,11 @@ list8 = sorted(
     )
 )
 
+print('\n<domains_white_list> loaded')
+
 list3 = sorted(set(list3) - set(list8))                                         # <remove whitelisted domains />
 
 print(
-    'domains white list applied:\n'
     '       ',
     '{:,}'.format(len(list3)),
     'domains kept'
@@ -1368,95 +1227,55 @@ print(
 
 # </get domains white list from file, dedup, sort and substract from domains filters>
 
-# <remove L5+ domains >
-
-list3 = [
-    re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line)                # <remove L5+ domains />
-    for line in list3
-]
-
-list3 = sorted(set(list3))
-
-print(
-    'L5+ domains removed:\n',
-    '       ',
-    '{:,}'.format(len(list3)),
-    'domains kept'
-    )
-
-# </remove L5+ domains >
-
-# <preserve low level filters of white listed domains >
-
-print('\npreserving low level filters of white listed domains', sep = '')
-
-list3s = [
-    line
-    for line in tqdm.tqdm(list3)
-    if (re.sub(r'^([-\w]+\.)+', '', line) in list8)
-]                                                                               # <get (@.)+tld domains, removing trailing $important />
-
-list3 = sorted(set(list3) - set(list3s))
-
-# </preserve low level filters of white listed domains >
-
 # <deflat domain filters >
 
 print('\ndeflating domain filters, pass 1 / 2:')
 
-list3 = [
-    re.sub(r'^[-\w]+\.', '', line) if (
-        (re.sub(r'^[-\w]+\.', '', line) not in iana_sld)
-        and
-        (re.sub(r'^[-\w]+\.', '', line) not in list8)
-    )
-    else line
-    for line in list3
-]
+def f_deflat_domain(line) :
 
-list3 = sorted(set(list3))
+    global iana_sld
+    global list8
+
+    if not(re.sub(r'^[-\w]+\.', '', line) in iana_sld) :
+        if not(re.sub(r'^[-\w]+\.', '', line) in list8) :
+            line = re.sub(r'^[-\w]+\.', '', line)
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list3 = pool.map(f_deflat_domain, list3)                                        # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
 
 print(
-    '       ',
-    '{:,}'.format(len(list3) + len(list3s)),
+    '{:,}'.format(len(list3)),
     'domains kept'
     )
 
 print('deflating domain filters, pass 2 / 2:')
 
-list3 = [
-    re.sub(r'^[-\w]+\.', '', line) if (
-        (re.sub(r'^[-\w]+\.', '', line) not in iana_sld)
-        and
-        (re.sub(r'^[-\w]+\.', '', line) not in list8)
-    )
-    else line
-    for line in list3
-]
-
-list3 = sorted(set(list3))
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list3 = pool.map(f_deflat_domain, list3)                                        # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
 
 print(
-    '       ',
-    '{:,}'.format(len(list3) + len(list3s)),
+    '{:,}'.format(len(list3)),
     'domains kept'
     )
+
+list3 = sorted(set(list3))
 
 # </deflat domain filters >
 
 #         ## <filter() + map() option>
-#         #list3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3_filter))) == 0) else '', tqdm.tqdm(list3)))
+#         #list3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3_filter))) == 0) else '', tqdm(list3)))
 #         #list3 = [line for line in list3 if line]    # <cleanup empty lines/>
 #         ## </filter() + map() option>
 
 #         ## <filter() + list comprehension option; may worth it a benchmark vs map()?>
-#         ##list3 = [line for line in list3 if len(list(filter(lambda substring: ('.' + substring) in line, tqdm.tqdm(list3_filter[:n])))) == 0]
+#         ##list3 = [line for line in list3 if len(list(filter(lambda substring: ('.' + substring) in line, tqdm(list3_filter[:n])))) == 0]
 #         ## </filter() + list comprehension option>
-
-#         # </remove redundant domains from list>
-
-list3 = sorted(set(list3) | set(list3s))                                        # <join list3, list3s />
-del(list3s)                                                                     # <clean up; make sure list3s is not used anymore hereafter/>
 
 list2 = sorted(set(list2) | set(list3))                                         # <joint list2, list3 />
 
@@ -1470,22 +1289,42 @@ print(
 
 print('dedup filter if filter($|,)important present', sep = '')
 
-list2s = [
-    line
-    for line in list2
-    if re.search(r'[\$\,]important$', line)
-]                                                                               # <segregate ($|,)important filters />
+#list2s = [
+#    line
+#    for line in list2
+#    if re.search(r'[\$\,]important$', line)
+#]                                                                               # <segregate ($|,)important filters />
 
-list2  = set(list2) - set(list2s)
+#list2  = sorted(set(list2) - set(list2s))
 
-list2 = [
-    line
-    for item in tqdm.tqdm(list2s)
-    for line in list2
-    if (item != (line + '$important') and (item != (line + ',important')))
-]
+#list2 = [
+#    line
+#    for item in tqdm(list2s, ncols = 132)
+#    for line in list2
+#    if (item != (line + '$important') and (item != (line + ',important')))
+#]
 
-list2 = sorted(set(list2) | set(list2s))                                        # <aggregate lists />
+#list2 = sorted(set(list2) | set(list2s))                                        # <aggregate lists />
+#del(list2s)
+
+
+def f_dedup_important(line) :
+
+    global list2
+
+    if re.search(r'[\$\,]important$', line) :
+        line = re.sub(r'[\$\,]important$', '', line)
+    else :
+        line = ''
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2s = pool.map(f_dedup_important, list2)                                     # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
+
+list2 = list(filter(None, sorted(set(list2) - set(list2s))))                    # <remove redundant filters />
 del(list2s)
 
 print(
