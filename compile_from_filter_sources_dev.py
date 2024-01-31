@@ -949,9 +949,10 @@ def f20_2(pattern):
     counter.value += 1
     print(
         '       ',
-        '{:3.0f}'.format((counter.value / counter_max) * 100), "% ",
+        '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
         '(', '{:d}'.format(counter.value), '/', counter_max, ') ',
-        '{:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), " minutes remaining",
+        '{:.0f}'.format((time() - t0) / 60), '' elapsed'
+        '{:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), ' minutes remaining'',
         end = '\r',
         sep = '',
         flush = True
@@ -1065,7 +1066,7 @@ print(
 
 # </write extracted regex type filters>
 
-# print('21/21 : deflat url filters redundant with regex filters', sep = '')
+print('21/21 : deflat url filters redundant with regex filters', sep = '')
 
 list5 = list(filter(None, sorted(set(list5))))                                  # <remove empty elements />
 
