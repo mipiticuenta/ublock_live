@@ -92,7 +92,7 @@ print(
     sep = ''
 )
 
-def f00(line):
+def f00(line) :
 
     global proxy_servers
     list2 = set()
@@ -200,7 +200,7 @@ print(
 
 print(' 1/21 : remove leading / trailing / dup spaces ')
 
-def f01(line):
+def f01(line) :
 
     line = re.sub(r'\t', ' ', line)                                             # <replace tab with space  />
     line = re.sub(r' +', ' ', line).strip()                                     # <dedup spaces and remove leading/trailing spaces />
@@ -222,7 +222,7 @@ print(
 
 print(' 2/21 : remove comments ')
 
-def f02(line):
+def f02(line) :
 
     if re.search(r'^ *[!\[\{].*$', line) :
         line = ''                                                               # <remove !comment [comment] {comment} />
@@ -246,12 +246,12 @@ print(
 
 print(' 3/21 : clean dns, domain filters ')
 
-def f03(line):
+def f03(line) :
 
     line = re.sub(r'^0\.0\.0\.0 ', '', line)                                    # <remove leading 0.0.0.0 (dns style filter) />
     line = re.sub(r'^127\.0\.0\.1 ', '', line)                                  # <remove leading 127.0.0.1 (dns style filter) />
     line = re.sub(r'^\:+1 ', '', line)                                          # <remove leading ::1 (dns style filter) />
-    if re.search(r'^\|{1, 2}[-\.\w]+\^$', line):
+    if re.search(r'^\|{1, 2}[-\.\w]+\^$', line) :
         line = re.sub(r'[\|\^]', '', line)                                      # <remove || ^ from abp syntax ||domain^ />
 
     return line
@@ -271,22 +271,22 @@ print(
 
 print(' 4/21 : remove items containing % about: $badfilter localhost; remove http: IP4 IP6 :port/')
 
-def f04(line):
+def f04(line) :
 
-    if re.search(r'\%', line):
+    if re.search(r'\%', line) :
         line = ''                                                               # <remove items comprising % >
-    elif re.search(r'about\:', line):
+    elif re.search(r'about\:', line) :
         line = ''                                                               # <remove items comprising about: >
-    elif re.search(r'[,\$]badfilter', line):
+    elif re.search(r'[,\$]badfilter', line) :
         line = ''                                                               # <remove items comprising $badfilter />
-    elif re.search(r'localhost', line):
+    elif re.search(r'localhost', line) :
         line = ''                                                               # <remove items containing localhost />
-    elif re.search(r'\:\:', line):
+    elif re.search(r'\:\:', line) :
         line = ''                                                               # <remove IP6 addresses :: />
-    elif re.search(r'^[^a-z]+$', line):
+    elif re.search(r'^[^a-z]+$', line) :
         line = ''                                                               # <remove filters comprised only by simbols and numbers (includes IP4 addresses) />
 
-    if re.search(r'^\|{1, 2}[-\.\w]+\^.*$', line):
+    if re.search(r'^\|{1, 2}[-\.\w]+\^.*$', line) :
         line = re.sub(r'[\|\^]', '', line)                                      # <remove || ^ from abp syntax ||domain^ />
     line = re.sub(r'^\:[0-9]+/', '/', line)                                     # <replace leading :port/ with / />
     line = re.sub(r'https?\:/*', '', line)                                      # <remove http(s):/* />
@@ -308,12 +308,12 @@ print(
 
 print(' 5/21 : apply lower case except for cosmetics and regex')
 
-def f05(line):
+def f05(line) :
 
-    if not(re.search(r'[#\\]', line)):
+    if not(re.search(r'[#\\]', line)) :
         line = line.lower()                                                     # <apply lower case except cosmetics and regex />
 
-    if re.search(r'^/.*\\/$', line):
+    if re.search(r'^/.*\\/$', line) :
         line = ''                                                               # <remove broken regex (bad termination) />
     line = re.sub(r'^/([-\.\+\~\!\=/\w]+)/$', r'/\1/*', line)                   # <add trailing * for /@/ url filters (false regex) />
 
@@ -355,7 +355,7 @@ print(
 
 print(' 6/21 : generalize cosmetic filters (*##) and exceptions (*#@ *#? *@@) ')
 
-def f06(line):
+def f06(line) :
 
     line = re.sub(r'^.*(?=\#[\#\?])', '*', line)                                # <generalize *## *#? />
     line = re.sub(r'^.*(?=[\#\@]\@)', '*', line)                                # <generalize *#@ *@@ />
@@ -378,7 +378,7 @@ print(
 
 print(' 7/21 : remove cosmetic filters (## #?) and exceptions (@@ #@) except *##:')
 
-def f07(line):
+def f07(line) :
 
     if re.search(r'^\*?\#\#(?!\:).*$', line) :
         line = ''                                                               # <remove cosmetic filters except ##: />
@@ -404,9 +404,9 @@ print(
 
 print(' 8/21 : split urls with $ domain=, denyallow= ')
 
-def f08(line):
+def f08(line) :
 
-    if re.search(r'\$.*(domain|denyallow)=', line):
+    if re.search(r'\$.*(domain|denyallow)=', line) :
         domains_part = re.sub(r'^.*(domain|denyallow)=', '', line).split('|')   # <split domains and  url part />
         url_part     = [re.sub(r'\$.*$', '', line)]                             # <add url part/>
         line = domains_part + url_part
@@ -441,7 +441,7 @@ print(
 
 print(' 9/21 : clean from=, path=, replace=, transform=')
 
-def f09(line):
+def f09(line) :
 
     line = re.sub(r',?(from|path|replace|transform)=.*$', '', line)             # <remove (,)from=.* , (,)path=.* , (,)replace=.* , (,)transform=.* />
 
@@ -462,12 +462,12 @@ print(
 
 print('10/21 : split , separated domains ')
 
-def f10(line):
+def f10(line) :
 
     line = re.sub(r'^,', '', line)                                              # <remove leading , />
     line = re.sub(r',$', '', line)                                              # <remove trailing , />
 
-    if re.search(r'^[\w\,]*\,[\w\,]*$', line) and not(re.search(r'[\$\@\#]', line)):
+    if re.search(r'^[\w\,]*\,[\w\,]*$', line) and not(re.search(r'[\$\@\#]', line)) :
         line = line.split(',')                                                  # <split domains />
     else:
         [line]
@@ -501,7 +501,7 @@ print(
 n_1 = len(list2) + 1                                                            # <initialization of list2 length obsservation />
 i   = 0
 
-while n_1 > len(list2):                                                         # <recursive loops until steady list2 length />
+while n_1 > len(list2) :                                                         # <recursive loops until steady list2 length />
 
     i   = i + 1
     n_1 = len(list2)
@@ -514,7 +514,7 @@ while n_1 > len(list2):                                                         
 
     print('11/21 : clean up leading symbols numbers prefix etc')
 
-    def f11(line):
+    def f11(line) :
 
         line = re.sub(r'www[0-9]*\.', '', line)                                 # <remove www#. />
         line = re.sub(r'^[_\W0-9]*(?=[/\.\$])', '', line)                       # <remove leading symbols and numbers preceding / . $ />
@@ -543,7 +543,7 @@ while n_1 > len(list2):                                                         
 
     print('12/21 : clean up trailing symbols numbers suffix $filters etc')
 
-    def f12(line):
+    def f12(line) :
 
         line = re.sub(r'[\^\|\=]\$', '$', line)                                 # <replace ^$ |$ =$ with $ />
         line = re.sub(r'[#,\~\|\^\?\=\&]+$', '', line)                          # <remove trailing # , ~ | ^ ? = & />
@@ -579,11 +579,11 @@ while n_1 > len(list2):                                                         
 
     print('13/21 : split domain and url ')
 
-    def f13(line):
+    def f13(line) :
 
         line = line.strip()
 
-        if re.search(r'^[-\.\w]+\.[a-z]+/.*', line):
+        if re.search(r'^[-\.\w]+\.[a-z]+/.*', line) :
             domain_part = [re.sub(r'/.*$', '', line)]                           # <add domain part />
             url_part     = [re.sub(r'^[-\.\w]+/', '/', line)]                   # <add url part/>
             line = domain_part + url_part
@@ -618,7 +618,7 @@ while n_1 > len(list2):                                                         
 
     print('14/21 : clean up urls')
 
-    def f14(line):
+    def f14(line) :
 
         line = re.sub(r'\*+', '*', line)                                        # <dedup * />
         line = re.sub(r'\.+', '.', line)                                        # <dedup . />
@@ -651,12 +651,12 @@ while n_1 > len(list2):                                                         
 
 print('15/21 : split space separated domains ')
 
-def f15(line):
+def f15(line) :
 
     line = re.sub(r'^,', '', line)                                              # <remove leading , />
     line = re.sub(r',$', '', line)                                              # <remove trailing , />
 
-    if re.search(r'^[\w\,]* [\w\,]*$', line) and not(re.search(r'[\$\@\#]', line)):
+    if re.search(r'^[\w\,]* [\w\,]*$', line) and not(re.search(r'[\$\@\#]', line)) :
         line = line.split(',')                                                  # <split domains />
     else:
         [line]
@@ -690,7 +690,7 @@ print(
 
 print('16/21 : remove leading ! # + & ? ^ : ; @ and @.exe @.gif @.rar @.zip')
 
-def f16(line):
+def f16(line) :
 
     line = re.sub(r'^\|+', '', line)                                            # <remove leading | />
 
@@ -738,7 +738,7 @@ print(
 
 print('17/21 : arrange *$ filters; keep beacon csp inline-font inline-script object other ping popunder script websocket xhr ')
 
-def f17(line):
+def f17(line) :
 
     if re.search(r'^\*\$\~?1p.*$', line) :
         line = ''                                                               # <remove *$1p />
@@ -800,7 +800,7 @@ print(
 
 print('18/21 : remove broken filters and fix false regex ')
 
-def f18(line):
+def f18(line) :
 
     if not(re.search(r'^[^\(\)\[\]\{\}\~]', line)) :
         line = ''                                                               # <remove broken filters; improve this filter />
@@ -834,7 +834,7 @@ print(
 
 print('19/21 : simplify urls keeping last /* part')
 
-def f19(line):
+def f19(line) :
 
     if re.search(r'[\#\@\$]', line) :                                           # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
     
@@ -929,7 +929,7 @@ counter = Value('d', 0)
 t0 = time()
 counter_max = len(list9)
 
-def f20_2(pattern):
+def f20_2(pattern) :
 
     global list2
 
@@ -992,9 +992,10 @@ print(
 
 list5 = list(filter(None, sorted(set(list5))))                                  # <remove empty elements />
 
-def f20_5(pattern):
+def f20_5(pattern) :
 
     global list5
+    list5wl = []
 
     try :
         pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
@@ -1015,7 +1016,6 @@ def f20_5(pattern):
 
     return list5wl
 
-list5wl = []
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list5wl = list(pool.map(f20_5, list5))                                          # <execute function by multithreading />
 pool.close()                                                                    # <close the pool and wait for the work to finish />
@@ -1075,7 +1075,7 @@ counter = Value('d', 0)
 t0 = time()
 counter_max = len(list5)
 
-def f21(pattern):
+def f21(pattern) :
 
     global list2
 
@@ -1138,7 +1138,7 @@ print(
 
 print('\nListing domain filters')
 
-def f_list_domains(line):
+def f_list_domains(line) :
 
     global iana_tld
 
@@ -1162,7 +1162,7 @@ list2 = list(filter(None, sorted(set(list2) - set(list3))))                     
 
 # <remove leading . , L5+ domains and numerial low levels >
 
-def f_clean_domains(line):
+def f_clean_domains(line) :
 
     line = re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line)         # <remove L5+ domains />
     line = re.sub(r'^[-_\.0-9]*\.', '', line)                                   # <remove numerical low levels from domains and preceding . />
@@ -1216,7 +1216,7 @@ print(
 
 print('\ndeflating domain filters, pass 1 / 2:')
 
-def f_deflat_domain(line):
+def f_deflat_domain(line) :
 
     global iana_sld
     global list8
@@ -1293,7 +1293,7 @@ print('dedup filter if filter($|,)important present', sep = '')
 #del(list2s)
 
 
-def f_dedup_important(line):
+def f_dedup_important(line) :
 
     global list2
 
