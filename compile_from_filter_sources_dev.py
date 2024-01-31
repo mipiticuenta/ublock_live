@@ -948,7 +948,7 @@ def f20_2(pattern):
 
     counter.value += 1
     print(
-        '       ',
+        '        ',
         '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
         '(', '{:.0f}'.format(counter.value), '/', counter_max, ') ',
         '{:.0f}'.format((time() - t0) / 60), ' elapsed | ',
@@ -1010,11 +1010,12 @@ def f20_5(pattern):
     except :
         print(
             'Error: check for ' + pattern + ' pattern in regex_white_list',
-            flush=True
+            flush = True
         )
 
     return list5wl
 
+list5wl = []
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 list5wl = list(pool.map(f20_5, list5))                                          # <execute function by multithreading />
 pool.close()                                                                    # <close the pool and wait for the work to finish />
@@ -1093,7 +1094,7 @@ def f21(pattern):
 
     counter.value += 1
     print(
-        '       ',
+        '        ',
         '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
         '(', '{:.0f}'.format(counter.value), '/', counter_max, ') ',
         '{:.0f}'.format((time() - t0) / 60), ' elapsed | ',
