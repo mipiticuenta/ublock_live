@@ -648,6 +648,12 @@ while n_1 > len(list2) :                                                        
 
     list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
 
+    list5 = [
+        line
+        for line in list5
+        if not re.search(r'\/\\w\{8\}\\/\\w\{10\}\\\./', line)
+    ]
+
     print(
         '       ',
         '{:,}'.format(len(list2) + len(list5)),
