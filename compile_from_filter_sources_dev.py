@@ -932,6 +932,7 @@ counter_max = len(list9)
 def f20_2(pattern) :
 
     global list2
+    list2wl = []
 
     try :
         pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
@@ -1078,6 +1079,7 @@ counter_max = len(list5)
 def f21(pattern) :
 
     global list2
+    list2du = []
 
     try :
         pattern = re.compile(r'' + re.sub(r'\$important$', '', pattern)[1: -1]) # < create regex pattern for faster processing />
