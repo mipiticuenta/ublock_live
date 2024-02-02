@@ -474,7 +474,7 @@ def f10(line) :
     line = re.sub(r'^,', '', line)                                              # <remove leading , />
     line = re.sub(r',$', '', line)                                              # <remove trailing , />
 
-    if re.search(r'^[\w\,]*\,[\w\,]*$', line) and not(re.search(r'[\$\@\#]', line)) :
+    if re.search(r'^[/\.\,\w]*\,[/\.\,\w]*$', line) and not(re.search(r'[\$\@\#]', line)) :
         line = line.split(',')                                                  # <split domains />
     else:
         [line]
@@ -634,6 +634,7 @@ while n_1 > len(list2) :                                                        
         line = re.sub(r'([-\./\w]+)\$(?!important)[-\,\=\.\w]*$', r'\1', line)  # <remove $* tail except for *$ />
         line = re.sub(r'(?<=\*)\$|\,\~\w]*$', '', line)                         # <remove tail $* leaded by * />
         line = re.sub(r'^/?([-\.\w]+)/wp\-content/uploads/.*$', r'\1', line)    # <clean /wp-content/uploads/ retrieving domain/>
+        line = re.sub(r'/wp\-content/uploads/.*$', '', line)                    # <clean /wp-content/uploads/ retrieving domain/>
 
         if re.search(r'^[-\w]+\\\.[-\w]+', line) :
             line = re.sub(r'\\\.', '.', line)                                   # <remove faulty \. />
