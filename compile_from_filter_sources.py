@@ -632,11 +632,10 @@ while n_1 > len(list2) :                                                        
         line = re.sub(r'\*+', '*', line)                                        # <dedup * />
         line = re.sub(r'\.+', '.', line)                                        # <dedup . />
         line = re.sub(r'/+', '/', line)                                         # <dedup / />
-        line = re.sub(r'^.*/\*/', '/', line)                                    # <replace url_part/*/ with / />
-        line = re.sub(r'([-\./\w]+)\$(?!important)[-\,\=\.\~\w]*$', r'\1', line)  # <remove $* tail except for *$ />
-        line = re.sub(r'(?<=\*)\$|\,\~\w]*$', '', line)                         # <remove tail $* leaded by * />
+        line = re.sub(r'^.*/\*/', '/', line)                                    # <replace /*/ with / />
+        line = re.sub(r'[^*]\$.*$', '', line)                                   # <remove $* tai\l except for *$ />
         line = re.sub(r'^/?([-\.\w]+)/wp\-content/uploads/.*$', r'\1', line)    # <clean /wp-content/uploads/ retrieving domain/>
-        line = re.sub(r'/wp\-content/uploads/.*$', '', line)                    # <clean /wp-content/uploads/ retrieving domain/>
+        line = re.sub(r'/wp\-content/uploads/.*$', '', line)                    # <clean trailing /wp-content/uploads/* />
 
         if re.search(r'^[-\w]+\\\.[-\w]+', line) :
             line = re.sub(r'\\\.', '.', line)                                   # <remove faulty \. />
@@ -1567,6 +1566,7 @@ print(
 
 print(
     'Total compilation time: ',
-    '{:.0f}'.format((time() - t_start) / 60), '\' elapsed | ',
+    '{:.0f}'.format((time() - t_start) / 60), '\' elapsed',
+    '\n',
     sep = '',
 )
