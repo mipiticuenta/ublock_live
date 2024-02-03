@@ -20,17 +20,18 @@ from multiprocessing import Pool as ThreadPool                                  
 from multiprocessing import Value                                               # <multithreading function/>
 from time import time
 
-file1_in_name  = 'filter_sources'
-file2_out_name = 'compiled_block_list'
-file3_out_name = 'ipfire_domain_block_list'
-file4_out_name = 'ipfire_url_block_list'
-file5_out_name = 'ipfire_regex_block_list'
-file7_out_name = 'ublock_list_except_domains'
-file8_in_name  = 'domains_white_list'
-file9_in_name  = 'regex_white_list'
-no_proxy       = {'https': '', 'http': ''}
-local_proxy    = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
-thr            = os.cpu_count()
+file1_in_name   = 'filter_sources'
+file2_out_name  = 'compiled_block_list'
+file3_out_name  = 'ipfire_domain_block_list'
+file4_out_name  = 'ipfire_url_block_list'
+file5_out_name  = 'ipfire_regex_block_list'
+file7_out_name  = 'ublock_list_except_domains'
+file8_in_name   = 'domains_white_list'
+file9_in_name   = 'regex_white_list'
+no_proxy        = {'https': '', 'http': ''}
+local_proxy     = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
+thr             = os.cpu_count()
+t_start         = time()
 
 # </ libs & settings>
 
@@ -1563,3 +1564,9 @@ print(
 )
 
 # </write extracted filters except domains />
+
+print(
+    'Total compilation time: ',
+    '{:.0f}'.format((time() - t_start) / 60), '\' elapsed | ',
+    sep = '',
+)
