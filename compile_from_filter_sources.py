@@ -225,9 +225,9 @@ print(' 2/21 : remove comments ')
 
 def f02(line) :
 
-    if re.search(r'^ *[!\[\{].*$', line) :
+    if re.search(r'^[!\[\{].*$', line) :
         line = ''                                                               # <remove !comment [comment] {comment} />
-    elif re.search(r'^ *#(?![\?\@\#]).*$', line) :
+    elif re.search(r'^#(?![\?\@\#]).*$', line) :
         line = ''                                                               # <remove #comment; preserve cosmetics and exceptions />
 
     return line
@@ -316,6 +316,10 @@ def f05(line) :
 
     if re.search(r'^/.*\\/$', line) :
         line = ''                                                               # <remove broken regex (bad termination) />
+
+    if re.search(r'^[^/].*\{', line) :
+        line = ''                                                               # <remove broken regex (bad markup />
+
     line = re.sub(r'^/([-\.\+\~\!\=/\w]+)/$', r'/\1/*', line)                   # <add trailing * for /@/ url filters (false regex) />
 
     return line
@@ -525,13 +529,12 @@ while n_1 > len(list2) :                                                        
     def f11(line) :
 
         line = re.sub(r'www[0-9]*\.', '', line)                                 # <remove www#. />
-        line = re.sub(r'^[_\W0-9]*(?=[/\.\$])', '', line)                       # <remove leading symbols and numbers preceding / . $ />
+        line = re.sub(r'^[^\*a-z]*(?=[/\.\$])', '', line)                       # <remove leading symbols and numbers preceding / . $ />
         line = re.sub(r'^[/\.]?\w(?=[/\.\$])', '', line)                        # <remove leading single a-z0-9 char preceding / . $ />
-        line = re.sub(r'^\.(?=\*)', '', line)                                   # <remove leading . if followed by * />
+        line = re.sub(r'^[/\.]\*', '', line)                                    # <remove leading [/\.]* />
         line = re.sub(r'^\W*(?=\$)', '*', line)                                 # <replace leading symbols followed by $ (/$ .$ =$ ?$ etc) with *$ />
         line = re.sub(r'^\.?[-\*\w]+/', '/', line)                              # <replace leading (.)@/ with / />
-        line = re.sub(r'^/\*.*[^/]', '', line)                                  # <remove leading /* except for regex filters />
-        line = re.sub(r'^\*(?=[^\$\#])', '', line)                              # <remove leading * generic $ # filters />
+        line = re.sub(r'^\*(?=[^\$\#])', '', line)                              # <remove leading * except for generic $ # filters />
         line = re.sub(r'^/([-\.\+\!\~/\w]+)/$', r'/\1/*', line)                 # <add trailing * for /@/ url filters (false regex) />
 
         return line
