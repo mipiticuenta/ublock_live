@@ -292,6 +292,9 @@ def f04(line) :
     line = re.sub(r'^\:[0-9]+/', '/', line)                                     # <replace leading :port/ with / />
     line = re.sub(r'https?\:/*', '', line)                                      # <remove http(s):/* />
 
+    if not(re.search(r'#', line)) and re.search(r'\:', line) :
+        line = ''                                                               # <remove lines containing : except for cosmetics filters/>
+
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -318,7 +321,7 @@ def f05(line) :
         line = ''                                                               # <remove broken regex (bad termination) />
 
     if re.search(r'^[^/].*\{', line) :
-        line = ''                                                               # <remove broken regex (bad markup />
+        line = ''                                                               # <remove broken regex (bad markup) />
 
     line = re.sub(r'^/([-\.\+\~\!\=/\w]+)/$', r'/\1/*', line)                   # <add trailing * for /@/ url filters (false regex) />
 
