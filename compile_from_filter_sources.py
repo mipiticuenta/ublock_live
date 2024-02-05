@@ -320,9 +320,6 @@ def f05(line) :
     if re.search(r'^/.*\\/$', line) :
         line = ''                                                               # <remove broken regex (bad termination) />
 
-    if re.search(r'^[^/].*\{', line) :
-        line = ''                                                               # <remove broken regex (bad markup) />
-
     line = re.sub(r'^/([-\.\+\~\!\=/\w]+)/$', r'/\1/*', line)                   # <add trailing * for /@/ url filters (false regex) />
 
     return line
@@ -825,7 +822,7 @@ print('18/21 : remove broken filters and fix false regex ')
 
 def f18(line) :
 
-    if not(re.search(r'^[^\(\)\[\]\{\}\~]', line)) :
+    if re.search(r'^[\(\)\[\]\{\}\~]', line) :
         line = ''                                                               # <remove broken filters; improve this filter />
     elif re.search(r'^.*\([^\)]*$', line) :
         line = ''                                                               # <remove broken filters (unterminated ( ); improve this filter for multiple () />
@@ -837,7 +834,7 @@ def f18(line) :
         line = ''                                                               # <remove broken filters (unterminated regex) />
     elif re.search(r'^/.*\\/$', line) :
         line = ''                                                               # <remove broken regex (bad termination) />
-    elif not(re.search(r'[^\[\]\{\}\;\,\\]', line)) :
+    elif re.search(r'[\[\]\{\}\;\,\\]', line) :
         line = ''                                                               # <remove broken regex filters />
 
     return line
