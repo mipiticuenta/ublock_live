@@ -292,7 +292,7 @@ def f04(line) :
     line = re.sub(r'^\:[0-9]+/', '/', line)                                     # <replace leading :port/ with / />
     line = re.sub(r'https?\:/*', '', line)                                      # <remove http(s):/* />
 
-    if not(re.search(r'#', line)) and re.search(r'\:', line) :
+    if (not(re.search(r'#', line)) and not(re.search(r'^/.*/$', line)) and re.search(r'\:', line)) :
         line = ''                                                               # <remove lines containing : except for cosmetics filters/>
 
     return line
