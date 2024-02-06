@@ -282,7 +282,7 @@ def f04(line) :
         line = ''                                                               # <remove items comprising $badfilter />
     elif re.search(r'localhost', line) :
         line = ''                                                               # <remove items containing localhost />
-    elif re.search(r'\:\:', line) :
+    elif re.search(r'\:{2}', line) :
         line = ''                                                               # <remove IP6 addresses :: />
     elif re.search(r'^[^a-z]+$', line) :
         line = ''                                                               # <remove filters comprised only by simbols and numbers (includes IP4 addresses) />
@@ -321,6 +321,8 @@ def f05(line) :
         line = ''                                                               # <remove broken regex (bad termination) />
 
     line = re.sub(r'^/([-\.\+\~\!\=/\w]+)/$', r'/\1/*', line)                   # <add trailing * for /@/ url filters (false regex) />
+    line = re.sub(r'//$', '/', line)                                            # fix trailing // />
+    line = re.sub(r'\$/$', '/', line)                                           # fix trailing $/ >
 
     return line
 
@@ -529,6 +531,8 @@ while n_1 > len(list2) :                                                        
     def f11(line) :
 
         line = re.sub(r'www[0-9]*\.', '', line)                                 # <remove www#. />
+        line = re.sub(r'^[^a-z]*(?=/*)', '', line)                              # <remove leading symbols and numbers preceding * />
+        line = re.sub(r'^[^\*a-z]*(?=\?)', '', line)                            # <remove leading symbols and numbers preceding ? />
         line = re.sub(r'^[^\*a-z]*(?=[/\.\$])', '', line)                       # <remove leading symbols and numbers preceding / . $ />
         line = re.sub(r'^[/\.]?\w(?=[/\.\$])', '', line)                        # <remove leading single a-z0-9 char preceding / . $ />
         line = re.sub(r'^[/\.]\*', '', line)                                    # <remove leading [/\.]* />
