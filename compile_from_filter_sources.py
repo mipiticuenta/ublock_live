@@ -884,10 +884,10 @@ def f19(line) :
         elif re.search(r'removeparam.*formatsprofile', line) :
             line = ''
 
-    wl = len(line) +1
+    wl = len(line) + 1
     while (len(line) < wl) :
         re.sub(r'^.+(?=/[^/]+(?:/\*)?$)', '', line)                             # <simplify urls keeping last /* part />
-        wl = lne(line)
+        wl = len(line)
 
     if len(line) <= 3 :
         line = ''                                                               # <keep filters with len > 3 />
