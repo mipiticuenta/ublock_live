@@ -531,9 +531,10 @@ while n_1 > len(list2) :                                                        
     def f11(line) :
 
         line = re.sub(r'www[0-9]*\.', '', line)                                 # <remove www#. />
-        line = re.sub(r'^[^a-z]*(?=/*)', '', line)                              # <remove leading symbols and numbers preceding * />
+        line = re.sub(r'^[^a-z]*(?=\*)', '', line)                              # <remove leading symbols and numbers preceding * />
         line = re.sub(r'^[^\*a-z]*(?=\?)', '', line)                            # <remove leading symbols and numbers preceding ? />
-        line = re.sub(r'^[^\*a-z]*(?=[/\.\$])', '', line)                       # <remove leading symbols and numbers preceding / . $ />
+        line = re.sub(r'^[^\*a-z]*(?=[/\.])', '', line)                         # <remove leading symbols and numbers preceding / . />
+        line = re.sub(r'^[^a-z]*(?=\$)', '', line)                              # <remove leading symbols and numbers preceding $ />
         line = re.sub(r'^[/\.]?\w(?=[/\.\$])', '', line)                        # <remove leading single a-z0-9 char preceding / . $ />
         line = re.sub(r'^[/\.]\*', '', line)                                    # <remove leading [/\.]* />
         line = re.sub(r'^\W*(?=\$)', '*', line)                                 # <replace leading symbols followed by $ (/$ .$ =$ ?$ etc) with *$ />
