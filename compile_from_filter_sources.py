@@ -641,7 +641,7 @@ while n_1 > len(list2) :                                                        
         line = re.sub(r'\.+', '.', line)                                        # <dedup . />
         line = re.sub(r'/+', '/', line)                                         # <dedup / />
         line = re.sub(r'^.*/\*/', '/', line)                                    # <replace /*/ with / />
-        line = re.sub(r'[^*]\$.*$', '', line)                                   # <remove $* tai\l except for *$ />
+        line = re.sub(r'[^\*]\$.*$', '', line)                                  # <remove $* tai\l except for *$ />
         line = re.sub(r'^/?([-\.\w]+)/wp\-content/uploads/.*$', r'\1', line)    # <clean /wp-content/uploads/ retrieving domain/>
         line = re.sub(r'/wp\-content/uploads/.*$', '', line)                    # <clean trailing /wp-content/uploads/* />
 
