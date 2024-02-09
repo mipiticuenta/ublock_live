@@ -911,7 +911,7 @@ print(
 
 # <segregate domains from list >
 
-print('\nListing domain filters')
+print('\nListing domain filters\n')
 
 def f_list_domains(line) :
 
@@ -1038,7 +1038,7 @@ print()
 
 print(
     '       ',
-    '{:,}'.format(len(list2) + len(list5)),
+    '{:,}'.format(len(list2) + len(list5) + len(list3)),
     'filters kept',
     flush = True
 )
