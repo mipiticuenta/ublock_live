@@ -475,14 +475,14 @@ print(
     'filters kept'
 )
 
-print('10/21 : split , separated domains ')
+print('10/21 : split , ~ separated domains ')
 
 def f10(line) :
 
     line = re.sub(r'^,', '', line)                                              # <remove leading , />
     line = re.sub(r',$', '', line)                                              # <remove trailing , />
 
-    if re.search(r'^[/\.\,\w]*\,[/\.\,\w]*$', line) and not(re.search(r'[\$\@\#]', line)) :
+    if re.search(r'^[/\.\,\~\w]*[\,\~][/\.\,\~\w]*$', line) and not(re.search(r'[\$\@\#]', line)) :
         line = line.split(',')                                                  # <split domains />
     else:
         [line]
@@ -1188,7 +1188,7 @@ list2 = list(filter(None, sorted((set(list2) - set(list2du))| set(list5))))     
 
 print(
     '\n       ',
-    '{:,}'.format(len(list2) + len(list5) + len(list3)),
+    '{:,}'.format(len(list2) + len(list3)),
     'filters kept'
 )
 
