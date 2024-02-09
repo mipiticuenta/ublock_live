@@ -604,7 +604,7 @@ while n_1 > len(list2) :                                                        
         if re.search(r'^[-\.\w]+\.[a-z]+/.*', line) :
             domain_part = [re.sub(r'/.*$', '', line)]                           # <add domain part />
             url_part    = re.sub(r'^[-\.\w]+/', '/', line)                      # <add url part/>
-            url_part    = [re.sub(r'^.+(?=/[^/]+(?:/\*)?$)', '', url_part)]     # <simplify urls keeping last /* part />
+            url_part    = [re.sub(r'^.+(?=/[^/]+(?:/\*)?$)', '', url_part)]     # <simplify url keeping last /* part />
             line = domain_part + url_part
         else:
             [line]
@@ -653,7 +653,7 @@ while n_1 > len(list2) :                                                        
         if re.search(r'^[-\.\w]+\^\*[-/\.\w]+', line) :
             line = re.sub(r'\^\*', '', line)                                    # <remove spurious ^*/>
 
-        if re.search(r'^\.?[^\.]*/[-\./\w]+(?:/\*)?$', line) :
+        if re.search(r'^[\./]?[-\w]*/[-\./\w]+[-\.\w](?:/\*)?$', line) :
             line = re.sub(r'^.+(?=/[^/]+(?:/\*)?$)', '', line)                  # <simplify urls keeping last /* part />
 
         return line
@@ -1210,7 +1210,7 @@ list3 = list(filter(None, sorted(set(list3) - set(iana_sld))))                  
 
 print(
     'leading . , L5+ domains and numerical low levels removed:\n',
-    '       ',
+    '      ',
     '{:,}'.format(len(list3)),
     'domains kept'
     )
