@@ -293,7 +293,7 @@ def f04(line) :
     line = re.sub(r'^\:[0-9]+/', '/', line)                                     # <replace leading :port/ with / />
     line = re.sub(r'https?\:/*', '', line)                                      # <remove http(s):/* />
 
-    if re.search(r'\:', line) and not re.search(r'[#\$]', line) :
+    if re.search(r'\:', line) and not re.search(r'[#\$\?]', line) :
         line = ''                                                               # <remove lines containing : except for cosmetics filters/>
 
     return line
@@ -315,7 +315,7 @@ print(' 5/21 : apply lower case except for cosmetics and regex')
 
 def f05(line) :
 
-    if not(re.search(r'[#\\]', line)) :
+    if not(re.search(r'[#]', line)) :
         line = line.lower()                                                     # <apply lower case except cosmetics and regex />
 
     if re.search(r'^/.*\\/$', line) :
