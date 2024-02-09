@@ -770,36 +770,24 @@ print('17/21 : arrange *$ filters; keep beacon csp inline-font inline-script obj
 
 def f17(line) :
 
-    if re.search(r'^\*\$\~?1p.*$', line) :
-        line = ''                                                               # <remove *$1p />
-    elif re.search(r'^\*\$\~?3p.*$', line) :
-        line = ''                                                               # <remove *$3p />
-    elif re.search(r'^\*\$\~?third\-party.*$', line) :
-        line = ''                                                               # <remove *$3p />
-    elif re.search(r'^\*\$\~?all.*$', line) :
-        line = ''                                                               # <remove *$all />
-    elif re.search(r'^\*\$\~?css.*$', line) :
-        line = ''                                                               # <remove *$css />
-    elif re.search(r'^\*\$\~?stylesheet.*$', line) :
-        line = ''                                                               # <remove *$css />
-    elif re.search(r'^\*\$\~?(sub)?doc(ument)?.*$', line) :
-        line = ''                                                               # <remove *$(sub)doc />
-    elif re.search(r'^\*\$\~?from.*$', line) :
-        line = ''                                                               # <remove *$from />
-    elif re.search(r'^\*\$\~?image.*$', line) :
-        line = ''                                                               # <remove *$image />
-    elif re.search(r'^\*\$\~?media.*$', line) :
-        line = ''                                                               # <remove *$media />
-    elif re.search(r'^\*\$\~?popup.*$', line) :
-        line = ''                                                               # <remove *$popup />
-    elif re.search(r'^\*\$\~?rewrite.*$', line) :
-        line = ''                                                               # <remove *$rewrite />
-    elif re.search(r'^\*\$important.*$', line) :
+    re.sub(r'\$\~?1p.*$', '', line)                                             # <remove $1p />
+    re.sub(r'\$\~?3p.*$', '', line)                                             # <remove $3p />
+    re.sub(r'\$\~?third\-party.*$', '', line)                                   # <remove $3p />
+    re.sub(r'\$\~?all.*$', '', line)                                            # <remove $all />
+    re.sub(r'\$\~?css.*$', '', line)                                            # <remove $css />
+    re.sub(r'\$\~?stylesheet.*$', '', line)                                     # <remove $css />
+    re.sub(r'\$\~?(sub)?doc(ument)?.*$', '', line)                              # <remove $(sub)doc />
+    re.sub(r'\$\~?from.*$', '', line)                                           # <remove $from />
+    re.sub(r'\$\~?image.*$', '', line)                                          # <remove $image />
+    re.sub(r'\$\~?media.*$', '', line)                                          # <remove $media />
+    re.sub(r'\$\~?popup.*$', ''. line)                                          # <remove $popup />
+    re.sub(r'\$\~?rewrite.*$', '', line)                                        # <remove $rewrite />
+    re.sub(r'\$\~?script.*$', '', line)                                         # <remove $script />
+    
+    if re.search(r'^\*\$important.*$', line) :
         line = ''                                                               # <remove *$important filters />
     elif re.search(r'^\*\$.*\.js$', line) :
         line = ''                                                               # <remove *$...js filters />
-
-    line = re.sub(r'^(.*)\$\~?script.*', r'\1', line)                           # <remove trailing $script />
 
     line = re.sub(r'^\*\$\~?beacon.*', '*$beacon', line)                        # <enforce *$beacon />
     line = re.sub(r'.*\$csp.*', '*$csp=all', line)                              # <enforce *$csp=all />
