@@ -199,7 +199,7 @@ print(
 
 # <transforming loop>
 
-print(' 1/21 : remove leading / trailing / dup spaces ')
+print(' 1/20 : remove leading / trailing / dup spaces ')
 
 def f01(line) :
 
@@ -221,7 +221,7 @@ print(
     'filters kept'
 )
 
-print(' 2/21 : remove comments ')
+print(' 2/20 : remove comments ')
 
 def f02(line) :
 
@@ -245,7 +245,7 @@ print(
     'filters kept'
 )
 
-print(' 3/21 : clean dns, domain filters ')
+print(' 3/20 : clean dns, domain filters ')
 
 def f03(line) :
 
@@ -270,7 +270,7 @@ print(
     'filters kept'
 )
 
-print(' 4/21 : remove items containing % about: $badfilter localhost; remove http: IP4 IP6 :port/')
+print(' 4/20 : remove items containing % about: $badfilter localhost; remove http: IP4 IP6 :port/')
 
 def f04(line) :
 
@@ -311,7 +311,7 @@ print(
     'filters kept'
 )
 
-print(' 5/21 : apply lower case except for cosmetics and regex')
+print(' 5/20 : apply lower case except for cosmetics and regex')
 
 def f05(line) :
 
@@ -361,7 +361,7 @@ print(
     'filters kept'
 )
 
-print(' 6/21 : generalize cosmetic filters (*##) and exceptions (*#@ *#? *@@) ')
+print(' 6/20 : generalize cosmetic filters (*##) and exceptions (*#@ *#? *@@) ')
 
 def f06(line) :
 
@@ -384,7 +384,7 @@ print(
     'filters kept'
 )
 
-print(' 7/21 : remove cosmetic filters (## #?) and exceptions (@@ #@) except *##:')
+print(' 7/20 : remove cosmetic filters (## #?) and exceptions (@@ #@) except *##:')
 
 def f07(line) :
 
@@ -410,7 +410,7 @@ print(
     'filters kept'
 )
 
-print(' 8/21 : split urls with $ domain=, denyallow= ')
+print(' 8/20 : split urls with $ domain=, denyallow= ')
 
 def f08(line) :
 
@@ -447,7 +447,7 @@ print(
     'filters kept'
 )
 
-print(' 9/21 : clean from=, path=, replace=, transform=')
+print(' 9/20 : clean from=, path=, replace=, transform=')
 
 def f09(line) :
 
@@ -475,7 +475,7 @@ print(
     'filters kept'
 )
 
-print('10/21 : split , ~ space separated domains ')
+print('10/20 : split , ~ space separated domains ')
 
 def f10(line) :
 
@@ -527,7 +527,7 @@ while n_1 > len(list2) :                                                        
         sep = ''
     )
 
-    print('11/21 : clean up leading symbols numbers prefix etc')
+    print('11/20 : clean up leading symbols numbers prefix etc')
 
     def f11(line) :
 
@@ -558,7 +558,7 @@ while n_1 > len(list2) :                                                        
         'filters kept'
     )
 
-    print('12/21 : clean up trailing symbols numbers suffix $filters etc')
+    print('12/20 : clean up trailing symbols numbers suffix $filters etc')
 
     def f12(line) :
 
@@ -595,7 +595,7 @@ while n_1 > len(list2) :                                                        
         'filters kept'
     )
 
-    print('13/21 : split domain and url ')
+    print('13/20 : split domain and url ')
 
     def f13(line) :
 
@@ -635,7 +635,7 @@ while n_1 > len(list2) :                                                        
         'filters kept'
     )
 
-    print('14/21 : clean up urls')
+    print('14/20 : clean up urls')
 
     def f14(line) :
 
@@ -679,46 +679,7 @@ while n_1 > len(list2) :                                                        
 
 # <transforming loop/>
 
-print('15/21 : split space separated domains ')
-
-def f15(line) :
-
-    line = re.sub(r'^,', '', line)                                              # <remove leading , />
-    line = re.sub(r',$', '', line)                                              # <remove trailing , />
-
-    if re.search(r'^[\w\,]* [\w\,]*$', line) and not(re.search(r'[\$\@\#]', line)) :
-        line = line.split(',')                                                  # <split domains />
-    else:
-        [line]
-
-    return line
-
-pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2 = pool.map(f15, list2)                                                    # <execute function by multithreading />
-pool.close()                                                                    # <close the pool and wait for the work to finish />
-pool.join()
-
-list2 = sorted(
-    set(
-        [
-            line if (type(line) == str)                                         # <prevents string atomization into chars is string type />
-            else item
-            for line in list2
-            for item in line
-        ]                                                                       # <flatten list />
-    )                                                                           # <dedup list />
-)
-
-list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
-
-print(
-    '       ',
-    '{:,}'.format(len(list2) + len(list5)),
-    'filters kept'
-)
-
-
-print('16/21 : remove leading ! # + & ? ^ : ; @ and @.exe @.gif @.rar @.zip')
+print('15/20 : remove leading ! # + & ? ^ : ; @ and @.exe @.gif @.rar @.zip')
 
 def f16(line) :
 
@@ -766,7 +727,7 @@ print(
     'filters kept'
 )
 
-print('17/21 : arrange *$ filters; keep beacon csp inline-font inline-script object other ping popunder script websocket xhr ')
+print('16/20 : arrange *$ filters; keep beacon csp inline-font inline-script object other ping popunder script websocket xhr ')
 
 def f17(line) :
 
@@ -816,7 +777,7 @@ print(
     'filters kept'
 )
 
-print('18/21 : remove broken filters and fix false regex ')
+print('17/20 : remove broken filters and fix false regex ')
 
 def f18(line) :
 
@@ -850,7 +811,7 @@ print(
     'filters kept'
 )
 
-print('19/21 : simplify urls keeping last /* part')
+print('18/20 : simplify urls keeping last /* part')
 
 def f19(line) :
 
@@ -923,7 +884,7 @@ list2 = list(filter(None, sorted(set(list2) - set(list3))))                     
 
 # </segregate domains from list >
 
-print('20/21 : apply <regex_white_list> rules', sep = '')
+print('19/20 : apply <regex_white_list> rules', sep = '')
 
 # <segregate regex filters >
 
@@ -1112,7 +1073,7 @@ print(
 
 # </write extracted regex type filters>
 
-print('21/21 : deflat url filters redundant with regex filters', sep = '')
+print('20/20 : deflat url filters redundant with regex filters', sep = '')
 
 list5 = list(filter(None, sorted(set(list5))))                                  # <remove empty elements />
 
