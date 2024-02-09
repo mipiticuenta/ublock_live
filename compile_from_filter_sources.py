@@ -653,6 +653,9 @@ while n_1 > len(list2) :                                                        
         if re.search(r'^[-\.\w]+\^\*[-/\.\w]+', line) :
             line = re.sub(r'\^\*', '', line)                                    # <remove spurious ^*/>
 
+        if re.search(r'^[-\./\w]+$', line) :
+            line    = [re.sub(r'^.+(?=/[^/]+(?:/\*)?$)', '', line)]             # <simplify urls keeping last /* part />
+
         return line
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />
@@ -1229,7 +1232,7 @@ list8 = sorted(
     )
 )
 
-print('\n<domains_white_list> loaded')
+print('\n<domains_white_list> loaded and applied')
 
 list3 = sorted(set(list3) - set(list8))                                         # <remove whitelisted domains />
 
@@ -1296,7 +1299,8 @@ list2 = sorted(set(list2) | set(list3))                                         
 print(
     '       ',
     '{:,}'.format(len(list2)),
-    'filters kept'
+    'filters kept',
+    '\n'
     )
 
 # <dedup filter if filter$important is present >
@@ -1358,7 +1362,7 @@ if file2_out_name + '_old' in filelist : os.remove(file2_out_name + '_old')
 os.rename(file2_out_name, file2_out_name + '_old')
 
 print(
-    'Backup saved:',
+    '\nBackup saved:',
     file2_out_name + '_old\n'
 )
 
