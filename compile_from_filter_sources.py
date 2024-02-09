@@ -604,7 +604,7 @@ while n_1 > len(list2) :                                                        
         if re.search(r'^[-\.\w]+\.[a-z]+/.*', line) :
             domain_part = [re.sub(r'/.*$', '', line)]                           # <add domain part />
             url_part    = [re.sub(r'^[-\.\w]+/', '/', line)]                    # <add url part/>
-            url_part    = re.sub(r'^.+(?=/[^/]+(?:/\*)?$)', '', line)           # <simplify urls keeping last /* part />
+            url_part    = re.sub(r'^.+(?=/[^/]+(?:/\*)?$)', '', url_part)       # <simplify urls keeping last /* part />
             line = domain_part + url_part
         else:
             [line]
