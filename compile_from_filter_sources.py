@@ -475,14 +475,14 @@ print(
     'filters kept'
 )
 
-print('10/21 : split , ~ separated domains ')
+print('10/21 : split , ~ space separated domains ')
 
 def f10(line) :
 
     line = re.sub(r'^,', '', line)                                              # <remove leading , />
     line = re.sub(r',$', '', line)                                              # <remove trailing , />
 
-    if re.search(r'^[/\.\,\~\w]*[\,\~][/\.\,\~\w]*$', line) and not(re.search(r'[\$\@\#]', line)) :
+    if re.search(r'^[/\.\,\~\w ]*[\,\~ ][/\.\,\~\w ]*$', line) and not(re.search(r'[\$\@\#]', line)) :
         line = line.split(',')                                                  # <split domains />
     else:
         [line]
