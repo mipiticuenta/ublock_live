@@ -731,20 +731,20 @@ print('16/20 : arrange *$ filters; keep beacon csp inline-font inline-script obj
 
 def f17(line) :
 
-    re.sub(r'\$\~?1p.*$', '', line)                                             # <remove $1p />
-    re.sub(r'\$\~?3p.*$', '', line)                                             # <remove $3p />
-    re.sub(r'\$\~?third\-party.*$', '', line)                                   # <remove $3p />
-    re.sub(r'\$\~?all.*$', '', line)                                            # <remove $all />
-    re.sub(r'\$\~?css.*$', '', line)                                            # <remove $css />
-    re.sub(r'\$\~?stylesheet.*$', '', line)                                     # <remove $css />
-    re.sub(r'\$\~?(sub)?doc(ument)?.*$', '', line)                              # <remove $(sub)doc />
-    re.sub(r'\$\~?from.*$', '', line)                                           # <remove $from />
-    re.sub(r'\$\~?image.*$', '', line)                                          # <remove $image />
-    re.sub(r'\$\~?media.*$', '', line)                                          # <remove $media />
-    re.sub(r'\$\~?popup.*$', '', line)                                          # <remove $popup />
-    re.sub(r'\$\~?rewrite.*$', '', line)                                        # <remove $rewrite />
-    re.sub(r'\$\~?script.*$', '', line)                                         # <remove $script />
-    
+    line = re.sub(r'\$\~?1p.*$', '', line)                                      # <remove $1p />
+    line = re.sub(r'\$\~?3p.*$', '', line)                                      # <remove $3p />
+    line = re.sub(r'\$\~?third\-party.*$', '', line)                            # <remove $3p />
+    line = re.sub(r'\$\~?all.*$', '', line)                                     # <remove $all />
+    line = re.sub(r'\$\~?css.*$', '', line)                                     # <remove $css />
+    line = re.sub(r'\$\~?stylesheet.*$', '', line)                              # <remove $css />
+    line = re.sub(r'\$\~?(sub)?doc(ument)?.*$', '', line)                       # <remove $(sub)doc />
+    line = re.sub(r'\$\~?from.*$', '', line)                                    # <remove $from />
+    line = re.sub(r'\$\~?image.*$', '', line)                                   # <remove $image />
+    line = re.sub(r'\$\~?media.*$', '', line)                                   # <remove $media />
+    line = re.sub(r'\$\~?popup.*$', '', line)                                   # <remove $popup />
+    line = re.sub(r'\$\~?rewrite.*$', '', line)                                 # <remove $rewrite />
+    line = re.sub(r'\$\~?script.*$', '', line)                                  # <remove $script />
+
     if re.search(r'^\*\$important.*$', line) :
         line = ''                                                               # <remove *$important filters />
     elif re.search(r'^\*\$.*\.js$', line) :
