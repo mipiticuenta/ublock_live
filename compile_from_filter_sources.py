@@ -653,7 +653,7 @@ while n_1 > len(list2) :                                                        
         if re.search(r'^[-\.\w]+\^\*[-/\.\w]+', line) :
             line = re.sub(r'\^\*', '', line)                                    # <remove spurious ^*/>
 
-        if re.search(r'^\.?[^\.]*/[-\./\w](?:/\*)?+$', line) :
+        if re.search(r'^\.?[^\.]*/[-\./\w]+(?:/\*)?$', line) :
             line = re.sub(r'^.+(?=/[^/]+(?:/\*)?$)', '', line)                  # <simplify urls keeping last /* part />
 
         return line
