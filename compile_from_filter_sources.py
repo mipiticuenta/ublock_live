@@ -780,7 +780,7 @@ def f17(line) :
     re.sub(r'\$\~?from.*$', '', line)                                           # <remove $from />
     re.sub(r'\$\~?image.*$', '', line)                                          # <remove $image />
     re.sub(r'\$\~?media.*$', '', line)                                          # <remove $media />
-    re.sub(r'\$\~?popup.*$', ''. line)                                          # <remove $popup />
+    re.sub(r'\$\~?popup.*$', '', line)                                          # <remove $popup />
     re.sub(r'\$\~?rewrite.*$', '', line)                                        # <remove $rewrite />
     re.sub(r'\$\~?script.*$', '', line)                                         # <remove $script />
     
