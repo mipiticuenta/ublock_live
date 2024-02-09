@@ -888,8 +888,8 @@ def f19(line) :
         elif re.search(r'removeparam.*formatsprofile', line) :
             line = ''
 
-    if not re.search(r'[\#\@\$]', line) :                                       # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
-        re.sub(r'^.+(?=/[^/]+(?:/\*)?$)', '', line)                             # <simplify urls keeping last /* part />
+    if re.search(r'^[\./]?[-\w]*/[-\./\w]+[-\.\w](?:/\*)?$', line) :
+        line = re.sub(r'^.+(?=/[^/]+(?:/\*)?$)', '', line)                      # <simplify urls keeping last /* part />
 
     if len(line) <= 3 :
         line = ''                                                               # <keep filters with len > 3 />
