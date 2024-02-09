@@ -148,7 +148,7 @@ list2 = list(filter(None, sorted(set(list2))))                                  
 print(
     '\n',
     '{:,}'.format(len(list2)),
-    'filters gathered'
+    'unique filters gathered'
 )
 
 # </populate main list (list2) >
@@ -322,7 +322,7 @@ def f05(line) :
         line = ''                                                               # <remove broken regex (bad termination) />
 
     line = re.sub(r'^/([-\.\+\~\!\=/\w]+)/$', r'/\1/*', line)                   # <add trailing * for /@/ url filters (false regex) />
-    line = re.sub(r'//$', '/', line)                                            # fix trailing // />
+    line = re.sub(r'/+$', '/', line)                                            # fix trailing // />
     line = re.sub(r'\$/$', '/', line)                                           # fix trailing $/ >
 
     return line
@@ -603,7 +603,8 @@ while n_1 > len(list2) :                                                        
 
         if re.search(r'^[-\.\w]+\.[a-z]+/.*', line) :
             domain_part = [re.sub(r'/.*$', '', line)]                           # <add domain part />
-            url_part     = [re.sub(r'^[-\.\w]+/', '/', line)]                   # <add url part/>
+            url_part    = [re.sub(r'^[-\.\w]+/', '/', line)]                    # <add url part/>
+            url_part    = re.sub(r'^.+(?=/[^/]+(?:/\*)?$)', '', line)           # <simplify urls keeping last /* part />
             line = domain_part + url_part
         else:
             [line]
