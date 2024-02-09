@@ -862,7 +862,6 @@ print('19/21 : simplify urls keeping last /* part')
 def f19(line) :
 
     if re.search(r'[\#\@\$]', line) :                                           # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
-    
         if re.search(r'^[_\W]*\:is', line) :
             line = ''                                                           # <remove *##:is filters />
         elif re.search(r'^[_\W]*\:matches', line) :
@@ -884,7 +883,7 @@ def f19(line) :
         elif re.search(r'removeparam.*formatsprofile', line) :
             line = ''
 
-    else :
+    if not re.search(r'[\#\@\$]', line) :                                       # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
         re.sub(r'^.+(?=/[^/]+(?:/\*)?$)', '', line)                             # <simplify urls keeping last /* part />
 
     if len(line) <= 3 :
@@ -920,8 +919,8 @@ list2  = sorted(set(list2) - set(list5))
 list5 = [
     line
     for line in list5
-    if not re.search(r'^/.*[\^\?]\*.*/$', line)                                  # <remove wrong regex filter />
-    if not re.search(r'^/.*\/\$.*/$', line)                                      # <remove wrong regex filter />
+    if not re.search(r'^/.*[\^\?]\*.*/$', line)                                 # <remove wrong regex filter />
+    if not re.search(r'^/.*\/\$.*/$', line)                                     # <remove wrong regex filter />
     if not re.search(r'^/[\^\(]http', line)                                     # <remove [^(]http regex filter />
     if len(line) > 4
 ]
