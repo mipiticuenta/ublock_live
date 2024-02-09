@@ -653,7 +653,7 @@ while n_1 > len(list2) :                                                        
         if re.search(r'^[-\.\w]+\^\*[-/\.\w]+', line) :
             line = re.sub(r'\^\*', '', line)                                    # <remove spurious ^*/>
 
-        if re.search(r'^\.?[^\.]*/[-\./\w]+$', line) :
+        if re.search(r'^\.?[^\.]*/[-\./\w](?:/\*)?+$', line) :
             line = re.sub(r'^.+(?=/[^/]+(?:/\*)?$)', '', line)                  # <simplify urls keeping last /* part />
 
         return line
@@ -909,6 +909,32 @@ print(
     'filters kept'
 )
 
+# <segregate domains from list >
+
+print('\nListing domain filters')
+
+def f_list_domains(line) :
+
+    global iana_tld
+
+    line = re.sub(r'\$important$', '', line)                                    # <discard trailing $important for domain detection />
+    if re.sub(r'^([-\w]*\.)*', '', line) in iana_tld :                          # < check for a match with (@.)+tld />
+        if line[0] == '-' :
+            line = ''                                                           # < -@.@ to be excluded from domains list />
+    else :
+        line = ''                                                               # <exclude -@.@ from domains list />
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list3 = pool.map(f_list_domains, list2)                                         # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
+
+list2 = list(filter(None, sorted(set(list2) - set(list3))))                     # <only domains part are processed in this section; @.js are kept in list2 />
+
+# </segregate domains from list >
+
 print('20/21 : apply <regex_white_list> rules', sep = '')
 
 # <segregate regex filters >
@@ -1162,35 +1188,9 @@ list2 = list(filter(None, sorted((set(list2) - set(list2du))| set(list5))))     
 
 print(
     '\n       ',
-    '{:,}'.format(len(list2) + len(list5)),
+    '{:,}'.format(len(list2) + len(list5) + len(list3)),
     'filters kept'
 )
-
-# <segregate domains from list >
-
-print('\nListing domain filters')
-
-def f_list_domains(line) :
-
-    global iana_tld
-
-    line = re.sub(r'\$important$', '', line)                                    # <discard trailing $important for domain detection />
-    if re.sub(r'^([-\w]*\.)*', '', line) in iana_tld :                          # < check for a match with (@.)+tld />
-        if line[0] == '-' :
-            line = ''                                                           # < -@.@ to be excluded from domains list />
-    else :
-        line = ''                                                               # <exclude -@.@ from domains list />
-
-    return line
-
-pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list3 = pool.map(f_list_domains, list2)                                         # <execute function by multithreading />
-pool.close()                                                                    # <close the pool and wait for the work to finish />
-pool.join()
-
-list2 = list(filter(None, sorted(set(list2) - set(list3))))                     # <only domains part are processed in this section; @.js are kept in list2 />
-
-# </segregate domains from list >
 
 # <remove leading . , L5+ domains and numerial low levels >
 
