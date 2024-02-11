@@ -315,7 +315,7 @@ print(' 5/20 : apply lower case except for cosmetics and regex')
 
 def f05(line) :
 
-    if not(re.search(r'[#]', line)) :
+    if not(re.search(r'[#\\]', line)) :
         line = line.lower()                                                     # <apply lower case except cosmetics and regex />
 
     if re.search(r'^/.*\\/$', line) :
