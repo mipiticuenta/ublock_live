@@ -394,6 +394,8 @@ def f07(line) :
         line = ''                                                               # <remove #@ #? exceptions />
     elif re.search(r'^\*?\@\@.*$', line) :
         line = ''                                                               # <remove @@ exceptions />
+    elif re.search(r'^\*#{2}\:(?!not\(html))', line)
+        line = ''                                                               # <remove cosmetic filters not matching *##:not(html) pattern />
 
     return line
 
