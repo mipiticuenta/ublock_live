@@ -1374,6 +1374,10 @@ list2.append('@@/[_\W]adunits?[_\W]/$domain=youtube.com')
 list2.append('@@||wired.com^$inline-script,1p')
 list2.append('@@||worldbank.org^$inline-script,1p')
 list2.append('@@||www.linkedin.com^$inline-script,xhr,1p')
+list2.append('youtube.com,youtube-nocookie.com##+js(set, playerAds, undefined)')
+list2.append('youtube.com,youtube-nocookie.com##+js(set, adPlacements, undefined)')
+list2.append('youtube.com,youtube-nocookie.com##+js(set, adSlots, undefined)')
+list2.append('youtube.com,youtube-nocookie.com##+js(json-prune, adPlacements playerAds adSlots important)')
 
 list2 = sorted(set(list2))
 
