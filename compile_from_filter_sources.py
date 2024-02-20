@@ -864,7 +864,6 @@ print(
 
 print('\nListing domain filters\n')
 
-
 def f_clean_domains(line) :
 
     global iana_tld
@@ -885,7 +884,6 @@ pool.close()                                                                    
 pool.join()
 
 list2 = list(filter(None, sorted(set(list2))))                                  # <only domains part are processed in this section; @.js are kept in list2 />
-
 
 def f_list_domains(line) :
 
