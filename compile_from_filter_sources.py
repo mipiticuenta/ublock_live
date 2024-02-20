@@ -864,11 +864,35 @@ print(
 
 print('\nListing domain filters\n')
 
+
+def f_clean_domains(line) :
+
+    global iana_tld
+
+    if re.sub(
+        r'^([-\w]*\.)*',
+        '',
+        re.sub(r'/(?:\$important)?$', '', line)
+    ) in iana_tld :                                                             # < check for a match with (@.)+tld />
+        if line[0] != '-' :
+            line = re.sub(r'/', '', line)                                       # < remove trailing / />
+
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list2 = pool.map(f_clean_domains, list2)                                         # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
+
+list2 = list(filter(None, sorted(set(list2))))                                  # <only domains part are processed in this section; @.js are kept in list2 />
+
+
 def f_list_domains(line) :
 
     global iana_tld
 
     line = re.sub(r'\$important$', '', line)                                    # <discard trailing $important for domain detection />
+    line = re.sub(r'/$', '', line)                                              # <discard trailing / for domain detection />
     if re.sub(r'^([-\w]*\.)*', '', line) in iana_tld :                          # < check for a match with (@.)+tld />
         if line[0] == '-' :
             line = ''                                                           # < -@.@ to be excluded from domains list />
