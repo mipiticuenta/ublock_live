@@ -581,6 +581,7 @@ while n_1 > len(list2) :                                                        
         line = re.sub(r'\.js\??[^\./]*$', '.js', line)                          # <clean up trailing .js />
         line = re.sub(r'^([-\w]+)=.*$', r'\1', line)                            # <remove trailing .=.* />
         line = re.sub(r'^([-\.\w]+)/$', r'\1', line)                            # <remove trailing /  />
+        line = re.sub(r'\^\*.*', r'', line)                                     # <remove trailing ^* />
 
         return line
 
