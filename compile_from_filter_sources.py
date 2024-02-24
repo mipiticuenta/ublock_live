@@ -544,6 +544,8 @@ while n_1 > len(list2) :                                                        
         line = re.sub(r'^\.?[-\*\w]+/', '/', line)                              # <replace leading (.)@/ with / />
         line = re.sub(r'^\*(?=[^\$\#])', '', line)                              # <remove leading * except for generic $ # filters />
         line = re.sub(r'^/([-\.\+\!\~/\w]+)/$', r'/\1/*', line)                 # <add trailing * for /@/ url filters (false regex) />
+        line = re.sub(r'\^/jquery\.[-\.\w]+', r'', line)                        # <remove leading /jquery. />
+
 
         return line
 
