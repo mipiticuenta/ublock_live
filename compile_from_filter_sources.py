@@ -529,7 +529,7 @@ while n_1 > len(list2) :                                                        
         sep = ''
     )
 
-    print('11/20 : clean up leading symbols numbers prefix etc')e
+    print('11/20 : clean up leading symbols numbers prefix etc')
 
     def f11(line) :
 
