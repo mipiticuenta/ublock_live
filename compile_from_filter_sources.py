@@ -529,7 +529,7 @@ while n_1 > len(list2) :                                                        
         sep = ''
     )
 
-    print('11/20 : clean up leading symbols numbers prefix etc')
+    print('11/20 : clean up leading symbols numbers prefix etc')e
 
     def f11(line) :
 
@@ -545,7 +545,7 @@ while n_1 > len(list2) :                                                        
         line = re.sub(r'^\*(?=[^\$\#])', '', line)                              # <remove leading * except for generic $ # filters />
         line = re.sub(r'^/([-\.\+\!\~/\w]+)/$', r'/\1/*', line)                 # <add trailing * for /@/ url filters (false regex) />
         line = re.sub(r'\^/jquery\.[-\.\w]+', r'', line)                        # <remove leading /jquery. />
-
+        line = re.sub(r'^/www.*/$', '', line)                                   # <remove /www.*/ lines />
 
         return line
 
