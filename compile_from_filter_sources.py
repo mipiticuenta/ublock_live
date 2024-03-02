@@ -546,6 +546,7 @@ while n_1 > len(list2) :                                                        
         line = re.sub(r'^/([-\.\+\!\~/\w]+)/$', r'/\1/*', line)                 # <add trailing * for /@/ url filters (false regex) />
         line = re.sub(r'^/jquery\.', r'', line)                                 # <remove leading /jquery. />
         line = re.sub(r'^/www.*/$', '', line)                                   # <remove /www.*/ lines />
+        line = re.sub(r'^\.php\?.*$', '', line)                                 # <remove .php?.* lines />
 
         return line
 
