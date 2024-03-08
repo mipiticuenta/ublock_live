@@ -1002,7 +1002,7 @@ pool.join()                                                                     
 list2wl = sorted(
     set(
         [
-            line if (type(line) == str)                                         # <prevents string atomization into chars is string type />
+            line if (type(line) == str)                                         # <prevents string atomization into chars if string type />
             else item
             for line in list2wl
             for item in line
