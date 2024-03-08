@@ -1,8 +1,14 @@
-! /[a-z0-9]{12}\/[a-zA-Z0-9\/\+\-]{97,106}/
-
 /gsi/client
 /statcounter/$important
 /onetag/$important
 /adcontrol
 /autotagger/$important
 /gdpr/important
+
+
+/autoptimize/
+/pagespeed/
+/[_\W]nuxt[^/]*\.js(on)?/
+
+! /[a-z0-9]{12}\/[a-zA-Z0-9\/\+\-]{97,106}/
+! /[_\W]nuxt[_\W]/
