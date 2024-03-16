@@ -351,8 +351,8 @@ list5 = [
     if not re.search(r'^/.*/\$.*/$', line)                                      # <remove wrong /$ in regex filter />
     if not re.search(r'^/[\^\(]http', line)                                     # <remove [^(]http regex filter />
     if not re.search(r'^/www\\\.', line)                                        # <remove /www\. regex filter />
-    if not re.search(r'^/ply\.\*//$', line)                                     # <remove /ply.*/ regex filter />
-    if not re.search(r'^/uno\.\*//$', line)                                     # <remove /uno.*/ regex filter />
+    if not re.search(r'^/ply\.\*/$', line)                                      # <remove /ply.*/ regex filter />
+    if not re.search(r'^/uno\.\*/$', line)                                      # <remove /uno.*/ regex filter />
     if len(line) > 4
 ]
 
