@@ -126,7 +126,7 @@
 ^[_\W]*adapter[_\W]*$
 ^[_\W]*adapt[_\W]*$
 ^[_\W]*added[_\W]*$
-^[_\W]*Addendum[_\W]*$
+^[_\W]*addendum[_\W]*$
 ^[_\W]*addiction[_\W]*$
 ^[_\W]*addict[_\W]*$
 ^[_\W]*additionally[_\W]*$
@@ -347,8 +347,7 @@
 ^[_\W]*annex[_\W]*$
 ^[_\W]*anniversary[_\W]*$
 ^[_\W]*announcement[_\W]*$
-^[_\W]*announcer[_\W]*$
-^[_\W]*announce[_\W]*$
+^[_\W]*announcer?[_\W]*$
 ^[_\W]*annoyed[_\W]*$
 ^[_\W]*annoying[_\W]*$
 ^[_\W]*annoy[_\W]*$
@@ -424,7 +423,6 @@
 ^[_\W]*approximate[_\W]*$
 ^[_\W]*approximation[_\W]*$
 ^[_\W]*app[_\W]*$
-^[_\W]*April[_\W]*$
 ^[_\W]*april[_\W]*$
 ^[_\W]*apt[_\W]*$
 ^[_\W]*arabia[_\W]*$
@@ -508,8 +506,7 @@
 ^[_\W]*assistance[_\W]*$
 ^[_\W]*assistant[_\W]*$
 ^[_\W]*assist[_\W]*$
-^[_\W]*associated[_\W]*$
-^[_\W]*associate[_\W]*$
+^[_\W]*associated?[_\W]*$
 ^[_\W]*association[_\W]*$
 ^[_\W]*assume[_\W]*$
 ^[_\W]*assumption[_\W]*$
@@ -566,7 +563,6 @@
 ^[_\W]*audio[_\W]*$
 ^[_\W]*audition[_\W]*$
 ^[_\W]*audit[_\W]*$
-^[_\W]*August[_\W]*$
 ^[_\W]*august[_\W]*$
 ^[_\W]*augustyn[_\W]*$
 ^[_\W]*aunt[_\W]*$
@@ -712,8 +708,6 @@
 ^[_\W]*bash[_\W]*$
 ^[_\W]*basically[_\W]*$
 ^[_\W]*basics[_\W]*$
-^[_\W]*basic[_\W]*$
-^[_\W]*Basic[_\W]*$
 ^[_\W]*basic[_\W]*$
 ^[_\W]*basing[_\W]*$
 ^[_\W]*basin[_\W]*$
@@ -1782,7 +1776,7 @@
 ^[_\W]*contestant[_\W]*$
 ^[_\W]*contest[_\W]*$
 ^[_\W]*context(?:uals?)?[_\W]*$
-^^[_\W]*continental[_\W]*$
+^[_\W]*continental[_\W]*$
 ^[_\W]*continent[_\W]*$
 ^[_\W]*contingent[_\W]*$
 ^[_\W]*continually[_\W]*$
@@ -2112,7 +2106,6 @@
 ^[_\W]*decay[_\W]*$
 ^[_\W]*deceased[_\W]*$
 ^[_\W]*deceive[_\W]*$
-^[_\W]*December[_\W]*$
 ^[_\W]*december[_\W]*$
 ^[_\W]*decent[_\W]*$
 ^[_\W]*deception[_\W]*$
@@ -2481,7 +2474,7 @@
 ^[_\W]*dominate[_\W]*$
 ^[_\W]*dominican[_\W]*$
 ^[_\W]*dominica[_\W]*$
-^[_\W]*Dominion[_\W]*$
+^[_\W]*dominion[_\W]*$
 ^[_\W]*dominos?[_\W]*$
 ^[_\W]*donate[_\W]*$
 ^[_\W]*donation[_\W]*$
@@ -2700,7 +2693,6 @@
 ^[_\W]*embarrassing[_\W]*$
 ^[_\W]*embarrassment[_\W]*$
 ^[_\W]*embarrass[_\W]*$
-^[_\W]*Embassy[_\W]*$
 ^[_\W]*embassy[_\W]*$
 ^[_\W]*embeds?[_\W]*$
 ^[_\W]*embody[_\W]*$
@@ -2710,7 +2702,7 @@
 ^[_\W]*emergency[_\W]*$
 ^[_\W]*emerge[_\W]*$
 ^[_\W]*emerging[_\W]*$
-^[_\W]*emirates[_\W]*$
+^[_\W]*emirates?[_\W]*$
 ^[_\W]*emission[_\W]*$
 ^[_\W]*emit[_\W]*$
 ^[_\W]*emojis?[_\W]*$
@@ -2721,7 +2713,6 @@
 ^[_\W]*emperor[_\W]*$
 ^[_\W]*emphasis[_\W]*$
 ^[_\W]*emphasize[_\W]*$
-^[_\W]*Empire[_\W]*$
 ^[_\W]*empire[_\W]*$
 ^[_\W]*empirical[_\W]*$
 ^[_\W]*employee[_\W]*$
@@ -2747,8 +2738,7 @@
 ^[_\W]*endangered[_\W]*$
 ^[_\W]*endanger[_\W]*$
 ^[_\W]*endeavor[_\W]*$
-^[_\W]*Endings[_\W]*$
-^[_\W]*ending[_\W]*$
+^[_\W]*endings[_\W]*$
 ^[_\W]*endless[_\W]*$
 ^[_\W]*endorsement[_\W]*$
 ^[_\W]*endorse[_\W]*$
@@ -3099,7 +3089,6 @@
 ^[_\W]*feature[ds]?[_\W]*$
 ^[_\W]*feature[_\W]*$
 ^[_\W]*feat[_\W]*$
-^[_\W]*February[_\W]*$
 ^[_\W]*february[_\W]*$
 ^[_\W]*federal[_\W]*$
 ^[_\W]*federated[_\W]*$
@@ -3215,8 +3204,8 @@
 ^[_\W]*fixture[_\W]*$
 ^[_\W]*fix[_\W]*$
 ^[_\W]*flag[-_][a-z]{2}[_\W]*$
-^[_\W]*flag[_\W]of([_\W]\w*)+[_\W]*$
 ^[_\W]*flags?[_\W]*$
+^[_\W]*flag[_\W]of([_\W]\w*)+[_\W]*$
 ^[_\W]*flake[_\W]*$
 ^[_\W]*flame[_\W]*$
 ^[_\W]*flaming[_\W]*$
@@ -3399,7 +3388,6 @@
 ^[_\W]*fresh[_\W]*$
 ^[_\W]*fret[_\W]*$
 ^[_\W]*friction[_\W]*$
-^[_\W]*Friday[_\W]*$
 ^[_\W]*friday[_\W]*$
 ^[_\W]*fridge[_\W]*$
 ^[_\W]*fried[_\W]*$
@@ -3743,7 +3731,6 @@
 ^[_\W]*gut[_\W]*$
 ^[_\W]*guyana[_\W]*$
 ^[_\W]*guy[_\W]*$
-^[_\W]*g[_\W]*$
 ^[_\W]*gym[_\W]*$
 ^[_\W]*gypsy[_\W]*$
 ^[_\W]*habillages?[_\W]*$
@@ -4131,7 +4118,6 @@
 ^[_\W]*impact[_\W]*$
 ^[_\W]*impatient[_\W]*$
 ^[_\W]*imperative[_\W]*$
-^[_\W]*Imperial[_\W]*$
 ^[_\W]*imperial[_\W]*$
 ^[_\W]*implant[_\W]*$
 ^[_\W]*implementation[_\W]*$
@@ -4168,7 +4154,7 @@
 ^[_\W]*incidents?[_\W]*$
 ^[_\W]*inclined[_\W]*$
 ^[_\W]*includes?[_\W]*$
-^^[_\W]*including[_\W]*$
+^[_\W]*including[_\W]*$
 ^[_\W]*inclusion[_\W]*$
 ^[_\W]*inclusive[_\W]*$
 ^[_\W]*income[_\W]*$
@@ -4466,7 +4452,6 @@
 ^[_\W]*jamaica[_\W]*$
 ^[_\W]*jam[_\W]*$
 ^[_\W]*janitor[_\W]*$
-^[_\W]*January[_\W]*$
 ^[_\W]*january[_\W]*$
 ^[_\W]*japanese[_\W]*$
 ^[_\W]*japan[_\W]*$
@@ -4517,11 +4502,9 @@
 ^[_\W]*jug[_\W]*$
 ^[_\W]*juice[_\W]*$
 ^[_\W]*juicy[_\W]*$
-^[_\W]*July[_\W]*$
 ^[_\W]*july[_\W]*$
 ^[_\W]*jumping[_\W]*$
 ^[_\W]*jump[_\W]*$
-^[_\W]*June[_\W]*$
 ^[_\W]*june[_\W]*$
 ^[_\W]*jungle[_\W]*$
 ^[_\W]*junior[_\W]*$
@@ -5002,7 +4985,6 @@
 ^[_\W]*maps?[_\W]*$
 ^[_\W]*marathon[_\W]*$
 ^[_\W]*marble[_\W]*$
-^[_\W]*March[_\W]*$
 ^[_\W]*march[_\W]*$
 ^[_\W]*marginal[_\W]*$
 ^[_\W]*margin[_\W]*$
@@ -5070,8 +5052,6 @@
 ^[_\W]*maxymiser[_\W]*$
 ^[_\W]*maybe[_\W]*$
 ^[_\W]*mayor[_\W]*$
-^[_\W]*may[_\W]*$
-^[_\W]*May[_\W]*$
 ^[_\W]*may[_\W]*$
 ^[_\W]*maze[_\W]*$
 ^[_\W]*mbox[_\W]*$
@@ -5268,7 +5248,6 @@
 ^[_\W]*moms?[_\W]*$
 ^[_\W]*monaco[_\W]*$
 ^[_\W]*monastery[_\W]*$
-^[_\W]*Monday[_\W]*$
 ^[_\W]*monday[_\W]*$
 ^[_\W]*monetary[_\W]*$
 ^[_\W]*monetizer[_\W]*$
@@ -5556,7 +5535,6 @@
 ^[_\W]*novelist[_\W]*$
 ^[_\W]*novelty[_\W]*$
 ^[_\W]*novel[_\W]*$
-^[_\W]*November[_\W]*$
 ^[_\W]*november[_\W]*$
 ^[_\W]*novice[_\W]*$
 ^[_\W]*no[_\W]*$
@@ -5619,7 +5597,6 @@
 ^[_\W]*occurrence[_\W]*$
 ^[_\W]*occur[_\W]*$
 ^[_\W]*ocean[_\W]*$
-^[_\W]*October[_\W]*$
 ^[_\W]*october[_\W]*$
 ^[_\W]*oddly[_\W]*$
 ^[_\W]*odds[_\W]*$
@@ -6069,9 +6046,8 @@
 ^[_\W]*physical[_\W]*$
 ^[_\W]*physician[_\W]*$
 ^[_\W]*physicist[_\W]*$
-^[_\W]*Physics[_\W]*$
 ^[_\W]*physics[_\W]*$
-^[_\W]*Physiology[_\W]*$
+^[_\W]*physiology[_\W]*$
 ^[_\W]*piano[_\W]*$
 ^[_\W]*pias?[_\W]*$
 ^[_\W]*picking[_\W]*$
@@ -6355,7 +6331,6 @@
 ^[_\W]*preserve[_\W]*$
 ^[_\W]*presidency[_\W]*$
 ^[_\W]*presidential[_\W]*$
-^[_\W]*President[_\W]*$
 ^[_\W]*president[_\W]*$
 ^[_\W]*pressing[_\W]*$
 ^[_\W]*pressure[_\W]*$
@@ -6386,9 +6361,7 @@
 ^[_\W]*primary[_\W]*$
 ^[_\W]*prime[_\W]*$
 ^[_\W]*primitive[_\W]*$
-^[_\W]*Princess[_\W]*$
 ^[_\W]*princess[_\W]*$
-^[_\W]*Prince[_\W]*$
 ^[_\W]*prince[_\W]*$
 ^[_\W]*principal[_\W]*$
 ^[_\W]*principe[_\W]*$
@@ -6522,7 +6495,6 @@
 ^[_\W]*psychic[_\W]*$
 ^[_\W]*psychological[_\W]*$
 ^[_\W]*psychologist[_\W]*$
-^[_\W]*Psychology[_\W]*$
 ^[_\W]*psychology[_\W]*$
 ^[_\W]*psycho[_\W]*$
 ^[_\W]*psych[_\W]*$
@@ -6565,7 +6537,7 @@
 ^[_\W]*purge[_\W]*$
 ^[_\W]*purple[_\W]*$
 ^[_\W]*purpose[_\W]*$
-^[_\W]*Purr[_\W]*$
+^[_\W]*purr[_\W]*$
 ^[_\W]*purse[_\W]*$
 ^[_\W]*purst[_\W]*$
 ^[_\W]*pursue[_\W]*$
@@ -7110,7 +7082,6 @@
 ^[_\W]*rout[_\W]*$
 ^[_\W]*row[_\W]*$
 ^[_\W]*royalty[_\W]*$
-^[_\W]*Royal[_\W]*$
 ^[_\W]*royal[_\W]*$
 ^[_\W]*rubber[_\W]*$
 ^[_\W]*rubbish[_\W]*$
@@ -7208,7 +7179,6 @@
 ^[_\W]*satisfying[_\W]*$
 ^[_\W]*satisfy[_\W]*$
 ^[_\W]*saturated[_\W]*$
-^[_\W]*Saturday[_\W]*$
 ^[_\W]*saturday[_\W]*$
 ^[_\W]*saucer[_\W]*$
 ^[_\W]*sauce[_\W]*$
@@ -7382,7 +7352,6 @@
 ^[_\W]*separately[_\W]*$
 ^[_\W]*separate[_\W]*$
 ^[_\W]*separation[_\W]*$
-^[_\W]*September[_\W]*$
 ^[_\W]*september[_\W]*$
 ^[_\W]*sequel[_\W]*$
 ^[_\W]*sequence[_\W]*$
@@ -8136,7 +8105,6 @@
 ^[_\W]*sumo[_\W]*$
 ^[_\W]*sum[_\W]*$
 ^[_\W]*sunburn[_\W]*$
-^[_\W]*Sunday[_\W]*$
 ^[_\W]*sunday[_\W]*$
 ^[_\W]*sunglasses[_\W]*$
 ^[_\W]*sun_ico[_\W]*$
@@ -8482,7 +8450,6 @@
 ^[_\W]*thump[_\W]*$
 ^[_\W]*thunderbolt[_\W]*$
 ^[_\W]*thunder[_\W]*$
-^[_\W]*Thursday[_\W]*$
 ^[_\W]*thursday[_\W]*$
 ^[_\W]*thus[_\W]*$
 ^[_\W]*thy[_\W]*$
@@ -8694,7 +8661,6 @@
 ^[_\W]*tube[_\W]*$
 ^[_\W]*tub[_\W]*$
 ^[_\W]*tuck[_\W]*$
-^[_\W]*Tuesday[_\W]*$
 ^[_\W]*tuesday[_\W]*$
 ^[_\W]*tug[_\W]*$
 ^[_\W]*tuition[_\W]*$
@@ -9153,7 +9119,6 @@
 ^[_\W]*web[_\W]*$
 ^[_\W]*wedding[_\W]*$
 ^[_\W]*wedge[_\W]*$
-^[_\W]*Wednesday[_\W]*$
 ^[_\W]*wednesday[_\W]*$
 ^[_\W]*\w*\.(?:edu|gob|gou?v)$
 ^[_\W]*weed[_\W]*$
