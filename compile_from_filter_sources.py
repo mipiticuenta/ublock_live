@@ -866,7 +866,7 @@ while n_1 > len(list2) :                                                        
 
     # <segregate regex filters >
 
-    list5 = list 5 + [
+    list5 = list5 + [
         line
         for line in list2
         if re.search(r'^/.+/(?:\$important)?$', line)                               # <match regex filter syntax />
