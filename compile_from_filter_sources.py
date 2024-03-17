@@ -354,6 +354,8 @@ list5 = [
     if not re.search(r'^/ply\.\*/$', line)                                      # <remove /ply.*/ regex filter />
     if not re.search(r'^/uno\.\*/$', line)                                      # <remove /uno.*/ regex filter />
     if not re.search(r'^/[a-z0-9]*\*[a-z0-9]*/$', line)                         # <remove /@*@/ bad regex filter />
+    if not re.search(r'^/\*', line)                                             # <remove /* bad regex filter />
+    if line[1: -1] not in iana_sld                                              # <remove /item/ if item in aiana_sld />
     if len(line) > 4                                                            # <remove too short regex filter />
 ]
 
@@ -885,7 +887,7 @@ while n_1 > len(list2) :                                                        
         if not re.search(r'^/uno\.\*/$', line)                                  # <remove /uno.*/ regex filter />
         if not re.search(r'^/[a-z0-9]*\*[a-z0-9]*/$', line)                     # <remove /@*@/ bad regex filter />
         if not re.search(r'^/\*', line)                                         # <remove /* bad regex filter />
-        if line[1: -1] not in iana_sld                                          # <remove /* bad regex filter />
+        if line[1: -1] not in iana_sld                                          # <remove /item/ if item in aiana_sld />
         if len(line) > 4                                                        # <remove too short regex filter />
     ]
 
