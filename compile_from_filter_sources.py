@@ -353,6 +353,7 @@ list5 = [
     if not re.search(r'^/www\\\.', line)                                        # <remove /www\. regex filter />
     if not re.search(r'^/ply\.\*/$', line)                                      # <remove /ply.*/ regex filter />
     if not re.search(r'^/uno\.\*/$', line)                                      # <remove /uno.*/ regex filter />
+    if not re.search(r'^/[a-z0-9]*\*[a-z0-9]*/$', line)                         # <remove /uno.*/ regex filter />
     if len(line) > 4
 ]
 
