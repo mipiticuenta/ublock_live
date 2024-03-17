@@ -1,4 +1,3 @@
-
 !$$ important: use always the following syntax: ^....$
 !$$ url and regex white-listing based in regex; do not enclose regex in '' nor r''
 !$$ white-listing shall not be applied to cosmetic nor removeparam filters 
@@ -2925,7 +2924,7 @@
 ^[_\W]*excm\=.*[_\W]*$
 ^[_\W]*excruciating[_\W]*$
 ^[_\W]*excuse[_\W]*$
-^[_\W]*exec(?:ute|ution)?[_\W]*$
+^[_\W]*exec?[_\W]*$
 ^[_\W]*execute[_\W]*$
 ^[_\W]*execution[_\W]*$
 ^[_\W]*executive[_\W]*$
@@ -2961,7 +2960,7 @@
 ^[_\W]*experienced[_\W]*$
 ^[_\W]*experiences?[_\W]*$
 ^[_\W]*experimental[_\W]*$
-^[_\W]*experiment(?:ation)?s?[_\W]*$
+^[_\W]*experimentations?[_\W]*$
 ^[_\W]*experiment[_\W]*$
 ^[_\W]*expertise[_\W]*$
 ^[_\W]*expert[_\W]*$
@@ -2982,7 +2981,6 @@
 ^[_\W]*export[_\W]*$
 ^[_\W]*exposed[_\W]*$
 ^[_\W]*expose[_\W]*$
-^[_\W]*expos(?:ur)?e[_\W]*$
 ^[_\W]*exposure[_\W]*$
 ^[_\W]*expression[_\W]*$
 ^[_\W]*express[_\W]*$
@@ -3076,11 +3074,10 @@
 ^[_\W]*fatigue[_\W]*$
 ^[_\W]*fat[_\W]*$
 ^[_\W]*fault[_\W]*$
-^[_\W]*favicons?(?:\.ico)?[_\W]*$
+^[_\W]*favicons?(?:\.ico?)?[_\W]*$
 ^[_\W]*favorable[_\W]*$
 ^[_\W]*favorites?[_\W]*$
 ^[_\W]*favors[_\W]*$
-^[_\W]*favor[_\W]*$
 ^[_\W]*favourite[_\W]*$
 ^[_\W]*favour[_\W]*$
 ^[_\W]*fax[_\W]*$
