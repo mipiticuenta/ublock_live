@@ -857,17 +857,17 @@ while n_1 > len(list2) :                                                        
     list5 = [
         line
         for line in list5
+        if not re.search(r'^/\*', line)                                         # <remove /* bad regex filter />
         if not re.search(r'^/.*[\^\?]\*.*/$', line)                             # <remove wrong ^* ?* in regex filter />
         if not re.search(r'^/.*/\$.*/$', line)                                  # <remove wrong /$ in regex filter />
         if not re.search(r'^/[\^\(]http', line)                                 # <remove [^(]http regex filter />
         if not re.search(r'^/www\\\.', line)                                    # <remove /www\. regex filter />
-        if not re.search(r'^/[0-9]+/$', line)                                   # <remove numerical regex filter />
         if not re.search(r'^/[0-9\*\\/]+/$', line)                              # <remove numerical regex filter />
+        if not re.search(r'[a-z0-9]\*', line)                                   # <remove regex filter containing @* or #* />
         if not re.search(r'^/[a-z0-9]*\\/[a-z0-9]*/$', line)                    # <remove /@\/@/ regex filter />
         if not re.search(r'^/[a-z0-9]*\*[a-z0-9]*/$', line)                     # <remove /@*@/ regex filter />
         if not re.search(r'^/ply\.\*/$', line)                                  # <remove /ply.*/ regex filter />
         if not re.search(r'^/uno\.\*/$', line)                                  # <remove /uno.*/ regex filter />
-        if not re.search(r'^/\*', line)                                         # <remove /* bad regex filter />
         if not re.search(r'/\\w\{8\}\\/\\w\{10\}\\\./', line)
         if line[1: -1] not in iana_sld                                          # <remove /item/ if item in aiana_sld />
         if len(line) > 5                                                        # <remove too short regex filter />
