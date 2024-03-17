@@ -857,8 +857,8 @@ while n_1 > len(list2) :                                                        
     list5 = [
         line for line in list5
         if not re.search(r'^/\*', line)                                         # <remove /* bad regex filter />
-        if not re.search(r'^/.*[\^\?]\*.*/$', line)                             # <remove wrong ^* ?* in regex filter />
-        if not re.search(r'^/.*/\$.*/$', line)                                  # <remove wrong /$ in regex filter />
+        if not re.search(r'[\^\?]\*', line)                                     # <remove wrong ^* ?* in regex filter />
+        if not re.search(r'/\$', line)                                          # <remove wrong /$ in regex filter />
         if not re.search(r'^/[\^\(]http', line)                                 # <remove [^(]http regex filter />
         if not re.search(r'^/www\\\.', line)                                    # <remove /www\. regex filter />
         if not re.search(r'^/[0-9\*\\/]+/$', line)                              # <remove numerical regex filter />
