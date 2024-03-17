@@ -1051,7 +1051,7 @@ def f20_5(pattern) :
             if (
                 pattern.search(re.sub(r'\$important$', '', line)[1: -1])
                 and 
-                not(re.search(r'\w+', re.sub(r'\$important$', '', line)[1: -1]))
+                re.search(r'\w+', re.sub(r'\$important$', '', line)[1: -1])
             )
         ]                                                                       # <remove text-only regex filters based on <regex-white_list> />
     except :
