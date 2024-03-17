@@ -765,7 +765,7 @@ while n_1 > len(list2) :                                                        
 
     def f18(line) :
 
-        if = re.search(r'^\*?#[^#]', line) :
+        if re.search(r'^\*?#[^#]', line) :
             line = ''                                                           # <remove *# not followed by # />
         elif re.search(r'^[\(\)\[\]\{\}\~]', line) :
             line = ''                                                           # <remove broken filters; improve this filter />
