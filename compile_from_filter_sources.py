@@ -391,13 +391,11 @@ print(' 7/20 : remove cosmetic filters (## #?) and exceptions (@@ #@) except *##
 
 def f07(line) :
 
-    if re.search(r'^\*?\#\#(?!\:)', line) :
-        line = ''                                                               # <remove cosmetic filters except ##: />
-    elif re.search(r'^\*?\#[^\#]', line) :
+    if re.search(r'^\*?#[^#]', line) :
         line = ''                                                               # <remove *# not followed by # />
-    elif re.search(r'^\*?\@', line) :
+    elif re.search(r'^\*?@', line) :
         line = ''                                                               # <remove @@ exceptions />
-    elif re.search(r'^\*#{2}\:(?!not\(html\))', line) :
+    elif re.search(r'^\*#{2}(?!\:not\(html\))', line) :
         line = ''                                                               # <remove cosmetic filters not matching *##:not(html) pattern />
 
     return line
@@ -686,8 +684,6 @@ while n_1 > len(list2) :                                                        
         'filters kept'
     )
 
-    # <transforming loop/>
-
     print('15/20 : remove leading ! # + & ? ^ : ; @ and @.exe @.gif @.rar @.zip')
 
     def f16(line) :
@@ -866,6 +862,8 @@ while n_1 > len(list2) :                                                        
         '{:,}'.format(len(list2) + len(list5)),
         'filters kept'
     )
+
+    # <transforming loop/>
 
 # <segregate domains from list >
 
