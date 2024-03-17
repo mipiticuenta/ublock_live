@@ -546,7 +546,7 @@ while n_1 > len(list2) :                                                        
         line = re.sub(r'^[/\.]\*', '', line)                                    # <remove leading [/\.]* />
         line = re.sub(r'^\W*(?=\$)', '*', line)                                 # <replace leading symbols followed by $ (/$ .$ =$ ?$ etc) with *$ />
         line = re.sub(r'^\.?[-\*\w]+/', '/', line)                              # <replace leading (.)@/ with / />
-        line = re.sub(r'^\*(?=[^\$\#])', '', line)                              # <remove leading * except for generic $ # filters />
+        line = re.sub(r'^\*(?=[^\$#])', '', line)                               # <remove leading * except for generic $ # filters />
         line = re.sub(r'^/([-\.\+\!\~/\w]+)/$', r'/\1/*', line)                 # <add trailing * for /@/ url filters (false regex) />
         line = re.sub(r'^/jquery\.', r'', line)                                 # <remove leading /jquery. />
         line = re.sub(r'^/www.*/$', '', line)                                   # <remove /www.*/ lines />
@@ -674,12 +674,6 @@ while n_1 > len(list2) :                                                        
     pool.join()
 
     list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
-
-    list5 = [
-        line
-        for line in list5
-        if not re.search(r'\/\\w\{8\}\\/\\w\{10\}\\\./', line)
-    ]
 
     print(
         '       ',
@@ -885,8 +879,10 @@ while n_1 > len(list2) :                                                        
         if not re.search(r'^/www\\\.', line)                                    # <remove /www\. regex filter />
         if not re.search(r'^/ply\.\*/$', line)                                  # <remove /ply.*/ regex filter />
         if not re.search(r'^/uno\.\*/$', line)                                  # <remove /uno.*/ regex filter />
+        if not re.search(r'^/[0-9]+/$', line)                                   # <remove numerical regex filter />
         if not re.search(r'^/[a-z0-9]*\*[a-z0-9]*/$', line)                     # <remove /@*@/ bad regex filter />
         if not re.search(r'^/\*', line)                                         # <remove /* bad regex filter />
+        if not re.search(r'/\\w\{8\}\\/\\w\{10\}\\\./', line)
         if line[1: -1] not in iana_sld                                          # <remove /item/ if item in aiana_sld />
         if len(line) > 4                                                        # <remove too short regex filter />
     ]
@@ -978,8 +974,8 @@ list9 = list(
                 encoding='UTF-8'
             )                                                                   # <populate <regex_white_list> />
         ] + [
-            ('^[_\W]*' + re.sub(r'\.', '\.', tld) + '[_\W]*$')
-            for tld in iana_sld
+            ('^[_\W]*' + re.sub(r'\.', '\.', sld) + '[_\W]*$')
+            for sld in iana_sld
         ]                                                                       # <add regex rules to enforce sld whitelisting />
     )                                                                           # <remove empty elements />
 )
@@ -1082,7 +1078,7 @@ def f20_5(pattern) :
     return list5wl
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list5wl = list(pool.map(f20_5, list5))                                          # <execute function by multithreading />
+list5wl = list(pool.map(f20_5, list9))                                          # <execute function by multithreading />
 pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()
 
