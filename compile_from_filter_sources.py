@@ -863,7 +863,7 @@ while n_1 > len(list2) :                                                        
         if not re.search(r'^/www\\\.', line)                                    # <remove /www\. regex filter />
         if not re.search(r'^/ply\.\*/$', line)                                  # <remove /ply.*/ regex filter />
         if not re.search(r'^/uno\.\*/$', line)                                  # <remove /uno.*/ regex filter />
-        if not re.search(r'^/[a-z]+\\/[a-z]+/$', line)                          # <remove /@\/@/ regex filter />
+        if not re.search(r'^/[a-z]*\\/[a-z]*/$', line)                          # <remove /@\/@/ regex filter />
         if not re.search(r'^/[0-9]+/$', line)                                   # <remove numerical regex filter />
         if not re.search(r'^/[a-z0-9]*\*[a-z0-9]*/$', line)                     # <remove /@*@/ bad regex filter />
         if not re.search(r'^/\*', line)                                         # <remove /* bad regex filter />
