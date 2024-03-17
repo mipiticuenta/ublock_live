@@ -369,8 +369,8 @@ print(' 6/20 : generalize cosmetic filters (*##) and exceptions (*#@ *#? *@@) ')
 
 def f06(line) :
 
-    line = re.sub(r'^.*(?=\#[\#\?])', '*', line)                                # <generalize *## *#? />
-    line = re.sub(r'^.*(?=[\#\@]\@)', '*', line)                                # <generalize *#@ *@@ />
+    line = re.sub(r'^.*(?=#[#@\?])', '*', line)                                 # <generalize *## *#@ *#? />
+    line = re.sub(r'^.*(?=@@)', '*', line)                                      # <generalize *@@ />
     line = re.sub(r'^.*removeparam\=', '*$removeparam=', line)                  # <generalize *$removeparam />
 
     return line
