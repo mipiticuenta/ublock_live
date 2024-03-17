@@ -391,11 +391,11 @@ print(' 7/20 : remove cosmetic filters (## #?) and exceptions (@@ #@) except *##
 
 def f07(line) :
 
-    if re.search(r'^\*?\#\#(?!\:).*$', line) :
+    if re.search(r'^\*?\#\#(?!\:)', line) :
         line = ''                                                               # <remove cosmetic filters except ##: />
-    elif re.search(r'^\*?\#[\@|\?].*$', line) :
-        line = ''                                                               # <remove #@ #? exceptions />
-    elif re.search(r'^\*?\@\@.*$', line) :
+    elif re.search(r'^\*?\#[^\#]', line) :
+        line = ''                                                               # <remove *# not followed by # />
+    elif re.search(r'^\*?\@', line) :
         line = ''                                                               # <remove @@ exceptions />
     elif re.search(r'^\*#{2}\:(?!not\(html\))', line) :
         line = ''                                                               # <remove cosmetic filters not matching *##:not(html) pattern />
