@@ -873,6 +873,8 @@ while n_1 > len(list2) :                                                        
         if len(line) > 5                                                        # <remove too short regex filter />
     ]
 
+    list5  = sorted(set(list5))
+
     # </segregate regex filters >
 
     # <transforming loop/>
