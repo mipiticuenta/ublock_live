@@ -31,6 +31,8 @@
 /[_\W]*fbcdn[_\W]*/$important
 /[_\W]2o7[_\W]/
 /[_\W]33across[_\W]/
+/[_\W][a-z0-9]{26}[_\W]/
+/[_\W][a-z0-9]{45}[_\W]/
 /[_\W][a-z]*foot[^/]*\.js/
 /[_\W][a-z]*rightad[^/]*\.js/
 /[_\W][a-z]*share[^/]*\.js/
@@ -119,13 +121,10 @@
 /[_\W]corot[_\W]/
 /[_\W]count(er)?[^/]*\.js/
 /[_\W]count(er)[_\W]/
-/[_\W]criteo[_\W]/
 /[_\W]cross[_\W]?domain[^/]*\.js/
 /[_\W]csp[_\W]/
 /[_\W]custom[^/]*\.js/
 /[_\W]cx[_\W]/
-/[_\W]cxense[^/]*\.js/
-/[_\W]cxense[_\W]/
 /[_\W]danelei[^/]*\.js/
 /[_\W]dasf[^/]*\.js/
 /[_\W]deal[^/]*\.js/
@@ -201,7 +200,6 @@
 /[_\W]insight[^/]*\.js/
 /[_\W]instant[_\W]?page[^/]*\.js/
 /[_\W]integration[^/]*\.js/
-/[_\W]interstitial[^/]*\.js/
 /[_\W]ip[_\W]?check[^/]*\.js/
 /[_\W]ipsos[^/]*\.js/
 /[_\W]ipsos[_\W]/
@@ -465,6 +463,7 @@
 /cooc?ki/$important
 /criteo/$important
 /csp[_\W]?report/
+/cxense/$important
 /demdex/$important
 /detector/$important
 /didomi/$important
@@ -501,6 +500,7 @@
 /images/*_ads/
 /images/cms/_*0*_/
 /incapsula/$important
+/interstitial/$important
 /jquery[_\W]?migrate/
 /js*.*.com/js/customs/
 /kick\.com\/[0-9A-z]{16}\/[0-9A-z]{16}\?apiKey=/
