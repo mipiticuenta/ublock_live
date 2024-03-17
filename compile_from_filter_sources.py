@@ -379,12 +379,9 @@ print(' 7/20 : remove cosmetic filters (## #?) and exceptions (@@ #@) except *##
 
 def f07(line) :
 
-    if re.search(r'^\*?#[^#]', line) :
-        line = ''                                                               # <remove *# not followed by # />
-    elif re.search(r'^\*?@', line) :
-        line = ''                                                               # <remove @@ exceptions />
-    elif re.search(r'^\*#{2}(?!\:not\(html\))', line) :
-        line = ''                                                               # <remove cosmetic filters not matching *##:not(html) pattern />
+    line = re.sub(r'^\*?#[^#].*$', '', line)                                    # <remove *# not followed by # />
+    line = re.sub(r'^\*?@.*$', '', line)                                        # <remove @@ exceptions />
+    line = re.sub(r'^\*#{2}(?!\:not\(html\)).*$', '', line)                     # <remove cosmetic filters not matching *##:not(html) pattern />
 
     return line
 
@@ -768,29 +765,31 @@ while n_1 > len(list2) :                                                        
 
     def f18(line) :
 
+        elif = re.search(r'^\*?#[^#]', line) :
+            line = ''                                                           # <remove *# not followed by # />
         if re.search(r'^[\(\)\[\]\{\}\~]', line) :
-            line = ''                                                               # <remove broken filters; improve this filter />
+            line = ''                                                           # <remove broken filters; improve this filter />
         elif re.search(r'^.*\([^\)]*$', line) :
-            line = ''                                                               # <remove broken filters (unterminated ( ); improve this filter for multiple () />
+            line = ''                                                           # <remove broken filters (unterminated ( ); improve this filter for multiple () />
         elif re.search(r'^.*\[[^\]]*$', line) :
-            line = ''                                                               # <remove broken filters (unterminated [ ]); improve this filter for multiple [] />
+            line = ''                                                           # <remove broken filters (unterminated [ ]); improve this filter for multiple [] />
         elif re.search(r'^.*\{[^\}]*$', line) :
-            line = ''                                                               # <remove broken filters (unterminated { ); improve this filter for multiple {} />
+            line = ''                                                           # <remove broken filters (unterminated { ); improve this filter for multiple {} />
         elif re.search(r'^/.*[\[\\].*[^/]$', line) :
-            line = ''                                                               # <remove broken filters (unterminated regex) />
+            line = ''                                                           # <remove broken filters (unterminated regex) />
         elif re.search(r'^/.*\\/$', line) :
-            line = ''                                                               # <remove broken regex (bad termination) />
+            line = ''                                                           # <remove broken regex (bad termination) />
         elif re.search(r'[\[\]\{\}\;\,\\]', line) :
-            line = ''                                                               # <remove broken regex filters />
+            line = ''                                                           # <remove broken regex filters />
 
         return line
 
-    pool = ThreadPool(thr)                                                          # <make the pool of workers />
-    list2 = pool.map(f18, list2)                                                    # <execute function by multithreading />
-    pool.close()                                                                    # <close the pool and wait for the work to finish />
+    pool = ThreadPool(thr)                                                      # <make the pool of workers />
+    list2 = pool.map(f18, list2)                                                # <execute function by multithreading />
+    pool.close()                                                                # <close the pool and wait for the work to finish />
     pool.join()
 
-    list2 = list(filter(None, sorted(set(list2))))                                  # <remove empty elements />
+    list2 = list(filter(None, sorted(set(list2))))                              # <remove empty elements />
 
     print(
         '       ',
