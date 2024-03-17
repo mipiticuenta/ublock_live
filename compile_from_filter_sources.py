@@ -864,7 +864,7 @@ while n_1 > len(list2) :                                                        
         if not re.search(r'^/[0-9]+/$', line)                                   # <remove numerical regex filter />
         if not re.search(r'^/[0-9\*\\/]+/$', line)                              # <remove numerical regex filter />
         if not re.search(r'^/[a-z0-9]*\\/[a-z0-9]*/$', line)                    # <remove /@\/@/ regex filter />
-        if not re.search(r'^/[a-z0-9]*\*[a-z0-9]*/$', line)                     # <remove /@*@/ bad regex filter />
+        if not re.search(r'^/[a-z0-9]*\*[a-z0-9]*/$', line)                     # <remove /@*@/ regex filter />
         if not re.search(r'^/ply\.\*/$', line)                                  # <remove /ply.*/ regex filter />
         if not re.search(r'^/uno\.\*/$', line)                                  # <remove /uno.*/ regex filter />
         if not re.search(r'^/\*', line)                                         # <remove /* bad regex filter />
@@ -1095,7 +1095,7 @@ print(
 
 # </write extracted regex type filters>
 
-print('20/20 : deflat url filters redundant with regex filters', sep = '')
+print('20/20 : remove url filters redundant with regex filters', sep = '')
 
 list5 = list(filter(None, sorted(set(list5))))                                  # <remove empty elements />
 
@@ -1277,25 +1277,6 @@ print(
 # <dedup filter if filter$important is present >
 
 print('dedup filter if filter($|,)important present', sep = '')
-
-#list2s = [
-#    line
-#    for line in list2
-#    if re.search(r'[\$\,]important$', line)
-#]                                                                               # <segregate ($|,)important filters />
-
-#list2  = sorted(set(list2) - set(list2s))
-
-#list2 = [
-#    line
-#    for item in tqdm(list2s, ncols = 132)
-#    for line in list2
-#    if (item != (line + '$important') and (item != (line + ',important')))
-#]
-
-#list2 = sorted(set(list2) | set(list2s))                                        # <aggregate lists />
-#del(list2s)
-
 
 def f_dedup_important(line) :
 
