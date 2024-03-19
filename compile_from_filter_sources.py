@@ -893,7 +893,7 @@ def f_clean_domains(line) :
         re.sub(r'/(?:\$important)?$', '', line)
     ) in iana_tld :                                                             # < check for a match with (@.)+tld />
         if line[0] != '-' :
-            line = re.sub(r'/', '', line)                                       # < remove trailing / />
+            line = re.sub(r'/(?:\$important)?$', '', line)                      # < remove trailing / />
 
     return line
 
