@@ -847,8 +847,7 @@ while n_1 > len(list2) :                                                        
     # <segregate regex filters >
 
     list5 = list5 + [
-        line
-        for line in list2
+        line for line in list2
         if re.search(r'^/.+/(?:\$important)?$', line)                           # <match regex filter syntax />
     ]
 
@@ -862,10 +861,8 @@ while n_1 > len(list2) :                                                        
         if not re.search(r'^/[\^\(]http', re.sub(r'\$important$', '', line))                                 # <remove [^(]http regex filter />
         if not re.search(r'^/www\\\.', re.sub(r'\$important$', '', line))                                    # <remove /www\. regex filter />
         if not re.search(r'^/[0-9\*\\/]+/$', re.sub(r'\$important$', '', line))                              # <remove numerical regex filter />
-        if not re.search(r'[a-z0-9]\*', re.sub(r'\$important$', '', line))                                   # <remove regex filter containing @* or #* />
-        if not re.search(r'^/[a-z0-9]*\\/[a-z0-9]*/$', re.sub(r'\$important$', '', line))                    # <remove /@\/@/ regex filter />
-        if not re.search(r'^/[a-z]*\\/[a-z]*/$', re.sub(r'\$important$', '', line))                          # <remove /@\/@/ regex filter />
-        if not re.search(r'^/[a-z0-9]*\*[a-z0-9]*/$', re.sub(r'\$important$', '', line))                     # <remove /@*@/ regex filter />
+        if not re.search(r'^/[a-z0-9]*\*[a-z0-9]*/$', re.sub(r'\$important$', '', line))                     # <remove regex filter containing @* or #* />
+        if not re.search(r'^/[a-z0-9]*\\?/*[a-z0-9]*/$', re.sub(r'\$important$', '', line))                  # <remove regex filter containing @\/@ />
         if not re.search(r'^/ply\.\*/$', re.sub(r'\$important$', '', line))                                  # <remove /ply.*/ regex filter />
         if not re.search(r'^/uno\.\*/$', re.sub(r'\$important$', '', line))                                  # <remove /uno.*/ regex filter />
         if not re.search(r'/\\w\{8\}\\/\\w\{10\}\\\./', re.sub(r'\$important$', '', line))
@@ -893,37 +890,35 @@ def f_clean_domains(line) :
         re.sub(r'/(?:\$important)?$', '', line)
     ) in iana_tld :                                                             # < check for a match with (@.)+tld />
         if line[0] != '-' :
-            line = re.sub(r'/(?:\$important)?$', '', line)                      # < remove trailing / />
+            line = re.sub(r'/(?:\$important)?$', '', line)                      # < remove trailing /, $important />
 
     return line
 
-pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list2 = pool.map(f_clean_domains, list2)                                         # <execute function by multithreading />
-pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool = ThreadPool(thr)                                                          # < make the pool of workers />
+list2 = pool.map(f_clean_domains, list2)                                        # < execute function by multithreading />
+pool.close()                                                                    # < close the pool and wait for the work to finish />
 pool.join()
 
-list2 = list(filter(None, sorted(set(list2))))                                  # <only domains part are processed in this section; @.js are kept in list2 />
+list2 = list(filter(None, sorted(set(list2))))                                  # < only domains part are processed in this section; @.js are kept in list2 />
 
 def f_list_domains(line) :
 
     global iana_tld
 
-    line = re.sub(r'\$important$', '', line)                                    # <discard trailing $important for domain detection />
-    line = re.sub(r'/$', '', line)                                              # <discard trailing / for domain detection />
     if re.sub(r'^([-\w]*\.)*', '', line) in iana_tld :                          # < check for a match with (@.)+tld />
         if line[0] == '-' :
             line = ''                                                           # < -@.@ to be excluded from domains list />
     else :
-        line = ''                                                               # <exclude -@.@ from domains list />
+        line = ''                                                               # < exclude -@.@ from domains list />
 
     return line
 
-pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list3 = pool.map(f_list_domains, list2)                                         # <execute function by multithreading />
-pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool = ThreadPool(thr)                                                          # < make the pool of workers />
+list3 = pool.map(f_list_domains, list2)                                         # < execute function by multithreading />
+pool.close()                                                                    # < close the pool and wait for the work to finish />
 pool.join()
 
-list2 = list(filter(None, sorted(set(list2) - set(list3))))                     # <only domains part are processed in this section; @.js are kept in list2 />
+list2 = list(filter(None, sorted(set(list2) - set(list3))))                     # < only domains part are processed in this section; @.js are kept in list2 />
 
 # </segregate domains from list >
 
