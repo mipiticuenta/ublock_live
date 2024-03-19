@@ -860,9 +860,9 @@ while n_1 > len(list2) :                                                        
         if not re.search(r'/\$', re.sub(r'\$important$', '', line))                                          # <remove wrong /$ in regex filter />
         if not re.search(r'^/[\^\(]http', re.sub(r'\$important$', '', line))                                 # <remove [^(]http regex filter />
         if not re.search(r'^/www\\\.', re.sub(r'\$important$', '', line))                                    # <remove /www\. regex filter />
-        if not re.search(r'^/[0-9\*\\/]+/$', re.sub(r'\$important$', '', line))                              # <remove numerical regex filter />
-        if not re.search(r'^/[a-z0-9]*\*[a-z0-9]*/$', re.sub(r'\$important$', '', line))                     # <remove regex filter containing @* or #* />
-        if not re.search(r'^/[a-z0-9]*\\?/*[a-z0-9]*/$', re.sub(r'\$important$', '', line))                  # <remove regex filter containing @\/@ />
+        if not re.search(r'^/[\d\*\\/]+/$', re.sub(r'\$important$', '', line))                              # <remove numerical regex filter />
+        if not re.search(r'^/[-\w]*\*[-\w]*/$', re.sub(r'\$important$', '', line))                           # <remove regex filter containing @* or #* />
+        if not re.search(r'^/[-\w\.]*\\?/*[-\w\.]*/$', re.sub(r'\$important$', '', line))                    # <remove regex filter containing @\/@ />
         if not re.search(r'^/ply\.\*/$', re.sub(r'\$important$', '', line))                                  # <remove /ply.*/ regex filter />
         if not re.search(r'^/uno\.\*/$', re.sub(r'\$important$', '', line))                                  # <remove /uno.*/ regex filter />
         if not re.search(r'/\\w\{8\}\\/\\w\{10\}\\\./', re.sub(r'\$important$', '', line))
