@@ -1830,6 +1830,8 @@
 /^(?:[-\w]+\.)*[-_0-9]+\.[a-z]+(\.[a-z]+)?//
 /^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/
 /^([-\w]+\.)*[-_0-9]+\.[a-z]+(\.[a-z]+)?/
+/^.*\exe?/
+/^[a-z0-9]{32,}/
 /^go\./$important
 /^s?metrics?\./$important
 /_6eitxwuyom
@@ -5195,7 +5197,7 @@
 /ezcl.webp
 /ezf-min
 /ezmtdata
-/ezoic/
+/ezoic/$important
 /ezosuigenerisc.js
 /ezqlog
 /ezysm/
@@ -5306,7 +5308,8 @@
 /feedifysw.js
 /feedipop.js
 /feedlybutton_
-/feeds/
+/feeds.js
+/feedsprite_
 /feedtrack/
 /fef20000e7013b3511b6
 /fel456.js
@@ -7769,7 +7772,6 @@
 /marketgid_
 /marketing.js
 /marketingtracking/
-/marquee/
 /marqueestatic/
 /mars_v.js
 /martdrum.ex

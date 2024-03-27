@@ -417,6 +417,8 @@
 /^(?:[-\w]+\.)*[-_0-9]+\.[a-z]+(\.[a-z]+)?/
 /^([-\.\w]+\.)?[-_0-9]+\.[a-z]+(\.[a-z]+)?/
 /^([-\w]+\.)*[-_0-9]+\.[a-z]+(\.[a-z]+)?/
+/^.*\exe?/
+/^[a-z0-9]{32,}/
 /^go\./$important
 /^s?metrics?\./$important
 /_a_images/
@@ -871,6 +873,7 @@
 /external-banners/
 /externalframes/
 /ezoic/
+/ezoic/$important
 /ezysm/
 /faaa/
 /faceboo?k?/$important
@@ -881,7 +884,6 @@
 /fbshare/$important
 /fbxv/
 /fdcsell/
-/feeds/
 /feedtrack/
 /ffpqvfaczp/
 /figads/
@@ -1160,7 +1162,6 @@
 /mappa/
 /marfeel/$important
 /marketingtracking/
-/marquee/
 /marqueestatic/
 /mcollector/
 /mdevp/*-advert/
