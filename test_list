@@ -2,10 +2,5 @@
 /[_\W][a-z0-9]{26}[_\W]/$badfilter
 /images\/sp*/$badfilter
 
-/warning.min.js
-/[_\W]tracing[^/]*\.js/
-/privacy[_\W]manager/$important
-/parsely/$important
-
-/arc/*
-supportmetrics.
+/[_\W]bugsnag[^/]*\.js/
+/connatix/
