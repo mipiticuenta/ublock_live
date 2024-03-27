@@ -1,6 +1,11 @@
 /[a-z0-9]{12}\/[a-zA-Z0-9\/\+\-]{97,106}/$badfilter
 /[_\W][a-z0-9]{26}[_\W]/$badfilter
 /images\/sp*/$badfilter
+/[_\W]brightspot[_\W]/$badfilter
+/[_\W]monitor[_\W]/$badfilter
 
 /[_\W]bugsnag[^/]*\.js/
 /connatix/
+
+/jquery.inview.min.js
+/moatplugin.js
