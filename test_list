@@ -3,5 +3,7 @@
 /images\/sp*/$badfilter
 
 /mscc/*
+/^.*\.exe?$/
 /^.*\.exe?\?/
-^[_\W]*analytics?[_\W]*$
+/[_\W]*optins?[^/]*\.js/
+/[_\W]*analytics?[^/]*\.js/
