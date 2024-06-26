@@ -1,0 +1,242 @@
+! description: personal minimal filters for ipfire and ublock_origin
+! expires: 1 day
+! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/light_list
+! title: light list
+*##+js(json-prune, ad_fallback)
+*##+js(json-prune, ad_id)
+*##+js(json-prune, adEnabled)
+*##+js(json-prune, adPlacements)
+*##+js(json-prune, ads)
+*##+js(json-prune, adsbygoogle)
+*##+js(json-prune, adService)
+*##+js(json-prune, adSlots)
+*##+js(json-prune, breaks)
+*##+js(json-prune, consent)
+*##+js(json-prune, Consent)
+*##+js(json-prune, ContentBreaks)
+*##+js(json-prune, cookie)
+*##+js(json-prune, Cookie)
+*##+js(json-prune, enforcementMesageVewMdel)
+*##+js(json-prune, isAd)
+*##+js(json-prune, legacyImportant)
+*##+js(json-prune, pause_ads)
+*##+js(json-prune, playerAds)
+*##+js(json-prune, playerconfig)
+*##+js(json-prune, playerConfig)
+*##+js(json-prune, promotext)
+*##+js(json-prune, shortsAdsRenderer)
+*##+js(json-prune, showAds)
+*##+js(json-prune, ssapConfig)
+*##+js(json-prune, testhide)
+*##+js(json-prune, trackingId)
+*##+js(set, *mgte*, undefined)
+*##+js(set, adPlacements, undefined)
+*##+js(set, adsbygoogle, undefined)
+*##+js(set, adSlots, undefined)
+*##+js(set, consent, undefined)
+*##+js(set, Consent, undefined)
+*##+js(set, cookie, undefined)
+*##+js(set, Cookie, undefined)
+*##+js(set, enforcementMesageVewMdel, undefined)
+*##+js(set, playerAds, undefined)
+*##+js(set, playerconfig, undefined)
+*##+js(set, playerConfig, undefined)
+*$document,csp=all
+*$other
+*$ping
+*$removeparam=/cplatform/
+*$removeparam=/key/
+*$removeparam=cbr
+*$removeparam=cr
+*$removeparam=referrer
+/[_\W]ad[sx]?[_\W]/
+/[_\W]analytics?[_\W]/$important
+/[_\W]logs?[_\W]/
+/\-mgte\.googlevideo\./$important
+/adcash/$important
+/adchoice/$important
+/adclick/$important
+/adcount/$important
+/addlink/$important
+/addthis/$important
+/addtoany/$important
+/adengine/$important
+/adfuel/$important
+/adgage/$important
+/admixer/$important
+/adnxs/$important
+/adplacement/$important
+/adrotate/$important
+/adsbygoogle/$important
+/adsense/$important
+/adslot/$important
+/adspace/$important
+/adsrotat/$important
+/adsutils/$important
+/adunit/$important
+/advcash/$important
+/adve?rt/$important
+/advinion/$important
+/advplayer/$important
+/advrotator/$important
+/adwidget/$important
+/adword/$important
+/affiliat/$important
+/aggregator/$important
+/aimatch/$important
+/akismet/$important
+/algolia/$important
+/appmeasurement/$important
+/audiencescience/$important
+/audiencesegment/$important
+/audiencetarget/$important
+/autotagger/$important
+/ban+i?ere?s?/$important
+/brightcove/$important
+/btloader/$important
+/buysellads/$important
+/carbonads/$important
+/cedexis/$important
+/chartbeat/$important
+/cli?cktr(a?c)?k/$important
+/clicker/$important
+/clicktag/$important
+/clicktale/$important
+/clickunder/$important
+/clksite/$important
+/cmpdatablock/$important
+/comscore/$important
+/connatix/$important
+/cpcontacts/$important
+/criteo/$important
+/cxense/$important
+/datadog/$important
+/demdex/$important
+/didomi/$important
+/difoosion/$important
+/dims4/default/$important
+/directad/$important
+/displayad/$important
+/doubleclick/$important
+/dynamicad/$important
+/dynamicgafunctions/$important
+/eloqua/$important
+/eventtrack/$important
+/experiment.*flag/$important
+/ezoic/$important
+/facebo/$important
+/fbevent/$important
+/fbshare/$important
+/firebase/$important
+/framead/$important
+/fuckadblock/$important
+/gen(erate)?[_\W]?204/$important
+/goclick/$important
+/googleads/$important
+/googleanalyt/$important
+/htlbid/$important
+/iadvize/$important
+/inbenta/$important
+/incapsula/$important
+/interstitial/$important
+/kaltura/$important
+/leadforensics/$important
+/ligatus/$important
+/linktrack/$important
+/mailchimp/$important
+/mailmunch/$important
+/marfeel/$important
+/metrix/$important
+/moatads/$important
+/monetate/$important
+/mqdefault/$important
+/nativead/$important
+/newegg/$important
+/oascentral/$important
+/omniture/$important
+/omtrdc/$important
+/onesignal/$important
+/onetag/$important
+/onetrust/$important
+/optanon/$important
+/opti?mi?ze?ly/$important
+/outbrain/$important
+/pagead/$important
+/pagehit/$important
+/pageview/$important
+/parsely/$important
+/permutive/$important
+/piwik/$important
+/polarbyte/$important
+/polyfill/$important
+/popcash/$important
+/popu?nder/$important
+/popu?pad/$important
+/propellerad/$important
+/pubad/$important
+/pubdirect/$important
+/quantcast/$important
+/queryly/$important
+/rekla*m/$important
+/richaudienc/$important
+/ruxitagentjs/$important
+/salesforce/$important
+/shareaholic/$important
+/sharecount/$important
+/sharethis/$important
+/sibbo/$important
+/smartclip/$important
+/smarttag/$important
+/smetrics./$important
+/sourcepoint/$important
+/sponsrad/$important
+/statcounter/$important
+/storage/*$object
+/streamsense/$important
+/sunmedia/$important
+/taboola/$important
+/tagmanager/$important
+/tarteaucitron/$important
+/teads/$important
+/tealeaf/$important
+/tealium/$important
+/telemetry/$important
+/textad/$important
+/threadeskupsimple/$important
+/tiktok/$important
+/timedtext\?/$important
+/tiqcdn/$important
+/trackview/$important
+/trackvisit/$important
+/tradedoubler/$important
+/trustarc/$important
+/uc\?export=/$important
+/uc\?id=/$important
+/usabilla/$important
+/vidyard/$important
+/visualrevenue/$important
+/voonto/$important
+/webpush/$important
+/webstat/$important
+/webstatsutil/$important
+/webtrack/$important
+/webtrend/$important
+/xhamster/$important
+/zeotap/$important
+adobedtm.com
+amazon-adsystem.com
+cedexis.com
+chartbeat.com
+cookielaw.org
+dotmetrics.net
+doubleclick.net
+evolok.net
+fundingchoicesmessages.google.com
+googlesyndication.com
+googletagmanager.com
+mrf.io
+newrelic.com
+onesignal.com
+privacy-center.org
+wemass.com
+yt3.ggpht.com

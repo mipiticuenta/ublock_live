@@ -1,0 +1,46 @@
+!===============!
+!= new filters =!
+!===============!
+
+*##:not(html):not(body):matches-attr("/.+/"="/[_\W]dfp[_\W]/i")
+*##:not(html):not(body):matches-attr("/.+/"="/^ad[_\W]/i")
+
+*##+js(json-prune, *.advertising)
+*##+js(json-prune, *.props)
+*##+js(json-prune, *.syndication)
+*##+js(json-prune, headers)
+*##+js(json-prune, playerResponse)
+*##+js(json-prune, userAgent)
+*##+js(json-prune,)
+
+/[_\W][a-z0-9]{45,}[_\W]/$badfilter
+/alltemplates.css$badfilter
+/base.min.css$badfilter
+/clientlib$badfilter
+/cmp.css$badfilter
+/images\/sp*/$badfilter
+/jqtransform.css$badfilter
+/json2.min.js$badfilter
+/loader.css$badfilter
+/lookup.js$badfilter
+/mds_com.min.js$badfilter
+/mds.css$badfilter
+/nldropdown.css$badfilter
+/pmaster5.css$badfilter
+/require.js$badfilter
+/responsive.css$badfilter
+/scripts.js$badfilter
+/snapshot.js$badfilter
+/wp-content\/uploads\/[0-9]+/$badfilter
+rbg_glass_75_e6e6e6_1x400.$badfilter
+
+@@||20minutos.es^$inline-script,1p
+@@||bloomberg.com^$inline-script,1p
+@@||investing.com^$inline-script,1p
+@@||open-vsx.org^$inline-script,1p
+@@||open-vsx.org^$xhr,1p
+@@||openvsxorg.blob.core.windows.net^$xhr,domain=open-vsx.org
+
+/app.bundle.js
+/desktop[^/]*\.m?js/$domain=~youtube.com
+app-measurement.com
