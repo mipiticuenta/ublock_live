@@ -268,7 +268,7 @@
 ^[_\W]*albe[_\W]*$
 ^[_\W]*albeit[_\W]*$
 ^[_\W]*alberto[_\W]*$
-^[_\W]*album[_\W]*$
+^[_\W]*albums?[_\W]*$
 ^[_\W]*alcohol[_\W]*$
 ^[_\W]*alcoholic[_\W]*$
 ^[_\W]*aldi[_\W]*$
@@ -8835,7 +8835,6 @@
 ^[_\W]*syrup[_\W]*$
 ^[_\W]*systematic[_\W]*$
 ^[_\W]*systems?[_\W]*$
-^[_\W]*ta[bg]s?[_\W]*$
 ^[_\W]*tab[_\W]*$
 ^[_\W]*tabl(?:et?)?[_\W]*$
 ^[_\W]*tables?[_\W]*$
@@ -8849,7 +8848,7 @@
 ^[_\W]*tactic[_\W]*$
 ^[_\W]*tactical[_\W]*$
 ^[_\W]*tad[_\W]*$
-^[_\W]*tag[_\W]*$
+^[_\W]*tags?[_\W]*$
 ^[_\W]*tail[_\W]*$
 ^[_\W]*tailor[_\W]*$
 ^[_\W]*taiwan[_\W]*$
@@ -9051,7 +9050,6 @@
 ^[_\W]*threaten[_\W]*$
 ^[_\W]*three[_\W]*$
 ^[_\W]*threshold[_\W]*$
-^[_\W]*thrill[_\W]*$
 ^[_\W]*thrilling[_\W]*$
 ^[_\W]*thrills?[_\W]*$
 ^[_\W]*thrive[_\W]*$
@@ -9066,7 +9064,7 @@
 ^[_\W]*thug[_\W]*$
 ^[_\W]*thum[_\W]*$
 ^[_\W]*thumb(?:nails?)?[_\W]*$
-^[_\W]*thumb[_\W]*$
+^[_\W]*thumbs?[_\W]*$
 ^[_\W]*thump[_\W]*$
 ^[_\W]*thunder[_\W]*$
 ^[_\W]*thunderbolt[_\W]*$
@@ -9074,7 +9072,7 @@
 ^[_\W]*thus[_\W]*$
 ^[_\W]*thy[_\W]*$
 ^[_\W]*tick[_\W]*$
-^[_\W]*ticker[_\W]*$
+^[_\W]*tickers?[_\W]*$
 ^[_\W]*ticket[_\W]*$
 ^[_\W]*tickle[_\W]*$
 ^[_\W]*tide[_\W]*$
@@ -9091,7 +9089,7 @@
 ^[_\W]*tilt[_\W]*$
 ^[_\W]*timber[_\W]*$
 ^[_\W]*time(?:line|out|recorder|r|s|series|stamp)[_\W]*$
-^[_\W]*time[_\W]*$
+^[_\W]*times?[_\W]*$
 ^[_\W]*timeline[_\W]*$
 ^[_\W]*timely[_\W]*$
 ^[_\W]*timer[_\W]*$
@@ -9107,7 +9105,8 @@
 ^[_\W]*tired[_\W]*$
 ^[_\W]*tiring[_\W]*$
 ^[_\W]*tissue[_\W]*$
-^[_\W]*tit?le[_\W]*$
+^[_\W]*title[_\W]*$
+^[_\W]*tiles?[_\W]*$
 ^[_\W]*titanic[_\W]*$
 ^[_\W]*titans?[_\W]*$
 ^[_\W]*title[_\W]*$
@@ -9314,7 +9313,7 @@
 ^[_\W]*turtle[_\W]*$
 ^[_\W]*tutor[_\W]*$
 ^[_\W]*tuvalu[_\W]*$
-^[_\W]*tweak[_\W]*$
+^[_\W]*tweaks?[_\W]*$
 ^[_\W]*tweets?[_\W]*$
 ^[_\W]*twelve[_\W]*$
 ^[_\W]*twenties[_\W]*$
@@ -9418,7 +9417,7 @@
 ^[_\W]*unidentified[_\W]*$
 ^[_\W]*unified[_\W]*$
 ^[_\W]*uniform[_\W]*$
-^[_\W]*union[_\W]*$
+^[_\W]*unions?[_\W]*$
 ^[_\W]*unique[_\W]*$
 ^[_\W]*united?[_\W]*$
 ^[_\W]*united[_\W]?states[_\W]*$
@@ -9522,6 +9521,7 @@
 ^[_\W]*vague[_\W]*$
 ^[_\W]*vaguely[_\W]*$
 ^[_\W]*vain[_\W]*$
+^[_\W]*valencia[_\W]*$
 ^[_\W]*valenciana[_\W]*$
 ^[_\W]*valency[_\W]*$
 ^[_\W]*valentine[_\W]*$
@@ -9533,7 +9533,7 @@
 ^[_\W]*valley[_\W]*$
 ^[_\W]*valuable[_\W]*$
 ^[_\W]*values?[_\W]*$
-^[_\W]*valve[_\W]*$
+^[_\W]*valves?[_\W]*$
 ^[_\W]*vampire[_\W]*$
 ^[_\W]*van[_\W]*$
 ^[_\W]*vanilla[_\W]*$
@@ -9604,11 +9604,11 @@
 ^[_\W]*vice[_\W]*$
 ^[_\W]*vicinity[_\W]*$
 ^[_\W]*vicious[_\W]*$
-^[_\W]*victim[_\W]*$
+^[_\W]*victims?[_\W]*$
 ^[_\W]*victoria[_\W]*$
 ^[_\W]*victorian[_\W]*$
 ^[_\W]*victory[_\W]*$
-^[_\W]*video?s[_\W]*$
+^[_\W]*videos?[_\W]*$
 ^[_\W]*video(?:js)?(?:playblack)?[_\W]*$
 ^[_\W]*video(?:playback|player)?s?[_\W]*$
 ^[_\W]*video\.min\.css[_\W]*$
@@ -9644,7 +9644,7 @@
 ^[_\W]*violently[_\W]*$
 ^[_\W]*violet[_\W]*$
 ^[_\W]*violin[_\W]*$
-^[_\W]*vip1[_\W]*$
+^[_\W]*vip\d[_\W]*$
 ^[_\W]*viral[_\W]*$
 ^[_\W]*virgin[_\W]*$
 ^[_\W]*virginia[_\W]*$
@@ -9656,7 +9656,7 @@
 ^[_\W]*visibility[_\W]*$
 ^[_\W]*visible[_\W]*$
 ^[_\W]*visions?[_\W]*$
-^[_\W]*visit[_\W]*$
+^[_\W]*visits?[_\W]*$
 ^[_\W]*visite?[sd]?[_\W]*$
 ^[_\W]*visiting[_\W]*$
 ^[_\W]*visitors?[_\W]*$
@@ -9747,12 +9747,12 @@
 ^[_\W]*watch[_\W]*$
 ^[_\W]*watcher[_\W]*$
 ^[_\W]*water(?:fall|mark)?[_\W]*$
-^[_\W]*water[_\W]*$
+^[_\W]*waters?[_\W]*$
 ^[_\W]*waterfall[_\W]*$
 ^[_\W]*watermelon[_\W]*$
 ^[_\W]*watson[_\W]*$
 ^[_\W]*wave(?:form)?[_\W]*$
-^[_\W]*wave[_\W]*$
+^[_\W]*waves?[_\W]*$
 ^[_\W]*wax[_\W]*$
 ^[_\W]*way[_\W]*$
 ^[_\W]*waypoints?[_\W]*$
@@ -9917,7 +9917,7 @@
 ^[_\W]*word[_\W]list[_\W]*$
 ^[_\W]*words?[_\W]*$
 ^[_\W]*work(?:er)?[_\W]*$
-^[_\W]*worker[_\W]*$
+^[_\W]*workers?[_\W]*$
 ^[_\W]*workforce[_\W]*$
 ^[_\W]*workhouse[_\W]*$
 ^[_\W]*working[_\W]*$
@@ -10017,3 +10017,6 @@
 ^[-/\.\w]+\*[-/\.\w]+$
 ^\w(\d\.)+\d$
 ^[_\W]*wpfc[_\W]*$
+^[_\W]*alabama[_\W]*$
+^[_\W]*albuquerque[_\W]*$
+^[_\W]*alchemy[_\W]*$
