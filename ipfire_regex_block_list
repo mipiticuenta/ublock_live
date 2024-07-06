@@ -109,6 +109,7 @@
 /[_\W]gdpr[_\W]/$important
 /[_\W]geo[^/]*\.m?js/
 /[_\W]geo[_\W]/
+/[_\W]getad[sv]?[_\W]/
 /[_\W]gfg[^/]*\.m?js/
 /[_\W]godo[^/]*\.m?js/
 /[_\W]gpt[^/]*\.m?js/
@@ -195,7 +196,6 @@
 /[_\W]sonar[^/]*\.m?js/
 /[_\W]sp[fm][^/]*\.m?js/
 /[_\W]spamshield[_\W]/
-/[_\W]sponsor/
 /[_\W]spot[^a-z]/
 /[_\W]status[^/]*\.m?js/
 /[_\W]sticky[_\W]/
@@ -417,6 +417,9 @@
 /gambads[^/]*\.m?js/
 /gdpr[^/]*\.m?js/
 /gen(erate)?[_\W]?204/$important
+/getadcode/$important
+/getadsdata/$important
+/getadurl/$important
 /gh/sensitiveio/sbtracker@master/
 /gigya[^/]*\.m?js/
 /goclick/$important
@@ -464,6 +467,7 @@
 /latest[^/]*\.m?js/
 /layer[^/]*\.m?js/
 /leadforensics/$important
+/leaky[_\W]paywall/$important
 /ligatus/$important
 /linktrack/$important
 /listen[^/]*\.m?js/
@@ -502,6 +506,7 @@
 /muge\.eu\/wp-content\/uploads\/20\d{2}\/\d{2}\/thumbnail/
 /munchkin[^/]*\.m?js/
 /nativead/$important
+/net\d+v\.com/
 /netdale[^/]*\.m?js/
 /network[^/]*\.m?js/
 /new[_\W]?app[^/]*\.m?js/
