@@ -10,14 +10,12 @@
 
 *##+js(json-prune,)
 
-@@||20minutos.es^$inline-script,1p
 @@||api.esios.ree.es^$xhr,1p
-@@||bloomberg.com^$inline-script,1p
 @@||esios.ree.es/images/$inline-font,1p
-@@||investing.com^$inline-script,1p
-@@||open-vsx.org^$inline-script,1p
-@@||open-vsx.org^$xhr,1p
 @@||openvsxorg.blob.core.windows.net^$xhr,domain=open-vsx.org
+@@||media-amazon.com/images/$inline-font,domain=amazon.com
+@@||media-amazon.com/images/$inline-font,domain=amazon.es
+@@/[_\W]csp[_\W]/$domain=amazon.es|amazon.com
 
 /[_\W][a-z0-9]{45,}[_\W]/$badfilter
 /alltemplates.css$badfilter
@@ -44,5 +42,4 @@
 /wp-content\/uploads\/[0-9]+/$badfilter
 rbg_glass_75_e6e6e6_1x400.$badfilter
 
-/desktop[^/]*\.m?js/$domain=~youtube.com
 app-measurement.com
