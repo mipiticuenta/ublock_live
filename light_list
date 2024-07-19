@@ -2,6 +2,8 @@
 ! expires: 1 day
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/light_list
 ! title: light list
+
+*##+js(json-prune, actionProto)
 *##+js(json-prune, ad_fallback)
 *##+js(json-prune, ad_id)
 *##+js(json-prune, adEnabled)
@@ -10,6 +12,7 @@
 *##+js(json-prune, adsbygoogle)
 *##+js(json-prune, adService)
 *##+js(json-prune, adSlots)
+*##+js(json-prune, bgChallenge)
 *##+js(json-prune, botguardData)
 *##+js(json-prune, breaks)
 *##+js(json-prune, challenge)
@@ -21,9 +24,11 @@
 *##+js(json-prune, creation)
 *##+js(json-prune, data)
 *##+js(json-prune, enforcementMesageVewMdel)
+*##+js(json-prune, enqueueTimeSec)
 *##+js(json-prune, expiration)
 *##+js(json-prune, headers)
 *##+js(json-prune, isAd)
+*##+js(json-prune, key)
 *##+js(json-prune, legacyImportant)
 *##+js(json-prune, pause_ads)
 *##+js(json-prune, playerAds)
@@ -33,6 +38,8 @@
 *##+js(json-prune, postParams)
 *##+js(json-prune, promotext)
 *##+js(json-prune, responseContext)
+*##+js(json-prune, retryScheduleIndex)
+*##+js(json-prune, rootActionId)
 *##+js(json-prune, shortsAdsRenderer)
 *##+js(json-prune, showAds)
 *##+js(json-prune, ssapConfig)
@@ -51,19 +58,206 @@
 *##+js(set, playerAds, undefined)
 *##+js(set, playerconfig, undefined)
 *##+js(set, playerConfig, undefined)
+*$beacon
+*$csp=all
 *$document,csp=all
+*$generichide
+*$ghide
+*$inline-font
+*$inline-script
+*$object
 *$other
 *$ping
+*$popunder
+*$removeparam=__hsfp
+*$removeparam=__hssc
+*$removeparam=__hstc
+*$removeparam=_branch_match_id
+*$removeparam=_branch_referrer
+*$removeparam=_bt__experiment
+*$removeparam=_ft__shop_score
+*$removeparam=_gl
+*$removeparam=_hsenc
+*$removeparam=_http_referrer
+*$removeparam=_kx
+*$removeparam=_openstat
+*$removeparam=_ref
+*$removeparam=_trkparms
+*$removeparam=_trksid
+*$removeparam=_url_referrer
+*$removeparam=/^((?!formats|profile).)*/
+*$removeparam=/^((?!formats|profile).)*/,badfilter
+*$removeparam=/^((?!smil|formats).)*/
+*$removeparam=/^((?!smil|formats).)*/,badfilter
+*$removeparam=/^itm_/
+*$removeparam=/amazonui/
+*$removeparam=/bsft_/
 *$removeparam=/cplatform/
+*$removeparam=/guce_/
+*$removeparam=/hash/
+*$removeparam=/hsa_/
 *$removeparam=/key/
+*$removeparam=/metric/
+*$removeparam=/metric/i
+*$removeparam=/mtm_/
+*$removeparam=/oft_/
+*$removeparam=/oly_/
+*$removeparam=/pk_/
+*$removeparam=/stats/
+*$removeparam=/vero_/
+*$removeparam=ad_playback,important
+*$removeparam=adconfig
+*$removeparam=adjust_adgroup
+*$removeparam=adjust_campaign
+*$removeparam=adjust_creative
+*$removeparam=affid
+*$removeparam=amdata
+*$removeparam=android_app_ver
+*$removeparam=at_campaign
+*$removeparam=at_campaign_type
+*$removeparam=at_creation
+*$removeparam=at_emailtype
+*$removeparam=at_link
+*$removeparam=at_link_id
+*$removeparam=at_link_origin
+*$removeparam=at_link_type
+*$removeparam=at_medium
+*$removeparam=at_ptr_name
+*$removeparam=at_recipient_id
+*$removeparam=at_recipient_list
+*$removeparam=at_send_date
+*$removeparam=b
+*$removeparam=bbeml
+*$removeparam=bcode
+*$removeparam=bsft_aaid
+*$removeparam=bsft_clkid
+*$removeparam=bsft_eid
+*$removeparam=bsft_ek
+*$removeparam=bsft_mid
+*$removeparam=bsft_uid
+*$removeparam=btn
+*$removeparam=bvid
+*$removeparam=caid
+*$removeparam=campid
 *$removeparam=cbr
+*$removeparam=cid
+*$removeparam=code
+*$removeparam=controller
+*$removeparam=cpcadtoken
 *$removeparam=cr
+*$removeparam=dclid
+*$removeparam=device
+*$removeparam=df
+*$removeparam=digest
+*$removeparam=discover_method
+*$removeparam=ers
+*$removeparam=et_rid
+*$removeparam=excm
+*$removeparam=fbclid
+*$removeparam=gbraid
+*$removeparam=gclid
+*$removeparam=gclsrc
+*$removeparam=gps_adid
+*$removeparam=guce_referrer
+*$removeparam=guce_referrer_sig
+*$removeparam=hsa_acc
+*$removeparam=hsa_cam
+*$removeparam=hsa_grp
+*$removeparam=hsa_kw
+*$removeparam=hsa_la
+*$removeparam=hsa_mt
+*$removeparam=hsa_net
+*$removeparam=hsa_ol
+*$removeparam=hsa_src
+*$removeparam=hsa_tgt
+*$removeparam=hsa_ver
+*$removeparam=hsctatracking
+*$removeparam=http_referer
+*$removeparam=hybrid_search_extra
+*$removeparam=hybrid_search_source
+*$removeparam=id
+*$removeparam=id,badfilter
+*$removeparam=ig_rid
+*$removeparam=igsh
+*$removeparam=imp
+*$removeparam=ir_adid
+*$removeparam=ir_campaignid
+*$removeparam=ir_partnerid
+*$removeparam=irclickid
+*$removeparam=mc_eid
+*$removeparam=mkcid
+*$removeparam=mkevt
+*$removeparam=mkrid
+*$removeparam=ml_subscriber
+*$removeparam=ml_subscriber_hash
+*$removeparam=msclkid
+*$removeparam=mtm_campaign
+*$removeparam=mtm_cid
+*$removeparam=mtm_content
+*$removeparam=mtm_group
+*$removeparam=mtm_keyword
+*$removeparam=mtm_medium
+*$removeparam=mtm_placement
+*$removeparam=mtm_source
+*$removeparam=oft_c
+*$removeparam=oft_ck
+*$removeparam=oft_d
+*$removeparam=oft_id
+*$removeparam=oft_ids
+*$removeparam=oft_k
+*$removeparam=oft_lk
+*$removeparam=oft_sk
+*$removeparam=oly_anon_id
+*$removeparam=oly_enc_id
+*$removeparam=pbss
+*$removeparam=pk_campaign
+*$removeparam=pk_cid
+*$removeparam=pk_medium
+*$removeparam=pk_source
+*$removeparam=pp
+*$removeparam=pre_prk
+*$removeparam=rb_clickid
+*$removeparam=ref
+*$removeparam=referer
 *$removeparam=referrer
+*$removeparam=rnd
+*$removeparam=rssredirect
+*$removeparam=s_cid
+*$removeparam=safarmarketid
+*$removeparam=search_id
+*$removeparam=session_id
+*$removeparam=shop_rank
+*$removeparam=si
+*$removeparam=source
+*$removeparam=source,badfilter
+*$removeparam=src
+*$removeparam=ss_email_id
+*$removeparam=ssspo
+*$removeparam=sssrc
+*$removeparam=ssuid
+*$removeparam=stigma
+*$removeparam=suid
+*$removeparam=swjiylwa
+*$removeparam=traffic_source
+*$removeparam=twclid
+*$removeparam=uid
+*$removeparam=user_id
+*$removeparam=v
+*$removeparam=v,badfilter
+*$removeparam=vasturl
+*$removeparam=vero_conv
+*$removeparam=vero_id
+*$removeparam=vgo_ee
+*$removeparam=view
+*$removeparam=wbraid
+*$removeparam=wickedid
+*$removeparam=yclid
+*$removeparam=ymclid
+*$removeparam=ysclid
 /[_\W]ad[sx]?[_\W]/
 /[_\W]analytics?[_\W]/$important
 /[_\W]logs?[_\W]/
 /\-mgte\.googlevideo\./$important
-/gsi/*$important
 /adcash/$important
 /adchoice/$important
 /adclick/$important
@@ -146,6 +340,7 @@
 /goclick/$important
 /googleads/$important
 /googleanalyt/$important
+/gsi/*$important
 /htlbid/$important
 /iadvize/$important
 /inbenta/$important
