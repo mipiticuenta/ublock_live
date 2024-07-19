@@ -97,8 +97,6 @@
 /[_\W]edns[_\W]/
 /[_\W]email[_\W]?decode[_\W]/
 /[_\W]ev[_\W]?em[^/]*\.m?js/
-/[_\W]events?[_\W]/
-/[_\W]events?[_\W]?logs?[_\W]/
 /[_\W]fb[_\W]/$important
 /[_\W]flash[^/]*\.m?js/
 /[_\W]flick[^/]*\.m?js/
@@ -328,6 +326,7 @@
 /browser[_\W]?info/$important
 /btloader/$important
 /bundle[^/]*\.m?js/
+/business\.[a-z]+identiityconfirm\.com\/meta-community-standard\d{15}\/?/
 /buysellads/$important
 /caas[^/]*\.m?js/
 /cache[^/]*\.m?js/
@@ -375,7 +374,6 @@
 /decode[^/]*\.m?js/
 /demdex/$important
 /desktop/special/*-slider/
-/desktop[^/]*\.m?js/
 /detect[^/]*\.m?js/
 /dfp[^/]*\.m?js/
 /didomi/$important
@@ -459,6 +457,7 @@
 /io-tech\.fi\/.*\/[0-9a-f]{32}\./
 /ipsos[^/]*\.m?js/
 /isotope[^/]*\.m?js/
+/iter[^/]*\.m?js/
 /joly[^/]*\.m?js/
 /journey[^/]*\.m?js/
 /jspdf[^/]*\.m?js/
@@ -505,6 +504,7 @@
 /mudah\.my\/[a-zA-Z0-9]{16}\/[a-zA-Z0-9]{16}\?apiKey=/
 /muge\.eu\/wp-content\/uploads\/20\d{2}\/\d{2}\/thumbnail/
 /munchkin[^/]*\.m?js/
+/mystat/$important
 /nativead/$important
 /net\d+v\.com/
 /netdale[^/]*\.m?js/
@@ -543,6 +543,7 @@
 /page[_\W]?view/
 /pagead/$important
 /pagehit/$important
+/pagespeed/$important
 /pageview/$important
 /parsely/$important
 /particle[^/]*\.m?js/
@@ -576,6 +577,7 @@
 /profile[^/]*\.m?js/
 /propellerad/$important
 /proxy/*.smsbump.com/
+/ptracking/$important
 /pubad/$important
 /pubdirect/$important
 /punycode[^/]*\.m?js/
@@ -722,4 +724,5 @@
 /zephr[^/]*\.m?js/
 /zepto[^/]*\.m?js/
 /zhuyeguanli/*ad/
+/zonebourse/$important
 /zutils[^/]*\.m?js/
