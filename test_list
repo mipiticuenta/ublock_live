@@ -29,6 +29,7 @@
 /images\/sp*/$badfilter
 /jqtransform.css$badfilter
 /json2.min.js$badfilter
+/lazysizes.js$badfilter
 /loader.css$badfilter
 /lookup.js$badfilter
 /mds_com.min.js$badfilter
@@ -41,9 +42,10 @@
 /scripts.js$badfilter
 /snapshot.js$badfilter
 /wp-content\/uploads\/[0-9]+/$badfilter
-rbg_glass_75_e6e6e6_1x400.$badfilter
 cnn-tls.map.fastly.net$badfilter
+rbg_glass_75_e6e6e6_1x400.$badfilter
 
 app-measurement.com
 
+*##+js(json-prune, general)
 *##+js(json-prune, isLogged)
