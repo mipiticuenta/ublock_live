@@ -994,7 +994,7 @@ def f_list_domains(line) :
     return line
 
 pool = ThreadPool(thr)                                                          # < make the pool of workers />
-list3b = pool.map(f_list_domains, list2)                                         # < execute function by multi-threading />
+list3b = pool.map(f_list_domains, list2)                                        # < execute function by multi-threading />
 pool.close()                                                                    # < close the pool and wait for the work to finish />
 pool.join()
 
@@ -1283,7 +1283,7 @@ print(
 
 def f_clean_domains(line) :
 
-    line = re.sub(r'^(?:[-_\.\d]*\.)+', '', line)                               # <remove numerical low levels from domains and preceding . />
+    line = re.sub(r'^(?:[-_\d]*\.)*', '', line)                                 # <remove numerical low levels from domains and preceding . />
     line = re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line)         # <remove L5+ domains />
 
     return line
@@ -1431,15 +1431,6 @@ print(
 
 # </deflat domain filters >
 
-#         ## <filter() + map() option>
-#         #list3 = list(map(lambda line: line if (len(list(filter(lambda substring: ('.' + substring) in line, list3_filter))) == 0) else '', tqdm(list3)))
-#         #list3 = [line for line in list3 if line]    # <cleanup empty lines/>
-#         ## </filter() + map() option>
-
-#         ## <filter() + list comprehension option; may worth it a benchmark vs map()?>
-#         ##list3 = [line for line in list3 if len(list(filter(lambda substring: ('.' + substring) in line, tqdm(list3_filter[:n])))) == 0]
-#         ## </filter() + list comprehension option>
-
 list2 = list(filter(None, sorted(set(list2) | set(list3))))                     # <joint list2, list3 />
 
 print()
@@ -1562,6 +1553,7 @@ list2.append('@@||youtube.com/youtubei/v1/next$xhr,1p')
 list2.append('@@||youtube.com/youtubei/v1/player$xhr,1p')
 list2.append('@@||youtube.com/youtubei/v1/search$xhr,1p')
 list2.append('@@||youtube.com^$xhr,1p')
+
 list2.append('*##+js(json-prune, actionProto)')
 list2.append('*##+js(json-prune, ad_fallback)')
 list2.append('*##+js(json-prune, ad_id)')
@@ -1616,6 +1608,7 @@ list2.append('*##+js(set, enforcementMesageVewMdel, undefined)')
 list2.append('*##+js(set, playerAds, undefined)')
 list2.append('*##+js(set, playerconfig, undefined)')
 list2.append('*##+js(set, playerConfig, undefined)')
+
 list2.append('*$removeparam=/^((?!formats|profile).)*/,badfilter')
 list2.append('*$removeparam=id,badfilter')
 list2.append('*$removeparam=/^((?!smil|formats).)*/,badfilter')
