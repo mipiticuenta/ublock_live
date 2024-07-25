@@ -525,6 +525,7 @@
 /nugg[_\W]?ad/$important
 /oascentral/$important
 /observe[^/]*\.m?js/
+/offer\.(?:html|php)\?(?:mobile|rechargenumber)=\d{10}\b/
 /omniture/$important
 /omtrdc/$important
 /onesignal/$important
@@ -580,6 +581,7 @@
 /propellerad/$important
 /proxy/*.smsbump.com/
 /ptracking/$important
+/pub-[a-f0-9]{32}\.r2\.dev/be[a0-9]\d{2,3}\.html\b/
 /pubad/$important
 /pubdirect/$important
 /punycode[^/]*\.m?js/
