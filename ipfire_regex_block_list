@@ -203,7 +203,6 @@
 /[_\W]suggest(ions?)?[_\W]/
 /[_\W]sw[gq]?[^/]*\.m?js/
 /[_\W]system[^/]*\.m?js/
-/[_\W]t\.gif/
 /[_\W]ta[bg][^/]*\.m?js/
 /[_\W]tag[_\W]manager/
 /[_\W]tamper[^/]*\.m?js/
@@ -247,9 +246,9 @@
 /\-mgte\.googlevideo\./$important
 /\.ex[e]?$/$important
 /\.ex[e]?\W/
-/\.gif\?/
-/\.ttf/
-/\.woff2?/
+/\.gif[\W]?/
+/\.ttf[\W]?/
+/\.woff2?[\W]?/
 /\/[0-9]+\.m?js/
 /\:\-abp\-/
 /\?rand/
@@ -272,6 +271,7 @@
 /adgage/$important
 /admin[_\W]ajax/
 /admixer/$important
+/adnews/$important
 /adnxs/$important
 /adobe[^/]*\.m?js/
 /adobe[_\W]?target/$important
@@ -514,6 +514,7 @@
 /new[_\W]?app[^/]*\.m?js/
 /new[_\W]?relic/$important
 /newegg/$important
+/newrelic/$important
 /news[_\W]?let[^/]*\.m?js/
 /nextcustom[^/]*\.m?js/
 /nfplug[^/]*\.m?js/
@@ -667,6 +668,7 @@
 /trackview/$important
 /trackvisit/$important
 /tradedoubler/$important
+/triggeredcampaign/$important
 /trustarc/$important
 /twitter[^/]*\.m?js/
 /uc\?export=/$important

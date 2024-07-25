@@ -57,11 +57,13 @@
 *##+js(set, playerConfig, undefined)
 *##+js(set, playerconfig, undefined)
 *##:not(html):not(body):matches-attr("/.+/"="/(?<!no)pop(?!ul)/i")
+*##:not(html):not(body):matches-attr("/.+/"="/Adwrapper/i")
 *##:not(html):not(body):matches-attr("/.+/"="/add.?this/i")
 *##:not(html):not(body):matches-attr("/.+/"="/addespace/i")
 *##:not(html):not(body):matches-attr("/.+/"="/addetail/i")
 *##:not(html):not(body):matches-attr("/.+/"="/addisplay/i")
 *##:not(html):not(body):matches-attr("/.+/"="/addiv/i")
+*##:not(html):not(body):matches-attr("/.+/"="/adplaceholder/i")
 *##:not(html):not(body):matches-attr("/.+/"="/anuncio/i")
 *##:not(html):not(body):matches-attr("/.+/"="/apester/i")
 *##:not(html):not(body):matches-attr("/.+/"="/billboard/i")
@@ -70,7 +72,6 @@
 *##:not(html):not(body):matches-attr("/.+/"="/campaign/i")
 *##:not(html):not(body):matches-attr("/.+/"="/casale/i")
 *##:not(html):not(body):matches-attr("/.+/"="/casino/i")
-*##:not(html):not(body):matches-attr("/.+/"="/container/i"):style(overflow: hidden !important)
 *##:not(html):not(body):matches-attr("/.+/"="/cooc?ki/i")
 *##:not(html):not(body):matches-attr("/.+/"="/csense/i")
 *##:not(html):not(body):matches-attr("/.+/"="/desvio/i")
@@ -90,7 +91,6 @@
 *##:not(html):not(body):matches-attr("/.+/"="/kelkoo/i")
 *##:not(html):not(body):matches-attr("/.+/"="/lead/i"):style(overflow: hidden !important)
 *##:not(html):not(body):matches-attr("/.+/"="/linicom/i")
-*##:not(html):not(body):matches-attr("/.+/"="/loader/i")
 *##:not(html):not(body):matches-attr("/.+/"="/mashs/i")
 *##:not(html):not(body):matches-attr("/.+/"="/menu/i"):style(overflow: hidden !important)
 *##:not(html):not(body):matches-attr("/.+/"="/nav/i"):style(overflow: hidden !important)
@@ -10700,7 +10700,6 @@
 /[_\W]suggest(ions?)?[_\W]/
 /[_\W]sw[gq]?[^/]*\.m?js/
 /[_\W]system[^/]*\.m?js/
-/[_\W]t\.gif/
 /[_\W]ta[bg][^/]*\.m?js/
 /[_\W]tag[_\W]manager/
 /[_\W]tamper[^/]*\.m?js/
@@ -10744,9 +10743,9 @@
 /\-mgte\.googlevideo\./$important
 /\.ex[e]?$/$important
 /\.ex[e]?\W/
-/\.gif\?/
-/\.ttf/
-/\.woff2?/
+/\.gif[\W]?/
+/\.ttf[\W]?/
+/\.woff2?[\W]?/
 /\/[0-9]+\.m?js/
 /\:\-abp\-/
 /\?rand/
@@ -11427,7 +11426,6 @@
 /a?*&zone_id
 /a?data
 /a?pagetype
-/a_auto
 /a_banne
 /a_cirns_mglck9wo_vsyina
 /a_decouvrir_resto
@@ -11719,7 +11717,6 @@
 /abb5db75
 /abb5ec27dd
 /abb9f35f
-/abba
 /abbb85b6
 /abbe1f03
 /abbe7d2f.js
@@ -12666,6 +12663,7 @@
 /adnami
 /adnetify.js
 /adnetwork
+/adnews/$important
 /adnext
 /adngin.js
 /adnow.js
@@ -32509,6 +32507,7 @@
 /entity_measurement
 /entity_outfit
 /entity_plus
+/entity_replacer.js
 /entity_site_334b.css
 /entity_v7
 /entitytagging.min.js
@@ -34446,7 +34445,6 @@
 /f9ysi3bwiaaq6mv
 /f9z7uvhaeaakwj4
 /f9z_vckboaa9krs
-/f_auto
 /f_faq
 /f_fm_p.min.js
 /f_gif
@@ -36314,7 +36312,6 @@
 /fldfs
 /flecha
 /fledge
-/fleetcomponents.gifqmgov.js
 /fleetcomponents.js
 /fleetmon
 /flejkpqweu69uqdnzalcpzt5pzr5upx4xtc0eoh
@@ -45952,7 +45949,6 @@
 /is_xyf3vdukxy55um
 /isa.js
 /isa8duf.css
-/isabel
 /isabroad.js
 /isactive
 /isalive
@@ -54440,7 +54436,6 @@
 /mobafire.com.js
 /mobapoker
 /mobiads.js
-/mobil
 /mobile+en.css
 /mobile.be54697c368dbe18.v1.css
 /mobile.css
@@ -56256,6 +56251,7 @@
 /newproducts
 /newpromo.
 /newqlpa
+/newrelic/$important
 /newrgotog.gi
 /news.04180f89.js
 /news.79d04eb7.css
@@ -58853,7 +58849,6 @@
 /outil
 /outils.js
 /outline.js
-/outlined
 /outlined.1fca0b14529b52bee732101f20f00fd6.scss
 /outloging.js
 /outloging2.js
@@ -61281,10 +61276,8 @@
 /portfolio.min.js
 /portfoliovoltron
 /porthole.min.js
-/portillos
 /portjump
 /portland.js
-/portland_
 /portofla
 /portosbakery.js
 /portraitinline
@@ -61292,15 +61285,12 @@
 /portsaad.pn
 /portugal.js
 /portugalist.js
-/portugues
 /pos3_qsr
 /posh
 /positec.js
-/positio
 /position?task
 /position[^/]*\.m?js/
 /position_js*_*_
-/positioned
 /positionpages
 /positivegrid.com
 /positronx.js
@@ -63013,7 +63003,6 @@
 /q9y2tbh1xjmxgst2.js
 /q?c=*&t=wap_stream&l
 /q_1a3sclkijomxnpxkzw
-/q_auto
 /q_bulluyn_jm4uicap
 /q_cidi8p1wsuhhx9w5gzohnczo9q8
 /q_gutbz8ymk
@@ -74138,7 +74127,6 @@
 /texts.js
 /textslide.js
 /textstream.js
-/textual
 /textunitcomponent
 /teywfyzcyzavzbofy6jpgj
 /tez_walker_on_the_field
@@ -75870,6 +75858,7 @@
 /trigger.ogg
 /trigger_anonymous
 /triggered_email_attribution
+/triggeredcampaign/$important
 /triggerparams.js
 /triggerquotecollect
 /triggerrunner.js
@@ -80103,7 +80092,6 @@
 /w9p9xn_cover_f1
 /w9s.js
 /w_5xlqrtgj
-/w_auto
 /w_emkeahsb
 /w_fmmxoqbgo
 /w_shown
@@ -87595,7 +87583,6 @@
 22fde50d.js
 22feda42d5ff1ab6.js
 22media.worl
-22newestforumvendorgif.gif.90ed448181f7da3318ae6d78a4de1097.
 22pk5kb37ai3yd7.papre
 22pornz.sit
 22qne.la1
@@ -133647,7 +133634,6 @@ g9.over
 g9g.eufa.j
 g9g.eufa.js
 g_6ryxwjyrrp19nwgaacwiaaaib
-g_auto
 g_backtop
 g_center
 g_content_recommendation
@@ -138366,7 +138352,6 @@ highlight.i
 highlight_718x400_r3.
 highlighter.js
 highline_1.
-highres.
 highstreettvcom01.wt
 highway.00
 highyield.knative.linear
@@ -141206,7 +141191,6 @@ info.fxcm
 info.gcgfinancial
 info.geechs
 info.gekko
-info.gifu
 info.glamping
 info.go
 info.good
@@ -155259,7 +155243,6 @@ mobi20i2582.hubside.f
 mobicite.hb
 mobiel.
 mobiile.systemredirect
-mobil.
 mobil.aftonbladet.s
 mobil.db
 mobil.hubside.f
@@ -157920,7 +157903,6 @@ newmovierulz.
 newpay.ico
 newpelis.
 newpl.stat
-news.006
 news.2019.ha
 news.2020.condescending
 news.2020.ha
@@ -162559,7 +162541,6 @@ outline.e44509047a0a79fb604be98bb10ec5bc.
 outline.j16
 outline.remember
 outline_afwakd
-outlined.
 outlook.01
 outlook.f
 outlook.live.com._6tqjfb_hmyqup_npe6dhc
@@ -179963,6 +179944,7 @@ sum.s3.ap
 sum.titul
 sumano.inf
 sumarketing.co.u
+sumatra.a
 sumberqq.
 summ.
 summaries.min.js
