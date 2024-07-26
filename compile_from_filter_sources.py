@@ -6,7 +6,6 @@ Compile a single deduplicated block list from url sources
 
     # <sprint #1: dedup urls/>
     # <sprint #2: apply whitelisting to cosmetic filters/>
-    # <sprint #3: check for mismatching () [] {} />
 
 # </product backlog>
 
@@ -73,7 +72,7 @@ except:
 list1 = sorted(
     list(
         filter(
-            None, 
+            None,
             [
                 re.sub(r'^ *!.*$', '', line.strip())                            # <remove ! comments />
                 for line in open(file1_in_name, encoding='UTF-8')
@@ -104,7 +103,7 @@ def f00(line) :
             timeout = 20,
             proxies = proxy_servers
         )
-        if (response.status_code) :
+        if response.status_code :
             list2.update(response.text.split('\n'))
             print(
                 line,
@@ -160,10 +159,11 @@ iana_tld = set()
 
 response = requests.get(
     'https://data.iana.org/TLD/tlds-alpha-by-domain.txt',
+    timeout = 20,
     proxies = proxy_servers
 )
 
-if (response.status_code) :
+if response.status_code :
     iana_tld.update(response.text.split('\n'))
 
 iana_tld = sorted(
@@ -277,7 +277,7 @@ print(
 
 print('\nListing domain filters\n')
 
-def f_clean_domains(line) :
+def f_clean_domains_1(line) :
 
     global iana_sld
 
@@ -292,7 +292,7 @@ def f_clean_domains(line) :
     return line
 
 pool = ThreadPool(thr)                                                          # < make the pool of workers />
-list2 = pool.map(f_clean_domains, list2)                                        # < execute function by multi-threading />
+list2 = pool.map(f_clean_domains_1, list2)                                      # < execute function by multi-threading />
 pool.close()                                                                    # < close the pool and wait for the work to finish />
 pool.join()
 
@@ -959,22 +959,8 @@ while not converged :                                                           
 
 print('\nListing domain filters\n')
 
-def f_clean_domains(line) :
-
-    global iana_sld
-
-    if re.sub(
-        r'^([-\w]*\.)*',
-        '',
-        re.sub(r'/(?:\$important)?$', '', line)
-    ) in iana_sld :                                                             # < check for a match with (@.)+sld />
-        if line[0] != '-' :
-            line = re.sub(r'/(?:\$important)?$', '', line)                      # < remove trailing /, $important />
-
-    return line
-
 pool = ThreadPool(thr)                                                          # < make the pool of workers />
-list2 = pool.map(f_clean_domains, list2)                                        # < execute function by multi-threading />
+list2 = pool.map(f_clean_domains_1, list2)                                      # < execute function by multi-threading />
 pool.close()                                                                    # < close the pool and wait for the work to finish />
 pool.join()
 
@@ -1281,7 +1267,7 @@ print(
 
 # <remove leading . , L5+ domains and numerial low levels >
 
-def f_clean_domains(line) :
+def f_clean_domains_2(line) :
 
     line = re.sub(r'^(?:[-_\d]*\.)+', '', line)                                 # <remove numerical low levels from domains and preceding . />
     line = re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line)         # <remove L5+ domains />
@@ -1289,7 +1275,7 @@ def f_clean_domains(line) :
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list3 = pool.map(f_clean_domains, list3)                                        # <execute function by multi-threading />
+list3 = pool.map(f_clean_domains_2, list3)                                      # <execute function by multi-threading />
 pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()
 
