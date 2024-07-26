@@ -1283,7 +1283,7 @@ print(
 
 def f_clean_domains(line) :
 
-    line = re.sub(r'^(?:[-_\d]*\.)*', '', line)                                 # <remove numerical low levels from domains and preceding . />
+    line = re.sub(r'^(?:[-_\d]*\.)+', '', line)                                 # <remove numerical low levels from domains and preceding . />
     line = re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line)         # <remove L5+ domains />
 
     return line
