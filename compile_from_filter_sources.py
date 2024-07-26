@@ -1270,7 +1270,7 @@ print(
 def f_clean_domains_2(line) :
 
     line = re.sub(r'^(?:[-_\d]*\.)+', '', line)                                 # <remove numerical low levels from domains and preceding . />
-    line = re.sub(r'^(?:[-\w]+\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line)         # <remove L5+ domains />
+    line = re.sub(r'^(?:[^\.]*\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line)         # <remove L5+ domains />
 
     return line
 
@@ -1358,9 +1358,9 @@ def f_deflat_domain(line) :
     global iana_sld
     global list8
 
-    if not(re.sub(r'^[-\w]+\.', '', line) in iana_sld) :
-        if not(re.sub(r'^[-\w]+\.', '', line) in list8) :
-            line = re.sub(r'^[-\w]+\.', '', line)
+    if not(re.sub(r'^[^\.]*\.', '', line) in iana_sld) :
+        if not(re.sub(r'^[^\.]*\.', '', line) in list8) :
+            line = re.sub(r'^[^\.]+\.', '', line)
 
     counter.value += 1
     print(
