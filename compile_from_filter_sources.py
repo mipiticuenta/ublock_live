@@ -4,10 +4,9 @@ Compile a single deduplicated block list from url sources
 
 # <product backlog>
 
-    # <sprint #1: segregate domains along steps for process speed up />
-    # <sprint #2: dedup urls/>
-    # <sprint #3: apply whitelisting to cosmetic filters/>
-    # <sprint #4: check for mismatching () [] {} />
+    # <sprint #1: dedup urls/>
+    # <sprint #2: apply whitelisting to cosmetic filters/>
+    # <sprint #3: check for mismatching () [] {} />
 
 # </product backlog>
 
@@ -102,6 +101,7 @@ def f00(line) :
     try :
         response = requests.get(
             line,
+            timeout = 20,
             proxies = proxy_servers
         )
         if (response.status_code) :
