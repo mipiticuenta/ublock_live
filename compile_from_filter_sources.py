@@ -1673,7 +1673,7 @@ print(
     sep = ''
 )
 
-# </write domain type filters />
+# </write domain type filters>
 
 # <write extracted url type filters>
 
@@ -1720,7 +1720,7 @@ print(
     sep = ''
 )
 
-# </write extracted url type filters />
+# </write extracted url type filters>
 
 # <write extracted filters except domains>
 
