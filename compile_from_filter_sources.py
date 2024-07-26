@@ -98,6 +98,7 @@ def f00(line) :
     list2 = set()
 
     try :
+
         response = requests.get(
             line,
             timeout = 20,
@@ -119,7 +120,9 @@ def f00(line) :
                 flush = True
             )
         list2 = sorted(list2)
+
     except :
+
         print(
             'Error: could not load ' + line,
             flush = True
@@ -157,11 +160,20 @@ print(
 
 iana_tld = set()
 
-response = requests.get(
-    'https://data.iana.org/TLD/tlds-alpha-by-domain.txt',
-    timeout = 20,
-    proxies = proxy_servers
-)
+try :
+
+    response = requests.get(
+        'https://data.iana.org/TLD/tlds-alpha-by-domain.txt',
+        timeout = 20,
+        proxies = proxy_servers
+    )
+
+except :
+
+    print(
+        'Error: could not load https://data.iana.org/TLD/tlds-alpha-by-domain.txt',
+        flush = True
+    )
 
 if response.status_code :
     iana_tld.update(response.text.split('\n'))
