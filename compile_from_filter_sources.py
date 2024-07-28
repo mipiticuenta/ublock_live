@@ -891,7 +891,7 @@ while not converged :                                                           
     def f19(line) :
 
         if not re.search(r'[#@\\]', line) :
-            line = line.lower()                                                     # <apply lower case except cosmetics and regex />
+            line = line.lower()                                                 # <apply lower case except cosmetics and regex />
 
         if re.search(r'[\#\@\$]', line) :                                       # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
             if re.search(r'^[_\W]*\:is', line) :
@@ -1623,6 +1623,8 @@ list2.append('*$removeparam=id,badfilter')
 list2.append('*$removeparam=/^((?!smil|formats).)*/,badfilter')
 list2.append('*$removeparam=source,badfilter')
 list2.append('*$removeparam=v,badfilter')
+
+list2.append('/^([^\.]*\.)*[\d]+\.([a-z]{2,}\.)?[a-z]{2,}/$important')
 
 list2 = list(filter(None, sorted(set(list2))))
 
