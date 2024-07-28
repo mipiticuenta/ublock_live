@@ -357,6 +357,9 @@ def f04(line) :
         and not re.search(r'^/.*/(?:\$important)?$', line)
         ) :
         line = ''                                                               # <remove lines containing : except for regex and cosmetics filters/>
+    
+    line = re.sub(r'\$xmlhttprequest', '$xhr', line)                            # unify $xhr
+    line = re.sub(r'\$\~xmlhttprequest', '$~xhr', line)                         # unify $xhr
 
     return line
 
