@@ -358,8 +358,8 @@ def f04(line) :
         ) :
         line = ''                                                               # <remove lines containing : except for regex and cosmetics filters/>
     
-    line = re.sub(r'\$xmlhttprequest', '$xhr', line)                            # unify $xhr
-    line = re.sub(r'\$\~xmlhttprequest', '$~xhr', line)                         # unify $xhr
+    line = re.sub(r'\$xmlhttprequest', '$xhr', line)                            # <unify $xhr />
+    line = re.sub(r'\$\~xmlhttprequest', '$~xhr', line)                         # <unify $xhr />
 
     return line
 

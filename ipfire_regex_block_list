@@ -240,6 +240,7 @@
 /[_\W]wow[^/]*\.m?js/
 /[_\W]wpp[^/]*\.m?js/
 /[_\W]xn\-\-/$important
+/\&ctier/$important
 /\-mgte\.googlevideo\./$important
 /\.exe?(?:\W.*)?/
 /\.gif(?:\W.*)?/
@@ -252,6 +253,7 @@
 /\?rand/
 /\w\^\*\w/
 /^(?:[-\w]+\.)*[-_0-9]+\.[a-z]+(\.[a-z]+)?/
+/^([^\.]*\.)*[\d]+\.([a-z]{2,}\.)?[a-z]{2,}/$important
 /^(https?://)?[a-z]{10,12}\.easy\.co($|/.*$)/
 /accsoffer[^/]*\.m?js/
 /adblock[^/]*\.m?js/
