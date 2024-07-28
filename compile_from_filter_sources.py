@@ -1413,6 +1413,13 @@ list3 = pool.map(f_deflat_domain, list3)                                        
 pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()
 
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list3 = pool.map(f_clean_domains_2, list3)                                      # <execute function by multi-threading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
+
+list3 = list(filter(None, sorted(set(list3) - set(iana_sld))))                  # <remove IANA sld root domains />
+
 list3b = [item for item in list3 if item[0] == '-']
 
 list3 = list(filter(None, sorted(set(list3) - set(list3b))))
