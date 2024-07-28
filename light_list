@@ -12,18 +12,17 @@
 *##+js(json-prune, adsbygoogle)
 *##+js(json-prune, adService)
 *##+js(json-prune, adSlots)
-*##+js(json-prune, advertisement)
 *##+js(json-prune, bgChallenge)
 *##+js(json-prune, botguardData)
 *##+js(json-prune, breaks)
 *##+js(json-prune, challenge)
 *##+js(json-prune, consent)
 *##+js(json-prune, Consent)
-*##+js(json-prune, content_block)
 *##+js(json-prune, ContentBreaks)
 *##+js(json-prune, cookie)
 *##+js(json-prune, Cookie)
 *##+js(json-prune, creation)
+*##+js(json-prune, data)
 *##+js(json-prune, enforcementMesageVewMdel)
 *##+js(json-prune, enqueueTimeSec)
 *##+js(json-prune, expiration)
@@ -31,12 +30,15 @@
 *##+js(json-prune, isAd)
 *##+js(json-prune, key)
 *##+js(json-prune, legacyImportant)
-*##+js(json-prune, listeners)
 *##+js(json-prune, pause_ads)
 *##+js(json-prune, playerAds)
 *##+js(json-prune, playerconfig)
 *##+js(json-prune, playerConfig)
+*##+js(json-prune, playerResponse.adPlacements)
+*##+js(json-prune, playerResponse.adSlots)
+*##+js(json-prune, playerResponse.playerAds)
 *##+js(json-prune, playerResponse)
+*##+js(json-prune, plg_system_ochaddads)
 *##+js(json-prune, postParams)
 *##+js(json-prune, promotext)
 *##+js(json-prune, responseContext)
@@ -48,7 +50,6 @@
 *##+js(json-prune, testhide)
 *##+js(json-prune, trackingId)
 *##+js(json-prune, X-YouTube-Ad-Signals)
-*##+js(set, *mgte*, undefined)
 *##+js(set, adPlacements, undefined)
 *##+js(set, adsbygoogle, undefined)
 *##+js(set, adSlots, undefined)
@@ -60,6 +61,9 @@
 *##+js(set, playerAds, undefined)
 *##+js(set, playerconfig, undefined)
 *##+js(set, playerConfig, undefined)
+*##+js(set, playerResponse.adPlacements, undefined)
+*##+js(set, v, undefined)
+*##+js(set, ytInitialPlayerResponse.adSlots, undefined)
 
 *$beacon
 *$csp=all
@@ -76,6 +80,7 @@
 *$removeparam=__hssc
 *$removeparam=__hstc
 *$removeparam=_branch_match_id
+*$removeparam=_ft__shop_score
 *$removeparam=_gl
 *$removeparam=_hsenc
 *$removeparam=_kx
@@ -83,32 +88,28 @@
 *$removeparam=_ref
 *$removeparam=_trkparms
 *$removeparam=_trksid
-*$removeparam=/^((?!formats|profile).)*/
-*$removeparam=/^((?!formats|profile).)*/,badfilter
-*$removeparam=/^((?!smil|formats).)*/
-*$removeparam=/^((?!smil|formats).)*/,badfilter
-*$removeparam=/itm_/
+*$removeparam=/^itm_/
+*$removeparam=/^pk_/
 *$removeparam=/adconfig/
 *$removeparam=/amazonui/
 *$removeparam=/bsft_/
 *$removeparam=/campaign/
+*$removeparam=/clkid/
 *$removeparam=/creation/
 *$removeparam=/experiment/
 *$removeparam=/guce_/
 *$removeparam=/hash/
 *$removeparam=/hsa_/
+*$removeparam=/itm_/
 *$removeparam=/key/
 *$removeparam=/metric/
-*$removeparam=/metric/i
 *$removeparam=/mtm_/
 *$removeparam=/oft_/
 *$removeparam=/oly_/
-*$removeparam=/^pk_/
 *$removeparam=/platform/
 *$removeparam=/referr?er/
 *$removeparam=/score/
 *$removeparam=/stats/
-*$removeparam=/subscribe/
 *$removeparam=/vero_/
 *$removeparam=/wicked/
 *$removeparam=adconfig
@@ -157,27 +158,31 @@
 *$removeparam=hsctatracking
 *$removeparam=hybrid_search_extra
 *$removeparam=hybrid_search_source
-*$removeparam=id
-*$removeparam=id,badfilter
 *$removeparam=ig_rid
 *$removeparam=igsh
 *$removeparam=imp
 *$removeparam=ir_adid
 *$removeparam=ir_partnerid
-*$removeparam=/click/
+*$removeparam=irclickid
 *$removeparam=mc_eid
 *$removeparam=mkcid
 *$removeparam=mkevt
 *$removeparam=mkrid
-*$removeparam=/clkid/
+*$removeparam=ml_subscriber
+*$removeparam=ml_subscriber_hash
+*$removeparam=msclkid
 *$removeparam=oly_anon_id
 *$removeparam=oly_enc_id
 *$removeparam=pbss
+*$removeparam=pk_cid
+*$removeparam=pk_medium
+*$removeparam=pk_source
 *$removeparam=pp
 *$removeparam=pre_prk
 *$removeparam=rb_clickid
 *$removeparam=ref
 *$removeparam=rnd
+*$removeparam=rs
 *$removeparam=rssredirect
 *$removeparam=s_cid
 *$removeparam=safarmarketid
@@ -185,8 +190,7 @@
 *$removeparam=session_id
 *$removeparam=shop_rank
 *$removeparam=si
-*$removeparam=source
-*$removeparam=source,badfilter
+*$removeparam=sqp
 *$removeparam=src
 *$removeparam=ss_email_id
 *$removeparam=ssspo
@@ -199,8 +203,6 @@
 *$removeparam=twclid
 *$removeparam=uid
 *$removeparam=user_id
-*$removeparam=v
-*$removeparam=v,badfilter
 *$removeparam=vasturl
 *$removeparam=vero_conv
 *$removeparam=vero_id
