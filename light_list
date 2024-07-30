@@ -3,6 +3,12 @@
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/light_list
 ! title: light list
 
+*##+js(json-prune, {}.adCreativeId)
+*##+js(json-prune, {}.adCreativeMetaData)
+*##+js(json-prune, {}.adId)
+*##+js(json-prune, {}.adPlacementMetaData)
+*##+js(json-prune, {}.advertiserIdNS)
+*##+js(json-prune, {}.campaignId)
 *##+js(json-prune, actionProto)
 *##+js(json-prune, ad_fallback)
 *##+js(json-prune, ad_id)
@@ -45,6 +51,7 @@
 *##+js(json-prune, rootActionId)
 *##+js(json-prune, shortsAdsRenderer)
 *##+js(json-prune, showAds)
+*##+js(json-prune, sponsoredLoggingUrl)
 *##+js(json-prune, ssapConfig)
 *##+js(json-prune, testhide)
 *##+js(json-prune, trackingId)
