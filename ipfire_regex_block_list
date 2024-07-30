@@ -209,6 +209,7 @@
 /[_\W]test[_\W]/
 /[_\W]tg\-[^/]*\.m?js/
 /[_\W]timer[^/]*\.m?js/
+/[_\W]tinypass[^/]*\.m?js/
 /[_\W]tra?c?k(er)?[_\W]/
 /[_\W]tra?c?k[^/]*\.m?js/
 /[_\W]tra?ck$/$important
@@ -253,7 +254,7 @@
 /\?rand/
 /\w\^\*\w/
 /^(?:[-\w]+\.)*[-_0-9]+\.[a-z]+(\.[a-z]+)?/
-/^([^\.]*\.)*[\d]+\.([a-z]{2,}\.)?[a-z]{2,}/$important
+/^([^\./]*\.)*[\d]+\.([a-z]{2,}\.)?[a-z]{2,}/$important
 /^(https?://)?[a-z]{10,12}\.easy\.co($|/.*$)/
 /accsoffer[^/]*\.m?js/
 /adblock[^/]*\.m?js/
@@ -606,6 +607,7 @@
 /scheduler[^/]*\.m?js/
 /segment[^/]*\.m?js/
 /sensor[_\W]collect/$important
+/sensorcollect/$important
 /sentiments[^/]*\.m?js/
 /serch\d{2}\.biz\/\?p=/
 /service[_\W]*bar/$important
