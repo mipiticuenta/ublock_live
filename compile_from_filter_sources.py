@@ -1644,7 +1644,7 @@ list2.append('*$removeparam=/^((?!smil|formats).)*/,badfilter')
 list2.append('*$removeparam=source,badfilter')
 list2.append('*$removeparam=v,badfilter')
 
-list2.append('/^([^\.]*\.)*[\d]+\.([a-z]{2,}\.)?[a-z]{2,}/$important')
+list2.append('/^([^\./]*\.)*[\d]+\.([a-z]{2,}\.)?[a-z]{2,}/$important')
 
 list2 = list(filter(None, sorted(set(list2))))
 
