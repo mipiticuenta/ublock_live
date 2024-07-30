@@ -1503,8 +1503,6 @@ print(
 
 print('Added generic filters and exceptions\n')
 
-list2.append('/^(?:[-\w]+\.)*[-_0-9]+\.[a-z]+(\.[a-z]+)?/')                     # <add filter to block [-_/\.0-9]+\.[a-z]+ domains />
-
 list2.append('*$beacon')
 list2.append('*$csp=all')
 list2.append('*$inline-font')
