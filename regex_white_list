@@ -719,9 +719,9 @@
 ^[_\W]*backbone[_\W]*$
 ^[_\W]*backdrop[_\W]*$
 ^[_\W]*backend[_\W]*$
-^[_\W]*backfill[_\W]*$
+^[_\W]*backfills?[_\W]*$
 ^[_\W]*backgroun(?:ds?)?[_\W]*$
-^[_\W]*backpack[_\W]*$
+^[_\W]*backpacks?[_\W]*$
 ^[_\W]*backstage[_\W]*$
 ^[_\W]*backup[_\W]*$
 ^[_\W]*backwards?[_\W]*$
@@ -733,8 +733,8 @@
 ^[_\W]*badges?[_\W]*$
 ^[_\W]*badly[_\W]*$
 ^[_\W]*baeldung[_\W]*$
-^[_\W]*bag[_\W]*$
-^[_\W]*baggage[_\W]*$
+^[_\W]*bags?[_\W]*$
+^[_\W]*baggages?[_\W]*$
 ^[_\W]*bahamas[_\W]*$
 ^[_\W]*bahrain[_\W]*$
 ^[_\W]*bail[_\W]*$
@@ -1662,7 +1662,7 @@
 ^[_\W]*clothier[_\W]*$
 ^[_\W]*clothing[_\W]*$
 ^[_\W]*cloud[_\W]*$
-^[_\W]*cloud[_\W]\w[_\W]*$
+^[_\W]*cloud[_\W]*\w[_\W]*$
 ^[_\W]*cloudflare[_\W]*$
 ^[_\W]*cloudfront[_\W]*$
 ^[_\W]*cloudy[_\W]*$
@@ -3505,7 +3505,7 @@
 ^[_\W]*fix[_\W]*$
 ^[_\W]*fixed[_\W]*$
 ^[_\W]*fixture[_\W]*$
-^[_\W]*flag[_\W]of([_\W]\w*)+[_\W]*$
+^[_\W]*flag[_\W]*of[_\W]*\w+[_\W]*$
 ^[_\W]*flag[-_][a-z]{2}[_\W]*$
 ^[_\W]*flags?[_\W]*$
 ^[_\W]*flake[_\W]*$
@@ -8628,7 +8628,7 @@
 ^[_\W]*static\.\w[_\W]*$
 ^[_\W]*statics?[_\W]*$
 ^[_\W]*stations?[_\W]*$
-^[_\W]*statis?[_\W]\w[_\W]*$
+^[_\W]*statis?[_\W]*\w[_\W]*$
 ^[_\W]*statistical[_\W]*$
 ^[_\W]*statistically[_\W]*$
 ^[_\W]*statistics[_\W]*$
@@ -10164,7 +10164,8 @@
 ^[-/\.\w]+\*[-/\.\w]+$
 ^\w(\d\.)+\d$
 ^[_\W]*shortcuts?[_\W]*$
-
 ^[_\W]*bimota[_\W]*$
-
-/birds
+^[_\W]*nav[_\W]*bar[_\W]*$
+^[_\W]*bact[_\W]*$
+^[_\W]*back[_\W]*to[_\W]*top[_\W]*$
+^[_\W]*badg[_\W]*$
