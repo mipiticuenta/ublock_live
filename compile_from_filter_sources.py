@@ -32,7 +32,7 @@ local_proxy     = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
 thr             = os.cpu_count()
 t_start         = time()
 
-# </ libs & settings>
+# </libs & settings>
 
 print(
                                                                   '\n',
