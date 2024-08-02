@@ -253,7 +253,6 @@
 /\:\-abp\-/
 /\?rand/
 /\w\^\*\w/
-/^(?:[-\w]+\.)*[-_0-9]+\.[a-z]+(\.[a-z]+)?/
 /^([^\./]*\.)*[\d]+\.([a-z]{2,}\.)?[a-z]{2,}/$important
 /^(https?://)?[a-z]{10,12}\.easy\.co($|/.*$)/
 /accsoffer[^/]*\.m?js/
@@ -410,12 +409,13 @@
 /foot[^/]*\.m?js/
 /framead/$important
 /freemcserver\.net\/assets\/[a-zA-Z]{10,30}\/[a-zA-Z]{10,30}\.js\?v=17/
+/freemcserver\.net\/assets\/[a-zA-Z]{10,32}\/[a-zA-Z]{10,32}\.js\?v=17/
 /freyr[^/]*\.m?js/
 /fuckadblock/$important
 /gallium[^/]*\.m?js/
 /gambads[^/]*\.m?js/
 /gdpr[^/]*\.m?js/
-/gen(erate)?[_\W]*204/$important
+/gen(erate)?[_\W]*204/
 /getadcode/$important
 /getadsdata/$important
 /getadurl/$important
