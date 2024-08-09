@@ -25,6 +25,7 @@
 ^[_\W]*[a-z][-_][0-9]+[_\W]*$
 ^[_\W]*[a-z]{,2}[-_][a-z]{,2}[_\W]*$
 ^[_\W]*[a-z0-9]{1,3}[_\W]*$
+^[_\W]*/brooklyn[_\W]*$
 ^[_\W]*\:not\(input\)\:not\(textarea\)$
 ^[_\W]*\:xpath[_\W]*$
 ^[_\W]*\d[_\W]light[_\W]*$
@@ -1155,6 +1156,7 @@
 ^[_\W]*bristle[_\W]*$
 ^[_\W]*britannica[_\W]*$
 ^[_\W]*british[_\W]*$
+^[_\W]*brittany[_\W]*$
 ^[_\W]*bro[_\W]*$
 ^[_\W]*broad[_\W]*$
 ^[_\W]*broadband[_\W]*$
@@ -1164,8 +1166,11 @@
 ^[_\W]*broke[_\W]*$
 ^[_\W]*broken[_\W]*$
 ^[_\W]*broker[_\W]*$
+^[_\W]*bronco[_\W]*$
+^[_\W]*bronson[_\W]*$
 ^[_\W]*bronze[_\W]*$
 ^[_\W]*brood[_\W]*$
+^[_\W]*brooks?[_\W]*$
 ^[_\W]*broth[_\W]*$
 ^[_\W]*brother[_\W]*$
 ^[_\W]*brotherhood[_\W]*$
@@ -1279,9 +1284,12 @@
 ^[_\W]*calendars?[_\W]*$
 ^[_\W]*calf[_\W]*$
 ^[_\W]*calibres?[_\W]*$
+^[_\W]*calientes?[_\W]*$
+^[_\W]*california[_\W]*$
 ^[_\W]*californian[_\W]*$
 ^[_\W]*call(?:out)?[_\W]*$
 ^[_\W]*call[_\W]*$
+^[_\W]*call[_\W]*back[_\W]*$
 ^[_\W]*called[_\W]*$
 ^[_\W]*caller[_\W]*$
 ^[_\W]*calling[_\W]*$
@@ -1505,6 +1513,8 @@
 ^[_\W]*cheat[_\W]*$
 ^[_\W]*check(?:out|status|sum)?[_\W]*$
 ^[_\W]*check[_\W]*$
+^[_\W]*check[_\W]*box[_\W]*$
+^[_\W]*checked[_\W]*$
 ^[_\W]*checker[_\W]*$
 ^[_\W]*checklist[_\W]*$
 ^[_\W]*checkmark[_\W]*$
@@ -3748,6 +3758,7 @@
 ^[_\W]*fumble[_\W]*$
 ^[_\W]*fume[_\W]*$
 ^[_\W]*fun[_\W]*$
+^[_\W]*func[_\W]*$
 ^[_\W]*function[_\W]*$
 ^[_\W]*functional[_\W]*$
 ^[_\W]*functioning[_\W]*$
@@ -3864,6 +3875,7 @@
 ^[_\W]*germinating[_\W]*$
 ^[_\W]*gesture[_\W]*$
 ^[_\W]*get[_\W]*$
+^[_\W]*get[_\W]*file[_\W]*$
 ^[_\W]*getty[_\W]*$
 ^[_\W]*gettyimages[_\W]*$
 ^[_\W]*gfdl;[_\W]*$
@@ -6885,11 +6897,18 @@
 ^[_\W]*poverty[_\W]*$
 ^[_\W]*powder[_\W]*$
 ^[_\W]*power[_\W]*$
+^[_\W]*power[_\W]*pack[_\W]*$
 ^[_\W]*powerbi[_\W]*$
 ^[_\W]*powered[_\W]*$
 ^[_\W]*poweredby[_\W]*$
 ^[_\W]*powerful[_\W]*$
+^[_\W]*powering[_\W]*$
+^[_\W]*powerkit[_\W]*$
 ^[_\W]*powerless[_\W]*$
+^[_\W]*powerpoint[_\W]*$
+^[_\W]*powershell[_\W]*$
+^[_\W]*powershot[_\W]*$
+^[_\W]*powerview[_\W]*$
 ^[_\W]*practical[_\W]*$
 ^[_\W]*practically[_\W]*$
 ^[_\W]*practice[_\W]*$
@@ -10071,6 +10090,7 @@
 ^[_\W]*witness[_\W]*$
 ^[_\W]*witty[_\W]*$
 ^[_\W]*wizard[_\W]*$
+^[_\W]*wmts[_\W]*$
 ^[_\W]*woe[_\W]*$
 ^[_\W]*woff[\d]?[_\W]*$
 ^[_\W]*wolf[_\W]*$
@@ -10190,14 +10210,3 @@
 ^[_\W]*zoomcrop[_\W]*$
 ^[-/\.\w]+\*[-/\.\w]+$
 ^\w(\d\.)+\d$
-^[_\W]*get[_\W]*file[_\W]*$
-^[_\W]*powering[_\W]*$
-^[_\W]*power[_\W]*pack[_\W]*$
-^[_\W]*powerpoint[_\W]*$
-^[_\W]*powerkit[_\W]*$
-^[_\W]*powershell[_\W]*$
-^[_\W]*powershot[_\W]*$
-^[_\W]*powerview[_\W]*$
-^[_\W]*wmts[_\W]*$
-^[_\W]*checked[_\W]*$
-^[_\W]*check[_\W]*box[_\W]*$
