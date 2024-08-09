@@ -53,7 +53,6 @@
 /[_\W]bnr[_\W]/
 /[_\W]brightspot[_\W]/$important
 /[_\W]bump[^/]*\.m?js/
-/[_\W]callback[_\W]/
 /[_\W]ccpa[^/]*\.m?js/
 /[_\W]chunks?[_\W]/
 /[_\W]clavis[^/]*\.m?js/
@@ -72,7 +71,6 @@
 /[_\W]cookies?[_\W]/
 /[_\W]copy[^/]*\.m?js/
 /[_\W]corot[_\W]/
-/[_\W]count(?:er)?[_\W]/
 /[_\W]csp[_\W]/
 /[_\W]cx[_\W]/
 /[_\W]dasf[^/]*\.m?js/
@@ -219,8 +217,6 @@
 /[_\W]trd[^/]*\.m?js/
 /[_\W]truvid[^/]*\.m?js/
 /[_\W]tscp[_\W]/
-/[_\W]u?tag[^/]*\.m?js/
-/[_\W]u?tag[_\W]/
 /[_\W]uac[^/]*\.m?js/
 /[_\W]uedata[_\W]/
 /[_\W]uelogin[_\W]/
@@ -232,6 +228,8 @@
 /[_\W]user[^/]*\.m?js/
 /[_\W]user[_\W]*data[_\W]/$important
 /[_\W]user[_\W]*info[_\W]/$important
+/[_\W]utag[^/]*\.m?js/
+/[_\W]utag[_\W]/
 /[_\W]utms?[_\W]/$important
 /[_\W]v[at]m[^/]*\.m?js/
 /[_\W]visitor[_\W]/
@@ -391,7 +389,6 @@
 /dynamicad/$important
 /dynamicgafunctions/$important
 /eloqua/$important
-/embed[^/]*\.m?js/
 /enter/?url=dont_go_away/
 /eumodal[^/]*\.m?js/
 /eventtrack/$important
