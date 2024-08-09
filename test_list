@@ -2,9 +2,6 @@
 != new filters =!
 !===============!
 
-*##:not(html):not(body):matches-attr("/.+/"="/[_\W]dfp[_\W]/i")
-*##:not(html):not(body):matches-attr("/.+/"="/^ad[_\W]/i")
-
 *$removeparam=/amazonui/
 *$removeparam=/AmazonUI/
 
@@ -25,6 +22,7 @@
 /base.min.css$badfilter
 /clientlib$badfilter
 /cmp.css$badfilter
+/common.js$badfilter
 /frontend.min.css$badfilter
 /images\/sp*/$badfilter
 /jqtransform.css$badfilter
@@ -44,6 +42,8 @@
 /shared.css$badfilter
 /snapshot.js$badfilter
 /wp-content\/uploads\/[0-9]+/$badfilter
+assets.291/javascripts/common.js$badfilter
+assets.291/stylesheets/builder_embed.css$badfilter
 cnn-tls.map.fastly.net$badfilter
 rbg_glass_75_e6e6e6_1x400.$badfilter
 
