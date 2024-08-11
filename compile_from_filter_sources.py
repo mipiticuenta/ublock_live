@@ -600,7 +600,7 @@ while not converged :                                                           
         'filters kept'
     )
 
-    print('11/20 : remove @.exe @.gif @.rar @.zip')
+    print('11/20 : remove @.exe @.gif @.rar @.zip @woff @woff2 @ttf')
 
     def f16(line) :
 
@@ -616,6 +616,10 @@ while not converged :                                                           
             line = ''                                                           # <remove @.webp filters />
         elif re.search(r'\.mp4$', line) :
             line = ''                                                           # <remove @.mp4 filters />
+        elif re.search(r'\.woff2?$', line) :
+            line = ''                                                           # <remove @.woff filters />
+        elif re.search(r'\.ttf?$', line) :
+            line = ''                                                           # <remove @.ttf filters />
 
         return line
 
