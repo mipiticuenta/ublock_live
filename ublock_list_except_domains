@@ -140,11 +140,19 @@
 *$removeparam=/^((?!formats|profile).)*/,badfilter
 *$removeparam=/^((?!smil|formats).)*/
 *$removeparam=/^((?!smil|formats).)*/,badfilter
+*$removeparam=/^at_/
 *$removeparam=/^itm_/
+*$removeparam=/^ml_/
 *$removeparam=/^pk_/
+*$removeparam=/^vero_/
+*$removeparam=/ab_test/
 *$removeparam=/adconfig/
-*$removeparam=/amazonui/
+*$removeparam=/adgroup/
+*$removeparam=/affid/
+*$removeparam=/anon_id/
+*$removeparam=/at_link/
 *$removeparam=/bsft_/
+*$removeparam=/callback/
 *$removeparam=/callback/i
 *$removeparam=/campaign/
 *$removeparam=/clkid/
@@ -155,7 +163,6 @@
 *$removeparam=/hash/
 *$removeparam=/hsa_/
 *$removeparam=/itm_/
-*$removeparam=/key/
 *$removeparam=/metric/
 *$removeparam=/metric/i
 *$removeparam=/mtm_/
@@ -164,6 +171,7 @@
 *$removeparam=/platform/
 *$removeparam=/referr?er/
 *$removeparam=/score/
+*$removeparam=/session_id/
 *$removeparam=/stats/
 *$removeparam=/vero_/
 *$removeparam=/wicked/
@@ -188,7 +196,6 @@
 *$removeparam=adjust_adgroup
 *$removeparam=adjust_campaign
 *$removeparam=adjust_creative
-*$removeparam=affid
 *$removeparam=amdata
 *$removeparam=android_app_ver
 *$removeparam=at_campaign
@@ -288,7 +295,6 @@
 *$removeparam=oft_lk
 *$removeparam=oft_sk
 *$removeparam=oly_anon_id
-*$removeparam=oly_enc_id
 *$removeparam=pbss
 *$removeparam=pk_campaign
 *$removeparam=pk_cid
@@ -296,6 +302,7 @@
 *$removeparam=pk_source
 *$removeparam=pp
 *$removeparam=pre_prk
+*$removeparam=rand
 *$removeparam=rb_clickid
 *$removeparam=ref
 *$removeparam=referer
@@ -335,6 +342,7 @@
 *$removeparam=wickedid
 *$removeparam=yclid
 *$removeparam=ymclid
+*$removeparam=yscli
 *$removeparam=ysclid
 *$websocket
 *$xhr
@@ -3986,6 +3994,7 @@
 /14lide721_logo_tag_white_ba1f46fb
 /14mbvt
 /14myvvte4kpf3dtcmrk6qb.js
+/14pontos14jogos.jpeg?160494023
 /15002new5home.css
 /1506redes
 /151208_hr1_dsc7845
@@ -5658,6 +5667,7 @@
 /36afb4ef
 /36cb5c2723cc3d44.min.js
 /36cca6af
+/36culjifmas7
 /36e7cb08aafecae0efaf878d2277e2c1.js
 /36hjny2q3ygpxhdhiz9
 /36ismr1zw
@@ -10764,7 +10774,6 @@
 /\://go\./$important
 /\://s?metrics?\./$important
 /\:\-abp\-/
-/\?rand/
 /\w\^\*\w/
 /^([^\./]*\.)*[\d]+\.([a-z]{2,}\.)?[a-z]{2,}/$important
 /^(https?://)?[a-z]{10,12}\.easy\.co($|/.*$)/
@@ -10815,6 +10824,7 @@
 /__embed.min.js
 /__enzuzo
 /__hic_post
+/__ia_thumb.jp
 /__lrm__agvhca==__lrm__-2744321076.js
 /__lrm__agvhca==__lrm__.dynamic.js.gz
 /__lrm__yw5hbhl0awnz__lrm__.min.js
@@ -11552,6 +11562,7 @@
 /aab86080_rgb
 /aaba7b7d6c14c8116ce8aa07adc50e5b.js
 /aabba754
+/aabd?rand
 /aabet
 /aabnau7khnmaabhcnhcvba
 /aabrnfa.img
@@ -11786,6 +11797,7 @@
 /abd.js
 /abd.min.js
 /abd11f38aa270bdb3fcb44b4fccc75e1.js
+/abd?rand
 /abdc18c0
 /abdc38e5
 /abdc8d25
@@ -11855,7 +11867,9 @@
 /abs.js
 /absdk
 /absdmc
+/absjymgwonbftdiowscixf71.bi
 /absmartly.min.js
+/abss
 /abstracts
 /absuhab7kc
 /abtest
@@ -12200,7 +12214,6 @@
 /active_selectors
 /activecampaign
 /activision_logo_white
-/activit
 /activities.frame
 /activities.js
 /activity.min.js
@@ -12219,7 +12232,6 @@
 /activitystreamglobal.js
 /activitystreamobject.js
 /actornameblock.15d02928.js
-/actors
 /actorscenesblock.d6f6e23c.js
 /actorstatsblock.65c5ec77.js
 /actortagsblock.20dca4fc.js
@@ -12232,7 +12244,6 @@
 /acuity
 /acuityadsrtb
 /acumin
-/acura
 /acuraweb
 /acuy24ct.js
 /acvr3
@@ -12668,7 +12679,6 @@
 /adminpanel.js
 /admiral.js
 /admiral.md5
-/admissions
 /admitad.js
 /admitag.min.js
 /admithub
@@ -14147,6 +14157,7 @@
 /amenclinics.com.js
 /amend2
 /amends_data
+/amendujt.png?166433906
 /ameolxwtxjf7x
 /amer
 /americamagazine.org.js
@@ -14471,7 +14482,6 @@
 /antiqueno6
 /antiqueolive
 /antirightclick.js
-/antony
 /antylia
 /anu3rlx0e8
 /anunci
@@ -14565,6 +14575,7 @@
 /apcjldcm3qu
 /apcjngg
 /apcrecwidget.6e220e058d.css
+/apctntoca.bm
 /apcvaforoww
 /apda
 /apda_chapter.js
@@ -15330,6 +15341,7 @@
 /artdeco
 /arte.css
 /arte_cover
+/arte_oficial.jpg?159889317
 /artemis.min.js
 /arthritis
 /arthritisorg
@@ -20113,6 +20125,7 @@
 /button.min.js.gz
 /button.min.md5
 /button.njk
+/button.pn
 /button.prod.min.js
 /button.vue
 /button1.js
@@ -21601,6 +21614,7 @@
 /caption.js
 /captions.js
 /captivated.css
+/capturar.jpg?161618421
 /capture.attn.tv.js
 /capture.js
 /capture0410
@@ -22469,6 +22483,7 @@
 /ceedee
 /ceee4a04
 /ceeed3e8
+/cef.png?160618085
 /cef083ae
 /cef7fd54
 /cef8ea8f
@@ -22807,6 +22822,7 @@
 /changeattribute.js
 /changecartdataandlink.js
 /changelocale
+/changemonitor
 /changeshippingandcurrency
 /changetext.js
 /changyan_config_
@@ -24083,6 +24099,7 @@
 /cntcc
 /cntmysc4bcaqxdmmvb7r
 /cntooytkmrrdimj75r
+/cntt_prem.jpg?149201807
 /cnu.js
 /cnvr
 /cnvtr.js
@@ -24752,6 +24769,7 @@
 /confetti
 /confetti.browser.min.js
 /confetti.min.js
+/confi
 /confiant.js
 /config.css
 /config.xml
@@ -25414,6 +25432,7 @@
 /cpt2nze.css
 /cpuibutton
 /cpuiforminput
+/cpumonitor.js
 /cpv_dl.js
 /cpv_fm_
 /cpx_cms
@@ -27359,6 +27378,7 @@
 /daxguide
 /daxpatterns
 /day0psxvwaazqom
+/daya
 /dayjs
 /dayjs-with-plugins@1.0.3/dist/dayjs-with-plugins.min.js
 /dayjs.min.js
@@ -30081,6 +30101,7 @@
 /dynamix
 /dynasty
 /dynatrace.js
+/dynatracemonitor
 /dynavap
 /dynavibootstrap
 /dynbak.min.js
@@ -32434,6 +32455,7 @@
 /emolmigrador.min.js
 /emoltv
 /emome2
+/emonitor.
 /emoqq
 /emory
 /emoryuniversity
@@ -33155,6 +33177,7 @@
 /esadk1wgil1rug5uek9oflnegb
 /esapps.yottie.js
 /esavc9j3
+/esc.js
 /esc_bbc
 /esc_daily
 /escaper.js
@@ -34173,6 +34196,7 @@
 /f26faddb
 /f2785d876182e4c84b2f.min.js
 /f279decf
+/f284.jpg?164166889
 /f28f.5fb6ec807e.js
 /f28fcaaa
 /f29a0f0149cba5f2.min.css
@@ -35584,6 +35608,7 @@
 /fe_activity_438
 /fe_activity_hpe
 /fe_logo_1_8c5bd215
+/fe_performance_monitor
 /fe_prod.js
 /fea5d97c
 /feaqfw1xebaqpho
@@ -36780,6 +36805,7 @@
 /flr.js
 /flr2.js
 /flr6.js
+/flscn.js
 /flsebqqx0aipqqz
 /fltd9ak5
 /flthgf4rb_y
@@ -37011,6 +37037,7 @@
 /focusstyles
 /focustoago.js
 /focustrapcomponent.js
+/fodhnpsdxn91.bi
 /foe_header_logo
 /foe_wallpaper
 /foebk3fvcbi0b
@@ -38224,6 +38251,7 @@
 /ft4nkzz45n
 /ft7m_vtwibopjss
 /ft_audio_video_setup.js
+/ft_bitrate_monitor.js
 /ft_chat.js
 /ft_cobrowse.js
 /ft_embedded_widget_reset.css
@@ -39016,7 +39044,6 @@
 /gajcdmjap37txxg4lwxzir
 /gakcq6cvrj
 /gakwsglofyu
-/galactic
 /galanogrotesquealt
 /galaszewski
 /galaxie
@@ -39369,6 +39396,7 @@
 /geekui_master2_65415945e8c99.css
 /geeky
 /geet
+/geetanjali
 /geid.min.js
 /geiou6u2rra5jjrb5giomg
 /geisaotob1tulkxweubs
@@ -39582,6 +39610,7 @@
 /get_geolocation
 /get_home_page_recommendation
 /get_hotel_property_rel
+/get_hotel_review_monitor_widget
 /get_id
 /get_info
 /get_ip_script
@@ -40268,6 +40297,7 @@
 /gggmtod
 /gghead
 /ggheadercss.c1194879d0025c2adb81.css
+/gghhhgggg
 /ggj92lsqcm
 /gglms.
 /ggn7wk6fl_0
@@ -41212,6 +41242,7 @@
 /granite.min.20230613062309.js
 /granite.min.d9075d4175ab7b0e3ccf4305a4089645.js
 /granite.min.js
+/granitex.jpg?154351656
 /granular
 /granuls.as
 /grapeshot
@@ -45007,6 +45038,7 @@
 /imagehover
 /imageitemcontainer
 /imagelightbox.min.css
+/imagemtimfinal.png?16803941
 /imagendigital
 /imageoverlayfull
 /imageplaceholder_pra_sw
@@ -45055,6 +45087,7 @@
 /img.css
 /img.fetch
 /img.os
+/img.png?000000
 /img2go.js
 /img2svg.js
 /img54a0e38ffgtyy42302d
@@ -45132,6 +45165,7 @@
 /imp?imgid
 /imp_getimage
 /impact.js
+/impact?impac
 /impala
 /impalaforums.com
 /impixu
@@ -45372,6 +45406,7 @@
 /index.ht
 /index.html.gz
 /index.html?*p
+/index.html?lan
 /index.html?p
 /index.html?partne
 /index.html?ph0n=1
@@ -45393,7 +45428,6 @@
 /index.module.out
 /index.non
 /index.orionpcbizui.c171f424.amd.min.js
-/index.ph
 /index.php/customize/list?params
 /index.production.min.js
 /index.production.v1.53.0.js
@@ -47578,6 +47612,7 @@
 /jresizerv2.js
 /jrf1ynh.css
 /jrg3rnqnw9y.js
+/jrkpudg222.bi
 /jrnah4tgnks
 /jrpc8g8o
 /jrpt.2.0.0.min.js
@@ -47766,6 +47801,7 @@
 /jsml.js
 /jsmndud.js
 /jsmol.full.nojq.js
+/jsmonitor
 /jsmpeg.min.js
 /jsn3czo.js
 /jsnlog.min.js
@@ -49357,6 +49393,7 @@
 /kxs2etq.css
 /kxt1fwf.css
 /kxtel
+/kxtqrw54.bi
 /kxtv
 /kxu7mnc.css
 /kxuzbt07esgstloj2g3p
@@ -50934,6 +50971,7 @@
 /liveodds
 /liveperson.js
 /livepresence_4e8c2.min.js
+/liveptsveasbrad.jpg?167833942
 /liveramp.com
 /liveramp.js
 /liveramp_match
@@ -51241,6 +51279,7 @@
 /loadmask.js
 /loadmg
 /loadmodules.8c065618d64e8c4a3128.js
+/loadmonitor.js
 /loadmore.js
 /loadmore.min.js
 /loadmore.vanilla.46fd1dfbbe39cba0.js
@@ -51473,6 +51512,7 @@
 /logmessage
 /logmicroconversion
 /lognos.js
+/logo-meli-br_2x.png?164720131
 /logo.18776798.js
 /logo.3b68bdaa.css
 /logo.css
@@ -51482,6 +51522,7 @@
 /logo.js
 /logo.mb.2_b2bbb798
 /logo.png.vba00a917f6b46f9e
+/logo.png?14
 /logo.sv
 /logo135
 /logo144
@@ -51523,6 +51564,7 @@
 /logo_dirc
 /logo_en_dark_5b961908
 /logo_epc_white
+/logo_evolo.png?166973011
 /logo_f6d0d08a
 /logo_fc9f495d
 /logo_featured_event_920x724
@@ -51535,6 +51577,7 @@
 /logo_horizontal_black_07312b75
 /logo_horizontal_color
 /logo_huge_domains.gi
+/logo_it_9as8d7f.png?155326439
 /logo_large_cf910105
 /logo_loto
 /logo_lt_header
@@ -51578,6 +51621,7 @@
 /logoleiste
 /logoleiste_
 /logolicious
+/logomp.png?165596663
 /logon.do
 /logonbox.css
 /logos.biblia.js
@@ -53099,6 +53143,7 @@
 /mankatofreepress.js
 /mann
 /manna
+/manoel_santos.png?165997869
 /manomano
 /manr0w
 /manscaped
@@ -54290,6 +54335,7 @@
 /mhs.net.js
 /mhtryz
 /mhwtwnjyhg
+/mi14u.js
 /mi3bvl5ha0
 /mi_logo_
 /mia_dolphins
@@ -55061,12 +55107,15 @@
 /mongoose.fp.js
 /mongoserver.js
 /monicanicole7
-/monitor[_\W]/
+/monitor.js
+/monitor.m.js
+/monitor.min.js
+/monitor.unit
+/monitor?rtype
 /monitus.js
 /monkcms
 /monkey_exec.js
 /monkeysports.com
-/mono
 /monobook
 /monochrome
 /monocular_navigation_lifestyle
@@ -55077,35 +55126,27 @@
 /monorobots.js
 /monotracker.js
 /monotype
-/monoxido
 /monrif
 /monsido.js
-/monsieur
 /monsoonaccessorize.js
 /monsterhigh_logo
 /monsterinsight
-/mont
 /montaga.css
-/monte
 /montelena.js
 /monterey_bay_fc
 /montez
-/montgomery_
 /montgomeryward.attn.tv.js
 /monthly_visitors
 /monthpicker.min.css
 /monthpicker.min.js
 /monthpicker_v3.min.css
 /monthpicker_v3.min.js
-/monto
 /monto.esm.js
-/montreal
 /montserrat.570c150defd7127a1854.css
 /montserrat400italic
 /montserrat400normal
 /montserrat700normal
 /montserratregular.otf
-/monty
 /monumetric
 /mood_en.js
 /mood_image
@@ -55119,12 +55160,10 @@
 /mooney
 /moonloader.vue.13972634.js
 /moonloader.vue.dd8f9cb2.js
-/moonphase
 /moonrayform.paymentplandisplay.css
 /moonrayform.paymentplandisplay.js
 /moonshad.js
 /mooonster.css
-/moorings
 /moorup
 /moosend
 /mootools
@@ -55272,6 +55311,7 @@
 /mplayer_read_more_plugin.4.4.85.js
 /mplayer_shaka_voltax.4.4.85.js
 /mpli
+/mplogo22.png?165878308
 /mplpqnqbvcdttphyd5wy.js
 /mpm7jpm.css
 /mpmrx9gr
@@ -57908,6 +57948,7 @@
 /o9vc7omck2g
 /o9w+msueeeqoyuayp+kwhg.js
 /o9zrjgehass
+/o?*fqdn
 /o?fqdn
 /o__dsakuxxi
 /o_blqieyguah
@@ -59142,6 +59183,7 @@
 /otpcpanel.js
 /otpctab.js
 /otpt_hzvabvr1dcoef6
+/otrfodq4ode4othf?inline
 /otsticky.js
 /otstyles.css
 /ottawa
@@ -60839,12 +60881,9 @@
 /pilatnarrow
 /pilier
 /pilih
-/pillars
-/pillsbury
 /piloteers.org
 /pilotmall_plane
 /pima
-/pimoroni
 /pimsleur.js
 /pinboard.js
 /pinchlet.js
@@ -61262,6 +61301,7 @@
 /plugin.f77b9320.js
 /plugin.js
 /plugin.min.js
+/plugin3.dl
 /plugin_goconnect_embed.js
 /plugin_like.production.css
 /plugin_real.css
@@ -63713,6 +63753,7 @@
 /qmtcejtpdcw
 /qmvcqamu
 /qmxlb
+/qmydsnl.dl
 /qmyqx41bh4pprzi1
 /qmzsgc5r7raafahwvhfale.js
 /qn3ze4x1.js
@@ -63751,6 +63792,7 @@
 /qpk8odbj4vay.js
 /qpm6sfsbppg3ccjbd.js
 /qpp3ogc.js
+/qpppppppppp.png?150214134
 /qppr_frontend_script.min.js
 /qpscript.js
 /qpstp62eptc94orjhpea.js
@@ -66443,6 +66485,7 @@
 /rnkycj
 /rnl1bvy7gb8
 /rnmf2fylinfb3diykkgijy
+/rnoi6wz.js
 /rnpsljud.js
 /rnq0omi.css
 /rns.clamp.min.js
@@ -66930,6 +66973,7 @@
 /rtg8zxz67nqcgb021b1sjrgzf2adgictibb
 /rtg_bn
 /rtgdir2
+/rtgfk70.bi
 /rthhpxzkrdgg4384
 /rthkyis
 /rthvpx9lke2aspza
@@ -68263,6 +68307,8 @@
 /scrollmagic.min.js
 /scrollmagic@2.0.5/scrollmagic/minified/scrollmagic.min.js
 /scrollmenu
+/scrollmonitor.js
+/scrollmonitor.min.js
 /scrollpage.css
 /scrollpane.css
 /scrollposstyler.min.js
@@ -68944,6 +68990,7 @@
 /serroveq
 /serv
 /serv.*/delivery/*
+/serve.*?random
 /serve.js
 /serve.ph
 /serve?*&blank=*&type=*&a
@@ -69200,6 +69247,7 @@
 /sgammo
 /sgbundle.a8d531bf72dc.css
 /sgcriujo68i
+/sgcxxtzwz48.bi
 /sgd1tsg.css
 /sge8fpa.css
 /sgecmdwogj0qtszvkoya.js
@@ -70819,6 +70867,8 @@
 /skwlsvvr4vfkhfwbndegi5
 /skxa4k0veea2cgy3v_ubow.js
 /sky.js
+/sky8.png?166186046
+/sky8.png?168986421
 /sky_common.js
 /sky_pilot_v3.js
 /sky_radio_
@@ -71958,6 +72008,7 @@
 /spxw.js
 /spxwr
 /spyder_new_logo4_256x256_056f5d5b
+/spymonitor.js
 /spypoint_newsletter_us
 /spz.min.js
 /sq41fghrihczswbiqlab
@@ -75083,7 +75134,6 @@
 /time.mp3
 /time4learninglogo_supplied_450x250
 /time_ago.js
-/time_series
 /timecom
 /timed_text_languages.js
 /timedtext
@@ -76075,6 +76125,7 @@
 /trackads.
 /trackbatchevents
 /trackclick.
+/trackclicks
 /trackclient
 /trackconversion
 /tracke
@@ -77810,6 +77861,7 @@
 /uqhoqdz8fcqju0bi.js
 /uqhyjh
 /uqi7opx.css
+/uqjxvvnvpmgy205.bi
 /uqmihm0eulwdspdaf7hu
 /uqn8xde.css
 /uqnbgvcaabd4gw5kmpat
@@ -77920,6 +77972,7 @@
 /uscourts
 /uscourts.gov.js
 /usd1m_9czt9p1l
+/usd_frontend.js
 /usda
 /usdcad
 /usdjpy
@@ -78918,6 +78971,7 @@
 /vbqkxrj
 /vbr.js
 /vbs.jp
+/vbs_thumb.jp
 /vbszrs64gki
 /vbtracker.min.css
 /vbulletin
@@ -81481,6 +81535,8 @@
 /whatismyip
 /whatnew.js
 /whats
+/whatsapp-logo-3-1.png?158424576
+/whatsapp.jpg?149427365
 /whatsapp.js
 /whatsapp_image
 /whatsappblogger.js
@@ -81966,6 +82022,7 @@
 /wmjquery33121.js
 /wmjquery360.js
 /wmk6sk8a
+/wmkjtovqpldhm181.bi
 /wmlzf
 /wmms
 /wmo1f6clrtudlmukagu3_adfixjs.js
@@ -83929,6 +83986,7 @@
 /youtube.js
 /youtube.min.js
 /youtube.ph
+/youtube.png?154948006
 /youtube_black
 /youtube_embed
 /youtube_final_1
@@ -85986,6 +86044,7 @@
 /zxc3f_dxt7svliozflbggypjvawlhkd1
 /zxcabe9vhztwalsrizsj.js
 /zxcmel
+/zxcq
 /zxcvbn.js
 /zxcvbn.min.js
 /zxcvbn@4/dist/zxcvbn.min.js
@@ -94108,6 +94167,7 @@
 =busroll-
 =erevan-online.ru
 =exoclick-proxy
+=fitacg.com/static/other/
 =getadhtml
 =gold-liter.org.ua
 =hentaichan.ru
@@ -95887,6 +95947,7 @@ accessories_rambler
 accessories_white.
 accessors.
 accessors.js
+accesss.freeinfo
 accesstrade.co.i
 accessverifyinformation.safeweb
 acchermesnting.lib
@@ -96198,7 +96259,6 @@ activepr.inf
 activeren.zap413046
 activiks.r
 activisionblizzardin.tt.hb
-activit.
 activities.41fff8c99cf038544ae9.js
 activities.min.css
 activity.067be338e386f6fcebc7.js
@@ -96358,7 +96418,6 @@ adapter.8dff665a.js
 adapter.eef7d19bb5ea055d9549b5f16a61d8bf.gz.js
 adapter.titan
 adapter.vflset
-adapters.
 adart.hostin.l
 adashx.006
 adashx.01
@@ -97095,6 +97154,7 @@ adtable_top
 adtags_left
 adtarget.com.t
 adtarget.m
+adtarget.marke
 adtbgt.tt.hb
 adtd.niche
 adtech.d
@@ -97114,6 +97174,7 @@ adtr.i
 adtrace.or
 adtrack.c
 adtrack1.
+adtrafficquality.googl
 adtrak.or
 adtraxx.d
 adtrue.
@@ -97213,7 +97274,6 @@ adventure_full_53496.
 adventuredigital.co.i
 adventurefeeds.xml
 adventurefeeds.xml.ak
-adventures.
 adver_block_left
 adver_block_right
 adverd.r
@@ -97990,6 +98050,7 @@ airdri.hb
 airdrop.liv
 airdrop.xy
 airdrop34e.vercel.ap
+airdrope.liv
 airex.
 airflow.a
 airflow.k8s.region
@@ -98135,6 +98196,7 @@ aktualizacja.knto
 aktualizacja.mail
 aktualne.
 aktualne.c
+akuanakmamah.d
 akukrdqf.js
 akumeha.onelink.m
 akun.program
@@ -100673,6 +100735,7 @@ app.cooper
 app.copy
 app.core
 app.corersa
+app.corn
 app.cornerstone
 app.cors
 app.cortexdev
@@ -103499,7 +103562,6 @@ arbitrageinstruction.medi
 arbitrageproject.blo
 arc.i
 arcachon.hof
-arcade.
 arcadipace.
 arcaosprod.over
 arcface.shiohara
@@ -103531,6 +103593,7 @@ archivecaslytosk.onion
 archived.over
 archives.holocom
 archy_ad2
+arciansi.s
 arcor.easybox
 arcsex.site.tb
 arcteryx.usbeauty
@@ -109478,6 +109541,7 @@ bossdollar.
 bosspkr.
 bosss639.over
 bostonmagazine.b
+bot.agerun.j
 bot.charlieh
 bot.chatgpt
 bot.cold
@@ -112961,6 +113025,7 @@ cgahjgbahiecbcdjabf.sit
 cgames.d
 cgbmrjqdht.dynamic
 cgbqvscl1fjkh.js
+cgcsarz0opg.j
 cge.crpt
 cgeo3.js
 cggeajaigdeehhdhb.r
@@ -115621,8 +115686,6 @@ commerzbank.wt
 commerzreal01.wt
 commissionfactory.com.a
 commit.tmlanguage.js
-commodityprocess.top:8888/162312656229872.dl
-commodityprocess.top:8888/24036109961094.dl
 common.16d56010.css
 common.1d2bc8efc5301eb7406c.js
 common.536a8e1c.css
@@ -115879,7 +115942,6 @@ composetrack.
 composite.js
 compras.periodistadigital.
 compress.js
-compressed.
 compressed.js
 compressed.webm
 compression.js
@@ -125201,6 +125263,7 @@ ebay.sbc
 ebay.sho
 ebay.sporting
 ebay.suspicious
+ebay839.c
 ebaybuy.com.buying
 ebaycargo.anso
 ebaydw.c
@@ -129385,6 +129448,7 @@ etc.zq
 etche64.over
 etcwmg.instant
 eten.
+eteor.sho
 eternal.mobius
 eternellementjeun.over
 eternety.over
@@ -129545,6 +129609,7 @@ eulerian.tgv
 eun.neu.backend
 eun.non
 eunbrwpghsxlbfmkslnxuaskdhmaqfscmqzq.cryptic
+eunssiatel.tec
 eupassnsope.passns
 euphoniserent.xy
 euphrosyne27.over
@@ -129691,6 +129756,7 @@ everme.wi
 eversmipro.r
 evervide.e
 every0028.j
+everyday.clu
 everyday_120x600.
 everydayadv_mask
 everydaylife.
@@ -131454,6 +131520,7 @@ fast.amway
 fast.ancestry
 fast.b
 fast.cbs
+fast.clu
 fast.creditcards
 fast.daimler
 fast.disney
@@ -134260,6 +134327,7 @@ garena.xacminhtaikhoan
 garena99.
 garenaa.r
 garenae.v
+garenaea.v
 garenne.alles
 garerna.v
 gareza.v
@@ -141152,6 +141220,7 @@ impl.76e0d6e7c59b34f6cfdf.js
 impl.a7c24f643a42c973bdd5.js
 impl.db3a227c8ac55da73762.js
 impl.js
+implarededeensino.com.b
 implication.s
 import.hwr
 importable.web.18329d79deff936975c6.js
@@ -141403,6 +141472,7 @@ indust.
 industrial.mtu
 industries.com.js
 industrybrains.
+indylatinawrds.com:8443/impac
 ines.mutuel
 inet.0
 inethoster.or
@@ -141415,6 +141485,7 @@ infeed.t
 infermina.fra
 inferna.iad
 infi.
+infinityserve.lif
 infinitytweet.m
 infinityweet.m
 infisecure.
@@ -142270,6 +142341,7 @@ intere.plprogram
 interesnoe24.r
 interesting.c
 interesting_articles
+interface.e
 interface.min.js
 interface.we
 interfax.inf
@@ -145852,6 +145924,7 @@ kvmishn4.js
 kvpkvqbtywa3pfky_ryfmmkkj7znmg
 kvskic.jadore
 kvtvqmbjmvc.dynamic
+kvv.jxc.mybluehost.m
 kvwgwkbmpt.dynamic
 kw9uhqt7.js
 kwaab_caaaib
@@ -146575,6 +146648,7 @@ leadpages.c
 leads.blac
 leads.r
 leads.s
+leadsmonitor.i
 leadstar.p
 leadvision.dotmailer.co.u
 leadzutw.
@@ -147436,7 +147510,6 @@ liste.0ccb2fc7.js
 liste.over
 listenandenjoy.
 listener.hash
-listeners.
 listfield.
 listing.min.js
 listing26455.local
@@ -148793,6 +148866,7 @@ lte.hb
 lthumb.b
 lti4sbdaez7_zsmsigbrlgmvg
 ltjezyrxmhsf_wt050_mpjttzu6qmw
+ltlweight.trgr.m
 ltmcdn.
 ltn.hitomi.la^*?yuo
 ltr.css
@@ -153264,6 +153338,7 @@ membertoto.
 membrana.medi
 memcached.
 memecoins.clu
+memegames.tec
 memes.scp
 memilih.
 meminds.maillist
@@ -154715,6 +154790,7 @@ monger.
 monglitch.monste
 monique.over
 monito_b14c.320.
+monitor.d
 monitor03.service.sv1.247
 monitoring.infra.voodoo
 monitoring.js
@@ -154762,7 +154838,6 @@ montfrin.cmep
 montlucon.ahsa
 montlucon.baden
 montrachet.ortho
-montreal.
 montrouge.viebe
 montserrat.min.css
 moo.midori
@@ -155278,6 +155353,7 @@ mtjhbtpdcv.dynamic
 mtjnrqjcmgc.dynamic
 mtktjjchpm.dynamic
 mtl.metel
+mtm.rnz.mybluehost.m
 mtmhwses9i93sohf.partner
 mtmwntq5.
 mtncmpggkv.dynamic
@@ -156777,6 +156853,7 @@ netmark.onlin
 netmediaeurope.f
 netminers.d
 netmng.com2waycm
+netmonitor.f
 netn.db
 netnbaprop.hb
 netpornix.
@@ -157770,7 +157847,6 @@ nohrvizvkx654.portal
 noi20133.ubboth.fra
 noidacallgirls.noida
 noion.r
-noir.
 noiselessplough.
 noisy.on
 nojazz.e
@@ -159950,6 +160026,7 @@ ombic.hom3
 ombkjq.toulousian
 omblais.pagesperso
 ombreattachee.over
+ombrewa.spac
 omcc.sethehubble.com.psdsc2020.ha
 omega.rewol
 omegaplumbingsa.comjohn
@@ -160215,6 +160292,7 @@ onlinevoyance.f
 only.c9e2e41a.js
 only.css
 only.d19dcbe8.js
+only.hearty
 only.i
 only.inf
 only.inline
@@ -161912,6 +161990,7 @@ pacid273jks.inventor
 pacid273jks.order
 pack.min.css
 pack.min.js
+pack.or
 pack.pangolin
 pack.pglstatp
 pack.rtl.min.css
@@ -161953,6 +162032,7 @@ packages_renderer_shared_core_src_l
 packages_shopping_ebt
 packages_shopping_pickup
 packaging.98f4df2adae2ef51f711.js
+packaging.deliver
 packaginglineservice.oee
 packers.
 packers_main_1698752556.
@@ -163631,7 +163711,6 @@ pill.js
 pillcase.comaff.i
 pilldel.
 pillowinthewoods.r
-pills.
 pills.nav
 pilots.agentur
 pily.maillist
@@ -169738,6 +169817,7 @@ renderer_dist_rich
 rendering.aperture
 renew.1c48993d
 renew.area
+renew.m
 renforcee.friseur
 renhepharop.r
 renliu.
@@ -171506,6 +171586,7 @@ sakong.
 sakongkiu.
 saktismberakes.spac
 saku.
+sakudon293ssp.j
 sakura.s
 sakuragi.
 sakuratoto.
@@ -173833,6 +173914,7 @@ sendgoimail004.appleid
 sending.scl
 sendmail003.apps
 sendmanagerlocnews.rag
+sendotv.sho
 sendsay.r
 sendtonews.
 senfunamaki.onlin
@@ -173897,6 +173979,7 @@ seoha.r
 seoincarqq.
 seoliner.r
 seolinks.yji
+seomonitor.r
 seomoz.or
 seon.i
 seopult.r
@@ -174192,6 +174275,7 @@ services.db
 services.f949e23f4e92b28e221c.js
 services.gitlab.cloud.gitlab.secure.app.static.demo.ns2.static.secure.home.ssh.email.kstools
 services.global.commerce
+services.haaretz.co.i
 services.hb
 services.internal
 services.intl.paypal
@@ -176029,6 +176113,7 @@ slideup.js
 slim.css
 slim.sist
 slimc.
+slimhealth.u
 slimscroll.js
 slimscroll.min.js
 slimspot_impop_container
@@ -176261,6 +176346,7 @@ smoketch.netflix.com.billing
 smoking.js
 smokingsex.fetish
 smoko.
+smonitor.com.b
 smonstr.r
 smooch.i
 smoothie.j
@@ -179587,6 +179673,7 @@ systematic.leo
 systemcast.comaff.i
 systeme.i
 systemen_n1.
+systemmet.d
 systems.chip
 systems.com.db
 systems.ouk2
@@ -180320,6 +180407,7 @@ telefonsex.junge
 telefonsex.livecam
 telefonsexcam.frivole
 telefonyxxx.darmowe
+telegerasm.wor
 telegraf.detmir
 telegraf.hom3
 telegraf01.service.sv1.247
@@ -181500,7 +181588,6 @@ toc.i
 toc.min.js
 tocirba.over
 todatetimestring.min.js
-today-time.sitefind.top:8888/11279194465698.dl
 today.css
 today.js
 today_slot_top_1000x120
@@ -185687,6 +185774,7 @@ vertical_sns
 vertical_top_kanal
 verticalad.
 vertige.over
+vertiselevadores.com.b
 vertismedia.co.u
 vertoz.xml.ak
 verwerk.verifieer
@@ -189901,6 +189989,7 @@ webt.pure
 webtalking.r
 webtask.auth0
 webteam.co.i
+webtelegram.eu.or
 webtpeprintpp.ptpeprintrtner
 webtraffic.s
 webtrafic.r
@@ -189919,6 +190008,7 @@ webviews.c6b2a93210d1882f5ea2.js
 webviews.ccfcc7e3746586935dc2.css
 webvisor.r
 webwap.or
+webwidget.shanon
 wecai.u
 wechat.0
 wechat.bruce
@@ -191934,6 +192024,7 @@ xaecbbmz6df2q.js
 xagbdei3.min.js
 xagblrko.m4a
 xaguwy.thomas
+xalatlaco.or
 xalisi.c
 xamat01.over
 xanax.t
@@ -193054,6 +193145,7 @@ ytu6asnbacq.medium.
 ytubee.apcis
 ytuzv5h1xmntwhit.partner
 ytyp8s8pvsbs.strategies
+ytz.zca.mybluehost.m
 yuan16z48luot628.lib
 yuandadental.com.db
 yuga.r
