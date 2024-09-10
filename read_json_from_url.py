@@ -9,11 +9,11 @@ Read json from url
 
 # </product backlog>
 
-import os                                                                       # <operating system interfaces />
-import re                                                                       # <regular expression operations />
-import requests                                                                 # <get files using url />
-import tqdm                                                                     # <progress bar />
-import json                                                                     # <json handling/>
+import os       # <operating system interfaces />
+import re       # <regular expression operations />
+import requests # <get files using url />
+import tqdm     # <progress bar />
+import json     # <json handling/>
 
 # <settings>
 
