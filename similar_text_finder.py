@@ -84,22 +84,23 @@ dist_df['sum_dist'] = np.zeros((len(list1))).tolist()
 
 counter = Value('d', 0)
 t0 = time()
-counter_max = math.factorial(len(list1) - 1)
+counter_max = len(list1) - 1
 
 for j in range(0, len(list1) - 1) :
-    for i in range(j + 1, len(list1) ) :
-        dist_df['sum_dist'][i] = dist_df['sum_dist'][i] + distance(list1[i], list1[j])
-        dist_df['sum_dist'][j] = dist_df['sum_dist'][j] + distance(list1[i], list1[j])
-        counter.value += 1
-        print(
-            '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
-            '(', '{:.0f}'.format(counter.value), '/', counter_max, ') ',
-            '{:.0f}'.format((time() - t0) / 60), '\' elapsed | ',
-            '{:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), '\' remaining',
-            end = '\r',
-            sep = '',
-            flush = True
-        )
+    if (len(list1[j]) <= 8) :
+        for i in range(j + 1, len(list1) ) :
+            dist_df['sum_dist'][i] = dist_df['sum_dist'][i] + distance(list1[i], list1[j])
+            dist_df['sum_dist'][j] = dist_df['sum_dist'][j] + distance(list1[i], list1[j])
+    counter.value += 1
+    print(
+        '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
+        '(', '{:.0f}'.format(counter.value), '/', counter_max, ') ',
+        '{:.0f}'.format((time() - t0) / 60), '\' elapsed | ',
+        '{:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), '\' remaining',
+        end = '\r',
+        sep = '',
+        flush = True
+    )
 
 dist_df = dist_df.sort_values(by = ['sum_dist'], ascending = True)
 
