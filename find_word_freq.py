@@ -91,7 +91,7 @@ print(
 dist_df = pd.DataFrame()
 # dist_df['word'] = list(filter(None, sorted(set(list1))))                  # <df deduplication />
 dist_df['word'] = list1
-dist_df = dist_df.groupby('word')[['word']].aggregate('count')
+dist_df = dist_df.groupby('word')['word'].aggregate('count')
 
 print(
     '{:,}'.format(dist_df.shape[0]),
@@ -100,7 +100,7 @@ print(
 
 # <write main output>
 
-file2_out = dist_df.to_csv(file2_out_name, index = False)
+file2_out = dist_df.to_csv(file2_out_name)
 print(
     'words saved to textfile <' + file2_out_name + '>\n'
 )
