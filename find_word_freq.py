@@ -88,10 +88,14 @@ print(
     sep = ''
 )
 
+def sum_dist(word) :
+    global list1
+    sum_distance = lambda word: sum([--(word1 == word) for word1 in list1])
+    return sum_distance
+
 dist_df = pd.DataFrame()
-# dist_df['word'] = list(filter(None, sorted(set(list1))))                  # <df deduplication />
 dist_df['word'] = list1
-dist_df = dist_df.groupby('word')['word'].aggregate(['count'])
+dist_df = dist_df.groupby('word')['word'].aggregate(['count', sum_dist])
 dist_df = dist_df.sort_values(by = ['count'], ascending = False)
 
 print(
