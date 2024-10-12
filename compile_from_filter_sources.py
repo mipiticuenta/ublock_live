@@ -1737,7 +1737,7 @@ print(
 
 counter = Value('d', 0)
 t0 = time()
-counter_max = len(list1)
+counter_max = len(list3)
 
 def f_reduce_to_L1(line) :
     global iana_sld
