@@ -84,7 +84,7 @@ dist_df['sum_dist'] = np.zeros((len(list1))).tolist()
 
 counter = Value('d', 0)
 t0 = time()
-counter_max = len(list1) - 1
+counter_max = factorial(len(list1) - 1)
 
 for j in range(0, len(list1) - 1) :
     if (len(list1[j]) <= 8) :
