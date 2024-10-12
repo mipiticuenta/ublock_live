@@ -92,7 +92,7 @@ dist_df = pd.DataFrame()
 dist_df['word'] = list(filter(None, sorted(set(list1))))                    # <df deduplication />
 
 print(
-    '{:,}'.format(dist_df.count),
+    '{:,}'.format(dist_df.count()),
     'unique words gathered\n'
 )
 
