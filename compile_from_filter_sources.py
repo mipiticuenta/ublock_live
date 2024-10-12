@@ -1774,7 +1774,7 @@ df10 = df10.sort_values(ascending = False)
 
 # <write L1 domain list/>
 
-df10.to_csv(file3_out_name, sep='\t')
+df10.to_csv(file10_out_name, sep='\t')
 print(
     'Results saved to textfile <' + file10_out_name + '>\n'
 )
