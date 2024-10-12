@@ -91,7 +91,7 @@ print(
 dist_df = pd.DataFrame()
 # dist_df['word'] = list(filter(None, sorted(set(list1))))                  # <df deduplication />
 dist_df['word'] = list1
-dist_df = dist_df.groupby('word').agg(['word': 'count'])
+dist_df = dist_df.groupby('word')[['word']].aggregate('count')
 
 print(
     '{:,}'.format(dist_df.shape[0]),
