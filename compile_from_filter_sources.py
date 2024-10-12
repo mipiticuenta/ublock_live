@@ -11,13 +11,14 @@ Compile a single deduplicated block list from url sources
 
 # <libs & settings>
 
-import math                                                                     # <math functions />
-import os                                                                       # <operating system interfaces />
-import re                                                                       # <regex capabilities />
-import requests                                                                 # <fetch urls />
 from multiprocessing import Pool as ThreadPool                                  # <multithreading function/>
 from multiprocessing import Value                                               # <multithreading function/>
 from time import time
+import math                                                                     # <math functions />
+import os                                                                       # <operating system interfaces />
+import pandas as pd
+import re                                                                       # <regex capabilities />
+import requests                                                                 # <fetch urls />
 
 file1_in_name   = 'filter_sources'
 file2_out_name  = 'compiled_block_list'
@@ -27,6 +28,7 @@ file5_out_name  = 'ipfire_regex_block_list'
 file7_out_name  = 'ublock_list_except_domains'
 file8_in_name   = 'domains_white_list'
 file9_in_name   = 'regex_white_list'
+file10_out_name = 'L1_domain_list'
 no_proxy        = {'https': '', 'http': ''}
 local_proxy     = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
 thr             = os.cpu_count()
@@ -45,6 +47,7 @@ print(
     '# output: <compiled_block_list_old> textfile                  \n',
     '# output: <compiled_block_list> textfile                      \n',
     '# output: <ipfire_domains_block_list> textfile                \n',
+    '# output: <L1_domain_list> textfile                           \n',
     '# output: <ipfire_urls_block_list> textfile                   \n',
     '# output: <ipfire_regex_block_list> textfile                  \n',
     '# output: <ublock_list_except_domains> textfile               \n',
@@ -1725,6 +1728,58 @@ print(
 )
 
 # </write domain type filters>
+
+# <get L1 domains>
+
+print(
+    'reducing domains listed to L1\n'
+)
+
+counter = Value('d', 0)
+t0 = time()
+counter_max = len(list1)
+
+def f_reduce_to_L1(line) :
+    global iana_sld
+    while re.sub(r'^(?:[^\.]+\.)', '', line) not in iana_sld :
+        line = re.sub(r'^(?:[^\.]+\.)', '', line)                               # keep only L1 domain
+    counter.value += 1
+    print(
+        '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
+        '(', '{:.0f}'.format(counter.value), '/', counter_max, ') ',
+        '{:.0f}'.format((time() - t0) / 60), '\' elapsed | ',
+        '{:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), '\' remaining',
+        end = '\r',
+        sep = '',
+        flush = True
+    )
+    return line
+
+pool = ThreadPool(thr)                                                       # <make the pool of workers />
+list10 = pool.map(f_reduce_to_L1, list3)                                     # <execute function by multi-threading />
+pool.close()                                                                 # <close the pool and wait for the work to finish />
+pool.join()
+
+print(
+    '{:,}'.format(len(list10)),
+    'L1_domains listed\n'
+)
+
+df10 = pd.DataFrame()
+df10['L1_domain'] = list10
+df10 = df10.groupby('L1_domain')['L1_domain'].count()
+df10 = df10.sort_values(ascending = False)
+
+# </get L1 domains>
+
+# <write L1 domain list/>
+
+df10.to_csv(file3_out_name, sep='\t')
+print(
+    'Results saved to textfile <' + file10_out_name + '>\n'
+)
+
+# </write L1 domain list>
 
 # <write extracted url type filters>
 
