@@ -70,7 +70,7 @@ list1 = [
     for item in line
 ]                                                                           # <flatten list />
 
-list1 = [word for word in list1 if len(word) > 3]                     # <discard short words />
+list1 = [word for word in list1 if len(word) > 3]                           # <discard short words />
 
 print(
     '{:,}'.format(len(list1)),
@@ -89,7 +89,7 @@ print(
 )
 
 dist_df = pd.DataFrame()
-dist_df['word'] = list1
+dist_df['word'] = sorted[set(list1)]                                        # <df deduplication />
 
 # <write main output>
 
@@ -100,7 +100,7 @@ print(
 
 # </write main output>
 
-dist_df['sum_dist'] = dist_df['word'].apply(lambda x: sum([distance(word, x) for word in dist_df['word']]))
+dist_df['sum_dist'] = dist_df['word'].apply(lambda x: sum([distance(word, x) for word in list1]))
 dist_df = dist_df.sort_values(by = ['sum_dist'], ascending = False)
 
 # <write main output>
