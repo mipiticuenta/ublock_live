@@ -27,7 +27,6 @@ file5_out_name  = 'ipfire_regex_block_list'
 file7_out_name  = 'ublock_list_except_domains'
 file8_in_name   = 'domains_white_list'
 file9_in_name   = 'regex_white_list'
-file10_out_name = 'L1_domain_list'
 no_proxy        = {'https': '', 'http': ''}
 local_proxy     = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
 thr             = os.cpu_count()
@@ -49,7 +48,6 @@ print(
     '# output: <ipfire_urls_block_list> textfile                   \n',
     '# output: <ipfire_regex_block_list> textfile                  \n',
     '# output: <ublock_list_except_domains> textfile               \n',
-    '# output: <L1_domain_list> textfile                           \n',
     '# ============================================================\n',
 )
 
@@ -95,9 +93,12 @@ print(
 )
 
 def f00(line) :
+
     global proxy_servers
     list2 = set()
+
     try :
+
         response = requests.get(
             line,
             timeout = 20,
@@ -119,11 +120,14 @@ def f00(line) :
                 flush = True
             )
         list2 = sorted(list2)
+
     except :
+
         print(
             'Error: could not load ' + line,
             flush = True
         )
+
     return list2
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -157,12 +161,15 @@ print(
 iana_tld = set()
 
 try :
+
     response = requests.get(
         'https://data.iana.org/TLD/tlds-alpha-by-domain.txt',
         timeout = 20,
         proxies = proxy_servers
     )
+
 except :
+
     print(
         'Error: could not load https://data.iana.org/TLD/tlds-alpha-by-domain.txt',
         flush = True
@@ -208,7 +215,9 @@ print(
 print(' 1/20 : remove leading / trailing / dup spaces ')
 
 def f01(line) :
+
     line = re.sub(r'[\t ]+', ' ', line).strip()                                 # <replace tab with space, dedup spaces and remove leading/trailing spaces />
+
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -227,11 +236,14 @@ print(
 print(' 2/20 : remove comments ')
 
 def f02(line) :
+
     line = re.sub(r' #.*$', '', line)                                           # < clean # comments on the right/>
+
     if re.search(r'^[\!\[\{]', line) :
         line = ''                                                               # <remove !comment [comment] {comment} />
     elif re.search(r'^#(?![\?\@\#])', line) :
         line = ''                                                               # <remove #comment; preserve cosmetics and exceptions />
+
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -250,12 +262,14 @@ print(
 print(' 3/20 : clean dns domain filters, :port, http(s): ')
 
 def f03(line) :
+
     line = re.sub(r'https?\:/*', '', line)                                      # <remove http(s):/* />
     line = re.sub(r'www\d*\.', '', line)                                        # <remove www#. />
     line = re.sub(r'^\d+(?:\.\d+)+ ', '', line)                                 # <remove leading 0.0.0.0 or 127.0.0.1 (dns style filter) />
     line = re.sub(r'^\:+1 ', '', line)                                          # <remove leading ::1 (dns style filter) />
     line = re.sub(r'^\|{1,2}([-\.\w]+)\^$', r'\1', line)                        # <cleanup || ^ from abp domain syntax />
     line = re.sub(r'^\:\d+', '', line).strip()                                  # <remove leading :port />
+
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -276,7 +290,9 @@ print(
 print('\nListing domain filters\n')
 
 def f_clean_domains_1(line) :
+
     global iana_sld
+
     if re.sub(
         r'^([-\w]*\.)*',
         '',
@@ -284,6 +300,7 @@ def f_clean_domains_1(line) :
     ) in iana_sld :                                                             # < check for a match with (@.)+sld />
         if line[0] != '-' :
             line = re.sub(r'/(?:\$important)?$', '', line)                      # < remove trailing /, $important />
+
     return line
 
 pool = ThreadPool(thr)                                                          # < make the pool of workers />
@@ -294,13 +311,16 @@ pool.join()
 list2 = list(filter(None, sorted(set(list2))))                                  # < only domains part are processed in this section; @.js are kept in list2 />
 
 def f_list_domains(line) :
+
     global iana_sld
+
     if re.sub(
         r'^\.?([-\w]+\.)+',
         '',
         re.sub(r'\$important$', '', line)
     ) not in iana_sld :                                                         # < check for a match with (@.)+sld />
         line = ''                                                               # < return only domain items />
+
     return line
 
 pool = ThreadPool(thr)                                                          # < make the pool of workers />
@@ -316,6 +336,7 @@ list2 = list(filter(None, sorted(set(list2) - set(list3))))                     
 print(' 4/20 : remove items containing % ?? about: $badfilter localhost; remove IP4 IP6')
 
 def f04(line) :
+
     if re.search(r'\%', line) :
         line = ''                                                               # <remove items comprising % >
     elif re.search(r'(?<!\\\?)\?{2,}', line) :
@@ -339,6 +360,7 @@ def f04(line) :
     
     line = re.sub(r'\$xmlhttprequest', '$xhr', line)                            # <unify $xhr />
     line = re.sub(r'\$\~xmlhttprequest', '$~xhr', line)                         # <unify $xhr />
+
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -357,14 +379,18 @@ print(
 print(' 5/20 : apply lower case except for cosmetics and regex')
 
 def f05(line) :
+
     if not re.search(r'[#@\\]', line) :
         line = line.lower()                                                     # <apply lower case except cosmetics and regex />
+
     if re.search(r'^/.*\\/$', line) :
         line = ''                                                               # <remove broken regex (bad termination) />
+
     line = re.sub(r'/+$', '/', line)                                            # <fix trailing // />
     line = re.sub(r'\$/$', '/', line)                                           # <fix trailing $/ />
     line = re.sub(r'^(/.*)\.\*/$', r'\1/', line)                                # <fix regex trailing .*/ />
     line = re.sub(r'^(/[-\.\+\~\!\=/\w]+/)$', r'\1*', line)                     # <add trailing * for /@/ url filters (false regex) />
+
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -411,9 +437,11 @@ print(
 print(' 6/20 : generalize cosmetic filters (*##), exceptions (*#@ *#? *@@) and removeparams ')
 
 def f06(line) :
+
     line = re.sub(r'^.*(?=#[#@\?])', '*', line)                                 # <generalize *## *#@ *#? />
     line = re.sub(r'^.*(?=@@)', '*', line)                                      # <generalize *@@ />
     line = re.sub(r'^.*removeparam\=', '*$removeparam=', line)                  # <generalize *$removeparam />
+
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -432,12 +460,14 @@ print(
 print(' 7/20 : remove cosmetic filters (## #?) and exceptions (@@ #@) except *##:')
 
 def f07(line) :
+
     if re.search(r'^\*?#[^#]', line) :                                          # <remove *# not followed by # />
         line = ''
     elif re.search(r'^\*?@', line) :                                            # <remove @@ exceptions />
         line = ''
     elif re.search(r'^\*##(?!\:not\(html\))', line) :                           # <remove cosmetic filters not matching *##:not(html) pattern />
         line = ''
+
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -456,12 +486,14 @@ print(
 print(' 8/20 : split urls with $ domain=, denyallow= ')
 
 def f08(line) :
+
     if re.search(r'\$.*(domain|denyallow)=', line) :
         domains_part = re.sub(r'^.*(domain|denyallow)=', '', line).split('|')   # <split domains and  url part />
         url_part     = [re.sub(r'\$.*$', '', line)]                             # <add url part/>
         line = domains_part + url_part
     else:
         [line]
+
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -491,7 +523,9 @@ print(
 print(' 9/20 : clean from=, path=, replace=, transform=')
 
 def f09(line) :
+
     line = re.sub(r',?(from|path|replace|transform)=.*$', '', line)             # <remove (,)from=.* , (,)path=.* , (,)replace=.* , (,)transform=.* />
+
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -533,10 +567,13 @@ while not converged :                                                           
     print('10/20 : split , ~ space separated items ')
 
     def f10(line) :
+
         line = re.sub(r'^,', '', line)                                          # <remove leading , />
         line = re.sub(r',$', '', line)                                          # <remove trailing , />
+
         if re.search(r'^[- /\.\,\~\w]+$', line) :
             line = re.split(r'[- \,\~]', line)                                  # <split domains />
+
         return line
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />
@@ -566,6 +603,7 @@ while not converged :                                                           
     print('11/20 : remove @.exe @.gif @.rar @.zip @woff @woff2 @ttf')
 
     def f16(line) :
+
         if re.search(r'\.rar$', line) :
             line = ''                                                           # <remove @.rar filters />
         elif re.search(r'\.zip$', line) :
@@ -582,6 +620,7 @@ while not converged :                                                           
             line = ''                                                           # <remove @.woff filters />
         elif re.search(r'\.ttf?$', line) :
             line = ''                                                           # <remove @.ttf filters />
+
         return line
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />
@@ -600,6 +639,7 @@ while not converged :                                                           
     print('12/20 : clean up leading symbols numbers prefix etc')
 
     def f11(line) :
+
         line = re.sub(r'^[^a-z]*(?=[\*\$])', '', line)                          # <remove leading symbols and numbers preceding * ? />
         line = re.sub(r'^[^\*a-z]*(?=[/\.\?])', '', line)                       # <remove leading symbols and numbers preceding / . ? />
         line = re.sub(r'^[/\.]?\w(?=[/\.\$])', '', line)                        # <remove leading single a-z0-9 char preceding / . $ />
@@ -615,6 +655,7 @@ while not converged :                                                           
         line = re.sub(r'^.*\.cgi(?=\?)', '', line)                              # <remove .*cgi lines />
         line = re.sub(r'^.*\.php(?=\?)', '', line)                              # <remove .*php lines />
         line = re.sub(r'^.*\.php$', '', line)                                   # <remove .*php lines />
+
         return line
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />
@@ -633,6 +674,7 @@ while not converged :                                                           
     print('13/20 : clean up trailing symbols numbers suffix $filters etc')
 
     def f12(line) :
+
         line = re.sub(r'[\^\|\=]\$', '$', line)                                 # <replace ^$ |$ =$ with $ />
         line = re.sub(r'[\#\,\~\|\^\?\=\&]+$', '', line)                        # <remove trailing # , ~ | ^ ? = & />
         line = re.sub(r'(?<!/)\*$', '', line)                                   # <remove trailing * except /url/* />
@@ -649,6 +691,7 @@ while not converged :                                                           
         line = re.sub(r'^([-\w]+)=.*$', r'\1', line)                            # <remove trailing .=.* />
         line = re.sub(r'^([-\.\w]+)/$', r'\1', line)                            # <remove trailing /  />
         line = re.sub(r'\^\*$', '', line)                                       # <remove trailing ^* />
+
         return line
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />
@@ -667,7 +710,9 @@ while not converged :                                                           
     print('14/20 : split domain and url ')
 
     def f13(line) :
+
         line = line.strip()
+
         if re.search(r'^[-\.\w]+\.[a-z]+/.*', line) :
             domain_part = [re.sub(r'/.*$', '', line)]                           # <add domain part />
             url_part    = re.sub(r'^[-\.\w]+/', '/', line)                      # <add url part/>
@@ -675,6 +720,7 @@ while not converged :                                                           
             line = domain_part + url_part
         else:
             [line]
+        
         return line
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />
@@ -704,18 +750,23 @@ while not converged :                                                           
     print('15/20 : clean up urls')
 
     def f14(line) :
+
         line = re.sub(r'\*+', '*', line)                                        # <dedup * />
         line = re.sub(r'\.+', '.', line)                                        # <dedup . />
         line = re.sub(r'/+', '/', line)                                         # <dedup / />
         line = re.sub(r'^.*/\*/', '/', line)                                    # <replace /*/ with / />
         line = re.sub(r'[^\*]\$.*$', '', line)                                  # <remove $* tail except for *$ />
         line = re.sub(r'/wp\-content/uploads/.*$', '', line)                    # <clean trailing /wp-content/uploads/* />
+
         if re.search(r'^[-\w]+\\\.[-\w]+', line) :
             line = ''                                                           # <remove faulty \. />
+
         if re.search(r'^[-\.\w]+\^\*[-/\.\w]+', line) :
             line = ''                                                           # <remove spurious ^*/>
+
         if re.search(r'^[\./]?[-\w]*/[-\./\w]+[-\.\w](?:/\*)?$', line) :
             line = re.sub(r'^.+(?=/[^/]+(?:/\*)?$)', '', line)                  # <simplify urls keeping last /* part />
+
         return line
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />
@@ -734,6 +785,7 @@ while not converged :                                                           
     print('16/20 : arrange *$ filters; keep beacon csp inline-font inline-script object other ping popunder script websocket xhr ')
 
     def f17(line) :
+
         line = re.sub(r'\$\~?1p.*$', '', line)                                  # <remove $1p />
         line = re.sub(r'\$\~?3p.*$', '', line)                                  # <remove $3p />
         line = re.sub(r'\$\~?all.*$', '', line)                                 # <remove $all />
@@ -748,8 +800,10 @@ while not converged :                                                           
         line = re.sub(r'\$\~?stylesheet.*$', '', line)                          # <remove $css />
         line = re.sub(r'\$\~?(?:sub)?doc(?:ument)?.*$', '', line)               # <remove $(sub)doc />
         line = re.sub(r'\$\~?third\-party.*$', '', line)                        # <remove $3p />
+
         line = re.sub(r'^\*\$important.*$', '', line)                           # <remove *$important />
         line = re.sub(r'^\*\$.*\.js$', '', line)                                # <remove *$...js filters />
+
         line = re.sub(r'^\*\$\~?beacon.*$', '*$beacon', line)                   # <enforce *$beacon />
         line = re.sub(r'^.*\$csp.*$', '*$csp=all', line)                        # <enforce *$csp=all />
         line = re.sub(r'^\*\$\~?inline\-font.*$', '*$inline-font', line)        # <enforce *$inline-font />
@@ -763,6 +817,7 @@ while not converged :                                                           
         line = re.sub(r'^\*\$\~?websocket.*$', '*$websocket', line)             # <enforce *$websocket />
         line = re.sub(r'^\*\$\~?xhr.*$', '*$xhr', line)                         # <enforce *$xhr />
         line = re.sub(r'^\*\$\~?xmlhttprequest.*$', '*$xhr', line)              # <enforce *$xhr />
+
         return line
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />
@@ -781,6 +836,7 @@ while not converged :                                                           
     print('17/20 : remove broken filters and fix regex ')
 
     def f18(line) :
+
         if re.search(r'^[#\!\<]$', line) :
             line = ''                                                           # <remove # ! < leaded lines />
         elif re.search(r'^\*?#[^#]', line) :
@@ -795,6 +851,7 @@ while not converged :                                                           
             and not(re.search(r'^/.*/(?:\$important)?$', line))
             ) :
             line = ''                                                           # <remove broken regex or cosmetic filters />
+
         line = re.sub(r'/+$', '/', line)                                        # fix trailing // />
         line = re.sub(r'\$/$', '/', line)                                       # fix trailing $/ />
         line = re.sub(r'^(/.*)\.\*/$', r'\1/', line)                            # fix regex trailing .*/ />
@@ -816,6 +873,7 @@ while not converged :                                                           
             if line[n] == '}' : depth_l -= 1
             if min(depth_p, depth_b, depth_l) < 0 : flag = 1
             n += 1
+
         if (flag > 0 or depth_p != 0 or depth_b != 0 or depth_l != 0) : line = ''
 
         # < remove unbalanced () [] {} >
@@ -838,8 +896,10 @@ while not converged :                                                           
     print('18/20 : simplify urls keeping last /* part')
 
     def f19(line) :
+
         if not re.search(r'[#@\\]', line) :
             line = line.lower()                                                 # <apply lower case except cosmetics and regex />
+
         if re.search(r'[\#\@\$]', line) :                                       # <segregate *#(cosmetics) *@(exceptions) *$(removeparam and others) filters/>
             if re.search(r'^[_\W]*\:is', line) :
                 line = ''                                                       # <remove *##:is filters />
@@ -851,17 +911,22 @@ while not converged :                                                           
                 line = ''                                                       # <remove *##:xpath filters />
             elif re.search(r'\$discovery', line) :
                 line = ''
+
         if re.search(r'^[\./]?[-\w]+/[-\.\=\@\w/]+(?:/\*)?$', line) :
             line = re.sub(r'^.+(?=/[^/]+(?:/\*)?$)', '', line)                  # <simplify urls keeping last /* part />
+
         if re.search(r'[-\w]{40,}', line) :
             line = ''                                                           # <remove items with text strings longer than 40 chars />
+
         if len(re.findall(r'[a-z]', line)) <= 3 :
             line = ''                                                           # <keep filters with len > 3 />
+
         if (
             len(line) - len(re.findall(r'\d', line)) - len(re.findall(r'[a-z]', line)) <= 2
             and len(re.findall(r'\d', line)) >= len(re.findall(r'[a-z]', line))
             ) :
             line = ''                                                           # <keep filters more numbers than chars />
+
         return line
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />
@@ -921,13 +986,16 @@ pool.join()
 list2 = list(filter(None, sorted(set(list2))))                                  # < only domains part are processed in this section; @.js are kept in list2 />
 
 def f_list_domains(line) :
+
     global iana_sld
+
     if re.sub(
         r'^\.?([-\w]+\.)+',
         '',
         re.sub(r'\$important$', '', line)
     ) not in iana_sld :                                                         # < check for a match with (@.)+sld />
         line = ''                                                               # < return only domain items />
+
     return line
 
 pool = ThreadPool(thr)                                                          # < make the pool of workers />
@@ -1009,8 +1077,10 @@ print(
 list5 = list(filter(None, sorted(set(list5))))                                  # <remove empty elements />
 
 def f20_5(pattern) :
+
     global list5
     list5wl = []
+
     try :
         pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
         list5wl = [
@@ -1027,6 +1097,7 @@ def f20_5(pattern) :
             'Error: check for ' + pattern + ' pattern in regex_white_list',
             flush = True
         )
+
     return list5wl
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -1052,8 +1123,10 @@ t0 = time()
 counter_max = len(list9)
 
 def f20_2(pattern) :
+
     global list2
     list2wl = []
+
     try :
         pattern = re.compile(r'' + (pattern[: -1] + '(?:\$important)?$'))
         list2wl = [
@@ -1068,6 +1141,7 @@ def f20_2(pattern) :
             'Error: check for ' + pattern + ' pattern in regex_white_list',
             flush=True
         )
+
     counter.value += 1
     print(
         '        ',
@@ -1079,6 +1153,7 @@ def f20_2(pattern) :
         sep = '',
         flush = True
     )
+
     return list2wl
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -1150,8 +1225,10 @@ t0 = time()
 counter_max = len(list5)
 
 def f21(pattern) :
+
     global list2
     list2du = []
+
     try :
         pattern = re.compile(r'' + re.sub(r'\$important$', '', pattern)[1: -1]) # < create regex pattern for faster processing />
         list2du = [
@@ -1164,6 +1241,7 @@ def f21(pattern) :
             'Error: check for ' + pattern + ' pattern in regex_white_list',
             flush=True
         )
+
     counter.value += 1
     print(
         '        ',
@@ -1175,6 +1253,7 @@ def f21(pattern) :
         sep = '',
         flush = True
     )
+
     return list2du
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -1208,8 +1287,10 @@ print(
 # <remove leading . , L5+ domains and numerial low levels >
 
 def f_clean_domains_2(line) :
+
     line = re.sub(r'^(?:[-_\d]*\.)+', '', line)                                 # <remove numerical low levels from domains and preceding . />
     line = re.sub(r'^(?:[^\.]*\.)+(?=(?:[-\w]+\.){3}[\w]+$)', '', line)         # <remove L5+ domains />
+
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -1292,11 +1373,14 @@ t0 = time()
 counter_max = len(list3)
 
 def f_deflat_domain(line) :
+
     global iana_sld
     global list8
+
     if not(re.sub(r'^[^\.]*\.', '', line) in iana_sld) :
         if not(re.sub(r'^[^\.]*\.', '', line) in list8) :
             line = re.sub(r'^[^\.]+\.', '', line)
+
     counter.value += 1
     print(
         '        ',
@@ -1308,6 +1392,7 @@ def f_deflat_domain(line) :
         sep = '',
         flush = True
     )
+
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -1374,11 +1459,14 @@ print(
 print('dedup filter if filter($|,)important present', sep = '')
 
 def f_dedup_important(line) :
+
     global list2
+
     if re.search(r'[\$\,]important$', line) :
         line = re.sub(r'[\$\,]important$', '', line)
     else :
         line = ''
+
     return line
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
@@ -1637,58 +1725,6 @@ print(
 )
 
 # </write domain type filters>
-
-# <get L1 domains>
-
-print(
-    'reducing domains listed to L1\n'
-)
-
-counter = Value('d', 0)
-t0 = time()
-counter_max = len(list1)
-
-def f_reduce_to_L1(line) :
-    global iana_sld
-    while re.sub(r'^(?:[^\.]+\.)', '', line) not in iana_sld :
-        line = re.sub(r'^(?:[^\.]+\.)', '', line)                               # keep only L1 domain
-    counter.value += 1
-    print(
-        '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
-        '(', '{:.0f}'.format(counter.value), '/', counter_max, ') ',
-        '{:.0f}'.format((time() - t0) / 60), '\' elapsed | ',
-        '{:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), '\' remaining',
-        end = '\r',
-        sep = '',
-        flush = True
-    )
-    return line
-
-pool = ThreadPool(thr)                                                       # <make the pool of workers />
-list3 = pool.map(f_reduce_to_L1, list3)                                      # <execute function by multi-threading />
-pool.close()                                                                 # <close the pool and wait for the work to finish />
-pool.join()
-
-print(
-    '{:,}'.format(len(list1)),
-    'L1_domains listed                                                     \n'
-)
-
-df3 = pd.DataFrame()
-df3['L1_domain'] = list3
-df10 = df1.groupby('L1_domain')['L1_domain'].count()
-df10 = df10.sort_values(ascending = False)
-
-# </get L1 domains>
-
-# <write L1 domain list/>
-
-df10.to_csv(file10_out_name, sep='\t')
-print(
-    'Results saved to textfile <' + file10_out_name + '>\n'
-)
-
-# </write L1 domain list>
 
 # <write extracted url type filters>
 
