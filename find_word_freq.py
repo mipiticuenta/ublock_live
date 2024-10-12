@@ -22,7 +22,7 @@ import pandas as pd
 import re                                       # <regex capabilities />
 
 file1_in_name   = 'compiled_block_list'
-file2_out_name  = 'word_frequency'
+file2_out_name  = 'word_freq'
 thr             = os.cpu_count()
 t_start         = time()
 
@@ -89,7 +89,7 @@ print(
 )
 
 dist_df = pd.DataFrame()
-dist_df['word'] = list(filter(None, sorted(set(list1))))                    # <df deduplication />
+dist_df['word'] = list(filter(None, sorted(set(list1))))                  # <df deduplication />
 
 print(
     '{:,}'.format(dist_df.shape[0]),
@@ -105,8 +105,20 @@ print(
 
 # </write main output>
 
+dist_df['count'] = dist_df['word'].apply(lambda x: sum([--(word == x) for word in list1]))
+dist_df = dist_df.sort_values(by = ['count'], ascending = False)
+
+# <write main output>
+
+file2_out = dist_df.to_csv(file2_out_name, index = False)
+print(
+    'words saved to textfile <' + file2_out_name + '>\n'
+)
+
+# </write main output>
+
 dist_df['sum_dist'] = dist_df['word'].apply(lambda x: sum([distance(word, x) for word in list1]))
-dist_df = dist_df.sort_values(by = ['sum_dist'], ascending = False)
+dist_df = dist_df.sort_values(by = ['sum_dist'], ascending = True)
 
 # <write main output>
 
