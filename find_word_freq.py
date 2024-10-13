@@ -137,7 +137,7 @@ del(s_dist)
 
 # <write main output>
 
-file2_out = metrics_df_df.to_csv(file2_out_name)
+file2_out = metrics_df.to_csv(file2_out_name)
 print(
     'words saved to textfile <' + file2_out_name + '>\n'
 )
@@ -176,7 +176,7 @@ pool.close()                                                                    
 pool.join()
 
 metrics_df['count_w_in_w'] = s_dist
-metrics_df = metrics_df.sort_values('count_w_in_w', ascending = True)
+metrics_df = metrics_df.sort_values('count_w_in_w', ascending = Falase)
 del(s_dist)
 
 # <write main output>
