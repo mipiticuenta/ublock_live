@@ -89,7 +89,7 @@ metrics_df = pd.DataFrame()
 metrics_df['word'] = list1
 metrics_df = metrics_df.groupby('word')['word'].aggregate(['count']).reset_index()
 metrics_df = metrics_df.sort_values('count', ascending = False)
-metrics_df = metrics_df[0:min(25000, metrics_df.shape[0])]
+metrics_df = metrics_df[0:min(5000, metrics_df.shape[0])]
 
 # <write main output>
 
