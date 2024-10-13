@@ -12,23 +12,21 @@ Find most common text in a list block list from url source
 # <libs & settings>
 
 from functools import reduce
-from Levenshtein import distance                # <Levenshtein distance/>                                
-from multiprocessing import Pool as ThreadPool  # <multithreading function/>
-from multiprocessing import Value               # <multithreading function/>
+from Levenshtein import distance                                                # <Levenshtein distance/>
+from multiprocessing import Pool as ThreadPool                                  # <multithreading function/>
+from multiprocessing import Value                                               # <multithreading function/>
 from time import time
-import math                                     # <math functions />
+import math                                                                     # <math functions />
 import numpy as np
-import os                                       # <operating system interfaces />
+import os                                                                       # <operating system interfaces />
 import pandas as pd
-import re                                       # <regex capabilities />
+import re                                                                       # <regex capabilities />
 
 file1_in_name   = 'compiled_block_list'
 file2_out_name  = 'word_freq'
 thr             = os.cpu_count()
 t_start         = time()
-
-pd.options.mode.chained_assignment = None       # <prevent SettingWithCopyWarning message from appearing />
-
+pd.options.mode.chained_assignment = None                                       # <prevent SettingWithCopyWarning message from appearing />
 
 # </libs & settings>
 
@@ -54,29 +52,29 @@ list1 = list(
         [
             re.sub(r'^[!\*].*$', '', line).strip()
             for line in open(file1_in_name, encoding='UTF-8')
-        ]                                                                   # <populate filters />
-    )                                                                       # <remove empty elements />
+        ]                                                                       # <populate filters />
+    )                                                                           # <remove empty elements />
 )
 
 def f_split(line) :
-    line = re.sub(r'[_\W]+', ',', line)                                     # <split each word>
+    line = re.sub(r'[_\W]+', ',', line)                                         # <split each word>
     line = line.split(',')
     return line
 
 
-pool = ThreadPool(thr)                                                      # <make the pool of workers />
-list1 = pool.map(f_split, list1)                                            # <execute function by multithreading />
-pool.close()                                                                # <close the pool and wait for the work to finish />
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+list1 = pool.map(f_split, list1)                                                # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()
 
 list1 = [
-    line if (type(line) == str)                                             # <prevents word atomization into chars if word type />
+    line if (type(line) == str)                                                 # <prevents word atomization into chars if word type />
     else item
     for line in list1
     for item in line
-]                                                                           # <flatten list />
+]                                                                               # <flatten list />
 
-list1 = [word for word in list1 if len(word) > 3]                           # <discard short words />
+list1 = [word for word in list1 if len(word) > 3]                               # <discard short words />
 
 print(
     '{:,}'.format(len(list1)),
@@ -115,7 +113,8 @@ counter_max = metrics_df.shape[0]
 
 def f_dist(word) :
     global list1
-    w_dist = sum([distance(word, x) for x in list1])
+    # w_dist = sum([distance(word, x) for x in list1])
+    w_dist = reduce(lambda word, x: sum(distance(word, x), list1)
     counter.value += 1
     print(
         '        ',
@@ -129,9 +128,9 @@ def f_dist(word) :
     )
     return w_dist
 
-pool = ThreadPool(thr)                                                      # <make the pool of workers />
-s_dist = pool.map(f_dist, metrics_df['word'])                               # <execute function by multithreading />
-pool.close()                                                                # <close the pool and wait for the work to finish />
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+s_dist = pool.map(f_dist, metrics_df['word'])                                   # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()
 
 metrics_df['sum_dist'] = s_dist
