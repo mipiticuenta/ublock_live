@@ -181,7 +181,7 @@ del(s_dist)
 
 # <write main output>
 
-file2_out = metrics_df_df.to_csv(file2_out_name)
+file2_out = metrics_df.to_csv(file2_out_name)
 print(
     'words saved to textfile <' + file2_out_name + '>\n'
 )
