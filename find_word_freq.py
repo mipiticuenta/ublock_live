@@ -118,7 +118,7 @@ print(
 metrics_df['word'] = list1c
 
 bar = ChargingBar('Loading...')
-count_match = np.array([--(x == y) for x in list1c for y in list1 if not bar.next()]).reshape(len(list1c), len(list1))
+count_match = np.array([--(x == y) for x in list1c if not bar.next() for y in list1]).reshape(len(list1c), len(list1))
 bar.finish()
 metrics_df['count'] = np.sum(count_match, axis = 1).tolist()
 del(count_match)
