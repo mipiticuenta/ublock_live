@@ -21,6 +21,7 @@ import numpy as np
 import os                                                                       # <operating system interfaces />
 import pandas as pd
 import re                                                                       # <regex capabilities />
+import random
 
 file1_in_name   = 'compiled_block_list'
 file2_out_name  = 'word_freq'
@@ -90,8 +91,13 @@ metrics_df['word'] = list1
 metrics_df = metrics_df.groupby('word')['word'].aggregate(['count']).reset_index()
 metrics_df = metrics_df.sort_values('count', ascending = False)
 
-trunc = input('enter number of top rows to evaluate (truncate): ')
-trunc = int(trunc)
+trunc = int(input('enter number of top rows to evaluate (truncate): '))
+
+metrics_df = pd.concat([
+    metrics_df.iloc[random.sample(range(0, trunc), math.floor(trunc / 2))],
+    metrics_df.iloc[random.sample(range(trunc + 1, metrics_df.shape[0]), math.ceil(trunc / 2))]
+])
+
 
 metrics_df = metrics_df[0:min(trunc, metrics_df.shape[0])]
 
