@@ -94,7 +94,7 @@ metrics_df = metrics_df.sort_values('count', ascending = False)
 trunc = int(input('enter number of top rows to evaluate (truncate): '))
 trunc = min(
     trunc,
-    metrics_df.shape[0])
+    metrics_df.shape[0]
 )
 
 metrics_df = pd.concat([
