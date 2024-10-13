@@ -91,6 +91,7 @@ metrics_df = metrics_df.groupby('word')['word'].aggregate(['count']).reset_index
 metrics_df = metrics_df.sort_values('count', ascending = False)
 
 trunc = input('enter number of top rows to evaluate (truncate): ')
+trunc = int(trunc)
 
 metrics_df = metrics_df[0:min(trunc, metrics_df.shape[0])]
 
