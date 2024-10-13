@@ -105,46 +105,6 @@ print(
 
 # </write main output>
 
-print(
-    'finding leveshtein distances\n',
-)
-
-counter = Value('d', 0)
-t0 = time()
-counter_max = metrics_df.shape[0]
-
-def f_dist(word) :
-    global list1
-    w_dist = sum([distance(word, y) for y in list1])                            # <using list comprenhension/>
-    # w_dist = np.sum([distance(word,y) for y in list1], axis = 0)              # <using numpy + list comprehension/>
-    counter.value += 1
-    print(
-        '        ',
-        '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
-        '(', '{:.0f}'.format(counter.value), '/', counter_max, ') ',
-        '{:.0f}'.format((time() - t0) / 60), '\' elapsed | ',
-        '{:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), '\' remaining',
-        end = '\r',
-        sep = '',
-        flush = True
-    )
-    return w_dist
-
-pool = ThreadPool(thr)                                                          # <make the pool of workers />
-s_dist = pool.map(f_dist, list(metrics_df['word']))                             # <execute function by multithreading />
-pool.close()                                                                    # <close the pool and wait for the work to finish />
-pool.join()
-
-metrics_df['sum_dist'] = s_dist
-metrics_df = metrics_df.sort_values('sum_dist', ascending = True)
-del(s_dist)
-
-# <write main output>
-
-file2_out = metrics_df.to_csv(file2_out_name, index = False)
-print(
-    'words saved to textfile <' + file2_out_name + '>\n'
-)
 
 print(
     'counting word in word\n',
@@ -188,3 +148,44 @@ print(
 )
 
 # </write main output>
+
+print(
+    'finding leveshtein distances\n',
+)
+
+counter = Value('d', 0)
+t0 = time()
+counter_max = metrics_df.shape[0]
+
+def f_dist(word) :
+    global list1
+    w_dist = sum([distance(word, y) for y in list1])                            # <using list comprenhension/>
+    # w_dist = np.sum([distance(word,y) for y in list1], axis = 0)              # <using numpy + list comprehension/>
+    counter.value += 1
+    print(
+        '        ',
+        '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
+        '(', '{:.0f}'.format(counter.value), '/', counter_max, ') ',
+        '{:.0f}'.format((time() - t0) / 60), '\' elapsed | ',
+        '{:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), '\' remaining',
+        end = '\r',
+        sep = '',
+        flush = True
+    )
+    return w_dist
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+s_dist = pool.map(f_dist, list(metrics_df['word']))                             # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
+
+metrics_df['sum_dist'] = s_dist
+metrics_df = metrics_df.sort_values('sum_dist', ascending = True)
+del(s_dist)
+
+# <write main output>
+
+file2_out = metrics_df.to_csv(file2_out_name, index = False)
+print(
+    'words saved to textfile <' + file2_out_name + '>\n'
+)
