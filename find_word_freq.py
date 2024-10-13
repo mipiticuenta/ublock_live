@@ -126,7 +126,7 @@ counter_max = len(list1c)
 
 def f_count(word) :
     global list1
-    w_count = sum([--(word == y) for y in list1])
+    w_count = list1.count(word)
     counter.value += 1
     print(
         '        ',
