@@ -89,14 +89,14 @@ metrics_df = pd.DataFrame()
 metrics_df['word'] = list1
 metrics_df = metrics_df.groupby('word')['word'].aggregate(['count']).reset_index()
 metrics_df = metrics_df.sort_values('count', ascending = False)
-metrics_df = metrics_df[0:min(5000, metrics_df.shape[0])]
+metrics_df = metrics_df[0:min(50, metrics_df.shape[0])]
 
 # <write main output>
 
 file2_out = metrics_df.to_csv(file2_out_name, index = False)
 print(
     '{:,}'.format(metrics_df.shape[0]),
-    'unique words saved to textfile <' + file2_out_name + '>\n'
+    'unique words (truncated) saved to textfile <' + file2_out_name + '>\n'
 )
 
 # </write main output>
@@ -111,8 +111,8 @@ counter_max = metrics_df.shape[0]
 
 def f_dist(word) :
     global list1
-    # w_dist = sum([distance(word, y) for y in list1])                          # <using list comprenhension/>
-    w_dist = np.sum([distance(word,y) for y in list1], axis = 0)                # <using numpy + list comprehension/>
+    w_dist = sum([distance(word, y) for y in list1])                            # <using list comprenhension/>
+    # w_dist = np.sum([distance(word,y) for y in list1], axis = 0)              # <using numpy + list comprehension/>
     counter.value += 1
     print(
         '        ',
@@ -149,3 +149,41 @@ print(
 #     sum_distance = reduce(lambda word, word1: sum([--(word in [word1])]), list1)
 #     return w_in_w
 
+counter = Value('d', 0)
+t0 = time()
+counter_max = metrics_df.shape[0]
+
+def w_in_w(word) :
+    global list1
+    w_dist = sum([--(word in y) for y in list1])                            # <using list comprenhension/>
+    # w_dist = np.sum([distance(word,y) for y in list1], axis = 0)              # <using numpy + list comprehension/>
+    counter.value += 1
+    print(
+        '        ',
+        '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
+        '(', '{:.0f}'.format(counter.value), '/', counter_max, ') ',
+        '{:.0f}'.format((time() - t0) / 60), '\' elapsed | ',
+        '{:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), '\' remaining',
+        end = '\r',
+        sep = '',
+        flush = True
+    )
+    return w_dist
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+w_in_w = pool.map(w_in_w, list(metrics_df['word']))                             # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
+
+metrics_df['count_w_in_w'] = s_dist
+metrics_df = metrics_df.sort_values('count_w_in_w', ascending = True)
+del(s_dist)
+
+# <write main output>
+
+file2_out = metrics_df_df.to_csv(file2_out_name)
+print(
+    'words saved to textfile <' + file2_out_name + '>\n'
+)
+
+# </write main output>
