@@ -107,8 +107,9 @@ metrics_df = metrics_df.sort_values('count', ascending = False)
 
 file2_out = metrics_df.to_csv(file2_out_name, index = False)
 print(
+    '\n',
     '{:,}'.format(metrics_df.shape[0]),
-    'unique words (truncated) saved to textfile <' + file2_out_name + '>\n'
+    'unique words (random, truncated) saved to textfile <' + file2_out_name + '>\n'
 )
 
 # </write main output>
