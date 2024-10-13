@@ -85,13 +85,6 @@ print(
 
 # <process filter list>
 
-print(
-    '--------------------\n',
-    'finding distances   \n',
-    '--------------------\n',
-    sep = ''
-)
-
 metrics_df = pd.DataFrame()
 metrics_df['word'] = list1
 metrics_df = metrics_df.groupby('word')['word'].aggregate(['count']).reset_index()
@@ -107,14 +100,18 @@ print(
 
 # </write main output>
 
+print(
+    'finding distances\n',
+)
+
 counter = Value('d', 0)
 t0 = time()
 counter_max = metrics_df.shape[0]
 
 def f_dist(word) :
     global list1
-    w_dist = sum([distance(word, y) for y in list1])
-    # w_dist = np.sum([distance(word,y) for y in list1], axis = 0)
+    # w_dist = sum([distance(word, y) for y in list1])                          # <using list comprenhension/>
+    w_dist = np.sum([distance(word,y) for y in list1], axis = 0)                # <using numpy + list comprehension/>
     counter.value += 1
     print(
         '        ',
