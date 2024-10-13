@@ -15,6 +15,7 @@ from functools import reduce
 from Levenshtein import distance                # <Levenshtein distance/>                                
 from multiprocessing import Pool as ThreadPool  # <multithreading function/>
 from multiprocessing import Value               # <multithreading function/>
+from progress.bar import ChargingBar
 from time import time
 import math                                     # <math functions />
 import numpy as np
@@ -120,7 +121,9 @@ print(
 
 metrics_df['word'] = list1c
 
-count_match = np.array([sum([--(x == y) for y in list1]) for x in list1c])
+bar = ChargingBar('Loading...')
+count_match = np.array([sum([--(x == y) for y in list1]) for x in list1c if not bar.next()])
+bar.finish()
 
 # count_match = np.array([--(x == y) for x in list1c for y in list1])
 print('count_match completed\n')
