@@ -113,8 +113,8 @@ counter_max = metrics_df.shape[0]
 
 def f_dist(word) :
     global list1
-    # w_dist = sum([distance(word, x) for x in list1])
-    w_dist = np.sum([distance(word,y) for y in list1], axis = 0)
+    w_dist = sum([distance(word, y) for y in list1])
+    # w_dist = np.sum([distance(word,y) for y in list1], axis = 0)
     counter.value += 1
     print(
         '        ',
