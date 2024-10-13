@@ -102,7 +102,7 @@ print(
 # </write main output>
 
 print(
-    'finding distances\n',
+    'finding leveshtein distances\n',
 )
 
 counter = Value('d', 0)
@@ -142,12 +142,9 @@ print(
     'words saved to textfile <' + file2_out_name + '>\n'
 )
 
-# </write main output>
-
-# def w_in_w(word) :
-#     global list1
-#     sum_distance = reduce(lambda word, word1: sum([--(word in [word1])]), list1)
-#     return w_in_w
+print(
+    'counting word in word\n',
+)
 
 counter = Value('d', 0)
 t0 = time()
@@ -175,8 +172,8 @@ w_in_w = pool.map(w_in_w, list(metrics_df['word']))                             
 pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()
 
-metrics_df['count_w_in_w'] = s_dist
-metrics_df = metrics_df.sort_values('count_w_in_w', ascending = Falase)
+metrics_df['count_w_in_w'] = w_in_w
+metrics_df = metrics_df.sort_values('count_w_in_w', ascending = False)
 del(s_dist)
 
 # <write main output>
