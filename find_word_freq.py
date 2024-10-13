@@ -129,7 +129,7 @@ def f_dist(word) :
     return w_dist
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-s_dist = pool.map(f_dist, metrics_df['word'])                                   # <execute function by multithreading />
+s_dist = pool.map(f_dist, list(metrics_df['word']))                             # <execute function by multithreading />
 pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()
 
