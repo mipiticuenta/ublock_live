@@ -11,9 +11,11 @@ Find most common text in a list block list from url source
 
 # <libs & settings>
 
+from functools import reduce
 from Levenshtein import distance                # <Levenshtein distance/>                                
 from multiprocessing import Pool as ThreadPool  # <multithreading function/>
 from multiprocessing import Value               # <multithreading function/>
+from progress.bar import ChargingBar
 from time import time
 import math                                     # <math functions />
 import numpy as np
@@ -58,6 +60,7 @@ def f_split(line) :
     line = line.split(',')
     return line
 
+
 pool = ThreadPool(thr)                                                      # <make the pool of workers />
 list1 = pool.map(f_split, list1)                                            # <execute function by multithreading />
 pool.close()                                                                # <close the pool and wait for the work to finish />
@@ -88,6 +91,7 @@ print(
     sep = ''
 )
 
+<<<<<<< HEAD
 def sum_dist(word) :
     global list1
     sum_distance = lambda word: sum([--(word1 == word) for word1 in list1])
@@ -97,39 +101,56 @@ dist_df = pd.DataFrame()
 dist_df['word'] = list1
 dist_df = dist_df.groupby('word')['word'].aggregate(['count', sum_dist])
 dist_df = dist_df.sort_values(by = ['count'], ascending = False)
+=======
+# def sum_dist(word) :
+#     global list1
+#     sum_distance = reduce(lambda word, word1: sum([--(word1 == word)]), list1)
+#     return sum_distance
+
+# def w_in_w(word) :
+#     global list1
+#     sum_distance = reduce(lambda word, word1: sum([--(word in [word1])]), list1)
+#     return w_in_w
+
+# dist_df = pd.DataFrame()
+# dist_df['word'] = list1
+# dist_df = dist_df.groupby('word')['word'].aggregate(['count', w_in_w])
+# dist_df = dist_df.sort_values(by = ['sw_in_w'], ascending = False)
+
+metrics_df = pd.DataFrame()
+
+list1c = list(set(list1))
+>>>>>>> 9f3bad65 (update)
 
 print(
-    '{:,}'.format(dist_df.shape[0]),
+    '{:,}'.format(len(list1c)),
     'unique words gathered\n'
 )
 
+metrics_df['word'] = list1c
+
+bar = ChargingBar('Loading...')
+count_match = np.array([--(x == y) for x in list1c for y in list1 if not bar.next()]).reshape(len(list1c), len(list1))
+bar.finish()
+metrics_df['count'] = np.sum(count_match, axis = 1).tolist()
+del(count_match)
+
 # <write main output>
 
-file2_out = dist_df.to_csv(file2_out_name)
+file2_out = distmetrics_df_df.to_csv(file2_out_name)
 print(
     'words saved to textfile <' + file2_out_name + '>\n'
 )
 
 # </write main output>
 
-dist_df['count'] = dist_df['word'].apply(lambda x: sum([--(word == x) for word in list1]))
-dist_df = dist_df.sort_values(by = ['count'], ascending = False)
+lv_dist = np.array([distance(x,y) for x in list1c for y in list1]).reshape(len(list1c), len(list1))
+metrics_df['sum_dist'] = np.sum(lv_dist , axis = 1).tolist()
+del(lv_dist)
 
 # <write main output>
 
-file2_out = dist_df.to_csv(file2_out_name, index = False)
-print(
-    'words saved to textfile <' + file2_out_name + '>\n'
-)
-
-# </write main output>
-
-dist_df['sum_dist'] = dist_df['word'].apply(lambda x: sum([distance(word, x) for word in list1]))
-dist_df = dist_df.sort_values(by = ['sum_dist'], ascending = True)
-
-# <write main output>
-
-file2_out = dist_df.to_csv(file2_out_name, index = False)
+file2_out = distmetrics_df_df.to_csv(file2_out_name)
 print(
     'words saved to textfile <' + file2_out_name + '>\n'
 )
