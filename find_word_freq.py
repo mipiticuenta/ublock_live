@@ -15,7 +15,6 @@ from functools import reduce
 from Levenshtein import distance                # <Levenshtein distance/>                                
 from multiprocessing import Pool as ThreadPool  # <multithreading function/>
 from multiprocessing import Value               # <multithreading function/>
-from progress.bar import ChargingBar
 from time import time
 import math                                     # <math functions />
 import numpy as np
@@ -121,24 +120,37 @@ print(
 
 metrics_df['word'] = list1c
 
-bar = ChargingBar('Loading...')
-count_match = [sum([--(x == y) for y in list1]) for x in list1c if not bar.next()]
-bar.finish()
+counter = Value('d', 0)
+t0 = time()
+counter_max = len(list1c)
 
-# count_match = np.array([--(x == y) for x in list1c for y in list1])
-print('count_match completed\n')
-count_match = count_match.reshape(len(list1c), len(list1))
-print('reshape completed\n')
-count_match = np.sum(count_match, axis = 1)
-print('sum completed\n')
-count_match = count_match.tolist()
-print('tolist completed\n')
+def f_count(word) :
+    global list1
+    w_count = sum([--(word == y) for y in list1])
+    counter.value += 1
+    print(
+        '        ',
+        '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
+        '(', '{:.0f}'.format(counter.value), '/', counter_max, ') ',
+        '{:.0f}'.format((time() - t0) / 60), '\' elapsed | ',
+        '{:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), '\' remaining',
+        end = '\r',
+        sep = '',
+        flush = True
+    )
+    return w_count
+
+pool = ThreadPool(thr)                                                      # <make the pool of workers />
+count_match = pool.map(f_count, list1c)                                     # <execute function by multithreading />
+pool.close()                                                                # <close the pool and wait for the work to finish />
+pool.join()
+
 metrics_df['count'] = count_match
 del(count_match)
 
 # <write main output>
 
-file2_out = distmetrics_df_df.to_csv(file2_out_name)
+file2_out = metrics_df_df.to_csv(file2_out_name)
 print(
     'words saved to textfile <' + file2_out_name + '>\n'
 )
