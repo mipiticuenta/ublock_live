@@ -174,7 +174,7 @@ pool.join()
 
 metrics_df['count_w_in_w'] = w_in_w
 metrics_df = metrics_df.sort_values('count_w_in_w', ascending = False)
-del(s_dist)
+del(w_in_w)
 
 # <write main output>
 
