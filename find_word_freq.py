@@ -94,39 +94,28 @@ print(
     sep = ''
 )
 
-# def sum_dist(word) :
-#     global list1
-#     sum_distance = reduce(lambda word, word1: sum([--(word1 == word)]), list1)
-#     return sum_distance
-
-# def w_in_w(word) :
-#     global list1
-#     sum_distance = reduce(lambda word, word1: sum([--(word in [word1])]), list1)
-#     return w_in_w
-
-# dist_df = pd.DataFrame()
-# dist_df['word'] = list1
-# dist_df = dist_df.groupby('word')['word'].aggregate(['count', w_in_w])
-# dist_df = dist_df.sort_values(by = ['sw_in_w'], ascending = False)
-
 metrics_df = pd.DataFrame()
+metrics_df['word'] = list1
+metrics_df = metrics_df.groupby('word')['word'].aggregate(['count']).reset_index()
+metrics_df = metrics_df.sort_values('count', ascending = False)
 
-list1c = list(set(list1))
+# <write main output>
 
+file2_out = metrics_df.to_csv(file2_out_name, index = False)
 print(
-    '{:,}'.format(len(list1c)),
-    'unique words gathered\n'
+    '{:,}'.format(metrics_df.shape[0]),
+    'unique words saved to textfile <' + file2_out_name + '>\n'
 )
 
-metrics_df['word'] = list1c
+# </write main output>
 
 counter = Value('d', 0)
 t0 = time()
-counter_max = len(list1c)
+counter_max = metrics_df.shape[0]
 
-def f_count(word) :
+def f_dist(word) :
     global list1
-    w_count = list1.count(word)
+    w_dist = sum([distance(word, x) for x in list1])
     counter.value += 1
     print(
         '        ',
@@ -141,12 +130,13 @@ def f_count(word) :
     return w_count
 
 pool = ThreadPool(thr)                                                      # <make the pool of workers />
-count_match = pool.map(f_count, list1c)                                     # <execute function by multithreading />
+s_dist = pool.map(f_dist, metrics_df['word'])                               # <execute function by multithreading />
 pool.close()                                                                # <close the pool and wait for the work to finish />
 pool.join()
 
-metrics_df['count'] = count_match
-del(count_match)
+metrics_df['sum_dist'] = s_dist
+metrics_df = metrics_df.sort_values('sum_dist', ascending = True)
+del(s_dist)
 
 # <write main output>
 
@@ -157,15 +147,8 @@ print(
 
 # </write main output>
 
-lv_dist = np.array([distance(x,y) for x in list1c for y in list1]).reshape(len(list1c), len(list1))
-metrics_df['sum_dist'] = np.sum(lv_dist , axis = 1).tolist()
-del(lv_dist)
+# def w_in_w(word) :
+#     global list1
+#     sum_distance = reduce(lambda word, word1: sum([--(word in [word1])]), list1)
+#     return w_in_w
 
-# <write main output>
-
-file2_out = distmetrics_df_df.to_csv(file2_out_name)
-print(
-    'words saved to textfile <' + file2_out_name + '>\n'
-)
-
-# </write main output>
