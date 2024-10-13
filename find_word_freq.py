@@ -44,6 +44,10 @@ print(
 
 # <get words list >
 
+print(
+    'listing words\n'
+)
+
 list1 = list(
     filter(
         None,
@@ -116,7 +120,9 @@ print(
 
 metrics_df['word'] = list1c
 
-count_match = np.array([--(x == y) for x in list1c for y in list1])
+count_match = np.array([sum([--(x == y) for y in list1]) for x in list1c])
+
+# count_match = np.array([--(x == y) for x in list1c for y in list1])
 print('count_match completed\n')
 count_match = count_match.reshape(len(list1c), len(list1))
 print('reshape completed\n')
