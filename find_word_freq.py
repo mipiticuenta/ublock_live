@@ -91,17 +91,6 @@ print(
     sep = ''
 )
 
-<<<<<<< HEAD
-def sum_dist(word) :
-    global list1
-    sum_distance = lambda word: sum([--(word1 == word) for word1 in list1])
-    return sum_distance
-
-dist_df = pd.DataFrame()
-dist_df['word'] = list1
-dist_df = dist_df.groupby('word')['word'].aggregate(['count', sum_dist])
-dist_df = dist_df.sort_values(by = ['count'], ascending = False)
-=======
 # def sum_dist(word) :
 #     global list1
 #     sum_distance = reduce(lambda word, word1: sum([--(word1 == word)]), list1)
@@ -120,7 +109,6 @@ dist_df = dist_df.sort_values(by = ['count'], ascending = False)
 metrics_df = pd.DataFrame()
 
 list1c = list(set(list1))
->>>>>>> 9f3bad65 (update)
 
 print(
     '{:,}'.format(len(list1c)),
