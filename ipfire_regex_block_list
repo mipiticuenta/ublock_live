@@ -135,7 +135,6 @@
 /[_\W]mast[^/]*\.m?js/
 /[_\W]metrics[_\W]/$important
 /[_\W]mixin[_\W]/
-/[_\W]moapt[_\W]/
 /[_\W]moat/$important
 /[_\W]my[^/]*\.m?js/
 /[_\W]npm\.[^/]*\.m?js/
@@ -211,7 +210,6 @@
 /[_\W]tra?c?k(er)?[_\W]/
 /[_\W]tra?c?k[^/]*\.m?js/
 /[_\W]tra?ck$/$important
-/[_\W]tra?ck[_\W]/$important
 /[_\W]tracking[_\W]/
 /[_\W]transp(arent)?[_\W]/$important
 /[_\W]trd[^/]*\.m?js/
@@ -309,8 +307,6 @@
 /api/v*/apps/
 /appboy/$important
 /appmeasurement/$important
-/assets/images/*.gif^$image,1p,domain=com,to=/\x62\x69\x61\x75\x70\x6C\x6F\x61\x64\x2E\x63\x6F\x6D/
-/assets/images/*banners/
 /audience[^/]*\.m?js/
 /audiencescience/$important
 /audiencesegment/$important
@@ -328,8 +324,6 @@
 /btloader/$important
 /bugsnag/$important
 /bundle[^/]*\.m?js/
-/business\.[a-z]+confirm\.com\/meta-community-standard\d{15}\/?/
-/business\.[a-z]+identiityconfirm\.com\/meta-community-standard\d{15}\/?/
 /buysellads/$important
 /caas[^/]*\.m?js/
 /cache[^/]*\.m?js/
@@ -387,12 +381,10 @@
 /directad/$important
 /dismiss[^/]*\.m?js/
 /displayad/$important
-/div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="lc189" class="react-file-line html-div" data-testid="code-cell" data-line-number="189" style="position:relative"><span class="pl-en">!</span> <span class="pl-en">annoyance</span></div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="lc190" class="react-file-line html-div" data-testid="code-cell" data-line-number="190" style="position:relative"><span class="pl-en">/plugin-pdpa/
 /dmedianet[^/]*\.m?js/
 /dom[_\W]*ready/$important
 /domain[^/]*\.m?js/
 /donat[^/]*\.m?js/
-/doseofporn.com\/[a-z]{0,5}[1-9]{0,5}[a-z]{0,5}[1-9][s\S]*.js/
 /doubleclick/$important
 /dpal[^/]*\.m?js/
 /drivek[^/]*\.m?js/
@@ -400,7 +392,7 @@
 /dynamicgafunctions/$important
 /eloqua/$important
 /email[_\W]*vision/
-/enter/?url=dont_go_away/
+/url=dont_go_away/
 /eumodal[^/]*\.m?js/
 /eventtrack/$important
 /experience[^/]*\.m?js/
@@ -416,8 +408,6 @@
 /firebase/$important
 /foot[^/]*\.m?js/
 /framead/$important
-/freemcserver\.net\/assets\/[a-zA-Z]{10,30}\/[a-zA-Z]{10,30}\.js\?v=17/
-/freemcserver\.net\/assets\/[a-zA-Z]{10,32}\/[a-zA-Z]{10,32}\.js\?v=17/
 /freyr[^/]*\.m?js/
 /fuckadblock/$important
 /gallium[^/]*\.m?js/
@@ -427,7 +417,6 @@
 /getadcode/$important
 /getadsdata/$important
 /getadurl/$important
-/gh/sensitiveio/sbtracker@master/
 /gigya[^/]*\.m?js/
 /goclick/$important
 /googleads/$important
@@ -442,19 +431,10 @@
 /hook[^/]*\.m?js/
 /hover[_\W]*intent/$important
 /htlbid/$important
-/https\:\/\/nieuwsfiets\.nu\/wp-content\/uploads\/.*\/.*(?:banner-(?!mis|tip).*|\.gif)/
 /iadvize/$important
 /identify[^/]*\.m?js/
 /iinkay/$important
-/imag*/branding/
-/image*/tj/
 /image[^/]*\.m?js/
-/images/*_ads/
-/images/*banner/
-/images/cms/_*0*_/
-/images\/(?:Banner\d{1,2}\.|[a-z]{3}\/)/
-/img\/(?!new).+\.gif/
-/img_*/background/
 /inbenta/$important
 /incapsula/$important
 /inner[^/]*\.m?js/
@@ -464,7 +444,6 @@
 /integration[^/]*\.m?js/
 /interstitial/$important
 /interstitial[^/]*\.m?js/
-/io-tech\.fi\/.*\/[0-9a-f]{32}\./
 /ipsos[^/]*\.m?js/
 /isotope[^/]*\.m?js/
 /iter[^/]*\.m?js/
@@ -474,7 +453,6 @@
 /jppost/$important
 /jspdf[^/]*\.m?js/
 /kaltura/$important
-/kick\.com\/[0-9A-z]{16}\/[0-9A-z]{16}\?apiKey=/
 /kontakt/$important
 /latest[^/]*\.m?js/
 /leadforensics/$important
@@ -483,11 +461,8 @@
 /linktrack/$important
 /listen[^/]*\.m?js/
 /live[\W]*chat/
-/livsstil.se\/cnp-assets\/[0-9]+./
 /lodash[^/]*\.m?js/
 /log[_\W]*impression/
-/magesy\.blog\/biocontent\/themes\/[a-z0-9]{4,15}\.js/
-/magesy\.blog\/biocontent\/themes\/[a-z0-9]{4,15}\.m?js/
 /mailcheck[^/]*\.m?js/
 /mailchimp/$important
 /mailmunch/$important
@@ -511,12 +486,9 @@
 /monetate/$important
 /mouse[^/]*\.m?js/
 /mqdefault/$important
-/mudah\.my\/[a-zA-Z0-9]{16}\/[a-zA-Z0-9]{16}\?apiKey=/
-/muge\.eu\/wp-content\/uploads\/20\d{2}\/\d{2}\/thumbnail/
 /munchkin[^/]*\.m?js/
 /mystat/$important
 /nativead/$important
-/net\d+v\.com/
 /netdale[^/]*\.m?js/
 /network[^/]*\.m?js/
 /new[_\W]*app[^/]*\.m?js/
@@ -528,14 +500,10 @@
 /nfplug[^/]*\.m?js/
 /notif[^/]*\.m?js/
 /notifications?/
-/npm/@adshield/
-/npm/@jenkinsci/jenkins-io-components/
-/npm/styled-icons@10.45.0/
 /nugg[_\W]*ad/$important
 /oascentral/$important
 /observe[^/]*\.m?js/
 /ochaddads/$important
-/offer\.(?:html|php)\?(?:mobile|rechargenumber)=\d{10}\b/
 /omniture/$important
 /omtrdc/$important
 /one[_\W]*tap[^/]*\.m?js/
