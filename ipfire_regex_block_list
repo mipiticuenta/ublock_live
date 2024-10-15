@@ -21,6 +21,7 @@
 /[_\W]ad[_\W]*script[^/]*\.m?js/
 /[_\W]ad[sx]?[_\W]/
 /[_\W]adb(?:lock(?:er)?)?[_\W]*detect/
+/[_\W]adbl?[_\W]/
 /[_\W]adbox/
 /[_\W]addressdotnet[_\W]/
 /[_\W]adfuel[^/]*\.m?js/
@@ -33,7 +34,6 @@
 /[_\W]adutil/
 /[_\W]adv(erts?)?[_\W]/
 /[_\W]adwords/
-/[_\W]adwrap/
 /[_\W]adwrap/$important
 /[_\W]aff[^/]*\.m?js/
 /[_\W]aff[_\W]/
@@ -51,7 +51,7 @@
 /[_\W]assoc[^/]*\.m?js/
 /[_\W]avvxse/$important
 /[_\W]aweber[^/]*\.m?js/
-/[_\W]beacons?[_\W]/
+/[_\W]beacon/
 /[_\W]beam[^/]*\.m?js/
 /[_\W]bing[^/]*\.m?js/
 /[_\W]bloo[^/]*\.m?js/
@@ -77,6 +77,7 @@
 /[_\W]cookies?[_\W]/
 /[_\W]copy[^/]*\.m?js/
 /[_\W]corot[_\W]/
+/[_\W]coveo/
 /[_\W]csp[_\W]/
 /[_\W]cx[_\W]/
 /[_\W]dasf[^/]*\.m?js/
@@ -125,8 +126,7 @@
 /[_\W]id[^/]*\.m?js/
 /[_\W]impress(ions?)?[_\W]/$important
 /[_\W]inf[^/]*\.m?js/
-/[_\W]inp[o0][sm]t[_\W]/
-/[_\W]inpostpl[_\W]/
+/[_\W]inp[o0][sm]tp?l?[_\W]/
 /[_\W]ip[^/]*\.m?js/
 /[_\W]ipsos[_\W]/
 /[_\W]jsll[^/]*\.m?js/
@@ -213,11 +213,7 @@
 /[_\W]tg\-[^/]*\.m?js/
 /[_\W]timer[^/]*\.m?js/
 /[_\W]tinypass[^/]*\.m?js/
-/[_\W]tra?c?k(er)?[_\W]/
-/[_\W]tra?c?k[^/]*\.m?js/
-/[_\W]tra?ck$/$important
-/[_\W]tra?ck[_\W]/$important
-/[_\W]tracking[_\W]/
+/[_\W]tra?c?k$/$important
 /[_\W]transp(arent)?[_\W]/$important
 /[_\W]trd[^/]*\.m?js/
 /[_\W]truvid[^/]*\.m?js/
@@ -234,7 +230,7 @@
 /[_\W]user[_\W]*data[_\W]/$important
 /[_\W]user[_\W]*info[_\W]/$important
 /[_\W]utag[^/]*\.m?js/
-/[_\W]utag[_\W]/
+/[_\W]utag[_\W]/$important
 /[_\W]utms?[_\W]/$important
 /[_\W]v[at]m[^/]*\.m?js/
 /[_\W]visitor[_\W]/
@@ -374,6 +370,7 @@
 /consent[^/]*\.m?js/
 /contentpass[^/]*\.m?js/
 /context[^/]*\.m?js/
+/controltag/$important
 /conversion[^/]*\.m?js/
 /count[^/]*\.m?js/
 /cpcontacts/$important
@@ -381,6 +378,7 @@
 /crossdomain[^/]*\.m?js/
 /csp[_\W]*report/
 /cxense/$important
+/d3d3l/$important
 /dailymotion/$important
 /danelei[^/]*\.m?js/
 /datadog/$important
