@@ -29,6 +29,7 @@ file7_out_name  = 'ublock_list_except_domains'
 file8_in_name   = 'domains_white_list'
 file9_in_name   = 'regex_white_list'
 file10_out_name = 'L1_domain_list'
+file11_out_name = 'domain_prefix_list'
 no_proxy        = {'https': '', 'http': ''}
 local_proxy     = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
 thr             = os.cpu_count()
@@ -1286,6 +1287,32 @@ print(
     '{:,}'.format(len(list2) + len(list3)),
     'filters kept'
 )
+
+# <list domain prefix>
+
+def f_get_prefix(line) :
+
+    line = re.sub(r'\..*$', '', line)                                            # <keep only prefix/>
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+prefix = pool.map(f_get_prefix, list3)                                          # <execute function by multi-threading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
+
+metrics_df = pd.DataFrame()
+metrics_df['prefix'] = prefix
+metrics_df = metrics_df.groupby('prefix')['prefix'].aggregate(['count']).reset_index()
+metrics_df = metrics_df.sort_values('count', ascending = False)
+
+file11_out = metrics_df.to_csv(file11_out_name, index = False)
+print(
+    '\n',
+    '{:,}'.format(metrics_df.shape[0]),
+    'domain prefix stats saved to textfile <' + file11_out_name + '>\n'
+)
+
+# <list domain prefix>
 
 # <remove leading . , L5+ domains and numerial low levels >
 
