@@ -47,7 +47,7 @@ print(
     'listing words\n'
 )
 
-list1 = list(
+lines = list(
     filter(
         None,
         [
@@ -64,21 +64,21 @@ def f_split(line) :
 
 
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
-list1 = pool.map(f_split, list1)                                                # <execute function by multithreading />
+words = pool.map(f_split, lines)                                                # <execute function by multithreading />
 pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()
 
-list1 = [
+words = [
     line if (type(line) == str)                                                 # <prevents word atomization into chars if word type />
-    else item
-    for line in list1
-    for item in line
+    else items
+    for line in words
+    for items in line
 ]                                                                               # <flatten list />
 
-list1 = [word for word in list1 if len(word) > 3]                               # <discard short words />
+words = [word for word in words if len(word) > 3]                               # <discard short words />
 
 print(
-    '{:,}'.format(len(list1)),
+    '{:,}'.format(len(words)),
     'words gathered\n'
 )
 
@@ -87,7 +87,7 @@ print(
 # <process filter list>
 
 metrics_df = pd.DataFrame()
-metrics_df['word'] = list1
+metrics_df['word'] = words
 metrics_df = metrics_df.groupby('word')['word'].aggregate(['count']).reset_index()
 metrics_df = metrics_df.sort_values('count', ascending = False)
 
@@ -114,7 +114,6 @@ print(
 
 # </write main output>
 
-
 print(
     'counting word in word\n',
 )
@@ -124,9 +123,9 @@ t0 = time()
 counter_max = metrics_df.shape[0]
 
 def w_in_w(word) :
-    global list1
-    w_dist = sum([--(word in y) for y in list1])                            # <using list comprenhension/>
-    # w_dist = np.sum([distance(word,y) for y in list1], axis = 0)              # <using numpy + list comprehension/>
+    global words
+    w_dist = sum([--(word in y) for y in words])                            # <using list comprenhension/>
+    # w_dist = np.sum([distance(word,y) for y in words], axis = 0)              # <using numpy + list comprehension/>
     counter.value += 1
     print(
         '        ',
@@ -167,9 +166,9 @@ t0 = time()
 counter_max = metrics_df.shape[0]
 
 def f_dist(word) :
-    global list1
-    w_dist = sum([distance(word, y) for y in list1])                            # <using list comprenhension/>
-    # w_dist = np.sum([distance(word,y) for y in list1], axis = 0)              # <using numpy + list comprehension/>
+    global words
+    w_dist = sum([distance(word, y) for y in words])                            # <using list comprenhension/>
+    # w_dist = np.sum([distance(word,y) for y in words], axis = 0)              # <using numpy + list comprehension/>
     counter.value += 1
     print(
         '        ',
