@@ -1,6 +1,7 @@
 !$$ important: use always the following syntax: ^....$
 !$$ url and regex white-listing based in regex; do not enclose regex in '' nor r''
 !$$ white-listing shall not be applied to cosmetic nor removeparam filters
+.*carousel\.min\.js[_\W]*$
 ^[_\W][\d]{3,}px[_\W]*$
 ^[_\W]*?api\.js$
 ^[_\W]*?base\.js$
@@ -108,8 +109,8 @@
 ^[_\W]*acer[_\W]*$
 ^[_\W]*achats?[_\W]*$
 ^[_\W]*aches?[_\W]*$
-^[_\W]*achieves?[_\W]*$
 ^[_\W]*achievements?[_\W]*$
+^[_\W]*achieves?[_\W]*$
 ^[_\W]*acid[_\W]*$
 ^[_\W]*acknowledge[_\W]*$
 ^[_\W]*aclk[_\W]*$
@@ -130,8 +131,8 @@
 ^[_\W]*activations?[_\W]*$
 ^[_\W]*activators?[_\W]*$
 ^[_\W]*active(?:view)?[_\W]*$
-^[_\W]*actives?[_\W]*$
 ^[_\W]*actively[_\W]*$
+^[_\W]*actives?[_\W]*$
 ^[_\W]*activists?[_\W]*$
 ^[_\W]*activit[_\W]*$
 ^[_\W]*activities[_\W]*$
@@ -165,8 +166,8 @@
 ^[_\W]*adhere[_\W]*$
 ^[_\W]*adidas[_\W]*$
 ^[_\W]*adjacents?[_\W]*$
-^[_\W]*adjusts?[_\W]*$
 ^[_\W]*adjustments?[_\W]*$
+^[_\W]*adjusts?[_\W]*$
 ^[_\W]*admin[_\W]*$
 ^[_\W]*administers?[_\W]*$
 ^[_\W]*administrations?[_\W]*$
@@ -185,7 +186,6 @@
 ^[_\W]*adorables?[_\W]*$
 ^[_\W]*adores?[_\W]*$
 ^[_\W]*adrenaline[_\W]*$
-^[_\W]*adults?[_\W]*$
 ^[_\W]*adulthood[_\W]*$
 ^[_\W]*adults?[_\W]*$
 ^[_\W]*advanced[_\W]*$
@@ -199,8 +199,8 @@
 ^[_\W]*advertisement[_\W]*$
 ^[_\W]*advertising[_\W]*$
 ^[_\W]*advices?[_\W]*$
-^[_\W]*advises?[_\W]*$
 ^[_\W]*adviser[_\W]*$
+^[_\W]*advises?[_\W]*$
 ^[_\W]*advisors?[_\W]*$
 ^[_\W]*advisory[_\W]*$
 ^[_\W]*advocacy[_\W]*$
@@ -255,8 +255,8 @@
 ^[_\W]*aida[_\W]*$
 ^[_\W]*aide[_\W]*$
 ^[_\W]*aids?[_\W]*$
-^[_\W]*aims?[_\W]*$
 ^[_\W]*aimg[_\W]*$
+^[_\W]*aims?[_\W]*$
 ^[_\W]*air(?:bnb)?[_\W]*$
 ^[_\W]*air[_\W]*$
 ^[_\W]*air[_\W]*filter[_\W]*$
@@ -316,9 +316,9 @@
 ^[_\W]*all(?:channel|day|favorite|pages?|products)?[_\W]*$
 ^[_\W]*all[_\W]*$
 ^[_\W]*allegations?[_\W]*$
-^[_\W]*alleges?[_\W]*$
 ^[_\W]*alleged[_\W]*$
 ^[_\W]*allegedly[_\W]*$
+^[_\W]*alleges?[_\W]*$
 ^[_\W]*allegiance[_\W]*$
 ^[_\W]*allegro[_\W]*$
 ^[_\W]*allen[_\W]*$
@@ -381,10 +381,10 @@
 ^[_\W]*amd[_\W]*$
 ^[_\W]*amelie[_\W]*$
 ^[_\W]*amen[_\W]*$
-^[_\W]*amends?[_\W]*$
 ^[_\W]*amendments?[_\W]*$
-^[_\W]*americans?[_\W]*$
+^[_\W]*amends?[_\W]*$
 ^[_\W]*americanas?[_\W]*$
+^[_\W]*americans?[_\W]*$
 ^[_\W]*amid[_\W]*$
 ^[_\W]*amigos?[_\W]*$
 ^[_\W]*amish[_\W]*$
@@ -397,8 +397,8 @@
 ^[_\W]*amount[_\W]*$
 ^[_\W]*ample[_\W]*$
 ^[_\W]*amplitude[_\W]*$
-^[_\W]*amuses?[_\W]*$
 ^[_\W]*amusements?[_\W]*$
+^[_\W]*amuses?[_\W]*$
 ^[_\W]*amusing[_\W]*$
 ^[_\W]*an[_\W]*$
 ^[_\W]*ana[_\W]*$
@@ -583,8 +583,8 @@
 ^[_\W]*army[_\W]*$
 ^[_\W]*around[_\W]*$
 ^[_\W]*arouse[_\W]*$
-^[_\W]*arranges?[_\W]*$
 ^[_\W]*arrangements?[_\W]*$
+^[_\W]*arranges?[_\W]*$
 ^[_\W]*array[_\W]*$
 ^[_\W]*arrest[_\W]*$
 ^[_\W]*arriba[_\W]*$
@@ -622,8 +622,8 @@
 ^[_\W]*aspires?[_\W]*$
 ^[_\W]*aspx[_\W]*$
 ^[_\W]*ass?[_\W]*$
-^[_\W]*assassins?[_\W]*$
 ^[_\W]*assassination[_\W]*$
+^[_\W]*assassins?[_\W]*$
 ^[_\W]*assaults?[_\W]*$
 ^[_\W]*assemble[_\W]*$
 ^[_\W]*assembly[_\W]*$
@@ -637,18 +637,18 @@
 ^[_\W]*asshole[_\W]*$
 ^[_\W]*assign[_\W]*$
 ^[_\W]*assignments?[_\W]*$
-^[_\W]*assists?[_\W]*$
 ^[_\W]*assistance[_\W]*$
 ^[_\W]*assistants?[_\W]*$
 ^[_\W]*assisted[_\W]*$
 ^[_\W]*assistive[_\W]*$
+^[_\W]*assists?[_\W]*$
 ^[_\W]*associated?[_\W]*$
 ^[_\W]*associations?[_\W]*$
 ^[_\W]*assumes?[_\W]*$
 ^[_\W]*assumptions?[_\W]*$
 ^[_\W]*assurances?[_\W]*$
-^[_\W]*assures?[_\W]*$
 ^[_\W]*assured[_\W]*$
+^[_\W]*assures?[_\W]*$
 ^[_\W]*aster[_\W]*$
 ^[_\W]*asterisks?[_\W]*$
 ^[_\W]*asteroids?[_\W]*$
@@ -2434,8 +2434,11 @@
 ^[_\W]*dad[_\W]*$
 ^[_\W]*daddy[_\W]*$
 ^[_\W]*daily[_\W]*$
+^[_\W]*daimler[_\W]*$
 ^[_\W]*dairy[_\W]*$
 ^[_\W]*daisy[_\W]*$
+^[_\W]*dale[_\W]*$
+^[_\W]*dallas[_\W]*$
 ^[_\W]*dam[_\W]*$
 ^[_\W]*damage[_\W]*$
 ^[_\W]*damaged[_\W]*$
@@ -3937,6 +3940,7 @@
 ^[_\W]*front(?:end)?[_\W]*$
 ^[_\W]*front[_\W]*$
 ^[_\W]*front[_\W]*line[_\W]*$
+^[_\W]*front\.js[_\W]*$
 ^[_\W]*frontal[_\W]*$
 ^[_\W]*frontier[_\W]*$
 ^[_\W]*frontpage[_\W]*$
@@ -4051,6 +4055,7 @@
 ^[_\W]*gender[_\W]*$
 ^[_\W]*gene[_\W]*$
 ^[_\W]*general[_\W]*$
+^[_\W]*general\.css[_\W]*$
 ^[_\W]*generally[_\W]*$
 ^[_\W]*generate[_\W]*$
 ^[_\W]*generation[_\W]*$
@@ -4836,6 +4841,7 @@
 ^[_\W]*index[_\W]*$
 ^[_\W]*index[_\W]*ph[_\W]*$
 ^[_\W]*index\.css[_\W]*$
+^[_\W]*index\.js[_\W]*$
 ^[_\W]*india[_\W]*$
 ^[_\W]*indian[_\W]*$
 ^[_\W]*indicate[_\W]*$
@@ -5939,8 +5945,8 @@
 ^[_\W]*memorizes?[_\W]*$
 ^[_\W]*memory[_\W]*$
 ^[_\W]*memos?[_\W]*$
-^[_\W]*mens?[_\W]*$
 ^[_\W]*mends?[_\W]*$
+^[_\W]*mens?[_\W]*$
 ^[_\W]*mental[_\W]*$
 ^[_\W]*mentality[_\W]*$
 ^[_\W]*mentally[_\W]*$
@@ -6585,6 +6591,7 @@
 ^[_\W]*oman[_\W]*$
 ^[_\W]*omega[_\W]*$
 ^[_\W]*omelet[_\W]*$
+^[_\W]*omgubuntu[_\W]*$
 ^[_\W]*omit[_\W]*$
 ^[_\W]*omni[_\W]*$
 ^[_\W]*omron[_\W]*$
@@ -7624,6 +7631,7 @@
 ^[_\W]*quarter[_\W]*$
 ^[_\W]*quarterback[_\W]*$
 ^[_\W]*quarterly[_\W]*$
+^[_\W]*quartz[_\W]*$
 ^[_\W]*queen[_\W]*$
 ^[_\W]*queer[_\W]*$
 ^[_\W]*queries[_\W]*$
@@ -7776,6 +7784,7 @@
 ^[_\W]*recalls?[_\W]*$
 ^[_\W]*recap[_\W]*$
 ^[_\W]*recaptcha[_\W]*$
+^[_\W]*recaptcha/api\.js[_\W]*$
 ^[_\W]*receipt[_\W]*$
 ^[_\W]*receive[_\W]*$
 ^[_\W]*receiver?[_\W]*$
@@ -8377,7 +8386,7 @@
 ^[_\W]*schoolwork[_\W]*$
 ^[_\W]*sciences?[_\W]*$
 ^[_\W]*scientifics?[_\W]*$
-^[_\W]*scientists=[_\W]*$
+^[_\W]*scientists?[_\W]*$
 ^[_\W]*scissors[_\W]*$
 ^[_\W]*scold[_\W]*$
 ^[_\W]*scoop[_\W]*$
@@ -8492,6 +8501,7 @@
 ^[_\W]*selected[_\W]*$
 ^[_\W]*selection[_\W]*$
 ^[_\W]*selective[_\W]*$
+^[_\W]*selectize\.min\.js[_\W]*$
 ^[_\W]*selectors?[_\W]*$
 ^[_\W]*selena[_\W]*$
 ^[_\W]*self[_\W]*$
@@ -8808,6 +8818,7 @@
 ^[_\W]*slick[_\W]*$
 ^[_\W]*slide[_\W]*$
 ^[_\W]*slider[_\W]*$
+^[_\W]*slider\.j[_\W]*$
 ^[_\W]*slideshow[_\W]*$
 ^[_\W]*sliding[_\W]*$
 ^[_\W]*slight[_\W]*$
@@ -9674,6 +9685,7 @@
 ^[_\W]*them[_\W]*$
 ^[_\W]*theme[_\W]\d*[_\W]*$
 ^[_\W]*theme\.css[_\W]*$
+^[_\W]*theme\.js[_\W]*$
 ^[_\W]*themes?[_\W]*$
 ^[_\W]*themselves[_\W]*$
 ^[_\W]*then[_\W]*$
@@ -10627,7 +10639,6 @@
 ^[_\W]*woman[_\W]*$
 ^[_\W]*womb[_\W]*$
 ^[_\W]*womens?[_\W]*$
-^[_\W]*wonders?[_\W]*$
 ^[_\W]*wonderful[_\W]*$
 ^[_\W]*wonderfully[_\W]*$
 ^[_\W]*wonders?[_\W]*$
@@ -10745,13 +10756,22 @@
 ^[_\W]*zoom[_\W]*crop[_\W]*$
 ^[-/\.\w]+\*[-/\.\w]+$
 ^\w(\d\.)+\d$
-^[_\W]*quartz[_\W]*$
-^[_\W]*index\.js[_\W]*$
-^[_\W]*front\.js[_\W]*$
-.*carousel\.min\.js[_\W]*$
-^[_\W]*theme\.js[_\W]*$
-^[_\W]*selectize\.min\.js[_\W]*$
-^[_\W]*recaptcha/api\.js[_\W]*$
-^[_\W]*slider\.j[_\W]*$
-^[_\W]*general\.css[_\W]*$
-^[_\W]*omgubuntu[_\W]*$
+^[_\W]*lume[_\W]*$
+^[_\W]*lumens?[_\W]*$
+^[_\W]*lumi[_\W]*$
+^[_\W]*luna[_\W]*$
+^[_\W]*luminate[_\W]*$
+^[_\W]*luminous[_\W]*$
+^[_\W]*columbus[_\W]*$
+^[_\W]*comandos?[_\W]*$
+^[_\W]*columnas?[_\W]*$
+^[_\W]*diablos?[_\W]*$
+^[_\W]*diags?[_\W]*$
+^[_\W]*dialysis[_\W]*$
+^[_\W]*hvac[_\W]*$
+^[_\W]*schwartz[_\W]*$
+^[_\W]*schwarzkopf[_\W]*$
+^[_\W]*scooby[_\W]*$
+^[_\W]*scooby[-_]doo[_\W]*$
+^[_\W]*scott[_\W]*$
+^[_\W]*scottsdale[_\W]*$
