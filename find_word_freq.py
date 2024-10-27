@@ -62,7 +62,6 @@ def f_split(line) :
     line = line.split(',')
     return line
 
-
 pool = ThreadPool(thr)                                                          # <make the pool of workers />
 words = pool.map(f_split, lines)                                                # <execute function by multithreading />
 pool.close()                                                                    # <close the pool and wait for the work to finish />

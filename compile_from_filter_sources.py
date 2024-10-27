@@ -30,6 +30,7 @@ file8_in_name   = 'domains_white_list'
 file9_in_name   = 'regex_white_list'
 file10_out_name = 'L1_domain_list'
 file11_out_name = 'domain_prefix_list'
+file12_out_name = 'words in long dot separated strings'
 no_proxy        = {'https': '', 'http': ''}
 local_proxy     = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
 thr             = os.cpu_count()
@@ -1889,6 +1890,43 @@ print(
 )
 
 # </write extracted filters except domains />
+
+# <list words in long dot seperated strings>
+
+list12  = [line for lin list2 if re.search(r'(\w+\.){3,}', line)]
+
+def f_split(line) :
+    line = re.sub(r'[_\W]+', ',', line)                                         # <split each word>
+    line = line.split(',')
+    return line
+
+pool = ThreadPool(thr)                                                          # <make the pool of workers />
+words = pool.map(f_split, list12)                                               # <execute function by multithreading />
+pool.close()                                                                    # <close the pool and wait for the work to finish />
+pool.join()
+
+words = [
+    line if (type(line) == str)                                                 # <prevents word atomization into chars if word type />
+    else items
+    for line in words
+    for items in line
+]                                                                               # <flatten list />
+
+words = [word for word in words if len(word) > 3]                               # <discard short words />
+
+metrics_df = pd.DataFrame()
+metrics_df['word'] = words
+metrics_df = metrics_df.groupby('word')['word'].aggregate(['count']).reset_index()
+metrics_df = metrics_df.sort_values('count', ascending = False)
+
+file12_out = metrics_df.to_csv(file12_out_name, index = False)
+print(
+    '\n',
+    '{:,}'.format(metrics_df.shape[0]),
+    'words in long dot separated strings saved to textfile <' + file2_out_name + '>\n'
+)
+
+# <list words in long dot seperated strings>
 
 print(
     'Total compilation time: ',
