@@ -1893,7 +1893,7 @@ print(
 
 # <list words in long dot seperated strings>
 
-list12  = [line for lin list2 if re.search(r'(\w+\.){3,}', line)]
+list12  = [line for line in list2 if re.search(r'(\w+\.){3,}', line)]
 
 def f_split(line) :
     line = re.sub(r'[_\W]+', ',', line)                                         # <split each word>
