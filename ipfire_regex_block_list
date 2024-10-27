@@ -7,6 +7,7 @@
 /(?<!youtube)[_\W]*cooc?ki/$important
 //p\.[^/]*\.m?js/
 /10cekub2b/$important
+/123pago/$important
 /1800flowers/$important
 /18278aewaster/$important
 /18278app2/$important
@@ -15,6 +16,7 @@
 /[&=\?]pub(?!l)/
 /[_\W](?:de)?collect(?:or)?[_\W]/
 /[_\W](?:fast)?cli?cks?[_\W]/
+/[_\W](n?s)?metrics[_\W]/$important
 /[_\W](|high)web(media|orama|trekk)[_\W]/
 /[_\W]*optin[^/]*\.m?js/
 /[_\W]2o7[_\W]/
@@ -57,7 +59,6 @@
 /[_\W]ampz?[_\W]/
 /[_\W]amzaon[_\W]/$important
 /[_\W]analytics?[_\W]/$important
-/[_\W]andoveradvertiser[_\W]/$important
 /[_\W]annonse/
 /[_\W]antd[_\W]/$important
 /[_\W]aos[^/]*\.m?js/
@@ -238,6 +239,7 @@
 /[_\W]has[_\W]/
 /[_\W]hello[_\W]/
 /[_\W]helper[_\W]/
+/[_\W]hichann/$important
 /[_\W]i18n[^/]*\.m?js/
 /[_\W]iaw[^/]*\.m?js/
 /[_\W]id.?cta[_\W]/
@@ -257,7 +259,6 @@
 /[_\W]logs?[_\W]/
 /[_\W]lux[^/]*\.m?js/
 /[_\W]mast[^/]*\.m?js/
-/[_\W]metrics[_\W]/$important
 /[_\W]mixin[_\W]/
 /[_\W]moapt[_\W]/
 /[_\W]moat/$important
@@ -335,7 +336,6 @@
 /[_\W]skimtag/$important
 /[_\W]slick[^/]*\.m?js/
 /[_\W]slot[^/]*\.m?js/
-/[_\W]smetrics[_\W]/$important
 /[_\W]snow[^/]*\.m?js/
 /[_\W]socials?[_\W]/
 /[_\W]socy[^a-z]/
@@ -367,7 +367,6 @@
 /[_\W]ta[bg][^/]*\.m?js/
 /[_\W]tag[_\W]*manager/
 /[_\W]tamper[^/]*\.m?js/
-/[_\W]telemetry[_\W]/
 /[_\W]telemetry[_\W]/$important
 /[_\W]test[^/]*\.m?js/
 /[_\W]tg\-[^/]*\.m?js/
@@ -415,13 +414,13 @@
 /\.ttf(?:\W.*)?/
 /\.woff2?(?:\W.*)?/
 /\/[0-9]+\.m?js/
-/\://go\./$important
-/\://s?metrics?\./$important
-/\:\-abp\-/
 /\Wonet\W/
 /\w\^\*\w/
 /^([^\./]*\.)*[\d]+\.([a-z]{2,}\.)?[a-z]{2,}/$important
 /^(https?://)?[a-z]{10,12}\.easy\.co($|/.*$)/
+/^abmetric/$important
+/^ampmetric/$important
+/^gcirm/$important
 /a-zporn/$important
 /a1o1/$important
 /a8cli?k/$important
@@ -535,6 +534,7 @@
 /clickunder/$important
 /client[^/]*\.m?js/
 /client[_\W]*204/$important
+/client[_\W]*metrics/$important
 /clipboard[^/]*\.m?js/
 /clksite/$important
 /cloudflare[^/]*\.m?js/
@@ -568,6 +568,7 @@
 /desktop/special/*-slider/
 /detect[^/]*\.m?js/
 /dfp[^/]*\.m?js/
+/dianomi/$important
 /didomi/$important
 /difoosion/$important
 /dims4/default/$important
@@ -584,6 +585,7 @@
 /dompurify/$important
 /donat[^/]*\.m?js/
 /doseofporn.com\/[a-z]{0,5}[1-9]{0,5}[a-z]{0,5}[1-9][s\S]*.js/
+/dotmetrics/$important
 /doubleclick/$important
 /dpal[^/]*\.m?js/
 /drivek[^/]*\.m?js/
@@ -675,6 +677,7 @@
 /interstitial[^/]*\.m?js/
 /io-tech\.fi\/.*\/[0-9a-f]{32}\./
 /ipsos[^/]*\.m?js/
+/iqmetrics/$important
 /isotope[^/]*\.m?js/
 /iter[^/]*\.m?js/
 /j2cat/$important
@@ -782,6 +785,7 @@
 /opti?mi?ze?ly/$important
 /otautoblock[^/]*\.m?js/
 /outbrain/$important
+/overadvertiser/$important
 /overblog/$important
 /overlay[^/]*\.m?js/
 /owa/calendar/BetterMusic3@bettermusic.com.au/bookings/
@@ -872,6 +876,7 @@
 /salesforce/$important
 /sapcnqrthemedcss/$important
 /scheduler[^/]*\.m?js/
+/securemetric/$important
 /segment[^/]*\.m?js/
 /sensor[_\W]*collect/$important
 /sensorcollect/$important
@@ -903,7 +908,6 @@
 /sm\.news/[^\s]{80,}/
 /smartclip/$important
 /smarttag/$important
-/smetrics./$important
 /sourcepoint/$important
 /special/*_960/
 /sphinxs[^/]*\.m?js/
