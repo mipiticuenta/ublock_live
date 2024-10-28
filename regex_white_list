@@ -3835,6 +3835,7 @@
 ^[_\W]*foot[_\W]*$
 ^[_\W]*footage[_\W]*$
 ^[_\W]*football[_\W]*$
+^[_\W]*footer\.css[_\W]*$
 ^[_\W]*footlights?[_\W]*$
 ^[_\W]*footman[_\W]*$
 ^[_\W]*footnote[_\W]*$
@@ -4143,8 +4144,7 @@
 ^[_\W]*glitter[_\W]*$
 ^[_\W]*global(?:\.css)?[_\W]*$
 ^[_\W]*global[_\W]*$
-^[_\W]*global\-header\.css[_\W]*$
-^[_\W]*globalheader\.css[_\W]*$
+^[_\W]*global[_\W]*header\.css[_\W]*$
 ^[_\W]*globes?[_\W]*$
 ^[_\W]*gloomy[_\W]*$
 ^[_\W]*glorious[_\W]*$
@@ -4423,16 +4423,18 @@
 ^[_\W]*hazard[_\W]*$
 ^[_\W]*haze[_\W]*$
 ^[_\W]*he[_\W]*$
-^[_\W]*head(?:ers?|less|lines?)?[_\W]*$
-^[_\W]*head[_\W]*$
-^[_\W]*headache[_\W]*$
+^[_\W]*head[_\W]*lines?[_\W]*$
+^[_\W]*headaches?[_\W]*$
 ^[_\W]*headdress[_\W]*$
-^[_\W]*header[_\W]*$
-^[_\W]*header[-_]?logo[_\W]*$
+^[_\W]*heade[_\W]*$
+^[_\W]*header.css[_\W]*$
+^[_\W]*header[_\W]*logo[_\W]*$
+^[_\W]*headers?[_\W]*$
 ^[_\W]*headland[_\W]*$
-^[_\W]*headline[_\W]*$
+^[_\W]*headless[_\W]*$
 ^[_\W]*headphones?[_\W]*$
 ^[_\W]*headquarters[_\W]*$
+^[_\W]*heads?[_\W]*$
 ^[_\W]*headstone[_\W]*$
 ^[_\W]*headway[_\W]*$
 ^[_\W]*heal[_\W]*$
@@ -7897,6 +7899,7 @@
 ^[_\W]*regime[_\W]*$
 ^[_\W]*regio[_\W]*$
 ^[_\W]*regional[_\W]*$
+^[_\W]*regionales?[_\W]*$
 ^[_\W]*regions?[_\W]*$
 ^[_\W]*regist(?:er|ration)[_\W]*$
 ^[_\W]*register[_\W]*$
@@ -10343,6 +10346,7 @@
 ^[_\W]*viber[_\W]*$
 ^[_\W]*vibrant[_\W]*$
 ^[_\W]*vibrate[_\W]*$
+^[_\W]*vibrating[_\W]*$
 ^[_\W]*vibration[_\W]*$
 ^[_\W]*vice[_\W]*$
 ^[_\W]*vicinity[_\W]*$
@@ -10790,5 +10794,3 @@
 ^[_\W]*zoom[_\W]*crop[_\W]*$
 ^[-/\.\w]+\*[-/\.\w]+$
 ^\w(\d\.)+\d$
-^[_\W]*vibrating[_\W]*$
-^[_\W]*regionales?[_\W]*$
