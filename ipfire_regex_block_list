@@ -39,12 +39,14 @@
 /[_\W]adrum/
 /[_\W]adse?rv/
 /[_\W]adserver[_\W]/$important
+/[_\W]adsx[_\W]/
 /[_\W]adsys/$important
 /[_\W]adtag/$important
 /[_\W]adtrac/$important
 /[_\W]adutil/
 /[_\W]adv(erts?)?[_\W]/
 /[_\W]advally[_\W]/$important
+/[_\W]adview[_\W]/
 /[_\W]adwords/
 /[_\W]adwrap/$important
 /[_\W]aff[^/]*\.m?js/
@@ -141,7 +143,7 @@
 /[_\W]comcom[_\W]/$important
 /[_\W]comging[_\W]/$important
 /[_\W]comjquery[_\W]/$important
-/[_\W]complianz/[_\W]/
+/[_\W]complianz[_\W]/
 /[_\W]comproc/$important
 /[_\W]comrt[_\W]/$important
 /[_\W]comscore/
@@ -330,6 +332,7 @@
 /[_\W]showads?[_\W]/
 /[_\W]sibbo[_\W]/
 /[_\W]side[^/]*\.m?js/
+/[_\W]simgad[_\W]/
 /[_\W]sirv[^/]*\.m?js/
 /[_\W]skavastream/$important
 /[_\W]skimtag/$important
@@ -704,6 +707,7 @@
 /listen[^/]*\.m?js/
 /live[\W]*chat/
 /livsstil.se\/cnp-assets\/[0-9]+./
+/loader.min.js$xhr,script,domain=dogdrip.net|infinityfree.com|thestar.co.uk|yorkshirepost.co.uk|smsonline.cloud
 /locationevzbricks/$important
 /locatioupport/$important
 /lodash[^/]*\.m?js/
@@ -940,6 +944,8 @@
 /tmgrefresh[^/]*\.m?js/
 /tracing[^/]*\.m?js/
 /track[_\W]*data/$important
+/tracker[^\.]*\.js/
+/tracking[^\.]*\.js/
 /trackview/$important
 /trackvisit/$important
 /tradedoubler/$important
