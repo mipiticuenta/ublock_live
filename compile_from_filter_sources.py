@@ -1795,7 +1795,7 @@ print(
 df10 = pd.DataFrame()
 df10['L1_domain'] = list10
 df10 = df10.groupby('L1_domain')['L1_domain'].count()
-df10 = df10.sort_values('freq', ascending = False)
+df10 = df10.sort_values(ascending = False)
 df10 = df10[df10 > 1]      # <keep only freq > 1/>
 
 # </get L1 domains>
