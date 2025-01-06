@@ -1303,9 +1303,9 @@ pool.join()
 
 df11 = pd.DataFrame()
 df11['prefix'] = prefix
-df11 = df11.groupby('prefix')['freq'].count()
-df11 = df11.sort_values('freq', ascending = False)
-df11 = df11[df11['freq'] > 1]      # <keep only freq > 1/>
+df11 = df11.groupby('prefix')['prefix'].count()
+df11 = df11.sort_values(ascending = False)
+df11 = df11[df11 > 1]      # <keep only freq > 1/>
 df11.to_csv(file11_out_name, sep='\t')
 print(
     'domain prefix stats saved to textfile <' + file11_out_name + '>\n'
@@ -1794,9 +1794,9 @@ print(
 
 df10 = pd.DataFrame()
 df10['L1_domain'] = list10
-df10 = df10.groupby('L1_domain')['freq'].count()
+df10 = df10.groupby('L1_domain')['L1_domain'].count()
 df10 = df10.sort_values('freq', ascending = False)
-df10 = df10[df10['freq'] > 1]      # <keep only freq > 1/>
+df10 = df10[df10 > 1]      # <keep only freq > 1/>
 
 # </get L1 domains>
 
@@ -1915,9 +1915,9 @@ words = [
 words = [word for word in words if len(word) > 3]                               # <discard short words />
 df12 = pd.DataFrame()
 df12['word'] = words
-df12 = df12.groupby('word')['freq'].count()
-df12 = df12.sort_values('freq', ascending = False)
-df12 = df12[df12['freq'] > 1]      # <keep only freq > 1/>
+df12 = df12.groupby('word')['word'].count()
+df12 = df12.sort_values(ascending = False)
+df12 = df12[df12 > 1]      # <keep only freq > 1/>
 df12.to_csv(file12_out_name, sep='\t')
 print(
     'words in long dot separated strings saved to textfile <' + file12_out_name + '>\n'
