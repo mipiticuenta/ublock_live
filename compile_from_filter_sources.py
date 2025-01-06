@@ -1308,7 +1308,7 @@ df11 = df11.sort_values(ascending = False)
 df11 = df11[df11 > 1]      # <keep only freq > 1/>
 df11.to_csv(file11_out_name, sep='\t')
 print(
-    'domain prefix stats saved to textfile <' + file11_out_name + '>\n'
+    '\ndomain prefix stats saved to textfile <' + file11_out_name + '>'
 )
 
 # <list domain prefix>
@@ -1789,7 +1789,7 @@ pool.join()
 
 print(
     '{:,}'.format(len(list10)),
-    'L1_domains listed\n'
+    'L1_domains listed                        \n'
 )
 
 df10 = pd.DataFrame()
