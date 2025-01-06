@@ -1301,15 +1301,13 @@ prefix = pool.map(f_get_prefix, list3)                                          
 pool.close()                                                                    # <close the pool and wait for the work to finish />
 pool.join()
 
-metrics_df = pd.DataFrame()
-metrics_df['prefix'] = prefix
-metrics_df = metrics_df.groupby('prefix')['prefix'].aggregate(['count']).reset_index()
-metrics_df = metrics_df.sort_values('count', ascending = False)
-
-file11_out = metrics_df.to_csv(file11_out_name, index = False)
+df11 = pd.DataFrame()
+df11['prefix'] = prefix
+df11 = df11.groupby('prefix')['freq'].count()
+df11 = df11.sort_values('freq', ascending = False)
+df11 = df11[df11['freq'] > 1]      # <keep only freq > 1/>
+df11.to_csv(file11_out_name, sep='\t')
 print(
-    '\n',
-    '{:,}'.format(metrics_df.shape[0]),
     'domain prefix stats saved to textfile <' + file11_out_name + '>\n'
 )
 
@@ -1796,8 +1794,9 @@ print(
 
 df10 = pd.DataFrame()
 df10['L1_domain'] = list10
-df10 = df10.groupby('L1_domain')['L1_domain'].count()
-df10 = df10.sort_values(ascending = False)
+df10 = df10.groupby('L1_domain')['freq'].count()
+df10 = df10.sort_values('freq', ascending = False)
+df10 = df10[df10['freq'] > 1]      # <keep only freq > 1/>
 
 # </get L1 domains>
 
@@ -1914,17 +1913,14 @@ words = [
 ]                                                                               # <flatten list />
 
 words = [word for word in words if len(word) > 3]                               # <discard short words />
-
-metrics_df = pd.DataFrame()
-metrics_df['word'] = words
-metrics_df = metrics_df.groupby('word')['word'].aggregate(['count']).reset_index()
-metrics_df = metrics_df.sort_values('count', ascending = False)
-
-file12_out = metrics_df.to_csv(file12_out_name, index = False)
+df12 = pd.DataFrame()
+df12['word'] = words
+df12 = df12.groupby('word')['freq'].count()
+df12 = df12.sort_values('freq', ascending = False)
+df12 = df12[df12['freq'] > 1]      # <keep only freq > 1/>
+df12.to_csv(file12_out_name, sep='\t')
 print(
-    '\n',
-    '{:,}'.format(metrics_df.shape[0]),
-    'words in long dot separated strings saved to textfile <' + file2_out_name + '>\n'
+    'words in long dot separated strings saved to textfile <' + file12_out_name + '>\n'
 )
 
 # <list words in long dot seperated strings>
