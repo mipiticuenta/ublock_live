@@ -3,30 +3,31 @@
 !===============!
 
 @@/[_\W]csp[_\W]/$domain=amazon.es|amazon.com
-@@||amazon.es/hz/$xhr,domain=amazon.es
-@@||amazon.es/nav/$xhr,1p
+@@||api.esios.ree.es^$xhr,1p
+@@||carto.com^$xhr,domain=ree.es
+@@||esios.ree.es^$xhr,domain=esios.ree.es
 @@||fls-eu.amazon.es^$image,domain=amazon.es
 @@||media-amazon.com^$xhr,domain=amazon.es
+@@||openvsxorg.blob.core.windows.net^$xhr,domain=open-vsx.org
+@@||ree.es^$inline-script,domain=ree.es
+@@||snapcraft.io^$xhr,domain=snapcraft.io
+@@||tiendatec.es^$inline-script,1p
+@@||www.carrefour.es^$inline-script,domain=www.carrefour.es
 @@||www.dell.com^$inline-script,domain=www.dell.com
 @@||www.dell.com^$xhr,domain=www.dell.com
-@@||www.hp.com/es-es/shop/API/PLP.aspx/GetListProducts$xhr,domain=www.hp.com
-@@||www.hp.com/es-es/shop/Html/Merch/$xhr,domain=www.hp.com
 @@||www.hp.com^$inline-script,domain=www.hp.com
-@@api.esios.ree.es^$xhr,1p
-@@carto.com^$xhr,domain=ree.es
+@@amazon.es/hz/$xhr,domain=amazon.es
+@@amazon.es/nav/$xhr,1p
 @@esios.ree.es/images/$inline-font,1p
-@@esios.ree.es^$xhr,domain=esios.ree.es
 @@media-amazon.com/images/$inline-font,domain=amazon.com
 @@media-amazon.com/images/$inline-font,domain=amazon.es
-@@openvsxorg.blob.core.windows.net^$xhr,domain=open-vsx.org
-@@ree.es^$inline-script,domain=ree.es
-@@tiendatec.es^$inline-script,1p
+@@www.carrefour.es/cloud-api/categories-api/$xhr,domain=www.carrefour.es
+@@www.hp.com/es-es/shop/API/PLP.aspx/GetListProducts$xhr,domain=www.hp.com
+@@www.hp.com/es-es/shop/Html/Merch/$xhr,domain=www.hp.com
 @@youtube.com/youtubei/v1/search$xhr,1p
-
 *##+js(json-prune, general)
 *##+js(json-prune, isLogged)
 *##+js(json-prune,)
-
 /[_\W][a-z0-9]{45,}[_\W]/$badfilter
 /[_\W]all[^/]*\.m?js/$badfilter
 /[_\W]chunks?[_\W]/$badfilter
@@ -47,6 +48,7 @@
 /common.js$badfilter
 /frontend.min.css$badfilter
 /images\/sp*/$badfilter
+/inter.css$badfilter
 /jqtransform.css$badfilter
 /json2.min.js$badfilter
 /lazysizes.js$badfilter
@@ -64,12 +66,11 @@
 /scripts.js$badfilter
 /scripts.min.js$badfilter
 /shared.css$badfilter
+/shared.min.css$badfilter
 /snapshot.js$badfilter
 /vendor[^/]*\.m?js/$badfilter
+/white.css$badfilter
 /wp-content\/uploads\/[0-9]+/$badfilter
 amazon.es###a-page > .a-declarative
 app-measurement.com
-assets.291/javascripts/common.js$badfilter
-assets.291/stylesheets/builder_embed.css$badfilter
 cnn-tls.map.fastly.net$badfilter
-rbg_glass_75_e6e6e6_1x400.$badfilter
