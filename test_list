@@ -28,6 +28,7 @@
 *##+js(json-prune, general)
 *##+js(json-prune, isLogged)
 *##+js(json-prune,)
+*$script,3p
 /[_\W][a-z0-9]{45,}[_\W]/$badfilter
 /[_\W]all[^/]*\.m?js/$badfilter
 /[_\W]chunks?[_\W]/$badfilter
@@ -37,6 +38,7 @@
 /application.js$badfilter
 /article.min.css$badfilter
 /base.min.css$badfilter
+/blocks.css$badfilter
 /bootstrap[^/]*\.m?js/$badfilter
 /bottom[^/]*\.m?js/$badfilter
 /bundle[^/]*\.m?js/$badfilter
@@ -46,6 +48,8 @@
 /clientlib$badfilter
 /cmp.css$badfilter
 /common.js$badfilter
+/design.css$badfilter
+/epssw.js$badfilter
 /frontend.min.css$badfilter
 /images\/sp*/$badfilter
 /inter.css$badfilter
