@@ -2,6 +2,7 @@
 ! expires: 1 day
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list
 ! title: regex block list
+/(?:git\.){2,}/
 /(?<!b)logg/$important
 /(?<!lo)admanager/$important
 /(?<!youtube)[_\W]*cooc?ki/$important
@@ -406,8 +407,10 @@
 /[_\W]wpp[^/]*\.m?js/
 /[_\W]wwwsagigameshod1dars/$important
 /[_\W]xn\-\-/$important
+/[_\W]yandex[_\W]/
 /\&ctier/$important
 /\-mgte\.googlevideo\./$important
+/\.attn\.tv\.js/
 /\.exe(?:\W)?/
 /\.gif(?:\W)?/
 /\.ttf(?:\W)?/
@@ -1001,7 +1004,6 @@
 /voonto/$important
 /voting[^/]*\.m?js/
 /watcher[^/]*\.m?js/
-/web[_\W]*vital/
 /web[_\W]*vital/$important
 /webpush/$important
 /webstat/$important
