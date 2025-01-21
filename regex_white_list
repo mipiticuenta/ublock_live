@@ -4891,10 +4891,8 @@
 ^[_\W]*imagen[_\W]*$
 ^[_\W]*imagenes[_\W]*$
 ^[_\W]*imagery[_\W]*$
-^[_\W]*images?[_\W]*$
-^[_\W]*images?[0-9]*[_\W]*$
-^[_\W]*images[_\W]\w[_\W]*$
-^[_\W]*images/i[_\W]*$
+^[_\W]*images?[_\W0-9]*$
+^[_\W]*images?[_\W]\w[_\W]*$
 ^[_\W]*imaginary[_\W]*$
 ^[_\W]*imagination[_\W]*$
 ^[_\W]*imagine[_\W]*$
@@ -11183,6 +11181,7 @@
 ^[_\W]*cordial[_\W]*$
 ^[_\W]*center[_\W]*\w[_\W]*$
 ^[_\W]*content[_\W]*\w[_\W]*$
+^[_\W]*next[_\W]*\w[_\W]*$
 ^[_\W]*upnext[_\W]*$
 ^[_\W]*stockists?[_\W]*$
 ^[_\W]*stock[_\W]*ticker[_\W]*$
