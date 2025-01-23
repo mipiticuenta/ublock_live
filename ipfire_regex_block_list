@@ -28,28 +28,27 @@
 /[_\W]abging[_\W]/$important
 /[_\W]accedi[_\W]/$important
 /[_\W]ace[^/]*\.m?js/
+/[_\W]ad[_\W]*images?[_\W]/$important
 /[_\W]ad[_\W]*script[^/]*\.m?js/
+/[_\W]ad[_\W]*tag/$important
+/[_\W]ad[_\W]*view[_\W]/
+/[_\W]ad[_\W]*wrap/$important
 /[_\W]ad[sx]?[_\W]/
 /[_\W]adb(?:lock(?:er)?)?[_\W]*detect/
 /[_\W]adbl?[_\W]/
 /[_\W]adbox/
 /[_\W]addressdotnet[_\W]/
 /[_\W]adfuel[^/]*\.m?js/
-/[_\W]adimages?[_\W]/$important
 /[_\W]adops?[_\W]/
 /[_\W]adrum/
-/[_\W]adse?rv/
-/[_\W]adserver[_\W]/$important
+/[_\W]adse?rve?r?[_\W]/$important
 /[_\W]adsx[_\W]/
 /[_\W]adsys/$important
-/[_\W]adtag/$important
 /[_\W]adtrac/$important
 /[_\W]adutil/
 /[_\W]adv(erts?)?[_\W]/
 /[_\W]advally[_\W]/$important
-/[_\W]adview[_\W]/
 /[_\W]adwords/
-/[_\W]adwrap/$important
 /[_\W]aff[^/]*\.m?js/
 /[_\W]aff[_\W]/
 /[_\W]agskwx/$important
@@ -75,6 +74,7 @@
 /[_\W]appse[_\W]/$important
 /[_\W]apw[_\W]/
 /[_\W]archbee[_\W]/$important
+/[_\W]assist(?:\.\w*)*\.247/
 /[_\W]assoc[^/]*\.m?js/
 /[_\W]avpb7[_\W]/$important
 /[_\W]avvxse/$important
@@ -84,8 +84,7 @@
 /[_\W]bankofamerica[_\W]/$important
 /[_\W]bbcheckout[_\W]/$important
 /[_\W]be116c44[_\W]/$important
-/[_\W]beacon/
-/[_\W]beacon[_\W]/$important
+/[_\W]beacon/$important
 /[_\W]beam[^/]*\.m?js/
 /[_\W]befo7w2a1w4qefe2[_\W]/$important
 /[_\W]bellsouth[_\W]/$important
@@ -175,6 +174,7 @@
 /[_\W]cursppserviceth[_\W]/$important
 /[_\W]cx[_\W]/
 /[_\W]dailyecho[_\W]/$important
+/[_\W]daraz[_\W]/
 /[_\W]dasf[^/]*\.m?js/
 /[_\W]datado/$important
 /[_\W]datalayer[_\W]/$important
@@ -244,6 +244,7 @@
 /[_\W]hichann/$important
 /[_\W]i18n[^/]*\.m?js/
 /[_\W]iaw[^/]*\.m?js/
+/[_\W]icone?s?[_\W]/
 /[_\W]id.?cta[_\W]/
 /[_\W]id[-_]?cta[_\W]/$important
 /[_\W]id[^/]*\.m?js/
@@ -256,7 +257,6 @@
 /[_\W]key[^/]*\.m?js/
 /[_\W]land[^/]*\.m?js/
 /[_\W]layer[^/]*\.m?js/
-/[_\W]lead[^/]*\.m?js/
 /[_\W]li?nk[^/]*\.m?js/
 /[_\W]logo[_\W]/
 /[_\W]logs?[_\W]/
@@ -364,7 +364,7 @@
 /[_\W]symatechnolsitcure/$important
 /[_\W]syndication/$important
 /[_\W]system[^/]*\.m?js/
-/[_\W]ta[bg][^/]*\.m?js/
+/[_\W]tag[^/]*\.m?js/
 /[_\W]tamper[^/]*\.m?js/
 /[_\W]telemetry[_\W]/$important
 /[_\W]test[^/]*\.m?js/
@@ -545,8 +545,6 @@
 /cloudflare[^/]*\.m?js/
 /cloudfront[^/]*\.m?js/
 /cmpdatablock/$important
-/comment[^/]*\.m?js/
-/comments?[_\W]/
 /commercial[^/]*\.m?js/
 /companion[^/]*\.m?js/
 /compliance[^/]*\.m?js/
@@ -584,6 +582,7 @@
 /div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="lc191" class="react-file-line html-div" data-testid="code-cell" data-line-number="191" style="position:relative"><span class="pl-en">!</span> <span class="pl-en">annoyance</span></div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="lc192" class="react-file-line html-div" data-testid="code-cell" data-line-number="192" style="position:relative"><span class="pl-en">/plugin-pdpa/
 /dmedianet[^/]*\.m?js/
 /dmitryraevsky/$important
+/docsnewnautilus12345proxy3/$important
 /dogimerogim374/$important
 /dom[_\W]*ready/$important
 /domain[^/]*\.m?js/
@@ -732,6 +731,7 @@
 /mdevp/*-advert/
 /measure[^/]*\.m?js/
 /member[^/]*\.m?js/
+/meta[_\W]*tag/$important
 /metadata[^/]*\.m?js/
 /meter[^/]*\.m?js/
 /metri[kx]/$important
@@ -740,7 +740,6 @@
 /mirage[^/]*\.m?js/
 /moapt[^/]*\.m?js/
 /moatads/$important
-/modern[^/]*\.m?js/
 /modules/*offers/
 /moment[^/]*\.m?js/
 /monetate/$important
@@ -808,6 +807,7 @@
 /parsely/$important
 /particle[^/]*\.m?js/
 /partner[^/]*\.m?js/
+/patrocin/$important
 /paywall/$important
 /perform[^/]*\.m?js/
 /permutive/$important
@@ -871,9 +871,11 @@
 /regenerator[^/]*\.m?js/
 /rekla*m/$important
 /release[^/]*\.m?js/
+/reloadads/$important
 /remainingjquery/$important
 /remittance/$important
 /remote[^/]*\.m?js/
+/reportembed/$important
 /reporter[^/]*\.m?js/
 /revcloud/$important
 /reverb[^/]*\.m?js/
@@ -912,6 +914,7 @@
 /simplehapu7s/$important
 /simplekw5ulpturedesigner/$important
 /site[_\W]*analyze/
+/siw7o8gythufodz6/$important
 /skimlink[^/]\.m?js/
 /skypecheck[^/]*\.m?js/
 /sm\.news/[^\s]{80,}/
