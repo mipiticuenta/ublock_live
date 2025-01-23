@@ -3,6 +3,7 @@
 !$$ white-listing shall not be applied to cosmetic nor removeparam filters
 .*carousel\.min\.js[_\W]*$
 ^.*\+https.*$
+^(\w*[_\-\.]+)*original([_\-\.]+\w*)*$
 ^[_\W][\d]{3,}px[_\W]*$
 ^[_\W]*?api\.js$
 ^[_\W]*?base\.js$
@@ -4883,8 +4884,8 @@
 ^[_\W]*ice[_\W]*$
 ^[_\W]*iced[_\W]*$
 ^[_\W]*iceland[_\W]*$
-^[_\W]*iconic[_\W]*$
 ^[_\W]*icon[eo]s?[_\W]*[_\.\w]*$
+^[_\W]*iconic[_\W]*$
 ^[_\W]*icy[_\W]*$
 ^[_\W]*ideal?[_\W]*$
 ^[_\W]*idealist[_\W]*$
