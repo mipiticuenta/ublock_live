@@ -761,6 +761,7 @@ while not converged :                                                           
         line = re.sub(r'/+', '/', line)                                         # <dedup / />
         line = re.sub(r'^.*/\*/', '/', line)                                    # <replace /*/ with / />
         line = re.sub(r'[^\*]\$.*$', '', line)                                  # <remove $* tail except for *$ />
+        line = re.sub(r'\.\w$', '', line)                                       # <remove .(single char) tail />
         line = re.sub(r'/wp\-content/uploads/.*$', '', line)                    # <clean trailing /wp-content/uploads/* />
 
         if re.search(r'^[-\w]+\\\.[-\w]+', line) :
@@ -1395,7 +1396,7 @@ print(
 
 # <deflat domain filters >
 
-print('\ndeflating domain filters, pass 1 / 2:')
+print('\ndeflating domain filters, loop 1 / 2:')
 
 counter = Value('d', 0)
 t0 = time()
@@ -1438,7 +1439,7 @@ print(
     '                                       ',
     )
 
-print('deflating domain filters, pass 2 / 2:')
+print('deflating domain filters, loop 2 / 2:')
 
 counter = Value('d', 0)
 t0 = time()
