@@ -207,6 +207,7 @@
 /[_\W]erogim/$important
 /[_\W]ev[_\W]*em[^/]*\.m?js/
 /[_\W]ezbricks/$important
+/[_\W]favicon[_\W]/
 /[_\W]fb[_\W]/$important
 /[_\W]fbkk\d/$important
 /[_\W]fedramp[_\W]/$important
@@ -221,7 +222,6 @@
 /[_\W]freshegg/$important
 /[_\W]freshpair/$important
 /[_\W]ga[_\W]/
-/[_\W]ga[_\W][^/]*\.m?js/
 /[_\W]gads[_\W]/
 /[_\W]gamedev/$important
 /[_\W]garenaff/$important
@@ -244,8 +244,6 @@
 /[_\W]hichann/$important
 /[_\W]i18n[^/]*\.m?js/
 /[_\W]iaw[^/]*\.m?js/
-/[_\W]icone?s?[_\W]/
-/[_\W]id.?cta[_\W]/
 /[_\W]id[-_]?cta[_\W]/$important
 /[_\W]id[^/]*\.m?js/
 /[_\W]impress(ions?)?[_\W]/$important
@@ -258,8 +256,7 @@
 /[_\W]land[^/]*\.m?js/
 /[_\W]layer[^/]*\.m?js/
 /[_\W]li?nk[^/]*\.m?js/
-/[_\W]logo[_\W]/
-/[_\W]logs?[_\W]/
+/[_\W]logo?s?[_\W]/
 /[_\W]mixin[_\W]/
 /[_\W]moapt[_\W]/
 /[_\W]moat/$important
@@ -416,6 +413,7 @@
 /\.ttf(?:\W)?/
 /\.woff2?(?:\W)?/
 /\/[0-9]+\.m?js/
+/\/spons/$important
 /\Wonet\W/
 /\w\^\*\w/
 /^([^\./]*\.)*[\d]+\.([a-z]{2,}\.)?[a-z]{2,}/$important
@@ -448,6 +446,7 @@
 /adobe[^/]*\.m?js/
 /adobe[_\W]*target/$important
 /adplacement/$important
+/adreloader/$important
 /adrotate/$important
 /adsbygoogle/$important
 /adsense/$important
@@ -473,7 +472,6 @@
 /algolia/$important
 /analytic[^/]*\.m?js/
 /analytics.*/ping/
-/angular[^/]*\.m?js/
 /anuncy/*/ads/
 /aot-content\/modules\/[^\.]{40,}\.js\b/
 /apester[^/]*\.m?js/
@@ -578,6 +576,7 @@
 /directad/$important
 /dismiss[^/]*\.m?js/
 /displayad/$important
+/div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="LC191" class="react-file-line html-div" data-testid="code-cell" data-line-number="191" style="position:relative"><span class="pl-en">anime-sugoi.com</span><span class="pl-c"><span class="pl-c">#</span>#div.container &gt; .row &gt; .center_lnwphp</span></div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="LC192" class="react-file-line html-div" data-testid="code-cell" data-line-number="192" style="position:relative"><span class="pl-en">animeyuzu.com</span><span class="pl-c"><span class="pl-c">#</span>#.code-block-1.code-block</span></div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="LC193" class="react-file-line html-div" data-testid="code-cell" data-line-number="193" style="position:relative"><span class="pl-en">animeyuzu.com</span><span class="pl-c"><span class="pl-c">#</span>#.animekimi-banner</span></div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="LC194" class="react-file-line html-div" data-testid="code-cell" data-line-number="194" style="position:relative"><span class="pl-en">animegojo.com</span><span class="pl-c"><span class="pl-c">#</span>#.bannerrow</span></div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="LC195" class="react-file-line html-div" data-testid="code-cell" data-line-number="195" style="position:relative"><span class="pl-en">!</span> <span class="pl-en">Annoyance</span></div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="LC196" class="react-file-line html-div" data-testid="code-cell" data-line-number="196" style="position:relative"><span class="pl-en">/plugin-pdpa/
 /div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="lc189" class="react-file-line html-div" data-testid="code-cell" data-line-number="189" style="position:relative"><span class="pl-en">!</span> <span class="pl-en">annoyance</span></div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="lc190" class="react-file-line html-div" data-testid="code-cell" data-line-number="190" style="position:relative"><span class="pl-en">/plugin-pdpa/
 /div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="lc191" class="react-file-line html-div" data-testid="code-cell" data-line-number="191" style="position:relative"><span class="pl-en">!</span> <span class="pl-en">annoyance</span></div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="lc192" class="react-file-line html-div" data-testid="code-cell" data-line-number="192" style="position:relative"><span class="pl-en">/plugin-pdpa/
 /dmedianet[^/]*\.m?js/
@@ -588,6 +587,7 @@
 /domain[^/]*\.m?js/
 /dompurify/$important
 /donat[^/]*\.m?js/
+/dora/biz/*-h5log/
 /doseofporn.com\/[a-z]{0,5}[1-9]{0,5}[a-z]{0,5}[1-9][s\S]*.js/
 /dotmetrics/$important
 /doubleclick/$important
@@ -923,7 +923,6 @@
 /sourcepoint/$important
 /special/*_960/
 /sphinxs[^/]*\.m?js/
-/sponsrad/$important
 /sporttadoghq/$important
 /statcount/$important
 /static/*/ads/
