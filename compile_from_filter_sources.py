@@ -609,19 +609,19 @@ while not converged :                                                           
 
     def f16(line) :
 
-        if re.search(r'\.rar$', line) :
+        if re.search(r'\.rar[_\W]*.*$', line) :
             line = ''                                                           # <remove @.rar filters />
-        elif re.search(r'\.zip$', line) :
+        elif re.search(r'\.zip[_\W]*.*$', line) :
             line = ''                                                           # <remove @.zip filters />
-        elif re.search(r'\.gif$', line) :
+        elif re.search(r'\.gif[_\W]*.*$', line) :
             line = ''                                                           # <remove @.zip filters />
-        elif re.search(r'\.exe$', line) :
+        elif re.search(r'\.exe[_\W]*.*$', line) :
             line = ''                                                           # <remove @.exe filters />
-        elif re.search(r'\.webp$', line) :
+        elif re.search(r'\.webp[_\W]*.*$', line) :
             line = ''                                                           # <remove @.webp filters />
-        elif re.search(r'\.mp4$', line) :
+        elif re.search(r'\.mp4[_\W]*.*$', line) :
             line = ''                                                           # <remove @.mp4 filters />
-        elif re.search(r'\.woff2?$', line) :
+        elif re.search(r'\.woff2?[_\W]*.*$', line) :
             line = ''                                                           # <remove @.woff filters />
         elif re.search(r'\.ttf?$', line) :
             line = ''                                                           # <remove @.ttf filters />
