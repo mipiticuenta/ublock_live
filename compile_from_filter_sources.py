@@ -621,6 +621,8 @@ while not converged :                                                           
             line = ''                                                           # <remove @.webp filters />
         elif re.search(r'\.mp4[_\W]*.*$', line) :
             line = ''                                                           # <remove @.mp4 filters />
+        elif re.search(r'\.otf[_\W]*.*$', line) :
+            line = ''                                                           # <remove @.otf filters />
         elif re.search(r'\.woff2?[_\W]*.*$', line) :
             line = ''                                                           # <remove @.woff filters />
         elif re.search(r'\.ttf?$', line) :
