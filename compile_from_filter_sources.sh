@@ -8,13 +8,13 @@ NC='\033[0m' # No Color
 # <set working directory>
 
 cd ~/git_local_repository/ublock_live
-echo -e "\n${BLUE}directory changed to ~/git_local_repository/ublock_live\n${NC}"
+echo -e "\n${BLUE}directory changed to ~/git_local_repository/ublock_live${NC}"
 
 # </set working directory>
 
 # <commit operations for all local changes>
 
-echo -e "\n${BLUE}commit&sync local changes to github\n${NC}"
+echo -e "\n${BLUE}local changes committed to github\n${NC}"
 git pull --verbose
 git add --all
 git status -sbv --show-stash --porcelain=v2
@@ -48,8 +48,8 @@ echo -e "\n${BLUE}python virtual environment deactivated\n${NC}"
 
 # <commit operations for all local changes>
 
-echo -e "\n${BLUE}commit&sync local changes to github\n${NC}"
-git pull --verbose
+echo -e "\n${BLUE}local changes committed to github\n${NC}"
+git pull --rebase --verbose
 git add --all
 git status -sbv --show-stash --porcelain=v2
 git commit -am "update"
