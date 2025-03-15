@@ -14,14 +14,21 @@ echo -e "\n${BLUE}directory changed to ~/git_local_repository/ublock_live${NC}"
 
 # <commit operations for all local changes>
 
-echo -e "\n${BLUE}local changes committed to github\n${NC}"
+echo -e "\n${BLUE}sync & upload changes to github\n${NC}"
 git status -sbv --show-stash --porcelain=v2
+echo -e ""
 git stash push -m "stash local changes"
+echo -e ""
 git pull --rebase --verbose
+echo -e ""
 git stash pop
+echo -e ""
 git add --all
+echo -e ""
 git commit -am "update"
+echo -e ""
 git push --verbose
+echo -e ""
 git prune --verbose
 echo -e "\n${BLUE}last 5 commits:\n${NC}"
 git log -n 5 --decorate --oneline --graph
@@ -50,14 +57,21 @@ echo -e "\n${BLUE}python virtual environment deactivated\n${NC}"
 
 # <commit operations for all local changes>
 
-echo -e "\n${BLUE}local changes committed to github\n${NC}"
+echo -e "\n${BLUE}sync & upload changes to github\n${NC}"
 git status -sbv --show-stash --porcelain=v2
+echo -e ""
 git stash push -m "stash local changes"
+echo -e ""
 git pull --rebase --verbose
+echo -e ""
 git stash pop
+echo -e ""
 git add --all
+echo -e ""
 git commit -am "update"
+echo -e ""
 git push --verbose
+echo -e ""
 git prune --verbose
 echo -e "\n${BLUE}last 5 commits:\n${NC}"
 git log -n 5 --decorate --oneline --graph
