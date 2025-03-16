@@ -2,12 +2,20 @@
 != new filters =!
 !===============!
 
+.custom.min.js$badfilter
 @@*$script,3p,domain=morningstar.es
 @@/[_\W]csp[_\W]/$domain=amazon.es|amazon.com
 @@||api.esios.ree.es^$xhr,1p
+@@||apple-mapkit.com^$script,domain=icloud.com
+@@||apple-mapkit.com^$xhr,domain=icloud.com
+@@||assets.raspberrypi.com^$xhr,domain=raspberrypi.com
 @@||carto.com^$xhr,domain=ree.es
+@@||cdn-apple.com^$script,domain=icloud.com
 @@||esios.ree.es^$xhr,domain=esios.ree.es
 @@||fls-eu.amazon.es^$image,domain=amazon.es
+@@||icloud-content.com^$xhr,domain=icloud.com
+@@||icloud.com^$inline-script,domain=icloud.com
+@@||icloud.com^$xhr,domain=icloud.com
 @@||media-amazon.com^$xhr,domain=amazon.es
 @@||mwc-cdn.morningstar.com^$xhr,domain=morningstar.es
 @@||openvsxorg.blob.core.windows.net^$xhr,domain=open-vsx.org
@@ -20,6 +28,12 @@
 @@||www.dell.com^$inline-script,domain=www.dell.com
 @@||www.dell.com^$xhr,domain=www.dell.com
 @@||www.hp.com^$inline-script,domain=www.hp.com
+@@||www.morningstar.com/api/v2/stores/$xhr,1p
+@@||www.morningstar.com^$inline-script,1p
+@@||www.morningstar.com^$inline-script,domain=www.morningstar.com
+@@||www.raspberrypi.com^$inline-script,domain=www.raspberrypi.com
+@@||www.tiendatec.es/$xhr,1p
+@@||www.tiendatec.es^$inline-script,1p
 @@||www.us-api.morningstar.com^$xhr,domain=morningstar.es
 @@amazon.es/hz/$xhr,domain=amazon.es
 @@amazon.es/nav/$xhr,1p
@@ -34,6 +48,7 @@
 *##+js(json-prune, isLogged)
 *##+js(json-prune,)
 *$script,3p
+*$script,3p,domain=morningstar.com,badfilter
 /[_\W][a-z0-9]{45,}[_\W]/$badfilter
 /[_\W]all[^/]*\.m?js/$badfilter
 /[_\W]chunks?[_\W]/$badfilter
@@ -53,6 +68,8 @@
 /clientlib$badfilter
 /cmp.css$badfilter
 /common.js$badfilter
+/competitor-email.js
+/core.css$badfiltere
 /design.css$badfilter
 /epssw.js$badfilter
 /frontend.min.css$badfilter
@@ -68,6 +85,8 @@
 /mds_com.min.js$badfilter
 /mds.css$badfilter
 /nldropdown.css$badfilter
+/personal-email.js?
+/playfair$badfilter
 /pmaster5.css$badfilter
 /require.js$badfilter
 /responsive.css$badfilter
@@ -80,9 +99,7 @@
 /vendor[^/]*\.m?js/$badfilter
 /white.css$badfilter
 /wp-content\/uploads\/[0-9]+/$badfilter
+||www.morningstar.com/api/v2/search$xhr,1p
 amazon.es###a-page > .a-declarative
 app-measurement.com
 cnn-tls.map.fastly.net$badfilter
-@@||assets.raspberrypi.com^$xhr,domain=raspberrypi.com
-@@||www.tiendatec.es^$inline-script,1p
-@@||www.tiendatec.es/$xhr,1p
