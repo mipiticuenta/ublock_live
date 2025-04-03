@@ -775,10 +775,10 @@ while not converged :                                                           
         if re.search(r'^[-\.\w]+\^\*[-/\.\w]+', line) :
             line = ''                                                           # <remove spurious ^*/>
 
-        if re.search(r'^[\./]?[-\w]*/[-\./\w]+[-\.\w](?:/\*)?$', line) :
-            line = re.sub(r'^.+(?=/[^/]+(?:/\*)?$)', '', line)                  # <simplify urls keeping last /* part />
+        if re.search(r'.*/[^/]+$', line) :
+            line = re.sub(r'.*/(?=[^/]+$)', '', line)                           # <simplify urls keeping last /* part />
 
-        line = re.sub(r'^/[-\.\w]*(?=[-\w]+\.[-\w]+$)', '', line)               # <simplify urls keeping last @.@ part />
+        line = re.sub(r'^/.*\.(?=[^\.]+\.[^\.]+$)', '', line)                   # <simplify urls keeping last @.@ part />
 
         return line
 
