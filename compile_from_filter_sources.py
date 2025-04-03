@@ -780,6 +780,10 @@ while not converged :                                                           
 
         line = re.sub(r'^/.*\.(?=[^\.]+\.[^\.]+$)', '', line)                   # <simplify urls keeping last @.@ part />
 
+        line = re.sub(r'^[-\.\w]+\.(?=[-\w]+\.min\.js$)', '', line)             # <simplify urls keeping last @.min.js part />
+
+        line = re.sub(r'^[-\.\w]+\.(?=[-\w]+(?<!min)\.js$)', '', line)          # <simplify urls keeping last @.js part, where @!=min />
+
         return line
 
     pool = ThreadPool(thr)                                                      # <make the pool of workers />
