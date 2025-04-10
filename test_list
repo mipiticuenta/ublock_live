@@ -100,3 +100,6 @@
 ||www.morningstar.com/api/v2/search$xhr,1p
 amazon.es###a-page > .a-declarative
 app-measurement.com
+/images\/(?:Banner\d{1,2}\.|[a-z]{3}\/)/$badfilter
+@@/\.ttf(?:\W)?/$domain=meteoblue.com
+@@*$removeparam=/callback/,domain=meteoblue.com
