@@ -157,8 +157,7 @@
 /[_\W]consent[_\W]/$important
 /[_\W]contact[_\W]*form[_\W]/
 /[_\W]conversion[_\W]/$important
-/[_\W]cookie[_\W]/$important
-/[_\W]cookies?[_\W]/
+/[_\W]cookies?[_\W]/$important
 /[_\W]copc[_\W]/$important
 /[_\W]copy[^/]*\.m?js/
 /[_\W]corot[_\W]/
@@ -312,7 +311,6 @@
 /[_\W]sepreproentiy/$important
 /[_\W]sethehubble/$important
 /[_\W]shaparak/$important
-/[_\W]shareaholic/$important
 /[_\W]sharer?[_\W]/$important
 /[_\W]sharing[_\W]/$important
 /[_\W]shim[^/]*\.m?js/
@@ -321,7 +319,6 @@
 /[_\W]shopeemobile/$important
 /[_\W]shopifyapps/$important
 /[_\W]showads?[_\W]/
-/[_\W]sibbo[_\W]/
 /[_\W]side[^/]*\.m?js/
 /[_\W]simgad[_\W]/
 /[_\W]sirv[^/]*\.m?js/
@@ -399,7 +396,6 @@
 /[_\W]wpp[^/]*\.m?js/
 /[_\W]wwwsagigameshod1dars/$important
 /[_\W]xn\-\-/$important
-/[_\W]yandex[_\W]/
 /\&ctier/$important
 /\-mgte\.googlevideo\./$important
 /\.attn\.tv\.js/
@@ -410,16 +406,13 @@
 /\/[0-9]+\.m?js/
 /\/spons/$important
 /\Wonet\W/
-/\w\^\*\w/
 /^([^\./]*\.)*[\d]+\.([a-z]{2,}\.)?[a-z]{2,}/$important
 /^(https?://)?[a-z]{10,12}\.easy\.co($|/.*$)/
-/^abmetric/$important
-/^ampmetric/$important
-/^gcirm/$important
 /a-zporn/$important
 /a1o1/$important
 /a8cli?k/$important
 /a8cv/$important
+/abmetric/$important
 /abtesting[^/]*\.m?js/
 /accsoffer[^/]*\.m?js/
 /acikdeniz/$important
@@ -446,6 +439,7 @@
 /adrotate/$important
 /adsbygoogle/$important
 /adsense/$important
+/adshield/$important
 /adslot/$important
 /adspace/$important
 /adsrotat/$important
@@ -466,6 +460,8 @@
 /akismet/$important
 /alert[^/]*\.m?js/
 /algolia/$important
+/allegrojokaln[ei]/$important
+/allegrolokaln[ei]/$important
 /analytic[^/]*\.m?js/
 /analytics.*/ping/
 /anuncy/*/ads/
@@ -475,9 +471,7 @@
 /api/v*/apps/
 /app[_\W]*measurement/$important
 /appboy/$important
-/appservicecure[_\W]/$important
-/appserviceentic/$important
-/appserviceenvironment/$important
+/appservice/$important
 /apwwtemaps/$important
 /assets/images/*.gif^$image,1p,domain=com,to=/\x62\x69\x61\x75\x70\x6C\x6F\x61\x64\x2E\x63\x6F\x6D/
 /assets/images/*banners/
@@ -499,6 +493,7 @@
 /beloud/$important
 /bibblio[^/]*\.m?js/
 /bid[_\W]*barrel/
+/boot[\w]*(?<!str)ap/$important
 /bootstrap[^/]*\.m?js/
 /branded[_\W]*content/
 /brandhub/$important
@@ -549,6 +544,7 @@
 /controltag/$important
 /conversion[^/]*\.m?js/
 /count[^/]*\.m?js/
+/cpcalendars/$important
 /cpcontacts/$important
 /crashlytics/$important
 /criteo/$important
@@ -571,7 +567,7 @@
 /directad/$important
 /dismiss[^/]*\.m?js/
 /displayad/$important
-/div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="lc201" class="react-file-line html-div" data-testid="code-cell" data-line-number="201" style="position:relative"><span class="pl-en">!</span> <span class="pl-en">annoyance</span></div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="lc202" class="react-file-line html-div" data-testid="code-cell" data-line-number="202" style="position:relative"><span class="pl-en">/plugin-pdpa/
+/div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="lc206" class="react-file-line html-div" data-testid="code-cell" data-line-number="206" style="position:relative"><span class="pl-en">!</span> <span class="pl-en">annoyance</span></div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="lc207" class="react-file-line html-div" data-testid="code-cell" data-line-number="207" style="position:relative"><span class="pl-en">/plugin-pdpa/
 /dmedianet[^/]*\.m?js/
 /dmitryraevsky/$important
 /docsnewnautilus12345proxy3/$important
@@ -581,7 +577,6 @@
 /dompurify/$important
 /donat[^/]*\.m?js/
 /dora/biz/*-h5log/
-/doseofporn.com\/[a-z]{0,5}[1-9]{0,5}[a-z]{0,5}[1-9][s\S]*.js/
 /dotmetrics/$important
 /doubleclick/$important
 /dpal[^/]*\.m?js/
@@ -589,6 +584,7 @@
 /duckdnsentoffer/$important
 /dynamicad/$important
 /dynamicgafunctions/$important
+/e?(?<!g)mail[\d]*[_\W]/$important
 /eloqua/$important
 /email[_\W]*vision/
 /emrj82plvision/$important
@@ -614,6 +610,7 @@
 /galore/$important
 /gambads[^/]*\.m?js/
 /gbisimplehapsupport/$important
+/gcirm/$important
 /gdpr[^/]*\.m?js/
 /gen(erate)?[_\W]*204/
 /getadcode/$important
@@ -648,13 +645,10 @@
 /idmswebauth/$important
 /iinkay/$important
 /imag*/branding/
-/image*/tj/
 /image[^/]*\.m?js/
-/images/*_ads/
 /images/*banner/
 /images/cms/_*0*_/
 /images\/(?:Banner\d{1,2}\.|[a-z]{3}\/)/
-/img\/(?!new).+\.gif/
 /img_*/background/
 /imgkstvs/$important
 /inbenta/$important
@@ -665,10 +659,8 @@
 /inrtenet/$important
 /insight[^/]*\.m?js/
 /instagra/$important
-/integration[^/]*\.m?js/
 /interstitial/$important
 /interstitial[^/]*\.m?js/
-/io-tech\.fi\/.*\/[0-9a-f]{32}\./
 /ipsos[^/]*\.m?js/
 /iqmetrics/$important
 /isotope[^/]*\.m?js/
@@ -697,7 +689,6 @@
 /linktrack/$important
 /listen[^/]*\.m?js/
 /live[\W]*chat/
-/livsstil.se\/cnp-assets\/[0-9]+./
 /locationevzbricks/$important
 /locatioupport/$important
 /lodash[^/]*\.m?js/
@@ -705,8 +696,6 @@
 /loginimen/$important
 /longadvert/$important
 /lossfreerx/$important
-/magesy\.blog\/biocontent\/themes\/[a-z0-9]{4,15}\.js/
-/magesy\.blog\/biocontent\/themes\/[a-z0-9]{4,15}\.m?js/
 /maiificr/$important
 /mailcheck[^/]*\.m?js/
 /mailchimp/$important
@@ -737,7 +726,6 @@
 /mouse[^/]*\.m?js/
 /mqdefault/$important
 /mudah\.my\/[a-zA-Z0-9]{16}\/[a-zA-Z0-9]{16}\?apiKey=/
-/muge\.eu\/wp-content\/uploads\/20\d{2}\/\d{2}\/thumbnail/
 /muimaster/$important
 /mulmulogi/$important
 /munchkin[^/]*\.m?js/
@@ -750,7 +738,6 @@
 /new[_\W]*app[^/]*\.m?js/
 /new[_\W]*relic/$important
 /newegg/$important
-/newrelic/$important
 /news[_\W]*let[^/]*\.m?js/
 /nextcustom[^/]*\.m?js/
 /nfplug[^/]*\.m?js/
@@ -759,19 +746,16 @@
 /notifications?/
 /npm/@adshield/
 /npm/@jenkinsci/jenkins-io-components/
-/npm/styled-icons@10.45.0/
 /nugg[_\W]*ad/$important
 /oascentral/$important
 /obozrevatel/$important
 /observe[^/]*\.m?js/
 /ochaddads/$important
-/offer\.(?:html|php)\?(?:mobile|rechargenumber)=\d{10}\b/
 /omniture/$important
 /omtrdc/$important
 /one[_\W]*tap[^/]*\.m?js/
 /onesignal/$important
 /onetag/$important
-/onetap[^/]*\.m?js/
 /onetrust/$important
 /onlinebanking/$important
 /onwards?[^/]*\.m?js/
@@ -783,7 +767,6 @@
 /overadvertiser/$important
 /overblog/$important
 /overlay[^/]*\.m?js/
-/owa/calendar/BetterMusic3@bettermusic.com.au/bookings/
 /oyougimenbs/$important
 /pKisalt[^/]*\.m?js/
 /page[_\W]*action/
@@ -792,7 +775,6 @@
 /pagehit/$important
 /pagespeed/$important
 /pageview/$important
-/panel\.freemcserver\.net\/.{90,}\?v=17/
 /parsely/$important
 /particle[^/]*\.m?js/
 /partner[^/]*\.m?js/
@@ -839,7 +821,6 @@
 /propellerad/$important
 /prostitutki/$important
 /proxy/*.smsbump.com/
-/pub-[a-f0-9]{32}\.r2\.dev/be[a0-9]\d{2,3}\.html\b/
 /pubad/$important
 /pubdirect/$important
 /punycode[^/]*\.m?js/
@@ -853,13 +834,12 @@
 /readjujutsukaisen/$important
 /readonepiece/$important
 /readspeaker/$important
-/recharge\d?\.(?:html|php)\?mobile=\d{10}\b/
 /recirc[^/]*\.m?js/
 /recovery[^/]*\.m?js/
 /regenerator[^/]*\.m?js/
 /rekla*m/$important
 /release[^/]*\.m?js/
-/reloadads/$important
+/reload[_\W]ads/$important
 /remainingjquery/$important
 /remittance/$important
 /remote[^/]*\.m?js/
@@ -906,11 +886,9 @@
 /siw7o8gythufodz6/$important
 /skimlink[^/]\.m?js/
 /skypecheck[^/]*\.m?js/
-/sm\.news/[^\s]{80,}/
 /smartclip/$important
 /smarttag/$important
 /sourcepoint/$important
-/special/*_960/
 /sphinxs[^/]*\.m?js/
 /sporttadoghq/$important
 /statcount/$important
@@ -924,7 +902,7 @@
 /superfish[^/]*\.m?js/
 /system/*banners/
 /taboola/$important
-/tag[_\W]*manager/
+/tag[_\W]*manager/$important
 /tagmanager/$important
 /tarteaucitron/$important
 /teads/$important
@@ -933,7 +911,6 @@
 /telemetry/$important
 /textad/$important
 /thecardguysuk/$important
-/theme\/js\/[a-z0-9]{5,}\.js\?v=/
 /third[_\W]*party/
 /threadeskupsimple/$important
 /tik[_\W]*tok/$important
@@ -956,13 +933,16 @@
 /uberprufungsfall/$important
 /underscore[^/]*\.m?js/
 /unionpmyadmin/$important
-/upf/*_banners/bd/
 /upload/*.rklite/
 /upsell[^/]*\.m?js/
 /usabilla/$important
-/usbeam/*_ad/
 /user[_\W]*profile/$important
 /usps/$important
+/v13.*idsh_ad/
+/v13.*idsh_vid/
+/v13.*odnoklassniki_ru/
+/v13.*rambler_ad/
+/v13.*vitpc_ad/
 /v13a*idsh_ad/ru/cp1251/tmsec=idsh_dis/
 /v13a*idsh_vid/ru/cp1251/tmsec=idsh_sid116854-dis/
 /v13a*odnoklassniki_ru/ru/utf-8/tmsec=odnoklassniki_mobile/
@@ -991,7 +971,7 @@
 /vidyard/$important
 /visit[^/]*\.m?js/
 /visit[_\W]/
-/visualrevenue/$important
+/visual[_\W]revenue/$important
 /voonto/$important
 /voting[^/]*\.m?js/
 /watcher[^/]*\.m?js/
@@ -1012,7 +992,6 @@
 /you[_\W]*porn/
 /zedo[a-z]*ads/$important
 /zefoy/$important
-/zefoy\.com(\/[^\/]+){1,}\.js\?/
 /zefoy\.com\/[^\/]+\?/
 /zeotap/$important
 /zephr[^/]*\.m?js/
