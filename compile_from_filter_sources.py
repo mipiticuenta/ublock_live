@@ -1424,7 +1424,7 @@ def f_deflat_domain(line) :
 
     counter.value += 1
     print(
-        '        ',
+        '       ',
         '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
         '(', '{:.0f}'.format(counter.value), '/', counter_max, ') ',
         '{:.0f}'.format((time() - t0) / 60), '\' elapsed | ',
@@ -1476,7 +1476,7 @@ list2 = list(filter(None, sorted(set(list2) | set(list3b))))
 del list3b
 
 print(
-    '        ',
+    '       ',
     '{:,}'.format(len(list3)),
     'domains kept',
     '                                       ',
@@ -1521,7 +1521,7 @@ list2 = list(filter(None, sorted(set(list2) - set(list2s))))                    
 del(list2s)
 
 print(
-    '        ',
+    '       ',
     '{:,}'.format(len(list2)),
     'filters remaining after compilation'
 )
