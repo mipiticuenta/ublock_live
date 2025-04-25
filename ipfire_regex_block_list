@@ -48,6 +48,7 @@
 /[_\W]adutil/
 /[_\W]adv(erts?)?[_\W]/
 /[_\W]advally[_\W]/$important
+/[_\W]advt[_\W]/
 /[_\W]adwords/
 /[_\W]aff[^/]*\.m?js/
 /[_\W]aff[_\W]/
@@ -416,7 +417,9 @@
 /abtesting[^/]*\.m?js/
 /accsoffer[^/]*\.m?js/
 /acikdeniz/$important
+/adagency/$important
 /adblock[^/]*\.m?js/
+/adblock[_\W]*kill/$important
 /adcash/$important
 /adchoice/$important
 /adclick/$important
@@ -434,14 +437,17 @@
 /adnxs/$important
 /adobe[^/]*\.m?js/
 /adobe[_\W]*target/$important
+/adpartner/$important
 /adplacement/$important
 /adreloader/$important
 /adrotate/$important
 /adsbygoogle/$important
+/adscommon/$important
 /adsense/$important
 /adshield/$important
 /adslot/$important
 /adspace/$important
+/adspromo/$important
 /adsrotat/$important
 /adsutil/$important
 /adunit/$important
@@ -519,8 +525,10 @@
 /chartbeat/$important
 /choice[^/]*\.m?js/
 /chunk[^/]*\.m?js/
+/citiservi/$important
 /classify[_\W]*client/
 /clear[_\W]*dot/
+/cli?c?k[_\W]*ads/
 /cli?cktr(a?c)?k/$important
 /clicker/$important
 /clicktag/$important
@@ -737,7 +745,6 @@
 /network[^/]*\.m?js/
 /new[_\W]*app[^/]*\.m?js/
 /new[_\W]*relic/$important
-/newegg/$important
 /news[_\W]*let[^/]*\.m?js/
 /nextcustom[^/]*\.m?js/
 /nfplug[^/]*\.m?js/
@@ -823,8 +830,10 @@
 /proxy/*.smsbump.com/
 /pubad/$important
 /pubdirect/$important
+/publicite/$important
 /punycode[^/]*\.m?js/
 /push[^/]*\.m?js/
+/pushly/$important
 /quant[^/]*\.m?js/
 /quantcast/$important
 /quarantine[^/]*\.m?js/
@@ -849,6 +858,7 @@
 /revcloud/$important
 /reverb[^/]*\.m?js/
 /richaudienc/$important
+/rightad/$important
 /rightad[^/]*\.m?js/
 /rocket[^/]*\.m?js/
 /ruxitagent/$important
@@ -856,6 +866,7 @@
 /salesforce/$important
 /sapcnqrthemedcss/$important
 /scheduler[^/]*\.m?js/
+/scorecardresearch/$important
 /securemetric/$important
 /segment[^/]*\.m?js/
 /sensor[_\W]*collect/$important
@@ -889,6 +900,7 @@
 /smartclip/$important
 /smarttag/$important
 /sourcepoint/$important
+/special/*_960/
 /sphinxs[^/]*\.m?js/
 /sporttadoghq/$important
 /statcount/$important
@@ -911,6 +923,7 @@
 /telemetry/$important
 /textad/$important
 /thecardguysuk/$important
+/theme\/js\/[a-z0-9]{5,}\.js\?v=/
 /third[_\W]*party/
 /threadeskupsimple/$important
 /tik[_\W]*tok/$important
@@ -933,9 +946,11 @@
 /uberprufungsfall/$important
 /underscore[^/]*\.m?js/
 /unionpmyadmin/$important
+/upf/*_banners/bd/
 /upload/*.rklite/
 /upsell[^/]*\.m?js/
 /usabilla/$important
+/usbeam/*_ad/
 /user[_\W]*profile/$important
 /usps/$important
 /v13.*idsh_ad/
