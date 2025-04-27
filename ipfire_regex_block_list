@@ -7,6 +7,8 @@
 /(?<!lo)admanager/$important
 /(?<!youtube)[_\W]*cooc?ki/$important
 //p\.[^/]*\.m?js/
+/=publicite/$important
+/=xadv/$important
 /[&=\?]pub(?!l)/
 /[_\W](?:de)?collect(?:or)?[_\W]/
 /[_\W](?:fast)?cli?cks?[_\W]/
@@ -392,6 +394,8 @@
 /[_\W]xn\-\-/$important
 /\&ctier/$important
 /\-mgte\.googlevideo\./$important
+/\.adfox/$important
+/\.advision/$important
 /\.attn\.tv\.js/
 /\.exe(?:\W)?/
 /\.gif(?:\W)?/
@@ -646,6 +650,7 @@
 /skypecheck[^/]*\.m?js/
 /special/*_960/
 /sphinxs[^/]*\.m?js/
+/sponsored[_\W]*link/$important
 /static/*/ads/
 /static/*_blickdeal/
 /stub[^/]*\.m?js/
