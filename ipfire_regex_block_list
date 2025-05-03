@@ -7,7 +7,7 @@
 /(?<!lo)admanager/$important
 /(?<!youtube)[_\W]*cooc?ki/$important
 //p\.[^/]*\.m?js/
-/=publicite/$important
+/=publici/$important
 /=xadv/$important
 /[&=\?]pub(?!l)/
 /[_\W](?:de)?collect(?:or)?[_\W]/
@@ -92,7 +92,6 @@
 /[_\W]blobstore[_\W]/$important
 /[_\W]blockui[_\W]/$important
 /[_\W]bloga9df3blog[_\W]/$important
-/[_\W]bloo[^/]*\.m?js/
 /[_\W]blumebod3[_\W]/$important
 /[_\W]bnr[_\W]/
 /[_\W]bonngsuite[_\W]/$important
@@ -230,8 +229,7 @@
 /[_\W]gtag[_\W]/
 /[_\W]gtm[_\W]/$important
 /[_\W]gulp[^/]*\.m?js/
-/[_\W]has[_\W]/
-/[_\W]hello[_\W]/
+/[_\W]hello[^/]*\.m?js/
 /[_\W]helper[_\W]/
 /[_\W]hichann/$important
 /[_\W]i18n[^/]*\.m?js/
@@ -275,7 +273,7 @@
 /[_\W]pixel(cou?nt\w*)?[_\W]/
 /[_\W]policy[_\W]/
 /[_\W]poll[^/]*\.m?js/
-/[_\W]popover[_\W]/$important
+/[_\W]popover[_\W]/
 /[_\W]popp?er[_\W]/
 /[_\W]popu?nder[_\W]/
 /[_\W]popup[_\W]/
@@ -394,6 +392,7 @@
 /[_\W]xn\-\-/$important
 /\&ctier/$important
 /\-mgte\.googlevideo\./$important
+/\..relaxdays\.on/
 /\.adfox/$important
 /\.advision/$important
 /\.attn\.tv\.js/
@@ -418,7 +417,6 @@
 /adobe[_\W]*target/$important
 /adve?rt/$important
 /affiliat[^/]*\.m?js/
-/afiliasi/*/banners/
 /alert[^/]*\.m?js/
 /allegrojokaln[ei]/$important
 /allegrolokaln[ei]/$important
@@ -484,8 +482,6 @@
 /dfp[^/]*\.m?js/
 /dims4/default/$important
 /dismiss[^/]*\.m?js/
-/div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="lc206" class="react-file-line html-div" data-testid="code-cell" data-line-number="206" style="position:relative"><span class="pl-en">!</span> <span class="pl-en">annoyance</span></div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="lc207" class="react-file-line html-div" data-testid="code-cell" data-line-number="207" style="position:relative"><span class="pl-en">/plugin-pdpa/
-/div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="lc209" class="react-file-line html-div" data-testid="code-cell" data-line-number="209" style="position:relative"><span class="pl-en">!</span> <span class="pl-en">annoyance</span></div></div></div><div class="react-code-text react-code-line-contents" style="min-height:auto"><div><div id="lc210" class="react-file-line html-div" data-testid="code-cell" data-line-number="210" style="position:relative"><span class="pl-en">/plugin-pdpa/
 /dmedianet[^/]*\.m?js/
 /dom[_\W]*ready/$important
 /domain[^/]*\.m?js/
@@ -675,11 +671,10 @@
 /upsell[^/]*\.m?js/
 /usbeam/*_ad/
 /user[_\W]*profile/$important
-/v13.*idsh_ad/
-/v13.*idsh_vid/
-/v13.*odnoklassniki_ru/
-/v13.*rambler_ad/
-/v13.*vitpc_ad/
+/v13[.]*idsh_/
+/v13[.]*odnoklassniki_/
+/v13[.]*rambler_/
+/v13[.]*vitpc_/
 /v13a*idsh_ad/ru/cp1251/tmsec=idsh_dis/
 /v13a*idsh_vid/ru/cp1251/tmsec=idsh_sid116854-dis/
 /v13a*odnoklassniki_ru/ru/utf-8/tmsec=odnoklassniki_mobile/
