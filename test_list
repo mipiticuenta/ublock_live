@@ -1,6 +1,8 @@
 ! new filters
 ! ----------------------------------------------------
+.autocomplete.css$badfilter
 .custom.min.js$badfilter
+.min.css$badfilter
 @@*$script,3p,domain=morningstar.es
 @@/[_\W]csp[_\W]/$domain=amazon.es|amazon.com
 @@||api.esios.ree.es^$xhr,1p
