@@ -104,3 +104,10 @@
 amazon.es###a-page > .a-declarative
 app-measurement.com
 script-*.*.js$badfilter
+/[_\W]underscore[_\W]/$badfilter
+/underscore[^/]*\.m?js/$badfilter
+/[_\W]underscore[_\W]/$domain=~morningstar.es
+/underscore[^/]*\.m?js/$domain=~morningstar.es
+/detect[^/]*\.m?js/$badfilter
+/detect[^/]*\.m?js/$domain=~morningstar.es
+@@||dgt.es$inline-script,domain=dgt.es
