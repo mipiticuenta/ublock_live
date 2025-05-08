@@ -115,3 +115,5 @@ script-*.*.js$badfilter
 @@||www.morningstar.es/es/funds/Services/$xhr,domain=www.morningstar.es
 *$removeparam=q,badfilter
 *#@#+js(json-prune, headers)
+/\.woff2?(?:\W)?/$badfilter
+/\.woff2?(?:\W)?/$domain=~morningstar.es|~meteoblue.com
