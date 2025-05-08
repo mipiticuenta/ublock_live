@@ -111,3 +111,7 @@ script-*.*.js$badfilter
 /detect[^/]*\.m?js/$badfilter
 /detect[^/]*\.m?js/$domain=~morningstar.es
 @@||dgt.es$inline-script,domain=dgt.es
+@@||www.morningstar.es/es/Services/$xhr,domain=www.morningstar.es
+@@||www.morningstar.es/es/funds/Services/$xhr,domain=www.morningstar.es
+*$removeparam=q,badfilter
+*#@#+js(json-prune, headers)
