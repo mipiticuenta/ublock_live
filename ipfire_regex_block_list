@@ -50,6 +50,7 @@
 /[_\W]agskwx/$important
 /[_\W]ahr0chm6ly/$important
 /[_\W]ai[^/]*\.m?js/
+/[_\W]aimatch/
 /[_\W]akam[_\W]/
 /[_\W]all[^/]*\.m?js/
 /[_\W]alserviciorat[_\W]/$important
@@ -305,7 +306,7 @@
 /[_\W]sepreproentiy/$important
 /[_\W]sethehubble/$important
 /[_\W]shaparak/$important
-/[_\W]sharer?[_\W]/$important
+/[_\W]sharer?[_\W]/
 /[_\W]sharing[_\W]/$important
 /[_\W]shim[^/]*\.m?js/
 /[_\W]shizuoka/$important
@@ -402,6 +403,10 @@
 /\.woff2?(?:\W)?/
 /\/[0-9]+\.m?js/
 /\/spons/$important
+/\/v13.*idsh/
+/\/v13.*odnoklassniki/
+/\/v13.*rambler/
+/\/v13.*vitpc/
 /\Wonet\W/
 /^([^\./]*\.)*[\d]+\.([a-z]{2,}\.)?[a-z]{2,}/$important
 /^(https?://)?[a-z]{10,12}\.easy\.co($|/.*$)/
@@ -418,11 +423,10 @@
 /adve?rt/$important
 /affiliat[^/]*\.m?js/
 /alert[^/]*\.m?js/
-/allegrojokaln[ei]/$important
-/allegrolokaln[ei]/$important
+/allegro[\w]okaln[ei]/
+/analytic[.]*ping/
 /analytic[^/]*\.m?js/
 /analytics.*/ping/
-/anuncy/*/ads/
 /aot-content\/modules\/[^\.]{40,}\.js\b/
 /apester[^/]*\.m?js/
 /api/*banners/
@@ -431,9 +435,9 @@
 /assets/images/*.gif^$image,1p,domain=com,to=/\x62\x69\x61\x75\x70\x6C\x6F\x61\x64\x2E\x63\x6F\x6D/
 /assets/images/*banners/
 /audience[^/]*\.m?js/
-/audience[_\W]*science/$important
-/audience[_\W]*segment/$important
-/audience[_\W]*target/$important
+/audience[_\W]*science/
+/audience[_\W]*segment/
+/audience[_\W]*target/
 /auto[_\W]*optimize[^/]*\.m?js/
 /auto[_\W]*tagger/$important
 /ban+i?ere?/$important
@@ -444,8 +448,6 @@
 /branded[_\W]*content/
 /browser[_\W]*info/$important
 /bundle[^/]*\.m?js/
-/business\.[a-z]+confirm\.com\/meta-community-standard\d{15}\/?/
-/business\.[a-z]+identiityconfirm\.com\/meta-community-standard\d{15}\/?/
 /caas[^/]*\.m?js/
 /cache[^/]*\.m?js/
 /cam[_\W]*girl/
@@ -569,6 +571,7 @@
 /notifications?/
 /npm/@adshield/
 /npm/@jenkinsci/jenkins-io-components/
+/npm/@snowplow/
 /nugg[_\W]*ad/$important
 /observe[^/]*\.m?js/
 /one[_\W]*tap[^/]*\.m?js/
@@ -578,6 +581,7 @@
 /otautoblock[^/]*\.m?js/
 /overlay[^/]*\.m?js/
 /pKisalt[^/]*\.m?js/
+/pa.dajiahao*.top/
 /page[_\W]*action/
 /page[_\W]*view/
 /particle[^/]*\.m?js/
@@ -647,7 +651,6 @@
 /special/*_960/
 /sphinxs[^/]*\.m?js/
 /sponsored[_\W]*link/$important
-/static/*/ads/
 /static/*_blickdeal/
 /stub[^/]*\.m?js/
 /subscr[^/]*\.m?js/
@@ -671,10 +674,6 @@
 /upsell[^/]*\.m?js/
 /usbeam/*_ad/
 /user[_\W]*profile/$important
-/v13[.]*idsh_/
-/v13[.]*odnoklassniki_/
-/v13[.]*rambler_/
-/v13[.]*vitpc_/
 /v13a*idsh_ad/ru/cp1251/tmsec=idsh_dis/
 /v13a*idsh_vid/ru/cp1251/tmsec=idsh_sid116854-dis/
 /v13a*odnoklassniki_ru/ru/utf-8/tmsec=odnoklassniki_mobile/

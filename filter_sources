@@ -1,5 +1,8 @@
 ! List of filter sources for compilation purposes
 ! ==============================================================================
+! https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_domain_block_list
+! https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/massive_domains_block_list
+! https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/unified_block_list
 https://adaway.org/hosts.txt
 https://big.oisd.nl
 https://downloads.vivaldi.com/easylist/easylist-current.txt
@@ -7,10 +10,10 @@ https://downloads.vivaldi.com/easylist/easyprivacy-current.txt
 https://downloads.vivaldi.com/lists/abp/abp-filters-anti-cv-current.txt
 https://downloads.vivaldi.com/lists/abp/antiadblockfilters-current.txt
 https://easylist-downloads.adblockplus.org/antiadblockfilters.txt
-https://easylist-downloads.adblockplus.org/easylistchina.txt
-https://easylist-downloads.adblockplus.org/easylistdutch.txt
 https://easylist-downloads.adblockplus.org/easylist_noadult.txt
 https://easylist-downloads.adblockplus.org/easylist_noelemhide.txt
+https://easylist-downloads.adblockplus.org/easylistchina.txt
+https://easylist-downloads.adblockplus.org/easylistdutch.txt
 https://easylist-downloads.adblockplus.org/easylistpolish.txt
 https://easylist-downloads.adblockplus.org/easylistportuguese.txt
 https://easylist-downloads.adblockplus.org/easylistspanish.txt
@@ -25,6 +28,28 @@ https://easylist.to/easylistgermany/easylistgermany.txt
 https://github.com/easylist-thailand/easylist-thailand/blob/master/subscription/easylist-thailand.txt
 https://github.com/ph00lt0/blocklist/blob/master/blocklist.txt
 https://github.com/ph00lt0/blocklist/blob/master/pihole-blocklist.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/annoyances-cookies.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/annoyances-others.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/annoyances.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/badlists.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/badware.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters-2020.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters-2021.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters-2022.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters-2023.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters-2024.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters-2025.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters-general.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters-mobile.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/lan-block.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/legacy.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/privacy.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/quick-fixes.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/resource-abuse.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/ubo-link-shorteners.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/ubol-filters.txt
+https://github.com/uBlockOrigin/uAssets/blob/master/filters/unbreak.txt
 https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt
 https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt
 https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt
@@ -50,10 +75,6 @@ https://raw.githubusercontent.com/EasyDutch-uBO/EasyDutch/main/EasyDutch/Anti-Ad
 https://raw.githubusercontent.com/EasyDutch-uBO/EasyDutch/main/EasyDutch/Block_Resources.txt
 https://raw.githubusercontent.com/EasyDutch-uBO/EasyDutch/main/EasyDutch/Block_third_party_Server.txt
 https://raw.githubusercontent.com/EasyDutch-uBO/EasyDutch/main/EasyDutch/Hide_Specific.txt
-https://raw.githubusercontent.com/easylist/EasyListHebrew/master/adguard_hosts.txt
-https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew.txt
-https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew-uBO.txt
-https://raw.githubusercontent.com/easylist/EasyListHebrew/master/hosts.txt
 https://raw.githubusercontent.com/EasyList-Lithuania/easylist_lithuania/master/easylistlithuania.txt
 https://raw.githubusercontent.com/easylist-thailand/easylist-thailand/master/categories/adult.txt
 https://raw.githubusercontent.com/easylist-thailand/easylist-thailand/master/categories/anime.txt
@@ -67,10 +88,14 @@ https://raw.githubusercontent.com/easylist-thailand/easylist-thailand/master/cat
 https://raw.githubusercontent.com/easylist-thailand/easylist-thailand/master/categories/ublock.txt
 https://raw.githubusercontent.com/easylist-thailand/easylist-thailand/master/subscription/easylist-thailand.txt
 https://raw.githubusercontent.com/easylist-thailand/easylist-thailand/master/subscription/ublock.txt
+https://raw.githubusercontent.com/easylist/EasyListHebrew/master/adguard_hosts.txt
+https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew-uBO.txt
+https://raw.githubusercontent.com/easylist/EasyListHebrew/master/EasyListHebrew.txt
+https://raw.githubusercontent.com/easylist/EasyListHebrew/master/hosts.txt
 https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts
 https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts
-https://raw.githubusercontent.com/finnish-easylist-addition/finnish-easylist-addition/master/Finland_adb.txt
 https://raw.githubusercontent.com/finnish-easylist-addition/finnish-easylist-addition/master/Finland_adb_uBO_extras.txt
+https://raw.githubusercontent.com/finnish-easylist-addition/finnish-easylist-addition/master/Finland_adb.txt
 https://raw.githubusercontent.com/gieljnssns/Social-media-Blocklists/master/adguard-facebook.txt
 https://raw.githubusercontent.com/gieljnssns/Social-media-Blocklists/master/adguard-instagram.txt
 https://raw.githubusercontent.com/gieljnssns/Social-media-Blocklists/master/adguard-snapchat.txt
@@ -90,16 +115,13 @@ https://raw.githubusercontent.com/lightswitch05/hosts/master/docs/lists/hate-and
 https://raw.githubusercontent.com/lightswitch05/hosts/master/docs/lists/tracking-aggressive-extended.txt
 https://raw.githubusercontent.com/List-KR/List-KR/master/filters-share/1st_domains.txt
 https://raw.githubusercontent.com/List-KR/List-KR/master/filters-share/3rd_domains.txt
-https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlockerHosts.txt
 https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlocker.txt
+https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlockerHosts.txt
 https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersonalBlocker.txt
 https://raw.githubusercontent.com/matomo-org/referrer-spam-blacklist/master/spammers.txt
 https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/compiled_block_list
 https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ddg_rules
-! https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_domain_block_list
-! https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/massive_domains_block_list
 https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/test_list
-! https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/unified_block_list
 https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/AmazonFireTV.txt
 https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/android-tracking.txt
 https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt
@@ -107,8 +129,8 @@ https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt
 https://raw.githubusercontent.com/RooneyMcNibNug/pihole-stuff/master/SNAFU.txt
 https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt
 https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
-https://raw.githubusercontent.com/tomasko126/easylistczechandslovak/master/filters.txt
 https://raw.githubusercontent.com/tomasko126/easylistczechandslovak/master/filters_ublock.txt
+https://raw.githubusercontent.com/tomasko126/easylistczechandslovak/master/filters.txt
 https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances-cookies.txt
 https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances-others.txt
 https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt
@@ -157,26 +179,3 @@ https://v.firebog.net/hosts/RPiList-Phishing.txt
 https://v.firebog.net/hosts/static/w3kbl.txt
 https://winhelp2002.mvps.org/hosts.txt
 https://zoso.ro/pages/rolist.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/annoyances-cookies.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/annoyances-others.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/annoyances.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/badlists.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/badware.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters-2020.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters-2021.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters-2022.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters-2023.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters-2024.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters-2025.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters-general.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters-mobile.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/filters.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/lan-block.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/legacy.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/privacy.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/quick-fixes.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/resource-abuse.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/ubo-link-shorteners.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/ubol-filters.txt
-https://github.com/uBlockOrigin/uAssets/blob/master/filters/unbreak.txt
-
