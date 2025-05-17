@@ -117,3 +117,4 @@ script-*.*.js$badfilter
 *#@#+js(json-prune, headers)
 /\.woff2?(?:\W)?/$badfilter
 /\.woff2?(?:\W)?/$domain=~morningstar.es|~meteoblue.com
+*$removeparam=sqp,badfilter
