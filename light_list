@@ -45,6 +45,7 @@ amazon.*##.a-carousel-card:has(> div > div[cel_widget_id^="adplacements:"]):remo
 amazon.*##.AdHolder
 amazon.*###similarities_feature_div:has(span[id^="ad-feedback-text"])
 amazon.*##div[cel_widget_id="sims-consolidated-5_csm_instrumentation_wrapper"]
+fls-na.amazon./$xhr,redirect=noopjs,domain=imdb.com
 ! ------------------------------------------------------------------------------------
 ! </amazon filter/>
 ! ------------------------------------------------------------------------------------
@@ -65,6 +66,7 @@ amazon.*##div[cel_widget_id="sims-consolidated-5_csm_instrumentation_wrapper"]
 *$removeparam=/aff[_\W]*id/
 *$removeparam=/anon[_\W]*id/
 *$removeparam=/camp[_\W]*id/
+*$removeparam=/asc_/
 *$removeparam=/campaign/
 *$removeparam=/cli?c?k[_\W]*id/
 *$removeparam=/ctier/
