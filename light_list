@@ -34,6 +34,20 @@ youtube.com##+js(trusted-replace-xhr-response, /"adPlacements.*?([A-Z]"\}|"\}{2\
 ! ------------------------------------------------------------------------------------
 ! <youtube filter/>
 ! ------------------------------------------------------------------------------------
+! ------------------------------------------------------------------------------------
+! <amazon filter/>
+! ------------------------------------------------------------------------------------
+amazon.*###s-results-list-atf > .s-result-item:has(> .s-item-container h5.s-sponsored-list-header)
+amazon.*###s-results-list-atf > .s-result-item:has(.s-item-container h5.s-sponsored-header)
+amazon.*##.s-result-item:has(> .s-item-container > h5 .s-sponsored-info-icon)
+amazon.*##.s-widget:has(> [data-cel-widget^="MAIN"] > [data-cel-widget^="tetris"] > div[id^="CardInstance"][class^="_tetris-"])
+amazon.*##.a-carousel-card:has(> div > div[cel_widget_id^="adplacements:"]):remove()
+amazon.*##.AdHolder
+amazon.*###similarities_feature_div:has(span[id^="ad-feedback-text"])
+amazon.*##div[cel_widget_id="sims-consolidated-5_csm_instrumentation_wrapper"]
+! ------------------------------------------------------------------------------------
+! </amazon filter/>
+! ------------------------------------------------------------------------------------
 *$beacon
 *$csp=all
 *$document,csp=all
