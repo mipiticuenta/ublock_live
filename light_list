@@ -35,22 +35,21 @@ youtube.com##+js(trusted-replace-xhr-response, /"adPlacements.*?([A-Z]"\}|"\}{2\
 ! ------------------------------------------------------------------------------------
 ! <amazon filter/>
 ! ------------------------------------------------------------------------------------
-@@*$script,3p,domain=amazon.es
-@@/[_\W]csp[_\W]/$domain=amazon.es|amazon.com
+@@*$script,3p,domain=amazon.es|amazon.com
 @@||media-amazon.com^$xhr,domain=amazon.es|amazon.com
 @@amazon.es/hz/$xhr,domain=amazon.es
 @@amazon.es/nav/$xhr,1p
-@@media-amazon.com/images/$inline-font,domain=amazon.com|amazon.es
-amazon.##.a-carousel-card:has(> div > div[cel_widget_id^="adplacements:"]):remove()
-amazon.##.AdHolder
-amazon.##.s-result-item:has(> .s-item-container > h5 .s-sponsored-info-icon)
-amazon.##.s-widget:has(> [data-cel-widget^="MAIN"] > [data-cel-widget^="tetris"] > div[id^="CardInstance"][class^="_tetris-"])
-amazon.###s-results-list-atf > .s-result-item:has(.s-item-container h5.s-sponsored-header)
-amazon.###s-results-list-atf > .s-result-item:has(> .s-item-container h5.s-sponsored-list-header)
-amazon.###similarities_feature_div:has(span[id^="ad-feedback-text"])
-amazon.##div[cel_widget_id="sims-consolidated-5_csm_instrumentation_wrapper"]
+*##.a-carousel-card:has(> div > div[cel_widget_id^="adplacements:"]):remove()
+*##.AdHolder
+*##.s-result-item:has(> .s-item-container > h5 .s-sponsored-info-icon)
+*##.s-widget:has(> [data-cel-widget^="MAIN"] > [data-cel-widget^="tetris"] > div[id^="CardInstance"][class^="_tetris-"])
 *###a-page > .a-declarative
-fls-na.amazon./$xhr,redirect=noopjs,domain=imdb.com
+*###s-results-list-atf > .s-result-item:has(.s-item-container h5.s-sponsored-header)
+*###s-results-list-atf > .s-result-item:has(> .s-item-container h5.s-sponsored-list-header)
+*###similarities_feature_div:has(span[id^="ad-feedback-text"])
+*##div[cel_widget_id="sims-consolidated-5_csm_instrumentation_wrapper"]
+~media-amazon.com|~ssl-images-amazon.com$script,3p,domain=amazon.es|amazon.com
+@@*$inline-script,domain=amazon.com|amazon.es
 ! ------------------------------------------------------------------------------------
 ! </amazon filter/>
 ! ------------------------------------------------------------------------------------
