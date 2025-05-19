@@ -26,13 +26,11 @@ youtube.com##+js(trusted-replace-fetch-response, '"adSlots"', '"no_ads"', player
 youtube.com##+js(trusted-replace-xhr-response, '"adPlacements"', '"no_ads"', /playlist\?list=|\/player(?:\?.+)?$|watch\?[tv]=/)
 youtube.com##+js(trusted-replace-xhr-response, /"adPlacements.*?("adSlots"|"adBreakHeartbeatParams")/gms, $1, /\/player(?:\?.+)?$/)
 youtube.com##+js(trusted-replace-xhr-response, /"adPlacements.*?([A-Z]"\}|"\}{2\,4})\}\]\,/, , /playlist\?list=|\/player(?:\?.+)?$|watch\?[tv]=/)
-@@||music.youtube.com^$inline-script,domain=music.youtube.com
-@@||music.youtube.com^$xhr,domain=music.youtube.com
 @@*$script,3p,domain=www.youtube.com
-@@*$xhr,domain=www.youtube.com
-@@*$inline-script,domain=www.youtube.com
+@@*$xhr,domain=www.youtube.com|music.youtube.com
+@@*$inline-script,domain=www.youtube.com|music.youtube.com
 ! ------------------------------------------------------------------------------------
-! <youtube filter/>
+! </youtube filter>
 ! ------------------------------------------------------------------------------------
 ! ------------------------------------------------------------------------------------
 ! <amazon filter/>
