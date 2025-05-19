@@ -49,7 +49,8 @@
 *##+js(json-prune,)
 *$removeparam=q,$badfilter
 *$script,3p
-*$script,3p,domain=morningstar.com,badfilter
+@@*$script,3p,domain=morningstar.com
+@@*$script,3p,domain=www.youtube.com
 /[_\W][a-z0-9]{45,}[_\W]/$badfilter
 /[_\W]all[^/]*\.m?js/$badfilter
 /[_\W]chunks?[_\W]/$badfilter
