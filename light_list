@@ -3,92 +3,125 @@
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/light_list
 ! title: light list
 ! ------------------------------------------------------------------------------------
+! <youtube filter/>
+! ------------------------------------------------------------------------------------
+*_ad_$media,domain=youtube.com,3p
+! @@||youtube.com/get_video_info?*timedtext_editor$xhr,1p
+tv.youtube.com##+js(trusted-replace-xhr-response, '"adPlacements"', '"no_ads"', /playlist\?list=|\/player(?:\?.+)?$|watch\?[tv]=/)
+!#if !cap_html_filtering
+www.youtube.com##+js(trusted-replace-xhr-response, /"adPlacements.*?([A-Z]"\}|"\}{2\,4})\}\]\,/, , /playlist\?list=|\/player(?:\?.+)?$|watch\?[tv]=/)
+www.youtube.com##+js(trusted-replace-xhr-response, /"adPlacements.*?("adSlots"|"adBreakHeartbeatParams")/gms, $1, /\/player(?:\?.+)?$/)
+www.youtube.com##+js(trusted-replace-fetch-response, '"adPlacements"', '"no_ads"', player?)
+www.youtube.com##+js(trusted-replace-fetch-response, '"adSlots"', '"no_ads"', player?)
+!#else
+||www.youtube.com/playlist?list=$xhr,1p,replace=/"adPlacements"/"no_ads"/
+||www.youtube.com/playlist?list=$xhr,1p,replace=/"adSlots"/"no_ads"/
+||www.youtube.com/watch?$xhr,1p,replace=/"adPlacements"/"no_ads"/
+||www.youtube.com/watch?$xhr,1p,replace=/"adSlots"/"no_ads"/
+||www.youtube.com/youtubei/v1/player?$xhr,1p,replace=/"adPlacements"/"no_ads"/
+||www.youtube.com/youtubei/v1/player?$xhr,1p,replace=/"adSlots"/"no_ads"/
+!#endif
+m.youtube.com,music.youtube.com,tv.youtube.com,www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.playerAds, undefined)
+m.youtube.com,music.youtube.com,tv.youtube.com,www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
+m.youtube.com,music.youtube.com,tv.youtube.com,www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, ytInitialPlayerResponse.adSlots, undefined)
+m.youtube.com,music.youtube.com,tv.youtube.com,www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(set, playerResponse.adPlacements, undefined)
+m.youtube.com,music.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, playerResponse.adPlacements playerResponse.playerAds playerResponse.adSlots adPlacements playerAds adSlots important)
+youtube.com##.ytlr-horizontal-list-renderer__items > .yt-virtual-list__container > .yt-virtual-list__item--visible.yt-virtual-list__item--selected.yt-virtual-list__item:has-text(Ad)
+||googlevideo.com/initplayback?source=youtube*&c=TVHTML5&oad=$xhr,domain=youtube.com
+! Shorts Ad
+m.youtube.com,music.youtube.com,tv.youtube.com,www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune-fetch-response, reelWatchSequenceResponse.entries.[-].command.reelWatchEndpoint.adClientParams.isAd entries.[-].command.reelWatchEndpoint.adClientParams.isAd, , propsToMatch, url:/reel_watch_sequence?)
+m.youtube.com,music.youtube.com,tv.youtube.com,www.youtube.com,youtubekids.com,youtube-nocookie.com##+js(json-prune, entries.[-].command.reelWatchEndpoint.adClientParams.isAd)
+||youtube.com/youtubei/v1/get_watch?$xhr,1p,replace=/"adPlacements"/"no_ads"/
+||youtube.com/youtubei/v1/get_watch?$xhr,1p,replace=/"adSlots"/"no_ads"/
 @@||music.youtube.com^$inline-script,domain=music.youtube.com
 @@||music.youtube.com^$xhr,domain=music.youtube.com
-*##+js(json-prune, 。「」、・ヲァィゥェォャュョッーアイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワン゛゜)
-*##+js(json-prune, {}.adCreativeId)
-*##+js(json-prune, {}.adCreativeMetaData)
-*##+js(json-prune, {}.adId)
-*##+js(json-prune, {}.adPlacementMetaData)
-*##+js(json-prune, {}.advertiserIdNS)
-*##+js(json-prune, {}.campaignId)
-*##+js(json-prune, actionProto)
-*##+js(json-prune, ad_fallback)
-*##+js(json-prune, ad_id)
-*##+js(json-prune, adEnabled)
-*##+js(json-prune, adPlacementMetaData)
-*##+js(json-prune, adPlacements)
-*##+js(json-prune, ads)
-*##+js(json-prune, adsbygoogle)
-*##+js(json-prune, adService)
-*##+js(json-prune, adSlots)
-*##+js(json-prune, advertiserId)
-*##+js(json-prune, bgChallenge)
-*##+js(json-prune, botguardData)
-*##+js(json-prune, breaks)
-*##+js(json-prune, campaignId)
-*##+js(json-prune, challenge)
-*##+js(json-prune, consent)
-*##+js(json-prune, Consent)
-*##+js(json-prune, ContentBreaks)
-*##+js(json-prune, cookie)
-*##+js(json-prune, Cookie)
-*##+js(json-prune, creation)
-*##+js(json-prune, data)
-*##+js(json-prune, enforcementMesageVewMdel)
-*##+js(json-prune, enqueueTimeSec)
-*##+js(json-prune, expiration)
-*##+js(json-prune, headers)
-*##+js(json-prune, instrumentationPixelUrl)
-*##+js(json-prune, isAd)
-*##+js(json-prune, key)
-*##+js(json-prune, lastActive)
-*##+js(json-prune, legacyImportant)
-*##+js(json-prune, metricsIdentifier)
-*##+js(json-prune, pause_ads)
-*##+js(json-prune, playerAds)
-*##+js(json-prune, playerconfig)
-*##+js(json-prune, playerConfig)
-*##+js(json-prune, playerResponse.adPlacements)
-*##+js(json-prune, playerResponse.adSlots)
-*##+js(json-prune, playerResponse.playerAds)
-*##+js(json-prune, playerResponse)
-*##+js(json-prune, plg_system_ochaddads)
-*##+js(json-prune, postParams)
-*##+js(json-prune, promotext)
-*##+js(json-prune, responseContext)
-*##+js(json-prune, retryScheduleIndex)
-*##+js(json-prune, rootActionId)
-*##+js(json-prune, shortsAdsRenderer)
-*##+js(json-prune, showAds)
-*##+js(json-prune, sponsoredLoggingUrl)
-*##+js(json-prune, ssapConfig)
-*##+js(json-prune, testhide)
-*##+js(json-prune, trackingId)
-*##+js(json-prune, trackingPixelUrl)
-*##+js(json-prune, weblabs)
-*##+js(json-prune, X-YouTube-Ad-Signals)
-*##+js(json-prune, ヴ____ガ_ギ_グ_ゲ_ゴ_ザ_ジ_ズ_ゼ_ゾ_ダ_ヂ__ヅ_デ_ド______バ__ビ__ブ__ベ__ボ)
-*##+js(json-prune, ヴ__ガギグゲゴザジズゼゾダヂヅデド_____バビブベボ)
-*##+js(json-prune, ウカキクケコサシスセソタチツテトハヒフヘホ)
-*##+js(json-prune, パ__ピ__プ__ペ__ポ)
-*##+js(json-prune, ハヒフヘホ)
-*##+js(json-prune, パピプペポ)
-*##+js(set, adPlacements, undefined)
-*##+js(set, adsbygoogle, undefined)
-*##+js(set, adSlots, undefined)
-*##+js(set, consent, undefined)
-*##+js(set, Consent, undefined)
-*##+js(set, cookie, undefined)
-*##+js(set, Cookie, undefined)
-*##+js(set, enforcementMesageVewMdel, undefined)
-*##+js(set, playerAds, undefined)
-*##+js(set, playerconfig, undefined)
-*##+js(set, playerConfig, undefined)
-*##+js(set, playerResponse.adPlacements, undefined)
-*##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
-*##+js(set, ytInitialPlayerResponse.adSlots, undefined)
-*##+js(set, ytInitialPlayerResponse.playerAds, undefined)
+! ------------------------------------------------------------------------------------
+! <youtube filter/>
+! ------------------------------------------------------------------------------------
+! *##+js(json-prune, 。「」、・ヲァィゥェォャュョッーアイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワン゛゜)
+! *##+js(json-prune, {}.adCreativeId)
+! *##+js(json-prune, {}.adCreativeMetaData)
+! *##+js(json-prune, {}.adId)
+! *##+js(json-prune, {}.adPlacementMetaData)
+! *##+js(json-prune, {}.advertiserIdNS)
+! *##+js(json-prune, {}.campaignId)
+! *##+js(json-prune, actionProto)
+! *##+js(json-prune, ad_fallback)
+! *##+js(json-prune, ad_id)
+! *##+js(json-prune, adEnabled)
+! *##+js(json-prune, adPlacementMetaData)
+! *##+js(json-prune, adPlacements)
+! *##+js(json-prune, ads)
+! *##+js(json-prune, adsbygoogle)
+! *##+js(json-prune, adService)
+! *##+js(json-prune, adSlots)
+! *##+js(json-prune, advertiserId)
+! *##+js(json-prune, bgChallenge)
+! *##+js(json-prune, botguardData)
+! *##+js(json-prune, breaks)
+! *##+js(json-prune, campaignId)
+! *##+js(json-prune, challenge)
+! *##+js(json-prune, consent)
+! *##+js(json-prune, Consent)
+! *##+js(json-prune, ContentBreaks)
+! *##+js(json-prune, cookie)
+! *##+js(json-prune, Cookie)
+! *##+js(json-prune, creation)
+! *##+js(json-prune, data)
+! *##+js(json-prune, enforcementMesageVewMdel)
+! *##+js(json-prune, enqueueTimeSec)
+! *##+js(json-prune, expiration)
+! *##+js(json-prune, headers)
+! *##+js(json-prune, instrumentationPixelUrl)
+! *##+js(json-prune, isAd)
+! *##+js(json-prune, key)
+! *##+js(json-prune, lastActive)
+! *##+js(json-prune, legacyImportant)
+! *##+js(json-prune, metricsIdentifier)
+! *##+js(json-prune, pause_ads)
+! *##+js(json-prune, playerAds)
+! *##+js(json-prune, playerconfig)
+! *##+js(json-prune, playerConfig)
+! *##+js(json-prune, playerResponse.adPlacements)
+! *##+js(json-prune, playerResponse.adSlots)
+! *##+js(json-prune, playerResponse.playerAds)
+! *##+js(json-prune, playerResponse)
+! *##+js(json-prune, plg_system_ochaddads)
+! *##+js(json-prune, postParams)
+! *##+js(json-prune, promotext)
+! *##+js(json-prune, responseContext)
+! *##+js(json-prune, retryScheduleIndex)
+! *##+js(json-prune, rootActionId)
+! *##+js(json-prune, shortsAdsRenderer)
+! *##+js(json-prune, showAds)
+! *##+js(json-prune, sponsoredLoggingUrl)
+! *##+js(json-prune, ssapConfig)
+! *##+js(json-prune, testhide)
+! *##+js(json-prune, trackingId)
+! *##+js(json-prune, trackingPixelUrl)
+! *##+js(json-prune, weblabs)
+! *##+js(json-prune, X-YouTube-Ad-Signals)
+! *##+js(json-prune, ヴ____ガ_ギ_グ_ゲ_ゴ_ザ_ジ_ズ_ゼ_ゾ_ダ_ヂ__ヅ_デ_ド______バ__ビ__ブ__ベ__ボ)
+! *##+js(json-prune, ヴ__ガギグゲゴザジズゼゾダヂヅデド_____バビブベボ)
+! *##+js(json-prune, ウカキクケコサシスセソタチツテトハヒフヘホ)
+! *##+js(json-prune, パ__ピ__プ__ペ__ポ)
+! *##+js(json-prune, ハヒフヘホ)
+! *##+js(json-prune, パピプペポ)
+! *##+js(set, adPlacements, undefined)
+! *##+js(set, adsbygoogle, undefined)
+! *##+js(set, adSlots, undefined)
+! *##+js(set, consent, undefined)
+! *##+js(set, Consent, undefined)
+! *##+js(set, cookie, undefined)
+! *##+js(set, Cookie, undefined)
+! *##+js(set, enforcementMesageVewMdel, undefined)
+! *##+js(set, playerAds, undefined)
+! *##+js(set, playerconfig, undefined)
+! *##+js(set, playerConfig, undefined)
+! *##+js(set, playerResponse.adPlacements, undefined)
+! *##+js(set, ytInitialPlayerResponse.adPlacements, undefined)
+! *##+js(set, ytInitialPlayerResponse.adSlots, undefined)
+! *##+js(set, ytInitialPlayerResponse.playerAds, undefined)
 *$beacon
 *$csp=all
 *$document,csp=all
@@ -99,137 +132,30 @@
 *$other
 *$ping
 *$popunder
-*$removeparam=__hsfp
-*$removeparam=__hssc
-*$removeparam=__hstc
-*$removeparam=_branch_match_id
-*$removeparam=_ft__shop_score
-*$removeparam=_gl
-*$removeparam=_hsenc
-*$removeparam=_kx
-*$removeparam=_openstat
-*$removeparam=_ref
-*$removeparam=_trkparms
-*$removeparam=_trksid
-*$removeparam=/^at_/
-*$removeparam=/^itm_/
-*$removeparam=/^ml_/
-*$removeparam=/^pk_/
-*$removeparam=/^vero_/
-*$removeparam=/ab_test/
-*$removeparam=/adconfig/
-*$removeparam=/adgroup/
-*$removeparam=/affid/
-*$removeparam=/anon_id/
-*$removeparam=/at_link/
-*$removeparam=/bsft_/
-*$removeparam=/callback/
+*$removeparam=/ab[_\W]*test/
+*$removeparam=/ad[_\W]*config/
+*$removeparam=/ad[_\W]*group/
+*$removeparam=/ad[_\W]*token/
+*$removeparam=/aff[_\W]*id/
+*$removeparam=/anon[_\W]*id/
+*$removeparam=/camp[_\W]*id/
 *$removeparam=/campaign/
-*$removeparam=/clkid/
-*$removeparam=/creation/
+*$removeparam=/cli?c?k[_\W]*id/
 *$removeparam=/ctier/
 *$removeparam=/experiment/
-*$removeparam=/guce_/
+*$removeparam=/fbclid/
+*$removeparam=/guce[_\W]/
 *$removeparam=/hash/
-*$removeparam=/hsa_/
-*$removeparam=/itm_/
 *$removeparam=/metric/
-*$removeparam=/mtm_/
-*$removeparam=/oft_/
-*$removeparam=/oly_/
+*$removeparam=/partner[_\W]*id/
 *$removeparam=/platform/
+*$removeparam=/rand/
 *$removeparam=/referr?er/
 *$removeparam=/score/
-*$removeparam=/session_id/
 *$removeparam=/stats/
 *$removeparam=/tracking/
-*$removeparam=/vero_/
 *$removeparam=/wicked/
-*$removeparam=adjust_creative
-*$removeparam=amdata
-*$removeparam=android_app_ver
-*$removeparam=at_creation
-*$removeparam=at_emailtype
-*$removeparam=b
-*$removeparam=bbeml
-*$removeparam=bcode
-*$removeparam=btn
-*$removeparam=bvid
-*$removeparam=caid
-*$removeparam=camcode
-*$removeparam=campid
-*$removeparam=cbr
-*$removeparam=cid
-*$removeparam=code
-*$removeparam=controller
-*$removeparam=cpcadtoken
-*$removeparam=cr
-*$removeparam=dclid
-*$removeparam=device
-*$removeparam=df
-*$removeparam=digest
-*$removeparam=discover_method
-*$removeparam=ers
-*$removeparam=et_rid
-*$removeparam=event
-*$removeparam=excm
-*$removeparam=fbclid
-*$removeparam=gbraid
-*$removeparam=gclid
-*$removeparam=gclsrc
-*$removeparam=gps_adid
-*$removeparam=hsctatracking
-*$removeparam=hybrid_search_extra
-*$removeparam=hybrid_search_source
 *$removeparam=id,badfilter
-*$removeparam=ig_rid
-*$removeparam=igsh
-*$removeparam=imp
-*$removeparam=ir_adid
-*$removeparam=ir_partnerid
-*$removeparam=irclickid
-*$removeparam=mc_eid
-*$removeparam=mkcid
-*$removeparam=mkevt
-*$removeparam=mkrid
-*$removeparam=msclkid
-*$removeparam=pbss
-*$removeparam=pp
-*$removeparam=pre_prk
-*$removeparam=rand
-*$removeparam=rb_clickid
-*$removeparam=ref
-*$removeparam=rnd
-*$removeparam=rs
-*$removeparam=rssredirect
-*$removeparam=s_cid
-*$removeparam=safarmarketid
-*$removeparam=search_id
-*$removeparam=session_id
-*$removeparam=shop_rank
-*$removeparam=si
-*$removeparam=sqp
-*$removeparam=src
-*$removeparam=ss_email_id
-*$removeparam=ssspo
-*$removeparam=sssrc
-*$removeparam=ssuid
-*$removeparam=stigma
-*$removeparam=suid
-*$removeparam=swjiylwa
-*$removeparam=traffic_source
-*$removeparam=twclid
-*$removeparam=uid
-*$removeparam=user_id
-*$removeparam=vasturl
-*$removeparam=vgo_ee
-*$removeparam=view
-*$removeparam=wbraid
-*$removeparam=wickedid
-*$removeparam=yclid
-*$removeparam=ymclid
-*$removeparam=yscli
-*$removeparam=ysclid
 /[_\W]ad[sx]?[_\W]/
 /[_\W]analytics?[_\W]/$important
 /[_\W]logs?[_\W]/
