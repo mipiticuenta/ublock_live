@@ -1,0 +1,206 @@
+{
+  "DEFAULT": {
+    "capabilities": [
+      "frame",
+      "media",
+      "fetch",
+      "lazy_load",
+      "font",
+      "noscript"
+    ],
+    "temp": false
+  },
+  "TRUSTED": {
+    "capabilities": [
+      "script",
+      "object",
+      "media",
+      "frame",
+      "font",
+      "webgl",
+      "fetch",
+      "noscript",
+      "lazy_load"
+    ],
+    "temp": false
+  },
+  "UNTRUSTED": {
+    "capabilities": [],
+    "temp": false
+  },
+  "sites": {
+    "trusted": [
+      "§:addons.mozilla.org",
+      "https://www.youtube.com",
+      "§:googlevideo.com",
+      "https://www.esios.ree.es",
+      "https://www.meteoblue.com",
+      "https://static.meteoblue.com",
+      "https://www.google.com",
+      "https://music.youtube.com"
+    ],
+    "untrusted": [
+      "ezodn.com",
+      "googletagmanager.com",
+      "jsdelivr.net",
+      "cloudflareinsights.com",
+      "statcounter.com",
+      "adlightning.com",
+      "adsninja.ca",
+      "googlesyndication.com",
+      "marfeelrev.com",
+      "privacymanager.io",
+      "increaserev.com",
+      "doubleclick.net",
+      "chilipiper.com",
+      "hsforms.net",
+      "cloudflare.com",
+      "googleoptimize.com",
+      "googletagservices.com",
+      "jquery.com",
+      "servedby-buysellads.com",
+      "pub.network",
+      "mgid.com",
+      "citiservi.es",
+      "dmcdn.net",
+      "richaudience.com",
+      "uri.sh",
+      "google-analytics.com",
+      "chartbeat.com",
+      "adkaora.space",
+      "gigya.com",
+      "facebook.net",
+      "evolutionadv.it",
+      "cxense.com",
+      "https://fundingchoicesmessages.google.com",
+      "imasdk.googleapis.com",
+      "https://adtcdn.unidadeditorial.es",
+      "https://e00-ue.uecdn.es",
+      "https://e00.uecdn.es",
+      "https://platform.twitter.com",
+      "https://www.instagram.com",
+      "permutive.com",
+      "googleadservices.com",
+      "https://e00-apps-ue.uecdn.es",
+      "opti-digital.com",
+      "tiqcdn.com",
+      "https://components.unidadeditorial.es",
+      "omny.fm",
+      "fmm.io",
+      "privacy-center.org",
+      "tinypass.com",
+      "optimizely.com",
+      "https://emp.bbci.co.uk",
+      "https://gn-web-assets.api.bbc.com",
+      "https://static.files.bbci.co.uk",
+      "https://delorean.ecestaticos.com",
+      "cookiebot.com",
+      "typekit.net",
+      "https://translate.google.com",
+      "matomo.cloud",
+      "https://promos.investing.com",
+      "https://monetization.prod.invmed.co",
+      "pbxai.com",
+      "https://i.ytimg.com",
+      "https://fonts.gstatic.com",
+      "https://suggestqueries-clients6.youtube.com"
+    ],
+    "custom": {
+      "§:launchpad.net": {
+        "capabilities": [
+          "frame",
+          "object",
+          "media",
+          "fetch"
+        ],
+        "contextual": {
+          "§:launchpad.net": {
+            "capabilities": [
+              "frame",
+              "object",
+              "media",
+              "fetch",
+              "script",
+              "font",
+              "webgl"
+            ],
+            "temp": false
+          }
+        },
+        "temp": false
+      },
+      "§:ubuntu.com": {
+        "capabilities": [
+          "frame",
+          "object",
+          "media",
+          "fetch"
+        ],
+        "contextual": {
+          "§:launchpad.net": {
+            "capabilities": [
+              "frame",
+              "object",
+              "media",
+              "fetch",
+              "font",
+              "webgl",
+              "script"
+            ],
+            "temp": false
+          }
+        },
+        "temp": false
+      },
+      "§:linkedin.com": {
+        "capabilities": [
+          "frame",
+          "object",
+          "media",
+          "fetch"
+        ],
+        "contextual": {
+          "§:linkedin.com": {
+            "capabilities": [
+              "frame",
+              "object",
+              "media",
+              "fetch",
+              "script",
+              "font",
+              "webgl"
+            ],
+            "temp": false
+          }
+        },
+        "temp": false
+      },
+      "§:licdn.com": {
+        "capabilities": [
+          "frame",
+          "object",
+          "media",
+          "fetch"
+        ],
+        "contextual": {
+          "§:linkedin.com": {
+            "capabilities": [
+              "frame",
+              "object",
+              "media",
+              "fetch",
+              "script",
+              "font",
+              "webgl"
+            ],
+            "temp": false
+          }
+        },
+        "temp": false
+      }
+    },
+    "temp": []
+  },
+  "enforced": true,
+  "autoAllowTop": false
+}
