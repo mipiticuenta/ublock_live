@@ -36,7 +36,7 @@ youtube.com##+js(trusted-replace-xhr-response, /"adPlacements.*?([A-Z]"\}|"\}{2\
 ! <amazon filter/>
 ! ------------------------------------------------------------------------------------
 @@*$script,3p,domain=amazon.es|amazon.com
-@@||media-amazon.com^$xhr,domain=amazon.es|amazon.com
+@@||m.media-amazon.com^$xhr,domain=amazon.es|amazon.com
 @@amazon.es/hz/$xhr,domain=amazon.es
 @@amazon.es/nav/$xhr,1p
 *##.a-carousel-card:has(> div > div[cel_widget_id^="adplacements:"]):remove()
@@ -48,7 +48,7 @@ youtube.com##+js(trusted-replace-xhr-response, /"adPlacements.*?([A-Z]"\}|"\}{2\
 *###s-results-list-atf > .s-result-item:has(> .s-item-container h5.s-sponsored-list-header)
 *###similarities_feature_div:has(span[id^="ad-feedback-text"])
 *##div[cel_widget_id="sims-consolidated-5_csm_instrumentation_wrapper"]
-~media-amazon.com|~ssl-images-amazon.com$script,3p,domain=amazon.es|amazon.com
+~m.media-amazon.com|~ssl-images-amazon.com$script,3p,domain=amazon.es|amazon.com
 @@*$inline-script,domain=amazon.com|amazon.es
 ! ------------------------------------------------------------------------------------
 ! </amazon filter/>
