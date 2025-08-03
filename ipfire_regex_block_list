@@ -2,7 +2,6 @@
 ! expires: 1 day
 ! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/ipfire_regex_block_list
 ! title: regex block list
-/(?:git\.){2,}/
 /(?<!b)logg/$important
 /(?<!lo)admanager/$important
 /(?<!youtube)[_\W]*cooc?ki/$important
@@ -212,6 +211,7 @@
 /[_\W]flash[^/]*\.m?js/
 /[_\W]flatfiles/$important
 /[_\W]flick[^/]*\.m?js/
+/[_\W]fls[_\W]]eu[_\W]/
 /[_\W]fpr[^/]*\.m?js/
 /[_\W]freeboxos/$important
 /[_\W]freshegg/$important
@@ -410,6 +410,8 @@
 /\Wonet\W/
 /^([^\./]*\.)*[\d]+\.([a-z]{2,}\.)?[a-z]{2,}/$important
 /^(https?://)?[a-z]{10,12}\.easy\.co($|/.*$)/
+/^(https?://)?[a-z]{10,12}\.easy\.co(/.*)?/
+/^(https?://)?hokaoneone[a-z0-9]/
 /a-zporn/$important
 /a8cli?k/$important
 /abtesting[^/]*\.m?js/
@@ -454,7 +456,6 @@
 /cam[_\W]*sex/
 /campaign[^/]*\.m?js/
 /cdc[^/]*\.m?js/
-/challenge[_\W]*platform/$important
 /chameleon[^/]*\.m?js/
 /choice[^/]*\.m?js/
 /chunk[^/]*\.m?js/
@@ -491,7 +492,6 @@
 /dora/biz/*-h5log/
 /dpal[^/]*\.m?js/
 /drivek[^/]*\.m?js/
-/e?(?<!g)mail[\d]*[_\W]/$important
 /email[_\W]*vision/
 /enter/?url=dont_go_away/
 /eumodal[^/]*\.m?js/
