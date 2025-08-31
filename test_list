@@ -3,7 +3,6 @@
 .autocomplete.css$badfilter
 .custom.min.js$badfilter
 .min.css$badfilter
-@@*$script,3p,domain=morningstar.es
 @@||api.esios.ree.es^$xhr,1p
 @@||apple-mapkit.com^$script,domain=icloud.com
 @@||apple-mapkit.com^$xhr,domain=icloud.com
@@ -41,9 +40,6 @@
 *##+js(json-prune, isLogged)
 *##+js(json-prune,)
 *$removeparam=q,$badfilter
-*$script,3p
-@@*$script,3p,domain=morningstar.com
-@@*$script,3p,domain=www.youtube.com
 /[_\W][a-z0-9]{45,}[_\W]/$badfilter
 /(?:git\.){2,}/$badfilter
 /[_\W]all[^/]*\.m?js/$badfilter
