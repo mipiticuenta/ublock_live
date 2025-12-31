@@ -3,10 +3,8 @@
 .autocomplete.css$badfilter
 .custom.min.js$badfilter
 .min.css$badfilter
-@@*$script,3p,domain=spotify.com
 @@*$websocket,domain=spotify.com
 @@||api.esios.ree.es^$xhr,1p
-@@||apple-mapkit.com^$script,domain=icloud.com
 @@||apple-mapkit.com^$xhr,domain=icloud.com
 @@||apple.com^$inline-script,1p
 @@||apple.com^$xhr,1p
@@ -14,14 +12,12 @@
 @@||carrefour.es^$inline-script,1p
 @@||carrefour.es^$xhr,1p
 @@||carto.com^$xhr,domain=ree.es
-@@||cdn-apple.com^$script,domain=icloud.com
 @@||dell.com^$inline-script,1p
 @@||dell.com^$xhr,1p
 @@||dgt.es$inline-script,1p
 @@||esios.ree.es^$xhr,1p
 @@||google.com/async/$xhr,domain=google.com
 @@||google.com/xjs/$xhr,domain=google.com
-@@||gstatic.com^$script,domain=google.com
 @@||hp.com^$inline-script,1p
 @@||icloud-content.com^$xhr,domain=icloud.com
 @@||icloud.com^$inline-script,1p
@@ -29,7 +25,6 @@
 @@||kubii.com^$inline-script,1p
 @@||kubii.com$xhr,1p
 @@||linux.org^$inline-script,1p
-@@||maxcdn.bootstrapcdn.com^$script,domain=www.raspipc.es
 @@||morningstar.com/api/v2/stores/$xhr,1p
 @@||morningstar.com^$inline-script,1p
 @@||morningstar.es/es/funds/Services/$xhr,domain=www.morningstar.es
@@ -40,7 +35,6 @@
 @@||raspberrypi.com^$inline-script,1p
 @@||raspipc.es^$inline-script,1p
 @@||ree.es^$inline-script,1p
-@@||scdn.co/cdn/js/gtag.$script,domain=spotify.com
 @@||snapcraft.io^$xhr,1p
 @@||spclient.wg.spotify.com/$xhr,domain=spotify.com
 @@||spotify.com^$inline-script,1p
