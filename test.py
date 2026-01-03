@@ -19,7 +19,6 @@ import os                                                                       
 import pandas as pd
 import re                                                                       # <regex capabilities />
 import requests                                                                 # <fetch urls />
-from duckai import DuckAI
 
 # file1_in_name   = 'filter_sources'
 # file2_out_name  = 'compiled_block_list'
@@ -88,8 +87,21 @@ print(
     sep = ''
 )
 
-query = 'is taboola.com primarily a tracking, advertising, monetisation or engagement subdomain?'
-with DuckAI(proxy='http://fw:8080', timeout=10) as duckai:
-    # Use chat() to get AI-generated answers
-    results = duckai.chat(query, model="gpt-4o-mini")
-    print(results)
+line = 'is taboola.com primarily a tracking, advertising, monetisation or engagement subdomain?'
+line='Manuela'
+
+def ddg_search(query):
+    url = f'https://api.duckduckgo.com/?q={query}&format=json'
+    response = requests.get(
+        url,
+        timeout = 20,
+        proxies = proxy_servers
+    )
+    print(response)
+    if response.status_code == 200:
+        return response.json()  # Returns the parsed JSON response
+    else:
+        return None
+
+result = ddg_search(line)
+print(result)
