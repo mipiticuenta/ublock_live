@@ -19,6 +19,7 @@ import os                                                                       
 import pandas as pd
 import re                                                                       # <regex capabilities />
 import requests                                                                 # <fetch urls />
+from duckai import DuckAI
 
 # file1_in_name   = 'filter_sources'
 # file2_out_name  = 'compiled_block_list'
@@ -87,37 +88,8 @@ print(
     sep = ''
 )
 
-try :
-
-    response = requests.get(
-        line,
-        timeout = 20,
-        proxies = proxy_servers
-    )
-    if response.status_code :
-        list2.update(response.text.split('\n'))
-        print(
-            line,
-            '\n',
-            '    ',
-            '{:,}'.format(len(list2)),
-            'filters read',
-            flush = True
-        )
-    else :
-        print(
-            'Error: could not load ' + line,
-            flush = True
-        )
-    list2 = sorted(list2)
-
-except :
-
-    print(
-        'Error: could not load ' + line,
-        flush = True
-    )
-
-print(results)
-
-https://www.google.com/search?q=in+yes+or+no+answer%3A+is+microsoft.com+primarily+a+tracking%2C+advertising%2C+monetisation+or+engagement+domain%3F&udm=50&aep=1&ntc=1&sa=X&biw=1851&bih=1001&dpr=1&csuir=1
+query = 'is taboola.com primarily a tracking, advertising, monetisation or engagement subdomain?'
+with DuckAI(proxy='http://fw:8080', timeout=10) as duckai:
+    # Use chat() to get AI-generated answers
+    results = duckai.chat(query, model="gpt-4o-mini")
+    print(results)
