@@ -19,6 +19,7 @@ import os                                                                       
 import pandas as pd
 import re                                                                       # <regex capabilities />
 import requests                                                                 # <fetch urls />
+from bs4 import BeautifulSoup
 
 # file1_in_name   = 'filter_sources'
 # file2_out_name  = 'compiled_block_list'
@@ -87,21 +88,28 @@ print(
     sep = ''
 )
 
-line = 'is taboola.com primarily a tracking, advertising, monetisation or engagement subdomain?'
-line='Manuela'
+line = 'https://www.google.com/search?q=in+yes+or+no+answer%3A+is+taboola.com+primarily+a+tracking%2C+advertising%2C+monetisation+or+engagement+service%3F'
+line = 'https://www.google.com/search?q=apple'
 
-def ddg_search(query):
+
+def i_search(query):
     url = f'https://api.duckduckgo.com/?q={query}&format=json'
     response = requests.get(
-        url,
+        query,
         timeout = 20,
         proxies = proxy_servers
     )
-    print(response)
     if response.status_code == 200:
-        return response.json()  # Returns the parsed JSON response
+        soup = BeautifulSoup(response.text, 'html.parser')
+        results = soup.find_all()  # Los títulos de los resultados suelen estar en <h3>
+        if results:
+            return results  # Return the extracted text
+        else:
+            return "Textbox not found."
     else:
         return None
 
-result = ddg_search(line)
+result = i_search(line)
 print(result)
+for item in result:
+    print(item.text)  # Imprime los textos de los títulos
