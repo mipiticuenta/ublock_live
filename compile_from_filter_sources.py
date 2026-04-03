@@ -1772,7 +1772,7 @@ for i, batch in enumerate(itertools.batched(list2, 2000000)):
         '! description: personal filters for uBO; yet under heavy debugging\n' +
         '! expires: 1 day\n' +
         '! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/' + file2_out_name + '\n' +
-        '! title:' + file2_out_name + '\n' +
+        '! title:' + f"{file2_out_name}_part_{i + 1}" + '\n' +
         '! ===========================================================================================\n' +
         '! simple, general filters preferred rather than complicated, specific ones\n' +
         '! regex only when efficient\n' +
