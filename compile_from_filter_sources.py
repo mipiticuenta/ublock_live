@@ -19,6 +19,7 @@ import os                                                                       
 import pandas as pd
 import re                                                                       # <regex capabilities />
 import requests                                                                 # <fetch urls />
+import itertools                                                                # <split text files/>
 
 file1_in_name   = 'filter_sources'
 file2_out_name  = 'compiled_block_list'
@@ -1727,37 +1728,39 @@ list2.append('/^([^\./]*\.)*[\d]+\.([a-z]{2,}\.)?[a-z]{2,}/$important')
 
 list2 = list(filter(None, sorted(set(list2))))
 
-file2_out = open(
-    file2_out_name,
-    'w',
-    encoding='UTF-8'
-)
+for i, batch in enumerate(itertools.batched(list2, 2000000)):
+    
+    file2_out = open(
+        f"{file2_out_name}_part_{i + 1}",
+        'w',
+        encoding='UTF-8'
+    )
 
-file2_out.write(
-    '! description: personal filters for uBO; yet under heavy debugging\n' +
-    '! expires: 1 day\n' +
-    '! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/' + file2_out_name + '\n' +
-    '! title:' + file2_out_name + '\n' +
-    '! ===========================================================================================\n' +
-    '! simple, general filters preferred rather than complicated, specific ones\n' +
-    '! regex only when efficient\n' +
-    '! exceptions only if no better choice\n' +
-    '! ===========================================================================================\n' +
-    '! sources:\n'
-)
+    file2_out.write(
+        '! description: personal filters for uBO; yet under heavy debugging\n' +
+        '! expires: 1 day\n' +
+        '! homepage: https://raw.githubusercontent.com/mipiticuenta/ublock_live/main/' + file2_out_name + '\n' +
+        '! title:' + file2_out_name + '\n' +
+        '! ===========================================================================================\n' +
+        '! simple, general filters preferred rather than complicated, specific ones\n' +
+        '! regex only when efficient\n' +
+        '! exceptions only if no better choice\n' +
+        '! ===========================================================================================\n' +
+        '! sources:\n'
+    )
 
-file2_out.writelines('! ' + line + '\n' for line in list1)
+    file2_out.writelines('! ' + line + '\n' for line in list1)
 
-file2_out.write(
-    '! ===========================================================================================\n'
-)
+    file2_out.write(
+        '! ===========================================================================================\n'
+    )
 
-file2_out.writelines(line + '\n' for line in list2)
-file2_out.close()
+    file2_out.writelines(line + '\n' for line in batch)
+    file2_out.close()
 
-print(
-    'Results saved to textfile <' + file2_out_name + '>\n'
-)
+    print(
+        'Results saved to textfile <' + f"{file2_out_name}_part_{i + 1}" + '>\n'
+    )
 
 # </write main output>
 
