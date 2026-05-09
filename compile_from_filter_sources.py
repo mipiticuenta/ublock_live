@@ -1851,16 +1851,19 @@ def f_reduce_to_L1(line) :
             line = re.sub(r'^(?:[^\.]+\.)', '', line)                               # keep only L1 domain
     except:
         print('error: ', line)
-    counter.value += 1
-    print(
-        '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
-        '(', '{:.0f}'.format(counter.value), '/', counter_max, ') ',
-        '{:.0f}'.format((time() - t0) / 60), '\' elapsed | ',
-        '{:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), '\' remaining',
-        end = '\r',
-        sep = '',
-        flush = True
-    )
+    try:
+        counter.value += 1
+        print(
+            '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
+            '(', '{:.0f}'.format(counter.value), '/', counter_max, ') ',
+            '{:.0f}'.format((time() - t0) / 60), '\' elapsed | ',
+            '{:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), '\' remaining',
+            end = '\r',
+            sep = '',
+            flush = True
+        )
+    except:
+        print('error: ', line)
     return line
 
 pool = ThreadPool(thr)                                                       # <make the pool of workers />
