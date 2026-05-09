@@ -1846,30 +1846,45 @@ counter_max = len(list3)
 
 def f_reduce_to_L1(line) :
     global iana_sld
-    try:
-        while re.sub(r'^(?:[^\.]+\.)', '', line) not in iana_sld :
-            line = re.sub(r'^(?:[^\.]+\.)', '', line)                               # keep only L1 domain
-    except:
-        print('error: ', line)
-    try:
-        counter.value += 1
-        print(
-            '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
-            '(', '{:.0f}'.format(counter.value), '/', counter_max, ') ',
-            '{:.0f}'.format((time() - t0) / 60), '\' elapsed | ',
-            '{:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), '\' remaining',
-            end = '\r',
-            sep = '',
-            flush = True
-        )
-    except:
-        print('error: ', line)
+    while re.sub(r'^(?:[^\.]+\.)', '', line) not in iana_sld :
+        line = re.sub(r'^(?:[^\.]+\.)', '', line)                               # keep only L1 domain
+    counter.value += 1
+    print(
+        '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
+        '(', '{:.0f}'.format(counter.value), '/', counter_max, ') ',
+        '{:.0f}'.format((time() - t0) / 60), '\' elapsed | ',
+        '{:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), '\' remaining',
+        end = '\r',
+        sep = '',
+        flush = True
+    )
     return line
 
 pool = ThreadPool(thr)                                                       # <make the pool of workers />
-list10 = pool.map(f_reduce_to_L1, list3)                                     # <execute function by multi-threading />
-pool.close()                                                                 # <close the pool and wait for the work to finish />
-pool.join()
+# list10 = pool.map(f_reduce_to_L1, list3)                                     # <execute function by multi-threading />
+#pool.close()                                                                 # <close the pool and wait for the work to finish />
+# pool.join()
+
+# <code fix>
+try:
+    # map_async no bloquea el hilo principal inmediatamente
+    result_obj = pool.map_async(f_reduce_to_L1, list3)
+    
+    # Intentamos obtener los resultados con un límite de tiempo
+    # Si f_reduce_to_L1 se cuelga, esto lanzará una excepción TimeoutError
+    list10 = result_obj.get(timeout=timeout_seconds)
+    
+except TimeoutError:
+    print("La operación excedió el tiempo límite. Posible bloqueo en los hilos.")
+    # Aquí puedes decidir si reintentar o abortar
+    list10 = [] 
+except Exception as e:
+    print(f"Ocurrió un error inesperado: {e}")
+    list10 = []
+finally:
+    pool.terminate() # Fuerza el cierre de los hilos si hay un bloqueo
+    pool.join()
+# </code fix>
 
 print(
     '{:,}'.format(len(list10)),
