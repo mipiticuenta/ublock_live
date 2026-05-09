@@ -1872,7 +1872,7 @@ try:
     
     # Intentamos obtener los resultados con un límite de tiempo
     # Si f_reduce_to_L1 se cuelga, esto lanzará una excepción TimeoutError
-    list10 = result_obj.get(timeout=timeout_seconds)
+    list10 = result_obj.get(timeout=240)
     
 except TimeoutError:
     print("La operación excedió el tiempo límite. Posible bloqueo en los hilos.")
