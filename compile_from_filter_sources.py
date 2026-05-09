@@ -1846,8 +1846,11 @@ counter_max = len(list3)
 
 def f_reduce_to_L1(line) :
     global iana_sld
-    while re.sub(r'^(?:[^\.]+\.)', '', line) not in iana_sld :
-        line = re.sub(r'^(?:[^\.]+\.)', '', line)                               # keep only L1 domain
+    try:
+        while re.sub(r'^(?:[^\.]+\.)', '', line) not in iana_sld :
+            line = re.sub(r'^(?:[^\.]+\.)', '', line)                               # keep only L1 domain
+    except:
+        print('error: ', line)
     counter.value += 1
     print(
         '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
