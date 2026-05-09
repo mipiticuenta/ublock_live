@@ -34,7 +34,7 @@ file11_out_name = 'domain_prefix_list'
 file12_out_name = 'words in long dot separated strings'
 no_proxy        = {'https': '', 'http': ''}
 local_proxy     = {'https': 'http://fw:8080', 'http': 'http://fw:8080'}
-thr             = os.cpu_count()
+thr             = os.cpu_count() - 1
 t_start         = time()
 
 # </libs & settings>
