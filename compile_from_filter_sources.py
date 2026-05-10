@@ -1052,7 +1052,7 @@ list2 = list(filter(None, sorted(set(list2) - set(list2s))))                    
 list2s = [line[:-6] for line in list2 if line[-6:] == '.woff2']
 list2 = list(filter(None, sorted(set(list2) - set(list2s))))                    # <dedup .woff2 trailing filters />
 
-del(list2s)
+del list2s
 
 print(
     '       ',
@@ -1136,6 +1136,8 @@ list5wl = sorted(
 
 list5 = list(filter(None, sorted(set(list5) - set(list5wl))))                   # <remove empty elements />
 
+del list5wl
+
 counter = Value('d', 0)
 t0 = time()
 counter_max = len(list9)
@@ -1190,6 +1192,8 @@ list2wl = sorted(
     )                                                                           # <dedup list />
 )
 list2 = list(filter(None, sorted(set(list2) - set(list2wl))))                   # <remove elements in list2wl and empty elements />
+
+del list2wl
 
 print()
 
@@ -1294,6 +1298,8 @@ list2du = sorted(
 
 list2 = list(filter(None, sorted((set(list2) - set(list2du)) | set(list5))))    # <join lists2, list5 and remove empty elements />
 
+del list2du
+
 # </aggregate filters >
 
 print(
@@ -1324,7 +1330,10 @@ print(
     '\ndomain prefix stats saved to textfile <' + file11_out_name + '>'
 )
 
-# <list domain prefix>
+del prefix
+del df11
+
+# </list domain prefix>
 
 # <remove leading . , L5+ domains and numerial low levels >
 
@@ -1519,7 +1528,8 @@ pool.join()
 list2 = [line for line in list2 if not re.search(r'^[a-z0-9]*$', line)]
 
 list2 = list(filter(None, sorted(set(list2) - set(list2s))))                    # <remove redundant filters />
-del(list2s)
+
+del list2s
 
 print(
     '       ',
@@ -1879,6 +1889,8 @@ print(
     sep = ''
 )
 
+del list4
+
 # </write extracted url type filters>
 
 # <write extracted filters except domains>
@@ -1914,9 +1926,11 @@ print(
     sep = ''
 )
 
+del list7
+
 # </write extracted filters except domains />
 
-# <list words in long dot seperated strings>
+# <list words in long dot separated strings>
 
 list12  = [line for line in list2 if re.search(r'(\w+\.){3,}', line)]
 
@@ -1944,11 +1958,16 @@ df12 = df12.groupby('word')['word'].count()
 df12 = df12.sort_values(ascending = False)
 df12 = df12[df12 > 1]      # <keep only freq > 1/>
 df12.to_csv(file12_out_name, sep='\t')
+
 print(
     'words in long dot separated strings saved to textfile <' + file12_out_name + '>\n'
 )
 
-# <list words in long dot seperated strings>
+del list12
+del words
+del df12
+
+# <list words in long dot separated strings>
 
 # <get L1 domains>
 
@@ -1959,6 +1978,8 @@ print(
 counter = Value('d', 0)
 t0 = time()
 counter_max = len(list3)
+
+del list2
 
 def f_reduce_to_L1(line) :
     global iana_sld
