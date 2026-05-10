@@ -358,8 +358,10 @@ def f04(line) :
         line = ''                                                               # <remove IP6 addresses :: />
     elif re.search(r'^[^a-z]+$', line) :
         line = ''                                                               # <remove filters comprised only by symbols and numbers (includes IP4 addresses) />
+    elif re.search(r'^.{2,5}\$important$', line) :
+        line = ''                                                               # <remove filters comprised only by TLD followed by $important />
     elif (
-        re.search(r'\:', line) 
+        re.search(r'\:', line)
         and not re.search(r'[#\$\?]', line)
         and not re.search(r'^/.*/(?:\$important)?$', line)
         ) :
