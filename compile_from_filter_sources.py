@@ -20,6 +20,7 @@ import pandas as pd
 import re                                                                       # <regex capabilities />
 import requests                                                                 # <fetch urls />
 import itertools                                                                # <split text files/>
+import tldextract                                                               # <extract url domain info/>
 
 file1_in_name   = 'filter_sources'
 file2_out_name  = 'compiled_block_list'
@@ -1981,7 +1982,7 @@ counter_max = len(list3)
 
 del list2
 
-def f_reduce_to_L1(line) :
+""" def f_reduce_to_L1(line) :
     global iana_sld
     while re.sub(r'^(?:[^\.]+\.)', '', line) not in iana_sld :
         line = re.sub(r'^(?:[^\.]+\.)', '', line)                            # keep only L1 domain
@@ -1995,7 +1996,11 @@ def f_reduce_to_L1(line) :
         sep = '',
         flush = True
     )
-    return line
+    return line """
+
+def f_reduce_to_L1(line) :
+    ext = tldextract.extract(url)
+    return f"{ext.domain}.{ext.suffix}"
 
 pool = ThreadPool(thr)                                                       # <make the pool of workers />
 list10 = pool.map(f_reduce_to_L1, list3)                                     # <execute function by multi-threading />
