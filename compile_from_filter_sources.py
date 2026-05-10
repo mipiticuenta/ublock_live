@@ -1834,80 +1834,6 @@ print(
 
 # </write domain type filters>
 
-# <get L1 domains>
-
-print(
-    'reducing domains listed to L1\n'
-)
-
-counter = Value('d', 0)
-t0 = time()
-counter_max = len(list3)
-
-def f_reduce_to_L1(line) :
-    global iana_sld
-    while re.sub(r'^(?:[^\.]+\.)', '', line) not in iana_sld :
-        line = re.sub(r'^(?:[^\.]+\.)', '', line)                               # keep only L1 domain
-    counter.value += 1
-    print(
-        '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
-        '(', '{:.0f}'.format(counter.value), '/', counter_max, ') ',
-        '{:.0f}'.format((time() - t0) / 60), '\' elapsed | ',
-        '{:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), '\' remaining',
-        end = '\r',
-        sep = '',
-        flush = True
-    )
-    return line
-
-pool = ThreadPool(thr)                                                       # <make the pool of workers />
-# list10 = pool.map(f_reduce_to_L1, list3)                                     # <execute function by multi-threading />
-#pool.close()                                                                 # <close the pool and wait for the work to finish />
-# pool.join()
-
-# <code fix>
-try:
-    # map_async no bloquea el hilo principal inmediatamente
-    result_obj = pool.map_async(f_reduce_to_L1, list3)
-    
-    # Intentamos obtener los resultados con un límite de tiempo
-    # Si f_reduce_to_L1 se cuelga, esto lanzará una excepción TimeoutError
-    list10 = result_obj.get(timeout=240)
-    
-except TimeoutError:
-    print("La operación excedió el tiempo límite. Posible bloqueo en los hilos.")
-    # Aquí puedes decidir si reintentar o abortar
-    list10 = [] 
-except Exception as e:
-    print(f"Ocurrió un error inesperado: {e}")
-    list10 = []
-finally:
-    pool.terminate() # Fuerza el cierre de los hilos si hay un bloqueo
-    pool.join()
-# </code fix>
-
-print(
-    '{:,}'.format(len(list10)),
-    'L1_domains listed                        \n'
-)
-
-df10 = pd.DataFrame()
-df10['L1_domain'] = list10
-df10 = df10.groupby('L1_domain')['L1_domain'].count()
-df10 = df10.sort_values(ascending = False)
-df10 = df10[df10 > 1]      # <keep only freq > 1/>
-
-# </get L1 domains>
-
-# <write L1 domain list/>
-
-df10.to_csv(file10_out_name, sep='\t')
-print(
-    'Results saved to textfile <' + file10_out_name + '>\n'
-)
-
-# </write L1 domain list>
-
 # <write extracted url type filters>
 
 # <open file4_out file and write header>
@@ -2023,6 +1949,59 @@ print(
 )
 
 # <list words in long dot seperated strings>
+
+# <get L1 domains>
+
+print(
+    'reducing domains listed to L1\n'
+)
+
+counter = Value('d', 0)
+t0 = time()
+counter_max = len(list3)
+
+def f_reduce_to_L1(line) :
+    global iana_sld
+    while re.sub(r'^(?:[^\.]+\.)', '', line) not in iana_sld :
+        line = re.sub(r'^(?:[^\.]+\.)', '', line)                            # keep only L1 domain
+    counter.value += 1
+    print(
+        '{:3.0f}'.format((counter.value / counter_max) * 100), '% ',
+        '(', '{:.0f}'.format(counter.value), '/', counter_max, ') ',
+        '{:.0f}'.format((time() - t0) / 60), '\' elapsed | ',
+        '{:.0f}'.format((time() - t0) / counter.value * (counter_max - counter.value) / 60), '\' remaining',
+        end = '\r',
+        sep = '',
+        flush = True
+    )
+    return line
+
+pool = ThreadPool(thr)                                                       # <make the pool of workers />
+list10 = pool.map(f_reduce_to_L1, list3)                                     # <execute function by multi-threading />
+pool.close()                                                                 # <close the pool and wait for the work to finish />
+pool.join()
+
+print(
+    '{:,}'.format(len(list10)),
+    'L1_domains listed                        \n'
+)
+
+df10 = pd.DataFrame()
+df10['L1_domain'] = list10
+df10 = df10.groupby('L1_domain')['L1_domain'].count()
+df10 = df10.sort_values(ascending = False)
+df10 = df10[df10 > 1]      # <keep only freq > 1/>
+
+# </get L1 domains>
+
+# <write L1 domain list/>
+
+df10.to_csv(file10_out_name, sep='\t')
+print(
+    'Results saved to textfile <' + file10_out_name + '>\n'
+)
+
+# </write L1 domain list>
 
 print(
     'Total compilation time: ',
