@@ -1999,8 +1999,8 @@ del list2
     return line """
 
 def f_reduce_to_L1(line) :
-    ext = tldextract.extract(url)
-    return f"{ext.domain}.{ext.suffix}"
+    ext = tldextract.extract(line)
+    return f"{ext.domain}.{ext.suffix}" if ext.suffix else ""
 
 pool = ThreadPool(thr)                                                       # <make the pool of workers />
 list10 = pool.map(f_reduce_to_L1, list3)                                     # <execute function by multi-threading />
@@ -2023,9 +2023,13 @@ df10 = df10[df10 > 1]      # <keep only freq > 1/>
 # <write L1 domain list/>
 
 df10.to_csv(file10_out_name, sep='\t')
+
 print(
     'Results saved to textfile <' + file10_out_name + '>\n'
 )
+
+del list10
+del df10
 
 # </write L1 domain list>
 
