@@ -240,7 +240,7 @@ print(
     'filters kept'
 )
 
-print(' 2/20 : remove comments ')
+print(' 2/20 : remove comments and non-std ASCII')
 
 def f02(line) :
 
@@ -250,6 +250,8 @@ def f02(line) :
         line = ''                                                               # <remove !comment [comment] {comment} />
     elif re.search(r'^#(?![\?\@\#])', line) :
         line = ''                                                               # <remove #comment; preserve cosmetics and exceptions />
+    elif re.search(r'[^\x20-\x7E\t\r\n]', line) :
+        line = ''                                                               # <remove lines containing non-standard ASCII />
 
     return line
 
