@@ -864,6 +864,8 @@ while not converged :                                                           
             line = ''                                                           # <remove # ! < leaded lines />
         elif re.search(r'^\*?#[^#]', line) :
             line = ''                                                           # <remove *# not followed by # />
+        elif re.search(r'^\w{2,5}\$important$', line) :
+            line = ''                                                           # <remove TLD followed by $important />
         elif re.search(r'^[/\*]?[\^\&\?\:\;\"\@\+\(\)\[\]\{\}\~]', line) :
             line = ''                                                           # <remove ^ & ? : ; " @ + ( ) [ ] { } ~ leaded lines />
         elif re.search(r'^/.*\\/$', line) :
