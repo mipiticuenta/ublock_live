@@ -987,6 +987,7 @@ while not converged :                                                           
         if not re.search(r'^/[\.\d\*\\/]+/$', line)                                 # <remove numerical regex filter />
         if not re.search(r'^/[-\w]*\*[-\w]*/$', line)                               # <remove /@*@/ regex filter />
         if not re.search(r'^/(?:[-\w\.]*\\?/)+[-\w\.]*/$', line)                    # <remove regex filter containing @\/@ />
+        if not re.search(r'^com\$important/$', line)                                # <remove regex filter containing @\/@ />
         if line[1: -1] not in iana_sld                                              # <remove /item/ if item in iana_sld />
         if len(line) > 5                                                            # <remove too short regex filter />
     ]
