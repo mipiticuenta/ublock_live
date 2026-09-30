@@ -1539,6 +1539,13 @@ list2 = list(filter(None, sorted(set(list2) - set(list2s))))                    
 
 del list2s
 
+pool = ThreadPool(thr)                                                          # < make the pool of workers />
+list2 = pool.map(f_clean_domains_1, list2)                                      # < execute function by multi-threading />
+pool.close()                                                                    # < close the pool and wait for the work to finish />
+pool.join()
+
+list2 = list(filter(None, sorted(set(list2))))                                  # < only domains part are processed in this section; @.js are kept in list2 />
+
 print(
     '       ',
     '{:,}'.format(len(list2)),
