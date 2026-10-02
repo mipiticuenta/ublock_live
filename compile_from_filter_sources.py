@@ -1539,8 +1539,17 @@ list2 = list(filter(None, sorted(set(list2) - set(list2s))))                    
 
 del list2s
 
+def f_clean_domains_3(line) :
+
+    global iana_sld
+
+    if re.sub(r'\$important$', '', line) in iana_sld :                          # < check for a match with sld />
+        line = ''                                                               # < remove sld($important) />
+
+    return line
+
 pool = ThreadPool(thr)                                                          # < make the pool of workers />
-list2 = pool.map(f_clean_domains_1, list2)                                      # < execute function by multi-threading />
+list2 = pool.map(f_clean_domains_3, list2)                                      # < execute function by multi-threading />
 pool.close()                                                                    # < close the pool and wait for the work to finish />
 pool.join()
 
