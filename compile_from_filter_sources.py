@@ -60,7 +60,7 @@ print(
 
 # <test direct connection to internet>
 
-proxy_servers = no_proxy                                                          # initialize to direct connection to internet
+proxy_servers = no_proxy                                                        # initialize to direct connection to internet
 
 try:
     r = requests.get(
@@ -104,7 +104,7 @@ def f00(line) :
     global proxy_servers
     list2 = set()
 
-    try :
+    try:
 
         response = requests.get(
             line,
@@ -121,14 +121,14 @@ def f00(line) :
                 'filters read',
                 flush = True
             )
-        else :
+        else:
             print(
                 'Error: could not load ' + line,
                 flush = True
             )
         list2 = sorted(list2)
 
-    except :
+    except:
 
         print(
             'Error: could not load ' + line,
@@ -167,7 +167,7 @@ print(
 
 iana_tld = set()
 
-try :
+try:
 
     response = requests.get(
         'https://data.iana.org/TLD/tlds-alpha-by-domain.txt',
@@ -175,7 +175,7 @@ try :
         proxies = proxy_servers
     )
 
-except :
+except:
 
     print(
         'Error: could not load https://data.iana.org/TLD/tlds-alpha-by-domain.txt',
